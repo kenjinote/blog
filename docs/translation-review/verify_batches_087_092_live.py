@@ -14,6 +14,17 @@ DOCS = ROOT / "docs/translation-review"
 LANGS = ("ja", "en", "zh-cn", "es", "ko", "pt", "zh-tw", "hi", "fr", "de", "ar", "ru", "id")
 NS = {"s": "http://www.sitemaps.org/schemas/sitemap/0.9"}
 ARTICLES = {
+    185: {
+        "bundle": ROOT / "content/post/macで日本語⇔英語入力切り替えのショートカットキーを変更する方法",
+        "slug": "macで日本語⇔英語入力切り替えのショートカットキーを変更する方法",
+        "links": [
+            "https://support.apple.com/en-gb/guide/mac-help/-mchlp1406/mac",
+            "https://support.apple.com/en-gb/guide/japanese-input-method/jpimf6ffb247/6.3/mac/27",
+            "https://support.apple.com/en-me/guide/japanese-input-method/jpim662a12b9/mac",
+        ],
+        "markers": ["Apple Support", "Option", "macOS"],
+        "date": "2023-04-04",
+    },
     184: {
         "bundle": ROOT / "content/post/エクスプローラーの終了・再起動方法",
         "slug": "エクスプローラーの終了・再起動方法",
@@ -1041,7 +1052,7 @@ def slug_key(value):
 parser = argparse.ArgumentParser()
 parser.add_argument("--ci-run", type=int, required=True)
 parser.add_argument("--commit", required=True)
-parser.add_argument("--max-batch", type=int, choices=(90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184), default=184)
+parser.add_argument("--max-batch", type=int, choices=(90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185), default=185)
 args = parser.parse_args()
 ARTICLES = {number: article for number, article in ARTICLES.items() if number <= args.max_batch}
 with urllib.request.urlopen(f"https://github.com/kenjinote/blog/actions/runs/{args.ci_run}", timeout=45) as response:

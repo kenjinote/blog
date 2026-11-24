@@ -1,38 +1,41 @@
 ---
-title: 'Cara Mengubah Pintasan Keyboard untuk Beralih Input Bahasa Jepang/Inggris di Mac (Untuk Keyboard US)'
-date: "2026-09-24T19:44:38+09:00"
-slug: "macでBahasa Jepang⇔英語入力切り替えのTombol Pintasanを変更する方法"
-date: 2023-04-04T23:02:12+09:00
-tags: ["macos", "mac", "Tombol Pintasan", "Input Bahasa Jepang"]
-draft:
+title: "Cara Mengubah Pintasan untuk Beralih Input Jepang dan Inggris di Mac"
+date: "2023-04-04T23:02:12+09:00"
+lastmod: "2026-11-25T00:00:00+09:00"
+slug: "macで日本語⇔英語入力切り替えのショートカットキーを変更する方法"
+tags: ["macOS", "Mac", "Pintasan keyboard", "Input bahasa Jepang"]
+draft: false
 image: "img.webp"
 categories: ["pc-gadgets"]
-description: 'Menjelaskan cara mengubah peralihan input antara bahasa Jepang dan Inggris di Mac (Keyboard US) ke pintasan keyboard pilihan Anda, seperti ''Alt + `''. Kami juga memperkenalkan prosedur pengaturan di macOS Ventura dan pengaturan untuk mencegah penyertaan katakana saat beralih.'
+description: "Cara mengubah pintasan untuk beralih antara sumber input Jepang dan Inggris di Mac dengan keyboard US. Mencakup macOS Ventura dan perbedaan sumber input dengan mode input Jepang."
 ---
 
-# Pengantar
+# Cara Mengubah Pintasan untuk Beralih Input Jepang dan Inggris di Mac
 
-Saya menggunakan keyboard US, dan di Windows saya beralih ke input bahasa Jepang dengan `` Alt + ` ``.
-Saya ingin beralih menggunakan tombol yang sama di mac, dan setelah mencari tahu, ternyata itu bisa diubah di pengaturan.
+Anda dapat mengubah pintasan untuk beralih antara sumber input Jepang dan Inggris melalui Pengaturan. Sejak macOS Ventura, nama aplikasinya adalah System Settings; versi sebelumnya menggunakan System Preferences. Pada keyboard Apple, tombol yang setara dengan Alt di Windows adalah Option (⌥). Keyboard eksternal dapat memiliki label atau pemetaan berbeda.
 
-# Cara mengatur (macOS Ventura)
+## Mengubah pintasan sumber input
 
-1. Buka Pengaturan Sistem
-2. Pilih Keyboard
-3. Pilih Pintasan Keyboard
-4. Pilih Sumber Input
-5. Klik ganda pada representasi pintasan di sebelah kanan "Pilih sumber berikutnya di menu Input"
-6. Masukkan `` Alt + ` ``
-7. Klik Selesai
+1. Buka menu Apple, pilih `System Settings`, lalu `Keyboard`.
 
-Sekarang, Anda akan dapat beralih antara bahasa Inggris ⇔ bahasa Jepang dengan `` Alt + ` ``.
-Namun, secara default, katakana disertakan dalam peralihan, jadi saya menghapus katakana dari sumber input menggunakan langkah-langkah berikut.
+2. Buka `Keyboard Shortcuts`, lalu pilih `Input Sources`.
 
-1. Buka Pengaturan Sistem
-2. Pilih Keyboard
-3. Klik Edit di sebelah kanan `Jepang - Input Romaji` di Sumber Input
-4. Klik `Jepang - Input Romaji`
-5. Hapus centang Katakana di Mode Input
-6. Klik Selesai
+3. Klik dua kali pintasan di samping `Select the next source in the Input menu`, lalu tekan kombinasi yang diinginkan. Anda dapat mencoba Option + `, tetapi tata letak keyboard atau konflik dengan pintasan lain mungkin membuatnya tidak tersedia.
 
-Sekian
+4. Klik `Done`.
+
+## Beralih hanya antara bahasa Jepang dan Inggris
+
+1. Pintasan berpindah di antara sumber yang terdaftar pada menu Input. Setelan default Apple adalah Control + Space untuk sumber yang terakhir digunakan dan Control + Option + Space untuk sumber berikutnya. Periksa penetapan saat ini di Pengaturan.
+
+2. Jika ada beberapa sumber bahasa Jepang, buka `Keyboard` > `Text Input` > `Edit` dan hapus hanya sumber yang tidak digunakan (misalnya Japanese - Kana). Pertahankan Japanese - Romaji jika mengetik bahasa Jepang dengan keyboard US.
+
+Sumber input (seperti English atau Japanese - Romaji) berbeda dari mode input di dalam sumber Jepang (seperti Hiragana atau Katakana). Menonaktifkan mode Katakana membatasi cara mengetiknya. Untuk memperpendek daftar peralihan, hapus sumber input yang tidak diperlukan, bukan mode input.
+
+## Apple Support
+
+- [Apple Support: Menulis dalam bahasa lain di Mac](https://support.apple.com/en-gb/guide/mac-help/-mchlp1406/mac)
+
+- [Apple Support: Beralih ke sumber input bahasa Jepang di Mac](https://support.apple.com/en-gb/guide/japanese-input-method/jpimf6ffb247/6.3/mac/27)
+
+- [Apple Support: Mengubah pengaturan sumber input bahasa Jepang di Mac](https://support.apple.com/en-me/guide/japanese-input-method/jpim662a12b9/mac)

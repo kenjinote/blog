@@ -1,0 +1,454 @@
+{
+  "version": 1,
+  "batch": 185,
+  "article": "Change the Japanese-English input source shortcut on Mac",
+  "reviewedAt": "2026-11-25",
+  "sourceHash": "5059a4b673c3c466bcb58191f11bb4f51e75b5dc04605143fcb79075f9f660dc",
+  "sources": [
+    "https://support.apple.com/en-gb/guide/mac-help/-mchlp1406/mac",
+    "https://support.apple.com/en-gb/guide/japanese-input-method/jpimf6ffb247/6.3/mac/27",
+    "https://support.apple.com/en-me/guide/japanese-input-method/jpim662a12b9/mac"
+  ],
+  "scope": "Read and compared the complete Japanese article and all twelve translations; checked the current Settings path, default Control-Space shortcuts, Option/Alt terminology, source-vs-mode distinction, removal of extra input sources, metadata, and Apple Support links.",
+  "findings": [
+    "Updated the path from the Ventura-era-only wording to System Settings > Keyboard > Keyboard Shortcuts > Input Sources, with older-version naming explained.",
+    "Corrected the article’s conflation of input sources with Japanese input modes; explained how to remove an unwanted source while keeping Japanese - Romaji.",
+    "Documented Apple’s default Control + Space and Control + Option + Space behavior and clarified that Option + grave is only an example that can conflict or be unavailable.",
+    "Removed empty draft values and duplicate dates; preserved the original publication date (2023-04-04) and added lastmod (2026-11-25)."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/macで日本語⇔英語入力切り替えのショートカットキーを変更する方法/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/macで日本語⇔英語入力切り替えのショートカットキーを変更する方法/index.md",
+      "sourceHash": "5059a4b673c3c466bcb58191f11bb4f51e75b5dc04605143fcb79075f9f660dc",
+      "translationHash": "d34cce5d165ce69a3c2f2ab0f2933148480701bf56d03646b136f3f0f68baafb",
+      "summary": "Compared the complete translation with the Japanese source and Apple Support’s current Mac and Japanese input method guidance; corrected the settings path, shortcut descriptions, input-source/mode distinction, and metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese instructions and all twelve translations with current Apple Support guidance. Updated the System Settings path and distinguished cycling input sources from switching Japanese input modes."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized names for System Settings, Keyboard Shortcuts, Input Sources, Japanese - Romaji/Kana, Option, and the Control-space defaults in every edition."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked three official Apple Support guide links covering multilingual typing, Japanese input sources, and Japanese input settings."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The instructions were checked against Apple Support documentation but not executed on a Mac; labels and available shortcuts can vary by macOS release, keyboard layout, and customized mappings.",
+        "Option + grave is an example and may be unavailable or conflict with another shortcut on a particular keyboard or configuration."
+      ]
+    },
+    "post/macで日本語⇔英語入力切り替えのショートカットキーを変更する方法/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/macで日本語⇔英語入力切り替えのショートカットキーを変更する方法/index.md",
+      "sourceHash": "5059a4b673c3c466bcb58191f11bb4f51e75b5dc04605143fcb79075f9f660dc",
+      "translationHash": "725354efae64134e261c9c585f945137a2871656199476ea28b80bf1d2f08531",
+      "summary": "Compared the complete translation with the Japanese source and Apple Support’s current Mac and Japanese input method guidance; corrected the settings path, shortcut descriptions, input-source/mode distinction, and metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese instructions and all twelve translations with current Apple Support guidance. Updated the System Settings path and distinguished cycling input sources from switching Japanese input modes."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized names for System Settings, Keyboard Shortcuts, Input Sources, Japanese - Romaji/Kana, Option, and the Control-space defaults in every edition."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked three official Apple Support guide links covering multilingual typing, Japanese input sources, and Japanese input settings."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The instructions were checked against Apple Support documentation but not executed on a Mac; labels and available shortcuts can vary by macOS release, keyboard layout, and customized mappings.",
+        "Option + grave is an example and may be unavailable or conflict with another shortcut on a particular keyboard or configuration."
+      ]
+    },
+    "post/macで日本語⇔英語入力切り替えのショートカットキーを変更する方法/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/macで日本語⇔英語入力切り替えのショートカットキーを変更する方法/index.md",
+      "sourceHash": "5059a4b673c3c466bcb58191f11bb4f51e75b5dc04605143fcb79075f9f660dc",
+      "translationHash": "3211e2e11b6caab2468267bd2bec7170c303773a40c8ee252e5a6b1af76b1d62",
+      "summary": "Compared the complete translation with the Japanese source and Apple Support’s current Mac and Japanese input method guidance; corrected the settings path, shortcut descriptions, input-source/mode distinction, and metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese instructions and all twelve translations with current Apple Support guidance. Updated the System Settings path and distinguished cycling input sources from switching Japanese input modes."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized names for System Settings, Keyboard Shortcuts, Input Sources, Japanese - Romaji/Kana, Option, and the Control-space defaults in every edition."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked three official Apple Support guide links covering multilingual typing, Japanese input sources, and Japanese input settings."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The instructions were checked against Apple Support documentation but not executed on a Mac; labels and available shortcuts can vary by macOS release, keyboard layout, and customized mappings.",
+        "Option + grave is an example and may be unavailable or conflict with another shortcut on a particular keyboard or configuration."
+      ]
+    },
+    "post/macで日本語⇔英語入力切り替えのショートカットキーを変更する方法/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/macで日本語⇔英語入力切り替えのショートカットキーを変更する方法/index.md",
+      "sourceHash": "5059a4b673c3c466bcb58191f11bb4f51e75b5dc04605143fcb79075f9f660dc",
+      "translationHash": "c5eac53493017fb454fe045873ce5b9ba7a98e2b7aa386060cd4879365ac6ffd",
+      "summary": "Compared the complete translation with the Japanese source and Apple Support’s current Mac and Japanese input method guidance; corrected the settings path, shortcut descriptions, input-source/mode distinction, and metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese instructions and all twelve translations with current Apple Support guidance. Updated the System Settings path and distinguished cycling input sources from switching Japanese input modes."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized names for System Settings, Keyboard Shortcuts, Input Sources, Japanese - Romaji/Kana, Option, and the Control-space defaults in every edition."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked three official Apple Support guide links covering multilingual typing, Japanese input sources, and Japanese input settings."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The instructions were checked against Apple Support documentation but not executed on a Mac; labels and available shortcuts can vary by macOS release, keyboard layout, and customized mappings.",
+        "Option + grave is an example and may be unavailable or conflict with another shortcut on a particular keyboard or configuration."
+      ]
+    },
+    "post/macで日本語⇔英語入力切り替えのショートカットキーを変更する方法/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/macで日本語⇔英語入力切り替えのショートカットキーを変更する方法/index.md",
+      "sourceHash": "5059a4b673c3c466bcb58191f11bb4f51e75b5dc04605143fcb79075f9f660dc",
+      "translationHash": "fe3c77a2bd7458b986c9a26397814ee2d548f875146afb2c293b61b23c277ccc",
+      "summary": "Compared the complete translation with the Japanese source and Apple Support’s current Mac and Japanese input method guidance; corrected the settings path, shortcut descriptions, input-source/mode distinction, and metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese instructions and all twelve translations with current Apple Support guidance. Updated the System Settings path and distinguished cycling input sources from switching Japanese input modes."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized names for System Settings, Keyboard Shortcuts, Input Sources, Japanese - Romaji/Kana, Option, and the Control-space defaults in every edition."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked three official Apple Support guide links covering multilingual typing, Japanese input sources, and Japanese input settings."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The instructions were checked against Apple Support documentation but not executed on a Mac; labels and available shortcuts can vary by macOS release, keyboard layout, and customized mappings.",
+        "Option + grave is an example and may be unavailable or conflict with another shortcut on a particular keyboard or configuration."
+      ]
+    },
+    "post/macで日本語⇔英語入力切り替えのショートカットキーを変更する方法/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/macで日本語⇔英語入力切り替えのショートカットキーを変更する方法/index.md",
+      "sourceHash": "5059a4b673c3c466bcb58191f11bb4f51e75b5dc04605143fcb79075f9f660dc",
+      "translationHash": "f701e064f18c7e0a87d499e0762fedfa3de202452c41530d6b2d633c6349a2f1",
+      "summary": "Compared the complete translation with the Japanese source and Apple Support’s current Mac and Japanese input method guidance; corrected the settings path, shortcut descriptions, input-source/mode distinction, and metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese instructions and all twelve translations with current Apple Support guidance. Updated the System Settings path and distinguished cycling input sources from switching Japanese input modes."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized names for System Settings, Keyboard Shortcuts, Input Sources, Japanese - Romaji/Kana, Option, and the Control-space defaults in every edition."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked three official Apple Support guide links covering multilingual typing, Japanese input sources, and Japanese input settings."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The instructions were checked against Apple Support documentation but not executed on a Mac; labels and available shortcuts can vary by macOS release, keyboard layout, and customized mappings.",
+        "Option + grave is an example and may be unavailable or conflict with another shortcut on a particular keyboard or configuration."
+      ]
+    },
+    "post/macで日本語⇔英語入力切り替えのショートカットキーを変更する方法/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/macで日本語⇔英語入力切り替えのショートカットキーを変更する方法/index.md",
+      "sourceHash": "5059a4b673c3c466bcb58191f11bb4f51e75b5dc04605143fcb79075f9f660dc",
+      "translationHash": "388741015577365646227270b1ff4c9edd5d07bb2cd6bc6508c29fa5561e8b3d",
+      "summary": "Compared the complete translation with the Japanese source and Apple Support’s current Mac and Japanese input method guidance; corrected the settings path, shortcut descriptions, input-source/mode distinction, and metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese instructions and all twelve translations with current Apple Support guidance. Updated the System Settings path and distinguished cycling input sources from switching Japanese input modes."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized names for System Settings, Keyboard Shortcuts, Input Sources, Japanese - Romaji/Kana, Option, and the Control-space defaults in every edition."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked three official Apple Support guide links covering multilingual typing, Japanese input sources, and Japanese input settings."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The instructions were checked against Apple Support documentation but not executed on a Mac; labels and available shortcuts can vary by macOS release, keyboard layout, and customized mappings.",
+        "Option + grave is an example and may be unavailable or conflict with another shortcut on a particular keyboard or configuration."
+      ]
+    },
+    "post/macで日本語⇔英語入力切り替えのショートカットキーを変更する方法/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/macで日本語⇔英語入力切り替えのショートカットキーを変更する方法/index.md",
+      "sourceHash": "5059a4b673c3c466bcb58191f11bb4f51e75b5dc04605143fcb79075f9f660dc",
+      "translationHash": "8b6f11081d5f2d90774a75044686a417b714587959205953c0eb34a89bc81bbf",
+      "summary": "Compared the complete translation with the Japanese source and Apple Support’s current Mac and Japanese input method guidance; corrected the settings path, shortcut descriptions, input-source/mode distinction, and metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese instructions and all twelve translations with current Apple Support guidance. Updated the System Settings path and distinguished cycling input sources from switching Japanese input modes."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized names for System Settings, Keyboard Shortcuts, Input Sources, Japanese - Romaji/Kana, Option, and the Control-space defaults in every edition."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked three official Apple Support guide links covering multilingual typing, Japanese input sources, and Japanese input settings."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The instructions were checked against Apple Support documentation but not executed on a Mac; labels and available shortcuts can vary by macOS release, keyboard layout, and customized mappings.",
+        "Option + grave is an example and may be unavailable or conflict with another shortcut on a particular keyboard or configuration."
+      ]
+    },
+    "post/macで日本語⇔英語入力切り替えのショートカットキーを変更する方法/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/macで日本語⇔英語入力切り替えのショートカットキーを変更する方法/index.md",
+      "sourceHash": "5059a4b673c3c466bcb58191f11bb4f51e75b5dc04605143fcb79075f9f660dc",
+      "translationHash": "9ea48820c9536004a093fdf70e4f7df48a4b3e108c3bd37e0cf139207264cf27",
+      "summary": "Compared the complete translation with the Japanese source and Apple Support’s current Mac and Japanese input method guidance; corrected the settings path, shortcut descriptions, input-source/mode distinction, and metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese instructions and all twelve translations with current Apple Support guidance. Updated the System Settings path and distinguished cycling input sources from switching Japanese input modes."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized names for System Settings, Keyboard Shortcuts, Input Sources, Japanese - Romaji/Kana, Option, and the Control-space defaults in every edition."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked three official Apple Support guide links covering multilingual typing, Japanese input sources, and Japanese input settings."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The instructions were checked against Apple Support documentation but not executed on a Mac; labels and available shortcuts can vary by macOS release, keyboard layout, and customized mappings.",
+        "Option + grave is an example and may be unavailable or conflict with another shortcut on a particular keyboard or configuration."
+      ]
+    },
+    "post/macで日本語⇔英語入力切り替えのショートカットキーを変更する方法/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/macで日本語⇔英語入力切り替えのショートカットキーを変更する方法/index.md",
+      "sourceHash": "5059a4b673c3c466bcb58191f11bb4f51e75b5dc04605143fcb79075f9f660dc",
+      "translationHash": "880d81bf041b67279479c84c2a691799cb7d3f56e4eddae922f61fcda0952cc6",
+      "summary": "Compared the complete translation with the Japanese source and Apple Support’s current Mac and Japanese input method guidance; corrected the settings path, shortcut descriptions, input-source/mode distinction, and metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese instructions and all twelve translations with current Apple Support guidance. Updated the System Settings path and distinguished cycling input sources from switching Japanese input modes."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized names for System Settings, Keyboard Shortcuts, Input Sources, Japanese - Romaji/Kana, Option, and the Control-space defaults in every edition."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked three official Apple Support guide links covering multilingual typing, Japanese input sources, and Japanese input settings."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The instructions were checked against Apple Support documentation but not executed on a Mac; labels and available shortcuts can vary by macOS release, keyboard layout, and customized mappings.",
+        "Option + grave is an example and may be unavailable or conflict with another shortcut on a particular keyboard or configuration."
+      ]
+    },
+    "post/macで日本語⇔英語入力切り替えのショートカットキーを変更する方法/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/macで日本語⇔英語入力切り替えのショートカットキーを変更する方法/index.md",
+      "sourceHash": "5059a4b673c3c466bcb58191f11bb4f51e75b5dc04605143fcb79075f9f660dc",
+      "translationHash": "a8b786d3bf11a084152031cb4d36322eec55a9da0e0abe6de5ba1d31ed3ea0b7",
+      "summary": "Compared the complete translation with the Japanese source and Apple Support’s current Mac and Japanese input method guidance; corrected the settings path, shortcut descriptions, input-source/mode distinction, and metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese instructions and all twelve translations with current Apple Support guidance. Updated the System Settings path and distinguished cycling input sources from switching Japanese input modes."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized names for System Settings, Keyboard Shortcuts, Input Sources, Japanese - Romaji/Kana, Option, and the Control-space defaults in every edition."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked three official Apple Support guide links covering multilingual typing, Japanese input sources, and Japanese input settings."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The instructions were checked against Apple Support documentation but not executed on a Mac; labels and available shortcuts can vary by macOS release, keyboard layout, and customized mappings.",
+        "Option + grave is an example and may be unavailable or conflict with another shortcut on a particular keyboard or configuration."
+      ]
+    },
+    "post/macで日本語⇔英語入力切り替えのショートカットキーを変更する方法/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/macで日本語⇔英語入力切り替えのショートカットキーを変更する方法/index.md",
+      "sourceHash": "5059a4b673c3c466bcb58191f11bb4f51e75b5dc04605143fcb79075f9f660dc",
+      "translationHash": "058123d191b9a80d117e25b07c30aa999aecdc484a079580c54a28c16278090b",
+      "summary": "Compared the complete translation with the Japanese source and Apple Support’s current Mac and Japanese input method guidance; corrected the settings path, shortcut descriptions, input-source/mode distinction, and metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese instructions and all twelve translations with current Apple Support guidance. Updated the System Settings path and distinguished cycling input sources from switching Japanese input modes."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized names for System Settings, Keyboard Shortcuts, Input Sources, Japanese - Romaji/Kana, Option, and the Control-space defaults in every edition."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked three official Apple Support guide links covering multilingual typing, Japanese input sources, and Japanese input settings."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The instructions were checked against Apple Support documentation but not executed on a Mac; labels and available shortcuts can vary by macOS release, keyboard layout, and customized mappings.",
+        "Option + grave is an example and may be unavailable or conflict with another shortcut on a particular keyboard or configuration."
+      ]
+    }
+  }
+}

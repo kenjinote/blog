@@ -1,38 +1,41 @@
 ---
-title: 'Como alterar a tecla de atalho para alternar entre japonês e inglês no Mac (para teclado US)'
-date: "2026-09-24T19:44:38+09:00"
-slug: "macでJaponês⇔英語入力切り替えのTecla de Atalhoを変更する方法"
-date: 2023-04-04T23:02:12+09:00
-tags: ["macos", "mac", "Tecla de Atalho", "Entrada em Japonês"]
-draft: 
+title: "Como alterar o atalho para alternar entre japonês e inglês no Mac"
+date: "2023-04-04T23:02:12+09:00"
+lastmod: "2026-11-25T00:00:00+09:00"
+slug: "macで日本語⇔英語入力切り替えのショートカットキーを変更する方法"
+tags: ["macOS", "Mac", "Atalhos de teclado", "Entrada em japonês"]
+draft: false
 image: "img.webp"
 categories: ["pc-gadgets"]
-description: 'Explicamos como alterar o atalho de teclado para alternar entre japonês e inglês no Mac (teclado US) para a sua combinação preferida, como ''Alt + `''. Também apresentamos o processo de configuração no macOS Ventura e como evitar a inclusão de Katakana ao alternar.'
+description: "Altere o atalho para alternar entre fontes de entrada em japonês e inglês em um Mac com teclado US. Inclui macOS Ventura e explica a diferença entre fontes e modos de entrada."
 ---
 
-# Introdução
+# Como alterar o atalho para alternar entre japonês e inglês no Mac
 
-Eu uso um teclado US e no Windows eu alterno a entrada de japonês com `` Alt + ` ``.
-Eu queria alternar com a mesma tecla no mac, e pesquisando descobri que é possível alterar isso nas configurações.
+Você pode alterar em Ajustes o atalho para alternar entre fontes de entrada em japonês e inglês. A partir do macOS Ventura, o app se chama Ajustes do Sistema; nas versões anteriores, Preferências do Sistema. Em um teclado Apple, a tecla equivalente ao Alt do Windows é Option (⌥). Teclados externos podem ter rótulos ou mapeamentos diferentes.
 
-# Método de configuração (macOS Ventura)
+## Alterar o atalho da fonte de entrada
 
-1. Abra as Preferências do Sistema
-2. Selecione Teclado
-3. Selecione Atalhos de Teclado
-4. Selecione Fontes de Entrada
-5. Clique duas vezes no atalho à direita de "Selecionar a fonte seguinte no menu de entrada"
-6. Pressione `` Alt + ` ``
-7. Clique em Concluído
+1. Abra o menu Apple, escolha `Ajustes do Sistema` e selecione `Teclado`.
 
-Com isso, você pode alternar entre inglês ⇔ japonês com `` Alt + ` ``.
-No entanto, por padrão, o Katakana é incluído na alternância, então removi o Katakana da fonte de entrada seguindo os passos abaixo.
+2. Abra `Atalhos de Teclado` e selecione `Fontes de Entrada`.
 
-1. Abra as Preferências do Sistema
-2. Selecione Teclado
-3. Clique em Editar à direita de `Japonês - Romaji` nas Fontes de Entrada
-4. Clique em `Japonês - Romaji`
-5. Desmarque a opção Katakana no Modo de Entrada
-6. Clique em Concluído
+3. Clique duas vezes no atalho ao lado de `Selecionar a fonte seguinte no menu de entrada` e pressione a combinação desejada. Você pode testar Option + `, mas o layout do teclado ou um conflito com outro atalho pode impedir o uso.
 
-Fim
+4. Clique em `Concluído`.
+
+## Alternar somente entre japonês e inglês
+
+1. O atalho percorre as fontes registradas no menu de entrada. Os padrões da Apple são Control + Espaço para a última fonte usada e Control + Option + Espaço para a próxima. Confira as atribuições atuais em Ajustes.
+
+2. Se várias fontes japonesas aparecerem durante a alternância, abra `Teclado` > `Entrada de Texto` > `Editar` e remova somente a fonte que não usa (por exemplo, Japonês - Kana). Mantenha Japonês - Romaji se digitar japonês com teclado US.
+
+Uma fonte de entrada (como Inglês ou Japonês - Romaji) é diferente de um modo de entrada dentro da fonte japonesa (como Hiragana ou Katakana). Desativar Katakana como modo limita como você pode digitá-lo. Para reduzir a lista de alternância, remova uma fonte que não usa.
+
+## Apple Support
+
+- [Apple Support: Digitar em outro idioma no Mac](https://support.apple.com/en-gb/guide/mac-help/-mchlp1406/mac)
+
+- [Apple Support: Alternar para uma fonte de entrada japonesa no Mac](https://support.apple.com/en-gb/guide/japanese-input-method/jpimf6ffb247/6.3/mac/27)
+
+- [Apple Support: Alterar ajustes da fonte de entrada japonesa no Mac](https://support.apple.com/en-me/guide/japanese-input-method/jpim662a12b9/mac)

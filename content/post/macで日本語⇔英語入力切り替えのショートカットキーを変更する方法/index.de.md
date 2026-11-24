@@ -1,38 +1,41 @@
 ---
-title: 'Wie man die Tastenkombination zum Wechseln zwischen japanischer und englischer Eingabe auf dem Mac ändert (für US-Tastaturen)'
-date: "2026-09-24T19:44:38+09:00"
-slug: "macでJapanisch⇔英語入力切り替えのTastenkombinationを変更する方法"
-date: 2023-04-04T23:02:12+09:00
-tags: ["macos", "mac", "Tastenkombination", "Japanische Eingabe"]
-draft: 
+title: "Tastenkürzel zum Wechseln zwischen Japanisch und Englisch am Mac ändern"
+date: "2023-04-04T23:02:12+09:00"
+lastmod: "2026-11-25T00:00:00+09:00"
+slug: "macで日本語⇔英語入力切り替えのショートカットキーを変更する方法"
+tags: ["macOS", "Mac", "Tastenkürzel", "Japanische Eingabe"]
+draft: false
 image: "img.webp"
 categories: ["pc-gadgets"]
-description: 'Erklärt, wie man das Umschalten zwischen japanischer und englischer Eingabe auf einem Mac (US-Tastatur) auf eine beliebige Tastenkombination wie „Alt + `“ ändert. Stellt auch die Einrichtungsschritte für macOS Ventura und Einstellungen vor, um zu verhindern, dass beim Umschalten Katakana eingefügt werden.'
+description: "So ändern Sie auf einem Mac mit US-Tastatur das Tastenkürzel zum Wechseln zwischen japanischen und englischen Eingabequellen. Mit aktuellen Einstellungen und dem Unterschied zwischen Quelle und Eingabemodus."
 ---
 
-# Einführung
+# Tastenkürzel zum Wechseln zwischen Japanisch und Englisch am Mac ändern
 
-Ich verwende eine US-Tastatur und unter Windows wechsle ich die japanische Eingabe mit `` Alt + ` ``.
-Ich wollte auch auf dem Mac mit derselben Taste wechseln, und nach einiger Recherche fand ich heraus, dass dies in den Einstellungen geändert werden kann.
+Das Tastenkürzel zum Wechseln zwischen japanischen und englischen Eingabequellen lässt sich in den Einstellungen ändern. Seit macOS Ventura heißt die App „Systemeinstellungen“, davor „Systemeinstellungen“ in der älteren App „System Preferences“. Auf einer Apple-Tastatur entspricht Option (⌥) der Alt-Taste unter Windows. Externe Tastaturen können anders beschriftet oder belegt sein.
 
-# Einrichtungsmethode (macOS Ventura)
+## Tastenkürzel für Eingabequellen ändern
 
-1. Öffnen Sie die Systemeinstellungen
-2. Wählen Sie Tastatur
-3. Wählen Sie Tastaturkurzbefehle
-4. Wählen Sie Eingabequellen
-5. Doppelklicken Sie auf die Kurzbefehlanzeige rechts neben "Nächste Quelle im Eingabemenü auswählen"
-6. Drücken Sie `` Alt + ` ``
-7. Klicken Sie auf Fertig
+1. Öffnen Sie das Apple-Menü, wählen Sie `Systemeinstellungen` und dann `Tastatur`.
 
-Jetzt können Sie mit `` Alt + ` `` zwischen Englisch ⇔ Japanisch wechseln.
-Standardmäßig ist jedoch Katakana im Wechsel enthalten, daher habe ich Katakana aus der Eingabequelle entfernt, indem ich die folgenden Schritte ausgeführt habe.
+2. Öffnen Sie `Tastaturkurzbefehle` und wählen Sie `Eingabequellen`.
 
-1. Öffnen Sie die Systemeinstellungen
-2. Wählen Sie Tastatur
-3. Klicken Sie auf Bearbeiten rechts neben `Japanisch - Romaji` in den Eingabequellen
-4. Klicken Sie auf `Japanisch - Romaji`
-5. Deaktivieren Sie Katakana im Eingabemodus
-6. Klicken Sie auf Fertig
+3. Doppelklicken Sie auf das Kürzel neben `Nächste Quelle im Eingabemenü auswählen` und drücken Sie die gewünschte Tastenkombination. Sie können Option + ` ausprobieren; Tastaturlayout oder ein Konflikt mit einem anderen Kürzel können das verhindern.
 
-Das war's
+4. Klicken Sie auf `Fertig`.
+
+## Nur zwischen Japanisch und Englisch wechseln
+
+1. Das Kürzel wechselt zwischen den Quellen im Eingabemenü. Standardmäßig wählt Apple mit Control + Leertaste die zuletzt verwendete Quelle und mit Control + Option + Leertaste die nächste. Prüfen Sie die aktuelle Belegung in den Einstellungen.
+
+2. Wenn mehrere japanische Quellen erscheinen, öffnen Sie `Tastatur` > `Texteingabe` > `Bearbeiten` und entfernen Sie nur die nicht benötigte Quelle (zum Beispiel Japanisch - Kana). Behalten Sie Japanisch - Romaji, wenn Sie mit einer US-Tastatur Japanisch schreiben.
+
+Eine Eingabequelle (etwa Englisch oder Japanisch - Romaji) ist etwas anderes als ein Eingabemodus der japanischen Quelle (etwa Hiragana oder Katakana). Wenn Sie Katakana als Modus deaktivieren, sind die Eingabemöglichkeiten eingeschränkt. Entfernen Sie zum Kürzen der Wechselliste eine ungenutzte Eingabequelle.
+
+## Apple Support
+
+- [Apple Support: In einer anderen Sprache auf dem Mac schreiben](https://support.apple.com/en-gb/guide/mac-help/-mchlp1406/mac)
+
+- [Apple Support: Zu einer japanischen Eingabequelle auf dem Mac wechseln](https://support.apple.com/en-gb/guide/japanese-input-method/jpimf6ffb247/6.3/mac/27)
+
+- [Apple Support: Einstellungen für japanische Eingabequellen auf dem Mac ändern](https://support.apple.com/en-me/guide/japanese-input-method/jpim662a12b9/mac)

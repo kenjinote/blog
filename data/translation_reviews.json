@@ -21485,6 +21485,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-184.json",
       "evidenceHash": "2df94cff7b05bf5897bad0b67c720e89540bcefc90cc54844c0ccb1b9d023507"
+    },
+    "post/macで日本語⇔英語入力切り替えのショートカットキーを変更する方法/index.en.md": {
+      "source": "post/macで日本語⇔英語入力切り替えのショートカットキーを変更する方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "5059a4b673c3c466bcb58191f11bb4f51e75b5dc04605143fcb79075f9f660dc",
+      "translationHash": "d34cce5d165ce69a3c2f2ab0f2933148480701bf56d03646b136f3f0f68baafb",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-185.json",
+      "evidenceHash": "fa1390323e2c9762c87c42027b6022e9f8e451e64c729648bec055b103197f0a"
+    },
+    "post/macで日本語⇔英語入力切り替えのショートカットキーを変更する方法/index.zh-cn.md": {
+      "source": "post/macで日本語⇔英語入力切り替えのショートカットキーを変更する方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "5059a4b673c3c466bcb58191f11bb4f51e75b5dc04605143fcb79075f9f660dc",
+      "translationHash": "725354efae64134e261c9c585f945137a2871656199476ea28b80bf1d2f08531",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-185.json",
+      "evidenceHash": "02ac655ba19513fe8ac8d2b993b32a2875e977a0693d21e0c2aaafb7fd47c1bf"
+    },
+    "post/macで日本語⇔英語入力切り替えのショートカットキーを変更する方法/index.es.md": {
+      "source": "post/macで日本語⇔英語入力切り替えのショートカットキーを変更する方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "5059a4b673c3c466bcb58191f11bb4f51e75b5dc04605143fcb79075f9f660dc",
+      "translationHash": "3211e2e11b6caab2468267bd2bec7170c303773a40c8ee252e5a6b1af76b1d62",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-185.json",
+      "evidenceHash": "7b6b125adc32e52aedc2ce668634487bbf669da20b8616694a36424e36acbf40"
+    },
+    "post/macで日本語⇔英語入力切り替えのショートカットキーを変更する方法/index.ko.md": {
+      "source": "post/macで日本語⇔英語入力切り替えのショートカットキーを変更する方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "5059a4b673c3c466bcb58191f11bb4f51e75b5dc04605143fcb79075f9f660dc",
+      "translationHash": "c5eac53493017fb454fe045873ce5b9ba7a98e2b7aa386060cd4879365ac6ffd",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-185.json",
+      "evidenceHash": "a9b5a9e040f42c583c4768dc3c05009f03cc469868fd6e5b910ef96a858e6bfc"
+    },
+    "post/macで日本語⇔英語入力切り替えのショートカットキーを変更する方法/index.pt.md": {
+      "source": "post/macで日本語⇔英語入力切り替えのショートカットキーを変更する方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "5059a4b673c3c466bcb58191f11bb4f51e75b5dc04605143fcb79075f9f660dc",
+      "translationHash": "fe3c77a2bd7458b986c9a26397814ee2d548f875146afb2c293b61b23c277ccc",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-185.json",
+      "evidenceHash": "47685ecb4dc498baf0c22682e138cfd369f81838865b968e3d2408ec835851d6"
+    },
+    "post/macで日本語⇔英語入力切り替えのショートカットキーを変更する方法/index.zh-tw.md": {
+      "source": "post/macで日本語⇔英語入力切り替えのショートカットキーを変更する方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "5059a4b673c3c466bcb58191f11bb4f51e75b5dc04605143fcb79075f9f660dc",
+      "translationHash": "f701e064f18c7e0a87d499e0762fedfa3de202452c41530d6b2d633c6349a2f1",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-185.json",
+      "evidenceHash": "09f194883e968721e8916609d7c3974f21f1e7edfcc7e8bdeb8cfce95288aaff"
+    },
+    "post/macで日本語⇔英語入力切り替えのショートカットキーを変更する方法/index.hi.md": {
+      "source": "post/macで日本語⇔英語入力切り替えのショートカットキーを変更する方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "5059a4b673c3c466bcb58191f11bb4f51e75b5dc04605143fcb79075f9f660dc",
+      "translationHash": "388741015577365646227270b1ff4c9edd5d07bb2cd6bc6508c29fa5561e8b3d",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-185.json",
+      "evidenceHash": "c0cf0ce8f7a14c6106de21f9d42659c38f17e6b9242a5cfe6b2c6530dd35f9ef"
+    },
+    "post/macで日本語⇔英語入力切り替えのショートカットキーを変更する方法/index.fr.md": {
+      "source": "post/macで日本語⇔英語入力切り替えのショートカットキーを変更する方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "5059a4b673c3c466bcb58191f11bb4f51e75b5dc04605143fcb79075f9f660dc",
+      "translationHash": "8b6f11081d5f2d90774a75044686a417b714587959205953c0eb34a89bc81bbf",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-185.json",
+      "evidenceHash": "2ab4cc49355875158da437f44f1d227dad06398f2a9d28059b94d83ffcd14c53"
+    },
+    "post/macで日本語⇔英語入力切り替えのショートカットキーを変更する方法/index.de.md": {
+      "source": "post/macで日本語⇔英語入力切り替えのショートカットキーを変更する方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "5059a4b673c3c466bcb58191f11bb4f51e75b5dc04605143fcb79075f9f660dc",
+      "translationHash": "9ea48820c9536004a093fdf70e4f7df48a4b3e108c3bd37e0cf139207264cf27",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-185.json",
+      "evidenceHash": "daff95c2e2d01f8e80b4ef9d12eae19ddd710932879bb568d5378c5fe440734f"
+    },
+    "post/macで日本語⇔英語入力切り替えのショートカットキーを変更する方法/index.ar.md": {
+      "source": "post/macで日本語⇔英語入力切り替えのショートカットキーを変更する方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "5059a4b673c3c466bcb58191f11bb4f51e75b5dc04605143fcb79075f9f660dc",
+      "translationHash": "880d81bf041b67279479c84c2a691799cb7d3f56e4eddae922f61fcda0952cc6",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-185.json",
+      "evidenceHash": "b2e4c5232e115e01afdcf9c16b3215bcd59e6e3976600c7c999feae989f49785"
+    },
+    "post/macで日本語⇔英語入力切り替えのショートカットキーを変更する方法/index.ru.md": {
+      "source": "post/macで日本語⇔英語入力切り替えのショートカットキーを変更する方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "5059a4b673c3c466bcb58191f11bb4f51e75b5dc04605143fcb79075f9f660dc",
+      "translationHash": "a8b786d3bf11a084152031cb4d36322eec55a9da0e0abe6de5ba1d31ed3ea0b7",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-185.json",
+      "evidenceHash": "0ac1814c719095d1d411c78bc3de9ea2b28ba4d33bc7acc9188cea32c076f295"
+    },
+    "post/macで日本語⇔英語入力切り替えのショートカットキーを変更する方法/index.id.md": {
+      "source": "post/macで日本語⇔英語入力切り替えのショートカットキーを変更する方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "5059a4b673c3c466bcb58191f11bb4f51e75b5dc04605143fcb79075f9f660dc",
+      "translationHash": "058123d191b9a80d117e25b07c30aa999aecdc484a079580c54a28c16278090b",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-185.json",
+      "evidenceHash": "a4b7647fe8b60145fae9fb9a0f5dd85ab5a10ea06bbc32a6536391bbacbaeec8"
     }
   }
 }
