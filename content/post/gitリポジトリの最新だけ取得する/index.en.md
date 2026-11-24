@@ -1,20 +1,33 @@
 ---
-title: 'How to Get Only the Latest Commit of a Repository with Git clone'
-date: "2026-09-24T19:44:38+09:00"
+title: 'How to Clone a Git Repository with Shallow History'
 slug: "gitRepositoryの最新だけ取得する"
 date: 2024-04-27T02:54:12+09:00
+lastmod: 2026-11-24T00:00:00+09:00
 tags: ["git", "repository", "command"]
 draft: false
 image: "img.webp"
 categories: ["tools-development-environment"]
-description: 'We explain how to get only the latest commit (shallow clone) without downloading the entire history of a Git repository. This is a convenient technique to save disk space and quickly clone a repository using the ''--depth 1'' option.'
+description: 'Learn what git clone --depth 1 transfers, how branch selection works, and how to fetch more history later.'
 ---
 
-# Get only the latest of a git repository
+# Clone a repository with shallow history
 
-You can get only the latest of a repository with the following command.
-It is useful when you want to quickly fetch a repository to save disk space.
+`git clone --depth 1` creates a shallow clone with history depth one from the tip of the selected branch. By default, the selected branch is the remote's default branch. This reduces the amount of commit history transferred, but Git still downloads the current files and required objects, so a repository containing large files can still be large.
 
+```sh
+git clone --depth 1 <repository-url>
 ```
-git clone --depth 1 <repository URL>
+
+To select a branch explicitly, specify its name:
+
+```sh
+git clone --depth 1 --single-branch --branch <branch> <repository-url>
 ```
+
+You can fetch more history later, for example:
+
+```sh
+git -C <directory> fetch --deepen=50 origin <branch>
+```
+
+Replace `<directory>` and `<branch>` with the names you use. With `--depth`, Git also implies `--single-branch` unless you override it. See the official [`git clone`](https://git-scm.com/docs/git-clone) and [`git fetch`](https://git-scm.com/docs/git-fetch) manuals for details, including `--unshallow`.

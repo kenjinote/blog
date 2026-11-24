@@ -1,20 +1,33 @@
 ---
-title: 'Wie man mit Git clone nur den neuesten Commit eines Repositories abruft'
-date: "2026-09-24T19:44:38+09:00"
+title: 'Ein Git-Repository mit flacher Historie klonen'
 slug: "gitRepositoryの最新だけ取得する"
 date: 2024-04-27T02:54:12+09:00
+lastmod: 2026-11-24T00:00:00+09:00
 tags: ["git", "Repository", "Befehl"]
 draft: false
 image: "img.webp"
 categories: ["tools-development-environment"]
-description: 'Wir erklären, wie man nur den neuesten Commit abruft (Shallow Clone), ohne die gesamte Historie des Git-Repositories herunterzuladen. Eine nützliche Technik, um Speicherplatz zu sparen und ein Repository schnell mit der Option „--depth 1“ zu klonen.'
+description: 'Erfahren Sie, was git clone --depth 1 überträgt, wie Sie einen Branch wählen und später weitere Historie abrufen.'
 ---
 
-# Nur die neueste Version des git-Repositorys abrufen
+# Ein Repository mit flacher Historie klonen
 
-Mit dem folgenden Befehl können Sie nur die neueste Version des Repositorys abrufen.
-Dies ist nützlich, wenn Sie das Repository schnell abrufen möchten, um Speicherplatz zu sparen.
+`git clone --depth 1` erstellt einen flachen Klon mit Historientiefe eins ab der Spitze des ausgewählten Branches. Standardmäßig ist das der Standardbranch des Remotes. Dadurch wird weniger Commit-Historie übertragen; die aktuellen Dateien und benötigten Git-Objekte lädt Git jedoch weiterhin herunter. Ein Repository mit großen Dateien kann daher trotzdem umfangreich sein.
 
+```sh
+git clone --depth 1 <repository-url>
 ```
-git clone --depth 1 <Repository-URL>
+
+Einen Branch wählen Sie ausdrücklich mit seinem Namen aus:
+
+```sh
+git clone --depth 1 --single-branch --branch <branch> <repository-url>
 ```
+
+Später können Sie weitere Historie abrufen, zum Beispiel:
+
+```sh
+git -C <directory> fetch --deepen=50 origin <branch>
+```
+
+Ersetzen Sie `<directory>` und `<branch>` durch die verwendeten Namen. Bei `--depth` gilt außerdem `--single-branch`, sofern Sie dies nicht ausdrücklich ändern. Details einschließlich `--unshallow` finden Sie in den offiziellen Handbüchern zu [`git clone`](https://git-scm.com/docs/git-clone) und [`git fetch`](https://git-scm.com/docs/git-fetch).

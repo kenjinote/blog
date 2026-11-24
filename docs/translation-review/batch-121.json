@@ -1,0 +1,454 @@
+{
+  "version": 1,
+  "batch": 121,
+  "article": "Git shallow clone",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "1fe5fef092d1c022502592dbd20a9de634b7cee0ca89d518be99b634b19e84d4",
+  "sources": [
+    "https://git-scm.com/docs/git-clone",
+    "https://git-scm.com/docs/git-fetch"
+  ],
+  "scope": "Compared the full Japanese article and all twelve translations for technical meaning, branch/history terminology, command syntax, scope of downloaded data, dates, and links.",
+  "findings": [
+    "Removed the duplicate future publication date; retained the original 2024-04-27 publication date and set lastmod to the review date.",
+    "Replaced the inaccurate claim that only the latest commit is obtained with the documented shallow-clone depth-one behavior from the selected branch tip.",
+    "Explained default branch selection and the implied single-branch behavior of --depth; added explicit branch selection.",
+    "Clarified that current files and required Git objects are still downloaded, so large current content can still make a clone large.",
+    "Added a fetch --deepen example and links to the official git-clone and git-fetch manuals."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/gitリポジトリの最新だけ取得する/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/gitリポジトリの最新だけ取得する/index.md",
+      "sourceHash": "1fe5fef092d1c022502592dbd20a9de634b7cee0ca89d518be99b634b19e84d4",
+      "translationHash": "302918892fc149c123ef51247233a4bedc2efedbb4735e51c4b2b50ec9622a48",
+      "summary": "Corrected the shallow-clone scope and aligned branch selection, transfer-size caveats, later history retrieval, and official references with the Git manuals.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the explanation of shallow history with the Git manual; clarified depth from the selected branch tip, default branch selection, and that current tree/files and required objects are still transferred."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked shallow clone, commit history depth, branch, remote default branch, single-branch behavior, deepen, and unshallow terminology across the translation."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical derivation or calculation appears; the depth value is the documented Git option parameter."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the clone and fetch command syntax against the Git manuals. Commands were statically reviewed but not run against a test repository."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked links to the official git-clone and git-fetch manuals."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Git transfer details depend on server capabilities, object layout, filters, and repository contents; the examples describe standard Git behavior.",
+        "Command examples were checked statically, not executed against a live remote repository."
+      ]
+    },
+    "post/gitリポジトリの最新だけ取得する/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/gitリポジトリの最新だけ取得する/index.md",
+      "sourceHash": "1fe5fef092d1c022502592dbd20a9de634b7cee0ca89d518be99b634b19e84d4",
+      "translationHash": "bea091821cb76ab1e6dc98b942f4d5208e13cc810d1c60ce161d46eba52c9e07",
+      "summary": "Corrected the shallow-clone scope and aligned branch selection, transfer-size caveats, later history retrieval, and official references with the Git manuals.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the explanation of shallow history with the Git manual; clarified depth from the selected branch tip, default branch selection, and that current tree/files and required objects are still transferred."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked shallow clone, commit history depth, branch, remote default branch, single-branch behavior, deepen, and unshallow terminology across the translation."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical derivation or calculation appears; the depth value is the documented Git option parameter."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the clone and fetch command syntax against the Git manuals. Commands were statically reviewed but not run against a test repository."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked links to the official git-clone and git-fetch manuals."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Git transfer details depend on server capabilities, object layout, filters, and repository contents; the examples describe standard Git behavior.",
+        "Command examples were checked statically, not executed against a live remote repository."
+      ]
+    },
+    "post/gitリポジトリの最新だけ取得する/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/gitリポジトリの最新だけ取得する/index.md",
+      "sourceHash": "1fe5fef092d1c022502592dbd20a9de634b7cee0ca89d518be99b634b19e84d4",
+      "translationHash": "08171fb6b0055cfbe8402d699228205fba4fe6482126d6baec9bc2c59e72a13b",
+      "summary": "Corrected the shallow-clone scope and aligned branch selection, transfer-size caveats, later history retrieval, and official references with the Git manuals.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the explanation of shallow history with the Git manual; clarified depth from the selected branch tip, default branch selection, and that current tree/files and required objects are still transferred."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked shallow clone, commit history depth, branch, remote default branch, single-branch behavior, deepen, and unshallow terminology across the translation."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical derivation or calculation appears; the depth value is the documented Git option parameter."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the clone and fetch command syntax against the Git manuals. Commands were statically reviewed but not run against a test repository."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked links to the official git-clone and git-fetch manuals."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Git transfer details depend on server capabilities, object layout, filters, and repository contents; the examples describe standard Git behavior.",
+        "Command examples were checked statically, not executed against a live remote repository."
+      ]
+    },
+    "post/gitリポジトリの最新だけ取得する/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/gitリポジトリの最新だけ取得する/index.md",
+      "sourceHash": "1fe5fef092d1c022502592dbd20a9de634b7cee0ca89d518be99b634b19e84d4",
+      "translationHash": "3b4e42b2b1c84e1d39db49a187ffa74117989696adfbcef23c62f4c108e87767",
+      "summary": "Corrected the shallow-clone scope and aligned branch selection, transfer-size caveats, later history retrieval, and official references with the Git manuals.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the explanation of shallow history with the Git manual; clarified depth from the selected branch tip, default branch selection, and that current tree/files and required objects are still transferred."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked shallow clone, commit history depth, branch, remote default branch, single-branch behavior, deepen, and unshallow terminology across the translation."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical derivation or calculation appears; the depth value is the documented Git option parameter."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the clone and fetch command syntax against the Git manuals. Commands were statically reviewed but not run against a test repository."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked links to the official git-clone and git-fetch manuals."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Git transfer details depend on server capabilities, object layout, filters, and repository contents; the examples describe standard Git behavior.",
+        "Command examples were checked statically, not executed against a live remote repository."
+      ]
+    },
+    "post/gitリポジトリの最新だけ取得する/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/gitリポジトリの最新だけ取得する/index.md",
+      "sourceHash": "1fe5fef092d1c022502592dbd20a9de634b7cee0ca89d518be99b634b19e84d4",
+      "translationHash": "c193e241c28ead32e876c902a0f568575729cb497afc041ee367f5ab609a8a1c",
+      "summary": "Corrected the shallow-clone scope and aligned branch selection, transfer-size caveats, later history retrieval, and official references with the Git manuals.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the explanation of shallow history with the Git manual; clarified depth from the selected branch tip, default branch selection, and that current tree/files and required objects are still transferred."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked shallow clone, commit history depth, branch, remote default branch, single-branch behavior, deepen, and unshallow terminology across the translation."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical derivation or calculation appears; the depth value is the documented Git option parameter."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the clone and fetch command syntax against the Git manuals. Commands were statically reviewed but not run against a test repository."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked links to the official git-clone and git-fetch manuals."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Git transfer details depend on server capabilities, object layout, filters, and repository contents; the examples describe standard Git behavior.",
+        "Command examples were checked statically, not executed against a live remote repository."
+      ]
+    },
+    "post/gitリポジトリの最新だけ取得する/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/gitリポジトリの最新だけ取得する/index.md",
+      "sourceHash": "1fe5fef092d1c022502592dbd20a9de634b7cee0ca89d518be99b634b19e84d4",
+      "translationHash": "eded3ba416ecedf922105d3078c78921680a5d91d6e0a9e2ce7dd77bf0de6b0d",
+      "summary": "Corrected the shallow-clone scope and aligned branch selection, transfer-size caveats, later history retrieval, and official references with the Git manuals.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the explanation of shallow history with the Git manual; clarified depth from the selected branch tip, default branch selection, and that current tree/files and required objects are still transferred."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked shallow clone, commit history depth, branch, remote default branch, single-branch behavior, deepen, and unshallow terminology across the translation."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical derivation or calculation appears; the depth value is the documented Git option parameter."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the clone and fetch command syntax against the Git manuals. Commands were statically reviewed but not run against a test repository."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked links to the official git-clone and git-fetch manuals."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Git transfer details depend on server capabilities, object layout, filters, and repository contents; the examples describe standard Git behavior.",
+        "Command examples were checked statically, not executed against a live remote repository."
+      ]
+    },
+    "post/gitリポジトリの最新だけ取得する/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/gitリポジトリの最新だけ取得する/index.md",
+      "sourceHash": "1fe5fef092d1c022502592dbd20a9de634b7cee0ca89d518be99b634b19e84d4",
+      "translationHash": "0cbb919135baa323421a0ecabfbe794490491e46f7c5846e4446b7456a5b6e29",
+      "summary": "Corrected the shallow-clone scope and aligned branch selection, transfer-size caveats, later history retrieval, and official references with the Git manuals.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the explanation of shallow history with the Git manual; clarified depth from the selected branch tip, default branch selection, and that current tree/files and required objects are still transferred."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked shallow clone, commit history depth, branch, remote default branch, single-branch behavior, deepen, and unshallow terminology across the translation."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical derivation or calculation appears; the depth value is the documented Git option parameter."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the clone and fetch command syntax against the Git manuals. Commands were statically reviewed but not run against a test repository."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked links to the official git-clone and git-fetch manuals."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Git transfer details depend on server capabilities, object layout, filters, and repository contents; the examples describe standard Git behavior.",
+        "Command examples were checked statically, not executed against a live remote repository."
+      ]
+    },
+    "post/gitリポジトリの最新だけ取得する/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/gitリポジトリの最新だけ取得する/index.md",
+      "sourceHash": "1fe5fef092d1c022502592dbd20a9de634b7cee0ca89d518be99b634b19e84d4",
+      "translationHash": "5570b2d8dedb9a7b12b0d414ac5c57d19c576d92cb1163720e44cc8fd2313070",
+      "summary": "Corrected the shallow-clone scope and aligned branch selection, transfer-size caveats, later history retrieval, and official references with the Git manuals.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the explanation of shallow history with the Git manual; clarified depth from the selected branch tip, default branch selection, and that current tree/files and required objects are still transferred."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked shallow clone, commit history depth, branch, remote default branch, single-branch behavior, deepen, and unshallow terminology across the translation."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical derivation or calculation appears; the depth value is the documented Git option parameter."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the clone and fetch command syntax against the Git manuals. Commands were statically reviewed but not run against a test repository."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked links to the official git-clone and git-fetch manuals."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Git transfer details depend on server capabilities, object layout, filters, and repository contents; the examples describe standard Git behavior.",
+        "Command examples were checked statically, not executed against a live remote repository."
+      ]
+    },
+    "post/gitリポジトリの最新だけ取得する/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/gitリポジトリの最新だけ取得する/index.md",
+      "sourceHash": "1fe5fef092d1c022502592dbd20a9de634b7cee0ca89d518be99b634b19e84d4",
+      "translationHash": "f6b2859a69025b7bfe6f997d45a2fc4c05abd7a5a1ee225a1dc151fb397c5d77",
+      "summary": "Corrected the shallow-clone scope and aligned branch selection, transfer-size caveats, later history retrieval, and official references with the Git manuals.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the explanation of shallow history with the Git manual; clarified depth from the selected branch tip, default branch selection, and that current tree/files and required objects are still transferred."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked shallow clone, commit history depth, branch, remote default branch, single-branch behavior, deepen, and unshallow terminology across the translation."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical derivation or calculation appears; the depth value is the documented Git option parameter."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the clone and fetch command syntax against the Git manuals. Commands were statically reviewed but not run against a test repository."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked links to the official git-clone and git-fetch manuals."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Git transfer details depend on server capabilities, object layout, filters, and repository contents; the examples describe standard Git behavior.",
+        "Command examples were checked statically, not executed against a live remote repository."
+      ]
+    },
+    "post/gitリポジトリの最新だけ取得する/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/gitリポジトリの最新だけ取得する/index.md",
+      "sourceHash": "1fe5fef092d1c022502592dbd20a9de634b7cee0ca89d518be99b634b19e84d4",
+      "translationHash": "c294bc50a5d1f1ade8775f5e1bc8adc93ced34e2c027c54057191e3560f7ea72",
+      "summary": "Corrected the shallow-clone scope and aligned branch selection, transfer-size caveats, later history retrieval, and official references with the Git manuals.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the explanation of shallow history with the Git manual; clarified depth from the selected branch tip, default branch selection, and that current tree/files and required objects are still transferred."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked shallow clone, commit history depth, branch, remote default branch, single-branch behavior, deepen, and unshallow terminology across the translation."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical derivation or calculation appears; the depth value is the documented Git option parameter."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the clone and fetch command syntax against the Git manuals. Commands were statically reviewed but not run against a test repository."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked links to the official git-clone and git-fetch manuals."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Git transfer details depend on server capabilities, object layout, filters, and repository contents; the examples describe standard Git behavior.",
+        "Command examples were checked statically, not executed against a live remote repository."
+      ]
+    },
+    "post/gitリポジトリの最新だけ取得する/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/gitリポジトリの最新だけ取得する/index.md",
+      "sourceHash": "1fe5fef092d1c022502592dbd20a9de634b7cee0ca89d518be99b634b19e84d4",
+      "translationHash": "bcc556040323f671fa1c89bf39d177cc90763dafe1a8cdc45824c1f91d824c8b",
+      "summary": "Corrected the shallow-clone scope and aligned branch selection, transfer-size caveats, later history retrieval, and official references with the Git manuals.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the explanation of shallow history with the Git manual; clarified depth from the selected branch tip, default branch selection, and that current tree/files and required objects are still transferred."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked shallow clone, commit history depth, branch, remote default branch, single-branch behavior, deepen, and unshallow terminology across the translation."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical derivation or calculation appears; the depth value is the documented Git option parameter."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the clone and fetch command syntax against the Git manuals. Commands were statically reviewed but not run against a test repository."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked links to the official git-clone and git-fetch manuals."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Git transfer details depend on server capabilities, object layout, filters, and repository contents; the examples describe standard Git behavior.",
+        "Command examples were checked statically, not executed against a live remote repository."
+      ]
+    },
+    "post/gitリポジトリの最新だけ取得する/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/gitリポジトリの最新だけ取得する/index.md",
+      "sourceHash": "1fe5fef092d1c022502592dbd20a9de634b7cee0ca89d518be99b634b19e84d4",
+      "translationHash": "e66bee98c660d4693c47f4793f953ac6f9ce7059a114979f09d815551e72f423",
+      "summary": "Corrected the shallow-clone scope and aligned branch selection, transfer-size caveats, later history retrieval, and official references with the Git manuals.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the explanation of shallow history with the Git manual; clarified depth from the selected branch tip, default branch selection, and that current tree/files and required objects are still transferred."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked shallow clone, commit history depth, branch, remote default branch, single-branch behavior, deepen, and unshallow terminology across the translation."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical derivation or calculation appears; the depth value is the documented Git option parameter."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the clone and fetch command syntax against the Git manuals. Commands were statically reviewed but not run against a test repository."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked links to the official git-clone and git-fetch manuals."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Git transfer details depend on server capabilities, object layout, filters, and repository contents; the examples describe standard Git behavior.",
+        "Command examples were checked statically, not executed against a live remote repository."
+      ]
+    }
+  }
+}

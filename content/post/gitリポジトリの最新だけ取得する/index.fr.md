@@ -1,20 +1,33 @@
 ---
-title: 'Comment récupérer uniquement le dernier commit d''un dépôt avec Git clone'
-date: "2026-09-24T19:44:38+09:00"
+title: 'Cloner un dépôt Git avec un historique superficiel'
 slug: "gitDépôtの最新だけ取得する"
 date: 2024-04-27T02:54:12+09:00
+lastmod: 2026-11-24T00:00:00+09:00
 tags: ["git", "dépôt", "commande"]
 draft: false
 image: "img.webp"
 categories: ["tools-development-environment"]
-description: 'Nous expliquons comment récupérer uniquement le dernier commit (clone superficiel) sans télécharger tout l''historique d''un dépôt Git. Il s''agit d''une technique pratique pour économiser de l''espace disque et cloner rapidement un dépôt à l''aide de l''option « --depth 1 ».'
+description: 'Découvrez ce que transfère git clone --depth 1, comment choisir une branche et récupérer davantage d’historique.'
 ---
 
-# Obtenir uniquement la dernière version du dépôt git
+# Cloner un dépôt avec un historique superficiel
 
-Vous pouvez obtenir uniquement la dernière version du dépôt avec la commande suivante.
-C'est utile lorsque vous souhaitez obtenir le dépôt rapidement pour économiser de l'espace disque.
+`git clone --depth 1` crée un clone superficiel dont la profondeur d’historique est de un à partir de la tête de la branche sélectionnée. Par défaut, il s’agit de la branche par défaut du dépôt distant. Cela réduit l’historique des commits transféré, mais Git télécharge toujours les fichiers actuels et les objets nécessaires : un dépôt contenant de gros fichiers peut donc rester volumineux.
 
+```sh
+git clone --depth 1 <repository-url>
 ```
-git clone --depth 1 <URL du dépôt>
+
+Pour choisir une branche, indiquez son nom :
+
+```sh
+git clone --depth 1 --single-branch --branch <branch> <repository-url>
 ```
+
+Vous pouvez récupérer davantage d’historique ensuite, par exemple :
+
+```sh
+git -C <directory> fetch --deepen=50 origin <branch>
+```
+
+Remplacez `<directory>` et `<branch>` par les noms utilisés. Avec `--depth`, Git implique aussi `--single-branch`, sauf indication contraire. Consultez les manuels officiels de [`git clone`](https://git-scm.com/docs/git-clone) et [`git fetch`](https://git-scm.com/docs/git-fetch), notamment pour `--unshallow`.

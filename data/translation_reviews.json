@@ -13925,6 +13925,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-120.json",
       "evidenceHash": "28116da162a44999a7f8b7ca1c9e6626b5b89cfc07419fb98c4b3cec855aed55"
+    },
+    "post/gitリポジトリの最新だけ取得する/index.en.md": {
+      "source": "post/gitリポジトリの最新だけ取得する/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "1fe5fef092d1c022502592dbd20a9de634b7cee0ca89d518be99b634b19e84d4",
+      "translationHash": "302918892fc149c123ef51247233a4bedc2efedbb4735e51c4b2b50ec9622a48",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-121.json",
+      "evidenceHash": "f5796963c5c034d7e7cbcfb1199cbafe9442ec6b3a75b6098923294c08b44c78"
+    },
+    "post/gitリポジトリの最新だけ取得する/index.zh-cn.md": {
+      "source": "post/gitリポジトリの最新だけ取得する/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "1fe5fef092d1c022502592dbd20a9de634b7cee0ca89d518be99b634b19e84d4",
+      "translationHash": "bea091821cb76ab1e6dc98b942f4d5208e13cc810d1c60ce161d46eba52c9e07",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-121.json",
+      "evidenceHash": "fdb50db0e6ef9e393226213723a1ce41ad6104ba6c781c9fc15761840ea33045"
+    },
+    "post/gitリポジトリの最新だけ取得する/index.es.md": {
+      "source": "post/gitリポジトリの最新だけ取得する/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "1fe5fef092d1c022502592dbd20a9de634b7cee0ca89d518be99b634b19e84d4",
+      "translationHash": "08171fb6b0055cfbe8402d699228205fba4fe6482126d6baec9bc2c59e72a13b",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-121.json",
+      "evidenceHash": "e4464a39df725f71409f7d2def4c22e2aa55e3b31985359ee1551897a08a3c0f"
+    },
+    "post/gitリポジトリの最新だけ取得する/index.ko.md": {
+      "source": "post/gitリポジトリの最新だけ取得する/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "1fe5fef092d1c022502592dbd20a9de634b7cee0ca89d518be99b634b19e84d4",
+      "translationHash": "3b4e42b2b1c84e1d39db49a187ffa74117989696adfbcef23c62f4c108e87767",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-121.json",
+      "evidenceHash": "8384a5e1a21c3152c93b399805ba626c1b9cf179f7b3477d66f204fdaf2c587c"
+    },
+    "post/gitリポジトリの最新だけ取得する/index.pt.md": {
+      "source": "post/gitリポジトリの最新だけ取得する/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "1fe5fef092d1c022502592dbd20a9de634b7cee0ca89d518be99b634b19e84d4",
+      "translationHash": "c193e241c28ead32e876c902a0f568575729cb497afc041ee367f5ab609a8a1c",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-121.json",
+      "evidenceHash": "d25229f0d21ba5a46dd34b41e1ce0ba58ecb6890365a013c86bc5b050781f87b"
+    },
+    "post/gitリポジトリの最新だけ取得する/index.zh-tw.md": {
+      "source": "post/gitリポジトリの最新だけ取得する/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "1fe5fef092d1c022502592dbd20a9de634b7cee0ca89d518be99b634b19e84d4",
+      "translationHash": "eded3ba416ecedf922105d3078c78921680a5d91d6e0a9e2ce7dd77bf0de6b0d",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-121.json",
+      "evidenceHash": "d31b403ec7e719c251213f20cba2328422cabe40641187b42bb33132a2041e16"
+    },
+    "post/gitリポジトリの最新だけ取得する/index.hi.md": {
+      "source": "post/gitリポジトリの最新だけ取得する/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "1fe5fef092d1c022502592dbd20a9de634b7cee0ca89d518be99b634b19e84d4",
+      "translationHash": "0cbb919135baa323421a0ecabfbe794490491e46f7c5846e4446b7456a5b6e29",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-121.json",
+      "evidenceHash": "577c341208e60c4fe8874e27ecdc212e95390b4ba6cdde8146b73e5ecfdf2337"
+    },
+    "post/gitリポジトリの最新だけ取得する/index.fr.md": {
+      "source": "post/gitリポジトリの最新だけ取得する/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "1fe5fef092d1c022502592dbd20a9de634b7cee0ca89d518be99b634b19e84d4",
+      "translationHash": "5570b2d8dedb9a7b12b0d414ac5c57d19c576d92cb1163720e44cc8fd2313070",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-121.json",
+      "evidenceHash": "528ecc30e4ac0b392bb85a7e7c542962ec61838920965e35ce7e3f8e1a31e446"
+    },
+    "post/gitリポジトリの最新だけ取得する/index.de.md": {
+      "source": "post/gitリポジトリの最新だけ取得する/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "1fe5fef092d1c022502592dbd20a9de634b7cee0ca89d518be99b634b19e84d4",
+      "translationHash": "f6b2859a69025b7bfe6f997d45a2fc4c05abd7a5a1ee225a1dc151fb397c5d77",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-121.json",
+      "evidenceHash": "50f05da203a50a2e155c8cdcf5371d43a07ed460f59d4bd12bbb4d5a24d34c33"
+    },
+    "post/gitリポジトリの最新だけ取得する/index.ar.md": {
+      "source": "post/gitリポジトリの最新だけ取得する/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "1fe5fef092d1c022502592dbd20a9de634b7cee0ca89d518be99b634b19e84d4",
+      "translationHash": "c294bc50a5d1f1ade8775f5e1bc8adc93ced34e2c027c54057191e3560f7ea72",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-121.json",
+      "evidenceHash": "dfa2b609641824b292ef5ad62063f6ff7dacca9da57ea5032360057c99b2263c"
+    },
+    "post/gitリポジトリの最新だけ取得する/index.ru.md": {
+      "source": "post/gitリポジトリの最新だけ取得する/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "1fe5fef092d1c022502592dbd20a9de634b7cee0ca89d518be99b634b19e84d4",
+      "translationHash": "bcc556040323f671fa1c89bf39d177cc90763dafe1a8cdc45824c1f91d824c8b",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-121.json",
+      "evidenceHash": "397584987e4e69fb69caa76e77b3e138f645300270e37c889d354ce5d1f23e9c"
+    },
+    "post/gitリポジトリの最新だけ取得する/index.id.md": {
+      "source": "post/gitリポジトリの最新だけ取得する/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "1fe5fef092d1c022502592dbd20a9de634b7cee0ca89d518be99b634b19e84d4",
+      "translationHash": "e66bee98c660d4693c47f4793f953ac6f9ce7059a114979f09d815551e72f423",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-121.json",
+      "evidenceHash": "82e465a1577ac9328775e7e316b315a46140f5cd65eb78ea1b2916fc9bd47d01"
     }
   }
 }
