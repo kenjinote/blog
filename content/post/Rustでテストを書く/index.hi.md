@@ -1,8 +1,8 @@
 ---
 title: 'Rust में टेस्ट कैसे लिखें और चलाएं: शुरुआती मार्गदर्शिका (cargo test)'
-date: "2026-09-24T19:44:38+09:00"
 slug: "Rustでपरीक्षणを書く"
-date: 2022-10-01T02:00:59+09:00
+date: "2022-10-01T02:00:59+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 tags: ["Rust","टेस्ट"]
 draft: false
 image: "images/rust_logo.webp"
@@ -10,58 +10,34 @@ categories: ["programming"]
 description: 'हम शुरुआती लोगों के लिए Rust में परीक्षण कोड लिखने का तरीका और cargo test कमांड का उपयोग करके परीक्षण निष्पादन प्रक्रिया समझाते हैं। #[test] विशेषता का उपयोग करने का तरीका और सफलता/विफलता के आउटपुट परिणामों को विशिष्ट कोड उदाहरणों के साथ विस्तार से प्रस्तुत किया गया है।'
 ---
 
-[Rust](https://kenji.blog/hi/p/webassembly-wasm-current-future/) में टेस्ट लिखने के लिए, टेस्ट फ़ंक्शन की परिभाषा के ठीक ऊपर `#[test]` एट्रिब्यूट जोड़कर फ़ंक्शन बनाएं।
+[Rust](https://kenji.blog/hi/p/webassembly-wasm-current-future/) `#[test]` से चिह्नित फ़ंक्शन को परीक्षण के रूप में चलाता है। यह उदाहरण `#[cfg(test)]` मॉड्यूल में जोड़ने वाले फ़ंक्शन का यूनिट टेस्ट दिखाता है।
 
 ```rust
-fn plus(a:i32,b:i32)->i32 {
-  a+b
+fn add(left: i32, right: i32) -> i32 {
+    left + right
 }
 
-#[test]
-fn plus_test() {
-  assert_eq!(plus(1, 1), 2);
+#[cfg(test)]
+mod tests {
+    use super::add;
+
+    #[test]
+    fn adds_two_numbers() {
+        assert_eq!(add(2, 2), 4);
+    }
 }
 ```
 
-टेस्ट कोड को `cargo test` से चलाया जा सकता है। जब टेस्ट सफल होता है, तो यह `ok` आउटपुट देता है।
-विफल होने पर, यह `FAILED` आउटपुट देता है।
+`cargo test` पैकेज के परीक्षणों को बिल्ड करके चलाता है। पास होने पर परीक्षण के आगे `ok` और सारांश में `test result: ok` दिखता है।
 
-सफल होने पर
 ```bash
-C:\Users\admin\Desktop\test1>cargo test
-   Compiling test1 v0.1.0 (C:\Users\admin\Desktop\test1)
-    Finished test [unoptimized + debuginfo] target(s) in 0.35s
-     Running unittests src\main.rs (target\debug\deps\test1-be5d3118bc52cb3a.exe)
-
-running 1 test
-test plus_test ... ok
-
-test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+cargo test
 ```
 
-विफल होने पर
-```bash
-C:\Users\admin\Desktop\test1>cargo test
-   Compiling test1 v0.1.0 (C:\Users\admin\Desktop\test1)
-    Finished test [unoptimized + debuginfo] target(s) in 0.33s
-     Running unittests src\main.rs (target\debug\deps\test1-be5d3118bc52cb3a.exe)
+Assertion विफल होने पर संबंधित टेस्ट `FAILED` दिखता है और Cargo त्रुटि के साथ समाप्त होता है। पथ, पंक्ति संख्या और समय वातावरण तथा Rust संस्करण के अनुसार बदलते हैं।
 
-running 1 test
-test plus_test ... FAILED
+## संदर्भ
 
-failures:
-
----- plus_test stdout ----
-thread 'plus_test' panicked at 'assertion failed: `(left == right)`
-  left: `2`,
- right: `3`', src\main.rs:7:5
-note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
-
-
-failures:
-    plus_test
-
-test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
-
-error: test failed, to rerun pass '--bin test1'
-```
+- [The Rust Programming Language: How to Write Tests](https://doc.rust-lang.org/book/ch11-01-writing-tests.html)
+- [The Cargo Book: cargo test](https://doc.rust-lang.org/cargo/commands/cargo-test.html)
+- [The Rust Reference: test attributes](https://doc.rust-lang.org/reference/attributes/testing.html)

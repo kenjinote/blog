@@ -1,8 +1,8 @@
 ---
 title: 'Pengenalan Cara Menulis dan Menjalankan Pengujian di Rust (cargo test)'
-date: "2026-09-24T19:44:38+09:00"
 slug: "RustでTesを書く"
-date: 2022-10-01T02:00:59+09:00
+date: "2022-10-01T02:00:59+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 tags: ["Rust", "pengujian"]
 draft: false
 image: "images/rust_logo.webp"
@@ -10,58 +10,34 @@ categories: ["programming"]
 description: 'Menjelaskan untuk pemula cara menulis kode pengujian di Rust dan prosedur untuk menjalankan pengujian menggunakan perintah cargo test. Kami juga memperkenalkan secara rinci cara menggunakan atribut #[test] dan hasil keluaran jika berhasil atau gagal, lengkap dengan contoh kode spesifik.'
 ---
 
-Untuk menulis pengujian di [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/), buat sebuah fungsi dan tambahkan atribut `#[test]` satu baris di atas definisi fungsi pengujian tersebut.
+[Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/) menjalankan fungsi yang diberi atribut `#[test]` sebagai tes. Contoh ini menempatkan pengujian unit untuk fungsi penjumlahan di dalam modul `#[cfg(test)]`.
 
 ```rust
-fn plus(a:i32,b:i32)->i32 {
-  a+b
+fn add(left: i32, right: i32) -> i32 {
+    left + right
 }
 
-#[test]
-fn plus_test() {
-  assert_eq!(plus(1, 1), 2);
+#[cfg(test)]
+mod tests {
+    use super::add;
+
+    #[test]
+    fn adds_two_numbers() {
+        assert_eq!(add(2, 2), 4);
+    }
 }
 ```
 
-Kode pengujian dapat dijalankan dengan `cargo test`. Jika pengujian berhasil, `ok` akan dikeluarkan.
-Jika gagal, `FAILED` akan dikeluarkan.
+`cargo test` membangun dan menjalankan tes paket. Tes yang lolos menampilkan `ok`, dan ringkasan memuat `test result: ok`.
 
-Jika berhasil
 ```bash
-C:\Users\admin\Desktop\test1>cargo test
-   Compiling test1 v0.1.0 (C:\Users\admin\Desktop\test1)
-    Finished test [unoptimized + debuginfo] target(s) in 0.35s
-     Running unittests src\main.rs (target\debug\deps\test1-be5d3118bc52cb3a.exe)
-
-running 1 test
-test plus_test ... ok
-
-test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+cargo test
 ```
 
-Jika gagal
-```bash
-C:\Users\admin\Desktop\test1>cargo test
-   Compiling test1 v0.1.0 (C:\Users\admin\Desktop\test1)
-    Finished test [unoptimized + debuginfo] target(s) in 0.33s
-     Running unittests src\main.rs (target\debug\deps\test1-be5d3118bc52cb3a.exe)
+Jika assertion gagal, tes terkait ditandai `FAILED` dan Cargo keluar dengan status error. Path, nomor baris, dan durasi bergantung pada lingkungan dan versi Rust.
 
-running 1 test
-test plus_test ... FAILED
+## Referensi
 
-failures:
-
----- plus_test stdout ----
-thread 'plus_test' panicked at 'assertion failed: `(left == right)`
-  left: `2`,
- right: `3`', src\main.rs:7:5
-note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
-
-
-failures:
-    plus_test
-
-test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
-
-error: test failed, to rerun pass '--bin test1'
-```
+- [The Rust Programming Language: How to Write Tests](https://doc.rust-lang.org/book/ch11-01-writing-tests.html)
+- [The Cargo Book: cargo test](https://doc.rust-lang.org/cargo/commands/cargo-test.html)
+- [The Rust Reference: test attributes](https://doc.rust-lang.org/reference/attributes/testing.html)

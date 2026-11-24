@@ -19805,6 +19805,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-170.json",
       "evidenceHash": "75a612fbc943b8d625b3a7fe15eea340468a8cf66c3fa161c87790dc765d8ef2"
+    },
+    "post/Rustでテストを書く/index.en.md": {
+      "source": "post/Rustでテストを書く/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "d5b4c07426e68441ee1857714026d653d49d4124ce0f818978108876b1c940f3",
+      "translationHash": "da0724f2cc95e2bfbd30bac6385fe4dafa6ed834a03294e757502235f08906b5",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-171.json",
+      "evidenceHash": "1bc1c2175e01577571c87f44bf792f26a1cf72101f0424ee9bd290a922d651e0"
+    },
+    "post/Rustでテストを書く/index.zh-cn.md": {
+      "source": "post/Rustでテストを書く/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "d5b4c07426e68441ee1857714026d653d49d4124ce0f818978108876b1c940f3",
+      "translationHash": "21136ca78c24a804c4e6b1e20d96dfca0d13e4689e4a63061e11a70376a51a71",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-171.json",
+      "evidenceHash": "09c0c511d1d3a94e08b8c8039000db464ea2c0ea8228a39173d556fa05a3c813"
+    },
+    "post/Rustでテストを書く/index.es.md": {
+      "source": "post/Rustでテストを書く/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "d5b4c07426e68441ee1857714026d653d49d4124ce0f818978108876b1c940f3",
+      "translationHash": "d75cd6e99fcf1178043a52a5cbbadbfc0401752846ec7ea0434e77f7c2dfb22f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-171.json",
+      "evidenceHash": "e4c007a1b3d9dd0f2670d8a958683744b29aee83f37b326647c01294c61b600e"
+    },
+    "post/Rustでテストを書く/index.ko.md": {
+      "source": "post/Rustでテストを書く/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "d5b4c07426e68441ee1857714026d653d49d4124ce0f818978108876b1c940f3",
+      "translationHash": "1ba37d36852d33c4dcbb7ad185a58afc7d96b05e2c2561439a72ad9fbf86466d",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-171.json",
+      "evidenceHash": "4d03a07cab3d02b508d1dbd0b01c5238015245832856cd1180f9ab71a6df9ccb"
+    },
+    "post/Rustでテストを書く/index.pt.md": {
+      "source": "post/Rustでテストを書く/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "d5b4c07426e68441ee1857714026d653d49d4124ce0f818978108876b1c940f3",
+      "translationHash": "e32a16d091bb253201d8414ad94d63c0bb0df79bc209bc987a3aa816804359ad",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-171.json",
+      "evidenceHash": "69b3d1de8f8eeb7caf03c0ff277ba7505114d74dc7328f1752d5e8cbd6318973"
+    },
+    "post/Rustでテストを書く/index.zh-tw.md": {
+      "source": "post/Rustでテストを書く/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "d5b4c07426e68441ee1857714026d653d49d4124ce0f818978108876b1c940f3",
+      "translationHash": "cd201bcc0c51ecfe46f74177ff0c936c1cefc8e0b3985fd9d3e01534c1325aa3",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-171.json",
+      "evidenceHash": "cdd151760345ac9298f5c48d822c13e52fd551cfb7e210a93c3094434ca07e0e"
+    },
+    "post/Rustでテストを書く/index.hi.md": {
+      "source": "post/Rustでテストを書く/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "d5b4c07426e68441ee1857714026d653d49d4124ce0f818978108876b1c940f3",
+      "translationHash": "3f06bd440a9280cd544841cd6dc8d0d036d4cce12d87697e9c456244deeebecb",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-171.json",
+      "evidenceHash": "7d48cdd4fed2ae52ae48d8d6cac392bb7065003956def347abe2699b290d0ab1"
+    },
+    "post/Rustでテストを書く/index.fr.md": {
+      "source": "post/Rustでテストを書く/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "d5b4c07426e68441ee1857714026d653d49d4124ce0f818978108876b1c940f3",
+      "translationHash": "77fec7875d461c9ccc3d1829405de3ea4b409cf643a3784eaa03a0acfc759b09",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-171.json",
+      "evidenceHash": "844fa7d79639a9ef9115e5acd33f708d06eac9eb798f57f3dc557177ad6124d8"
+    },
+    "post/Rustでテストを書く/index.de.md": {
+      "source": "post/Rustでテストを書く/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "d5b4c07426e68441ee1857714026d653d49d4124ce0f818978108876b1c940f3",
+      "translationHash": "a2a254c82dd42add086d8ed6ce32013df0d394a5adbf52ed2abce4f49b8755b3",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-171.json",
+      "evidenceHash": "83ac634fcb9bf6ba8cf1c31830a5946c5b543efd0a7cdbe7e2f924f31a52baef"
+    },
+    "post/Rustでテストを書く/index.ar.md": {
+      "source": "post/Rustでテストを書く/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "d5b4c07426e68441ee1857714026d653d49d4124ce0f818978108876b1c940f3",
+      "translationHash": "f10a084e2df88624e2ca454613e8565d1be99afcf6e547722c942a1530c8d13e",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-171.json",
+      "evidenceHash": "cd6e65794d541bfc59268de44ee11bb4dff0533b7152eb10c81b01b1b543aaf9"
+    },
+    "post/Rustでテストを書く/index.ru.md": {
+      "source": "post/Rustでテストを書く/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "d5b4c07426e68441ee1857714026d653d49d4124ce0f818978108876b1c940f3",
+      "translationHash": "db6ad906e8dceab6f11b975673b23b2696ffbe897a361a2a5dbef9a0e74d477f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-171.json",
+      "evidenceHash": "54a82dd086db1dea491420a51edc7ee84a016a44a1a7e1a1168417e5ea13c926"
+    },
+    "post/Rustでテストを書く/index.id.md": {
+      "source": "post/Rustでテストを書く/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "d5b4c07426e68441ee1857714026d653d49d4124ce0f818978108876b1c940f3",
+      "translationHash": "5047bb4ab09e85ecb96a3a82199abdf07b9094fef576d1b4131e42c416d8176a",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-171.json",
+      "evidenceHash": "720e14f7c12cb351656fb90ff8480cde5195c5d85bad2af7d444f3c8aaa2fce7"
     }
   }
 }

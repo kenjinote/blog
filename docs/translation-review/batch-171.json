@@ -1,0 +1,455 @@
+{
+  "version": 1,
+  "batch": 171,
+  "article": "Introduction to writing and running Rust tests",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "d5b4c07426e68441ee1857714026d653d49d4124ce0f818978108876b1c940f3",
+  "sources": [
+    "https://doc.rust-lang.org/book/ch11-01-writing-tests.html",
+    "https://doc.rust-lang.org/cargo/commands/cargo-test.html",
+    "https://doc.rust-lang.org/reference/attributes/testing.html"
+  ],
+  "scope": "Compared the complete Japanese source and all twelve translations, Rust test semantics, sample code, Cargo output claims, metadata, and internal/external links. Executed the extracted success-case example with cargo test.",
+  "findings": [
+    "Replaced stale Rust/Cargo version-specific transcript paths, timings, and panic format with version-neutral behavior descriptions.",
+    "Organized the example as a #[cfg(test)] unit-test module and used clear, conventional function/test names.",
+    "Explained that failed assertions mark a test FAILED and cause Cargo to return an error status.",
+    "Removed duplicate date fields while preserving the 2022 publication date and setting the editorial lastmod.",
+    "Added official Rust Book, Cargo Book, and Rust Reference sources."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/Rustでテストを書く/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Rustでテストを書く/index.md",
+      "sourceHash": "d5b4c07426e68441ee1857714026d653d49d4124ce0f818978108876b1c940f3",
+      "translationHash": "da0724f2cc95e2bfbd30bac6385fe4dafa6ed834a03294e757502235f08906b5",
+      "summary": "Compared the complete localized article with the Japanese source, updated the unit-test example and cargo test behavior, and replaced stale output with version-neutral guidance.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete explanation and aligned the described successful/failed results with cargo test behavior."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed Rust unit-test, test harness, #[test], #[cfg(test)], assertion, and Cargo terminology in all localized versions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims; the addition expression is only the function under test."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Updated the example to an idiomatic #[cfg(test)] module with a deterministic add assertion, then ran cargo test successfully using the extracted example. Removed version- and machine-specific historical output."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official Rust Book, Cargo Book, and Rust Reference links; retained the localized internal Rust link."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The minimal example tests only one integer addition case and does not demonstrate integration or documentation tests.",
+        "Terminal output details vary by Rust/Cargo version and platform."
+      ]
+    },
+    "post/Rustでテストを書く/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Rustでテストを書く/index.md",
+      "sourceHash": "d5b4c07426e68441ee1857714026d653d49d4124ce0f818978108876b1c940f3",
+      "translationHash": "21136ca78c24a804c4e6b1e20d96dfca0d13e4689e4a63061e11a70376a51a71",
+      "summary": "Compared the complete localized article with the Japanese source, updated the unit-test example and cargo test behavior, and replaced stale output with version-neutral guidance.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete explanation and aligned the described successful/failed results with cargo test behavior."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed Rust unit-test, test harness, #[test], #[cfg(test)], assertion, and Cargo terminology in all localized versions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims; the addition expression is only the function under test."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Updated the example to an idiomatic #[cfg(test)] module with a deterministic add assertion, then ran cargo test successfully using the extracted example. Removed version- and machine-specific historical output."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official Rust Book, Cargo Book, and Rust Reference links; retained the localized internal Rust link."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The minimal example tests only one integer addition case and does not demonstrate integration or documentation tests.",
+        "Terminal output details vary by Rust/Cargo version and platform."
+      ]
+    },
+    "post/Rustでテストを書く/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Rustでテストを書く/index.md",
+      "sourceHash": "d5b4c07426e68441ee1857714026d653d49d4124ce0f818978108876b1c940f3",
+      "translationHash": "d75cd6e99fcf1178043a52a5cbbadbfc0401752846ec7ea0434e77f7c2dfb22f",
+      "summary": "Compared the complete localized article with the Japanese source, updated the unit-test example and cargo test behavior, and replaced stale output with version-neutral guidance.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete explanation and aligned the described successful/failed results with cargo test behavior."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed Rust unit-test, test harness, #[test], #[cfg(test)], assertion, and Cargo terminology in all localized versions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims; the addition expression is only the function under test."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Updated the example to an idiomatic #[cfg(test)] module with a deterministic add assertion, then ran cargo test successfully using the extracted example. Removed version- and machine-specific historical output."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official Rust Book, Cargo Book, and Rust Reference links; retained the localized internal Rust link."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The minimal example tests only one integer addition case and does not demonstrate integration or documentation tests.",
+        "Terminal output details vary by Rust/Cargo version and platform."
+      ]
+    },
+    "post/Rustでテストを書く/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Rustでテストを書く/index.md",
+      "sourceHash": "d5b4c07426e68441ee1857714026d653d49d4124ce0f818978108876b1c940f3",
+      "translationHash": "1ba37d36852d33c4dcbb7ad185a58afc7d96b05e2c2561439a72ad9fbf86466d",
+      "summary": "Compared the complete localized article with the Japanese source, updated the unit-test example and cargo test behavior, and replaced stale output with version-neutral guidance.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete explanation and aligned the described successful/failed results with cargo test behavior."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed Rust unit-test, test harness, #[test], #[cfg(test)], assertion, and Cargo terminology in all localized versions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims; the addition expression is only the function under test."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Updated the example to an idiomatic #[cfg(test)] module with a deterministic add assertion, then ran cargo test successfully using the extracted example. Removed version- and machine-specific historical output."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official Rust Book, Cargo Book, and Rust Reference links; retained the localized internal Rust link."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The minimal example tests only one integer addition case and does not demonstrate integration or documentation tests.",
+        "Terminal output details vary by Rust/Cargo version and platform."
+      ]
+    },
+    "post/Rustでテストを書く/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Rustでテストを書く/index.md",
+      "sourceHash": "d5b4c07426e68441ee1857714026d653d49d4124ce0f818978108876b1c940f3",
+      "translationHash": "e32a16d091bb253201d8414ad94d63c0bb0df79bc209bc987a3aa816804359ad",
+      "summary": "Compared the complete localized article with the Japanese source, updated the unit-test example and cargo test behavior, and replaced stale output with version-neutral guidance.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete explanation and aligned the described successful/failed results with cargo test behavior."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed Rust unit-test, test harness, #[test], #[cfg(test)], assertion, and Cargo terminology in all localized versions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims; the addition expression is only the function under test."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Updated the example to an idiomatic #[cfg(test)] module with a deterministic add assertion, then ran cargo test successfully using the extracted example. Removed version- and machine-specific historical output."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official Rust Book, Cargo Book, and Rust Reference links; retained the localized internal Rust link."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The minimal example tests only one integer addition case and does not demonstrate integration or documentation tests.",
+        "Terminal output details vary by Rust/Cargo version and platform."
+      ]
+    },
+    "post/Rustでテストを書く/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Rustでテストを書く/index.md",
+      "sourceHash": "d5b4c07426e68441ee1857714026d653d49d4124ce0f818978108876b1c940f3",
+      "translationHash": "cd201bcc0c51ecfe46f74177ff0c936c1cefc8e0b3985fd9d3e01534c1325aa3",
+      "summary": "Compared the complete localized article with the Japanese source, updated the unit-test example and cargo test behavior, and replaced stale output with version-neutral guidance.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete explanation and aligned the described successful/failed results with cargo test behavior."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed Rust unit-test, test harness, #[test], #[cfg(test)], assertion, and Cargo terminology in all localized versions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims; the addition expression is only the function under test."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Updated the example to an idiomatic #[cfg(test)] module with a deterministic add assertion, then ran cargo test successfully using the extracted example. Removed version- and machine-specific historical output."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official Rust Book, Cargo Book, and Rust Reference links; retained the localized internal Rust link."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The minimal example tests only one integer addition case and does not demonstrate integration or documentation tests.",
+        "Terminal output details vary by Rust/Cargo version and platform."
+      ]
+    },
+    "post/Rustでテストを書く/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Rustでテストを書く/index.md",
+      "sourceHash": "d5b4c07426e68441ee1857714026d653d49d4124ce0f818978108876b1c940f3",
+      "translationHash": "3f06bd440a9280cd544841cd6dc8d0d036d4cce12d87697e9c456244deeebecb",
+      "summary": "Compared the complete localized article with the Japanese source, updated the unit-test example and cargo test behavior, and replaced stale output with version-neutral guidance.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete explanation and aligned the described successful/failed results with cargo test behavior."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed Rust unit-test, test harness, #[test], #[cfg(test)], assertion, and Cargo terminology in all localized versions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims; the addition expression is only the function under test."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Updated the example to an idiomatic #[cfg(test)] module with a deterministic add assertion, then ran cargo test successfully using the extracted example. Removed version- and machine-specific historical output."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official Rust Book, Cargo Book, and Rust Reference links; retained the localized internal Rust link."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The minimal example tests only one integer addition case and does not demonstrate integration or documentation tests.",
+        "Terminal output details vary by Rust/Cargo version and platform."
+      ]
+    },
+    "post/Rustでテストを書く/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Rustでテストを書く/index.md",
+      "sourceHash": "d5b4c07426e68441ee1857714026d653d49d4124ce0f818978108876b1c940f3",
+      "translationHash": "77fec7875d461c9ccc3d1829405de3ea4b409cf643a3784eaa03a0acfc759b09",
+      "summary": "Compared the complete localized article with the Japanese source, updated the unit-test example and cargo test behavior, and replaced stale output with version-neutral guidance.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete explanation and aligned the described successful/failed results with cargo test behavior."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed Rust unit-test, test harness, #[test], #[cfg(test)], assertion, and Cargo terminology in all localized versions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims; the addition expression is only the function under test."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Updated the example to an idiomatic #[cfg(test)] module with a deterministic add assertion, then ran cargo test successfully using the extracted example. Removed version- and machine-specific historical output."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official Rust Book, Cargo Book, and Rust Reference links; retained the localized internal Rust link."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The minimal example tests only one integer addition case and does not demonstrate integration or documentation tests.",
+        "Terminal output details vary by Rust/Cargo version and platform."
+      ]
+    },
+    "post/Rustでテストを書く/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Rustでテストを書く/index.md",
+      "sourceHash": "d5b4c07426e68441ee1857714026d653d49d4124ce0f818978108876b1c940f3",
+      "translationHash": "a2a254c82dd42add086d8ed6ce32013df0d394a5adbf52ed2abce4f49b8755b3",
+      "summary": "Compared the complete localized article with the Japanese source, updated the unit-test example and cargo test behavior, and replaced stale output with version-neutral guidance.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete explanation and aligned the described successful/failed results with cargo test behavior."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed Rust unit-test, test harness, #[test], #[cfg(test)], assertion, and Cargo terminology in all localized versions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims; the addition expression is only the function under test."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Updated the example to an idiomatic #[cfg(test)] module with a deterministic add assertion, then ran cargo test successfully using the extracted example. Removed version- and machine-specific historical output."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official Rust Book, Cargo Book, and Rust Reference links; retained the localized internal Rust link."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The minimal example tests only one integer addition case and does not demonstrate integration or documentation tests.",
+        "Terminal output details vary by Rust/Cargo version and platform."
+      ]
+    },
+    "post/Rustでテストを書く/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Rustでテストを書く/index.md",
+      "sourceHash": "d5b4c07426e68441ee1857714026d653d49d4124ce0f818978108876b1c940f3",
+      "translationHash": "f10a084e2df88624e2ca454613e8565d1be99afcf6e547722c942a1530c8d13e",
+      "summary": "Compared the complete localized article with the Japanese source, updated the unit-test example and cargo test behavior, and replaced stale output with version-neutral guidance.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete explanation and aligned the described successful/failed results with cargo test behavior."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed Rust unit-test, test harness, #[test], #[cfg(test)], assertion, and Cargo terminology in all localized versions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims; the addition expression is only the function under test."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Updated the example to an idiomatic #[cfg(test)] module with a deterministic add assertion, then ran cargo test successfully using the extracted example. Removed version- and machine-specific historical output."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official Rust Book, Cargo Book, and Rust Reference links; retained the localized internal Rust link."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The minimal example tests only one integer addition case and does not demonstrate integration or documentation tests.",
+        "Terminal output details vary by Rust/Cargo version and platform."
+      ]
+    },
+    "post/Rustでテストを書く/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Rustでテストを書く/index.md",
+      "sourceHash": "d5b4c07426e68441ee1857714026d653d49d4124ce0f818978108876b1c940f3",
+      "translationHash": "db6ad906e8dceab6f11b975673b23b2696ffbe897a361a2a5dbef9a0e74d477f",
+      "summary": "Compared the complete localized article with the Japanese source, updated the unit-test example and cargo test behavior, and replaced stale output with version-neutral guidance.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete explanation and aligned the described successful/failed results with cargo test behavior."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed Rust unit-test, test harness, #[test], #[cfg(test)], assertion, and Cargo terminology in all localized versions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims; the addition expression is only the function under test."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Updated the example to an idiomatic #[cfg(test)] module with a deterministic add assertion, then ran cargo test successfully using the extracted example. Removed version- and machine-specific historical output."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official Rust Book, Cargo Book, and Rust Reference links; retained the localized internal Rust link."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The minimal example tests only one integer addition case and does not demonstrate integration or documentation tests.",
+        "Terminal output details vary by Rust/Cargo version and platform."
+      ]
+    },
+    "post/Rustでテストを書く/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Rustでテストを書く/index.md",
+      "sourceHash": "d5b4c07426e68441ee1857714026d653d49d4124ce0f818978108876b1c940f3",
+      "translationHash": "5047bb4ab09e85ecb96a3a82199abdf07b9094fef576d1b4131e42c416d8176a",
+      "summary": "Compared the complete localized article with the Japanese source, updated the unit-test example and cargo test behavior, and replaced stale output with version-neutral guidance.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete explanation and aligned the described successful/failed results with cargo test behavior."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed Rust unit-test, test harness, #[test], #[cfg(test)], assertion, and Cargo terminology in all localized versions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims; the addition expression is only the function under test."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Updated the example to an idiomatic #[cfg(test)] module with a deterministic add assertion, then ran cargo test successfully using the extracted example. Removed version- and machine-specific historical output."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official Rust Book, Cargo Book, and Rust Reference links; retained the localized internal Rust link."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The minimal example tests only one integer addition case and does not demonstrate integration or documentation tests.",
+        "Terminal output details vary by Rust/Cargo version and platform."
+      ]
+    }
+  }
+}

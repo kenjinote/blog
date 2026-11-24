@@ -1,12 +1,8 @@
 ---
-
-
-
-
 title: 'Rust에서 테스트 작성 및 실행 방법 입문 (cargo test)'
-date: "2026-09-24T19:44:38+09:00"
 slug: "Rustで테스트を書く"
-date: 2022-10-01T02:00:59+09:00
+date: "2022-10-01T02:00:59+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 tags: ["Rust","테스트"]
 draft: false
 image: "images/rust_logo.webp"
@@ -14,62 +10,34 @@ categories: ["programming"]
 description: 'Rust에서 테스트 코드를 작성하는 방법과 cargo test 명령어를 사용한 테스트 실행 절차를 초보자를 위해 설명합니다. #[test] 속성의 사용법과 성공·실패 시의 출력 결과에 대해서도 구체적인 코드 예제와 함께 자세히 소개합니다.'
 ---
 
-
-
-
-
-[Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)에서 테스트를 작성하려면, 테스트 함수 정의 한 줄 위에 `#[test]` 속성을 붙여 함수를 생성합니다.
+[Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)는 `#[test]`가 붙은 함수를 테스트로 실행합니다. 이 예제는 `#[cfg(test)]` 모듈 안에 덧셈 함수의 단위 테스트를 정의합니다.
 
 ```rust
-fn plus(a:i32,b:i32)->i32 {
-  a+b
+fn add(left: i32, right: i32) -> i32 {
+    left + right
 }
 
-#[test]
-fn plus_test() {
-  assert_eq!(plus(1, 1), 2);
+#[cfg(test)]
+mod tests {
+    use super::add;
+
+    #[test]
+    fn adds_two_numbers() {
+        assert_eq!(add(2, 2), 4);
+    }
 }
 ```
 
-테스트 코드는 `cargo test`로 실행할 수 있습니다. 테스트가 성공하면 `ok`가 출력됩니다.
-실패하면 `FAILED`가 출력됩니다.
+`cargo test`는 패키지의 테스트를 빌드하고 실행합니다. 통과한 테스트에는 `ok`가 표시되고 요약에 `test result: ok`가 나옵니다.
 
-성공한 경우
 ```bash
-C:\Users\admin\Desktop\test1>cargo test
-   Compiling test1 v0.1.0 (C:\Users\admin\Desktop\test1)
-    Finished test [unoptimized + debuginfo] target(s) in 0.35s
-     Running unittests src\main.rs (target\debug\deps\test1-be5d3118bc52cb3a.exe)
-
-running 1 test
-test plus_test ... ok
-
-test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+cargo test
 ```
 
-실패한 경우
-```bash
-C:\Users\admin\Desktop\test1>cargo test
-   Compiling test1 v0.1.0 (C:\Users\admin\Desktop\test1)
-    Finished test [unoptimized + debuginfo] target(s) in 0.33s
-     Running unittests src\main.rs (target\debug\deps\test1-be5d3118bc52cb3a.exe)
+단언이 실패하면 해당 테스트가 `FAILED`로 표시되고 Cargo가 오류 상태로 종료됩니다. 경로, 줄 번호, 실행 시간은 환경과 Rust 버전에 따라 달라집니다.
 
-running 1 test
-test plus_test ... FAILED
+## 참고 자료
 
-failures:
-
----- plus_test stdout ----
-thread 'plus_test' panicked at 'assertion failed: `(left == right)`
-  left: `2`,
- right: `3`', src\main.rs:7:5
-note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
-
-
-failures:
-    plus_test
-
-test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
-
-error: test failed, to rerun pass '--bin test1'
-```
+- [The Rust Programming Language: How to Write Tests](https://doc.rust-lang.org/book/ch11-01-writing-tests.html)
+- [The Cargo Book: cargo test](https://doc.rust-lang.org/cargo/commands/cargo-test.html)
+- [The Rust Reference: test attributes](https://doc.rust-lang.org/reference/attributes/testing.html)

@@ -1,8 +1,8 @@
 ---
 title: 'مقدمة حول كيفية كتابة وتنفيذ الاختبارات في Rust (cargo test)'
-date: "2026-09-24T19:44:38+09:00"
 slug: "Rustでاختبارを書く"
-date: 2022-10-01T02:00:59+09:00
+date: "2022-10-01T02:00:59+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 tags: ["Rust", "اختبار"]
 draft: false
 image: "images/rust_logo.webp"
@@ -10,58 +10,34 @@ categories: ["programming"]
 description: 'نشرح للمبتدئين كيفية كتابة أكواد الاختبار في Rust وخطوات تنفيذ الاختبارات باستخدام أمر cargo test. نقدم شرحاً تفصيلياً مع أمثلة كود محددة لكيفية استخدام سمة (Attribute) #[test]، ونتائج المخرجات عند النجاح أو الفشل.'
 ---
 
-لكتابة اختبارات في [Rust](https://kenji.blog/ar/p/webassembly-wasm-current-future/)، قم بإنشاء دالة وأضف السمة `#[test]` سطراً واحداً فوق تعريف دالة الاختبار.
+تشغّل [Rust](https://kenji.blog/ar/p/webassembly-wasm-current-future/) الدوال المعلّمة بـ`#[test]` كاختبارات. يعرّف هذا المثال اختبار وحدة لدالة جمع داخل وحدة `#[cfg(test)]`.
 
 ```rust
-fn plus(a:i32,b:i32)->i32 {
-  a+b
+fn add(left: i32, right: i32) -> i32 {
+    left + right
 }
 
-#[test]
-fn plus_test() {
-  assert_eq!(plus(1, 1), 2);
+#[cfg(test)]
+mod tests {
+    use super::add;
+
+    #[test]
+    fn adds_two_numbers() {
+        assert_eq!(add(2, 2), 4);
+    }
 }
 ```
 
-يمكن تنفيذ كود الاختبار باستخدام `cargo test`. عند نجاح الاختبار، يتم إخراج `ok`.
-عند الفشل، يتم إخراج `FAILED`.
+يبني الأمر `cargo test` اختبارات الحزمة ويشغّلها. تعرض الاختبارات الناجحة `ok` ويتضمن الملخص `test result: ok`.
 
-في حالة النجاح
 ```bash
-C:\Users\admin\Desktop\test1>cargo test
-   Compiling test1 v0.1.0 (C:\Users\admin\Desktop\test1)
-    Finished test [unoptimized + debuginfo] target(s) in 0.35s
-     Running unittests src\main.rs (target\debug\deps\test1-be5d3118bc52cb3a.exe)
-
-running 1 test
-test plus_test ... ok
-
-test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+cargo test
 ```
 
-في حالة الفشل
-```bash
-C:\Users\admin\Desktop\test1>cargo test
-   Compiling test1 v0.1.0 (C:\Users\admin\Desktop\test1)
-    Finished test [unoptimized + debuginfo] target(s) in 0.33s
-     Running unittests src\main.rs (target\debug\deps\test1-be5d3118bc52cb3a.exe)
+إذا فشل تأكيد، فسيظهر الاختبار المعني بعلامة `FAILED` وينتهي Cargo بحالة خطأ. تختلف المسارات وأرقام الأسطر والأوقات حسب البيئة وإصدار Rust.
 
-running 1 test
-test plus_test ... FAILED
+## المراجع
 
-failures:
-
----- plus_test stdout ----
-thread 'plus_test' panicked at 'assertion failed: `(left == right)`
-  left: `2`,
- right: `3`', src\main.rs:7:5
-note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
-
-
-failures:
-    plus_test
-
-test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
-
-error: test failed, to rerun pass '--bin test1'
-```
+- [The Rust Programming Language: How to Write Tests](https://doc.rust-lang.org/book/ch11-01-writing-tests.html)
+- [The Cargo Book: cargo test](https://doc.rust-lang.org/cargo/commands/cargo-test.html)
+- [The Rust Reference: test attributes](https://doc.rust-lang.org/reference/attributes/testing.html)
