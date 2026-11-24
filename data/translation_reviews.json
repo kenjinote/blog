@@ -12965,6 +12965,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-112.json",
       "evidenceHash": "957d3eba99cdaf943398762814256d600fb91d6796a291972692ef2e2c7011c8"
+    },
+    "post/Python(matplotlib.pyplot)を使ってグラフを描画する方法/index.ar.md": {
+      "source": "post/Python(matplotlib.pyplot)を使ってグラフを描画する方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "d738012867cd5ecbc7b2ea15c18d50d2898b6955329a70f138e357c5531b6323",
+      "translationHash": "4cf987238bba81d0f1653ef90528a5e598a2ecefcded28c3c0ab3bb854168017",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-113.json",
+      "evidenceHash": "850e93fad22db928ed15133566fe35d76a18589675eee72400e45f441f2db351"
+    },
+    "post/Python(matplotlib.pyplot)を使ってグラフを描画する方法/index.de.md": {
+      "source": "post/Python(matplotlib.pyplot)を使ってグラフを描画する方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "d738012867cd5ecbc7b2ea15c18d50d2898b6955329a70f138e357c5531b6323",
+      "translationHash": "49da1540effaa2d2a8cf2fc4f22f5f20750b750fd3297f25bff719eaac6cf589",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-113.json",
+      "evidenceHash": "b8b89a2da06ad3fc47be78e017481f889ec722699252099d38d0c54851bcca55"
+    },
+    "post/Python(matplotlib.pyplot)を使ってグラフを描画する方法/index.en.md": {
+      "source": "post/Python(matplotlib.pyplot)を使ってグラフを描画する方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "d738012867cd5ecbc7b2ea15c18d50d2898b6955329a70f138e357c5531b6323",
+      "translationHash": "db8f7c5c27571344388d13d7b8ba959503ce009469c386bbc9727c246caef632",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-113.json",
+      "evidenceHash": "0188b809cd0dcd46824e3d4b5a2bf3f5711b4e50397988df04ab6bfe43b0a8ba"
+    },
+    "post/Python(matplotlib.pyplot)を使ってグラフを描画する方法/index.es.md": {
+      "source": "post/Python(matplotlib.pyplot)を使ってグラフを描画する方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "d738012867cd5ecbc7b2ea15c18d50d2898b6955329a70f138e357c5531b6323",
+      "translationHash": "321b03b0ec281d127dca7ec7a50f152d0bc73539426e14d15956df47416fbdc0",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-113.json",
+      "evidenceHash": "fb5455d3a5756a4c269520e478e23848db709abbca661ae4bffb8a622b19ba6e"
+    },
+    "post/Python(matplotlib.pyplot)を使ってグラフを描画する方法/index.fr.md": {
+      "source": "post/Python(matplotlib.pyplot)を使ってグラフを描画する方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "d738012867cd5ecbc7b2ea15c18d50d2898b6955329a70f138e357c5531b6323",
+      "translationHash": "642f3d8ed3e30df8489e1d1cf207fd37ac5bed7ee74d29f0f09c9374a92b5320",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-113.json",
+      "evidenceHash": "c642b2bb44aaa019c6a32a5875a95e660807eeeeae2a2a5cd88d8dde178cfbe2"
+    },
+    "post/Python(matplotlib.pyplot)を使ってグラフを描画する方法/index.hi.md": {
+      "source": "post/Python(matplotlib.pyplot)を使ってグラフを描画する方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "d738012867cd5ecbc7b2ea15c18d50d2898b6955329a70f138e357c5531b6323",
+      "translationHash": "e442f0e6519aea8de45173a8554d071409e0cfd105be6298f340da4761b817ef",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-113.json",
+      "evidenceHash": "7e5d12f12b434d5952612dd74a2afe3231a786ec04143a2f6732b2175fd61fc3"
+    },
+    "post/Python(matplotlib.pyplot)を使ってグラフを描画する方法/index.id.md": {
+      "source": "post/Python(matplotlib.pyplot)を使ってグラフを描画する方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "d738012867cd5ecbc7b2ea15c18d50d2898b6955329a70f138e357c5531b6323",
+      "translationHash": "40d878cb77e7d5887f9143b27d19e19a56e8c93bb6a2f755c3385d78d1bad955",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-113.json",
+      "evidenceHash": "add767f68b8b1db10b634cca96ca1dcc7c13444e92371907eac8279f2d7c56c6"
+    },
+    "post/Python(matplotlib.pyplot)を使ってグラフを描画する方法/index.ko.md": {
+      "source": "post/Python(matplotlib.pyplot)を使ってグラフを描画する方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "d738012867cd5ecbc7b2ea15c18d50d2898b6955329a70f138e357c5531b6323",
+      "translationHash": "c1475530fdd1f7c9f88da5593d56234e8487c30e88b69c626d4815597b31c0d8",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-113.json",
+      "evidenceHash": "63e7b7030ee99ce185cef46bc8032331624d083bde64cd19fe21517e2e25d150"
+    },
+    "post/Python(matplotlib.pyplot)を使ってグラフを描画する方法/index.pt.md": {
+      "source": "post/Python(matplotlib.pyplot)を使ってグラフを描画する方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "d738012867cd5ecbc7b2ea15c18d50d2898b6955329a70f138e357c5531b6323",
+      "translationHash": "e05a4ffc2c16057b393380232c109f6ba5dde7f08ec56f3340c4ea7b2185e83b",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-113.json",
+      "evidenceHash": "6c93f0b0f192955b5ae474324f7b2947bb0c5e0682436dee44f62a3c5b266ae4"
+    },
+    "post/Python(matplotlib.pyplot)を使ってグラフを描画する方法/index.ru.md": {
+      "source": "post/Python(matplotlib.pyplot)を使ってグラフを描画する方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "d738012867cd5ecbc7b2ea15c18d50d2898b6955329a70f138e357c5531b6323",
+      "translationHash": "ba9b5a1eb68cbd49d5d37b2676fafa4d509803adf6adef535f1faaab98537526",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-113.json",
+      "evidenceHash": "fb7f8379be03c7c83835cdd01808e234fca4f5977270d2c3dcf457f78126c007"
+    },
+    "post/Python(matplotlib.pyplot)を使ってグラフを描画する方法/index.zh-cn.md": {
+      "source": "post/Python(matplotlib.pyplot)を使ってグラフを描画する方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "d738012867cd5ecbc7b2ea15c18d50d2898b6955329a70f138e357c5531b6323",
+      "translationHash": "4b41ba3e7e060f18701221cf7c42b2c8ae7f98b3f48be146f5d5ab66bf8f2b35",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-113.json",
+      "evidenceHash": "3a630b04cb465430b8dc093825519a6cc87a0ec7d93660611f252621575b70b9"
+    },
+    "post/Python(matplotlib.pyplot)を使ってグラフを描画する方法/index.zh-tw.md": {
+      "source": "post/Python(matplotlib.pyplot)を使ってグラフを描画する方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "d738012867cd5ecbc7b2ea15c18d50d2898b6955329a70f138e357c5531b6323",
+      "translationHash": "d794ac75ca8f76f2641a8a60f381054c0db845b8bd46b0593be5c89667b1b094",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-113.json",
+      "evidenceHash": "158c86924023090388cf8e574bbbf6e985c83b85de32e7a4c2ff40a0431ab9cc"
     }
   }
 }

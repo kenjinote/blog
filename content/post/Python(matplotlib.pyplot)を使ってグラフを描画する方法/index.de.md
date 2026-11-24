@@ -1,39 +1,47 @@
 ---
-title: 'Wie man Graphen mit Python und matplotlib zeichnet 【Google Colab kompatibel】'
-date: "2026-09-24T19:44:38+09:00"
+title: "Diagramme mit Python und Matplotlib in Google Colab zeichnen"
 slug: "Python(matplotlib.pyplot)を使ってGraphを描画する方法"
-date: 2023-04-09T01:02:19+09:00
 tags: ["Python", "Diagramme", "Mathematik", "matplotlib", "pyplot", "Google Colaboratory"]
 draft: false
 image: "img.webp"
 categories: ["math-cryptography-quantum"]
-description: 'Erklärt für Anfänger die Schritte zum einfachen Zeichnen und Anzeigen von Sinus- und Kosinus-Graphen mit der matplotlib.pyplot-Bibliothek von Python unter Verwendung von Google Colaboratory. Kann sofort und ohne Einrichtung einer Umgebung ausprobiert werden.'
+description: "Zeichnen Sie mit NumPy und Matplotlib in Google Colab Sinus- und Kosinuskurven von 0 bis 2π."
+date: "2023-04-09T01:02:19+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
 
-![img_1.png](img_1.webp)
+Dieses Beispiel zeichnet Sinus- und Kosinuskurven in einem Google-Colab-Notebook mit Python, NumPy und Matplotlib. Die Oberfläche und Menünamen von Colab können sich ändern; erstellen Sie ein leeres Notebook über die aktuelle Oberfläche.
 
-# Was Sie brauchen
-- Google-Konto
+## Voraussetzungen
 
-# Schritte
+Sie benötigen ein Google-Konto und eine Internetverbindung. Mit der gehosteten Colab-Laufzeit können Sie den Code ohne lokale Python-Umgebung ausführen.
 
-1. Gehen Sie auf [https://colab.research.google.com/](https://colab.research.google.com/)
-2. Wählen Sie "Datei" -> "Neues Notizbuch"
-3. Fügen Sie den folgenden Code ein und führen Sie ihn aus
+## Die Notebookzelle ausführen
+
+Fügen Sie den Code in eine Codezelle eines neuen Notebooks ein und führen Sie sie aus. x enthält 500 gleichmäßig verteilte Werte von 0 bis einschließlich 2π. Für diese Werte im Bogenmaß werden Sinus und Kosinus gezeichnet und eine Legende angezeigt.
+
 ```python
 import matplotlib.pyplot as plt
 import numpy as np
-x = np.linspace(0, 2*np.pi, 500)
+
+x = np.linspace(0, 2 * np.pi, 500)
 plt.plot(x, np.sin(x), label="sin curve")
 plt.plot(x, np.cos(x), label="cos curve")
-plt.legend() # Legende anzeigen
+plt.legend()
 plt.show()
 ```
 
-# Ausführungsergebnis
+## Beispielergebnis
 
-![img.png](img.webp)
+Die Zelle zeigt ein Diagramm mit Sinus- und Kosinuskurve. Falls eine Bibliothek in der gehosteten Laufzeit fehlt, führen Sie `%pip install numpy matplotlib` in einer Zelle aus und starten Sie das Beispiel erneut.
 
-# Referenzen
+![Diagramm mit Sinus und Kosinus](img_1.webp)
 
-- [matplotlib.pyplot — Matplotlib 3.5.3 documentation](https://matplotlib.org/3.5.3/api/_as_gen/matplotlib.pyplot.html)
+![Diagramm mit Sinus und Kosinus](img.webp)
+
+## Offizielle Referenzen
+
+- [Matplotlib: pyplot](https://matplotlib.org/stable/api/pyplot_summary.html)
+- [NumPy: linspace](https://numpy.org/doc/stable/reference/generated/numpy.linspace.html)
+- [Google Colab: FAQ](https://research.google.com/colaboratory/faq.html?hl=en)
+- [Open Google Colab](https://colab.research.google.com/)

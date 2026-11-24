@@ -1,0 +1,456 @@
+{
+  "version": 1,
+  "batch": 113,
+  "article": "Python(matplotlib.pyplot)でグラフを描画",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "d738012867cd5ecbc7b2ea15c18d50d2898b6955329a70f138e357c5531b6323",
+  "sources": [
+    "https://matplotlib.org/stable/api/pyplot_summary.html",
+    "https://numpy.org/doc/stable/reference/generated/numpy.linspace.html",
+    "https://research.google.com/colaboratory/faq.html?hl=en",
+    "https://colab.research.google.com/"
+  ],
+  "scope": "Rewrote the Japanese article and twelve translations against current official Matplotlib, NumPy, and Google Colab documentation. Checked the hosted-notebook workflow, dependency fallback, mathematical sample interval and radian use, identical plotting code, image references, link freshness, and duplicate publication dates.",
+  "findings": [
+    "Removed the duplicated future date, preserved the original 2023-04-09 publication date, and added lastmod 2026-11-24 in every locale.",
+    "Replaced the version-pinned Matplotlib 3.5.3 link with the current stable pyplot documentation and added current NumPy linspace and Google Colab references.",
+    "Reworded the notebook-creation instructions to avoid relying on menu labels that can change; documented the hosted runtime and a package-install fallback.",
+    "Aligned all thirteen articles on a 500-sample inclusive [0, 2π] interval, radian-based sine/cosine curves, legend, and display call.",
+    "Preserved both existing article result images in every locale."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/Python(matplotlib.pyplot)を使ってグラフを描画する方法/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Python(matplotlib.pyplot)を使ってグラフを描画する方法/index.md",
+      "sourceHash": "d738012867cd5ecbc7b2ea15c18d50d2898b6955329a70f138e357c5531b6323",
+      "translationHash": "4cf987238bba81d0f1653ef90528a5e598a2ecefcded28c3c0ab3bb854168017",
+      "summary": "Rewrote and aligned the translation to the Japanese source and current Matplotlib, NumPy, and Colab documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the notebook workflow, hosted-runtime explanation, graph output, and current-interface caveat."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked NumPy, Matplotlib, pyplot, Colab hosted runtime, radians, legend, and notebook terminology."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified that linspace generates 500 evenly spaced samples including both endpoints on [0, 2π], and that NumPy sin/cos receive radian values."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared identical Python code across all locales and executed it with local NumPy/Matplotlib using the Agg backend; confirmed the 500-point interval and two plotted series. Colab itself was not exercised."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the version-pinned Matplotlib 3.5.3 reference with the current stable docs and added NumPy linspace and official Colab references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Code was checked against the documentation; no live Google account/Colab notebook was used for this review.",
+        "Colab UI, hosted runtime package versions, and service availability can change; the guide avoids fixed menu-label instructions and links to current official references."
+      ]
+    },
+    "post/Python(matplotlib.pyplot)を使ってグラフを描画する方法/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Python(matplotlib.pyplot)を使ってグラフを描画する方法/index.md",
+      "sourceHash": "d738012867cd5ecbc7b2ea15c18d50d2898b6955329a70f138e357c5531b6323",
+      "translationHash": "49da1540effaa2d2a8cf2fc4f22f5f20750b750fd3297f25bff719eaac6cf589",
+      "summary": "Rewrote and aligned the translation to the Japanese source and current Matplotlib, NumPy, and Colab documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the notebook workflow, hosted-runtime explanation, graph output, and current-interface caveat."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked NumPy, Matplotlib, pyplot, Colab hosted runtime, radians, legend, and notebook terminology."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified that linspace generates 500 evenly spaced samples including both endpoints on [0, 2π], and that NumPy sin/cos receive radian values."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared identical Python code across all locales and executed it with local NumPy/Matplotlib using the Agg backend; confirmed the 500-point interval and two plotted series. Colab itself was not exercised."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the version-pinned Matplotlib 3.5.3 reference with the current stable docs and added NumPy linspace and official Colab references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Code was checked against the documentation; no live Google account/Colab notebook was used for this review.",
+        "Colab UI, hosted runtime package versions, and service availability can change; the guide avoids fixed menu-label instructions and links to current official references."
+      ]
+    },
+    "post/Python(matplotlib.pyplot)を使ってグラフを描画する方法/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Python(matplotlib.pyplot)を使ってグラフを描画する方法/index.md",
+      "sourceHash": "d738012867cd5ecbc7b2ea15c18d50d2898b6955329a70f138e357c5531b6323",
+      "translationHash": "db8f7c5c27571344388d13d7b8ba959503ce009469c386bbc9727c246caef632",
+      "summary": "Rewrote and aligned the translation to the Japanese source and current Matplotlib, NumPy, and Colab documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the notebook workflow, hosted-runtime explanation, graph output, and current-interface caveat."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked NumPy, Matplotlib, pyplot, Colab hosted runtime, radians, legend, and notebook terminology."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified that linspace generates 500 evenly spaced samples including both endpoints on [0, 2π], and that NumPy sin/cos receive radian values."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared identical Python code across all locales and executed it with local NumPy/Matplotlib using the Agg backend; confirmed the 500-point interval and two plotted series. Colab itself was not exercised."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the version-pinned Matplotlib 3.5.3 reference with the current stable docs and added NumPy linspace and official Colab references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Code was checked against the documentation; no live Google account/Colab notebook was used for this review.",
+        "Colab UI, hosted runtime package versions, and service availability can change; the guide avoids fixed menu-label instructions and links to current official references."
+      ]
+    },
+    "post/Python(matplotlib.pyplot)を使ってグラフを描画する方法/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Python(matplotlib.pyplot)を使ってグラフを描画する方法/index.md",
+      "sourceHash": "d738012867cd5ecbc7b2ea15c18d50d2898b6955329a70f138e357c5531b6323",
+      "translationHash": "321b03b0ec281d127dca7ec7a50f152d0bc73539426e14d15956df47416fbdc0",
+      "summary": "Rewrote and aligned the translation to the Japanese source and current Matplotlib, NumPy, and Colab documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the notebook workflow, hosted-runtime explanation, graph output, and current-interface caveat."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked NumPy, Matplotlib, pyplot, Colab hosted runtime, radians, legend, and notebook terminology."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified that linspace generates 500 evenly spaced samples including both endpoints on [0, 2π], and that NumPy sin/cos receive radian values."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared identical Python code across all locales and executed it with local NumPy/Matplotlib using the Agg backend; confirmed the 500-point interval and two plotted series. Colab itself was not exercised."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the version-pinned Matplotlib 3.5.3 reference with the current stable docs and added NumPy linspace and official Colab references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Code was checked against the documentation; no live Google account/Colab notebook was used for this review.",
+        "Colab UI, hosted runtime package versions, and service availability can change; the guide avoids fixed menu-label instructions and links to current official references."
+      ]
+    },
+    "post/Python(matplotlib.pyplot)を使ってグラフを描画する方法/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Python(matplotlib.pyplot)を使ってグラフを描画する方法/index.md",
+      "sourceHash": "d738012867cd5ecbc7b2ea15c18d50d2898b6955329a70f138e357c5531b6323",
+      "translationHash": "642f3d8ed3e30df8489e1d1cf207fd37ac5bed7ee74d29f0f09c9374a92b5320",
+      "summary": "Rewrote and aligned the translation to the Japanese source and current Matplotlib, NumPy, and Colab documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the notebook workflow, hosted-runtime explanation, graph output, and current-interface caveat."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked NumPy, Matplotlib, pyplot, Colab hosted runtime, radians, legend, and notebook terminology."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified that linspace generates 500 evenly spaced samples including both endpoints on [0, 2π], and that NumPy sin/cos receive radian values."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared identical Python code across all locales and executed it with local NumPy/Matplotlib using the Agg backend; confirmed the 500-point interval and two plotted series. Colab itself was not exercised."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the version-pinned Matplotlib 3.5.3 reference with the current stable docs and added NumPy linspace and official Colab references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Code was checked against the documentation; no live Google account/Colab notebook was used for this review.",
+        "Colab UI, hosted runtime package versions, and service availability can change; the guide avoids fixed menu-label instructions and links to current official references."
+      ]
+    },
+    "post/Python(matplotlib.pyplot)を使ってグラフを描画する方法/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Python(matplotlib.pyplot)を使ってグラフを描画する方法/index.md",
+      "sourceHash": "d738012867cd5ecbc7b2ea15c18d50d2898b6955329a70f138e357c5531b6323",
+      "translationHash": "e442f0e6519aea8de45173a8554d071409e0cfd105be6298f340da4761b817ef",
+      "summary": "Rewrote and aligned the translation to the Japanese source and current Matplotlib, NumPy, and Colab documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the notebook workflow, hosted-runtime explanation, graph output, and current-interface caveat."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked NumPy, Matplotlib, pyplot, Colab hosted runtime, radians, legend, and notebook terminology."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified that linspace generates 500 evenly spaced samples including both endpoints on [0, 2π], and that NumPy sin/cos receive radian values."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared identical Python code across all locales and executed it with local NumPy/Matplotlib using the Agg backend; confirmed the 500-point interval and two plotted series. Colab itself was not exercised."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the version-pinned Matplotlib 3.5.3 reference with the current stable docs and added NumPy linspace and official Colab references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Code was checked against the documentation; no live Google account/Colab notebook was used for this review.",
+        "Colab UI, hosted runtime package versions, and service availability can change; the guide avoids fixed menu-label instructions and links to current official references."
+      ]
+    },
+    "post/Python(matplotlib.pyplot)を使ってグラフを描画する方法/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Python(matplotlib.pyplot)を使ってグラフを描画する方法/index.md",
+      "sourceHash": "d738012867cd5ecbc7b2ea15c18d50d2898b6955329a70f138e357c5531b6323",
+      "translationHash": "40d878cb77e7d5887f9143b27d19e19a56e8c93bb6a2f755c3385d78d1bad955",
+      "summary": "Rewrote and aligned the translation to the Japanese source and current Matplotlib, NumPy, and Colab documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the notebook workflow, hosted-runtime explanation, graph output, and current-interface caveat."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked NumPy, Matplotlib, pyplot, Colab hosted runtime, radians, legend, and notebook terminology."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified that linspace generates 500 evenly spaced samples including both endpoints on [0, 2π], and that NumPy sin/cos receive radian values."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared identical Python code across all locales and executed it with local NumPy/Matplotlib using the Agg backend; confirmed the 500-point interval and two plotted series. Colab itself was not exercised."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the version-pinned Matplotlib 3.5.3 reference with the current stable docs and added NumPy linspace and official Colab references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Code was checked against the documentation; no live Google account/Colab notebook was used for this review.",
+        "Colab UI, hosted runtime package versions, and service availability can change; the guide avoids fixed menu-label instructions and links to current official references."
+      ]
+    },
+    "post/Python(matplotlib.pyplot)を使ってグラフを描画する方法/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Python(matplotlib.pyplot)を使ってグラフを描画する方法/index.md",
+      "sourceHash": "d738012867cd5ecbc7b2ea15c18d50d2898b6955329a70f138e357c5531b6323",
+      "translationHash": "c1475530fdd1f7c9f88da5593d56234e8487c30e88b69c626d4815597b31c0d8",
+      "summary": "Rewrote and aligned the translation to the Japanese source and current Matplotlib, NumPy, and Colab documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the notebook workflow, hosted-runtime explanation, graph output, and current-interface caveat."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked NumPy, Matplotlib, pyplot, Colab hosted runtime, radians, legend, and notebook terminology."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified that linspace generates 500 evenly spaced samples including both endpoints on [0, 2π], and that NumPy sin/cos receive radian values."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared identical Python code across all locales and executed it with local NumPy/Matplotlib using the Agg backend; confirmed the 500-point interval and two plotted series. Colab itself was not exercised."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the version-pinned Matplotlib 3.5.3 reference with the current stable docs and added NumPy linspace and official Colab references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Code was checked against the documentation; no live Google account/Colab notebook was used for this review.",
+        "Colab UI, hosted runtime package versions, and service availability can change; the guide avoids fixed menu-label instructions and links to current official references."
+      ]
+    },
+    "post/Python(matplotlib.pyplot)を使ってグラフを描画する方法/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Python(matplotlib.pyplot)を使ってグラフを描画する方法/index.md",
+      "sourceHash": "d738012867cd5ecbc7b2ea15c18d50d2898b6955329a70f138e357c5531b6323",
+      "translationHash": "e05a4ffc2c16057b393380232c109f6ba5dde7f08ec56f3340c4ea7b2185e83b",
+      "summary": "Rewrote and aligned the translation to the Japanese source and current Matplotlib, NumPy, and Colab documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the notebook workflow, hosted-runtime explanation, graph output, and current-interface caveat."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked NumPy, Matplotlib, pyplot, Colab hosted runtime, radians, legend, and notebook terminology."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified that linspace generates 500 evenly spaced samples including both endpoints on [0, 2π], and that NumPy sin/cos receive radian values."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared identical Python code across all locales and executed it with local NumPy/Matplotlib using the Agg backend; confirmed the 500-point interval and two plotted series. Colab itself was not exercised."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the version-pinned Matplotlib 3.5.3 reference with the current stable docs and added NumPy linspace and official Colab references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Code was checked against the documentation; no live Google account/Colab notebook was used for this review.",
+        "Colab UI, hosted runtime package versions, and service availability can change; the guide avoids fixed menu-label instructions and links to current official references."
+      ]
+    },
+    "post/Python(matplotlib.pyplot)を使ってグラフを描画する方法/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Python(matplotlib.pyplot)を使ってグラフを描画する方法/index.md",
+      "sourceHash": "d738012867cd5ecbc7b2ea15c18d50d2898b6955329a70f138e357c5531b6323",
+      "translationHash": "ba9b5a1eb68cbd49d5d37b2676fafa4d509803adf6adef535f1faaab98537526",
+      "summary": "Rewrote and aligned the translation to the Japanese source and current Matplotlib, NumPy, and Colab documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the notebook workflow, hosted-runtime explanation, graph output, and current-interface caveat."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked NumPy, Matplotlib, pyplot, Colab hosted runtime, radians, legend, and notebook terminology."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified that linspace generates 500 evenly spaced samples including both endpoints on [0, 2π], and that NumPy sin/cos receive radian values."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared identical Python code across all locales and executed it with local NumPy/Matplotlib using the Agg backend; confirmed the 500-point interval and two plotted series. Colab itself was not exercised."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the version-pinned Matplotlib 3.5.3 reference with the current stable docs and added NumPy linspace and official Colab references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Code was checked against the documentation; no live Google account/Colab notebook was used for this review.",
+        "Colab UI, hosted runtime package versions, and service availability can change; the guide avoids fixed menu-label instructions and links to current official references."
+      ]
+    },
+    "post/Python(matplotlib.pyplot)を使ってグラフを描画する方法/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Python(matplotlib.pyplot)を使ってグラフを描画する方法/index.md",
+      "sourceHash": "d738012867cd5ecbc7b2ea15c18d50d2898b6955329a70f138e357c5531b6323",
+      "translationHash": "4b41ba3e7e060f18701221cf7c42b2c8ae7f98b3f48be146f5d5ab66bf8f2b35",
+      "summary": "Rewrote and aligned the translation to the Japanese source and current Matplotlib, NumPy, and Colab documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the notebook workflow, hosted-runtime explanation, graph output, and current-interface caveat."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked NumPy, Matplotlib, pyplot, Colab hosted runtime, radians, legend, and notebook terminology."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified that linspace generates 500 evenly spaced samples including both endpoints on [0, 2π], and that NumPy sin/cos receive radian values."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared identical Python code across all locales and executed it with local NumPy/Matplotlib using the Agg backend; confirmed the 500-point interval and two plotted series. Colab itself was not exercised."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the version-pinned Matplotlib 3.5.3 reference with the current stable docs and added NumPy linspace and official Colab references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Code was checked against the documentation; no live Google account/Colab notebook was used for this review.",
+        "Colab UI, hosted runtime package versions, and service availability can change; the guide avoids fixed menu-label instructions and links to current official references."
+      ]
+    },
+    "post/Python(matplotlib.pyplot)を使ってグラフを描画する方法/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Python(matplotlib.pyplot)を使ってグラフを描画する方法/index.md",
+      "sourceHash": "d738012867cd5ecbc7b2ea15c18d50d2898b6955329a70f138e357c5531b6323",
+      "translationHash": "d794ac75ca8f76f2641a8a60f381054c0db845b8bd46b0593be5c89667b1b094",
+      "summary": "Rewrote and aligned the translation to the Japanese source and current Matplotlib, NumPy, and Colab documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the notebook workflow, hosted-runtime explanation, graph output, and current-interface caveat."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked NumPy, Matplotlib, pyplot, Colab hosted runtime, radians, legend, and notebook terminology."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified that linspace generates 500 evenly spaced samples including both endpoints on [0, 2π], and that NumPy sin/cos receive radian values."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared identical Python code across all locales and executed it with local NumPy/Matplotlib using the Agg backend; confirmed the 500-point interval and two plotted series. Colab itself was not exercised."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the version-pinned Matplotlib 3.5.3 reference with the current stable docs and added NumPy linspace and official Colab references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Code was checked against the documentation; no live Google account/Colab notebook was used for this review.",
+        "Colab UI, hosted runtime package versions, and service availability can change; the guide avoids fixed menu-label instructions and links to current official references."
+      ]
+    }
+  }
+}

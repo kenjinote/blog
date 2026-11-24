@@ -1,39 +1,47 @@
 ---
-title: 'Python और matplotlib के साथ ग्राफ़ कैसे बनाएं [Google Colab समर्थित]'
-date: "2026-09-24T19:44:38+09:00"
+title: "Google Colab में Python और Matplotlib से ग्राफ़ बनाएँ"
 slug: "Python(matplotlib.pyplot)を使ってग्राफを描画する方法"
-date: 2023-04-09T01:02:19+09:00
 tags: ["Python", "ग्राफ़", "गणित", "matplotlib", "pyplot", "Google Colaboratory"]
 draft: false
 image: "img.webp"
 categories: ["math-cryptography-quantum"]
-description: 'Google Colaboratory का उपयोग करके Python की matplotlib.pyplot लाइब्रेरी के साथ साइन और कोसाइन तरंगों के ग्राफ़ को आसानी से बनाने और प्रदर्शित करने की प्रक्रिया शुरुआती लोगों के लिए बताई गई है। आप पर्यावरण स्थापित किए बिना इसे तुरंत आज़मा सकते हैं।'
+description: "Google Colab में NumPy और Matplotlib से 0 से 2π तक sine और cosine वक्र बनाएँ।"
+date: "2023-04-09T01:02:19+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
 
-![img_1.png](img_1.webp)
+यह उदाहरण Python, NumPy और Matplotlib के साथ Google Colab notebook में sine और cosine वक्र बनाता है। Colab का इंटरफ़ेस और menu नाम बदल सकते हैं, इसलिए मौजूदा इंटरफ़ेस से खाली notebook बनाएँ।
 
-# आपको क्या चाहिए
-- Google खाता
+## आवश्यकताएँ
 
-# चरण
+आपको Google Account और इंटरनेट कनेक्शन चाहिए। Colab के hosted runtime में स्थानीय कंप्यूटर पर Python environment सेट किए बिना code चलाया जा सकता है।
 
-1. [https://colab.research.google.com/](https://colab.research.google.com/) पर जाएं
-2. "फ़ाइल" -> "नई नोटबुक" चुनें
-3. नीचे दिए गए कोड को पेस्ट करें और चलाएं
+## Notebook cell चलाएँ
+
+कोड को नए notebook के code cell में paste करके चलाएँ। x में 0 से 2π तक, दोनों सिरों सहित, समान दूरी वाले 500 मान हैं। ग्राफ़ radians में इन मानों के लिए sine और cosine दिखाता है और legend जोड़ता है।
+
 ```python
 import matplotlib.pyplot as plt
 import numpy as np
-x = np.linspace(0, 2*np.pi, 500)
+
+x = np.linspace(0, 2 * np.pi, 500)
 plt.plot(x, np.sin(x), label="sin curve")
 plt.plot(x, np.cos(x), label="cos curve")
-plt.legend() # लीजेंड दिखाएं
+plt.legend()
 plt.show()
 ```
 
-# निष्पादन परिणाम
+## उदाहरण परिणाम
 
-![img.png](img.webp)
+Cell में sine और cosine वक्रों का ग्राफ़ दिखता है। यदि hosted runtime में कोई library उपलब्ध न हो, तो cell में `%pip install numpy matplotlib` चलाकर उदाहरण फिर चलाएँ।
 
-# संदर्भ
+![sine और cosine का ग्राफ़](img_1.webp)
 
-- [matplotlib.pyplot — Matplotlib 3.5.3 documentation](https://matplotlib.org/3.5.3/api/_as_gen/matplotlib.pyplot.html)
+![sine और cosine का ग्राफ़](img.webp)
+
+## आधिकारिक संदर्भ
+
+- [Matplotlib: pyplot](https://matplotlib.org/stable/api/pyplot_summary.html)
+- [NumPy: linspace](https://numpy.org/doc/stable/reference/generated/numpy.linspace.html)
+- [Google Colab: FAQ](https://research.google.com/colaboratory/faq.html?hl=en)
+- [Open Google Colab](https://colab.research.google.com/)

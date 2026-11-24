@@ -328,6 +328,18 @@ ARTICLES = {
         "markers": ["winget install --id Microsoft.PowerToys --exact --source winget", "winget uninstall --id Microsoft.PowerToys --exact --source winget", "ARM64", "WebView2 Runtime"],
         "date": "2023-09-30",
     },
+    113: {
+        "bundle": ROOT / "content/post/Python(matplotlib.pyplot)を使ってグラフを描画する方法",
+        "slug": "Python(matplotlib.pyplot)を使ってグラフを描画する方法",
+        "links": [
+            "https://matplotlib.org/stable/api/pyplot_summary.html",
+            "https://numpy.org/doc/stable/reference/generated/numpy.linspace.html",
+            "https://research.google.com/colaboratory/faq.html?hl=en",
+            "https://colab.research.google.com/",
+        ],
+        "markers": ["np.linspace(0, 2 * np.pi, 500)", "np.sin(x)", "np.cos(x)", "plt.legend()", "plt.show()", "2π"],
+        "date": "2023-04-09",
+    },
 }
 
 
@@ -393,7 +405,7 @@ def slug_key(value):
 parser = argparse.ArgumentParser()
 parser.add_argument("--ci-run", type=int, required=True)
 parser.add_argument("--commit", required=True)
-parser.add_argument("--max-batch", type=int, choices=(90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112), default=112)
+parser.add_argument("--max-batch", type=int, choices=(90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113), default=113)
 args = parser.parse_args()
 ARTICLES = {number: article for number, article in ARTICLES.items() if number <= args.max_batch}
 with urllib.request.urlopen(f"https://github.com/kenjinote/blog/actions/runs/{args.ci_run}", timeout=45) as response:
