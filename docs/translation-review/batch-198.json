@@ -1,0 +1,459 @@
+{
+  "version": 1,
+  "batch": 198,
+  "article": "Win32API and C++ for Windows application development",
+  "reviewedAt": "2026-11-25",
+  "sourceHash": "1c745f97e9df86018a65f2503ba2fffedac4a75331e0705a07f5d63d83cee8b2",
+  "sources": [
+    "https://learn.microsoft.com/en-us/windows/win32/shell/app-registration",
+    "https://learn.microsoft.com/en-us/cpp/windows/determining-which-dlls-to-redistribute?view=msvc-170",
+    "https://learn.microsoft.com/en-us/windows/win32/hidpi/high-dpi-desktop-application-development-on-windows",
+    "https://learn.microsoft.com/en-us/windows/win32/winmsg/about-hooks",
+    "https://learn.microsoft.com/en-us/windows/win32/winauto/accessibility-best-practices",
+    "https://learn.microsoft.com/en-us/windows-hardware/drivers/download-the-wdk"
+  ],
+  "scope": "Read the complete Japanese article and all twelve translations; compared every section, suitability list, qualitative summary, terminology, metadata, link, and asset. Checked technical claims against current Microsoft Learn documentation.",
+  "findings": [
+    "Removed duplicate future dates from all editions, preserved the original publication date (2025-07-12), and set lastmod to the review date.",
+    "Replaced categorical speed and memory claims with implementation-dependent guidance.",
+    "Corrected the claim that native Win32 means a C++ app has no runtime or can always ship as a single executable; deployment depends on CRT linkage and other dependencies.",
+    "Clarified that modern DPI and accessibility support is possible but requires implementation and testing in raw Win32; global hooks can hurt performance and conflict with apps.",
+    "Clarified that C++ is portable while code calling Win32-specific APIs needs adaptation; driver development is separate and uses WDK tooling.",
+    "Replaced misleading static rating table with a qualitative summary and added Microsoft references in all editions."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/Win32API+C++でプログラムを作るメリットとデメリット/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/Win32API+C++でプログラムを作るメリットとデメリット/index.md",
+      "sourceHash": "1c745f97e9df86018a65f2503ba2fffedac4a75331e0705a07f5d63d83cee8b2",
+      "translationHash": "2eb1b5bc97a5f26b2dce739112d2bc8075122e142303ce9dade483e162e73d35",
+      "summary": "Compared the complete translation with the Japanese source and current Microsoft documentation; qualified performance and memory claims, corrected runtime and deployment guidance, and clarified DPI, hooks, portability, and driver-development limitations.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and this full translation; corrected generalizations about performance, memory use, deployment, modern UI, portability, and the role of driver tools."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Win32API, native code, MSVC runtime, static/dynamic linking, per-monitor DPI, global hooks, accessibility, handles, GDI, COM, and WDK wording."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no runnable source code or command examples; the inline windows.h include name was checked."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the six linked Microsoft Learn references for MSVC runtime deployment, App Paths, DPI behavior, global hooks, accessibility, and driver tooling; retained localized internal references and the article image."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Performance and memory use depend on the target app, build configuration, workload, and dependencies; the article is general guidance, not benchmark data.",
+        "Microsoft Learn sources were checked on 2026-11-25."
+      ]
+    },
+    "post/Win32API+C++でプログラムを作るメリットとデメリット/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/Win32API+C++でプログラムを作るメリットとデメリット/index.md",
+      "sourceHash": "1c745f97e9df86018a65f2503ba2fffedac4a75331e0705a07f5d63d83cee8b2",
+      "translationHash": "484558a97e108f1585418e6a459f9781a4bcb18185c440e7020bf399848fa833",
+      "summary": "Compared the complete translation with the Japanese source and current Microsoft documentation; qualified performance and memory claims, corrected runtime and deployment guidance, and clarified DPI, hooks, portability, and driver-development limitations.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and this full translation; corrected generalizations about performance, memory use, deployment, modern UI, portability, and the role of driver tools."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Win32API, native code, MSVC runtime, static/dynamic linking, per-monitor DPI, global hooks, accessibility, handles, GDI, COM, and WDK wording."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no runnable source code or command examples; the inline windows.h include name was checked."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the six linked Microsoft Learn references for MSVC runtime deployment, App Paths, DPI behavior, global hooks, accessibility, and driver tooling; retained localized internal references and the article image."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Performance and memory use depend on the target app, build configuration, workload, and dependencies; the article is general guidance, not benchmark data.",
+        "Microsoft Learn sources were checked on 2026-11-25."
+      ]
+    },
+    "post/Win32API+C++でプログラムを作るメリットとデメリット/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/Win32API+C++でプログラムを作るメリットとデメリット/index.md",
+      "sourceHash": "1c745f97e9df86018a65f2503ba2fffedac4a75331e0705a07f5d63d83cee8b2",
+      "translationHash": "312a0d63e36d2ea85a0417fd846366fe8f6ddcafb21e1444036bc9f7d3579a00",
+      "summary": "Compared the complete translation with the Japanese source and current Microsoft documentation; qualified performance and memory claims, corrected runtime and deployment guidance, and clarified DPI, hooks, portability, and driver-development limitations.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and this full translation; corrected generalizations about performance, memory use, deployment, modern UI, portability, and the role of driver tools."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Win32API, native code, MSVC runtime, static/dynamic linking, per-monitor DPI, global hooks, accessibility, handles, GDI, COM, and WDK wording."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no runnable source code or command examples; the inline windows.h include name was checked."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the six linked Microsoft Learn references for MSVC runtime deployment, App Paths, DPI behavior, global hooks, accessibility, and driver tooling; retained localized internal references and the article image."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Performance and memory use depend on the target app, build configuration, workload, and dependencies; the article is general guidance, not benchmark data.",
+        "Microsoft Learn sources were checked on 2026-11-25."
+      ]
+    },
+    "post/Win32API+C++でプログラムを作るメリットとデメリット/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/Win32API+C++でプログラムを作るメリットとデメリット/index.md",
+      "sourceHash": "1c745f97e9df86018a65f2503ba2fffedac4a75331e0705a07f5d63d83cee8b2",
+      "translationHash": "4764d0e77a9d823004f8d5b9230e6146f7f2b7250ae045f4fa1de62bd850e507",
+      "summary": "Compared the complete translation with the Japanese source and current Microsoft documentation; qualified performance and memory claims, corrected runtime and deployment guidance, and clarified DPI, hooks, portability, and driver-development limitations.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and this full translation; corrected generalizations about performance, memory use, deployment, modern UI, portability, and the role of driver tools."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Win32API, native code, MSVC runtime, static/dynamic linking, per-monitor DPI, global hooks, accessibility, handles, GDI, COM, and WDK wording."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no runnable source code or command examples; the inline windows.h include name was checked."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the six linked Microsoft Learn references for MSVC runtime deployment, App Paths, DPI behavior, global hooks, accessibility, and driver tooling; retained localized internal references and the article image."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Performance and memory use depend on the target app, build configuration, workload, and dependencies; the article is general guidance, not benchmark data.",
+        "Microsoft Learn sources were checked on 2026-11-25."
+      ]
+    },
+    "post/Win32API+C++でプログラムを作るメリットとデメリット/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/Win32API+C++でプログラムを作るメリットとデメリット/index.md",
+      "sourceHash": "1c745f97e9df86018a65f2503ba2fffedac4a75331e0705a07f5d63d83cee8b2",
+      "translationHash": "3d4eeaee37db3036de21f644a50000148c4744db43057df11c8ebf619c119827",
+      "summary": "Compared the complete translation with the Japanese source and current Microsoft documentation; qualified performance and memory claims, corrected runtime and deployment guidance, and clarified DPI, hooks, portability, and driver-development limitations.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and this full translation; corrected generalizations about performance, memory use, deployment, modern UI, portability, and the role of driver tools."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Win32API, native code, MSVC runtime, static/dynamic linking, per-monitor DPI, global hooks, accessibility, handles, GDI, COM, and WDK wording."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no runnable source code or command examples; the inline windows.h include name was checked."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the six linked Microsoft Learn references for MSVC runtime deployment, App Paths, DPI behavior, global hooks, accessibility, and driver tooling; retained localized internal references and the article image."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Performance and memory use depend on the target app, build configuration, workload, and dependencies; the article is general guidance, not benchmark data.",
+        "Microsoft Learn sources were checked on 2026-11-25."
+      ]
+    },
+    "post/Win32API+C++でプログラムを作るメリットとデメリット/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/Win32API+C++でプログラムを作るメリットとデメリット/index.md",
+      "sourceHash": "1c745f97e9df86018a65f2503ba2fffedac4a75331e0705a07f5d63d83cee8b2",
+      "translationHash": "ad14b23a043219dcf93126b021fd86b3da4d94ae0b894d0377af950f6dce3c20",
+      "summary": "Compared the complete translation with the Japanese source and current Microsoft documentation; qualified performance and memory claims, corrected runtime and deployment guidance, and clarified DPI, hooks, portability, and driver-development limitations.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and this full translation; corrected generalizations about performance, memory use, deployment, modern UI, portability, and the role of driver tools."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Win32API, native code, MSVC runtime, static/dynamic linking, per-monitor DPI, global hooks, accessibility, handles, GDI, COM, and WDK wording."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no runnable source code or command examples; the inline windows.h include name was checked."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the six linked Microsoft Learn references for MSVC runtime deployment, App Paths, DPI behavior, global hooks, accessibility, and driver tooling; retained localized internal references and the article image."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Performance and memory use depend on the target app, build configuration, workload, and dependencies; the article is general guidance, not benchmark data.",
+        "Microsoft Learn sources were checked on 2026-11-25."
+      ]
+    },
+    "post/Win32API+C++でプログラムを作るメリットとデメリット/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/Win32API+C++でプログラムを作るメリットとデメリット/index.md",
+      "sourceHash": "1c745f97e9df86018a65f2503ba2fffedac4a75331e0705a07f5d63d83cee8b2",
+      "translationHash": "9422c0ddda91646cfa737ea2863cf4d463ebf83477907e7dbf497c1dab2606ef",
+      "summary": "Compared the complete translation with the Japanese source and current Microsoft documentation; qualified performance and memory claims, corrected runtime and deployment guidance, and clarified DPI, hooks, portability, and driver-development limitations.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and this full translation; corrected generalizations about performance, memory use, deployment, modern UI, portability, and the role of driver tools."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Win32API, native code, MSVC runtime, static/dynamic linking, per-monitor DPI, global hooks, accessibility, handles, GDI, COM, and WDK wording."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no runnable source code or command examples; the inline windows.h include name was checked."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the six linked Microsoft Learn references for MSVC runtime deployment, App Paths, DPI behavior, global hooks, accessibility, and driver tooling; retained localized internal references and the article image."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Performance and memory use depend on the target app, build configuration, workload, and dependencies; the article is general guidance, not benchmark data.",
+        "Microsoft Learn sources were checked on 2026-11-25."
+      ]
+    },
+    "post/Win32API+C++でプログラムを作るメリットとデメリット/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/Win32API+C++でプログラムを作るメリットとデメリット/index.md",
+      "sourceHash": "1c745f97e9df86018a65f2503ba2fffedac4a75331e0705a07f5d63d83cee8b2",
+      "translationHash": "1181e60daf19d8dfad7c4d83ea67979d940640b42b12e92cb431ef68d4d4de0e",
+      "summary": "Compared the complete translation with the Japanese source and current Microsoft documentation; qualified performance and memory claims, corrected runtime and deployment guidance, and clarified DPI, hooks, portability, and driver-development limitations.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and this full translation; corrected generalizations about performance, memory use, deployment, modern UI, portability, and the role of driver tools."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Win32API, native code, MSVC runtime, static/dynamic linking, per-monitor DPI, global hooks, accessibility, handles, GDI, COM, and WDK wording."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no runnable source code or command examples; the inline windows.h include name was checked."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the six linked Microsoft Learn references for MSVC runtime deployment, App Paths, DPI behavior, global hooks, accessibility, and driver tooling; retained localized internal references and the article image."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Performance and memory use depend on the target app, build configuration, workload, and dependencies; the article is general guidance, not benchmark data.",
+        "Microsoft Learn sources were checked on 2026-11-25."
+      ]
+    },
+    "post/Win32API+C++でプログラムを作るメリットとデメリット/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/Win32API+C++でプログラムを作るメリットとデメリット/index.md",
+      "sourceHash": "1c745f97e9df86018a65f2503ba2fffedac4a75331e0705a07f5d63d83cee8b2",
+      "translationHash": "4372b10756d3aaf5956dbcfb1db53316f167861784a6283c7d6f9cb35fa00600",
+      "summary": "Compared the complete translation with the Japanese source and current Microsoft documentation; qualified performance and memory claims, corrected runtime and deployment guidance, and clarified DPI, hooks, portability, and driver-development limitations.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and this full translation; corrected generalizations about performance, memory use, deployment, modern UI, portability, and the role of driver tools."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Win32API, native code, MSVC runtime, static/dynamic linking, per-monitor DPI, global hooks, accessibility, handles, GDI, COM, and WDK wording."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no runnable source code or command examples; the inline windows.h include name was checked."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the six linked Microsoft Learn references for MSVC runtime deployment, App Paths, DPI behavior, global hooks, accessibility, and driver tooling; retained localized internal references and the article image."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Performance and memory use depend on the target app, build configuration, workload, and dependencies; the article is general guidance, not benchmark data.",
+        "Microsoft Learn sources were checked on 2026-11-25."
+      ]
+    },
+    "post/Win32API+C++でプログラムを作るメリットとデメリット/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/Win32API+C++でプログラムを作るメリットとデメリット/index.md",
+      "sourceHash": "1c745f97e9df86018a65f2503ba2fffedac4a75331e0705a07f5d63d83cee8b2",
+      "translationHash": "a1ccc8188c637ff13bf67bb0a9106e7ac565cc120f3ab7db2d44913e7ded8ac8",
+      "summary": "Compared the complete translation with the Japanese source and current Microsoft documentation; qualified performance and memory claims, corrected runtime and deployment guidance, and clarified DPI, hooks, portability, and driver-development limitations.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and this full translation; corrected generalizations about performance, memory use, deployment, modern UI, portability, and the role of driver tools."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Win32API, native code, MSVC runtime, static/dynamic linking, per-monitor DPI, global hooks, accessibility, handles, GDI, COM, and WDK wording."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no runnable source code or command examples; the inline windows.h include name was checked."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the six linked Microsoft Learn references for MSVC runtime deployment, App Paths, DPI behavior, global hooks, accessibility, and driver tooling; retained localized internal references and the article image."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Performance and memory use depend on the target app, build configuration, workload, and dependencies; the article is general guidance, not benchmark data.",
+        "Microsoft Learn sources were checked on 2026-11-25."
+      ]
+    },
+    "post/Win32API+C++でプログラムを作るメリットとデメリット/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/Win32API+C++でプログラムを作るメリットとデメリット/index.md",
+      "sourceHash": "1c745f97e9df86018a65f2503ba2fffedac4a75331e0705a07f5d63d83cee8b2",
+      "translationHash": "51a57c3276d74b069332793a231f982f579d12393a09b58b6ad7737aa6ea0a5d",
+      "summary": "Compared the complete translation with the Japanese source and current Microsoft documentation; qualified performance and memory claims, corrected runtime and deployment guidance, and clarified DPI, hooks, portability, and driver-development limitations.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and this full translation; corrected generalizations about performance, memory use, deployment, modern UI, portability, and the role of driver tools."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Win32API, native code, MSVC runtime, static/dynamic linking, per-monitor DPI, global hooks, accessibility, handles, GDI, COM, and WDK wording."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no runnable source code or command examples; the inline windows.h include name was checked."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the six linked Microsoft Learn references for MSVC runtime deployment, App Paths, DPI behavior, global hooks, accessibility, and driver tooling; retained localized internal references and the article image."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Performance and memory use depend on the target app, build configuration, workload, and dependencies; the article is general guidance, not benchmark data.",
+        "Microsoft Learn sources were checked on 2026-11-25."
+      ]
+    },
+    "post/Win32API+C++でプログラムを作るメリットとデメリット/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/Win32API+C++でプログラムを作るメリットとデメリット/index.md",
+      "sourceHash": "1c745f97e9df86018a65f2503ba2fffedac4a75331e0705a07f5d63d83cee8b2",
+      "translationHash": "fa626f8edf0304e46e4fdef9d7e54b43002bcf3fbfa498bc4e035ee51dd9fffd",
+      "summary": "Compared the complete translation with the Japanese source and current Microsoft documentation; qualified performance and memory claims, corrected runtime and deployment guidance, and clarified DPI, hooks, portability, and driver-development limitations.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and this full translation; corrected generalizations about performance, memory use, deployment, modern UI, portability, and the role of driver tools."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Win32API, native code, MSVC runtime, static/dynamic linking, per-monitor DPI, global hooks, accessibility, handles, GDI, COM, and WDK wording."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no runnable source code or command examples; the inline windows.h include name was checked."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the six linked Microsoft Learn references for MSVC runtime deployment, App Paths, DPI behavior, global hooks, accessibility, and driver tooling; retained localized internal references and the article image."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Performance and memory use depend on the target app, build configuration, workload, and dependencies; the article is general guidance, not benchmark data.",
+        "Microsoft Learn sources were checked on 2026-11-25."
+      ]
+    }
+  }
+}

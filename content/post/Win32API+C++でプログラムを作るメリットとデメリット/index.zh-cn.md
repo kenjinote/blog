@@ -1,13 +1,13 @@
 ---
-title: '使用Win32API＋C++开发Windows应用！现役工程师讲解优缺点'
-date: "2026-09-24T19:44:38+09:00"
-slug: "Win32API+C++でプログラムを作るメリットとデメリット"
 date: 2025-07-12T12:30:35+09:00
+lastmod: 2026-11-25
+title: '使用Win32API＋C++开发Windows应用！现役工程师讲解优缺点'
+slug: "Win32API+C++でプログラムを作るメリットとデメリット"
 tags: ["Win32API", "C++", "编程", "开发", "技术"]
 draft: false
 image: "img_1.webp"
 categories: ["programming"]
-description: '现役工程师为您讲解使用“Win32API＋C++”开发Windows应用的优缺点。介绍原生开发独有的魅力（如超快的执行速度、高自由度的控制、无需运行库易于分发）以及学习上的挑战。'
+description: "概述使用 Win32API 和 C++ 开发 Windows 应用的优点与取舍。性能、部署和 UI 工作量取决于实现与依赖项。"
 ---
 # 使用 Win32API + C++ 开发的魅力与挑战
 
@@ -22,33 +22,19 @@ description: '现役工程师为您讲解使用“Win32API＋C++”开发Windows
 
 ## 优点
 
-### 超高速的原生执行
-
-C++ 和 Win32API 在最靠近操作系统的层级上运行，因此几乎没有多余的开销。
-其 CPU 和内存的使用效率极高，拥有 **压倒性的执行速度** 。
-
+### 原生代码与性能
+C++ 可以编译为本机代码，Win32API 可直接访问 Windows 功能。但实际速度和 CPU 使用率取决于算法、工作负载和依赖项，应针对目标应用测量。
 ### 极高的灵活性和自由度
 
 无论是窗口控制、异步处理、COM 协作还是进程管理等，应用的任何行为都可以 **自行进行精细控制** 。
 你也可以构建专用于特定目的的工具，或自制独有的框架等。
 
-### 无需运行时，便于分发
-
-无需像 .NET 或 [Java](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/) 那样的外部运行时， **只需一个可执行文件即可分发** 。
-在再分发时不易出现问题，无需安装程序也能轻松运行，这是其魅力所在。
-
+### 运行库与部署
+Win32 应用本身不要求 .NET 或 Java 运行时，但 C++ 程序仍可能依赖 MSVC 运行库 DLL 或其他库。部署方式取决于静态或动态链接、目标 Windows 版本及其他依赖项。
 ### 能够制作轻量级应用
-
-由于只需最小限度的配置即可，其特征是 **内存占用非常小** 。
-即使在低配置的 PC 或虚拟机环境中也能流畅运行。
-
+小型工具可能较为紧凑，但使用 Win32API 并不保证内存占用低；占用取决于功能、设计、UI 和库。
 ### 支持操作系统级别的高级控制
-
-鼠标与键盘的全局钩子、窗口样式的微调、系统菜单操作等，
-也能实现 **在普通语言或库中难以完成的控制** 。
-
----
-
+Win32 可以直接操作窗口、消息和其他系统功能。全局钩子可能影响系统性能并与其他应用冲突，Microsoft 建议除调试场景外避免使用。
 ## 缺点
 
 ### 开发效率低
@@ -62,22 +48,11 @@ GUI 的构建也完全需要通过代码来实现，有时 **仅制作一个按�
 也有不适合团队开发或长期维护的一面。
 
 ### 适配现代 UI 很麻烦
-
-高 DPI 适配、触摸界面、无障碍功能、深色模式等， **很难应对近年来对 UX（用户体验）的要求** 。
-必须逐一手动进行适配，非常费力。
-
+Win32 应用可以支持高 DPI、触控和无障碍功能，但原始 Win32 不会自动完成这些工作，需要实现和测试；逐显示器 DPI 变化也需明确处理。
 ### 不支持跨平台
-
-因为完全是 Windows 专用的 API， **无法移植到 macOS 或 Linux** 。
-如果考虑到多平台部署，则需要选择其他技术。
-
+C++ 本身可跨平台，但调用 Windows 专属 Win32API 的代码不能直接移植，需要替换为平台 API 或增加抽象层。
 ### 学习成本极高
-
-必须理解句柄、GDI、COM、OLE 等 **在现代已经不太使用的概念和机制** 。
-文档也有很多是旧的，学习需要时间和毅力。
-
----
-
+Win32 涉及许多 API 和概念，如句柄、消息循环、GDI 和 COM。它们并非都已过时；应针对所用功能查阅 Microsoft 当前文档。
 ## 适合的用途
 
 * 文件启动器或快捷键辅助等 **轻量级工具**
@@ -97,25 +72,23 @@ GUI 的构建也完全需要通过代码来实现，有时 **仅制作一个按�
 ---
 
 ## 评价总结
-
-| 维度 | 评价 |
-| ------------- | -------- |
-| 执行速度 | ◎ 非常快 |
-| 内存效率 | ◎ 优秀 |
-| 开发速度 | × 慢 |
-| 维护性 | × 低 |
-| 跨平台支持 | × 不支持 |
-| 现代 UI 支持 | × 弱 |
-| OS 控制自由度 | ◎ 压倒性地高 |
-
----
-
+总体取舍取决于应用需求。Win32 可直接访问 Windows 功能，但通常需要更多手工工作。它不能保证速度、低内存占用、可维护性或轻松部署。
 ## 结论
 
 **Win32API + C++ 是适合“想要自己处理操作系统的一切”的开发者的工具。**
 虽然它的力量非常强大，但在学习和运用上也需要相应的心理准备。
 
 > 是否有“特意去选择”的价值，取决于你目标应用的性质。
+
+
+## 参考资料
+
+- [Microsoft: App Paths registration](https://learn.microsoft.com/en-us/windows/win32/shell/app-registration)
+- [Microsoft: MSVC runtime deployment](https://learn.microsoft.com/en-us/cpp/windows/determining-which-dlls-to-redistribute?view=msvc-170)
+- [Microsoft: High-DPI desktop apps](https://learn.microsoft.com/en-us/windows/win32/hidpi/high-dpi-desktop-application-development-on-windows)
+- [Microsoft: Hooks overview](https://learn.microsoft.com/en-us/windows/win32/winmsg/about-hooks)
+- [Microsoft: Accessibility best practices](https://learn.microsoft.com/en-us/windows/win32/winauto/accessibility-best-practices)
+- [Microsoft: Windows Driver Kit](https://learn.microsoft.com/en-us/windows-hardware/drivers/download-the-wdk)
 
 ---
 

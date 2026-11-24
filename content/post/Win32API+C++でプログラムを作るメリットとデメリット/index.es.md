@@ -1,4 +1,6 @@
 ---
+date: 2025-07-12T12:30:35+09:00
+lastmod: 2026-11-25
 
 
 
@@ -8,14 +10,12 @@
 
 
 title: '¡Desarrollo de aplicaciones Windows con Win32API + C++! Ventajas y desventajas explicadas por un ingeniero en activo'
-date: "2026-09-24T19:44:38+09:00"
 slug: "Win32API+C++でプログラムを作るメリットとデメリット"
-date: 2025-07-12T12:30:35+09:00
 tags: ["Win32API", "C++", "Programación", "Desarrollo", "Tecnología"]
 draft: false
 image: "img_1.webp"
 categories: ["programming"]
-description: 'Un ingeniero en activo explica las ventajas y desventajas del desarrollo de aplicaciones para Windows utilizando ''Win32API + C++''. Introducimos el encanto exclusivo del desarrollo nativo, como su velocidad de ejecución ultrarrápida, alto grado de libertad de control, y la facilidad de distribución sin necesidad de un runtime, además de los desafíos en su aprendizaje.'
+description: "Resumen práctico de Win32API y C++ para aplicaciones Windows. El rendimiento, la distribución y el trabajo de UI dependen de la implementación y sus dependencias."
 ---
 
 
@@ -38,32 +38,19 @@ En esta página, explicaremos las ventajas y desventajas de forma sencilla desde
 
 ## Ventajas
 
-### Ejecución nativa ultrarrápida
-
-Dado que C++ y Win32API funcionan en la capa más cercana al sistema operativo, casi no hay sobrecarga innecesaria.
-La eficiencia en el uso de CPU y memoria es muy alta, presumiendo de una **velocidad de ejecución abrumadora**.
-
+### Código nativo y rendimiento
+C++ puede compilarse como código nativo y Win32API permite acceder directamente a funciones de Windows. La velocidad y el uso de CPU dependen del algoritmo, la carga y las dependencias; mide la aplicación objetivo.
 ### Alta flexibilidad y libertad
 
 Puede **controlar de forma precisa y por sí mismo** todos los comportamientos de la aplicación, como el control de ventanas, el procesamiento asíncrono, la integración COM y la gestión de procesos.
 También es posible crear herramientas especializadas para un propósito o su propio marco de trabajo personalizado.
 
-### Fácil de distribuir sin necesidad de tiempo de ejecución
-
-Dado que no se requieren tiempos de ejecución externos como .NET o [Java](https://kenji.blog/es/p/programming-languages-history-paradigm-evolution/), **se puede distribuir solo con un archivo ejecutable**.
-Es menos propenso a problemas durante la redistribución y es atractivo porque es fácil de ejecutar incluso sin un instalador.
-
+### Runtime y distribución
+Una aplicación Win32 no requiere por sí misma el runtime de .NET o Java, pero una aplicación C++ puede depender de DLL del runtime de MSVC u otras bibliotecas. La distribución depende del enlace estático o dinámico, la versión de Windows y otras dependencias.
 ### Se pueden crear aplicaciones ligeras
-
-Dado que solo requiere la configuración mínima necesaria, se caracteriza por **una huella de memoria muy pequeña**.
-Funciona de manera fluida incluso en PC con bajas especificaciones o entornos de máquinas virtuales.
-
+Una utilidad pequeña puede ser compacta, pero usar Win32API no garantiza poco uso de memoria. Depende de las funciones, el diseño, la UI y las bibliotecas.
 ### Control avanzado a nivel de sistema operativo posible
-
-Puede realizar **controles que son difíciles con lenguajes y bibliotecas normales**, como el hook global del ratón/teclado, el ajuste fino del estilo de la ventana y la manipulación del menú del sistema.
-
----
-
+Win32 permite trabajar directamente con ventanas, mensajes y otras funciones del sistema. Los hooks globales pueden afectar el rendimiento y entrar en conflicto con otras apps; Microsoft recomienda evitarlos salvo para depuración.
 ## Desventajas
 
 ### Baja eficiencia de desarrollo
@@ -77,22 +64,11 @@ Hay mucho **código de estructura especial**, como bucles de mensajes y procedim
 También tiene aspectos que lo hacen inadecuado para el desarrollo en equipo y el mantenimiento a largo plazo.
 
 ### El soporte para UI moderna es tedioso
-
-Es **difícil soportar la UX requerida en los últimos años**, como soporte de alto DPI, interfaz táctil, accesibilidad y modo oscuro.
-Se necesita tiempo y esfuerzo porque requiere hacerlo manualmente uno por uno.
-
+Las apps Win32 pueden admitir alto DPI, táctil y accesibilidad, pero Win32 sin framework no lo hace automáticamente. Hace falta implementarlo y probarlo; los cambios de DPI por monitor requieren tratamiento explícito.
 ### No soporta multiplataforma
-
-Como es una API completamente exclusiva de Windows, **no se puede portar a macOS o Linux**.
-Si asume la implementación en múltiples plataformas, necesitará seleccionar otras tecnologías.
-
+C++ es portable, pero el código que llama a API Win32 específicas de Windows no se porta directamente; requiere sustituirlas por API de cada plataforma o crear una capa de abstracción.
 ### El costo de aprendizaje es extremadamente alto
-
-Debe comprender **conceptos y mecanismos que rara vez se usan en la actualidad**, como manejadores (handles), GDI, COM y OLE.
-Mucha de la documentación es antigua, y el aprendizaje requiere tiempo y perseverancia.
-
----
-
+Win32 implica muchas API y conceptos, como handles, bucles de mensajes, GDI y COM. No todos están obsoletos; consulta la documentación actual de Microsoft para las funciones que uses.
 ## Usos adecuados
 
 * **Herramientas ligeras** como lanzadores de archivos y asistencia de teclas de acceso rápido
@@ -102,6 +78,8 @@ Mucha de la documentación es antigua, y el aprendizaje requiere tiempo y persev
 
 ---
 
+
+Microsoft aconseja evitar hooks globales salvo para depuración, pues pueden reducir el rendimiento y causar conflictos. Desarrollar controladores es distinto de crear una app Win32 de escritorio y suele requerir herramientas como Windows Driver Kit (WDK).
 ## Usos no adecuados
 
 * **Aplicaciones dirigidas a consumidores generales** donde se enfatiza la UI/UX moderna
@@ -112,25 +90,23 @@ Mucha de la documentación es antigua, y el aprendizaje requiere tiempo y persev
 ---
 
 ## Resumen de evaluación
-
-| Punto de vista | Evaluación |
-| ------------- | -------- |
-| Velocidad de ejecución | ◎ Muy rápida |
-| Eficiencia de memoria | ◎ Excelente |
-| Velocidad de desarrollo | × Lenta |
-| Mantenibilidad | × Baja |
-| Soporte multiplataforma | × No soportado |
-| Soporte UI moderna | × Débil |
-| Grado de libertad de control del SO | ◎ Abrumadoramente alto |
-
----
-
+El balance depende de la aplicación. Win32 ofrece acceso directo a Windows, pero suele exigir más trabajo manual. No garantiza velocidad, poco uso de memoria, mantenibilidad ni una distribución sencilla.
 ## Conclusión
 
 **Win32API + C++ es una herramienta adecuada para desarrolladores que "quieren manejar todo el sistema operativo por sí mismos".**
 Si bien su poder es muy grande, el aprendizaje y la operación requieren la correspondiente determinación.
 
 > Si vale la pena "elegirlo a propósito" depende de la naturaleza de la aplicación a la que apunte.
+
+
+## Referencias
+
+- [Microsoft: App Paths registration](https://learn.microsoft.com/en-us/windows/win32/shell/app-registration)
+- [Microsoft: MSVC runtime deployment](https://learn.microsoft.com/en-us/cpp/windows/determining-which-dlls-to-redistribute?view=msvc-170)
+- [Microsoft: High-DPI desktop apps](https://learn.microsoft.com/en-us/windows/win32/hidpi/high-dpi-desktop-application-development-on-windows)
+- [Microsoft: Hooks overview](https://learn.microsoft.com/en-us/windows/win32/winmsg/about-hooks)
+- [Microsoft: Accessibility best practices](https://learn.microsoft.com/en-us/windows/win32/winauto/accessibility-best-practices)
+- [Microsoft: Windows Driver Kit](https://learn.microsoft.com/en-us/windows-hardware/drivers/download-the-wdk)
 
 ---
 

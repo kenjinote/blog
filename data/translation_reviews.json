@@ -22805,6 +22805,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-197.json",
       "evidenceHash": "72a0a4162eb11090d0ebad831c4a9795aa22109efbd2276b0c50bb36207ad69f"
+    },
+    "post/Win32API+C++でプログラムを作るメリットとデメリット/index.en.md": {
+      "source": "post/Win32API+C++でプログラムを作るメリットとデメリット/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "1c745f97e9df86018a65f2503ba2fffedac4a75331e0705a07f5d63d83cee8b2",
+      "translationHash": "2eb1b5bc97a5f26b2dce739112d2bc8075122e142303ce9dade483e162e73d35",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-198.json",
+      "evidenceHash": "08428d86963e3847cfa23e24a844fc6b7f7cc5368aa263d4ed6fa83784718b7e"
+    },
+    "post/Win32API+C++でプログラムを作るメリットとデメリット/index.zh-cn.md": {
+      "source": "post/Win32API+C++でプログラムを作るメリットとデメリット/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "1c745f97e9df86018a65f2503ba2fffedac4a75331e0705a07f5d63d83cee8b2",
+      "translationHash": "484558a97e108f1585418e6a459f9781a4bcb18185c440e7020bf399848fa833",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-198.json",
+      "evidenceHash": "9fe74d5625881f97bc01c421e6b84d8f8c7b9fb7deacecd2fd7fb61b5a1512d5"
+    },
+    "post/Win32API+C++でプログラムを作るメリットとデメリット/index.es.md": {
+      "source": "post/Win32API+C++でプログラムを作るメリットとデメリット/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "1c745f97e9df86018a65f2503ba2fffedac4a75331e0705a07f5d63d83cee8b2",
+      "translationHash": "312a0d63e36d2ea85a0417fd846366fe8f6ddcafb21e1444036bc9f7d3579a00",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-198.json",
+      "evidenceHash": "8dfcda110b4099cd55b287a026a1795ffbb7ecf8bc54dd5951a8a28dbfacc769"
+    },
+    "post/Win32API+C++でプログラムを作るメリットとデメリット/index.ko.md": {
+      "source": "post/Win32API+C++でプログラムを作るメリットとデメリット/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "1c745f97e9df86018a65f2503ba2fffedac4a75331e0705a07f5d63d83cee8b2",
+      "translationHash": "4764d0e77a9d823004f8d5b9230e6146f7f2b7250ae045f4fa1de62bd850e507",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-198.json",
+      "evidenceHash": "09162f5e9f2785dbb72377df713060cab9752c7baaa63887f96396d95eef87ca"
+    },
+    "post/Win32API+C++でプログラムを作るメリットとデメリット/index.pt.md": {
+      "source": "post/Win32API+C++でプログラムを作るメリットとデメリット/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "1c745f97e9df86018a65f2503ba2fffedac4a75331e0705a07f5d63d83cee8b2",
+      "translationHash": "3d4eeaee37db3036de21f644a50000148c4744db43057df11c8ebf619c119827",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-198.json",
+      "evidenceHash": "fcad44e13f3012f1cec29f307e7ed6e1ec95bee11bd4a639fbd920b4f2d74213"
+    },
+    "post/Win32API+C++でプログラムを作るメリットとデメリット/index.zh-tw.md": {
+      "source": "post/Win32API+C++でプログラムを作るメリットとデメリット/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "1c745f97e9df86018a65f2503ba2fffedac4a75331e0705a07f5d63d83cee8b2",
+      "translationHash": "ad14b23a043219dcf93126b021fd86b3da4d94ae0b894d0377af950f6dce3c20",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-198.json",
+      "evidenceHash": "a4d410b95137bab9826c8d1f0d9dab1de03edd5a63893db39d6adf67ea6c0f56"
+    },
+    "post/Win32API+C++でプログラムを作るメリットとデメリット/index.hi.md": {
+      "source": "post/Win32API+C++でプログラムを作るメリットとデメリット/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "1c745f97e9df86018a65f2503ba2fffedac4a75331e0705a07f5d63d83cee8b2",
+      "translationHash": "9422c0ddda91646cfa737ea2863cf4d463ebf83477907e7dbf497c1dab2606ef",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-198.json",
+      "evidenceHash": "5cc6b744ba2d4674bd901ba5ecd99d2b2330443a0e3c0d7b4ecdb33fa700c3e0"
+    },
+    "post/Win32API+C++でプログラムを作るメリットとデメリット/index.fr.md": {
+      "source": "post/Win32API+C++でプログラムを作るメリットとデメリット/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "1c745f97e9df86018a65f2503ba2fffedac4a75331e0705a07f5d63d83cee8b2",
+      "translationHash": "1181e60daf19d8dfad7c4d83ea67979d940640b42b12e92cb431ef68d4d4de0e",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-198.json",
+      "evidenceHash": "1c9e36701b3c0fab722d7f4a98b048d254a022c366ac99ee1c5227b9dfdd39be"
+    },
+    "post/Win32API+C++でプログラムを作るメリットとデメリット/index.de.md": {
+      "source": "post/Win32API+C++でプログラムを作るメリットとデメリット/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "1c745f97e9df86018a65f2503ba2fffedac4a75331e0705a07f5d63d83cee8b2",
+      "translationHash": "4372b10756d3aaf5956dbcfb1db53316f167861784a6283c7d6f9cb35fa00600",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-198.json",
+      "evidenceHash": "82937e80aed802cdd6f925ff7528028a33a482623e2f853b50a3df2ecf2d18c2"
+    },
+    "post/Win32API+C++でプログラムを作るメリットとデメリット/index.ar.md": {
+      "source": "post/Win32API+C++でプログラムを作るメリットとデメリット/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "1c745f97e9df86018a65f2503ba2fffedac4a75331e0705a07f5d63d83cee8b2",
+      "translationHash": "a1ccc8188c637ff13bf67bb0a9106e7ac565cc120f3ab7db2d44913e7ded8ac8",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-198.json",
+      "evidenceHash": "1aa4eac329a5bd20629feca6b3a377c4c1579bcdd7d1e240d5a5b47845663980"
+    },
+    "post/Win32API+C++でプログラムを作るメリットとデメリット/index.ru.md": {
+      "source": "post/Win32API+C++でプログラムを作るメリットとデメリット/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "1c745f97e9df86018a65f2503ba2fffedac4a75331e0705a07f5d63d83cee8b2",
+      "translationHash": "51a57c3276d74b069332793a231f982f579d12393a09b58b6ad7737aa6ea0a5d",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-198.json",
+      "evidenceHash": "0ff8f8337f61f05183d0b5def514b71c62d08639eda899571526c6e800bf430f"
+    },
+    "post/Win32API+C++でプログラムを作るメリットとデメリット/index.id.md": {
+      "source": "post/Win32API+C++でプログラムを作るメリットとデメリット/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "1c745f97e9df86018a65f2503ba2fffedac4a75331e0705a07f5d63d83cee8b2",
+      "translationHash": "fa626f8edf0304e46e4fdef9d7e54b43002bcf3fbfa498bc4e035ee51dd9fffd",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-198.json",
+      "evidenceHash": "b8577f5d49f89a2e33233e20f76d55e253ad534fbeac24cb8cff1b13903b043e"
     }
   }
 }
