@@ -1,0 +1,467 @@
+{
+  "version": 1,
+  "batch": 207,
+  "article": "Aether (Physics): the luminiferous aether and its historical and modern meanings",
+  "reviewedAt": "2026-11-25",
+  "sources": [
+    "https://ajsonline.org/article/62505-on-the-relative-motion-of-the-earth-and-the-luminiferous-ether",
+    "https://doi.org/10.1098/rstl.1865.0008",
+    "https://www.fourmilab.ch/etexts/einstein/specrel/www/",
+    "https://einstein-virtuell.mpiwg-berlin.mpg.de/VEA/SC854034901_MOD1479463207_SEQ923184502_SL1183742122_en.html",
+    "https://science.nasa.gov/dark-matter/"
+  ],
+  "scope": "Corrected the Japanese source and completed full AI source-to-translation reviews for all 12 translated editions: English, German, Spanish, French, Arabic, Hindi, Indonesian, Korean, Portuguese, Russian, Simplified Chinese, and Traditional Chinese. Every record identifies exact source and translation hashes. Human/native-language confirmation is not claimed. Publication and live verification are pending.",
+  "findings": [
+    "Qualified the status of aether in 19th-century physics and clarified that wave phenomena do not by themselves prove a mechanical medium.",
+    "Clarified that Maxwell’s equations do not themselves establish a mechanical aether or absolute rest frame.",
+    "Replaced the claim of literally zero fringe shift with the paper’s approximately 0.4-fringe expected displacement and a bounded null result.",
+    "Avoided dismissing Lorentz’s work as merely ad hoc and clarified that special relativity removes the need for a luminiferous mechanical medium without banning Einstein’s later distinct use of the word aether.",
+    "Revised the vacuum discussion to describe fields and their ground state without literalizing continuous particle-pair creation, and removed the false analogy between dark matter/dark energy and light-carrying aether.",
+    "Corrected the English and Arabic editions throughout the affected passages; other translations are still pending review.",
+    "Corrected the German edition throughout the affected historical and physics passages; other translations remain pending review.",
+    "Corrected the Spanish edition throughout the affected passages and reframed the experiment as a null result, not a failed measurement; other translations remain pending review.",
+    "Corrected the French edition throughout the affected passages, including a more precise account of the null result; other translations remain pending review.",
+    "Corrected the Hindi edition throughout the affected passages, including the distinction between the classical aether and quantum fields; other translations remain pending review.",
+    "Corrected the Indonesian edition throughout the affected passages and distinguished the null result from a failed measurement; other translations remain pending review.",
+    "Corrected the Korean edition throughout the affected passages and clarified that special relativity removes the need for a mechanical light medium; other translations remain pending review.",
+    "Corrected the Portuguese edition throughout the affected historical and physics passages; native Portuguese and regional usage confirmation remain outstanding.",
+    "Corrected the Russian edition throughout the affected passages and replaced the inaccurate absolute-zero fringe claim with a bounded null result.",
+    "Corrected the Simplified Chinese edition throughout the affected passages, including the distinction between quantum fields and a mechanical aether.",
+    "Corrected the Traditional Chinese edition throughout the affected passages and removed the misleading comparison between dark matter/energy and aether."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/aether-luminiferous-physics-history/index.en.md": {
+      "source": "post/aether-luminiferous-physics-history/index.md",
+      "sourceHash": "913e3aef2e515cf2a43e330a686b3cf3849d90ffebef577b991db3863289a5d8",
+      "translationHash": "24b75b205beecea0f54fb4e1875a839e5c405d3c8e6250ed3044f0ead6664565",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "reviewKind": "ai",
+      "summary": "Read the complete English edition against the corrected Japanese source. Revised claims about aether history, the Maxwell equations, the Michelson–Morley null result, Lorentz’s program, special relativity, quantum vacuum, and dark matter/energy.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all eight sections with the Japanese source and corrected the shared historical and physics overclaims. The English edition retains the source article structure and explains the limits of the 1887 result."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked luminiferous aether, preferred frame, interferometer/fringe displacement, null result, Lorentz transformation, quantum-field vacuum, dark matter, and dark energy."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked the use of c and the statement of an expected shift of about 0.4 fringe against the cited 1887 paper. No derivation or other displayed equation is present."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked the sole Mermaid overview and updated its arrows so it presents stationary aether as a historical model, not a requirement of Maxwell’s equations. No executable software code is present."
+        },
+        "links": {
+          "status": "checked",
+          "note": "There are no article hyperlinks in this edition. Factual corrections were checked against the primary 1887 Michelson–Morley paper, Maxwell’s 1865 paper, Einstein’s 1905 paper and 1920 address, and NASA explanations of dark matter and dark energy. External link reachability is not applicable."
+        }
+      },
+      "limitations": [
+        "Review performed by Codex (AI); no human or native English-language reviewer has confirmed style or terminology.",
+        "The account is a concise historical overview and does not survey every ether model or every later interferometer test.",
+        "Quantum-field vacuum language is introductory; it avoids treating virtual particles as literal particles continuously appearing and disappearing."
+      ]
+    },
+    "post/aether-luminiferous-physics-history/index.ar.md": {
+      "source": "post/aether-luminiferous-physics-history/index.md",
+      "sourceHash": "913e3aef2e515cf2a43e330a686b3cf3849d90ffebef577b991db3863289a5d8",
+      "translationHash": "2c93f7443faa4047b37a434a58532275242a4ff632d0c94203c8effcc05fa7f4",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "reviewKind": "ai",
+      "summary": "Read the complete Arabic edition against the corrected Japanese source. Revised claims about aether history, the Maxwell equations, the Michelson–Morley null result, Lorentz’s program, special relativity, quantum vacuum, and dark matter/energy.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all eight sections with the Japanese source and corrected the shared historical and physics overclaims. The Arabic edition retains the source structure and bounds the interpretation of the 1887 null result."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the Arabic terms for luminiferous aether, preferred frame, interferometer/fringe displacement, null result, Lorentz transformations, quantum fields/vacuum, dark matter, and dark energy."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked c and the statement that the 1887 paper gives an expected shift of about 0.4 fringe. No derivation or other displayed equation is present."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked the sole Mermaid overview and revised it to identify stationary aether as one historical model. No executable software code is present."
+        },
+        "links": {
+          "status": "checked",
+          "note": "There are no article hyperlinks in this edition. Factual corrections were checked against the primary 1887 Michelson–Morley paper, Maxwell’s 1865 paper, Einstein’s 1905 paper and 1920 address, and NASA explanations of dark matter and dark energy. External link reachability is not applicable."
+        }
+      },
+      "limitations": [
+        "Review performed by Codex (AI); no human or native Arabic-language reviewer has confirmed style or terminology.",
+        "The account is a concise historical overview and does not survey every ether model or every later interferometer test.",
+        "Quantum-field vacuum language is introductory; Arabic wording avoids depicting virtual particles as a literal sea of particles continuously appearing and disappearing."
+      ]
+    },
+    "post/aether-luminiferous-physics-history/index.de.md": {
+      "source": "post/aether-luminiferous-physics-history/index.md",
+      "sourceHash": "913e3aef2e515cf2a43e330a686b3cf3849d90ffebef577b991db3863289a5d8",
+      "translationHash": "8ce711ed13643fd2e3eaa5f6221e67f102af480e8d9068c1d75b7b119a7aef19",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "reviewKind": "ai",
+      "summary": "Read the complete German edition against the corrected Japanese source. Revised historical claims about aether, Maxwell’s equations, the Michelson–Morley result, Lorentz’s theory, special relativity, quantum vacuum, and dark matter/energy.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete eight-section German edition with the Japanese source and corrected shared historical/physics overclaims, including the bounded interpretation of the 1887 null result."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked German terminology for Lichtäther, bevorzugtes Bezugssystem, Interferenzstreifen, Nullresultat, Lorentz-Transformation, Quantenfeldtheorie, dunkle Materie and dunkle Energie."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked c and the source paper’s expected shift of about 0.4 fringe. No derivation or other displayed equation appears in this edition."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the sole Mermaid overview and corrected it to present stationary aether as a historical model, not a requirement of Maxwell’s equations. No executable software code is present."
+        },
+        "links": {
+          "status": "checked",
+          "note": "No article hyperlinks occur in this edition. Factual corrections were checked against the primary 1887 Michelson–Morley paper, Maxwell’s 1865 paper, Einstein’s 1905 paper and 1920 address, and NASA explanations of dark matter and dark energy; reachability testing is not applicable."
+        }
+      },
+      "limitations": [
+        "Review performed by Codex (AI); no human or native German reviewer has confirmed style or terminology.",
+        "The article is a concise historical overview; it does not survey every ether model or later interferometer test.",
+        "The quantum-field discussion is introductory and does not attempt a technical account of vacuum states."
+      ]
+    },
+    "post/aether-luminiferous-physics-history/index.es.md": {
+      "source": "post/aether-luminiferous-physics-history/index.md",
+      "sourceHash": "913e3aef2e515cf2a43e330a686b3cf3849d90ffebef577b991db3863289a5d8",
+      "translationHash": "bf6cc0d105a782a6af452543846e16d89cf8f66933727750ee6ead007fb676e0",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "reviewKind": "ai",
+      "summary": "Read the complete Spanish edition against the corrected Japanese source. Revised claims about the historical status of aether, Maxwell’s equations, the Michelson–Morley null result, Lorentz’s theory, special relativity, quantum vacuum, and dark matter/energy.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all eight sections with the Japanese source, corrected shared historical and physics overclaims, and recast the experiment as a bounded null result rather than a failed experiment."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Spanish use of éter luminífero, marco de referencia preferente, franjas de interferencia, resultado nulo, transformación de Lorentz, vacío cuántico, materia oscura and energía oscura."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked c and the source paper’s expected shift of about 0.4 fringe. No derivation or other displayed equation appears in this edition."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the sole Mermaid overview and adjusted its labels so stationary aether is presented as a historical model rather than a requirement of Maxwell’s equations. No executable software code is present."
+        },
+        "links": {
+          "status": "checked",
+          "note": "No article hyperlinks occur in this edition. Factual corrections were checked against the primary 1887 Michelson–Morley paper, Maxwell’s 1865 paper, Einstein’s 1905 paper and 1920 address, and NASA explanations of dark matter and dark energy; reachability testing is not applicable."
+        }
+      },
+      "limitations": [
+        "Review performed by Codex (AI); no human or native Spanish reviewer has confirmed style or terminology.",
+        "The article is a concise historical overview and does not survey every ether model or later interferometer test.",
+        "The quantum-field discussion is introductory and does not attempt a technical account of vacuum states."
+      ]
+    },
+    "post/aether-luminiferous-physics-history/index.fr.md": {
+      "source": "post/aether-luminiferous-physics-history/index.md",
+      "sourceHash": "913e3aef2e515cf2a43e330a686b3cf3849d90ffebef577b991db3863289a5d8",
+      "translationHash": "0d88580438c88d0fad0c547786d53a58ee2b4fd8441e4a11935e881f48351df3",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "reviewKind": "ai",
+      "summary": "Read the complete French edition against the corrected Japanese source. Revised claims about the historical status of aether, Maxwell’s equations, the Michelson–Morley null result, Lorentz’s theory, special relativity, quantum vacuum, and dark matter/energy.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all eight sections with the Japanese source, corrected shared historical and physics overclaims, and reframed the Michelson–Morley result as a bounded null result."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked French terminology for éther luminifère, référentiel privilégié, franges d’interférence, résultat nul, transformation de Lorentz, vide quantique, matière noire and énergie noire."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked c and the source paper’s expected shift of about 0.4 fringe. No derivation or other displayed equation appears in this edition."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the sole Mermaid overview and corrected it to identify stationary aether as one historical model, not a requirement of Maxwell’s equations. No executable software code is present."
+        },
+        "links": {
+          "status": "checked",
+          "note": "No article hyperlinks occur in this edition. Factual corrections were checked against the primary 1887 Michelson–Morley paper, Maxwell’s 1865 paper, Einstein’s 1905 paper and 1920 address, and NASA explanations of dark matter and dark energy; reachability testing is not applicable."
+        }
+      },
+      "limitations": [
+        "Review performed by Codex (AI); no human or native French reviewer has confirmed style or terminology.",
+        "The article is a concise historical overview and does not survey every ether model or later interferometer test.",
+        "The quantum-field discussion is introductory and does not attempt a technical account of vacuum states."
+      ]
+    },
+    "post/aether-luminiferous-physics-history/index.hi.md": {
+      "source": "post/aether-luminiferous-physics-history/index.md",
+      "sourceHash": "913e3aef2e515cf2a43e330a686b3cf3849d90ffebef577b991db3863289a5d8",
+      "translationHash": "b55afa434b315160e20796d8bbb2fee84c4adfb4a1d9d10aaa69f48b63b9105f",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "reviewKind": "ai",
+      "summary": "Read the complete Hindi edition against the corrected Japanese source. Revised claims about the historical status of aether, Maxwell’s equations, the Michelson–Morley null result, Lorentz’s theory, special relativity, quantum vacuum, and dark matter/energy.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete eight-section Hindi edition with the Japanese source, corrected shared overclaims, and recast the experiment as a bounded null result rather than a failed measurement."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Hindi terms and explanatory labels for प्रकाशयुक्त ईथर, जड़त्वीय संदर्भ-ढाँचा, व्यतिकरण-धारी विस्थापन, नकारात्मक परिणाम, लोरेंत्ज़ परिवर्तन, क्वांटम क्षेत्र, डार्क मैटर and डार्क एनर्जी."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked c and the source paper’s expected shift of about 0.4 fringe. No derivation or other displayed equation appears in this edition."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the sole Mermaid overview and revised its labels to present stationary aether as a historical model, not a requirement of Maxwell’s equations. No executable software code is present."
+        },
+        "links": {
+          "status": "checked",
+          "note": "No article hyperlinks occur in this edition. Factual corrections were checked against the primary 1887 Michelson–Morley paper, Maxwell’s 1865 paper, Einstein’s 1905 paper and 1920 address, and NASA explanations of dark matter and dark energy; reachability testing is not applicable."
+        }
+      },
+      "limitations": [
+        "Review performed by Codex (AI); no human or native Hindi reviewer has confirmed style or terminology.",
+        "The article is a concise historical overview and does not survey every ether model or later interferometer test.",
+        "The quantum-field discussion is introductory and avoids a technical account of vacuum states."
+      ]
+    },
+    "post/aether-luminiferous-physics-history/index.id.md": {
+      "source": "post/aether-luminiferous-physics-history/index.md",
+      "sourceHash": "913e3aef2e515cf2a43e330a686b3cf3849d90ffebef577b991db3863289a5d8",
+      "translationHash": "390f06d7c068caafc1268657bdaf32433ded2740ea3dc50c3f9d61f95ec9d564",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "reviewKind": "ai",
+      "summary": "Read the complete Indonesian edition against the corrected Japanese source. Revised claims about the historical status of aether, Maxwell’s equations, the Michelson–Morley null result, Lorentz’s theory, special relativity, quantum vacuum, and dark matter/energy.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all eight sections with the Japanese source, corrected shared physics/history overclaims, and recast the Michelson–Morley finding as a bounded null result rather than an experiment failure."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Indonesian terms including eter pembawa cahaya, kerangka acuan istimewa, pola interferensi, hasil nihil, transformasi Lorentz, vakum/medan kuantum, materi gelap and energi gelap."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked c and the 1887 paper’s expected shift of about 0.4 fringe. No derivation or other displayed equation appears in this edition."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the sole Mermaid overview and revised it to identify stationary aether as a historical model, not a requirement of Maxwell’s equations. No executable software code is present."
+        },
+        "links": {
+          "status": "checked",
+          "note": "No article hyperlinks occur in this edition. Factual corrections were checked against the primary 1887 Michelson–Morley paper, Maxwell’s 1865 paper, Einstein’s 1905 paper and 1920 address, and NASA explanations of dark matter and dark energy; reachability testing is not applicable."
+        }
+      },
+      "limitations": [
+        "Review performed by Codex (AI); no human or native Indonesian reviewer has confirmed style or terminology.",
+        "The article is a concise historical overview and does not survey every ether model or later interferometer test.",
+        "The quantum-field discussion is introductory and does not provide a technical account of vacuum states."
+      ]
+    },
+    "post/aether-luminiferous-physics-history/index.ko.md": {
+      "source": "post/aether-luminiferous-physics-history/index.md",
+      "sourceHash": "913e3aef2e515cf2a43e330a686b3cf3849d90ffebef577b991db3863289a5d8",
+      "translationHash": "48f1a486bb48cbaef5a7daf6492a003ab92a5fed86b7ff12135d2ec6c792321f",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "reviewKind": "ai",
+      "summary": "Read the complete Korean edition against the corrected Japanese source. Revised claims about the historical status of aether, Maxwell’s equations, the Michelson–Morley null result, Lorentz’s theory, special relativity, quantum vacuum, and dark matter/energy.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all eight Korean sections with the Japanese source and corrected shared physics/history overclaims, including the interpretation of the experiment as a bounded null result."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Korean terminology for 빛 에테르, 관성계, 간섭무늬 이동, 영 결과, 로런츠 변환, 양자장론, 암흑 물질 and 암흑 에너지."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked c and the 1887 paper’s expected shift of about 0.4 fringe. No derivation or other displayed equation appears in this edition."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the only Mermaid overview and revised its labels so stationary aether appears as one historical model, not a requirement of Maxwell’s equations. No executable software code is present."
+        },
+        "links": {
+          "status": "checked",
+          "note": "No article hyperlinks occur in this edition. Factual corrections were checked against the primary 1887 Michelson–Morley paper, Maxwell’s 1865 paper, Einstein’s 1905 paper and 1920 address, and NASA explanations of dark matter and dark energy; reachability testing is not applicable."
+        }
+      },
+      "limitations": [
+        "Review performed by Codex (AI); no human or native Korean reviewer has confirmed style or terminology.",
+        "The article is a concise historical overview and does not survey every ether model or later interferometer test.",
+        "The quantum-field discussion is introductory and avoids a technical account of vacuum states."
+      ]
+    },
+    "post/aether-luminiferous-physics-history/index.pt.md": {
+      "source": "post/aether-luminiferous-physics-history/index.md",
+      "sourceHash": "913e3aef2e515cf2a43e330a686b3cf3849d90ffebef577b991db3863289a5d8",
+      "translationHash": "db00c58b6242aad87fc431cb2850570450c026842ff770dc67eb4666dce7ec2c",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "reviewKind": "ai",
+      "summary": "Read the complete Portuguese edition against the corrected Japanese source. Revised claims about the historical status of aether, Maxwell’s equations, the Michelson–Morley null result, Lorentz’s theory, special relativity, quantum vacuum, and dark matter/energy.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all eight sections with the Japanese source and corrected shared history/physics overclaims, including a bounded account of the 1887 null result."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Portuguese terminology and the consistency of éter luminífero, referencial inercial, franjas de interferência, resultado nulo, transformação de Lorentz, campos quânticos and matéria/energia escura. Regional usage still needs native-speaker confirmation."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked c and the 1887 paper’s expected fringe displacement of about 0.4 fringe. No derivation or other displayed equation appears in this edition."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the only Mermaid overview and revised its labels to present stationary aether as one historical model, not a requirement of Maxwell’s equations. No executable software code is present."
+        },
+        "links": {
+          "status": "checked",
+          "note": "No article hyperlinks occur in this edition. Factual corrections were checked against the primary 1887 Michelson–Morley paper, Maxwell’s 1865 paper, Einstein’s 1905 paper and 1920 address, and NASA explanations of dark matter and dark energy; reachability testing is not applicable."
+        }
+      },
+      "limitations": [
+        "Review performed by Codex (AI); no human or native Portuguese reviewer has confirmed language quality or regional terminology.",
+        "The article is a concise historical overview and does not survey every ether model or later interferometer test.",
+        "The quantum-field discussion is introductory and does not provide a technical account of vacuum states."
+      ]
+    },
+    "post/aether-luminiferous-physics-history/index.ru.md": {
+      "source": "post/aether-luminiferous-physics-history/index.md",
+      "sourceHash": "913e3aef2e515cf2a43e330a686b3cf3849d90ffebef577b991db3863289a5d8",
+      "translationHash": "3a8bfb60e0037a7353744fbb9d14da02a66019fcd4c3dcc992622f1b93dd52cf",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "reviewKind": "ai",
+      "summary": "Read the complete Russian edition against the corrected Japanese source. Revised claims about the historical status of aether, Maxwell’s equations, the Michelson–Morley null result, Lorentz’s theory, special relativity, quantum vacuum, and dark matter/energy.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all eight sections with the Japanese source and corrected shared history/physics overclaims, including a bounded account of the 1887 null result."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Russian terminology for светоносный эфир, инерциальная система отсчёта, нулевой результат, преобразование Лоренца, квантовые поля, and тёмная материя/энергия."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked c and the 1887 paper’s expected fringe displacement of about 0.4 fringe. No derivation or other displayed equation appears in this edition."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the only Mermaid overview and revised its labels to present stationary aether as one historical model, not a requirement of Maxwell’s equations. No executable software code is present."
+        },
+        "links": {
+          "status": "checked",
+          "note": "No article hyperlinks occur in this edition. Factual corrections were checked against the primary 1887 Michelson–Morley paper, Maxwell’s 1865 paper, Einstein’s 1905 paper and 1920 address, and NASA explanations of dark matter and dark energy; reachability testing is not applicable."
+        }
+      },
+      "limitations": [
+        "Review performed by Codex (AI); no human or native Russian reviewer has confirmed style or terminology.",
+        "The article is a concise historical overview and does not survey every ether model or later interferometer test.",
+        "The quantum-field discussion is introductory and does not provide a technical account of vacuum states."
+      ]
+    },
+    "post/aether-luminiferous-physics-history/index.zh-cn.md": {
+      "source": "post/aether-luminiferous-physics-history/index.md",
+      "sourceHash": "913e3aef2e515cf2a43e330a686b3cf3849d90ffebef577b991db3863289a5d8",
+      "translationHash": "913dcfbb7445438f94f5a4e129edc1ad5d9945d332fcbfd52a36734ab770c47b",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "reviewKind": "ai",
+      "summary": "Read the complete Simplified Chinese edition against the corrected Japanese source. Revised claims about the historical status of aether, Maxwell’s equations, the Michelson–Morley null result, Lorentz’s theory, special relativity, quantum vacuum, and dark matter/energy.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all eight sections with the Japanese source and corrected shared history/physics overclaims, including a bounded account of the 1887 null result."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Simplified Chinese terminology for 发光以太, 惯性系, 零结果, 洛伦兹变换, 量子场, and 暗物质／暗能量."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked c and the 1887 paper’s expected fringe displacement of about 0.4 fringe. No derivation or other displayed equation appears in this edition."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the only Mermaid overview and revised its labels to present stationary aether as one historical model, not a requirement of Maxwell’s equations. No executable software code is present."
+        },
+        "links": {
+          "status": "checked",
+          "note": "No article hyperlinks occur in this edition. Factual corrections were checked against the primary 1887 Michelson–Morley paper, Maxwell’s 1865 paper, Einstein’s 1905 paper and 1920 address, and NASA explanations of dark matter and dark energy; reachability testing is not applicable."
+        }
+      },
+      "limitations": [
+        "Review performed by Codex (AI); no human or native Simplified Chinese reviewer has confirmed style or terminology.",
+        "The article is a concise historical overview and does not survey every ether model or later interferometer test.",
+        "The quantum-field discussion is introductory and does not provide a technical account of vacuum states."
+      ]
+    },
+    "post/aether-luminiferous-physics-history/index.zh-tw.md": {
+      "source": "post/aether-luminiferous-physics-history/index.md",
+      "sourceHash": "913e3aef2e515cf2a43e330a686b3cf3849d90ffebef577b991db3863289a5d8",
+      "translationHash": "560fb3cebb1aa3c7fed45abe88b1d83853164193d6287bc59da4811435c4199b",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "reviewKind": "ai",
+      "summary": "Read the complete Traditional Chinese edition against the corrected Japanese source. Revised claims about the historical status of aether, Maxwell’s equations, the Michelson–Morley null result, Lorentz’s theory, special relativity, quantum vacuum, and dark matter/energy.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all eight sections with the Japanese source and corrected shared history/physics overclaims, including a bounded account of the 1887 null result."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Traditional Chinese terminology for 發光以太, 慣性系, 零結果, 勞侖茲轉換, 量子場, and 暗物質／暗能量."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked c and the 1887 paper’s expected fringe displacement of about 0.4 fringe. No derivation or other displayed equation appears in this edition."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the only Mermaid overview and revised its labels to present stationary aether as one historical model, not a requirement of Maxwell’s equations. No executable software code is present."
+        },
+        "links": {
+          "status": "checked",
+          "note": "No article hyperlinks occur in this edition. Factual corrections were checked against the primary 1887 Michelson–Morley paper, Maxwell’s 1865 paper, Einstein’s 1905 paper and 1920 address, and NASA explanations of dark matter and dark energy; reachability testing is not applicable."
+        }
+      },
+      "limitations": [
+        "Review performed by Codex (AI); no human or native Traditional Chinese reviewer has confirmed style or terminology.",
+        "The article is a concise historical overview and does not survey every ether model or later interferometer test.",
+        "The quantum-field discussion is introductory and does not provide a technical account of vacuum states."
+      ]
+    }
+  }
+}

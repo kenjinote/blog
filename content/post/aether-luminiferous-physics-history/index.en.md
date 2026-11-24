@@ -14,7 +14,7 @@ Throughout the history of humanity's attempts to unravel the mysteries of the na
 
 Observing everyday physical phenomena, we see that media like "air" or "water" are necessary for sound to travel, and "seawater" is essential for ocean waves to propagate. From this highly intuitive and logical analogy, the idea was born that if light has wave-like properties, there must be an "unknown medium" for propagating light filling every corner of outer space. This phantom medium is what was called the "luminiferous aether".
 
-The existence of aether was accepted not merely as a hypothesis but as an unquestionable "common sense" in physics up to the end of the 19th century. However, a single experiment that attempted to verify this "common sense" ultimately overturned the foundations of physics, guiding humanity to a new view of the universe: Einstein's theory of relativity. In this article, we will unravel in detail the grand trajectory of the history of science, exploring how the concept of luminiferous aether was born, how it was denied, and what legacy it left for modern physics.
+For many 19th-century physicists, aether was an influential framework, but theories and interpretations were not uniform; its motion and interaction with matter remained debated. Experiments seeking an aether wind, together with later theoretical developments, prompted a reassessment of the classical medium for light and formed part of the history leading to relativity. This article traces the concept's origins, testing, and differences from ideas in modern physics.
 
 ## 2. The Debate Over the Nature of Light and the Birth of Aether
 
@@ -22,7 +22,7 @@ The debate over whether the true nature of light was a "particle" or a "wave" wa
 
 Isaac Newton, based on the rectilinear propagation of light and the laws of reflection, proposed the "corpuscular theory of light," which stated that light is a flow of minute particles. Due to his overwhelming authority, the corpuscular theory dominated the physics community throughout the 18th century. However, around the same time, Christiaan Huygens argued that light should be considered a wave to explain phenomena such as diffraction and refraction, advocating the "wave theory of light."
 
-In the 19th century, Thomas Young's "double-slit experiment" and the completion of Augustin-Jean Fresnel's mathematical wave theory decisively proved that light possesses wave-like properties (interference and diffraction). If light is a wave, there must be a "medium" to propagate the wave throughout the entire universe. Since light from the sun reaches the earth even through the vacuum of space, it was thought that space is not a complete nothingness, but is filled with a transparent, extremely rarefied, yet solid medium called "aether" that propagates light waves.
+In the 19th century, Young's interference experiments and Fresnel's theory provided strong evidence for explaining interference and diffraction as wave behavior. Wave-like behavior alone, however, does not logically require a mechanical medium in a vacuum. By analogy with known waves, many theories of the period proposed aether as a medium carrying light.
 
 ### The Bizarre Properties Required for Aether
 
@@ -40,16 +40,16 @@ In Maxwell's equations, the speed of light $c$ is derived as a constant determin
 
 According to the principle of relativity in Newtonian mechanics, velocity should always change depending on the observer's state of motion. The speed of a ball thrown from a moving train is "the speed of the train + the speed of the ball" to a person on the ground. However, the speed of light in Maxwell's equations did not take into account the velocity of such observers.
 
-To solve this, physicists of the time brought up the "sea of aether." They considered that there must be an absolute reference space where Maxwell's equations hold, and that this is the "absolute rest aether" that spreads motionless throughout the universe. In other words, the speed of light $c$ was interpreted as "the speed relative to the aether at absolute rest."
+Many theorists of the period explored interpretations that connected electromagnetic fields with a medium or preferred frame, including models with a stationary aether. Maxwell's equations themselves do not prove the existence of a mechanical medium or an absolute rest frame. In later relativistic formulations, the vacuum speed of light is invariant between inertial frames, so no privileged rest frame is required.
 
 ```mermaid
 graph TD
-    A["Maxwell's equations"] -- "Derives speed of light c as a constant" --> B["Need for an absolute rest frame"]
-    B -- "Reference frame of the universe" --> C["Absolute rest aether hypothesis"]
+    A["Maxwell's equations"] -- "Historically, a medium-based interpretation was explored" --> B["How should light propagation be understood?"]
+    B -- "One historical model" --> C["Stationary-aether hypothesis"]
     C -- "Influence of Earth's motion" --> D["Observation of aether wind becomes a challenge"]
 ```
 
-## 4. The Michelson-Morley Experiment: The Most Famous "Failure" in History
+## 4. The Michelson-Morley Experiment: A Famous Null Result
 
 If outer space is filled with aether at absolute rest, the Earth, revolving around the Sun, is constantly plowing through the sea of aether. From the Earth's perspective, an "aether wind" should be blowing from space.
 
@@ -57,9 +57,9 @@ In 1887, Albert Michelson and Edward Morley conducted a groundbreaking experimen
 
 The principle of the experiment is as follows. A single beam of light emitted from a light source is split into two orthogonal directions by a half-mirror (a semi-transparent mirror). One travels parallel to the aether wind, while the other travels perpendicularly, and they reflect back from mirrors at their respective ends. If the aether wind exists, just as a person swimming back and forth across a river is affected by the river's current, there should be a very slight difference in the time it takes for the light to travel back and forth. When the two returning light beams were recombined, this time difference was expected to be observed as a shift in "interference fringes."
 
-However, the results sent shockwaves through the physics community. No matter how much the apparatus was rotated, or how the direction of the Earth's revolution changed with the seasons, absolutely no shift in the interference fringes was observed. The aether wind was not blowing at all.
+The measurements did not detect the fringe displacement of the size predicted by a simple stationary-aether model. The paper gives an expected shift of about 0.4 fringe; the reported residual was far smaller, leading the authors to conclude that any relative motion of Earth and aether was well below the expected level of detection. This was not literally a zero shift: it is best understood as a null result for a particular classical aether-wind model.
 
-This "Michelson-Morley experiment," by completely failing to prove the existence of the aether, ironically etched its name in history as "the most famous failed experiment in the history of science."
+The experiment produced a null result in the sense that it did not detect an aether-wind signal of the predicted size. This does not mean that the apparatus or measurements "failed." Its importance lies in constraining the signal predicted by a particular classical aether model and prompting further theoretical and experimental work.
 
 ## 5. Length Contraction and Ad-hoc Solutions
 
@@ -69,7 +69,7 @@ Physicists who took the experimental results seriously struggled to somehow salv
 
 According to this "Lorentz-FitzGerald contraction hypothesis," the arm of the Michelson-Morley interferometer also contracts exactly along the direction of motion, canceling out the difference in the round-trip time of light, and as a result explaining why the aether wind could not be detected. Furthermore, Lorentz introduced the concept of time dilation in moving frames (local time) and completed a mathematical framework known as the "Lorentz transformations."
 
-However, these theories could not shake the impression of being "ad-hoc" solutions tacked on later to protect the existence of the aether. While mathematically showing that physical laws are invariant to observers, they clung stubbornly to the existence of an "invisible aether at absolute rest."
+The contraction hypothesis and Lorentz's theory were attempts to reconcile the electrodynamics and experiments of their time. Calling them merely "ad hoc" in hindsight oversimplifies that theoretical and experimental context. Lorentz retained the idea of an absolute-rest aether, but the same mathematical framework later became central to special relativity, which does not require an aether rest frame.
 
 ## 6. Einstein and the Paradigm Shift: Special Relativity
 
@@ -81,22 +81,22 @@ Einstein stopped worrying about the properties of the aether and started from en
 
 Accepting these two principles leads to an astonishing conclusion. In order for the speed of light to always be constant, "space" must contract and the flow of "time" must slow down depending on the observer's state of motion. It became clear that the phenomenon Lorentz and others considered to be a "material contraction due to the aether" was actually a relative property of time and space themselves.
 
-And most importantly, there was absolutely no room in Einstein's theory for the concept of an "aether = medium to propagate light." Electromagnetic waves are self-propagating as a property of space and do not require a medium. At this point, the phantom of "aether," which had dominated physicists for centuries, was completely buried theoretically.
+Special relativity, as presented in 1905, removed the need to assume a mechanical medium for light or an absolutely stationary space to describe electrodynamics. This does not logically forbid every use of the word "aether." In 1920 Einstein used the term in a different sense when discussing the physical properties of spacetime in general relativity; this was not a mechanical medium for light with a state of motion.
 
 ## 7. The "Vacuum" in Modern Physics: The Ghost of Aether
 
 The aether was discarded as an unnecessary concept, but the idea that "empty space (vacuum)" is truly "empty" has also been denied by modern physics.
 
-According to "quantum field theory," which unifies quantum mechanics and special relativity, a vacuum is not simply a space of nothingness. It is an extremely dynamic state filled with "quantum fluctuations," where particles and antiparticles are constantly repeating pair production and annihilation. "Fields," such as electromagnetic and Higgs fields, exist everywhere in space, and particles appear as excited states (ripples) of these fields.
+In quantum field theory, the vacuum is described as the lowest-energy state of fields, which have quantum fluctuations. Saying that particles and antiparticles are constantly being created and annihilated can misleadingly picture the vacuum as a literal sea of particles appearing and disappearing. Fields such as the electromagnetic and Higgs fields, and the description of particles as excitations of fields, are distinct from a classical mechanical aether.
 
 Furthermore, in general relativity, Einstein described spacetime itself as a dynamic entity that is bent by gravity. Einstein himself later stated that in the sense that spacetime itself has physical properties, it "could be called an aether in a new sense" (though it is completely different from the 19th-century aether as an absolute rest medium).
 
-The "dark energy" and "dark matter" discussed in modern cosmology might also be considered modern versions of the aether in the sense that they are unknown entities filling space and governing the behavior of the universe.
+It is not accurate to call dark matter or dark energy modern versions of a light-carrying aether. Dark matter is inferred mainly from gravitational effects and is described as not emitting, absorbing, or reflecting light. Dark energy is the name given to whatever accounts for the universe's accelerated expansion. Neither was proposed as a medium for light, and their physical meanings differ from that of the historical aether.
 
 ## 8. Conclusion: What the History of Science Teaches Us
 
 The story of the luminiferous aether is an extremely beautiful example showing how science progresses.
 
-The aether was a wrong hypothesis. However, it was not a "meaningless" hypothesis. It was precisely because the concept of aether existed that elaborate experiments were conducted to prove it, theoretical limits were highlighted, and it ultimately led to the greatest intellectual leap in human history: the theory of relativity.
+The classical luminiferous aether is not needed as a medium for light in modern special relativity. Research motivated by the hypothesis prompted precise experiments and theoretical work, and became part of the history leading to relativity. The Michelson-Morley experiment alone did not disprove every possible meaning of "aether" or, by itself, produce relativity.
 
 Failures and flawed premises in science are never in vain. They serve as essential stepping stones to illuminate uncharted territories. The phantom medium of luminiferous aether has disappeared from physics, but the insight into the "true nature of spacetime" that humanity gained in the process of its exploration continues to support our understanding of the universe today.

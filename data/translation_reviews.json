@@ -23885,6 +23885,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-206.json",
       "evidenceHash": "045962d1357bee390472fc53053917b03fba347c8ab0c5a425b053b2980316f1"
+    },
+    "post/aether-luminiferous-physics-history/index.en.md": {
+      "source": "post/aether-luminiferous-physics-history/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "913e3aef2e515cf2a43e330a686b3cf3849d90ffebef577b991db3863289a5d8",
+      "translationHash": "24b75b205beecea0f54fb4e1875a839e5c405d3c8e6250ed3044f0ead6664565",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-207.json",
+      "evidenceHash": "eba995fe49f343213552175f08cc8596542aa4963d0b6f3797c834a39fd56536"
+    },
+    "post/aether-luminiferous-physics-history/index.ar.md": {
+      "source": "post/aether-luminiferous-physics-history/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "913e3aef2e515cf2a43e330a686b3cf3849d90ffebef577b991db3863289a5d8",
+      "translationHash": "2c93f7443faa4047b37a434a58532275242a4ff632d0c94203c8effcc05fa7f4",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-207.json",
+      "evidenceHash": "b308588e15d7e5e3d7ca2e3895c207d91170485ceb84e4531d1b6c12eb35e672"
+    },
+    "post/aether-luminiferous-physics-history/index.de.md": {
+      "source": "post/aether-luminiferous-physics-history/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "913e3aef2e515cf2a43e330a686b3cf3849d90ffebef577b991db3863289a5d8",
+      "translationHash": "8ce711ed13643fd2e3eaa5f6221e67f102af480e8d9068c1d75b7b119a7aef19",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-207.json",
+      "evidenceHash": "92a749463425c52b4e33b5dc287d6d0904311345a029c1cf4b4404df0953b4c9"
+    },
+    "post/aether-luminiferous-physics-history/index.es.md": {
+      "source": "post/aether-luminiferous-physics-history/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "913e3aef2e515cf2a43e330a686b3cf3849d90ffebef577b991db3863289a5d8",
+      "translationHash": "bf6cc0d105a782a6af452543846e16d89cf8f66933727750ee6ead007fb676e0",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-207.json",
+      "evidenceHash": "d12d527ee22c0af8f3cc55421c2084e6e14a376ffea0467c6dbd72ab8d38b81e"
+    },
+    "post/aether-luminiferous-physics-history/index.fr.md": {
+      "source": "post/aether-luminiferous-physics-history/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "913e3aef2e515cf2a43e330a686b3cf3849d90ffebef577b991db3863289a5d8",
+      "translationHash": "0d88580438c88d0fad0c547786d53a58ee2b4fd8441e4a11935e881f48351df3",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-207.json",
+      "evidenceHash": "bf9a29caa52a28dc51579c84408e90860fccf211ac17dd51cdaa874350f006e9"
+    },
+    "post/aether-luminiferous-physics-history/index.hi.md": {
+      "source": "post/aether-luminiferous-physics-history/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "913e3aef2e515cf2a43e330a686b3cf3849d90ffebef577b991db3863289a5d8",
+      "translationHash": "b55afa434b315160e20796d8bbb2fee84c4adfb4a1d9d10aaa69f48b63b9105f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-207.json",
+      "evidenceHash": "ee6f6958c5b385f5a93acbb4061144cafcc68554e93ff98894140b25cf4c2c4d"
+    },
+    "post/aether-luminiferous-physics-history/index.id.md": {
+      "source": "post/aether-luminiferous-physics-history/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "913e3aef2e515cf2a43e330a686b3cf3849d90ffebef577b991db3863289a5d8",
+      "translationHash": "390f06d7c068caafc1268657bdaf32433ded2740ea3dc50c3f9d61f95ec9d564",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-207.json",
+      "evidenceHash": "5addbfd2fa45956d17cf439a94bb0fac7a953db22e8fd7b84675a51f7fa6bfce"
+    },
+    "post/aether-luminiferous-physics-history/index.ko.md": {
+      "source": "post/aether-luminiferous-physics-history/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "913e3aef2e515cf2a43e330a686b3cf3849d90ffebef577b991db3863289a5d8",
+      "translationHash": "48f1a486bb48cbaef5a7daf6492a003ab92a5fed86b7ff12135d2ec6c792321f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-207.json",
+      "evidenceHash": "2b9efe3dc2c4021811edcaccee6da47d023a99fe2265a6c808936e152ceb9f21"
+    },
+    "post/aether-luminiferous-physics-history/index.pt.md": {
+      "source": "post/aether-luminiferous-physics-history/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "913e3aef2e515cf2a43e330a686b3cf3849d90ffebef577b991db3863289a5d8",
+      "translationHash": "db00c58b6242aad87fc431cb2850570450c026842ff770dc67eb4666dce7ec2c",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-207.json",
+      "evidenceHash": "cc54d4007d5d11d9515b6be3d157da2e3bf74085dc1c3ca782967967efd62d12"
+    },
+    "post/aether-luminiferous-physics-history/index.ru.md": {
+      "source": "post/aether-luminiferous-physics-history/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "913e3aef2e515cf2a43e330a686b3cf3849d90ffebef577b991db3863289a5d8",
+      "translationHash": "3a8bfb60e0037a7353744fbb9d14da02a66019fcd4c3dcc992622f1b93dd52cf",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-207.json",
+      "evidenceHash": "35a384f271aebe47869db4c7d62e3691ec2acc1341bd89ce4280f311dc6b45bf"
+    },
+    "post/aether-luminiferous-physics-history/index.zh-cn.md": {
+      "source": "post/aether-luminiferous-physics-history/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "913e3aef2e515cf2a43e330a686b3cf3849d90ffebef577b991db3863289a5d8",
+      "translationHash": "913dcfbb7445438f94f5a4e129edc1ad5d9945d332fcbfd52a36734ab770c47b",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-207.json",
+      "evidenceHash": "f194c5c6cd149515568f285a6a745a88cfedc364094af6e112ab3ea60704daaf"
+    },
+    "post/aether-luminiferous-physics-history/index.zh-tw.md": {
+      "source": "post/aether-luminiferous-physics-history/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "913e3aef2e515cf2a43e330a686b3cf3849d90ffebef577b991db3863289a5d8",
+      "translationHash": "560fb3cebb1aa3c7fed45abe88b1d83853164193d6287bc59da4811435c4199b",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-207.json",
+      "evidenceHash": "95d0be49c93cc2b4d2209491b8d7a5f76a724e30f0b93fb3e4be819a17d48526"
     }
   }
 }
