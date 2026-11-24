@@ -1,0 +1,452 @@
+{
+  "version": 1,
+  "batch": 138,
+  "article": "MacでControlキーとCommandキーを入れ替える方法",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "385b92cf980cd6287f9c15dd4ab62b96e4c43cf4161e09f28de2bfe318339fbe",
+  "sources": [
+    "https://support.apple.com/en-ie/guide/mac-help/mchlp1011/27/mac/27"
+  ],
+  "scope": "Compared the complete Japanese setup guide and twelve translations, including the modifier mapping, macOS Ventura navigation, selected keyboard behavior, restore path, descriptions, dates, and official reference.",
+  "findings": [
+    "Removed duplicate future dates, retained publication date 2023-04-05, and set lastmod to 2026-11-24 across the bundle.",
+    "Updated the Ventura menu path to System Settings > Keyboard > Keyboard Shortcuts > Modifier Keys.",
+    "Clarified that swapping Control and Command affects all matching shortcuts on the selected keyboard, not only copy and paste.",
+    "Added Apple’s official guide, including the Restore Defaults option."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/macでコピー＆ペーストのショートカットキーをWindowsと合わせる方法/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/macでコピー＆ペーストのショートカットキーをWindowsと合わせる方法/index.md",
+      "sourceHash": "385b92cf980cd6287f9c15dd4ab62b96e4c43cf4161e09f28de2bfe318339fbe",
+      "translationHash": "49cbb93d84aac2d658e924139028081d4380aba05e96641c0dbb0490e89ad692",
+      "summary": "Reviewed all setup steps and translations against Apple Support, updated the settings path, and explained that the modifier-key swap affects all shortcuts on the selected keyboard rather than only copy/paste.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete procedure and clarified that swapping Control and Command changes the behavior of all matching modifier shortcuts on the selected keyboard, not only copy/paste."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the Control, Command, modifier-key, Keyboard Shortcuts, and Modifier Keys labels, preserving macOS key symbols and distinguishing physical key assignment from shortcut-specific remapping."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The settings guide contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The settings guide contains no code or shell commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Apple’s official modifier-key guide and checked the current System Settings navigation and Restore Defaults behavior."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The macOS settings steps were checked against Apple documentation but not executed on a Mac.",
+        "Localized menu wording can vary slightly by macOS version and language; the article retains the key English labels and official reference."
+      ]
+    },
+    "post/macでコピー＆ペーストのショートカットキーをWindowsと合わせる方法/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/macでコピー＆ペーストのショートカットキーをWindowsと合わせる方法/index.md",
+      "sourceHash": "385b92cf980cd6287f9c15dd4ab62b96e4c43cf4161e09f28de2bfe318339fbe",
+      "translationHash": "db561be9b498f7d47df8f8803e9316c9c6c03dca0a271ddc07fef763150c1155",
+      "summary": "Reviewed all setup steps and translations against Apple Support, updated the settings path, and explained that the modifier-key swap affects all shortcuts on the selected keyboard rather than only copy/paste.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete procedure and clarified that swapping Control and Command changes the behavior of all matching modifier shortcuts on the selected keyboard, not only copy/paste."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the Control, Command, modifier-key, Keyboard Shortcuts, and Modifier Keys labels, preserving macOS key symbols and distinguishing physical key assignment from shortcut-specific remapping."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The settings guide contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The settings guide contains no code or shell commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Apple’s official modifier-key guide and checked the current System Settings navigation and Restore Defaults behavior."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The macOS settings steps were checked against Apple documentation but not executed on a Mac.",
+        "Localized menu wording can vary slightly by macOS version and language; the article retains the key English labels and official reference."
+      ]
+    },
+    "post/macでコピー＆ペーストのショートカットキーをWindowsと合わせる方法/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/macでコピー＆ペーストのショートカットキーをWindowsと合わせる方法/index.md",
+      "sourceHash": "385b92cf980cd6287f9c15dd4ab62b96e4c43cf4161e09f28de2bfe318339fbe",
+      "translationHash": "97351a445a5576cf1dacbfc16e6b1c91da3f32937791150f779a19e133f9bbb7",
+      "summary": "Reviewed all setup steps and translations against Apple Support, updated the settings path, and explained that the modifier-key swap affects all shortcuts on the selected keyboard rather than only copy/paste.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete procedure and clarified that swapping Control and Command changes the behavior of all matching modifier shortcuts on the selected keyboard, not only copy/paste."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the Control, Command, modifier-key, Keyboard Shortcuts, and Modifier Keys labels, preserving macOS key symbols and distinguishing physical key assignment from shortcut-specific remapping."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The settings guide contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The settings guide contains no code or shell commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Apple’s official modifier-key guide and checked the current System Settings navigation and Restore Defaults behavior."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The macOS settings steps were checked against Apple documentation but not executed on a Mac.",
+        "Localized menu wording can vary slightly by macOS version and language; the article retains the key English labels and official reference."
+      ]
+    },
+    "post/macでコピー＆ペーストのショートカットキーをWindowsと合わせる方法/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/macでコピー＆ペーストのショートカットキーをWindowsと合わせる方法/index.md",
+      "sourceHash": "385b92cf980cd6287f9c15dd4ab62b96e4c43cf4161e09f28de2bfe318339fbe",
+      "translationHash": "e2078e534e2bd82d58352f3da205fccf7fa924f4c2cf4ed0da89f34d6aebba2c",
+      "summary": "Reviewed all setup steps and translations against Apple Support, updated the settings path, and explained that the modifier-key swap affects all shortcuts on the selected keyboard rather than only copy/paste.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete procedure and clarified that swapping Control and Command changes the behavior of all matching modifier shortcuts on the selected keyboard, not only copy/paste."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the Control, Command, modifier-key, Keyboard Shortcuts, and Modifier Keys labels, preserving macOS key symbols and distinguishing physical key assignment from shortcut-specific remapping."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The settings guide contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The settings guide contains no code or shell commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Apple’s official modifier-key guide and checked the current System Settings navigation and Restore Defaults behavior."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The macOS settings steps were checked against Apple documentation but not executed on a Mac.",
+        "Localized menu wording can vary slightly by macOS version and language; the article retains the key English labels and official reference."
+      ]
+    },
+    "post/macでコピー＆ペーストのショートカットキーをWindowsと合わせる方法/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/macでコピー＆ペーストのショートカットキーをWindowsと合わせる方法/index.md",
+      "sourceHash": "385b92cf980cd6287f9c15dd4ab62b96e4c43cf4161e09f28de2bfe318339fbe",
+      "translationHash": "e8baad9483c4da9dcfd47f845f1f9bb7c2dcebdaa0940f59387eda7e4c826f48",
+      "summary": "Reviewed all setup steps and translations against Apple Support, updated the settings path, and explained that the modifier-key swap affects all shortcuts on the selected keyboard rather than only copy/paste.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete procedure and clarified that swapping Control and Command changes the behavior of all matching modifier shortcuts on the selected keyboard, not only copy/paste."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the Control, Command, modifier-key, Keyboard Shortcuts, and Modifier Keys labels, preserving macOS key symbols and distinguishing physical key assignment from shortcut-specific remapping."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The settings guide contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The settings guide contains no code or shell commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Apple’s official modifier-key guide and checked the current System Settings navigation and Restore Defaults behavior."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The macOS settings steps were checked against Apple documentation but not executed on a Mac.",
+        "Localized menu wording can vary slightly by macOS version and language; the article retains the key English labels and official reference."
+      ]
+    },
+    "post/macでコピー＆ペーストのショートカットキーをWindowsと合わせる方法/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/macでコピー＆ペーストのショートカットキーをWindowsと合わせる方法/index.md",
+      "sourceHash": "385b92cf980cd6287f9c15dd4ab62b96e4c43cf4161e09f28de2bfe318339fbe",
+      "translationHash": "09487279a34700e8fc7cc11d344d06b92fba7acea769989337077b0b8725cb69",
+      "summary": "Reviewed all setup steps and translations against Apple Support, updated the settings path, and explained that the modifier-key swap affects all shortcuts on the selected keyboard rather than only copy/paste.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete procedure and clarified that swapping Control and Command changes the behavior of all matching modifier shortcuts on the selected keyboard, not only copy/paste."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the Control, Command, modifier-key, Keyboard Shortcuts, and Modifier Keys labels, preserving macOS key symbols and distinguishing physical key assignment from shortcut-specific remapping."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The settings guide contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The settings guide contains no code or shell commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Apple’s official modifier-key guide and checked the current System Settings navigation and Restore Defaults behavior."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The macOS settings steps were checked against Apple documentation but not executed on a Mac.",
+        "Localized menu wording can vary slightly by macOS version and language; the article retains the key English labels and official reference."
+      ]
+    },
+    "post/macでコピー＆ペーストのショートカットキーをWindowsと合わせる方法/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/macでコピー＆ペーストのショートカットキーをWindowsと合わせる方法/index.md",
+      "sourceHash": "385b92cf980cd6287f9c15dd4ab62b96e4c43cf4161e09f28de2bfe318339fbe",
+      "translationHash": "83a4de6cdc90e387d8e6833717159458f6beb13b142638e36c908b2546ce444a",
+      "summary": "Reviewed all setup steps and translations against Apple Support, updated the settings path, and explained that the modifier-key swap affects all shortcuts on the selected keyboard rather than only copy/paste.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete procedure and clarified that swapping Control and Command changes the behavior of all matching modifier shortcuts on the selected keyboard, not only copy/paste."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the Control, Command, modifier-key, Keyboard Shortcuts, and Modifier Keys labels, preserving macOS key symbols and distinguishing physical key assignment from shortcut-specific remapping."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The settings guide contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The settings guide contains no code or shell commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Apple’s official modifier-key guide and checked the current System Settings navigation and Restore Defaults behavior."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The macOS settings steps were checked against Apple documentation but not executed on a Mac.",
+        "Localized menu wording can vary slightly by macOS version and language; the article retains the key English labels and official reference."
+      ]
+    },
+    "post/macでコピー＆ペーストのショートカットキーをWindowsと合わせる方法/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/macでコピー＆ペーストのショートカットキーをWindowsと合わせる方法/index.md",
+      "sourceHash": "385b92cf980cd6287f9c15dd4ab62b96e4c43cf4161e09f28de2bfe318339fbe",
+      "translationHash": "e00bfe8478df2840127ee5bd279319e6130758eb93fa80c787b050429c87a254",
+      "summary": "Reviewed all setup steps and translations against Apple Support, updated the settings path, and explained that the modifier-key swap affects all shortcuts on the selected keyboard rather than only copy/paste.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete procedure and clarified that swapping Control and Command changes the behavior of all matching modifier shortcuts on the selected keyboard, not only copy/paste."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the Control, Command, modifier-key, Keyboard Shortcuts, and Modifier Keys labels, preserving macOS key symbols and distinguishing physical key assignment from shortcut-specific remapping."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The settings guide contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The settings guide contains no code or shell commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Apple’s official modifier-key guide and checked the current System Settings navigation and Restore Defaults behavior."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The macOS settings steps were checked against Apple documentation but not executed on a Mac.",
+        "Localized menu wording can vary slightly by macOS version and language; the article retains the key English labels and official reference."
+      ]
+    },
+    "post/macでコピー＆ペーストのショートカットキーをWindowsと合わせる方法/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/macでコピー＆ペーストのショートカットキーをWindowsと合わせる方法/index.md",
+      "sourceHash": "385b92cf980cd6287f9c15dd4ab62b96e4c43cf4161e09f28de2bfe318339fbe",
+      "translationHash": "2522d0c0e28564634a2a5dfc2729fb094be061a51d4b9301eb8ad342fd523e15",
+      "summary": "Reviewed all setup steps and translations against Apple Support, updated the settings path, and explained that the modifier-key swap affects all shortcuts on the selected keyboard rather than only copy/paste.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete procedure and clarified that swapping Control and Command changes the behavior of all matching modifier shortcuts on the selected keyboard, not only copy/paste."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the Control, Command, modifier-key, Keyboard Shortcuts, and Modifier Keys labels, preserving macOS key symbols and distinguishing physical key assignment from shortcut-specific remapping."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The settings guide contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The settings guide contains no code or shell commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Apple’s official modifier-key guide and checked the current System Settings navigation and Restore Defaults behavior."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The macOS settings steps were checked against Apple documentation but not executed on a Mac.",
+        "Localized menu wording can vary slightly by macOS version and language; the article retains the key English labels and official reference."
+      ]
+    },
+    "post/macでコピー＆ペーストのショートカットキーをWindowsと合わせる方法/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/macでコピー＆ペーストのショートカットキーをWindowsと合わせる方法/index.md",
+      "sourceHash": "385b92cf980cd6287f9c15dd4ab62b96e4c43cf4161e09f28de2bfe318339fbe",
+      "translationHash": "02b55bda558a17b032569832a8e9cb5c134830b7fc4bc5bdf8d7fbf4fa1a97fc",
+      "summary": "Reviewed all setup steps and translations against Apple Support, updated the settings path, and explained that the modifier-key swap affects all shortcuts on the selected keyboard rather than only copy/paste.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete procedure and clarified that swapping Control and Command changes the behavior of all matching modifier shortcuts on the selected keyboard, not only copy/paste."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the Control, Command, modifier-key, Keyboard Shortcuts, and Modifier Keys labels, preserving macOS key symbols and distinguishing physical key assignment from shortcut-specific remapping."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The settings guide contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The settings guide contains no code or shell commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Apple’s official modifier-key guide and checked the current System Settings navigation and Restore Defaults behavior."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The macOS settings steps were checked against Apple documentation but not executed on a Mac.",
+        "Localized menu wording can vary slightly by macOS version and language; the article retains the key English labels and official reference."
+      ]
+    },
+    "post/macでコピー＆ペーストのショートカットキーをWindowsと合わせる方法/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/macでコピー＆ペーストのショートカットキーをWindowsと合わせる方法/index.md",
+      "sourceHash": "385b92cf980cd6287f9c15dd4ab62b96e4c43cf4161e09f28de2bfe318339fbe",
+      "translationHash": "55c32c9b6b2674bf3775a4b53ffb3bfe1a430c7c29c16bd5504d7053d2446097",
+      "summary": "Reviewed all setup steps and translations against Apple Support, updated the settings path, and explained that the modifier-key swap affects all shortcuts on the selected keyboard rather than only copy/paste.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete procedure and clarified that swapping Control and Command changes the behavior of all matching modifier shortcuts on the selected keyboard, not only copy/paste."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the Control, Command, modifier-key, Keyboard Shortcuts, and Modifier Keys labels, preserving macOS key symbols and distinguishing physical key assignment from shortcut-specific remapping."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The settings guide contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The settings guide contains no code or shell commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Apple’s official modifier-key guide and checked the current System Settings navigation and Restore Defaults behavior."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The macOS settings steps were checked against Apple documentation but not executed on a Mac.",
+        "Localized menu wording can vary slightly by macOS version and language; the article retains the key English labels and official reference."
+      ]
+    },
+    "post/macでコピー＆ペーストのショートカットキーをWindowsと合わせる方法/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/macでコピー＆ペーストのショートカットキーをWindowsと合わせる方法/index.md",
+      "sourceHash": "385b92cf980cd6287f9c15dd4ab62b96e4c43cf4161e09f28de2bfe318339fbe",
+      "translationHash": "49fa7ab5b7c389fa8a68d4640d66b20bf89b34653c1d3b03dddb995f2046bbe1",
+      "summary": "Reviewed all setup steps and translations against Apple Support, updated the settings path, and explained that the modifier-key swap affects all shortcuts on the selected keyboard rather than only copy/paste.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete procedure and clarified that swapping Control and Command changes the behavior of all matching modifier shortcuts on the selected keyboard, not only copy/paste."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the Control, Command, modifier-key, Keyboard Shortcuts, and Modifier Keys labels, preserving macOS key symbols and distinguishing physical key assignment from shortcut-specific remapping."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The settings guide contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The settings guide contains no code or shell commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Apple’s official modifier-key guide and checked the current System Settings navigation and Restore Defaults behavior."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The macOS settings steps were checked against Apple documentation but not executed on a Mac.",
+        "Localized menu wording can vary slightly by macOS version and language; the article retains the key English labels and official reference."
+      ]
+    }
+  }
+}

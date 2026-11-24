@@ -1,27 +1,24 @@
 ---
-title: 'Comment modifier les raccourcis clavier de copier-coller sur Mac pour qu''ils soient identiques à ceux de Windows'
-date: "2026-09-24T19:44:38+09:00"
+title: "Inverser les touches Control et Command sur Mac"
 slug: "macでCopier-collerのTouche de raccourciをWindowsと合わせる方法"
 date: 2023-04-05T00:49:02+09:00
+lastmod: "2026-11-24T00:00:00+09:00"
 tags: ["macos", "mac", "Touche de raccourci", "Copier et coller"]
 draft: 
 image: "img.webp"
 categories: ["pc-gadgets"]
-description: 'Nous présentons la procédure de modification des touches de modification depuis les Préférences Système, ce qui est pratique lorsque vous utilisez à la fois Mac et Windows, pour ajuster les raccourcis clavier du copier-coller à la manière de Windows (basés sur la touche Ctrl).'
+description: "Comment inverser Control et Command dans macOS Ventura et les versions ultérieures. Le changement concerne tous les raccourcis de modificateurs du clavier choisi, pas seulement copier-coller."
 ---
+Lorsque l’on passe de Windows à Mac, les touches de modification des raccourcis comme copier et coller sont différentes. À partir de macOS Ventura, vous pouvez inverser les fonctions des touches Control et Command.
 
-# Introduction
+Ce réglage concerne tous les raccourcis utilisant Control ou Command sur le clavier sélectionné, pas uniquement le copier-coller.
 
-Lorsque vous passez de Windows à mac, les touches couramment utilisées pour copier, coller et annuler via les raccourcis clavier sont différentes. Je vais donc vous montrer comment les faire correspondre.
+## Étapes
 
-# Méthode de configuration (macOS Ventura)
+1. Ouvrez **Réglages Système** depuis le menu Apple.
+2. Accédez à **Clavier** > **Raccourcis clavier** > **Touches de modification**.
+3. Si un menu de claviers apparaît, choisissez celui à configurer.
+4. Réglez **Touche Contrôle (^)** sur **Commande (⌘)**.
+5. Réglez **Touche Commande (⌘)** sur **Contrôle (^)**, puis cliquez sur **Terminé**.
 
-1. Ouvrez les Réglages Système
-2. Sélectionnez Clavier
-3. Sélectionnez Raccourcis clavier
-4. Sélectionnez Touches de modification
-5. Attribuez la touche Control(^) à "⌘ Command"
-6. Attribuez la touche Command(⌘) à "^ Control"
-7. Cliquez sur Terminé
-
-Fin
+Pour annuler, cliquez sur **Rétablir les réglages par défaut** dans le même écran. Consultez le [guide Apple sur les touches de modification](https://support.apple.com/en-ie/guide/mac-help/mchlp1011/27/mac/27).

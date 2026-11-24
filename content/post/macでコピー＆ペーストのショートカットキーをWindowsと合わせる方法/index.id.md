@@ -1,28 +1,24 @@
 ---
-title: 'Cara Mengubah Pintasan Copy-Paste di Mac agar Sama dengan Pengaturan Windows'
-date: "2026-09-24T19:44:38+09:00"
+title: "Menukar Tombol Control dan Command di Mac"
 slug: "macでSalin dan TempelのTombol PintasanをWindowsと合わせる方法"
 date: 2023-04-05T00:49:02+09:00
+lastmod: "2026-11-24T00:00:00+09:00"
 tags: ["macos", "mac", "tombol pintasan", "salin & tempel"]
 draft:
 image: "img.webp"
 categories: ["pc-gadgets"]
-description: 'Memperkenalkan langkah untuk mengubah tombol pengubah (modifier) dari System Preferences guna menyesuaikan pintasan copy & paste seperti gaya Windows (berbasis tombol Ctrl), yang akan sangat berguna ketika menggunakan Mac dan Windows secara bersamaan.'
+description: "Cara menukar Control dan Command di macOS Ventura dan versi lebih baru. Perubahan berlaku untuk semua pintasan tombol modifier pada keyboard yang dipilih, bukan hanya salin dan tempel."
 ---
+Saat berpindah antara Windows dan Mac, tombol modifier untuk pintasan seperti salin dan tempel berbeda. Di macOS Ventura dan versi lebih baru, fungsi tombol Control dan Command dapat ditukar.
 
-# Pengantar
+Perubahan ini berlaku untuk semua pintasan yang menggunakan Control atau Command pada keyboard yang dipilih, bukan hanya salin dan tempel.
 
-Saat beralih antara menggunakan Windows dan Mac, tombol pintasan keyboard yang sering digunakan seperti salin, tempel, dan batalkan berbeda.
-Di sini saya akan memperkenalkan cara untuk menyamakannya.
+## Langkah-langkah
 
-# Cara Pengaturan (macOS Ventura)
+1. Buka **System Settings** dari menu Apple.
+2. Buka **Keyboard** > **Keyboard Shortcuts** > **Modifier Keys**.
+3. Jika menu keyboard ditampilkan, pilih keyboard yang ingin diatur.
+4. Atur **Control (^) Key** menjadi **Command (⌘)**.
+5. Atur **Command (⌘) Key** menjadi **Control (^)**, lalu klik **Done**.
 
-1. Buka Pengaturan Sistem
-2. Pilih Keyboard
-3. Pilih Pintasan Keyboard
-4. Pilih Tombol Pengubah
-5. Tetapkan tombol Control(^) ke "⌘ Command"
-6. Tetapkan tombol Command(⌘) ke "^ Control"
-7. Klik Selesai
-
-Sekian
+Untuk membatalkannya, klik **Restore Defaults** pada layar yang sama. Lihat [panduan Apple tentang tombol modifier](https://support.apple.com/en-ie/guide/mac-help/mchlp1011/27/mac/27).

@@ -1,27 +1,24 @@
 ---
-title: 'Wie man die Tastenkombinationen zum Kopieren und Einfügen auf dem Mac auf die gleichen Einstellungen wie bei Windows ändert'
-date: "2026-09-24T19:44:38+09:00"
+title: "Control- und Command-Taste auf dem Mac tauschen"
 slug: "macでKopieren & EinfügenのTastenkombinationをWindowsと合わせる方法"
 date: 2023-04-05T00:49:02+09:00
+lastmod: "2026-11-24T00:00:00+09:00"
 tags: ["macos", "mac", "Tastenkombination", "Kopieren und Einfügen"]
 draft: 
 image: "img.webp"
 categories: ["pc-gadgets"]
-description: 'Wir stellen die Schritte zum Ändern der Sondertasten über die Systemeinstellungen vor, um die Tastenkombinationen zum Kopieren und Einfügen an den Windows-Stil (basiert auf der Strg-Taste) anzupassen, was praktisch ist, wenn man Mac und Windows parallel nutzt.'
+description: "So tauschen Sie Control und Command unter macOS Ventura und neuer. Die Änderung betrifft alle Kurzbefehle mit Zusatztasten der ausgewählten Tastatur, nicht nur Kopieren und Einfügen."
 ---
+Beim Wechsel zwischen Windows und Mac unterscheiden sich die Zusatztasten für Kurzbefehle wie Kopieren und Einfügen. Ab macOS Ventura können Sie die Funktionen von Control und Command vertauschen.
 
-# Einführung
+Die Änderung gilt für alle Kurzbefehle mit Control oder Command auf der ausgewählten Tastatur, nicht nur für Kopieren und Einfügen.
 
-Wenn Sie zwischen Windows und Mac wechseln, unterscheiden sich die häufig verwendeten Tastenkombinationen zum Kopieren, Einfügen und Rückgängigmachen. Daher werde ich Ihnen zeigen, wie Sie sie anpassen können.
+## Schritte
 
-# Einstellungsmethode (macOS Ventura)
+1. Öffnen Sie **Systemeinstellungen** über das Apple-Menü.
+2. Öffnen Sie **Tastatur** > **Tastaturkurzbefehle** > **Sondertasten**.
+3. Falls ein Tastaturmenü angezeigt wird, wählen Sie die gewünschte Tastatur aus.
+4. Stellen Sie **Control-Taste (^)** auf **Command (⌘)**.
+5. Stellen Sie **Command-Taste (⌘)** auf **Control (^)** und klicken Sie auf **Fertig**.
 
-1. Öffnen Sie die Systemeinstellungen
-2. Wählen Sie Tastatur
-3. Wählen Sie Tastaturkurzbefehle
-4. Wählen Sie Sondertasten
-5. Weisen Sie die Control(^)-Taste "⌘ Command" zu
-6. Weisen Sie die Command(⌘)-Taste "^ Control" zu
-7. Klicken Sie auf Fertig
-
-Ende
+Zum Zurücksetzen klicken Sie im selben Fenster auf **Standardwerte wiederherstellen**. Weitere Informationen bietet Apples [Anleitung zu Sondertasten](https://support.apple.com/en-ie/guide/mac-help/mchlp1011/27/mac/27).

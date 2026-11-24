@@ -1,27 +1,24 @@
 ---
-title: '將Mac的複製貼上快捷鍵修改為與Windows相同設定的方法'
-date: "2026-09-24T19:44:38+09:00"
+title: "在 Mac 上交換 Control 鍵與 Command 鍵"
 slug: "macで複製貼上の快捷鍵をWindowsと合わせる方法"
 date: 2023-04-05T00:49:02+09:00
+lastmod: "2026-11-24T00:00:00+09:00"
 tags: ["macos", "mac", "快捷鍵", "複製與貼上"]
 draft: 
 image: "img.webp"
 categories: ["pc-gadgets"]
-description: '介紹在同時使用Mac與Windows時非常方便的小技巧巧，透過系統偏好設定更改修飾鍵，將複製與貼上的快捷鍵調整成Windows風格（以Ctrl鍵為主）。'
+description: "介紹如何在 macOS Ventura 及更新版本中交換 Control 與 Command 鍵。此變更會影響所選鍵盤上的所有修飾鍵快速鍵，不只複製與貼上。"
 ---
+同時使用 Windows 與 Mac 時，複製、貼上等快速鍵使用的修飾鍵不同。在 macOS Ventura 及更新版本中，可以交換 Control 鍵與 Command 鍵的功能。
 
-# 簡介
+此變更會影響所選鍵盤上所有使用 Control 或 Command 的快速鍵，不只複製與貼上。
 
-當在 Windows 和 mac 之間切換使用時，常用的複製、貼上和復原等快捷鍵有所不同，因此我將介紹如何將它們保持一致。
+## 設定步驟
 
-# 設定方法（macOS Ventura）
+1. 從 Apple 選單開啟「系統設定」。
+2. 依序開啟「鍵盤」>「鍵盤快速鍵」>「修飾鍵」。
+3. 如果出現鍵盤選單，請選擇要設定的鍵盤。
+4. 將「Control (^) 鍵」設為「Command (⌘)」。
+5. 將「Command (⌘) 鍵」設為「Control (^)」，再按一下「完成」。
 
-1. 開啟「系統設定」
-2. 選擇「鍵盤」
-3. 選擇「鍵盤快速鍵」
-4. 選擇「變更鍵」
-5. 將 Control(^) 鍵指派為「⌘ Command」
-6. 將 Command(⌘) 鍵指派為「^ Control」
-7. 點擊「完成」
-
-以上
+要還原設定，請在同一畫面按一下「回復預設值」。詳見 Apple 的[修飾鍵設定指南](https://support.apple.com/en-ie/guide/mac-help/mchlp1011/27/mac/27)。

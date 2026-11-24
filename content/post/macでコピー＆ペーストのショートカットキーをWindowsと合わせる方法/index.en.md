@@ -1,27 +1,24 @@
 ---
-title: 'How to Change Mac''s Copy & Paste Shortcut Keys to the Same Settings as Windows'
-date: "2026-09-24T19:44:38+09:00"
+title: "Swap Control and Command Keys on a Mac"
 slug: "macでCopy & PasteのShortcut KeyをWindowsと合わせる方法"
 date: 2023-04-05T00:49:02+09:00
+lastmod: "2026-11-24T00:00:00+09:00"
 tags: ["macos", "mac", "shortcut keys", "copy and paste"]
 draft: 
 image: "img.webp"
 categories: ["pc-gadgets"]
-description: 'We introduce the procedure to change modifier keys from System Preferences to match copy & paste shortcut keys to Windows style (Ctrl key based), which is convenient when using Mac and Windows together.'
+description: "How to swap Control and Command assignments in macOS Ventura and later. The change affects all modifier-key shortcuts for the selected keyboard, not only copy and paste."
 ---
+When you use both Windows and Mac, the modifier keys for shortcuts such as copy and paste differ. In macOS Ventura and later, you can swap the actions assigned to the Control and Command keys.
 
-# Introduction
+This affects every shortcut using Control or Command on the selected keyboard, not just copy and paste.
 
-When switching between Windows and Mac, the frequently used keyboard shortcuts like copy, paste, and undo are different. This post introduces a method to match them.
+## Steps
 
-# Setup Method (macOS Ventura)
+1. Open **System Settings** from the Apple menu.
+2. Go to **Keyboard** > **Keyboard Shortcuts** > **Modifier Keys**.
+3. Select the keyboard you want to configure, if a keyboard menu is shown.
+4. Set **Control (^) Key** to **Command (⌘)**.
+5. Set **Command (⌘) Key** to **Control (^)**, then click **Done**.
 
-1. Open System Settings
-2. Select Keyboard
-3. Select Keyboard Shortcuts
-4. Select Modifier Keys
-5. Assign the Control(^) key to "⌘ Command"
-6. Assign the Command(⌘) key to "^ Control"
-7. Click Done
-
-That's all.
+To undo the change, click **Restore Defaults** on the same screen. See Apple’s [guide to changing modifier keys](https://support.apple.com/en-ie/guide/mac-help/mchlp1011/27/mac/27).

@@ -1,27 +1,24 @@
 ---
-title: 'Como Mudar os Atalhos de Copiar e Colar do Mac para Serem Iguais aos do Windows'
-date: "2026-09-24T19:44:38+09:00"
+title: "Trocar as teclas Control e Command no Mac"
 slug: "macでCopiar e ColarのTecla de AtalhoをWindowsと合わせる方法"
 date: 2023-04-05T00:49:02+09:00
+lastmod: "2026-11-24T00:00:00+09:00"
 tags: ["macos", "mac", "Tecla de Atalho", "Copiar e Colar"]
 draft: 
 image: "img.webp"
 categories: ["pc-gadgets"]
-description: 'Ideal para usuários que dividem o tempo entre o Mac e o Windows. Mostramos como alterar as teclas modificadoras nas Configurações do Sistema para igualar os atalhos de teclado de copiar e colar aos do estilo Windows (baseados na tecla Ctrl).'
+description: "Como trocar Control e Command no macOS Ventura e versões posteriores. A mudança afeta todos os atalhos de teclas modificadoras do teclado selecionado, não apenas copiar e colar."
 ---
+Ao alternar entre Windows e Mac, as teclas modificadoras usadas em atalhos como copiar e colar são diferentes. No macOS Ventura e versões posteriores, você pode trocar as funções das teclas Control e Command.
 
-# Introdução
+A alteração afeta todos os atalhos que usam Control ou Command no teclado selecionado, não apenas copiar e colar.
 
-Ao alternar entre o Windows e o mac, as teclas frequentemente usadas para copiar, colar e desfazer por atalho de teclado são diferentes, por isso vou mostrar como combiná-las.
+## Etapas
 
-# Método de configuração (macOS Ventura)
+1. Abra **Ajustes do Sistema** no menu Apple.
+2. Acesse **Teclado** > **Atalhos de Teclado** > **Teclas Modificadoras**.
+3. Se aparecer um menu de teclados, selecione aquele que deseja configurar.
+4. Defina **Tecla Control (^)** como **Command (⌘)**.
+5. Defina **Tecla Command (⌘)** como **Control (^)** e clique em **OK**.
 
-1. Abra as Configurações do Sistema
-2. Selecione Teclado
-3. Selecione Atalhos de Teclado
-4. Selecione Teclas Modificadoras
-5. Atribua a tecla Control(^) para "⌘ Command"
-6. Atribua a tecla Command(⌘) para "^ Control"
-7. Clique em Concluído
-
-Fim
+Para desfazer a alteração, clique em **Restaurar Padrões** na mesma tela. Consulte o [guia da Apple sobre teclas modificadoras](https://support.apple.com/en-ie/guide/mac-help/mchlp1011/27/mac/27).

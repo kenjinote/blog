@@ -1,33 +1,24 @@
 ---
-
-
-
-title: 'Cómo cambiar el atajo de copiar y pegar en Mac para que coincida con la configuración de Windows'
-date: "2026-09-24T19:44:38+09:00"
+title: "Intercambiar las teclas Control y Command en un Mac"
 slug: "macでCopiar y pegarのTecla de atajoをWindowsと合わせる方法"
 date: 2023-04-05T00:49:02+09:00
+lastmod: "2026-11-24T00:00:00+09:00"
 tags: ["macos", "mac", "atajos de teclado", "copiar y pegar"]
 draft: 
 image: "img.webp"
 categories: ["pc-gadgets"]
-description: 'Mostramos los pasos para cambiar las teclas modificadoras desde las preferencias del sistema, lo cual es muy conveniente si usas Mac y Windows al mismo tiempo. Así puedes hacer que los atajos para copiar y pegar funcionen de forma similar a Windows (basados en la tecla Ctrl).'
+description: "Cómo intercambiar Control y Command en macOS Ventura y versiones posteriores. El cambio afecta a todos los atajos de la tecla modificadora del teclado seleccionado, no solo a copiar y pegar."
 ---
+Al alternar entre Windows y Mac, cambian las teclas modificadoras de atajos como copiar y pegar. En macOS Ventura y versiones posteriores puedes intercambiar las funciones de Control y Command.
 
+El cambio afecta a todos los atajos que usan Control o Command en el teclado seleccionado, no solo a copiar y pegar.
 
+## Pasos
 
+1. Abre **Ajustes del Sistema** desde el menú Apple.
+2. Ve a **Teclado** > **Funciones rápidas de teclado** > **Teclas de modificación**.
+3. Si aparece un menú de teclados, selecciona el que quieras configurar.
+4. Asigna **Command (⌘)** a **Control (^)**.
+5. Asigna **Control (^)** a **Command (⌘)** y pulsa **Aceptar**.
 
-# Introducción
-
-Cuando alternas entre Windows y Mac, las teclas de los atajos de teclado que usas con frecuencia, como copiar, pegar y deshacer, son diferentes, así que te mostraremos cómo igualarlas.
-
-# Método de configuración (macOS Ventura)
-
-1. Abrir Configuración del Sistema
-2. Seleccionar Teclado
-3. Seleccionar Atajos de teclado
-4. Seleccionar Teclas modificadoras
-5. Asignar la tecla Control(^) a "⌘ Command"
-6. Asignar la tecla Command(⌘) a "^ Control"
-7. Hacer clic en Listo
-
-Eso es todo
+Para deshacer el cambio, pulsa **Restaurar valores por omisión** en la misma pantalla. Consulta la [guía de Apple sobre las teclas de modificación](https://support.apple.com/en-ie/guide/mac-help/mchlp1011/27/mac/27).

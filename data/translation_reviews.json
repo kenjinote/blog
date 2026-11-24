@@ -15965,6 +15965,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-137.json",
       "evidenceHash": "7793a1769b2f35097161b8e3a97fe62279fa7e9877bb9a71c69efda192860a67"
+    },
+    "post/macでコピー＆ペーストのショートカットキーをWindowsと合わせる方法/index.en.md": {
+      "source": "post/macでコピー＆ペーストのショートカットキーをWindowsと合わせる方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "385b92cf980cd6287f9c15dd4ab62b96e4c43cf4161e09f28de2bfe318339fbe",
+      "translationHash": "49cbb93d84aac2d658e924139028081d4380aba05e96641c0dbb0490e89ad692",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-138.json",
+      "evidenceHash": "3c091a93480cbb169c6d50be884a39377e8002672136e30603f4d477dc0dfc58"
+    },
+    "post/macでコピー＆ペーストのショートカットキーをWindowsと合わせる方法/index.zh-cn.md": {
+      "source": "post/macでコピー＆ペーストのショートカットキーをWindowsと合わせる方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "385b92cf980cd6287f9c15dd4ab62b96e4c43cf4161e09f28de2bfe318339fbe",
+      "translationHash": "db561be9b498f7d47df8f8803e9316c9c6c03dca0a271ddc07fef763150c1155",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-138.json",
+      "evidenceHash": "f4a85437c9f2738196eadaecfb70e7792dbd0f94fc3258f18beed5862670cbef"
+    },
+    "post/macでコピー＆ペーストのショートカットキーをWindowsと合わせる方法/index.es.md": {
+      "source": "post/macでコピー＆ペーストのショートカットキーをWindowsと合わせる方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "385b92cf980cd6287f9c15dd4ab62b96e4c43cf4161e09f28de2bfe318339fbe",
+      "translationHash": "97351a445a5576cf1dacbfc16e6b1c91da3f32937791150f779a19e133f9bbb7",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-138.json",
+      "evidenceHash": "2337eda041e9dc86c913699e43b976b7e55e997af52c2093f2451d811d29191f"
+    },
+    "post/macでコピー＆ペーストのショートカットキーをWindowsと合わせる方法/index.ko.md": {
+      "source": "post/macでコピー＆ペーストのショートカットキーをWindowsと合わせる方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "385b92cf980cd6287f9c15dd4ab62b96e4c43cf4161e09f28de2bfe318339fbe",
+      "translationHash": "e2078e534e2bd82d58352f3da205fccf7fa924f4c2cf4ed0da89f34d6aebba2c",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-138.json",
+      "evidenceHash": "92c7999a874fc72396fa5577821e6e653f8a7068e2c6182a8190ddeb01ad15e0"
+    },
+    "post/macでコピー＆ペーストのショートカットキーをWindowsと合わせる方法/index.pt.md": {
+      "source": "post/macでコピー＆ペーストのショートカットキーをWindowsと合わせる方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "385b92cf980cd6287f9c15dd4ab62b96e4c43cf4161e09f28de2bfe318339fbe",
+      "translationHash": "e8baad9483c4da9dcfd47f845f1f9bb7c2dcebdaa0940f59387eda7e4c826f48",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-138.json",
+      "evidenceHash": "aeaa1d633e53816b7c299d221bcc2cd7b16c09fbd78518dda77999963f4140b4"
+    },
+    "post/macでコピー＆ペーストのショートカットキーをWindowsと合わせる方法/index.zh-tw.md": {
+      "source": "post/macでコピー＆ペーストのショートカットキーをWindowsと合わせる方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "385b92cf980cd6287f9c15dd4ab62b96e4c43cf4161e09f28de2bfe318339fbe",
+      "translationHash": "09487279a34700e8fc7cc11d344d06b92fba7acea769989337077b0b8725cb69",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-138.json",
+      "evidenceHash": "46ad9757191bd3e511c405da5a05374a76eda8dff9ba6fef8bc913d132cf0b35"
+    },
+    "post/macでコピー＆ペーストのショートカットキーをWindowsと合わせる方法/index.hi.md": {
+      "source": "post/macでコピー＆ペーストのショートカットキーをWindowsと合わせる方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "385b92cf980cd6287f9c15dd4ab62b96e4c43cf4161e09f28de2bfe318339fbe",
+      "translationHash": "83a4de6cdc90e387d8e6833717159458f6beb13b142638e36c908b2546ce444a",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-138.json",
+      "evidenceHash": "de700b71d506bbbd0c2e8044826e3d4c68c013d5ca1e3e1603cd60e75604b61c"
+    },
+    "post/macでコピー＆ペーストのショートカットキーをWindowsと合わせる方法/index.fr.md": {
+      "source": "post/macでコピー＆ペーストのショートカットキーをWindowsと合わせる方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "385b92cf980cd6287f9c15dd4ab62b96e4c43cf4161e09f28de2bfe318339fbe",
+      "translationHash": "e00bfe8478df2840127ee5bd279319e6130758eb93fa80c787b050429c87a254",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-138.json",
+      "evidenceHash": "3bc671a74f1093e2abb58af08280bfba2d4d79ca891fd1097972347e54942d06"
+    },
+    "post/macでコピー＆ペーストのショートカットキーをWindowsと合わせる方法/index.de.md": {
+      "source": "post/macでコピー＆ペーストのショートカットキーをWindowsと合わせる方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "385b92cf980cd6287f9c15dd4ab62b96e4c43cf4161e09f28de2bfe318339fbe",
+      "translationHash": "2522d0c0e28564634a2a5dfc2729fb094be061a51d4b9301eb8ad342fd523e15",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-138.json",
+      "evidenceHash": "374d90fdef7586e1dc7f80c46b6bb3af9e791806a8b30f03f8b5df1df15c22ca"
+    },
+    "post/macでコピー＆ペーストのショートカットキーをWindowsと合わせる方法/index.ar.md": {
+      "source": "post/macでコピー＆ペーストのショートカットキーをWindowsと合わせる方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "385b92cf980cd6287f9c15dd4ab62b96e4c43cf4161e09f28de2bfe318339fbe",
+      "translationHash": "02b55bda558a17b032569832a8e9cb5c134830b7fc4bc5bdf8d7fbf4fa1a97fc",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-138.json",
+      "evidenceHash": "a391b403175c2217928e30bac84a1c904f2e086a76aae15bda262aa560f055bd"
+    },
+    "post/macでコピー＆ペーストのショートカットキーをWindowsと合わせる方法/index.ru.md": {
+      "source": "post/macでコピー＆ペーストのショートカットキーをWindowsと合わせる方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "385b92cf980cd6287f9c15dd4ab62b96e4c43cf4161e09f28de2bfe318339fbe",
+      "translationHash": "55c32c9b6b2674bf3775a4b53ffb3bfe1a430c7c29c16bd5504d7053d2446097",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-138.json",
+      "evidenceHash": "dcf4e13578956a156fe85a87b21469ea00f177a3fc47a3c553c4bc28abcdfecf"
+    },
+    "post/macでコピー＆ペーストのショートカットキーをWindowsと合わせる方法/index.id.md": {
+      "source": "post/macでコピー＆ペーストのショートカットキーをWindowsと合わせる方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "385b92cf980cd6287f9c15dd4ab62b96e4c43cf4161e09f28de2bfe318339fbe",
+      "translationHash": "49fa7ab5b7c389fa8a68d4640d66b20bf89b34653c1d3b03dddb995f2046bbe1",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-138.json",
+      "evidenceHash": "b1c4ffe0f5201b8c87144b57a1d37c44b0d141b9fe112459629a6107f1c0d299"
     }
   }
 }
