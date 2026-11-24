@@ -16205,6 +16205,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-139.json",
       "evidenceHash": "6b552eee0feade20c702c7b6ee300db94bd3e150a5b549e24ff0226ebdebb819"
+    },
+    "post/好きな数式/index.en.md": {
+      "source": "post/好きな数式/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "c2fec18079c2e96b27893e59ece2d1725eff44f7f921698ceba25a177523ecf2",
+      "translationHash": "0ee7903c9fd6d7a24f49c7322dee7ba67e5b1d4d5f785126f779ec061d7381e9",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-140.json",
+      "evidenceHash": "3de65f3271ca697d2c1f9ccf31b74e559d79a75e7fa136558ed2d52437014ce5"
+    },
+    "post/好きな数式/index.zh-cn.md": {
+      "source": "post/好きな数式/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "c2fec18079c2e96b27893e59ece2d1725eff44f7f921698ceba25a177523ecf2",
+      "translationHash": "f40e732cfbf6640e881a05fac1b70b1a21851615d303d185724d530ef4cfdf4f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-140.json",
+      "evidenceHash": "8108b852c16438251f8088a90c85c880108a0345fb016883365522f41fc63830"
+    },
+    "post/好きな数式/index.es.md": {
+      "source": "post/好きな数式/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "c2fec18079c2e96b27893e59ece2d1725eff44f7f921698ceba25a177523ecf2",
+      "translationHash": "b522f10186e97d0e13ff4ab069333d7e755a03ff96c023074348d31f9c843a31",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-140.json",
+      "evidenceHash": "7217881492c2ec7f4031fb38f4c12b40e7f8f72853c50b6d076048354c795955"
+    },
+    "post/好きな数式/index.ko.md": {
+      "source": "post/好きな数式/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "c2fec18079c2e96b27893e59ece2d1725eff44f7f921698ceba25a177523ecf2",
+      "translationHash": "37a3721fcbbf118e1a4a2cf14ac08f9dce7333deb883bfd81f45290e05d50524",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-140.json",
+      "evidenceHash": "816bae2e9b217ce7d30256baaf98ba499bb8ec27176e5c4c4fe318a216b6c54a"
+    },
+    "post/好きな数式/index.pt.md": {
+      "source": "post/好きな数式/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "c2fec18079c2e96b27893e59ece2d1725eff44f7f921698ceba25a177523ecf2",
+      "translationHash": "10e7a0a59611beca3769234b3a67023e45639d52657a27c1de97b47437514a0b",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-140.json",
+      "evidenceHash": "0be8ae5d08445e6e325555cffa8deb43790266ccc6b570d5b81ab5fd84240d14"
+    },
+    "post/好きな数式/index.zh-tw.md": {
+      "source": "post/好きな数式/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "c2fec18079c2e96b27893e59ece2d1725eff44f7f921698ceba25a177523ecf2",
+      "translationHash": "6d3094010e254e6b5edb77969d2e9e1a496b3d8fde5e321abe215853e509b535",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-140.json",
+      "evidenceHash": "d0225a3b3250dd9a87198e0f17c18d0f4ac1f81a37e8481de89cb15aceba493b"
+    },
+    "post/好きな数式/index.hi.md": {
+      "source": "post/好きな数式/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "c2fec18079c2e96b27893e59ece2d1725eff44f7f921698ceba25a177523ecf2",
+      "translationHash": "7576dd9fbc9f586b14dc8796d39960f7f817d4bdd17389b416c3f83964e836ff",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-140.json",
+      "evidenceHash": "a28cfc52c35a2a1c39bc51e37f9fde64c15c79947149428e090f5d7abfea1120"
+    },
+    "post/好きな数式/index.fr.md": {
+      "source": "post/好きな数式/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "c2fec18079c2e96b27893e59ece2d1725eff44f7f921698ceba25a177523ecf2",
+      "translationHash": "6506958bf4443eb467f25f0cb2dd7b77189af3fe9b4ace05150022c0c0cd0b32",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-140.json",
+      "evidenceHash": "4be652b91bdf098bd96dea6ce676133d7e494983718f9166aede0bd1797b16c7"
+    },
+    "post/好きな数式/index.de.md": {
+      "source": "post/好きな数式/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "c2fec18079c2e96b27893e59ece2d1725eff44f7f921698ceba25a177523ecf2",
+      "translationHash": "43eff7ef73b5e240b22053c165a86e44b8baa761f7fc5c8d6b1cddeb31ce6fcf",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-140.json",
+      "evidenceHash": "e12541382a702901a46cdec6b95c4b7f3cac211414cde9c045e459766cb1ec46"
+    },
+    "post/好きな数式/index.ar.md": {
+      "source": "post/好きな数式/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "c2fec18079c2e96b27893e59ece2d1725eff44f7f921698ceba25a177523ecf2",
+      "translationHash": "56345afeeca03a96cc5efc56f0a7a4bb046701d212722dea7b42964baab137fe",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-140.json",
+      "evidenceHash": "479273b497ac61597f46a60aad64a9f122f505123d662e9421543e40d7e649ea"
+    },
+    "post/好きな数式/index.ru.md": {
+      "source": "post/好きな数式/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "c2fec18079c2e96b27893e59ece2d1725eff44f7f921698ceba25a177523ecf2",
+      "translationHash": "431c9ed43ccc4ff140f85cae40b3632b27199abf7f4f7fa86f524e05a663bf9f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-140.json",
+      "evidenceHash": "575fee680f0c3c6903dc8c7a5d748cdeb11534b4321123450e9eeed7195e085b"
+    },
+    "post/好きな数式/index.id.md": {
+      "source": "post/好きな数式/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "c2fec18079c2e96b27893e59ece2d1725eff44f7f921698ceba25a177523ecf2",
+      "translationHash": "a9250f127425412d9bb45b2a139b269d33194b23e4816ab3a6a2a46406fecb66",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-140.json",
+      "evidenceHash": "c94f5e944266958a5d4d93798b4c092d7bd9b0a8cbcbb6733480313086d15ecc"
     }
   }
 }

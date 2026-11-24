@@ -1,0 +1,459 @@
+{
+  "version": 1,
+  "batch": 140,
+  "article": "美しい数式5選：定理と式の正確な意味",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "c2fec18079c2e96b27893e59ece2d1725eff44f7f921698ceba25a177523ecf2",
+  "sources": [
+    "https://mathworld.wolfram.com/WilsonsTheorem.html",
+    "https://euler.euclid.int/about-eulers-identity/",
+    "https://www.maths.cam.ac.uk/features/node/153",
+    "https://clp.math.uky.edu/clp2/chap_seq_ser-5.html",
+    "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/1F76183BF30CECE688E31E8F10F37AC8/S0025557224000111a.pdf/eulers_primeproducing_polynomial_revisited.pdf"
+  ],
+  "scope": "Compared the full Japanese article and twelve translations, including every formula, hypothesis, quantifier, mathematical term, localized Fermat link, description, and cited reference.",
+  "findings": [
+    "Removed the duplicate future publication date and retained 2022-10-05 as publication date; set lastmod to 2026-11-24.",
+    "Stated Wilson’s theorem with its integer m>1 iff form and defined factorial notation.",
+    "Distinguished Euler’s general formula from the identity at x=pi, specifying radians and the real domain.",
+    "Clarified positive-integer and n>=3 conditions in Fermat’s Last Theorem.",
+    "Replaced an ambiguous ellipsis with the infinite Basel series notation.",
+    "Limited Euler’s polynomial prime claim to n=0..39 and added the counterexample n=40, where the value is 1681=41^2.",
+    "Added five mathematical/university references in all languages."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/好きな数式/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/好きな数式/index.md",
+      "sourceHash": "c2fec18079c2e96b27893e59ece2d1725eff44f7f921698ceba25a177523ecf2",
+      "translationHash": "0ee7903c9fd6d7a24f49c7322dee7ba67e5b1d4d5f785126f779ec061d7381e9",
+      "summary": "Compared all mathematical statements and notation in the complete Japanese article and twelve translations with university and mathematical references; clarified hypotheses, radians, the infinite series, and the finite range of Euler’s polynomial.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared theorem statements, domains, quantifiers, equation exponents, and the n=0..39 range across the source and every translation; explicitly noted that n=40 gives a composite value."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Wilson’s theorem, Euler’s formula versus identity, Fermat’s Last Theorem, Basel problem, prime/composite, factorial, radians, and the meanings of i and pi in every language."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified Wilson’s congruence and iff form, Euler’s formula and x=pi identity, Fermat’s positive-integer statement for n>=3, the Basel sum, and Euler polynomial values for n=0..39 with counterexample 1681=41^2 at n=40."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked five cited references from Wolfram MathWorld, Euler-Franeker Memorial University, University of Cambridge, University of Kentucky, and Cambridge University Press; retained the language-specific Fermat article links."
+        }
+      },
+      "limitations": [
+        "AI-assisted mathematical review; no human mathematician or native-speaker certification.",
+        "The formulas were checked against the cited references but no independent formal proof or computer algebra verification was performed.",
+        "Reference pages and URLs may change after review."
+      ]
+    },
+    "post/好きな数式/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/好きな数式/index.md",
+      "sourceHash": "c2fec18079c2e96b27893e59ece2d1725eff44f7f921698ceba25a177523ecf2",
+      "translationHash": "f40e732cfbf6640e881a05fac1b70b1a21851615d303d185724d530ef4cfdf4f",
+      "summary": "Compared all mathematical statements and notation in the complete Japanese article and twelve translations with university and mathematical references; clarified hypotheses, radians, the infinite series, and the finite range of Euler’s polynomial.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared theorem statements, domains, quantifiers, equation exponents, and the n=0..39 range across the source and every translation; explicitly noted that n=40 gives a composite value."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Wilson’s theorem, Euler’s formula versus identity, Fermat’s Last Theorem, Basel problem, prime/composite, factorial, radians, and the meanings of i and pi in every language."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified Wilson’s congruence and iff form, Euler’s formula and x=pi identity, Fermat’s positive-integer statement for n>=3, the Basel sum, and Euler polynomial values for n=0..39 with counterexample 1681=41^2 at n=40."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked five cited references from Wolfram MathWorld, Euler-Franeker Memorial University, University of Cambridge, University of Kentucky, and Cambridge University Press; retained the language-specific Fermat article links."
+        }
+      },
+      "limitations": [
+        "AI-assisted mathematical review; no human mathematician or native-speaker certification.",
+        "The formulas were checked against the cited references but no independent formal proof or computer algebra verification was performed.",
+        "Reference pages and URLs may change after review."
+      ]
+    },
+    "post/好きな数式/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/好きな数式/index.md",
+      "sourceHash": "c2fec18079c2e96b27893e59ece2d1725eff44f7f921698ceba25a177523ecf2",
+      "translationHash": "b522f10186e97d0e13ff4ab069333d7e755a03ff96c023074348d31f9c843a31",
+      "summary": "Compared all mathematical statements and notation in the complete Japanese article and twelve translations with university and mathematical references; clarified hypotheses, radians, the infinite series, and the finite range of Euler’s polynomial.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared theorem statements, domains, quantifiers, equation exponents, and the n=0..39 range across the source and every translation; explicitly noted that n=40 gives a composite value."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Wilson’s theorem, Euler’s formula versus identity, Fermat’s Last Theorem, Basel problem, prime/composite, factorial, radians, and the meanings of i and pi in every language."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified Wilson’s congruence and iff form, Euler’s formula and x=pi identity, Fermat’s positive-integer statement for n>=3, the Basel sum, and Euler polynomial values for n=0..39 with counterexample 1681=41^2 at n=40."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked five cited references from Wolfram MathWorld, Euler-Franeker Memorial University, University of Cambridge, University of Kentucky, and Cambridge University Press; retained the language-specific Fermat article links."
+        }
+      },
+      "limitations": [
+        "AI-assisted mathematical review; no human mathematician or native-speaker certification.",
+        "The formulas were checked against the cited references but no independent formal proof or computer algebra verification was performed.",
+        "Reference pages and URLs may change after review."
+      ]
+    },
+    "post/好きな数式/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/好きな数式/index.md",
+      "sourceHash": "c2fec18079c2e96b27893e59ece2d1725eff44f7f921698ceba25a177523ecf2",
+      "translationHash": "37a3721fcbbf118e1a4a2cf14ac08f9dce7333deb883bfd81f45290e05d50524",
+      "summary": "Compared all mathematical statements and notation in the complete Japanese article and twelve translations with university and mathematical references; clarified hypotheses, radians, the infinite series, and the finite range of Euler’s polynomial.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared theorem statements, domains, quantifiers, equation exponents, and the n=0..39 range across the source and every translation; explicitly noted that n=40 gives a composite value."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Wilson’s theorem, Euler’s formula versus identity, Fermat’s Last Theorem, Basel problem, prime/composite, factorial, radians, and the meanings of i and pi in every language."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified Wilson’s congruence and iff form, Euler’s formula and x=pi identity, Fermat’s positive-integer statement for n>=3, the Basel sum, and Euler polynomial values for n=0..39 with counterexample 1681=41^2 at n=40."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked five cited references from Wolfram MathWorld, Euler-Franeker Memorial University, University of Cambridge, University of Kentucky, and Cambridge University Press; retained the language-specific Fermat article links."
+        }
+      },
+      "limitations": [
+        "AI-assisted mathematical review; no human mathematician or native-speaker certification.",
+        "The formulas were checked against the cited references but no independent formal proof or computer algebra verification was performed.",
+        "Reference pages and URLs may change after review."
+      ]
+    },
+    "post/好きな数式/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/好きな数式/index.md",
+      "sourceHash": "c2fec18079c2e96b27893e59ece2d1725eff44f7f921698ceba25a177523ecf2",
+      "translationHash": "10e7a0a59611beca3769234b3a67023e45639d52657a27c1de97b47437514a0b",
+      "summary": "Compared all mathematical statements and notation in the complete Japanese article and twelve translations with university and mathematical references; clarified hypotheses, radians, the infinite series, and the finite range of Euler’s polynomial.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared theorem statements, domains, quantifiers, equation exponents, and the n=0..39 range across the source and every translation; explicitly noted that n=40 gives a composite value."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Wilson’s theorem, Euler’s formula versus identity, Fermat’s Last Theorem, Basel problem, prime/composite, factorial, radians, and the meanings of i and pi in every language."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified Wilson’s congruence and iff form, Euler’s formula and x=pi identity, Fermat’s positive-integer statement for n>=3, the Basel sum, and Euler polynomial values for n=0..39 with counterexample 1681=41^2 at n=40."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked five cited references from Wolfram MathWorld, Euler-Franeker Memorial University, University of Cambridge, University of Kentucky, and Cambridge University Press; retained the language-specific Fermat article links."
+        }
+      },
+      "limitations": [
+        "AI-assisted mathematical review; no human mathematician or native-speaker certification.",
+        "The formulas were checked against the cited references but no independent formal proof or computer algebra verification was performed.",
+        "Reference pages and URLs may change after review."
+      ]
+    },
+    "post/好きな数式/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/好きな数式/index.md",
+      "sourceHash": "c2fec18079c2e96b27893e59ece2d1725eff44f7f921698ceba25a177523ecf2",
+      "translationHash": "6d3094010e254e6b5edb77969d2e9e1a496b3d8fde5e321abe215853e509b535",
+      "summary": "Compared all mathematical statements and notation in the complete Japanese article and twelve translations with university and mathematical references; clarified hypotheses, radians, the infinite series, and the finite range of Euler’s polynomial.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared theorem statements, domains, quantifiers, equation exponents, and the n=0..39 range across the source and every translation; explicitly noted that n=40 gives a composite value."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Wilson’s theorem, Euler’s formula versus identity, Fermat’s Last Theorem, Basel problem, prime/composite, factorial, radians, and the meanings of i and pi in every language."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified Wilson’s congruence and iff form, Euler’s formula and x=pi identity, Fermat’s positive-integer statement for n>=3, the Basel sum, and Euler polynomial values for n=0..39 with counterexample 1681=41^2 at n=40."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked five cited references from Wolfram MathWorld, Euler-Franeker Memorial University, University of Cambridge, University of Kentucky, and Cambridge University Press; retained the language-specific Fermat article links."
+        }
+      },
+      "limitations": [
+        "AI-assisted mathematical review; no human mathematician or native-speaker certification.",
+        "The formulas were checked against the cited references but no independent formal proof or computer algebra verification was performed.",
+        "Reference pages and URLs may change after review."
+      ]
+    },
+    "post/好きな数式/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/好きな数式/index.md",
+      "sourceHash": "c2fec18079c2e96b27893e59ece2d1725eff44f7f921698ceba25a177523ecf2",
+      "translationHash": "7576dd9fbc9f586b14dc8796d39960f7f817d4bdd17389b416c3f83964e836ff",
+      "summary": "Compared all mathematical statements and notation in the complete Japanese article and twelve translations with university and mathematical references; clarified hypotheses, radians, the infinite series, and the finite range of Euler’s polynomial.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared theorem statements, domains, quantifiers, equation exponents, and the n=0..39 range across the source and every translation; explicitly noted that n=40 gives a composite value."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Wilson’s theorem, Euler’s formula versus identity, Fermat’s Last Theorem, Basel problem, prime/composite, factorial, radians, and the meanings of i and pi in every language."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified Wilson’s congruence and iff form, Euler’s formula and x=pi identity, Fermat’s positive-integer statement for n>=3, the Basel sum, and Euler polynomial values for n=0..39 with counterexample 1681=41^2 at n=40."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked five cited references from Wolfram MathWorld, Euler-Franeker Memorial University, University of Cambridge, University of Kentucky, and Cambridge University Press; retained the language-specific Fermat article links."
+        }
+      },
+      "limitations": [
+        "AI-assisted mathematical review; no human mathematician or native-speaker certification.",
+        "The formulas were checked against the cited references but no independent formal proof or computer algebra verification was performed.",
+        "Reference pages and URLs may change after review."
+      ]
+    },
+    "post/好きな数式/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/好きな数式/index.md",
+      "sourceHash": "c2fec18079c2e96b27893e59ece2d1725eff44f7f921698ceba25a177523ecf2",
+      "translationHash": "6506958bf4443eb467f25f0cb2dd7b77189af3fe9b4ace05150022c0c0cd0b32",
+      "summary": "Compared all mathematical statements and notation in the complete Japanese article and twelve translations with university and mathematical references; clarified hypotheses, radians, the infinite series, and the finite range of Euler’s polynomial.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared theorem statements, domains, quantifiers, equation exponents, and the n=0..39 range across the source and every translation; explicitly noted that n=40 gives a composite value."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Wilson’s theorem, Euler’s formula versus identity, Fermat’s Last Theorem, Basel problem, prime/composite, factorial, radians, and the meanings of i and pi in every language."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified Wilson’s congruence and iff form, Euler’s formula and x=pi identity, Fermat’s positive-integer statement for n>=3, the Basel sum, and Euler polynomial values for n=0..39 with counterexample 1681=41^2 at n=40."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked five cited references from Wolfram MathWorld, Euler-Franeker Memorial University, University of Cambridge, University of Kentucky, and Cambridge University Press; retained the language-specific Fermat article links."
+        }
+      },
+      "limitations": [
+        "AI-assisted mathematical review; no human mathematician or native-speaker certification.",
+        "The formulas were checked against the cited references but no independent formal proof or computer algebra verification was performed.",
+        "Reference pages and URLs may change after review."
+      ]
+    },
+    "post/好きな数式/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/好きな数式/index.md",
+      "sourceHash": "c2fec18079c2e96b27893e59ece2d1725eff44f7f921698ceba25a177523ecf2",
+      "translationHash": "43eff7ef73b5e240b22053c165a86e44b8baa761f7fc5c8d6b1cddeb31ce6fcf",
+      "summary": "Compared all mathematical statements and notation in the complete Japanese article and twelve translations with university and mathematical references; clarified hypotheses, radians, the infinite series, and the finite range of Euler’s polynomial.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared theorem statements, domains, quantifiers, equation exponents, and the n=0..39 range across the source and every translation; explicitly noted that n=40 gives a composite value."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Wilson’s theorem, Euler’s formula versus identity, Fermat’s Last Theorem, Basel problem, prime/composite, factorial, radians, and the meanings of i and pi in every language."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified Wilson’s congruence and iff form, Euler’s formula and x=pi identity, Fermat’s positive-integer statement for n>=3, the Basel sum, and Euler polynomial values for n=0..39 with counterexample 1681=41^2 at n=40."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked five cited references from Wolfram MathWorld, Euler-Franeker Memorial University, University of Cambridge, University of Kentucky, and Cambridge University Press; retained the language-specific Fermat article links."
+        }
+      },
+      "limitations": [
+        "AI-assisted mathematical review; no human mathematician or native-speaker certification.",
+        "The formulas were checked against the cited references but no independent formal proof or computer algebra verification was performed.",
+        "Reference pages and URLs may change after review."
+      ]
+    },
+    "post/好きな数式/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/好きな数式/index.md",
+      "sourceHash": "c2fec18079c2e96b27893e59ece2d1725eff44f7f921698ceba25a177523ecf2",
+      "translationHash": "56345afeeca03a96cc5efc56f0a7a4bb046701d212722dea7b42964baab137fe",
+      "summary": "Compared all mathematical statements and notation in the complete Japanese article and twelve translations with university and mathematical references; clarified hypotheses, radians, the infinite series, and the finite range of Euler’s polynomial.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared theorem statements, domains, quantifiers, equation exponents, and the n=0..39 range across the source and every translation; explicitly noted that n=40 gives a composite value."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Wilson’s theorem, Euler’s formula versus identity, Fermat’s Last Theorem, Basel problem, prime/composite, factorial, radians, and the meanings of i and pi in every language."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified Wilson’s congruence and iff form, Euler’s formula and x=pi identity, Fermat’s positive-integer statement for n>=3, the Basel sum, and Euler polynomial values for n=0..39 with counterexample 1681=41^2 at n=40."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked five cited references from Wolfram MathWorld, Euler-Franeker Memorial University, University of Cambridge, University of Kentucky, and Cambridge University Press; retained the language-specific Fermat article links."
+        }
+      },
+      "limitations": [
+        "AI-assisted mathematical review; no human mathematician or native-speaker certification.",
+        "The formulas were checked against the cited references but no independent formal proof or computer algebra verification was performed.",
+        "Reference pages and URLs may change after review."
+      ]
+    },
+    "post/好きな数式/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/好きな数式/index.md",
+      "sourceHash": "c2fec18079c2e96b27893e59ece2d1725eff44f7f921698ceba25a177523ecf2",
+      "translationHash": "431c9ed43ccc4ff140f85cae40b3632b27199abf7f4f7fa86f524e05a663bf9f",
+      "summary": "Compared all mathematical statements and notation in the complete Japanese article and twelve translations with university and mathematical references; clarified hypotheses, radians, the infinite series, and the finite range of Euler’s polynomial.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared theorem statements, domains, quantifiers, equation exponents, and the n=0..39 range across the source and every translation; explicitly noted that n=40 gives a composite value."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Wilson’s theorem, Euler’s formula versus identity, Fermat’s Last Theorem, Basel problem, prime/composite, factorial, radians, and the meanings of i and pi in every language."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified Wilson’s congruence and iff form, Euler’s formula and x=pi identity, Fermat’s positive-integer statement for n>=3, the Basel sum, and Euler polynomial values for n=0..39 with counterexample 1681=41^2 at n=40."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked five cited references from Wolfram MathWorld, Euler-Franeker Memorial University, University of Cambridge, University of Kentucky, and Cambridge University Press; retained the language-specific Fermat article links."
+        }
+      },
+      "limitations": [
+        "AI-assisted mathematical review; no human mathematician or native-speaker certification.",
+        "The formulas were checked against the cited references but no independent formal proof or computer algebra verification was performed.",
+        "Reference pages and URLs may change after review."
+      ]
+    },
+    "post/好きな数式/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/好きな数式/index.md",
+      "sourceHash": "c2fec18079c2e96b27893e59ece2d1725eff44f7f921698ceba25a177523ecf2",
+      "translationHash": "a9250f127425412d9bb45b2a139b269d33194b23e4816ab3a6a2a46406fecb66",
+      "summary": "Compared all mathematical statements and notation in the complete Japanese article and twelve translations with university and mathematical references; clarified hypotheses, radians, the infinite series, and the finite range of Euler’s polynomial.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared theorem statements, domains, quantifiers, equation exponents, and the n=0..39 range across the source and every translation; explicitly noted that n=40 gives a composite value."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Wilson’s theorem, Euler’s formula versus identity, Fermat’s Last Theorem, Basel problem, prime/composite, factorial, radians, and the meanings of i and pi in every language."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified Wilson’s congruence and iff form, Euler’s formula and x=pi identity, Fermat’s positive-integer statement for n>=3, the Basel sum, and Euler polynomial values for n=0..39 with counterexample 1681=41^2 at n=40."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked five cited references from Wolfram MathWorld, Euler-Franeker Memorial University, University of Cambridge, University of Kentucky, and Cambridge University Press; retained the language-specific Fermat article links."
+        }
+      },
+      "limitations": [
+        "AI-assisted mathematical review; no human mathematician or native-speaker certification.",
+        "The formulas were checked against the cited references but no independent formal proof or computer algebra verification was performed.",
+        "Reference pages and URLs may change after review."
+      ]
+    }
+  }
+}
