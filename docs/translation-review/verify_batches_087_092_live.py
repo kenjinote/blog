@@ -1,4 +1,4 @@
-"""Verify publication of the refreshed IntelliJ translation batches."""
+"""Verify publication of reviewed article translation batches 87 onward."""
 from datetime import datetime
 from html.parser import HTMLParser
 from pathlib import Path
@@ -86,6 +86,16 @@ ARTICLES = {
         "markers": ["2024", "720", "492", "165", "813"],
         "date": "2024-01-07",
     },
+    94: {
+        "bundle": ROOT / "content/post/Mathematicaで巡回セールスマン問題を解く",
+        "slug": "Mathematicaで巡回セールスマン問題を解く",
+        "links": [
+            "https://reference.wolfram.com/language/ref/FindShortestTour.html",
+            "https://reference.wolfram.com/language/ref/SparseArray.html",
+        ],
+        "markers": ["SparseArray", "Infinity", "FindShortestTour", "137"],
+        "date": "2022-10-12",
+    },
 }
 
 
@@ -151,7 +161,7 @@ def slug_key(value):
 parser = argparse.ArgumentParser()
 parser.add_argument("--ci-run", type=int, required=True)
 parser.add_argument("--commit", required=True)
-parser.add_argument("--max-batch", type=int, choices=(90, 91, 92, 93), default=93)
+parser.add_argument("--max-batch", type=int, choices=(90, 91, 92, 93, 94), default=94)
 args = parser.parse_args()
 ARTICLES = {number: article for number, article in ARTICLES.items() if number <= args.max_batch}
 with urllib.request.urlopen(f"https://github.com/kenjinote/blog/actions/runs/{args.ci_run}", timeout=45) as response:
