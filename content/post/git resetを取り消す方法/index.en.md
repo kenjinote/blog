@@ -1,18 +1,32 @@
 ---
-title: 'How to Undo an Accidentally Executed git reset | Commit Restoration Steps'
-date: "2026-09-24T19:44:38+09:00"
+title: "Recover a Commit After git reset with reflog"
 slug: "git resetを取り消す方法"
 date: 2024-05-15T23:32:43+09:00
+lastmod: 2026-11-24T00:00:00+09:00
 tags: ["git", "restore", "undo"]
 draft: false
 image: "img.webp"
 categories: ["tools-development-environment"]
-description: 'We explain how to undo a reset and restore the original commit state when you accidentally execute ''git reset'' in Git. We clearly introduce the procedure to check the commit ID using ''git reflog'' and correctly revert the state.'
+description: "Find the previous HEAD with reflog, protect it with a branch, and understand the risks of --hard."
 ---
-# How to undo git reset
-If you accidentally run git reset after making a git commit, here is how to undo the git reset (restore the state at the time of the git commit).
 
-1. Check the commit ID before the reset with `git reflog`
-2. Revert to the state before the reset with `git reset --hard HEAD@{number}`
+# Recover a Commit After git reset with reflog
 
-That's how to undo a git reset.
+Recovery may be possible if the local reflog still refers to the commit from before the reset. Check `git reflog --date=local` and choose the correct `HEAD@{n}` entry; `HEAD@{1}` below is only an example.
+
+`git reset --hard` discards uncommitted changes to tracked files. Back up work you need first and choose a rescue branch name that does not exist. Reflog cannot restore uncommitted edits already lost to a hard reset. For shared history, coordinate with collaborators and usually consider `git revert`.
+
+```sh
+git reflog --date=local
+git show --no-patch --oneline 'HEAD@{1}'
+git branch rescue-before-reset 'HEAD@{1}'
+git reset --hard rescue-before-reset
+```
+
+Replace `HEAD@{1}` with the reflog entry you selected and `rescue-before-reset` with a new branch name. Inspect the commit and confirm the branch was created before running the final command.
+
+## References
+
+[Official git reset manual](https://git-scm.com/docs/git-reset)
+
+[Official git reflog manual](https://git-scm.com/docs/git-reflog)

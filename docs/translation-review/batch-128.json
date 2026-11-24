@@ -1,0 +1,454 @@
+{
+  "version": 1,
+  "batch": 128,
+  "article": "git reset後のコミット復元",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "7a41a5e855d7d9d36a62ca3b235cc8d6368064f2679e9e2a27305630ca91fd39",
+  "sources": [
+    "https://git-scm.com/docs/git-reset",
+    "https://git-scm.com/docs/git-reflog"
+  ],
+  "scope": "Compared the complete Japanese instructions with all twelve translations and official git-reset/reflog manuals, including command order, ref selection, destructive effects, dates, and links.",
+  "findings": [
+    "Removed duplicate future dates, retained original date 2024-05-15, and set lastmod to review date.",
+    "Corrected the article’s incomplete and unsafe recovery advice: inspect the reflog, inspect the candidate commit, save it under a rescue branch, then reset only if desired.",
+    "Explained that HEAD@{1} is only an example and the user must select the matching reflog entry and a new branch name.",
+    "Warned that git reset --hard discards uncommitted tracked-file changes, reflog cannot restore already-discarded edits, and shared history generally calls for git revert after coordination.",
+    "Rewrote all twelve translations to match the safer workflow and added Git’s official manuals."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/git resetを取り消す方法/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/git resetを取り消す方法/index.md",
+      "sourceHash": "7a41a5e855d7d9d36a62ca3b235cc8d6368064f2679e9e2a27305630ca91fd39",
+      "translationHash": "626aa9dc824d627552426368675dc20dd8a89dd6fa1163bc0b679638bab3ba36",
+      "summary": "Replaced the unsafe one-line hard-reset advice with a reflog inspection and rescue-branch workflow, with explicit data-loss and shared-history cautions.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the recovery workflow with official git-reset and reflog manuals; clarified the previous HEAD reference, reflog selection, rescue branch, and hard-reset effects."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked HEAD, reflog entry, commit, branch, tracked/uncommitted changes, hard reset, and revert terminology in all translations."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed each command and their order against Git manuals. Commands were statically checked and not executed in a repository."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official git-reset and git-reflog documentation links in every language."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Reflogs are local and can expire; recovery depends on the object still being available.",
+        "Commands were checked statically; repository state and uncommitted work differ by user."
+      ]
+    },
+    "post/git resetを取り消す方法/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/git resetを取り消す方法/index.md",
+      "sourceHash": "7a41a5e855d7d9d36a62ca3b235cc8d6368064f2679e9e2a27305630ca91fd39",
+      "translationHash": "e9cc6138b4209da98ae093d304285efcf82be7d400b776d29ab965153af3be36",
+      "summary": "Replaced the unsafe one-line hard-reset advice with a reflog inspection and rescue-branch workflow, with explicit data-loss and shared-history cautions.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the recovery workflow with official git-reset and reflog manuals; clarified the previous HEAD reference, reflog selection, rescue branch, and hard-reset effects."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked HEAD, reflog entry, commit, branch, tracked/uncommitted changes, hard reset, and revert terminology in all translations."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed each command and their order against Git manuals. Commands were statically checked and not executed in a repository."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official git-reset and git-reflog documentation links in every language."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Reflogs are local and can expire; recovery depends on the object still being available.",
+        "Commands were checked statically; repository state and uncommitted work differ by user."
+      ]
+    },
+    "post/git resetを取り消す方法/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/git resetを取り消す方法/index.md",
+      "sourceHash": "7a41a5e855d7d9d36a62ca3b235cc8d6368064f2679e9e2a27305630ca91fd39",
+      "translationHash": "cbc98f16011994561b02f71466c8952c82bfc23658967f83517a4a8c94854c47",
+      "summary": "Replaced the unsafe one-line hard-reset advice with a reflog inspection and rescue-branch workflow, with explicit data-loss and shared-history cautions.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the recovery workflow with official git-reset and reflog manuals; clarified the previous HEAD reference, reflog selection, rescue branch, and hard-reset effects."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked HEAD, reflog entry, commit, branch, tracked/uncommitted changes, hard reset, and revert terminology in all translations."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed each command and their order against Git manuals. Commands were statically checked and not executed in a repository."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official git-reset and git-reflog documentation links in every language."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Reflogs are local and can expire; recovery depends on the object still being available.",
+        "Commands were checked statically; repository state and uncommitted work differ by user."
+      ]
+    },
+    "post/git resetを取り消す方法/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/git resetを取り消す方法/index.md",
+      "sourceHash": "7a41a5e855d7d9d36a62ca3b235cc8d6368064f2679e9e2a27305630ca91fd39",
+      "translationHash": "410c596fb11d7a35a84287bdcc07aa89fd33d83dc670ed50beef3bbf936012a9",
+      "summary": "Replaced the unsafe one-line hard-reset advice with a reflog inspection and rescue-branch workflow, with explicit data-loss and shared-history cautions.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the recovery workflow with official git-reset and reflog manuals; clarified the previous HEAD reference, reflog selection, rescue branch, and hard-reset effects."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked HEAD, reflog entry, commit, branch, tracked/uncommitted changes, hard reset, and revert terminology in all translations."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed each command and their order against Git manuals. Commands were statically checked and not executed in a repository."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official git-reset and git-reflog documentation links in every language."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Reflogs are local and can expire; recovery depends on the object still being available.",
+        "Commands were checked statically; repository state and uncommitted work differ by user."
+      ]
+    },
+    "post/git resetを取り消す方法/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/git resetを取り消す方法/index.md",
+      "sourceHash": "7a41a5e855d7d9d36a62ca3b235cc8d6368064f2679e9e2a27305630ca91fd39",
+      "translationHash": "eeef81be7301a02b961ab68e4b654996de98649c93fa3ab84c644cf1214e1bba",
+      "summary": "Replaced the unsafe one-line hard-reset advice with a reflog inspection and rescue-branch workflow, with explicit data-loss and shared-history cautions.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the recovery workflow with official git-reset and reflog manuals; clarified the previous HEAD reference, reflog selection, rescue branch, and hard-reset effects."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked HEAD, reflog entry, commit, branch, tracked/uncommitted changes, hard reset, and revert terminology in all translations."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed each command and their order against Git manuals. Commands were statically checked and not executed in a repository."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official git-reset and git-reflog documentation links in every language."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Reflogs are local and can expire; recovery depends on the object still being available.",
+        "Commands were checked statically; repository state and uncommitted work differ by user."
+      ]
+    },
+    "post/git resetを取り消す方法/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/git resetを取り消す方法/index.md",
+      "sourceHash": "7a41a5e855d7d9d36a62ca3b235cc8d6368064f2679e9e2a27305630ca91fd39",
+      "translationHash": "3d7e15d6fff325440289873b5d6e0dfcfe00efccc34d69a8478d417e8a1fdc50",
+      "summary": "Replaced the unsafe one-line hard-reset advice with a reflog inspection and rescue-branch workflow, with explicit data-loss and shared-history cautions.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the recovery workflow with official git-reset and reflog manuals; clarified the previous HEAD reference, reflog selection, rescue branch, and hard-reset effects."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked HEAD, reflog entry, commit, branch, tracked/uncommitted changes, hard reset, and revert terminology in all translations."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed each command and their order against Git manuals. Commands were statically checked and not executed in a repository."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official git-reset and git-reflog documentation links in every language."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Reflogs are local and can expire; recovery depends on the object still being available.",
+        "Commands were checked statically; repository state and uncommitted work differ by user."
+      ]
+    },
+    "post/git resetを取り消す方法/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/git resetを取り消す方法/index.md",
+      "sourceHash": "7a41a5e855d7d9d36a62ca3b235cc8d6368064f2679e9e2a27305630ca91fd39",
+      "translationHash": "4e6542c990f9cc8ae5c07df17526ec08ae8a79b965e81a1491900e314f2a16af",
+      "summary": "Replaced the unsafe one-line hard-reset advice with a reflog inspection and rescue-branch workflow, with explicit data-loss and shared-history cautions.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the recovery workflow with official git-reset and reflog manuals; clarified the previous HEAD reference, reflog selection, rescue branch, and hard-reset effects."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked HEAD, reflog entry, commit, branch, tracked/uncommitted changes, hard reset, and revert terminology in all translations."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed each command and their order against Git manuals. Commands were statically checked and not executed in a repository."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official git-reset and git-reflog documentation links in every language."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Reflogs are local and can expire; recovery depends on the object still being available.",
+        "Commands were checked statically; repository state and uncommitted work differ by user."
+      ]
+    },
+    "post/git resetを取り消す方法/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/git resetを取り消す方法/index.md",
+      "sourceHash": "7a41a5e855d7d9d36a62ca3b235cc8d6368064f2679e9e2a27305630ca91fd39",
+      "translationHash": "bcb306ac421be7dd986f3731d4edc22b50b317966f3e68f2b3a36a67e73da57c",
+      "summary": "Replaced the unsafe one-line hard-reset advice with a reflog inspection and rescue-branch workflow, with explicit data-loss and shared-history cautions.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the recovery workflow with official git-reset and reflog manuals; clarified the previous HEAD reference, reflog selection, rescue branch, and hard-reset effects."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked HEAD, reflog entry, commit, branch, tracked/uncommitted changes, hard reset, and revert terminology in all translations."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed each command and their order against Git manuals. Commands were statically checked and not executed in a repository."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official git-reset and git-reflog documentation links in every language."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Reflogs are local and can expire; recovery depends on the object still being available.",
+        "Commands were checked statically; repository state and uncommitted work differ by user."
+      ]
+    },
+    "post/git resetを取り消す方法/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/git resetを取り消す方法/index.md",
+      "sourceHash": "7a41a5e855d7d9d36a62ca3b235cc8d6368064f2679e9e2a27305630ca91fd39",
+      "translationHash": "cf2cdfe5ae9e1070287969021ce0308b8b4c48adef13f499695b1efac160bf11",
+      "summary": "Replaced the unsafe one-line hard-reset advice with a reflog inspection and rescue-branch workflow, with explicit data-loss and shared-history cautions.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the recovery workflow with official git-reset and reflog manuals; clarified the previous HEAD reference, reflog selection, rescue branch, and hard-reset effects."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked HEAD, reflog entry, commit, branch, tracked/uncommitted changes, hard reset, and revert terminology in all translations."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed each command and their order against Git manuals. Commands were statically checked and not executed in a repository."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official git-reset and git-reflog documentation links in every language."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Reflogs are local and can expire; recovery depends on the object still being available.",
+        "Commands were checked statically; repository state and uncommitted work differ by user."
+      ]
+    },
+    "post/git resetを取り消す方法/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/git resetを取り消す方法/index.md",
+      "sourceHash": "7a41a5e855d7d9d36a62ca3b235cc8d6368064f2679e9e2a27305630ca91fd39",
+      "translationHash": "0fd632507fe2b13ccdc5a1d3a23f17d9c976dd35fa72da813c56854aa097ee60",
+      "summary": "Replaced the unsafe one-line hard-reset advice with a reflog inspection and rescue-branch workflow, with explicit data-loss and shared-history cautions.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the recovery workflow with official git-reset and reflog manuals; clarified the previous HEAD reference, reflog selection, rescue branch, and hard-reset effects."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked HEAD, reflog entry, commit, branch, tracked/uncommitted changes, hard reset, and revert terminology in all translations."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed each command and their order against Git manuals. Commands were statically checked and not executed in a repository."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official git-reset and git-reflog documentation links in every language."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Reflogs are local and can expire; recovery depends on the object still being available.",
+        "Commands were checked statically; repository state and uncommitted work differ by user."
+      ]
+    },
+    "post/git resetを取り消す方法/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/git resetを取り消す方法/index.md",
+      "sourceHash": "7a41a5e855d7d9d36a62ca3b235cc8d6368064f2679e9e2a27305630ca91fd39",
+      "translationHash": "d27b686e607ab58f5f0d78b358de19ec4dfd49864d0b33086e9e5acd3a6b682f",
+      "summary": "Replaced the unsafe one-line hard-reset advice with a reflog inspection and rescue-branch workflow, with explicit data-loss and shared-history cautions.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the recovery workflow with official git-reset and reflog manuals; clarified the previous HEAD reference, reflog selection, rescue branch, and hard-reset effects."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked HEAD, reflog entry, commit, branch, tracked/uncommitted changes, hard reset, and revert terminology in all translations."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed each command and their order against Git manuals. Commands were statically checked and not executed in a repository."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official git-reset and git-reflog documentation links in every language."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Reflogs are local and can expire; recovery depends on the object still being available.",
+        "Commands were checked statically; repository state and uncommitted work differ by user."
+      ]
+    },
+    "post/git resetを取り消す方法/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/git resetを取り消す方法/index.md",
+      "sourceHash": "7a41a5e855d7d9d36a62ca3b235cc8d6368064f2679e9e2a27305630ca91fd39",
+      "translationHash": "1e93c3c146035af4a643fa3dff8911cef930160993ca9ea2c389047531c935dd",
+      "summary": "Replaced the unsafe one-line hard-reset advice with a reflog inspection and rescue-branch workflow, with explicit data-loss and shared-history cautions.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the recovery workflow with official git-reset and reflog manuals; clarified the previous HEAD reference, reflog selection, rescue branch, and hard-reset effects."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked HEAD, reflog entry, commit, branch, tracked/uncommitted changes, hard reset, and revert terminology in all translations."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed each command and their order against Git manuals. Commands were statically checked and not executed in a repository."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official git-reset and git-reflog documentation links in every language."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Reflogs are local and can expire; recovery depends on the object still being available.",
+        "Commands were checked statically; repository state and uncommitted work differ by user."
+      ]
+    }
+  }
+}

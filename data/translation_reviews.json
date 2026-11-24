@@ -14765,6 +14765,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-127.json",
       "evidenceHash": "dea480c6f90da5dcc5ba00a7dc9e623eded9329bd624d525e42f6729370047c8"
+    },
+    "post/git resetを取り消す方法/index.en.md": {
+      "source": "post/git resetを取り消す方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "7a41a5e855d7d9d36a62ca3b235cc8d6368064f2679e9e2a27305630ca91fd39",
+      "translationHash": "626aa9dc824d627552426368675dc20dd8a89dd6fa1163bc0b679638bab3ba36",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-128.json",
+      "evidenceHash": "78094d3262e3fd3226f4ef531c89bfa56916dd938b030e377fc6012a411d635c"
+    },
+    "post/git resetを取り消す方法/index.zh-cn.md": {
+      "source": "post/git resetを取り消す方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "7a41a5e855d7d9d36a62ca3b235cc8d6368064f2679e9e2a27305630ca91fd39",
+      "translationHash": "e9cc6138b4209da98ae093d304285efcf82be7d400b776d29ab965153af3be36",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-128.json",
+      "evidenceHash": "6d5bb61552e388a08bb927dcfed33ceaac94955dcaa02c1849fc0c19ff4ea85d"
+    },
+    "post/git resetを取り消す方法/index.es.md": {
+      "source": "post/git resetを取り消す方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "7a41a5e855d7d9d36a62ca3b235cc8d6368064f2679e9e2a27305630ca91fd39",
+      "translationHash": "cbc98f16011994561b02f71466c8952c82bfc23658967f83517a4a8c94854c47",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-128.json",
+      "evidenceHash": "9f726ca0bbdb686e139f2bca97b268207387a5e10e41f21a2a9d002bd234bf55"
+    },
+    "post/git resetを取り消す方法/index.ko.md": {
+      "source": "post/git resetを取り消す方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "7a41a5e855d7d9d36a62ca3b235cc8d6368064f2679e9e2a27305630ca91fd39",
+      "translationHash": "410c596fb11d7a35a84287bdcc07aa89fd33d83dc670ed50beef3bbf936012a9",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-128.json",
+      "evidenceHash": "60db6eb1acb637e3b96b4cc9d325510eca452742450a1e5300359f2430eb80df"
+    },
+    "post/git resetを取り消す方法/index.pt.md": {
+      "source": "post/git resetを取り消す方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "7a41a5e855d7d9d36a62ca3b235cc8d6368064f2679e9e2a27305630ca91fd39",
+      "translationHash": "eeef81be7301a02b961ab68e4b654996de98649c93fa3ab84c644cf1214e1bba",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-128.json",
+      "evidenceHash": "60f5299495bd13304ab6fbf4101a6dbc0f4180e1e0c637f01789a8081071bfc9"
+    },
+    "post/git resetを取り消す方法/index.zh-tw.md": {
+      "source": "post/git resetを取り消す方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "7a41a5e855d7d9d36a62ca3b235cc8d6368064f2679e9e2a27305630ca91fd39",
+      "translationHash": "3d7e15d6fff325440289873b5d6e0dfcfe00efccc34d69a8478d417e8a1fdc50",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-128.json",
+      "evidenceHash": "53743477444b3ff5ac6a78c6f6faf4d028f668d54bfa1a131fcd0113b2178b62"
+    },
+    "post/git resetを取り消す方法/index.hi.md": {
+      "source": "post/git resetを取り消す方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "7a41a5e855d7d9d36a62ca3b235cc8d6368064f2679e9e2a27305630ca91fd39",
+      "translationHash": "4e6542c990f9cc8ae5c07df17526ec08ae8a79b965e81a1491900e314f2a16af",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-128.json",
+      "evidenceHash": "545645deea5060675d2d45b8862ac62444ec0c7d45c51378b184aa5fc8ab5711"
+    },
+    "post/git resetを取り消す方法/index.fr.md": {
+      "source": "post/git resetを取り消す方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "7a41a5e855d7d9d36a62ca3b235cc8d6368064f2679e9e2a27305630ca91fd39",
+      "translationHash": "bcb306ac421be7dd986f3731d4edc22b50b317966f3e68f2b3a36a67e73da57c",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-128.json",
+      "evidenceHash": "2cdc477e9f85878c5b55b405d6701f42a55d19c46857e2c1725bf4ae3db81819"
+    },
+    "post/git resetを取り消す方法/index.de.md": {
+      "source": "post/git resetを取り消す方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "7a41a5e855d7d9d36a62ca3b235cc8d6368064f2679e9e2a27305630ca91fd39",
+      "translationHash": "cf2cdfe5ae9e1070287969021ce0308b8b4c48adef13f499695b1efac160bf11",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-128.json",
+      "evidenceHash": "b0026a4d96a8a69b3faecf84ad0288c657cc94bee527b1543e20a18a12d94f3f"
+    },
+    "post/git resetを取り消す方法/index.ar.md": {
+      "source": "post/git resetを取り消す方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "7a41a5e855d7d9d36a62ca3b235cc8d6368064f2679e9e2a27305630ca91fd39",
+      "translationHash": "0fd632507fe2b13ccdc5a1d3a23f17d9c976dd35fa72da813c56854aa097ee60",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-128.json",
+      "evidenceHash": "dc9da092a3f32b1835e2dc1eaa02bb107816d5e6c956e1b9c1e8f97f5f6d66fc"
+    },
+    "post/git resetを取り消す方法/index.ru.md": {
+      "source": "post/git resetを取り消す方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "7a41a5e855d7d9d36a62ca3b235cc8d6368064f2679e9e2a27305630ca91fd39",
+      "translationHash": "d27b686e607ab58f5f0d78b358de19ec4dfd49864d0b33086e9e5acd3a6b682f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-128.json",
+      "evidenceHash": "605e3b574f0916554887a10118030c5296d080ad7d5a8b7400051683d85d7bc9"
+    },
+    "post/git resetを取り消す方法/index.id.md": {
+      "source": "post/git resetを取り消す方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "7a41a5e855d7d9d36a62ca3b235cc8d6368064f2679e9e2a27305630ca91fd39",
+      "translationHash": "1e93c3c146035af4a643fa3dff8911cef930160993ca9ea2c389047531c935dd",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-128.json",
+      "evidenceHash": "85cccc88f4ff8278d5614d06d5d67d878d24b3cff9916f535405bbebda55bf3d"
     }
   }
 }

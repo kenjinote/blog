@@ -1,18 +1,32 @@
 ---
-title: '誤って実行したgit resetを取り消す方法｜コミット復元手順'
-date: "2026-09-24T19:44:38+09:00"
+title: "git reset後にコミットを復元する方法（reflog）"
 slug: "git resetを取り消す方法"
 date: 2024-05-15T23:32:43+09:00
+lastmod: 2026-11-24T00:00:00+09:00
 tags: ["git", "復元", "取り消し"]
 draft: false
 image: "img.webp"
 categories: ["tools-development-environment"]
-description: 'Gitで誤って「git reset」を実行してしまった際に、リセットを取り消して元のコミット状態に復元する方法を解説します。「git reflog」を使ってコミットIDを確認し、正しく状態を戻す手順を分かりやすく紹介します。'
+description: "reflogでreset前のHEADを特定し、退避ブランチを作ってから復元する方法と--hardの注意点を説明します。"
 ---
-# git resetを取り消す方法
-git comitを行った後、誤ってgit resetを実行してしまった場合、git resetを取り消す方法(git commit時の状態を復元する方法)を紹介します。
 
-1. `git reflog`でリセット前のコミットIDを確認
-2. `git reset --hard HEAD@{数字}`でリセット前の状態に戻す
+# git reset後にコミットを復元する方法（reflog）
 
-以上、git resetを取り消す方法でした。
+reset直前のコミットへの参照がローカルreflogに残っていれば復元できる場合があります。`git reflog --date=local`で履歴を確認し、適切な`HEAD@{n}`を選んでください。下の`HEAD@{1}`は例です。
+
+`git reset --hard`は追跡中のファイルにある未コミット変更を破棄します。必要な作業は先にバックアップし、存在しない退避ブランチ名を使ってください。すでにhard resetで失った未コミット編集はreflogでは戻せません。共有済み履歴では共同作業者と調整し、通常は`git revert`を検討します。
+
+```sh
+git reflog --date=local
+git show --no-patch --oneline 'HEAD@{1}'
+git branch rescue-before-reset 'HEAD@{1}'
+git reset --hard rescue-before-reset
+```
+
+
+
+## 参考
+
+[git reset公式マニュアル](https://git-scm.com/docs/git-reset)
+
+[git reflog公式マニュアル](https://git-scm.com/docs/git-reflog)

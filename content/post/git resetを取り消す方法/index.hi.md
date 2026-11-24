@@ -1,18 +1,32 @@
 ---
-title: 'गलती से निष्पादित git reset को कैसे पूर्ववत करें｜कमिट रिस्टोर प्रक्रिया'
-date: "2026-09-24T19:44:38+09:00"
+title: "reflog से git reset से पहले का commit वापस पाएं"
 slug: "git resetを取り消す方法"
 date: 2024-05-15T23:32:43+09:00
+lastmod: 2026-11-24T00:00:00+09:00
 tags: ["git", "रिस्टोर", "अनडू"]
 draft: false
 image: "img.webp"
 categories: ["tools-development-environment"]
-description: 'हम बताएंगे कि गलती से Git में "git reset" चलाने पर रीसेट को कैसे पूर्ववत करें और मूल कमिट स्थिति को कैसे रिस्टोर करें। हम "git reflog" का उपयोग करके कमिट ID की जांच करने और स्थिति को सही ढंग से वापस करने के चरणों को स्पष्ट रूप से पेश करेंगे。'
+description: "reflog में पिछला HEAD ढूँढें, उसे branch से सुरक्षित रखें और --hard के जोखिम समझें।"
 ---
-# git reset को कैसे अनडू करें
-git commit करने के बाद, यदि आप गलती से git reset चला देते हैं, तो यहां बताया गया है कि git reset को कैसे अनडू करें (git commit के समय की स्थिति को कैसे रिस्टोर करें)।
 
-1. रिसेट से पहले के कमिट ID को `git reflog` से जांचें
-2. `git reset --hard HEAD@{नंबर}` के साथ रिसेट से पहले की स्थिति में वापस लौटें
+# reflog से git reset से पहले का commit वापस पाएं
 
-git reset को अनडू करने के बारे में बस इतना ही।
+यदि local reflog में reset से पहले वाले commit का संदर्भ है, तो उसे वापस पाया जा सकता है। `git reflog --date=local` देखें और सही `HEAD@{n}` entry चुनें; नीचे `HEAD@{1}` सिर्फ उदाहरण है।
+
+`git reset --hard` tracked files के uncommitted बदलाव हटा देता है। पहले ज़रूरी काम का backup लें और ऐसा rescue branch नाम चुनें जो मौजूद न हो। hard reset से पहले ही खोए uncommitted संपादन reflog से वापस नहीं आते। साझा इतिहास के लिए सहयोगियों से तालमेल करें और आम तौर पर `git revert` पर विचार करें।
+
+```sh
+git reflog --date=local
+git show --no-patch --oneline 'HEAD@{1}'
+git branch rescue-before-reset 'HEAD@{1}'
+git reset --hard rescue-before-reset
+```
+
+`HEAD@{1}` को चुनी हुई reflog entry से और `rescue-before-reset` को नए branch नाम से बदलें। आखिरी command से पहले commit जाँचें और branch बनने की पुष्टि करें।
+
+## संदर्भ
+
+[git reset का आधिकारिक मैनुअल](https://git-scm.com/docs/git-reset)
+
+[git reflog का आधिकारिक मैनुअल](https://git-scm.com/docs/git-reflog)

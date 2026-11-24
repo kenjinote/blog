@@ -352,6 +352,13 @@ ARTICLES = {
         "markers": ["urlopen(request,timeout=15)", "response.headers.get_content_type()", "2*1024*1024", "webbrowser.open(temp_path.as_uri(),new=2)", "temp_path.unlink()", "PNG signature"],
         "date": "2025-02-24",
     },
+    128: {
+        "bundle": ROOT / "content/post/git resetを取り消す方法",
+        "slug": "git resetを取り消す方法",
+        "links": ["https://git-scm.com/docs/git-reset", "https://git-scm.com/docs/git-reflog"],
+        "markers": ["git reflog --date=local", "git reset --hard rescue-before-reset"],
+        "date": "2024-05-15",
+    },
     127: {
         "bundle": ROOT / "content/post/カフェ音楽",
         "slug": "カフェ音楽",
@@ -537,7 +544,7 @@ def slug_key(value):
 parser = argparse.ArgumentParser()
 parser.add_argument("--ci-run", type=int, required=True)
 parser.add_argument("--commit", required=True)
-parser.add_argument("--max-batch", type=int, choices=(90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127), default=127)
+parser.add_argument("--max-batch", type=int, choices=(90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128), default=128)
 args = parser.parse_args()
 ARTICLES = {number: article for number, article in ARTICLES.items() if number <= args.max_batch}
 with urllib.request.urlopen(f"https://github.com/kenjinote/blog/actions/runs/{args.ci_run}", timeout=45) as response:

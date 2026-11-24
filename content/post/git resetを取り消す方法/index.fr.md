@@ -1,18 +1,32 @@
 ---
-title: 'Comment annuler un git reset exécuté par erreur | Procédure de restauration de commit'
-date: "2026-09-24T19:44:38+09:00"
+title: "Récupérer un commit après git reset avec reflog"
 slug: "git resetを取り消す方法"
 date: 2024-05-15T23:32:43+09:00
+lastmod: 2026-11-24T00:00:00+09:00
 tags: ["git", "restaurer", "annuler"]
 draft: false
 image: "img.webp"
 categories: ["tools-development-environment"]
-description: 'Nous expliquons comment annuler une réinitialisation et restaurer l''état du commit d''origine lorsque vous avez exécuté par erreur un « git reset » sur Git. Nous présentons clairement la procédure pour vérifier l''ID du commit à l''aide de « git reflog » et restaurer correctement l''état.'
+description: "Retrouvez le HEAD précédent avec reflog, protégez-le dans une branche et comprenez les risques de --hard."
 ---
-# Comment annuler un git reset
-Après avoir effectué un git commit, si vous exécutez accidentellement un git reset, voici comment annuler le git reset (comment restaurer l'état au moment du git commit).
 
-1. Vérifiez l'ID du commit avant le reset avec `git reflog`
-2. Revenez à l'état avant le reset avec `git reset --hard HEAD@{numéro}`
+# Récupérer un commit après git reset avec reflog
 
-C'est tout sur la façon d'annuler un git reset.
+La récupération peut être possible si le reflog local conserve encore la référence au commit antérieur au reset. Consultez `git reflog --date=local` et choisissez la bonne entrée `HEAD@{n}` ; `HEAD@{1}` ci-dessous n’est qu’un exemple.
+
+`git reset --hard` supprime les modifications non validées des fichiers suivis. Sauvegardez d’abord le travail à conserver et choisissez un nom de branche de secours inexistant. Le reflog ne restaure pas les modifications déjà perdues après un hard reset. Pour un historique partagé, coordonnez-vous et envisagez généralement `git revert`.
+
+```sh
+git reflog --date=local
+git show --no-patch --oneline 'HEAD@{1}'
+git branch rescue-before-reset 'HEAD@{1}'
+git reset --hard rescue-before-reset
+```
+
+Remplacez `HEAD@{1}` par l’entrée choisie et `rescue-before-reset` par un nouveau nom de branche. Vérifiez le commit et la création de la branche avant la dernière commande.
+
+## Références
+
+[Manuel officiel de git reset](https://git-scm.com/docs/git-reset)
+
+[Manuel officiel de git reflog](https://git-scm.com/docs/git-reflog)

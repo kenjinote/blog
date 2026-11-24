@@ -1,18 +1,32 @@
 ---
-title: 'كيفية التراجع عن تنفيذ git reset بالخطأ | خطوات استعادة الالتزام (Commit)'
-date: "2026-09-24T19:44:38+09:00"
+title: "استعادة commit بعد git reset باستخدام reflog"
 slug: "git resetを取り消す方法"
 date: 2024-05-15T23:32:43+09:00
+lastmod: 2026-11-24T00:00:00+09:00
 tags: ["git", "استعادة", "تراجع"]
 draft: false
 image: "img.webp"
 categories: ["tools-development-environment"]
-description: 'نشرح كيفية إلغاء إعادة الضبط واستعادة حالة الالتزام الأصلية في حال قمت بتنفيذ ''git reset'' بالخطأ في Git. نعرض بشكل مبسط خطوات التحقق من معرّف الالتزام (Commit ID) باستخدام ''git reflog'' واسترجاع الحالة بشكل صحيح.'
+description: "اعثر على HEAD السابق عبر reflog واحفظه بفرع وافهم مخاطر --hard."
 ---
-# كيفية التراجع عن git reset
-إذا قمت بتشغيل git reset عن طريق الخطأ بعد إجراء git commit، فإليك كيفية التراجع عن git reset (كيفية استعادة الحالة وقت إجراء git commit).
 
-1. تحقق من معرف الالتزام (commit ID) قبل إعادة الضبط باستخدام `git reflog`
-2. ارجع إلى الحالة قبل إعادة الضبط باستخدام `git reset --hard HEAD@{number}`
+# استعادة commit بعد git reset باستخدام reflog
 
-هذه كانت طريقة التراجع عن git reset.
+قد تكون الاستعادة ممكنة إذا ظل reflog المحلي يحتفظ بمرجع إلى commit السابق لـ reset. افحص `git reflog --date=local` واختر إدخال `HEAD@{n}` الصحيح؛ `HEAD@{1}` أدناه مثال فقط.
+
+يتخلّص `git reset --hard` من التغييرات غير المثبتة في الملفات التي يتتبعها Git. احفظ العمل المطلوب أولًا واختر اسم فرع إنقاذ غير مستخدم. لا يستعيد reflog التعديلات التي فُقدت بالفعل بسبب hard reset. إذا كان السجل مشتركًا، فنسّق مع المتعاونين وفكّر عادةً في `git revert`.
+
+```sh
+git reflog --date=local
+git show --no-patch --oneline 'HEAD@{1}'
+git branch rescue-before-reset 'HEAD@{1}'
+git reset --hard rescue-before-reset
+```
+
+استبدل `HEAD@{1}` بإدخال reflog الذي اخترته، و`rescue-before-reset` باسم فرع جديد. افحص commit وتأكد من إنشاء الفرع قبل تنفيذ الأمر الأخير.
+
+## مراجع
+
+[الدليل الرسمي لـ git reset](https://git-scm.com/docs/git-reset)
+
+[الدليل الرسمي لـ git reflog](https://git-scm.com/docs/git-reflog)
