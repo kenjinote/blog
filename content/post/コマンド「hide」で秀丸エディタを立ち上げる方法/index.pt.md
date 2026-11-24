@@ -1,13 +1,13 @@
 ---
-title: 'Inicie o Editor Hidemaru com um único comando ''hide''! Métodos de configuração convenientes no Windows'
-date: "2026-09-24T19:44:38+09:00"
-slug: "Comando「hide」でHidemaru Editorを立ち上げる方法"
 date: 2024-03-29T23:45:37+09:00
+lastmod: 2026-11-25
+title: 'Inicie o Editor Hidemaru com um único comando ''hide''! Métodos de configuração convenientes no Windows'
+slug: "Comando「hide」でHidemaru Editorを立ち上げる方法"
 tags: ["comando", "Hidemaru Editor", "registro"]
 draft: false
 image: "img_2.webp"
 categories: ["tools-development-environment"]
-description: 'Explicamos como iniciar rapidamente o Editor Hidemaru simplesmente digitando ''hide'' em ''Executar'' ou no Prompt de Comando no Windows 10/11. Este é um procedimento de personalização útil usando App Paths do Editor do Registro.'
+description: "Registre um nome em App Paths e inicie o Hidemaru Editor pela caixa Executar ou com start hide no Windows 10/11."
 ---
 
 ## Aqui está como iniciar o Hidemaru Editor com o comando 'hide'.
@@ -15,20 +15,26 @@ description: 'Explicamos como iniciar rapidamente o Editor Hidemaru simplesmente
 Nota: Este método foi testado no `Windows 10/11`.
 
 1. Abra o Editor do Registro.
-2. Navegue até `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths`.
+2. Navegue até `HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths`.
 3. Crie uma chave chamada `hide.exe` em `App Paths`. **A parte antes de `.exe` no nome desta chave se torna o nome do comando.**
 4. Defina o valor `(Padrão)` da chave `hide.exe` para o caminho do arquivo executável do Hidemaru Editor. No meu ambiente, era `"C:\Program Files (x86)\Hidemaru\Hidemaru.exe"`.
-5. Crie um valor de String chamado `Path` na chave `hide.exe`.
-6. Defina os dados do `Path` para o caminho da pasta contendo o arquivo executável do Hidemaru Editor. No meu ambiente, era `"C:\Program Files (x86)\Hidemaru"`.
-7. Agora, na caixa de diálogo **Executar** (pressione a tecla `Win` + `R`), você pode iniciar o Hidemaru Editor digitando o comando `hide`. Além disso, no Prompt de Comando, você pode iniciá-lo com o comando `start hide`.
+5. O valor Path é opcional. Omita-o, a menos que o app precise de diretórios DLL extras; ShellExecuteEx os acrescenta ao PATH do processo.
+6. Digite hide em Executar (Win + R). No Prompt de Comando use start hide; digitar apenas hide não é o método descrito.
 
-```
+```reg
 Windows Registry Editor Version 5.00
 
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\hide.exe]
-@="\"C:\\Program Files (x86)\\Hidemaru\\Hidemaru.exe\""
-"Path"="\"C:\\Program Files (x86)\\Hidemaru\\\""
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\hide.exe]
+@="C:\\Program Files (x86)\\Hidemaru\\Hidemaru.exe"
 ```
 Se você salvar o conteúdo acima em um arquivo `.reg` e executá-lo, as configurações serão adicionadas ao registro.
+
+Este .reg registra o app para o usuário atual. Substitua o caminho pelo executável real. Para todos os usuários, troque HKEY_CURRENT_USER por HKEY_LOCAL_MACHINE e importe como administrador.
+
+
+## Referências
+
+- [Microsoft: Application Registration and App Paths](https://learn.microsoft.com/en-us/windows/win32/shell/app-registration)
+- [Microsoft: start command](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/start)
 
 ![img_1.png](img_1.webp)

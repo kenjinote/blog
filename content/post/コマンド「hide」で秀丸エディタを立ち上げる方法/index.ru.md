@@ -1,13 +1,13 @@
 ---
-title: 'Запуск редактора Hidemaru одной командой «hide»! Удобный метод настройки в Windows'
-date: "2026-09-24T19:44:38+09:00"
-slug: "Команда「hide」でHidemaru Editorを立ち上げる方法"
 date: 2024-03-29T23:45:37+09:00
+lastmod: 2026-11-25
+title: 'Запуск редактора Hidemaru одной командой «hide»! Удобный метод настройки в Windows'
+slug: "Команда「hide」でHidemaru Editorを立ち上げる方法"
 tags: ["команды", "редактор Hidemaru", "реестр"]
 draft: false
 image: "img_2.webp"
 categories: ["tools-development-environment"]
-description: 'Объясняем, как быстро запустить редактор Hidemaru в Windows 10/11, просто введя «hide» в окне «Выполнить» или в командной строке. Представлены шаги удобной настройки с использованием App Paths в редакторе реестра.'
+description: "Зарегистрируйте имя в App Paths и запускайте Hidemaru Editor из окна «Выполнить» или командой start hide в Windows 10/11."
 ---
 
 ## Я покажу, как запустить редактор Hidemaru с помощью команды «hide».
@@ -15,20 +15,26 @@ description: 'Объясняем, как быстро запустить ред�
 Примечание: этот метод протестирован на `Windows 10/11`.
 
 1. Откройте редактор реестра.
-2. Перейдите в `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths`.
+2. Перейдите в `HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths`.
 3. Создайте ключ с именем `hide.exe` в `App Paths`. ※ Часть имени ключа перед `.exe` будет названием команды.
 4. Установите путь к исполняемому файлу редактора Hidemaru в значение `(По умолчанию)` ключа `hide.exe`. В моей среде это было `"C:\Program Files (x86)\Hidemaru\Hidemaru.exe"`.
-5. Создайте строковый параметр (String Value) с именем `Path` в ключе `hide.exe`.
-6. Установите путь к папке с исполняемым файлом редактора Hidemaru в данные параметра `Path`. В моей среде это было `"C:\Program Files (x86)\Hidemaru"`.
-7. Теперь вы можете запустить редактор Hidemaru с помощью команды `hide` в окне **Выполнить** , которое появляется при нажатии `Win` + `R`. Кроме того, в командной строке вы можете запустить редактор Hidemaru с помощью команды `start hide`.
+5. Значение Path необязательно. Добавляйте его только при необходимости дополнительных каталогов DLL; ShellExecuteEx добавляет их в PATH процесса.
+6. Введите hide в окне «Выполнить» (Win + R). В командной строке используйте start hide; ввод только hide не является описанным способом.
 
-```text
+```reg
 Windows Registry Editor Version 5.00
 
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\hide.exe]
-@="\"C:\\Program Files (x86)\\Hidemaru\\Hidemaru.exe\""
-"Path"="\"C:\\Program Files (x86)\\Hidemaru\\\""
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\hide.exe]
+@="C:\\Program Files (x86)\\Hidemaru\\Hidemaru.exe"
 ```
 Если вы сохраните приведенное выше содержимое в файл `.reg` и запустите его, настройки будут добавлены в реестр.
+
+Этот .reg регистрирует приложение только для текущего пользователя. Замените путь фактическим путем к файлу. Для всех пользователей замените HKEY_CURRENT_USER на HKEY_LOCAL_MACHINE и импортируйте с правами администратора.
+
+
+## Источники
+
+- [Microsoft: Application Registration and App Paths](https://learn.microsoft.com/en-us/windows/win32/shell/app-registration)
+- [Microsoft: start command](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/start)
 
 ![img_1.png](img_1.webp)

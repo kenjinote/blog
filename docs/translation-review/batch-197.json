@@ -1,0 +1,454 @@
+{
+  "version": 1,
+  "batch": 197,
+  "article": "Launch Hidemaru Editor with the hide command",
+  "reviewedAt": "2026-11-25",
+  "sourceHash": "5eced586cdac6ae54d4c92c0d1343a70c80cc5937bd67dbac83a11bca03fbab1",
+  "sources": [
+    "https://learn.microsoft.com/en-us/windows/win32/shell/app-registration",
+    "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/start"
+  ],
+  "scope": "Read the complete Japanese article and all twelve translations; compared every instruction and translation, checked App Paths hive and value semantics, .reg syntax and escaping, command invocation, localized descriptions, dates, internal links, references, and image.",
+  "findings": [
+    "Removed a duplicate future publication date in all editions and preserved the original date (2024-03-29); set lastmod to 2026-11-25.",
+    "Changed the registry example to the current-user App Paths key. Microsoft recommends per-user registration for per-user apps; HKLM is for all users.",
+    "Clarified that Path is optional and prepends directories to the launched process PATH; removed it from the sample because it is not needed for this launcher.",
+    "Clarified that Run accepts hide while Command Prompt uses start hide; direct hide is not the method described. Corrected all translated descriptions accordingly.",
+    "Added localized warning to replace the sample executable path, documented the elevated HKLM alternative, and linked current Microsoft documentation."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/コマンド「hide」で秀丸エディタを立ち上げる方法/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/コマンド「hide」で秀丸エディタを立ち上げる方法/index.md",
+      "sourceHash": "5eced586cdac6ae54d4c92c0d1343a70c80cc5937bd67dbac83a11bca03fbab1",
+      "translationHash": "9ed62449120a25bf4aa77795d2457a662b8a419a30ca6d79f70ab48e90618903",
+      "summary": "Compared the full translation with the Japanese source and current Microsoft documentation; corrected the registry scope and optional Path explanation, updated the .reg example and clarified how to launch the registered name.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese source and this complete localized edition, including the Run dialog and start command behavior, per-user versus all-users registration, path handling, and caveats."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked App Paths, Registry Editor, executable path, Run dialog, Command Prompt, user scope, administrator privileges, and PATH terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the .reg example in all editions; verified the App Paths key, current-user hive, default executable value, omitted optional Path value, escaping, and sample-path replacement caveat."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified both linked Microsoft Learn references for App Paths registration and the start command; checked the local image and retained relevant translated internal links."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The example installation path is environment-specific and must be replaced with the actual executable path. Windows UI labels and install locations vary.",
+        "Microsoft documentation was checked on 2026-11-25."
+      ]
+    },
+    "post/コマンド「hide」で秀丸エディタを立ち上げる方法/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/コマンド「hide」で秀丸エディタを立ち上げる方法/index.md",
+      "sourceHash": "5eced586cdac6ae54d4c92c0d1343a70c80cc5937bd67dbac83a11bca03fbab1",
+      "translationHash": "fc7263ed7d3120965246c4f3e25d6954044963b046286c9442d519397eccb96f",
+      "summary": "Compared the full translation with the Japanese source and current Microsoft documentation; corrected the registry scope and optional Path explanation, updated the .reg example and clarified how to launch the registered name.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese source and this complete localized edition, including the Run dialog and start command behavior, per-user versus all-users registration, path handling, and caveats."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked App Paths, Registry Editor, executable path, Run dialog, Command Prompt, user scope, administrator privileges, and PATH terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the .reg example in all editions; verified the App Paths key, current-user hive, default executable value, omitted optional Path value, escaping, and sample-path replacement caveat."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified both linked Microsoft Learn references for App Paths registration and the start command; checked the local image and retained relevant translated internal links."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The example installation path is environment-specific and must be replaced with the actual executable path. Windows UI labels and install locations vary.",
+        "Microsoft documentation was checked on 2026-11-25."
+      ]
+    },
+    "post/コマンド「hide」で秀丸エディタを立ち上げる方法/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/コマンド「hide」で秀丸エディタを立ち上げる方法/index.md",
+      "sourceHash": "5eced586cdac6ae54d4c92c0d1343a70c80cc5937bd67dbac83a11bca03fbab1",
+      "translationHash": "46a2264491c5fa8cd7273a1ee9a85198b76bf7903239699896e2abfb9edc8195",
+      "summary": "Compared the full translation with the Japanese source and current Microsoft documentation; corrected the registry scope and optional Path explanation, updated the .reg example and clarified how to launch the registered name.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese source and this complete localized edition, including the Run dialog and start command behavior, per-user versus all-users registration, path handling, and caveats."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked App Paths, Registry Editor, executable path, Run dialog, Command Prompt, user scope, administrator privileges, and PATH terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the .reg example in all editions; verified the App Paths key, current-user hive, default executable value, omitted optional Path value, escaping, and sample-path replacement caveat."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified both linked Microsoft Learn references for App Paths registration and the start command; checked the local image and retained relevant translated internal links."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The example installation path is environment-specific and must be replaced with the actual executable path. Windows UI labels and install locations vary.",
+        "Microsoft documentation was checked on 2026-11-25."
+      ]
+    },
+    "post/コマンド「hide」で秀丸エディタを立ち上げる方法/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/コマンド「hide」で秀丸エディタを立ち上げる方法/index.md",
+      "sourceHash": "5eced586cdac6ae54d4c92c0d1343a70c80cc5937bd67dbac83a11bca03fbab1",
+      "translationHash": "51de42b3839f5bdfc66d71f42f8997d99983f214e3d03e9a65ac0537f472d6ff",
+      "summary": "Compared the full translation with the Japanese source and current Microsoft documentation; corrected the registry scope and optional Path explanation, updated the .reg example and clarified how to launch the registered name.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese source and this complete localized edition, including the Run dialog and start command behavior, per-user versus all-users registration, path handling, and caveats."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked App Paths, Registry Editor, executable path, Run dialog, Command Prompt, user scope, administrator privileges, and PATH terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the .reg example in all editions; verified the App Paths key, current-user hive, default executable value, omitted optional Path value, escaping, and sample-path replacement caveat."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified both linked Microsoft Learn references for App Paths registration and the start command; checked the local image and retained relevant translated internal links."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The example installation path is environment-specific and must be replaced with the actual executable path. Windows UI labels and install locations vary.",
+        "Microsoft documentation was checked on 2026-11-25."
+      ]
+    },
+    "post/コマンド「hide」で秀丸エディタを立ち上げる方法/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/コマンド「hide」で秀丸エディタを立ち上げる方法/index.md",
+      "sourceHash": "5eced586cdac6ae54d4c92c0d1343a70c80cc5937bd67dbac83a11bca03fbab1",
+      "translationHash": "5b52665efd00e922969e3f0542f9a0bbf486d38015f16b524dbdd0dfa7c4bf85",
+      "summary": "Compared the full translation with the Japanese source and current Microsoft documentation; corrected the registry scope and optional Path explanation, updated the .reg example and clarified how to launch the registered name.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese source and this complete localized edition, including the Run dialog and start command behavior, per-user versus all-users registration, path handling, and caveats."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked App Paths, Registry Editor, executable path, Run dialog, Command Prompt, user scope, administrator privileges, and PATH terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the .reg example in all editions; verified the App Paths key, current-user hive, default executable value, omitted optional Path value, escaping, and sample-path replacement caveat."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified both linked Microsoft Learn references for App Paths registration and the start command; checked the local image and retained relevant translated internal links."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The example installation path is environment-specific and must be replaced with the actual executable path. Windows UI labels and install locations vary.",
+        "Microsoft documentation was checked on 2026-11-25."
+      ]
+    },
+    "post/コマンド「hide」で秀丸エディタを立ち上げる方法/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/コマンド「hide」で秀丸エディタを立ち上げる方法/index.md",
+      "sourceHash": "5eced586cdac6ae54d4c92c0d1343a70c80cc5937bd67dbac83a11bca03fbab1",
+      "translationHash": "e88a043d3b530a0117d30c9a90fda869b6460f9ddd740377ebbcd902ef5922f0",
+      "summary": "Compared the full translation with the Japanese source and current Microsoft documentation; corrected the registry scope and optional Path explanation, updated the .reg example and clarified how to launch the registered name.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese source and this complete localized edition, including the Run dialog and start command behavior, per-user versus all-users registration, path handling, and caveats."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked App Paths, Registry Editor, executable path, Run dialog, Command Prompt, user scope, administrator privileges, and PATH terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the .reg example in all editions; verified the App Paths key, current-user hive, default executable value, omitted optional Path value, escaping, and sample-path replacement caveat."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified both linked Microsoft Learn references for App Paths registration and the start command; checked the local image and retained relevant translated internal links."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The example installation path is environment-specific and must be replaced with the actual executable path. Windows UI labels and install locations vary.",
+        "Microsoft documentation was checked on 2026-11-25."
+      ]
+    },
+    "post/コマンド「hide」で秀丸エディタを立ち上げる方法/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/コマンド「hide」で秀丸エディタを立ち上げる方法/index.md",
+      "sourceHash": "5eced586cdac6ae54d4c92c0d1343a70c80cc5937bd67dbac83a11bca03fbab1",
+      "translationHash": "c9e30a319aa86c17c0a60b07671320da8421d6612417d451383475274dd94c6a",
+      "summary": "Compared the full translation with the Japanese source and current Microsoft documentation; corrected the registry scope and optional Path explanation, updated the .reg example and clarified how to launch the registered name.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese source and this complete localized edition, including the Run dialog and start command behavior, per-user versus all-users registration, path handling, and caveats."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked App Paths, Registry Editor, executable path, Run dialog, Command Prompt, user scope, administrator privileges, and PATH terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the .reg example in all editions; verified the App Paths key, current-user hive, default executable value, omitted optional Path value, escaping, and sample-path replacement caveat."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified both linked Microsoft Learn references for App Paths registration and the start command; checked the local image and retained relevant translated internal links."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The example installation path is environment-specific and must be replaced with the actual executable path. Windows UI labels and install locations vary.",
+        "Microsoft documentation was checked on 2026-11-25."
+      ]
+    },
+    "post/コマンド「hide」で秀丸エディタを立ち上げる方法/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/コマンド「hide」で秀丸エディタを立ち上げる方法/index.md",
+      "sourceHash": "5eced586cdac6ae54d4c92c0d1343a70c80cc5937bd67dbac83a11bca03fbab1",
+      "translationHash": "496c7da7fbfd5e26fd552502d4f62983b93579d2cbd2ed9ff2ba6d5d92909b42",
+      "summary": "Compared the full translation with the Japanese source and current Microsoft documentation; corrected the registry scope and optional Path explanation, updated the .reg example and clarified how to launch the registered name.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese source and this complete localized edition, including the Run dialog and start command behavior, per-user versus all-users registration, path handling, and caveats."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked App Paths, Registry Editor, executable path, Run dialog, Command Prompt, user scope, administrator privileges, and PATH terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the .reg example in all editions; verified the App Paths key, current-user hive, default executable value, omitted optional Path value, escaping, and sample-path replacement caveat."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified both linked Microsoft Learn references for App Paths registration and the start command; checked the local image and retained relevant translated internal links."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The example installation path is environment-specific and must be replaced with the actual executable path. Windows UI labels and install locations vary.",
+        "Microsoft documentation was checked on 2026-11-25."
+      ]
+    },
+    "post/コマンド「hide」で秀丸エディタを立ち上げる方法/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/コマンド「hide」で秀丸エディタを立ち上げる方法/index.md",
+      "sourceHash": "5eced586cdac6ae54d4c92c0d1343a70c80cc5937bd67dbac83a11bca03fbab1",
+      "translationHash": "4b3b183561a41269ac29166ddd88bfdeb4bc77a631e6a82d6d0fa84e8a1fb269",
+      "summary": "Compared the full translation with the Japanese source and current Microsoft documentation; corrected the registry scope and optional Path explanation, updated the .reg example and clarified how to launch the registered name.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese source and this complete localized edition, including the Run dialog and start command behavior, per-user versus all-users registration, path handling, and caveats."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked App Paths, Registry Editor, executable path, Run dialog, Command Prompt, user scope, administrator privileges, and PATH terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the .reg example in all editions; verified the App Paths key, current-user hive, default executable value, omitted optional Path value, escaping, and sample-path replacement caveat."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified both linked Microsoft Learn references for App Paths registration and the start command; checked the local image and retained relevant translated internal links."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The example installation path is environment-specific and must be replaced with the actual executable path. Windows UI labels and install locations vary.",
+        "Microsoft documentation was checked on 2026-11-25."
+      ]
+    },
+    "post/コマンド「hide」で秀丸エディタを立ち上げる方法/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/コマンド「hide」で秀丸エディタを立ち上げる方法/index.md",
+      "sourceHash": "5eced586cdac6ae54d4c92c0d1343a70c80cc5937bd67dbac83a11bca03fbab1",
+      "translationHash": "6aa386c807c8185bba133841a3be1e4bc13253c08709dcf07ee373ae309103d9",
+      "summary": "Compared the full translation with the Japanese source and current Microsoft documentation; corrected the registry scope and optional Path explanation, updated the .reg example and clarified how to launch the registered name.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese source and this complete localized edition, including the Run dialog and start command behavior, per-user versus all-users registration, path handling, and caveats."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked App Paths, Registry Editor, executable path, Run dialog, Command Prompt, user scope, administrator privileges, and PATH terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the .reg example in all editions; verified the App Paths key, current-user hive, default executable value, omitted optional Path value, escaping, and sample-path replacement caveat."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified both linked Microsoft Learn references for App Paths registration and the start command; checked the local image and retained relevant translated internal links."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The example installation path is environment-specific and must be replaced with the actual executable path. Windows UI labels and install locations vary.",
+        "Microsoft documentation was checked on 2026-11-25."
+      ]
+    },
+    "post/コマンド「hide」で秀丸エディタを立ち上げる方法/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/コマンド「hide」で秀丸エディタを立ち上げる方法/index.md",
+      "sourceHash": "5eced586cdac6ae54d4c92c0d1343a70c80cc5937bd67dbac83a11bca03fbab1",
+      "translationHash": "2408a56089cf0384a66c372dc1ce50ff1197bb1729f9771a6ed9f79afb045f5e",
+      "summary": "Compared the full translation with the Japanese source and current Microsoft documentation; corrected the registry scope and optional Path explanation, updated the .reg example and clarified how to launch the registered name.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese source and this complete localized edition, including the Run dialog and start command behavior, per-user versus all-users registration, path handling, and caveats."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked App Paths, Registry Editor, executable path, Run dialog, Command Prompt, user scope, administrator privileges, and PATH terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the .reg example in all editions; verified the App Paths key, current-user hive, default executable value, omitted optional Path value, escaping, and sample-path replacement caveat."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified both linked Microsoft Learn references for App Paths registration and the start command; checked the local image and retained relevant translated internal links."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The example installation path is environment-specific and must be replaced with the actual executable path. Windows UI labels and install locations vary.",
+        "Microsoft documentation was checked on 2026-11-25."
+      ]
+    },
+    "post/コマンド「hide」で秀丸エディタを立ち上げる方法/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/コマンド「hide」で秀丸エディタを立ち上げる方法/index.md",
+      "sourceHash": "5eced586cdac6ae54d4c92c0d1343a70c80cc5937bd67dbac83a11bca03fbab1",
+      "translationHash": "ac4b809944ca0abb6194108b938bebe478d15836bcfa4ae7ba9714dd9d18ea07",
+      "summary": "Compared the full translation with the Japanese source and current Microsoft documentation; corrected the registry scope and optional Path explanation, updated the .reg example and clarified how to launch the registered name.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese source and this complete localized edition, including the Run dialog and start command behavior, per-user versus all-users registration, path handling, and caveats."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked App Paths, Registry Editor, executable path, Run dialog, Command Prompt, user scope, administrator privileges, and PATH terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the .reg example in all editions; verified the App Paths key, current-user hive, default executable value, omitted optional Path value, escaping, and sample-path replacement caveat."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified both linked Microsoft Learn references for App Paths registration and the start command; checked the local image and retained relevant translated internal links."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The example installation path is environment-specific and must be replaced with the actual executable path. Windows UI labels and install locations vary.",
+        "Microsoft documentation was checked on 2026-11-25."
+      ]
+    }
+  }
+}
