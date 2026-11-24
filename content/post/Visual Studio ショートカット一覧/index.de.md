@@ -1,60 +1,107 @@
 ---
-title: 'Liste nützlicher Tastenkombinationen für Visual Studio 【Arbeitseffizienz steigern】'
-date: "2026-09-24T19:44:38+09:00"
-slug: "Visual Studio Verknüpfung一覧"
-date: 2024-04-06T11:27:37+09:00
-tags: [ "Visual Studio", "Tastenkombinationen" ]
+title: "Tastenkombinationen für Visual Studio 2022 [Windows]"
+date: "2024-04-06T11:27:37+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
+slug: "Visual Studio ショートカット一覧"
+tags: ["Visual Studio", "ショートカット"]
 draft: false
 image: "img.webp"
 categories: ["tools-development-environment"]
-description: 'Eine Zusammenfassung nützlicher Tastenkombinationen für Visual Studio (VS2022), die die Entwicklungseffizienz drastisch verbessern. Sorgfältig ausgewählte, unverzichtbare Tastenkombinationen, die während der Programmierung häufig verwendet werden, wie Debugging, Erstellung und Lesezeichen-Operationen.'
+description: "Häufige Tastenkombinationen für Visual Studio 2022 unter Windows mit dem Profil General: Build, Debugging, Bearbeitung, Suche und Navigation."
 ---
 
-# Visual Studio Tastenkombinationen
+# Tastenkombinationen für Visual Studio 2022
 
-Ich habe eine Liste der Visual Studio Tastenkombinationen erstellt, die ich persönlich häufig verwende.
-Indem Sie die Tastenkombinationen von Visual Studio lernen, können Sie Entwicklungsarbeiten effizienter durchführen. Bitte nutzen Sie diese.
+Diese Liste basiert auf dem Standardprofil **General** von Visual Studio 2022 für Windows. Die Tastenkombinationen unterscheiden sich von Visual Studio für Mac und Visual Studio Code. Tastaturlayout, ausgewähltes Profil und eigene Zuweisungen können sie ändern.
 
-※Überprüft in Visual Studio 2022.
+Wir haben die frühere Liste mit den offiziellen Microsoft-Standardwerten verglichen und falsche Kürzel für Lesezeichen, Build, Suche und Ersetzen korrigiert.
 
-| Tastenkombination | Beschreibung |
-|-----------------------------|--------------------------|
-| `F1` | Hilfe für das ausgewählte Wort anzeigen |
-| `F2` | Zum Lesezeichen springen |
-| `Ctrl` + `F2` | Ein Lesezeichen hinzufügen |
-| `Ctrl` + `Shift` + `F2` | Alle Lesezeichen entfernen |
-| `F5` | Erstellen und ausführen (mit Debugging) |
-| `Ctrl` + `F5` | Erstellen und ausführen (ohne Debugging) |
-| `F7` | Erstellen |
-| `F9` | Haltepunkt in der Cursorzeile hinzufügen |
-| `Ctrl` + `F9` | Haltepunkt der Cursorzeile deaktivieren |
-| `Shift` + `Ctrl` + `F9` | Alle Haltepunkte löschen |
-| `F10` | Prozedurschritt (Step over) |
-| `F11` | Einzelschritt (Step in) |
-| `F12` | Zur Definition springen |
-| `Ctrl` + `D` | Cursorzeile duplizieren |
-| `Ctrl` + `X` | Zeile ausschneiden, wenn keine Auswahl vorhanden ist |
-| `Ctrl` + `Shift` + `]` | Bis zur passenden Klammer markieren |
-| `Alt` + `Pfeil-hoch/-runter` | Cursorzeile nach oben oder unten verschieben |
-| `Alt` + `Shift` + `Pfeiltasten` | Multi-Cursor/Blockauswahl |
-| `Ctrl` + `Tab` | Ansicht Quellcode/Fenster umschalten |
-| `Ctrl` + `Shift` + `V` | Zwischenablageverlauf anzeigen |
-| `Ctrl` + `K` dann `Ctrl` + `C` | Cursorzeile auskommentieren |
-| `Ctrl` + `K` dann `Ctrl` + `U` | Auskommentierung der Cursorzeile aufheben |
-| `Ctrl` + `G` | Zur angegebenen Zeilennummer springen |
-| `Ctrl` + `F` | Suchen |
-| `Ctrl` + `Shift` + `F` | Globale Suche |
-| `Ctrl` + `H` | Ersetzen |
-| `Ctrl` + `Shift` + `F` | Globales Ersetzen |
-| `Ctrl` + `Tab` | Ansicht Quellcode/Fenster umschalten |
-| `Ctrl` + `Space` | Wortvervollständigung |
-| `Ctrl` + `Alt` + `L` | Projektmappen-Explorer öffnen |
-| `Ctrl` + `Shift` + `E` | Ressourcenansicht öffnen |
-| `Ctrl` + `0` dann `Ctrl` + `G` | Git-Commit-Fenster öffnen |
+## Hilfe
 
-## Referenz
+| Shortcut | Command |
+|---|---|
+| `F1` | Hilfe öffnen |
 
-- [Standardtastenkombinationen in Visual Studio](https://learn.microsoft.com/ja-jp/visualstudio/ide/default-keyboard-shortcuts-in-visual-studio?view=vs-2022&utm_source=vshelp&wt.mc_id=visualstudio_inproduct_shortcuts_csaapp)
+## Build und Debugging
 
-![img_1.png](img_1.webp)
+| Shortcut | Command |
+|---|---|
+| `Ctrl+Shift+B` | Projektmappe erstellen |
+| `F5` | Debugging starten/fortsetzen |
+| `Ctrl+F5` | Ohne Debugging starten |
+| `F9` | Haltepunkt umschalten |
+| `Ctrl+F9` | Haltepunkt aktivieren |
+| `Ctrl+Shift+F9` | Alle Haltepunkte löschen |
+| `F10` | Prozedurschritt |
+| `F11` | Einzelschritt |
+| `Shift+F11` | Aus der Funktion springen |
 
+## Codenavigation
+
+| Shortcut | Command |
+|---|---|
+| `F12` | Zur Definition wechseln |
+
+## Bearbeiten und Navigieren
+
+| Shortcut | Command |
+|---|---|
+| `Ctrl+K, then Ctrl+C` | Auswahl kommentieren |
+| `Ctrl+K, then Ctrl+U` | Kommentar der Auswahl entfernen |
+
+## Suchen und Ersetzen
+
+| Shortcut | Command |
+|---|---|
+| `Ctrl+F` | Suchen |
+| `Ctrl+H` | Ersetzen |
+| `Ctrl+Shift+F` | In Dateien suchen |
+| `Ctrl+Shift+H` | In Dateien ersetzen |
+
+## Zeilennavigation
+
+| Shortcut | Command |
+|---|---|
+| `Ctrl+G` | Zu Zeile wechseln |
+
+## Bearbeiten und Navigieren
+
+| Shortcut | Command |
+|---|---|
+| `Ctrl+L` | Aktuelle Zeile ausschneiden |
+| `Ctrl+D` | Duplizieren |
+| `Ctrl+Shift+V` | Zwischen Elementen im Zwischenablageverlauf wechseln |
+
+## Codenavigation
+
+| Shortcut | Command |
+|---|---|
+| `Ctrl+]` | Zur passenden geschweiften Klammer wechseln |
+| `Ctrl+Shift+]` | Auswahl bis zur passenden Klammer erweitern |
+| `Alt+Up/Down Arrow` | Ausgewählte Zeilen nach oben/unten verschieben |
+| `Shift+Alt+Up/Down Arrow` | Spaltenauswahl nach oben/unten erweitern |
+
+## Toolfenster und Git
+
+| Shortcut | Command |
+|---|---|
+| `Ctrl+Tab` | Nächstes Dokumentfenster |
+| `Ctrl+Alt+L` | Projektmappen-Explorer öffnen |
+| `Ctrl+Shift+E` | Ressourcenansicht öffnen |
+| `Ctrl+0, then Ctrl+G` | Zu Git Changes wechseln |
+| `Ctrl+0, then Ctrl+O` | Zu Git Commits wechseln |
+
+## Lesezeichen
+
+| Shortcut | Command |
+|---|---|
+| `Ctrl+K, then Ctrl+K` | Lesezeichen umschalten |
+| `Ctrl+K, then Ctrl+N` | Nächstes Lesezeichen |
+| `Ctrl+K, then Ctrl+P` | Vorheriges Lesezeichen |
+| `Ctrl+K, then Ctrl+L` | Alle Lesezeichen löschen |
+
+## Tastenkombination prüfen oder ändern
+
+Öffne in Visual Studio **Tools > Options > Environment > Keyboard** und suche nach einem Befehl, um die aktuelle Zuweisung im Profil zu sehen. Bei Tastenkombinationen aus mehreren Folgen drückst du die Tasten der Reihe nach und machst zwischen den Folgen eine kurze Pause. Tastaturlayout und Spracheinstellungen können die Tastenbezeichnungen beeinflussen.
+
+- [Keyboard shortcuts in Visual Studio (Windows)](https://learn.microsoft.com/en-us/visualstudio/ide/default-keyboard-shortcuts-in-visual-studio?view=vs-2022)

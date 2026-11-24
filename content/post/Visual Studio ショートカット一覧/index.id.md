@@ -1,59 +1,107 @@
 ---
-title: 'Daftar Pintasan Keyboard Visual Studio yang Berguna [Peningkatan Efisiensi Kerja]'
-date: "2026-09-24T19:44:38+09:00"
-slug: "Visual Studio Pintasan一覧"
-date: 2024-04-06T11:27:37+09:00
-tags: [ "Visual Studio", "Pintasan" ]
+title: "Daftar Pintasan Keyboard Visual Studio 2022 [Windows]"
+date: "2024-04-06T11:27:37+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
+slug: "Visual Studio ショートカット一覧"
+tags: ["Visual Studio", "ショートカット"]
 draft: false
 image: "img.webp"
 categories: ["tools-development-environment"]
-description: 'Kami merangkum daftar pintasan keyboard yang berguna di Visual Studio (VS2022) yang secara dramatis meningkatkan efisiensi pengembangan. Memilih dan memperkenalkan dengan saksama pintasan penting yang sering digunakan saat memprogram, seperti penelusuran kesalahan (debugging), pembangunan (building), dan pengoperasian penanda (bookmark).'
+description: "Pintasan umum Visual Studio 2022 di Windows dengan profil General untuk build, debugging, penyuntingan, pencarian, dan navigasi."
 ---
 
-# Daftar Pintasan Visual Studio
+# Pintasan keyboard Visual Studio 2022
 
-Saya telah menyusun daftar pintasan Visual Studio yang sering saya gunakan.
-Dengan mempelajari pengoperasian keyboard untuk pintasan Visual Studio, Anda dapat melakukan pekerjaan pengembangan dengan efisien. Silakan manfaatkan dengan baik.
+Daftar ini menggunakan profil default **General** di Visual Studio 2022 untuk Windows. Pintasan ini berbeda dari Visual Studio for Mac dan Visual Studio Code. Tata letak keyboard, profil yang dipilih, dan pemetaan khusus dapat mengubahnya.
 
-※ Dikonfirmasi di Visual Studio 2022.
+Kami membandingkan daftar sebelumnya dengan pengaturan default resmi Microsoft dan memperbaiki pintasan bookmark, build, pencarian, serta penggantian yang keliru.
 
-| Tombol Pintasan                   | Deskripsi                       |
-|-----------------------------|--------------------------|
-| `F1`                        | Tampilkan bantuan untuk kata yang dipilih            |
-| `F2`                        | Lompat ke markah buku              |
-| `Ctrl` + `F2`               | Daftarkan markah buku                |
-| `Ctrl` + `Shift` + `F2`     | Hapus semua markah buku            |
-| `F5`                        | Bangun dan jalankan (dengan debug)          |
-| `Ctrl` + `F5`               | Bangun dan jalankan (tanpa debug)          |
-| `F7`                        | Bangun                      |
-| `F9`                        | Tambahkan breakpoint ke baris kursor        |
-| `Ctrl` + `F9`               | Nonaktifkan breakpoint di baris kursor     |
-| `Shift` + `Ctrl` + `F9`     | Hapus semua breakpoint          |
-| `F10`                       | Lewati                 |
-| `F11`                       | Masuk                   |
-| `F12`                       | Lompat ke definisi                  |
-| `Ctrl` + `D`                | Duplikat baris kursor                 |
-| `Ctrl` + `X`                | Potong baris jika tidak ada yang dipilih         |
-| `Ctrl` + `Shift` + `]`      | Pilih hingga tanda kurung yang cocok untuk kursor   |
-| `Alt` + `Panah Atas/Bawah`            | Pindahkan baris kursor ke atas/bawah            |
-| `Alt` + `Shift` + `Panah`    | Multi-kursor / pilihan kotak             |
-| `Ctrl` + `Tab`              | Beralih tampilan kode sumber/jendela       |
-| `Ctrl` + `Shift` + `V`      | Tampilkan riwayat papan klip             |
-| `Ctrl` + `K` lalu `Ctrl` + `C` | Jadikan baris kursor sebagai komentar            |
-| `Ctrl` + `K` lalu `Ctrl` + `U` | Hapus komentar pada baris kursor          |
-| `Ctrl` + `G`                | Lompat ke nomor baris yang ditentukan             |
-| `Ctrl` + `F`                | Cari                       |
-| `Ctrl` + `Shift` + `F`      | Pencarian global                  |
-| `Ctrl` + `H`                | Ganti                       |
-| `Ctrl` + `Shift` + `F`      | Penggantian global                  |
-| `Ctrl` + `Tab`              | Beralih tampilan kode sumber/jendela       |
-| `Ctrl` + `Space`            | Penyelesaian kata                     |
-| `Ctrl` + `Alt` + `L`        | Buka jendela Solution Explorer |
-| `Ctrl` + `Shift` + `E`      | Buka jendela Resource View        |
-| `Ctrl` + `0` lalu `Ctrl` + `G` | Buka jendela komit Git         |
+## Bantuan
 
-## Referensi
+| Shortcut | Command |
+|---|---|
+| `F1` | Buka Bantuan |
 
-- [Pintasan keyboard di Visual Studio](https://learn.microsoft.com/ja-jp/visualstudio/ide/default-keyboard-shortcuts-in-visual-studio?view=vs-2022&utm_source=vshelp&wt.mc_id=visualstudio_inproduct_shortcuts_csaapp)
+## Build dan debugging
 
-![img_1.png](img_1.webp)
+| Shortcut | Command |
+|---|---|
+| `Ctrl+Shift+B` | Build solution |
+| `F5` | Mulai/lanjutkan debugging |
+| `Ctrl+F5` | Mulai tanpa debugging |
+| `F9` | Alihkan breakpoint |
+| `Ctrl+F9` | Aktifkan breakpoint |
+| `Ctrl+Shift+F9` | Hapus semua breakpoint |
+| `F10` | Step over |
+| `F11` | Step into |
+| `Shift+F11` | Keluar dari fungsi |
+
+## Navigasi kode
+
+| Shortcut | Command |
+|---|---|
+| `F12` | Buka definisi |
+
+## Penyuntingan dan navigasi
+
+| Shortcut | Command |
+|---|---|
+| `Ctrl+K, then Ctrl+C` | Beri komentar pada pilihan |
+| `Ctrl+K, then Ctrl+U` | Hapus komentar dari pilihan |
+
+## Cari dan ganti
+
+| Shortcut | Command |
+|---|---|
+| `Ctrl+F` | Cari |
+| `Ctrl+H` | Ganti |
+| `Ctrl+Shift+F` | Cari dalam file |
+| `Ctrl+Shift+H` | Ganti dalam file |
+
+## Navigasi baris
+
+| Shortcut | Command |
+|---|---|
+| `Ctrl+G` | Buka baris |
+
+## Penyuntingan dan navigasi
+
+| Shortcut | Command |
+|---|---|
+| `Ctrl+L` | Potong baris saat ini |
+| `Ctrl+D` | Duplikat |
+| `Ctrl+Shift+V` | Sikluskan riwayat clipboard |
+
+## Navigasi kode
+
+| Shortcut | Command |
+|---|---|
+| `Ctrl+]` | Buka kurung kurawal pasangan |
+| `Ctrl+Shift+]` | Perluas pilihan hingga kurung kurawal pasangan |
+| `Alt+Up/Down Arrow` | Pindahkan baris yang dipilih ke atas/bawah |
+| `Shift+Alt+Up/Down Arrow` | Perluas pilihan kolom ke atas/bawah |
+
+## Jendela alat dan Git
+
+| Shortcut | Command |
+|---|---|
+| `Ctrl+Tab` | Jendela dokumen berikutnya |
+| `Ctrl+Alt+L` | Buka Solution Explorer |
+| `Ctrl+Shift+E` | Buka Resource View |
+| `Ctrl+0, then Ctrl+G` | Buka Git Changes |
+| `Ctrl+0, then Ctrl+O` | Buka Git Commits |
+
+## Bookmark
+
+| Shortcut | Command |
+|---|---|
+| `Ctrl+K, then Ctrl+K` | Alihkan bookmark |
+| `Ctrl+K, then Ctrl+N` | Bookmark berikutnya |
+| `Ctrl+K, then Ctrl+P` | Bookmark sebelumnya |
+| `Ctrl+K, then Ctrl+L` | Hapus semua bookmark |
+
+## Melihat atau mengubah pintasan
+
+Di Visual Studio, buka **Tools > Options > Environment > Keyboard** lalu cari perintah untuk melihat pintasan pada profil saat ini. Untuk pintasan berurutan, tekan tombol sesuai urutan dengan jeda singkat di antara rangkaian tombol. Tata letak keyboard dan pengaturan bahasa juga dapat memengaruhi label tombol.
+
+- [Keyboard shortcuts in Visual Studio (Windows)](https://learn.microsoft.com/en-us/visualstudio/ide/default-keyboard-shortcuts-in-visual-studio?view=vs-2022)

@@ -1,59 +1,107 @@
 ---
-title: 'Visual Studio实用快捷键大全【提升工作效率】'
-date: "2026-09-24T19:44:38+09:00"
-slug: "Visual Studio 快捷方式一覧"
-date: 2024-04-06T11:27:37+09:00
-tags: [ "Visual Studio", "快捷键" ]
+title: "Visual Studio 2022 快捷键大全【Windows】"
+date: "2024-04-06T11:27:37+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
+slug: "Visual Studio ショートカット一覧"
+tags: ["Visual Studio", "ショートカット"]
 draft: false
 image: "img.webp"
 categories: ["tools-development-environment"]
-description: '为您整理了能大幅提升开发效率的Visual Studio（VS2022）实用快捷键大全。精选了在编程时经常使用的必备快捷键，涵盖调试、编译、书签操作等。'
+description: "介绍 Windows 版 Visual Studio 2022 的 General 配置文件常用快捷键，涵盖生成、调试、编辑、搜索和导航。"
 ---
 
-# Visual Studio 快捷键一览
+# Visual Studio 2022 快捷键
 
-以下整理了我个人经常使用的 Visual Studio 快捷键。
-记住这些键盘操作快捷键，可以有效地提高开发效率。请务必加以利用。
+以下按 Windows 版 Visual Studio 2022 的默认 **General** 配置文件整理。它们与 Visual Studio for Mac 和 Visual Studio Code 的快捷键不同。键盘布局、所选配置文件和自定义设置都可能改变快捷键。
 
-※ 已在 Visual Studio 2022 中确认。
+我们已对照 Microsoft 官方默认设置，修正了旧版中错误的书签、生成、搜索和替换快捷键。
 
-| 快捷键                       | 说明                       |
-|-----------------------------|--------------------------|
-| `F1`                        | 显示所选单词的帮助            |
-| `F2`                        | 跳转到书签              |
-| `Ctrl` + `F2`               | 添加书签                |
-| `Ctrl` + `Shift` + `F2`     | 删除所有书签            |
-| `F5`                        | 生成并运行（调试运行）          |
-| `Ctrl` + `F5`               | 生成并运行（不调试）          |
-| `F7`                        | 生成                      |
-| `F9`                        | 在光标行添加断点        |
-| `Ctrl` + `F9`               | 禁用光标行的断点     |
-| `Shift` + `Ctrl` + `F9`     | 删除所有断点          |
-| `F10`                       | 逐过程                 |
-| `F11`                       | 逐语句                   |
-| `F12`                       | 转到定义                  |
-| `Ctrl` + `D`                | 复制光标行                 |
-| `Ctrl` + `X`                | 没有选择范围时，剪切行         |
-| `Ctrl` + `Shift` + `]`      | 选择到光标处括号对应的匹配括号   |
-| `Alt` + `上下方向键`        | 上下移动光标行            |
-| `Alt` + `Shift` + `方向键`  | 多光标/块状选择             |
-| `Ctrl` + `Tab`              | 切换源代码/窗口显示       |
-| `Ctrl` + `Shift` + `V`      | 显示剪贴板历史记录             |
-| `Ctrl` + `K` 后 `Ctrl` + `C` | 注释光标行            |
-| `Ctrl` + `K` 后 `Ctrl` + `U` | 取消注释光标行          |
-| `Ctrl` + `G`                | 指定行号跳转             |
-| `Ctrl` + `F`                | 查找                       |
-| `Ctrl` + `Shift` + `F`      | 全局查找                  |
-| `Ctrl` + `H`                | 替换                       |
-| `Ctrl` + `Shift` + `F`      | 全局替换                  |
-| `Ctrl` + `Tab`              | 切换源代码/窗口显示       |
-| `Ctrl` + `Space`            | 单词补全                     |
-| `Ctrl` + `Alt` + `L`        | 打开解决方案资源管理器窗口 |
-| `Ctrl` + `Shift` + `E`      | 打开资源视图窗口        |
-| `Ctrl` + `0` 后 `Ctrl` + `G` | 打开 Git 提交窗口         |
+## 帮助
 
-## 参考
+| Shortcut | Command |
+|---|---|
+| `F1` | 打开帮助 |
 
-- [Visual Studio 的键盘快捷键](https://learn.microsoft.com/zh-cn/visualstudio/ide/default-keyboard-shortcuts-in-visual-studio?view=vs-2022&utm_source=vshelp&wt.mc_id=visualstudio_inproduct_shortcuts_csaapp)
+## 生成与调试
 
-![img_1.png](img_1.webp)
+| Shortcut | Command |
+|---|---|
+| `Ctrl+Shift+B` | 生成解决方案 |
+| `F5` | 开始/继续调试 |
+| `Ctrl+F5` | 开始执行但不调试 |
+| `F9` | 切换断点 |
+| `Ctrl+F9` | 启用断点 |
+| `Ctrl+Shift+F9` | 删除所有断点 |
+| `F10` | 逐过程 |
+| `F11` | 逐语句 |
+| `Shift+F11` | 跳出 |
+
+## 代码导航
+
+| Shortcut | Command |
+|---|---|
+| `F12` | 转到定义 |
+
+## 编辑与导航
+
+| Shortcut | Command |
+|---|---|
+| `Ctrl+K, then Ctrl+C` | 注释所选内容 |
+| `Ctrl+K, then Ctrl+U` | 取消所选内容的注释 |
+
+## 搜索与替换
+
+| Shortcut | Command |
+|---|---|
+| `Ctrl+F` | 查找 |
+| `Ctrl+H` | 替换 |
+| `Ctrl+Shift+F` | 在文件中查找 |
+| `Ctrl+Shift+H` | 在文件中替换 |
+
+## 行导航
+
+| Shortcut | Command |
+|---|---|
+| `Ctrl+G` | 转到行 |
+
+## 编辑与导航
+
+| Shortcut | Command |
+|---|---|
+| `Ctrl+L` | 剪切当前行 |
+| `Ctrl+D` | 复制 |
+| `Ctrl+Shift+V` | 循环粘贴剪贴板环 |
+
+## 代码导航
+
+| Shortcut | Command |
+|---|---|
+| `Ctrl+]` | 转到匹配的大括号 |
+| `Ctrl+Shift+]` | 扩展选择至匹配的大括号 |
+| `Alt+Up/Down Arrow` | 上移/下移所选行 |
+| `Shift+Alt+Up/Down Arrow` | 向上/下扩展列选择 |
+
+## 工具窗口与 Git
+
+| Shortcut | Command |
+|---|---|
+| `Ctrl+Tab` | 下一个文档窗口 |
+| `Ctrl+Alt+L` | 打开解决方案资源管理器 |
+| `Ctrl+Shift+E` | 打开资源视图 |
+| `Ctrl+0, then Ctrl+G` | 转到 Git Changes |
+| `Ctrl+0, then Ctrl+O` | 转到 Git Commits |
+
+## 书签
+
+| Shortcut | Command |
+|---|---|
+| `Ctrl+K, then Ctrl+K` | 切换书签 |
+| `Ctrl+K, then Ctrl+N` | 下一个书签 |
+| `Ctrl+K, then Ctrl+P` | 上一个书签 |
+| `Ctrl+K, then Ctrl+L` | 清除所有书签 |
+
+## 查看或更改快捷键
+
+在 Visual Studio 中打开 **Tools > Options > Environment > Keyboard**，搜索命令即可查看当前配置文件中的快捷键。组合序列需要按顺序输入，分段按键之间稍作停顿。键盘布局和语言设置也可能影响按键名称。
+
+- [Keyboard shortcuts in Visual Studio (Windows)](https://learn.microsoft.com/en-us/visualstudio/ide/default-keyboard-shortcuts-in-visual-studio?view=vs-2022)

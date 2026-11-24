@@ -1,60 +1,107 @@
 ---
-title: 'Lista de atalhos convenientes para o Visual Studio [Aumento de Eficiência]'
-date: "2026-09-24T19:44:38+09:00"
-slug: "Visual Studio Atalho一覧"
-date: 2024-04-06T11:27:37+09:00
-tags: [ "Visual Studio", "Atalhos" ]
+title: "Atalhos de teclado do Visual Studio 2022 [Windows]"
+date: "2024-04-06T11:27:37+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
+slug: "Visual Studio ショートカット一覧"
+tags: ["Visual Studio", "ショートカット"]
 draft: false
 image: "img.webp"
 categories: ["tools-development-environment"]
-description: 'Uma lista selecionada dos atalhos mais convenientes e indispensáveis da vida diária na programação que o desenvolvedor utilizará no Visual Studio (VS2022). O pacote reúne diversas ferramentas essenciais sobre depuração e compilação além dos métodos para realizar marcação de páginas.'
+description: "Atalhos comuns do Visual Studio 2022 no Windows com o perfil General: compilação, depuração, edição, pesquisa e navegação."
 ---
 
-# Lista de Atalhos do Visual Studio
+# Atalhos de teclado do Visual Studio 2022
 
-Fiz uma lista dos atalhos do Visual Studio que uso com frequência pessoalmente.
-Ao memorizar os atalhos de teclado do Visual Studio, você pode trabalhar no desenvolvimento de forma mais eficiente. Por favor, tente usá-los.
+Esta lista usa o perfil padrão **General** do Visual Studio 2022 para Windows. Os atalhos são diferentes no Visual Studio para Mac e no Visual Studio Code. O layout do teclado, o perfil selecionado e as personalizações podem alterá-los.
 
-※Verificado no Visual Studio 2022.
+Comparamos a lista anterior com os padrões oficiais da Microsoft e corrigimos atalhos incorretos de marcadores, compilação, pesquisa e substituição.
 
-| Tecla de atalho | Descrição |
-|-----------------------------|--------------------------|
-| `F1` | Exibir ajuda da palavra selecionada |
-| `F2` | Ir para o marcador |
-| `Ctrl` + `F2` | Adicionar um marcador |
-| `Ctrl` + `Shift` + `F2` | Remover todos os marcadores |
-| `F5` | Compilar e executar (com depuração) |
-| `Ctrl` + `F5` | Compilar e executar (sem depuração) |
-| `F7` | Compilar |
-| `F9` | Adicionar ponto de interrupção na linha atual |
-| `Ctrl` + `F9` | Desativar ponto de interrupção na linha atual |
-| `Shift` + `Ctrl` + `F9` | Remover todos os pontos de interrupção |
-| `F10` | Passar por cima (Step over) |
-| `F11` | Entrar (Step in) |
+## Ajuda
+
+| Shortcut | Command |
+|---|---|
+| `F1` | Abrir a Ajuda |
+
+## Compilação e depuração
+
+| Shortcut | Command |
+|---|---|
+| `Ctrl+Shift+B` | Compilar solução |
+| `F5` | Iniciar/continuar depuração |
+| `Ctrl+F5` | Iniciar sem depuração |
+| `F9` | Alternar ponto de interrupção |
+| `Ctrl+F9` | Habilitar ponto de interrupção |
+| `Ctrl+Shift+F9` | Excluir todos os pontos de interrupção |
+| `F10` | Passar por cima |
+| `F11` | Entrar na chamada |
+| `Shift+F11` | Sair da chamada |
+
+## Navegação no código
+
+| Shortcut | Command |
+|---|---|
 | `F12` | Ir para definição |
-| `Ctrl` + `D` | Duplicar a linha atual |
-| `Ctrl` + `X` | Cortar a linha (quando não houver seleção) |
-| `Ctrl` + `Shift` + `]` | Selecionar até o par correspondente do parêntese/chave na posição do cursor |
-| `Alt` + `Setas para cima/baixo` | Mover a linha atual para cima ou para baixo |
-| `Alt` + `Shift` + `Setas` | Multi-cursor/seleção em bloco |
-| `Ctrl` + `Tab` | Alternar exibição do código-fonte/janela |
-| `Ctrl` + `Shift` + `V` | Exibir histórico da área de transferência |
-| `Ctrl` + `K` e depois `Ctrl` + `C` | Comentar a linha atual |
-| `Ctrl` + `K` e depois `Ctrl` + `U` | Descomentar a linha atual |
-| `Ctrl` + `G` | Ir para a linha especificada |
-| `Ctrl` + `F` | Pesquisar |
-| `Ctrl` + `Shift` + `F` | Pesquisa global |
-| `Ctrl` + `H` | Substituir |
-| `Ctrl` + `Shift` + `F` | Substituição global |
-| `Ctrl` + `Tab` | Alternar exibição do código-fonte/janela |
-| `Ctrl` + `Space` | Autocompletar palavras |
-| `Ctrl` + `Alt` + `L` | Abrir a janela do Gerenciador de Soluções |
-| `Ctrl` + `Shift` + `E` | Abrir a janela de Exibição de Recursos |
-| `Ctrl` + `0` e depois `Ctrl` + `G` | Abrir a janela de Commit do Git |
 
-## Referência
+## Edição e navegação
 
-- [Atalhos de teclado padrão no Visual Studio](https://learn.microsoft.com/ja-jp/visualstudio/ide/default-keyboard-shortcuts-in-visual-studio?view=vs-2022&utm_source=vshelp&wt.mc_id=visualstudio_inproduct_shortcuts_csaapp)
+| Shortcut | Command |
+|---|---|
+| `Ctrl+K, then Ctrl+C` | Comentar seleção |
+| `Ctrl+K, then Ctrl+U` | Remover comentário da seleção |
 
-![img_1.png](img_1.webp)
+## Localizar e substituir
 
+| Shortcut | Command |
+|---|---|
+| `Ctrl+F` | Localizar |
+| `Ctrl+H` | Substituir |
+| `Ctrl+Shift+F` | Localizar em arquivos |
+| `Ctrl+Shift+H` | Substituir em arquivos |
+
+## Navegação por linhas
+
+| Shortcut | Command |
+|---|---|
+| `Ctrl+G` | Ir para linha |
+
+## Edição e navegação
+
+| Shortcut | Command |
+|---|---|
+| `Ctrl+L` | Recortar linha atual |
+| `Ctrl+D` | Duplicar |
+| `Ctrl+Shift+V` | Percorrer o histórico da área de transferência |
+
+## Navegação no código
+
+| Shortcut | Command |
+|---|---|
+| `Ctrl+]` | Ir para a chave correspondente |
+| `Ctrl+Shift+]` | Expandir seleção até a chave correspondente |
+| `Alt+Up/Down Arrow` | Mover linhas selecionadas para cima/baixo |
+| `Shift+Alt+Up/Down Arrow` | Expandir seleção de coluna para cima/baixo |
+
+## Janelas de ferramentas e Git
+
+| Shortcut | Command |
+|---|---|
+| `Ctrl+Tab` | Próxima janela de documento |
+| `Ctrl+Alt+L` | Abrir o Gerenciador de Soluções |
+| `Ctrl+Shift+E` | Abrir a Exibição de Recursos |
+| `Ctrl+0, then Ctrl+G` | Ir para Git Changes |
+| `Ctrl+0, then Ctrl+O` | Ir para Git Commits |
+
+## Marcadores
+
+| Shortcut | Command |
+|---|---|
+| `Ctrl+K, then Ctrl+K` | Alternar marcador |
+| `Ctrl+K, then Ctrl+N` | Próximo marcador |
+| `Ctrl+K, then Ctrl+P` | Marcador anterior |
+| `Ctrl+K, then Ctrl+L` | Limpar todos os marcadores |
+
+## Consultar ou alterar um atalho
+
+No Visual Studio, abra **Tools > Options > Environment > Keyboard** e pesquise um comando para ver o atalho atual do perfil. Nos atalhos encadeados, pressione as teclas na ordem indicada, com uma breve pausa entre as sequências. O layout do teclado e o idioma também podem alterar os nomes exibidos.
+
+- [Keyboard shortcuts in Visual Studio (Windows)](https://learn.microsoft.com/en-us/visualstudio/ide/default-keyboard-shortcuts-in-visual-studio?view=vs-2022)

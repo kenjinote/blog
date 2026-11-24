@@ -21125,6 +21125,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-181.json",
       "evidenceHash": "8980c655a5622c723fe0ef07a4d1d222478668ed02541522da91175effb537b4"
+    },
+    "post/Visual Studio ショートカット一覧/index.en.md": {
+      "source": "post/Visual Studio ショートカット一覧/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "88eecb0de7309e0c2636bca3e153d7f6ef102f73223145096d0d751072557987",
+      "translationHash": "da04950485ca35e72afd3a94d032ece75476d7b30f08877281cf9da8368237e9",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-182.json",
+      "evidenceHash": "a7caf1eb38896da46fed1b65090cf8f806cb7d9b81d398219901ca151d952ca1"
+    },
+    "post/Visual Studio ショートカット一覧/index.zh-cn.md": {
+      "source": "post/Visual Studio ショートカット一覧/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "88eecb0de7309e0c2636bca3e153d7f6ef102f73223145096d0d751072557987",
+      "translationHash": "78830a0428e110bec26a99070892f8bf3f4228d48f9d4d7f9d6ad3121f438caa",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-182.json",
+      "evidenceHash": "0ca2fde9eb8b244a9de07b2dafafb816d7993d521ea926ebb74565875d54a6d9"
+    },
+    "post/Visual Studio ショートカット一覧/index.es.md": {
+      "source": "post/Visual Studio ショートカット一覧/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "88eecb0de7309e0c2636bca3e153d7f6ef102f73223145096d0d751072557987",
+      "translationHash": "b6d5248fe488ae40907323507fbed0ba23cce17da30810628fa691990a52bc25",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-182.json",
+      "evidenceHash": "ea2f5cf2fe6abeef1ca614b6d38406f76b21f61b050529c0dec4b472cd581668"
+    },
+    "post/Visual Studio ショートカット一覧/index.ko.md": {
+      "source": "post/Visual Studio ショートカット一覧/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "88eecb0de7309e0c2636bca3e153d7f6ef102f73223145096d0d751072557987",
+      "translationHash": "81d97ca2e473e73b0593eb179cac81c17b86f6d0cea86b5ed3a0201e18ad0497",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-182.json",
+      "evidenceHash": "4760badd7b7fbb73d0ad610ce437812184da059c756b9c8dfbf96259e15f8cc5"
+    },
+    "post/Visual Studio ショートカット一覧/index.pt.md": {
+      "source": "post/Visual Studio ショートカット一覧/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "88eecb0de7309e0c2636bca3e153d7f6ef102f73223145096d0d751072557987",
+      "translationHash": "07e2b9076dbf9539cf1b1205b1a489321b6cc5b8b12289c4b0db8ad7198272e4",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-182.json",
+      "evidenceHash": "f64381bed05e4f8639e2145333c89ba2e3386be4269190e84651d0c62d9ddb2f"
+    },
+    "post/Visual Studio ショートカット一覧/index.zh-tw.md": {
+      "source": "post/Visual Studio ショートカット一覧/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "88eecb0de7309e0c2636bca3e153d7f6ef102f73223145096d0d751072557987",
+      "translationHash": "16984f91f6886b8d2bc69a5b64432db75570cae5557118cffa4a1f0191e61231",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-182.json",
+      "evidenceHash": "fe09ce5c5244e0e2aa42ee80de4afdb6805da823ef1e1b2da544fb266593664d"
+    },
+    "post/Visual Studio ショートカット一覧/index.hi.md": {
+      "source": "post/Visual Studio ショートカット一覧/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "88eecb0de7309e0c2636bca3e153d7f6ef102f73223145096d0d751072557987",
+      "translationHash": "3565d14297c5f9fa81436e08218d567a31c4355c4355809a63140edf360fc378",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-182.json",
+      "evidenceHash": "717c1a42d99c0902a391489a357910e3c85458c7637b436eda881ad87e892c2a"
+    },
+    "post/Visual Studio ショートカット一覧/index.fr.md": {
+      "source": "post/Visual Studio ショートカット一覧/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "88eecb0de7309e0c2636bca3e153d7f6ef102f73223145096d0d751072557987",
+      "translationHash": "07c43677522e33a842cbb84d9442e9b1a0ce574b77da596bfc0806e5e700c7ac",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-182.json",
+      "evidenceHash": "58a6c17030abde6f4e62c3f36d024f8af53315b689b8c1865e5113fc7839d328"
+    },
+    "post/Visual Studio ショートカット一覧/index.de.md": {
+      "source": "post/Visual Studio ショートカット一覧/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "88eecb0de7309e0c2636bca3e153d7f6ef102f73223145096d0d751072557987",
+      "translationHash": "d601001d28c996151d64e1533a5520514fe8379f8b5e2d5c5c916a1d50345f2a",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-182.json",
+      "evidenceHash": "23deb0060865950f20b0fbc866c1bf1bb6544f6f5b1c6ec01980f90281daa47e"
+    },
+    "post/Visual Studio ショートカット一覧/index.ar.md": {
+      "source": "post/Visual Studio ショートカット一覧/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "88eecb0de7309e0c2636bca3e153d7f6ef102f73223145096d0d751072557987",
+      "translationHash": "edad9c22a6801caa9f66aa9e07a11db1ead7df7fcc71662d3eddc4a5ef78fd0e",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-182.json",
+      "evidenceHash": "220c99d14b3514012ba48b854e39db5ba2424fc2ad2793ab495f13115d2cd481"
+    },
+    "post/Visual Studio ショートカット一覧/index.ru.md": {
+      "source": "post/Visual Studio ショートカット一覧/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "88eecb0de7309e0c2636bca3e153d7f6ef102f73223145096d0d751072557987",
+      "translationHash": "941be2b51416e09fbe8f977239935517d98c1e6a4283f6327033fb2c78064a63",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-182.json",
+      "evidenceHash": "fe0b9a43677b765961bb1ae097b5931941843227a4610544bf32c61b1835804d"
+    },
+    "post/Visual Studio ショートカット一覧/index.id.md": {
+      "source": "post/Visual Studio ショートカット一覧/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "88eecb0de7309e0c2636bca3e153d7f6ef102f73223145096d0d751072557987",
+      "translationHash": "74a5a38b7dad28770e5a79e7184e475c03da2e368e1c16a00d5d3d2d09d1d75f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-182.json",
+      "evidenceHash": "e0f731d057a6321f76777802946644c9f6a38d145747cb50f652c29aecc1ff98"
     }
   }
 }

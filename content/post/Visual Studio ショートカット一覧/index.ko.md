@@ -1,73 +1,107 @@
 ---
-
-
-
-
-
-
-
-title: 'Visual Studio의 편리한 단축키 목록 [작업 효율 향상]'
-date: "2026-09-24T19:44:38+09:00"
-slug: "Visual Studio 바로 가기一覧"
-date: 2024-04-06T11:27:37+09:00
-tags: [ "Visual Studio", "단축키" ]
+title: "Visual Studio 2022 바로 가기 키 모음 [Windows]"
+date: "2024-04-06T11:27:37+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
+slug: "Visual Studio ショートカット一覧"
+tags: ["Visual Studio", "ショートカット"]
 draft: false
 image: "img.webp"
 categories: ["tools-development-environment"]
-description: '개발 효율을 극적으로 향상시키는 Visual Studio(VS2022)의 유용한 단축키 목록을 정리했습니다. 디버깅 및 빌드, 북마크 조작 등 프로그래밍 중에 자주 사용하는 필수 단축키를 엄선하여 소개합니다.'
+description: "Windows용 Visual Studio 2022의 General 프로필에서 빌드, 디버깅, 편집, 검색 및 탐색에 자주 쓰는 단축키를 소개합니다."
 ---
 
+# Visual Studio 2022 바로 가기 키
 
+이 목록은 Windows용 Visual Studio 2022의 기본 **General** 프로필을 기준으로 합니다. Visual Studio for Mac 및 Visual Studio Code의 단축키와 다릅니다. 키보드 배열, 선택한 프로필, 사용자 지정 설정에 따라 키가 달라질 수 있습니다.
 
+이전 목록을 Microsoft 공식 기본값과 대조하여 잘못된 책갈피, 빌드, 검색 및 바꾸기 단축키를 수정했습니다.
 
+## 도움말
 
+| Shortcut | Command |
+|---|---|
+| `F1` | 도움말 열기 |
 
+## 빌드 및 디버깅
 
+| Shortcut | Command |
+|---|---|
+| `Ctrl+Shift+B` | 솔루션 빌드 |
+| `F5` | 디버깅 시작/계속 |
+| `Ctrl+F5` | 디버깅 없이 시작 |
+| `F9` | 중단점 전환 |
+| `Ctrl+F9` | 중단점 활성화 |
+| `Ctrl+Shift+F9` | 모든 중단점 삭제 |
+| `F10` | 프로시저 단위 실행 |
+| `F11` | 한 단계씩 실행 |
+| `Shift+F11` | 호출한 함수로 나가기 |
 
-# Visual Studio 단축키 목록
+## 코드 탐색
 
-개인적으로 자주 사용하는 Visual Studio 단축키를 목록으로 정리했습니다.
-Visual Studio의 단축키는 키보드 조작을 익힘으로써 효율적으로 개발 작업을 진행할 수 있습니다. 꼭 활용해 보세요.
+| Shortcut | Command |
+|---|---|
+| `F12` | 정의로 이동 |
 
-※Visual Studio 2022에서 확인했습니다.
+## 편집 및 탐색
 
-| 단축키 | 설명 |
-|-----------------------------|--------------------------|
-| `F1`                        | 선택한 단어의 도움말 표시 |
-| `F2`                        | 북마크로 이동 |
-| `Ctrl` + `F2`               | 북마크 등록 |
-| `Ctrl` + `Shift` + `F2`     | 모든 북마크 삭제 |
-| `F5`                        | 빌드 후 실행 (디버그 실행) |
-| `Ctrl` + `F5`               | 빌드 후 실행 (디버그 없이) |
-| `F7`                        | 빌드 |
-| `F9`                        | 커서가 있는 줄에 중단점 추가 |
-| `Ctrl` + `F9`               | 커서가 있는 줄의 중단점을 비활성화 |
-| `Shift` + `Ctrl` + `F9`     | 모든 중단점 삭제 |
-| `F10`                       | 프로시저 단위 실행 (Step Over) |
-| `F11`                       | 한 단계씩 코드 실행 (Step Into) |
-| `F12`                       | 정의로 이동 |
-| `Ctrl` + `D`                | 커서가 있는 줄 복제 |
-| `Ctrl` + `X`                | 선택 범위가 없을 때 줄 잘라내기 |
-| `Ctrl` + `Shift` + `]`      | 커서 부분의 괄호에 대응하는 괄호까지 선택 |
-| `Alt` + `위/아래 방향키`    | 커서가 있는 줄을 위아래로 이동 |
-| `Alt` + `Shift` + `방향키`  | 멀티 커서 / 사각형 선택 |
-| `Ctrl` + `Tab`              | 소스 코드 / 창 표시 전환 |
-| `Ctrl` + `Shift` + `V`      | 클립보드 기록 표시 |
-| `Ctrl` + `K` 후 `Ctrl` + `C` | 커서가 있는 줄 주석 처리 |
-| `Ctrl` + `K` 후 `Ctrl` + `U` | 커서가 있는 줄 주석 처리 해제 |
-| `Ctrl` + `G`                | 줄 번호를 지정하여 이동 |
-| `Ctrl` + `F`                | 찾기 |
-| `Ctrl` + `Shift` + `F`      | 전역 찾기 |
-| `Ctrl` + `H`                | 바꾸기 |
-| `Ctrl` + `Shift` + `F`      | 전역 바꾸기 |
-| `Ctrl` + `Tab`              | 소스 코드 / 창 표시 전환 |
-| `Ctrl` + `Space`            | 단어 자동 완성 |
-| `Ctrl` + `Alt` + `L`        | 솔루션 탐색기 창 열기 |
-| `Ctrl` + `Shift` + `E`      | 리소스 뷰 창 열기 |
-| `Ctrl` + `0` 후 `Ctrl` + `G` | Git 커밋 창 열기 |
+| Shortcut | Command |
+|---|---|
+| `Ctrl+K, then Ctrl+C` | 선택 영역 주석 처리 |
+| `Ctrl+K, then Ctrl+U` | 선택 영역 주석 해제 |
 
-## 참고
+## 찾기 및 바꾸기
 
-- [Visual Studio의 키보드 단축키](https://learn.microsoft.com/ko-kr/visualstudio/ide/default-keyboard-shortcuts-in-visual-studio?view=vs-2022&utm_source=vshelp&wt.mc_id=visualstudio_inproduct_shortcuts_csaapp)
+| Shortcut | Command |
+|---|---|
+| `Ctrl+F` | 찾기 |
+| `Ctrl+H` | 바꾸기 |
+| `Ctrl+Shift+F` | 파일에서 찾기 |
+| `Ctrl+Shift+H` | 파일에서 바꾸기 |
 
-![img_1.png](img_1.webp)
+## 줄 탐색
+
+| Shortcut | Command |
+|---|---|
+| `Ctrl+G` | 줄로 이동 |
+
+## 편집 및 탐색
+
+| Shortcut | Command |
+|---|---|
+| `Ctrl+L` | 현재 줄 잘라내기 |
+| `Ctrl+D` | 복제 |
+| `Ctrl+Shift+V` | 클립보드 링 순환 붙여넣기 |
+
+## 코드 탐색
+
+| Shortcut | Command |
+|---|---|
+| `Ctrl+]` | 짝을 이루는 중괄호로 이동 |
+| `Ctrl+Shift+]` | 짝 중괄호까지 선택 확장 |
+| `Alt+Up/Down Arrow` | 선택한 줄 위/아래로 이동 |
+| `Shift+Alt+Up/Down Arrow` | 열 선택 위/아래로 확장 |
+
+## 도구 창 및 Git
+
+| Shortcut | Command |
+|---|---|
+| `Ctrl+Tab` | 다음 문서 창 |
+| `Ctrl+Alt+L` | 솔루션 탐색기 열기 |
+| `Ctrl+Shift+E` | 리소스 뷰 열기 |
+| `Ctrl+0, then Ctrl+G` | Git Changes로 이동 |
+| `Ctrl+0, then Ctrl+O` | Git Commits로 이동 |
+
+## 책갈피
+
+| Shortcut | Command |
+|---|---|
+| `Ctrl+K, then Ctrl+K` | 책갈피 전환 |
+| `Ctrl+K, then Ctrl+N` | 다음 책갈피 |
+| `Ctrl+K, then Ctrl+P` | 이전 책갈피 |
+| `Ctrl+K, then Ctrl+L` | 모든 책갈피 지우기 |
+
+## 단축키 확인 및 변경
+
+Visual Studio에서 **Tools > Options > Environment > Keyboard**를 열고 명령을 검색하면 현재 프로필의 단축키를 확인할 수 있습니다. 연속 입력 단축키는 표의 순서대로 누르고 각 조합 사이에 잠깐 멈춥니다. 키보드 배열과 언어 설정에 따라서도 키 이름이 달라질 수 있습니다.
+
+- [Keyboard shortcuts in Visual Studio (Windows)](https://learn.microsoft.com/en-us/visualstudio/ide/default-keyboard-shortcuts-in-visual-studio?view=vs-2022)

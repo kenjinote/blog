@@ -1,60 +1,107 @@
 ---
-title: 'Visual Studio 實用快速鍵一覽【提升工作效率】'
-date: "2026-09-24T19:44:38+09:00"
-slug: "Visual Studio 捷徑一覧"
-date: 2024-04-06T11:27:37+09:00
-tags: [ "Visual Studio", "快捷鍵" ]
+title: "Visual Studio 2022 快速鍵一覽【Windows】"
+date: "2024-04-06T11:27:37+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
+slug: "Visual Studio ショートカット一覧"
+tags: ["Visual Studio", "ショートカット"]
 draft: false
 image: "img.webp"
 categories: ["tools-development-environment"]
-description: '整理了可大幅提升開發效率的 Visual Studio (VS2022) 實用快速鍵清單。精選介紹偵錯、編譯、書籤操作等程式設計時常用的必備快速鍵。'
+description: "介紹 Windows 版 Visual Studio 2022 General 設定檔中，建置、偵錯、編輯、搜尋及瀏覽常用的快速鍵。"
 ---
 
-# Visual Studio 快捷鍵列表
+# Visual Studio 2022 快速鍵
 
-這是我個人常用的 Visual Studio 快捷鍵列表。
-只要記住 Visual Studio 的鍵盤快捷鍵，就可以有效率地進行開發作業。請務必活用。
+以下以 Windows 版 Visual Studio 2022 的預設 **General** 設定檔為基準。這些快速鍵與 Visual Studio for Mac 及 Visual Studio Code 不同。鍵盤配置、選取的設定檔及自訂設定都可能改變快速鍵。
 
-※在 Visual Studio 2022 進行了確認。
+我們已對照 Microsoft 官方預設值，修正舊版中錯誤的書籤、建置、搜尋及取代快速鍵。
 
-| 快捷鍵 | 說明 |
-|-----------------------------|--------------------------|
-| `F1` | 顯示所選單字的說明 |
-| `F2` | 跳到書籤 |
-| `Ctrl` + `F2` | 新增書籤 |
-| `Ctrl` + `Shift` + `F2` | 移除所有書籤 |
-| `F5` | 建置並執行（偵錯執行） |
-| `Ctrl` + `F5` | 建置並執行（不偵錯） |
-| `F7` | 建置 |
-| `F9` | 在游標行加入中斷點 |
-| `Ctrl` + `F9` | 停用游標行的中斷點 |
-| `Shift` + `Ctrl` + `F9` | 刪除所有中斷點 |
-| `F10` | 逐步執行 |
-| `F11` | 進入逐步執行 |
-| `F12` | 跳到定義 |
-| `Ctrl` + `D` | 複製游標行 |
-| `Ctrl` + `X` | 未選取範圍時，剪下游標行 |
-| `Ctrl` + `Shift` + `]` | 選取游標處括號對應的括號 |
-| `Alt` + `上下方向鍵` | 上下移動游標行 |
-| `Alt` + `Shift` + `方向鍵` | 多重游標/區塊選取 |
-| `Ctrl` + `Tab` | 切換原始碼/視窗顯示 |
-| `Ctrl` + `Shift` + `V` | 顯示剪貼簿歷史紀錄 |
-| `Ctrl` + `K` 後 `Ctrl` + `C` | 註解游標行 |
-| `Ctrl` + `K` 後 `Ctrl` + `U` | 取消註解游標行 |
-| `Ctrl` + `G` | 指定行號並跳至該行 |
-| `Ctrl` + `F` | 搜尋 |
-| `Ctrl` + `Shift` + `F` | 全域搜尋 |
-| `Ctrl` + `H` | 取代 |
-| `Ctrl` + `Shift` + `F` | 全域取代 |
-| `Ctrl` + `Tab` | 切換原始碼/視窗顯示 |
-| `Ctrl` + `Space` | 單字自動補齊 |
-| `Ctrl` + `Alt` + `L` | 開啟方案總管視窗 |
-| `Ctrl` + `Shift` + `E` | 開啟資源檢視視窗 |
-| `Ctrl` + `0` 後 `Ctrl` + `G` | 開啟 Git [認可](https://kenji.blog/zh-tw/p/oauth2-oidc-authentication-authorization-difference/)視窗 |
+## 說明
 
-## 參考
+| Shortcut | Command |
+|---|---|
+| `F1` | 開啟說明 |
 
-- [Visual Studio 中的預設鍵盤快捷鍵](https://learn.microsoft.com/ja-jp/visualstudio/ide/default-keyboard-shortcuts-in-visual-studio?view=vs-2022&utm_source=vshelp&wt.mc_id=visualstudio_inproduct_shortcuts_csaapp)
+## 建置與偵錯
 
-![img_1.png](img_1.webp)
+| Shortcut | Command |
+|---|---|
+| `Ctrl+Shift+B` | 建置方案 |
+| `F5` | 開始/繼續偵錯 |
+| `Ctrl+F5` | 不偵錯直接啟動 |
+| `F9` | 切換中斷點 |
+| `Ctrl+F9` | 啟用中斷點 |
+| `Ctrl+Shift+F9` | 刪除所有中斷點 |
+| `F10` | 逐步執行但不進入函式 |
+| `F11` | 逐步進入函式 |
+| `Shift+F11` | 跳出函式 |
 
+## 程式碼導覽
+
+| Shortcut | Command |
+|---|---|
+| `F12` | 移至定義 |
+
+## 編輯與瀏覽
+
+| Shortcut | Command |
+|---|---|
+| `Ctrl+K, then Ctrl+C` | 註解選取內容 |
+| `Ctrl+K, then Ctrl+U` | 取消選取內容的註解 |
+
+## 搜尋與取代
+
+| Shortcut | Command |
+|---|---|
+| `Ctrl+F` | 尋找 |
+| `Ctrl+H` | 取代 |
+| `Ctrl+Shift+F` | 在檔案中尋找 |
+| `Ctrl+Shift+H` | 在檔案中取代 |
+
+## 行導覽
+
+| Shortcut | Command |
+|---|---|
+| `Ctrl+G` | 移至行 |
+
+## 編輯與瀏覽
+
+| Shortcut | Command |
+|---|---|
+| `Ctrl+L` | 剪下目前行 |
+| `Ctrl+D` | 複製 |
+| `Ctrl+Shift+V` | 循環貼上剪貼簿環內容 |
+
+## 程式碼導覽
+
+| Shortcut | Command |
+|---|---|
+| `Ctrl+]` | 移至配對的大括號 |
+| `Ctrl+Shift+]` | 延伸選取範圍至配對的大括號 |
+| `Alt+Up/Down Arrow` | 將選取行上移/下移 |
+| `Shift+Alt+Up/Down Arrow` | 向上/下延伸直欄選取 |
+
+## 工具視窗與 Git
+
+| Shortcut | Command |
+|---|---|
+| `Ctrl+Tab` | 下一個文件視窗 |
+| `Ctrl+Alt+L` | 開啟方案總管 |
+| `Ctrl+Shift+E` | 開啟資源檢視 |
+| `Ctrl+0, then Ctrl+G` | 移至 Git Changes |
+| `Ctrl+0, then Ctrl+O` | 移至 Git Commits |
+
+## 書籤
+
+| Shortcut | Command |
+|---|---|
+| `Ctrl+K, then Ctrl+K` | 切換書籤 |
+| `Ctrl+K, then Ctrl+N` | 下一個書籤 |
+| `Ctrl+K, then Ctrl+P` | 上一個書籤 |
+| `Ctrl+K, then Ctrl+L` | 清除所有書籤 |
+
+## 查看或變更快速鍵
+
+在 Visual Studio 開啟 **Tools > Options > Environment > Keyboard**，搜尋命令即可查看目前設定檔的快速鍵。連續組合鍵請依序按下，兩段按鍵之間稍作停頓。鍵盤配置與語言設定也可能改變按鍵顯示名稱。
+
+- [Keyboard shortcuts in Visual Studio (Windows)](https://learn.microsoft.com/en-us/visualstudio/ide/default-keyboard-shortcuts-in-visual-studio?view=vs-2022)

@@ -1,59 +1,107 @@
 ---
-title: 'List of Useful Shortcut Keys for Visual Studio [Boost Work Efficiency]'
-date: "2026-09-24T19:44:38+09:00"
-slug: "Visual Studio Shortcut一覧"
-date: 2024-04-06T11:27:37+09:00
-tags: [ "Visual Studio", "Shortcuts" ]
+title: "Visual Studio 2022 Keyboard Shortcuts [Windows]"
+date: "2024-04-06T11:27:37+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
+slug: "Visual Studio ショートカット一覧"
+tags: ["Visual Studio", "ショートカット"]
 draft: false
 image: "img.webp"
 categories: ["tools-development-environment"]
-description: 'Summarized a list of useful shortcut keys for Visual Studio (VS2022) that dramatically improve development efficiency. Carefully introduces essential shortcuts frequently used during programming, such as debugging, building, and bookmark operations.'
+description: "A guide to common Visual Studio 2022 shortcuts on Windows with the General profile, covering build, debugging, editing, search, and navigation."
 ---
 
-# Visual Studio Shortcut List
+# Visual Studio 2022 keyboard shortcuts
 
-I made a list of Visual Studio shortcuts that I personally use often.
-By memorizing keyboard operations for Visual Studio shortcuts, you can perform development work efficiently. Please make use of them.
+This list uses the default **General** profile in Visual Studio 2022 for Windows. These shortcuts are different from Visual Studio for Mac and Visual Studio Code. Keyboard layout, selected profile, and custom mappings can change them.
 
-* Confirmed in Visual Studio 2022.
+We checked the previous list against Microsoft’s official defaults and corrected inaccurate bookmark, build, search, and replace shortcuts.
 
-| Shortcut Key                | Description                                          |
-|-----------------------------|------------------------------------------------------|
-| `F1`                        | Show help for the selected word                      |
-| `F2`                        | Jump to bookmark                                     |
-| `Ctrl` + `F2`               | Register bookmark                                    |
-| `Ctrl` + `Shif` + `F2`      | Delete all bookmarks                                 |
-| `F5`                        | Build and run (Debug run)                            |
-| `Ctrl` + `F5`               | Build and run (Run without debugging)                |
-| `F7`                        | Build                                                |
-| `F9`                        | Toggle breakpoint on the cursor line                 |
-| `Ctrl` + `F9`               | Disable breakpoint on the cursor line                |
-| `Shift` + `Ctrl` + `F9`     | Delete all breakpoints                               |
-| `F10`                       | Step over                                            |
-| `F11`                       | Step into                                            |
-| `F12`                       | [Go](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/) to definition                                     |
-| `Ctrl` + `D`                | Duplicate cursor line                                |
-| `Ctrl` + `X`                | Cut the line (if there is no selection)              |
-| `Ctrl` + `Shift` + `]`      | Select up to the matching brace of the cursor part   |
-| `Alt` + `Up/Down Arrow Keys`| Move cursor line up or down                          |
-| `Alt` + `Shift` + `Arrow Keys`| Multi-cursor / Box selection                       |
-| `Ctrl` + `Tab`              | Switch source code / window display                  |
-| `Ctrl` + `Shift` + `V`      | Show clipboard history                               |
-| `Ctrl` + `K`, `Ctrl` + `C`  | Comment out the cursor line                          |
-| `Ctrl` + `K`, `Ctrl` + `U`  | Uncomment the cursor line                            |
-| `Ctrl` + `G`                | [Go](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/) to line                                           |
-| `Ctrl` + `F`                | Find                                                 |
-| `Ctrl` + `Shift` + `F`      | Find in files (Global search)                        |
-| `Ctrl` + `H`                | Replace                                              |
-| `Ctrl` + `Shift` + `F`      | Replace in files (Global replace)                    |
-| `Ctrl` + `Tab`              | Switch source code / window display                  |
-| `Ctrl` + `Space`            | Word completion                                      |
-| `Ctrl` + `Alt` + `L`        | Open Solution Explorer window                        |
-| `Ctrl` + `Shift` + `E`      | Open Resource View window                            |
-| `Ctrl` + `0`, `Ctrl` + `G`  | Open Git Commit window                               |
+## Help
 
-## References
+| Shortcut | Command |
+|---|---|
+| `F1` | Open Help |
 
-- [Keyboard shortcuts in Visual Studio](https://learn.microsoft.com/en-us/visualstudio/ide/default-keyboard-shortcuts-in-visual-studio?view=vs-2022)
+## Build and debug
 
-![img_1.png](img_1.webp)
+| Shortcut | Command |
+|---|---|
+| `Ctrl+Shift+B` | Build solution |
+| `F5` | Start/continue debugging |
+| `Ctrl+F5` | Start without debugging |
+| `F9` | Toggle breakpoint |
+| `Ctrl+F9` | Enable breakpoint |
+| `Ctrl+Shift+F9` | Delete all breakpoints |
+| `F10` | Step over |
+| `F11` | Step into |
+| `Shift+F11` | Step out |
+
+## Code navigation
+
+| Shortcut | Command |
+|---|---|
+| `F12` | Go to definition |
+
+## Edit and navigate
+
+| Shortcut | Command |
+|---|---|
+| `Ctrl+K, then Ctrl+C` | Comment selection |
+| `Ctrl+K, then Ctrl+U` | Uncomment selection |
+
+## Find and replace
+
+| Shortcut | Command |
+|---|---|
+| `Ctrl+F` | Find |
+| `Ctrl+H` | Replace |
+| `Ctrl+Shift+F` | Find in files |
+| `Ctrl+Shift+H` | Replace in files |
+
+## Line navigation
+
+| Shortcut | Command |
+|---|---|
+| `Ctrl+G` | Go to line |
+
+## Edit and navigate
+
+| Shortcut | Command |
+|---|---|
+| `Ctrl+L` | Cut line |
+| `Ctrl+D` | Duplicate |
+| `Ctrl+Shift+V` | Cycle clipboard ring |
+
+## Code navigation
+
+| Shortcut | Command |
+|---|---|
+| `Ctrl+]` | Go to matching brace |
+| `Ctrl+Shift+]` | Extend selection to matching brace |
+| `Alt+Up/Down Arrow` | Move selected lines up/down |
+| `Shift+Alt+Up/Down Arrow` | Extend column selection up/down |
+
+## Tool windows and Git
+
+| Shortcut | Command |
+|---|---|
+| `Ctrl+Tab` | Next document window |
+| `Ctrl+Alt+L` | Open Solution Explorer |
+| `Ctrl+Shift+E` | Open Resource View |
+| `Ctrl+0, then Ctrl+G` | Go to Git Changes |
+| `Ctrl+0, then Ctrl+O` | Go to Git Commits |
+
+## Bookmarks
+
+| Shortcut | Command |
+|---|---|
+| `Ctrl+K, then Ctrl+K` | Toggle bookmark |
+| `Ctrl+K, then Ctrl+N` | Next bookmark |
+| `Ctrl+K, then Ctrl+P` | Previous bookmark |
+| `Ctrl+K, then Ctrl+L` | Clear all bookmarks |
+
+## Check or change a shortcut
+
+In Visual Studio, open **Tools > Options > Environment > Keyboard** and search for a command to see its current shortcut in your profile. For chord shortcuts, press the keys in order, with a pause between the listed sequences. Keyboard layout and language settings can also affect key labels.
+
+- [Keyboard shortcuts in Visual Studio (Windows)](https://learn.microsoft.com/en-us/visualstudio/ide/default-keyboard-shortcuts-in-visual-studio?view=vs-2022)

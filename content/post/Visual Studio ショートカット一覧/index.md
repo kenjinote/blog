@@ -1,59 +1,107 @@
 ---
-title: 'Visual Studioの便利なショートカットキー一覧【作業効率アップ】'
-date: "2026-09-24T19:44:38+09:00"
+title: "Visual Studio 2022のショートカット一覧【Windows】"
+date: "2024-04-06T11:27:37+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 slug: "Visual Studio ショートカット一覧"
-date: 2024-04-06T11:27:37+09:00
-tags: [ "Visual Studio", "ショートカット" ]
+tags: ["Visual Studio", "ショートカット"]
 draft: false
 image: "img.webp"
 categories: ["tools-development-environment"]
-description: '開発効率を劇的に向上させる、Visual Studio（VS2022）の便利なショートカットキー一覧をまとめました。デバッグやビルド、ブックマーク操作など、プログラミング中によく使う必須ショートカットを厳選紹介。'
+description: "Visual Studio 2022のWindows版・Generalプロファイルで使える主要ショートカットを、ビルド・デバッグ・編集・検索などの用途別に紹介します。"
 ---
 
-# Visual Studio ショートカット一覧
+# Visual Studio 2022のショートカット
 
-個人的によく使っている Visual Studio のショートカットを一覧にしました。
-Visual Studio のショートカットは、キーボードの操作を覚えることで、効率的に開発作業を行うことができます。ぜひ活用してみてください。
+以下はWindows版Visual Studio 2022の既定「General」プロファイルを基準にした一覧です。Visual Studio for MacやVisual Studio Codeのキーとは異なります。キーボード配列、選択したプロファイル、カスタマイズによって割り当てが変わることがあります。
 
-※Visual Studio 2022 で確認しています。
+Microsoft公式一覧に照合して、以前の版にあった誤ったブックマークキー、ビルドキー、検索/置換キーなどを修正しました。
 
-| ショートカットキー                   | 説明                       |
-|-----------------------------|--------------------------|
-| `F1`                        | 選択した単語のヘルプを表示            |
-| `F2`                        | ブックマークにジャンプ              |
-| `Ctrl` + `F2`               | ブックマークを登録                |
-| `Ctrl` + `Shif` + `F2`      | すべてのブックマークを削除            |
-| `F5`                        | ビルドして実行(デバッグ実行）          |
-| `Ctrl` + `F5`               | ビルドして実行(デバッグなし）          |
-| `F7`                        | ビルド                      |
-| `F9`                        | ブレイクポイントをカーソル行に付加        |
-| `Ctrl` + `F9`               | カーソル行のブレークポイントを無効にする     |
-| `Shift` + `Ctrl` + `F9`     | すべてのブレークポイントを削除          |
-| `F10`                       | ステップオーバー                 |
-| `F11`                       | ステップイン                   |
-| `F12`                       | 定義にジャンプ                  |
-| `Ctrl` + `D`                | カーソル行を複製                 |
-| `Ctrl` + `X`                | 選択範囲がない場合、行の切り取り         |
-| `Ctrl` + `Shift` + `]`      | カーソル部分のカッコに対応するカッコまで選択   |
-| `Alt` + `上下矢印キー`            | カーソル行を上下に移動する            |
-| `Alt` + `Shift` + `矢印キー`    | マルチカーソル/箱型選択             |
-| `Ctrl` + `Tab`              | ソースコード/ウィンドウ表示切り替え       |
-| `Ctrl` + `Shift` + `V`      | クリップボード履歴の表示             |
-| `Ctrl` + `K` 後 `Ctrl` + `C` | カーソル行をコメントアウト            |
-| `Ctrl` + `K` 後 `Ctrl` + `U` | カーソル行のコメントアウト解除          |
-| `Ctrl` + `G`                | 行番号を指定してジャンプ             |
-| `Ctrl` + `F`                | 検索                       |
-| `Ctrl` + `Shift` + `F`      | グローバル検索                  |
-| `Ctrl` + `H`                | 置換                       |
-| `Ctrl` + `Shift` + `F`      | グローバル置換                  |
-| `Ctrl` + `Tab`              | ソースコード/ウィンドウ表示切り替え       |
-| `Ctrl` + `Space`            | 単語補完                     |
-| `Ctrl` + `Alt` + `L`        | ソリューション エクスプローラ ウィンドウを開く |
-| `Ctrl` + `Shift` + `E`      | リソース ビュー ウィンドウを開く        |
-| `Ctrl` + `0` 後 `Ctrl` + `G` | Git コミットウィンドウを開く         |
+## ヘルプ
 
-## 参考
+| Shortcut | Command |
+|---|---|
+| `F1` | ヘルプを開く |
 
-- [Visual Studio のキーボード ショートカット](https://learn.microsoft.com/ja-jp/visualstudio/ide/default-keyboard-shortcuts-in-visual-studio?view=vs-2022&utm_source=vshelp&wt.mc_id=visualstudio_inproduct_shortcuts_csaapp)
+## ビルドとデバッグ
 
-![img_1.png](img_1.webp)
+| Shortcut | Command |
+|---|---|
+| `Ctrl+Shift+B` | ソリューションをビルド |
+| `F5` | デバッグを開始/続行 |
+| `Ctrl+F5` | デバッグなしで開始 |
+| `F9` | ブレークポイントを切り替え |
+| `Ctrl+F9` | 無効なブレークポイントを有効化 |
+| `Ctrl+Shift+F9` | すべてのブレークポイントを削除 |
+| `F10` | ステップオーバー |
+| `F11` | ステップイン |
+| `Shift+F11` | ステップアウト |
+
+## コード移動
+
+| Shortcut | Command |
+|---|---|
+| `F12` | 定義へ移動 |
+
+## 編集と移動
+
+| Shortcut | Command |
+|---|---|
+| `Ctrl+K, then Ctrl+C` | 選択範囲をコメント化 |
+| `Ctrl+K, then Ctrl+U` | 選択範囲のコメントを解除 |
+
+## 検索と置換
+
+| Shortcut | Command |
+|---|---|
+| `Ctrl+F` | 検索 |
+| `Ctrl+H` | 置換 |
+| `Ctrl+Shift+F` | ファイル内を検索 |
+| `Ctrl+Shift+H` | ファイル内を置換 |
+
+## 行移動
+
+| Shortcut | Command |
+|---|---|
+| `Ctrl+G` | 行番号へ移動 |
+
+## 編集と移動
+
+| Shortcut | Command |
+|---|---|
+| `Ctrl+L` | 現在行を切り取り |
+| `Ctrl+D` | 複製 |
+| `Ctrl+Shift+V` | クリップボードリングを順番に貼り付け |
+
+## コード移動
+
+| Shortcut | Command |
+|---|---|
+| `Ctrl+]` | 対応する波括弧へ移動 |
+| `Ctrl+Shift+]` | 対応する波括弧まで選択を拡張 |
+| `Alt+Up/Down Arrow` | 選択行を上下に移動 |
+| `Shift+Alt+Up/Down Arrow` | 列選択を上下に拡張 |
+
+## ツールウィンドウとGit
+
+| Shortcut | Command |
+|---|---|
+| `Ctrl+Tab` | ドキュメントウィンドウの切替 |
+| `Ctrl+Alt+L` | ソリューション エクスプローラーを開く |
+| `Ctrl+Shift+E` | リソース ビューを開く |
+| `Ctrl+0, then Ctrl+G` | Git Changesへ移動 |
+| `Ctrl+0, then Ctrl+O` | Git Commitsへ移動 |
+
+## ブックマーク
+
+| Shortcut | Command |
+|---|---|
+| `Ctrl+K, then Ctrl+K` | ブックマークの切替 |
+| `Ctrl+K, then Ctrl+N` | 次のブックマーク |
+| `Ctrl+K, then Ctrl+P` | 前のブックマーク |
+| `Ctrl+K, then Ctrl+L` | すべてのブックマークをクリア |
+
+## キー割り当てを確認・変更する
+
+Visual Studioで **Tools > Options > Environment > Keyboard** を開き、コマンド名で検索すると、現在のプロファイルに割り当てられたキーを確認できます。連続入力のコマンドは、表の「次に」を挟んで順番に押します。キーボード配列や言語設定でもキー表記が異なる場合があります。
+
+- [Keyboard shortcuts in Visual Studio (Windows)](https://learn.microsoft.com/en-us/visualstudio/ide/default-keyboard-shortcuts-in-visual-studio?view=vs-2022)

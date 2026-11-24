@@ -1,0 +1,452 @@
+{
+  "version": 1,
+  "batch": 182,
+  "article": "Visual Studio 2022 keyboard shortcuts for Windows",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "88eecb0de7309e0c2636bca3e153d7f6ef102f73223145096d0d751072557987",
+  "sources": [
+    "https://learn.microsoft.com/en-us/visualstudio/ide/default-keyboard-shortcuts-in-visual-studio?view=vs-2022"
+  ],
+  "scope": "Compared the complete Japanese article and all twelve translations; the 34 listed shortcut assignments, command names, Windows/General profile scope, distinction from Mac and VS Code, metadata and official reference link.",
+  "findings": [
+    "Corrected incorrect bookmark shortcuts to the documented Ctrl+K chord commands.",
+    "Corrected solution build, find/replace, line-cut, breakpoint, clipboard ring, and Git Changes/Git Commits entries against the official list.",
+    "Clarified Windows Visual Studio 2022 default General profile and noted keyboard layout, selected profile, and customization differences.",
+    "Preserved original publication date (2024-04-06) and set lastmod (2026-11-24)."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/Visual Studio ショートカット一覧/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Visual Studio ショートカット一覧/index.md",
+      "sourceHash": "88eecb0de7309e0c2636bca3e153d7f6ef102f73223145096d0d751072557987",
+      "translationHash": "da04950485ca35e72afd3a94d032ece75476d7b30f08877281cf9da8368237e9",
+      "summary": "Compared the complete translation against the Japanese source and Microsoft’s official Visual Studio 2022 Windows default keyboard shortcut list. Corrected inaccurate shortcut assignments and checked that the edition is clearly scoped to the Windows General profile.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all 34 listed Windows Visual Studio 2022 commands in the complete Japanese article and each translation with the Microsoft default General profile list; corrected bookmark chords, build, debug, find/replace, line cut, breakpoint, Git, and clipboard descriptions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked command names and distinctions among Visual Studio for Windows, Visual Studio for Mac, and Visual Studio Code in every edition."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code examples or executable configuration."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the Microsoft Learn reference URL and retained the direct official shortcut reference in every edition."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Shortcut assignments can differ with Visual Studio version, keyboard layout, selected profile, and user customization; the article explains how to check the active mapping.",
+        "The review checked the listed commands against Microsoft Learn and did not execute every shortcut in an installed Visual Studio environment."
+      ]
+    },
+    "post/Visual Studio ショートカット一覧/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Visual Studio ショートカット一覧/index.md",
+      "sourceHash": "88eecb0de7309e0c2636bca3e153d7f6ef102f73223145096d0d751072557987",
+      "translationHash": "78830a0428e110bec26a99070892f8bf3f4228d48f9d4d7f9d6ad3121f438caa",
+      "summary": "Compared the complete translation against the Japanese source and Microsoft’s official Visual Studio 2022 Windows default keyboard shortcut list. Corrected inaccurate shortcut assignments and checked that the edition is clearly scoped to the Windows General profile.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all 34 listed Windows Visual Studio 2022 commands in the complete Japanese article and each translation with the Microsoft default General profile list; corrected bookmark chords, build, debug, find/replace, line cut, breakpoint, Git, and clipboard descriptions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked command names and distinctions among Visual Studio for Windows, Visual Studio for Mac, and Visual Studio Code in every edition."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code examples or executable configuration."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the Microsoft Learn reference URL and retained the direct official shortcut reference in every edition."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Shortcut assignments can differ with Visual Studio version, keyboard layout, selected profile, and user customization; the article explains how to check the active mapping.",
+        "The review checked the listed commands against Microsoft Learn and did not execute every shortcut in an installed Visual Studio environment."
+      ]
+    },
+    "post/Visual Studio ショートカット一覧/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Visual Studio ショートカット一覧/index.md",
+      "sourceHash": "88eecb0de7309e0c2636bca3e153d7f6ef102f73223145096d0d751072557987",
+      "translationHash": "b6d5248fe488ae40907323507fbed0ba23cce17da30810628fa691990a52bc25",
+      "summary": "Compared the complete translation against the Japanese source and Microsoft’s official Visual Studio 2022 Windows default keyboard shortcut list. Corrected inaccurate shortcut assignments and checked that the edition is clearly scoped to the Windows General profile.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all 34 listed Windows Visual Studio 2022 commands in the complete Japanese article and each translation with the Microsoft default General profile list; corrected bookmark chords, build, debug, find/replace, line cut, breakpoint, Git, and clipboard descriptions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked command names and distinctions among Visual Studio for Windows, Visual Studio for Mac, and Visual Studio Code in every edition."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code examples or executable configuration."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the Microsoft Learn reference URL and retained the direct official shortcut reference in every edition."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Shortcut assignments can differ with Visual Studio version, keyboard layout, selected profile, and user customization; the article explains how to check the active mapping.",
+        "The review checked the listed commands against Microsoft Learn and did not execute every shortcut in an installed Visual Studio environment."
+      ]
+    },
+    "post/Visual Studio ショートカット一覧/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Visual Studio ショートカット一覧/index.md",
+      "sourceHash": "88eecb0de7309e0c2636bca3e153d7f6ef102f73223145096d0d751072557987",
+      "translationHash": "81d97ca2e473e73b0593eb179cac81c17b86f6d0cea86b5ed3a0201e18ad0497",
+      "summary": "Compared the complete translation against the Japanese source and Microsoft’s official Visual Studio 2022 Windows default keyboard shortcut list. Corrected inaccurate shortcut assignments and checked that the edition is clearly scoped to the Windows General profile.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all 34 listed Windows Visual Studio 2022 commands in the complete Japanese article and each translation with the Microsoft default General profile list; corrected bookmark chords, build, debug, find/replace, line cut, breakpoint, Git, and clipboard descriptions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked command names and distinctions among Visual Studio for Windows, Visual Studio for Mac, and Visual Studio Code in every edition."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code examples or executable configuration."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the Microsoft Learn reference URL and retained the direct official shortcut reference in every edition."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Shortcut assignments can differ with Visual Studio version, keyboard layout, selected profile, and user customization; the article explains how to check the active mapping.",
+        "The review checked the listed commands against Microsoft Learn and did not execute every shortcut in an installed Visual Studio environment."
+      ]
+    },
+    "post/Visual Studio ショートカット一覧/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Visual Studio ショートカット一覧/index.md",
+      "sourceHash": "88eecb0de7309e0c2636bca3e153d7f6ef102f73223145096d0d751072557987",
+      "translationHash": "07e2b9076dbf9539cf1b1205b1a489321b6cc5b8b12289c4b0db8ad7198272e4",
+      "summary": "Compared the complete translation against the Japanese source and Microsoft’s official Visual Studio 2022 Windows default keyboard shortcut list. Corrected inaccurate shortcut assignments and checked that the edition is clearly scoped to the Windows General profile.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all 34 listed Windows Visual Studio 2022 commands in the complete Japanese article and each translation with the Microsoft default General profile list; corrected bookmark chords, build, debug, find/replace, line cut, breakpoint, Git, and clipboard descriptions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked command names and distinctions among Visual Studio for Windows, Visual Studio for Mac, and Visual Studio Code in every edition."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code examples or executable configuration."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the Microsoft Learn reference URL and retained the direct official shortcut reference in every edition."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Shortcut assignments can differ with Visual Studio version, keyboard layout, selected profile, and user customization; the article explains how to check the active mapping.",
+        "The review checked the listed commands against Microsoft Learn and did not execute every shortcut in an installed Visual Studio environment."
+      ]
+    },
+    "post/Visual Studio ショートカット一覧/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Visual Studio ショートカット一覧/index.md",
+      "sourceHash": "88eecb0de7309e0c2636bca3e153d7f6ef102f73223145096d0d751072557987",
+      "translationHash": "16984f91f6886b8d2bc69a5b64432db75570cae5557118cffa4a1f0191e61231",
+      "summary": "Compared the complete translation against the Japanese source and Microsoft’s official Visual Studio 2022 Windows default keyboard shortcut list. Corrected inaccurate shortcut assignments and checked that the edition is clearly scoped to the Windows General profile.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all 34 listed Windows Visual Studio 2022 commands in the complete Japanese article and each translation with the Microsoft default General profile list; corrected bookmark chords, build, debug, find/replace, line cut, breakpoint, Git, and clipboard descriptions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked command names and distinctions among Visual Studio for Windows, Visual Studio for Mac, and Visual Studio Code in every edition."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code examples or executable configuration."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the Microsoft Learn reference URL and retained the direct official shortcut reference in every edition."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Shortcut assignments can differ with Visual Studio version, keyboard layout, selected profile, and user customization; the article explains how to check the active mapping.",
+        "The review checked the listed commands against Microsoft Learn and did not execute every shortcut in an installed Visual Studio environment."
+      ]
+    },
+    "post/Visual Studio ショートカット一覧/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Visual Studio ショートカット一覧/index.md",
+      "sourceHash": "88eecb0de7309e0c2636bca3e153d7f6ef102f73223145096d0d751072557987",
+      "translationHash": "3565d14297c5f9fa81436e08218d567a31c4355c4355809a63140edf360fc378",
+      "summary": "Compared the complete translation against the Japanese source and Microsoft’s official Visual Studio 2022 Windows default keyboard shortcut list. Corrected inaccurate shortcut assignments and checked that the edition is clearly scoped to the Windows General profile.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all 34 listed Windows Visual Studio 2022 commands in the complete Japanese article and each translation with the Microsoft default General profile list; corrected bookmark chords, build, debug, find/replace, line cut, breakpoint, Git, and clipboard descriptions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked command names and distinctions among Visual Studio for Windows, Visual Studio for Mac, and Visual Studio Code in every edition."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code examples or executable configuration."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the Microsoft Learn reference URL and retained the direct official shortcut reference in every edition."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Shortcut assignments can differ with Visual Studio version, keyboard layout, selected profile, and user customization; the article explains how to check the active mapping.",
+        "The review checked the listed commands against Microsoft Learn and did not execute every shortcut in an installed Visual Studio environment."
+      ]
+    },
+    "post/Visual Studio ショートカット一覧/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Visual Studio ショートカット一覧/index.md",
+      "sourceHash": "88eecb0de7309e0c2636bca3e153d7f6ef102f73223145096d0d751072557987",
+      "translationHash": "07c43677522e33a842cbb84d9442e9b1a0ce574b77da596bfc0806e5e700c7ac",
+      "summary": "Compared the complete translation against the Japanese source and Microsoft’s official Visual Studio 2022 Windows default keyboard shortcut list. Corrected inaccurate shortcut assignments and checked that the edition is clearly scoped to the Windows General profile.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all 34 listed Windows Visual Studio 2022 commands in the complete Japanese article and each translation with the Microsoft default General profile list; corrected bookmark chords, build, debug, find/replace, line cut, breakpoint, Git, and clipboard descriptions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked command names and distinctions among Visual Studio for Windows, Visual Studio for Mac, and Visual Studio Code in every edition."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code examples or executable configuration."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the Microsoft Learn reference URL and retained the direct official shortcut reference in every edition."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Shortcut assignments can differ with Visual Studio version, keyboard layout, selected profile, and user customization; the article explains how to check the active mapping.",
+        "The review checked the listed commands against Microsoft Learn and did not execute every shortcut in an installed Visual Studio environment."
+      ]
+    },
+    "post/Visual Studio ショートカット一覧/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Visual Studio ショートカット一覧/index.md",
+      "sourceHash": "88eecb0de7309e0c2636bca3e153d7f6ef102f73223145096d0d751072557987",
+      "translationHash": "d601001d28c996151d64e1533a5520514fe8379f8b5e2d5c5c916a1d50345f2a",
+      "summary": "Compared the complete translation against the Japanese source and Microsoft’s official Visual Studio 2022 Windows default keyboard shortcut list. Corrected inaccurate shortcut assignments and checked that the edition is clearly scoped to the Windows General profile.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all 34 listed Windows Visual Studio 2022 commands in the complete Japanese article and each translation with the Microsoft default General profile list; corrected bookmark chords, build, debug, find/replace, line cut, breakpoint, Git, and clipboard descriptions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked command names and distinctions among Visual Studio for Windows, Visual Studio for Mac, and Visual Studio Code in every edition."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code examples or executable configuration."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the Microsoft Learn reference URL and retained the direct official shortcut reference in every edition."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Shortcut assignments can differ with Visual Studio version, keyboard layout, selected profile, and user customization; the article explains how to check the active mapping.",
+        "The review checked the listed commands against Microsoft Learn and did not execute every shortcut in an installed Visual Studio environment."
+      ]
+    },
+    "post/Visual Studio ショートカット一覧/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Visual Studio ショートカット一覧/index.md",
+      "sourceHash": "88eecb0de7309e0c2636bca3e153d7f6ef102f73223145096d0d751072557987",
+      "translationHash": "edad9c22a6801caa9f66aa9e07a11db1ead7df7fcc71662d3eddc4a5ef78fd0e",
+      "summary": "Compared the complete translation against the Japanese source and Microsoft’s official Visual Studio 2022 Windows default keyboard shortcut list. Corrected inaccurate shortcut assignments and checked that the edition is clearly scoped to the Windows General profile.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all 34 listed Windows Visual Studio 2022 commands in the complete Japanese article and each translation with the Microsoft default General profile list; corrected bookmark chords, build, debug, find/replace, line cut, breakpoint, Git, and clipboard descriptions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked command names and distinctions among Visual Studio for Windows, Visual Studio for Mac, and Visual Studio Code in every edition."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code examples or executable configuration."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the Microsoft Learn reference URL and retained the direct official shortcut reference in every edition."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Shortcut assignments can differ with Visual Studio version, keyboard layout, selected profile, and user customization; the article explains how to check the active mapping.",
+        "The review checked the listed commands against Microsoft Learn and did not execute every shortcut in an installed Visual Studio environment."
+      ]
+    },
+    "post/Visual Studio ショートカット一覧/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Visual Studio ショートカット一覧/index.md",
+      "sourceHash": "88eecb0de7309e0c2636bca3e153d7f6ef102f73223145096d0d751072557987",
+      "translationHash": "941be2b51416e09fbe8f977239935517d98c1e6a4283f6327033fb2c78064a63",
+      "summary": "Compared the complete translation against the Japanese source and Microsoft’s official Visual Studio 2022 Windows default keyboard shortcut list. Corrected inaccurate shortcut assignments and checked that the edition is clearly scoped to the Windows General profile.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all 34 listed Windows Visual Studio 2022 commands in the complete Japanese article and each translation with the Microsoft default General profile list; corrected bookmark chords, build, debug, find/replace, line cut, breakpoint, Git, and clipboard descriptions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked command names and distinctions among Visual Studio for Windows, Visual Studio for Mac, and Visual Studio Code in every edition."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code examples or executable configuration."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the Microsoft Learn reference URL and retained the direct official shortcut reference in every edition."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Shortcut assignments can differ with Visual Studio version, keyboard layout, selected profile, and user customization; the article explains how to check the active mapping.",
+        "The review checked the listed commands against Microsoft Learn and did not execute every shortcut in an installed Visual Studio environment."
+      ]
+    },
+    "post/Visual Studio ショートカット一覧/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Visual Studio ショートカット一覧/index.md",
+      "sourceHash": "88eecb0de7309e0c2636bca3e153d7f6ef102f73223145096d0d751072557987",
+      "translationHash": "74a5a38b7dad28770e5a79e7184e475c03da2e368e1c16a00d5d3d2d09d1d75f",
+      "summary": "Compared the complete translation against the Japanese source and Microsoft’s official Visual Studio 2022 Windows default keyboard shortcut list. Corrected inaccurate shortcut assignments and checked that the edition is clearly scoped to the Windows General profile.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all 34 listed Windows Visual Studio 2022 commands in the complete Japanese article and each translation with the Microsoft default General profile list; corrected bookmark chords, build, debug, find/replace, line cut, breakpoint, Git, and clipboard descriptions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked command names and distinctions among Visual Studio for Windows, Visual Studio for Mac, and Visual Studio Code in every edition."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code examples or executable configuration."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the Microsoft Learn reference URL and retained the direct official shortcut reference in every edition."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Shortcut assignments can differ with Visual Studio version, keyboard layout, selected profile, and user customization; the article explains how to check the active mapping.",
+        "The review checked the listed commands against Microsoft Learn and did not execute every shortcut in an installed Visual Studio environment."
+      ]
+    }
+  }
+}

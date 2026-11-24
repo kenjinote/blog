@@ -1,60 +1,107 @@
 ---
-title: 'Liste des raccourcis clavier utiles pour Visual Studio [Amélioration de l''efficacité]'
-date: "2026-09-24T19:44:38+09:00"
-slug: "Visual Studio Raccourci一覧"
-date: 2024-04-06T11:27:37+09:00
-tags: [ "Visual Studio", "Raccourcis" ]
+title: "Raccourcis clavier de Visual Studio 2022 [Windows]"
+date: "2024-04-06T11:27:37+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
+slug: "Visual Studio ショートカット一覧"
+tags: ["Visual Studio", "ショートカット"]
 draft: false
 image: "img.webp"
 categories: ["tools-development-environment"]
-description: 'Compile une liste de raccourcis clavier pratiques pour Visual Studio (VS2022) qui améliorent considérablement l''efficacité du développement. Présente une sélection stricte des raccourcis indispensables souvent utilisés pendant la programmation, comme le débogage, la compilation et les manipulations de signets.'
+description: "Raccourcis courants de Visual Studio 2022 sous Windows avec le profil General : compilation, débogage, édition, recherche et navigation."
 ---
 
-# Liste des raccourcis de Visual Studio
+# Raccourcis clavier de Visual Studio 2022
 
-J'ai fait une liste des raccourcis de Visual Studio que j'utilise fréquemment personnellement.
-En mémorisant les raccourcis clavier de Visual Studio, vous pouvez effectuer des tâches de développement plus efficacement. N'hésitez pas à les utiliser.
+Cette liste utilise le profil **General** par défaut de Visual Studio 2022 pour Windows. Ces raccourcis diffèrent de ceux de Visual Studio pour Mac et de Visual Studio Code. La disposition du clavier, le profil sélectionné et les personnalisations peuvent les modifier.
 
-※Vérifié sur Visual Studio 2022.
+Nous avons comparé l’ancienne liste aux paramètres par défaut officiels de Microsoft et corrigé les raccourcis inexacts pour les signets, la compilation, la recherche et le remplacement.
 
-| Touche de raccourci | Description |
-|-----------------------------|--------------------------|
-| `F1` | Afficher l'aide pour le mot sélectionné |
-| `F2` | Accéder au signet |
-| `Ctrl` + `F2` | Ajouter un signet |
-| `Ctrl` + `Shift` + `F2` | Supprimer tous les signets |
-| `F5` | Générer et exécuter (avec débogage) |
-| `Ctrl` + `F5` | Générer et exécuter (sans débogage) |
-| `F7` | Générer |
-| `F9` | Ajouter un point d'arrêt à la ligne du curseur |
-| `Ctrl` + `F9` | Désactiver le point d'arrêt sur la ligne du curseur |
-| `Shift` + `Ctrl` + `F9` | Supprimer tous les points d'arrêt |
-| `F10` | Pas à pas principal (Step over) |
-| `F11` | Pas à pas détaillé (Step in) |
-| `F12` | Accéder à la définition |
-| `Ctrl` + `D` | Dupliquer la ligne du curseur |
-| `Ctrl` + `X` | Couper la ligne (sans sélection) |
-| `Ctrl` + `Shift` + `]` | Sélectionner jusqu'à la parenthèse/accolade correspondante |
-| `Alt` + `Flèches haut/bas` | Déplacer la ligne du curseur vers le haut ou vers le bas |
-| `Alt` + `Shift` + `Flèches` | Multi-curseur/Sélection de bloc |
-| `Ctrl` + `Tab` | Basculer la vue code source/fenêtre |
-| `Ctrl` + `Shift` + `V` | Afficher l'historique du presse-papiers |
-| `Ctrl` + `K` puis `Ctrl` + `C` | Commenter la ligne du curseur |
-| `Ctrl` + `K` puis `Ctrl` + `U` | Décommenter la ligne du curseur |
-| `Ctrl` + `G` | Accéder au numéro de ligne spécifié |
-| `Ctrl` + `F` | Rechercher |
-| `Ctrl` + `Shift` + `F` | Recherche globale |
-| `Ctrl` + `H` | Remplacer |
-| `Ctrl` + `Shift` + `F` | Remplacement global |
-| `Ctrl` + `Tab` | Basculer la vue code source/fenêtre |
-| `Ctrl` + `Space` | Autocomplétion de mots |
-| `Ctrl` + `Alt` + `L` | Ouvrir la fenêtre de l'Explorateur de solutions |
-| `Ctrl` + `Shift` + `E` | Ouvrir la fenêtre de l'Affichage des ressources |
-| `Ctrl` + `0` puis `Ctrl` + `G` | Ouvrir la fenêtre de validation Git |
+## Aide
 
-## Référence
+| Shortcut | Command |
+|---|---|
+| `F1` | Ouvrir l’aide |
 
-- [Raccourcis clavier par défaut dans Visual Studio](https://learn.microsoft.com/ja-jp/visualstudio/ide/default-keyboard-shortcuts-in-visual-studio?view=vs-2022&utm_source=vshelp&wt.mc_id=visualstudio_inproduct_shortcuts_csaapp)
+## Compilation et débogage
 
-![img_1.png](img_1.webp)
+| Shortcut | Command |
+|---|---|
+| `Ctrl+Shift+B` | Générer la solution |
+| `F5` | Démarrer/poursuivre le débogage |
+| `Ctrl+F5` | Démarrer sans débogage |
+| `F9` | Activer/désactiver un point d’arrêt |
+| `Ctrl+F9` | Activer un point d’arrêt |
+| `Ctrl+Shift+F9` | Supprimer tous les points d’arrêt |
+| `F10` | Pas à pas principal |
+| `F11` | Pas à pas détaillé |
+| `Shift+F11` | Sortir de la fonction |
 
+## Navigation dans le code
+
+| Shortcut | Command |
+|---|---|
+| `F12` | Atteindre la définition |
+
+## Édition et navigation
+
+| Shortcut | Command |
+|---|---|
+| `Ctrl+K, then Ctrl+C` | Commenter la sélection |
+| `Ctrl+K, then Ctrl+U` | Décommenter la sélection |
+
+## Rechercher et remplacer
+
+| Shortcut | Command |
+|---|---|
+| `Ctrl+F` | Rechercher |
+| `Ctrl+H` | Remplacer |
+| `Ctrl+Shift+F` | Rechercher dans les fichiers |
+| `Ctrl+Shift+H` | Remplacer dans les fichiers |
+
+## Navigation par ligne
+
+| Shortcut | Command |
+|---|---|
+| `Ctrl+G` | Atteindre la ligne |
+
+## Édition et navigation
+
+| Shortcut | Command |
+|---|---|
+| `Ctrl+L` | Couper la ligne actuelle |
+| `Ctrl+D` | Dupliquer |
+| `Ctrl+Shift+V` | Parcourir l’historique du presse-papiers |
+
+## Navigation dans le code
+
+| Shortcut | Command |
+|---|---|
+| `Ctrl+]` | Atteindre l’accolade correspondante |
+| `Ctrl+Shift+]` | Étendre la sélection jusqu’à l’accolade correspondante |
+| `Alt+Up/Down Arrow` | Déplacer les lignes sélectionnées vers le haut/bas |
+| `Shift+Alt+Up/Down Arrow` | Étendre la sélection en colonne vers le haut/bas |
+
+## Fenêtres d’outils et Git
+
+| Shortcut | Command |
+|---|---|
+| `Ctrl+Tab` | Fenêtre de document suivante |
+| `Ctrl+Alt+L` | Ouvrir l’Explorateur de solutions |
+| `Ctrl+Shift+E` | Ouvrir l’Affichage des ressources |
+| `Ctrl+0, then Ctrl+G` | Accéder à Git Changes |
+| `Ctrl+0, then Ctrl+O` | Accéder à Git Commits |
+
+## Signets
+
+| Shortcut | Command |
+|---|---|
+| `Ctrl+K, then Ctrl+K` | Activer/désactiver un signet |
+| `Ctrl+K, then Ctrl+N` | Signet suivant |
+| `Ctrl+K, then Ctrl+P` | Signet précédent |
+| `Ctrl+K, then Ctrl+L` | Effacer tous les signets |
+
+## Consulter ou modifier un raccourci
+
+Dans Visual Studio, ouvrez **Tools > Options > Environment > Keyboard**, puis recherchez une commande pour voir son raccourci dans le profil actuel. Pour les raccourcis séquentiels, appuyez sur les touches dans l’ordre, en marquant une courte pause entre les séquences. La disposition du clavier et la langue peuvent modifier les libellés des touches.
+
+- [Keyboard shortcuts in Visual Studio (Windows)](https://learn.microsoft.com/en-us/visualstudio/ide/default-keyboard-shortcuts-in-visual-studio?view=vs-2022)
