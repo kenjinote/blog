@@ -18245,6 +18245,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-156.json",
       "evidenceHash": "e1e394753804c96ca184da0fb73e4fdc3c61feabc369d057d4ac9c85ea7aa104"
+    },
+    "post/Windows 11の右クリックメニューを従来版に戻す方法/index.en.md": {
+      "source": "post/Windows 11の右クリックメニューを従来版に戻す方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b4ab7e13afa0c333154594c5e7b89b7253057ee3d10364d0e0263445487f8bc8",
+      "translationHash": "f947bd8b28b0741361ccfa5df7ef1f6b14641a5af26097c6ee442087e297d650",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-157.json",
+      "evidenceHash": "79a6176d0c7693d44444a12a900b67ef59ec1a35dbd63ce7b6dad48fc8edd8cc"
+    },
+    "post/Windows 11の右クリックメニューを従来版に戻す方法/index.zh-cn.md": {
+      "source": "post/Windows 11の右クリックメニューを従来版に戻す方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b4ab7e13afa0c333154594c5e7b89b7253057ee3d10364d0e0263445487f8bc8",
+      "translationHash": "d42905b3d4f6eeb7e551e37d5d91aed2bb04d5a0b176e64f0904a6df43dd33f8",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-157.json",
+      "evidenceHash": "21121de19a3ddb5553675dbe59e5c81890ec8d71a8400a968136b61a02ebf636"
+    },
+    "post/Windows 11の右クリックメニューを従来版に戻す方法/index.es.md": {
+      "source": "post/Windows 11の右クリックメニューを従来版に戻す方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b4ab7e13afa0c333154594c5e7b89b7253057ee3d10364d0e0263445487f8bc8",
+      "translationHash": "534939e9d1d8035e399b2be1b03dbec904052d7018f625a8273f056ac83b742e",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-157.json",
+      "evidenceHash": "83a7cb2ff078bc8e094fab2914d9ea1814dd61c96fb6c314cdac0347802091d0"
+    },
+    "post/Windows 11の右クリックメニューを従来版に戻す方法/index.ko.md": {
+      "source": "post/Windows 11の右クリックメニューを従来版に戻す方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b4ab7e13afa0c333154594c5e7b89b7253057ee3d10364d0e0263445487f8bc8",
+      "translationHash": "6af806864ec1e6c36097f41b4057af275748ef6ae4937740e62e1525ce387276",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-157.json",
+      "evidenceHash": "3c44cb1c1b880649392a0fd3111b74c702b797afd1260021c44a496956481625"
+    },
+    "post/Windows 11の右クリックメニューを従来版に戻す方法/index.pt.md": {
+      "source": "post/Windows 11の右クリックメニューを従来版に戻す方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b4ab7e13afa0c333154594c5e7b89b7253057ee3d10364d0e0263445487f8bc8",
+      "translationHash": "ef55b6663d863b48c49a16d17cc1544440fc9828472ab25d5429925bf0d7897f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-157.json",
+      "evidenceHash": "64295f605e6143530f760dacea2466a046fddd19576e6d1cd0d6dcf67fd394c5"
+    },
+    "post/Windows 11の右クリックメニューを従来版に戻す方法/index.zh-tw.md": {
+      "source": "post/Windows 11の右クリックメニューを従来版に戻す方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b4ab7e13afa0c333154594c5e7b89b7253057ee3d10364d0e0263445487f8bc8",
+      "translationHash": "dba0f9feb8bc8b14cbeab6447825b21aae645d315d6696ec888b2cc1f0deed15",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-157.json",
+      "evidenceHash": "2901851e4b46e66882171f50391c6715740ff726224d23ef353f19674e66cdf2"
+    },
+    "post/Windows 11の右クリックメニューを従来版に戻す方法/index.hi.md": {
+      "source": "post/Windows 11の右クリックメニューを従来版に戻す方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b4ab7e13afa0c333154594c5e7b89b7253057ee3d10364d0e0263445487f8bc8",
+      "translationHash": "91730647d23077f0294ec0c22e8a6260cf37a82a8385a2489897b34f83684e5e",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-157.json",
+      "evidenceHash": "817dea5bc424f70d0766c22cdcad960f90788d781c9f6e2cbbc735c50ecd7251"
+    },
+    "post/Windows 11の右クリックメニューを従来版に戻す方法/index.fr.md": {
+      "source": "post/Windows 11の右クリックメニューを従来版に戻す方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b4ab7e13afa0c333154594c5e7b89b7253057ee3d10364d0e0263445487f8bc8",
+      "translationHash": "70ed0f02dc31ada89675c2d7d49d832cdc7ea4645a89fdf06fdfbaf8158af247",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-157.json",
+      "evidenceHash": "a1ca777ad243b5ecf1e09948077bdadd7ea26797d7a146caf59944f2ca53ac37"
+    },
+    "post/Windows 11の右クリックメニューを従来版に戻す方法/index.de.md": {
+      "source": "post/Windows 11の右クリックメニューを従来版に戻す方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b4ab7e13afa0c333154594c5e7b89b7253057ee3d10364d0e0263445487f8bc8",
+      "translationHash": "4f8b72df259decdaa683dd3fb0265968006acaadd6d7c2d59a449bc9c063cc10",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-157.json",
+      "evidenceHash": "1973fc7e1a118c6eb2cf6c271f559f6cc35b2980731175c2562203db427c3af6"
+    },
+    "post/Windows 11の右クリックメニューを従来版に戻す方法/index.ar.md": {
+      "source": "post/Windows 11の右クリックメニューを従来版に戻す方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b4ab7e13afa0c333154594c5e7b89b7253057ee3d10364d0e0263445487f8bc8",
+      "translationHash": "6ea79f622a01b50cc1fdc6c1af07d61be18ccd45c905b595158cb6e041754206",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-157.json",
+      "evidenceHash": "a918195e5aa72799ae5ac042cd23d6eb71413b922b60fe94df0d3f9e6b2198ab"
+    },
+    "post/Windows 11の右クリックメニューを従来版に戻す方法/index.ru.md": {
+      "source": "post/Windows 11の右クリックメニューを従来版に戻す方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b4ab7e13afa0c333154594c5e7b89b7253057ee3d10364d0e0263445487f8bc8",
+      "translationHash": "0b87736daf30d22024bff615a6623397d057a7a3313b1f322efff72ef894a616",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-157.json",
+      "evidenceHash": "302573679c2e5d7ff7d8dfcc620a01b8f5c120aadecc731ae85bc64fc8bf5d25"
+    },
+    "post/Windows 11の右クリックメニューを従来版に戻す方法/index.id.md": {
+      "source": "post/Windows 11の右クリックメニューを従来版に戻す方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b4ab7e13afa0c333154594c5e7b89b7253057ee3d10364d0e0263445487f8bc8",
+      "translationHash": "aa18f2568aea2dfc2b5c43c707267949b576f0c2b9a8122581c72b97a9c10da0",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-157.json",
+      "evidenceHash": "74363d7e6c465cb453f763dcc886762f2026952cf0c0639a17c43951ca2da8b8"
     }
   }
 }

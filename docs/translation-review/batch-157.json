@@ -1,0 +1,441 @@
+{
+  "version": 1,
+  "batch": 157,
+  "article": "Open the Classic Context Menu in Windows 11",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "b4ab7e13afa0c333154594c5e7b89b7253057ee3d10364d0e0263445487f8bc8",
+  "sources": [
+    "https://support.microsoft.com/en-us/windows/experience/fileexplorer/file-explorer-in-windows",
+    "https://support.microsoft.com/en-us/accessibility/windows/keyboard-shortcuts-in-windows"
+  ],
+  "scope": "Compared the full Japanese source and all twelve translations, registry instructions and rollback, Windows 11 current built-in options, dates, screenshots, and Microsoft Support references.",
+  "findings": [
+    "Removed duplicate future dates; retained publication date 2024-03-30 and set lastmod to 2026-11-24.",
+    "Fixed the missing step number and clarified the nested InprocServer32 key and rollback.",
+    "Added Microsoft-documented Show more options and keyboard methods as the preferred way to open the classic menu.",
+    "Qualified the registry change as an unofficial, version-dependent workaround rather than promising that it always restores the classic menu."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/Windows 11の右クリックメニューを従来版に戻す方法/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Windows 11の右クリックメニューを従来版に戻す方法/index.md",
+      "sourceHash": "b4ab7e13afa0c333154594c5e7b89b7253057ee3d10364d0e0263445487f8bc8",
+      "translationHash": "f947bd8b28b0741361ccfa5df7ef1f6b14641a5af26097c6ee442087e297d650",
+      "summary": "Compared the full Japanese source with this translation and current Microsoft Support guidance. Corrected the skipped list number, clarified supported built-in menu access, and disclosed the registry method’s unofficial, version-dependent status.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the entire source and each translation for the two ways to reveal the classic menu, the registry workaround, restart and rollback instructions, and their scope."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Windows 11 context menu labels, Registry Editor, CLSID, InprocServer32, default value, and keyboard shortcut terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified the full HKCU CLSID and InprocServer32 registry paths, the empty default value instruction, the step order, and the rollback key. The registry technique is disclosed as unofficial and version-dependent."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked current Microsoft Support references for File Explorer context menus and Windows keyboard shortcuts; checked both local screenshots."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The CLSID registry workaround is not documented in the linked Microsoft Support instructions and was not tested on every Windows release; behavior can vary. Back up the registry before editing."
+      ]
+    },
+    "post/Windows 11の右クリックメニューを従来版に戻す方法/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Windows 11の右クリックメニューを従来版に戻す方法/index.md",
+      "sourceHash": "b4ab7e13afa0c333154594c5e7b89b7253057ee3d10364d0e0263445487f8bc8",
+      "translationHash": "d42905b3d4f6eeb7e551e37d5d91aed2bb04d5a0b176e64f0904a6df43dd33f8",
+      "summary": "Compared the full Japanese source with this translation and current Microsoft Support guidance. Corrected the skipped list number, clarified supported built-in menu access, and disclosed the registry method’s unofficial, version-dependent status.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the entire source and each translation for the two ways to reveal the classic menu, the registry workaround, restart and rollback instructions, and their scope."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Windows 11 context menu labels, Registry Editor, CLSID, InprocServer32, default value, and keyboard shortcut terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified the full HKCU CLSID and InprocServer32 registry paths, the empty default value instruction, the step order, and the rollback key. The registry technique is disclosed as unofficial and version-dependent."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked current Microsoft Support references for File Explorer context menus and Windows keyboard shortcuts; checked both local screenshots."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The CLSID registry workaround is not documented in the linked Microsoft Support instructions and was not tested on every Windows release; behavior can vary. Back up the registry before editing."
+      ]
+    },
+    "post/Windows 11の右クリックメニューを従来版に戻す方法/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Windows 11の右クリックメニューを従来版に戻す方法/index.md",
+      "sourceHash": "b4ab7e13afa0c333154594c5e7b89b7253057ee3d10364d0e0263445487f8bc8",
+      "translationHash": "534939e9d1d8035e399b2be1b03dbec904052d7018f625a8273f056ac83b742e",
+      "summary": "Compared the full Japanese source with this translation and current Microsoft Support guidance. Corrected the skipped list number, clarified supported built-in menu access, and disclosed the registry method’s unofficial, version-dependent status.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the entire source and each translation for the two ways to reveal the classic menu, the registry workaround, restart and rollback instructions, and their scope."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Windows 11 context menu labels, Registry Editor, CLSID, InprocServer32, default value, and keyboard shortcut terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified the full HKCU CLSID and InprocServer32 registry paths, the empty default value instruction, the step order, and the rollback key. The registry technique is disclosed as unofficial and version-dependent."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked current Microsoft Support references for File Explorer context menus and Windows keyboard shortcuts; checked both local screenshots."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The CLSID registry workaround is not documented in the linked Microsoft Support instructions and was not tested on every Windows release; behavior can vary. Back up the registry before editing."
+      ]
+    },
+    "post/Windows 11の右クリックメニューを従来版に戻す方法/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Windows 11の右クリックメニューを従来版に戻す方法/index.md",
+      "sourceHash": "b4ab7e13afa0c333154594c5e7b89b7253057ee3d10364d0e0263445487f8bc8",
+      "translationHash": "6af806864ec1e6c36097f41b4057af275748ef6ae4937740e62e1525ce387276",
+      "summary": "Compared the full Japanese source with this translation and current Microsoft Support guidance. Corrected the skipped list number, clarified supported built-in menu access, and disclosed the registry method’s unofficial, version-dependent status.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the entire source and each translation for the two ways to reveal the classic menu, the registry workaround, restart and rollback instructions, and their scope."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Windows 11 context menu labels, Registry Editor, CLSID, InprocServer32, default value, and keyboard shortcut terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified the full HKCU CLSID and InprocServer32 registry paths, the empty default value instruction, the step order, and the rollback key. The registry technique is disclosed as unofficial and version-dependent."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked current Microsoft Support references for File Explorer context menus and Windows keyboard shortcuts; checked both local screenshots."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The CLSID registry workaround is not documented in the linked Microsoft Support instructions and was not tested on every Windows release; behavior can vary. Back up the registry before editing."
+      ]
+    },
+    "post/Windows 11の右クリックメニューを従来版に戻す方法/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Windows 11の右クリックメニューを従来版に戻す方法/index.md",
+      "sourceHash": "b4ab7e13afa0c333154594c5e7b89b7253057ee3d10364d0e0263445487f8bc8",
+      "translationHash": "ef55b6663d863b48c49a16d17cc1544440fc9828472ab25d5429925bf0d7897f",
+      "summary": "Compared the full Japanese source with this translation and current Microsoft Support guidance. Corrected the skipped list number, clarified supported built-in menu access, and disclosed the registry method’s unofficial, version-dependent status.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the entire source and each translation for the two ways to reveal the classic menu, the registry workaround, restart and rollback instructions, and their scope."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Windows 11 context menu labels, Registry Editor, CLSID, InprocServer32, default value, and keyboard shortcut terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified the full HKCU CLSID and InprocServer32 registry paths, the empty default value instruction, the step order, and the rollback key. The registry technique is disclosed as unofficial and version-dependent."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked current Microsoft Support references for File Explorer context menus and Windows keyboard shortcuts; checked both local screenshots."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The CLSID registry workaround is not documented in the linked Microsoft Support instructions and was not tested on every Windows release; behavior can vary. Back up the registry before editing."
+      ]
+    },
+    "post/Windows 11の右クリックメニューを従来版に戻す方法/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Windows 11の右クリックメニューを従来版に戻す方法/index.md",
+      "sourceHash": "b4ab7e13afa0c333154594c5e7b89b7253057ee3d10364d0e0263445487f8bc8",
+      "translationHash": "dba0f9feb8bc8b14cbeab6447825b21aae645d315d6696ec888b2cc1f0deed15",
+      "summary": "Compared the full Japanese source with this translation and current Microsoft Support guidance. Corrected the skipped list number, clarified supported built-in menu access, and disclosed the registry method’s unofficial, version-dependent status.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the entire source and each translation for the two ways to reveal the classic menu, the registry workaround, restart and rollback instructions, and their scope."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Windows 11 context menu labels, Registry Editor, CLSID, InprocServer32, default value, and keyboard shortcut terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified the full HKCU CLSID and InprocServer32 registry paths, the empty default value instruction, the step order, and the rollback key. The registry technique is disclosed as unofficial and version-dependent."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked current Microsoft Support references for File Explorer context menus and Windows keyboard shortcuts; checked both local screenshots."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The CLSID registry workaround is not documented in the linked Microsoft Support instructions and was not tested on every Windows release; behavior can vary. Back up the registry before editing."
+      ]
+    },
+    "post/Windows 11の右クリックメニューを従来版に戻す方法/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Windows 11の右クリックメニューを従来版に戻す方法/index.md",
+      "sourceHash": "b4ab7e13afa0c333154594c5e7b89b7253057ee3d10364d0e0263445487f8bc8",
+      "translationHash": "91730647d23077f0294ec0c22e8a6260cf37a82a8385a2489897b34f83684e5e",
+      "summary": "Compared the full Japanese source with this translation and current Microsoft Support guidance. Corrected the skipped list number, clarified supported built-in menu access, and disclosed the registry method’s unofficial, version-dependent status.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the entire source and each translation for the two ways to reveal the classic menu, the registry workaround, restart and rollback instructions, and their scope."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Windows 11 context menu labels, Registry Editor, CLSID, InprocServer32, default value, and keyboard shortcut terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified the full HKCU CLSID and InprocServer32 registry paths, the empty default value instruction, the step order, and the rollback key. The registry technique is disclosed as unofficial and version-dependent."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked current Microsoft Support references for File Explorer context menus and Windows keyboard shortcuts; checked both local screenshots."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The CLSID registry workaround is not documented in the linked Microsoft Support instructions and was not tested on every Windows release; behavior can vary. Back up the registry before editing."
+      ]
+    },
+    "post/Windows 11の右クリックメニューを従来版に戻す方法/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Windows 11の右クリックメニューを従来版に戻す方法/index.md",
+      "sourceHash": "b4ab7e13afa0c333154594c5e7b89b7253057ee3d10364d0e0263445487f8bc8",
+      "translationHash": "70ed0f02dc31ada89675c2d7d49d832cdc7ea4645a89fdf06fdfbaf8158af247",
+      "summary": "Compared the full Japanese source with this translation and current Microsoft Support guidance. Corrected the skipped list number, clarified supported built-in menu access, and disclosed the registry method’s unofficial, version-dependent status.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the entire source and each translation for the two ways to reveal the classic menu, the registry workaround, restart and rollback instructions, and their scope."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Windows 11 context menu labels, Registry Editor, CLSID, InprocServer32, default value, and keyboard shortcut terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified the full HKCU CLSID and InprocServer32 registry paths, the empty default value instruction, the step order, and the rollback key. The registry technique is disclosed as unofficial and version-dependent."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked current Microsoft Support references for File Explorer context menus and Windows keyboard shortcuts; checked both local screenshots."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The CLSID registry workaround is not documented in the linked Microsoft Support instructions and was not tested on every Windows release; behavior can vary. Back up the registry before editing."
+      ]
+    },
+    "post/Windows 11の右クリックメニューを従来版に戻す方法/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Windows 11の右クリックメニューを従来版に戻す方法/index.md",
+      "sourceHash": "b4ab7e13afa0c333154594c5e7b89b7253057ee3d10364d0e0263445487f8bc8",
+      "translationHash": "4f8b72df259decdaa683dd3fb0265968006acaadd6d7c2d59a449bc9c063cc10",
+      "summary": "Compared the full Japanese source with this translation and current Microsoft Support guidance. Corrected the skipped list number, clarified supported built-in menu access, and disclosed the registry method’s unofficial, version-dependent status.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the entire source and each translation for the two ways to reveal the classic menu, the registry workaround, restart and rollback instructions, and their scope."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Windows 11 context menu labels, Registry Editor, CLSID, InprocServer32, default value, and keyboard shortcut terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified the full HKCU CLSID and InprocServer32 registry paths, the empty default value instruction, the step order, and the rollback key. The registry technique is disclosed as unofficial and version-dependent."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked current Microsoft Support references for File Explorer context menus and Windows keyboard shortcuts; checked both local screenshots."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The CLSID registry workaround is not documented in the linked Microsoft Support instructions and was not tested on every Windows release; behavior can vary. Back up the registry before editing."
+      ]
+    },
+    "post/Windows 11の右クリックメニューを従来版に戻す方法/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Windows 11の右クリックメニューを従来版に戻す方法/index.md",
+      "sourceHash": "b4ab7e13afa0c333154594c5e7b89b7253057ee3d10364d0e0263445487f8bc8",
+      "translationHash": "6ea79f622a01b50cc1fdc6c1af07d61be18ccd45c905b595158cb6e041754206",
+      "summary": "Compared the full Japanese source with this translation and current Microsoft Support guidance. Corrected the skipped list number, clarified supported built-in menu access, and disclosed the registry method’s unofficial, version-dependent status.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the entire source and each translation for the two ways to reveal the classic menu, the registry workaround, restart and rollback instructions, and their scope."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Windows 11 context menu labels, Registry Editor, CLSID, InprocServer32, default value, and keyboard shortcut terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified the full HKCU CLSID and InprocServer32 registry paths, the empty default value instruction, the step order, and the rollback key. The registry technique is disclosed as unofficial and version-dependent."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked current Microsoft Support references for File Explorer context menus and Windows keyboard shortcuts; checked both local screenshots."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The CLSID registry workaround is not documented in the linked Microsoft Support instructions and was not tested on every Windows release; behavior can vary. Back up the registry before editing."
+      ]
+    },
+    "post/Windows 11の右クリックメニューを従来版に戻す方法/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Windows 11の右クリックメニューを従来版に戻す方法/index.md",
+      "sourceHash": "b4ab7e13afa0c333154594c5e7b89b7253057ee3d10364d0e0263445487f8bc8",
+      "translationHash": "0b87736daf30d22024bff615a6623397d057a7a3313b1f322efff72ef894a616",
+      "summary": "Compared the full Japanese source with this translation and current Microsoft Support guidance. Corrected the skipped list number, clarified supported built-in menu access, and disclosed the registry method’s unofficial, version-dependent status.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the entire source and each translation for the two ways to reveal the classic menu, the registry workaround, restart and rollback instructions, and their scope."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Windows 11 context menu labels, Registry Editor, CLSID, InprocServer32, default value, and keyboard shortcut terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified the full HKCU CLSID and InprocServer32 registry paths, the empty default value instruction, the step order, and the rollback key. The registry technique is disclosed as unofficial and version-dependent."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked current Microsoft Support references for File Explorer context menus and Windows keyboard shortcuts; checked both local screenshots."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The CLSID registry workaround is not documented in the linked Microsoft Support instructions and was not tested on every Windows release; behavior can vary. Back up the registry before editing."
+      ]
+    },
+    "post/Windows 11の右クリックメニューを従来版に戻す方法/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Windows 11の右クリックメニューを従来版に戻す方法/index.md",
+      "sourceHash": "b4ab7e13afa0c333154594c5e7b89b7253057ee3d10364d0e0263445487f8bc8",
+      "translationHash": "aa18f2568aea2dfc2b5c43c707267949b576f0c2b9a8122581c72b97a9c10da0",
+      "summary": "Compared the full Japanese source with this translation and current Microsoft Support guidance. Corrected the skipped list number, clarified supported built-in menu access, and disclosed the registry method’s unofficial, version-dependent status.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the entire source and each translation for the two ways to reveal the classic menu, the registry workaround, restart and rollback instructions, and their scope."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Windows 11 context menu labels, Registry Editor, CLSID, InprocServer32, default value, and keyboard shortcut terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified the full HKCU CLSID and InprocServer32 registry paths, the empty default value instruction, the step order, and the rollback key. The registry technique is disclosed as unofficial and version-dependent."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked current Microsoft Support references for File Explorer context menus and Windows keyboard shortcuts; checked both local screenshots."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The CLSID registry workaround is not documented in the linked Microsoft Support instructions and was not tested on every Windows release; behavior can vary. Back up the registry before editing."
+      ]
+    }
+  }
+}
