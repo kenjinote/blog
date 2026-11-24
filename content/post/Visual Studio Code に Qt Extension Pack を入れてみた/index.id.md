@@ -1,138 +1,79 @@
 ---
-title: 'Membangun Lingkungan Pengembangan Qt di VSCode! Instalasi dan Penggunaan Paket Ekstensi Qt'
-date: "2026-09-24T19:44:38+09:00"
+title: "Memulai Qt di VS Code: Memasang dan Mengonfigurasi Ekstensi Qt"
+date: "2024-09-13T00:53:53+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 slug: "Visual Studio Code に Qt Extension Pack を入れてみた"
-date: 2024-09-13T00:53:53+09:00
 tags: ["Visual Studio Code", "Qt Extension Pack"]
 draft: false
 image: "img_1.webp"
 categories: ["tools-development-environment"]
-description: 'Memperkenalkan prosedur pengenalan ''Paket Ekstensi Qt'', ekstensi untuk mengembangkan aplikasi Qt di VSCode (Visual Studio Code). Disarankan bagi mereka yang ingin membangun lingkungan pengembangan yang ringan sebagai alternatif dari Qt Creator.'
+description: "Pilih paket ekstensi Qt resmi untuk VS Code, lalu konfigurasi Qt SDK, CMake, dan toolchain."
 ---
 
-# Memulai Pengembangan Qt di VSCode: Cara Menginstal Qt Extension Pack
+# Menggunakan Qt dengan VS Code
 
-Halo, saya Kenji.
-Kali ini saya akan memperkenalkan "Cara mengatur lingkungan pengembangan Qt di Visual Studio Code (selanjutnya disebut VSCode)".
+Qt Extension for VS Code resmi memungkinkan Anda mengembangkan aplikasi Qt, termasuk proyek Qt Widgets dan Qt Quick, di VS Code. Paket ekstensi menggabungkan beberapa ekstensi Qt. Isi paket dan fitur yang dijelaskan dalam versi lama artikel ini telah berubah; panduan ini mengikuti dokumentasi Qt terbaru.
 
-Akhir-akhir ini, selain Qt Creator resmi, semakin banyak orang yang ingin mengembangkan aplikasi Qt menggunakan VSCode yang ringan dan sangat dapat diperluas.
-Bagi Anda yang merasa demikian, saya merekomendasikan ** "Qt Extension Pack" **.
-Hanya dengan menginstal paket ekstensi ini, Anda akan mendapatkan semua ekstensi utama terkait Qt sekaligus.
-
----
-
-## Target Pembaca
-
-* Mereka yang ingin mulai mengembangkan aplikasi GUI menggunakan Qt
-* Mereka yang ingin mengembangkan menggunakan VSCode daripada Qt Creator
-* Mereka yang merasa repot mencari ekstensi satu per satu
-
----
+Qt Creator dan VS Code sama-sama merupakan pilihan. Tidak ada yang selalu menggantikan yang lain; pilih sesuai alat yang digunakan dan kebutuhan proyek.
 
 ## Prasyarat
 
-* VSCode sudah terinstal
-  ([Anda dapat mengunduhnya secara gratis dari situs web resmi](https://code.visualstudio.com/))
-* Pustaka inti Qt sudah terinstal ([Situs web resmi Qt](https://www.qt.io/))
+- Visual Studio Code
+- Qt 6 SDK untuk OS dan arsitektur target, termasuk modul dan alat yang diperlukan (seperti Qt Widgets Designer)
+- Untuk pengembangan C++, CMake serta compiler dan toolchain build C++ yang kompatibel
 
----
+Ekstensi tidak memasang Qt SDK atau compiler C++. Pasang Qt, CMake, dan compiler secara terpisah dengan versi yang kompatibel.
 
-## Apa itu Qt Extension Pack?
+## Memasang paket ekstensi
 
-Qt Extension Pack adalah paket ekstensi untuk VSCode.
-Dengan menginstalnya, fitur-fitur berikut akan ditambahkan secara otomatis:
+1. Buka tampilan Extensions di VS Code (ikon di Activity Bar atau `Ctrl+Shift+X`).
+2. Cari `Qt extension packs`.
+3. Pilih paket yang sesuai dengan proyek, lalu tekan Install. Qt C++ ditujukan untuk Qt C++/Qt Quick, Qt Python untuk Qt for Python, dan Qt WebAssembly untuk proyek WebAssembly. Anda juga dapat memasang `Qt Extension Pack` yang berisi semua ekstensi Qt.
 
-* Dukungan file `.ui` (Qt Designer)
-* Sorotan sintaks untuk file `.pro` dan file `.qrc`
-* Penyelesaian kode C++ untuk Qt, pembuatan, dan dukungan debugging
-* Qt Resource Browser (referensi sumber daya)
+Pemasangan paket Qt juga memasang `CMake For VisualStudio Code` dan `CMake Tools` secara otomatis. CMake, compiler, dan Qt SDK tetap harus dipasang secara terpisah.
 
----
+## Mengonfigurasi Qt dan CMake untuk proyek
 
-## Langkah-langkah Instalasi
+Jika Qt tidak dipasang di lokasi default, jalankan `Qt: Register Qt installation` dari Command Palette untuk mendaftarkannya. Lalu jalankan `Qt: Scan for kits` dan pilih kit yang cocok dengan versi Qt serta toolchain Anda. Untuk proyek CMake, dokumentasi Qt menyarankan penggunaan CMake Presets jika memungkinkan.
 
-### 1. Buka VSCode
+Contoh berikut adalah aplikasi Qt Widgets minimal. Simpan `main.cpp` dan `CMakeLists.txt` dalam folder yang sama.
 
-Pertama, jalankan VSCode.
+```cpp
+#include <QApplication>
+#include <QLabel>
 
-### 2. Buka Tampilan Ekstensi
-
-Klik bilah aktivitas di sebelah kiri (ikon blok persegi) untuk menampilkan "Ekstensi".
-
-Atau Anda dapat menekan pintasan
-`Ctrl + Shift + X`.
-
-### 3. Cari "Qt Extension Pack"
-
-Masukkan kata kunci berikut di bilah pencarian:
-
+int main(int argc, char *argv[])
+{
+    QApplication app(argc, argv);
+    QLabel label("Hello Qt");
+    label.show();
+    return app.exec();
+}
 ```
-Qt Extension Pack
-```
-
-![img.png](img.webp)
-
-### 4. Klik Tombol Instal
-
-Setelah paket yang dituju muncul, klik tombol "Instal".
-Ini akan menginstal beberapa ekstensi berikut sekaligus:
-
-* Qt Language Support
-* QML Support
-* Qt Designer Integration
-* CMake Tools (wajib untuk pengembangan Qt berbasis CMake)
-
----
-
-## Tambahan Pengaturan Proyek (Contoh CMake + Qt)
-
-Jika Anda menggunakan Qt berbasis CMake, kami merekomendasikan kombinasi dengan ekstensi berikut:
-
-* [CMake Tools](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cmake-tools)
-* [CMake Language Support](https://marketplace.visualstudio.com/items?itemName=twxs.cmake)
-
-Selain itu, jika Anda menambahkan deskripsi berikut ke CMakeLists.txt, integrasi dengan Qt akan menjadi lancar:
 
 ```cmake
+cmake_minimum_required(VERSION 3.16)
+project(MyQtApp VERSION 1.0 LANGUAGES CXX)
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
 find_package(Qt6 REQUIRED COMPONENTS Widgets)
-target_link_libraries(MyApp PRIVATE Qt6::Widgets)
+qt_standard_project_setup()
+
+qt_add_executable(MyQtApp main.cpp)
+target_link_libraries(MyQtApp PRIVATE Qt6::Widgets)
 ```
 
----
 
-## Bonus: Bagaimana cara membuka file .ui?
 
-File `.ui` dapat diedit di Qt Designer.
-Di VSCode, Anda dapat mengklik kanan file `.ui` → pilih `Open with Qt Designer` (Qt Designer harus disertakan dalam variabel lingkungan `PATH`).
+Ekstensi Qt juga mendukung pengeditan file `.ui` dengan Qt Widgets Designer. Nama menu dan langkah dapat berubah antarversi; lihat panduan resmi untuk prosedur terbaru. Ekstensi mengumpulkan data penggunaan anonim; [ringkasan resmi](https://doc.qt.io/vscodeext/vscodeext-overview.html#usage-data-collection) menjelaskan data yang dikumpulkan dan yang tidak.
 
----
+## Referensi
 
-## Kesimpulan
-
-| Langkah | Deskripsi |
-| -- | --------------------------- |
-| 1 | Jalankan VSCode |
-| 2 | Buka panel Ekstensi |
-| 3 | Cari "Qt Extension Pack" |
-| 4 | Klik tombol Instal |
-
-Membangun lingkungan Qt di VSCode kini jauh lebih mudah dari sebelumnya.
-Ia memiliki fitur yang cukup untuk menjadi alternatif bagi Qt Creator, dan disarankan bagi mereka yang ingin bekerja dengan ringan.
-
----
-
-## Kumpulan Tautan yang Disarankan
-
-* [Situs resmi Qt](https://www.qt.io/)
-* [Qt Extension Pack - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=TheQtCompany.qt)
-* [Situs resmi VSCode](https://code.visualstudio.com/)
-* [Ekstensi CMake Tools](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cmake-tools)
-
----
-
-## Akhir Kata
-
-Ke depannya, saya berencana untuk terus mengembangkan menggunakan alat UI Qt dan QML di lingkungan ini.
-Lain kali, saya berencana untuk menjelaskan ** cara membangun & menjalankan aplikasi Hello World di Qt dari VSCode **.
-
-Sampai jumpa!
+- [Qt Extension for VS Code: Overview](https://doc.qt.io/vscodeext/vscodeext-overview.html)
+- [Qt Extension for VS Code: Installation](https://doc.qt.io/vscodeext/vscodeext-how-to-install.html)
+- [Qt Extension for VS Code: Getting started](https://doc.qt.io/vscodeext/vscodeext-getting-started.html)
+- [Register Qt installations](https://doc.qt.io/vscodeext/vscodeext-how-register-qt-installations.html)
+- [Qt: Getting started with CMake](https://doc.qt.io/qt-6/cmake-get-started.html)
+- [VS Code: CMake Tools](https://code.visualstudio.com/docs/cpp/cmake-linux)

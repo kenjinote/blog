@@ -1,138 +1,79 @@
 ---
-title: 'Создание среды разработки Qt в VSCode! Установка и использование Qt Extension Pack'
-date: "2026-09-24T19:44:38+09:00"
+title: "Начало работы с Qt в VS Code: установка и настройка расширений Qt"
+date: "2024-09-13T00:53:53+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 slug: "Visual Studio Code に Qt Extension Pack を入れてみた"
-date: 2024-09-13T00:53:53+09:00
 tags: ["Visual Studio Code", "Qt Extension Pack"]
 draft: false
 image: "img_1.webp"
 categories: ["tools-development-environment"]
-description: 'Представлены шаги по интеграции расширения «Qt Extension Pack» для разработки приложений Qt в VSCode (Visual Studio Code). Рекомендуется для тех, кто хочет создать легкую среду разработки, заменяющую Qt Creator.'
+description: "Выберите официальный пакет расширений Qt для VS Code и настройте Qt SDK, CMake и цепочку инструментов."
 ---
 
-# Начинаем разработку на Qt в VSCode: Как установить Qt Extension Pack
+# Qt в VS Code
 
-Привет, я Kenji.
-В этот раз я расскажу «Как настроить среду разработки Qt в Visual Studio Code (далее VSCode)».
+Официальное Qt Extension for VS Code позволяет разрабатывать в VS Code приложения Qt, включая проекты Qt Widgets и Qt Quick. Пакеты расширений объединяют несколько расширений Qt. Состав пакетов и возможности, описанные в прежних версиях статьи, изменились; это руководство основано на актуальной документации Qt.
 
-В последнее время, в дополнение к официальному Qt Creator, всё больше людей хотят разрабатывать приложения Qt с использованием легковесного и расширяемого VSCode.
-Тем, кто ищет такую возможность, я рекомендую ** «Qt Extension Pack» **.
-Просто установив этот пакет расширений, вы получите все основные расширения, связанные с Qt, одновременно.
+Qt Creator и VS Code — оба подходящие варианты. Ни один из них не заменяет другой во всех случаях; выбирайте с учетом своих инструментов и требований проекта.
 
----
+## Требования
 
-## Целевая аудитория
+- Visual Studio Code
+- Qt 6 SDK для целевой ОС и архитектуры с нужными модулями и инструментами (например, Qt Widgets Designer)
+- Для C++: CMake и совместимая цепочка инструментов C++ (компилятор и система сборки)
 
-* Те, кто хочет начать разработку GUI-приложений с использованием Qt
-* Те, кто хочет разрабатывать в VSCode, а не в Qt Creator
-* Те, кому лень искать расширения по одному
+Расширения не устанавливают Qt SDK или компилятор C++. Установите Qt, CMake и компилятор отдельно и используйте совместимые версии.
 
----
+## Установка пакета расширений
 
-## Предварительные требования
+1. Откройте в VS Code представление Extensions (значок на панели действий или `Ctrl+Shift+X`).
+2. Найдите `Qt extension packs`.
+3. Выберите пакет для проекта и нажмите Install. Qt C++ предназначен для Qt C++/Qt Quick, Qt Python — для Qt for Python, а Qt WebAssembly — для проектов WebAssembly. Также можно установить `Qt Extension Pack` со всеми расширениями Qt.
 
-* VSCode уже установлен
-  ([Вы можете бесплатно скачать его с официального сайта](https://code.visualstudio.com/))
-* Сама библиотека Qt установлена ([Официальный сайт Qt](https://www.qt.io/))
+При установке пакета Qt автоматически устанавливаются `CMake For VisualStudio Code` и `CMake Tools`. CMake, компилятор и Qt SDK по-прежнему нужно установить отдельно.
 
----
+## Настройка Qt и CMake для проекта
 
-## Что такое Qt Extension Pack?
+Если Qt установлен не в стандартный каталог, выполните `Qt: Register Qt installation` в палитре команд. Затем запустите `Qt: Scan for kits` и выберите kit, совместимый с версией Qt и цепочкой инструментов. Для проектов CMake документация Qt рекомендует по возможности использовать CMake Presets.
 
-Qt Extension Pack — это пакет расширений для VSCode.
-Установив его, автоматически добавятся следующие функции:
+Ниже приведен минимальный пример приложения Qt Widgets. Сохраните `main.cpp` и `CMakeLists.txt` в одной папке.
 
-* Поддержка файлов `.ui` (Qt Designer)
-* Подсветка синтаксиса для файлов `.pro` и `.qrc`
-* Автодополнение кода C++ для Qt, поддержка сборки и отладки
-* Qt Resource Browser (просмотр ресурсов)
+```cpp
+#include <QApplication>
+#include <QLabel>
 
----
-
-## Инструкция по установке
-
-### 1. Откройте VSCode
-
-Сначала запустите VSCode.
-
-### 2. Откройте панель расширений
-
-Нажмите на панель активности слева (иконка с квадратиками), чтобы открыть «Расширения».
-
-Или вы можете нажать сочетание клавиш
-`Ctrl + Shift + X`.
-
-### 3. Найдите «Qt Extension Pack»
-
-Введите следующее ключевое слово в строку поиска:
-
+int main(int argc, char *argv[])
+{
+    QApplication app(argc, argv);
+    QLabel label("Hello Qt");
+    label.show();
+    return app.exec();
+}
 ```
-Qt Extension Pack
-```
-
-![img.png](img.webp)
-
-### 4. Нажмите кнопку установки
-
-Когда появится нужный пакет, нажмите кнопку «Установить».
-Это установит сразу несколько следующих расширений:
-
-* Qt Language Support
-* QML Support
-* Qt Designer Integration
-* CMake Tools (необходимо для разработки Qt с поддержкой CMake)
-
----
-
-## Дополнение к настройкам проекта (пример CMake + Qt)
-
-Если вы используете Qt на базе CMake, рекомендуется комбинация со следующими расширениями:
-
-* [CMake Tools](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cmake-tools)
-* [CMake Language Support](https://marketplace.visualstudio.com/items?itemName=twxs.cmake)
-
-Кроме того, если вы добавите следующий код в CMakeLists.txt, интеграция с Qt будет проходить более гладко:
 
 ```cmake
+cmake_minimum_required(VERSION 3.16)
+project(MyQtApp VERSION 1.0 LANGUAGES CXX)
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
 find_package(Qt6 REQUIRED COMPONENTS Widgets)
-target_link_libraries(MyApp PRIVATE Qt6::Widgets)
+qt_standard_project_setup()
+
+qt_add_executable(MyQtApp main.cpp)
+target_link_libraries(MyQtApp PRIVATE Qt6::Widgets)
 ```
 
----
 
-## Бонус: Как открывать файлы .ui?
 
-Файлы `.ui` можно редактировать в Qt Designer.
-В VSCode вы сможете нажать правой кнопкой мыши на файл `.ui` → выбрать `Open with Qt Designer` (необходимо, чтобы Qt Designer был включен в переменную среды `PATH`).
+Расширение Qt также поддерживает редактирование файлов `.ui` с помощью Qt Widgets Designer. Названия меню и порядок действий могут меняться между версиями; актуальные шаги приведены в официальном руководстве. Расширение собирает анонимные данные об использовании; в [официальном обзоре](https://doc.qt.io/vscodeext/vscodeext-overview.html#usage-data-collection) описано, какие данные собираются и какие нет.
 
----
+## Источники
 
-## Заключение
-
-| Шаг | Описание |
-| -- | --------------------------- |
-| 1 | Запуск VSCode |
-| 2 | Открытие панели расширений |
-| 3 | Поиск «Qt Extension Pack» |
-| 4 | Нажатие кнопки установки |
-
-Создание среды Qt в VSCode стало намного проще, чем раньше.
-Она имеет достаточно функций, чтобы служить альтернативой Qt Creator, и мы рекомендуем её тем, кто хочет работать легко и быстро.
-
----
-
-## Рекомендуемые ссылки
-
-* [Официальный сайт Qt](https://www.qt.io/)
-* [Qt Extension Pack - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=TheQtCompany.qt)
-* [Официальный сайт VSCode](https://code.visualstudio.com/)
-* [Расширение CMake Tools](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cmake-tools)
-
----
-
-## В заключение
-
-В будущем я планирую продолжить разработку, используя UI-инструменты Qt и QML в этой среде.
-В следующий раз я планирую объяснить, ** как собрать и запустить приложение Hello World на Qt из VSCode **.
-
-До скорого!
+- [Qt Extension for VS Code: Overview](https://doc.qt.io/vscodeext/vscodeext-overview.html)
+- [Qt Extension for VS Code: Installation](https://doc.qt.io/vscodeext/vscodeext-how-to-install.html)
+- [Qt Extension for VS Code: Getting started](https://doc.qt.io/vscodeext/vscodeext-getting-started.html)
+- [Register Qt installations](https://doc.qt.io/vscodeext/vscodeext-how-register-qt-installations.html)
+- [Qt: Getting started with CMake](https://doc.qt.io/qt-6/cmake-get-started.html)
+- [VS Code: CMake Tools](https://code.visualstudio.com/docs/cpp/cmake-linux)

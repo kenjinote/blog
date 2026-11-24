@@ -1,0 +1,458 @@
+{
+  "version": 1,
+  "batch": 180,
+  "article": "Getting started with Qt in VS Code",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "a2edbae1a96e1f27bde7e199ba76ee5782c3f8f3b077cbd2ebed09fb98c21b1c",
+  "sources": [
+    "https://doc.qt.io/vscodeext/vscodeext-overview.html",
+    "https://doc.qt.io/vscodeext/vscodeext-how-to-install.html",
+    "https://doc.qt.io/vscodeext/vscodeext-getting-started.html",
+    "https://doc.qt.io/vscodeext/vscodeext-how-register-qt-installations.html",
+    "https://doc.qt.io/qt-6/cmake-get-started.html",
+    "https://code.visualstudio.com/docs/cpp/cmake-linux"
+  ],
+  "scope": "Compared the complete Japanese article and all twelve translations, including current extension-pack variants, installation workflow, SDK/compiler/CMake prerequisites, Qt kit registration, CMake project setup, C++ example, Designer support, telemetry disclosure, links, and publication metadata.",
+  "findings": [
+    "Updated the extension-pack workflow and distinguished Qt C++/Qt Quick, Qt for Python, and WebAssembly packs.",
+    "Clarified Qt SDK and toolchain prerequisites and corrected the claim that the extension pack itself supplies build components.",
+    "Replaced an incomplete CMake fragment with a minimal Qt Widgets application and a complete target-based CMake example.",
+    "Added current Qt extension setup, registration, CMake, and VS Code references, plus a concise telemetry disclosure.",
+    "Preserved the original publication date (2024-09-13) and recorded lastmod (2026-11-24)."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/Visual Studio Code に Qt Extension Pack を入れてみた/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Visual Studio Code に Qt Extension Pack を入れてみた/index.md",
+      "sourceHash": "a2edbae1a96e1f27bde7e199ba76ee5782c3f8f3b077cbd2ebed09fb98c21b1c",
+      "translationHash": "75247c2c1fdad66b91b61e7e8c0ed3fa0bc0dc8114a20f9ee0d9370e308fc289",
+      "summary": "Compared the full translation against the Japanese source and current official Qt and VS Code documentation; corrected extension-pack scope, prerequisites, installation choices, Qt/CMake setup, sample code, metadata, and links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations; corrected the outdated extension-pack description and clarified that VS Code extensions do not install Qt SDK, CMake, or a compiler."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed Qt Extension for VS Code, Qt C++/Python/WebAssembly packs, Qt Widgets/Quick, SDK, CMake Presets, kit/toolchain, Qt Widgets Designer, and telemetry terminology in each locale."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked that the C++ entry point and Qt Widgets API are consistent, and that the CMake example declares Qt6 Widgets, project setup, executable target, and target linkage in the required order against current Qt documentation. Code was inspected but not compiled because no Qt SDK/toolchain build was run in this review."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the old marketplace-specific feature claims with current official Qt extension overview, installation, getting-started, Qt registration, Qt CMake, and VS Code CMake Tools documentation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The C++/CMake example was reviewed against documentation but not compiled or run with a local Qt SDK and compiler.",
+        "Qt extension names, capabilities, and menus can change; recheck the linked Qt documentation for current details."
+      ]
+    },
+    "post/Visual Studio Code に Qt Extension Pack を入れてみた/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Visual Studio Code に Qt Extension Pack を入れてみた/index.md",
+      "sourceHash": "a2edbae1a96e1f27bde7e199ba76ee5782c3f8f3b077cbd2ebed09fb98c21b1c",
+      "translationHash": "a7639bda3b507fe7a9659d08679953dadbb0dd621e9b42b0b1d8704de9203133",
+      "summary": "Compared the full translation against the Japanese source and current official Qt and VS Code documentation; corrected extension-pack scope, prerequisites, installation choices, Qt/CMake setup, sample code, metadata, and links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations; corrected the outdated extension-pack description and clarified that VS Code extensions do not install Qt SDK, CMake, or a compiler."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed Qt Extension for VS Code, Qt C++/Python/WebAssembly packs, Qt Widgets/Quick, SDK, CMake Presets, kit/toolchain, Qt Widgets Designer, and telemetry terminology in each locale."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked that the C++ entry point and Qt Widgets API are consistent, and that the CMake example declares Qt6 Widgets, project setup, executable target, and target linkage in the required order against current Qt documentation. Code was inspected but not compiled because no Qt SDK/toolchain build was run in this review."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the old marketplace-specific feature claims with current official Qt extension overview, installation, getting-started, Qt registration, Qt CMake, and VS Code CMake Tools documentation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The C++/CMake example was reviewed against documentation but not compiled or run with a local Qt SDK and compiler.",
+        "Qt extension names, capabilities, and menus can change; recheck the linked Qt documentation for current details."
+      ]
+    },
+    "post/Visual Studio Code に Qt Extension Pack を入れてみた/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Visual Studio Code に Qt Extension Pack を入れてみた/index.md",
+      "sourceHash": "a2edbae1a96e1f27bde7e199ba76ee5782c3f8f3b077cbd2ebed09fb98c21b1c",
+      "translationHash": "dc6e17b2d3c3ec4e77faee8abf99cdaf16761f0021166e8b657e8281e04a611f",
+      "summary": "Compared the full translation against the Japanese source and current official Qt and VS Code documentation; corrected extension-pack scope, prerequisites, installation choices, Qt/CMake setup, sample code, metadata, and links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations; corrected the outdated extension-pack description and clarified that VS Code extensions do not install Qt SDK, CMake, or a compiler."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed Qt Extension for VS Code, Qt C++/Python/WebAssembly packs, Qt Widgets/Quick, SDK, CMake Presets, kit/toolchain, Qt Widgets Designer, and telemetry terminology in each locale."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked that the C++ entry point and Qt Widgets API are consistent, and that the CMake example declares Qt6 Widgets, project setup, executable target, and target linkage in the required order against current Qt documentation. Code was inspected but not compiled because no Qt SDK/toolchain build was run in this review."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the old marketplace-specific feature claims with current official Qt extension overview, installation, getting-started, Qt registration, Qt CMake, and VS Code CMake Tools documentation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The C++/CMake example was reviewed against documentation but not compiled or run with a local Qt SDK and compiler.",
+        "Qt extension names, capabilities, and menus can change; recheck the linked Qt documentation for current details."
+      ]
+    },
+    "post/Visual Studio Code に Qt Extension Pack を入れてみた/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Visual Studio Code に Qt Extension Pack を入れてみた/index.md",
+      "sourceHash": "a2edbae1a96e1f27bde7e199ba76ee5782c3f8f3b077cbd2ebed09fb98c21b1c",
+      "translationHash": "a001943a78fa72ce8c0bfcf4b1d99c7d89f11454e1e7009437b64da57ac53188",
+      "summary": "Compared the full translation against the Japanese source and current official Qt and VS Code documentation; corrected extension-pack scope, prerequisites, installation choices, Qt/CMake setup, sample code, metadata, and links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations; corrected the outdated extension-pack description and clarified that VS Code extensions do not install Qt SDK, CMake, or a compiler."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed Qt Extension for VS Code, Qt C++/Python/WebAssembly packs, Qt Widgets/Quick, SDK, CMake Presets, kit/toolchain, Qt Widgets Designer, and telemetry terminology in each locale."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked that the C++ entry point and Qt Widgets API are consistent, and that the CMake example declares Qt6 Widgets, project setup, executable target, and target linkage in the required order against current Qt documentation. Code was inspected but not compiled because no Qt SDK/toolchain build was run in this review."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the old marketplace-specific feature claims with current official Qt extension overview, installation, getting-started, Qt registration, Qt CMake, and VS Code CMake Tools documentation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The C++/CMake example was reviewed against documentation but not compiled or run with a local Qt SDK and compiler.",
+        "Qt extension names, capabilities, and menus can change; recheck the linked Qt documentation for current details."
+      ]
+    },
+    "post/Visual Studio Code に Qt Extension Pack を入れてみた/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Visual Studio Code に Qt Extension Pack を入れてみた/index.md",
+      "sourceHash": "a2edbae1a96e1f27bde7e199ba76ee5782c3f8f3b077cbd2ebed09fb98c21b1c",
+      "translationHash": "42d43314a95720d3bbfaa545ae6131ba28e3d57e7c11a8313d39731e02fe983c",
+      "summary": "Compared the full translation against the Japanese source and current official Qt and VS Code documentation; corrected extension-pack scope, prerequisites, installation choices, Qt/CMake setup, sample code, metadata, and links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations; corrected the outdated extension-pack description and clarified that VS Code extensions do not install Qt SDK, CMake, or a compiler."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed Qt Extension for VS Code, Qt C++/Python/WebAssembly packs, Qt Widgets/Quick, SDK, CMake Presets, kit/toolchain, Qt Widgets Designer, and telemetry terminology in each locale."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked that the C++ entry point and Qt Widgets API are consistent, and that the CMake example declares Qt6 Widgets, project setup, executable target, and target linkage in the required order against current Qt documentation. Code was inspected but not compiled because no Qt SDK/toolchain build was run in this review."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the old marketplace-specific feature claims with current official Qt extension overview, installation, getting-started, Qt registration, Qt CMake, and VS Code CMake Tools documentation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The C++/CMake example was reviewed against documentation but not compiled or run with a local Qt SDK and compiler.",
+        "Qt extension names, capabilities, and menus can change; recheck the linked Qt documentation for current details."
+      ]
+    },
+    "post/Visual Studio Code に Qt Extension Pack を入れてみた/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Visual Studio Code に Qt Extension Pack を入れてみた/index.md",
+      "sourceHash": "a2edbae1a96e1f27bde7e199ba76ee5782c3f8f3b077cbd2ebed09fb98c21b1c",
+      "translationHash": "1d7daf836750aaabaa1dfb424fc103aeeadd451259f55e3ed10a7680b2081735",
+      "summary": "Compared the full translation against the Japanese source and current official Qt and VS Code documentation; corrected extension-pack scope, prerequisites, installation choices, Qt/CMake setup, sample code, metadata, and links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations; corrected the outdated extension-pack description and clarified that VS Code extensions do not install Qt SDK, CMake, or a compiler."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed Qt Extension for VS Code, Qt C++/Python/WebAssembly packs, Qt Widgets/Quick, SDK, CMake Presets, kit/toolchain, Qt Widgets Designer, and telemetry terminology in each locale."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked that the C++ entry point and Qt Widgets API are consistent, and that the CMake example declares Qt6 Widgets, project setup, executable target, and target linkage in the required order against current Qt documentation. Code was inspected but not compiled because no Qt SDK/toolchain build was run in this review."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the old marketplace-specific feature claims with current official Qt extension overview, installation, getting-started, Qt registration, Qt CMake, and VS Code CMake Tools documentation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The C++/CMake example was reviewed against documentation but not compiled or run with a local Qt SDK and compiler.",
+        "Qt extension names, capabilities, and menus can change; recheck the linked Qt documentation for current details."
+      ]
+    },
+    "post/Visual Studio Code に Qt Extension Pack を入れてみた/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Visual Studio Code に Qt Extension Pack を入れてみた/index.md",
+      "sourceHash": "a2edbae1a96e1f27bde7e199ba76ee5782c3f8f3b077cbd2ebed09fb98c21b1c",
+      "translationHash": "7aa6f99493bd70fa0ce30ada2d3291ee922a92dc45a0e40615a4de5769b5edff",
+      "summary": "Compared the full translation against the Japanese source and current official Qt and VS Code documentation; corrected extension-pack scope, prerequisites, installation choices, Qt/CMake setup, sample code, metadata, and links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations; corrected the outdated extension-pack description and clarified that VS Code extensions do not install Qt SDK, CMake, or a compiler."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed Qt Extension for VS Code, Qt C++/Python/WebAssembly packs, Qt Widgets/Quick, SDK, CMake Presets, kit/toolchain, Qt Widgets Designer, and telemetry terminology in each locale."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked that the C++ entry point and Qt Widgets API are consistent, and that the CMake example declares Qt6 Widgets, project setup, executable target, and target linkage in the required order against current Qt documentation. Code was inspected but not compiled because no Qt SDK/toolchain build was run in this review."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the old marketplace-specific feature claims with current official Qt extension overview, installation, getting-started, Qt registration, Qt CMake, and VS Code CMake Tools documentation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The C++/CMake example was reviewed against documentation but not compiled or run with a local Qt SDK and compiler.",
+        "Qt extension names, capabilities, and menus can change; recheck the linked Qt documentation for current details."
+      ]
+    },
+    "post/Visual Studio Code に Qt Extension Pack を入れてみた/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Visual Studio Code に Qt Extension Pack を入れてみた/index.md",
+      "sourceHash": "a2edbae1a96e1f27bde7e199ba76ee5782c3f8f3b077cbd2ebed09fb98c21b1c",
+      "translationHash": "7276398041523bdd4a7bf06b9fca3fcf13c731eb5a68ba61020126a7bfa7851a",
+      "summary": "Compared the full translation against the Japanese source and current official Qt and VS Code documentation; corrected extension-pack scope, prerequisites, installation choices, Qt/CMake setup, sample code, metadata, and links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations; corrected the outdated extension-pack description and clarified that VS Code extensions do not install Qt SDK, CMake, or a compiler."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed Qt Extension for VS Code, Qt C++/Python/WebAssembly packs, Qt Widgets/Quick, SDK, CMake Presets, kit/toolchain, Qt Widgets Designer, and telemetry terminology in each locale."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked that the C++ entry point and Qt Widgets API are consistent, and that the CMake example declares Qt6 Widgets, project setup, executable target, and target linkage in the required order against current Qt documentation. Code was inspected but not compiled because no Qt SDK/toolchain build was run in this review."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the old marketplace-specific feature claims with current official Qt extension overview, installation, getting-started, Qt registration, Qt CMake, and VS Code CMake Tools documentation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The C++/CMake example was reviewed against documentation but not compiled or run with a local Qt SDK and compiler.",
+        "Qt extension names, capabilities, and menus can change; recheck the linked Qt documentation for current details."
+      ]
+    },
+    "post/Visual Studio Code に Qt Extension Pack を入れてみた/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Visual Studio Code に Qt Extension Pack を入れてみた/index.md",
+      "sourceHash": "a2edbae1a96e1f27bde7e199ba76ee5782c3f8f3b077cbd2ebed09fb98c21b1c",
+      "translationHash": "3f50df8108c4381e69fc3a57ab0ea9c5ef91c29d74ed9d0de2390bf218e026fe",
+      "summary": "Compared the full translation against the Japanese source and current official Qt and VS Code documentation; corrected extension-pack scope, prerequisites, installation choices, Qt/CMake setup, sample code, metadata, and links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations; corrected the outdated extension-pack description and clarified that VS Code extensions do not install Qt SDK, CMake, or a compiler."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed Qt Extension for VS Code, Qt C++/Python/WebAssembly packs, Qt Widgets/Quick, SDK, CMake Presets, kit/toolchain, Qt Widgets Designer, and telemetry terminology in each locale."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked that the C++ entry point and Qt Widgets API are consistent, and that the CMake example declares Qt6 Widgets, project setup, executable target, and target linkage in the required order against current Qt documentation. Code was inspected but not compiled because no Qt SDK/toolchain build was run in this review."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the old marketplace-specific feature claims with current official Qt extension overview, installation, getting-started, Qt registration, Qt CMake, and VS Code CMake Tools documentation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The C++/CMake example was reviewed against documentation but not compiled or run with a local Qt SDK and compiler.",
+        "Qt extension names, capabilities, and menus can change; recheck the linked Qt documentation for current details."
+      ]
+    },
+    "post/Visual Studio Code に Qt Extension Pack を入れてみた/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Visual Studio Code に Qt Extension Pack を入れてみた/index.md",
+      "sourceHash": "a2edbae1a96e1f27bde7e199ba76ee5782c3f8f3b077cbd2ebed09fb98c21b1c",
+      "translationHash": "482fc5d37fab1183f071869d32d4bf3510a34ee9d6fbf0555e24be0073a67150",
+      "summary": "Compared the full translation against the Japanese source and current official Qt and VS Code documentation; corrected extension-pack scope, prerequisites, installation choices, Qt/CMake setup, sample code, metadata, and links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations; corrected the outdated extension-pack description and clarified that VS Code extensions do not install Qt SDK, CMake, or a compiler."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed Qt Extension for VS Code, Qt C++/Python/WebAssembly packs, Qt Widgets/Quick, SDK, CMake Presets, kit/toolchain, Qt Widgets Designer, and telemetry terminology in each locale."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked that the C++ entry point and Qt Widgets API are consistent, and that the CMake example declares Qt6 Widgets, project setup, executable target, and target linkage in the required order against current Qt documentation. Code was inspected but not compiled because no Qt SDK/toolchain build was run in this review."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the old marketplace-specific feature claims with current official Qt extension overview, installation, getting-started, Qt registration, Qt CMake, and VS Code CMake Tools documentation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The C++/CMake example was reviewed against documentation but not compiled or run with a local Qt SDK and compiler.",
+        "Qt extension names, capabilities, and menus can change; recheck the linked Qt documentation for current details."
+      ]
+    },
+    "post/Visual Studio Code に Qt Extension Pack を入れてみた/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Visual Studio Code に Qt Extension Pack を入れてみた/index.md",
+      "sourceHash": "a2edbae1a96e1f27bde7e199ba76ee5782c3f8f3b077cbd2ebed09fb98c21b1c",
+      "translationHash": "3e6f3b6800ee82c4852e1547031d9e7e01ac3a5f474438b02cf199cee0c75144",
+      "summary": "Compared the full translation against the Japanese source and current official Qt and VS Code documentation; corrected extension-pack scope, prerequisites, installation choices, Qt/CMake setup, sample code, metadata, and links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations; corrected the outdated extension-pack description and clarified that VS Code extensions do not install Qt SDK, CMake, or a compiler."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed Qt Extension for VS Code, Qt C++/Python/WebAssembly packs, Qt Widgets/Quick, SDK, CMake Presets, kit/toolchain, Qt Widgets Designer, and telemetry terminology in each locale."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked that the C++ entry point and Qt Widgets API are consistent, and that the CMake example declares Qt6 Widgets, project setup, executable target, and target linkage in the required order against current Qt documentation. Code was inspected but not compiled because no Qt SDK/toolchain build was run in this review."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the old marketplace-specific feature claims with current official Qt extension overview, installation, getting-started, Qt registration, Qt CMake, and VS Code CMake Tools documentation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The C++/CMake example was reviewed against documentation but not compiled or run with a local Qt SDK and compiler.",
+        "Qt extension names, capabilities, and menus can change; recheck the linked Qt documentation for current details."
+      ]
+    },
+    "post/Visual Studio Code に Qt Extension Pack を入れてみた/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Visual Studio Code に Qt Extension Pack を入れてみた/index.md",
+      "sourceHash": "a2edbae1a96e1f27bde7e199ba76ee5782c3f8f3b077cbd2ebed09fb98c21b1c",
+      "translationHash": "27e9d0794f5af3a3daa1be76dcb05128a904b8422216d3424abbaddb75ecc63d",
+      "summary": "Compared the full translation against the Japanese source and current official Qt and VS Code documentation; corrected extension-pack scope, prerequisites, installation choices, Qt/CMake setup, sample code, metadata, and links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations; corrected the outdated extension-pack description and clarified that VS Code extensions do not install Qt SDK, CMake, or a compiler."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed Qt Extension for VS Code, Qt C++/Python/WebAssembly packs, Qt Widgets/Quick, SDK, CMake Presets, kit/toolchain, Qt Widgets Designer, and telemetry terminology in each locale."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked that the C++ entry point and Qt Widgets API are consistent, and that the CMake example declares Qt6 Widgets, project setup, executable target, and target linkage in the required order against current Qt documentation. Code was inspected but not compiled because no Qt SDK/toolchain build was run in this review."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the old marketplace-specific feature claims with current official Qt extension overview, installation, getting-started, Qt registration, Qt CMake, and VS Code CMake Tools documentation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The C++/CMake example was reviewed against documentation but not compiled or run with a local Qt SDK and compiler.",
+        "Qt extension names, capabilities, and menus can change; recheck the linked Qt documentation for current details."
+      ]
+    }
+  }
+}

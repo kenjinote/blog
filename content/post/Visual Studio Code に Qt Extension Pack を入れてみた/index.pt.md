@@ -1,138 +1,79 @@
 ---
-title: 'Criando o Ambiente de Desenvolvimento Qt no VSCode! Como instalar e usar o Qt Extension Pack'
-date: "2026-09-24T19:44:38+09:00"
+title: "Começando com Qt no VS Code: instalação e configuração das extensões"
+date: "2024-09-13T00:53:53+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 slug: "Visual Studio Code に Qt Extension Pack を入れてみた"
-date: 2024-09-13T00:53:53+09:00
 tags: ["Visual Studio Code", "Qt Extension Pack"]
 draft: false
 image: "img_1.webp"
 categories: ["tools-development-environment"]
-description: 'Apresentamos o procedimento de introdução do ''Qt Extension Pack'', uma extensão para desenvolvimento de aplicativos Qt usando VSCode (Visual Studio Code). Recomendado para aqueles que desejam construir um ambiente de desenvolvimento mais leve em alternativa ao Qt Creator.'
+description: "Escolha um pacote oficial de extensões Qt para VS Code e configure o SDK do Qt, o CMake e a cadeia de ferramentas."
 ---
 
-# Iniciando o desenvolvimento Qt no VSCode: Como instalar o Qt Extension Pack
+# Usar Qt com o VS Code
 
-Olá, aqui é o Kenji.
-Desta vez, apresentarei "como configurar o ambiente de desenvolvimento Qt no Visual Studio Code (doravante VSCode)".
+A extensão oficial Qt Extension for VS Code permite desenvolver aplicações Qt, incluindo projetos Qt Widgets e Qt Quick, no VS Code. Os pacotes reúnem várias extensões Qt. O conteúdo e os recursos descritos nas versões anteriores deste artigo mudaram; este guia segue a documentação atual do Qt.
 
-Recentemente, além do Qt Creator oficial, há um número crescente de pessoas que desejam desenvolver aplicativos Qt usando o VSCode, que é leve e altamente extensível.
-Para essas pessoas, recomendo o **"Qt Extension Pack"** .
-Basta instalar este pacote de extensões e você terá as principais extensões relacionadas ao Qt de uma só vez.
-
----
-
-## Público-alvo
-
-* Aqueles que desejam iniciar o desenvolvimento de aplicativos GUI usando Qt
-* Aqueles que desejam desenvolver no VSCode em vez do Qt Creator
-* Aqueles que têm preguiça de procurar extensões uma por uma
-
----
+Qt Creator e VS Code são opções. Um não substitui universalmente o outro; escolha conforme suas ferramentas e as necessidades do projeto.
 
 ## Pré-requisitos
 
-* O VSCode deve estar instalado
-  ([Você pode baixá-lo gratuitamente no site oficial](https://code.visualstudio.com/))
-* A própria biblioteca Qt deve estar instalada ([Site oficial do Qt](https://www.qt.io/))
+- Visual Studio Code
+- Um SDK Qt 6 para o sistema operacional e a arquitetura de destino, com os módulos e ferramentas necessários (como Qt Widgets Designer)
+- Para desenvolvimento em C++, CMake e uma cadeia de compilação C++ compatível
 
----
+As extensões não instalam o SDK Qt nem um compilador C++. Instale Qt, CMake e o compilador separadamente e use versões compatíveis.
 
-## O que é o Qt Extension Pack?
+## Instalar um pacote de extensões
 
-O Qt Extension Pack é um pacote de extensões para o VSCode.
-Ao instalá-lo, os seguintes recursos são adicionados automaticamente:
+1. Abra a visualização Extensions no VS Code (ícone na barra de atividades ou `Ctrl+Shift+X`).
+2. Pesquise `Qt extension packs`.
+3. Escolha um pacote adequado ao projeto e selecione Install. Qt C++ é para Qt C++/Qt Quick; Qt Python, para Qt for Python; e Qt WebAssembly, para projetos WebAssembly. Também é possível instalar `Qt Extension Pack`, que inclui todas as extensões Qt.
 
-* Suporte para arquivos `.ui` (Qt Designer)
-* Destaque de sintaxe para arquivos `.pro` e `.qrc`
-* Conclusão de código C++, compilação e suporte a depuração para Qt
-* Qt Resource Browser (referência de recursos)
+A instalação de um pacote Qt também instala `CMake For VisualStudio Code` e `CMake Tools`. Ainda é necessário instalar CMake, um compilador e o SDK Qt separadamente.
 
----
+## Configurar Qt e CMake para um projeto
 
-## Instruções de Instalação
+Se o Qt não estiver em um local padrão, execute `Qt: Register Qt installation` na Paleta de Comandos. Em seguida, execute `Qt: Scan for kits` e selecione um kit compatível com sua versão do Qt e cadeia de ferramentas. Para projetos CMake, a documentação do Qt recomenda usar CMake Presets quando possível.
 
-### 1. Abra o VSCode
+O exemplo abaixo é um aplicativo Qt Widgets mínimo. Salve `main.cpp` e `CMakeLists.txt` na mesma pasta.
 
-Primeiro, inicie o VSCode.
+```cpp
+#include <QApplication>
+#include <QLabel>
 
-### 2. Abra a visualização de Extensões
-
-Clique na barra de atividades no lado esquerdo (ícone de blocos quadrados) para exibir as "Extensões".
-
-Ou você pode pressionar o atalho
-`Ctrl + Shift + X`.
-
-### 3. Pesquise por "Qt Extension Pack"
-
-Digite a seguinte palavra-chave na barra de pesquisa:
-
+int main(int argc, char *argv[])
+{
+    QApplication app(argc, argv);
+    QLabel label("Hello Qt");
+    label.show();
+    return app.exec();
+}
 ```
-Qt Extension Pack
-```
-
-![img.png](img.webp)
-
-### 4. Clique no botão de Instalação
-
-Quando o pacote de destino for exibido, clique no botão "Instalar".
-Isso instalará várias extensões de uma só vez, como as seguintes:
-
-* Qt Language Support
-* QML Support
-* Qt Designer Integration
-* CMake Tools (essencial para desenvolvimento Qt compatível com CMake)
-
----
-
-## Configuração adicional do projeto (Exemplo CMake + Qt)
-
-Se você usar o Qt baseado no CMake, recomendamos combiná-lo com as seguintes extensões:
-
-* [CMake Tools](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cmake-tools)
-* [CMake Language Support](https://marketplace.visualstudio.com/items?itemName=twxs.cmake)
-
-Além disso, se você incluir a seguinte descrição em CMakeLists.txt, a integração com o Qt será tranquila:
 
 ```cmake
+cmake_minimum_required(VERSION 3.16)
+project(MyQtApp VERSION 1.0 LANGUAGES CXX)
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
 find_package(Qt6 REQUIRED COMPONENTS Widgets)
-target_link_libraries(MyApp PRIVATE Qt6::Widgets)
+qt_standard_project_setup()
+
+qt_add_executable(MyQtApp main.cpp)
+target_link_libraries(MyQtApp PRIVATE Qt6::Widgets)
 ```
 
----
 
-## Bônus: Como abro os arquivos .ui?
 
-Os arquivos `.ui` podem ser editados no Qt Designer.
-No VSCode, você poderá clicar com o botão direito do mouse no arquivo `.ui` → selecionar `Open with Qt Designer` (o Qt Designer deve estar incluído na variável de ambiente `PATH`).
+A extensão Qt também oferece suporte à edição de arquivos `.ui` com o Qt Widgets Designer. Menus e etapas podem mudar entre versões; consulte o guia oficial para ver o fluxo atual. A extensão coleta dados anônimos de uso; o [resumo oficial](https://doc.qt.io/vscodeext/vscodeext-overview.html#usage-data-collection) informa o que é e o que não é coletado.
 
----
+## Referências
 
-## Resumo
-
-| Passo | Conteúdo                          |
-| -- | --------------------------- |
-| 1  | Iniciar o VSCode                    |
-| 2  | Abrir o painel de extensões                  |
-| 3  | Pesquisar por "Qt Extension Pack" |
-| 4  | Clicar no botão de Instalação              |
-
-Construir um ambiente Qt no VSCode tornou-se muito mais fácil do que antes.
-Ele tem recursos suficientes como uma alternativa ao Qt Creator e é recomendado para quem quer trabalhar com leveza.
-
----
-
-## Coleção de links recomendados
-
-* [Site oficial do Qt](https://www.qt.io/)
-* [Qt Extension Pack - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=TheQtCompany.qt)
-* [Site oficial do VSCode](https://code.visualstudio.com/)
-* [Extensão CMake Tools](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cmake-tools)
-
----
-
-## Por fim
-
-No futuro, planejo prosseguir com o desenvolvimento utilizando ferramentas de UI do Qt e QML neste ambiente.
-Na próxima vez, explicarei **como compilar e executar um aplicativo Hello World em Qt a partir do VSCode** .
-
-Até logo!
+- [Qt Extension for VS Code: Overview](https://doc.qt.io/vscodeext/vscodeext-overview.html)
+- [Qt Extension for VS Code: Installation](https://doc.qt.io/vscodeext/vscodeext-how-to-install.html)
+- [Qt Extension for VS Code: Getting started](https://doc.qt.io/vscodeext/vscodeext-getting-started.html)
+- [Register Qt installations](https://doc.qt.io/vscodeext/vscodeext-how-register-qt-installations.html)
+- [Qt: Getting started with CMake](https://doc.qt.io/qt-6/cmake-get-started.html)
+- [VS Code: CMake Tools](https://code.visualstudio.com/docs/cpp/cmake-linux)

@@ -20885,6 +20885,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-179.json",
       "evidenceHash": "d5fd5e778591b0eee4aea274924a20c754851c55001f59fac93adca4831cd607"
+    },
+    "post/Visual Studio Code に Qt Extension Pack を入れてみた/index.en.md": {
+      "source": "post/Visual Studio Code に Qt Extension Pack を入れてみた/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "a2edbae1a96e1f27bde7e199ba76ee5782c3f8f3b077cbd2ebed09fb98c21b1c",
+      "translationHash": "75247c2c1fdad66b91b61e7e8c0ed3fa0bc0dc8114a20f9ee0d9370e308fc289",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-180.json",
+      "evidenceHash": "006a2d07107c0ec46dbe51de73af76417fc9d60126312a087a274917a0ac3af8"
+    },
+    "post/Visual Studio Code に Qt Extension Pack を入れてみた/index.zh-cn.md": {
+      "source": "post/Visual Studio Code に Qt Extension Pack を入れてみた/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "a2edbae1a96e1f27bde7e199ba76ee5782c3f8f3b077cbd2ebed09fb98c21b1c",
+      "translationHash": "a7639bda3b507fe7a9659d08679953dadbb0dd621e9b42b0b1d8704de9203133",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-180.json",
+      "evidenceHash": "e376cd5c4e9f65b0ea762210ff1521aabb236f539a24c8b9a3ab6bf7c478b89b"
+    },
+    "post/Visual Studio Code に Qt Extension Pack を入れてみた/index.es.md": {
+      "source": "post/Visual Studio Code に Qt Extension Pack を入れてみた/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "a2edbae1a96e1f27bde7e199ba76ee5782c3f8f3b077cbd2ebed09fb98c21b1c",
+      "translationHash": "dc6e17b2d3c3ec4e77faee8abf99cdaf16761f0021166e8b657e8281e04a611f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-180.json",
+      "evidenceHash": "ea8dd97ebda49dc97a53082481add7ab98d4417a2e79897924b11546d2ac3ca8"
+    },
+    "post/Visual Studio Code に Qt Extension Pack を入れてみた/index.ko.md": {
+      "source": "post/Visual Studio Code に Qt Extension Pack を入れてみた/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "a2edbae1a96e1f27bde7e199ba76ee5782c3f8f3b077cbd2ebed09fb98c21b1c",
+      "translationHash": "a001943a78fa72ce8c0bfcf4b1d99c7d89f11454e1e7009437b64da57ac53188",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-180.json",
+      "evidenceHash": "23bb6954e835c9e72cd9706f2fe5d86dad76be8260ec5d8378f025d9f18a49a2"
+    },
+    "post/Visual Studio Code に Qt Extension Pack を入れてみた/index.pt.md": {
+      "source": "post/Visual Studio Code に Qt Extension Pack を入れてみた/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "a2edbae1a96e1f27bde7e199ba76ee5782c3f8f3b077cbd2ebed09fb98c21b1c",
+      "translationHash": "42d43314a95720d3bbfaa545ae6131ba28e3d57e7c11a8313d39731e02fe983c",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-180.json",
+      "evidenceHash": "c03d7eec9b71522869149e7f5ba68db620afe3870a5efe8e9d05975f1adfe8b7"
+    },
+    "post/Visual Studio Code に Qt Extension Pack を入れてみた/index.zh-tw.md": {
+      "source": "post/Visual Studio Code に Qt Extension Pack を入れてみた/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "a2edbae1a96e1f27bde7e199ba76ee5782c3f8f3b077cbd2ebed09fb98c21b1c",
+      "translationHash": "1d7daf836750aaabaa1dfb424fc103aeeadd451259f55e3ed10a7680b2081735",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-180.json",
+      "evidenceHash": "b6b0b27ceb9e8f73fb41b1a696a9fee8f069a15043c573d889b00012c23f0b78"
+    },
+    "post/Visual Studio Code に Qt Extension Pack を入れてみた/index.hi.md": {
+      "source": "post/Visual Studio Code に Qt Extension Pack を入れてみた/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "a2edbae1a96e1f27bde7e199ba76ee5782c3f8f3b077cbd2ebed09fb98c21b1c",
+      "translationHash": "7aa6f99493bd70fa0ce30ada2d3291ee922a92dc45a0e40615a4de5769b5edff",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-180.json",
+      "evidenceHash": "985c5cccb08b88639843b80d2f19d08fc422c009a9acbc971e1e31f56efd435e"
+    },
+    "post/Visual Studio Code に Qt Extension Pack を入れてみた/index.fr.md": {
+      "source": "post/Visual Studio Code に Qt Extension Pack を入れてみた/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "a2edbae1a96e1f27bde7e199ba76ee5782c3f8f3b077cbd2ebed09fb98c21b1c",
+      "translationHash": "7276398041523bdd4a7bf06b9fca3fcf13c731eb5a68ba61020126a7bfa7851a",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-180.json",
+      "evidenceHash": "49ee207321c59c9abbd7e2b7127ee482a623af26a502763e010ca4cd9d0f826d"
+    },
+    "post/Visual Studio Code に Qt Extension Pack を入れてみた/index.de.md": {
+      "source": "post/Visual Studio Code に Qt Extension Pack を入れてみた/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "a2edbae1a96e1f27bde7e199ba76ee5782c3f8f3b077cbd2ebed09fb98c21b1c",
+      "translationHash": "3f50df8108c4381e69fc3a57ab0ea9c5ef91c29d74ed9d0de2390bf218e026fe",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-180.json",
+      "evidenceHash": "27e5751fa0298374cb89f69a202e40ae7b4d92507a05a92ee2008a57fb0cdcef"
+    },
+    "post/Visual Studio Code に Qt Extension Pack を入れてみた/index.ar.md": {
+      "source": "post/Visual Studio Code に Qt Extension Pack を入れてみた/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "a2edbae1a96e1f27bde7e199ba76ee5782c3f8f3b077cbd2ebed09fb98c21b1c",
+      "translationHash": "482fc5d37fab1183f071869d32d4bf3510a34ee9d6fbf0555e24be0073a67150",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-180.json",
+      "evidenceHash": "19a4a5a372b64036721e63849aeab741b0b8509f5b7b9442cf3b6cc942a7bb9e"
+    },
+    "post/Visual Studio Code に Qt Extension Pack を入れてみた/index.ru.md": {
+      "source": "post/Visual Studio Code に Qt Extension Pack を入れてみた/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "a2edbae1a96e1f27bde7e199ba76ee5782c3f8f3b077cbd2ebed09fb98c21b1c",
+      "translationHash": "3e6f3b6800ee82c4852e1547031d9e7e01ac3a5f474438b02cf199cee0c75144",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-180.json",
+      "evidenceHash": "2e649065ccaa00e6c9e24734b9ea26fb7ca279dfeb0d9031234ee1a3fd4322e0"
+    },
+    "post/Visual Studio Code に Qt Extension Pack を入れてみた/index.id.md": {
+      "source": "post/Visual Studio Code に Qt Extension Pack を入れてみた/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "a2edbae1a96e1f27bde7e199ba76ee5782c3f8f3b077cbd2ebed09fb98c21b1c",
+      "translationHash": "27e9d0794f5af3a3daa1be76dcb05128a904b8422216d3424abbaddb75ecc63d",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-180.json",
+      "evidenceHash": "cd151bd132f3524d389306aeb1310014fc10d9f93662754e5e68bd43f0804486"
     }
   }
 }
