@@ -340,6 +340,18 @@ ARTICLES = {
         "markers": ["np.linspace(0, 2 * np.pi, 500)", "np.sin(x)", "np.cos(x)", "plt.legend()", "plt.show()", "2π"],
         "date": "2023-04-09",
     },
+    114: {
+        "bundle": ROOT / "content/post/Pythonコード片",
+        "slug": "Pythonコード片",
+        "links": [
+            "https://docs.python.org/3/library/urllib.request.html",
+            "https://docs.python.org/3/library/tempfile.html",
+            "https://docs.python.org/3/library/webbrowser.html",
+            "https://www.python.org/community/logos/",
+        ],
+        "markers": ["urlopen(request,timeout=15)", "response.headers.get_content_type()", "2*1024*1024", "webbrowser.open(temp_path.as_uri(),new=2)", "temp_path.unlink()", "PNG signature"],
+        "date": "2025-02-24",
+    },
 }
 
 
@@ -405,7 +417,7 @@ def slug_key(value):
 parser = argparse.ArgumentParser()
 parser.add_argument("--ci-run", type=int, required=True)
 parser.add_argument("--commit", required=True)
-parser.add_argument("--max-batch", type=int, choices=(90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113), default=113)
+parser.add_argument("--max-batch", type=int, choices=(90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114), default=114)
 args = parser.parse_args()
 ARTICLES = {number: article for number, article in ARTICLES.items() if number <= args.max_batch}
 with urllib.request.urlopen(f"https://github.com/kenjinote/blog/actions/runs/{args.ci_run}", timeout=45) as response:

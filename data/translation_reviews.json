@@ -13085,6 +13085,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-113.json",
       "evidenceHash": "158c86924023090388cf8e574bbbf6e985c83b85de32e7a4c2ff40a0431ab9cc"
+    },
+    "post/Pythonコード片/index.ar.md": {
+      "source": "post/Pythonコード片/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "05979740019ec69e2f883588108aa787997a1cc49b9cd18aa83824afcdb6ec22",
+      "translationHash": "7bb98e177481d8a5253952d02c6570f009815e7091e6640cc45f4b08e8bd0e76",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-114.json",
+      "evidenceHash": "96001b2c1925723558c69bd2b12d233fb8caccda97460c684eeeefe50f95b0f5"
+    },
+    "post/Pythonコード片/index.de.md": {
+      "source": "post/Pythonコード片/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "05979740019ec69e2f883588108aa787997a1cc49b9cd18aa83824afcdb6ec22",
+      "translationHash": "1522011d054ff44b5e35a71a1975b95b64a704fae631b43f46742edbf64b6876",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-114.json",
+      "evidenceHash": "7353ef96231a9ab0f0a59e300bfda504d516734bc1b25eee658be8add5c38ac4"
+    },
+    "post/Pythonコード片/index.en.md": {
+      "source": "post/Pythonコード片/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "05979740019ec69e2f883588108aa787997a1cc49b9cd18aa83824afcdb6ec22",
+      "translationHash": "6664ffe0719d36d7508e79370dbd7d2299beb5378c3849c131e2d45576233cf7",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-114.json",
+      "evidenceHash": "08ec5c4c0d6c8c2e992a2f6ed28076e4d4246b5ecff21fafd4c5424019e6fe34"
+    },
+    "post/Pythonコード片/index.es.md": {
+      "source": "post/Pythonコード片/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "05979740019ec69e2f883588108aa787997a1cc49b9cd18aa83824afcdb6ec22",
+      "translationHash": "04708d16b7a950e21f6bd5c9c57f6b4513c0bef376fb458e2350d6952d37bcc3",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-114.json",
+      "evidenceHash": "680cdfbf32c1df968bb8216dd596c11b9f75ef2c97b1843471b45167a11287ea"
+    },
+    "post/Pythonコード片/index.fr.md": {
+      "source": "post/Pythonコード片/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "05979740019ec69e2f883588108aa787997a1cc49b9cd18aa83824afcdb6ec22",
+      "translationHash": "1264d8053adb0e5d2af9905986fdd75fdd071b027a9e69101d68ce7f4dda4c78",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-114.json",
+      "evidenceHash": "10522a054689154beb3512c95568dd842f4b5832ba9d6a76b069709cd69e9759"
+    },
+    "post/Pythonコード片/index.hi.md": {
+      "source": "post/Pythonコード片/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "05979740019ec69e2f883588108aa787997a1cc49b9cd18aa83824afcdb6ec22",
+      "translationHash": "ce3ccb9dd40d0f62059bc6d045455a9858e040c1b4581c3e7b9fa89f2559f865",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-114.json",
+      "evidenceHash": "d599eac66d5dbc0d494b589a77cad08c0d7755ee2a7ebbe49bfd1153a94b408b"
+    },
+    "post/Pythonコード片/index.id.md": {
+      "source": "post/Pythonコード片/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "05979740019ec69e2f883588108aa787997a1cc49b9cd18aa83824afcdb6ec22",
+      "translationHash": "7e2fb511a9dc5fc0280a82c0924662a3c8de9bd4b4daea0cb2a2feb6aa3b3f2a",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-114.json",
+      "evidenceHash": "db6f4c9846417e4f869630d7cc6e1aeae3d1d0c2f7557519f447a0357409a2b2"
+    },
+    "post/Pythonコード片/index.ko.md": {
+      "source": "post/Pythonコード片/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "05979740019ec69e2f883588108aa787997a1cc49b9cd18aa83824afcdb6ec22",
+      "translationHash": "13cb3297ba5f7dbc882f3f1b7817156811836215e38f7200564271e727b9f21f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-114.json",
+      "evidenceHash": "948b0a9cefc23dba69f1d7671206804ff2e9c1f2ed2854484d7f64ba3cbf8c0b"
+    },
+    "post/Pythonコード片/index.pt.md": {
+      "source": "post/Pythonコード片/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "05979740019ec69e2f883588108aa787997a1cc49b9cd18aa83824afcdb6ec22",
+      "translationHash": "f4b121317bc194957ff3260f55bb8c25d076201ceecb1b55392edf5c30a5ba9f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-114.json",
+      "evidenceHash": "96c0a2e7ac88f4cf2091fae64bf0e6ba4bb0e1534db379c76d0faa1359ceaadb"
+    },
+    "post/Pythonコード片/index.ru.md": {
+      "source": "post/Pythonコード片/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "05979740019ec69e2f883588108aa787997a1cc49b9cd18aa83824afcdb6ec22",
+      "translationHash": "e3077323362d414dddfc6e8c98ec820cd4083d1244396001e9b72cfc1c1cf9a2",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-114.json",
+      "evidenceHash": "6abe05652bb129e66b22f48be2fa7b955b9c2750498b3fa84d2b752cfe76b794"
+    },
+    "post/Pythonコード片/index.zh-cn.md": {
+      "source": "post/Pythonコード片/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "05979740019ec69e2f883588108aa787997a1cc49b9cd18aa83824afcdb6ec22",
+      "translationHash": "0af5e07bbe4a0926cf10e841ffd73354c3a4a7e65cb1555e8441284fe5e514a0",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-114.json",
+      "evidenceHash": "0737a6ed8775739b55b794a5f6b2be34913af0792d49911eeb991978ea9aeae7"
+    },
+    "post/Pythonコード片/index.zh-tw.md": {
+      "source": "post/Pythonコード片/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "05979740019ec69e2f883588108aa787997a1cc49b9cd18aa83824afcdb6ec22",
+      "translationHash": "2cedd61a11883f900e172a4b238e565079c7826f41ede089c0c4a1f64ae831a5",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-114.json",
+      "evidenceHash": "037868632fa5ea231a35bfe043e51559a82ff139ee3d1b2d53f7948792c73015"
     }
   }
 }

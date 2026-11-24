@@ -1,41 +1,70 @@
 ---
-title: 'Пример кода на Python для загрузки, временного сохранения и отображения изображения'
-date: "2026-09-24T19:44:38+09:00"
+title: "Загрузка, временное сохранение и открытие изображения в Python"
 slug: "Pythonコード片"
-date: 2025-02-24T18:21:14+09:00
 tags: ["Python", "пример кода"]
 draft: false
 image: "img.webp"
 categories: ["programming"]
-description: 'Представлен практический пример кода, который использует только стандартные библиотеки Python для загрузки данных по URL-адресу изображения в Интернете, сохранения их во временный файл, отображения в браузере, а затем автоматического удаления.'
+description: "Проверьте PNG средствами стандартной библиотеки Python, откройте временную копию в браузере и удалите её после просмотра."
+date: "2025-02-24T18:21:14+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
 
-Введение в пример кода с использованием стандартной библиотеки.
+В этом примере стандартная библиотека Python загружает веб-изображение, временно сохраняет его и открывает в локальном настольном браузере. Используется PNG-логотип с сайта Python.org. При замене URL укажите доверенное изображение HTTPS, к которому у вас есть доступ.
 
-# Скачивание и отображение изображения
+## Среда выполнения
+
+Код рассчитан на интерактивный сеанс Python на локальном компьютере. В удалённом блокноте, например Colab, локальный браузер может не иметь прямого доступа к временному файлу среды выполнения.
+
+## Загрузка и открытие изображения
+
+Код задаёт тайм-аут сети 15 секунд, проверяет Content-Type и сигнатуру PNG, а также ограничивает загрузку размером 2 МиБ. Если браузер открылся, закройте изображение, вернитесь в терминал и нажмите Enter, чтобы удалить временный файл.
+
 ```python
-import urllib.request
+from pathlib import Path
 import tempfile
-import os
+import urllib.request
 import webbrowser
-import time
 
-url = "https://www.aomori-ringo.or.jp/kids/wp-content/uploads/2021/11/apple.webp"
+image_url = "https://www.python.org/static/community_logos/python-logo.png"
+max_bytes = 2 * 1024 * 1024
+temp_path = None
 
 try:
-    with urllib.request.urlopen(url) as response:
-        img_data = response.read()
+    request = urllib.request.Request(image_url, headers={"User-Agent": "Python image example"})
+    with urllib.request.urlopen(request, timeout=15) as response:
+        if response.status != 200:
+            raise RuntimeError(f"Unexpected HTTP status: {response.status}")
+        if response.headers.get_content_type() != "image/png":
+            raise ValueError("The response is not a PNG image")
+        image_data = response.read(max_bytes + 1)
 
-    # Сохранить во временный файл и отобразить
-    with tempfile.NamedTemporaryFile(delete=False, suffix=".png") as tmp:
-        tmp.write(img_data)
-        print(f"file://{tmp.name}")
-        webbrowser.open(f"file://{tmp.name}")
-        time.sleep(3)
-except Exception as e:
-    print(f"Произошла ошибка: {e}")
+    if len(image_data) > max_bytes:
+        raise ValueError("The image exceeds the 2 MiB limit")
+    if not image_data.startswith(b"\x89PNG\r\n\x1a\n"):
+        raise ValueError("The response does not have a PNG signature")
 
+    with tempfile.NamedTemporaryFile(delete=False, suffix=".png") as temp_file:
+        temp_path = Path(temp_file.name)
+        temp_file.write(image_data)
+
+    print(temp_path.as_uri())
+    if webbrowser.open(temp_path.as_uri(), new=2):
+        input()
+    else:
+        raise RuntimeError("Could not launch a browser")
 finally:
-    if 'tmp' in locals():
-        os.unlink(tmp.name)  # Удалить временный файл
+    if temp_path is not None and temp_path.exists():
+        temp_path.unlink()
 ```
+
+## Ограничения и примечания
+
+Используйте доверенный URL изображения и убедитесь в наличии необходимых прав. Пример принимает только PNG и отклоняет файлы больше 2 МиБ. Запуск браузера зависит от ОС и среды выполнения.
+
+## Официальная документация
+
+- [Python: urllib.request](https://docs.python.org/3/library/urllib.request.html)
+- [Python: tempfile](https://docs.python.org/3/library/tempfile.html)
+- [Python: webbrowser](https://docs.python.org/3/library/webbrowser.html)
+- [Python Software Foundation: Python logos](https://www.python.org/community/logos/)

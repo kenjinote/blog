@@ -1,0 +1,456 @@
+{
+  "version": 1,
+  "batch": 114,
+  "article": "Pythonで画像をダウンロードして一時保存・表示する",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "05979740019ec69e2f883588108aa787997a1cc49b9cd18aa83824afcdb6ec22",
+  "sources": [
+    "https://docs.python.org/3/library/urllib.request.html",
+    "https://docs.python.org/3/library/tempfile.html",
+    "https://docs.python.org/3/library/webbrowser.html",
+    "https://www.python.org/community/logos/"
+  ],
+  "scope": "Rewrote the Japanese article and twelve translations against current official Python urllib.request, tempfile, and webbrowser documentation. Checked HTTP timeout/status, MIME and PNG signature, bounded download size, safe temporary-file creation and cleanup, browser launch result, interactive wait behavior, environment limitations, source link, and duplicate publication dates.",
+  "findings": [
+    "Removed the duplicated future date, preserved the original 2025-02-24 publication date, and added lastmod 2026-11-24 in every locale.",
+    "Replaced the third-party WebP URL and incorrect .png suffix with a PNG from Python.org; added Content-Type and PNG signature validation.",
+    "Added a 15-second timeout, a 2 MiB read limit, temporary-file cleanup in finally, and a user-controlled wait instead of deleting after an arbitrary three seconds.",
+    "Clarified that opening the downloaded file is intended for a local interactive desktop session and may not work from a remote notebook such as Colab.",
+    "Aligned all thirteen locales and added current official Python references."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/Pythonコード片/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Pythonコード片/index.md",
+      "sourceHash": "05979740019ec69e2f883588108aa787997a1cc49b9cd18aa83824afcdb6ec22",
+      "translationHash": "7bb98e177481d8a5253952d02c6570f009815e7091e6640cc45f4b08e8bd0e76",
+      "summary": "Rewrote and aligned the translation to the Japanese source and current Python standard-library documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the local desktop workflow, download validation, temporary file, browser-open behavior, interactive wait, and cleanup semantics."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked HTTPS URL, timeout, HTTP status, Content-Type, PNG signature, byte limit, temporary file, file URI, and desktop browser terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared identical code across all locales and exercised the valid-image and oversized-image branches with mocked HTTP/browser behavior; confirmed the wait path and finally cleanup. The actual Python.org PNG endpoint also returned HTTP 200, image/png, and the expected PNG signature."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Python documentation for urllib.request, tempfile, webbrowser, and the Python logo use page."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The code was exercised with mocked HTTP/browser behavior; no browser was launched. The PNG endpoint was checked separately, but the code was not run against the network endpoint.",
+        "The sample is for an interactive local desktop Python session; browser launch and opening file URLs vary by operating system and are not suitable to assume in a hosted notebook."
+      ]
+    },
+    "post/Pythonコード片/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Pythonコード片/index.md",
+      "sourceHash": "05979740019ec69e2f883588108aa787997a1cc49b9cd18aa83824afcdb6ec22",
+      "translationHash": "1522011d054ff44b5e35a71a1975b95b64a704fae631b43f46742edbf64b6876",
+      "summary": "Rewrote and aligned the translation to the Japanese source and current Python standard-library documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the local desktop workflow, download validation, temporary file, browser-open behavior, interactive wait, and cleanup semantics."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked HTTPS URL, timeout, HTTP status, Content-Type, PNG signature, byte limit, temporary file, file URI, and desktop browser terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared identical code across all locales and exercised the valid-image and oversized-image branches with mocked HTTP/browser behavior; confirmed the wait path and finally cleanup. The actual Python.org PNG endpoint also returned HTTP 200, image/png, and the expected PNG signature."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Python documentation for urllib.request, tempfile, webbrowser, and the Python logo use page."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The code was exercised with mocked HTTP/browser behavior; no browser was launched. The PNG endpoint was checked separately, but the code was not run against the network endpoint.",
+        "The sample is for an interactive local desktop Python session; browser launch and opening file URLs vary by operating system and are not suitable to assume in a hosted notebook."
+      ]
+    },
+    "post/Pythonコード片/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Pythonコード片/index.md",
+      "sourceHash": "05979740019ec69e2f883588108aa787997a1cc49b9cd18aa83824afcdb6ec22",
+      "translationHash": "6664ffe0719d36d7508e79370dbd7d2299beb5378c3849c131e2d45576233cf7",
+      "summary": "Rewrote and aligned the translation to the Japanese source and current Python standard-library documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the local desktop workflow, download validation, temporary file, browser-open behavior, interactive wait, and cleanup semantics."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked HTTPS URL, timeout, HTTP status, Content-Type, PNG signature, byte limit, temporary file, file URI, and desktop browser terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared identical code across all locales and exercised the valid-image and oversized-image branches with mocked HTTP/browser behavior; confirmed the wait path and finally cleanup. The actual Python.org PNG endpoint also returned HTTP 200, image/png, and the expected PNG signature."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Python documentation for urllib.request, tempfile, webbrowser, and the Python logo use page."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The code was exercised with mocked HTTP/browser behavior; no browser was launched. The PNG endpoint was checked separately, but the code was not run against the network endpoint.",
+        "The sample is for an interactive local desktop Python session; browser launch and opening file URLs vary by operating system and are not suitable to assume in a hosted notebook."
+      ]
+    },
+    "post/Pythonコード片/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Pythonコード片/index.md",
+      "sourceHash": "05979740019ec69e2f883588108aa787997a1cc49b9cd18aa83824afcdb6ec22",
+      "translationHash": "04708d16b7a950e21f6bd5c9c57f6b4513c0bef376fb458e2350d6952d37bcc3",
+      "summary": "Rewrote and aligned the translation to the Japanese source and current Python standard-library documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the local desktop workflow, download validation, temporary file, browser-open behavior, interactive wait, and cleanup semantics."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked HTTPS URL, timeout, HTTP status, Content-Type, PNG signature, byte limit, temporary file, file URI, and desktop browser terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared identical code across all locales and exercised the valid-image and oversized-image branches with mocked HTTP/browser behavior; confirmed the wait path and finally cleanup. The actual Python.org PNG endpoint also returned HTTP 200, image/png, and the expected PNG signature."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Python documentation for urllib.request, tempfile, webbrowser, and the Python logo use page."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The code was exercised with mocked HTTP/browser behavior; no browser was launched. The PNG endpoint was checked separately, but the code was not run against the network endpoint.",
+        "The sample is for an interactive local desktop Python session; browser launch and opening file URLs vary by operating system and are not suitable to assume in a hosted notebook."
+      ]
+    },
+    "post/Pythonコード片/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Pythonコード片/index.md",
+      "sourceHash": "05979740019ec69e2f883588108aa787997a1cc49b9cd18aa83824afcdb6ec22",
+      "translationHash": "1264d8053adb0e5d2af9905986fdd75fdd071b027a9e69101d68ce7f4dda4c78",
+      "summary": "Rewrote and aligned the translation to the Japanese source and current Python standard-library documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the local desktop workflow, download validation, temporary file, browser-open behavior, interactive wait, and cleanup semantics."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked HTTPS URL, timeout, HTTP status, Content-Type, PNG signature, byte limit, temporary file, file URI, and desktop browser terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared identical code across all locales and exercised the valid-image and oversized-image branches with mocked HTTP/browser behavior; confirmed the wait path and finally cleanup. The actual Python.org PNG endpoint also returned HTTP 200, image/png, and the expected PNG signature."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Python documentation for urllib.request, tempfile, webbrowser, and the Python logo use page."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The code was exercised with mocked HTTP/browser behavior; no browser was launched. The PNG endpoint was checked separately, but the code was not run against the network endpoint.",
+        "The sample is for an interactive local desktop Python session; browser launch and opening file URLs vary by operating system and are not suitable to assume in a hosted notebook."
+      ]
+    },
+    "post/Pythonコード片/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Pythonコード片/index.md",
+      "sourceHash": "05979740019ec69e2f883588108aa787997a1cc49b9cd18aa83824afcdb6ec22",
+      "translationHash": "ce3ccb9dd40d0f62059bc6d045455a9858e040c1b4581c3e7b9fa89f2559f865",
+      "summary": "Rewrote and aligned the translation to the Japanese source and current Python standard-library documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the local desktop workflow, download validation, temporary file, browser-open behavior, interactive wait, and cleanup semantics."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked HTTPS URL, timeout, HTTP status, Content-Type, PNG signature, byte limit, temporary file, file URI, and desktop browser terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared identical code across all locales and exercised the valid-image and oversized-image branches with mocked HTTP/browser behavior; confirmed the wait path and finally cleanup. The actual Python.org PNG endpoint also returned HTTP 200, image/png, and the expected PNG signature."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Python documentation for urllib.request, tempfile, webbrowser, and the Python logo use page."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The code was exercised with mocked HTTP/browser behavior; no browser was launched. The PNG endpoint was checked separately, but the code was not run against the network endpoint.",
+        "The sample is for an interactive local desktop Python session; browser launch and opening file URLs vary by operating system and are not suitable to assume in a hosted notebook."
+      ]
+    },
+    "post/Pythonコード片/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Pythonコード片/index.md",
+      "sourceHash": "05979740019ec69e2f883588108aa787997a1cc49b9cd18aa83824afcdb6ec22",
+      "translationHash": "7e2fb511a9dc5fc0280a82c0924662a3c8de9bd4b4daea0cb2a2feb6aa3b3f2a",
+      "summary": "Rewrote and aligned the translation to the Japanese source and current Python standard-library documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the local desktop workflow, download validation, temporary file, browser-open behavior, interactive wait, and cleanup semantics."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked HTTPS URL, timeout, HTTP status, Content-Type, PNG signature, byte limit, temporary file, file URI, and desktop browser terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared identical code across all locales and exercised the valid-image and oversized-image branches with mocked HTTP/browser behavior; confirmed the wait path and finally cleanup. The actual Python.org PNG endpoint also returned HTTP 200, image/png, and the expected PNG signature."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Python documentation for urllib.request, tempfile, webbrowser, and the Python logo use page."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The code was exercised with mocked HTTP/browser behavior; no browser was launched. The PNG endpoint was checked separately, but the code was not run against the network endpoint.",
+        "The sample is for an interactive local desktop Python session; browser launch and opening file URLs vary by operating system and are not suitable to assume in a hosted notebook."
+      ]
+    },
+    "post/Pythonコード片/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Pythonコード片/index.md",
+      "sourceHash": "05979740019ec69e2f883588108aa787997a1cc49b9cd18aa83824afcdb6ec22",
+      "translationHash": "13cb3297ba5f7dbc882f3f1b7817156811836215e38f7200564271e727b9f21f",
+      "summary": "Rewrote and aligned the translation to the Japanese source and current Python standard-library documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the local desktop workflow, download validation, temporary file, browser-open behavior, interactive wait, and cleanup semantics."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked HTTPS URL, timeout, HTTP status, Content-Type, PNG signature, byte limit, temporary file, file URI, and desktop browser terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared identical code across all locales and exercised the valid-image and oversized-image branches with mocked HTTP/browser behavior; confirmed the wait path and finally cleanup. The actual Python.org PNG endpoint also returned HTTP 200, image/png, and the expected PNG signature."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Python documentation for urllib.request, tempfile, webbrowser, and the Python logo use page."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The code was exercised with mocked HTTP/browser behavior; no browser was launched. The PNG endpoint was checked separately, but the code was not run against the network endpoint.",
+        "The sample is for an interactive local desktop Python session; browser launch and opening file URLs vary by operating system and are not suitable to assume in a hosted notebook."
+      ]
+    },
+    "post/Pythonコード片/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Pythonコード片/index.md",
+      "sourceHash": "05979740019ec69e2f883588108aa787997a1cc49b9cd18aa83824afcdb6ec22",
+      "translationHash": "f4b121317bc194957ff3260f55bb8c25d076201ceecb1b55392edf5c30a5ba9f",
+      "summary": "Rewrote and aligned the translation to the Japanese source and current Python standard-library documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the local desktop workflow, download validation, temporary file, browser-open behavior, interactive wait, and cleanup semantics."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked HTTPS URL, timeout, HTTP status, Content-Type, PNG signature, byte limit, temporary file, file URI, and desktop browser terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared identical code across all locales and exercised the valid-image and oversized-image branches with mocked HTTP/browser behavior; confirmed the wait path and finally cleanup. The actual Python.org PNG endpoint also returned HTTP 200, image/png, and the expected PNG signature."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Python documentation for urllib.request, tempfile, webbrowser, and the Python logo use page."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The code was exercised with mocked HTTP/browser behavior; no browser was launched. The PNG endpoint was checked separately, but the code was not run against the network endpoint.",
+        "The sample is for an interactive local desktop Python session; browser launch and opening file URLs vary by operating system and are not suitable to assume in a hosted notebook."
+      ]
+    },
+    "post/Pythonコード片/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Pythonコード片/index.md",
+      "sourceHash": "05979740019ec69e2f883588108aa787997a1cc49b9cd18aa83824afcdb6ec22",
+      "translationHash": "e3077323362d414dddfc6e8c98ec820cd4083d1244396001e9b72cfc1c1cf9a2",
+      "summary": "Rewrote and aligned the translation to the Japanese source and current Python standard-library documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the local desktop workflow, download validation, temporary file, browser-open behavior, interactive wait, and cleanup semantics."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked HTTPS URL, timeout, HTTP status, Content-Type, PNG signature, byte limit, temporary file, file URI, and desktop browser terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared identical code across all locales and exercised the valid-image and oversized-image branches with mocked HTTP/browser behavior; confirmed the wait path and finally cleanup. The actual Python.org PNG endpoint also returned HTTP 200, image/png, and the expected PNG signature."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Python documentation for urllib.request, tempfile, webbrowser, and the Python logo use page."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The code was exercised with mocked HTTP/browser behavior; no browser was launched. The PNG endpoint was checked separately, but the code was not run against the network endpoint.",
+        "The sample is for an interactive local desktop Python session; browser launch and opening file URLs vary by operating system and are not suitable to assume in a hosted notebook."
+      ]
+    },
+    "post/Pythonコード片/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Pythonコード片/index.md",
+      "sourceHash": "05979740019ec69e2f883588108aa787997a1cc49b9cd18aa83824afcdb6ec22",
+      "translationHash": "0af5e07bbe4a0926cf10e841ffd73354c3a4a7e65cb1555e8441284fe5e514a0",
+      "summary": "Rewrote and aligned the translation to the Japanese source and current Python standard-library documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the local desktop workflow, download validation, temporary file, browser-open behavior, interactive wait, and cleanup semantics."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked HTTPS URL, timeout, HTTP status, Content-Type, PNG signature, byte limit, temporary file, file URI, and desktop browser terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared identical code across all locales and exercised the valid-image and oversized-image branches with mocked HTTP/browser behavior; confirmed the wait path and finally cleanup. The actual Python.org PNG endpoint also returned HTTP 200, image/png, and the expected PNG signature."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Python documentation for urllib.request, tempfile, webbrowser, and the Python logo use page."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The code was exercised with mocked HTTP/browser behavior; no browser was launched. The PNG endpoint was checked separately, but the code was not run against the network endpoint.",
+        "The sample is for an interactive local desktop Python session; browser launch and opening file URLs vary by operating system and are not suitable to assume in a hosted notebook."
+      ]
+    },
+    "post/Pythonコード片/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Pythonコード片/index.md",
+      "sourceHash": "05979740019ec69e2f883588108aa787997a1cc49b9cd18aa83824afcdb6ec22",
+      "translationHash": "2cedd61a11883f900e172a4b238e565079c7826f41ede089c0c4a1f64ae831a5",
+      "summary": "Rewrote and aligned the translation to the Japanese source and current Python standard-library documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the local desktop workflow, download validation, temporary file, browser-open behavior, interactive wait, and cleanup semantics."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked HTTPS URL, timeout, HTTP status, Content-Type, PNG signature, byte limit, temporary file, file URI, and desktop browser terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared identical code across all locales and exercised the valid-image and oversized-image branches with mocked HTTP/browser behavior; confirmed the wait path and finally cleanup. The actual Python.org PNG endpoint also returned HTTP 200, image/png, and the expected PNG signature."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Python documentation for urllib.request, tempfile, webbrowser, and the Python logo use page."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The code was exercised with mocked HTTP/browser behavior; no browser was launched. The PNG endpoint was checked separately, but the code was not run against the network endpoint.",
+        "The sample is for an interactive local desktop Python session; browser launch and opening file URLs vary by operating system and are not suitable to assume in a hosted notebook."
+      ]
+    }
+  }
+}
