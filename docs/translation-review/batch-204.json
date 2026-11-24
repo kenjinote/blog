@@ -384,7 +384,7 @@
       "reviewer": "Codex (AI)",
       "source": "post/Windows のライセンスの状態を確認するコマンド/index.md",
       "sourceHash": "514a77ecc802899f9a276f8c55178d789c47dbe0f3132a846eecc6b9fd12d8bf",
-      "translationHash": "b3fb4de8e05a407027b6d0ff91b214e0140194908bcd71f2ea9170a38340336d",
+      "translationHash": "bc05b5586a8e0b129b7d51a69fff8816225d6ec34e4226a0aff254af968c2bb6",
       "summary": "Compared the full translation with the Japanese source and current Microsoft documentation; removed unnecessary elevation, clarified /dli, /dlv, and /xpr behavior, distinguished activation status from license entitlement, and removed an unrelated OAuth cross-link.",
       "checks": {
         "meaning": {
