@@ -1,0 +1,468 @@
+{
+  "version": 1,
+  "batch": 169,
+  "article": "Display a Windows MessageBox using Rust and windows-sys",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "5f3a6434d13aa931428c5d28245ab5f606566810f438dd88dff1a32bc131c923",
+  "sources": [
+    "https://docs.rs/windows-sys/latest/windows_sys/Win32/UI/WindowsAndMessaging/",
+    "https://docs.rs/crate/windows-sys/latest",
+    "https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-messageboxw",
+    "https://github.com/microsoft/windows-rs"
+  ],
+  "scope": "Compared the complete Japanese source with all twelve translations, duplicate metadata, steps, crate/version/feature selection, Rust code, UTF-16 handling, unsafe FFI boundary, images, and internal/external links.",
+  "findings": [
+    "Removed duplicate date keys while preserving the original 2022 publication date and recording the review as lastmod.",
+    "Replaced the obsolete winapi and user32-sys 0.2 dependencies with windows-sys 0.61 and its WindowsAndMessaging feature.",
+    "Changed the ANSI MessageBoxA/CString example to MessageBoxW with explicitly NUL-terminated UTF-16 strings.",
+    "Aligned Cargo project and directory names, normalized the Rust code fence, and replaced the stale reference with current primary documentation.",
+    "Ran cargo check successfully in a temporary Windows Cargo project against windows-sys 0.61.2; the GUI was not launched."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/RustでMessageBoxを表示する/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/RustでMessageBoxを表示する/index.md",
+      "sourceHash": "5f3a6434d13aa931428c5d28245ab5f606566810f438dd88dff1a32bc131c923",
+      "translationHash": "b709de0bf979aebee97efe22185f66bf323642d5c586e86c18e60ddd886b209f",
+      "summary": "Compared the complete translation with the Japanese source and updated its Cargo setup, Windows API example, UTF-16 handling, metadata, and documentation links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete step sequence and clarified that this is a Windows-only example."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Updated winapi/user32-sys references to Microsoft windows-sys and explained UTF-16 and FFI terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compiled the extracted Rust example with cargo check on Windows; windows-sys 0.61.2 resolved and the check passed. The GUI was not launched. Static review covered UTF-16 NUL termination, the feature flag, and the unsafe FFI call."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the stale external example with windows-sys API/crate documentation, Microsoft MessageBoxW documentation, and the Microsoft windows-rs repository; checked localized internal links."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The Rust snippet passed cargo check on Windows but the MessageBox was not launched, so this does not confirm its visual behavior on all Windows versions.",
+        "The code is a minimal Windows-only demonstration; it does not handle the MessageBoxW return value.",
+        "Crate versions and generated API signatures may change; consult current windows-sys documentation."
+      ]
+    },
+    "post/RustでMessageBoxを表示する/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/RustでMessageBoxを表示する/index.md",
+      "sourceHash": "5f3a6434d13aa931428c5d28245ab5f606566810f438dd88dff1a32bc131c923",
+      "translationHash": "aec47fba285d67cbb27b941765c6b01ca1d65b277741ba9060cab64584d46cb9",
+      "summary": "Compared the complete translation with the Japanese source and updated its Cargo setup, Windows API example, UTF-16 handling, metadata, and documentation links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete step sequence and clarified that this is a Windows-only example."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Updated winapi/user32-sys references to Microsoft windows-sys and explained UTF-16 and FFI terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compiled the extracted Rust example with cargo check on Windows; windows-sys 0.61.2 resolved and the check passed. The GUI was not launched. Static review covered UTF-16 NUL termination, the feature flag, and the unsafe FFI call."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the stale external example with windows-sys API/crate documentation, Microsoft MessageBoxW documentation, and the Microsoft windows-rs repository; checked localized internal links."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The Rust snippet passed cargo check on Windows but the MessageBox was not launched, so this does not confirm its visual behavior on all Windows versions.",
+        "The code is a minimal Windows-only demonstration; it does not handle the MessageBoxW return value.",
+        "Crate versions and generated API signatures may change; consult current windows-sys documentation."
+      ]
+    },
+    "post/RustでMessageBoxを表示する/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/RustでMessageBoxを表示する/index.md",
+      "sourceHash": "5f3a6434d13aa931428c5d28245ab5f606566810f438dd88dff1a32bc131c923",
+      "translationHash": "2b608e741cec03960d6194e34dc9629c9c0dec8aa5f107405a131fae2c6abb47",
+      "summary": "Compared the complete translation with the Japanese source and updated its Cargo setup, Windows API example, UTF-16 handling, metadata, and documentation links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete step sequence and clarified that this is a Windows-only example."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Updated winapi/user32-sys references to Microsoft windows-sys and explained UTF-16 and FFI terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compiled the extracted Rust example with cargo check on Windows; windows-sys 0.61.2 resolved and the check passed. The GUI was not launched. Static review covered UTF-16 NUL termination, the feature flag, and the unsafe FFI call."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the stale external example with windows-sys API/crate documentation, Microsoft MessageBoxW documentation, and the Microsoft windows-rs repository; checked localized internal links."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The Rust snippet passed cargo check on Windows but the MessageBox was not launched, so this does not confirm its visual behavior on all Windows versions.",
+        "The code is a minimal Windows-only demonstration; it does not handle the MessageBoxW return value.",
+        "Crate versions and generated API signatures may change; consult current windows-sys documentation."
+      ]
+    },
+    "post/RustでMessageBoxを表示する/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/RustでMessageBoxを表示する/index.md",
+      "sourceHash": "5f3a6434d13aa931428c5d28245ab5f606566810f438dd88dff1a32bc131c923",
+      "translationHash": "9c93e4d82d548e3f522d8a07fe0610a1415b3b14837197f2e308c4ce543dfa73",
+      "summary": "Compared the complete translation with the Japanese source and updated its Cargo setup, Windows API example, UTF-16 handling, metadata, and documentation links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete step sequence and clarified that this is a Windows-only example."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Updated winapi/user32-sys references to Microsoft windows-sys and explained UTF-16 and FFI terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compiled the extracted Rust example with cargo check on Windows; windows-sys 0.61.2 resolved and the check passed. The GUI was not launched. Static review covered UTF-16 NUL termination, the feature flag, and the unsafe FFI call."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the stale external example with windows-sys API/crate documentation, Microsoft MessageBoxW documentation, and the Microsoft windows-rs repository; checked localized internal links."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The Rust snippet passed cargo check on Windows but the MessageBox was not launched, so this does not confirm its visual behavior on all Windows versions.",
+        "The code is a minimal Windows-only demonstration; it does not handle the MessageBoxW return value.",
+        "Crate versions and generated API signatures may change; consult current windows-sys documentation."
+      ]
+    },
+    "post/RustでMessageBoxを表示する/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/RustでMessageBoxを表示する/index.md",
+      "sourceHash": "5f3a6434d13aa931428c5d28245ab5f606566810f438dd88dff1a32bc131c923",
+      "translationHash": "4847b7a04c126d32f2fabf1bdef48c0544f99f4d38eb82a34dcb8ccf925801a5",
+      "summary": "Compared the complete translation with the Japanese source and updated its Cargo setup, Windows API example, UTF-16 handling, metadata, and documentation links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete step sequence and clarified that this is a Windows-only example."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Updated winapi/user32-sys references to Microsoft windows-sys and explained UTF-16 and FFI terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compiled the extracted Rust example with cargo check on Windows; windows-sys 0.61.2 resolved and the check passed. The GUI was not launched. Static review covered UTF-16 NUL termination, the feature flag, and the unsafe FFI call."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the stale external example with windows-sys API/crate documentation, Microsoft MessageBoxW documentation, and the Microsoft windows-rs repository; checked localized internal links."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The Rust snippet passed cargo check on Windows but the MessageBox was not launched, so this does not confirm its visual behavior on all Windows versions.",
+        "The code is a minimal Windows-only demonstration; it does not handle the MessageBoxW return value.",
+        "Crate versions and generated API signatures may change; consult current windows-sys documentation."
+      ]
+    },
+    "post/RustでMessageBoxを表示する/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/RustでMessageBoxを表示する/index.md",
+      "sourceHash": "5f3a6434d13aa931428c5d28245ab5f606566810f438dd88dff1a32bc131c923",
+      "translationHash": "b68a6aa50e8dc4d372af71d3a86e28cea2940c8d345b878dbb61c6c4ed152c7d",
+      "summary": "Compared the complete translation with the Japanese source and updated its Cargo setup, Windows API example, UTF-16 handling, metadata, and documentation links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete step sequence and clarified that this is a Windows-only example."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Updated winapi/user32-sys references to Microsoft windows-sys and explained UTF-16 and FFI terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compiled the extracted Rust example with cargo check on Windows; windows-sys 0.61.2 resolved and the check passed. The GUI was not launched. Static review covered UTF-16 NUL termination, the feature flag, and the unsafe FFI call."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the stale external example with windows-sys API/crate documentation, Microsoft MessageBoxW documentation, and the Microsoft windows-rs repository; checked localized internal links."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The Rust snippet passed cargo check on Windows but the MessageBox was not launched, so this does not confirm its visual behavior on all Windows versions.",
+        "The code is a minimal Windows-only demonstration; it does not handle the MessageBoxW return value.",
+        "Crate versions and generated API signatures may change; consult current windows-sys documentation."
+      ]
+    },
+    "post/RustでMessageBoxを表示する/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/RustでMessageBoxを表示する/index.md",
+      "sourceHash": "5f3a6434d13aa931428c5d28245ab5f606566810f438dd88dff1a32bc131c923",
+      "translationHash": "6be259eb44e71f5c19c9bd62afc6abc4236812ceffd09b12c393964dca42b5db",
+      "summary": "Compared the complete translation with the Japanese source and updated its Cargo setup, Windows API example, UTF-16 handling, metadata, and documentation links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete step sequence and clarified that this is a Windows-only example."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Updated winapi/user32-sys references to Microsoft windows-sys and explained UTF-16 and FFI terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compiled the extracted Rust example with cargo check on Windows; windows-sys 0.61.2 resolved and the check passed. The GUI was not launched. Static review covered UTF-16 NUL termination, the feature flag, and the unsafe FFI call."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the stale external example with windows-sys API/crate documentation, Microsoft MessageBoxW documentation, and the Microsoft windows-rs repository; checked localized internal links."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The Rust snippet passed cargo check on Windows but the MessageBox was not launched, so this does not confirm its visual behavior on all Windows versions.",
+        "The code is a minimal Windows-only demonstration; it does not handle the MessageBoxW return value.",
+        "Crate versions and generated API signatures may change; consult current windows-sys documentation."
+      ]
+    },
+    "post/RustでMessageBoxを表示する/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/RustでMessageBoxを表示する/index.md",
+      "sourceHash": "5f3a6434d13aa931428c5d28245ab5f606566810f438dd88dff1a32bc131c923",
+      "translationHash": "bd2a66c238e9c5e4ead7c546612eee33f96ebeb35e46fcdecea81bed70671536",
+      "summary": "Compared the complete translation with the Japanese source and updated its Cargo setup, Windows API example, UTF-16 handling, metadata, and documentation links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete step sequence and clarified that this is a Windows-only example."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Updated winapi/user32-sys references to Microsoft windows-sys and explained UTF-16 and FFI terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compiled the extracted Rust example with cargo check on Windows; windows-sys 0.61.2 resolved and the check passed. The GUI was not launched. Static review covered UTF-16 NUL termination, the feature flag, and the unsafe FFI call."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the stale external example with windows-sys API/crate documentation, Microsoft MessageBoxW documentation, and the Microsoft windows-rs repository; checked localized internal links."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The Rust snippet passed cargo check on Windows but the MessageBox was not launched, so this does not confirm its visual behavior on all Windows versions.",
+        "The code is a minimal Windows-only demonstration; it does not handle the MessageBoxW return value.",
+        "Crate versions and generated API signatures may change; consult current windows-sys documentation."
+      ]
+    },
+    "post/RustでMessageBoxを表示する/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/RustでMessageBoxを表示する/index.md",
+      "sourceHash": "5f3a6434d13aa931428c5d28245ab5f606566810f438dd88dff1a32bc131c923",
+      "translationHash": "30f74c19edc124d3d16777db7dbe9d331ac3debc66c70d182dc57f6f787cfeda",
+      "summary": "Compared the complete translation with the Japanese source and updated its Cargo setup, Windows API example, UTF-16 handling, metadata, and documentation links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete step sequence and clarified that this is a Windows-only example."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Updated winapi/user32-sys references to Microsoft windows-sys and explained UTF-16 and FFI terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compiled the extracted Rust example with cargo check on Windows; windows-sys 0.61.2 resolved and the check passed. The GUI was not launched. Static review covered UTF-16 NUL termination, the feature flag, and the unsafe FFI call."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the stale external example with windows-sys API/crate documentation, Microsoft MessageBoxW documentation, and the Microsoft windows-rs repository; checked localized internal links."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The Rust snippet passed cargo check on Windows but the MessageBox was not launched, so this does not confirm its visual behavior on all Windows versions.",
+        "The code is a minimal Windows-only demonstration; it does not handle the MessageBoxW return value.",
+        "Crate versions and generated API signatures may change; consult current windows-sys documentation."
+      ]
+    },
+    "post/RustでMessageBoxを表示する/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/RustでMessageBoxを表示する/index.md",
+      "sourceHash": "5f3a6434d13aa931428c5d28245ab5f606566810f438dd88dff1a32bc131c923",
+      "translationHash": "8cc02ffaae0e02ea7b14ad2ef32333a70d694e1d861893cb7972ebedaebf61cc",
+      "summary": "Compared the complete translation with the Japanese source and updated its Cargo setup, Windows API example, UTF-16 handling, metadata, and documentation links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete step sequence and clarified that this is a Windows-only example."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Updated winapi/user32-sys references to Microsoft windows-sys and explained UTF-16 and FFI terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compiled the extracted Rust example with cargo check on Windows; windows-sys 0.61.2 resolved and the check passed. The GUI was not launched. Static review covered UTF-16 NUL termination, the feature flag, and the unsafe FFI call."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the stale external example with windows-sys API/crate documentation, Microsoft MessageBoxW documentation, and the Microsoft windows-rs repository; checked localized internal links."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The Rust snippet passed cargo check on Windows but the MessageBox was not launched, so this does not confirm its visual behavior on all Windows versions.",
+        "The code is a minimal Windows-only demonstration; it does not handle the MessageBoxW return value.",
+        "Crate versions and generated API signatures may change; consult current windows-sys documentation."
+      ]
+    },
+    "post/RustでMessageBoxを表示する/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/RustでMessageBoxを表示する/index.md",
+      "sourceHash": "5f3a6434d13aa931428c5d28245ab5f606566810f438dd88dff1a32bc131c923",
+      "translationHash": "27c34dbb9c804da3973e13c1c4e41fc3b4d77d7682087c74d79a1f3cf5ca889d",
+      "summary": "Compared the complete translation with the Japanese source and updated its Cargo setup, Windows API example, UTF-16 handling, metadata, and documentation links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete step sequence and clarified that this is a Windows-only example."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Updated winapi/user32-sys references to Microsoft windows-sys and explained UTF-16 and FFI terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compiled the extracted Rust example with cargo check on Windows; windows-sys 0.61.2 resolved and the check passed. The GUI was not launched. Static review covered UTF-16 NUL termination, the feature flag, and the unsafe FFI call."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the stale external example with windows-sys API/crate documentation, Microsoft MessageBoxW documentation, and the Microsoft windows-rs repository; checked localized internal links."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The Rust snippet passed cargo check on Windows but the MessageBox was not launched, so this does not confirm its visual behavior on all Windows versions.",
+        "The code is a minimal Windows-only demonstration; it does not handle the MessageBoxW return value.",
+        "Crate versions and generated API signatures may change; consult current windows-sys documentation."
+      ]
+    },
+    "post/RustでMessageBoxを表示する/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/RustでMessageBoxを表示する/index.md",
+      "sourceHash": "5f3a6434d13aa931428c5d28245ab5f606566810f438dd88dff1a32bc131c923",
+      "translationHash": "f415a6938091a1eefcb583198db1341269c4611948989d35ce38b8abfffae4c0",
+      "summary": "Compared the complete translation with the Japanese source and updated its Cargo setup, Windows API example, UTF-16 handling, metadata, and documentation links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete step sequence and clarified that this is a Windows-only example."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Updated winapi/user32-sys references to Microsoft windows-sys and explained UTF-16 and FFI terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compiled the extracted Rust example with cargo check on Windows; windows-sys 0.61.2 resolved and the check passed. The GUI was not launched. Static review covered UTF-16 NUL termination, the feature flag, and the unsafe FFI call."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the stale external example with windows-sys API/crate documentation, Microsoft MessageBoxW documentation, and the Microsoft windows-rs repository; checked localized internal links."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The Rust snippet passed cargo check on Windows but the MessageBox was not launched, so this does not confirm its visual behavior on all Windows versions.",
+        "The code is a minimal Windows-only demonstration; it does not handle the MessageBoxW return value.",
+        "Crate versions and generated API signatures may change; consult current windows-sys documentation."
+      ]
+    }
+  }
+}

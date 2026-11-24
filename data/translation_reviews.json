@@ -19565,6 +19565,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-168.json",
       "evidenceHash": "02fca116543365fb78f8adb1c23d26e12fb3b4cb607b9b75652f9da100187191"
+    },
+    "post/RustでMessageBoxを表示する/index.en.md": {
+      "source": "post/RustでMessageBoxを表示する/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "5f3a6434d13aa931428c5d28245ab5f606566810f438dd88dff1a32bc131c923",
+      "translationHash": "b709de0bf979aebee97efe22185f66bf323642d5c586e86c18e60ddd886b209f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-169.json",
+      "evidenceHash": "0e07d4a19edc5f8bd4064a7da76af03893709e014a71a5627180c101e2f5966d"
+    },
+    "post/RustでMessageBoxを表示する/index.zh-cn.md": {
+      "source": "post/RustでMessageBoxを表示する/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "5f3a6434d13aa931428c5d28245ab5f606566810f438dd88dff1a32bc131c923",
+      "translationHash": "aec47fba285d67cbb27b941765c6b01ca1d65b277741ba9060cab64584d46cb9",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-169.json",
+      "evidenceHash": "00ca25694ddd0288d2bd0b11b6b5ea1bf4a0e97916c2c782eb76140903ab70bd"
+    },
+    "post/RustでMessageBoxを表示する/index.es.md": {
+      "source": "post/RustでMessageBoxを表示する/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "5f3a6434d13aa931428c5d28245ab5f606566810f438dd88dff1a32bc131c923",
+      "translationHash": "2b608e741cec03960d6194e34dc9629c9c0dec8aa5f107405a131fae2c6abb47",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-169.json",
+      "evidenceHash": "3cc0d0c311ae7b646ee51cea1397bad5067ce9606980a4a2b9259679b51e2a2c"
+    },
+    "post/RustでMessageBoxを表示する/index.ko.md": {
+      "source": "post/RustでMessageBoxを表示する/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "5f3a6434d13aa931428c5d28245ab5f606566810f438dd88dff1a32bc131c923",
+      "translationHash": "9c93e4d82d548e3f522d8a07fe0610a1415b3b14837197f2e308c4ce543dfa73",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-169.json",
+      "evidenceHash": "29ee2a2e86f52e6830072b04945c34c7f614bbfe3dbd9bb37b31a2c2b9a3a32a"
+    },
+    "post/RustでMessageBoxを表示する/index.pt.md": {
+      "source": "post/RustでMessageBoxを表示する/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "5f3a6434d13aa931428c5d28245ab5f606566810f438dd88dff1a32bc131c923",
+      "translationHash": "4847b7a04c126d32f2fabf1bdef48c0544f99f4d38eb82a34dcb8ccf925801a5",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-169.json",
+      "evidenceHash": "a01862b22339018225717584088490e2483c1c2085da922eec25c5e42a56a9cf"
+    },
+    "post/RustでMessageBoxを表示する/index.zh-tw.md": {
+      "source": "post/RustでMessageBoxを表示する/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "5f3a6434d13aa931428c5d28245ab5f606566810f438dd88dff1a32bc131c923",
+      "translationHash": "b68a6aa50e8dc4d372af71d3a86e28cea2940c8d345b878dbb61c6c4ed152c7d",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-169.json",
+      "evidenceHash": "a98f211a60e9d4792fc0bbd8a3cc1e215bdf7839a7dfe0ee8b6185827fad2376"
+    },
+    "post/RustでMessageBoxを表示する/index.hi.md": {
+      "source": "post/RustでMessageBoxを表示する/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "5f3a6434d13aa931428c5d28245ab5f606566810f438dd88dff1a32bc131c923",
+      "translationHash": "6be259eb44e71f5c19c9bd62afc6abc4236812ceffd09b12c393964dca42b5db",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-169.json",
+      "evidenceHash": "bd29efdc9a9176364e93a2edc74feddf9bed65f0a82a88e39e84a3276f25f8cc"
+    },
+    "post/RustでMessageBoxを表示する/index.fr.md": {
+      "source": "post/RustでMessageBoxを表示する/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "5f3a6434d13aa931428c5d28245ab5f606566810f438dd88dff1a32bc131c923",
+      "translationHash": "bd2a66c238e9c5e4ead7c546612eee33f96ebeb35e46fcdecea81bed70671536",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-169.json",
+      "evidenceHash": "65b5e96121e43160f7fbb7525434d8750bbbafbc1c8a5a2a624a08fc5ceb6cfa"
+    },
+    "post/RustでMessageBoxを表示する/index.de.md": {
+      "source": "post/RustでMessageBoxを表示する/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "5f3a6434d13aa931428c5d28245ab5f606566810f438dd88dff1a32bc131c923",
+      "translationHash": "30f74c19edc124d3d16777db7dbe9d331ac3debc66c70d182dc57f6f787cfeda",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-169.json",
+      "evidenceHash": "99f509a3540b50f30af98abf39f2eab47b31a8bff945e444034d7041251f50c3"
+    },
+    "post/RustでMessageBoxを表示する/index.ar.md": {
+      "source": "post/RustでMessageBoxを表示する/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "5f3a6434d13aa931428c5d28245ab5f606566810f438dd88dff1a32bc131c923",
+      "translationHash": "8cc02ffaae0e02ea7b14ad2ef32333a70d694e1d861893cb7972ebedaebf61cc",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-169.json",
+      "evidenceHash": "530e697131988c0bf1ccdc5885b309ee836948373c60dc0b90c6d43694ad5a1d"
+    },
+    "post/RustでMessageBoxを表示する/index.ru.md": {
+      "source": "post/RustでMessageBoxを表示する/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "5f3a6434d13aa931428c5d28245ab5f606566810f438dd88dff1a32bc131c923",
+      "translationHash": "27c34dbb9c804da3973e13c1c4e41fc3b4d77d7682087c74d79a1f3cf5ca889d",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-169.json",
+      "evidenceHash": "25fd62312416397fe14db756f3782660655e8488bb3e7971e7f8fbe49a683fcf"
+    },
+    "post/RustでMessageBoxを表示する/index.id.md": {
+      "source": "post/RustでMessageBoxを表示する/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "5f3a6434d13aa931428c5d28245ab5f606566810f438dd88dff1a32bc131c923",
+      "translationHash": "f415a6938091a1eefcb583198db1341269c4611948989d35ce38b8abfffae4c0",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-169.json",
+      "evidenceHash": "1fdace02afc49af4527a872fb3cf8c0bf1766365587066199a3091a68cccabc3"
     }
   }
 }
