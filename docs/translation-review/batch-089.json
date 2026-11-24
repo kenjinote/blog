@@ -21,7 +21,7 @@
     "Replaced the single DestroyIcon citation with seven direct Microsoft Learn references in all editions.",
     "Removed duplicate date metadata in all editions, retained the 2024-04-19 publication date, and set lastmod to 2026-11-24."
   ],
-  "publicationPending": true,
+  "publicationPending": false,
   "reviews": {
     "post/LoadIconはDestroyIconを呼び出す必要はない/index.ar.md": {
       "reviewKind": "ai",
@@ -443,5 +443,11 @@
         "Microsoft Learn pages conflict on CreateIconFromResource and CreateIconFromResourceEx ownership guidance; the article flags this and does not assert a universal rule for those APIs."
       ]
     }
+  },
+  "publication": {
+    "record": "docs/translation-review/publication-087-090.json",
+    "ciRun": 45306530339,
+    "sourceCommit": "d4ca57992107ef4151185cd6deb42c21bb3c7a36",
+    "allPassed": true
   }
 }

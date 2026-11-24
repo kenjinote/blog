@@ -15,7 +15,7 @@
     "Localized the complete revised article into twelve languages, preserving the same three sections and official references.",
     "Removed duplicate date metadata, retained the original 2023-04-17 publication date, and set lastmod to 2026-11-24."
   ],
-  "publicationPending": true,
+  "publicationPending": false,
   "reviews": {
     "post/かっこいい Web ページテンプレート（html5up）/index.ar.md": {
       "reviewKind": "ai",
@@ -449,5 +449,11 @@
         "Separate assets or libraries may have their own licenses, which the article asks readers to check."
       ]
     }
+  },
+  "publication": {
+    "record": "docs/translation-review/publication-087-090.json",
+    "ciRun": 45306530339,
+    "sourceCommit": "d4ca57992107ef4151185cd6deb42c21bb3c7a36",
+    "allPassed": true
   }
 }

@@ -2,7 +2,7 @@
 from datetime import datetime
 from html.parser import HTMLParser
 from pathlib import Path
-from urllib.parse import unquote
+from urllib.parse import unquote, urlparse
 from xml.etree import ElementTree as ET
 import argparse
 import json
@@ -22,7 +22,7 @@ ARTICLES = {
             "https://docs.github.com/en/copilot/how-tos/copilot-in-your-ide/copilot-for-common-tasks/get-ide-code-suggestions",
             "https://plugins.jetbrains.com/plugin/17718-github-copilot--your-ai-pair-programmer",
         ],
-        "markers": ["CopyandOpen", "LogintoGitHub", "AuthorizeGitHubCopilotPlugin", "CopilotFree", "GitHubCopilotChat"],
+        "markers": ["CopyandOpen", "LogintoGitHub", "AuthorizeGitHubCopilotPlugin", "CopilotFree", "CopilotChat"],
         "date": "2022-09-10",
     },
     88: {
@@ -134,6 +134,10 @@ def yaml_value(path, key):
     return value
 
 
+def slug_key(value):
+    return re.sub(r"[^0-9a-z\u3040-\u30ff\u3400-\u9fff\uac00-\ud7af]", "", value.casefold())
+
+
 parser = argparse.ArgumentParser()
 parser.add_argument("--ci-run", type=int, required=True)
 parser.add_argument("--commit", required=True)
@@ -157,8 +161,8 @@ all_urls = [item.find("s:loc", NS).text for item in sitemap.findall("s:url", NS)
 results = {}
 for batch_number, article in ARTICLES.items():
     bundle = article["bundle"]
-    slug = re.sub(r"\s+", "", article["slug"]).casefold()
-    japanese_url = next((url for url in all_urls if f"/p/{slug}/" in unquote(url).casefold()), None)
+    slug = slug_key(article["slug"])
+    japanese_url = next((url for url in all_urls if slug_key(urlparse(unquote(url)).path.rstrip("/").split("/")[-1]) == slug), None)
     if not japanese_url:
         raise SystemExit(f"Batch {batch_number}: Japanese article missing from sitemap")
     _, raw = fetch(japanese_url)
@@ -215,7 +219,7 @@ receipt = {
 (DOCS / f"publication-087-{args.max_batch:03}.json").write_text(json.dumps(receipt, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 if passed:
     for batch_number in ARTICLES:
-        path = DOCS / f"batch-{batch_number}.json"
+        path = DOCS / f"batch-{batch_number:03}.json"
         entry = json.loads(path.read_text(encoding="utf-8"))
         entry["publicationPending"] = False
         entry["publication"] = {"record": f"docs/translation-review/publication-087-{args.max_batch:03}.json", "ciRun": args.ci_run, "sourceCommit": args.commit, "allPassed": True}

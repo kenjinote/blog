@@ -17,7 +17,7 @@
     "Removed outdated UI screenshots and replaced the old Stack Overflow citation with three direct JetBrains references.",
     "Removed duplicate date metadata in all editions, retained the original 2022-09-04 publication date, and set lastmod to 2026-11-24."
   ],
-  "publicationPending": true,
+  "publicationPending": false,
   "reviews": {
     "post/IntelliJ IDEAで日付を貼り付けるコマンドを追加する/index.ar.md": {
       "reviewKind": "ai",
@@ -439,5 +439,11 @@
         "Settings labels can vary by IDE version and operating system; the article links directly to current JetBrains documentation."
       ]
     }
+  },
+  "publication": {
+    "record": "docs/translation-review/publication-087-090.json",
+    "ciRun": 45306530339,
+    "sourceCommit": "d4ca57992107ef4151185cd6deb42c21bb3c7a36",
+    "allPassed": true
   }
 }

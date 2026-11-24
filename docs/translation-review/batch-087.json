@@ -17,7 +17,7 @@
     "Removed the old version-specific UI screenshots and their alt text from the article body so they no longer conflict with current UI instructions.",
     "Removed duplicate date fields from all editions, retained the 2022-09-10 publication date, and set lastmod to 2026-11-24."
   ],
-  "publicationPending": true,
+  "publicationPending": false,
   "reviews": {
     "post/IntelliJ IDEAでGitHub Copilotを使う/index.ar.md": {
       "reviewKind": "ai",
@@ -439,5 +439,11 @@
         "IDE menus and GitHub Copilot plan details can change; the guide links to current official references and advises readers to verify them."
       ]
     }
+  },
+  "publication": {
+    "record": "docs/translation-review/publication-087-090.json",
+    "ciRun": 45306530339,
+    "sourceCommit": "d4ca57992107ef4151185cd6deb42c21bb3c7a36",
+    "allPassed": true
   }
 }
