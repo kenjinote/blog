@@ -1,0 +1,440 @@
+{
+  "version": 1,
+  "batch": 184,
+  "article": "Restart Windows Explorer in Windows 10 and 11",
+  "reviewedAt": "2026-11-25",
+  "sourceHash": "d093101b0d977b56d0e09c4706c9bb16864d9f6ac39b301e46a861dadaebc046",
+  "sources": [
+    "https://support.microsoft.com/en-us/windows/hardware/display-graphics/troubleshooting-blank-screens-in-windows"
+  ],
+  "scope": "Read and compared the complete Japanese article and all twelve translations; verified Task Manager restart and Run new task procedures, process name, safety note, UI-label caveat, metadata dates, and the Microsoft Support link.",
+  "findings": [
+    "Removed the obsolete Windows 10 taskbar hidden-menu instructions and replaced the Windows 11 claim based on that menu with the current cross-version Task Manager method.",
+    "Made Task Manager > Processes > Windows Explorer > Restart the recommended path and added Run new task > explorer.exe as the fallback when Explorer is absent.",
+    "Removed the forceful taskkill command and outdated embedded screenshots that no longer match the recommended workflow.",
+    "Corrected duplicate dates, preserved the original publication date (2024-03-30), and added lastmod (2026-11-25)."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/エクスプローラーの終了・再起動方法/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/エクスプローラーの終了・再起動方法/index.md",
+      "sourceHash": "d093101b0d977b56d0e09c4706c9bb16864d9f6ac39b301e46a861dadaebc046",
+      "translationHash": "28e4f31d0088b1123ec29a7cd8ec677b00b6b72fe1d05ace633f9d4dbfc6b679",
+      "summary": "Compared the full translation against the Japanese source and Microsoft Support’s current Windows Explorer restart instructions; corrected outdated UI steps and aligned the fallback procedure and safety context.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese instructions and all twelve translations with current Microsoft Support guidance. Replaced the obsolete taskbar context-menu and force-kill centered steps with Task Manager > Windows Explorer > Restart and the Run new task fallback."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked names for Task Manager, Processes, Windows Explorer, Restart, and Run new task in each edition; noted that labels vary by Windows version and display language."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked the literal process name `explorer.exe` and the Run new task instruction against Microsoft Support. No script or shell command is provided."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the Microsoft Support URL and retained the same direct reference in every edition."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The steps were checked against current Microsoft Support documentation, but were not executed on separate Windows 10 and Windows 11 installations; task names and layout can vary by update and locale."
+      ]
+    },
+    "post/エクスプローラーの終了・再起動方法/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/エクスプローラーの終了・再起動方法/index.md",
+      "sourceHash": "d093101b0d977b56d0e09c4706c9bb16864d9f6ac39b301e46a861dadaebc046",
+      "translationHash": "1220034f019e45b2d19d85b4739b02f5d68e0588b39933ac9ed725b6b64d6db2",
+      "summary": "Compared the full translation against the Japanese source and Microsoft Support’s current Windows Explorer restart instructions; corrected outdated UI steps and aligned the fallback procedure and safety context.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese instructions and all twelve translations with current Microsoft Support guidance. Replaced the obsolete taskbar context-menu and force-kill centered steps with Task Manager > Windows Explorer > Restart and the Run new task fallback."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked names for Task Manager, Processes, Windows Explorer, Restart, and Run new task in each edition; noted that labels vary by Windows version and display language."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked the literal process name `explorer.exe` and the Run new task instruction against Microsoft Support. No script or shell command is provided."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the Microsoft Support URL and retained the same direct reference in every edition."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The steps were checked against current Microsoft Support documentation, but were not executed on separate Windows 10 and Windows 11 installations; task names and layout can vary by update and locale."
+      ]
+    },
+    "post/エクスプローラーの終了・再起動方法/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/エクスプローラーの終了・再起動方法/index.md",
+      "sourceHash": "d093101b0d977b56d0e09c4706c9bb16864d9f6ac39b301e46a861dadaebc046",
+      "translationHash": "eab683f2eec63e1d24467303a1f35744c228b52e9cf2ce1cf8c5f3040212a38a",
+      "summary": "Compared the full translation against the Japanese source and Microsoft Support’s current Windows Explorer restart instructions; corrected outdated UI steps and aligned the fallback procedure and safety context.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese instructions and all twelve translations with current Microsoft Support guidance. Replaced the obsolete taskbar context-menu and force-kill centered steps with Task Manager > Windows Explorer > Restart and the Run new task fallback."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked names for Task Manager, Processes, Windows Explorer, Restart, and Run new task in each edition; noted that labels vary by Windows version and display language."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked the literal process name `explorer.exe` and the Run new task instruction against Microsoft Support. No script or shell command is provided."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the Microsoft Support URL and retained the same direct reference in every edition."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The steps were checked against current Microsoft Support documentation, but were not executed on separate Windows 10 and Windows 11 installations; task names and layout can vary by update and locale."
+      ]
+    },
+    "post/エクスプローラーの終了・再起動方法/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/エクスプローラーの終了・再起動方法/index.md",
+      "sourceHash": "d093101b0d977b56d0e09c4706c9bb16864d9f6ac39b301e46a861dadaebc046",
+      "translationHash": "9cb6488b832dcf9e92db58a286e8d0c0211f42b436eb2287aa1f7ccfbc0f9339",
+      "summary": "Compared the full translation against the Japanese source and Microsoft Support’s current Windows Explorer restart instructions; corrected outdated UI steps and aligned the fallback procedure and safety context.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese instructions and all twelve translations with current Microsoft Support guidance. Replaced the obsolete taskbar context-menu and force-kill centered steps with Task Manager > Windows Explorer > Restart and the Run new task fallback."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked names for Task Manager, Processes, Windows Explorer, Restart, and Run new task in each edition; noted that labels vary by Windows version and display language."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked the literal process name `explorer.exe` and the Run new task instruction against Microsoft Support. No script or shell command is provided."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the Microsoft Support URL and retained the same direct reference in every edition."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The steps were checked against current Microsoft Support documentation, but were not executed on separate Windows 10 and Windows 11 installations; task names and layout can vary by update and locale."
+      ]
+    },
+    "post/エクスプローラーの終了・再起動方法/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/エクスプローラーの終了・再起動方法/index.md",
+      "sourceHash": "d093101b0d977b56d0e09c4706c9bb16864d9f6ac39b301e46a861dadaebc046",
+      "translationHash": "6fa45f58294d496a586fc729654192b67ad28ba0b5de2601ff83168275d6a041",
+      "summary": "Compared the full translation against the Japanese source and Microsoft Support’s current Windows Explorer restart instructions; corrected outdated UI steps and aligned the fallback procedure and safety context.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese instructions and all twelve translations with current Microsoft Support guidance. Replaced the obsolete taskbar context-menu and force-kill centered steps with Task Manager > Windows Explorer > Restart and the Run new task fallback."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked names for Task Manager, Processes, Windows Explorer, Restart, and Run new task in each edition; noted that labels vary by Windows version and display language."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked the literal process name `explorer.exe` and the Run new task instruction against Microsoft Support. No script or shell command is provided."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the Microsoft Support URL and retained the same direct reference in every edition."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The steps were checked against current Microsoft Support documentation, but were not executed on separate Windows 10 and Windows 11 installations; task names and layout can vary by update and locale."
+      ]
+    },
+    "post/エクスプローラーの終了・再起動方法/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/エクスプローラーの終了・再起動方法/index.md",
+      "sourceHash": "d093101b0d977b56d0e09c4706c9bb16864d9f6ac39b301e46a861dadaebc046",
+      "translationHash": "34ac5290f2d35ede30970a2e69322c5071673036901c68e4d2bc7b5049660c1f",
+      "summary": "Compared the full translation against the Japanese source and Microsoft Support’s current Windows Explorer restart instructions; corrected outdated UI steps and aligned the fallback procedure and safety context.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese instructions and all twelve translations with current Microsoft Support guidance. Replaced the obsolete taskbar context-menu and force-kill centered steps with Task Manager > Windows Explorer > Restart and the Run new task fallback."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked names for Task Manager, Processes, Windows Explorer, Restart, and Run new task in each edition; noted that labels vary by Windows version and display language."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked the literal process name `explorer.exe` and the Run new task instruction against Microsoft Support. No script or shell command is provided."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the Microsoft Support URL and retained the same direct reference in every edition."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The steps were checked against current Microsoft Support documentation, but were not executed on separate Windows 10 and Windows 11 installations; task names and layout can vary by update and locale."
+      ]
+    },
+    "post/エクスプローラーの終了・再起動方法/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/エクスプローラーの終了・再起動方法/index.md",
+      "sourceHash": "d093101b0d977b56d0e09c4706c9bb16864d9f6ac39b301e46a861dadaebc046",
+      "translationHash": "158d7699c3b7f15ca2f88562e7e697050e4d9bbfa2bbb91b3350203c1c6f44b6",
+      "summary": "Compared the full translation against the Japanese source and Microsoft Support’s current Windows Explorer restart instructions; corrected outdated UI steps and aligned the fallback procedure and safety context.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese instructions and all twelve translations with current Microsoft Support guidance. Replaced the obsolete taskbar context-menu and force-kill centered steps with Task Manager > Windows Explorer > Restart and the Run new task fallback."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked names for Task Manager, Processes, Windows Explorer, Restart, and Run new task in each edition; noted that labels vary by Windows version and display language."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked the literal process name `explorer.exe` and the Run new task instruction against Microsoft Support. No script or shell command is provided."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the Microsoft Support URL and retained the same direct reference in every edition."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The steps were checked against current Microsoft Support documentation, but were not executed on separate Windows 10 and Windows 11 installations; task names and layout can vary by update and locale."
+      ]
+    },
+    "post/エクスプローラーの終了・再起動方法/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/エクスプローラーの終了・再起動方法/index.md",
+      "sourceHash": "d093101b0d977b56d0e09c4706c9bb16864d9f6ac39b301e46a861dadaebc046",
+      "translationHash": "aa1754ab3ca0e81684108ef44164ee149210af084f23f715cee31a02645548e7",
+      "summary": "Compared the full translation against the Japanese source and Microsoft Support’s current Windows Explorer restart instructions; corrected outdated UI steps and aligned the fallback procedure and safety context.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese instructions and all twelve translations with current Microsoft Support guidance. Replaced the obsolete taskbar context-menu and force-kill centered steps with Task Manager > Windows Explorer > Restart and the Run new task fallback."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked names for Task Manager, Processes, Windows Explorer, Restart, and Run new task in each edition; noted that labels vary by Windows version and display language."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked the literal process name `explorer.exe` and the Run new task instruction against Microsoft Support. No script or shell command is provided."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the Microsoft Support URL and retained the same direct reference in every edition."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The steps were checked against current Microsoft Support documentation, but were not executed on separate Windows 10 and Windows 11 installations; task names and layout can vary by update and locale."
+      ]
+    },
+    "post/エクスプローラーの終了・再起動方法/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/エクスプローラーの終了・再起動方法/index.md",
+      "sourceHash": "d093101b0d977b56d0e09c4706c9bb16864d9f6ac39b301e46a861dadaebc046",
+      "translationHash": "cc194257ddd49616f0ceffce3406fe515776698739cf3bc292bbd01b0bb6d6d2",
+      "summary": "Compared the full translation against the Japanese source and Microsoft Support’s current Windows Explorer restart instructions; corrected outdated UI steps and aligned the fallback procedure and safety context.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese instructions and all twelve translations with current Microsoft Support guidance. Replaced the obsolete taskbar context-menu and force-kill centered steps with Task Manager > Windows Explorer > Restart and the Run new task fallback."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked names for Task Manager, Processes, Windows Explorer, Restart, and Run new task in each edition; noted that labels vary by Windows version and display language."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked the literal process name `explorer.exe` and the Run new task instruction against Microsoft Support. No script or shell command is provided."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the Microsoft Support URL and retained the same direct reference in every edition."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The steps were checked against current Microsoft Support documentation, but were not executed on separate Windows 10 and Windows 11 installations; task names and layout can vary by update and locale."
+      ]
+    },
+    "post/エクスプローラーの終了・再起動方法/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/エクスプローラーの終了・再起動方法/index.md",
+      "sourceHash": "d093101b0d977b56d0e09c4706c9bb16864d9f6ac39b301e46a861dadaebc046",
+      "translationHash": "bc44b3aa7703656201ca630450f88c252b27edcd12703c2ed636ad1f95cc54b2",
+      "summary": "Compared the full translation against the Japanese source and Microsoft Support’s current Windows Explorer restart instructions; corrected outdated UI steps and aligned the fallback procedure and safety context.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese instructions and all twelve translations with current Microsoft Support guidance. Replaced the obsolete taskbar context-menu and force-kill centered steps with Task Manager > Windows Explorer > Restart and the Run new task fallback."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked names for Task Manager, Processes, Windows Explorer, Restart, and Run new task in each edition; noted that labels vary by Windows version and display language."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked the literal process name `explorer.exe` and the Run new task instruction against Microsoft Support. No script or shell command is provided."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the Microsoft Support URL and retained the same direct reference in every edition."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The steps were checked against current Microsoft Support documentation, but were not executed on separate Windows 10 and Windows 11 installations; task names and layout can vary by update and locale."
+      ]
+    },
+    "post/エクスプローラーの終了・再起動方法/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/エクスプローラーの終了・再起動方法/index.md",
+      "sourceHash": "d093101b0d977b56d0e09c4706c9bb16864d9f6ac39b301e46a861dadaebc046",
+      "translationHash": "169d06d8da3cb1a093fe176d2a48080c111d2b6c7a4b0b17bb227c93a32542b1",
+      "summary": "Compared the full translation against the Japanese source and Microsoft Support’s current Windows Explorer restart instructions; corrected outdated UI steps and aligned the fallback procedure and safety context.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese instructions and all twelve translations with current Microsoft Support guidance. Replaced the obsolete taskbar context-menu and force-kill centered steps with Task Manager > Windows Explorer > Restart and the Run new task fallback."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked names for Task Manager, Processes, Windows Explorer, Restart, and Run new task in each edition; noted that labels vary by Windows version and display language."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked the literal process name `explorer.exe` and the Run new task instruction against Microsoft Support. No script or shell command is provided."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the Microsoft Support URL and retained the same direct reference in every edition."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The steps were checked against current Microsoft Support documentation, but were not executed on separate Windows 10 and Windows 11 installations; task names and layout can vary by update and locale."
+      ]
+    },
+    "post/エクスプローラーの終了・再起動方法/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/エクスプローラーの終了・再起動方法/index.md",
+      "sourceHash": "d093101b0d977b56d0e09c4706c9bb16864d9f6ac39b301e46a861dadaebc046",
+      "translationHash": "b8da0180d43db3cda12a5ed7b55dfc0b141dce1c7db11ac100473d40e3d35729",
+      "summary": "Compared the full translation against the Japanese source and Microsoft Support’s current Windows Explorer restart instructions; corrected outdated UI steps and aligned the fallback procedure and safety context.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese instructions and all twelve translations with current Microsoft Support guidance. Replaced the obsolete taskbar context-menu and force-kill centered steps with Task Manager > Windows Explorer > Restart and the Run new task fallback."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked names for Task Manager, Processes, Windows Explorer, Restart, and Run new task in each edition; noted that labels vary by Windows version and display language."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked the literal process name `explorer.exe` and the Run new task instruction against Microsoft Support. No script or shell command is provided."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the Microsoft Support URL and retained the same direct reference in every edition."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The steps were checked against current Microsoft Support documentation, but were not executed on separate Windows 10 and Windows 11 installations; task names and layout can vary by update and locale."
+      ]
+    }
+  }
+}

@@ -21365,6 +21365,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-183.json",
       "evidenceHash": "0507ceff145a0cfb0211c61112dc90da5f5daffb388ad3d4bc37b0b05da95420"
+    },
+    "post/エクスプローラーの終了・再起動方法/index.en.md": {
+      "source": "post/エクスプローラーの終了・再起動方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "d093101b0d977b56d0e09c4706c9bb16864d9f6ac39b301e46a861dadaebc046",
+      "translationHash": "28e4f31d0088b1123ec29a7cd8ec677b00b6b72fe1d05ace633f9d4dbfc6b679",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-184.json",
+      "evidenceHash": "8ed0e472ac099fb513cc12c4552c84b6ae262c3c4e8845a26243c6523dc0d299"
+    },
+    "post/エクスプローラーの終了・再起動方法/index.zh-cn.md": {
+      "source": "post/エクスプローラーの終了・再起動方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "d093101b0d977b56d0e09c4706c9bb16864d9f6ac39b301e46a861dadaebc046",
+      "translationHash": "1220034f019e45b2d19d85b4739b02f5d68e0588b39933ac9ed725b6b64d6db2",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-184.json",
+      "evidenceHash": "44178258f6612a7862c4a2fa7135809ebd6fdcdda1d5148b1615667b47cd07d0"
+    },
+    "post/エクスプローラーの終了・再起動方法/index.es.md": {
+      "source": "post/エクスプローラーの終了・再起動方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "d093101b0d977b56d0e09c4706c9bb16864d9f6ac39b301e46a861dadaebc046",
+      "translationHash": "eab683f2eec63e1d24467303a1f35744c228b52e9cf2ce1cf8c5f3040212a38a",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-184.json",
+      "evidenceHash": "74cb532c32c267b8c800fa6d9053fca33c8fad830d032636df1472284aa26adc"
+    },
+    "post/エクスプローラーの終了・再起動方法/index.ko.md": {
+      "source": "post/エクスプローラーの終了・再起動方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "d093101b0d977b56d0e09c4706c9bb16864d9f6ac39b301e46a861dadaebc046",
+      "translationHash": "9cb6488b832dcf9e92db58a286e8d0c0211f42b436eb2287aa1f7ccfbc0f9339",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-184.json",
+      "evidenceHash": "82808362a3fe4e6edfce3fdad692198d5d6f750ee44ebf393f561b920a56ff24"
+    },
+    "post/エクスプローラーの終了・再起動方法/index.pt.md": {
+      "source": "post/エクスプローラーの終了・再起動方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "d093101b0d977b56d0e09c4706c9bb16864d9f6ac39b301e46a861dadaebc046",
+      "translationHash": "6fa45f58294d496a586fc729654192b67ad28ba0b5de2601ff83168275d6a041",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-184.json",
+      "evidenceHash": "e23f432f29adf0d3fb449b3b57b65c7bfaf7870e40036f2d27b37bfe2bd9b9a1"
+    },
+    "post/エクスプローラーの終了・再起動方法/index.zh-tw.md": {
+      "source": "post/エクスプローラーの終了・再起動方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "d093101b0d977b56d0e09c4706c9bb16864d9f6ac39b301e46a861dadaebc046",
+      "translationHash": "34ac5290f2d35ede30970a2e69322c5071673036901c68e4d2bc7b5049660c1f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-184.json",
+      "evidenceHash": "290051d78cd25010e8186bf79afe354ef77b8117da7f9084bfd210cb31ed6228"
+    },
+    "post/エクスプローラーの終了・再起動方法/index.hi.md": {
+      "source": "post/エクスプローラーの終了・再起動方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "d093101b0d977b56d0e09c4706c9bb16864d9f6ac39b301e46a861dadaebc046",
+      "translationHash": "158d7699c3b7f15ca2f88562e7e697050e4d9bbfa2bbb91b3350203c1c6f44b6",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-184.json",
+      "evidenceHash": "fc711dea1b42f2e7c8d36fb3c4f236de8b0c51d24bbba96415354c226bccd3bc"
+    },
+    "post/エクスプローラーの終了・再起動方法/index.fr.md": {
+      "source": "post/エクスプローラーの終了・再起動方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "d093101b0d977b56d0e09c4706c9bb16864d9f6ac39b301e46a861dadaebc046",
+      "translationHash": "aa1754ab3ca0e81684108ef44164ee149210af084f23f715cee31a02645548e7",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-184.json",
+      "evidenceHash": "3dcfe788507ccdb4cf9a4e6e9784d4a9ec53ae1f4576b48bd43d24e1e775919a"
+    },
+    "post/エクスプローラーの終了・再起動方法/index.de.md": {
+      "source": "post/エクスプローラーの終了・再起動方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "d093101b0d977b56d0e09c4706c9bb16864d9f6ac39b301e46a861dadaebc046",
+      "translationHash": "cc194257ddd49616f0ceffce3406fe515776698739cf3bc292bbd01b0bb6d6d2",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-184.json",
+      "evidenceHash": "a2163e4586a06d3ee86a0f7ae651efc54806658d916d45ecaeb8a3c8acb72dc5"
+    },
+    "post/エクスプローラーの終了・再起動方法/index.ar.md": {
+      "source": "post/エクスプローラーの終了・再起動方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "d093101b0d977b56d0e09c4706c9bb16864d9f6ac39b301e46a861dadaebc046",
+      "translationHash": "bc44b3aa7703656201ca630450f88c252b27edcd12703c2ed636ad1f95cc54b2",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-184.json",
+      "evidenceHash": "95dd5447273402283227662f232858ffe536e2b0d58e450b0c6e18166cce58d2"
+    },
+    "post/エクスプローラーの終了・再起動方法/index.ru.md": {
+      "source": "post/エクスプローラーの終了・再起動方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "d093101b0d977b56d0e09c4706c9bb16864d9f6ac39b301e46a861dadaebc046",
+      "translationHash": "169d06d8da3cb1a093fe176d2a48080c111d2b6c7a4b0b17bb227c93a32542b1",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-184.json",
+      "evidenceHash": "d4c92949c7551c297da598e0b247cbc68d3e45d3c346c6b99de1247ef829a2df"
+    },
+    "post/エクスプローラーの終了・再起動方法/index.id.md": {
+      "source": "post/エクスプローラーの終了・再起動方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "d093101b0d977b56d0e09c4706c9bb16864d9f6ac39b301e46a861dadaebc046",
+      "translationHash": "b8da0180d43db3cda12a5ed7b55dfc0b141dce1c7db11ac100473d40e3d35729",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-184.json",
+      "evidenceHash": "2df94cff7b05bf5897bad0b67c720e89540bcefc90cc54844c0ccb1b9d023507"
     }
   }
 }

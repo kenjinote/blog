@@ -1,40 +1,35 @@
 ---
-title: 'Kumpulan Cara Mengakhiri dan Merestart Windows Explorer'
-date: "2026-09-24T19:44:38+09:00"
-slug: "Penjelajahの終了・再起動方法"
-date: 2024-03-30T15:40:24+09:00
-tags: ["File Explorer"]
+title: "Cara Memulai Ulang Windows Explorer"
+date: "2024-03-30T15:40:24+09:00"
+lastmod: "2026-11-25T00:00:00+09:00"
+slug: "エクスプローラーの終了・再起動方法"
+tags: ["Windows", "File Explorer"]
 draft: false
 image: "img_2.webp"
 categories: ["it-technology"]
-description: 'Menjelaskan berbagai cara untuk menutup dan merestart Explorer (explorer.exe) di Windows. Memperkenalkan prosedur dengan jelas menggunakan taskbar, Task Manager, dan Command Prompt.'
+description: "Pelajari cara memulai ulang Windows Explorer (explorer.exe) melalui Task Manager di Windows 10/11, atau menjalankannya jika tidak ada dalam daftar proses."
 ---
 
-## Cara Menutup melalui Klik Kanan Taskbar
+# Cara Memulai Ulang Windows Explorer
 
-Metode ini berlaku untuk Windows 10. Di Windows 11, menu tersebut sepertinya tidak muncul.
-Jika Anda mengklik kanan pada taskbar sambil menahan tombol `Shift` dan `Ctrl`, opsi `Keluar dari Explorer` akan muncul di menu.
+Jika desktop atau taskbar tidak merespons, memulai ulang Windows Explorer (explorer.exe), bagian dari shell Windows, dapat membantu. Di Windows 10 dan 11, gunakan perintah Restart di Task Manager alih-alih menghentikan proses secara paksa. Nama menu dapat berbeda menurut versi Windows dan bahasa tampilan.
 
-![img.png](img.webp)
+## Mulai ulang melalui Task Manager
 
-## Cara Menutup melalui Task Manager
+1. Tekan `Ctrl` + `Shift` + `Esc` untuk membuka Task Manager. Jika tidak berhasil, tekan `Ctrl` + `Alt` + `Delete`, lalu pilih Task Manager pada layar yang muncul.
 
-1. Tekan tombol `Ctrl` + `Shift` + `Esc` untuk membuka Task Manager.
-2. Pilih `Detail`.
+2. Cari `Windows Explorer` di tab Processes atau daftar proses.
 
-![img_3.png](img_3.webp)
+3. Klik kanan lalu pilih `Restart`. Desktop dan taskbar mungkin menghilang sebentar lalu muncul kembali.
 
-3. Pilih `explorer.exe`, tekan tombol `Delete`, dan ketika ditanya `Apakah Anda ingin mengakhiri explorer.exe?`, pilih `Akhiri proses`.
+## Jika tidak ada dalam daftar, jalankan explorer.exe
 
-![img_1.png](img_1.webp)
+1. Di Task Manager, pilih `Run new task`. Pada beberapa tampilan Windows 10, opsi ini ada di menu `File`.
 
-## Cara Menutup melalui Command Prompt
+2. Ketik `explorer.exe`, lalu tekan `Enter` atau pilih `OK`.
 
-1. Tekan tombol `Win` + `R`, ketik `cmd`, dan tekan tombol `Enter`.
-2. Ketik `taskkill /f /im explorer.exe` dan tekan tombol `Enter`.
+Gunakan `Restart` jika tersedia. Mengakhiri Explorer dapat menyembunyikan desktop dan taskbar untuk sementara.
 
-## Cara Memulai Explorer dari Task Manager
+## Microsoft Support: Memecahkan masalah layar kosong di Windows
 
-1. Tekan tombol `Ctrl` + `Shift` + `Esc` untuk membuka Task Manager.
-2. Dari menu File, pilih `Jalankan tugas baru`.
-3. Ketik `explorer.exe` dan tekan tombol `Enter`.
+[Microsoft Support](https://support.microsoft.com/en-us/windows/hardware/display-graphics/troubleshooting-blank-screens-in-windows)

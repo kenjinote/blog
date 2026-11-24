@@ -1,40 +1,35 @@
 ---
-title: 'A Summary of How to Close and Restart Windows Explorer'
-date: "2026-09-24T19:44:38+09:00"
-slug: "Explorerの終了・再起動方法"
-date: 2024-03-30T15:40:24+09:00
-tags: ["Explorer"]
+title: "How to Restart Windows Explorer"
+date: "2024-03-30T15:40:24+09:00"
+lastmod: "2026-11-25T00:00:00+09:00"
+slug: "エクスプローラーの終了・再起動方法"
+tags: ["Windows", "File Explorer"]
 draft: false
 image: "img_2.webp"
 categories: ["it-technology"]
-description: 'Explains various methods to close and restart Explorer (explorer.exe) in Windows. Clearly introduces procedures using the Taskbar, Task Manager, and Command Prompt.'
+description: "Restart Windows Explorer (explorer.exe) on Windows 10 or 11 with Task Manager. If it is missing from the process list, start it as a new task."
 ---
 
-## How to exit from the taskbar right-click menu
+# How to Restart Windows Explorer
 
-This method is for Windows 10. It seems the menu is not displayed in Windows 11.
-If you hold down the `Shift` and `Ctrl` keys and right-click on the taskbar, `Exit Explorer` will appear in the menu.
+If the desktop or taskbar stops responding, restarting Windows Explorer (explorer.exe), part of the Windows shell, may help. On Windows 10 and 11, use Task Manager’s Restart command instead of force-closing the process. Labels can vary by Windows version and display language.
 
-![img.png](img.webp)
+## Restart it from Task Manager
 
-## How to exit from Task Manager
+1. Press `Ctrl` + `Shift` + `Esc` to open Task Manager. If that does not work, press `Ctrl` + `Alt` + `Delete` and choose Task Manager from the screen that appears.
 
-1. Press `Ctrl` + `Shift` + `Esc` to launch Task Manager.
-2. Select `Details`.
+2. Find `Windows Explorer` in the Processes tab or process list.
 
-![img_3.png](img_3.webp)
+3. Right-click it and select `Restart`. The desktop and taskbar may disappear briefly and then return.
 
-3. Select `explorer.exe`, press the `Delete` key, and when asked `Do you want to end explorer.exe?`, select `End process`.
+## If it is not listed, start explorer.exe
 
-![img_1.png](img_1.webp)
+1. In Task Manager, select `Run new task`. In some Windows 10 layouts, open it from the `File` menu.
 
-## How to exit from Command Prompt
+2. Enter `explorer.exe` and press `Enter` or select `OK`.
 
-1. Press `Win` + `R`, type `cmd`, and press `Enter`.
-2. Type `taskkill /f /im explorer.exe` and press `Enter`.
+Use `Restart` when it is available. Ending Explorer can temporarily hide the desktop and taskbar.
 
-## How to start Explorer from Task Manager
+## Microsoft Support: Troubleshooting blank screens in Windows
 
-1. Press `Ctrl` + `Shift` + `Esc` to launch Task Manager.
-2. Select `Run new task` from the File menu.
-3. Type `explorer.exe` and press `Enter`.
+[Microsoft Support](https://support.microsoft.com/en-us/windows/hardware/display-graphics/troubleshooting-blank-screens-in-windows)

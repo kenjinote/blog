@@ -1,40 +1,35 @@
 ---
-title: 'Résumé des méthodes pour fermer et redémarrer l''Explorateur Windows'
-date: "2026-09-24T19:44:38+09:00"
-slug: "Explorateur de fichiersの終了・再起動方法"
-date: 2024-03-30T15:40:24+09:00
-tags: ["Explorateur"]
+title: "Comment redémarrer l’Explorateur Windows"
+date: "2024-03-30T15:40:24+09:00"
+lastmod: "2026-11-25T00:00:00+09:00"
+slug: "エクスプローラーの終了・再起動方法"
+tags: ["Windows", "Explorateur de fichiers"]
 draft: false
 image: "img_2.webp"
 categories: ["it-technology"]
-description: 'Nous expliquons diverses méthodes pour fermer et redémarrer l''Explorateur Windows (explorer.exe). Nous présentons clairement les procédures utilisant la barre des tâches, le gestionnaire des tâches et l''invite de commande.'
+description: "Redémarrez l’Explorateur Windows (explorer.exe) avec le Gestionnaire des tâches sous Windows 10/11, ou relancez-le s’il n’apparaît pas dans la liste."
 ---
 
-## Comment fermer depuis le menu du clic droit de la barre des tâches
+# Comment redémarrer l’Explorateur Windows
 
-Cette méthode fonctionne sous Windows 10. Il semble que le menu ne s'affiche pas sous Windows 11.
-Si vous maintenez les touches `Shift` et `Ctrl` enfoncées et faites un clic droit sur la barre des tâches, `Quitter l'Explorateur` apparaîtra dans le menu.
+Si le bureau ou la barre des tâches ne répond plus, redémarrer l’Explorateur Windows (explorer.exe), qui fait partie du shell Windows, peut aider. Sous Windows 10 et 11, utilisez la commande Redémarrer du Gestionnaire des tâches plutôt que de forcer l’arrêt du processus. Les intitulés varient selon la version de Windows et la langue d’affichage.
 
-![img.png](img.webp)
+## Le redémarrer depuis le Gestionnaire des tâches
 
-## Comment fermer depuis le Gestionnaire des tâches
+1. Appuyez sur `Ctrl` + `Shift` + `Esc` pour ouvrir le Gestionnaire des tâches. Si cela ne fonctionne pas, appuyez sur `Ctrl` + `Alt` + `Suppr`, puis choisissez le Gestionnaire des tâches sur l’écran qui s’affiche.
 
-1. Appuyez sur les touches `Ctrl` + `Shift` + `Esc` pour ouvrir le Gestionnaire des tâches.
-2. Sélectionnez `Détails`.
+2. Repérez `Windows Explorer` (Explorateur Windows) dans l’onglet Processus ou la liste des processus.
 
-![img_3.png](img_3.webp)
+3. Faites un clic droit dessus et sélectionnez `Redémarrer`. Le bureau et la barre des tâches peuvent disparaître brièvement, puis revenir.
 
-3. Sélectionnez `explorer.exe`, appuyez sur la touche `Suppr`, et lorsqu'on vous demande `Voulez-vous mettre fin à explorer.exe ?`, sélectionnez `Fin de tâche`.
+## S’il n’apparaît pas, lancer explorer.exe
 
-![img_1.png](img_1.webp)
+1. Dans le Gestionnaire des tâches, sélectionnez `Exécuter une nouvelle tâche`. Dans certaines interfaces de Windows 10, cette commande se trouve dans le menu `Fichier`.
 
-## Comment fermer depuis l'Invite de commandes
+2. Saisissez `explorer.exe`, puis appuyez sur `Entrée` ou sélectionnez `OK`.
 
-1. Appuyez sur les touches `Win` + `R`, tapez `cmd`, et appuyez sur `Entrée`.
-2. Tapez `taskkill /f /im explorer.exe`, et appuyez sur `Entrée`.
+Utilisez `Redémarrer` lorsqu’il est disponible. L’arrêt de l’Explorateur peut masquer temporairement le bureau et la barre des tâches.
 
-## Comment démarrer l'Explorateur depuis le Gestionnaire des tâches
+## Microsoft Support : Résoudre les problèmes d’écran noir dans Windows
 
-1. Appuyez sur les touches `Ctrl` + `Shift` + `Esc` pour ouvrir le Gestionnaire des tâches.
-2. Dans le menu Fichier, sélectionnez `Exécuter une nouvelle tâche`.
-3. Tapez `explorer.exe`, et appuyez sur `Entrée`.
+[Microsoft Support](https://support.microsoft.com/en-us/windows/hardware/display-graphics/troubleshooting-blank-screens-in-windows)
