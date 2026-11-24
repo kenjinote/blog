@@ -20165,6 +20165,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-173.json",
       "evidenceHash": "49cbc350ac312d1b0139fb13d321e18763595d6e08f759e988fbf1c17d25723d"
+    },
+    "post/Snipping Toolの使い方/index.en.md": {
+      "source": "post/Snipping Toolの使い方/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "deb517ef3277549f20ff2cc992655f30f6b220ea659f141b53f2cae030801d8f",
+      "translationHash": "115e395963b68e10fdca5d35cd7f2ab57f1ee2d7243f6ab750062cec5bdeff6a",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-174.json",
+      "evidenceHash": "888f96198afdf3e022c0f7a0cfe4679686f6db2dff6bd05fed241eccdb8b0f04"
+    },
+    "post/Snipping Toolの使い方/index.zh-cn.md": {
+      "source": "post/Snipping Toolの使い方/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "deb517ef3277549f20ff2cc992655f30f6b220ea659f141b53f2cae030801d8f",
+      "translationHash": "3deb61c802ecc0ebfddb71bbdf46e4ec23523863ffcdc72b61d7a9a004b12872",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-174.json",
+      "evidenceHash": "25635b876d7fc4de0a7793a4e257fdbb3eaef72646fefcc0e649a79a7dae620c"
+    },
+    "post/Snipping Toolの使い方/index.es.md": {
+      "source": "post/Snipping Toolの使い方/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "deb517ef3277549f20ff2cc992655f30f6b220ea659f141b53f2cae030801d8f",
+      "translationHash": "64a59cb612132ce79cfda8f7d36fecfab820eba47c5d0070d468dde3a7409d15",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-174.json",
+      "evidenceHash": "79e4d0dd1cd3e9e45e53439058e31379d51724aa93518806d9b40a4d50ae40f5"
+    },
+    "post/Snipping Toolの使い方/index.ko.md": {
+      "source": "post/Snipping Toolの使い方/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "deb517ef3277549f20ff2cc992655f30f6b220ea659f141b53f2cae030801d8f",
+      "translationHash": "c8873fd697837cf1313de371173ee6b5749a7f2adee4d4cf8b5776d00687c93c",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-174.json",
+      "evidenceHash": "c726695c608e9e526b34ee284ac7feead821d27201a94f0568d27957a062c716"
+    },
+    "post/Snipping Toolの使い方/index.pt.md": {
+      "source": "post/Snipping Toolの使い方/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "deb517ef3277549f20ff2cc992655f30f6b220ea659f141b53f2cae030801d8f",
+      "translationHash": "905432603537979e9f01caad3f13ea23d4012878dbac03a5bab65cc40d47f92e",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-174.json",
+      "evidenceHash": "814f6c9dd6e59c5d8e8a24f16b3d95af62c9b8e411aae960512f3f64c314959c"
+    },
+    "post/Snipping Toolの使い方/index.zh-tw.md": {
+      "source": "post/Snipping Toolの使い方/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "deb517ef3277549f20ff2cc992655f30f6b220ea659f141b53f2cae030801d8f",
+      "translationHash": "a3a7340ab9d21c21035f03f72cb676ddf5eae4a0f4be33d2311b28558e91ad5a",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-174.json",
+      "evidenceHash": "81f447977f2ca5bfaa8a9d2003dd7d6e25650140654fe53d3395862a39710aee"
+    },
+    "post/Snipping Toolの使い方/index.hi.md": {
+      "source": "post/Snipping Toolの使い方/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "deb517ef3277549f20ff2cc992655f30f6b220ea659f141b53f2cae030801d8f",
+      "translationHash": "a19c5a0640725fbbbaab86d1050c97f6d8663b8d2d1c0ea1949e802d47928602",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-174.json",
+      "evidenceHash": "a2416a8632161cd7a7d1cc3c4b84d91a1b00b683fda35add8daf2b7c3ea196f9"
+    },
+    "post/Snipping Toolの使い方/index.fr.md": {
+      "source": "post/Snipping Toolの使い方/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "deb517ef3277549f20ff2cc992655f30f6b220ea659f141b53f2cae030801d8f",
+      "translationHash": "5f1d29b43127434226309c215c871d8c7c85f971a7916204e220b5bc7daa387f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-174.json",
+      "evidenceHash": "e0c603e48d8f75c8685b81920c95fb1497b0864e12dd0ffc25f54fdd78147d2a"
+    },
+    "post/Snipping Toolの使い方/index.de.md": {
+      "source": "post/Snipping Toolの使い方/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "deb517ef3277549f20ff2cc992655f30f6b220ea659f141b53f2cae030801d8f",
+      "translationHash": "27261681f1d55fcdb4da33d39ec50c5db5be99d1492da20a41896f47d0ffa2f5",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-174.json",
+      "evidenceHash": "e88041ce0898dfac9cb774e9e88b9f753b4df5ea362c174bd09abfae588da265"
+    },
+    "post/Snipping Toolの使い方/index.ar.md": {
+      "source": "post/Snipping Toolの使い方/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "deb517ef3277549f20ff2cc992655f30f6b220ea659f141b53f2cae030801d8f",
+      "translationHash": "5dacc0dcefe891fba362fd53c4d7c1e772e8855f52e12dc2c2a1ffac4b924b08",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-174.json",
+      "evidenceHash": "262b70738261b14f3bb532a573ffb6438ec710f17bec99262258d54167707805"
+    },
+    "post/Snipping Toolの使い方/index.ru.md": {
+      "source": "post/Snipping Toolの使い方/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "deb517ef3277549f20ff2cc992655f30f6b220ea659f141b53f2cae030801d8f",
+      "translationHash": "fefb17dc29d7d41fcabd7d61b15df0b5477f86b20c17a75c2d2acb6994e481e5",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-174.json",
+      "evidenceHash": "e763dc5402e4208e6b6e45f3653699c77996ae27aa268427180f8eae59390c01"
+    },
+    "post/Snipping Toolの使い方/index.id.md": {
+      "source": "post/Snipping Toolの使い方/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "deb517ef3277549f20ff2cc992655f30f6b220ea659f141b53f2cae030801d8f",
+      "translationHash": "e386eb3fac6a5858759411dc953e4ac2bb072643988b466fa4cfca85280cd700",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-174.json",
+      "evidenceHash": "83a59692fd0da6c4c68382f48ab4919e6605c476b1e1c6a51dfcab8960e87cae"
     }
   }
 }

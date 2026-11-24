@@ -1,0 +1,454 @@
+{
+  "version": 1,
+  "batch": 174,
+  "article": "How to use Windows Snipping Tool",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "deb517ef3277549f20ff2cc992655f30f6b220ea659f141b53f2cae030801d8f",
+  "sources": [
+    "https://support.microsoft.com/en-us/windows/apps/use-snipping-tool-to-capture-screenshots",
+    "https://support.microsoft.com/en-us/accessibility/windows/keyboard-shortcuts-in-windows"
+  ],
+  "scope": "Compared the complete Japanese source and all twelve translations, current screenshot/video shortcuts, capture modes, save behavior, version qualifications, screenshot asset, metadata, and Microsoft references.",
+  "findings": [
+    "Added the current `Win + Shift + R` video-recording shortcut and clarified `Win + Shift + S` for screenshots.",
+    "Updated screenshot and recording steps to the current capture overlay and Record > New flow.",
+    "Qualified UI and save behavior as version/settings dependent and labeled the screenshot as Japanese UI.",
+    "Removed duplicate date metadata and added lastmod.",
+    "Added localized Microsoft Support references."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/Snipping Toolの使い方/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Snipping Toolの使い方/index.md",
+      "sourceHash": "deb517ef3277549f20ff2cc992655f30f6b220ea659f141b53f2cae030801d8f",
+      "translationHash": "115e395963b68e10fdca5d35cd7f2ab57f1ee2d7243f6ab750062cec5bdeff6a",
+      "summary": "Compared the full localized instructions with the Japanese source and current Microsoft guidance for screenshot and video capture, shortcuts, version differences, and references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full instruction flow with current Microsoft guidance and separated screenshot and video recording shortcuts."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed Snipping Tool, snip modes, capture overlay, recording, saving, and localized control labels."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no programming code; key sequences and UI commands were checked as procedural instructions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the Japanese-only reference in translations with current Microsoft Support instructions and keyboard shortcut documentation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The screenshot shows the Japanese interface; labels and layout vary by language and app release.",
+        "Video recording availability and save behavior depend on Windows version, app updates, and settings."
+      ]
+    },
+    "post/Snipping Toolの使い方/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Snipping Toolの使い方/index.md",
+      "sourceHash": "deb517ef3277549f20ff2cc992655f30f6b220ea659f141b53f2cae030801d8f",
+      "translationHash": "3deb61c802ecc0ebfddb71bbdf46e4ec23523863ffcdc72b61d7a9a004b12872",
+      "summary": "Compared the full localized instructions with the Japanese source and current Microsoft guidance for screenshot and video capture, shortcuts, version differences, and references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full instruction flow with current Microsoft guidance and separated screenshot and video recording shortcuts."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed Snipping Tool, snip modes, capture overlay, recording, saving, and localized control labels."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no programming code; key sequences and UI commands were checked as procedural instructions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the Japanese-only reference in translations with current Microsoft Support instructions and keyboard shortcut documentation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The screenshot shows the Japanese interface; labels and layout vary by language and app release.",
+        "Video recording availability and save behavior depend on Windows version, app updates, and settings."
+      ]
+    },
+    "post/Snipping Toolの使い方/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Snipping Toolの使い方/index.md",
+      "sourceHash": "deb517ef3277549f20ff2cc992655f30f6b220ea659f141b53f2cae030801d8f",
+      "translationHash": "64a59cb612132ce79cfda8f7d36fecfab820eba47c5d0070d468dde3a7409d15",
+      "summary": "Compared the full localized instructions with the Japanese source and current Microsoft guidance for screenshot and video capture, shortcuts, version differences, and references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full instruction flow with current Microsoft guidance and separated screenshot and video recording shortcuts."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed Snipping Tool, snip modes, capture overlay, recording, saving, and localized control labels."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no programming code; key sequences and UI commands were checked as procedural instructions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the Japanese-only reference in translations with current Microsoft Support instructions and keyboard shortcut documentation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The screenshot shows the Japanese interface; labels and layout vary by language and app release.",
+        "Video recording availability and save behavior depend on Windows version, app updates, and settings."
+      ]
+    },
+    "post/Snipping Toolの使い方/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Snipping Toolの使い方/index.md",
+      "sourceHash": "deb517ef3277549f20ff2cc992655f30f6b220ea659f141b53f2cae030801d8f",
+      "translationHash": "c8873fd697837cf1313de371173ee6b5749a7f2adee4d4cf8b5776d00687c93c",
+      "summary": "Compared the full localized instructions with the Japanese source and current Microsoft guidance for screenshot and video capture, shortcuts, version differences, and references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full instruction flow with current Microsoft guidance and separated screenshot and video recording shortcuts."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed Snipping Tool, snip modes, capture overlay, recording, saving, and localized control labels."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no programming code; key sequences and UI commands were checked as procedural instructions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the Japanese-only reference in translations with current Microsoft Support instructions and keyboard shortcut documentation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The screenshot shows the Japanese interface; labels and layout vary by language and app release.",
+        "Video recording availability and save behavior depend on Windows version, app updates, and settings."
+      ]
+    },
+    "post/Snipping Toolの使い方/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Snipping Toolの使い方/index.md",
+      "sourceHash": "deb517ef3277549f20ff2cc992655f30f6b220ea659f141b53f2cae030801d8f",
+      "translationHash": "905432603537979e9f01caad3f13ea23d4012878dbac03a5bab65cc40d47f92e",
+      "summary": "Compared the full localized instructions with the Japanese source and current Microsoft guidance for screenshot and video capture, shortcuts, version differences, and references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full instruction flow with current Microsoft guidance and separated screenshot and video recording shortcuts."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed Snipping Tool, snip modes, capture overlay, recording, saving, and localized control labels."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no programming code; key sequences and UI commands were checked as procedural instructions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the Japanese-only reference in translations with current Microsoft Support instructions and keyboard shortcut documentation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The screenshot shows the Japanese interface; labels and layout vary by language and app release.",
+        "Video recording availability and save behavior depend on Windows version, app updates, and settings."
+      ]
+    },
+    "post/Snipping Toolの使い方/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Snipping Toolの使い方/index.md",
+      "sourceHash": "deb517ef3277549f20ff2cc992655f30f6b220ea659f141b53f2cae030801d8f",
+      "translationHash": "a3a7340ab9d21c21035f03f72cb676ddf5eae4a0f4be33d2311b28558e91ad5a",
+      "summary": "Compared the full localized instructions with the Japanese source and current Microsoft guidance for screenshot and video capture, shortcuts, version differences, and references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full instruction flow with current Microsoft guidance and separated screenshot and video recording shortcuts."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed Snipping Tool, snip modes, capture overlay, recording, saving, and localized control labels."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no programming code; key sequences and UI commands were checked as procedural instructions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the Japanese-only reference in translations with current Microsoft Support instructions and keyboard shortcut documentation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The screenshot shows the Japanese interface; labels and layout vary by language and app release.",
+        "Video recording availability and save behavior depend on Windows version, app updates, and settings."
+      ]
+    },
+    "post/Snipping Toolの使い方/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Snipping Toolの使い方/index.md",
+      "sourceHash": "deb517ef3277549f20ff2cc992655f30f6b220ea659f141b53f2cae030801d8f",
+      "translationHash": "a19c5a0640725fbbbaab86d1050c97f6d8663b8d2d1c0ea1949e802d47928602",
+      "summary": "Compared the full localized instructions with the Japanese source and current Microsoft guidance for screenshot and video capture, shortcuts, version differences, and references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full instruction flow with current Microsoft guidance and separated screenshot and video recording shortcuts."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed Snipping Tool, snip modes, capture overlay, recording, saving, and localized control labels."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no programming code; key sequences and UI commands were checked as procedural instructions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the Japanese-only reference in translations with current Microsoft Support instructions and keyboard shortcut documentation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The screenshot shows the Japanese interface; labels and layout vary by language and app release.",
+        "Video recording availability and save behavior depend on Windows version, app updates, and settings."
+      ]
+    },
+    "post/Snipping Toolの使い方/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Snipping Toolの使い方/index.md",
+      "sourceHash": "deb517ef3277549f20ff2cc992655f30f6b220ea659f141b53f2cae030801d8f",
+      "translationHash": "5f1d29b43127434226309c215c871d8c7c85f971a7916204e220b5bc7daa387f",
+      "summary": "Compared the full localized instructions with the Japanese source and current Microsoft guidance for screenshot and video capture, shortcuts, version differences, and references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full instruction flow with current Microsoft guidance and separated screenshot and video recording shortcuts."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed Snipping Tool, snip modes, capture overlay, recording, saving, and localized control labels."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no programming code; key sequences and UI commands were checked as procedural instructions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the Japanese-only reference in translations with current Microsoft Support instructions and keyboard shortcut documentation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The screenshot shows the Japanese interface; labels and layout vary by language and app release.",
+        "Video recording availability and save behavior depend on Windows version, app updates, and settings."
+      ]
+    },
+    "post/Snipping Toolの使い方/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Snipping Toolの使い方/index.md",
+      "sourceHash": "deb517ef3277549f20ff2cc992655f30f6b220ea659f141b53f2cae030801d8f",
+      "translationHash": "27261681f1d55fcdb4da33d39ec50c5db5be99d1492da20a41896f47d0ffa2f5",
+      "summary": "Compared the full localized instructions with the Japanese source and current Microsoft guidance for screenshot and video capture, shortcuts, version differences, and references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full instruction flow with current Microsoft guidance and separated screenshot and video recording shortcuts."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed Snipping Tool, snip modes, capture overlay, recording, saving, and localized control labels."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no programming code; key sequences and UI commands were checked as procedural instructions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the Japanese-only reference in translations with current Microsoft Support instructions and keyboard shortcut documentation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The screenshot shows the Japanese interface; labels and layout vary by language and app release.",
+        "Video recording availability and save behavior depend on Windows version, app updates, and settings."
+      ]
+    },
+    "post/Snipping Toolの使い方/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Snipping Toolの使い方/index.md",
+      "sourceHash": "deb517ef3277549f20ff2cc992655f30f6b220ea659f141b53f2cae030801d8f",
+      "translationHash": "5dacc0dcefe891fba362fd53c4d7c1e772e8855f52e12dc2c2a1ffac4b924b08",
+      "summary": "Compared the full localized instructions with the Japanese source and current Microsoft guidance for screenshot and video capture, shortcuts, version differences, and references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full instruction flow with current Microsoft guidance and separated screenshot and video recording shortcuts."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed Snipping Tool, snip modes, capture overlay, recording, saving, and localized control labels."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no programming code; key sequences and UI commands were checked as procedural instructions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the Japanese-only reference in translations with current Microsoft Support instructions and keyboard shortcut documentation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The screenshot shows the Japanese interface; labels and layout vary by language and app release.",
+        "Video recording availability and save behavior depend on Windows version, app updates, and settings."
+      ]
+    },
+    "post/Snipping Toolの使い方/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Snipping Toolの使い方/index.md",
+      "sourceHash": "deb517ef3277549f20ff2cc992655f30f6b220ea659f141b53f2cae030801d8f",
+      "translationHash": "fefb17dc29d7d41fcabd7d61b15df0b5477f86b20c17a75c2d2acb6994e481e5",
+      "summary": "Compared the full localized instructions with the Japanese source and current Microsoft guidance for screenshot and video capture, shortcuts, version differences, and references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full instruction flow with current Microsoft guidance and separated screenshot and video recording shortcuts."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed Snipping Tool, snip modes, capture overlay, recording, saving, and localized control labels."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no programming code; key sequences and UI commands were checked as procedural instructions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the Japanese-only reference in translations with current Microsoft Support instructions and keyboard shortcut documentation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The screenshot shows the Japanese interface; labels and layout vary by language and app release.",
+        "Video recording availability and save behavior depend on Windows version, app updates, and settings."
+      ]
+    },
+    "post/Snipping Toolの使い方/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Snipping Toolの使い方/index.md",
+      "sourceHash": "deb517ef3277549f20ff2cc992655f30f6b220ea659f141b53f2cae030801d8f",
+      "translationHash": "e386eb3fac6a5858759411dc953e4ac2bb072643988b466fa4cfca85280cd700",
+      "summary": "Compared the full localized instructions with the Japanese source and current Microsoft guidance for screenshot and video capture, shortcuts, version differences, and references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full instruction flow with current Microsoft guidance and separated screenshot and video recording shortcuts."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed Snipping Tool, snip modes, capture overlay, recording, saving, and localized control labels."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no programming code; key sequences and UI commands were checked as procedural instructions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the Japanese-only reference in translations with current Microsoft Support instructions and keyboard shortcut documentation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The screenshot shows the Japanese interface; labels and layout vary by language and app release.",
+        "Video recording availability and save behavior depend on Windows version, app updates, and settings."
+      ]
+    }
+  }
+}

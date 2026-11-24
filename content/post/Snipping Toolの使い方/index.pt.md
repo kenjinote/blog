@@ -1,8 +1,8 @@
 ---
 title: 'Como usar o ''Snipping Tool'' padrão do Windows, gravação de tela e captura'
-date: "2026-09-24T19:44:38+09:00"
 slug: "Snipping Toolの使い方"
-date: 2024-04-01T23:19:45+09:00
+date: "2024-04-01T23:19:45+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 tags: ["Snipping Tool", "Imagem", "Vídeo", "Captura de tela", "Gravação", "Captura"]
 draft: false
 image: "img.webp"
@@ -10,39 +10,30 @@ categories: ["it-technology"]
 description: 'Explicamos o uso básico da ''Snipping Tool'', a ferramenta de captura de tela que vem como padrão no Windows. Mostramos desde o método de inicialização rápida com teclas de atalho, passando por recortar e salvar uma parte da imagem, até o procedimento para gravar a tela em vídeo de forma fácil de entender.'
 ---
 
-## O que é a Ferramenta de Captura
-A Ferramenta de Captura (Snipping Tool) é uma ferramenta de captura de tela integrada ao Windows. Você pode usá-la para recortar e salvar uma parte da tela, capturar a tela inteira ou gravar a tela.
+## Sobre o Snipping Tool
 
-## Como iniciar a Ferramenta de Captura
+O Snipping Tool é o aplicativo de captura de tela incluído no Windows. Nas versões compatíveis do Windows e do app, ele captura imagens e grava vídeos. Os rótulos podem mudar com as atualizações.
 
-Existem principalmente 3 maneiras de iniciá-la:
+## Abrir o app
 
-- Pressione a tecla `Win`, digite `Snipping Tool` e pressione a tecla `Enter`.
-- Pressione as teclas `Win` + `Shift` + `S`.
-- Pressione as teclas `Win` + `R`, digite `snippingtool` e pressione a tecla `Enter`.
+Pesquise Snipping Tool no menu Iniciar e abra-o. Use `Win + Shift + S` para a captura de imagem ou `Win + Shift + R` para abrir a sobreposição de gravação.
 
-## Como usar a Ferramenta de Captura
-![img_1.png](img_1.webp)
 
-### As etapas para salvar uma imagem capturada são as seguintes:
+## Capturar uma imagem
 
-1. Selecione o ícone de `Câmera`.
-2. Clique no botão `Novo`.
-3. Selecione a área que deseja capturar.
-4. Clique no botão `Salvar como`.
-5. Insira o local de salvamento e o nome do arquivo, e salve.
+Pressione `Win + Shift + S` e escolha um recorte retangular, de forma livre, de janela ou de tela inteira. Selecione a área; a imagem aparecerá no Snipping Tool para edição e salvamento.
 
-### As etapas para gravar e salvar um vídeo capturado são as seguintes:
+![Snipping Tool interface](img_1.webp)
 
-1. Selecione o ícone de `Vídeo`.
-2. Clique no botão `Novo`.
-3. Selecione a área que deseja capturar.
-4. Clique no botão `Iniciar`.
-5. Grave a tela.
-6. Clique no botão `Parar`.
-7. Clique no botão `Salvar como`.
-8. Insira o local de salvamento e o nome do arquivo, e salve.
+## Gravar a tela
 
-## Referência
+Em versões do Windows com suporte à gravação, escolha Gravar > Novo no Snipping Tool ou pressione `Win + Shift + R`. Selecione a área, inicie a gravação e depois pare e salve.
 
-- [Usar a Ferramenta de Captura para capturar capturas de tela](https://support.microsoft.com/ja-jp/windows/snipping-tool-%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3-%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%E3%82%92%E3%82%AD%E3%83%A3%E3%83%97%E3%83%81%E3%83%A3%E3%81%99%E3%82%8B-00246869-1843-655f-f220-97299b865f6b)
+## Notas de versão
+
+A captura mostra a interface em japonês. A tela e o local de salvamento podem variar conforme a versão e as configurações.
+
+## Referências
+
+- [Microsoft Support: Use Snipping Tool to capture screenshots and record video](https://support.microsoft.com/en-us/windows/apps/use-snipping-tool-to-capture-screenshots)
+- [Microsoft Support: Windows keyboard shortcuts](https://support.microsoft.com/en-us/accessibility/windows/keyboard-shortcuts-in-windows)

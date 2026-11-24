@@ -1,15 +1,8 @@
 ---
-
-
-
-
-
-
-
 title: 'Windows 기본 ''캡처 도구(Snipping Tool)'' 사용법과 화면 녹화 및 캡처 방법'
-date: "2026-09-24T19:44:38+09:00"
 slug: "Snipping Toolの使い方"
-date: 2024-04-01T23:19:45+09:00
+date: "2024-04-01T23:19:45+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 tags: ["Snipping Tool", "이미지", "동영상", "스크린샷", "녹화", "캡처"]
 draft: false
 image: "img.webp"
@@ -17,46 +10,30 @@ categories: ["it-technology"]
 description: 'Windows에 기본으로 탑재된 화면 캡처 도구인 ''캡처 도구(Snipping Tool)''의 기본적인 사용법을 설명합니다. 단축키를 이용한 빠른 실행 방법부터 이미지의 일부 잘라내어 저장하기, 동영상 화면 녹화 절차까지 알기 쉽게 소개합니다.'
 ---
 
+## Snipping Tool 소개
+
+Snipping Tool은 Windows에 포함된 화면 캡처 앱입니다. 지원되는 Windows 및 앱 버전에서는 이미지 캡처와 화면 녹화를 할 수 있습니다. 업데이트에 따라 화면과 명칭이 달라질 수 있습니다.
+
+## 앱 열기
+
+시작 메뉴에서 Snipping Tool을 검색해 엽니다. 스크린샷 오버레이는 `Win + Shift + S`, 녹화 오버레이는 `Win + Shift + R`로 열 수 있습니다.
 
 
+## 스크린샷 캡처
 
+`Win + Shift + S`를 누르고 사각형, 자유형, 창, 전체 화면 중 캡처 방식을 선택합니다. 영역을 지정하면 이미지가 Snipping Tool에 표시되어 편집하고 저장할 수 있습니다.
 
+![Snipping Tool interface](img_1.webp)
 
+## 화면 녹화
 
+녹화를 지원하는 Windows에서는 Snipping Tool에서 녹화 > 새로 만들기를 선택하거나 `Win + Shift + R`을 누릅니다. 영역을 선택하고 시작을 누른 뒤, 종료하고 저장합니다.
 
-## Snipping Tool이란
-Snipping Tool은 Windows에 기본 탑재되어 있는 스크린샷 도구입니다. 화면의 일부를 잘라서 저장하거나, 화면 전체를 캡처하거나, 녹화할 수 있습니다.
+## 버전 참고
 
-## Snipping Tool 실행 방법
+이미지는 일본어 UI입니다. 화면 배치와 저장 위치는 Windows/앱 버전 및 설정에 따라 다를 수 있습니다.
 
-주로 다음 3가지 방법으로 실행할 수 있습니다.
+## 참고 자료
 
-- `Win키`를 누르고, `Snipping Tool`을 입력한 후 `Enter키`를 누릅니다.
-- `Win키` + `Shift` + `S키`를 누릅니다.
-- `Win키` + `R키`를 누르고, `snippingtool`을 입력한 후 `Enter키`를 누릅니다.
-
-## Snipping Tool 사용법
-![img_1.png](img_1.webp)
-
-### 캡처 이미지를 저장하는 방법은 다음과 같습니다.
-
-1. `카메라` 마크를 선택합니다.
-2. `새로 만들기` 버튼을 클릭합니다.
-3. 캡처할 영역을 선택합니다.
-4. `다른 이름으로 저장` 버튼을 클릭합니다.
-5. 저장 위치와 파일명을 입력하고 저장합니다.
-
-### 캡처 동영상을 복사하는 방법은 다음과 같습니다.
-
-1. `비디오` 마크를 선택합니다.
-2. `새로 만들기` 버튼을 클릭합니다.
-3. 캡처할 영역을 선택합니다.
-4. `시작` 버튼을 클릭합니다.
-5. 화면 녹화를 합니다.
-6. `중지` 버튼을 클릭합니다.
-7. `다른 이름으로 저장` 버튼을 클릭합니다.
-8. 저장 위치와 파일명을 입력하고 저장합니다.
-
-## 참고
-
-- [Snipping Tool을 사용하여 스크린샷 캡처하기](https://support.microsoft.com/ja-jp/windows/snipping-tool-%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3-%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%E3%82%92%E3%82%AD%E3%83%A3%E3%83%97%E3%83%81%E3%83%A3%E3%81%99%E3%82%8B-00246869-1843-655f-f220-97299b865f6b)
+- [Microsoft Support: Use Snipping Tool to capture screenshots and record video](https://support.microsoft.com/en-us/windows/apps/use-snipping-tool-to-capture-screenshots)
+- [Microsoft Support: Windows keyboard shortcuts](https://support.microsoft.com/en-us/accessibility/windows/keyboard-shortcuts-in-windows)

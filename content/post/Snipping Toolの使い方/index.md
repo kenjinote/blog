@@ -1,8 +1,8 @@
 ---
 title: 'Windows標準「Snipping Tool」の使い方と画面録画・キャプチャ方法'
-date: "2026-09-24T19:44:38+09:00"
 slug: "Snipping Toolの使い方"
-date: 2024-04-01T23:19:45+09:00
+date: "2024-04-01T23:19:45+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 tags: ["Snipping Tool", "画像", "動画", "スクリーンショット", "録画", "キャプチャー"]
 draft: false
 image: "img.webp"
@@ -11,38 +11,29 @@ description: 'Windowsに標準搭載されている画面キャプチャツー�
 ---
 
 ## Snipping Toolとは
-Snipping Toolは、Windowsに標準搭載されているスクリーンショットツールです。画面の一部を切り取って保存したり、画面全体をキャプチャーしたり、録画したりすることができます。
 
-## Snipping Toolの起動方法
+Snipping ToolはWindowsの画面キャプチャアプリです。静止画の切り取りに加え、対応するWindowsとアプリのバージョンでは画面録画もできます。画面やボタン名は更新により変わる場合があります。
 
-主に以下3つの方法で起動できます。
+## 起動する
 
-- `Winキー`を押して、`Snipping Tool`と入力して`Enterキー`を押す。
-- `Winキー` + `Shift` + `Sキー`を押す。
-- `Winキー` + `Rキー`を押して、`snippingtool`と入力して`Enterキー`を押す。
+スタートメニューでSnipping Toolを検索して開きます。静止画の切り取りオーバーレイは`Win + Shift + S`、動画録画オーバーレイは`Win + Shift + R`でも開けます。
 
-## Snipping Toolの使い方
-![img_1.png](img_1.webp)
 
-### キャプチャー画像を保存する方法は以下の通りです。
+## 静止画を撮る
 
-1. `カメラ`マークを選択する。
-2. `新規`ボタンをクリックする
-3. キャプチャーしたい範囲を選択する。
-4. `名前を付けて保存`ボタンをクリックする。
-5. 保存先とファイル名を入力して保存する。
+`Win + Shift + S`を押し、四角形・フリーフォーム・ウィンドウ・全画面から切り取り方を選びます。範囲を選択すると画像がSnipping Toolに表示され、編集して保存できます。
 
-### キャプチャー動画をコピーする方法は以下の通りです。
+![Snipping Tool interface](img_1.webp)
 
-1. `ビデオ`マークを選択する。
-2. `新規`ボタンをクリックする
-3. キャプチャーしたい範囲を選択する。
-4. `スタート`ボタンをクリックする。
-5. 画面録画する
-6. `停止`ボタンをクリックする。
-7. `名前を付けて保存`ボタンをクリックする。
-8. 保存先とファイル名を入力して保存する。
+## 画面を録画する
 
-## 参考
+録画に対応するWindowsでは、Snipping Toolの録画モードで「新規」を選ぶか`Win + Shift + R`を押します。録画範囲を選び、「スタート」から録画を開始し、「停止」後に保存します。
 
-- [Snipping Tool を使ってスクリーン ショットをキャプチャする](https://support.microsoft.com/ja-jp/windows/snipping-tool-%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3-%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%E3%82%92%E3%82%AD%E3%83%A3%E3%83%97%E3%83%81%E3%83%A3%E3%81%99%E3%82%8B-00246869-1843-655f-f220-97299b865f6b)
+## バージョンについて
+
+この画像は日本語UIです。画面構成や保存先はWindowsとSnipping Toolのバージョン、設定によって異なることがあります。
+
+## 参考資料
+
+- [Microsoft Support: Use Snipping Tool to capture screenshots and record video](https://support.microsoft.com/ja-jp/windows/snipping-tool-%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3-%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%E3%82%92%E3%82%AD%E3%83%A3%E3%83%97%E3%83%81%E3%83%A3%E3%81%99%E3%82%8B-00246869-1843-655f-f220-97299b865f6b)
+- [Microsoft Support: Windows keyboard shortcuts](https://support.microsoft.com/en-us/accessibility/windows/keyboard-shortcuts-in-windows)

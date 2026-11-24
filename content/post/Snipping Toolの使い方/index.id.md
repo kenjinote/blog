@@ -1,8 +1,8 @@
 ---
 title: 'Cara Menggunakan ''Snipping Tool'' Bawaan Windows Serta Metode Perekaman Layar dan Tangkapan Layar'
-date: "2026-09-24T19:44:38+09:00"
 slug: "Snipping Toolの使い方"
-date: 2024-04-01T23:19:45+09:00
+date: "2024-04-01T23:19:45+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 tags: ["Snipping Tool", "Gambar", "Video", "Tangkapan Layar", "Rekaman", "Capture"]
 draft: false
 image: "img.webp"
@@ -10,39 +10,30 @@ categories: ["it-technology"]
 description: 'Menjelaskan cara dasar menggunakan ''Snipping Tool'', alat tangkapan layar bawaan Windows. Memperkenalkan dengan mudah cara memulai dengan cepat menggunakan pintasan keyboard, hingga menyimpan potongan bagian gambar, dan prosedur perekaman layar video.'
 ---
 
-## Apa itu Snipping Tool
-Snipping Tool adalah alat tangkapan layar bawaan standar di Windows. Anda dapat memotong dan menyimpan sebagian layar, menangkap seluruh layar, atau merekamnya.
+## Tentang Snipping Tool
 
-## Cara Menjalankan Snipping Tool
+Snipping Tool adalah aplikasi tangkapan layar bawaan Windows. Pada versi Windows dan aplikasi yang mendukungnya, alat ini dapat mengambil gambar dan merekam video. Tampilan dan label dapat berubah setelah pembaruan.
 
-Terutama dapat dijalankan dengan 3 cara berikut:
+## Buka aplikasi
 
-- Tekan tombol `Win`, ketik `Snipping Tool`, lalu tekan tombol `Enter`.
-- Tekan tombol `Win` + `Shift` + `S`.
-- Tekan tombol `Win` + `R`, ketik `snippingtool`, lalu tekan tombol `Enter`.
+Cari Snipping Tool di menu Start dan buka aplikasinya. `Win + Shift + S` membuka overlay tangkapan gambar; `Win + Shift + R` membuka overlay perekaman video.
 
-## Cara Menggunakan Snipping Tool
-![img_1.png](img_1.webp)
 
-### Cara menyimpan gambar yang ditangkap adalah sebagai berikut:
+## Ambil tangkapan layar
 
-1. Pilih ikon `Kamera`.
-2. Klik tombol `Baru`.
-3. Pilih area yang ingin ditangkap.
-4. Klik tombol `Simpan sebagai`.
-5. Masukkan lokasi penyimpanan dan nama file, lalu simpan.
+Tekan `Win + Shift + S`, lalu pilih potongan persegi panjang, bentuk bebas, jendela, atau seluruh layar. Pilih area; gambar akan muncul di Snipping Tool untuk diedit dan disimpan.
 
-### Cara merekam video adalah sebagai berikut:
+![Snipping Tool interface](img_1.webp)
 
-1. Pilih ikon `Video`.
-2. Klik tombol `Baru`.
-3. Pilih area yang ingin ditangkap.
-4. Klik tombol `Mulai`.
-5. Rekam layar.
-6. Klik tombol `Berhenti`.
-7. Klik tombol `Simpan sebagai`.
-8. Masukkan lokasi penyimpanan dan nama file, lalu simpan.
+## Rekam layar
+
+Pada Windows yang mendukung perekaman, pilih Record > New di Snipping Tool atau tekan `Win + Shift + R`. Pilih area, mulai merekam, lalu hentikan dan simpan rekaman.
+
+## Catatan versi
+
+Tangkapan layar menampilkan UI bahasa Jepang. Tata letak dan lokasi penyimpanan dapat berbeda menurut versi dan pengaturan.
 
 ## Referensi
 
-- [Gunakan Snipping Tool untuk mengambil tangkapan layar](https://support.microsoft.com/id-id/windows/gunakan-snipping-tool-untuk-mengambil-tangkapan-layar-00246869-1843-655f-f220-97299b865f6b)
+- [Microsoft Support: Use Snipping Tool to capture screenshots and record video](https://support.microsoft.com/en-us/windows/apps/use-snipping-tool-to-capture-screenshots)
+- [Microsoft Support: Windows keyboard shortcuts](https://support.microsoft.com/en-us/accessibility/windows/keyboard-shortcuts-in-windows)

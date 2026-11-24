@@ -360,6 +360,13 @@ ARTICLES = {
         "scopeMarkers": {"ja":"行き詰まった時に見返したい言葉","en":"Words to revisit when I feel stuck","zh-cn":"感到受挫时可以重看的话","es":"Palabras que vuelvo a leer cuando me atasco","ko":"막막할 때 다시 보는 말","pt":"Palavras que revejo quando me sinto travado","zh-tw":"感到受挫時可以重看的話","hi":"जब मन अटक जाए तो फिर से पढ़ने योग्य शब्द","fr":"Des mots à relire quand je me sens bloqué","de":"Worte, die ich bei Stillstand erneut lese","ar":"كلمات أعود إليها عندما أشعر بالتعثر","ru":"Слова, к которым я возвращаюсь в трудный момент","id":"Kata-kata yang saya baca kembali saat merasa buntu"},
         "date": "2022-09-08",
     },
+    174: {
+        "bundle": ROOT / "content/post/Snipping Toolの使い方",
+        "slug": "Snipping Toolの使い方",
+        "linksByLanguage": {"ja": ["https://support.microsoft.com/ja-jp/windows/snipping-tool-%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3-%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%E3%82%92%E3%82%AD%E3%83%A3%E3%83%97%E3%83%81%E3%83%A3%E3%81%99%E3%82%8B-00246869-1843-655f-f220-97299b865f6b", "https://support.microsoft.com/en-us/accessibility/windows/keyboard-shortcuts-in-windows"], "en": ["https://support.microsoft.com/en-us/windows/apps/use-snipping-tool-to-capture-screenshots", "https://support.microsoft.com/en-us/accessibility/windows/keyboard-shortcuts-in-windows"], "zh-cn": ["https://support.microsoft.com/en-us/windows/apps/use-snipping-tool-to-capture-screenshots", "https://support.microsoft.com/en-us/accessibility/windows/keyboard-shortcuts-in-windows"], "es": ["https://support.microsoft.com/en-us/windows/apps/use-snipping-tool-to-capture-screenshots", "https://support.microsoft.com/en-us/accessibility/windows/keyboard-shortcuts-in-windows"], "ko": ["https://support.microsoft.com/en-us/windows/apps/use-snipping-tool-to-capture-screenshots", "https://support.microsoft.com/en-us/accessibility/windows/keyboard-shortcuts-in-windows"], "pt": ["https://support.microsoft.com/en-us/windows/apps/use-snipping-tool-to-capture-screenshots", "https://support.microsoft.com/en-us/accessibility/windows/keyboard-shortcuts-in-windows"], "zh-tw": ["https://support.microsoft.com/en-us/windows/apps/use-snipping-tool-to-capture-screenshots", "https://support.microsoft.com/en-us/accessibility/windows/keyboard-shortcuts-in-windows"], "hi": ["https://support.microsoft.com/en-us/windows/apps/use-snipping-tool-to-capture-screenshots", "https://support.microsoft.com/en-us/accessibility/windows/keyboard-shortcuts-in-windows"], "fr": ["https://support.microsoft.com/en-us/windows/apps/use-snipping-tool-to-capture-screenshots", "https://support.microsoft.com/en-us/accessibility/windows/keyboard-shortcuts-in-windows"], "de": ["https://support.microsoft.com/en-us/windows/apps/use-snipping-tool-to-capture-screenshots", "https://support.microsoft.com/en-us/accessibility/windows/keyboard-shortcuts-in-windows"], "ar": ["https://support.microsoft.com/en-us/windows/apps/use-snipping-tool-to-capture-screenshots", "https://support.microsoft.com/en-us/accessibility/windows/keyboard-shortcuts-in-windows"], "ru": ["https://support.microsoft.com/en-us/windows/apps/use-snipping-tool-to-capture-screenshots", "https://support.microsoft.com/en-us/accessibility/windows/keyboard-shortcuts-in-windows"], "id": ["https://support.microsoft.com/en-us/windows/apps/use-snipping-tool-to-capture-screenshots", "https://support.microsoft.com/en-us/accessibility/windows/keyboard-shortcuts-in-windows"]},
+        "markers": ["Win + Shift + S", "Win + Shift + R", "Snipping Tool"],
+        "date": "2024-04-01",
+    },
     173: {
         "bundle": ROOT / "content/post/Slack App + OAuth2 を使って Slack にメッセージを投稿する方法",
         "slug": "Slack App + OAuth2 を使って Slack にメッセージを投稿する方法",
@@ -903,7 +910,7 @@ def slug_key(value):
 parser = argparse.ArgumentParser()
 parser.add_argument("--ci-run", type=int, required=True)
 parser.add_argument("--commit", required=True)
-parser.add_argument("--max-batch", type=int, choices=(90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173), default=173)
+parser.add_argument("--max-batch", type=int, choices=(90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174), default=174)
 args = parser.parse_args()
 ARTICLES = {number: article for number, article in ARTICLES.items() if number <= args.max_batch}
 with urllib.request.urlopen(f"https://github.com/kenjinote/blog/actions/runs/{args.ci_run}", timeout=45) as response:
@@ -957,8 +964,8 @@ for batch_number, article in ARTICLES.items():
             "hreflangCount": len(page.hreflang) == 14,
             "hreflangTargets": set(page.hreflang.values()) == targets,
             "officialReferences": (
-                all(link in page.links for link in article["links"])
-                if "links" in article
+                all(link in page.links for link in article.get("linksByLanguage", {}).get(language, article.get("links", [])))
+                if "links" in article or "linksByLanguage" in article
                 else any(article["linkFragment"] in link for link in page.links)
             ),
             "localAssets": all(any(unquote(urlparse(link).path).endswith(asset) for link in page.links) for asset in article.get("assets", [])),

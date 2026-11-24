@@ -1,8 +1,8 @@
 ---
 title: 'Windows 內建「剪取工具」的使用方法及螢幕錄影、擷取教學'
-date: "2026-09-24T19:44:38+09:00"
 slug: "Snipping Toolの使い方"
-date: 2024-04-01T23:19:45+09:00
+date: "2024-04-01T23:19:45+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 tags: ["Snipping Tool", "圖片", "影片", "螢幕截圖", "錄影", "擷取"]
 draft: false
 image: "img.webp"
@@ -10,39 +10,30 @@ categories: ["it-technology"]
 description: '解說 Windows 內建螢幕擷取工具「剪取工具 (Snipping Tool)」的基本使用方法。從使用快速鍵快速啟動的方法，到圖片的部分裁切儲存、影片的螢幕錄影步驟，皆淺顯易懂地介紹。'
 ---
 
-## 什麼是剪取工具
-剪取工具（Snipping Tool）是 Windows 內建的螢幕截圖工具。您可以擷取並儲存螢幕的一部分、擷取整個螢幕或進行錄影。
+## 關於Snipping Tool
 
-## 如何啟動剪取工具
+Snipping Tool是Windows內建的螢幕擷取應用程式。在支援的Windows與應用程式版本中，可擷取圖片及錄製影片。介面名稱可能隨更新改變。
 
-主要有以下 3 種啟動方法：
+## 開啟應用程式
 
-- 按下 `Win` 鍵，輸入 `Snipping Tool`，然後按下 `Enter` 鍵。
-- 按下 `Win` + `Shift` + `S` 鍵。
-- 按下 `Win` + `R` 鍵，輸入 `snippingtool`，然後按下 `Enter` 鍵。
+在「開始」功能表搜尋並開啟Snipping Tool。按`Win + Shift + S`開啟截圖浮層，按`Win + Shift + R`開啟錄影浮層。
 
-## 剪取工具的使用方法
-![img_1.png](img_1.webp)
 
-### 儲存擷取圖片的方法如下：
+## 擷取靜態畫面
 
-1. 選擇 `相機` 圖示。
-2. 點擊 `新增` 按鈕。
-3. 選擇您想要擷取的範圍。
-4. 點擊 `另存新檔` 按鈕。
-5. 輸入儲存位置和檔案名稱進行儲存。
+按`Win + Shift + S`，選擇矩形、自由形狀、視窗或全螢幕擷取。選取範圍後，圖片會顯示在Snipping Tool中，可編輯並儲存。
 
-### 儲存擷取影片的方法如下：
+![Snipping Tool interface](img_1.webp)
 
-1. 選擇 `影片` 圖示。
-2. 點擊 `新增` 按鈕。
-3. 選擇您想要擷取的範圍。
-4. 點擊 `開始` 按鈕。
-5. 進行螢幕錄影。
-6. 點擊 `停止` 按鈕。
-7. 點擊 `另存新檔` 按鈕。
-8. 輸入儲存位置和檔案名稱進行儲存。
+## 錄製螢幕
 
-## 參考
+在支援錄影的Windows版本中，於Snipping Tool選擇錄製 > 新增，或按`Win + Shift + R`。選取範圍後按開始，結束時按停止並儲存。
 
-- [使用剪取工具擷取螢幕截圖](https://support.microsoft.com/ja-jp/windows/snipping-tool-%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3-%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%E3%82%92%E3%82%AD%E3%83%A3%E3%83%97%E3%83%81%E3%83%A3%E3%81%99%E3%82%8B-00246869-1843-655f-f220-97299b865f6b)
+## 版本說明
+
+圖片顯示日文介面。畫面配置與儲存位置可能因Windows/應用程式版本和設定而異。
+
+## 參考資料
+
+- [Microsoft Support: Use Snipping Tool to capture screenshots and record video](https://support.microsoft.com/en-us/windows/apps/use-snipping-tool-to-capture-screenshots)
+- [Microsoft Support: Windows keyboard shortcuts](https://support.microsoft.com/en-us/accessibility/windows/keyboard-shortcuts-in-windows)

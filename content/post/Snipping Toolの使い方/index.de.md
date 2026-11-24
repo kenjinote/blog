@@ -1,8 +1,8 @@
 ---
 title: 'Verwendung des Windows-Standardprogramms „Snipping Tool“ und Methoden zur Bildschirmaufzeichnung und -erfassung'
-date: "2026-09-24T19:44:38+09:00"
 slug: "Snipping Toolの使い方"
-date: 2024-04-01T23:19:45+09:00
+date: "2024-04-01T23:19:45+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 tags: ["Snipping Tool", "Bild", "Video", "Screenshot", "Aufnahme", "Erfassen"]
 draft: false
 image: "img.webp"
@@ -10,39 +10,30 @@ categories: ["it-technology"]
 description: 'Erklärt die grundlegende Verwendung des standardmäßig in Windows integrierten Bildschirmaufnahme-Tools „Snipping Tool“. Stellt leicht verständlich vor, von schnellen Startmethoden mit Tastenkombinationen über das Ausschneiden und Speichern von Bildteilen bis hin zu Schritten der Bildschirmaufzeichnung als Video.'
 ---
 
-## Was ist das Snipping Tool
-Das Snipping Tool ist ein in Windows integriertes Screenshot-Tool. Sie können damit einen Teil des Bildschirms ausschneiden und speichern, den gesamten Bildschirm erfassen oder aufzeichnen.
+## Über Snipping Tool
 
-## So starten Sie das Snipping Tool
+Snipping Tool ist die in Windows integrierte Bildschirmaufnahme-App. In unterstützten Windows- und App-Versionen erstellt sie Screenshots und Bildschirmvideos. Bezeichnungen und Oberfläche können sich mit Updates ändern.
 
-Es gibt hauptsächlich 3 Möglichkeiten, es zu starten:
+## App öffnen
 
-- Drücken Sie die `Win-Taste`, geben Sie `Snipping Tool` ein und drücken Sie die `Eingabetaste`.
-- Drücken Sie die Tasten `Win` + `Umschalt` + `S`.
-- Drücken Sie die Tasten `Win` + `R`, geben Sie `snippingtool` ein und drücken Sie die `Eingabetaste`.
+Suchen Sie im Startmenü nach Snipping Tool und öffnen Sie es. `Win + Shift + S` öffnet die Screenshot-Auswahl, `Win + Shift + R` die Videoaufnahme-Auswahl.
 
-## So verwenden Sie das Snipping Tool
-![img_1.png](img_1.webp)
 
-### Die Schritte zum Speichern eines aufgenommenen Bildes sind wie folgt:
+## Screenshot aufnehmen
 
-1. Wählen Sie das `Kamera`-Symbol.
-2. Klicken Sie auf die Schaltfläche `Neu`.
-3. Wählen Sie den Bereich aus, den Sie erfassen möchten.
-4. Klicken Sie auf die Schaltfläche `Speichern unter`.
-5. Geben Sie den Speicherort und den Dateinamen ein und speichern Sie.
+Drücken Sie `Win + Shift + S` und wählen Sie rechteckigen, freien, Fenster- oder Vollbildausschnitt. Wählen Sie den Bereich; das Bild wird in Snipping Tool zum Bearbeiten und Speichern geöffnet.
 
-### Die Schritte zum Speichern eines aufgenommenen Videos sind wie folgt:
+![Snipping Tool interface](img_1.webp)
 
-1. Wählen Sie das `Video`-Symbol.
-2. Klicken Sie auf die Schaltfläche `Neu`.
-3. Wählen Sie den Bereich aus, den Sie erfassen möchten.
-4. Klicken Sie auf die Schaltfläche `Start`.
-5. Zeichnen Sie den Bildschirm auf.
-6. Klicken Sie auf die Schaltfläche `Stopp`.
-7. Klicken Sie auf die Schaltfläche `Speichern unter`.
-8. Geben Sie den Speicherort und den Dateinamen ein und speichern Sie.
+## Bildschirm aufnehmen
 
-## Referenz
+Wählen Sie in Windows-Versionen mit Aufnahmefunktion in Snipping Tool Aufnahme > Neu oder drücken Sie `Win + Shift + R`. Wählen Sie einen Bereich, starten Sie die Aufnahme und stoppen und speichern Sie sie anschließend.
 
-- [Verwenden des Snipping Tools zum Erfassen von Screenshots](https://support.microsoft.com/ja-jp/windows/snipping-tool-%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3-%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%E3%82%92%E3%82%AD%E3%83%A3%E3%83%97%E3%83%81%E3%83%A3%E3%81%99%E3%82%8B-00246869-1843-655f-f220-97299b865f6b)
+## Versionshinweise
+
+Der Screenshot zeigt die japanische Oberfläche. Anordnung und Speicherort hängen von Windows-/App-Version und Einstellungen ab.
+
+## Quellen
+
+- [Microsoft Support: Use Snipping Tool to capture screenshots and record video](https://support.microsoft.com/en-us/windows/apps/use-snipping-tool-to-capture-screenshots)
+- [Microsoft Support: Windows keyboard shortcuts](https://support.microsoft.com/en-us/accessibility/windows/keyboard-shortcuts-in-windows)

@@ -1,8 +1,8 @@
 ---
 title: 'How to Use the Standard Windows ''Snipping Tool'' and Methods for Screen Recording and Capture'
-date: "2026-09-24T19:44:38+09:00"
 slug: "Snipping Toolの使い方"
-date: 2024-04-01T23:19:45+09:00
+date: "2024-04-01T23:19:45+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 tags: ["Snipping Tool", "Image", "Video", "Screenshot", "Recording", "Capture"]
 draft: false
 image: "img.webp"
@@ -10,39 +10,30 @@ categories: ["it-technology"]
 description: 'Explains the basic usage of the ''Snipping Tool'', a screen capture tool built into Windows as standard. Clearly introduces everything from quick launch methods using shortcut keys to saving partial image crops and screen recording procedures for videos.'
 ---
 
-## What is Snipping Tool?
-Snipping Tool is a screenshot tool built into Windows as a standard feature. You can cut and save a portion of the screen, capture the entire screen, or record the screen.
+## About Snipping Tool
 
-## How to Launch Snipping Tool
+Snipping Tool is Windows’ built-in screen capture app. In supported Windows and app versions, it can capture still images and record video. Labels and screens can change with updates.
 
-You can mainly launch it in the following 3 ways.
+## Open the app
 
-- Press the `Win` key, type `Snipping Tool`, and press the `Enter` key.
-- Press `Win` + `Shift` + `S`.
-- Press `Win` + `R`, type `snippingtool`, and press the `Enter` key.
+Search for Snipping Tool in Start and open it. Use `Win + Shift + S` for the screenshot overlay or `Win + Shift + R` for the video recording overlay.
 
-## How to Use Snipping Tool
-![img_1.png](img_1.webp)
 
-### The steps to save a captured image are as follows:
+## Capture a screenshot
 
-1. Select the `Camera` icon.
-2. Click the `New` button.
-3. Select the area you want to capture.
-4. Click the `Save as` button.
-5. Enter the destination and file name to save.
+Press `Win + Shift + S`, then choose a rectangular, freeform, window, or full-screen snip. Select the area; the image appears in Snipping Tool for editing and saving.
 
-### The steps to save a captured video are as follows:
+![Snipping Tool interface](img_1.webp)
 
-1. Select the `Video` icon.
-2. Click the `New` button.
-3. Select the area you want to capture.
-4. Click the `Start` button.
-5. Record the screen.
-6. Click the `Stop` button.
-7. Click the `Save as` button.
-8. Enter the destination and file name to save.
+## Record the screen
 
-## Reference
+On Windows versions with recording support, choose Record > New in Snipping Tool or press `Win + Shift + R`. Select an area, choose Start, then Stop and save the recording.
 
-- [Use Snipping Tool to capture screenshots](https://support.microsoft.com/ja-jp/windows/snipping-tool-%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3-%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%E3%82%92%E3%82%AD%E3%83%A3%E3%83%97%E3%83%81%E3%83%A3%E3%81%99%E3%82%8B-00246869-1843-655f-f220-97299b865f6b)
+## Version notes
+
+The screenshot shows the Japanese interface. Screen layout and save locations can vary by Windows/app version and settings.
+
+## References
+
+- [Microsoft Support: Use Snipping Tool to capture screenshots and record video](https://support.microsoft.com/en-us/windows/apps/use-snipping-tool-to-capture-screenshots)
+- [Microsoft Support: Windows keyboard shortcuts](https://support.microsoft.com/en-us/accessibility/windows/keyboard-shortcuts-in-windows)

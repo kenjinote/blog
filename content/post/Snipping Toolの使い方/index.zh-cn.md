@@ -1,8 +1,8 @@
 ---
 title: 'Windows自带“截图工具”的使用及录屏、截图方法'
-date: "2026-09-24T19:44:38+09:00"
 slug: "Snipping Toolの使い方"
-date: 2024-04-01T23:19:45+09:00
+date: "2024-04-01T23:19:45+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 tags: ["Snipping Tool", "图像", "视频", "屏幕截图", "录屏", "截图"]
 draft: false
 image: "img.webp"
@@ -10,39 +10,30 @@ categories: ["it-technology"]
 description: '讲解Windows自带屏幕截图工具“Snipping Tool”（截图工具）的基本使用方法。通俗易懂地介绍从使用快捷键快速启动，到截取并保存部分画面，再到视频录屏的操作步骤。'
 ---
 
-## 什么是 Snipping Tool
-Snipping Tool 是 Windows 自带的屏幕截图工具。您可以截取屏幕的一部分并保存，或者捕获整个屏幕，还可以进行录屏。
+## 关于Snipping Tool
 
-## Snipping Tool 启动方法
+Snipping Tool是Windows内置的屏幕捕获应用。在支持的Windows和应用版本中，它既可截图也可录屏。界面名称可能随更新而变化。
 
-主要可以通过以下 3 种方法启动。
+## 打开应用
 
-- 按 `Win键`，输入 `Snipping Tool` 并按 `Enter键`。
-- 按 `Win键` + `Shift` + `S键`。
-- 按 `Win键` + `R键`，输入 `snippingtool` 并按 `Enter键`。
+在“开始”菜单中搜索并打开Snipping Tool。按`Win + Shift + S`打开截图浮层，按`Win + Shift + R`打开录屏浮层。
 
-## Snipping Tool 使用方法
-![img_1.png](img_1.webp)
 
-### 保存截图的方法如下：
+## 截取静态图像
 
-1. 选择 `相机` 图标。
-2. 点击 `新建` 按钮。
-3. 选择要截取的范围。
-4. 点击 `另存为` 按钮。
-5. 输入保存路径和文件名并保存。
+按`Win + Shift + S`，选择矩形、任意形状、窗口或全屏截图。选定区域后，图像会显示在Snipping Tool中，可继续编辑和保存。
 
-### 录制屏幕视频的方法如下：
+![Snipping Tool interface](img_1.webp)
 
-1. 选择 `视频` 图标。
-2. 点击 `新建` 按钮。
-3. 选择要录制的范围。
-4. 点击 `开始` 按钮。
-5. 录制屏幕。
-6. 点击 `停止` 按钮。
-7. 点击 `另存为` 按钮。
-8. 输入保存路径和文件名并保存。
+## 录制屏幕
 
-## 参考
+在支持录屏的Windows版本中，打开Snipping Tool并选择“录制”>“新建”，或按`Win + Shift + R`。选定区域后选择“开始”，录制结束时选择“停止”并保存。
 
-- [使用 Snipping Tool 捕获屏幕截图](https://support.microsoft.com/ja-jp/windows/snipping-tool-%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3-%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%E3%82%92%E3%82%AD%E3%83%A3%E3%83%97%E3%83%81%E3%83%A3%E3%81%99%E3%82%8B-00246869-1843-655f-f220-97299b865f6b)
+## 版本说明
+
+截图使用日语界面。界面布局和保存位置可能因Windows/应用版本及设置而异。
+
+## 参考资料
+
+- [Microsoft Support: Use Snipping Tool to capture screenshots and record video](https://support.microsoft.com/en-us/windows/apps/use-snipping-tool-to-capture-screenshots)
+- [Microsoft Support: Windows keyboard shortcuts](https://support.microsoft.com/en-us/accessibility/windows/keyboard-shortcuts-in-windows)
