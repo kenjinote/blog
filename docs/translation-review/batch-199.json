@@ -1,0 +1,458 @@
+{
+  "version": 1,
+  "batch": 199,
+  "article": "Build and install OpenSSL on Windows",
+  "reviewedAt": "2026-11-25",
+  "sourceHash": "ba12ff30e155a31a8524191513ad54826a725e6607ec176a29810d2fb5a395aa",
+  "sources": [
+    "https://openssl-library.org/source/",
+    "https://github.com/openssl/openssl/blob/master/NOTES-WINDOWS.md",
+    "https://github.com/openssl/openssl/blob/master/INSTALL.md",
+    "https://learn.microsoft.com/en-us/cpp/build/how-to-enable-a-64-bit-visual-cpp-toolset-on-the-command-line?view=msvc-170",
+    "https://www.nasm.us/",
+    "https://strawberryperl.com/"
+  ],
+  "scope": "Read the complete Japanese article and all twelve translations; compared all build instructions and command examples, checked release support status, Perl/NASM/MSVC prerequisites, x64 architecture setup, install privileges, metadata, internal links, and image.",
+  "findings": [
+    "Removed duplicate future publication dates, preserved the original publication date (2023-04-07), and set lastmod to 2026-11-25 in all 13 editions.",
+    "Replaced the unsupported OpenSSL 3.1.0 example with 3.5.9, the supported LTS patch available on 2026-11-25; added a reminder to verify the latest supported patch at build time.",
+    "Updated the Perl and NASM examples to current stable releases and clarified PATH/toolchain requirements.",
+    "Clarified that source builds are optional when a suitable binary distribution works; specified the x64 Visual Studio tool prompt and corrected vcvarsall to amd64.",
+    "Recorded default x64 install location and administrator requirement, with --prefix as a writable alternative. Replaced Wikipedia with official OpenSSL and Microsoft references."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/Windows で OpenSSL をビルドする方法/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/Windows で OpenSSL をビルドする方法/index.md",
+      "sourceHash": "ba12ff30e155a31a8524191513ad54826a725e6607ec176a29810d2fb5a395aa",
+      "translationHash": "36eab8e49eb8521f74b1cbfbf0a1de617bb3f80666b09754b121f3423432dfce",
+      "summary": "Compared the complete translation with the Japanese source and current OpenSSL/Microsoft toolchain documentation; updated release/tool versions, corrected the optional nature of source builds, and clarified x64 setup and install privileges.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese source and all twelve translations; updated the obsolete OpenSSL release example and checked the environment setup, x64 toolchain, build/test/install sequence, and install privileges."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked OpenSSL LTS/support wording, Perl, NASM, MSVC, x64/amd64 target, Configure target, nmake, source archive, prefix, and administrator scope."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified the shared Windows build commands against OpenSSL NOTES-WINDOWS.md and INSTALL.md; checked the archive version, VC-WIN64A target, vcvarsall amd64, nmake sequence, and default x64 install directory."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked current OpenSSL downloads, Windows build notes, install instructions, Microsoft x64 toolchain, NASM, and Strawberry Perl references. Replaced the non-authoritative Wikipedia reference."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "OpenSSL patch releases and support status can change; check the official downloads and lifecycle pages before each build.",
+        "Microsoft Visual Studio edition and installation paths vary by machine; the elevated default Program Files install can be replaced with a writable --prefix."
+      ]
+    },
+    "post/Windows で OpenSSL をビルドする方法/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/Windows で OpenSSL をビルドする方法/index.md",
+      "sourceHash": "ba12ff30e155a31a8524191513ad54826a725e6607ec176a29810d2fb5a395aa",
+      "translationHash": "279fb1c98d68cee8249986e1f0879b6eb3e8da1e607e6a620dca787f676836d9",
+      "summary": "Compared the complete translation with the Japanese source and current OpenSSL/Microsoft toolchain documentation; updated release/tool versions, corrected the optional nature of source builds, and clarified x64 setup and install privileges.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese source and all twelve translations; updated the obsolete OpenSSL release example and checked the environment setup, x64 toolchain, build/test/install sequence, and install privileges."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked OpenSSL LTS/support wording, Perl, NASM, MSVC, x64/amd64 target, Configure target, nmake, source archive, prefix, and administrator scope."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified the shared Windows build commands against OpenSSL NOTES-WINDOWS.md and INSTALL.md; checked the archive version, VC-WIN64A target, vcvarsall amd64, nmake sequence, and default x64 install directory."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked current OpenSSL downloads, Windows build notes, install instructions, Microsoft x64 toolchain, NASM, and Strawberry Perl references. Replaced the non-authoritative Wikipedia reference."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "OpenSSL patch releases and support status can change; check the official downloads and lifecycle pages before each build.",
+        "Microsoft Visual Studio edition and installation paths vary by machine; the elevated default Program Files install can be replaced with a writable --prefix."
+      ]
+    },
+    "post/Windows で OpenSSL をビルドする方法/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/Windows で OpenSSL をビルドする方法/index.md",
+      "sourceHash": "ba12ff30e155a31a8524191513ad54826a725e6607ec176a29810d2fb5a395aa",
+      "translationHash": "e6cbacb099b8f936873216e85e555add27e28afbf4a22a178592865d7f11bf44",
+      "summary": "Compared the complete translation with the Japanese source and current OpenSSL/Microsoft toolchain documentation; updated release/tool versions, corrected the optional nature of source builds, and clarified x64 setup and install privileges.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese source and all twelve translations; updated the obsolete OpenSSL release example and checked the environment setup, x64 toolchain, build/test/install sequence, and install privileges."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked OpenSSL LTS/support wording, Perl, NASM, MSVC, x64/amd64 target, Configure target, nmake, source archive, prefix, and administrator scope."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified the shared Windows build commands against OpenSSL NOTES-WINDOWS.md and INSTALL.md; checked the archive version, VC-WIN64A target, vcvarsall amd64, nmake sequence, and default x64 install directory."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked current OpenSSL downloads, Windows build notes, install instructions, Microsoft x64 toolchain, NASM, and Strawberry Perl references. Replaced the non-authoritative Wikipedia reference."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "OpenSSL patch releases and support status can change; check the official downloads and lifecycle pages before each build.",
+        "Microsoft Visual Studio edition and installation paths vary by machine; the elevated default Program Files install can be replaced with a writable --prefix."
+      ]
+    },
+    "post/Windows で OpenSSL をビルドする方法/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/Windows で OpenSSL をビルドする方法/index.md",
+      "sourceHash": "ba12ff30e155a31a8524191513ad54826a725e6607ec176a29810d2fb5a395aa",
+      "translationHash": "a4d7730502e9c23805bb41f6b1c969790e9e76928b68febd7c77fec76cae84e8",
+      "summary": "Compared the complete translation with the Japanese source and current OpenSSL/Microsoft toolchain documentation; updated release/tool versions, corrected the optional nature of source builds, and clarified x64 setup and install privileges.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese source and all twelve translations; updated the obsolete OpenSSL release example and checked the environment setup, x64 toolchain, build/test/install sequence, and install privileges."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked OpenSSL LTS/support wording, Perl, NASM, MSVC, x64/amd64 target, Configure target, nmake, source archive, prefix, and administrator scope."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified the shared Windows build commands against OpenSSL NOTES-WINDOWS.md and INSTALL.md; checked the archive version, VC-WIN64A target, vcvarsall amd64, nmake sequence, and default x64 install directory."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked current OpenSSL downloads, Windows build notes, install instructions, Microsoft x64 toolchain, NASM, and Strawberry Perl references. Replaced the non-authoritative Wikipedia reference."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "OpenSSL patch releases and support status can change; check the official downloads and lifecycle pages before each build.",
+        "Microsoft Visual Studio edition and installation paths vary by machine; the elevated default Program Files install can be replaced with a writable --prefix."
+      ]
+    },
+    "post/Windows で OpenSSL をビルドする方法/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/Windows で OpenSSL をビルドする方法/index.md",
+      "sourceHash": "ba12ff30e155a31a8524191513ad54826a725e6607ec176a29810d2fb5a395aa",
+      "translationHash": "220b0921465b90c0b76c3134705fbf4ac14253e49aed6b6d34ea089e5812780a",
+      "summary": "Compared the complete translation with the Japanese source and current OpenSSL/Microsoft toolchain documentation; updated release/tool versions, corrected the optional nature of source builds, and clarified x64 setup and install privileges.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese source and all twelve translations; updated the obsolete OpenSSL release example and checked the environment setup, x64 toolchain, build/test/install sequence, and install privileges."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked OpenSSL LTS/support wording, Perl, NASM, MSVC, x64/amd64 target, Configure target, nmake, source archive, prefix, and administrator scope."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified the shared Windows build commands against OpenSSL NOTES-WINDOWS.md and INSTALL.md; checked the archive version, VC-WIN64A target, vcvarsall amd64, nmake sequence, and default x64 install directory."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked current OpenSSL downloads, Windows build notes, install instructions, Microsoft x64 toolchain, NASM, and Strawberry Perl references. Replaced the non-authoritative Wikipedia reference."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "OpenSSL patch releases and support status can change; check the official downloads and lifecycle pages before each build.",
+        "Microsoft Visual Studio edition and installation paths vary by machine; the elevated default Program Files install can be replaced with a writable --prefix."
+      ]
+    },
+    "post/Windows で OpenSSL をビルドする方法/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/Windows で OpenSSL をビルドする方法/index.md",
+      "sourceHash": "ba12ff30e155a31a8524191513ad54826a725e6607ec176a29810d2fb5a395aa",
+      "translationHash": "70c53e5ac8d4d57b56a6b43b4ccc2d9a441b4e13eae5e47663a1c43397188fb2",
+      "summary": "Compared the complete translation with the Japanese source and current OpenSSL/Microsoft toolchain documentation; updated release/tool versions, corrected the optional nature of source builds, and clarified x64 setup and install privileges.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese source and all twelve translations; updated the obsolete OpenSSL release example and checked the environment setup, x64 toolchain, build/test/install sequence, and install privileges."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked OpenSSL LTS/support wording, Perl, NASM, MSVC, x64/amd64 target, Configure target, nmake, source archive, prefix, and administrator scope."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified the shared Windows build commands against OpenSSL NOTES-WINDOWS.md and INSTALL.md; checked the archive version, VC-WIN64A target, vcvarsall amd64, nmake sequence, and default x64 install directory."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked current OpenSSL downloads, Windows build notes, install instructions, Microsoft x64 toolchain, NASM, and Strawberry Perl references. Replaced the non-authoritative Wikipedia reference."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "OpenSSL patch releases and support status can change; check the official downloads and lifecycle pages before each build.",
+        "Microsoft Visual Studio edition and installation paths vary by machine; the elevated default Program Files install can be replaced with a writable --prefix."
+      ]
+    },
+    "post/Windows で OpenSSL をビルドする方法/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/Windows で OpenSSL をビルドする方法/index.md",
+      "sourceHash": "ba12ff30e155a31a8524191513ad54826a725e6607ec176a29810d2fb5a395aa",
+      "translationHash": "719e59667b272da758fe3d8d803a9f71328ea18fcb5566f8336013f6d35bcf43",
+      "summary": "Compared the complete translation with the Japanese source and current OpenSSL/Microsoft toolchain documentation; updated release/tool versions, corrected the optional nature of source builds, and clarified x64 setup and install privileges.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese source and all twelve translations; updated the obsolete OpenSSL release example and checked the environment setup, x64 toolchain, build/test/install sequence, and install privileges."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked OpenSSL LTS/support wording, Perl, NASM, MSVC, x64/amd64 target, Configure target, nmake, source archive, prefix, and administrator scope."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified the shared Windows build commands against OpenSSL NOTES-WINDOWS.md and INSTALL.md; checked the archive version, VC-WIN64A target, vcvarsall amd64, nmake sequence, and default x64 install directory."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked current OpenSSL downloads, Windows build notes, install instructions, Microsoft x64 toolchain, NASM, and Strawberry Perl references. Replaced the non-authoritative Wikipedia reference."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "OpenSSL patch releases and support status can change; check the official downloads and lifecycle pages before each build.",
+        "Microsoft Visual Studio edition and installation paths vary by machine; the elevated default Program Files install can be replaced with a writable --prefix."
+      ]
+    },
+    "post/Windows で OpenSSL をビルドする方法/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/Windows で OpenSSL をビルドする方法/index.md",
+      "sourceHash": "ba12ff30e155a31a8524191513ad54826a725e6607ec176a29810d2fb5a395aa",
+      "translationHash": "7a20505a48d6eb11b71452a882910d04fc7d3c0995d3662350929ca57be88f3f",
+      "summary": "Compared the complete translation with the Japanese source and current OpenSSL/Microsoft toolchain documentation; updated release/tool versions, corrected the optional nature of source builds, and clarified x64 setup and install privileges.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese source and all twelve translations; updated the obsolete OpenSSL release example and checked the environment setup, x64 toolchain, build/test/install sequence, and install privileges."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked OpenSSL LTS/support wording, Perl, NASM, MSVC, x64/amd64 target, Configure target, nmake, source archive, prefix, and administrator scope."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified the shared Windows build commands against OpenSSL NOTES-WINDOWS.md and INSTALL.md; checked the archive version, VC-WIN64A target, vcvarsall amd64, nmake sequence, and default x64 install directory."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked current OpenSSL downloads, Windows build notes, install instructions, Microsoft x64 toolchain, NASM, and Strawberry Perl references. Replaced the non-authoritative Wikipedia reference."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "OpenSSL patch releases and support status can change; check the official downloads and lifecycle pages before each build.",
+        "Microsoft Visual Studio edition and installation paths vary by machine; the elevated default Program Files install can be replaced with a writable --prefix."
+      ]
+    },
+    "post/Windows で OpenSSL をビルドする方法/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/Windows で OpenSSL をビルドする方法/index.md",
+      "sourceHash": "ba12ff30e155a31a8524191513ad54826a725e6607ec176a29810d2fb5a395aa",
+      "translationHash": "1fd8fe5c458c0ec8f25d6d3af15dd1fc3ffc7aae42610aa06db6deddab9c542c",
+      "summary": "Compared the complete translation with the Japanese source and current OpenSSL/Microsoft toolchain documentation; updated release/tool versions, corrected the optional nature of source builds, and clarified x64 setup and install privileges.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese source and all twelve translations; updated the obsolete OpenSSL release example and checked the environment setup, x64 toolchain, build/test/install sequence, and install privileges."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked OpenSSL LTS/support wording, Perl, NASM, MSVC, x64/amd64 target, Configure target, nmake, source archive, prefix, and administrator scope."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified the shared Windows build commands against OpenSSL NOTES-WINDOWS.md and INSTALL.md; checked the archive version, VC-WIN64A target, vcvarsall amd64, nmake sequence, and default x64 install directory."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked current OpenSSL downloads, Windows build notes, install instructions, Microsoft x64 toolchain, NASM, and Strawberry Perl references. Replaced the non-authoritative Wikipedia reference."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "OpenSSL patch releases and support status can change; check the official downloads and lifecycle pages before each build.",
+        "Microsoft Visual Studio edition and installation paths vary by machine; the elevated default Program Files install can be replaced with a writable --prefix."
+      ]
+    },
+    "post/Windows で OpenSSL をビルドする方法/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/Windows で OpenSSL をビルドする方法/index.md",
+      "sourceHash": "ba12ff30e155a31a8524191513ad54826a725e6607ec176a29810d2fb5a395aa",
+      "translationHash": "5a6c6c1a8a98c91412abf34ac5e942f91bd806a863b65a74d2e53ee3fe7cfaf2",
+      "summary": "Compared the complete translation with the Japanese source and current OpenSSL/Microsoft toolchain documentation; updated release/tool versions, corrected the optional nature of source builds, and clarified x64 setup and install privileges.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese source and all twelve translations; updated the obsolete OpenSSL release example and checked the environment setup, x64 toolchain, build/test/install sequence, and install privileges."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked OpenSSL LTS/support wording, Perl, NASM, MSVC, x64/amd64 target, Configure target, nmake, source archive, prefix, and administrator scope."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified the shared Windows build commands against OpenSSL NOTES-WINDOWS.md and INSTALL.md; checked the archive version, VC-WIN64A target, vcvarsall amd64, nmake sequence, and default x64 install directory."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked current OpenSSL downloads, Windows build notes, install instructions, Microsoft x64 toolchain, NASM, and Strawberry Perl references. Replaced the non-authoritative Wikipedia reference."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "OpenSSL patch releases and support status can change; check the official downloads and lifecycle pages before each build.",
+        "Microsoft Visual Studio edition and installation paths vary by machine; the elevated default Program Files install can be replaced with a writable --prefix."
+      ]
+    },
+    "post/Windows で OpenSSL をビルドする方法/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/Windows で OpenSSL をビルドする方法/index.md",
+      "sourceHash": "ba12ff30e155a31a8524191513ad54826a725e6607ec176a29810d2fb5a395aa",
+      "translationHash": "e66063e036b3f1a66f3a5a15c40fbd834b147ac8c757d827c8eece2efe53b066",
+      "summary": "Compared the complete translation with the Japanese source and current OpenSSL/Microsoft toolchain documentation; updated release/tool versions, corrected the optional nature of source builds, and clarified x64 setup and install privileges.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese source and all twelve translations; updated the obsolete OpenSSL release example and checked the environment setup, x64 toolchain, build/test/install sequence, and install privileges."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked OpenSSL LTS/support wording, Perl, NASM, MSVC, x64/amd64 target, Configure target, nmake, source archive, prefix, and administrator scope."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified the shared Windows build commands against OpenSSL NOTES-WINDOWS.md and INSTALL.md; checked the archive version, VC-WIN64A target, vcvarsall amd64, nmake sequence, and default x64 install directory."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked current OpenSSL downloads, Windows build notes, install instructions, Microsoft x64 toolchain, NASM, and Strawberry Perl references. Replaced the non-authoritative Wikipedia reference."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "OpenSSL patch releases and support status can change; check the official downloads and lifecycle pages before each build.",
+        "Microsoft Visual Studio edition and installation paths vary by machine; the elevated default Program Files install can be replaced with a writable --prefix."
+      ]
+    },
+    "post/Windows で OpenSSL をビルドする方法/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/Windows で OpenSSL をビルドする方法/index.md",
+      "sourceHash": "ba12ff30e155a31a8524191513ad54826a725e6607ec176a29810d2fb5a395aa",
+      "translationHash": "f59e27542cf01e69a3d196cfbc15628b2a089ab155cf0773af3667ec74954830",
+      "summary": "Compared the complete translation with the Japanese source and current OpenSSL/Microsoft toolchain documentation; updated release/tool versions, corrected the optional nature of source builds, and clarified x64 setup and install privileges.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese source and all twelve translations; updated the obsolete OpenSSL release example and checked the environment setup, x64 toolchain, build/test/install sequence, and install privileges."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked OpenSSL LTS/support wording, Perl, NASM, MSVC, x64/amd64 target, Configure target, nmake, source archive, prefix, and administrator scope."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified the shared Windows build commands against OpenSSL NOTES-WINDOWS.md and INSTALL.md; checked the archive version, VC-WIN64A target, vcvarsall amd64, nmake sequence, and default x64 install directory."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked current OpenSSL downloads, Windows build notes, install instructions, Microsoft x64 toolchain, NASM, and Strawberry Perl references. Replaced the non-authoritative Wikipedia reference."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "OpenSSL patch releases and support status can change; check the official downloads and lifecycle pages before each build.",
+        "Microsoft Visual Studio edition and installation paths vary by machine; the elevated default Program Files install can be replaced with a writable --prefix."
+      ]
+    }
+  }
+}

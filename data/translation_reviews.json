@@ -22925,6 +22925,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-198.json",
       "evidenceHash": "b8577f5d49f89a2e33233e20f76d55e253ad534fbeac24cb8cff1b13903b043e"
+    },
+    "post/Windows で OpenSSL をビルドする方法/index.en.md": {
+      "source": "post/Windows で OpenSSL をビルドする方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "ba12ff30e155a31a8524191513ad54826a725e6607ec176a29810d2fb5a395aa",
+      "translationHash": "36eab8e49eb8521f74b1cbfbf0a1de617bb3f80666b09754b121f3423432dfce",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-199.json",
+      "evidenceHash": "87cd79641069336bd85d9ebedf690029ee1840d0bfe85dd5257fbe28e121ef23"
+    },
+    "post/Windows で OpenSSL をビルドする方法/index.zh-cn.md": {
+      "source": "post/Windows で OpenSSL をビルドする方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "ba12ff30e155a31a8524191513ad54826a725e6607ec176a29810d2fb5a395aa",
+      "translationHash": "279fb1c98d68cee8249986e1f0879b6eb3e8da1e607e6a620dca787f676836d9",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-199.json",
+      "evidenceHash": "f2ef44b1c2932a27b971b6890807cef624cd555d5fdd196d0303e56b5d4e5df4"
+    },
+    "post/Windows で OpenSSL をビルドする方法/index.es.md": {
+      "source": "post/Windows で OpenSSL をビルドする方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "ba12ff30e155a31a8524191513ad54826a725e6607ec176a29810d2fb5a395aa",
+      "translationHash": "e6cbacb099b8f936873216e85e555add27e28afbf4a22a178592865d7f11bf44",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-199.json",
+      "evidenceHash": "b498eace89015af1e81181ab5138c5b75a2d326a42565ccfd87404d9f786751c"
+    },
+    "post/Windows で OpenSSL をビルドする方法/index.ko.md": {
+      "source": "post/Windows で OpenSSL をビルドする方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "ba12ff30e155a31a8524191513ad54826a725e6607ec176a29810d2fb5a395aa",
+      "translationHash": "a4d7730502e9c23805bb41f6b1c969790e9e76928b68febd7c77fec76cae84e8",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-199.json",
+      "evidenceHash": "a470d60bc73a0e08a665875a8a63a79c21abaa2947ceaf59cb9dba7c323cb5cf"
+    },
+    "post/Windows で OpenSSL をビルドする方法/index.pt.md": {
+      "source": "post/Windows で OpenSSL をビルドする方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "ba12ff30e155a31a8524191513ad54826a725e6607ec176a29810d2fb5a395aa",
+      "translationHash": "220b0921465b90c0b76c3134705fbf4ac14253e49aed6b6d34ea089e5812780a",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-199.json",
+      "evidenceHash": "4fa495747bc4608e5058383bc6abbe2e8a1363f63a5ee0e0ebd15319e93e7771"
+    },
+    "post/Windows で OpenSSL をビルドする方法/index.zh-tw.md": {
+      "source": "post/Windows で OpenSSL をビルドする方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "ba12ff30e155a31a8524191513ad54826a725e6607ec176a29810d2fb5a395aa",
+      "translationHash": "70c53e5ac8d4d57b56a6b43b4ccc2d9a441b4e13eae5e47663a1c43397188fb2",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-199.json",
+      "evidenceHash": "0499032cf5355c6eef04fcbf102f72f9b8862e54dfe21808c95fe5ffc35bb36a"
+    },
+    "post/Windows で OpenSSL をビルドする方法/index.hi.md": {
+      "source": "post/Windows で OpenSSL をビルドする方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "ba12ff30e155a31a8524191513ad54826a725e6607ec176a29810d2fb5a395aa",
+      "translationHash": "719e59667b272da758fe3d8d803a9f71328ea18fcb5566f8336013f6d35bcf43",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-199.json",
+      "evidenceHash": "80c8b46e9dc04ace1795c1b564354ceb72bef5a5a4216a05ad0c4a213e808d62"
+    },
+    "post/Windows で OpenSSL をビルドする方法/index.fr.md": {
+      "source": "post/Windows で OpenSSL をビルドする方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "ba12ff30e155a31a8524191513ad54826a725e6607ec176a29810d2fb5a395aa",
+      "translationHash": "7a20505a48d6eb11b71452a882910d04fc7d3c0995d3662350929ca57be88f3f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-199.json",
+      "evidenceHash": "37f78ce7fe1adf12478eb787e568c271ef02b827e9e79b0943fa49107c207a07"
+    },
+    "post/Windows で OpenSSL をビルドする方法/index.de.md": {
+      "source": "post/Windows で OpenSSL をビルドする方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "ba12ff30e155a31a8524191513ad54826a725e6607ec176a29810d2fb5a395aa",
+      "translationHash": "1fd8fe5c458c0ec8f25d6d3af15dd1fc3ffc7aae42610aa06db6deddab9c542c",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-199.json",
+      "evidenceHash": "837ea2deee4894bf46ca77cee86ff585bc78274c7eda903c8ebbd001c09277f7"
+    },
+    "post/Windows で OpenSSL をビルドする方法/index.ar.md": {
+      "source": "post/Windows で OpenSSL をビルドする方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "ba12ff30e155a31a8524191513ad54826a725e6607ec176a29810d2fb5a395aa",
+      "translationHash": "5a6c6c1a8a98c91412abf34ac5e942f91bd806a863b65a74d2e53ee3fe7cfaf2",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-199.json",
+      "evidenceHash": "33a50539ebf930446127958f267e8dfd31c05159dd218711d8762b1c617db7c5"
+    },
+    "post/Windows で OpenSSL をビルドする方法/index.ru.md": {
+      "source": "post/Windows で OpenSSL をビルドする方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "ba12ff30e155a31a8524191513ad54826a725e6607ec176a29810d2fb5a395aa",
+      "translationHash": "e66063e036b3f1a66f3a5a15c40fbd834b147ac8c757d827c8eece2efe53b066",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-199.json",
+      "evidenceHash": "5099da2c22c3b29d8da6a5021c1c46b777ec31800d5c148c87435da3b128972a"
+    },
+    "post/Windows で OpenSSL をビルドする方法/index.id.md": {
+      "source": "post/Windows で OpenSSL をビルドする方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "ba12ff30e155a31a8524191513ad54826a725e6607ec176a29810d2fb5a395aa",
+      "translationHash": "f59e27542cf01e69a3d196cfbc15628b2a089ab155cf0773af3667ec74954830",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-199.json",
+      "evidenceHash": "36aa1991f8e78be8c228f0abeaa2e8fa42c18b298bb24e42584de3cbec75d1bc"
     }
   }
 }

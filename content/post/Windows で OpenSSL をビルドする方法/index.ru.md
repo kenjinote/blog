@@ -1,32 +1,29 @@
 ---
-title: 'Шаги по сборке и установке OpenSSL в среде Windows и настройка окружения'
-date: "2026-09-24T19:44:38+09:00"
-slug: "Windows で OpenSSL をСборкаする方法"
 date: 2023-04-07T21:06:32+09:00
+lastmod: 2026-11-25
+title: 'Шаги по сборке и установке OpenSSL в среде Windows и настройка окружения'
+slug: "Windows で OpenSSL をСборкаする方法"
 tags: ["Windows", "OpenSSL", "Build", "C++"]
 draft: false
 image: "img.webp"
 categories: ["programming"]
-description: 'Объясняем, как собрать «OpenSSL», библиотеку зашифрованной связи для языка C, в среде Windows. Подробно описывается процесс от подготовки необходимых инструментов, таких как Perl, NASM и Visual Studio 2022, до фактических шагов сборки исходного кода.'
+description: "Как собрать OpenSSL из исходного кода в Windows: пример на OpenSSL 3.5.9, необходимые инструменты и шаги для x64."
 ---
 
 # Что такое OpenSSL
 
-Это библиотека с открытым исходным кодом, которая предоставляет функции, необходимые для шифрованной связи.
+Для использования OpenSSL в приложении нужны заголовки и библиотеки для разработки. Можно получить готовый бинарный дистрибутив или собрать исходники под свои задачи; здесь описан вариант сборки из исходников.
 
-Чтобы использовать её из программы, необходимо собрать библиотеку из предоставленного исходного кода на языке C.
-
-Ниже приведена процедура сборки.
-
+Below, we will introduce the build procedure.
 # Подготовка среды сборки
 
 - **Perl**
 
-  Скачайте `strawberry-perl-5.32.1.1-64bit.msi` с [https://strawberryperl.com/](https://strawberryperl.com/). Подойдет последняя версия.
+  Скачайте `strawberry-perl-5.42.3.1-64bit.msi` с [https://strawberryperl.com/](https://strawberryperl.com/). Подойдет последняя версия.
 
 - **NASM**
 
-  Скачайте `2.16.01/nasm-2.16.01-win64.zip` из раздела `Download` на [https://www.nasm.us/](https://www.nasm.us/). Подойдет последняя версия, кроме rc.
+  Скачайте `3.02/nasm-3.02-win64.zip` из раздела `Download` на [https://www.nasm.us/](https://www.nasm.us/). Подойдет последняя версия, кроме rc.
   После установки необходимо добавить папку с установленным NASM в переменную среды PATH.
 
 - **Visual Studio 2022** или **Build Tools for Visual Studio 2022**
@@ -35,12 +32,15 @@ description: 'Объясняем, как собрать «OpenSSL», библи�
   
 # Процедура сборки OpenSSL в Windows
 
-1. Скачайте и распакуйте `openssl-3.1.0.tar.gz` с [https://www.openssl.org/source/](https://www.openssl.org/source/). Если не получается распаковать, выполните команду `tar -xzf openssl-3.1.0.tar.gz` в командной строке.
-2. Запустите командную строку **от имени администратора** 
+1. Скачайте и распакуйте `openssl-3.5.9.tar.gz` с [https://openssl-library.org/source/](https://openssl-library.org/source/). Если не получается распаковать, выполните команду `tar -xzf openssl-3.5.9.tar.gz` в командной строке.
+
+На 25.11.2026 OpenSSL 3.5.9 относится к поддерживаемой LTS-серии 3.5, поддержка которой продлится до 08.04.2030. Перед сборкой проверьте на официальной странице последний поддерживаемый патч.
+
+2. Используйте командную строку разработчика Visual Studio для x64. Запускайте ее от имени администратора, только если устанавливаете в Program Files.
 3. Откройте распакованную папку
 4. Выполните следующую команду. *Измените часть `Community` в соответствии с версией установленного Visual Studio.*
 ```
-"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\Build\vcvarsall.bat" x64
+"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\Build\vcvarsall.bat" amd64
 ```
 5. Выполните следующую команду
 ```
@@ -60,8 +60,15 @@ nmake install
 ```
 
 В случае успеха OpenSSL будет установлен в `C:\Program Files\OpenSSL`.
+Установка в это место по умолчанию требует прав администратора. Чтобы не повышать права, укажите доступный для записи prefix при настройке.
 
 Готово.
 
 # Ссылки
-[https://ja.wikipedia.org/wiki/OpenSSL](https://ja.wikipedia.org/wiki/OpenSSL)
+
+- [OpenSSL supported releases and lifecycle](https://openssl-library.org/source/)
+- [OpenSSL Windows build notes](https://github.com/openssl/openssl/blob/master/NOTES-WINDOWS.md)
+- [OpenSSL build and install guide](https://github.com/openssl/openssl/blob/master/INSTALL.md)
+- [Microsoft: x64 MSVC command prompt](https://learn.microsoft.com/en-us/cpp/build/how-to-enable-a-64-bit-visual-cpp-toolset-on-the-command-line?view=msvc-170)
+- [NASM stable releases](https://www.nasm.us/)
+- [Strawberry Perl for Windows](https://strawberryperl.com/)
