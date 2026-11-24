@@ -1,18 +1,15 @@
 ---
-
-
-
-
 title: 'paint.net에서 이미지의 특정 부분에 모자이크를 적용하는 방법 간단 설명'
-date: "2026-09-24T19:44:38+09:00"
 slug: "paint.netで이미지の特定個所にモザイクをかける方法"
-date: 2023-04-11T16:33:10+09:00
-tags: ["paint.net", "테두리", "이미지"]
+tags: ["paint.net", "픽셀화", "이미지 편집", "개인정보 보호"]
 draft: false
 image: "img.webp"
 categories: ["ai-technology"]
-description: '무료 이미지 편집 소프트웨어 ''paint.net''을 사용하여 이미지의 일부에 모자이크 처리를 하는 방법을 설명합니다. 선택 도구로 범위를 지정하고 효과 기능을 설정하는 절차를 초보자를 위해 소개합니다. SNS나 블로그에 이미지를 업로드할 때 유용한 개인정보 보호 기술입니다.'
+description: "paint.net 선택 영역에 Pixelate 효과를 적용하고 Cell Size와 크기 조정 방식을 설정하는 방법입니다. 픽셀화는 안전한 정보 삭제를 보장하지 않으므로 더 안전한 가림 방법도 안내합니다."
+date: "2023-04-11T16:33:10+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
+
 
 
 
@@ -34,9 +31,8 @@ paint.net을 사용하면 이미지를 금방 가공할 수 있습니다.
 
 ![img_1.png](img_1.webp)
 
-- 셀 크기로 모자이크 처리의 거칠기를 설정합니다. 수치가 클수록 은닉성이 높아집니다.
-- [축소]`멀티샘플 바이리니어법`을 선택
-- [확대]`최근접 이웃법`을 선택
+- Cell Size는 확대되는 픽셀의 크기를 조절합니다. 값이 클수록 네모 블록도 커지지만, 정보가 안전하게 가려진다는 보장은 없습니다.
+- 네모난 픽셀 블록을 원하면 [Scale Down]은 `Multisample Bilinear`, [Scale Up]은 `Nearest Neighbor`로 설정하세요.
 
 `OK`로 대화 상자를 닫습니다.
 
@@ -44,4 +40,14 @@ paint.net을 사용하면 이미지를 금방 가공할 수 있습니다.
 
 ![img.png](img.webp)
 
+## 개인정보 보호 주의
+
+개인 정보처럼 확실히 숨겨야 하는 정보에는 픽셀화나 흐림 효과만 사용하지 마세요. 불투명한 단색으로 완전히 덮고, 레이어나 편집 이력이 없는 PNG 또는 JPEG로 내보낸 뒤 결과 파일을 확인하세요. 편집 가능한 원본은 별도로 안전하게 보관하세요.
+
 이상.
+
+## 참고 자료
+
+- [paint.net: Pixelate effect](https://paint.net/doc/latest/EffectsDistortMenu.html)
+- [paint.net: Roadmap and change log](https://paint.net/roadmap.html)
+- [UK Information Commissioner’s Office: Securely disclosing documents](https://ico.org.uk/media2/pbwchh24/disclosing-documents-to-the-public-securely-all-1-0-0.pdf)

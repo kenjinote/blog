@@ -18845,6 +18845,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-161.json",
       "evidenceHash": "110a61176dc4e724fecc3e595fa77bb853e25148dfc4ceb183f6eca1a21ffa94"
+    },
+    "post/paint.netで画像の特定個所にモザイクをかける方法/index.en.md": {
+      "source": "post/paint.netで画像の特定個所にモザイクをかける方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "0666fecb8d8565f6cd0da07976ef85c3e4f515748d05ec362ee0c94c2c267865",
+      "translationHash": "71e22a6bf426d0f1e32bbd47d1652932b84fbb3ef5b5c187ed1f2067a7aba3ee",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-162.json",
+      "evidenceHash": "9c0b8bdb06ae6a883070e74505c131a3b78be5b11ddce9a6f48a5beb83385197"
+    },
+    "post/paint.netで画像の特定個所にモザイクをかける方法/index.zh-cn.md": {
+      "source": "post/paint.netで画像の特定個所にモザイクをかける方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "0666fecb8d8565f6cd0da07976ef85c3e4f515748d05ec362ee0c94c2c267865",
+      "translationHash": "28e1cf0b0ad673dcf56a53bab0809fed1e1a68facb6949f4c8cc4c7073f52180",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-162.json",
+      "evidenceHash": "f1744a4d93c6d7c9f7063cf9b1ed13f8adf596d32b5078bff23ddce6a4140ae5"
+    },
+    "post/paint.netで画像の特定個所にモザイクをかける方法/index.es.md": {
+      "source": "post/paint.netで画像の特定個所にモザイクをかける方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "0666fecb8d8565f6cd0da07976ef85c3e4f515748d05ec362ee0c94c2c267865",
+      "translationHash": "bfde06945b93b26c9c7d1aa8e7956c6291292ccee5975ec4b99283f06abed565",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-162.json",
+      "evidenceHash": "a5caa5e20938a224008ab0ee465e967f0ce3a796e3c2f5eac6d6119e42f1d8f9"
+    },
+    "post/paint.netで画像の特定個所にモザイクをかける方法/index.ko.md": {
+      "source": "post/paint.netで画像の特定個所にモザイクをかける方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "0666fecb8d8565f6cd0da07976ef85c3e4f515748d05ec362ee0c94c2c267865",
+      "translationHash": "df1755ff8b2572fbc997bcfa1efd8092d1fbb5a17e2da719d0efb61cc60d38db",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-162.json",
+      "evidenceHash": "e1077113e1b6e67c171a62119b8028df6d94f08abb5c079e486aab83149dd104"
+    },
+    "post/paint.netで画像の特定個所にモザイクをかける方法/index.pt.md": {
+      "source": "post/paint.netで画像の特定個所にモザイクをかける方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "0666fecb8d8565f6cd0da07976ef85c3e4f515748d05ec362ee0c94c2c267865",
+      "translationHash": "476ebbd4d6b24857769c2248178b085153c76842202f1764254d15af83979631",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-162.json",
+      "evidenceHash": "b3bb49a03a3db5f6d541365b21258b9838f4eb2e443d5ef3af82b009b9955455"
+    },
+    "post/paint.netで画像の特定個所にモザイクをかける方法/index.zh-tw.md": {
+      "source": "post/paint.netで画像の特定個所にモザイクをかける方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "0666fecb8d8565f6cd0da07976ef85c3e4f515748d05ec362ee0c94c2c267865",
+      "translationHash": "4dbeeb30de298024e59b8451388d614e154e9bf22e9546848d070f0a1955cb47",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-162.json",
+      "evidenceHash": "a3cccae8ba37a854895d898625b32e698fb6557d01321edd5dbbc05f09c1254b"
+    },
+    "post/paint.netで画像の特定個所にモザイクをかける方法/index.hi.md": {
+      "source": "post/paint.netで画像の特定個所にモザイクをかける方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "0666fecb8d8565f6cd0da07976ef85c3e4f515748d05ec362ee0c94c2c267865",
+      "translationHash": "2d5a8308abcdf4c6d693deb0ea9a7918b2a812e40dffcbadb2c120d4ab5028d4",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-162.json",
+      "evidenceHash": "a223ad8ef93d93579ee97ef3a52d4326c10c27cde975ac215c647b8041ff9da4"
+    },
+    "post/paint.netで画像の特定個所にモザイクをかける方法/index.fr.md": {
+      "source": "post/paint.netで画像の特定個所にモザイクをかける方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "0666fecb8d8565f6cd0da07976ef85c3e4f515748d05ec362ee0c94c2c267865",
+      "translationHash": "f7f9b6080feefa9c85159a523a2c40a58c40a61add30e5af61698a47ff0d6cba",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-162.json",
+      "evidenceHash": "f56db32529829cabd46c3dd60b0abbf52efc2e495fe7da1ddc80eb57be0065de"
+    },
+    "post/paint.netで画像の特定個所にモザイクをかける方法/index.de.md": {
+      "source": "post/paint.netで画像の特定個所にモザイクをかける方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "0666fecb8d8565f6cd0da07976ef85c3e4f515748d05ec362ee0c94c2c267865",
+      "translationHash": "3b5402e79c9ab17261d8d2632eeca83982f925aeec15ff077a177c1e25edcc6c",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-162.json",
+      "evidenceHash": "5aca42cd4a2183f4817f39648128a5467716118ffd3b9b99576ed0ea7ad28381"
+    },
+    "post/paint.netで画像の特定個所にモザイクをかける方法/index.ar.md": {
+      "source": "post/paint.netで画像の特定個所にモザイクをかける方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "0666fecb8d8565f6cd0da07976ef85c3e4f515748d05ec362ee0c94c2c267865",
+      "translationHash": "9214d98fbb0b06af3bb02955077c72fc7b2660f42d8c20d2864a15d64cf148a0",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-162.json",
+      "evidenceHash": "75c952eeab9cd8513a975076a08d67951e0dcadf971754a78e07a2011360ba42"
+    },
+    "post/paint.netで画像の特定個所にモザイクをかける方法/index.ru.md": {
+      "source": "post/paint.netで画像の特定個所にモザイクをかける方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "0666fecb8d8565f6cd0da07976ef85c3e4f515748d05ec362ee0c94c2c267865",
+      "translationHash": "f61918b575aae2b26c1e7903e9d4fa7228950ff04a3af9f9aea80d0062f8c4ee",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-162.json",
+      "evidenceHash": "13c3f971521241226abd7b23293a71645ec5dc4585f8ede36e899ff0c3db94ae"
+    },
+    "post/paint.netで画像の特定個所にモザイクをかける方法/index.id.md": {
+      "source": "post/paint.netで画像の特定個所にモザイクをかける方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "0666fecb8d8565f6cd0da07976ef85c3e4f515748d05ec362ee0c94c2c267865",
+      "translationHash": "f956ee74b9736c311cb41a95e455d6dbee062700f2411d310e0b8222e9ac4019",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-162.json",
+      "evidenceHash": "a5e25ad4ba0ebdc813dd27c7237fb589e4b9e04bab0d644befd08472d9174f91"
     }
   }
 }

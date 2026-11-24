@@ -1,17 +1,15 @@
 ---
-
-
-
 title: 'Explicación sencilla de cómo aplicar un efecto mosaico a áreas específicas de una imagen en paint.net'
-date: "2026-09-24T19:44:38+09:00"
 slug: "paint.netでImagenの特定個所にモザイクをかける方法"
-date: 2023-04-11T16:33:10+09:00
-tags: ["paint.net", "borde", "imagen"]
+tags: ["paint.net", "pixelación", "edición de imágenes", "privacidad"]
 draft: false
 image: "img.webp"
 categories: ["ai-technology"]
-description: 'Explicamos cómo aplicar un efecto de mosaico a una parte de una imagen utilizando el software de edición de imágenes gratuito ''paint.net''. Dirigido a principiantes, mostramos los pasos para seleccionar el área y configurar la función de efecto. Una técnica de protección de la privacidad muy útil al subir imágenes a redes sociales o blogs.'
+description: "Cómo aplicar el efecto Pixelate de paint.net a una selección y ajustar el tamaño de celda y el escalado. La pixelación no garantiza una redacción segura; se explica una alternativa más segura."
+date: "2023-04-11T16:33:10+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
+
 
 
 
@@ -32,9 +30,8 @@ Usando paint.net puedes procesar la imagen rápidamente.
 
 ![img_1.png](img_1.webp)
 
-- Configura la aspereza del mosaico con el tamaño de celda. Cuanto mayor sea el valor, mayor será la ocultación.
-- [Reducción] Selecciona `Método bilineal multimuestreo`
-- [Ampliación] Selecciona `Método del vecino más cercano`
+- Cell Size controla el tamaño de los píxeles ampliados. Un valor mayor crea cuadrados más grandes, pero no garantiza que la información quede oculta de forma segura.
+- Para obtener bloques cuadrados, elige `Multisample Bilinear` en [Scale Down] y `Nearest Neighbor` en [Scale Up].
 
 Cierra el cuadro de diálogo con `OK`.
 
@@ -42,4 +39,14 @@ Cierra el cuadro de diálogo con `OK`.
 
 ![img.png](img.webp)
 
+## Nota de privacidad
+
+Si necesitas ocultar de forma fiable datos personales u otra información, no dependas solo de la pixelación o el desenfoque. Cúbrela por completo con un color opaco y uniforme, exporta a PNG o JPEG sin capas ni historial de edición y revisa el archivo exportado. Guarda aparte y de forma segura el original editable.
+
 Eso es todo.
+
+## Referencias
+
+- [paint.net: Pixelate effect](https://paint.net/doc/latest/EffectsDistortMenu.html)
+- [paint.net: Roadmap and change log](https://paint.net/roadmap.html)
+- [UK Information Commissioner’s Office: Securely disclosing documents](https://ico.org.uk/media2/pbwchh24/disclosing-documents-to-the-public-securely-all-1-0-0.pdf)

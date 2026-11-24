@@ -1,0 +1,455 @@
+{
+  "version": 1,
+  "batch": 162,
+  "article": "How to Pixelate a Selected Area in paint.net",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "0666fecb8d8565f6cd0da07976ef85c3e4f515748d05ec362ee0c94c2c267865",
+  "sources": [
+    "https://paint.net/doc/latest/EffectsDistortMenu.html",
+    "https://paint.net/roadmap.html",
+    "https://ico.org.uk/media2/pbwchh24/disclosing-documents-to-the-public-securely-all-1-0-0.pdf"
+  ],
+  "scope": "Compared the full Japanese article and twelve translations, each step and effect label, privacy claims, metadata/tags, screenshots and link quality with current official Paint.NET documentation.",
+  "findings": [
+    "Removed the duplicate future date and retained the original 2023-04-11 date; set lastmod to 2026-11-24.",
+    "Corrected stale tags copied from a border tutorial and updated descriptions.",
+    "Corrected the explanation of Cell Size: larger cells create larger squares but do not guarantee safe concealment.",
+    "Updated Scale Down/Scale Up terminology and preserved the documented pixelated appearance settings.",
+    "Added a translated warning that pixelation/blur may be reversible; for information that must be hidden, use an opaque mask and export a layerless PNG/JPEG, then inspect the output."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/paint.netで画像の特定個所にモザイクをかける方法/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/paint.netで画像の特定個所にモザイクをかける方法/index.md",
+      "sourceHash": "0666fecb8d8565f6cd0da07976ef85c3e4f515748d05ec362ee0c94c2c267865",
+      "translationHash": "71e22a6bf426d0f1e32bbd47d1652932b84fbb3ef5b5c187ed1f2067a7aba3ee",
+      "summary": "Compared the complete translation with the Japanese procedure and corrected Pixelate terminology, Cell Size meaning, privacy limitations, localized tags and descriptions, and primary references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all instructions with current Paint.NET terminology and documented Pixelate controls; corrected the claim that larger cells ensure concealment."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked selection, Pixelate, Cell Size, Scale Down, Scale Up, Multisample Bilinear, and Nearest Neighbor labels across locales."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Paint.NET documentation and roadmap plus ICO guidance on secure image redaction."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Paint.NET controls and labels may vary by installed version or UI language; the cited documentation is the current English documentation.",
+        "Pixelation is a visual effect, not a guarantee of anonymization or secure redaction."
+      ]
+    },
+    "post/paint.netで画像の特定個所にモザイクをかける方法/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/paint.netで画像の特定個所にモザイクをかける方法/index.md",
+      "sourceHash": "0666fecb8d8565f6cd0da07976ef85c3e4f515748d05ec362ee0c94c2c267865",
+      "translationHash": "28e1cf0b0ad673dcf56a53bab0809fed1e1a68facb6949f4c8cc4c7073f52180",
+      "summary": "Compared the complete translation with the Japanese procedure and corrected Pixelate terminology, Cell Size meaning, privacy limitations, localized tags and descriptions, and primary references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all instructions with current Paint.NET terminology and documented Pixelate controls; corrected the claim that larger cells ensure concealment."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked selection, Pixelate, Cell Size, Scale Down, Scale Up, Multisample Bilinear, and Nearest Neighbor labels across locales."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Paint.NET documentation and roadmap plus ICO guidance on secure image redaction."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Paint.NET controls and labels may vary by installed version or UI language; the cited documentation is the current English documentation.",
+        "Pixelation is a visual effect, not a guarantee of anonymization or secure redaction."
+      ]
+    },
+    "post/paint.netで画像の特定個所にモザイクをかける方法/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/paint.netで画像の特定個所にモザイクをかける方法/index.md",
+      "sourceHash": "0666fecb8d8565f6cd0da07976ef85c3e4f515748d05ec362ee0c94c2c267865",
+      "translationHash": "bfde06945b93b26c9c7d1aa8e7956c6291292ccee5975ec4b99283f06abed565",
+      "summary": "Compared the complete translation with the Japanese procedure and corrected Pixelate terminology, Cell Size meaning, privacy limitations, localized tags and descriptions, and primary references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all instructions with current Paint.NET terminology and documented Pixelate controls; corrected the claim that larger cells ensure concealment."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked selection, Pixelate, Cell Size, Scale Down, Scale Up, Multisample Bilinear, and Nearest Neighbor labels across locales."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Paint.NET documentation and roadmap plus ICO guidance on secure image redaction."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Paint.NET controls and labels may vary by installed version or UI language; the cited documentation is the current English documentation.",
+        "Pixelation is a visual effect, not a guarantee of anonymization or secure redaction."
+      ]
+    },
+    "post/paint.netで画像の特定個所にモザイクをかける方法/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/paint.netで画像の特定個所にモザイクをかける方法/index.md",
+      "sourceHash": "0666fecb8d8565f6cd0da07976ef85c3e4f515748d05ec362ee0c94c2c267865",
+      "translationHash": "df1755ff8b2572fbc997bcfa1efd8092d1fbb5a17e2da719d0efb61cc60d38db",
+      "summary": "Compared the complete translation with the Japanese procedure and corrected Pixelate terminology, Cell Size meaning, privacy limitations, localized tags and descriptions, and primary references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all instructions with current Paint.NET terminology and documented Pixelate controls; corrected the claim that larger cells ensure concealment."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked selection, Pixelate, Cell Size, Scale Down, Scale Up, Multisample Bilinear, and Nearest Neighbor labels across locales."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Paint.NET documentation and roadmap plus ICO guidance on secure image redaction."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Paint.NET controls and labels may vary by installed version or UI language; the cited documentation is the current English documentation.",
+        "Pixelation is a visual effect, not a guarantee of anonymization or secure redaction."
+      ]
+    },
+    "post/paint.netで画像の特定個所にモザイクをかける方法/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/paint.netで画像の特定個所にモザイクをかける方法/index.md",
+      "sourceHash": "0666fecb8d8565f6cd0da07976ef85c3e4f515748d05ec362ee0c94c2c267865",
+      "translationHash": "476ebbd4d6b24857769c2248178b085153c76842202f1764254d15af83979631",
+      "summary": "Compared the complete translation with the Japanese procedure and corrected Pixelate terminology, Cell Size meaning, privacy limitations, localized tags and descriptions, and primary references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all instructions with current Paint.NET terminology and documented Pixelate controls; corrected the claim that larger cells ensure concealment."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked selection, Pixelate, Cell Size, Scale Down, Scale Up, Multisample Bilinear, and Nearest Neighbor labels across locales."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Paint.NET documentation and roadmap plus ICO guidance on secure image redaction."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Paint.NET controls and labels may vary by installed version or UI language; the cited documentation is the current English documentation.",
+        "Pixelation is a visual effect, not a guarantee of anonymization or secure redaction."
+      ]
+    },
+    "post/paint.netで画像の特定個所にモザイクをかける方法/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/paint.netで画像の特定個所にモザイクをかける方法/index.md",
+      "sourceHash": "0666fecb8d8565f6cd0da07976ef85c3e4f515748d05ec362ee0c94c2c267865",
+      "translationHash": "4dbeeb30de298024e59b8451388d614e154e9bf22e9546848d070f0a1955cb47",
+      "summary": "Compared the complete translation with the Japanese procedure and corrected Pixelate terminology, Cell Size meaning, privacy limitations, localized tags and descriptions, and primary references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all instructions with current Paint.NET terminology and documented Pixelate controls; corrected the claim that larger cells ensure concealment."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked selection, Pixelate, Cell Size, Scale Down, Scale Up, Multisample Bilinear, and Nearest Neighbor labels across locales."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Paint.NET documentation and roadmap plus ICO guidance on secure image redaction."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Paint.NET controls and labels may vary by installed version or UI language; the cited documentation is the current English documentation.",
+        "Pixelation is a visual effect, not a guarantee of anonymization or secure redaction."
+      ]
+    },
+    "post/paint.netで画像の特定個所にモザイクをかける方法/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/paint.netで画像の特定個所にモザイクをかける方法/index.md",
+      "sourceHash": "0666fecb8d8565f6cd0da07976ef85c3e4f515748d05ec362ee0c94c2c267865",
+      "translationHash": "2d5a8308abcdf4c6d693deb0ea9a7918b2a812e40dffcbadb2c120d4ab5028d4",
+      "summary": "Compared the complete translation with the Japanese procedure and corrected Pixelate terminology, Cell Size meaning, privacy limitations, localized tags and descriptions, and primary references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all instructions with current Paint.NET terminology and documented Pixelate controls; corrected the claim that larger cells ensure concealment."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked selection, Pixelate, Cell Size, Scale Down, Scale Up, Multisample Bilinear, and Nearest Neighbor labels across locales."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Paint.NET documentation and roadmap plus ICO guidance on secure image redaction."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Paint.NET controls and labels may vary by installed version or UI language; the cited documentation is the current English documentation.",
+        "Pixelation is a visual effect, not a guarantee of anonymization or secure redaction."
+      ]
+    },
+    "post/paint.netで画像の特定個所にモザイクをかける方法/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/paint.netで画像の特定個所にモザイクをかける方法/index.md",
+      "sourceHash": "0666fecb8d8565f6cd0da07976ef85c3e4f515748d05ec362ee0c94c2c267865",
+      "translationHash": "f7f9b6080feefa9c85159a523a2c40a58c40a61add30e5af61698a47ff0d6cba",
+      "summary": "Compared the complete translation with the Japanese procedure and corrected Pixelate terminology, Cell Size meaning, privacy limitations, localized tags and descriptions, and primary references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all instructions with current Paint.NET terminology and documented Pixelate controls; corrected the claim that larger cells ensure concealment."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked selection, Pixelate, Cell Size, Scale Down, Scale Up, Multisample Bilinear, and Nearest Neighbor labels across locales."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Paint.NET documentation and roadmap plus ICO guidance on secure image redaction."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Paint.NET controls and labels may vary by installed version or UI language; the cited documentation is the current English documentation.",
+        "Pixelation is a visual effect, not a guarantee of anonymization or secure redaction."
+      ]
+    },
+    "post/paint.netで画像の特定個所にモザイクをかける方法/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/paint.netで画像の特定個所にモザイクをかける方法/index.md",
+      "sourceHash": "0666fecb8d8565f6cd0da07976ef85c3e4f515748d05ec362ee0c94c2c267865",
+      "translationHash": "3b5402e79c9ab17261d8d2632eeca83982f925aeec15ff077a177c1e25edcc6c",
+      "summary": "Compared the complete translation with the Japanese procedure and corrected Pixelate terminology, Cell Size meaning, privacy limitations, localized tags and descriptions, and primary references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all instructions with current Paint.NET terminology and documented Pixelate controls; corrected the claim that larger cells ensure concealment."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked selection, Pixelate, Cell Size, Scale Down, Scale Up, Multisample Bilinear, and Nearest Neighbor labels across locales."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Paint.NET documentation and roadmap plus ICO guidance on secure image redaction."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Paint.NET controls and labels may vary by installed version or UI language; the cited documentation is the current English documentation.",
+        "Pixelation is a visual effect, not a guarantee of anonymization or secure redaction."
+      ]
+    },
+    "post/paint.netで画像の特定個所にモザイクをかける方法/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/paint.netで画像の特定個所にモザイクをかける方法/index.md",
+      "sourceHash": "0666fecb8d8565f6cd0da07976ef85c3e4f515748d05ec362ee0c94c2c267865",
+      "translationHash": "9214d98fbb0b06af3bb02955077c72fc7b2660f42d8c20d2864a15d64cf148a0",
+      "summary": "Compared the complete translation with the Japanese procedure and corrected Pixelate terminology, Cell Size meaning, privacy limitations, localized tags and descriptions, and primary references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all instructions with current Paint.NET terminology and documented Pixelate controls; corrected the claim that larger cells ensure concealment."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked selection, Pixelate, Cell Size, Scale Down, Scale Up, Multisample Bilinear, and Nearest Neighbor labels across locales."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Paint.NET documentation and roadmap plus ICO guidance on secure image redaction."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Paint.NET controls and labels may vary by installed version or UI language; the cited documentation is the current English documentation.",
+        "Pixelation is a visual effect, not a guarantee of anonymization or secure redaction."
+      ]
+    },
+    "post/paint.netで画像の特定個所にモザイクをかける方法/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/paint.netで画像の特定個所にモザイクをかける方法/index.md",
+      "sourceHash": "0666fecb8d8565f6cd0da07976ef85c3e4f515748d05ec362ee0c94c2c267865",
+      "translationHash": "f61918b575aae2b26c1e7903e9d4fa7228950ff04a3af9f9aea80d0062f8c4ee",
+      "summary": "Compared the complete translation with the Japanese procedure and corrected Pixelate terminology, Cell Size meaning, privacy limitations, localized tags and descriptions, and primary references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all instructions with current Paint.NET terminology and documented Pixelate controls; corrected the claim that larger cells ensure concealment."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked selection, Pixelate, Cell Size, Scale Down, Scale Up, Multisample Bilinear, and Nearest Neighbor labels across locales."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Paint.NET documentation and roadmap plus ICO guidance on secure image redaction."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Paint.NET controls and labels may vary by installed version or UI language; the cited documentation is the current English documentation.",
+        "Pixelation is a visual effect, not a guarantee of anonymization or secure redaction."
+      ]
+    },
+    "post/paint.netで画像の特定個所にモザイクをかける方法/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/paint.netで画像の特定個所にモザイクをかける方法/index.md",
+      "sourceHash": "0666fecb8d8565f6cd0da07976ef85c3e4f515748d05ec362ee0c94c2c267865",
+      "translationHash": "f956ee74b9736c311cb41a95e455d6dbee062700f2411d310e0b8222e9ac4019",
+      "summary": "Compared the complete translation with the Japanese procedure and corrected Pixelate terminology, Cell Size meaning, privacy limitations, localized tags and descriptions, and primary references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all instructions with current Paint.NET terminology and documented Pixelate controls; corrected the claim that larger cells ensure concealment."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked selection, Pixelate, Cell Size, Scale Down, Scale Up, Multisample Bilinear, and Nearest Neighbor labels across locales."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Paint.NET documentation and roadmap plus ICO guidance on secure image redaction."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Paint.NET controls and labels may vary by installed version or UI language; the cited documentation is the current English documentation.",
+        "Pixelation is a visual effect, not a guarantee of anonymization or secure redaction."
+      ]
+    }
+  }
+}

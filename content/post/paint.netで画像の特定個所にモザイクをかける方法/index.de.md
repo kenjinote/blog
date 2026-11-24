@@ -1,14 +1,15 @@
 ---
 title: 'Einfache Erklärung, wie man mit paint.net bestimmte Bildbereiche verpixelt'
-date: "2026-09-24T19:44:38+09:00"
 slug: "paint.netでBildの特定個所にモザイクをかける方法"
-date: 2023-04-11T16:33:10+09:00
-tags: ["paint.net", "Rand", "Bild"]
+tags: ["paint.net", "Pixelierung", "Bildbearbeitung", "Datenschutz"]
 draft: false
 image: "img.webp"
 categories: ["ai-technology"]
-description: 'Erklärt, wie man mit der kostenlosen Bildbearbeitungssoftware „paint.net“ Teile eines Bildes verpixelt. Stellt die Bereichsauswahl mit dem Auswahlwerkzeug und die Einstellung der Effektfunktion für Anfänger vor. Eine Technik zum Schutz der Privatsphäre, die beim Hochladen von Bildern in soziale Netzwerke oder Blogs nützlich ist.'
+description: "So wenden Sie den Pixelate-Effekt von paint.net auf eine Auswahl an und passen Cell Size und Skalierungsmodi an. Pixelierung garantiert keine sichere Schwärzung; eine sicherere Alternative wird ebenfalls erklärt."
+date: "2023-04-11T16:33:10+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
+
 
 Ich werde Ihnen zeigen, wie Sie mit paint.net ein Mosaik auf bestimmte Teile eines Bildes anwenden.
 
@@ -25,9 +26,8 @@ Wenn Sie Bilder ins Internet hochladen, möchten Sie vielleicht in bestimmten F�
 
 ![img_1.png](img_1.webp)
 
-- Legen Sie die Grobheit des Mosaiks durch die Zellengröße fest. Je größer die Zahl, desto höher die Verdeckung.
-- [Verkleinern] Wählen Sie `Bilinear (Multisampling)`
-- [Vergrößern] Wählen Sie `Nearest Neighbor`
+- Cell Size bestimmt die Größe der vergrößerten Pixel. Höhere Werte erzeugen größere Quadrate, garantieren aber nicht, dass Informationen sicher verborgen sind.
+- Für quadratische Pixelblöcke wählen Sie bei [Scale Down] `Multisample Bilinear` und bei [Scale Up] `Nearest Neighbor`.
 
 Schließen Sie das Dialogfeld mit `OK`.
 
@@ -35,4 +35,14 @@ Schließen Sie das Dialogfeld mit `OK`.
 
 ![img.png](img.webp)
 
+## Datenschutzhinweis
+
+Wenn personenbezogene oder andere Informationen zuverlässig verborgen werden müssen, verlassen Sie sich nicht allein auf Pixelierung oder Weichzeichnung. Decken Sie sie vollständig mit einer undurchsichtigen Volltonfarbe ab, exportieren Sie das Bild ohne Ebenen oder Bearbeitungsverlauf als PNG oder JPEG und prüfen Sie die exportierte Datei. Bewahren Sie das bearbeitbare Original separat und sicher auf.
+
 Das ist alles.
+
+## Quellen
+
+- [paint.net: Pixelate effect](https://paint.net/doc/latest/EffectsDistortMenu.html)
+- [paint.net: Roadmap and change log](https://paint.net/roadmap.html)
+- [UK Information Commissioner’s Office: Securely disclosing documents](https://ico.org.uk/media2/pbwchh24/disclosing-documents-to-the-public-securely-all-1-0-0.pdf)

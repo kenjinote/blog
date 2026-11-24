@@ -1,14 +1,15 @@
 ---
 title: 'Explication simple : Comment appliquer une mosaïque sur une zone spécifique d''une image avec paint.net'
-date: "2026-09-24T19:44:38+09:00"
 slug: "paint.netでImageの特定個所にモザイクをかける方法"
-date: 2023-04-11T16:33:10+09:00
-tags: ["paint.net", "bordure", "image"]
+tags: ["paint.net", "pixellisation", "retouche d’image", "vie privée"]
 draft: false
 image: "img.webp"
 categories: ["ai-technology"]
-description: 'Explique comment appliquer un effet de mosaïque à une partie d''une image à l''aide du logiciel de retouche d''image gratuit ''paint.net''. Présente pour les débutants la procédure de spécification de la zone avec l''outil de sélection et la configuration de la fonction d''effet. C''est une technique de protection de la vie privée utile lors du téléchargement d''images sur les réseaux sociaux ou les blogs.'
+description: "Comment appliquer l’effet Pixelate de paint.net à une sélection et régler Cell Size et les modes de mise à l’échelle. La pixellisation ne garantit pas un masquage sûr ; une méthode plus fiable est également présentée."
+date: "2023-04-11T16:33:10+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
+
 
 Je vais vous montrer comment appliquer une mosaïque à des parties spécifiques d'une image en utilisant paint.net.
 
@@ -25,9 +26,8 @@ Lors du téléchargement d'images sur Internet, il peut y avoir des cas où vous
 
 ![img_1.png](img_1.webp)
 
-- Définissez la rugosité de la mosaïque selon la taille de la cellule. Plus le nombre est grand, plus la dissimulation est élevée.
-- [Réduire] Sélectionnez `Multisampling Bilinear`
-- [Agrandir] Sélectionnez `Nearest Neighbor`
+- Cell Size détermine la taille des pixels agrandis. Une valeur plus élevée crée de plus grands carrés, sans garantir que les informations soient masquées de façon sûre.
+- Pour obtenir des blocs carrés, choisissez `Multisample Bilinear` dans [Scale Down] et `Nearest Neighbor` dans [Scale Up].
 
 Fermez la boîte de dialogue avec `OK`.
 
@@ -35,4 +35,14 @@ Fermez la boîte de dialogue avec `OK`.
 
 ![img.png](img.webp)
 
+## Note sur la confidentialité
+
+Pour masquer de manière fiable des données personnelles ou d’autres informations, ne vous fiez pas uniquement à la pixellisation ou au flou. Recouvrez-les entièrement d’une couleur opaque unie, exportez en PNG ou JPEG sans calques ni historique de modification, puis vérifiez le fichier exporté. Conservez séparément et en lieu sûr l’original modifiable.
+
 C'est tout.
+
+## Références
+
+- [paint.net: Pixelate effect](https://paint.net/doc/latest/EffectsDistortMenu.html)
+- [paint.net: Roadmap and change log](https://paint.net/roadmap.html)
+- [UK Information Commissioner’s Office: Securely disclosing documents](https://ico.org.uk/media2/pbwchh24/disclosing-documents-to-the-public-securely-all-1-0-0.pdf)
