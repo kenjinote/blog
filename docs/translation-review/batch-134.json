@@ -1,0 +1,454 @@
+{
+  "version": 1,
+  "batch": 134,
+  "article": "なぜ数学や計算機が好きなのか",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "801ba80de855951d7e146ed40e3a57cee424dadfc4f6941bc39cf4b1c1fed407",
+  "sources": [
+    "https://plato.stanford.edu/entries/logic-propositional/",
+    "https://ocw.mit.edu/courses/6-172-performance-engineering-of-software-systems-fall-2018/e4fe97d2a250b57bb1e330fba8cf5992_MIT6_172F18_lec16.pdf"
+  ],
+  "scope": "Compared the complete Japanese reflection and all twelve translations, including claims about fairness, rule clarity, mathematical validity, reproducibility, descriptions, categories, and references.",
+  "findings": [
+    "Removed duplicate future dates, retained publication date 2022-09-23, and set lastmod to 2026-11-24 in every locale.",
+    "Framed the reasons as personal impressions and clarified that mathematical proof validity depends on assumptions, definitions, and inference rules.",
+    "Qualified same-input/same-output behavior: it applies to deterministic programs with the same program, input, state, and execution environment; randomness, time, and external data can change results.",
+    "Replaced the overly narrow math-cryptography-quantum category with existing mathematics and technology categories.",
+    "Added Stanford Encyclopedia of Philosophy and MIT OpenCourseWare references in all locales."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/なぜ数学や計算機が好きなんだろう/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/なぜ数学や計算機が好きなんだろう/index.md",
+      "sourceHash": "801ba80de855951d7e146ed40e3a57cee424dadfc4f6941bc39cf4b1c1fed407",
+      "translationHash": "86f5f6da89bf1472506726c97ca3c637b527f2232450b7e231f8f3ebb03dfae6",
+      "summary": "Compared the whole translation with Japanese, preserving the personal reflection while qualifying absolute statements about fairness, mathematical truth, and same-input/same-output behavior; added supporting references and corrected category metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete personal reflection in each locale. Preserved the author’s four reasons while clarifying that fairness and consistency are personal attractions, not universal properties."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked distinctions between mathematical proof, assumptions, definitions, inference rules, deterministic behavior, inputs, state, execution environment, randomness, time, and external data."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Corrected the absolute claim that mathematical answers/theories are eternally true: proof validity is relative to assumptions, definitions, and inference rules. No formula or calculation occurs in the article."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Clarified that equal program outputs require deterministic behavior and matching program, input, state, and execution environment; nondeterministic/parallel behavior can yield variation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and opened Stanford Encyclopedia of Philosophy on propositional logic/proofs and MIT OpenCourseWare material defining program determinism."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The article presents personal reasons for liking mathematics and computers, not a technical survey of every formal system or programming model.",
+        "No mathematical formulas or executable code were included."
+      ]
+    },
+    "post/なぜ数学や計算機が好きなんだろう/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/なぜ数学や計算機が好きなんだろう/index.md",
+      "sourceHash": "801ba80de855951d7e146ed40e3a57cee424dadfc4f6941bc39cf4b1c1fed407",
+      "translationHash": "b687be99dcfa6b1eaeceeeded3d64be759f4750112b53030c45f02d1db4a119d",
+      "summary": "Compared the whole translation with Japanese, preserving the personal reflection while qualifying absolute statements about fairness, mathematical truth, and same-input/same-output behavior; added supporting references and corrected category metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete personal reflection in each locale. Preserved the author’s four reasons while clarifying that fairness and consistency are personal attractions, not universal properties."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked distinctions between mathematical proof, assumptions, definitions, inference rules, deterministic behavior, inputs, state, execution environment, randomness, time, and external data."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Corrected the absolute claim that mathematical answers/theories are eternally true: proof validity is relative to assumptions, definitions, and inference rules. No formula or calculation occurs in the article."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Clarified that equal program outputs require deterministic behavior and matching program, input, state, and execution environment; nondeterministic/parallel behavior can yield variation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and opened Stanford Encyclopedia of Philosophy on propositional logic/proofs and MIT OpenCourseWare material defining program determinism."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The article presents personal reasons for liking mathematics and computers, not a technical survey of every formal system or programming model.",
+        "No mathematical formulas or executable code were included."
+      ]
+    },
+    "post/なぜ数学や計算機が好きなんだろう/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/なぜ数学や計算機が好きなんだろう/index.md",
+      "sourceHash": "801ba80de855951d7e146ed40e3a57cee424dadfc4f6941bc39cf4b1c1fed407",
+      "translationHash": "4f75a1f9c2e1af687bc6f48cb11fecedd2346f078b8cc40b2d9fa40e52eba17b",
+      "summary": "Compared the whole translation with Japanese, preserving the personal reflection while qualifying absolute statements about fairness, mathematical truth, and same-input/same-output behavior; added supporting references and corrected category metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete personal reflection in each locale. Preserved the author’s four reasons while clarifying that fairness and consistency are personal attractions, not universal properties."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked distinctions between mathematical proof, assumptions, definitions, inference rules, deterministic behavior, inputs, state, execution environment, randomness, time, and external data."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Corrected the absolute claim that mathematical answers/theories are eternally true: proof validity is relative to assumptions, definitions, and inference rules. No formula or calculation occurs in the article."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Clarified that equal program outputs require deterministic behavior and matching program, input, state, and execution environment; nondeterministic/parallel behavior can yield variation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and opened Stanford Encyclopedia of Philosophy on propositional logic/proofs and MIT OpenCourseWare material defining program determinism."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The article presents personal reasons for liking mathematics and computers, not a technical survey of every formal system or programming model.",
+        "No mathematical formulas or executable code were included."
+      ]
+    },
+    "post/なぜ数学や計算機が好きなんだろう/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/なぜ数学や計算機が好きなんだろう/index.md",
+      "sourceHash": "801ba80de855951d7e146ed40e3a57cee424dadfc4f6941bc39cf4b1c1fed407",
+      "translationHash": "5a72a26be41586703f24e9545f5f67ec53ab062ff87b78981fe110fe40ec67dc",
+      "summary": "Compared the whole translation with Japanese, preserving the personal reflection while qualifying absolute statements about fairness, mathematical truth, and same-input/same-output behavior; added supporting references and corrected category metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete personal reflection in each locale. Preserved the author’s four reasons while clarifying that fairness and consistency are personal attractions, not universal properties."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked distinctions between mathematical proof, assumptions, definitions, inference rules, deterministic behavior, inputs, state, execution environment, randomness, time, and external data."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Corrected the absolute claim that mathematical answers/theories are eternally true: proof validity is relative to assumptions, definitions, and inference rules. No formula or calculation occurs in the article."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Clarified that equal program outputs require deterministic behavior and matching program, input, state, and execution environment; nondeterministic/parallel behavior can yield variation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and opened Stanford Encyclopedia of Philosophy on propositional logic/proofs and MIT OpenCourseWare material defining program determinism."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The article presents personal reasons for liking mathematics and computers, not a technical survey of every formal system or programming model.",
+        "No mathematical formulas or executable code were included."
+      ]
+    },
+    "post/なぜ数学や計算機が好きなんだろう/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/なぜ数学や計算機が好きなんだろう/index.md",
+      "sourceHash": "801ba80de855951d7e146ed40e3a57cee424dadfc4f6941bc39cf4b1c1fed407",
+      "translationHash": "1ff4b6c0ce6e4e7e08159f69c4c08c393c6c5e9217c95dd8c1ee2d3c3a7935e6",
+      "summary": "Compared the whole translation with Japanese, preserving the personal reflection while qualifying absolute statements about fairness, mathematical truth, and same-input/same-output behavior; added supporting references and corrected category metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete personal reflection in each locale. Preserved the author’s four reasons while clarifying that fairness and consistency are personal attractions, not universal properties."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked distinctions between mathematical proof, assumptions, definitions, inference rules, deterministic behavior, inputs, state, execution environment, randomness, time, and external data."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Corrected the absolute claim that mathematical answers/theories are eternally true: proof validity is relative to assumptions, definitions, and inference rules. No formula or calculation occurs in the article."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Clarified that equal program outputs require deterministic behavior and matching program, input, state, and execution environment; nondeterministic/parallel behavior can yield variation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and opened Stanford Encyclopedia of Philosophy on propositional logic/proofs and MIT OpenCourseWare material defining program determinism."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The article presents personal reasons for liking mathematics and computers, not a technical survey of every formal system or programming model.",
+        "No mathematical formulas or executable code were included."
+      ]
+    },
+    "post/なぜ数学や計算機が好きなんだろう/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/なぜ数学や計算機が好きなんだろう/index.md",
+      "sourceHash": "801ba80de855951d7e146ed40e3a57cee424dadfc4f6941bc39cf4b1c1fed407",
+      "translationHash": "0db83da4f7e9125af0092e60ba2a15a2fdea022465e6994e8bc865abc36e9ccb",
+      "summary": "Compared the whole translation with Japanese, preserving the personal reflection while qualifying absolute statements about fairness, mathematical truth, and same-input/same-output behavior; added supporting references and corrected category metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete personal reflection in each locale. Preserved the author’s four reasons while clarifying that fairness and consistency are personal attractions, not universal properties."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked distinctions between mathematical proof, assumptions, definitions, inference rules, deterministic behavior, inputs, state, execution environment, randomness, time, and external data."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Corrected the absolute claim that mathematical answers/theories are eternally true: proof validity is relative to assumptions, definitions, and inference rules. No formula or calculation occurs in the article."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Clarified that equal program outputs require deterministic behavior and matching program, input, state, and execution environment; nondeterministic/parallel behavior can yield variation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and opened Stanford Encyclopedia of Philosophy on propositional logic/proofs and MIT OpenCourseWare material defining program determinism."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The article presents personal reasons for liking mathematics and computers, not a technical survey of every formal system or programming model.",
+        "No mathematical formulas or executable code were included."
+      ]
+    },
+    "post/なぜ数学や計算機が好きなんだろう/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/なぜ数学や計算機が好きなんだろう/index.md",
+      "sourceHash": "801ba80de855951d7e146ed40e3a57cee424dadfc4f6941bc39cf4b1c1fed407",
+      "translationHash": "7af9525ee1da0937575e8fc8e5fc6a996fee2cae78ccc2edec9729634ae850e1",
+      "summary": "Compared the whole translation with Japanese, preserving the personal reflection while qualifying absolute statements about fairness, mathematical truth, and same-input/same-output behavior; added supporting references and corrected category metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete personal reflection in each locale. Preserved the author’s four reasons while clarifying that fairness and consistency are personal attractions, not universal properties."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked distinctions between mathematical proof, assumptions, definitions, inference rules, deterministic behavior, inputs, state, execution environment, randomness, time, and external data."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Corrected the absolute claim that mathematical answers/theories are eternally true: proof validity is relative to assumptions, definitions, and inference rules. No formula or calculation occurs in the article."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Clarified that equal program outputs require deterministic behavior and matching program, input, state, and execution environment; nondeterministic/parallel behavior can yield variation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and opened Stanford Encyclopedia of Philosophy on propositional logic/proofs and MIT OpenCourseWare material defining program determinism."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The article presents personal reasons for liking mathematics and computers, not a technical survey of every formal system or programming model.",
+        "No mathematical formulas or executable code were included."
+      ]
+    },
+    "post/なぜ数学や計算機が好きなんだろう/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/なぜ数学や計算機が好きなんだろう/index.md",
+      "sourceHash": "801ba80de855951d7e146ed40e3a57cee424dadfc4f6941bc39cf4b1c1fed407",
+      "translationHash": "cf3f7383c2d21ef89c1d5dafda2f380fac24deb73ad4d99de9eab081d3a556e4",
+      "summary": "Compared the whole translation with Japanese, preserving the personal reflection while qualifying absolute statements about fairness, mathematical truth, and same-input/same-output behavior; added supporting references and corrected category metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete personal reflection in each locale. Preserved the author’s four reasons while clarifying that fairness and consistency are personal attractions, not universal properties."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked distinctions between mathematical proof, assumptions, definitions, inference rules, deterministic behavior, inputs, state, execution environment, randomness, time, and external data."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Corrected the absolute claim that mathematical answers/theories are eternally true: proof validity is relative to assumptions, definitions, and inference rules. No formula or calculation occurs in the article."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Clarified that equal program outputs require deterministic behavior and matching program, input, state, and execution environment; nondeterministic/parallel behavior can yield variation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and opened Stanford Encyclopedia of Philosophy on propositional logic/proofs and MIT OpenCourseWare material defining program determinism."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The article presents personal reasons for liking mathematics and computers, not a technical survey of every formal system or programming model.",
+        "No mathematical formulas or executable code were included."
+      ]
+    },
+    "post/なぜ数学や計算機が好きなんだろう/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/なぜ数学や計算機が好きなんだろう/index.md",
+      "sourceHash": "801ba80de855951d7e146ed40e3a57cee424dadfc4f6941bc39cf4b1c1fed407",
+      "translationHash": "1c17acde0fb5f6cd8af4315c5f656725ffb09f6f086dd4e4dcb4b6e1321bfffd",
+      "summary": "Compared the whole translation with Japanese, preserving the personal reflection while qualifying absolute statements about fairness, mathematical truth, and same-input/same-output behavior; added supporting references and corrected category metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete personal reflection in each locale. Preserved the author’s four reasons while clarifying that fairness and consistency are personal attractions, not universal properties."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked distinctions between mathematical proof, assumptions, definitions, inference rules, deterministic behavior, inputs, state, execution environment, randomness, time, and external data."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Corrected the absolute claim that mathematical answers/theories are eternally true: proof validity is relative to assumptions, definitions, and inference rules. No formula or calculation occurs in the article."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Clarified that equal program outputs require deterministic behavior and matching program, input, state, and execution environment; nondeterministic/parallel behavior can yield variation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and opened Stanford Encyclopedia of Philosophy on propositional logic/proofs and MIT OpenCourseWare material defining program determinism."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The article presents personal reasons for liking mathematics and computers, not a technical survey of every formal system or programming model.",
+        "No mathematical formulas or executable code were included."
+      ]
+    },
+    "post/なぜ数学や計算機が好きなんだろう/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/なぜ数学や計算機が好きなんだろう/index.md",
+      "sourceHash": "801ba80de855951d7e146ed40e3a57cee424dadfc4f6941bc39cf4b1c1fed407",
+      "translationHash": "bf3bd09d279d71e5426eefeca5b29d75aa370b463c68e95d2d793f69c2f868de",
+      "summary": "Compared the whole translation with Japanese, preserving the personal reflection while qualifying absolute statements about fairness, mathematical truth, and same-input/same-output behavior; added supporting references and corrected category metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete personal reflection in each locale. Preserved the author’s four reasons while clarifying that fairness and consistency are personal attractions, not universal properties."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked distinctions between mathematical proof, assumptions, definitions, inference rules, deterministic behavior, inputs, state, execution environment, randomness, time, and external data."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Corrected the absolute claim that mathematical answers/theories are eternally true: proof validity is relative to assumptions, definitions, and inference rules. No formula or calculation occurs in the article."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Clarified that equal program outputs require deterministic behavior and matching program, input, state, and execution environment; nondeterministic/parallel behavior can yield variation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and opened Stanford Encyclopedia of Philosophy on propositional logic/proofs and MIT OpenCourseWare material defining program determinism."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The article presents personal reasons for liking mathematics and computers, not a technical survey of every formal system or programming model.",
+        "No mathematical formulas or executable code were included."
+      ]
+    },
+    "post/なぜ数学や計算機が好きなんだろう/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/なぜ数学や計算機が好きなんだろう/index.md",
+      "sourceHash": "801ba80de855951d7e146ed40e3a57cee424dadfc4f6941bc39cf4b1c1fed407",
+      "translationHash": "b48933c7134813ff497715daf57fbfce944762990441df77e98dd76f11fb0f3b",
+      "summary": "Compared the whole translation with Japanese, preserving the personal reflection while qualifying absolute statements about fairness, mathematical truth, and same-input/same-output behavior; added supporting references and corrected category metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete personal reflection in each locale. Preserved the author’s four reasons while clarifying that fairness and consistency are personal attractions, not universal properties."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked distinctions between mathematical proof, assumptions, definitions, inference rules, deterministic behavior, inputs, state, execution environment, randomness, time, and external data."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Corrected the absolute claim that mathematical answers/theories are eternally true: proof validity is relative to assumptions, definitions, and inference rules. No formula or calculation occurs in the article."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Clarified that equal program outputs require deterministic behavior and matching program, input, state, and execution environment; nondeterministic/parallel behavior can yield variation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and opened Stanford Encyclopedia of Philosophy on propositional logic/proofs and MIT OpenCourseWare material defining program determinism."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The article presents personal reasons for liking mathematics and computers, not a technical survey of every formal system or programming model.",
+        "No mathematical formulas or executable code were included."
+      ]
+    },
+    "post/なぜ数学や計算機が好きなんだろう/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/なぜ数学や計算機が好きなんだろう/index.md",
+      "sourceHash": "801ba80de855951d7e146ed40e3a57cee424dadfc4f6941bc39cf4b1c1fed407",
+      "translationHash": "1c30b40e35520975acb7e77085eac745fb23e9fd84114fe923f86473f6b6ce70",
+      "summary": "Compared the whole translation with Japanese, preserving the personal reflection while qualifying absolute statements about fairness, mathematical truth, and same-input/same-output behavior; added supporting references and corrected category metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete personal reflection in each locale. Preserved the author’s four reasons while clarifying that fairness and consistency are personal attractions, not universal properties."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked distinctions between mathematical proof, assumptions, definitions, inference rules, deterministic behavior, inputs, state, execution environment, randomness, time, and external data."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Corrected the absolute claim that mathematical answers/theories are eternally true: proof validity is relative to assumptions, definitions, and inference rules. No formula or calculation occurs in the article."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Clarified that equal program outputs require deterministic behavior and matching program, input, state, and execution environment; nondeterministic/parallel behavior can yield variation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and opened Stanford Encyclopedia of Philosophy on propositional logic/proofs and MIT OpenCourseWare material defining program determinism."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The article presents personal reasons for liking mathematics and computers, not a technical survey of every formal system or programming model.",
+        "No mathematical formulas or executable code were included."
+      ]
+    }
+  }
+}

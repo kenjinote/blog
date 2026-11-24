@@ -15485,6 +15485,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-133.json",
       "evidenceHash": "d04cea20ef74406a848b4320166f8c9ad4bb5a22d7599f1b7aefa5ea3e88445f"
+    },
+    "post/なぜ数学や計算機が好きなんだろう/index.en.md": {
+      "source": "post/なぜ数学や計算機が好きなんだろう/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "801ba80de855951d7e146ed40e3a57cee424dadfc4f6941bc39cf4b1c1fed407",
+      "translationHash": "86f5f6da89bf1472506726c97ca3c637b527f2232450b7e231f8f3ebb03dfae6",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-134.json",
+      "evidenceHash": "3e68b1223353a7fd5de018a2725611256edd9d0eba5ccc2d35fdc419017a6ef0"
+    },
+    "post/なぜ数学や計算機が好きなんだろう/index.zh-cn.md": {
+      "source": "post/なぜ数学や計算機が好きなんだろう/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "801ba80de855951d7e146ed40e3a57cee424dadfc4f6941bc39cf4b1c1fed407",
+      "translationHash": "b687be99dcfa6b1eaeceeeded3d64be759f4750112b53030c45f02d1db4a119d",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-134.json",
+      "evidenceHash": "6db44e92864c047f4d548e90553b39a7c2fa374f46f2d92a1191107e50d93a6d"
+    },
+    "post/なぜ数学や計算機が好きなんだろう/index.es.md": {
+      "source": "post/なぜ数学や計算機が好きなんだろう/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "801ba80de855951d7e146ed40e3a57cee424dadfc4f6941bc39cf4b1c1fed407",
+      "translationHash": "4f75a1f9c2e1af687bc6f48cb11fecedd2346f078b8cc40b2d9fa40e52eba17b",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-134.json",
+      "evidenceHash": "fcb3f5cdd3fcacb03e22765f95bcf54c7bf252f0b0ab705c53ac037d5eda768d"
+    },
+    "post/なぜ数学や計算機が好きなんだろう/index.ko.md": {
+      "source": "post/なぜ数学や計算機が好きなんだろう/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "801ba80de855951d7e146ed40e3a57cee424dadfc4f6941bc39cf4b1c1fed407",
+      "translationHash": "5a72a26be41586703f24e9545f5f67ec53ab062ff87b78981fe110fe40ec67dc",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-134.json",
+      "evidenceHash": "7f79de617ab138e22f417722a31a516dab27decd6e8466854b07cc7f663395fe"
+    },
+    "post/なぜ数学や計算機が好きなんだろう/index.pt.md": {
+      "source": "post/なぜ数学や計算機が好きなんだろう/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "801ba80de855951d7e146ed40e3a57cee424dadfc4f6941bc39cf4b1c1fed407",
+      "translationHash": "1ff4b6c0ce6e4e7e08159f69c4c08c393c6c5e9217c95dd8c1ee2d3c3a7935e6",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-134.json",
+      "evidenceHash": "f44a2985b87faddd2ff6317031d0888abc1069b6b99b8d09ab4ae740479885bf"
+    },
+    "post/なぜ数学や計算機が好きなんだろう/index.zh-tw.md": {
+      "source": "post/なぜ数学や計算機が好きなんだろう/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "801ba80de855951d7e146ed40e3a57cee424dadfc4f6941bc39cf4b1c1fed407",
+      "translationHash": "0db83da4f7e9125af0092e60ba2a15a2fdea022465e6994e8bc865abc36e9ccb",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-134.json",
+      "evidenceHash": "a04df9f7238df5a24c3ccc7d15df461d97e0dd856061fe9acef6c7672f9c09d4"
+    },
+    "post/なぜ数学や計算機が好きなんだろう/index.hi.md": {
+      "source": "post/なぜ数学や計算機が好きなんだろう/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "801ba80de855951d7e146ed40e3a57cee424dadfc4f6941bc39cf4b1c1fed407",
+      "translationHash": "7af9525ee1da0937575e8fc8e5fc6a996fee2cae78ccc2edec9729634ae850e1",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-134.json",
+      "evidenceHash": "af2974160b06101bd69dede5bee7ecb58cf5f74a0ac5da4c60c4ed7eb8d3163b"
+    },
+    "post/なぜ数学や計算機が好きなんだろう/index.fr.md": {
+      "source": "post/なぜ数学や計算機が好きなんだろう/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "801ba80de855951d7e146ed40e3a57cee424dadfc4f6941bc39cf4b1c1fed407",
+      "translationHash": "cf3f7383c2d21ef89c1d5dafda2f380fac24deb73ad4d99de9eab081d3a556e4",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-134.json",
+      "evidenceHash": "b72294c07d08b95eb9691cf507ba22e4667789437aef8503eb6b144d969fdf25"
+    },
+    "post/なぜ数学や計算機が好きなんだろう/index.de.md": {
+      "source": "post/なぜ数学や計算機が好きなんだろう/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "801ba80de855951d7e146ed40e3a57cee424dadfc4f6941bc39cf4b1c1fed407",
+      "translationHash": "1c17acde0fb5f6cd8af4315c5f656725ffb09f6f086dd4e4dcb4b6e1321bfffd",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-134.json",
+      "evidenceHash": "a974286afee550ce6d7b830eb3d04528a3bdf49d4d5d602eb2df1a51423ceccf"
+    },
+    "post/なぜ数学や計算機が好きなんだろう/index.ar.md": {
+      "source": "post/なぜ数学や計算機が好きなんだろう/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "801ba80de855951d7e146ed40e3a57cee424dadfc4f6941bc39cf4b1c1fed407",
+      "translationHash": "bf3bd09d279d71e5426eefeca5b29d75aa370b463c68e95d2d793f69c2f868de",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-134.json",
+      "evidenceHash": "b7ddb599d7ad5d9d0fc80de72690043d66a47363ff288d3a65b96b4befce2915"
+    },
+    "post/なぜ数学や計算機が好きなんだろう/index.ru.md": {
+      "source": "post/なぜ数学や計算機が好きなんだろう/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "801ba80de855951d7e146ed40e3a57cee424dadfc4f6941bc39cf4b1c1fed407",
+      "translationHash": "b48933c7134813ff497715daf57fbfce944762990441df77e98dd76f11fb0f3b",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-134.json",
+      "evidenceHash": "d090f774b8f412538848491415c519d697423167df0c98f0406f3fc96fa06b27"
+    },
+    "post/なぜ数学や計算機が好きなんだろう/index.id.md": {
+      "source": "post/なぜ数学や計算機が好きなんだろう/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "801ba80de855951d7e146ed40e3a57cee424dadfc4f6941bc39cf4b1c1fed407",
+      "translationHash": "1c30b40e35520975acb7e77085eac745fb23e9fd84114fe923f86473f6b6ce70",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-134.json",
+      "evidenceHash": "5d4dc4b40a1d297c6f37eb01180c00193b15e55af7f93fbef8f096534bfb9e39"
     }
   }
 }
