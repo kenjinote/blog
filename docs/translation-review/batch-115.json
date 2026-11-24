@@ -1,0 +1,458 @@
+{
+  "version": 1,
+  "batch": 115,
+  "article": "C++でAI推論エンジンを考える",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "c3d0c3cc8341c9ad2d8f6be356272dd40d79c0e439c03713e148ccbc095c47f9",
+  "sources": [
+    "https://github.com/ggml-org/ggml",
+    "https://github.com/ggml-org/llama.cpp",
+    "https://github.com/ggml-org/llama.cpp/blob/master/docs/build.md",
+    "https://docs.nvidia.com/cuda/cublas/index.html",
+    "https://developer.apple.com/documentation/metalperformanceshaders/mpsmatrixmultiplication",
+    "https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2025/n5014.pdf"
+  ],
+  "scope": "Rewrote the Japanese article and twelve translations to scope it as an architecture overview, not a working LLM engine. Checked C++ versus Python claims, deployment caveats, arena allocation/deallocation and alignment, reset/object lifetime, weight-memory arithmetic, quantization overhead and quality caveats, backend claims, and current upstream/API references.",
+  "findings": [
+    "Changed the title and opening to disclose that the original snippets did not form a complete or runnable inference engine and included no model loader, tokenizer, full Transformer, sampling, full GPU backend, or benchmark.",
+    "Removed unqualified claims that C++ automatically eliminates Python overhead, makes deployment a single binary, always improves performance, or that inference has a fixed 90% GEMM share.",
+    "Replaced the platform-specific allocator with a C++17 aligned byte arena that checks capacity and alignment, pairs aligned allocation/deallocation, disables copying, and documents destructor/lifetime limits.",
+    "Qualified quantization and backend claims; clarified decimal GB versus GiB and raw weights versus cache, metadata, and workspace.",
+    "Aligned all 13 locales and added current upstream GGML/llama.cpp and official CUDA, Apple, and WG21 references."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/Python不要C++だけでAI推論エンジンを構築してみた/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Python不要C++だけでAI推論エンジンを構築してみた/index.md",
+      "sourceHash": "c3d0c3cc8341c9ad2d8f6be356272dd40d79c0e439c03713e148ccbc095c47f9",
+      "translationHash": "89162d23445b4faac4d22854ab84ee30ca3911c9f6065876ee93424b2a412d36",
+      "summary": "Rewrote and aligned the translation to the Japanese article and current primary project/API references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the revised scope: conceptual architecture and an arena example, not a complete LLM inference implementation or performance claim."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked tensors, KV cache, memory arena, FP32/FP16/INT8/INT4, CUDA/cuBLAS, Metal Performance Shaders, and C++17 aligned allocation terminology."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified the 7e9 FP32 weight estimate, decimal GB vs GiB, raw bit-width ratios, and explicit exclusion of metadata/cache/workspace."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compiled and ran the C++17 arena with MSVC: checked matching aligned allocation/deallocation, disabled copying, 16/64-byte alignment, reset reuse, invalid-alignment rejection, capacity failure, and the documented destructor limitation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added primary GGML/llama.cpp, NVIDIA cuBLAS, Apple Metal Performance Shaders, and WG21 C++ working-draft references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Only the standalone arena sample was compiled and run; this is not a complete model runner, CUDA/Metal backend, or inference benchmark.",
+        "Performance, quantization quality, and memory fit are workload- and hardware-dependent; readers must test their model, build, and target device."
+      ]
+    },
+    "post/Python不要C++だけでAI推論エンジンを構築してみた/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Python不要C++だけでAI推論エンジンを構築してみた/index.md",
+      "sourceHash": "c3d0c3cc8341c9ad2d8f6be356272dd40d79c0e439c03713e148ccbc095c47f9",
+      "translationHash": "5d3ae90e1573bdff65490d5c45bdbd89788553ac88836a63026b5652ac7ed9c8",
+      "summary": "Rewrote and aligned the translation to the Japanese article and current primary project/API references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the revised scope: conceptual architecture and an arena example, not a complete LLM inference implementation or performance claim."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked tensors, KV cache, memory arena, FP32/FP16/INT8/INT4, CUDA/cuBLAS, Metal Performance Shaders, and C++17 aligned allocation terminology."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified the 7e9 FP32 weight estimate, decimal GB vs GiB, raw bit-width ratios, and explicit exclusion of metadata/cache/workspace."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compiled and ran the C++17 arena with MSVC: checked matching aligned allocation/deallocation, disabled copying, 16/64-byte alignment, reset reuse, invalid-alignment rejection, capacity failure, and the documented destructor limitation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added primary GGML/llama.cpp, NVIDIA cuBLAS, Apple Metal Performance Shaders, and WG21 C++ working-draft references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Only the standalone arena sample was compiled and run; this is not a complete model runner, CUDA/Metal backend, or inference benchmark.",
+        "Performance, quantization quality, and memory fit are workload- and hardware-dependent; readers must test their model, build, and target device."
+      ]
+    },
+    "post/Python不要C++だけでAI推論エンジンを構築してみた/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Python不要C++だけでAI推論エンジンを構築してみた/index.md",
+      "sourceHash": "c3d0c3cc8341c9ad2d8f6be356272dd40d79c0e439c03713e148ccbc095c47f9",
+      "translationHash": "9dd61aec680d9d59fae8f994b820ff9338b3895b1b09393cee071fd1e8194d43",
+      "summary": "Rewrote and aligned the translation to the Japanese article and current primary project/API references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the revised scope: conceptual architecture and an arena example, not a complete LLM inference implementation or performance claim."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked tensors, KV cache, memory arena, FP32/FP16/INT8/INT4, CUDA/cuBLAS, Metal Performance Shaders, and C++17 aligned allocation terminology."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified the 7e9 FP32 weight estimate, decimal GB vs GiB, raw bit-width ratios, and explicit exclusion of metadata/cache/workspace."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compiled and ran the C++17 arena with MSVC: checked matching aligned allocation/deallocation, disabled copying, 16/64-byte alignment, reset reuse, invalid-alignment rejection, capacity failure, and the documented destructor limitation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added primary GGML/llama.cpp, NVIDIA cuBLAS, Apple Metal Performance Shaders, and WG21 C++ working-draft references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Only the standalone arena sample was compiled and run; this is not a complete model runner, CUDA/Metal backend, or inference benchmark.",
+        "Performance, quantization quality, and memory fit are workload- and hardware-dependent; readers must test their model, build, and target device."
+      ]
+    },
+    "post/Python不要C++だけでAI推論エンジンを構築してみた/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Python不要C++だけでAI推論エンジンを構築してみた/index.md",
+      "sourceHash": "c3d0c3cc8341c9ad2d8f6be356272dd40d79c0e439c03713e148ccbc095c47f9",
+      "translationHash": "49ed876d288408d71f80275680efcb24be30216c4333e474d113e4f90ef7a312",
+      "summary": "Rewrote and aligned the translation to the Japanese article and current primary project/API references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the revised scope: conceptual architecture and an arena example, not a complete LLM inference implementation or performance claim."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked tensors, KV cache, memory arena, FP32/FP16/INT8/INT4, CUDA/cuBLAS, Metal Performance Shaders, and C++17 aligned allocation terminology."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified the 7e9 FP32 weight estimate, decimal GB vs GiB, raw bit-width ratios, and explicit exclusion of metadata/cache/workspace."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compiled and ran the C++17 arena with MSVC: checked matching aligned allocation/deallocation, disabled copying, 16/64-byte alignment, reset reuse, invalid-alignment rejection, capacity failure, and the documented destructor limitation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added primary GGML/llama.cpp, NVIDIA cuBLAS, Apple Metal Performance Shaders, and WG21 C++ working-draft references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Only the standalone arena sample was compiled and run; this is not a complete model runner, CUDA/Metal backend, or inference benchmark.",
+        "Performance, quantization quality, and memory fit are workload- and hardware-dependent; readers must test their model, build, and target device."
+      ]
+    },
+    "post/Python不要C++だけでAI推論エンジンを構築してみた/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Python不要C++だけでAI推論エンジンを構築してみた/index.md",
+      "sourceHash": "c3d0c3cc8341c9ad2d8f6be356272dd40d79c0e439c03713e148ccbc095c47f9",
+      "translationHash": "719aaed619bc622fdd24050aa9d28debbd93a29f065bd2140be1d56020aed6d5",
+      "summary": "Rewrote and aligned the translation to the Japanese article and current primary project/API references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the revised scope: conceptual architecture and an arena example, not a complete LLM inference implementation or performance claim."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked tensors, KV cache, memory arena, FP32/FP16/INT8/INT4, CUDA/cuBLAS, Metal Performance Shaders, and C++17 aligned allocation terminology."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified the 7e9 FP32 weight estimate, decimal GB vs GiB, raw bit-width ratios, and explicit exclusion of metadata/cache/workspace."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compiled and ran the C++17 arena with MSVC: checked matching aligned allocation/deallocation, disabled copying, 16/64-byte alignment, reset reuse, invalid-alignment rejection, capacity failure, and the documented destructor limitation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added primary GGML/llama.cpp, NVIDIA cuBLAS, Apple Metal Performance Shaders, and WG21 C++ working-draft references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Only the standalone arena sample was compiled and run; this is not a complete model runner, CUDA/Metal backend, or inference benchmark.",
+        "Performance, quantization quality, and memory fit are workload- and hardware-dependent; readers must test their model, build, and target device."
+      ]
+    },
+    "post/Python不要C++だけでAI推論エンジンを構築してみた/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Python不要C++だけでAI推論エンジンを構築してみた/index.md",
+      "sourceHash": "c3d0c3cc8341c9ad2d8f6be356272dd40d79c0e439c03713e148ccbc095c47f9",
+      "translationHash": "5651e3042eb695ba9d686d0bba5296294e081b660b190c8d73a2c301da12c0af",
+      "summary": "Rewrote and aligned the translation to the Japanese article and current primary project/API references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the revised scope: conceptual architecture and an arena example, not a complete LLM inference implementation or performance claim."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked tensors, KV cache, memory arena, FP32/FP16/INT8/INT4, CUDA/cuBLAS, Metal Performance Shaders, and C++17 aligned allocation terminology."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified the 7e9 FP32 weight estimate, decimal GB vs GiB, raw bit-width ratios, and explicit exclusion of metadata/cache/workspace."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compiled and ran the C++17 arena with MSVC: checked matching aligned allocation/deallocation, disabled copying, 16/64-byte alignment, reset reuse, invalid-alignment rejection, capacity failure, and the documented destructor limitation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added primary GGML/llama.cpp, NVIDIA cuBLAS, Apple Metal Performance Shaders, and WG21 C++ working-draft references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Only the standalone arena sample was compiled and run; this is not a complete model runner, CUDA/Metal backend, or inference benchmark.",
+        "Performance, quantization quality, and memory fit are workload- and hardware-dependent; readers must test their model, build, and target device."
+      ]
+    },
+    "post/Python不要C++だけでAI推論エンジンを構築してみた/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Python不要C++だけでAI推論エンジンを構築してみた/index.md",
+      "sourceHash": "c3d0c3cc8341c9ad2d8f6be356272dd40d79c0e439c03713e148ccbc095c47f9",
+      "translationHash": "537cabaf65f48a7828f6cbe34b08d2e7694708d6172ad3e9b5885b28bebf2eeb",
+      "summary": "Rewrote and aligned the translation to the Japanese article and current primary project/API references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the revised scope: conceptual architecture and an arena example, not a complete LLM inference implementation or performance claim."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked tensors, KV cache, memory arena, FP32/FP16/INT8/INT4, CUDA/cuBLAS, Metal Performance Shaders, and C++17 aligned allocation terminology."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified the 7e9 FP32 weight estimate, decimal GB vs GiB, raw bit-width ratios, and explicit exclusion of metadata/cache/workspace."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compiled and ran the C++17 arena with MSVC: checked matching aligned allocation/deallocation, disabled copying, 16/64-byte alignment, reset reuse, invalid-alignment rejection, capacity failure, and the documented destructor limitation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added primary GGML/llama.cpp, NVIDIA cuBLAS, Apple Metal Performance Shaders, and WG21 C++ working-draft references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Only the standalone arena sample was compiled and run; this is not a complete model runner, CUDA/Metal backend, or inference benchmark.",
+        "Performance, quantization quality, and memory fit are workload- and hardware-dependent; readers must test their model, build, and target device."
+      ]
+    },
+    "post/Python不要C++だけでAI推論エンジンを構築してみた/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Python不要C++だけでAI推論エンジンを構築してみた/index.md",
+      "sourceHash": "c3d0c3cc8341c9ad2d8f6be356272dd40d79c0e439c03713e148ccbc095c47f9",
+      "translationHash": "81895f0f63e2cf7974efaeda1f43a4161bfd70c46e7e4b966afc4f9260ca3285",
+      "summary": "Rewrote and aligned the translation to the Japanese article and current primary project/API references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the revised scope: conceptual architecture and an arena example, not a complete LLM inference implementation or performance claim."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked tensors, KV cache, memory arena, FP32/FP16/INT8/INT4, CUDA/cuBLAS, Metal Performance Shaders, and C++17 aligned allocation terminology."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified the 7e9 FP32 weight estimate, decimal GB vs GiB, raw bit-width ratios, and explicit exclusion of metadata/cache/workspace."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compiled and ran the C++17 arena with MSVC: checked matching aligned allocation/deallocation, disabled copying, 16/64-byte alignment, reset reuse, invalid-alignment rejection, capacity failure, and the documented destructor limitation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added primary GGML/llama.cpp, NVIDIA cuBLAS, Apple Metal Performance Shaders, and WG21 C++ working-draft references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Only the standalone arena sample was compiled and run; this is not a complete model runner, CUDA/Metal backend, or inference benchmark.",
+        "Performance, quantization quality, and memory fit are workload- and hardware-dependent; readers must test their model, build, and target device."
+      ]
+    },
+    "post/Python不要C++だけでAI推論エンジンを構築してみた/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Python不要C++だけでAI推論エンジンを構築してみた/index.md",
+      "sourceHash": "c3d0c3cc8341c9ad2d8f6be356272dd40d79c0e439c03713e148ccbc095c47f9",
+      "translationHash": "e0932d87cf3799f2b92828b2fe3c5c319d7757828caceec15aa6037367e138ba",
+      "summary": "Rewrote and aligned the translation to the Japanese article and current primary project/API references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the revised scope: conceptual architecture and an arena example, not a complete LLM inference implementation or performance claim."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked tensors, KV cache, memory arena, FP32/FP16/INT8/INT4, CUDA/cuBLAS, Metal Performance Shaders, and C++17 aligned allocation terminology."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified the 7e9 FP32 weight estimate, decimal GB vs GiB, raw bit-width ratios, and explicit exclusion of metadata/cache/workspace."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compiled and ran the C++17 arena with MSVC: checked matching aligned allocation/deallocation, disabled copying, 16/64-byte alignment, reset reuse, invalid-alignment rejection, capacity failure, and the documented destructor limitation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added primary GGML/llama.cpp, NVIDIA cuBLAS, Apple Metal Performance Shaders, and WG21 C++ working-draft references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Only the standalone arena sample was compiled and run; this is not a complete model runner, CUDA/Metal backend, or inference benchmark.",
+        "Performance, quantization quality, and memory fit are workload- and hardware-dependent; readers must test their model, build, and target device."
+      ]
+    },
+    "post/Python不要C++だけでAI推論エンジンを構築してみた/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Python不要C++だけでAI推論エンジンを構築してみた/index.md",
+      "sourceHash": "c3d0c3cc8341c9ad2d8f6be356272dd40d79c0e439c03713e148ccbc095c47f9",
+      "translationHash": "4274b7de8a683c64e43aeb70b873ab4abdf408a22a9018b38d862b837dc07f80",
+      "summary": "Rewrote and aligned the translation to the Japanese article and current primary project/API references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the revised scope: conceptual architecture and an arena example, not a complete LLM inference implementation or performance claim."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked tensors, KV cache, memory arena, FP32/FP16/INT8/INT4, CUDA/cuBLAS, Metal Performance Shaders, and C++17 aligned allocation terminology."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified the 7e9 FP32 weight estimate, decimal GB vs GiB, raw bit-width ratios, and explicit exclusion of metadata/cache/workspace."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compiled and ran the C++17 arena with MSVC: checked matching aligned allocation/deallocation, disabled copying, 16/64-byte alignment, reset reuse, invalid-alignment rejection, capacity failure, and the documented destructor limitation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added primary GGML/llama.cpp, NVIDIA cuBLAS, Apple Metal Performance Shaders, and WG21 C++ working-draft references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Only the standalone arena sample was compiled and run; this is not a complete model runner, CUDA/Metal backend, or inference benchmark.",
+        "Performance, quantization quality, and memory fit are workload- and hardware-dependent; readers must test their model, build, and target device."
+      ]
+    },
+    "post/Python不要C++だけでAI推論エンジンを構築してみた/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Python不要C++だけでAI推論エンジンを構築してみた/index.md",
+      "sourceHash": "c3d0c3cc8341c9ad2d8f6be356272dd40d79c0e439c03713e148ccbc095c47f9",
+      "translationHash": "5608beac9a1aa99f7c480895ee1528b48caf00235b5ed2aa7724884d8a9e4111",
+      "summary": "Rewrote and aligned the translation to the Japanese article and current primary project/API references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the revised scope: conceptual architecture and an arena example, not a complete LLM inference implementation or performance claim."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked tensors, KV cache, memory arena, FP32/FP16/INT8/INT4, CUDA/cuBLAS, Metal Performance Shaders, and C++17 aligned allocation terminology."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified the 7e9 FP32 weight estimate, decimal GB vs GiB, raw bit-width ratios, and explicit exclusion of metadata/cache/workspace."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compiled and ran the C++17 arena with MSVC: checked matching aligned allocation/deallocation, disabled copying, 16/64-byte alignment, reset reuse, invalid-alignment rejection, capacity failure, and the documented destructor limitation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added primary GGML/llama.cpp, NVIDIA cuBLAS, Apple Metal Performance Shaders, and WG21 C++ working-draft references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Only the standalone arena sample was compiled and run; this is not a complete model runner, CUDA/Metal backend, or inference benchmark.",
+        "Performance, quantization quality, and memory fit are workload- and hardware-dependent; readers must test their model, build, and target device."
+      ]
+    },
+    "post/Python不要C++だけでAI推論エンジンを構築してみた/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Python不要C++だけでAI推論エンジンを構築してみた/index.md",
+      "sourceHash": "c3d0c3cc8341c9ad2d8f6be356272dd40d79c0e439c03713e148ccbc095c47f9",
+      "translationHash": "1d7a0cb2d41bf9d9318ee461109a4c4caeb1b5f53d653ae1b807886351f0bb6c",
+      "summary": "Rewrote and aligned the translation to the Japanese article and current primary project/API references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the revised scope: conceptual architecture and an arena example, not a complete LLM inference implementation or performance claim."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked tensors, KV cache, memory arena, FP32/FP16/INT8/INT4, CUDA/cuBLAS, Metal Performance Shaders, and C++17 aligned allocation terminology."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified the 7e9 FP32 weight estimate, decimal GB vs GiB, raw bit-width ratios, and explicit exclusion of metadata/cache/workspace."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compiled and ran the C++17 arena with MSVC: checked matching aligned allocation/deallocation, disabled copying, 16/64-byte alignment, reset reuse, invalid-alignment rejection, capacity failure, and the documented destructor limitation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added primary GGML/llama.cpp, NVIDIA cuBLAS, Apple Metal Performance Shaders, and WG21 C++ working-draft references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Only the standalone arena sample was compiled and run; this is not a complete model runner, CUDA/Metal backend, or inference benchmark.",
+        "Performance, quantization quality, and memory fit are workload- and hardware-dependent; readers must test their model, build, and target device."
+      ]
+    }
+  }
+}

@@ -13205,6 +13205,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-114.json",
       "evidenceHash": "037868632fa5ea231a35bfe043e51559a82ff139ee3d1b2d53f7948792c73015"
+    },
+    "post/Python不要C++だけでAI推論エンジンを構築してみた/index.ar.md": {
+      "source": "post/Python不要C++だけでAI推論エンジンを構築してみた/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "c3d0c3cc8341c9ad2d8f6be356272dd40d79c0e439c03713e148ccbc095c47f9",
+      "translationHash": "89162d23445b4faac4d22854ab84ee30ca3911c9f6065876ee93424b2a412d36",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-115.json",
+      "evidenceHash": "43786ca52407d43ce262ece52724f230753f697ef647013358c5da043e5f1409"
+    },
+    "post/Python不要C++だけでAI推論エンジンを構築してみた/index.de.md": {
+      "source": "post/Python不要C++だけでAI推論エンジンを構築してみた/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "c3d0c3cc8341c9ad2d8f6be356272dd40d79c0e439c03713e148ccbc095c47f9",
+      "translationHash": "5d3ae90e1573bdff65490d5c45bdbd89788553ac88836a63026b5652ac7ed9c8",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-115.json",
+      "evidenceHash": "06f18bbac46676e83acdb367927d220de878a3b38078676766f552f9766c7fb7"
+    },
+    "post/Python不要C++だけでAI推論エンジンを構築してみた/index.en.md": {
+      "source": "post/Python不要C++だけでAI推論エンジンを構築してみた/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "c3d0c3cc8341c9ad2d8f6be356272dd40d79c0e439c03713e148ccbc095c47f9",
+      "translationHash": "9dd61aec680d9d59fae8f994b820ff9338b3895b1b09393cee071fd1e8194d43",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-115.json",
+      "evidenceHash": "a9223c1f5a051ba5ffd34d4443931c89c30905d99c707ac626603e590cbc8307"
+    },
+    "post/Python不要C++だけでAI推論エンジンを構築してみた/index.es.md": {
+      "source": "post/Python不要C++だけでAI推論エンジンを構築してみた/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "c3d0c3cc8341c9ad2d8f6be356272dd40d79c0e439c03713e148ccbc095c47f9",
+      "translationHash": "49ed876d288408d71f80275680efcb24be30216c4333e474d113e4f90ef7a312",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-115.json",
+      "evidenceHash": "8d3a083efff1fc009ec51b8978a919086c68e7e6c95757fd220cef0de7886118"
+    },
+    "post/Python不要C++だけでAI推論エンジンを構築してみた/index.fr.md": {
+      "source": "post/Python不要C++だけでAI推論エンジンを構築してみた/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "c3d0c3cc8341c9ad2d8f6be356272dd40d79c0e439c03713e148ccbc095c47f9",
+      "translationHash": "719aaed619bc622fdd24050aa9d28debbd93a29f065bd2140be1d56020aed6d5",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-115.json",
+      "evidenceHash": "25c54c754f74f46e0a8aa1fa24117a4e3813b7736c4514c7b60b51c793419013"
+    },
+    "post/Python不要C++だけでAI推論エンジンを構築してみた/index.hi.md": {
+      "source": "post/Python不要C++だけでAI推論エンジンを構築してみた/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "c3d0c3cc8341c9ad2d8f6be356272dd40d79c0e439c03713e148ccbc095c47f9",
+      "translationHash": "5651e3042eb695ba9d686d0bba5296294e081b660b190c8d73a2c301da12c0af",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-115.json",
+      "evidenceHash": "e5447d119638906312f5aacee14c7ce13a5bf36dddebac9f2b3d2abd7cfb4c2e"
+    },
+    "post/Python不要C++だけでAI推論エンジンを構築してみた/index.id.md": {
+      "source": "post/Python不要C++だけでAI推論エンジンを構築してみた/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "c3d0c3cc8341c9ad2d8f6be356272dd40d79c0e439c03713e148ccbc095c47f9",
+      "translationHash": "537cabaf65f48a7828f6cbe34b08d2e7694708d6172ad3e9b5885b28bebf2eeb",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-115.json",
+      "evidenceHash": "e85ea8818f83a5d6e19ef51270613b06cac858f52aaa39cf983abc3c68def61d"
+    },
+    "post/Python不要C++だけでAI推論エンジンを構築してみた/index.ko.md": {
+      "source": "post/Python不要C++だけでAI推論エンジンを構築してみた/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "c3d0c3cc8341c9ad2d8f6be356272dd40d79c0e439c03713e148ccbc095c47f9",
+      "translationHash": "81895f0f63e2cf7974efaeda1f43a4161bfd70c46e7e4b966afc4f9260ca3285",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-115.json",
+      "evidenceHash": "e9db27257a3acc38138ae9596de53c35dbf52842ff9e069c1a9d6fada0020380"
+    },
+    "post/Python不要C++だけでAI推論エンジンを構築してみた/index.pt.md": {
+      "source": "post/Python不要C++だけでAI推論エンジンを構築してみた/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "c3d0c3cc8341c9ad2d8f6be356272dd40d79c0e439c03713e148ccbc095c47f9",
+      "translationHash": "e0932d87cf3799f2b92828b2fe3c5c319d7757828caceec15aa6037367e138ba",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-115.json",
+      "evidenceHash": "a08aa93d2e8d14bcd240fb9f6cb53193d5c2efa6e6d53669743106e607b2f3ce"
+    },
+    "post/Python不要C++だけでAI推論エンジンを構築してみた/index.ru.md": {
+      "source": "post/Python不要C++だけでAI推論エンジンを構築してみた/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "c3d0c3cc8341c9ad2d8f6be356272dd40d79c0e439c03713e148ccbc095c47f9",
+      "translationHash": "4274b7de8a683c64e43aeb70b873ab4abdf408a22a9018b38d862b837dc07f80",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-115.json",
+      "evidenceHash": "fe09da8a2ba290cc7864fa15e8251c6df13606c281b062c9d0397eca282355c4"
+    },
+    "post/Python不要C++だけでAI推論エンジンを構築してみた/index.zh-cn.md": {
+      "source": "post/Python不要C++だけでAI推論エンジンを構築してみた/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "c3d0c3cc8341c9ad2d8f6be356272dd40d79c0e439c03713e148ccbc095c47f9",
+      "translationHash": "5608beac9a1aa99f7c480895ee1528b48caf00235b5ed2aa7724884d8a9e4111",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-115.json",
+      "evidenceHash": "cf4f4748eda63d76a7231ce79d8b8235ddb192557af14799600df2832c46c627"
+    },
+    "post/Python不要C++だけでAI推論エンジンを構築してみた/index.zh-tw.md": {
+      "source": "post/Python不要C++だけでAI推論エンジンを構築してみた/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "c3d0c3cc8341c9ad2d8f6be356272dd40d79c0e439c03713e148ccbc095c47f9",
+      "translationHash": "1d7a0cb2d41bf9d9318ee461109a4c4caeb1b5f53d653ae1b807886351f0bb6c",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-115.json",
+      "evidenceHash": "77fb5800dc6967b1ec24c6c942de6a14744dce5bf4825e69e44c5181dde3889f"
     }
   }
 }
