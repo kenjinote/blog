@@ -1,41 +1,46 @@
 ---
 title: 'طريقة تثبيت وإدارة التطبيقات بسهولة باستخدام أمر WinGet في Windows 11'
-date: "2026-09-24T19:44:38+09:00"
 slug: "WinGet を使ってأمرでتطبيقをتثبيتする"
-date: 2022-10-05T12:15:20+09:00
 tags: ["WinGet"]
 draft: false
 image: "img.webp"
 categories: ["tools-development-environment"]
 description: 'نشرح كيفية تثبيت التطبيقات من سطر الأوامر باستخدام مدير الحزم "WinGet" في Windows 11. نقدم خطوات التثبيت والإدارة السريعة للبرامج الرئيسية مثل Chrome و VSCode و Slack عبر سطر الأوامر.'
+date: "2022-10-05T12:15:20+09:00"
+lastmod: "2026-11-25T00:00:00+09:00"
 ---
-## المتطلبات الأساسية
-أن يكون نظام التشغيل Windows 11
 
-## الخطوات
-1. قم بتثبيت `App Installer` من Microsoft Store
-   https://www.microsoft.com/store/productId/9NBLGGH4NNS1
-2. قم بتثبيت التطبيق باستخدام موجه الأوامر
-    ```powershell
-    winget install Google.Chrome
-    ```
-## التطبيقات الرئيسية التي يمكن تثبيتها
-- Google Chrome (الأمر `winget install Google.Chrome`)
-- Microsoft Edge (الأمر `winget install Microsoft.Edge`)
-- Microsoft Teams (الأمر `winget install Microsoft.Teams`)
-- Microsoft Office (الأمر `winget install Microsoft.Office`)
-- Visual Studio Code (الأمر `winget install vscode`)
-- Slack (الأمر `winget install SlackTechnologies.Slack`)
-- Discord (الأمر `winget install Discord.Discord`)
-- [Docker](https://kenji.blog/ar/p/docker-container-namespace-[cgroups](https://kenji.blog/ar/p/docker-container-namespace-cgroups-layers/)-layers/) Desktop (الأمر `winget install Docker.DockerDesktop`)
-- Git (الأمر `winget install Git`)
-- 7zip (الأمر `winget install 7zip`)
-- VLC (الأمر `winget install VideoLAN.VLC`)
+# تثبيت التطبيقات باستخدام WinGet
 
-## المراجع
-[استخدام أداة winget لتثبيت التطبيقات وإدارتها](https://learn.microsoft.com/ja-jp/windows/package-manager/winget/)
+يتيح WinGet (Windows Package Manager) البحث عن التطبيقات وتثبيتها وتحديثها وإزالتها من سطر أوامر Windows. تدعم الأداة Windows 11 وWindows 10 الإصدار 1809 أو الأحدث وWindows Server 2025 وفقًا لـ Microsoft، وتكون عادةً مضمنة في App Installer على أجهزة سطح المكتب.
 
-### ملاحظة جانبية
-اعتقدت أنه يمكنني تثبيت [Paint](https://kenji.blog/ar/p/browser-rendering-mechanism-dom-paint/).Net أيضًا، لكن لم أتمكن من ذلك.
+## التحقق والاستخدام
 
-https://forums.getpaint.net/topic/118574-please-add-paintnet-to-the-available-packages-for-windows-package-manager-winget/
+شغّل `winget --version`. إذا لم يُعثر على الأمر، فحدّث Windows وثبّت App Installer أو حدّثه من Microsoft Store. بعد أول تسجيل دخول بحساب جديد، انتظر اكتمال تسجيل Store.
+
+ابحث بالاسم وتحقق من المعرّف والناشر قبل التثبيت:
+
+```powershell
+winget search vscode
+winget show --id Microsoft.VisualStudioCode
+winget install --id Microsoft.VisualStudioCode -e --source winget
+```
+
+يفرض `-e` التطابق الدقيق، ويحدد `--source winget` مستودع مجتمع WinGet. اقرأ شروط المصدر وترخيص التطبيق قبل الموافقة. وتعرض Microsoft أمثلة `Microsoft.PowerToys` و`Microsoft.PowerShell` و`Git.Git` و`Docker.DockerDesktop`. قد تتغير المعرّفات والإصدارات؛ تحقق باستخدام `winget show` وحدد `--source` عند تعدد المصادر.
+
+## أصبح Paint.NET متاحًا عبر WinGet
+
+تتضمن قائمة المجتمع الحالية المعرّف `dotPDN.PaintDotNet`:
+
+```powershell
+winget show --id dotPDN.PaintDotNet -e --source winget
+winget install --id dotPDN.PaintDotNet -e --source winget
+```
+
+قد يتغير التوفر؛ راجع البيان الحالي.
+
+## مراجع
+
+- [Microsoft Learn: نظرة عامة على WinGet](https://learn.microsoft.com/en-us/windows/package-manager/winget/)
+- [أمر install](https://learn.microsoft.com/en-us/windows/package-manager/winget/install) · [أمر search](https://learn.microsoft.com/en-us/windows/package-manager/winget/search)
+- [بيان Paint.NET](https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dotPDN/PaintDotNet)

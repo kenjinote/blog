@@ -1,41 +1,64 @@
 ---
 title: 'So installieren und verwalten Sie Apps einfach mit dem WinGet-Befehl von Windows 11'
-date: "2026-09-24T19:44:38+09:00"
 slug: "WinGet を使ってBefehlでAppをInstallationする"
-date: 2022-10-05T12:15:20+09:00
 tags: ["WinGet"]
 draft: false
 image: "img.webp"
 categories: ["tools-development-environment"]
 description: 'Wir erklären, wie Sie Apps über die Befehlszeile mit dem Windows 11-Paketmanager „WinGet“ installieren. Wir zeigen Ihnen, wie Sie wichtige Software wie Chrome, VSCode und Slack schnell über die Befehlszeile einführen und verwalten können.'
+date: "2022-10-05T12:15:20+09:00"
+lastmod: "2026-11-25T00:00:00+09:00"
 ---
-## Voraussetzungen
-Windows 11 muss installiert sein
 
-## Vorgehensweise
-1. Installieren Sie den `App-Installer` aus dem Microsoft Store
-   https://www.microsoft.com/store/productId/9NBLGGH4NNS1
-2. Installieren Sie die App über die Eingabeaufforderung
-    ```powershell
-    winget install Google.Chrome
-    ```
-## Wichtigste installierbare Apps
-- Google Chrome (Befehl `winget install Google.Chrome`)
-- Microsoft Edge (Befehl `winget install Microsoft.Edge`)
-- Microsoft Teams (Befehl `winget install Microsoft.Teams`)
-- Microsoft Office (Befehl `winget install Microsoft.Office`)
-- Visual Studio Code (Befehl `winget install vscode`)
-- Slack (Befehl `winget install SlackTechnologies.Slack`)
-- Discord (Befehl `winget install Discord.Discord`)
-- [Docker](https://kenji.blog/de/p/docker-container-namespace-[cgroups](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)-layers/) Desktop (Befehl `winget install Docker.DockerDesktop`)
-- Git (Befehl `winget install Git`)
-- 7zip (Befehl `winget install 7zip`)
-- VLC (Befehl `winget install VideoLAN.VLC`)
+# Apps mit WinGet über die Befehlszeile installieren
 
-## Referenz
-[Verwenden des winget-Tools zum Installieren und Verwalten von Anwendungen](https://learn.microsoft.com/de-de/windows/package-manager/winget/)
+WinGet (Windows Package Manager) kann Apps über die Windows-Befehlszeile suchen, installieren, aktualisieren und entfernen. Microsoft nennt Windows 11, Windows 10 ab Version 1809 und Windows Server 2025 als unterstützte Systeme. Auf Desktopversionen ist WinGet normalerweise in „App-Installer“ enthalten.
 
-### Nebenbei
-Ich dachte, ich könnte auch [Paint](https://kenji.blog/de/p/browser-rendering-mechanism-dom-paint/).Net installieren, aber das war nicht möglich.
+## WinGet prüfen
 
-https://forums.getpaint.net/topic/118574-please-add-paintnet-to-the-available-packages-for-windows-package-manager-winget/
+Führen Sie dies in PowerShell, Windows Terminal oder der Eingabeaufforderung aus:
+
+```powershell
+winget --version
+```
+
+Fehlt der Befehl, installieren Sie Windows-Updates und installieren oder aktualisieren Sie „App-Installer“ über den Microsoft Store. Warten Sie nach der ersten Anmeldung eines neuen Kontos, bis die Store-Registrierung abgeschlossen ist.
+
+## Suchen und installieren
+
+Prüfen Sie App-Name, ID und Herausgeber in den Suchergebnissen, bevor Sie per ID installieren.
+
+```powershell
+winget search vscode
+winget show --id Microsoft.VisualStudioCode
+winget install --id Microsoft.VisualStudioCode -e --source winget
+```
+
+`-e` requires an exact ID match; `--source winget` selects the WinGet Community Repository. Read and accept any source or app license agreements only after reviewing them. Microsoft also documents these package ID examples:
+
+```powershell
+winget install Microsoft.PowerToys
+winget install Microsoft.PowerShell
+winget install Git.Git
+winget install Docker.DockerDesktop
+```
+
+Package IDs and versions can change. Check the selected package with `winget show` first; specify `--source` if multiple sources return the same app.
+
+## Paint.NET ist jetzt über WinGet verfügbar
+
+Paint.NET ist im Community-Repository unter folgender ID aufgeführt: `dotPDN.PaintDotNet`:
+
+```powershell
+winget show --id dotPDN.PaintDotNet -e --source winget
+winget install --id dotPDN.PaintDotNet -e --source winget
+```
+
+Prüfen Sie das aktuelle Manifest, da sich die Verfügbarkeit ändern kann.
+
+## Quellen
+
+- [Microsoft Learn: WinGet overview](https://learn.microsoft.com/en-us/windows/package-manager/winget/)
+- [Microsoft Learn: install command](https://learn.microsoft.com/en-us/windows/package-manager/winget/install)
+- [Microsoft Learn: search command](https://learn.microsoft.com/en-us/windows/package-manager/winget/search)
+- [WinGet Community Repository: Paint.NET manifest](https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dotPDN/PaintDotNet)

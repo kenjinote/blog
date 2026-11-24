@@ -1,41 +1,46 @@
 ---
 title: '使用 Windows 11 的 WinGet 指令輕鬆安裝與管理應用程式的方法'
-date: "2026-09-24T19:44:38+09:00"
 slug: "WinGet を使って指令で應用程式を安裝する"
-date: 2022-10-05T12:15:20+09:00
 tags: ["WinGet"]
 draft: false
 image: "img.webp"
 categories: ["tools-development-environment"]
 description: '解說如何使用 Windows 11 的套件管理員「WinGet」，透過指令安裝應用程式。介紹在命令列中快速導入與管理 Chrome、VSCode、Slack 等主要軟體的步驟。'
+date: "2022-10-05T12:15:20+09:00"
+lastmod: "2026-11-25T00:00:00+09:00"
 ---
-## 先決條件
-必須為 Windows 11
 
-## 步驟
-1. 從 Microsoft Store 安裝 `應用程式安裝程式`
-   https://www.microsoft.com/store/productId/9NBLGGH4NNS1
-2. 在命令提示字元中安裝應用程式
-    ```powershell
-    winget install Google.Chrome
-    ```
-## 可安裝的主要應用程式
-- Google Chrome (命令 `winget install Google.Chrome`)
-- Microsoft Edge (命令 `winget install Microsoft.Edge`)
-- Microsoft Teams (命令 `winget install Microsoft.Teams`)
-- Microsoft Office (命令 `winget install Microsoft.Office`)
-- Visual Studio Code (命令 `winget install vscode`)
-- Slack (命令 `winget install SlackTechnologies.Slack`)
-- Discord (命令 `winget install Discord.Discord`)
-- [Docker](https://kenji.blog/zh-tw/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-tw/p/docker-container-namespace-cgroups-layers/)-layers/) Desktop (命令 `winget install Docker.DockerDesktop`)
-- Git (命令 `winget install Git`)
-- 7zip (命令 `winget install 7zip`)
-- VLC (命令 `winget install VideoLAN.VLC`)
+# 使用 WinGet 安裝應用程式
+
+WinGet（Windows Package Manager）可從 Windows 命令列搜尋、安裝、更新及移除應用程式。Microsoft 列出的支援系統為 Windows 11、Windows 10 版本 1809 以上及 Windows Server 2025；桌面版通常隨「App Installer」提供 WinGet。
+
+## 確認並使用
+
+執行 `winget --version`。若找不到命令，請更新 Windows，並從 Microsoft Store 安裝或更新「App Installer」。新帳戶首次登入後，等候 Store 註冊完成。
+
+先搜尋並核對名稱、ID及發行者，再安裝：
+
+```powershell
+winget search vscode
+winget show --id Microsoft.VisualStudioCode
+winget install --id Microsoft.VisualStudioCode -e --source winget
+```
+
+`-e`要求ID完全相符，`--source winget`指定WinGet社群存放庫。請閱讀來源條款和應用程式授權再同意。Microsoft也列出 `Microsoft.PowerToys`、`Microsoft.PowerShell`、`Git.Git`、`Docker.DockerDesktop` 等ID範例。ID和版本可能變更，請先用 `winget show` 核對；多來源時指定 `--source`。
+
+## Paint.NET現可透過WinGet安裝
+
+目前社群清單包含 `dotPDN.PaintDotNet`：
+
+```powershell
+winget show --id dotPDN.PaintDotNet -e --source winget
+winget install --id dotPDN.PaintDotNet -e --source winget
+```
+
+供應狀況可能改變，請查看目前清單。
 
 ## 參考資料
-[使用 winget 工具安裝和管理應用程式](https://learn.microsoft.com/zh-tw/windows/package-manager/winget/)
 
-### 題外話
-我以為也可以安裝 [Paint](https://kenji.blog/zh-tw/p/browser-rendering-mechanism-dom-paint/).Net，但無法安裝。
-
-https://forums.getpaint.net/topic/118574-please-add-paintnet-to-the-available-packages-for-windows-package-manager-winget/
+- [Microsoft Learn：WinGet概覽](https://learn.microsoft.com/zh-tw/windows/package-manager/winget/)
+- [install命令](https://learn.microsoft.com/zh-tw/windows/package-manager/winget/install) · [search命令](https://learn.microsoft.com/zh-tw/windows/package-manager/winget/search)
+- [Paint.NET清單](https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dotPDN/PaintDotNet)

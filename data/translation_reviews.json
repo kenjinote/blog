@@ -22445,6 +22445,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-192.json",
       "evidenceHash": "fbb1c412097658558cd56992a98bf55d959721172a9177ac2d3c40ea053a6aa9"
+    },
+    "post/WinGet を使ってコマンドでアプリをインストールする/index.en.md": {
+      "source": "post/WinGet を使ってコマンドでアプリをインストールする/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "4c798334954189b79361ad970c7ce23e20efef0a971cc8936bcc8e5e9e60b3d7",
+      "translationHash": "dde3c255614ca89dc0f861284eac41bbdba0eeeba4bd336d7e28b86a9a313849",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-193.json",
+      "evidenceHash": "f48d04d198f37d95dfeee9b471d31bcd6daab5a21c19307dcd80d4fefa8e5dd0"
+    },
+    "post/WinGet を使ってコマンドでアプリをインストールする/index.zh-cn.md": {
+      "source": "post/WinGet を使ってコマンドでアプリをインストールする/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "4c798334954189b79361ad970c7ce23e20efef0a971cc8936bcc8e5e9e60b3d7",
+      "translationHash": "7159efb168eeb8c3ab9dd20c7fbbb2750abb1611952659486fc5bf1805820e71",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-193.json",
+      "evidenceHash": "59804cf7541f7b633fee1df4752c6e41d59b3b6ded25c0177cb5e0ae09d1f62b"
+    },
+    "post/WinGet を使ってコマンドでアプリをインストールする/index.es.md": {
+      "source": "post/WinGet を使ってコマンドでアプリをインストールする/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "4c798334954189b79361ad970c7ce23e20efef0a971cc8936bcc8e5e9e60b3d7",
+      "translationHash": "766576280e87f42d0f382fa4ae9db7c03f5565a348242e9507dd0a8920eea0a9",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-193.json",
+      "evidenceHash": "687e9df9b501d2831476e5456ba27f63ab7803dfad5a85a31cdd14917dab81e1"
+    },
+    "post/WinGet を使ってコマンドでアプリをインストールする/index.ko.md": {
+      "source": "post/WinGet を使ってコマンドでアプリをインストールする/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "4c798334954189b79361ad970c7ce23e20efef0a971cc8936bcc8e5e9e60b3d7",
+      "translationHash": "950e84708d370388030988ba1bae0dcc3b1b2f73e7ddc2cc631d54265f8b07f9",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-193.json",
+      "evidenceHash": "e4b8e62a1b103c8656c96f9587ee4b2982f2b1988eb85a7029c1f08b6396e253"
+    },
+    "post/WinGet を使ってコマンドでアプリをインストールする/index.pt.md": {
+      "source": "post/WinGet を使ってコマンドでアプリをインストールする/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "4c798334954189b79361ad970c7ce23e20efef0a971cc8936bcc8e5e9e60b3d7",
+      "translationHash": "e8cbd8a4abe6734c20c10abcae1a8dbf7715b2aa2eb10cd3880dc32b2641e74c",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-193.json",
+      "evidenceHash": "6e417bb08ae9b94ecfb590eaefe8ea8f53ed04e08817a6e7cce2d79ad0d9c5b0"
+    },
+    "post/WinGet を使ってコマンドでアプリをインストールする/index.zh-tw.md": {
+      "source": "post/WinGet を使ってコマンドでアプリをインストールする/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "4c798334954189b79361ad970c7ce23e20efef0a971cc8936bcc8e5e9e60b3d7",
+      "translationHash": "4748d567aefe27b1c0c0af6e3a569ecacc0221437ad622401376e366485907ec",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-193.json",
+      "evidenceHash": "bbb2e854024709b5cfd003f7dfbf56af2cca0f8a446e8767a67d6d71917cc3fe"
+    },
+    "post/WinGet を使ってコマンドでアプリをインストールする/index.hi.md": {
+      "source": "post/WinGet を使ってコマンドでアプリをインストールする/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "4c798334954189b79361ad970c7ce23e20efef0a971cc8936bcc8e5e9e60b3d7",
+      "translationHash": "ab924471c34b9a4cbc071cd8e143af18359f5b99eea28740da3491d68d26f60c",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-193.json",
+      "evidenceHash": "93675734e97de02a33ed5b71ac04da58295ed8549ee91faeecf63a0455201eb1"
+    },
+    "post/WinGet を使ってコマンドでアプリをインストールする/index.fr.md": {
+      "source": "post/WinGet を使ってコマンドでアプリをインストールする/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "4c798334954189b79361ad970c7ce23e20efef0a971cc8936bcc8e5e9e60b3d7",
+      "translationHash": "eb9e06d7063ef04b2a8a6b9839f8d174403d9743673f8808daf85f0885fc0e41",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-193.json",
+      "evidenceHash": "56c63fad173ac2c2c64f655c13d4a3b4ef03762374a2858984b403e05a868d70"
+    },
+    "post/WinGet を使ってコマンドでアプリをインストールする/index.de.md": {
+      "source": "post/WinGet を使ってコマンドでアプリをインストールする/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "4c798334954189b79361ad970c7ce23e20efef0a971cc8936bcc8e5e9e60b3d7",
+      "translationHash": "83805362ba549c66fe0d2e8df60372f3c7b8bdcdf7cbdd660d4934e57619d095",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-193.json",
+      "evidenceHash": "b100749781842afda1275693857f013ffd20a5df22d62f737fff291ac2597ed8"
+    },
+    "post/WinGet を使ってコマンドでアプリをインストールする/index.ar.md": {
+      "source": "post/WinGet を使ってコマンドでアプリをインストールする/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "4c798334954189b79361ad970c7ce23e20efef0a971cc8936bcc8e5e9e60b3d7",
+      "translationHash": "7a6acc0bc6330f5010f6ae4ec0a597fbdc0c52d645a6ee697e65597f5eb2c0ec",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-193.json",
+      "evidenceHash": "fae4b98db3524f188317cda411075733299472d5edf76140c418b914b2de7f65"
+    },
+    "post/WinGet を使ってコマンドでアプリをインストールする/index.ru.md": {
+      "source": "post/WinGet を使ってコマンドでアプリをインストールする/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "4c798334954189b79361ad970c7ce23e20efef0a971cc8936bcc8e5e9e60b3d7",
+      "translationHash": "6898f3a600d2dc55effbc320ba6395a93a6ad64eab666f7204461dc428ba6961",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-193.json",
+      "evidenceHash": "91f8c7ff24cf813ca43ec44e2bd798b9eb18ebed7c14413bd781d27903ea36d6"
+    },
+    "post/WinGet を使ってコマンドでアプリをインストールする/index.id.md": {
+      "source": "post/WinGet を使ってコマンドでアプリをインストールする/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "4c798334954189b79361ad970c7ce23e20efef0a971cc8936bcc8e5e9e60b3d7",
+      "translationHash": "73b7ac4be0317d21ca052f968c7fdab8f1266ee0c16890aafdf399ca4795dfad",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-193.json",
+      "evidenceHash": "7dd98204a911f6488717961726b96bed106b4390b4ff862e6d664f2f022c81aa"
     }
   }
 }

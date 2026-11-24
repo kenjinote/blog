@@ -1,0 +1,456 @@
+{
+  "version": 1,
+  "batch": 193,
+  "article": "Install apps from the command line with WinGet",
+  "reviewedAt": "2026-11-25",
+  "sourceHash": "4c798334954189b79361ad970c7ce23e20efef0a971cc8936bcc8e5e9e60b3d7",
+  "sources": [
+    "https://learn.microsoft.com/en-us/windows/package-manager/winget/",
+    "https://learn.microsoft.com/en-us/windows/package-manager/winget/install",
+    "https://learn.microsoft.com/en-us/windows/package-manager/winget/search",
+    "https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/dotPDN/PaintDotNet"
+  ],
+  "scope": "Read the complete Japanese article and all twelve translations. Checked commands, current OS support, App Installer guidance, package ID/source semantics, internal/external links, and localized prose.",
+  "findings": [
+    "Removed the duplicate future date, restored the original publication date (2022-10-05), and set lastmod to the review date in all 13 editions.",
+    "Updated supported platforms from Windows 11 only to Windows 11, Windows 10 version 1809 or later, and Windows Server 2025 per Microsoft Learn.",
+    "Replaced the stale fixed app list with search/show guidance and package IDs documented by Microsoft; clarified exact matching, source selection, and agreement prompts.",
+    "Corrected the Paint.NET aside: the current WinGet community repository lists dotPDN.PaintDotNet and the article now shows how to inspect/install it.",
+    "Removed the malformed Docker nested link and replaced outdated references with Microsoft Learn and the current Paint.NET manifest."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/WinGet を使ってコマンドでアプリをインストールする/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/WinGet を使ってコマンドでアプリをインストールする/index.md",
+      "sourceHash": "4c798334954189b79361ad970c7ce23e20efef0a971cc8936bcc8e5e9e60b3d7",
+      "translationHash": "dde3c255614ca89dc0f861284eac41bbdba0eeeba4bd336d7e28b86a9a313849",
+      "summary": "Compared the complete translation with the Japanese source and current Microsoft documentation; corrected platform support, the install/search workflow, package ID guidance, Paint.NET availability, and broken links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article with all twelve translations; updated the supported Windows versions, App Installer prerequisite, search-before-install workflow, and current Paint.NET availability."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked WinGet, App Installer, package ID, publisher, source, exact-match option, source terms and app license terminology in each language."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked every PowerShell command and package ID against current Microsoft Learn examples; replaced stale fixed IDs with search/show steps, used exact ID/source options, and verified Paint.NET ID in the current WinGet Community Repository."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Microsoft Learn overview/install/search references and the current Paint.NET manifest path in the WinGet Community Repository; repaired the malformed Docker Markdown link by removing the outdated static list."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Package IDs, availability, versions, sources, and UI registration timing can change; recheck the official documentation and current manifest before use.",
+        "Microsoft Learn references are linked in English where a localized page was not used."
+      ]
+    },
+    "post/WinGet を使ってコマンドでアプリをインストールする/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/WinGet を使ってコマンドでアプリをインストールする/index.md",
+      "sourceHash": "4c798334954189b79361ad970c7ce23e20efef0a971cc8936bcc8e5e9e60b3d7",
+      "translationHash": "7159efb168eeb8c3ab9dd20c7fbbb2750abb1611952659486fc5bf1805820e71",
+      "summary": "Compared the complete translation with the Japanese source and current Microsoft documentation; corrected platform support, the install/search workflow, package ID guidance, Paint.NET availability, and broken links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article with all twelve translations; updated the supported Windows versions, App Installer prerequisite, search-before-install workflow, and current Paint.NET availability."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked WinGet, App Installer, package ID, publisher, source, exact-match option, source terms and app license terminology in each language."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked every PowerShell command and package ID against current Microsoft Learn examples; replaced stale fixed IDs with search/show steps, used exact ID/source options, and verified Paint.NET ID in the current WinGet Community Repository."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Microsoft Learn overview/install/search references and the current Paint.NET manifest path in the WinGet Community Repository; repaired the malformed Docker Markdown link by removing the outdated static list."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Package IDs, availability, versions, sources, and UI registration timing can change; recheck the official documentation and current manifest before use.",
+        "Microsoft Learn references are linked in English where a localized page was not used."
+      ]
+    },
+    "post/WinGet を使ってコマンドでアプリをインストールする/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/WinGet を使ってコマンドでアプリをインストールする/index.md",
+      "sourceHash": "4c798334954189b79361ad970c7ce23e20efef0a971cc8936bcc8e5e9e60b3d7",
+      "translationHash": "766576280e87f42d0f382fa4ae9db7c03f5565a348242e9507dd0a8920eea0a9",
+      "summary": "Compared the complete translation with the Japanese source and current Microsoft documentation; corrected platform support, the install/search workflow, package ID guidance, Paint.NET availability, and broken links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article with all twelve translations; updated the supported Windows versions, App Installer prerequisite, search-before-install workflow, and current Paint.NET availability."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked WinGet, App Installer, package ID, publisher, source, exact-match option, source terms and app license terminology in each language."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked every PowerShell command and package ID against current Microsoft Learn examples; replaced stale fixed IDs with search/show steps, used exact ID/source options, and verified Paint.NET ID in the current WinGet Community Repository."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Microsoft Learn overview/install/search references and the current Paint.NET manifest path in the WinGet Community Repository; repaired the malformed Docker Markdown link by removing the outdated static list."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Package IDs, availability, versions, sources, and UI registration timing can change; recheck the official documentation and current manifest before use.",
+        "Microsoft Learn references are linked in English where a localized page was not used."
+      ]
+    },
+    "post/WinGet を使ってコマンドでアプリをインストールする/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/WinGet を使ってコマンドでアプリをインストールする/index.md",
+      "sourceHash": "4c798334954189b79361ad970c7ce23e20efef0a971cc8936bcc8e5e9e60b3d7",
+      "translationHash": "950e84708d370388030988ba1bae0dcc3b1b2f73e7ddc2cc631d54265f8b07f9",
+      "summary": "Compared the complete translation with the Japanese source and current Microsoft documentation; corrected platform support, the install/search workflow, package ID guidance, Paint.NET availability, and broken links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article with all twelve translations; updated the supported Windows versions, App Installer prerequisite, search-before-install workflow, and current Paint.NET availability."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked WinGet, App Installer, package ID, publisher, source, exact-match option, source terms and app license terminology in each language."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked every PowerShell command and package ID against current Microsoft Learn examples; replaced stale fixed IDs with search/show steps, used exact ID/source options, and verified Paint.NET ID in the current WinGet Community Repository."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Microsoft Learn overview/install/search references and the current Paint.NET manifest path in the WinGet Community Repository; repaired the malformed Docker Markdown link by removing the outdated static list."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Package IDs, availability, versions, sources, and UI registration timing can change; recheck the official documentation and current manifest before use.",
+        "Microsoft Learn references are linked in English where a localized page was not used."
+      ]
+    },
+    "post/WinGet を使ってコマンドでアプリをインストールする/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/WinGet を使ってコマンドでアプリをインストールする/index.md",
+      "sourceHash": "4c798334954189b79361ad970c7ce23e20efef0a971cc8936bcc8e5e9e60b3d7",
+      "translationHash": "e8cbd8a4abe6734c20c10abcae1a8dbf7715b2aa2eb10cd3880dc32b2641e74c",
+      "summary": "Compared the complete translation with the Japanese source and current Microsoft documentation; corrected platform support, the install/search workflow, package ID guidance, Paint.NET availability, and broken links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article with all twelve translations; updated the supported Windows versions, App Installer prerequisite, search-before-install workflow, and current Paint.NET availability."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked WinGet, App Installer, package ID, publisher, source, exact-match option, source terms and app license terminology in each language."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked every PowerShell command and package ID against current Microsoft Learn examples; replaced stale fixed IDs with search/show steps, used exact ID/source options, and verified Paint.NET ID in the current WinGet Community Repository."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Microsoft Learn overview/install/search references and the current Paint.NET manifest path in the WinGet Community Repository; repaired the malformed Docker Markdown link by removing the outdated static list."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Package IDs, availability, versions, sources, and UI registration timing can change; recheck the official documentation and current manifest before use.",
+        "Microsoft Learn references are linked in English where a localized page was not used."
+      ]
+    },
+    "post/WinGet を使ってコマンドでアプリをインストールする/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/WinGet を使ってコマンドでアプリをインストールする/index.md",
+      "sourceHash": "4c798334954189b79361ad970c7ce23e20efef0a971cc8936bcc8e5e9e60b3d7",
+      "translationHash": "4748d567aefe27b1c0c0af6e3a569ecacc0221437ad622401376e366485907ec",
+      "summary": "Compared the complete translation with the Japanese source and current Microsoft documentation; corrected platform support, the install/search workflow, package ID guidance, Paint.NET availability, and broken links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article with all twelve translations; updated the supported Windows versions, App Installer prerequisite, search-before-install workflow, and current Paint.NET availability."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked WinGet, App Installer, package ID, publisher, source, exact-match option, source terms and app license terminology in each language."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked every PowerShell command and package ID against current Microsoft Learn examples; replaced stale fixed IDs with search/show steps, used exact ID/source options, and verified Paint.NET ID in the current WinGet Community Repository."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Microsoft Learn overview/install/search references and the current Paint.NET manifest path in the WinGet Community Repository; repaired the malformed Docker Markdown link by removing the outdated static list."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Package IDs, availability, versions, sources, and UI registration timing can change; recheck the official documentation and current manifest before use.",
+        "Microsoft Learn references are linked in English where a localized page was not used."
+      ]
+    },
+    "post/WinGet を使ってコマンドでアプリをインストールする/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/WinGet を使ってコマンドでアプリをインストールする/index.md",
+      "sourceHash": "4c798334954189b79361ad970c7ce23e20efef0a971cc8936bcc8e5e9e60b3d7",
+      "translationHash": "ab924471c34b9a4cbc071cd8e143af18359f5b99eea28740da3491d68d26f60c",
+      "summary": "Compared the complete translation with the Japanese source and current Microsoft documentation; corrected platform support, the install/search workflow, package ID guidance, Paint.NET availability, and broken links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article with all twelve translations; updated the supported Windows versions, App Installer prerequisite, search-before-install workflow, and current Paint.NET availability."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked WinGet, App Installer, package ID, publisher, source, exact-match option, source terms and app license terminology in each language."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked every PowerShell command and package ID against current Microsoft Learn examples; replaced stale fixed IDs with search/show steps, used exact ID/source options, and verified Paint.NET ID in the current WinGet Community Repository."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Microsoft Learn overview/install/search references and the current Paint.NET manifest path in the WinGet Community Repository; repaired the malformed Docker Markdown link by removing the outdated static list."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Package IDs, availability, versions, sources, and UI registration timing can change; recheck the official documentation and current manifest before use.",
+        "Microsoft Learn references are linked in English where a localized page was not used."
+      ]
+    },
+    "post/WinGet を使ってコマンドでアプリをインストールする/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/WinGet を使ってコマンドでアプリをインストールする/index.md",
+      "sourceHash": "4c798334954189b79361ad970c7ce23e20efef0a971cc8936bcc8e5e9e60b3d7",
+      "translationHash": "eb9e06d7063ef04b2a8a6b9839f8d174403d9743673f8808daf85f0885fc0e41",
+      "summary": "Compared the complete translation with the Japanese source and current Microsoft documentation; corrected platform support, the install/search workflow, package ID guidance, Paint.NET availability, and broken links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article with all twelve translations; updated the supported Windows versions, App Installer prerequisite, search-before-install workflow, and current Paint.NET availability."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked WinGet, App Installer, package ID, publisher, source, exact-match option, source terms and app license terminology in each language."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked every PowerShell command and package ID against current Microsoft Learn examples; replaced stale fixed IDs with search/show steps, used exact ID/source options, and verified Paint.NET ID in the current WinGet Community Repository."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Microsoft Learn overview/install/search references and the current Paint.NET manifest path in the WinGet Community Repository; repaired the malformed Docker Markdown link by removing the outdated static list."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Package IDs, availability, versions, sources, and UI registration timing can change; recheck the official documentation and current manifest before use.",
+        "Microsoft Learn references are linked in English where a localized page was not used."
+      ]
+    },
+    "post/WinGet を使ってコマンドでアプリをインストールする/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/WinGet を使ってコマンドでアプリをインストールする/index.md",
+      "sourceHash": "4c798334954189b79361ad970c7ce23e20efef0a971cc8936bcc8e5e9e60b3d7",
+      "translationHash": "83805362ba549c66fe0d2e8df60372f3c7b8bdcdf7cbdd660d4934e57619d095",
+      "summary": "Compared the complete translation with the Japanese source and current Microsoft documentation; corrected platform support, the install/search workflow, package ID guidance, Paint.NET availability, and broken links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article with all twelve translations; updated the supported Windows versions, App Installer prerequisite, search-before-install workflow, and current Paint.NET availability."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked WinGet, App Installer, package ID, publisher, source, exact-match option, source terms and app license terminology in each language."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked every PowerShell command and package ID against current Microsoft Learn examples; replaced stale fixed IDs with search/show steps, used exact ID/source options, and verified Paint.NET ID in the current WinGet Community Repository."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Microsoft Learn overview/install/search references and the current Paint.NET manifest path in the WinGet Community Repository; repaired the malformed Docker Markdown link by removing the outdated static list."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Package IDs, availability, versions, sources, and UI registration timing can change; recheck the official documentation and current manifest before use.",
+        "Microsoft Learn references are linked in English where a localized page was not used."
+      ]
+    },
+    "post/WinGet を使ってコマンドでアプリをインストールする/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/WinGet を使ってコマンドでアプリをインストールする/index.md",
+      "sourceHash": "4c798334954189b79361ad970c7ce23e20efef0a971cc8936bcc8e5e9e60b3d7",
+      "translationHash": "7a6acc0bc6330f5010f6ae4ec0a597fbdc0c52d645a6ee697e65597f5eb2c0ec",
+      "summary": "Compared the complete translation with the Japanese source and current Microsoft documentation; corrected platform support, the install/search workflow, package ID guidance, Paint.NET availability, and broken links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article with all twelve translations; updated the supported Windows versions, App Installer prerequisite, search-before-install workflow, and current Paint.NET availability."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked WinGet, App Installer, package ID, publisher, source, exact-match option, source terms and app license terminology in each language."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked every PowerShell command and package ID against current Microsoft Learn examples; replaced stale fixed IDs with search/show steps, used exact ID/source options, and verified Paint.NET ID in the current WinGet Community Repository."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Microsoft Learn overview/install/search references and the current Paint.NET manifest path in the WinGet Community Repository; repaired the malformed Docker Markdown link by removing the outdated static list."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Package IDs, availability, versions, sources, and UI registration timing can change; recheck the official documentation and current manifest before use.",
+        "Microsoft Learn references are linked in English where a localized page was not used."
+      ]
+    },
+    "post/WinGet を使ってコマンドでアプリをインストールする/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/WinGet を使ってコマンドでアプリをインストールする/index.md",
+      "sourceHash": "4c798334954189b79361ad970c7ce23e20efef0a971cc8936bcc8e5e9e60b3d7",
+      "translationHash": "6898f3a600d2dc55effbc320ba6395a93a6ad64eab666f7204461dc428ba6961",
+      "summary": "Compared the complete translation with the Japanese source and current Microsoft documentation; corrected platform support, the install/search workflow, package ID guidance, Paint.NET availability, and broken links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article with all twelve translations; updated the supported Windows versions, App Installer prerequisite, search-before-install workflow, and current Paint.NET availability."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked WinGet, App Installer, package ID, publisher, source, exact-match option, source terms and app license terminology in each language."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked every PowerShell command and package ID against current Microsoft Learn examples; replaced stale fixed IDs with search/show steps, used exact ID/source options, and verified Paint.NET ID in the current WinGet Community Repository."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Microsoft Learn overview/install/search references and the current Paint.NET manifest path in the WinGet Community Repository; repaired the malformed Docker Markdown link by removing the outdated static list."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Package IDs, availability, versions, sources, and UI registration timing can change; recheck the official documentation and current manifest before use.",
+        "Microsoft Learn references are linked in English where a localized page was not used."
+      ]
+    },
+    "post/WinGet を使ってコマンドでアプリをインストールする/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/WinGet を使ってコマンドでアプリをインストールする/index.md",
+      "sourceHash": "4c798334954189b79361ad970c7ce23e20efef0a971cc8936bcc8e5e9e60b3d7",
+      "translationHash": "73b7ac4be0317d21ca052f968c7fdab8f1266ee0c16890aafdf399ca4795dfad",
+      "summary": "Compared the complete translation with the Japanese source and current Microsoft documentation; corrected platform support, the install/search workflow, package ID guidance, Paint.NET availability, and broken links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article with all twelve translations; updated the supported Windows versions, App Installer prerequisite, search-before-install workflow, and current Paint.NET availability."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked WinGet, App Installer, package ID, publisher, source, exact-match option, source terms and app license terminology in each language."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked every PowerShell command and package ID against current Microsoft Learn examples; replaced stale fixed IDs with search/show steps, used exact ID/source options, and verified Paint.NET ID in the current WinGet Community Repository."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Microsoft Learn overview/install/search references and the current Paint.NET manifest path in the WinGet Community Repository; repaired the malformed Docker Markdown link by removing the outdated static list."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Package IDs, availability, versions, sources, and UI registration timing can change; recheck the official documentation and current manifest before use.",
+        "Microsoft Learn references are linked in English where a localized page was not used."
+      ]
+    }
+  }
+}
