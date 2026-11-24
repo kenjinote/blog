@@ -1,30 +1,34 @@
 ---
-title: 'كيفية البدء وخطوات تشغيل الأمثلة في مكتبة واجهة المستخدم الرسومية الخفيفة ''egui'' للغة Rust'
-date: "2026-09-24T19:44:38+09:00"
+title: "البدء باستخدام egui في Rust عبر قالب eframe"
 slug: "eguiを使ってみる"
 date: 2023-03-18T10:27:02+09:00
+lastmod: 2026-11-24T00:00:00+09:00
 tags: ["rust", "egui", "مكتبة GUI"]
 draft: false
 image: "demo.gif"
 categories: ["it-technology"]
-description: 'نقدم كيفية الاستخدام الأساسي لمكتبة واجهة المستخدم الرسومية (GUI) ''egui'' والتي يمكن التعامل معها بسهولة في لغة Rust. نشرح خطوات بسيطة بدءًا من استنساخ القالب من GitHub وحتى تشغيل تطبيق المثال باستخدام أمر cargo run.'
+description: "تعريف بمكتبة egui وإطارها الرسمي eframe، ثم تشغيل قالب البدء."
 ---
 
 # ما هو egui
 
-إنها مكتبة واجهة مستخدم رسومية يمكن استخدامها مع rust.
+egui مكتبة واجهات رسومية بنمط فوري للغة Rust. يدمج إطار eframe الرسمي تطبيقات egui لتشغيلها محليًا أو على الويب.
 
 # تجربة egui
 
 يمكنك تشغيل نموذج egui بالأوامر التالية.
 
 ```
-git clone https://github.com/emilk/eframe_template/ egui_test
+git clone https://github.com/emilk/eframe_template.git egui_test
 cd egui_test
-cargo run
+cargo run --release
 ```
 
 بعد ذلك، يمكنك تجربة أشياء مختلفة أثناء التعديل على الكود النموذجي.
 
 # مرجع
-[المستودع الرسمي على github](https://github.com/emilk/egui)
+[egui GitHub](https://github.com/emilk/egui)
+[قالب eframe الرسمي](https://github.com/emilk/eframe_template)
+[وثائق egui](https://docs.rs/egui/latest/egui/)
+[قالب eframe الرسمي](https://github.com/emilk/eframe_template)
+[وثائق egui](https://docs.rs/egui/latest/egui/)

@@ -1,0 +1,455 @@
+{
+  "version": 1,
+  "batch": 126,
+  "article": "Rust eguiと公式eframeテンプレート",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "e6b2ca3125e663ef98a1265082fc949d3494f0c616c5b787fbd597ed75f872bb",
+  "sources": [
+    "https://github.com/emilk/egui",
+    "https://github.com/emilk/eframe_template",
+    "https://docs.rs/egui/latest/egui/",
+    "https://www.rust-lang.org/tools/install"
+  ],
+  "scope": "Compared the full Japanese article and all twelve translations against current official egui, eframe template, API, and Rust setup references; reviewed terminology, commands, and links.",
+  "findings": [
+    "Removed duplicate future dates, retained original publication date 2023-03-18, set lastmod to review date, and corrected the Japanese rust tag typo.",
+    "Clarified the distinction between egui as the GUI library and eframe as its official app framework/integration.",
+    "Updated the template clone URL and sample command to match the current upstream getting-started instructions.",
+    "Added the official template and API reference links in every language."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/eguiを使ってみる/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/eguiを使ってみる/index.md",
+      "sourceHash": "e6b2ca3125e663ef98a1265082fc949d3494f0c616c5b787fbd597ed75f872bb",
+      "translationHash": "33fdf9e31a0e83d2a16d6f8eecffcb6ccf5a028c252e4bbbd26d8cfa8f88aadc",
+      "summary": "Updated the tutorial against current official egui and eframe material, clarified their roles, and refreshed the sample command and links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Clarified from official egui/eframe documentation that egui is the immediate-mode GUI library and eframe is the app framework/integration for native or web targets."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Rust, egui, immediate mode, eframe, native application, and Cargo terminology across all locales."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No formulas or calculations appear in this tutorial."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked the clone target and Cargo release command against the current upstream template README. Commands were statically reviewed, not executed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official egui repository, eframe template, and egui API documentation links; retained localized Rust-language article references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Commands were not executed; compilation may require platform-specific dependencies.",
+        "The upstream template and dependency versions change over time; follow its current README."
+      ]
+    },
+    "post/eguiを使ってみる/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/eguiを使ってみる/index.md",
+      "sourceHash": "e6b2ca3125e663ef98a1265082fc949d3494f0c616c5b787fbd597ed75f872bb",
+      "translationHash": "32c486a5e2947b507f77ee83de936ae0d2353ced652c965b3488266fdc15b8a2",
+      "summary": "Updated the tutorial against current official egui and eframe material, clarified their roles, and refreshed the sample command and links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Clarified from official egui/eframe documentation that egui is the immediate-mode GUI library and eframe is the app framework/integration for native or web targets."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Rust, egui, immediate mode, eframe, native application, and Cargo terminology across all locales."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No formulas or calculations appear in this tutorial."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked the clone target and Cargo release command against the current upstream template README. Commands were statically reviewed, not executed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official egui repository, eframe template, and egui API documentation links; retained localized Rust-language article references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Commands were not executed; compilation may require platform-specific dependencies.",
+        "The upstream template and dependency versions change over time; follow its current README."
+      ]
+    },
+    "post/eguiを使ってみる/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/eguiを使ってみる/index.md",
+      "sourceHash": "e6b2ca3125e663ef98a1265082fc949d3494f0c616c5b787fbd597ed75f872bb",
+      "translationHash": "4022ba08c724309eba018a82f9b775860729335572b2d457c66c9098e866f8fb",
+      "summary": "Updated the tutorial against current official egui and eframe material, clarified their roles, and refreshed the sample command and links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Clarified from official egui/eframe documentation that egui is the immediate-mode GUI library and eframe is the app framework/integration for native or web targets."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Rust, egui, immediate mode, eframe, native application, and Cargo terminology across all locales."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No formulas or calculations appear in this tutorial."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked the clone target and Cargo release command against the current upstream template README. Commands were statically reviewed, not executed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official egui repository, eframe template, and egui API documentation links; retained localized Rust-language article references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Commands were not executed; compilation may require platform-specific dependencies.",
+        "The upstream template and dependency versions change over time; follow its current README."
+      ]
+    },
+    "post/eguiを使ってみる/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/eguiを使ってみる/index.md",
+      "sourceHash": "e6b2ca3125e663ef98a1265082fc949d3494f0c616c5b787fbd597ed75f872bb",
+      "translationHash": "99a334a05e81905992704f7bc4407bfe1c662024b0e17f34293d9386747425bd",
+      "summary": "Updated the tutorial against current official egui and eframe material, clarified their roles, and refreshed the sample command and links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Clarified from official egui/eframe documentation that egui is the immediate-mode GUI library and eframe is the app framework/integration for native or web targets."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Rust, egui, immediate mode, eframe, native application, and Cargo terminology across all locales."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No formulas or calculations appear in this tutorial."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked the clone target and Cargo release command against the current upstream template README. Commands were statically reviewed, not executed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official egui repository, eframe template, and egui API documentation links; retained localized Rust-language article references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Commands were not executed; compilation may require platform-specific dependencies.",
+        "The upstream template and dependency versions change over time; follow its current README."
+      ]
+    },
+    "post/eguiを使ってみる/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/eguiを使ってみる/index.md",
+      "sourceHash": "e6b2ca3125e663ef98a1265082fc949d3494f0c616c5b787fbd597ed75f872bb",
+      "translationHash": "3ca3bfc043c28ec52b57d311527b6956096e4fc70d0e168a8e9ae9fc3ad679bf",
+      "summary": "Updated the tutorial against current official egui and eframe material, clarified their roles, and refreshed the sample command and links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Clarified from official egui/eframe documentation that egui is the immediate-mode GUI library and eframe is the app framework/integration for native or web targets."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Rust, egui, immediate mode, eframe, native application, and Cargo terminology across all locales."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No formulas or calculations appear in this tutorial."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked the clone target and Cargo release command against the current upstream template README. Commands were statically reviewed, not executed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official egui repository, eframe template, and egui API documentation links; retained localized Rust-language article references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Commands were not executed; compilation may require platform-specific dependencies.",
+        "The upstream template and dependency versions change over time; follow its current README."
+      ]
+    },
+    "post/eguiを使ってみる/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/eguiを使ってみる/index.md",
+      "sourceHash": "e6b2ca3125e663ef98a1265082fc949d3494f0c616c5b787fbd597ed75f872bb",
+      "translationHash": "a72c0dddefc2da919950c2fc64e7901278e93cc72f75f8133193494fc5ad23b2",
+      "summary": "Updated the tutorial against current official egui and eframe material, clarified their roles, and refreshed the sample command and links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Clarified from official egui/eframe documentation that egui is the immediate-mode GUI library and eframe is the app framework/integration for native or web targets."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Rust, egui, immediate mode, eframe, native application, and Cargo terminology across all locales."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No formulas or calculations appear in this tutorial."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked the clone target and Cargo release command against the current upstream template README. Commands were statically reviewed, not executed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official egui repository, eframe template, and egui API documentation links; retained localized Rust-language article references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Commands were not executed; compilation may require platform-specific dependencies.",
+        "The upstream template and dependency versions change over time; follow its current README."
+      ]
+    },
+    "post/eguiを使ってみる/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/eguiを使ってみる/index.md",
+      "sourceHash": "e6b2ca3125e663ef98a1265082fc949d3494f0c616c5b787fbd597ed75f872bb",
+      "translationHash": "14d4dad3d70f28ace9cb91be5659ef53a1616d8e9c06173f014a23f7dc4b8e16",
+      "summary": "Updated the tutorial against current official egui and eframe material, clarified their roles, and refreshed the sample command and links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Clarified from official egui/eframe documentation that egui is the immediate-mode GUI library and eframe is the app framework/integration for native or web targets."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Rust, egui, immediate mode, eframe, native application, and Cargo terminology across all locales."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No formulas or calculations appear in this tutorial."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked the clone target and Cargo release command against the current upstream template README. Commands were statically reviewed, not executed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official egui repository, eframe template, and egui API documentation links; retained localized Rust-language article references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Commands were not executed; compilation may require platform-specific dependencies.",
+        "The upstream template and dependency versions change over time; follow its current README."
+      ]
+    },
+    "post/eguiを使ってみる/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/eguiを使ってみる/index.md",
+      "sourceHash": "e6b2ca3125e663ef98a1265082fc949d3494f0c616c5b787fbd597ed75f872bb",
+      "translationHash": "f797eb998f91958dfa9674eeaffda1e779b7a600e674276a0e8c25f82e2761f0",
+      "summary": "Updated the tutorial against current official egui and eframe material, clarified their roles, and refreshed the sample command and links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Clarified from official egui/eframe documentation that egui is the immediate-mode GUI library and eframe is the app framework/integration for native or web targets."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Rust, egui, immediate mode, eframe, native application, and Cargo terminology across all locales."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No formulas or calculations appear in this tutorial."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked the clone target and Cargo release command against the current upstream template README. Commands were statically reviewed, not executed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official egui repository, eframe template, and egui API documentation links; retained localized Rust-language article references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Commands were not executed; compilation may require platform-specific dependencies.",
+        "The upstream template and dependency versions change over time; follow its current README."
+      ]
+    },
+    "post/eguiを使ってみる/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/eguiを使ってみる/index.md",
+      "sourceHash": "e6b2ca3125e663ef98a1265082fc949d3494f0c616c5b787fbd597ed75f872bb",
+      "translationHash": "98ece8ffb7cf19a1ca7b649d44f47ad3952225a52e243760c301e7b89311c288",
+      "summary": "Updated the tutorial against current official egui and eframe material, clarified their roles, and refreshed the sample command and links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Clarified from official egui/eframe documentation that egui is the immediate-mode GUI library and eframe is the app framework/integration for native or web targets."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Rust, egui, immediate mode, eframe, native application, and Cargo terminology across all locales."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No formulas or calculations appear in this tutorial."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked the clone target and Cargo release command against the current upstream template README. Commands were statically reviewed, not executed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official egui repository, eframe template, and egui API documentation links; retained localized Rust-language article references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Commands were not executed; compilation may require platform-specific dependencies.",
+        "The upstream template and dependency versions change over time; follow its current README."
+      ]
+    },
+    "post/eguiを使ってみる/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/eguiを使ってみる/index.md",
+      "sourceHash": "e6b2ca3125e663ef98a1265082fc949d3494f0c616c5b787fbd597ed75f872bb",
+      "translationHash": "7172029098bb4f86b5c83898a2664011d81631741a1334b1972fda699cbad3cd",
+      "summary": "Updated the tutorial against current official egui and eframe material, clarified their roles, and refreshed the sample command and links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Clarified from official egui/eframe documentation that egui is the immediate-mode GUI library and eframe is the app framework/integration for native or web targets."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Rust, egui, immediate mode, eframe, native application, and Cargo terminology across all locales."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No formulas or calculations appear in this tutorial."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked the clone target and Cargo release command against the current upstream template README. Commands were statically reviewed, not executed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official egui repository, eframe template, and egui API documentation links; retained localized Rust-language article references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Commands were not executed; compilation may require platform-specific dependencies.",
+        "The upstream template and dependency versions change over time; follow its current README."
+      ]
+    },
+    "post/eguiを使ってみる/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/eguiを使ってみる/index.md",
+      "sourceHash": "e6b2ca3125e663ef98a1265082fc949d3494f0c616c5b787fbd597ed75f872bb",
+      "translationHash": "5428ed63737aafd21ce315eca2d13e44ac6f224be06a34a1b8fe13533714858e",
+      "summary": "Updated the tutorial against current official egui and eframe material, clarified their roles, and refreshed the sample command and links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Clarified from official egui/eframe documentation that egui is the immediate-mode GUI library and eframe is the app framework/integration for native or web targets."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Rust, egui, immediate mode, eframe, native application, and Cargo terminology across all locales."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No formulas or calculations appear in this tutorial."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked the clone target and Cargo release command against the current upstream template README. Commands were statically reviewed, not executed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official egui repository, eframe template, and egui API documentation links; retained localized Rust-language article references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Commands were not executed; compilation may require platform-specific dependencies.",
+        "The upstream template and dependency versions change over time; follow its current README."
+      ]
+    },
+    "post/eguiを使ってみる/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/eguiを使ってみる/index.md",
+      "sourceHash": "e6b2ca3125e663ef98a1265082fc949d3494f0c616c5b787fbd597ed75f872bb",
+      "translationHash": "c1625ebc9a8c0d9a6ae093a740914f77132b091f43496b685b2e67c6c67d3e7e",
+      "summary": "Updated the tutorial against current official egui and eframe material, clarified their roles, and refreshed the sample command and links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Clarified from official egui/eframe documentation that egui is the immediate-mode GUI library and eframe is the app framework/integration for native or web targets."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Rust, egui, immediate mode, eframe, native application, and Cargo terminology across all locales."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No formulas or calculations appear in this tutorial."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked the clone target and Cargo release command against the current upstream template README. Commands were statically reviewed, not executed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official egui repository, eframe template, and egui API documentation links; retained localized Rust-language article references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Commands were not executed; compilation may require platform-specific dependencies.",
+        "The upstream template and dependency versions change over time; follow its current README."
+      ]
+    }
+  }
+}

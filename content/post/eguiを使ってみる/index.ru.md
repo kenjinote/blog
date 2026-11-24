@@ -1,30 +1,34 @@
 ---
-title: 'Как начать работу с легкой GUI-библиотекой Rust «egui» и шаги по запуску примера'
-date: "2026-09-24T19:44:38+09:00"
+title: "Начало работы с egui в Rust на шаблоне eframe"
 slug: "eguiを使ってみる"
 date: 2023-03-18T10:27:02+09:00
+lastmod: 2026-11-24T00:00:00+09:00
 tags: ["rust", "egui", "GUI библиотека"]
 draft: false
 image: "demo.gif"
 categories: ["it-technology"]
-description: 'Представлены основы использования GUI-библиотеки «egui», с которой легко работать в Rust. Описаны простые шаги: от клонирования шаблона с GitHub до запуска и выполнения примера приложения с помощью команды cargo run.'
+description: "Знакомство с egui и официальным фреймворком eframe, затем запуск шаблона."
 ---
 
 # Что такое egui
 
-Это библиотека GUI, которую можно использовать с rust.
+egui — GUI-библиотека для Rust в режиме immediate mode. Фреймворк eframe интегрирует приложения egui для запуска локально или в интернете.
 
 # Пробуем egui
 
 Вы можете запустить пример egui с помощью следующих команд.
 
 ```
-git clone https://github.com/emilk/eframe_template/ egui_test
+git clone https://github.com/emilk/eframe_template.git egui_test
 cd egui_test
-cargo run
+cargo run --release
 ```
 
 После этого вы можете пробовать разные вещи, играя с примером кода.
 
 # Ссылки
-[Официальный репозиторий на github](https://github.com/emilk/egui)
+[egui GitHub](https://github.com/emilk/egui)
+[Официальный шаблон eframe](https://github.com/emilk/eframe_template)
+[Документация egui](https://docs.rs/egui/latest/egui/)
+[Официальный шаблон eframe](https://github.com/emilk/eframe_template)
+[Документация egui](https://docs.rs/egui/latest/egui/)

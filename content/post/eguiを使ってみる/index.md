@@ -1,31 +1,34 @@
 ---
-title: 'Rustの軽量GUIライブラリ「egui」の始め方とサンプル実行手順'
-date: "2026-09-24T19:44:38+09:00"
+title: "Rustのeguiを始める：eframeテンプレートでサンプル実行"
 slug: "eguiを使ってみる"
 date: 2023-03-18T10:27:02+09:00
-tags: ["rsut", "egui", "GUIライブラリ"]
+lastmod: 2026-11-24T00:00:00+09:00
+tags: ["rust", "egui", "GUIライブラリ"]
 draft: false
 image: "demo.gif"
 categories: ["it-technology"]
-description: 'Rustで手軽に扱えるGUIライブラリ「egui」の基本的な使い方を紹介します。GitHubからテンプレートをクローンし、cargo runコマンドでサンプルアプリを起動・実行するまでの簡単な手順を解説します。'
+description: "RustのGUIライブラリeguiと公式フレームワークeframeを紹介し、テンプレートからサンプルを実行します。"
 ---
 
 # eguiとは
 
-rustで使えるGUIライブラリです。
+eguiはRust向けの即時モードGUIライブラリです。公式フレームワークeframeはeguiアプリをネイティブまたはWebで動かす統合機能を提供します。
 
 # eguiを使ってみる
 
 下記のコマンドで、eguiのサンプルを実行できます。
 
 ```
-git clone https://github.com/emilk/eframe_template/ egui_test
+git clone https://github.com/emilk/eframe_template.git egui_test
 cd egui_test
-cargo run
+cargo run --release
 ```
 
 あとはサンプルコードを触りながらいろいろ試せます。
 
 # 参考
-[本家github](https://github.com/emilk/egui)
-
+[egui GitHub](https://github.com/emilk/egui)
+[公式eframeテンプレート](https://github.com/emilk/eframe_template)
+[egui APIドキュメント](https://docs.rs/egui/latest/egui/)
+[公式eframeテンプレート](https://github.com/emilk/eframe_template)
+[egui APIドキュメント](https://docs.rs/egui/latest/egui/)

@@ -1,30 +1,34 @@
 ---
-title: 'Rust की हल्की GUI लाइब्रेरी "egui" से शुरुआत कैसे करें और नमूना निष्पादन प्रक्रिया'
-date: "2026-09-24T19:44:38+09:00"
+title: "eframe टेम्पलेट से Rust egui शुरू करें"
 slug: "eguiを使ってみる"
 date: 2023-03-18T10:27:02+09:00
+lastmod: 2026-11-24T00:00:00+09:00
 tags: ["rsut", "egui", "जीयूआई लाइब्रेरी"]
 draft: false
 image: "demo.gif"
 categories: ["it-technology"]
-description: 'हम Rust में उपयोग में आसान GUI लाइब्रेरी "egui" के मूल उपयोग का परिचय देंगे। हम GitHub से टेम्प्लेट को क्लोन करने और cargo run कमांड के साथ नमूना ऐप को लॉन्च और निष्पादित करने के सरल चरणों की व्याख्या करेंगे。'
+description: "Rust GUI लाइब्रेरी egui और आधिकारिक फ़्रेमवर्क eframe का परिचय; फिर शुरुआती टेम्पलेट चलाएँ।"
 ---
 
 # egui क्या है
 
-यह एक GUI लाइब्रेरी है जिसका उपयोग [Rust](https://kenji.blog/hi/p/webassembly-wasm-current-future/) में किया जा सकता है।
+egui, Rust के लिए immediate-mode GUI लाइब्रेरी है। आधिकारिक फ़्रेमवर्क eframe, egui ऐप को native या web पर चलाने के लिए एकीकरण देता है।
 
 # egui का उपयोग करके देखें
 
 आप निम्नलिखित कमांड से egui के उदाहरण को चला सकते हैं।
 
 ```
-git clone https://github.com/emilk/eframe_template/ egui_test
+git clone https://github.com/emilk/eframe_template.git egui_test
 cd egui_test
-cargo run
+cargo run --release
 ```
 
 उसके बाद, आप उदाहरण कोड के साथ खेलते हुए विभिन्न चीजों का परीक्षण कर सकते हैं।
 
 # संदर्भ
-[आधिकारिक GitHub](https://github.com/emilk/egui)
+[egui GitHub](https://github.com/emilk/egui)
+[आधिकारिक eframe टेम्पलेट](https://github.com/emilk/eframe_template)
+[egui API दस्तावेज़](https://docs.rs/egui/latest/egui/)
+[आधिकारिक eframe टेम्पलेट](https://github.com/emilk/eframe_template)
+[egui API दस्तावेज़](https://docs.rs/egui/latest/egui/)

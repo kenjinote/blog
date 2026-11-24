@@ -1,30 +1,34 @@
 ---
-title: 'Comment débuter avec la bibliothèque GUI légère Rust « egui » et procédure d''exécution d''exemples'
-date: "2026-09-24T19:44:38+09:00"
+title: "Débuter avec egui en Rust à l’aide du modèle eframe"
 slug: "eguiを使ってみる"
 date: 2023-03-18T10:27:02+09:00
+lastmod: 2026-11-24T00:00:00+09:00
 tags: ["rsut", "egui", "Bibliothèque GUI"]
 draft: false
 image: "demo.gif"
 categories: ["it-technology"]
-description: 'Nous présentons l''utilisation de base de la bibliothèque GUI « egui », qui est facile à manipuler en Rust. Nous expliquons la procédure simple pour cloner un modèle depuis GitHub et lancer/exécuter l''application d''exemple avec la commande cargo run.'
+description: "Découvrez egui et son framework officiel eframe, puis lancez le modèle de démarrage."
 ---
 
 # Qu'est-ce que egui
 
-C'est une bibliothèque GUI qui peut être utilisée en [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/).
+egui est une bibliothèque GUI en mode immédiat pour Rust. Son framework officiel, eframe, intègre les applications pour une exécution native ou sur le web.
 
 # Essayer egui
 
 Vous pouvez exécuter l'exemple de egui avec les commandes suivantes.
 
 ```
-git clone https://github.com/emilk/eframe_template/ egui_test
+git clone https://github.com/emilk/eframe_template.git egui_test
 cd egui_test
-cargo run
+cargo run --release
 ```
 
 Ensuite, vous pouvez essayer diverses choses tout en jouant avec le code d'exemple.
 
 # Référence
-[GitHub officiel](https://github.com/emilk/egui)
+[egui GitHub](https://github.com/emilk/egui)
+[Modèle officiel eframe](https://github.com/emilk/eframe_template)
+[Documentation egui](https://docs.rs/egui/latest/egui/)
+[Modèle officiel eframe](https://github.com/emilk/eframe_template)
+[Documentation egui](https://docs.rs/egui/latest/egui/)
