@@ -1,110 +1,50 @@
 ---
-title: "Niels Henrik Abel: Das tragische Genie, das die Lösungsformel für Gleichungen fünften Grades widerlegte"
-description: "Niels Henrik Abel, ein brillanter norwegischer Mathematiker. Dieser Artikel untersucht sein turbulentes Leben und das monumentale Erbe, das er der modernen Mathematik vor seinem tragischen Tod im Alter von 26 Jahren hinterließ."
+title: "Niels Henrik Abel: Leben und mathematische Beiträge"
+description: "Ein belegter Überblick über Abels Leben, den Satz von Abel-Ruffini und seine Arbeiten zu elliptischen Funktionen und verwandten Gebieten."
 slug: "abel"
-date: "2026-09-20T19:20:00+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "biography"]
 tags: ["Abel", "Algebra", "Geschichte", "Mathematik"]
+date: "2026-09-20T19:20:00+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
+# Niels Henrik Abel: Leben und mathematische Beiträge
 
-# 1. Einführung: Das junge Genie [Abel](https://kenji.blog/de/p/abel/)
+## Herkunft und Ausbildung
 
-In der Geschichte der Mathematik gibt es einige Genies, die in jungen Jahren verstorben sind, aber einen entscheidenden Einfluss auf zukünftige Generationen hinterlassen haben. Unter ihnen ragt der norwegische Mathematiker **Niels Henrik Abel** neben [Évariste Galois](https://kenji.blog/de/p/galois/) als eines der berühmtesten tragischen Genies heraus. In seinem kurzen Leben von nur 26 Jahren bewies er, dass „es keine allgemeine algebraische Lösung für Gleichungen fünften oder höheren Grades gibt“, ein Problem, das Mathematiker seit Jahrhunderten geplagt hatte.
+Niels Henrik Abel wurde am 5. August 1802 auf Finnøy im Südwesten Norwegens geboren. Seine Familie zog 1804 nach Gjerstad, wo er aufwuchs. 1815 kam er im Alter von dreizehn Jahren auf die Kathedralschule in Christiania (heute Oslo) und erhielt Mathematikunterricht bei Bernt Michael Holmboe. Nach dem Tod seines Vaters 1820 geriet die Familie in finanzielle Schwierigkeiten. 1821 begann Abel sein Studium an der Königlichen Friedrichs-Universität; Lehrende unterstützten seine mathematische Ausbildung.
 
-In diesem Artikel werden wir uns mit Abels Leben befassen, das trotz Armut und Krankheit von seiner Leidenschaft für die Mathematik angetrieben wurde, und mit seinen monumentalen Errungenschaften wie „Abelschen Gruppen“ und „Abelschen Integralen“.
+## Die Gleichung fünften Grades und der Satz von Abel-Ruffini
 
-# 2. [Abel](https://kenji.blog/de/p/abel/)s Leben: Armut und das Erblühen des Talents
+1824 veröffentlichte Abel auf eigene Kosten eine Schrift, die zeigte, dass die allgemeine Gleichung fünften Grades nicht durch Radikale lösbar ist. Sie gilt als erster vollständiger Beweis des Satzes von Abel-Ruffini. Der Satz schließt eine allgemeine Formel aus, die für jede Gleichung fünften oder höheren Grades ausschließlich Koeffizienten, Grundrechenarten und Radikale verwendet. Er besagt nicht, dass keine einzelne Gleichung fünften Grades durch Radikale lösbar ist; manche sind es. Für die allgemeine Form
 
-## 2.1 Frühe Kindheit und das Treffen mit seinem Mentor Holmboe
+$$ ax^5+bx^4+cx^3+dx^2+ex+f=0,\qquad a\ne0 $$
 
-Niels Henrik Abel wurde am 5. August 1802 in dem kleinen norwegischen Dorf Finnøy als Sohn eines Pastors geboren. Norwegen war zu dieser Zeit wirtschaftlich verarmt, und Abels Familie bildete da keine Ausnahme.
+gibt es keinen endlichen Radikalausdruck, der für beliebige Koeffizienten funktioniert. Paolo Ruffini hatte frühere Arbeiten veröffentlicht; Abels Beweis wurde als vollständig anerkannt.
 
-Sein Schicksal änderte sich maßgeblich, als er 1817 in die Kathedralschule in Oslo eintrat und seinen Mathematiklehrer **Bernt Michael Holmboe** traf. Holmboe erkannte sofort Abels außergewöhnliches Talent und lehrte ihn fortgeschrittene Mathematik auf Universitätsniveau. Durch das Verschlingen der Werke von Meistern wie [Euler](/de/p/euler/), [Lagrange](/de/p/lagrange/) und Laplace nahm Abel schnell modernste Mathematik auf.
+## Studienreise und Crelles Journal
 
-```mermaid
-flowchart TD
-    A["1802: Geboren in Norwegen"] --> B["1817: Trifft Holmboe"]
-    B --> C["1821: Tritt in die Königliche Friedrichs-Universität ein"]
-    C --> D["1824: Veröffentlicht die Unmöglichkeit der Gleichung 5. Grades im Selbstverlag"]
-    D --> E["1825-1827: Europäische Studienreise (Berlin, Paris)"]
-    E --> F["1829: Stirbt mit 26 Jahren an Tuberkulose"]
-```
+1825 trat Abel mit einem staatlichen Reisestipendium eine Studienreise an. Er änderte die Route und reiste zuerst nach Berlin. Dort freundete er sich mit dem mathematisch interessierten Ingenieur August Leopold Crelle an. Crelle trieb die Gründung einer mathematischen Forschungszeitschrift voran. Anfang 1826 erschien die erste Ausgabe des *Journal für die reine und angewandte Mathematik*, auch Crelles Journal genannt. Abel veröffentlichte dort zahlreiche Arbeiten und wurde in der mathematischen Gemeinschaft bekannt.
 
-## 2.2 Der Tod seines Vaters und eine schwere Last
+## Die Pariser Abhandlung und verspätete Anerkennung
 
-Im Jahr 1820, als Abel 18 Jahre alt war, verstarb sein Vater. Sein Vater hatte politische Konflikte verschärft und starb mit hohen Schulden. Infolgedessen musste Abel die schwere Verantwortung übernehmen, seine Mutter und sechs Geschwister zu ernähren. Trotz extremer Armut trat er mit Unterstützung seines Mentors Holmboe und seiner Freunde 1821 in die Königliche Friedrichs-Universität (heute Universität Oslo) ein.
+1826 reichte Abel der Französischen Akademie der Wissenschaften in Paris eine umfangreiche Abhandlung über Integrale algebraischer Funktionen ein. Augustin-Louis Cauchy und Adrien-Marie Legendre wurden als Gutachter eingesetzt; Prüfung und Wiederauffinden des Manuskripts verzögerten sich jedoch. Das Manuskript wurde nach Abels Tod gefunden und 1841 gedruckt. Die Akademie verlieh der Abhandlung 1830 einen Preis. Die verfügbaren Quellen belegen keine absichtliche Behinderung.
 
-# 3. Die Unmöglichkeit der Lösungsformel für Gleichungen fünften Grades
+## Weitere mathematische Arbeiten
 
-Abels erste große Errungenschaft bezog sich auf algebraische Gleichungen. Für quadratische Gleichungen war seit der Antike eine Lösungsformel bekannt, und Formeln für Gleichungen dritten und vierten Grades wurden im Italien des 16. Jahrhunderts entdeckt. Danach konnte jedoch fast 300 Jahre lang niemand eine allgemeine Formel für die Gleichung fünften Grades finden.
+Abel leistete auch wichtige Beiträge zu elliptischen Funktionen, unendlichen Reihen und algebraischen Gleichungen. „Abelsche Gruppe“ ist eine spätere Bezeichnung für eine Gruppe mit kommutativer Verknüpfung. Abels Forschung prägte zudem die Theorien der Abelschen Integrale und Funktionen. Abels Grenzwertsatz besagt: Wenn die Reihe $\sum_{n=0}^{\infty}a_n$ konvergiert, gilt
 
-Zunächst dachte Abel, er hätte die Formel für die Gleichung fünften Grades entdeckt, und schrieb eine Arbeit. Während des Peer-Review-Prozesses durch Holmboe und andere erkannte er jedoch seinen Fehler. Daraufhin kam er auf die gegenteilige Idee: „Könnte es sein, dass es für Gleichungen vom Grad fünf und höher keine allgemeine Formel gibt, die nur die vier Grundrechenarten und Wurzeln verwendet?“
+$$ \lim_{r\to1^-}\sum_{n=0}^{\infty}a_n r^n=\sum_{n=0}^{\infty}a_n. $$
 
-Schließlich, im Jahr 1824, bewies er diese Tatsache vollständig. Heute ist dies als **Satz von Abel-Ruffini** bekannt (da der italienische Mathematiker Paolo Ruffini zuvor einen unvollständigen Beweis veröffentlicht hatte).
+## Rückkehr nach Norwegen und letzte Jahre
 
-$$ a x^5 + b x^4 + c x^3 + d x^2 + e x + f = 0 \quad (\text{Allgemeine Form der Gleichung fünften Grades}) $$
+Abel kehrte 1827 nach Norwegen zurück und forschte weiter, während er seinen Lebensunterhalt unter anderem durch befristete Lehrtätigkeit bestritt. Er erkrankte an Tuberkulose und starb am 6. April 1829 im Alter von 26 Jahren in Froland. In einem Brief vom 8. April teilte Crelle ihm mit, dass eine Stelle in Berlin gesichert sei; die Nachricht traf nach Abels Tod ein. Abels Mathematik und die schwierigen Bedingungen seiner Arbeit wirken bis heute nach.
 
-Es ist allgemein unmöglich, die Wurzeln dieser Gleichung in einer endlichen Anzahl von Termen auszudrücken, die nur $a, b, c, d, e, f$, die vier Grundrechenarten und Wurzeln verwenden.
+## Quellen
 
-# 4. Reise nach Europa und Treffen mit Crelle
-
-Im Jahr 1825 erhielt Abel ein Stipendium der norwegischen Regierung und hatte die Möglichkeit, auf dem europäischen Festland zu studieren. Sein Ziel war es, Paris, das damalige Zentrum der Mathematik, und Göttingen zu besuchen, wo der große Mathematiker [Carl Friedrich Gauss](https://kenji.blog/de/p/gauss/) lebte.
-
-Abel schickte seine Arbeit an Gauss, aber Gauss ignorierte sie, ohne sie überhaupt zu lesen. Da er die Hoffnung aufgab, Gauss zu treffen, reiste Abel nach Berlin.
-
-In Berlin lernte er **August Leopold Crelle** kennen, einen Bauingenieur und leidenschaftlichen Mathematik-Enthusiasten. Beeindruckt von Abels Talent, startete Crelle die weltweit erste spezialisierte Mathematikzeitschrift, *Journal für die reine und angewandte Mathematik* (allgemein bekannt als Crelles Journal). Abel trug mit mehreren Arbeiten zur Erstausgabe bei und machte seinen Namen in der europäischen mathematischen Gemeinschaft bekannt.
-
-# 5. Rückschlag in Paris und [Cauchy](https://kenji.blog/de/p/cauchy/)s Nachlässigkeit
-
-1826 kam Abel in Paris an. Hier reichte er der Französischen Akademie der Wissenschaften eine Arbeit über ein „Umfassendes Theorem über transzendente Funktionen“ ein, die als sein Meisterwerk angesehen werden könnte. Diese Arbeit enthielt bahnbrechende Inhalte, die später als **Abelsches Theorem** bekannt wurden.
-
-Das Unglück schlug jedoch erneut zu. Der große Mathematiker **[Augustin-Louis Cauchy](https://kenji.blog/de/p/cauchy/)**, der mit der Überprüfung beauftragt wurde, verlegte Abels Arbeit in einem Stapel von Dokumenten in seinem Zimmer und überprüfte sie nie.
-
-Getrieben von Verzweiflung, Geldmangel und der fortschreitenden Tuberkulose, war Abel gezwungen, Paris zu verlassen.
-
-# 6. Rückkehr in die Heimat und tragisches Ende
-
-Im Jahr 1827 erwartete Abel bei seiner Rückkehr nach Norwegen extreme Armut. Da er keine feste akademische Position finden konnte, schrieb er in der kurzen Zeit, die ihm noch blieb, verzweifelt an weiteren Arbeiten.
-
-Am 6. April 1829 verstarb Abel im Beisein seiner Verlobten und seiner Freunde im jungen Alter von 26 Jahren.
-
-Tragischerweise traf nur zwei Tage nach seinem Tod ein Brief von Crelle ein. Darin stand, dass **für Abel eine Mathematikprofessur an der Universität Berlin gesichert worden war**. Bis sein Talent die verdiente Anerkennung fand, war es bereits zu spät.
-
-# 7. [Abel](https://kenji.blog/de/p/abel/)s mathematisches Erbe
-
-Die Errungenschaften, die Abel hinterließ, haben in allen Bereichen der modernen Mathematik Wurzeln geschlagen.
-
-## 7.1 [Abel](https://kenji.blog/de/p/abel/)sche Gruppe
-
-In der abstrakten Algebra ist eine der grundlegendsten und wichtigsten Strukturen die „Gruppe“. Unter den Gruppen werden diejenigen, bei denen sich das Ergebnis nicht ändert, auch wenn die Reihenfolge der Operationen vertauscht wird, **Abelsche Gruppen** genannt.
-
-Per Definition wird eine Gruppe $G$ als Abelsche Gruppe bezeichnet, wenn das folgende Kommutativgesetz für alle Elemente $a, b$ in $G$ gilt:
-
-$$ a * b = b * a \quad (\text{Kommutativgesetz}) $$
-
-```mermaid
-flowchart LR
-    A["Gruppe"] --> B{"Gilt das Kommutativgesetz?"}
-    B -- "Ja: a*b = b*a" --> C["Abelsche Gruppe"]
-    B -- "Nein: a*b ≠ b*a" --> D["Nicht-Abelsche Gruppe"]
-    
-    C --> E["Beispiel: Ganze Zahlen mit Addition"]
-    D --> F["Beispiel: Matrizenmultiplikation"]
-```
-
-## 7.2 [Abel](https://kenji.blog/de/p/abel/)sche Integrale und [Abel](https://kenji.blog/de/p/abel/)sche Funktionen
-
-Das Thema von Abels Pariser Abhandlung, das **Abelsche Integral**, ist eine Verallgemeinerung von Integralen, die algebraische Funktionen beinhalten. Nach seinem Tod wurde diese Theorie von [Jacobi](/de/p/jacobi/) und anderen weiterentwickelt und wuchs zu großartigen Theorien wie den **Abelschen Varietäten** in der algebraischen Geometrie heran.
-
-## 7.3 [Abel](https://kenji.blog/de/p/abel/)scher Grenzwertsatz
-
-Abel hinterließ auch im Bereich der Analysis bedeutende Spuren. Es ist ein Satz bezüglich der Konvergenz unendlicher Reihen.
-
-$$ \lim_{x \to 1^-} \sum_{n=0}^{\infty} a_n x^n = \sum_{n=0}^{\infty} a_n \quad (\text{wenn die Reihe auf der rechten Seite konvergiert}) $$
-
-Dieser Satz wird noch heute häufig in Theorien wie der analytischen Fortsetzung und der asymptotischen Entwicklung verwendet.
-
-# 8. Fazit
-
-Niels Henrik Abels Leben passte wirklich zu dem Wort „Tragödie“. Die Leidenschaft, die er in die Mathematik steckte, und die zahlreichen Theoreme, die er hervorbrachte, werden jedoch niemals verblassen. Die von ihm hinterlassenen Theorien inspirieren Mathematiker bis zum heutigen Tag.
+- [Abel-Preis: Niels Henrik Abel](https://abelprize.no/page/about-niels-henrik-abel)
+- [Abel-Preis: Herkunft und Schulzeit](https://abelprize.no/page/biography-niels-henrik-abelupbringing-and-schooling)
+- [Abel-Preis: die Auslandsreise](https://abelprize.no/page/biography-niels-henrik-abel-great-journey-abroad)
+- [Abel-Preis: letzte Jahre](https://abelprize.no/page/biography-niels-henrik-abel-his-last-years)
+- [Store norske leksikon: Niels Henrik Abel](https://snl.no/Niels_Henrik_Abel)
+- [MacTutor: Niels Abel](https://mathshistory.st-andrews.ac.uk/Biographies/Abel/)

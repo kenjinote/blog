@@ -1,110 +1,50 @@
 ---
-title: "Niels Henrik Abel: The Tragic Genius Who Denied the Quintic Equation Formula"
-description: "Niels Henrik Abel, a brilliant mathematician from Norway. This article explores his turbulent life and the monumental legacy he left on modern mathematics before his tragic death at age 26."
+title: "Niels Henrik Abel: life and mathematical contributions"
+description: "A sourced account of Abel's life, the Abel–Ruffini theorem, and his work on elliptic functions and related mathematics."
 slug: "abel"
-date: "2026-09-20T19:20:00+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "biography"]
 tags: ["Abel", "Algebra", "History", "Math"]
+date: "2026-09-20T19:20:00+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
+# Niels Henrik Abel: life and mathematical contributions
 
-# 1. Introduction: The Young Genius [Abel](https://kenji.blog/en/p/abel/)
+## Early life and education
 
-In the history of mathematics, there are a few geniuses who passed away at a young age but left a decisive impact on future generations. Among them, the Norwegian-born **Niels Henrik Abel** stands alongside [Évariste Galois](https://kenji.blog/en/p/galois/) as one of the most famous tragic geniuses. In his short life of only 26 years, he proved that "there is no general algebraic solution for equations of degree five or higher," a problem that had plagued mathematicians for centuries.
+Niels Henrik Abel was born on August 5, 1802, on Finnøy in southwestern Norway. His family moved to Gjerstad in 1804, where he grew up. In 1815, at age thirteen, he entered the Cathedral School in Christiania (now Oslo) and studied mathematics with Bernt Michael Holmboe. When his father died in 1820, the family faced financial hardship. Abel entered the Royal Frederick University in 1821 and continued his mathematical studies with support from faculty members.
 
-In this article, we will delve into Abel's life, driven by his passion for mathematics despite poverty and illness, and his monumental achievements such as "Abelian groups" and "Abelian integrals."
+## The quintic and the Abel–Ruffini theorem
 
-# 2. [Abel](https://kenji.blog/en/p/abel/)'s Life: Poverty and the Blooming of Talent
+In 1824, Abel privately published a pamphlet demonstrating that the general quintic equation is not solvable by radicals. This is regarded as the first complete proof of the Abel–Ruffini theorem. The theorem rules out one universal formula, using only the coefficients, arithmetic operations, and radicals, that solves every equation of degree five or higher. It does not say that no individual quintic can be solved by radicals; some can. For the general form
 
-## 2.1 Early Childhood and Meeting His Mentor Holmboe
+$$ ax^5+bx^4+cx^3+dx^2+ex+f=0,\qquad a\ne0 $$
 
-Niels Henrik Abel was born on August 5, 1802, in the small Norwegian village of Finnøy, as the son of a pastor. Norway at the time was economically impoverished, and Abel's family was no exception.
+there is no finite radical expression that works for arbitrary coefficients. Paolo Ruffini had published earlier work on the problem, while Abel supplied a proof accepted as complete.
 
-His destiny changed significantly when he entered the Cathedral School in Oslo in 1817 and met his mathematics teacher, **Bernt Michael Holmboe**. Holmboe immediately recognized Abel's extraordinary talent and taught him university-level advanced mathematics. By devouring the works of masters like [Euler](/en/p/euler/), [Lagrange](/en/p/lagrange/), and Laplace, Abel quickly absorbed cutting-edge mathematics.
+## European study and Crelle's journal
 
-```mermaid
-flowchart TD
-    A["1802: Born in Norway"] --> B["1817: Meets Holmboe"]
-    B --> C["1821: Enters Royal Frederick University"]
-    C --> D["1824: Self-publishes the impossibility of the quintic equation"]
-    D --> E["1825-1827: European study tour (Berlin, Paris)"]
-    E --> F["1829: Dies of tuberculosis at age 26"]
-```
+In 1825, Abel set out on a study trip with a government scholarship. After changing his route, he went first to Berlin, where he befriended the mathematically interested engineer August Leopold Crelle. Crelle pursued the launch of a research journal in mathematics. Its first issue, *Journal für die reine und angewandte Mathematik* (often called Crelle's Journal), appeared in early 1826. Abel published many papers there and became known in the mathematical community.
 
-## 2.2 The Death of His Father and a Heavy Burden
+## The Paris memoir and delayed recognition
 
-In 1820, when Abel was 18, his father passed away. His father had deepened political conflicts and died leaving behind heavy debts. As a result, Abel had to bear the heavy responsibility of supporting his mother and six siblings. Despite extreme poverty, with the support of his mentor Holmboe and friends, he entered the Royal Frederick University (now the University of Oslo) in 1821.
+In 1826, Abel submitted a major memoir on integrals of algebraic functions to the French Academy of Sciences in Paris. Augustin-Louis Cauchy and Adrien-Marie Legendre were appointed as referees, but the review and recovery of the manuscript were delayed. The manuscript was found after Abel's death and printed in 1841. The Academy awarded the memoir a prize in 1830. The available sources do not establish that the delay was deliberate obstruction.
 
-# 3. The Impossibility of the Quintic Equation Formula
+## Other mathematical work
 
-Abel's first great achievement was related to algebraic equations. Quadratic equations have had a known solution formula since ancient times, and formulas for cubic and quartic equations were discovered in 16th-century Italy. However, no one could find a general formula for the quintic equation for nearly 300 years after that.
+Abel also made important contributions to elliptic functions, infinite series, and algebraic equations. “Abelian group” is a later name for a group whose operation is commutative. Abel's research also helped shape the theories of Abelian integrals and Abelian functions. Abel's limit theorem in analysis states that if the series $\sum_{n=0}^{\infty}a_n$ converges, then
 
-Initially, Abel thought he had discovered the formula for the quintic equation and wrote a paper. However, during the peer-review process by Holmboe and others, he realized his mistake. Subsequently, he arrived at the opposite idea: "Could it be that there is no general formula using only the four basic arithmetic operations and radicals for equations of degree five and above?"
+$$ \lim_{r\to1^-}\sum_{n=0}^{\infty}a_n r^n=\sum_{n=0}^{\infty}a_n. $$
 
-Finally, in 1824, he completely proved this fact. Today, this is known as the **Abel-Ruffini theorem** (since the Italian mathematician Paolo Ruffini had previously published an incomplete proof).
+## Return to Norway and final years
 
-$$ a x^5 + b x^4 + c x^3 + d x^2 + e x + f = 0 \quad (\text{General form of the quintic equation}) $$
+Abel returned to Norway in 1827 and continued working while supporting himself through temporary teaching and other work. He contracted tuberculosis and died in Froland on April 6, 1829, aged 26. In a letter dated April 8, Crelle told him that a position in Berlin had been secured; the news came after Abel's death. Abel's mathematical work and the difficult circumstances in which he pursued it have continued to shape the field.
 
-It is generally impossible to express the roots of this equation in a finite number of terms using only $a, b, c, d, e, f$, the four arithmetic operations, and radicals.
+## References
 
-# 4. Journey to Europe and Meeting Crelle
-
-In 1825, Abel obtained a scholarship from the Norwegian government and had the opportunity to study in continental Europe. His goal was to visit Paris, the center of mathematics at the time, and Göttingen, where the great mathematician [Carl Friedrich Gauss](https://kenji.blog/en/p/gauss/) resided.
-
-Abel sent his paper to Gauss, but Gauss ignored it without even reading it. Giving up on meeting Gauss, Abel headed to Berlin.
-
-In Berlin, he met **August Leopold Crelle**, a civil engineer and passionate mathematics enthusiast. Impressed by Abel's talent, Crelle launched the world's first specialized mathematics journal, *Journal für die reine und angewandte Mathematik* (commonly known as Crelle's Journal). Abel contributed multiple papers to its inaugural issue, making his name known in the European mathematical community.
-
-# 5. Setback in Paris and [Cauchy](https://kenji.blog/en/p/cauchy/)'s Neglect
-
-In 1826, Abel arrived in Paris. Here he submitted a paper to the French Academy of Sciences on a "Broad theorem concerning transcendental functions," which could be considered his masterpiece. This paper contained groundbreaking content that would later be known as **Abel's theorem**.
-
-However, misfortune struck again. The great mathematician **[Augustin-Louis Cauchy](https://kenji.blog/en/p/cauchy/)**, who was assigned to review it, misplaced Abel's paper in a pile of documents in his room and never reviewed it.
-
-Driven out by despair, lack of funds, and the creeping disease of tuberculosis, Abel was forced to leave Paris.
-
-# 6. Return Home and Tragic End
-
-In 1827, extreme poverty awaited Abel upon his return to Norway. Unable to find a permanent academic position, he wrote papers frantically in the little time he had left.
-
-On April 6, 1829, watched over by his fiancée and friends, Abel passed away at the young age of 26.
-
-Tragically, just two days after his death, a letter arrived from Crelle. It stated that **a mathematics professorship at the University of Berlin had been secured for Abel**. By the time his talent received its rightful recognition, it was already too late.
-
-# 7. [Abel](https://kenji.blog/en/p/abel/)'s Mathematical Legacy
-
-The achievements Abel left behind have taken root in all areas of modern mathematics.
-
-## 7.1 [Abel](https://kenji.blog/en/p/abel/)ian Group
-
-In abstract algebra, one of the most fundamental and important structures is the "Group". Among groups, those in which the result does not change even if the order of operations is swapped are called **Abelian groups**.
-
-By definition, a group $G$ is called an Abelian group if the following commutative law holds for any elements $a, b$ in $G$:
-
-$$ a * b = b * a \quad (\text{Commutative law}) $$
-
-```mermaid
-flowchart LR
-    A["Group"] --> B{"Does the commutative law hold?"}
-    B -- "Yes: a*b = b*a" --> C["Abelian Group"]
-    B -- "No: a*b ≠ b*a" --> D["Non-Abelian Group"]
-    
-    C --> E["Example: Integers with addition"]
-    D --> F["Example: Matrix multiplication"]
-```
-
-## 7.2 [Abel](https://kenji.blog/en/p/abel/)ian Integrals and [Abel](https://kenji.blog/en/p/abel/)ian Functions
-
-The subject of Abel's Paris memoir, the **Abelian integral**, is a generalization of integrals involving algebraic functions. After his death, this theory was developed by [Jacobi](/en/p/jacobi/) and others, growing into magnificent theories such as **Abelian varieties** in algebraic geometry.
-
-## 7.3 [Abel](https://kenji.blog/en/p/abel/)'s Limit Theorem
-
-Abel also left a significant mark in the field of analysis. It is a theorem regarding the convergence of infinite series.
-
-$$ \lim_{x \to 1^-} \sum_{n=0}^{\infty} a_n x^n = \sum_{n=0}^{\infty} a_n \quad (\text{if the series on the right side converges}) $$
-
-This theorem is still frequently used today in theories such as analytic continuation and asymptotic expansion.
-
-# 8. Conclusion
-
-Niels Henrik Abel's life was truly fitting of the word "tragedy." However, the passion he poured into mathematics and the numerous theorems he produced will never fade. The theories he left behind continue to provide new inspiration to mathematicians to this day.
+- [Abel Prize: Niels Henrik Abel](https://abelprize.no/page/about-niels-henrik-abel)
+- [Abel Prize: upbringing and schooling](https://abelprize.no/page/biography-niels-henrik-abelupbringing-and-schooling)
+- [Abel Prize: the journey abroad](https://abelprize.no/page/biography-niels-henrik-abel-great-journey-abroad)
+- [Abel Prize: his last years](https://abelprize.no/page/biography-niels-henrik-abel-his-last-years)
+- [Store norske leksikon: Niels Henrik Abel](https://snl.no/Niels_Henrik_Abel)
+- [MacTutor: Niels Abel](https://mathshistory.st-andrews.ac.uk/Biographies/Abel/)

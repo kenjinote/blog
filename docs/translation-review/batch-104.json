@@ -1,0 +1,459 @@
+{
+  "version": 1,
+  "batch": 104,
+  "article": "abel",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "12ca1e35a48d0c74347319473abc01dd4715e987ba0b84c9450a434bc53dcf96",
+  "sources": [
+    "https://abelprize.no/page/about-niels-henrik-abel",
+    "https://abelprize.no/page/biography-niels-henrik-abelupbringing-and-schooling",
+    "https://abelprize.no/page/biography-niels-henrik-abel-great-journey-abroad",
+    "https://abelprize.no/page/biography-niels-henrik-abel-his-last-years",
+    "https://snl.no/Niels_Henrik_Abel",
+    "https://mathshistory.st-andrews.ac.uk/Biographies/Abel/"
+  ],
+  "scope": "Rewrote the Japanese article and all twelve translations from the complete source. Cross-checked dates, schooling, university, travel, Crelle journal, Paris memoir, posthumous award/appointment, and death against Abel Prize and Norwegian reference sources. Corrected the Abel–Ruffini theorem's scope, distinguished individual solvable quintics from the general equation, qualified the history of the Paris review, and aligned the limit theorem and terminology.",
+  "findings": [
+    "Corrected school entry to 1815 and clarified the Finnøy-to-Gjerstad family chronology; removed unsupported political/character claims about Abel's father.",
+    "Clarified that the Abel–Ruffini theorem rules out a universal radical formula for the general equation of degree five or higher, not radical solutions for every individual quintic.",
+    "Replaced the claim that Crelle's journal was the world's first mathematics journal with a sourced account of its 1826 first issue and Abel's contributions.",
+    "Named both Paris referees, recorded the delayed review, posthumous recovery and 1841 printing, and removed unsupported attribution of deliberate negligence.",
+    "Qualified the Berlin appointment as announced in Crelle's posthumous letter; corrected timeline and dated events.",
+    "Explained that 'Abelian group' is a later eponym, verified the convergence condition of Abel's limit theorem, added six scholarly references, and normalized publication metadata."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/abel/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/abel/index.md",
+      "sourceHash": "12ca1e35a48d0c74347319473abc01dd4715e987ba0b84c9450a434bc53dcf96",
+      "translationHash": "d1220dc3a7fc203d969eacb2aa4e23f1d5b7b53d2416f049d5247727c60985d3",
+      "summary": "Compared all translated historical and mathematical claims with the Japanese source; clarified the theorem's scope, chronology, and uncertainty around the Paris review, and aligned the displayed limit theorem.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all translated historical and mathematical claims with the Japanese source; clarified the theorem's scope, chronology, and uncertainty around the Paris review, and aligned the displayed limit theorem."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Abel–Ruffini theorem, radicals, elliptic functions/integrals, Abelian group, Royal Frederick University, Christiania/Oslo, and localized personal/place names."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Qualified Abel–Ruffini to the general equation and radicals, gave a≠0, checked the commutative-group wording, and retained Abel's limit theorem with its convergence condition."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Abel Prize biography pages, Store norske leksikon, and MacTutor history references."
+        }
+      },
+      "limitations": [
+        "AI-assisted translation review; no human or native-speaker certification.",
+        "Biographical narrative was cross-checked against Abel Prize and Norwegian encyclopedia materials; no archival manuscript collation was performed.",
+        "Mathematical statements were checked for scope and notation; no full independent proof of the Abel–Ruffini theorem is included."
+      ]
+    },
+    "post/abel/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/abel/index.md",
+      "sourceHash": "12ca1e35a48d0c74347319473abc01dd4715e987ba0b84c9450a434bc53dcf96",
+      "translationHash": "75073a205151bc0ac5d3ea77f407c8d1cbd863475e380b5792cf340e90fca716",
+      "summary": "Compared all translated historical and mathematical claims with the Japanese source; clarified the theorem's scope, chronology, and uncertainty around the Paris review, and aligned the displayed limit theorem.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all translated historical and mathematical claims with the Japanese source; clarified the theorem's scope, chronology, and uncertainty around the Paris review, and aligned the displayed limit theorem."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Abel–Ruffini theorem, radicals, elliptic functions/integrals, Abelian group, Royal Frederick University, Christiania/Oslo, and localized personal/place names."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Qualified Abel–Ruffini to the general equation and radicals, gave a≠0, checked the commutative-group wording, and retained Abel's limit theorem with its convergence condition."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Abel Prize biography pages, Store norske leksikon, and MacTutor history references."
+        }
+      },
+      "limitations": [
+        "AI-assisted translation review; no human or native-speaker certification.",
+        "Biographical narrative was cross-checked against Abel Prize and Norwegian encyclopedia materials; no archival manuscript collation was performed.",
+        "Mathematical statements were checked for scope and notation; no full independent proof of the Abel–Ruffini theorem is included."
+      ]
+    },
+    "post/abel/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/abel/index.md",
+      "sourceHash": "12ca1e35a48d0c74347319473abc01dd4715e987ba0b84c9450a434bc53dcf96",
+      "translationHash": "9b55e79cd893499dd7892b1b7eb90d571355744b17c05b82c9053398027b8f84",
+      "summary": "Compared all translated historical and mathematical claims with the Japanese source; clarified the theorem's scope, chronology, and uncertainty around the Paris review, and aligned the displayed limit theorem.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all translated historical and mathematical claims with the Japanese source; clarified the theorem's scope, chronology, and uncertainty around the Paris review, and aligned the displayed limit theorem."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Abel–Ruffini theorem, radicals, elliptic functions/integrals, Abelian group, Royal Frederick University, Christiania/Oslo, and localized personal/place names."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Qualified Abel–Ruffini to the general equation and radicals, gave a≠0, checked the commutative-group wording, and retained Abel's limit theorem with its convergence condition."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Abel Prize biography pages, Store norske leksikon, and MacTutor history references."
+        }
+      },
+      "limitations": [
+        "AI-assisted translation review; no human or native-speaker certification.",
+        "Biographical narrative was cross-checked against Abel Prize and Norwegian encyclopedia materials; no archival manuscript collation was performed.",
+        "Mathematical statements were checked for scope and notation; no full independent proof of the Abel–Ruffini theorem is included."
+      ]
+    },
+    "post/abel/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/abel/index.md",
+      "sourceHash": "12ca1e35a48d0c74347319473abc01dd4715e987ba0b84c9450a434bc53dcf96",
+      "translationHash": "edbe42fb50e93c7bbd3a5790ab548351f24c0a7a34e8943a9311788d26b21759",
+      "summary": "Compared all translated historical and mathematical claims with the Japanese source; clarified the theorem's scope, chronology, and uncertainty around the Paris review, and aligned the displayed limit theorem.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all translated historical and mathematical claims with the Japanese source; clarified the theorem's scope, chronology, and uncertainty around the Paris review, and aligned the displayed limit theorem."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Abel–Ruffini theorem, radicals, elliptic functions/integrals, Abelian group, Royal Frederick University, Christiania/Oslo, and localized personal/place names."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Qualified Abel–Ruffini to the general equation and radicals, gave a≠0, checked the commutative-group wording, and retained Abel's limit theorem with its convergence condition."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Abel Prize biography pages, Store norske leksikon, and MacTutor history references."
+        }
+      },
+      "limitations": [
+        "AI-assisted translation review; no human or native-speaker certification.",
+        "Biographical narrative was cross-checked against Abel Prize and Norwegian encyclopedia materials; no archival manuscript collation was performed.",
+        "Mathematical statements were checked for scope and notation; no full independent proof of the Abel–Ruffini theorem is included."
+      ]
+    },
+    "post/abel/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/abel/index.md",
+      "sourceHash": "12ca1e35a48d0c74347319473abc01dd4715e987ba0b84c9450a434bc53dcf96",
+      "translationHash": "02132a77e55a432f8caf35c448e4428076eae313439a9c0df5b05e673c50e32e",
+      "summary": "Compared all translated historical and mathematical claims with the Japanese source; clarified the theorem's scope, chronology, and uncertainty around the Paris review, and aligned the displayed limit theorem.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all translated historical and mathematical claims with the Japanese source; clarified the theorem's scope, chronology, and uncertainty around the Paris review, and aligned the displayed limit theorem."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Abel–Ruffini theorem, radicals, elliptic functions/integrals, Abelian group, Royal Frederick University, Christiania/Oslo, and localized personal/place names."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Qualified Abel–Ruffini to the general equation and radicals, gave a≠0, checked the commutative-group wording, and retained Abel's limit theorem with its convergence condition."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Abel Prize biography pages, Store norske leksikon, and MacTutor history references."
+        }
+      },
+      "limitations": [
+        "AI-assisted translation review; no human or native-speaker certification.",
+        "Biographical narrative was cross-checked against Abel Prize and Norwegian encyclopedia materials; no archival manuscript collation was performed.",
+        "Mathematical statements were checked for scope and notation; no full independent proof of the Abel–Ruffini theorem is included."
+      ]
+    },
+    "post/abel/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/abel/index.md",
+      "sourceHash": "12ca1e35a48d0c74347319473abc01dd4715e987ba0b84c9450a434bc53dcf96",
+      "translationHash": "3521bfdc353128e2d86f37fc1ab28d361d1d11a3de824f1a3ab1c2c970ddbccd",
+      "summary": "Compared all translated historical and mathematical claims with the Japanese source; clarified the theorem's scope, chronology, and uncertainty around the Paris review, and aligned the displayed limit theorem.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all translated historical and mathematical claims with the Japanese source; clarified the theorem's scope, chronology, and uncertainty around the Paris review, and aligned the displayed limit theorem."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Abel–Ruffini theorem, radicals, elliptic functions/integrals, Abelian group, Royal Frederick University, Christiania/Oslo, and localized personal/place names."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Qualified Abel–Ruffini to the general equation and radicals, gave a≠0, checked the commutative-group wording, and retained Abel's limit theorem with its convergence condition."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Abel Prize biography pages, Store norske leksikon, and MacTutor history references."
+        }
+      },
+      "limitations": [
+        "AI-assisted translation review; no human or native-speaker certification.",
+        "Biographical narrative was cross-checked against Abel Prize and Norwegian encyclopedia materials; no archival manuscript collation was performed.",
+        "Mathematical statements were checked for scope and notation; no full independent proof of the Abel–Ruffini theorem is included."
+      ]
+    },
+    "post/abel/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/abel/index.md",
+      "sourceHash": "12ca1e35a48d0c74347319473abc01dd4715e987ba0b84c9450a434bc53dcf96",
+      "translationHash": "f6f482d8b28e6fe3af12e789bb76c3e71c3699b3c469399672a928b112b19ba8",
+      "summary": "Compared all translated historical and mathematical claims with the Japanese source; clarified the theorem's scope, chronology, and uncertainty around the Paris review, and aligned the displayed limit theorem.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all translated historical and mathematical claims with the Japanese source; clarified the theorem's scope, chronology, and uncertainty around the Paris review, and aligned the displayed limit theorem."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Abel–Ruffini theorem, radicals, elliptic functions/integrals, Abelian group, Royal Frederick University, Christiania/Oslo, and localized personal/place names."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Qualified Abel–Ruffini to the general equation and radicals, gave a≠0, checked the commutative-group wording, and retained Abel's limit theorem with its convergence condition."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Abel Prize biography pages, Store norske leksikon, and MacTutor history references."
+        }
+      },
+      "limitations": [
+        "AI-assisted translation review; no human or native-speaker certification.",
+        "Biographical narrative was cross-checked against Abel Prize and Norwegian encyclopedia materials; no archival manuscript collation was performed.",
+        "Mathematical statements were checked for scope and notation; no full independent proof of the Abel–Ruffini theorem is included."
+      ]
+    },
+    "post/abel/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/abel/index.md",
+      "sourceHash": "12ca1e35a48d0c74347319473abc01dd4715e987ba0b84c9450a434bc53dcf96",
+      "translationHash": "51025b19261e35371c4b739df89eaa3cfd6edcdbb5d5cc786b32a0ad79b0efb4",
+      "summary": "Compared all translated historical and mathematical claims with the Japanese source; clarified the theorem's scope, chronology, and uncertainty around the Paris review, and aligned the displayed limit theorem.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all translated historical and mathematical claims with the Japanese source; clarified the theorem's scope, chronology, and uncertainty around the Paris review, and aligned the displayed limit theorem."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Abel–Ruffini theorem, radicals, elliptic functions/integrals, Abelian group, Royal Frederick University, Christiania/Oslo, and localized personal/place names."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Qualified Abel–Ruffini to the general equation and radicals, gave a≠0, checked the commutative-group wording, and retained Abel's limit theorem with its convergence condition."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Abel Prize biography pages, Store norske leksikon, and MacTutor history references."
+        }
+      },
+      "limitations": [
+        "AI-assisted translation review; no human or native-speaker certification.",
+        "Biographical narrative was cross-checked against Abel Prize and Norwegian encyclopedia materials; no archival manuscript collation was performed.",
+        "Mathematical statements were checked for scope and notation; no full independent proof of the Abel–Ruffini theorem is included."
+      ]
+    },
+    "post/abel/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/abel/index.md",
+      "sourceHash": "12ca1e35a48d0c74347319473abc01dd4715e987ba0b84c9450a434bc53dcf96",
+      "translationHash": "626184ee5dbe8ed9573ee65425f6148fe36d8939c0d4774169597ff558a65c1d",
+      "summary": "Compared all translated historical and mathematical claims with the Japanese source; clarified the theorem's scope, chronology, and uncertainty around the Paris review, and aligned the displayed limit theorem.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all translated historical and mathematical claims with the Japanese source; clarified the theorem's scope, chronology, and uncertainty around the Paris review, and aligned the displayed limit theorem."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Abel–Ruffini theorem, radicals, elliptic functions/integrals, Abelian group, Royal Frederick University, Christiania/Oslo, and localized personal/place names."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Qualified Abel–Ruffini to the general equation and radicals, gave a≠0, checked the commutative-group wording, and retained Abel's limit theorem with its convergence condition."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Abel Prize biography pages, Store norske leksikon, and MacTutor history references."
+        }
+      },
+      "limitations": [
+        "AI-assisted translation review; no human or native-speaker certification.",
+        "Biographical narrative was cross-checked against Abel Prize and Norwegian encyclopedia materials; no archival manuscript collation was performed.",
+        "Mathematical statements were checked for scope and notation; no full independent proof of the Abel–Ruffini theorem is included."
+      ]
+    },
+    "post/abel/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/abel/index.md",
+      "sourceHash": "12ca1e35a48d0c74347319473abc01dd4715e987ba0b84c9450a434bc53dcf96",
+      "translationHash": "a05ec1fa0150d68196a320f884feeb2753247ea1cb495b49f98bf861c0509608",
+      "summary": "Compared all translated historical and mathematical claims with the Japanese source; clarified the theorem's scope, chronology, and uncertainty around the Paris review, and aligned the displayed limit theorem.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all translated historical and mathematical claims with the Japanese source; clarified the theorem's scope, chronology, and uncertainty around the Paris review, and aligned the displayed limit theorem."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Abel–Ruffini theorem, radicals, elliptic functions/integrals, Abelian group, Royal Frederick University, Christiania/Oslo, and localized personal/place names."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Qualified Abel–Ruffini to the general equation and radicals, gave a≠0, checked the commutative-group wording, and retained Abel's limit theorem with its convergence condition."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Abel Prize biography pages, Store norske leksikon, and MacTutor history references."
+        }
+      },
+      "limitations": [
+        "AI-assisted translation review; no human or native-speaker certification.",
+        "Biographical narrative was cross-checked against Abel Prize and Norwegian encyclopedia materials; no archival manuscript collation was performed.",
+        "Mathematical statements were checked for scope and notation; no full independent proof of the Abel–Ruffini theorem is included."
+      ]
+    },
+    "post/abel/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/abel/index.md",
+      "sourceHash": "12ca1e35a48d0c74347319473abc01dd4715e987ba0b84c9450a434bc53dcf96",
+      "translationHash": "6921e378648a5594890963dfd17073bba8deaf413e33917eb2ae221119055b9e",
+      "summary": "Compared all translated historical and mathematical claims with the Japanese source; clarified the theorem's scope, chronology, and uncertainty around the Paris review, and aligned the displayed limit theorem.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all translated historical and mathematical claims with the Japanese source; clarified the theorem's scope, chronology, and uncertainty around the Paris review, and aligned the displayed limit theorem."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Abel–Ruffini theorem, radicals, elliptic functions/integrals, Abelian group, Royal Frederick University, Christiania/Oslo, and localized personal/place names."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Qualified Abel–Ruffini to the general equation and radicals, gave a≠0, checked the commutative-group wording, and retained Abel's limit theorem with its convergence condition."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Abel Prize biography pages, Store norske leksikon, and MacTutor history references."
+        }
+      },
+      "limitations": [
+        "AI-assisted translation review; no human or native-speaker certification.",
+        "Biographical narrative was cross-checked against Abel Prize and Norwegian encyclopedia materials; no archival manuscript collation was performed.",
+        "Mathematical statements were checked for scope and notation; no full independent proof of the Abel–Ruffini theorem is included."
+      ]
+    },
+    "post/abel/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/abel/index.md",
+      "sourceHash": "12ca1e35a48d0c74347319473abc01dd4715e987ba0b84c9450a434bc53dcf96",
+      "translationHash": "05d4796544017bedf1be541692936c540aff66497a3b47792c2b1a59865ff94c",
+      "summary": "Compared all translated historical and mathematical claims with the Japanese source; clarified the theorem's scope, chronology, and uncertainty around the Paris review, and aligned the displayed limit theorem.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all translated historical and mathematical claims with the Japanese source; clarified the theorem's scope, chronology, and uncertainty around the Paris review, and aligned the displayed limit theorem."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Abel–Ruffini theorem, radicals, elliptic functions/integrals, Abelian group, Royal Frederick University, Christiania/Oslo, and localized personal/place names."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Qualified Abel–Ruffini to the general equation and radicals, gave a≠0, checked the commutative-group wording, and retained Abel's limit theorem with its convergence condition."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Abel Prize biography pages, Store norske leksikon, and MacTutor history references."
+        }
+      },
+      "limitations": [
+        "AI-assisted translation review; no human or native-speaker certification.",
+        "Biographical narrative was cross-checked against Abel Prize and Norwegian encyclopedia materials; no archival manuscript collation was performed.",
+        "Mathematical statements were checked for scope and notation; no full independent proof of the Abel–Ruffini theorem is included."
+      ]
+    }
+  }
+}

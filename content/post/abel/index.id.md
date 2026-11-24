@@ -1,110 +1,50 @@
 ---
-title: "Niels Henrik Abel: Jenius Tragis yang Menyangkal Rumus Persamaan Derajat Lima"
-description: "Niels Henrik Abel, seorang ahli matematika brilian dari Norwegia. Artikel ini mengeksplorasi kehidupannya yang penuh gejolak dan warisan monumental yang ia tinggalkan pada matematika modern sebelum kematian tragisnya di usia 26 tahun."
+title: "Niels Henrik Abel: kehidupan dan kontribusi matematis"
+description: "Ulasan bersumber tentang kehidupan Abel, teorema Abel–Ruffini, serta karyanya mengenai fungsi eliptik dan bidang terkait."
 slug: "abel"
-date: "2026-09-20T19:20:00+09:00"
 image: "eyecatch.jpg"
 categories: ["mathematics", "biography"]
 tags: ["Abel", "Aljabar", "Sejarah", "Matematika"]
+date: "2026-09-20T19:20:00+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
+# Niels Henrik Abel: kehidupan dan kontribusi matematis
 
-# 1. Pendahuluan: Jenius Muda [Abel](https://kenji.blog/id/p/abel/)
+## Kehidupan awal dan pendidikan
 
-Dalam sejarah matematika, ada beberapa jenius yang meninggal di usia muda namun meninggalkan dampak yang menentukan bagi generasi mendatang. Di antara mereka, **Niels Henrik Abel** kelahiran Norwegia menonjol, bersama [Évariste Galois](https://kenji.blog/id/p/galois/), sebagai salah satu jenius tragis yang paling terkenal. Dalam hidupnya yang singkat, hanya 26 tahun, ia membuktikan bahwa "tidak ada solusi aljabar umum untuk persamaan derajat lima atau lebih tinggi", sebuah masalah yang telah mengganggu para matematikawan selama berabad-abad.
+Niels Henrik Abel lahir pada 5 Agustus 1802 di Finnøy, barat daya Norwegia. Keluarganya pindah ke Gjerstad pada 1804 dan ia tumbuh di sana. Pada 1815, saat berusia tiga belas tahun, ia masuk Sekolah Katedral di Christiania (kini Oslo) dan belajar matematika dari Bernt Michael Holmboe. Setelah ayahnya meninggal pada 1820, keluarganya mengalami kesulitan keuangan. Abel masuk Royal Frederick University pada 1821 dan melanjutkan studi matematika dengan dukungan para pengajar.
 
-Dalam artikel ini, kita akan mempelajari kehidupan Abel, yang didorong oleh hasratnya terhadap matematika terlepas dari kemiskinan dan penyakit, serta pencapaian monumentalnya seperti "Grup Abelian" dan "Integral Abelian".
+## Persamaan kuintik dan teorema Abel–Ruffini
 
-# 2. Kehidupan [Abel](https://kenji.blog/id/p/abel/): Kemiskinan dan Mekarnya Bakat
+Pada 1824, Abel menerbitkan pamflet dengan biaya sendiri yang menunjukkan bahwa persamaan kuintik umum tidak dapat diselesaikan dengan radikal. Ini dianggap sebagai bukti lengkap pertama teorema Abel–Ruffini. Teorema tersebut meniadakan satu rumus umum yang hanya memakai koefisien, operasi aritmetika, dan radikal untuk menyelesaikan semua persamaan berderajat lima atau lebih. Teorema itu tidak menyatakan bahwa setiap kuintik tertentu mustahil diselesaikan dengan radikal; sebagian dapat diselesaikan. Untuk bentuk umum
 
-## 2.1 Masa Kecil dan Pertemuan dengan Mentornya Holmboe
+$$ ax^5+bx^4+cx^3+dx^2+ex+f=0,\qquad a\ne0 $$
 
-Niels Henrik Abel lahir pada 5 Agustus 1802, di desa kecil Finnøy, Norwegia, sebagai putra seorang pendeta. Norwegia pada saat itu miskin secara ekonomi, dan keluarga Abel tidak terkecuali.
+tidak ada ekspresi radikal berhingga yang berlaku untuk koefisien sembarang. Paolo Ruffini telah menerbitkan karya lebih awal; bukti Abel diterima sebagai lengkap.
 
-Takdirnya berubah secara signifikan ketika ia memasuki Sekolah Katedral di Oslo pada tahun 1817 dan bertemu dengan guru matematikanya, **Bernt Michael Holmboe**. Holmboe segera mengenali bakat luar biasa Abel dan mengajarinya matematika tingkat lanjut setingkat universitas. Dengan melahap karya-karya master seperti [Euler](/id/p/euler/), [Lagrange](/id/p/lagrange/), dan Laplace, Abel dengan cepat menyerap matematika mutakhir.
+## Perjalanan studi di Eropa dan jurnal Crelle
 
-```mermaid
-flowchart TD
-    A["1802: Lahir di Norwegia"] --> B["1817: Bertemu Holmboe"]
-    B --> C["1821: Masuk Royal Frederick University"]
-    C --> D["1824: Menerbitkan sendiri kemustahilan persamaan derajat lima"]
-    D --> E["1825-1827: Tur studi Eropa (Berlin, Paris)"]
-    E --> F["1829: Meninggal karena TBC pada usia 26 tahun"]
-```
+Pada 1825, Abel berangkat untuk belajar di Eropa dengan beasiswa pemerintah. Ia mengubah rute dan pergi lebih dulu ke Berlin, tempat ia berteman dengan insinyur August Leopold Crelle yang tertarik pada matematika. Crelle mengupayakan penerbitan jurnal penelitian matematika. Edisi pertama *Journal für die reine und angewandte Mathematik*, yang dikenal sebagai Jurnal Crelle, terbit pada awal 1826. Abel menerbitkan banyak makalah di sana dan dikenal di kalangan matematikawan.
 
-## 2.2 Kematian Ayahnya dan Beban Berat
+## Memoar Paris dan pengakuan yang terlambat
 
-Pada tahun 1820, saat Abel berusia 18 tahun, ayahnya meninggal dunia. Ayahnya telah memperdalam konflik politik dan meninggal dengan meninggalkan banyak hutang. Akibatnya, Abel harus memikul tanggung jawab berat untuk menghidupi ibu dan enam saudara kandungnya. Meskipun berada dalam kemiskinan ekstrem, dengan dukungan mentornya Holmboe dan teman-temannya, ia masuk Royal Frederick University (kini University of Oslo) pada tahun 1821.
+Pada 1826, Abel mengirim memoar besar tentang integral fungsi aljabar ke Akademi Ilmu Pengetahuan Prancis di Paris. Augustin-Louis Cauchy dan Adrien-Marie Legendre ditunjuk sebagai penilai, tetapi pemeriksaan dan penemuan kembali naskah tertunda. Naskah ditemukan setelah Abel wafat dan dicetak pada 1841. Akademi memberi memoar itu penghargaan pada 1830. Sumber yang tersedia tidak membuktikan bahwa keterlambatan tersebut disengaja.
 
-# 3. Kemustahilan Rumus Persamaan Derajat Lima
+## Karya matematika lainnya
 
-Pencapaian besar pertama Abel berkaitan dengan persamaan aljabar. Persamaan kuadrat telah memiliki rumus penyelesaian yang diketahui sejak zaman kuno, dan rumus untuk persamaan pangkat tiga dan pangkat empat ditemukan di Italia pada abad ke-16. Namun, tidak ada yang bisa menemukan rumus umum untuk persamaan derajat lima (kuintik) selama hampir 300 tahun setelahnya.
+Abel juga memberi kontribusi penting pada fungsi eliptik, deret tak hingga, dan persamaan aljabar. “Grup Abelian” adalah sebutan yang muncul kemudian untuk grup dengan operasi komutatif. Riset Abel juga membantu membentuk teori integral dan fungsi Abelian. Teorema limit Abel menyatakan bahwa jika deret $\sum_{n=0}^{\infty}a_n$ konvergen, maka
 
-Awalnya, Abel mengira dia telah menemukan rumus persamaan derajat lima dan menulis sebuah makalah. Namun, selama proses tinjauan sejawat oleh Holmboe dan lainnya, dia menyadari kesalahannya. Selanjutnya, ia sampai pada gagasan yang berlawanan: "Mungkinkah tidak ada rumus umum yang hanya menggunakan empat operasi aritmatika dasar dan akar untuk persamaan berderajat lima dan lebih tinggi?"
+$$ \lim_{r\to1^-}\sum_{n=0}^{\infty}a_n r^n=\sum_{n=0}^{\infty}a_n. $$
 
-Akhirnya, pada tahun 1824, dia membuktikan fakta ini sepenuhnya. Saat ini, hal tersebut dikenal sebagai **Teorema Abel-Ruffini** (karena matematikawan Italia Paolo Ruffini sebelumnya telah menerbitkan bukti yang tidak lengkap).
+## Kembali ke Norwegia dan tahun-tahun terakhir
 
-$$ a x^5 + b x^4 + c x^3 + d x^2 + e x + f = 0 \quad (\text{Bentuk umum persamaan derajat lima}) $$
+Abel kembali ke Norwegia pada 1827 dan terus meneliti sambil menghidupi diri dengan pekerjaan mengajar sementara dan pekerjaan lain. Ia menderita tuberkulosis dan meninggal di Froland pada 6 April 1829, dalam usia 26 tahun. Dalam surat bertanggal 8 April, Crelle memberitahunya bahwa jabatan di Berlin telah dipastikan; kabar itu tiba setelah Abel wafat. Karya matematis Abel dan keadaan sulit yang ia hadapi terus memengaruhi bidang ini.
 
-Secara umum tidak mungkin menyatakan akar-akar persamaan ini dalam jumlah suku yang berhingga menggunakan hanya $a, b, c, d, e, f$, empat operasi aritmatika, dan akar.
+## Referensi
 
-# 4. Perjalanan ke Eropa dan Pertemuan dengan Crelle
-
-Pada tahun 1825, Abel memperoleh beasiswa dari pemerintah Norwegia dan memiliki kesempatan untuk belajar di benua Eropa. Tujuannya adalah mengunjungi Paris, pusat matematika saat itu, dan Göttingen, tempat tinggal matematikawan hebat [Carl Friedrich Gauss](https://kenji.blog/id/p/gauss/).
-
-Abel mengirimkan makalahnya ke Gauss, tetapi Gauss mengabaikannya tanpa membacanya. Menyerah untuk bertemu Gauss, Abel menuju ke Berlin.
-
-Di Berlin, dia bertemu **August Leopold Crelle**, seorang insinyur sipil dan penggemar berat matematika. Terkesan dengan bakat Abel, Crelle meluncurkan jurnal matematika khusus pertama di dunia, *Journal für die reine und angewandte Mathematik* (umumnya dikenal sebagai Jurnal Crelle). Abel menyumbangkan banyak makalah pada edisi perdananya, membuat namanya dikenal di komunitas matematika Eropa.
-
-# 5. Kemunduran di Paris dan Kelalaian [Cauchy](https://kenji.blog/id/p/cauchy/)
-
-Pada tahun 1826, Abel tiba di Paris. Di sini dia menyerahkan sebuah makalah kepada Akademi Ilmu Pengetahuan Prancis tentang "Teorema luas mengenai fungsi transenden", yang dapat dianggap sebagai mahakaryanya. Makalah ini berisi konten terobosan yang kemudian dikenal sebagai **Teorema Abel**.
-
-Namun, kemalangan kembali melanda. Matematikawan hebat **[Augustin-Louis Cauchy](https://kenji.blog/id/p/cauchy/)**, yang ditugaskan untuk meninjaunya, salah meletakkan makalah Abel di tumpukan dokumen di kamarnya dan tidak pernah meninjaunya.
-
-Terdorong oleh keputusasaan, kekurangan dana, dan penyakit tuberkulosis yang semakin parah, Abel terpaksa meninggalkan Paris.
-
-# 6. Pulang ke Rumah dan Akhir yang Tragis
-
-Pada tahun 1827, kemiskinan ekstrem menanti Abel setibanya di Norwegia. Karena tidak dapat menemukan posisi akademis permanen, dia menulis makalah dengan panik di sisa waktu yang dimilikinya.
-
-Pada tanggal 6 April 1829, diawasi oleh tunangan dan teman-temannya, Abel meninggal dunia di usia muda 26 tahun.
-
-Tragisnya, hanya dua hari setelah kematiannya, sepucuk surat tiba dari Crelle. Surat itu menyatakan bahwa **posisi profesor matematika di Universitas Berlin telah diamankan untuk Abel**. Pada saat bakatnya menerima pengakuan yang selayaknya, semuanya sudah terlambat.
-
-# 7. Warisan Matematika [Abel](https://kenji.blog/id/p/abel/)
-
-Pencapaian yang ditinggalkan Abel telah mengakar di semua bidang matematika modern.
-
-## 7.1 Grup [Abel](https://kenji.blog/id/p/abel/)ian
-
-Dalam aljabar abstrak, salah satu struktur yang paling mendasar dan penting adalah "Grup". Di antara grup-grup tersebut, grup yang hasilnya tidak berubah meskipun urutan operasinya ditukar disebut **Grup Abelian**.
-
-Berdasarkan definisi, suatu grup $G$ disebut grup Abelian jika hukum komutatif berikut berlaku untuk setiap elemen $a, b$ di $G$:
-
-$$ a * b = b * a \quad (\text{Hukum komutatif}) $$
-
-```mermaid
-flowchart LR
-    A["Grup"] --> B{"Apakah hukum komutatif berlaku?"}
-    B -- "Ya: a*b = b*a" --> C["Grup Abelian"]
-    B -- "Tidak: a*b ≠ b*a" --> D["Grup Non-Abelian"]
-    
-    C --> E["Contoh: Bilangan bulat dengan penjumlahan"]
-    D --> F["Contoh: Perkalian matriks"]
-```
-
-## 7.2 Integral [Abel](https://kenji.blog/id/p/abel/)ian dan Fungsi [Abel](https://kenji.blog/id/p/abel/)ian
-
-Subjek memoar Paris Abel, **Integral Abelian**, adalah perumuman integral yang melibatkan fungsi aljabar. Setelah kematiannya, teori ini dikembangkan oleh [Jacobi](/id/p/jacobi/) dan lainnya, berkembang menjadi teori-teori luar biasa seperti **Varietas Abelian** dalam geometri aljabar.
-
-## 7.3 Teorema Limit [Abel](https://kenji.blog/id/p/abel/)
-
-Abel juga meninggalkan jejak penting dalam bidang analisis. Ini adalah teorema mengenai konvergensi deret tak terhingga.
-
-$$ \lim_{x \to 1^-} \sum_{n=0}^{\infty} a_n x^n = \sum_{n=0}^{\infty} a_n \quad (\text{jika deret di ruas kanan konvergen}) $$
-
-Teorema ini masih sering digunakan sampai sekarang dalam teori-teori seperti kelanjutan analitik dan ekspansi asimtotik.
-
-# 8. Kesimpulan
-
-Kehidupan Niels Henrik Abel benar-benar cocok dengan kata "tragedi". Namun, hasrat yang dia curahkan ke dalam matematika dan banyak teorema yang dia hasilkan tidak akan pernah pudar. Teori-teori yang ditinggalkannya terus memberikan inspirasi baru bagi para matematikawan hingga saat ini.
+- [Abel Prize: Niels Henrik Abel](https://abelprize.no/page/about-niels-henrik-abel)
+- [Abel Prize: masa kecil dan sekolah](https://abelprize.no/page/biography-niels-henrik-abelupbringing-and-schooling)
+- [Abel Prize: perjalanan ke luar negeri](https://abelprize.no/page/biography-niels-henrik-abel-great-journey-abroad)
+- [Abel Prize: tahun-tahun terakhir](https://abelprize.no/page/biography-niels-henrik-abel-his-last-years)
+- [Store norske leksikon: Niels Henrik Abel](https://snl.no/Niels_Henrik_Abel)
+- [MacTutor: Niels Abel](https://mathshistory.st-andrews.ac.uk/Biographies/Abel/)

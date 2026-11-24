@@ -211,6 +211,20 @@ ARTICLES = {
         "markers": ["winget install", "hugo server", "--buildDrafts"],
         "date": "2022-09-05",
     },
+    104: {
+        "bundle": ROOT / "content/post/abel",
+        "slug": "abel",
+        "links": [
+            "https://abelprize.no/page/about-niels-henrik-abel",
+            "https://abelprize.no/page/biography-niels-henrik-abelupbringing-and-schooling",
+            "https://abelprize.no/page/biography-niels-henrik-abel-great-journey-abroad",
+            "https://abelprize.no/page/biography-niels-henrik-abel-his-last-years",
+            "https://snl.no/Niels_Henrik_Abel",
+            "https://mathshistory.st-andrews.ac.uk/Biographies/Abel/",
+        ],
+        "markers": ["1829"],
+        "date": "2026-09-20",
+    },
 }
 
 
@@ -276,7 +290,7 @@ def slug_key(value):
 parser = argparse.ArgumentParser()
 parser.add_argument("--ci-run", type=int, required=True)
 parser.add_argument("--commit", required=True)
-parser.add_argument("--max-batch", type=int, choices=(90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103), default=103)
+parser.add_argument("--max-batch", type=int, choices=(90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104), default=104)
 args = parser.parse_args()
 ARTICLES = {number: article for number, article in ARTICLES.items() if number <= args.max_batch}
 with urllib.request.urlopen(f"https://github.com/kenjinote/blog/actions/runs/{args.ci_run}", timeout=45) as response:
