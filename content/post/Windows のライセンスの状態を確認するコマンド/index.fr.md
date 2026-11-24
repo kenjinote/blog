@@ -1,13 +1,13 @@
 ---
 title: 'Comment vérifier l''état d''activation de la licence Windows ! Vérification facile en une seule commande'
-date: "2026-09-24T19:44:38+09:00"
 slug: "Windows のLicenceの状態を確認するCommande"
-date: 2025-04-14T00:41:45+09:00
+date: "2025-04-14T00:41:45+09:00"
+lastmod: "2026-11-25"
 tags: ["Windows", "Licence", "Invite de commandes"]
 draft: false
 image: "img_1.webp"
 categories: ["pc-gadgets"]
-description: 'Nous expliquons comment vérifier si la licence Windows est correctement activée. Nous présentons la procédure pour vérifier facilement les détails tels que la clé de produit, le type de licence et la date d''expiration, en exécutant simplement la commande ''slmgr'' depuis l''invite de commande.'
+description: 'Découvrez comment consulter le canal de licence et l’état d’activation de Windows avec les commandes slmgr intégrées (/dli, /dlv et /xpr), et pourquoi l’activation ne prouve pas le droit d’utiliser la licence.'
 ---
 
 # 【Windows】Comment vérifier l'état de la licence (1 commande suffit)
@@ -28,7 +28,7 @@ Lorsque vous exécutez cette commande, certaines informations sur la licence s'a
 
 ## Méthode d'exécution
 
-1. **Depuis le « Menu Démarrer », tapez « cmd », faites un clic droit sur Invite de commandes → « Exécuter en tant qu'administrateur »** .
+1. Recherchez « cmd » dans le menu Démarrer et ouvrez l’Invite de commandes. Les options `/dli`, `/dlv` et `/xpr` ne nécessitent pas de droits administrateur.
 
 2. Tapez ce qui suit dans l'invite de commandes et appuyez sur Entrée :
 
@@ -38,20 +38,22 @@ Lorsque vous exécutez cette commande, certaines informations sur la licence s'a
 
 3. Après avoir attendu quelques secondes, des informations de licence telles que les suivantes s'afficheront.
 
-   ![Écran de vérification de licence Windows](img.webp)
+   ![Fenêtre d’état de licence Windows](img.webp)
 
 ## Principales informations affichées
 
 * Une partie de la clé de produit
-* Type de licence (Détail, OEM, etc.)
-* État de la licence (Active, expirée, non authentifiée, etc.)
+* Canal de licence (Retail, OEM, etc.)
+* État de la licence (les champs varient selon l’édition et le canal)
 
 ## Et si vous souhaitez connaître des informations plus détaillées ?
 
 Il existe également des commandes telles que les suivantes :
 
 * `slmgr /dlv` : Affiche des informations de licence plus détaillées
-* `slmgr /xpr` : Affiche la date d'expiration de la licence (si elle est permanente, etc.)
+* `slmgr /xpr` : affiche la date d’expiration de l’activation
+
+`/xpr` affiche la date d’expiration de l’activation et sert surtout aux clients KMS ; les activations Retail et MAK sont généralement permanentes. `slmgr` ne vérifie pas que la licence Windows a été obtenue légalement. Sous Windows 11, vous pouvez aussi consulter l’état dans Paramètres > Système > Activation.
 
 ## Résumé
 
@@ -61,4 +63,9 @@ L'état de la licence Windows peut être facilement vérifié avec une seule com
 * **Vérification détaillée** : `slmgr /dlv`
 * **Vérification de la date d'expiration** : `slmgr /xpr`
 
-S'il y a un problème avec votre licence, il peut y avoir des restrictions sur les mises à jour et certaines fonctionnalités, il est donc sûr de la vérifier régulièrement.
+Si l’état affiché est inattendu, consultez les paramètres d’activation de Windows ou contactez le vendeur ou l’administrateur de votre organisation.
+
+## Références
+
+- [Slmgr.vbs options for obtaining volume activation information](https://learn.microsoft.com/en-us/windows-server/get-started/activation-slmgr-vbs-options)
+- [Activate Windows](https://support.microsoft.com/en-us/windows/activation/activate-windows)

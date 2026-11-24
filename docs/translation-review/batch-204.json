@@ -1,0 +1,454 @@
+{
+  "version": 1,
+  "batch": 204,
+  "article": "Check Windows activation and license status with slmgr",
+  "reviewedAt": "2026-11-25",
+  "sourceHash": "514a77ecc802899f9a276f8c55178d789c47dbe0f3132a846eecc6b9fd12d8bf",
+  "sources": [
+    "https://learn.microsoft.com/en-us/windows-server/get-started/activation-slmgr-vbs-options",
+    "https://support.microsoft.com/en-us/windows/activation/activate-windows"
+  ],
+  "scope": "Read the complete Japanese article and all twelve translations; compared command syntax and output claims for /dli, /dlv, and /xpr; checked administrator requirements, displayed key/channel/status fields, activation-versus-entitlement caveat, internal links, metadata, and images against Microsoft documentation.",
+  "findings": [
+    "Removed duplicate future dates, preserved the original publication date (2025-04-14), and set lastmod to 2026-11-25 in all editions.",
+    "Corrected the instructions: /dli, /dlv, and /xpr status queries do not require an elevated Command Prompt.",
+    "Clarified that output includes only a partial product key and channel/status fields can vary by Windows edition and licensing channel.",
+    "Clarified that /xpr reports activation expiration and is primarily useful for KMS clients; Retail and MAK activations are generally perpetual.",
+    "Added that slmgr does not validate whether a license was legitimately obtained and linked Microsoft Learn/Support guidance; removed the unrelated OAuth authentication cross-link."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/Windows のライセンスの状態を確認するコマンド/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/Windows のライセンスの状態を確認するコマンド/index.md",
+      "sourceHash": "514a77ecc802899f9a276f8c55178d789c47dbe0f3132a846eecc6b9fd12d8bf",
+      "translationHash": "1cd0690cf8097a81d123ded015b5be72f404f114287beb5b25c80e48a8b7822d",
+      "summary": "Compared the full translation with the Japanese source and current Microsoft documentation; removed unnecessary elevation, clarified /dli, /dlv, and /xpr behavior, distinguished activation status from license entitlement, and removed an unrelated OAuth cross-link.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete article, command descriptions, displayed fields, summary, and Windows activation guidance with the source; clarified activation status is not proof of license entitlement."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Software License Manager, partial product key, license channel, activation status, KMS, Retail, MAK, and activation expiration terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified the /dli, /dlv, and /xpr commands and confirmed these information queries do not require elevation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current Microsoft Learn slmgr options and Windows activation support references; removed the unrelated OAuth link and checked both local article images."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The fields shown vary by Windows edition and licensing channel. /xpr is primarily useful for KMS clients; Retail and MAK activation is generally perpetual.",
+        "slmgr reports activation/license information but does not validate whether the license was legitimately obtained. Microsoft guidance checked on 2026-11-25."
+      ]
+    },
+    "post/Windows のライセンスの状態を確認するコマンド/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/Windows のライセンスの状態を確認するコマンド/index.md",
+      "sourceHash": "514a77ecc802899f9a276f8c55178d789c47dbe0f3132a846eecc6b9fd12d8bf",
+      "translationHash": "aa0cbe4473d0c2c6e2b1ff339fe9bede0c287679209b60364f90cadda1a9c104",
+      "summary": "Compared the full translation with the Japanese source and current Microsoft documentation; removed unnecessary elevation, clarified /dli, /dlv, and /xpr behavior, distinguished activation status from license entitlement, and removed an unrelated OAuth cross-link.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete article, command descriptions, displayed fields, summary, and Windows activation guidance with the source; clarified activation status is not proof of license entitlement."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Software License Manager, partial product key, license channel, activation status, KMS, Retail, MAK, and activation expiration terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified the /dli, /dlv, and /xpr commands and confirmed these information queries do not require elevation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current Microsoft Learn slmgr options and Windows activation support references; removed the unrelated OAuth link and checked both local article images."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The fields shown vary by Windows edition and licensing channel. /xpr is primarily useful for KMS clients; Retail and MAK activation is generally perpetual.",
+        "slmgr reports activation/license information but does not validate whether the license was legitimately obtained. Microsoft guidance checked on 2026-11-25."
+      ]
+    },
+    "post/Windows のライセンスの状態を確認するコマンド/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/Windows のライセンスの状態を確認するコマンド/index.md",
+      "sourceHash": "514a77ecc802899f9a276f8c55178d789c47dbe0f3132a846eecc6b9fd12d8bf",
+      "translationHash": "85371bd8f496b658ead21f53552a6744cc9eaff15f9f6e6a1c6e5565e4ce20c7",
+      "summary": "Compared the full translation with the Japanese source and current Microsoft documentation; removed unnecessary elevation, clarified /dli, /dlv, and /xpr behavior, distinguished activation status from license entitlement, and removed an unrelated OAuth cross-link.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete article, command descriptions, displayed fields, summary, and Windows activation guidance with the source; clarified activation status is not proof of license entitlement."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Software License Manager, partial product key, license channel, activation status, KMS, Retail, MAK, and activation expiration terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified the /dli, /dlv, and /xpr commands and confirmed these information queries do not require elevation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current Microsoft Learn slmgr options and Windows activation support references; removed the unrelated OAuth link and checked both local article images."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The fields shown vary by Windows edition and licensing channel. /xpr is primarily useful for KMS clients; Retail and MAK activation is generally perpetual.",
+        "slmgr reports activation/license information but does not validate whether the license was legitimately obtained. Microsoft guidance checked on 2026-11-25."
+      ]
+    },
+    "post/Windows のライセンスの状態を確認するコマンド/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/Windows のライセンスの状態を確認するコマンド/index.md",
+      "sourceHash": "514a77ecc802899f9a276f8c55178d789c47dbe0f3132a846eecc6b9fd12d8bf",
+      "translationHash": "1b6b691bb0b6ad0b83ad042f378f2513ab348cb9d833fd8f58b9d7a09582200c",
+      "summary": "Compared the full translation with the Japanese source and current Microsoft documentation; removed unnecessary elevation, clarified /dli, /dlv, and /xpr behavior, distinguished activation status from license entitlement, and removed an unrelated OAuth cross-link.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete article, command descriptions, displayed fields, summary, and Windows activation guidance with the source; clarified activation status is not proof of license entitlement."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Software License Manager, partial product key, license channel, activation status, KMS, Retail, MAK, and activation expiration terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified the /dli, /dlv, and /xpr commands and confirmed these information queries do not require elevation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current Microsoft Learn slmgr options and Windows activation support references; removed the unrelated OAuth link and checked both local article images."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The fields shown vary by Windows edition and licensing channel. /xpr is primarily useful for KMS clients; Retail and MAK activation is generally perpetual.",
+        "slmgr reports activation/license information but does not validate whether the license was legitimately obtained. Microsoft guidance checked on 2026-11-25."
+      ]
+    },
+    "post/Windows のライセンスの状態を確認するコマンド/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/Windows のライセンスの状態を確認するコマンド/index.md",
+      "sourceHash": "514a77ecc802899f9a276f8c55178d789c47dbe0f3132a846eecc6b9fd12d8bf",
+      "translationHash": "1ec2b46d0e2f7a75b1d9e5958a3f5debd3712dabb6d724aab1ee46660141190f",
+      "summary": "Compared the full translation with the Japanese source and current Microsoft documentation; removed unnecessary elevation, clarified /dli, /dlv, and /xpr behavior, distinguished activation status from license entitlement, and removed an unrelated OAuth cross-link.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete article, command descriptions, displayed fields, summary, and Windows activation guidance with the source; clarified activation status is not proof of license entitlement."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Software License Manager, partial product key, license channel, activation status, KMS, Retail, MAK, and activation expiration terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified the /dli, /dlv, and /xpr commands and confirmed these information queries do not require elevation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current Microsoft Learn slmgr options and Windows activation support references; removed the unrelated OAuth link and checked both local article images."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The fields shown vary by Windows edition and licensing channel. /xpr is primarily useful for KMS clients; Retail and MAK activation is generally perpetual.",
+        "slmgr reports activation/license information but does not validate whether the license was legitimately obtained. Microsoft guidance checked on 2026-11-25."
+      ]
+    },
+    "post/Windows のライセンスの状態を確認するコマンド/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/Windows のライセンスの状態を確認するコマンド/index.md",
+      "sourceHash": "514a77ecc802899f9a276f8c55178d789c47dbe0f3132a846eecc6b9fd12d8bf",
+      "translationHash": "bdb12cdc0b992900452b1b93dc7bdec85d29daf2a4891bc10a0bad98decf88d3",
+      "summary": "Compared the full translation with the Japanese source and current Microsoft documentation; removed unnecessary elevation, clarified /dli, /dlv, and /xpr behavior, distinguished activation status from license entitlement, and removed an unrelated OAuth cross-link.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete article, command descriptions, displayed fields, summary, and Windows activation guidance with the source; clarified activation status is not proof of license entitlement."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Software License Manager, partial product key, license channel, activation status, KMS, Retail, MAK, and activation expiration terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified the /dli, /dlv, and /xpr commands and confirmed these information queries do not require elevation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current Microsoft Learn slmgr options and Windows activation support references; removed the unrelated OAuth link and checked both local article images."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The fields shown vary by Windows edition and licensing channel. /xpr is primarily useful for KMS clients; Retail and MAK activation is generally perpetual.",
+        "slmgr reports activation/license information but does not validate whether the license was legitimately obtained. Microsoft guidance checked on 2026-11-25."
+      ]
+    },
+    "post/Windows のライセンスの状態を確認するコマンド/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/Windows のライセンスの状態を確認するコマンド/index.md",
+      "sourceHash": "514a77ecc802899f9a276f8c55178d789c47dbe0f3132a846eecc6b9fd12d8bf",
+      "translationHash": "7df009c68bfcf11fd04d6cd8dda6d847df32dd4b80fa857d9212dfe0d491e01b",
+      "summary": "Compared the full translation with the Japanese source and current Microsoft documentation; removed unnecessary elevation, clarified /dli, /dlv, and /xpr behavior, distinguished activation status from license entitlement, and removed an unrelated OAuth cross-link.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete article, command descriptions, displayed fields, summary, and Windows activation guidance with the source; clarified activation status is not proof of license entitlement."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Software License Manager, partial product key, license channel, activation status, KMS, Retail, MAK, and activation expiration terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified the /dli, /dlv, and /xpr commands and confirmed these information queries do not require elevation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current Microsoft Learn slmgr options and Windows activation support references; removed the unrelated OAuth link and checked both local article images."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The fields shown vary by Windows edition and licensing channel. /xpr is primarily useful for KMS clients; Retail and MAK activation is generally perpetual.",
+        "slmgr reports activation/license information but does not validate whether the license was legitimately obtained. Microsoft guidance checked on 2026-11-25."
+      ]
+    },
+    "post/Windows のライセンスの状態を確認するコマンド/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/Windows のライセンスの状態を確認するコマンド/index.md",
+      "sourceHash": "514a77ecc802899f9a276f8c55178d789c47dbe0f3132a846eecc6b9fd12d8bf",
+      "translationHash": "fa32bbb252a3544d02650a664162ed906b49b404c4295a165ec5f806bc814f22",
+      "summary": "Compared the full translation with the Japanese source and current Microsoft documentation; removed unnecessary elevation, clarified /dli, /dlv, and /xpr behavior, distinguished activation status from license entitlement, and removed an unrelated OAuth cross-link.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete article, command descriptions, displayed fields, summary, and Windows activation guidance with the source; clarified activation status is not proof of license entitlement."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Software License Manager, partial product key, license channel, activation status, KMS, Retail, MAK, and activation expiration terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified the /dli, /dlv, and /xpr commands and confirmed these information queries do not require elevation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current Microsoft Learn slmgr options and Windows activation support references; removed the unrelated OAuth link and checked both local article images."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The fields shown vary by Windows edition and licensing channel. /xpr is primarily useful for KMS clients; Retail and MAK activation is generally perpetual.",
+        "slmgr reports activation/license information but does not validate whether the license was legitimately obtained. Microsoft guidance checked on 2026-11-25."
+      ]
+    },
+    "post/Windows のライセンスの状態を確認するコマンド/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/Windows のライセンスの状態を確認するコマンド/index.md",
+      "sourceHash": "514a77ecc802899f9a276f8c55178d789c47dbe0f3132a846eecc6b9fd12d8bf",
+      "translationHash": "276144949a997c9dd5f79bf3ba42ed55624b48d63a4ebcc1c3b7481bb40e08b3",
+      "summary": "Compared the full translation with the Japanese source and current Microsoft documentation; removed unnecessary elevation, clarified /dli, /dlv, and /xpr behavior, distinguished activation status from license entitlement, and removed an unrelated OAuth cross-link.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete article, command descriptions, displayed fields, summary, and Windows activation guidance with the source; clarified activation status is not proof of license entitlement."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Software License Manager, partial product key, license channel, activation status, KMS, Retail, MAK, and activation expiration terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified the /dli, /dlv, and /xpr commands and confirmed these information queries do not require elevation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current Microsoft Learn slmgr options and Windows activation support references; removed the unrelated OAuth link and checked both local article images."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The fields shown vary by Windows edition and licensing channel. /xpr is primarily useful for KMS clients; Retail and MAK activation is generally perpetual.",
+        "slmgr reports activation/license information but does not validate whether the license was legitimately obtained. Microsoft guidance checked on 2026-11-25."
+      ]
+    },
+    "post/Windows のライセンスの状態を確認するコマンド/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/Windows のライセンスの状態を確認するコマンド/index.md",
+      "sourceHash": "514a77ecc802899f9a276f8c55178d789c47dbe0f3132a846eecc6b9fd12d8bf",
+      "translationHash": "4a4715b91270262001ede03a9b4c3882f821a4d01df1ccfc4c85dca3bc9e7d63",
+      "summary": "Compared the full translation with the Japanese source and current Microsoft documentation; removed unnecessary elevation, clarified /dli, /dlv, and /xpr behavior, distinguished activation status from license entitlement, and removed an unrelated OAuth cross-link.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete article, command descriptions, displayed fields, summary, and Windows activation guidance with the source; clarified activation status is not proof of license entitlement."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Software License Manager, partial product key, license channel, activation status, KMS, Retail, MAK, and activation expiration terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified the /dli, /dlv, and /xpr commands and confirmed these information queries do not require elevation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current Microsoft Learn slmgr options and Windows activation support references; removed the unrelated OAuth link and checked both local article images."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The fields shown vary by Windows edition and licensing channel. /xpr is primarily useful for KMS clients; Retail and MAK activation is generally perpetual.",
+        "slmgr reports activation/license information but does not validate whether the license was legitimately obtained. Microsoft guidance checked on 2026-11-25."
+      ]
+    },
+    "post/Windows のライセンスの状態を確認するコマンド/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/Windows のライセンスの状態を確認するコマンド/index.md",
+      "sourceHash": "514a77ecc802899f9a276f8c55178d789c47dbe0f3132a846eecc6b9fd12d8bf",
+      "translationHash": "b3fb4de8e05a407027b6d0ff91b214e0140194908bcd71f2ea9170a38340336d",
+      "summary": "Compared the full translation with the Japanese source and current Microsoft documentation; removed unnecessary elevation, clarified /dli, /dlv, and /xpr behavior, distinguished activation status from license entitlement, and removed an unrelated OAuth cross-link.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete article, command descriptions, displayed fields, summary, and Windows activation guidance with the source; clarified activation status is not proof of license entitlement."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Software License Manager, partial product key, license channel, activation status, KMS, Retail, MAK, and activation expiration terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified the /dli, /dlv, and /xpr commands and confirmed these information queries do not require elevation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current Microsoft Learn slmgr options and Windows activation support references; removed the unrelated OAuth link and checked both local article images."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The fields shown vary by Windows edition and licensing channel. /xpr is primarily useful for KMS clients; Retail and MAK activation is generally perpetual.",
+        "slmgr reports activation/license information but does not validate whether the license was legitimately obtained. Microsoft guidance checked on 2026-11-25."
+      ]
+    },
+    "post/Windows のライセンスの状態を確認するコマンド/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/Windows のライセンスの状態を確認するコマンド/index.md",
+      "sourceHash": "514a77ecc802899f9a276f8c55178d789c47dbe0f3132a846eecc6b9fd12d8bf",
+      "translationHash": "52c847666db3034e28911a69c77be7191d1982440722c509a8fa2c375e9db8f5",
+      "summary": "Compared the full translation with the Japanese source and current Microsoft documentation; removed unnecessary elevation, clarified /dli, /dlv, and /xpr behavior, distinguished activation status from license entitlement, and removed an unrelated OAuth cross-link.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete article, command descriptions, displayed fields, summary, and Windows activation guidance with the source; clarified activation status is not proof of license entitlement."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Software License Manager, partial product key, license channel, activation status, KMS, Retail, MAK, and activation expiration terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified the /dli, /dlv, and /xpr commands and confirmed these information queries do not require elevation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current Microsoft Learn slmgr options and Windows activation support references; removed the unrelated OAuth link and checked both local article images."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The fields shown vary by Windows edition and licensing channel. /xpr is primarily useful for KMS clients; Retail and MAK activation is generally perpetual.",
+        "slmgr reports activation/license information but does not validate whether the license was legitimately obtained. Microsoft guidance checked on 2026-11-25."
+      ]
+    }
+  }
+}

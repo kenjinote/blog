@@ -1,18 +1,18 @@
 ---
 title: 'Windowsのライセンス認証状態を確認する方法！コマンド一発で簡単にチェック'
-date: "2026-09-24T19:44:38+09:00"
 slug: "Windows のライセンスの状態を確認するコマンド"
-date: 2025-04-14T00:41:45+09:00
+date: "2025-04-14T00:41:45+09:00"
+lastmod: "2026-11-25"
 tags: ["Windows", "ライセンス", "コマンドプロンプト"]
 draft: false
 image: "img_1.webp"
 categories: ["pc-gadgets"]
-description: 'Windowsのライセンスが正しく認証されているか確認する方法を解説します。コマンドプロンプトから「slmgr」コマンドを実行するだけで、プロダクトキーやライセンスの種類・有効期限などの詳細な状態を簡単にチェックする手順を紹介します。'
+description: 'Windows標準のslmgrコマンドで、ライセンスチャネルや認証状態を確認する方法を解説します。/dli、/dlv、/xprの違いと、認証状態がライセンスの適法性を証明するものではない点も説明します。'
 ---
 
 # 【Windows】ライセンスの状態を確認する方法（コマンド1つでOK）
 
-Windowsのライセンスが正しく[認証](https://kenji.blog/p/oauth2-oidc-authentication-authorization-difference/)されているかどうか、気になったことはありませんか？
+Windowsのライセンスが正しく認証されているかどうか、気になったことはありませんか？
 
 そんなときに便利なのが、 **コマンド一発でライセンス情報を確認できる方法** です。以下の手順を実行するだけで、現在のライセンス状態を簡単にチェックできます。
 
@@ -28,7 +28,7 @@ slmgr /dli
 
 ## 実行方法
 
-1. \*\*「スタートメニュー」から「cmd」と入力して、コマンドプロンプトを右クリック →「管理者として実行」\*\*します。
+1. 「スタート」から「cmd」を検索してコマンドプロンプトを開きます。`/dli`、`/dlv`、`/xpr`の確認に管理者権限は不要です。
 
 2. コマンドプロンプトに以下を入力してEnterキーを押します：
 
@@ -38,20 +38,22 @@ slmgr /dli
 
 3. 数秒待つと、以下のようなライセンス情報が表示されます。
 
-   ![Windowsライセンス確認画面](img.webp)
+   ![Windowsのライセンス状態を表示した画面](img.webp)
 
 ## 表示される主な情報
 
-* プロダクトキーの一部
-* ライセンスの種類（リテール、OEMなど）
-* ライセンスの状態（有効、期限切れ、未[認証](https://kenji.blog/p/oauth2-oidc-authentication-authorization-difference/)など）
+* 一部のプロダクトキー
+* ライセンスチャネル（Retail、OEMなど）
+* ライセンス状態（表示内容はエディションやチャネルで異なります）
 
 ## もっと詳細な情報を知りたいときは？
 
 以下のようなコマンドもあります：
 
 * `slmgr /dlv`：より詳細なライセンス情報を表示
-* `slmgr /xpr`：ライセンスの有効期限（永久かどうかなど）を表示
+* `slmgr /xpr`：ライセンス認証の有効期限を表示
+
+`/xpr`はライセンス認証の有効期限を表示し、主にKMSクライアント向けです。RetailやMAKでは永続認証と表示されることがあります。なお、`slmgr`はライセンスが適法に取得されたかどうかを検証しません。Windows 11では「設定」>「システム」>「ライセンス認証」でも状態を確認できます。
 
 ## まとめ
 
@@ -61,5 +63,9 @@ Windowsのライセンス状態は、コマンドひとつで簡単に確認で�
 * **詳細確認** ：`slmgr /dlv`
 * **有効期限の確認** ：`slmgr /xpr`
 
-ライセンスに問題があると、アップデートや一部機能に制限が出ることもあるので、定期的に確認しておくと安心です。
+状態が想定と異なる場合は、Windowsの「ライセンス認証」設定や購入元、組織の管理者に確認してください。
 
+## 参考
+
+- [Slmgr.vbs options for obtaining volume activation information](https://learn.microsoft.com/en-us/windows-server/get-started/activation-slmgr-vbs-options)
+- [Activate Windows](https://support.microsoft.com/en-us/windows/activation/activate-windows)

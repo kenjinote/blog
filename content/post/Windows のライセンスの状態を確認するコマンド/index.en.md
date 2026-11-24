@@ -1,13 +1,13 @@
 ---
 title: 'How to Check Windows License Activation Status! Easy Check with a Single Command'
-date: "2026-09-24T19:44:38+09:00"
 slug: "Windows のLicenseの状態を確認するCommand"
-date: 2025-04-14T00:41:45+09:00
+date: "2025-04-14T00:41:45+09:00"
+lastmod: "2026-11-25"
 tags: ["Windows", "License", "Command Prompt"]
 draft: false
 image: "img_1.webp"
 categories: ["pc-gadgets"]
-description: 'Explains how to verify if your Windows license is correctly activated. Introduces the steps to easily check detailed status such as product key, license type, and expiration date just by running the ''slmgr'' command from the Command Prompt.'
+description: 'Learn how to check Windows license channel and activation status with the built-in slmgr commands /dli, /dlv, and /xpr, and why activation status does not prove license entitlement.'
 ---
 
 # [Windows] How to check license status (just one command)
@@ -28,7 +28,7 @@ When you run this command, partial license information will be displayed in a wi
 
 ## How to run
 
-1. **Type "cmd" in the Start Menu, right-click on Command Prompt, and select "Run as administrator".**
+1. Search for “cmd” from Start and open Command Prompt. You do not need administrator privileges for `/dli`, `/dlv`, or `/xpr`.
 
 2. Enter the following into the command prompt and press the Enter key:
 
@@ -38,20 +38,22 @@ When you run this command, partial license information will be displayed in a wi
 
 3. After waiting a few seconds, license information like the following will be displayed.
 
-   ![Windows license confirmation screen](img.webp)
+   ![Windows license status dialog](img.webp)
 
 ## Main information displayed
 
-* Part of the product key
-* License type (Retail, OEM, etc.)
-* License status (Licensed, expired, not activated, etc.)
+* Partial product key
+* License channel (such as Retail or OEM)
+* License status (the exact fields vary by edition and channel)
 
 ## Want to know more detailed information?
 
 There are also commands like the following:
 
 * `slmgr /dlv`: Display more detailed license information
-* `slmgr /xpr`: Display the license expiration date (e.g., whether it is permanent)
+* `slmgr /xpr`: Display the activation expiration date
+
+`/xpr` reports the activation expiration date and is mainly useful for KMS clients; Retail and MAK activations are typically perpetual. `slmgr` does not validate whether a Windows license was legitimately obtained. You can also check activation in Windows 11 under Settings > System > Activation.
 
 ## Summary
 
@@ -61,4 +63,9 @@ You can easily check the Windows license status with a single command.
 * **Detailed check**: `slmgr /dlv`
 * **Expiration date check**: `slmgr /xpr`
 
-If there is a problem with your license, updates or some functions may be restricted, so it is safe to check regularly.
+If the status is unexpected, check Windows Activation settings or contact the seller or your organization’s administrator.
+
+## References
+
+- [Slmgr.vbs options for obtaining volume activation information](https://learn.microsoft.com/en-us/windows-server/get-started/activation-slmgr-vbs-options)
+- [Activate Windows](https://support.microsoft.com/en-us/windows/activation/activate-windows)

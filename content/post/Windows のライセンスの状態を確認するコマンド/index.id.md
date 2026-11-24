@@ -1,13 +1,13 @@
 ---
 title: 'Cara Memeriksa Status Aktivasi Lisensi Windows! Cek Mudah dengan Satu Perintah'
-date: "2026-09-24T19:44:38+09:00"
 slug: "Windows のLisensiの状態を確認するPerintah"
-date: 2025-04-14T00:41:45+09:00
+date: "2025-04-14T00:41:45+09:00"
+lastmod: "2026-11-25"
 tags: ["Windows", "lisensi", "command prompt"]
 draft: false
 image: "img_1.webp"
 categories: ["pc-gadgets"]
-description: 'Menjelaskan cara memverifikasi apakah lisensi Windows telah diaktifkan dengan benar. Memperkenalkan langkah mudah memeriksa status secara rinci, termasuk kunci produk, jenis lisensi, dan tanggal kedaluwarsa, hanya dengan menjalankan perintah ''slmgr'' di Command Prompt.'
+description: 'Pelajari cara memeriksa saluran lisensi dan status aktivasi Windows dengan perintah bawaan slmgr (/dli, /dlv, /xpr), serta alasan status aktivasi tidak membuktikan hak atas lisensi.'
 ---
 
 # 【Windows】Cara Memeriksa Status Lisensi (Hanya dengan Satu Perintah)
@@ -28,7 +28,7 @@ Saat Anda menjalankan perintah ini, sebagian informasi lisensi akan ditampilkan 
 
 ## Cara mengeksekusi
 
-1. **Dari "Start Menu", ketik "cmd", klik kanan Command Prompt → "Run as administrator"**.
+1. Cari “cmd” dari menu Start, lalu buka Command Prompt. Opsi `/dli`, `/dlv`, dan `/xpr` tidak memerlukan hak administrator.
 
 2. Masukkan perintah berikut di Command Prompt dan tekan Enter:
 
@@ -38,20 +38,22 @@ Saat Anda menjalankan perintah ini, sebagian informasi lisensi akan ditampilkan 
 
 3. Setelah menunggu beberapa detik, informasi lisensi berikut akan ditampilkan.
 
-   ![Layar konfirmasi lisensi Windows](img.webp)
+   ![Jendela status lisensi Windows](img.webp)
 
 ## Informasi utama yang ditampilkan
 
-* Bagian dari kunci produk
-* Jenis lisensi (Retail, OEM, dll.)
-* Status lisensi (valid, kedaluwarsa, tidak diautentikasi, dll.)
+* Sebagian product key
+* Saluran lisensi (misalnya Retail atau OEM)
+* Status lisensi (kolom yang tampil bergantung pada edisi dan saluran)
 
 ## Bagaimana jika Anda ingin mengetahui informasi lebih rinci?
 
 Ada juga perintah seperti berikut:
 
 * `slmgr /dlv`: Menampilkan informasi lisensi yang lebih rinci
-* `slmgr /xpr`: Menampilkan tanggal kedaluwarsa lisensi (apakah permanen atau tidak)
+* `slmgr /xpr`: Menampilkan tanggal berakhirnya aktivasi
+
+`/xpr` menampilkan tanggal berakhirnya aktivasi dan terutama berguna untuk klien KMS; aktivasi Retail dan MAK biasanya bersifat permanen. `slmgr` tidak memvalidasi apakah lisensi Windows diperoleh secara sah. Di Windows 11, status juga dapat diperiksa melalui Settings > System > Activation.
 
 ## Ringkasan
 
@@ -61,4 +63,9 @@ Status lisensi Windows dapat dengan mudah diperiksa dengan satu perintah.
 * **Konfirmasi terperinci**: `slmgr /dlv`
 * **Konfirmasi tanggal kedaluwarsa**: `slmgr /xpr`
 
-Jika ada masalah dengan lisensi, mungkin ada batasan pada pembaruan dan beberapa fungsi, sehingga aman untuk memeriksanya secara teratur.
+Jika statusnya tidak sesuai harapan, periksa pengaturan Aktivasi Windows atau hubungi penjual maupun administrator organisasi Anda.
+
+## Referensi
+
+- [Slmgr.vbs options for obtaining volume activation information](https://learn.microsoft.com/en-us/windows-server/get-started/activation-slmgr-vbs-options)
+- [Activate Windows](https://support.microsoft.com/en-us/windows/activation/activate-windows)

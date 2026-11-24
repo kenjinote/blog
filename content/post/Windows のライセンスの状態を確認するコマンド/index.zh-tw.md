@@ -1,13 +1,13 @@
 ---
 title: '確認 Windows 授權認證狀態的方法！透過一串指令輕鬆檢查'
-date: "2026-09-24T19:44:38+09:00"
 slug: "Windows の授權の状態を確認する指令"
-date: 2025-04-14T00:41:45+09:00
+date: "2025-04-14T00:41:45+09:00"
+lastmod: "2026-11-25"
 tags: ["Windows", "授權", "命令提示字元"]
 draft: false
 image: "img_1.webp"
 categories: ["pc-gadgets"]
-description: '解說如何確認 Windows 授權是否已正確認證。介紹只需在命令提示字元中執行「slmgr」指令，就能輕鬆檢查產品金鑰、授權類型、有效期限等詳細狀態的步驟。'
+description: '說明如何使用 Windows 內建 slmgr 指令（/dli、/dlv、/xpr）查看授權通道與啟用狀態，並說明啟用狀態不能證明授權使用權。'
 ---
 
 # 【Windows】如何檢查授權狀態（1個命令即可）
@@ -28,7 +28,7 @@ slmgr /dli
 
 ## 執行方法
 
-1. **從「開始功能表」輸入「cmd」，右鍵點擊命令提示字元 →「以系統管理員身分執行」** 。
+1. 在「開始」功能表搜尋「cmd」並開啟命令提示字元。執行 `/dli`、`/dlv` 或 `/xpr` 不需要系統管理員權限。
 
 2. 在命令提示字元中輸入以下內容並按 Enter 鍵：
 
@@ -38,20 +38,22 @@ slmgr /dli
 
 3. 等待幾秒鐘後，將顯示如下的授權資訊。
 
-   ![Windows授權檢查畫面](img.webp)
+   ![Windows 授權狀態視窗](img.webp)
 
 ## 顯示的主要資訊
 
-* 產品金鑰的一部分
-* 授權類型（零售、OEM 等）
-* 授權狀態（有效、過期、未認證等）
+* 部分產品金鑰
+* 授權通道（例如 Retail、OEM）
+* 授權狀態（顯示欄位會因版本及通道而異）
 
 ## 如果您想了解更詳細的資訊？
 
 還有以下命令：
 
 * `slmgr /dlv` ：顯示更詳細的授權資訊
-* `slmgr /xpr` ：顯示授權的到期日期（如是否永久）
+* `slmgr /xpr`：顯示啟用到期日
+
+`/xpr` 會顯示啟用到期日，主要適用於 KMS 用戶端；Retail 和 MAK 啟用通常是永久的。`slmgr` 不會驗證 Windows 授權是否透過合法管道取得。Windows 11 也可在「設定」>「系統」>「啟用」查看狀態。
 
 ## 總結
 
@@ -61,4 +63,9 @@ slmgr /dli
 * **詳細檢查** ：`slmgr /dlv`
 * **檢查到期日期** ：`slmgr /xpr`
 
-如果授權出現問題，更新和某些功能可能會受到限制，因此定期檢查會讓人更安心。
+若狀態與預期不同，請查看 Windows「啟用」設定，或洽詢銷售方或組織管理員。
+
+## 參考資料
+
+- [Slmgr.vbs options for obtaining volume activation information](https://learn.microsoft.com/en-us/windows-server/get-started/activation-slmgr-vbs-options)
+- [Activate Windows](https://support.microsoft.com/en-us/windows/activation/activate-windows)

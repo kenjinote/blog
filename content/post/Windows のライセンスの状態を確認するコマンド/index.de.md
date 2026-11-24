@@ -1,13 +1,13 @@
 ---
 title: 'So überprüfen Sie den Aktivierungsstatus der Windows-Lizenz! Einfache Überprüfung mit einem einzigen Befehl'
-date: "2026-09-24T19:44:38+09:00"
 slug: "Windows のLizenzの状態を確認するBefehl"
-date: 2025-04-14T00:41:45+09:00
+date: "2025-04-14T00:41:45+09:00"
+lastmod: "2026-11-25"
 tags: ["Windows", "Lizenz", "Eingabeaufforderung"]
 draft: false
 image: "img_1.webp"
 categories: ["pc-gadgets"]
-description: 'Wir erklären, wie Sie überprüfen können, ob Ihre Windows-Lizenz ordnungsgemäß authentifiziert ist. Wir zeigen Ihnen, wie Sie durch Ausführen des Befehls „slmgr“ über die Eingabeaufforderung detaillierte Statusinformationen wie Produktschlüssel, Lizenztyp und Ablaufdatum ganz einfach überprüfen können.'
+description: 'Erfahren Sie, wie Sie mit den integrierten slmgr-Befehlen (/dli, /dlv und /xpr) den Windows-Lizenzkanal und Aktivierungsstatus prüfen und warum die Aktivierung keine Lizenzberechtigung nachweist.'
 ---
 
 # 【Windows】So überprüfen Sie den Lizenzstatus (1 Befehl reicht aus)
@@ -28,7 +28,7 @@ Wenn Sie diesen Befehl ausführen, werden einige Lizenzinformationen in einem Fe
 
 ## Ausführungsmethode
 
-1. **Geben Sie im "Startmenü" "cmd" ein, klicken Sie mit der rechten Maustaste auf Eingabeaufforderung → "Als Administrator ausführen"** .
+1. Suchen Sie im Startmenü nach „cmd“ und öffnen Sie die Eingabeaufforderung. Für `/dli`, `/dlv` und `/xpr` sind keine Administratorrechte erforderlich.
 
 2. Geben Sie Folgendes in die Eingabeaufforderung ein und drücken Sie die Eingabetaste:
 
@@ -38,20 +38,22 @@ Wenn Sie diesen Befehl ausführen, werden einige Lizenzinformationen in einem Fe
 
 3. Nach ein paar Sekunden Wartezeit werden Lizenzinformationen wie die folgenden angezeigt.
 
-   ![Windows-Lizenzüberprüfungsbildschirm](img.webp)
+   ![Dialog mit dem Windows-Lizenzstatus](img.webp)
 
 ## Angezeigte Hauptinformationen
 
-* Ein Teil des Produktschlüssels
-* Lizenztyp (Retail, OEM usw.)
-* Lizenzstatus (Aktiv, abgelaufen, nicht authentifiziert usw.)
+* Teil des Product Keys
+* Lizenzkanal (z. B. Retail oder OEM)
+* Lizenzstatus (die angezeigten Felder hängen von Edition und Kanal ab)
 
 ## Was ist, wenn Sie detailliertere Informationen wünschen?
 
 Es gibt auch Befehle wie die folgenden:
 
 * `slmgr /dlv` : Zeigt detailliertere Lizenzinformationen an
-* `slmgr /xpr` : Zeigt das Ablaufdatum der Lizenz an (ob sie dauerhaft ist usw.)
+* `slmgr /xpr`: Zeigt das Ablaufdatum der Aktivierung an
+
+`/xpr` zeigt das Ablaufdatum der Aktivierung an und ist vor allem für KMS-Clients relevant; Retail- und MAK-Aktivierungen sind in der Regel dauerhaft. `slmgr` prüft nicht, ob eine Windows-Lizenz rechtmäßig erworben wurde. Unter Windows 11 finden Sie den Aktivierungsstatus auch unter Einstellungen > System > Aktivierung.
 
 ## Zusammenfassung
 
@@ -61,4 +63,9 @@ Der Windows-Lizenzstatus lässt sich ganz einfach mit einem einzigen Befehl übe
 * **Detaillierte Überprüfung** : `slmgr /dlv`
 * **Überprüfung des Ablaufdatums** : `slmgr /xpr`
 
-Wenn es ein Problem mit Ihrer Lizenz gibt, kann es zu Einschränkungen bei Updates und bestimmten Funktionen kommen, daher ist es sicher, sie regelmäßig zu überprüfen.
+Wenn der Status unerwartet ist, prüfen Sie die Windows-Aktivierungseinstellungen oder wenden Sie sich an den Verkäufer oder Ihre IT-Administration.
+
+## Quellen
+
+- [Slmgr.vbs options for obtaining volume activation information](https://learn.microsoft.com/en-us/windows-server/get-started/activation-slmgr-vbs-options)
+- [Activate Windows](https://support.microsoft.com/en-us/windows/activation/activate-windows)

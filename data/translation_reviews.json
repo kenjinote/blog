@@ -23525,6 +23525,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-203.json",
       "evidenceHash": "69e58cf9348cb2519da83289b8a52e81b4b2dbabe3231cd53a42d11945890960"
+    },
+    "post/Windows のライセンスの状態を確認するコマンド/index.en.md": {
+      "source": "post/Windows のライセンスの状態を確認するコマンド/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "514a77ecc802899f9a276f8c55178d789c47dbe0f3132a846eecc6b9fd12d8bf",
+      "translationHash": "1cd0690cf8097a81d123ded015b5be72f404f114287beb5b25c80e48a8b7822d",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-204.json",
+      "evidenceHash": "e2077cde5f7fc71cacd74f2281b5709710b90bf3a7406177b6af7cc42e530c01"
+    },
+    "post/Windows のライセンスの状態を確認するコマンド/index.zh-cn.md": {
+      "source": "post/Windows のライセンスの状態を確認するコマンド/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "514a77ecc802899f9a276f8c55178d789c47dbe0f3132a846eecc6b9fd12d8bf",
+      "translationHash": "aa0cbe4473d0c2c6e2b1ff339fe9bede0c287679209b60364f90cadda1a9c104",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-204.json",
+      "evidenceHash": "5a9edb45572ae6fd85c485f65cd7b29b74f4c0fa63ad8242936e797c2c7425b2"
+    },
+    "post/Windows のライセンスの状態を確認するコマンド/index.es.md": {
+      "source": "post/Windows のライセンスの状態を確認するコマンド/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "514a77ecc802899f9a276f8c55178d789c47dbe0f3132a846eecc6b9fd12d8bf",
+      "translationHash": "85371bd8f496b658ead21f53552a6744cc9eaff15f9f6e6a1c6e5565e4ce20c7",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-204.json",
+      "evidenceHash": "4f705e0a08b5a0682b54db44bd335561b1e4b2a5593db581985a7489c1c903c1"
+    },
+    "post/Windows のライセンスの状態を確認するコマンド/index.ko.md": {
+      "source": "post/Windows のライセンスの状態を確認するコマンド/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "514a77ecc802899f9a276f8c55178d789c47dbe0f3132a846eecc6b9fd12d8bf",
+      "translationHash": "1b6b691bb0b6ad0b83ad042f378f2513ab348cb9d833fd8f58b9d7a09582200c",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-204.json",
+      "evidenceHash": "14a9c5929d267b3447ae376f1b2eac1f334853c1ffd25d8d152e698c6d8ad7fc"
+    },
+    "post/Windows のライセンスの状態を確認するコマンド/index.pt.md": {
+      "source": "post/Windows のライセンスの状態を確認するコマンド/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "514a77ecc802899f9a276f8c55178d789c47dbe0f3132a846eecc6b9fd12d8bf",
+      "translationHash": "1ec2b46d0e2f7a75b1d9e5958a3f5debd3712dabb6d724aab1ee46660141190f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-204.json",
+      "evidenceHash": "f1aee4595c8a6402e6d9cf72125e65478c72ea262a6d7ad9e27794fee136a700"
+    },
+    "post/Windows のライセンスの状態を確認するコマンド/index.zh-tw.md": {
+      "source": "post/Windows のライセンスの状態を確認するコマンド/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "514a77ecc802899f9a276f8c55178d789c47dbe0f3132a846eecc6b9fd12d8bf",
+      "translationHash": "bdb12cdc0b992900452b1b93dc7bdec85d29daf2a4891bc10a0bad98decf88d3",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-204.json",
+      "evidenceHash": "350db88d250644c4ab7b39e1b77b085917cb0c051825e1d200a7d2dfe02a45fb"
+    },
+    "post/Windows のライセンスの状態を確認するコマンド/index.hi.md": {
+      "source": "post/Windows のライセンスの状態を確認するコマンド/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "514a77ecc802899f9a276f8c55178d789c47dbe0f3132a846eecc6b9fd12d8bf",
+      "translationHash": "7df009c68bfcf11fd04d6cd8dda6d847df32dd4b80fa857d9212dfe0d491e01b",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-204.json",
+      "evidenceHash": "25240e3dd9a87edd799911e3492e7c5114c9b0b8940cefa382966e3849f1922d"
+    },
+    "post/Windows のライセンスの状態を確認するコマンド/index.fr.md": {
+      "source": "post/Windows のライセンスの状態を確認するコマンド/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "514a77ecc802899f9a276f8c55178d789c47dbe0f3132a846eecc6b9fd12d8bf",
+      "translationHash": "fa32bbb252a3544d02650a664162ed906b49b404c4295a165ec5f806bc814f22",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-204.json",
+      "evidenceHash": "155f1606300b799c427a76f9bc1b6a2b5747b00117a6904aba8f4091818cb531"
+    },
+    "post/Windows のライセンスの状態を確認するコマンド/index.de.md": {
+      "source": "post/Windows のライセンスの状態を確認するコマンド/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "514a77ecc802899f9a276f8c55178d789c47dbe0f3132a846eecc6b9fd12d8bf",
+      "translationHash": "276144949a997c9dd5f79bf3ba42ed55624b48d63a4ebcc1c3b7481bb40e08b3",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-204.json",
+      "evidenceHash": "2296c1f626dfe07faba1dc2da481599690cbefe2cdf3069bd5380fff4da211fc"
+    },
+    "post/Windows のライセンスの状態を確認するコマンド/index.ar.md": {
+      "source": "post/Windows のライセンスの状態を確認するコマンド/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "514a77ecc802899f9a276f8c55178d789c47dbe0f3132a846eecc6b9fd12d8bf",
+      "translationHash": "4a4715b91270262001ede03a9b4c3882f821a4d01df1ccfc4c85dca3bc9e7d63",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-204.json",
+      "evidenceHash": "c64499f392c911ed931c2ecbada32f0018dd795b2bf715f8caeee580988d8db6"
+    },
+    "post/Windows のライセンスの状態を確認するコマンド/index.ru.md": {
+      "source": "post/Windows のライセンスの状態を確認するコマンド/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "514a77ecc802899f9a276f8c55178d789c47dbe0f3132a846eecc6b9fd12d8bf",
+      "translationHash": "b3fb4de8e05a407027b6d0ff91b214e0140194908bcd71f2ea9170a38340336d",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-204.json",
+      "evidenceHash": "5b7ef1a4e6932c4e880a1095c28bbb1a026f5baed9266ea1fbb90d20f9bcb65e"
+    },
+    "post/Windows のライセンスの状態を確認するコマンド/index.id.md": {
+      "source": "post/Windows のライセンスの状態を確認するコマンド/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "514a77ecc802899f9a276f8c55178d789c47dbe0f3132a846eecc6b9fd12d8bf",
+      "translationHash": "52c847666db3034e28911a69c77be7191d1982440722c509a8fa2c375e9db8f5",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-204.json",
+      "evidenceHash": "a547e59902ee540b1f63325e18de16ecc7581e8199ddb8499457168f8242fad0"
     }
   }
 }
