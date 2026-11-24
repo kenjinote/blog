@@ -14,7 +14,7 @@ Im Internet-Werbemarkt spielt erfolgsbasierte Werbung (Affiliate-Marketing) eine
 
 Hinter den Kulissen arbeiten jedoch hochentwickelte und komplexe Tracking-Technologien, um das Nutzerverhalten genau zu verfolgen und zu bestimmen, über welche Medien (Affiliates) die Conversion erzielt wurde.
 
-Dieser Artikel erklärt detailliert die technische Seite des Affiliate-Marketings: von der Rolle des ASP (Affiliate Service Provider), der den Kern des Affiliate-Systems bildet, über die Funktionsweise von Tracking-URLs mittels Redirects, clientseitige Tracking-Technologien mit Cookies und LocalStorage bis hin zum serverseitigen Tracking (S2S) als Maßnahme gegen das in letzter Zeit viel beachtete ITP (Intelligent Tracking Prevention).
+Dieser Artikel erklärt die technische Seite des Affiliate-Marketings: die Rolle des ASP (Affiliate Service Provider), Tracking-URLs mit Weiterleitungen, clientseitige Technologien wie Cookies und LocalStorage sowie Server-to-Server-Tracking (S2S). S2S verlagert einen Teil der Messung auf Server; es umgeht weder Browserbeschränkungen noch Einwilligungspflichten.
 
 ## 1. Das Gesamtbild des Affiliate-Ökosystems
 
@@ -36,7 +36,7 @@ flowchart TD
     ASP -- "Erfolgsbestätigung & Provisionszahlung" --> Media
 ```
 
-Der ASP fungiert als riesige Dateninfrastruktur, die enormen Traffic in Echtzeit verarbeitet und mit Millisekunden-Präzision aufzeichnet, "wer" "welche Werbung" "wann" geklickt hat und "wann" dies zu "welchem Erfolg" geführt hat.
+Der ASP kann als Datenknoten dienen, der erfasst und abgleicht, welcher Werbeklick zu einer gemeldeten Conversion geführt hat. Detailgrad, Zeitgenauigkeit und Attributionsregeln hängen von der Implementierung und den Vertragsbedingungen des jeweiligen Anbieters und Werbetreibenden ab.
 
 ## 2. Grundlegender Mechanismus des Trackings (Clientseitig)
 
@@ -44,29 +44,29 @@ Das Tracking im Affiliate-Marketing war historisch stark auf clientseitige (Brow
 
 ### 2.1. Tracking-URL und Redirect
 
-Werbelinks, die Affiliates auf ihren Seiten platzieren, verweisen nicht direkt auf die Seite des Werbetreibenden. Es handelt sich immer um "Tracking-URLs", die zunächst über den Server des ASPs geleitet werden.
+Viele Affiliate-Links verwenden eine Tracking-URL des ASP, bevor sie Besucher zur Website des Werbetreibenden weiterleiten. Andere Modelle messen Empfehlungen direkt oder serverseitig beim Werbetreibenden; eine Weiterleitung über einen ASP ist daher nicht immer erforderlich.
 
 Beispiel: `https://click.example-asp.com/track?aff_id=12345&campaign_id=67890`
 
 Wenn ein Nutzer auf diesen Link klickt, läuft folgender Prozess ab:
 
-1. **Klick-Aufzeichnung**: Der Server des ASPs zeichnet IP-Adresse, User-Agent, Zeitstempel des zugreifenden Nutzers sowie die in der URL enthaltene Affiliate-ID (`aff_id`) und Kampagnen-ID (`campaign_id`) in der Datenbank auf.
+1. **Klick-Aufzeichnung**: Je nach Implementierung und geltenden Regeln erfasst der ASP die für die Messung erforderlichen Zeit- und Anzeigenkennungen. Werden IP-Adresse oder User-Agent verarbeitet, sind Zweck, Erforderlichkeit, Aufbewahrungsdauer und Zugriffskontrollen festzulegen.
 2. **Generierung der Click ID**: Zur eindeutigen Identifizierung dieses Klick-Ereignisses wird eine "Click ID" generiert.
-3. **Setzen eines Cookies**: Der ASP stellt ein Cookie seiner eigenen Domain (Third-Party-Cookie) für den Browser des Nutzers aus und speichert darin die Click ID.
-4. **Redirect**: Sobald die Verarbeitung abgeschlossen ist, wird eine [HTTP 302](/de/p/history-of-http/) (Found) oder 301 (Moved Permanently) Antwort gesendet und der Nutzer zur Landingpage (LP) des Werbetreibenden weitergeleitet. Zu diesem Zeitpunkt kann die Click ID auch als URL-Parameter angehängt werden.
+3. **Übergabe der Kennung**: Einige ältere Modelle speicherten die Click ID in einem ASP-Cookie. Das funktioniert nicht verlässlich, wenn Drittanbieter-Cookies blockiert sind. Andere Modelle übergeben die Kennung an die Domain des Werbetreibenden und speichern sie, sofern zulässig, in einem First-Party-Kontext.
+4. **Weiterleitung**: Für vorübergehende Navigation werden üblicherweise [HTTP 302](/de/p/history-of-http/) (Found) oder 307 (Temporary Redirect) verwendet. 301 (Moved Permanently) bezeichnet einen dauerhaften Umzug und kann zwischengespeichert werden; für gewöhnliche Klickmessung ist sie daher meist ungeeignet. Manche Modelle ergänzen die Ziel-URL um die Click ID.
 
 ### 2.2. Die Rolle von Cookie und LocalStorage
 
 Nachdem der Nutzer die Seite des Werbetreibenden erreicht hat, surft er auf der Seite und führt schließlich eine "Conversion (CV)" wie den Kauf eines Produkts oder die Registrierung als Mitglied durch.
 
-Beim herkömmlichen Tracking ist auf der Seite, auf der die Conversion abgeschlossen wird (Dankesseite), ein vom ASP bereitgestelltes JavaScript oder Bild-Tag, das sogenannte "Conversion-Tag (CV-Tag)", eingebettet.
+Ein herkömmliches clientseitiges Modell bindet auf der Abschlussseite (Dankesseite) ein JavaScript- oder Bild-Tag des ASP ein, das sogenannte Conversion-Tag (CV-Tag). Ob sich Klick und Conversion damit verbinden lassen, hängt davon ab, ob der Browser die Kennung bereitstellt und die Tag-Anfrage zulässt.
 
 Wenn das Conversion-Tag geladen wird, erfolgt folgende Verarbeitung:
 
-- **Auslesen des Cookies**: Die Click ID wird aus dem im Browser gespeicherten ASP-Cookie ausgelesen.
-- **Senden des Erfolgs**: Die ausgelesene Click ID und die Erfolgsdaten (Kaufbetrag, Bestellnummer usw.) werden an den Server des ASPs gesendet.
+- **Auslesen der Kennung**: Soweit die Implementierung dies zulässt, wird eine im First-Party-Bereich des Werbetreibenden gespeicherte Kennung oder eine Click ID aus der Ziel-URL ausgelesen. Ein direkter Zugriff auf ein ASP-Drittanbieter-Cookie kann nicht vorausgesetzt werden.
+- **Übermittlung des Erfolgs**: Eine verfügbare Click ID und Conversion-Daten (etwa Kaufbetrag oder Bestellnummer) werden gemäß Vertrag, Einwilligung und geltenden Regeln an den ASP übermittelt.
 
-Als Vorbereitung auf den Ablauf oder das Löschen von Cookies war es zudem weit verbreitet, die Click ID als Backup in der Web Storage API von HTML5, wie `LocalStorage` oder `SessionStorage`, zu speichern.
+Sofern Einwilligung und geltende Regeln dies erlauben, kann der Werbetreibende Messdaten auch in `LocalStorage` oder `SessionStorage` ablegen. Diese Speicher sind an eine Website gebunden und unterliegen Browser-Datenschutzfunktionen sowie den Einstellungen und Löschungen des Nutzers; sie sind weder ein garantiertes Cookie-Backup noch dauerhafte Kennungen.
 
 ## 3. Die Welle des Datenschutzes: Der Schock durch ITP
 
@@ -76,17 +76,17 @@ Aufgrund wachsender [Datenschutzbedenken](/de/p/privacy-vs-convenience-big-data/
 
 ### Die Auswirkungen von ITP auf das Affiliate-Marketing
 
-Durch die Einführung von ITP erlitt die Affiliate-Branche folgende verheerende Auswirkungen:
+WebKits ITP schränkt in Safari Cookies und Speicher ein, die für Cross-Site-Tracking genutzt werden könnten. Die Auswirkungen hängen von Browser-Version, Nutzung, Navigationsweg und Speicherung ab. Beispiele:
 
-1. **Vollständige Blockierung von Third-Party-Cookies**: Vom ASP ausgestellte Cookies (Cookies einer anderen Domain als der des Werbetreibenden) werden standardmäßig blockiert. Dadurch funktionierte das bisherige Tracking über CV-Tags nicht mehr.
-2. **Verkürzung der Lebensdauer von First-Party-Cookies**: Selbst für Cookies, die von der Domain des Werbetreibenden ausgestellt wurden (First-Party-Cookies), wurde die Lebensdauer auf maximal 24 Stunden (oder 7 Tage) verkürzt, wenn sie über JavaScript (`document.cookie`) via URL-Parameter (z.B. `?click_id=...`) gesetzt wurden.
-3. **Einschränkung des LocalStorage**: Ähnlich wie bei Cookies wurden auch der Zugriff auf und die Speicherdauer von Storage-Lösungen wie LocalStorage streng eingeschränkt.
+1. **Drittanbieter-Cookies**: WebKit blockiert Drittanbieter-Cookies mit ITP standardmäßig. Herkömmliche Messung, die ein ASP-Cookie direkt im Browser ausliest, kann daher bei Safaris Standardeinstellungen nicht vorausgesetzt werden.
+2. **Per JavaScript gesetzte Cookies und Speicher**: Bei bestimmten als Tracking eingestuften Links kann ITP die Laufzeit von JavaScript-Cookies auf der Zielseite auf 24 Stunden begrenzen. Per Skript beschreibbare Cookies und Daten wie LocalStorage können außerdem nach längerer Zeit ohne Nutzerinteraktion zur Löschung vorgesehen werden. Dies ist keine allgemeine 24-Stunden-/7-Tage-Regel für alle Cookies.
+3. **Drittanbieter-Speicher**: Drittanbieter-LocalStorage und ähnliche Speicher können nach Website getrennt oder nur vorübergehend verfügbar sein. Für den konkreten Fall sind aktuelle WebKit-Angaben und Nutzereinstellungen maßgeblich.
 
-Dies führte dazu, dass Conversions mit langen Vorlaufzeiten, wie z.B. "Nutzer klickt auf Werbung und kauft erst Tage später", nicht mehr gemessen werden konnten, was zu entgangenen Verdienstmöglichkeiten für Affiliates und einer Verschlechterung des ROI (Return on Investment) für Werbetreibende führte.
+Diese Einschränkungen können es erschweren, in manchen herkömmlichen Modellen einen Klick mit einer späteren Conversion zu verbinden. Auswirkungen auf Messung, Provisionen oder ROI unterscheiden sich je nach Implementierung und lassen sich nicht pauschal beziffern.
 
 ## 4. Serverseitiges Tracking (S2S) und der Aufstieg von Postback
 
-Angesichts der Einschränkungen für die Datenspeicherung und Kommunikation auf der Clientseite (Browser) verlagert sich die Affiliate-Branche als Lösung zunehmend auf **serverseitiges Tracking (Server-to-Server / S2S)**, auch bekannt als **Postback-Methode**.
+Ein Ansatz ist **Server-to-Server-Tracking (S2S)**, auch **Postback-Methode** genannt, bei dem der Server des Werbetreibenden Conversion-Daten an den ASP sendet. Damit wird ein Teil der Messung auf einen Server verlagert; Browserbeschränkungen oder Einwilligungspflichten entfallen dadurch nicht.
 
 ### S2S-Tracking-Architektur
 
@@ -103,19 +103,19 @@ flowchart TD
     ASP -- "7. Erfolgsbestätigung" --> ASPDB[("ASP-Datenbank")]
 ```
 
-1. **Klick und Redirect**: Wie bisher klickt der Nutzer auf den Link des ASPs. Der ASP generiert eine eindeuclease `Click ID` und übergibt sie beim Redirect als URL-Parameter an die Seite des Werbetreibenden (Beispiel: `https://shop.example.com/?click_id=abcde12345`).
-2. **Serverseitige Speicherung**: Der Webserver des Werbetreibenden empfängt die Anfrage, extrahiert die `click_id` aus dem URL-Parameter und speichert sie in einer serverseitigen Session, Datenbank oder als echtes First-Party-Cookie mittels HTTP-Header (Set-Cookie). (Da kein JavaScript beteiligt ist, ist dies weniger anfällig für ITP-Einschränkungen).
+1. **Klick und Redirect**: Wie bisher klickt der Nutzer auf den Link des ASPs. Der ASP generiert eine eindeutige `Click ID` und übergibt sie beim Redirect als URL-Parameter an die Seite des Werbetreibenden (Beispiel: `https://shop.example.com/?click_id=abcde12345`).
+2. **Serverseitige Speicherung**: Der Webserver liest `click_id` aus einer zulässigen Anfrage und speichert sie bei Bedarf in einer Sitzung oder Datenbank. Er kann für die eigene Domain auch per HTTP-Antwort ein Cookie setzen, unterliegt dabei jedoch Browser-Tracking-Schutz, Cookie-Attributen und -Laufzeit, Nutzereinstellungen, Einwilligung und geltenden Regeln. Serververarbeitung hebt ITP nicht auf.
 3. **Postback bei Conversion**: Zu dem Zeitpunkt, an dem der Nutzer den Kauf abschließt und die Bestellverarbeitung auf dem Server des Werbetreibenden bestätigt wird, sendet der Server des Werbetreibenden direkt eine HTTP-Anfrage (GET oder POST) an den angegebenen Endpunkt (Postback URL) des ASPs.
 
 ### Vorteile des S2S-Trackings
 
-- **Unbeeinflusst von ITP**: Da Browser-Einschränkungen umgangen werden können, ist eine zuverlässige Erfolgsmessung möglich.
-- **Verbesserte Sicherheit**: Da CV-Tags nicht auf der Clientseite offengelegt werden, lässt sich die betrügerische Übermittlung von Erfolgen (Ad Fraud) leichter verhindern.
-- **Höhere Datengenauigkeit**: Ladefehler von CV-Tags aufgrund von Netzwerkfehlern oder dem Verlassen des Browsers durch den Nutzer treten nicht auf.
+- **Kontrolle des Datenflusses**: Felder können vor der Weitergabe geprüft, verändert oder entfernt werden. Angemessene Einwilligung und Datenminimierung bleiben erforderlich.
+- **Weniger Browser-Verarbeitung möglich**: Manche Konfigurationen reduzieren Drittanbieter-Tags und direkte Anbieteranfragen auf einer Seite.
+- **Steuerung von Wiederholungen und Duplikaten**: Auch Serveranfragen können scheitern, wiederholt oder doppelt verarbeitet werden. Wiederholungen, Deduplizierung, Ereignis-IDs und Überwachung müssen eingeplant werden.
 
 ### Herausforderungen des S2S-Trackings
 
-Die größte Herausforderung ist die "technische Hürde bei der Einführung". Im Vergleich zur einfachen Einbettung von JavaScript-Tags in HTML erfordert es beim Werbetreibenden Systementwicklung (Parameterannahme, DB-Speicherung, API-Anfrageverarbeitung aus dem Backend), was die Implementierungskosten für kleine Werbetreibende in die Höhe treibt.
+Zu den Herausforderungen gehören Einführung und Betrieb. Der Werbetreibende muss möglicherweise Parameter entgegennehmen und speichern, Anfragen authentifizieren, Ereignisse wiederholen und deduplizieren sowie die Zustellung überwachen. Das kann kleine Unternehmen mehr kosten. Manche Ereignisse müssen weiterhin aus Browser oder App stammen; S2S allein deckt daher nicht zwingend den ganzen Messablauf ab.
 
 Daher haben ASPs in den letzten Jahren Initiativen ergriffen, um die Hürden für die Einführung von S2S-Tracking zu senken, indem sie Plugins für wichtige Plattformen wie Shopify und WordPress anbieten.
 
@@ -124,15 +124,23 @@ Daher haben ASPs in den letzten Jahren Initiativen ergriffen, um die Hürden fü
 Zusätzlich zum S2S-Tracking entwickelt sich das gesamte Ökosystem weiter.
 
 ### 5.1. Fingerprinting (Alternative Identifikation)
-Eine Technologie, die Nutzer eindeutig anhand einer Kombination von Browserumgebungen (User-Agent, Bildschirmauflösung, installierte Schriftarten, IP-Adresse usw.) identifiziert, ohne auf Cookies oder Parameter angewiesen zu sein. Aufgrund von Datenschutzbedenken werden jedoch auch hier auf Browserseite Gegenmaßnahmen ergriffen, sodass dies nicht mehr als zuverlässige Methode angesehen werden kann.
+Fingerprinting kombiniert Merkmale eines Browsers oder Geräts, um es zu identifizieren oder zu verfolgen. Eine eindeutige oder verlässliche Identifizierung einer Person ist nicht garantiert. Die Methode birgt Datenschutzrisiken und kann Browser-Schutzmaßnahmen, Gesetzen und Plattformrichtlinien unterliegen; sie sollte nicht leichtfertig Cookies ersetzen.
 
 ### 5.2. Data Clean Rooms und Server-Side GTM
-Durch die Nutzung von "Data Clean Rooms", die von großen Plattformen angeboten werden, oder Server-Side Containern des Google Tag Manager (GTM) bauen Werbetreibende Mechanismen auf, um ihre First-Party-Daten sicher mit ASPs und Werbeplattformen zu verknüpfen. Dies ermöglicht eine fortschrittliche Attributionsanalyse unter Wahrung der Privatsphäre der Nutzer.
+Data Clean Rooms und serverseitige Container von Google Tag Manager (GTM) sind Möglichkeiten, Datenverarbeitung und -weitergabe zu steuern. Ihre Nutzung anonymisiert Daten nicht automatisch und garantiert weder Rechtskonformität noch Datenschutz. Zweck, Einwilligung und Berechtigungen, Datenminimierung, Zugriffskontrollen und Ausgabebegrenzungen müssen entworfen und geprüft werden.
 
 ## Zusammenfassung
 
 Hinter den Kulissen des Affiliate-Marketings prallen der technologische Fortschritt und die Welle des Datenschutzes heftig aufeinander, was zu tiefgreifenden Veränderungen bei den Tracking-Mechanismen führt.
 
-Der Übergang vom einfachen Cookie-basierten clientseitigen Tracking zum robusteren und sichereren serverseitigen Tracking (S2S) ist mittlerweile ein unumgänglicher Weg. Werbetreibende, Affiliates und ASPs müssen sich stets über die neuesten technologischen Entwicklungen und gesetzlichen Bestimmungen (wie DSGVO und CCPA) auf dem Laufenden halten und Systeme aufbauen, die eine genaue Leistungsmessung ermöglichen und gleichzeitig die Privatsphäre der Nutzer respektieren.
+Client- und serverseitige Verfahren haben unterschiedliche Aufgaben und Grenzen. Werbetreibende, Affiliates und ASPs sollten Zweck und Grenzen der Messung festlegen und geltende Gesetze und Plattformregeln, Einwilligung und Nutzerentscheidungen, Datenminimierung und Sicherheit berücksichtigen. S2S garantiert weder Genauigkeit noch Datenschutz automatisch; erforderlich sind sorgfältige Gestaltung und Betrieb.
 
 Das Verständnis der Systemarchitektur erfolgsbasierter Werbung wird für alle Ingenieure und Vermarkter im Webmarketing-Bereich in Zukunft immer wichtiger werden.
+
+## Quellen
+
+- [WebKit: Tracking Prevention in WebKit](https://webkit.org/tracking-prevention/)
+- [WebKit: Intelligent Tracking Prevention 2.2](https://webkit.org/blog/8828/)
+- [Google for Developers: Server-side tagging fundamentals](https://developers.google.com/tag-platform/learn/sst-fundamentals/2-what-is-sst)
+- [IETF RFC 9110: HTTP Semantics, Redirection](https://www.rfc-editor.org/rfc/rfc9110.html)
+- [WebKit: Tracking Prevention Policy](https://webkit.org/tracking-prevention-policy/)

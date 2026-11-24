@@ -24005,6 +24005,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-207.json",
       "evidenceHash": "95d0be49c93cc2b4d2209491b8d7a5f76a724e30f0b93fb3e4be819a17d48526"
+    },
+    "post/affiliate-marketing-mechanism/index.ar.md": {
+      "source": "post/affiliate-marketing-mechanism/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "f9ecb1d82e6582af0e8b6ba2b79633099433d473b2cc2488876a242e82cb1fb8",
+      "translationHash": "23f3fc035f24bd6656f35229bfe73467e841d413c7b9b36d1c5c08bce3538174",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-208.json",
+      "evidenceHash": "1d15cb646bbc709102cbeb2145a956d9e29084338f18934c07ffd90cc25707ba"
+    },
+    "post/affiliate-marketing-mechanism/index.en.md": {
+      "source": "post/affiliate-marketing-mechanism/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "f9ecb1d82e6582af0e8b6ba2b79633099433d473b2cc2488876a242e82cb1fb8",
+      "translationHash": "76849396c097be8dc77493adb7c17d41154fda9365742928b34147d52369a2c3",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-208.json",
+      "evidenceHash": "8a01833ff2f9813d73c71e082d677206aa47f9cb3284614399be6a26cb745121"
+    },
+    "post/affiliate-marketing-mechanism/index.de.md": {
+      "source": "post/affiliate-marketing-mechanism/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "f9ecb1d82e6582af0e8b6ba2b79633099433d473b2cc2488876a242e82cb1fb8",
+      "translationHash": "b70cdb4c05ecd02bf328b5179c930ca56d7b8cc2018851e781325b7b765262e0",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-208.json",
+      "evidenceHash": "150b77a11fd4113c8e4726841ac810ad17c38c824d4c6434fb51a95cfc8f1b91"
+    },
+    "post/affiliate-marketing-mechanism/index.es.md": {
+      "source": "post/affiliate-marketing-mechanism/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "f9ecb1d82e6582af0e8b6ba2b79633099433d473b2cc2488876a242e82cb1fb8",
+      "translationHash": "7f24110bec7b5a952419992586b676ba48145d63a1ec23165b2fd6608a845a92",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-208.json",
+      "evidenceHash": "c1cc8826a029f3fe644819563c36bb7b4e195998c1761827c7e0fbb32155b3f3"
+    },
+    "post/affiliate-marketing-mechanism/index.fr.md": {
+      "source": "post/affiliate-marketing-mechanism/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "f9ecb1d82e6582af0e8b6ba2b79633099433d473b2cc2488876a242e82cb1fb8",
+      "translationHash": "f2d22eae6003cac0dec0a5a4865b8d0d048520686a265dc40d61a83698c8fe12",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-208.json",
+      "evidenceHash": "4ca39feea475e2546835feafc8718ecc63deb1ca0234019a911a4998a7aa1b3b"
+    },
+    "post/affiliate-marketing-mechanism/index.hi.md": {
+      "source": "post/affiliate-marketing-mechanism/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "f9ecb1d82e6582af0e8b6ba2b79633099433d473b2cc2488876a242e82cb1fb8",
+      "translationHash": "caeb5d730c3427df0483989062811a9997048c38b603ec04d61f9fe5dd85dcd9",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-208.json",
+      "evidenceHash": "67a64a262445122dc17642e8e3a6471a6ba325461a86b98baad5f2d87d466187"
+    },
+    "post/affiliate-marketing-mechanism/index.id.md": {
+      "source": "post/affiliate-marketing-mechanism/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "f9ecb1d82e6582af0e8b6ba2b79633099433d473b2cc2488876a242e82cb1fb8",
+      "translationHash": "a77073808735da80a749f36adc05d06253017a4ca80569b132f5d0ff6ed31833",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-208.json",
+      "evidenceHash": "8c3b18ea470c3eb35f1beb3c82349fca35bd1790ab937bd42d805af7ea114389"
+    },
+    "post/affiliate-marketing-mechanism/index.ko.md": {
+      "source": "post/affiliate-marketing-mechanism/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "f9ecb1d82e6582af0e8b6ba2b79633099433d473b2cc2488876a242e82cb1fb8",
+      "translationHash": "241d3ff59c551c2e0e326b2adf8b922aadcd99708d4ea1b96e535849cdff145b",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-208.json",
+      "evidenceHash": "d8de962306777e469f2e3de847c3e5186d6986988514ef3b323be0dcc7492dfe"
+    },
+    "post/affiliate-marketing-mechanism/index.pt.md": {
+      "source": "post/affiliate-marketing-mechanism/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "f9ecb1d82e6582af0e8b6ba2b79633099433d473b2cc2488876a242e82cb1fb8",
+      "translationHash": "a2b7c754780a3b06c9d36900f70594d8e149fa238cba25537ef40d7dca50e349",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-208.json",
+      "evidenceHash": "2f1351a992dacc5daf55af142402ea6911c43a7f13139dd4fd6eb3738af68599"
+    },
+    "post/affiliate-marketing-mechanism/index.ru.md": {
+      "source": "post/affiliate-marketing-mechanism/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "f9ecb1d82e6582af0e8b6ba2b79633099433d473b2cc2488876a242e82cb1fb8",
+      "translationHash": "00e27e81def82d62f3eb69e30734ce8cedc46bf6554e93d96d0343928fba7c7e",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-208.json",
+      "evidenceHash": "e272fee9eec819747b89717ad6c4a4fb41e063fdc0aabdac6af4e98ce5654fa4"
+    },
+    "post/affiliate-marketing-mechanism/index.zh-cn.md": {
+      "source": "post/affiliate-marketing-mechanism/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "f9ecb1d82e6582af0e8b6ba2b79633099433d473b2cc2488876a242e82cb1fb8",
+      "translationHash": "26eda7c534c05932c67fa1275c55550e738bd593935a4a7595adbc5b51ba0b70",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-208.json",
+      "evidenceHash": "4b7384cf7b12632c44acb44e535a8223e42a1077b603fc49cc26555429f7c22d"
+    },
+    "post/affiliate-marketing-mechanism/index.zh-tw.md": {
+      "source": "post/affiliate-marketing-mechanism/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "f9ecb1d82e6582af0e8b6ba2b79633099433d473b2cc2488876a242e82cb1fb8",
+      "translationHash": "7339c5952b97c263a20a9b5ed0a8b1dd15cf81037f7060be0b7a2f137c06aebb",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-208.json",
+      "evidenceHash": "f24261119f799b4d52c2d76acef15d358928b3b9742c0dc01455a4f6498f4619"
     }
   }
 }

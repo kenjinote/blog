@@ -14,7 +14,7 @@ Sur le marché de la publicité sur Internet, la publicité au résultat (market
 
 Cependant, en coulisses, des technologies de suivi complexes et avancées sont à l'œuvre pour suivre avec précision le comportement des utilisateurs et déterminer quel média (affilié) est à l'origine du résultat.
 
-Dans cet article, nous expliquerons de manière approfondie les coulisses techniques de l'affiliation, du rôle de l'ASP (Affiliate Service Provider), qui est au cœur du système d'affiliation, au mécanisme des URL de suivi utilisant des redirections, aux technologies de suivi côté client utilisant des cookies et LocalStorage, jusqu'au suivi côté serveur (S2S) comme contre-mesure à l'ITP (Intelligent Tracking Prevention) qui a récemment attiré l'attention.
+Cet article explique les aspects techniques du marketing d'affiliation : le rôle de l'ASP (Affiliate Service Provider), les URL de suivi avec redirection, les technologies côté client comme les cookies et LocalStorage, et le suivi serveur à serveur (S2S). Le S2S déplace une partie de la mesure vers les serveurs ; il ne contourne ni les restrictions des navigateurs ni les exigences de consentement.
 
 ## 1. Vue d'ensemble de l'écosystème de l'affiliation
 
@@ -36,7 +36,7 @@ flowchart TD
     ASP -- "Approbation du résultat et paiement" --> Media
 ```
 
-L'ASP fonctionne comme une gigantesque infrastructure de données qui traite un trafic massif en temps réel, enregistrant avec une précision de la milliseconde "qui" a cliqué sur "quelle publicité" et "quand", et "quand" cela a conduit à "quel résultat".
+L'ASP peut servir de plateforme de données qui enregistre et rapproche le clic publicitaire ayant conduit à une conversion déclarée. Le niveau de détail, la précision temporelle et les règles d'attribution dépendent de la mise en œuvre et des conditions contractuelles de chaque prestataire et annonceur.
 
 ## 2. Le mécanisme de base du suivi (côté client)
 
@@ -44,29 +44,29 @@ Historiquement, le suivi de l'affiliation a fortement dépendu des technologies 
 
 ### 2.1. URL de suivi et redirection
 
-Les liens publicitaires que les affiliés placent sur leurs propres sites ne pointent pas directement vers le site de l'annonceur. Il s'agit toujours d'une "URL de suivi" qui passe d'abord par le serveur de l'ASP.
+De nombreux liens d'affiliation utilisent une URL de suivi de l'ASP avant d'envoyer le visiteur vers le site de l'annonceur. D'autres dispositifs mesurent les recommandations directement ou côté serveur chez l'annonceur ; une redirection par l'ASP n'est donc pas toujours nécessaire.
 
 Exemple : `https://click.example-asp.com/track?aff_id=12345&campaign_id=67890`
 
 Lorsqu'un utilisateur clique sur ce lien, le processus suivant se produit :
 
-1. **Enregistrement du clic** : Le serveur de l'ASP enregistre dans la base de données l'adresse IP de l'utilisateur, l'User-Agent, l'horodatage, ainsi que l'identifiant de l'affilié (`aff_id`) et l'identifiant de la campagne (`campaign_id`) inclus dans l'URL.
+1. **Enregistrement du clic** : Selon la mise en œuvre et les règles applicables, l'ASP enregistre l'heure et les identifiants publicitaires nécessaires à la mesure. S'il traite des adresses IP ou des valeurs User-Agent, il convient de définir leur finalité, leur nécessité, leur durée de conservation et les contrôles d'accès.
 2. **Génération du Click ID** : Un "Click ID" (identifiant de clic) est généré pour identifier de manière unique cet événement de clic.
-3. **Attribution d'un Cookie** : L'ASP émet un cookie de son propre domaine (tiers) vers le navigateur de l'utilisateur et y enregistre le Click ID.
-4. **Redirection** : Dès que le traitement est terminé, il renvoie une réponse [HTTP 302](/fr/p/history-of-http/) (Found) ou 301 (Moved Permanently) et redirige l'utilisateur vers la page de destination (LP) de l'annonceur. À ce moment, le Click ID peut également être ajouté en tant que paramètre de l'URL.
+3. **Transmission de l'identifiant** : Certains anciens dispositifs stockaient le Click ID dans un cookie de l'ASP. Cette méthode ne peut pas être présumée fonctionner lorsque les cookies tiers sont bloqués. D'autres dispositifs transmettent l'identifiant au domaine de l'annonceur et le stockent, si cela est autorisé, dans un contexte propriétaire.
+4. **Redirection** : Une navigation temporaire utilise généralement [HTTP 302](/fr/p/history-of-http/) (Found) ou 307 (Temporary Redirect). 301 (Moved Permanently) indique un déplacement permanent et peut être mis en cache ; elle convient donc rarement à une redirection ordinaire de mesure des clics. Certains dispositifs ajoutent le Click ID à l'URL de destination.
 
 ### 2.2. Le rôle des Cookies et de LocalStorage
 
 L'utilisateur qui atteint le site de l'annonceur navigue sur le site et finit par réaliser une "conversion" (CV), comme l'achat d'un produit ou l'inscription en tant que membre.
 
-Dans le suivi traditionnel, un code JavaScript ou une balise d'image appelée "balise de conversion (CV)" fournie par l'ASP est intégrée à la page où la conversion est terminée (page de remerciement).
+Un exemple de suivi traditionnel côté client consiste à intégrer sur la page de confirmation une balise JavaScript ou image de l'ASP, appelée « balise de conversion (CV) ». La mise en relation du clic et de la conversion dépend de l'accès du navigateur à l'identifiant et de l'autorisation de la requête réseau de la balise.
 
 Lorsque la balise de conversion est chargée, le traitement suivant est effectué :
 
-- **Lecture du Cookie** : Le Click ID est lu à partir du cookie de l'ASP stocké dans le navigateur.
-- **Envoi du résultat** : Le Click ID lu et les informations de résultat (montant de l'achat, numéro de commande, etc.) sont envoyés au serveur de l'ASP.
+- **Lecture de l'identifiant** : Si la mise en œuvre le permet, la balise lit un identifiant enregistré dans le contexte propriétaire de l'annonceur ou un Click ID transmis dans l'URL de destination. On ne peut pas présumer que le navigateur peut lire directement un cookie tiers de l'ASP.
+- **Envoi du résultat** : Le Click ID disponible et les données de conversion (montant ou numéro de commande, par exemple) sont transmis à l'ASP conformément au contrat, au consentement et aux règles applicables.
 
-De plus, en prévision de l'expiration ou de la suppression des cookies, la méthode consistant à sauvegarder le Click ID dans `LocalStorage` ou `SessionStorage` de l'API Web Storage de HTML5 a également été largement utilisée.
+Lorsque le consentement et les règles applicables le permettent, l'annonceur peut aussi enregistrer des données de mesure dans `LocalStorage` ou `SessionStorage`. Ces espaces sont propres à un site et restent soumis aux fonctions de confidentialité du navigateur ainsi qu'aux réglages ou suppressions de l'utilisateur ; ils ne constituent ni une sauvegarde garantie des cookies ni des identifiants permanents.
 
 ## 3. La vague de protection de la vie privée : l'impact de l'ITP
 
@@ -76,17 +76,17 @@ Face aux [préoccupations croissantes en matière de confidentialité](/fr/p/pri
 
 ### L'impact de l'ITP sur l'affiliation
 
-Avec l'introduction de l'ITP, l'industrie de l'affiliation a subi les effets dévastateurs suivants :
+L'ITP de WebKit restreint dans Safari les cookies et espaces de stockage susceptibles d'être utilisés pour le suivi intersites. Les effets dépendent de la version du navigateur, de l'utilisation, du parcours de navigation et de la méthode de stockage. Exemples :
 
-1. **Blocage total des cookies tiers** : Les cookies émis par l'ASP (cookies d'un domaine différent de celui de l'annonceur) sont désormais bloqués par défaut. Par conséquent, le suivi via les balises CV traditionnelles a cessé de fonctionner.
-2. **Réduction de la durée de vie des cookies propriétaires** : Même s'il s'agit d'un cookie émis par le domaine de l'annonceur (cookie propriétaire), s'il est défini par JavaScript (`document.cookie`) via un paramètre d'URL (ex: `?click_id=...`), sa durée de validité a été réduite à un maximum de 24 heures (ou 7 jours).
-3. **Restrictions sur LocalStorage** : Tout comme pour les cookies, l'accès et la durée de conservation dans des stockages tels que LocalStorage sont devenus strictement limités.
+1. **Cookies tiers** : WebKit bloque par défaut les cookies tiers avec l'ITP. Avec les réglages par défaut de Safari, on ne peut donc pas présumer qu'une mesure traditionnelle puisse lire directement un cookie de l'ASP dans le navigateur.
+2. **Cookies et stockage définis par JavaScript** : Dans certains cas de liens identifiés comme liés au suivi, l'ITP peut limiter à 24 heures la durée des cookies définis par JavaScript sur la page d'arrivée. Les cookies modifiables par script et les données comme LocalStorage peuvent aussi devenir susceptibles d'être supprimés après une période sans interaction de l'utilisateur. Il ne s'agit pas d'une règle universelle de 24 heures/7 jours pour tous les cookies.
+3. **Stockage tiers** : Le LocalStorage tiers et les espaces similaires peuvent être cloisonnés par site ou éphémères. Il faut vérifier le comportement actuel de WebKit et les réglages de l'utilisateur pour chaque cas.
 
-En conséquence, il est devenu impossible de mesurer des résultats avec un long délai de réalisation, comme "l'utilisateur achète quelques jours après avoir cliqué sur la publicité", ce qui a entraîné une perte d'opportunités de rémunération pour les affiliés et une détérioration du ROI (retour sur investissement) pour les annonceurs.
+Ces restrictions peuvent compliquer, dans certains dispositifs traditionnels, le rapprochement d'un clic avec une conversion ultérieure. Les effets sur la mesure, les commissions ou le ROI varient selon la mise en œuvre et ne peuvent pas être généralisés.
 
 ## 4. L'essor du suivi côté serveur (S2S) et du Postback
 
-Alors que le stockage des données et la communication côté client (navigateur) sont limités, l'industrie de l'affiliation se tourne vers le **suivi côté serveur (Server-to-Server / S2S)**, également connu sous le nom de méthode **Postback**, comme solution.
+Une approche consiste à utiliser le **suivi serveur à serveur (Server-to-Server / S2S)**, également appelé méthode **Postback**, qui transmet les données de conversion du serveur de l'annonceur à l'ASP. Elle déplace une partie de la mesure côté serveur ; elle ne supprime ni les restrictions des navigateurs ni les exigences de consentement.
 
 ### Architecture du suivi S2S
 
@@ -104,18 +104,18 @@ flowchart TD
 ```
 
 1. **Clic et redirection** : Comme auparavant, l'utilisateur clique sur le lien de l'ASP. L'ASP génère un `Click ID` unique et le transmet au site de l'annonceur en tant que paramètre d'URL lors de la redirection (ex : `https://shop.example.com/?click_id=abcde12345`).
-2. **Sauvegarde côté serveur** : À la réception de la requête, le serveur Web de l'annonceur extrait le `click_id` du paramètre d'URL et l'enregistre dans une session côté serveur, une base de données, ou en tant que véritable cookie propriétaire via les en-têtes HTTP (Set-Cookie) (cela contourne facilement les restrictions ITP car cela n'implique pas JavaScript).
+2. **Stockage côté serveur** : Le serveur Web de l'annonceur récupère `click_id` dans une requête autorisée et l'enregistre si nécessaire dans une session ou une base de données. Il peut aussi définir un cookie pour son propre domaine dans une réponse HTTP, tout en respectant les protections contre le suivi du navigateur, les attributs et la durée du cookie, les réglages de l'utilisateur, le consentement et les règles applicables. Le traitement serveur ne supprime pas les restrictions de l'ITP.
 3. **Postback lors de la conversion** : Au moment où l'utilisateur termine son achat et que le traitement de la commande est confirmé sur le serveur de l'annonceur, ce dernier envoie directement une requête HTTP (GET ou POST) au point de terminaison spécifié (Postback URL) de l'ASP.
 
 ### Avantages du suivi S2S
 
-- **Pas affecté par l'ITP** : Permet une mesure fiable des résultats en contournant les restrictions du navigateur.
-- **Amélioration de la sécurité** : Comme la balise CV n'est pas exposée côté client, il est plus facile d'empêcher l'envoi de faux résultats (Ad Fraud).
-- **Amélioration de la précision des données** : Il n'y a pas d'omissions de chargement de la balise CV dues à des erreurs réseau ou à des abandons de navigateur par l'utilisateur.
+- **Maîtrise des flux de données** : L'annonceur peut valider, transformer ou supprimer des champs avant leur transmission. Cela ne dispense pas d'un consentement approprié ni de la minimisation des données.
+- **Réduction possible du travail du navigateur** : Certaines configurations peuvent réduire le nombre de balises tierces et de requêtes directes aux fournisseurs sur une page.
+- **Gestion des nouvelles tentatives et doublons** : Les transmissions serveur à serveur peuvent aussi échouer, être répétées ou dupliquées. Il faut prévoir des tentatives, la déduplication, des identifiants d'événement et une supervision.
 
 ### Défis du suivi S2S
 
-Le plus grand défi est la "barrière technique de mise en œuvre". Contrairement au simple collage d'une balise JavaScript traditionnelle en HTML, l'annonceur doit développer son système (réception des paramètres, sauvegarde en DB, traitement des requêtes API depuis le backend), ce qui augmente les coûts d'intégration pour les petits annonceurs.
+Les défis comprennent la mise en œuvre et l'exploitation. L'annonceur peut devoir recevoir et stocker des paramètres, authentifier les requêtes, réessayer et dédupliquer les événements et surveiller leur livraison, ce qui peut coûter davantage aux petites entreprises. Certains événements doivent toujours provenir du navigateur ou de l'application ; le S2S seul ne couvre donc pas nécessairement toute la mesure.
 
 Par conséquent, les ASP s'efforcent ces dernières années de réduire les obstacles à l'introduction du suivi S2S en proposant des plugins pour les principales plateformes telles que Shopify et WordPress.
 
@@ -124,15 +124,23 @@ Par conséquent, les ASP s'efforcent ces dernières années de réduire les obst
 En plus du suivi S2S, l'écosystème dans son ensemble continue d'évoluer.
 
 ### 5.1. Fingerprinting (Identification alternative)
-C'est une technologie qui identifie l'utilisateur de manière unique à partir d'une combinaison de son environnement de navigation (User-Agent, résolution d'écran, polices installées, adresse IP, etc.), sans dépendre des cookies ou des paramètres. Cependant, en raison des problèmes d'atteinte à la vie privée, les navigateurs prennent des mesures contre cela, ce qui en fait une méthode de moins en moins fiable.
+Le fingerprinting combine des caractéristiques d'un navigateur ou appareil pour tenter de l'identifier ou de le suivre. Il ne garantit pas l'identification unique et fiable d'une personne, présente des risques pour la vie privée et peut relever des protections des navigateurs, des lois et des règles des plateformes. Il ne faut pas l'adopter à la légère comme substitut aux cookies.
 
 ### 5.2. Data Clean Room et GTM côté serveur
-En utilisant les "Data Clean Rooms" proposées par les grandes plateformes ou les conteneurs côté serveur de Google Tag Manager (GTM), les annonceurs mettent en place des mécanismes pour lier en toute sécurité leurs données propriétaires (First-Party Data) aux ASP et aux plateformes publicitaires. Cela permet une analyse avancée de l'attribution tout en protégeant la vie privée des utilisateurs.
+Les salles blanches de données et les conteneurs côté serveur de Google Tag Manager (GTM) permettent de gérer le traitement et le partage des données. Leur utilisation n'anonymise pas automatiquement les données et ne garantit ni la conformité juridique ni la confidentialité. Il faut définir et vérifier la finalité, le consentement et les autorisations, la minimisation des données, les contrôles d'accès et les limites de sortie.
 
 ## Conclusion
 
 Dans les coulisses du marketing d'affiliation, l'évolution technologique et la vague de protection de la vie privée s'entrechoquent violemment, et les mécanismes de suivi subissent des changements spectaculaires.
 
-La transition d'un simple suivi côté client basé sur les cookies à un suivi côté serveur (S2S) plus robuste et sécurisé est désormais inévitable. Les annonceurs, les affiliés et les ASP doivent constamment se tenir au courant des dernières tendances technologiques et des réglementations légales (comme le RGPD et le CCPA) et construire des systèmes permettant de mesurer les résultats avec précision tout en respectant la vie privée des utilisateurs.
+Les approches côté client et côté serveur ont des rôles et des limites différents. Annonceurs, affiliés et ASP doivent définir la finalité et les limites de la mesure, puis choisir une mise en œuvre qui tient compte des lois et règles des plateformes applicables, du consentement et des choix des utilisateurs, de la minimisation des données et de la sécurité. Le S2S ne garantit automatiquement ni précision ni confidentialité ; sa conception et son exploitation doivent être rigoureuses.
 
 Comprendre l'architecture système de la publicité au résultat deviendra de plus en plus crucial à l'avenir pour tous les ingénieurs et spécialistes du marketing impliqués dans le marketing Web.
+
+## Références
+
+- [WebKit: Tracking Prevention in WebKit](https://webkit.org/tracking-prevention/)
+- [WebKit: Intelligent Tracking Prevention 2.2](https://webkit.org/blog/8828/)
+- [Google for Developers: Server-side tagging fundamentals](https://developers.google.com/tag-platform/learn/sst-fundamentals/2-what-is-sst)
+- [IETF RFC 9110: HTTP Semantics, Redirection](https://www.rfc-editor.org/rfc/rfc9110.html)
+- [WebKit: Tracking Prevention Policy](https://webkit.org/tracking-prevention-policy/)

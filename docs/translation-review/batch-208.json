@@ -1,0 +1,456 @@
+{
+  "version": 1,
+  "batch": 208,
+  "article": "Affiliate marketing measurement: tracking, conversion, ITP, and server-to-server postbacks",
+  "reviewedAt": "2026-11-25",
+  "sources": [
+    "https://webkit.org/tracking-prevention/",
+    "https://webkit.org/blog/8828/",
+    "https://developers.google.com/tag-platform/learn/sst-fundamentals/2-what-is-sst",
+    "https://www.rfc-editor.org/rfc/rfc9110.html",
+    "https://webkit.org/tracking-prevention-policy/"
+  ],
+  "scope": "Corrected the Japanese source and completed full AI reviews of all twelve available language editions. Exact source and translation hashes are recorded for each review. Publication is pending.",
+  "findings": [
+    "Removed claims that every affiliate link must redirect through an ASP and that tracking IDs are always available from ASP cookies.",
+    "Reframed WebKit ITP behavior with its applicable Safari conditions; it is not a universal 24-hour/7-day expiry rule for all cookies.",
+    "Clarified that server-to-server measurement can improve data control but does not bypass browser restrictions or consent requirements and still needs failure/retry/duplicate handling.",
+    "Corrected claims that fingerprinting is a reliable unique identifier, S2S prevents fraud or guarantees complete measurement, and clean rooms automatically guarantee privacy.",
+    "Added primary technical references for WebKit tracking prevention, Google server-side tagging, and IETF redirect semantics."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/affiliate-marketing-mechanism/index.en.md": {
+      "source": "post/affiliate-marketing-mechanism/index.md",
+      "sourceHash": "f9ecb1d82e6582af0e8b6ba2b79633099433d473b2cc2488876a242e82cb1fb8",
+      "translationHash": "76849396c097be8dc77493adb7c17d41154fda9365742928b34147d52369a2c3",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "reviewKind": "ai",
+      "summary": "Read the complete English edition against the Japanese source. Corrected universal claims about ASP redirects, third-party cookies, fixed ITP expiry windows, S2S bypass/reliability, fingerprinting, and privacy guarantees; added primary technical references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all sections with the Japanese source and aligned the tracking flow, Safari/WebKit limitations, S2S scope, privacy caveats, and conclusion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked affiliate/ASP, Click ID, first- and third-party cookies, LocalStorage, ITP, S2S/postback, conversion events, fingerprinting, and data clean room terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No formulas or calculations occur. The 24-hour and seven-day storage behaviors are bounded to cited WebKit conditions and explicitly not presented as universal rules."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed both Mermaid flows, example URLs, HTTP 302/307/301 semantics, and technical identifiers; there are no executable code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked internal English links against published article slugs and added five primary technical references to WebKit, Google for Developers, and IETF RFC 9110."
+        }
+      },
+      "limitations": [
+        "Review performed by Codex (AI); no human editor or native English-language reviewer has confirmed style or terminology.",
+        "Browser tracking-prevention behavior can change; the article bounds examples to WebKit documentation and recommends checking current behavior.",
+        "This general technical overview is not legal advice or a guarantee that a specific attribution implementation complies with any jurisdiction's requirements."
+      ]
+    },
+    "post/affiliate-marketing-mechanism/index.ar.md": {
+      "source": "post/affiliate-marketing-mechanism/index.md",
+      "sourceHash": "f9ecb1d82e6582af0e8b6ba2b79633099433d473b2cc2488876a242e82cb1fb8",
+      "translationHash": "23f3fc035f24bd6656f35229bfe73467e841d413c7b9b36d1c5c08bce3538174",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "reviewKind": "ai",
+      "summary": "Read the complete Arabic edition against the Japanese source and corrected unsupported claims about ITP cookie/storage behavior, S2S guarantees, redirect status, fingerprinting, and privacy controls. Added authoritative technical references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full Arabic edition with the Japanese source and corrected the overbroad claims about universal ASP redirects, guaranteed third-party-cookie access, fixed ITP expiry limits, S2S bypass/reliability, and privacy-safe attribution."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Arabic terminology for affiliate/ASP, Click ID, first- and third-party cookies, LocalStorage, ITP, S2S/Postback, conversion events, fingerprinting, and clean rooms."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical formula or numerical calculation is present. The 24-hour and 7-day ITP examples are bounded to specific WebKit behaviors and cited."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the two Mermaid diagrams, example tracking URLs, HTTP status references, and technical identifiers. No executable code sample is present."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified internal Arabic links for HTTP and the privacy article against existing article slugs. Added five HTTPS references to WebKit, Google for Developers, and IETF RFC 9110; each source was opened and checked."
+        }
+      },
+      "limitations": [
+        "Review performed by Codex (AI); no human or native Arabic-language reviewer has confirmed phrasing or terminology.",
+        "Browser tracking-prevention behavior changes over time; the article now points to WebKit documentation and bounds the examples to Safari/WebKit behavior.",
+        "The article describes a general technical architecture, not legal advice or a guarantee that any particular attribution method complies with a jurisdiction’s laws."
+      ]
+    },
+    "post/affiliate-marketing-mechanism/index.de.md": {
+      "source": "post/affiliate-marketing-mechanism/index.md",
+      "sourceHash": "f9ecb1d82e6582af0e8b6ba2b79633099433d473b2cc2488876a242e82cb1fb8",
+      "translationHash": "b70cdb4c05ecd02bf328b5179c930ca56d7b8cc2018851e781325b7b765262e0",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "reviewKind": "ai",
+      "summary": "Read the complete German edition against the Japanese source and corrected material overclaims about affiliate redirect patterns, cookie/storage availability, WebKit ITP conditions, S2S behavior, fingerprinting, and privacy guarantees. Added primary technical references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all article sections with the Japanese source; corrected the tracking flow, browser restrictions, S2S scope, privacy caveats, and conclusion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked affiliate/ASP, Click ID, first- and third-party cookies, LocalStorage, ITP, S2S/Postback, conversion events, fingerprinting, and clean-room terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No formulas or calculations occur. The 24-hour and seven-day storage examples are bounded to cited WebKit conditions and explicitly not universal rules."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed both Mermaid diagrams, example URLs, HTTP redirect status references, and technical identifiers; there are no executable code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked internal translated article links against published slugs and added five primary references to WebKit, Google for Developers, and IETF RFC 9110."
+        }
+      },
+      "limitations": [
+        "Review performed by Codex (AI); no human or native German language reviewer has confirmed style or terminology.",
+        "Browser tracking-prevention behavior can change; the article bounds examples to WebKit documentation and advises checking current behavior.",
+        "This general technical overview is not legal advice and does not guarantee that a specific implementation complies with any jurisdiction’s requirements."
+      ]
+    },
+    "post/affiliate-marketing-mechanism/index.es.md": {
+      "source": "post/affiliate-marketing-mechanism/index.md",
+      "sourceHash": "f9ecb1d82e6582af0e8b6ba2b79633099433d473b2cc2488876a242e82cb1fb8",
+      "translationHash": "7f24110bec7b5a952419992586b676ba48145d63a1ec23165b2fd6608a845a92",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "reviewKind": "ai",
+      "summary": "Read the complete Spanish edition against the Japanese source and corrected material overclaims about affiliate redirect patterns, cookie/storage availability, WebKit ITP conditions, S2S behavior, fingerprinting, and privacy guarantees. Added primary technical references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all article sections with the Japanese source; corrected the tracking flow, browser restrictions, S2S scope, privacy caveats, and conclusion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked affiliate/ASP, Click ID, first- and third-party cookies, LocalStorage, ITP, S2S/Postback, conversion events, fingerprinting, and clean-room terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No formulas or calculations occur. The 24-hour and seven-day storage examples are bounded to cited WebKit conditions and explicitly not universal rules."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed both Mermaid diagrams, example URLs, HTTP redirect status references, and technical identifiers; there are no executable code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked internal translated article links against published slugs and added five primary references to WebKit, Google for Developers, and IETF RFC 9110."
+        }
+      },
+      "limitations": [
+        "Review performed by Codex (AI); no human or native Spanish language reviewer has confirmed style or terminology.",
+        "Browser tracking-prevention behavior can change; the article bounds examples to WebKit documentation and advises checking current behavior.",
+        "This general technical overview is not legal advice and does not guarantee that a specific implementation complies with any jurisdiction’s requirements."
+      ]
+    },
+    "post/affiliate-marketing-mechanism/index.fr.md": {
+      "source": "post/affiliate-marketing-mechanism/index.md",
+      "sourceHash": "f9ecb1d82e6582af0e8b6ba2b79633099433d473b2cc2488876a242e82cb1fb8",
+      "translationHash": "f2d22eae6003cac0dec0a5a4865b8d0d048520686a265dc40d61a83698c8fe12",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "reviewKind": "ai",
+      "summary": "Read the complete French edition against the Japanese source and corrected material overclaims about affiliate redirect patterns, cookie/storage availability, WebKit ITP conditions, S2S behavior, fingerprinting, and privacy guarantees. Added primary technical references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all article sections with the Japanese source; corrected the tracking flow, browser restrictions, S2S scope, privacy caveats, and conclusion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked affiliate/ASP, Click ID, first- and third-party cookies, LocalStorage, ITP, S2S/Postback, conversion events, fingerprinting, and clean-room terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No formulas or calculations occur. The 24-hour and seven-day storage examples are bounded to cited WebKit conditions and explicitly not universal rules."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed both Mermaid diagrams, example URLs, HTTP redirect status references, and technical identifiers; there are no executable code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked internal translated article links against published slugs and added five primary references to WebKit, Google for Developers, and IETF RFC 9110."
+        }
+      },
+      "limitations": [
+        "Review performed by Codex (AI); no human or native French language reviewer has confirmed style or terminology.",
+        "Browser tracking-prevention behavior can change; the article bounds examples to WebKit documentation and advises checking current behavior.",
+        "This general technical overview is not legal advice and does not guarantee that a specific implementation complies with any jurisdiction’s requirements."
+      ]
+    },
+    "post/affiliate-marketing-mechanism/index.hi.md": {
+      "source": "post/affiliate-marketing-mechanism/index.md",
+      "sourceHash": "f9ecb1d82e6582af0e8b6ba2b79633099433d473b2cc2488876a242e82cb1fb8",
+      "translationHash": "caeb5d730c3427df0483989062811a9997048c38b603ec04d61f9fe5dd85dcd9",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "reviewKind": "ai",
+      "summary": "Read the complete Hindi edition against the Japanese source and corrected material overclaims about affiliate redirect patterns, cookie/storage availability, WebKit ITP conditions, S2S behavior, fingerprinting, and privacy guarantees. Added primary technical references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all article sections with the Japanese source; corrected the tracking flow, browser restrictions, S2S scope, privacy caveats, and conclusion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked affiliate/ASP, Click ID, first- and third-party cookies, LocalStorage, ITP, S2S/Postback, conversion events, fingerprinting, and clean-room terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No formulas or calculations occur. The 24-hour and seven-day storage examples are bounded to cited WebKit conditions and explicitly not universal rules."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed both Mermaid diagrams, example URLs, HTTP redirect status references, and technical identifiers; there are no executable code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked internal translated article links against published slugs and added five primary references to WebKit, Google for Developers, and IETF RFC 9110."
+        }
+      },
+      "limitations": [
+        "Review performed by Codex (AI); no human or native Hindi language reviewer has confirmed style or terminology.",
+        "Browser tracking-prevention behavior can change; the article bounds examples to WebKit documentation and advises checking current behavior.",
+        "This general technical overview is not legal advice and does not guarantee that a specific implementation complies with any jurisdiction’s requirements."
+      ]
+    },
+    "post/affiliate-marketing-mechanism/index.id.md": {
+      "source": "post/affiliate-marketing-mechanism/index.md",
+      "sourceHash": "f9ecb1d82e6582af0e8b6ba2b79633099433d473b2cc2488876a242e82cb1fb8",
+      "translationHash": "a77073808735da80a749f36adc05d06253017a4ca80569b132f5d0ff6ed31833",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "reviewKind": "ai",
+      "summary": "Read the complete Indonesian edition against the Japanese source and corrected material overclaims about affiliate redirect patterns, cookie/storage availability, WebKit ITP conditions, S2S behavior, fingerprinting, and privacy guarantees. Added primary technical references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all article sections with the Japanese source; corrected the tracking flow, browser restrictions, S2S scope, privacy caveats, and conclusion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked affiliate/ASP, Click ID, first- and third-party cookies, LocalStorage, ITP, S2S/Postback, conversion events, fingerprinting, and clean-room terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No formulas or calculations occur. The 24-hour and seven-day storage examples are bounded to cited WebKit conditions and explicitly not universal rules."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed both Mermaid diagrams, example URLs, HTTP redirect status references, and technical identifiers; there are no executable code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked internal translated article links against published slugs and added five primary references to WebKit, Google for Developers, and IETF RFC 9110."
+        }
+      },
+      "limitations": [
+        "Review performed by Codex (AI); no human or native Indonesian language reviewer has confirmed style or terminology.",
+        "Browser tracking-prevention behavior can change; the article bounds examples to WebKit documentation and advises checking current behavior.",
+        "This general technical overview is not legal advice and does not guarantee that a specific implementation complies with any jurisdiction’s requirements."
+      ]
+    },
+    "post/affiliate-marketing-mechanism/index.ko.md": {
+      "source": "post/affiliate-marketing-mechanism/index.md",
+      "sourceHash": "f9ecb1d82e6582af0e8b6ba2b79633099433d473b2cc2488876a242e82cb1fb8",
+      "translationHash": "241d3ff59c551c2e0e326b2adf8b922aadcd99708d4ea1b96e535849cdff145b",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "reviewKind": "ai",
+      "summary": "Read the complete Korean edition against the Japanese source and corrected material overclaims about affiliate redirect patterns, cookie/storage availability, WebKit ITP conditions, S2S behavior, fingerprinting, and privacy guarantees. Added primary technical references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all article sections with the Japanese source; corrected the tracking flow, browser restrictions, S2S scope, privacy caveats, and conclusion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked affiliate/ASP, Click ID, first- and third-party cookies, LocalStorage, ITP, S2S/Postback, conversion events, fingerprinting, and clean-room terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No formulas or calculations occur. The 24-hour and seven-day storage examples are bounded to cited WebKit conditions and explicitly not universal rules."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed both Mermaid diagrams, example URLs, HTTP redirect status references, and technical identifiers; there are no executable code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked internal translated article links against published slugs and added five primary references to WebKit, Google for Developers, and IETF RFC 9110."
+        }
+      },
+      "limitations": [
+        "Review performed by Codex (AI); no human or native Korean language reviewer has confirmed style or terminology.",
+        "Browser tracking-prevention behavior can change; the article bounds examples to WebKit documentation and advises checking current behavior.",
+        "This general technical overview is not legal advice and does not guarantee that a specific implementation complies with any jurisdiction’s requirements."
+      ]
+    },
+    "post/affiliate-marketing-mechanism/index.pt.md": {
+      "source": "post/affiliate-marketing-mechanism/index.md",
+      "sourceHash": "f9ecb1d82e6582af0e8b6ba2b79633099433d473b2cc2488876a242e82cb1fb8",
+      "translationHash": "a2b7c754780a3b06c9d36900f70594d8e149fa238cba25537ef40d7dca50e349",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "reviewKind": "ai",
+      "summary": "Read the complete Portuguese edition against the Japanese source and corrected material overclaims about affiliate redirect patterns, cookie/storage availability, WebKit ITP conditions, S2S behavior, fingerprinting, and privacy guarantees. Added primary technical references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all article sections with the Japanese source; corrected the tracking flow, browser restrictions, S2S scope, privacy caveats, and conclusion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked affiliate/ASP, Click ID, first- and third-party cookies, LocalStorage, ITP, S2S/Postback, conversion events, fingerprinting, and clean-room terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No formulas or calculations occur. The 24-hour and seven-day storage examples are bounded to cited WebKit conditions and explicitly not universal rules."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed both Mermaid diagrams, example URLs, HTTP redirect status references, and technical identifiers; there are no executable code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked internal translated article links against published slugs and added five primary references to WebKit, Google for Developers, and IETF RFC 9110."
+        }
+      },
+      "limitations": [
+        "Review performed by Codex (AI); no human or native Portuguese language reviewer has confirmed style or terminology.",
+        "Browser tracking-prevention behavior can change; the article bounds examples to WebKit documentation and advises checking current behavior.",
+        "This general technical overview is not legal advice and does not guarantee that a specific implementation complies with any jurisdiction’s requirements."
+      ]
+    },
+    "post/affiliate-marketing-mechanism/index.ru.md": {
+      "source": "post/affiliate-marketing-mechanism/index.md",
+      "sourceHash": "f9ecb1d82e6582af0e8b6ba2b79633099433d473b2cc2488876a242e82cb1fb8",
+      "translationHash": "00e27e81def82d62f3eb69e30734ce8cedc46bf6554e93d96d0343928fba7c7e",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "reviewKind": "ai",
+      "summary": "Read the complete Russian edition against the Japanese source and corrected material overclaims about affiliate redirect patterns, cookie/storage availability, WebKit ITP conditions, S2S behavior, fingerprinting, and privacy guarantees. Added primary technical references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all article sections with the Japanese source; corrected the tracking flow, browser restrictions, S2S scope, privacy caveats, and conclusion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked affiliate/ASP, Click ID, first- and third-party cookies, LocalStorage, ITP, S2S/Postback, conversion events, fingerprinting, and clean-room terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No formulas or calculations occur. The 24-hour and seven-day storage examples are bounded to cited WebKit conditions and explicitly not universal rules."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed both Mermaid diagrams, example URLs, HTTP redirect status references, and technical identifiers; there are no executable code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked internal translated article links against published slugs and added five primary references to WebKit, Google for Developers, and IETF RFC 9110."
+        }
+      },
+      "limitations": [
+        "Review performed by Codex (AI); no human or native Russian language reviewer has confirmed style or terminology.",
+        "Browser tracking-prevention behavior can change; the article bounds examples to WebKit documentation and advises checking current behavior.",
+        "This general technical overview is not legal advice and does not guarantee that a specific implementation complies with any jurisdiction’s requirements."
+      ]
+    },
+    "post/affiliate-marketing-mechanism/index.zh-cn.md": {
+      "source": "post/affiliate-marketing-mechanism/index.md",
+      "sourceHash": "f9ecb1d82e6582af0e8b6ba2b79633099433d473b2cc2488876a242e82cb1fb8",
+      "translationHash": "26eda7c534c05932c67fa1275c55550e738bd593935a4a7595adbc5b51ba0b70",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "reviewKind": "ai",
+      "summary": "Read the complete Simplified Chinese edition against the Japanese source and corrected material overclaims about affiliate redirect patterns, cookie/storage availability, WebKit ITP conditions, S2S behavior, fingerprinting, and privacy guarantees. Added primary technical references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all article sections with the Japanese source; corrected the tracking flow, browser restrictions, S2S scope, privacy caveats, and conclusion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked affiliate/ASP, Click ID, first- and third-party cookies, LocalStorage, ITP, S2S/Postback, conversion events, fingerprinting, and clean-room terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No formulas or calculations occur. The 24-hour and seven-day storage examples are bounded to cited WebKit conditions and explicitly not universal rules."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed both Mermaid diagrams, example URLs, HTTP redirect status references, and technical identifiers; there are no executable code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked internal translated article links against published slugs and added five primary references to WebKit, Google for Developers, and IETF RFC 9110."
+        }
+      },
+      "limitations": [
+        "Review performed by Codex (AI); no human or native Simplified Chinese language reviewer has confirmed style or terminology.",
+        "Browser tracking-prevention behavior can change; the article bounds examples to WebKit documentation and advises checking current behavior.",
+        "This general technical overview is not legal advice and does not guarantee that a specific implementation complies with any jurisdiction’s requirements."
+      ]
+    },
+    "post/affiliate-marketing-mechanism/index.zh-tw.md": {
+      "source": "post/affiliate-marketing-mechanism/index.md",
+      "sourceHash": "f9ecb1d82e6582af0e8b6ba2b79633099433d473b2cc2488876a242e82cb1fb8",
+      "translationHash": "7339c5952b97c263a20a9b5ed0a8b1dd15cf81037f7060be0b7a2f137c06aebb",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "reviewKind": "ai",
+      "summary": "Read the complete Traditional Chinese edition against the Japanese source and corrected material overclaims about affiliate redirect patterns, cookie/storage availability, WebKit ITP conditions, S2S behavior, fingerprinting, and privacy guarantees. Added primary technical references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all article sections with the Japanese source; corrected the tracking flow, browser restrictions, S2S scope, privacy caveats, and conclusion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked affiliate/ASP, Click ID, first- and third-party cookies, LocalStorage, ITP, S2S/Postback, conversion events, fingerprinting, and clean-room terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No formulas or calculations occur. The 24-hour and seven-day storage examples are bounded to cited WebKit conditions and explicitly not universal rules."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed both Mermaid diagrams, example URLs, HTTP redirect status references, and technical identifiers; there are no executable code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked internal translated article links against published slugs and added five primary references to WebKit, Google for Developers, and IETF RFC 9110."
+        }
+      },
+      "limitations": [
+        "Review performed by Codex (AI); no human or native Traditional Chinese language reviewer has confirmed style or terminology.",
+        "Browser tracking-prevention behavior can change; the article bounds examples to WebKit documentation and advises checking current behavior.",
+        "This general technical overview is not legal advice and does not guarantee that a specific implementation complies with any jurisdiction’s requirements."
+      ]
+    }
+  }
+}

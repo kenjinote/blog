@@ -14,7 +14,7 @@ Di pasar periklanan internet, iklan berbasis kinerja (pemasaran afiliasi) memain
 
 Namun, di balik layar, terdapat teknologi pelacakan (tracking) yang canggih dan kompleks yang beroperasi untuk melacak perilaku pengguna secara akurat dan menentukan media (afiliator) mana yang menghasilkan rujukan tersebut.
 
-Dalam artikel ini, kami akan menjelaskan secara menyeluruh tentang teknologi di balik afiliasi, mulai dari peran ASP (Affiliate Service Provider) sebagai inti dari sistem afiliasi, mekanisme URL pelacakan yang menggunakan pengalihan (redirect), teknologi pelacakan sisi klien menggunakan Cookie dan LocalStorage, hingga pelacakan sisi server (S2S) sebagai penanggulangan ITP (Intelligent Tracking Prevention) yang belakangan ini menarik banyak perhatian.
+Artikel ini menjelaskan aspek teknis pemasaran afiliasi: peran ASP, URL pelacakan dengan pengalihan, teknologi sisi klien seperti Cookie dan LocalStorage, serta pelacakan server-ke-server (S2S). S2S memindahkan sebagian proses pengukuran ke server; metode ini tidak mengakali pembatasan browser atau persyaratan persetujuan.
 
 ## 1. Gambaran Umum Ekosistem Afiliasi
 
@@ -36,7 +36,7 @@ flowchart TD
     ASP -- "Persetujuan hasil & Pembayaran komisi" --> Media
 ```
 
-ASP berfungsi sebagai basis data raksasa yang memproses lalu lintas dalam jumlah sangat besar secara real-time, merekam dengan tingkat presisi milidetik mengenai "siapa" yang mengklik "iklan yang mana" dan "kapan", serta "kapan" dan "hasil apa" yang ditimbulkannya.
+ASP dapat menjadi pusat data yang mencatat dan mencocokkan klik iklan dengan konversi yang dilaporkan. Tingkat perincian, ketepatan waktu, dan aturan atribusi bergantung pada implementasi serta ketentuan kontrak tiap penyedia dan pengiklan.
 
 ## 2. Mekanisme Dasar Pelacakan (Sisi Klien)
 
@@ -44,29 +44,29 @@ Secara historis, pelacakan afiliasi sangat bergantung pada teknologi sisi klien 
 
 ### 2.1. URL Pelacakan dan Pengalihan (Redirect)
 
-Tautan iklan yang dipasang afiliator di situs mereka tidak mengarah langsung ke situs pengiklan. Tautan tersebut selalu berupa "URL pelacakan" yang melewati server ASP terlebih dahulu.
+Banyak tautan afiliasi menggunakan URL pelacakan ASP sebelum mengarahkan pengunjung ke situs pengiklan. Ada pula sistem yang mengukur rujukan secara langsung atau di server pengiklan, sehingga pengalihan melalui ASP tidak wajib dalam setiap implementasi.
 
 Contoh: `https://click.example-asp.com/track?aff_id=12345&campaign_id=67890`
 
 Ketika pengguna mengklik tautan ini, proses berikut terjadi:
 
-1. **Perekaman Klik**: Server ASP mencatat alamat IP pengguna, User-Agent, stempel waktu, serta ID Afiliasi (`aff_id`) dan ID Kampanye (`campaign_id`) yang terdapat di URL ke dalam database.
+1. **Pencatatan Klik**: Bergantung pada implementasi dan aturan yang berlaku, ASP mencatat waktu dan pengenal iklan yang diperlukan untuk pengukuran. Jika memproses alamat IP atau User-Agent, tujuan, kebutuhan, masa penyimpanan, dan kontrol akses harus dikelola dengan jelas.
 2. **Pembuatan ID Klik (Click ID)**: Sebuah "ID Klik (Click ID)" dihasilkan untuk mengidentifikasi peristiwa klik ini secara unik.
-3. **Pemberian Cookie**: ASP menerbitkan Cookie dari domain mereka sendiri (pihak ketiga) ke browser pengguna, dan menyimpan ID Klik di dalamnya.
-4. **Pengalihan (Redirect)**: Begitu proses selesai, server mengembalikan respons [HTTP 302](/id/p/history-of-http/) (Found) atau 301 (Moved Permanently) dan mengalihkan pengguna ke Halaman Landas (Landing Page/LP) pengiklan. Pada saat ini, ID Klik juga terkadang ditambahkan sebagai parameter URL.
+3. **Penerusan pengenal**: Sejumlah konfigurasi lama menyimpan Click ID di Cookie ASP. Cara ini tidak dapat diandalkan jika browser memblokir Cookie pihak ketiga. Konfigurasi lain meneruskan pengenal ke domain pengiklan dan, jika diizinkan, menyimpannya dalam konteks pihak pertama.
+4. **Pengalihan**: Navigasi sementara biasanya menggunakan [HTTP 302](/id/p/history-of-http/) (Found) atau 307 (Temporary Redirect). 301 (Moved Permanently) menandakan perpindahan permanen dan dapat di-cache, sehingga umumnya tidak cocok untuk pengalihan pengukuran klik biasa. Beberapa implementasi menambahkan Click ID ke URL tujuan.
 
 ### 2.2. Peran Cookie dan LocalStorage
 
 Pengguna yang mencapai situs pengiklan akan menjelajahi situs tersebut dan pada akhirnya melakukan "Konversi (CV)" seperti pembelian produk atau pendaftaran anggota.
 
-Pada pelacakan konvensional, halaman tempat konversi selesai (Thank You Page) ditanami tag JavaScript atau gambar yang disediakan oleh ASP, yang disebut "Tag Konversi (CV Tag)".
+Salah satu contoh metode sisi klien konvensional adalah memasang JavaScript atau tag gambar dari ASP, yang disebut "Tag Konversi (CV Tag)", pada halaman penyelesaian konversi (Thank You Page). Kemampuan untuk menghubungkan klik dengan konversi bergantung pada akses browser terhadap pengenal yang tersimpan dan izin untuk mengirim permintaan jaringan tag tersebut.
 
 Ketika tag konversi dimuat, proses berikut berlangsung:
 
-- **Pembacaan Cookie**: ID Klik dibaca dari Cookie ASP yang tersimpan di browser.
-- **Pengiriman Hasil**: ID Klik yang telah dibaca beserta informasi hasil (jumlah pembelian, nomor pesanan, dll.) dikirim ke server ASP.
+- **Membaca pengenal**: Jika diizinkan oleh implementasi, tag membaca pengenal yang disimpan dalam konteks pihak pertama pengiklan atau Click ID dari URL tujuan. Tidak dapat diasumsikan bahwa browser bisa membaca langsung Cookie pihak ketiga milik ASP.
+- **Mengirim hasil**: Click ID yang tersedia dan detail konversi (misalnya nilai pembelian atau nomor pesanan) dikirim ke ASP sesuai kontrak, persetujuan, dan aturan yang berlaku.
 
-Selain itu, untuk mengantisipasi kadaluwarsa atau penghapusan Cookie, metode penyimpanan cadangan untuk ID Klik juga sering digunakan, seperti API Web Storage HTML5, yaitu `LocalStorage` atau `SessionStorage`.
+Jika persetujuan dan aturan yang berlaku mengizinkan, pengiklan dapat menyimpan status pengukuran di `LocalStorage` atau `SessionStorage`. Penyimpanan ini dibatasi per situs dan tetap dipengaruhi fitur privasi browser serta pengaturan atau penghapusan oleh pengguna; ini bukan cadangan Cookie yang terjamin atau pengenal permanen.
 
 ## 3. Gelombang Perlindungan Privasi: Dampak ITP
 
@@ -76,17 +76,17 @@ Seiring dengan meningkatnya [kekhawatiran terkait privasi](/id/p/privacy-vs-conv
 
 ### Dampak ITP terhadap Afiliasi
 
-Dengan diperkenalkannya ITP, industri afiliasi mengalami dampak yang sangat merusak sebagai berikut:
+ITP WebKit membatasi Cookie dan penyimpanan di Safari yang mungkin digunakan untuk pelacakan lintas situs. Dampaknya bergantung pada versi browser, penggunaan, jalur navigasi, dan cara penyimpanan diatur. Contohnya:
 
-1. **Pemblokiran Total Cookie Pihak Ketiga**: Cookie yang diterbitkan oleh ASP (Cookie dari domain yang berbeda dari domain pengiklan) sekarang diblokir secara default. Akibatnya, pelacakan dengan tag CV konvensional tidak lagi berfungsi.
-2. **Pemendekan Masa Berlaku Cookie Pihak Pertama**: Meskipun berupa Cookie yang diterbitkan dari domain pengiklan (Cookie Pihak Pertama), jika disetel melalui JavaScript (`document.cookie`) yang berasal dari parameter URL (misalnya: `?click_id=...`), masa berlakunya dipersingkat menjadi maksimal 24 jam (atau 7 hari).
-3. **Pembatasan LocalStorage**: Sama seperti Cookie, akses ke penyimpanan seperti LocalStorage serta durasi penyimpanannya juga dibatasi secara ketat.
+1. **Cookie pihak ketiga**: WebKit memblokir Cookie pihak ketiga secara default dengan ITP. Karena itu, pengukuran tradisional yang membaca Cookie ASP langsung di browser tidak dapat diasumsikan berfungsi dengan pengaturan default Safari.
+2. **Cookie dan penyimpanan yang disetel dengan JavaScript**: Dalam kondisi tertentu yang melibatkan tautan terklasifikasi sebagai pelacak, ITP dapat membatasi masa berlaku Cookie yang disetel JavaScript pada halaman tujuan menjadi 24 jam. Cookie yang dapat ditulis skrip dan data seperti LocalStorage juga dapat dihapus setelah pengguna tidak berinteraksi selama jangka waktu tertentu. Ini bukan aturan universal 24 jam/7 hari untuk semua Cookie.
+3. **Penyimpanan pihak ketiga**: LocalStorage pihak ketiga dan penyimpanan serupa dapat dipartisi per situs atau bersifat sementara. Periksa dokumentasi WebKit terkini dan pengaturan pengguna untuk kasus sebenarnya.
 
-Akibatnya, hasil dengan jeda waktu panjang, seperti "pengguna mengklik iklan, lalu melakukan pembelian beberapa hari kemudian", tidak dapat lagi diukur, yang menyebabkan hilangnya peluang komisi bagi afiliator dan memburuknya ROI (Pengembalian Investasi) bagi pengiklan.
+Pembatasan ini dapat menyulitkan beberapa konfigurasi lama dalam menghubungkan klik dengan konversi yang terjadi kemudian. Dampaknya pada pengukuran, komisi, atau ROI berbeda menurut implementasi dan tidak dapat digeneralisasi.
 
 ## 4. Kebangkitan Pelacakan Sisi Server (S2S) dan Postback
 
-Di tengah pembatasan penyimpanan data dan komunikasi di sisi klien (browser), industri afiliasi mulai beralih ke solusi yang disebut **Pelacakan Sisi Server (Server-to-Server / S2S)**, atau sering juga disebut **Metode Postback**.
+Salah satu pendekatan adalah **pelacakan server-ke-server (Server-to-Server / S2S)**, yang juga disebut **metode Postback**, yaitu pengiriman informasi konversi dari server pengiklan ke ASP. Metode ini memindahkan sebagian proses pengukuran ke server, tetapi tidak menghapus pembatasan browser maupun persyaratan persetujuan.
 
 ### Arsitektur Pelacakan S2S
 
@@ -104,18 +104,18 @@ flowchart TD
 ```
 
 1. **Klik dan Pengalihan**: Seperti sebelumnya, pengguna mengklik tautan ASP. ASP menghasilkan `Click ID` unik dan meneruskannya ke situs pengiklan sebagai parameter URL saat pengalihan (misalnya: `https://shop.example.com/?click_id=abcde12345`).
-2. **Penyimpanan di Sisi Server**: Saat menerima permintaan, server Web pengiklan mengekstrak `click_id` dari parameter URL dan menyimpannya di sesi server, database, atau sebagai Cookie pihak pertama sejati menggunakan header HTTP (Set-Cookie), sehingga terhindar dari pembatasan ITP karena tidak melewati JavaScript.
+2. **Penyimpanan di sisi server**: Server Web pengiklan mengambil `click_id` dari permintaan yang diizinkan dan menyimpannya dalam sesi atau basis data jika diperlukan. Server juga dapat menyetel Cookie untuk domainnya sendiri melalui respons HTTP, tetapi tetap harus mematuhi pencegahan pelacakan browser, atribut dan masa berlaku Cookie, pengaturan pengguna, persetujuan, serta aturan yang berlaku. Pemrosesan server tidak menghilangkan pembatasan ITP.
 3. **Postback saat Konversi**: Saat pengguna menyelesaikan pembelian dan pesanan dikonfirmasi oleh server pengiklan, server pengiklan mengirimkan permintaan HTTP (GET atau POST) secara langsung ke titik akhir (Endpoint/Postback URL) yang telah ditentukan oleh ASP.
 
 ### Keuntungan Pelacakan S2S
 
-- **Tidak Terpengaruh oleh ITP**: Karena dapat menghindari pembatasan browser, pengukuran hasil yang akurat dapat dipastikan.
-- **Peningkatan Keamanan**: Karena tidak mengekspos tag CV ke sisi klien, pengiriman hasil yang curang (Ad Fraud) menjadi lebih mudah dicegah.
-- **Peningkatan Presisi Data**: Tidak ada kegagalan pemuatan tag CV akibat kesalahan jaringan atau pengguna yang menutup browser lebih awal.
+- **Kontrol alur data**: Pengiklan dapat memvalidasi, mengubah, atau menghapus kolom sebelum mengirimkannya. Persetujuan yang sesuai dan minimalisasi data tetap diperlukan.
+- **Potensi pengurangan kerja browser**: Beberapa konfigurasi dapat mengurangi tag pihak ketiga dan permintaan langsung ke vendor dari halaman.
+- **Penanganan percobaan ulang dan duplikasi**: Pengiriman ant server juga dapat gagal, dicoba ulang, atau terduplikasi. Rancang percobaan ulang, deduplikasi, ID peristiwa, dan pemantauan.
 
 ### Tantangan Pelacakan S2S
 
-Tantangan terbesarnya adalah "rintangan teknologi dalam implementasi". Dibandingkan dengan pekerjaan sederhana seperti menempelkan tag JavaScript ke dalam HTML, metode ini memerlukan pengembangan sistem di pihak pengiklan (menerima parameter, menyimpan ke DB, pemrosesan permintaan API dari backend). Hal ini mengakibatkan biaya implementasi yang tinggi bagi pengiklan berskala kecil.
+Tantangannya mencakup penerapan dan operasi berkelanjutan. Pengiklan mungkin perlu menerima dan menyimpan parameter, mengautentikasi permintaan, mencoba ulang dan menghapus duplikasi peristiwa, serta memantau pengiriman; hal ini dapat membebani usaha kecil. Sebagian peristiwa tetap harus berasal dari browser atau aplikasi pengguna, sehingga S2S saja belum tentu mencakup seluruh alur pengukuran.
 
 Oleh karena itu, beberapa tahun terakhir ASP telah berupaya menurunkan rintangan implementasi pelacakan S2S dengan menyediakan plugin untuk platform-platform utama seperti Shopify dan WordPress.
 
@@ -124,15 +124,23 @@ Oleh karena itu, beberapa tahun terakhir ASP telah berupaya menurunkan rintangan
 Selain pelacakan S2S, ekosistem periklanan juga terus berevolusi.
 
 ### 5.1. Fingerprinting (Identifikasi Alternatif)
-Ini adalah teknologi untuk mengidentifikasi pengguna secara unik dari kombinasi lingkungan browser pengguna (User-Agent, resolusi layar, font yang diinstal, alamat IP, dll.) tanpa bergantung pada Cookie atau parameter. Namun, tindakan balasan dari pihak browser juga sedang berlangsung terkait masalah pelanggaran privasi, menjadikannya bukan lagi metode yang dapat diandalkan sepenuhnya.
+Fingerprinting menggabungkan karakteristik browser atau perangkat untuk mencoba mengidentifikasi atau melacaknya. Cara ini tidak menjamin identifikasi seseorang secara unik dan andal, memiliki risiko privasi, serta dapat terkena perlindungan browser, hukum, dan kebijakan platform. Jangan mengadopsinya begitu saja sebagai pengganti Cookie.
 
 ### 5.2. Data Clean Room dan Server-Side GTM
-Dengan memanfaatkan "Data Clean Room" yang ditawarkan oleh perusahaan platform besar, atau kontainer sisi server dari Google Tag Manager (GTM), pengiklan membangun mekanisme untuk mengintegrasikan data pihak pertama mereka dengan ASP maupun platform periklanan secara aman. Hal ini memungkinkan analisis atribusi tingkat lanjut sambil tetap melindungi privasi pengguna.
+Data Clean Room dan kontainer sisi server Google Tag Manager (GTM) merupakan pilihan untuk mengelola pemrosesan dan pembagian data. Penggunaannya tidak otomatis menganonimkan data atau menjamin kepatuhan hukum maupun privasi. Tujuan, persetujuan dan izin, minimalisasi data, kontrol akses, serta batas keluaran perlu dirancang dan diperiksa.
 
 ## Kesimpulan
 
 Di balik layar pemasaran afiliasi, kemajuan teknologi dan gelombang perlindungan privasi bertabrakan dengan hebat, membuat mekanisme pelacakan mengalami perubahan yang dramatis.
 
-Transisi dari pelacakan sisi klien berbasis Cookie yang sederhana ke pelacakan sisi server (S2S) yang lebih kuat dan aman sudah tidak dapat dihindari lagi. Pengiklan, afiliator, dan ASP harus selalu mengikuti tren teknologi dan regulasi hukum (seperti GDPR dan CCPA) terbaru guna membangun sistem yang mampu mewujudkan pengukuran hasil yang akurat sekaligus menghormati privasi pengguna.
+Metode sisi klien dan sisi server memiliki peran serta batasan yang berbeda. Pengiklan, afiliator, dan ASP perlu menetapkan tujuan dan batas pengukuran, lalu memilih implementasi dengan mempertimbangkan hukum dan aturan platform yang berlaku, persetujuan dan pilihan pengguna, minimalisasi data, serta keamanan. S2S tidak otomatis menjamin akurasi atau privasi; desain dan operasinya perlu dilakukan dengan cermat.
 
 Memahami arsitektur sistem iklan berbasis kinerja akan menjadi semakin penting bagi setiap insinyur dan pemasar yang terlibat dalam pemasaran web di masa mendatang.
+
+## Referensi
+
+- [WebKit: Tracking Prevention in WebKit](https://webkit.org/tracking-prevention/)
+- [WebKit: Intelligent Tracking Prevention 2.2](https://webkit.org/blog/8828/)
+- [Google for Developers: Server-side tagging fundamentals](https://developers.google.com/tag-platform/learn/sst-fundamentals/2-what-is-sst)
+- [IETF RFC 9110: HTTP Semantics, Redirection](https://www.rfc-editor.org/rfc/rfc9110.html)
+- [WebKit: Tracking Prevention Policy](https://webkit.org/tracking-prevention-policy/)
