@@ -1,0 +1,482 @@
+{
+  "version": 1,
+  "batch": 177,
+  "article": "Practical QLoRA fine-tuning for TinyLLaMA",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "ef55a3c68a25850699123cbb79fa3eb577b6b5c5f8bb59b62870fcfe3e61e1b3",
+  "sources": [
+    "https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+    "https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0/blob/main/tokenizer_config.json",
+    "https://huggingface.co/docs/trl/sft_trainer",
+    "https://huggingface.co/docs/peft/developer_guides/quantization",
+    "https://huggingface.co/docs/transformers/quantization/finetune",
+    "https://pytorch.org/get-started/locally/"
+  ],
+  "scope": "Compared the complete Japanese source and all twelve translations, model attribution, LoRA formula, tokenizer chat template, local data, current TRL/PEFT API, resource/performance claims, evaluation, deployment exposure, metadata, and links against primary documentation.",
+  "findings": [
+    "Removed unsupported fastest framing and performance/VRAM guarantees.",
+    "Corrected project attribution and LoRA scaling; aligned messages with the model tokenizer template.",
+    "Replaced obsolete trainer calls with current SFTConfig/SFTTrainer, QLoRA preparation, local JSONL, and held-out evaluation.",
+    "Removed fixed CUDA wheel, public dataset, and unauthenticated public API example; added privacy and evaluation cautions.",
+    "Preserved original publication date and recorded lastmod."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/TinyLLaMAをオンプレミス環境で最速チューニングする方法/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/TinyLLaMAをオンプレミス環境で最速チューニングする方法/index.md",
+      "sourceHash": "ef55a3c68a25850699123cbb79fa3eb577b6b5c5f8bb59b62870fcfe3e61e1b3",
+      "translationHash": "6f84f020bad6fed19d9b719f37bae70102230c1574b6fb2b772a2f4d77dcbace",
+      "summary": "Compared the full translation with the Japanese source and current official TinyLLaMA, TRL, PEFT, Transformers, and PyTorch documentation; checked meaning, terminology, formula, code, metadata, and links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full Japanese article and all twelve translations; corrected model attribution, local-data handling, tokenizer template, current training flow, and deployment cautions against official documentation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed TinyLLaMA, QLoRA, NF4, LoRA adapter, SFT, tokenizer template, evaluation split, and deployment terminology in every edition."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Corrected LoRA update to include alpha/r scaling: delta W=(alpha/r)BA."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced obsolete TRL arguments and wrong ChatML formatting with SFTConfig/SFTTrainer, apply_chat_template, local JSONL, held-out evaluation, and QLoRA preparation. Python syntax parsed; GPU training not run because PyTorch/CUDA and compatible GPU are unavailable."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official TinyLLaMA model card/tokenizer config, TRL, PEFT, Transformers, and PyTorch sources."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Code was syntax-checked only; GPU training was not run because PyTorch/CUDA and a compatible NVIDIA GPU are unavailable.",
+        "Library APIs and hardware support change; verify and pin compatible versions before production use.",
+        "No quality, speed, VRAM, Japanese performance, or safety benchmark was conducted.",
+        "First use fetches the model from Hugging Face; offline operation requires prefetching and outbound-network controls. On-premises operation alone does not ensure confidentiality."
+      ]
+    },
+    "post/TinyLLaMAをオンプレミス環境で最速チューニングする方法/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/TinyLLaMAをオンプレミス環境で最速チューニングする方法/index.md",
+      "sourceHash": "ef55a3c68a25850699123cbb79fa3eb577b6b5c5f8bb59b62870fcfe3e61e1b3",
+      "translationHash": "d4243c7ad24c681d8f62555edc77005c11a5daa035f44d7c1a25f50a347eb9f3",
+      "summary": "Compared the full translation with the Japanese source and current official TinyLLaMA, TRL, PEFT, Transformers, and PyTorch documentation; checked meaning, terminology, formula, code, metadata, and links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full Japanese article and all twelve translations; corrected model attribution, local-data handling, tokenizer template, current training flow, and deployment cautions against official documentation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed TinyLLaMA, QLoRA, NF4, LoRA adapter, SFT, tokenizer template, evaluation split, and deployment terminology in every edition."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Corrected LoRA update to include alpha/r scaling: delta W=(alpha/r)BA."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced obsolete TRL arguments and wrong ChatML formatting with SFTConfig/SFTTrainer, apply_chat_template, local JSONL, held-out evaluation, and QLoRA preparation. Python syntax parsed; GPU training not run because PyTorch/CUDA and compatible GPU are unavailable."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official TinyLLaMA model card/tokenizer config, TRL, PEFT, Transformers, and PyTorch sources."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Code was syntax-checked only; GPU training was not run because PyTorch/CUDA and a compatible NVIDIA GPU are unavailable.",
+        "Library APIs and hardware support change; verify and pin compatible versions before production use.",
+        "No quality, speed, VRAM, Japanese performance, or safety benchmark was conducted.",
+        "First use fetches the model from Hugging Face; offline operation requires prefetching and outbound-network controls. On-premises operation alone does not ensure confidentiality."
+      ]
+    },
+    "post/TinyLLaMAをオンプレミス環境で最速チューニングする方法/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/TinyLLaMAをオンプレミス環境で最速チューニングする方法/index.md",
+      "sourceHash": "ef55a3c68a25850699123cbb79fa3eb577b6b5c5f8bb59b62870fcfe3e61e1b3",
+      "translationHash": "230ae512ef1228750af5016cba2932bc00b9f7ddb3f7c45f2acc3c215e7cb94d",
+      "summary": "Compared the full translation with the Japanese source and current official TinyLLaMA, TRL, PEFT, Transformers, and PyTorch documentation; checked meaning, terminology, formula, code, metadata, and links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full Japanese article and all twelve translations; corrected model attribution, local-data handling, tokenizer template, current training flow, and deployment cautions against official documentation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed TinyLLaMA, QLoRA, NF4, LoRA adapter, SFT, tokenizer template, evaluation split, and deployment terminology in every edition."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Corrected LoRA update to include alpha/r scaling: delta W=(alpha/r)BA."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced obsolete TRL arguments and wrong ChatML formatting with SFTConfig/SFTTrainer, apply_chat_template, local JSONL, held-out evaluation, and QLoRA preparation. Python syntax parsed; GPU training not run because PyTorch/CUDA and compatible GPU are unavailable."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official TinyLLaMA model card/tokenizer config, TRL, PEFT, Transformers, and PyTorch sources."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Code was syntax-checked only; GPU training was not run because PyTorch/CUDA and a compatible NVIDIA GPU are unavailable.",
+        "Library APIs and hardware support change; verify and pin compatible versions before production use.",
+        "No quality, speed, VRAM, Japanese performance, or safety benchmark was conducted.",
+        "First use fetches the model from Hugging Face; offline operation requires prefetching and outbound-network controls. On-premises operation alone does not ensure confidentiality."
+      ]
+    },
+    "post/TinyLLaMAをオンプレミス環境で最速チューニングする方法/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/TinyLLaMAをオンプレミス環境で最速チューニングする方法/index.md",
+      "sourceHash": "ef55a3c68a25850699123cbb79fa3eb577b6b5c5f8bb59b62870fcfe3e61e1b3",
+      "translationHash": "b59764624c21fad48703b135a6fb648eaa129731fabc335605828f4f47d26943",
+      "summary": "Compared the full translation with the Japanese source and current official TinyLLaMA, TRL, PEFT, Transformers, and PyTorch documentation; checked meaning, terminology, formula, code, metadata, and links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full Japanese article and all twelve translations; corrected model attribution, local-data handling, tokenizer template, current training flow, and deployment cautions against official documentation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed TinyLLaMA, QLoRA, NF4, LoRA adapter, SFT, tokenizer template, evaluation split, and deployment terminology in every edition."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Corrected LoRA update to include alpha/r scaling: delta W=(alpha/r)BA."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced obsolete TRL arguments and wrong ChatML formatting with SFTConfig/SFTTrainer, apply_chat_template, local JSONL, held-out evaluation, and QLoRA preparation. Python syntax parsed; GPU training not run because PyTorch/CUDA and compatible GPU are unavailable."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official TinyLLaMA model card/tokenizer config, TRL, PEFT, Transformers, and PyTorch sources."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Code was syntax-checked only; GPU training was not run because PyTorch/CUDA and a compatible NVIDIA GPU are unavailable.",
+        "Library APIs and hardware support change; verify and pin compatible versions before production use.",
+        "No quality, speed, VRAM, Japanese performance, or safety benchmark was conducted.",
+        "First use fetches the model from Hugging Face; offline operation requires prefetching and outbound-network controls. On-premises operation alone does not ensure confidentiality."
+      ]
+    },
+    "post/TinyLLaMAをオンプレミス環境で最速チューニングする方法/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/TinyLLaMAをオンプレミス環境で最速チューニングする方法/index.md",
+      "sourceHash": "ef55a3c68a25850699123cbb79fa3eb577b6b5c5f8bb59b62870fcfe3e61e1b3",
+      "translationHash": "afc7925a9a61f63a4cbe0787cf7b7fa021cd9a098f6e684d5b9054b810dc5462",
+      "summary": "Compared the full translation with the Japanese source and current official TinyLLaMA, TRL, PEFT, Transformers, and PyTorch documentation; checked meaning, terminology, formula, code, metadata, and links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full Japanese article and all twelve translations; corrected model attribution, local-data handling, tokenizer template, current training flow, and deployment cautions against official documentation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed TinyLLaMA, QLoRA, NF4, LoRA adapter, SFT, tokenizer template, evaluation split, and deployment terminology in every edition."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Corrected LoRA update to include alpha/r scaling: delta W=(alpha/r)BA."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced obsolete TRL arguments and wrong ChatML formatting with SFTConfig/SFTTrainer, apply_chat_template, local JSONL, held-out evaluation, and QLoRA preparation. Python syntax parsed; GPU training not run because PyTorch/CUDA and compatible GPU are unavailable."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official TinyLLaMA model card/tokenizer config, TRL, PEFT, Transformers, and PyTorch sources."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Code was syntax-checked only; GPU training was not run because PyTorch/CUDA and a compatible NVIDIA GPU are unavailable.",
+        "Library APIs and hardware support change; verify and pin compatible versions before production use.",
+        "No quality, speed, VRAM, Japanese performance, or safety benchmark was conducted.",
+        "First use fetches the model from Hugging Face; offline operation requires prefetching and outbound-network controls. On-premises operation alone does not ensure confidentiality."
+      ]
+    },
+    "post/TinyLLaMAをオンプレミス環境で最速チューニングする方法/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/TinyLLaMAをオンプレミス環境で最速チューニングする方法/index.md",
+      "sourceHash": "ef55a3c68a25850699123cbb79fa3eb577b6b5c5f8bb59b62870fcfe3e61e1b3",
+      "translationHash": "d6ce1bc07e14a9e533198d7a233281101178c1873f5037a640188d3edd177eef",
+      "summary": "Compared the full translation with the Japanese source and current official TinyLLaMA, TRL, PEFT, Transformers, and PyTorch documentation; checked meaning, terminology, formula, code, metadata, and links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full Japanese article and all twelve translations; corrected model attribution, local-data handling, tokenizer template, current training flow, and deployment cautions against official documentation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed TinyLLaMA, QLoRA, NF4, LoRA adapter, SFT, tokenizer template, evaluation split, and deployment terminology in every edition."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Corrected LoRA update to include alpha/r scaling: delta W=(alpha/r)BA."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced obsolete TRL arguments and wrong ChatML formatting with SFTConfig/SFTTrainer, apply_chat_template, local JSONL, held-out evaluation, and QLoRA preparation. Python syntax parsed; GPU training not run because PyTorch/CUDA and compatible GPU are unavailable."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official TinyLLaMA model card/tokenizer config, TRL, PEFT, Transformers, and PyTorch sources."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Code was syntax-checked only; GPU training was not run because PyTorch/CUDA and a compatible NVIDIA GPU are unavailable.",
+        "Library APIs and hardware support change; verify and pin compatible versions before production use.",
+        "No quality, speed, VRAM, Japanese performance, or safety benchmark was conducted.",
+        "First use fetches the model from Hugging Face; offline operation requires prefetching and outbound-network controls. On-premises operation alone does not ensure confidentiality."
+      ]
+    },
+    "post/TinyLLaMAをオンプレミス環境で最速チューニングする方法/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/TinyLLaMAをオンプレミス環境で最速チューニングする方法/index.md",
+      "sourceHash": "ef55a3c68a25850699123cbb79fa3eb577b6b5c5f8bb59b62870fcfe3e61e1b3",
+      "translationHash": "e2e1abe494117820ba9e63dce9734566304041ab7eaffb33bec2d3861bd436ee",
+      "summary": "Compared the full translation with the Japanese source and current official TinyLLaMA, TRL, PEFT, Transformers, and PyTorch documentation; checked meaning, terminology, formula, code, metadata, and links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full Japanese article and all twelve translations; corrected model attribution, local-data handling, tokenizer template, current training flow, and deployment cautions against official documentation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed TinyLLaMA, QLoRA, NF4, LoRA adapter, SFT, tokenizer template, evaluation split, and deployment terminology in every edition."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Corrected LoRA update to include alpha/r scaling: delta W=(alpha/r)BA."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced obsolete TRL arguments and wrong ChatML formatting with SFTConfig/SFTTrainer, apply_chat_template, local JSONL, held-out evaluation, and QLoRA preparation. Python syntax parsed; GPU training not run because PyTorch/CUDA and compatible GPU are unavailable."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official TinyLLaMA model card/tokenizer config, TRL, PEFT, Transformers, and PyTorch sources."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Code was syntax-checked only; GPU training was not run because PyTorch/CUDA and a compatible NVIDIA GPU are unavailable.",
+        "Library APIs and hardware support change; verify and pin compatible versions before production use.",
+        "No quality, speed, VRAM, Japanese performance, or safety benchmark was conducted.",
+        "First use fetches the model from Hugging Face; offline operation requires prefetching and outbound-network controls. On-premises operation alone does not ensure confidentiality."
+      ]
+    },
+    "post/TinyLLaMAをオンプレミス環境で最速チューニングする方法/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/TinyLLaMAをオンプレミス環境で最速チューニングする方法/index.md",
+      "sourceHash": "ef55a3c68a25850699123cbb79fa3eb577b6b5c5f8bb59b62870fcfe3e61e1b3",
+      "translationHash": "715482df6315e921f2fbefc6f7da26cdf68be3b46ae5bf7afdb64e5de84621cb",
+      "summary": "Compared the full translation with the Japanese source and current official TinyLLaMA, TRL, PEFT, Transformers, and PyTorch documentation; checked meaning, terminology, formula, code, metadata, and links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full Japanese article and all twelve translations; corrected model attribution, local-data handling, tokenizer template, current training flow, and deployment cautions against official documentation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed TinyLLaMA, QLoRA, NF4, LoRA adapter, SFT, tokenizer template, evaluation split, and deployment terminology in every edition."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Corrected LoRA update to include alpha/r scaling: delta W=(alpha/r)BA."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced obsolete TRL arguments and wrong ChatML formatting with SFTConfig/SFTTrainer, apply_chat_template, local JSONL, held-out evaluation, and QLoRA preparation. Python syntax parsed; GPU training not run because PyTorch/CUDA and compatible GPU are unavailable."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official TinyLLaMA model card/tokenizer config, TRL, PEFT, Transformers, and PyTorch sources."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Code was syntax-checked only; GPU training was not run because PyTorch/CUDA and a compatible NVIDIA GPU are unavailable.",
+        "Library APIs and hardware support change; verify and pin compatible versions before production use.",
+        "No quality, speed, VRAM, Japanese performance, or safety benchmark was conducted.",
+        "First use fetches the model from Hugging Face; offline operation requires prefetching and outbound-network controls. On-premises operation alone does not ensure confidentiality."
+      ]
+    },
+    "post/TinyLLaMAをオンプレミス環境で最速チューニングする方法/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/TinyLLaMAをオンプレミス環境で最速チューニングする方法/index.md",
+      "sourceHash": "ef55a3c68a25850699123cbb79fa3eb577b6b5c5f8bb59b62870fcfe3e61e1b3",
+      "translationHash": "04c303c5deae4f8371aa6eba3b59438f63f439b26f98c2d460c4634d06b166d0",
+      "summary": "Compared the full translation with the Japanese source and current official TinyLLaMA, TRL, PEFT, Transformers, and PyTorch documentation; checked meaning, terminology, formula, code, metadata, and links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full Japanese article and all twelve translations; corrected model attribution, local-data handling, tokenizer template, current training flow, and deployment cautions against official documentation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed TinyLLaMA, QLoRA, NF4, LoRA adapter, SFT, tokenizer template, evaluation split, and deployment terminology in every edition."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Corrected LoRA update to include alpha/r scaling: delta W=(alpha/r)BA."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced obsolete TRL arguments and wrong ChatML formatting with SFTConfig/SFTTrainer, apply_chat_template, local JSONL, held-out evaluation, and QLoRA preparation. Python syntax parsed; GPU training not run because PyTorch/CUDA and compatible GPU are unavailable."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official TinyLLaMA model card/tokenizer config, TRL, PEFT, Transformers, and PyTorch sources."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Code was syntax-checked only; GPU training was not run because PyTorch/CUDA and a compatible NVIDIA GPU are unavailable.",
+        "Library APIs and hardware support change; verify and pin compatible versions before production use.",
+        "No quality, speed, VRAM, Japanese performance, or safety benchmark was conducted.",
+        "First use fetches the model from Hugging Face; offline operation requires prefetching and outbound-network controls. On-premises operation alone does not ensure confidentiality."
+      ]
+    },
+    "post/TinyLLaMAをオンプレミス環境で最速チューニングする方法/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/TinyLLaMAをオンプレミス環境で最速チューニングする方法/index.md",
+      "sourceHash": "ef55a3c68a25850699123cbb79fa3eb577b6b5c5f8bb59b62870fcfe3e61e1b3",
+      "translationHash": "ac26e9d4062fe18d200c2f72660c4daeec3a32ac08b3f551eb508a948419c100",
+      "summary": "Compared the full translation with the Japanese source and current official TinyLLaMA, TRL, PEFT, Transformers, and PyTorch documentation; checked meaning, terminology, formula, code, metadata, and links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full Japanese article and all twelve translations; corrected model attribution, local-data handling, tokenizer template, current training flow, and deployment cautions against official documentation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed TinyLLaMA, QLoRA, NF4, LoRA adapter, SFT, tokenizer template, evaluation split, and deployment terminology in every edition."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Corrected LoRA update to include alpha/r scaling: delta W=(alpha/r)BA."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced obsolete TRL arguments and wrong ChatML formatting with SFTConfig/SFTTrainer, apply_chat_template, local JSONL, held-out evaluation, and QLoRA preparation. Python syntax parsed; GPU training not run because PyTorch/CUDA and compatible GPU are unavailable."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official TinyLLaMA model card/tokenizer config, TRL, PEFT, Transformers, and PyTorch sources."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Code was syntax-checked only; GPU training was not run because PyTorch/CUDA and a compatible NVIDIA GPU are unavailable.",
+        "Library APIs and hardware support change; verify and pin compatible versions before production use.",
+        "No quality, speed, VRAM, Japanese performance, or safety benchmark was conducted.",
+        "First use fetches the model from Hugging Face; offline operation requires prefetching and outbound-network controls. On-premises operation alone does not ensure confidentiality."
+      ]
+    },
+    "post/TinyLLaMAをオンプレミス環境で最速チューニングする方法/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/TinyLLaMAをオンプレミス環境で最速チューニングする方法/index.md",
+      "sourceHash": "ef55a3c68a25850699123cbb79fa3eb577b6b5c5f8bb59b62870fcfe3e61e1b3",
+      "translationHash": "e8496d76652f8b8245be2462be1d050b8d4498fb4e99c79817a4bebe2c7993e4",
+      "summary": "Compared the full translation with the Japanese source and current official TinyLLaMA, TRL, PEFT, Transformers, and PyTorch documentation; checked meaning, terminology, formula, code, metadata, and links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full Japanese article and all twelve translations; corrected model attribution, local-data handling, tokenizer template, current training flow, and deployment cautions against official documentation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed TinyLLaMA, QLoRA, NF4, LoRA adapter, SFT, tokenizer template, evaluation split, and deployment terminology in every edition."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Corrected LoRA update to include alpha/r scaling: delta W=(alpha/r)BA."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced obsolete TRL arguments and wrong ChatML formatting with SFTConfig/SFTTrainer, apply_chat_template, local JSONL, held-out evaluation, and QLoRA preparation. Python syntax parsed; GPU training not run because PyTorch/CUDA and compatible GPU are unavailable."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official TinyLLaMA model card/tokenizer config, TRL, PEFT, Transformers, and PyTorch sources."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Code was syntax-checked only; GPU training was not run because PyTorch/CUDA and a compatible NVIDIA GPU are unavailable.",
+        "Library APIs and hardware support change; verify and pin compatible versions before production use.",
+        "No quality, speed, VRAM, Japanese performance, or safety benchmark was conducted.",
+        "First use fetches the model from Hugging Face; offline operation requires prefetching and outbound-network controls. On-premises operation alone does not ensure confidentiality."
+      ]
+    },
+    "post/TinyLLaMAをオンプレミス環境で最速チューニングする方法/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/TinyLLaMAをオンプレミス環境で最速チューニングする方法/index.md",
+      "sourceHash": "ef55a3c68a25850699123cbb79fa3eb577b6b5c5f8bb59b62870fcfe3e61e1b3",
+      "translationHash": "7c62cbd4081c058b50417c24070ad464663d5de0f8ac2bb1b6bd902c340243ed",
+      "summary": "Compared the full translation with the Japanese source and current official TinyLLaMA, TRL, PEFT, Transformers, and PyTorch documentation; checked meaning, terminology, formula, code, metadata, and links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full Japanese article and all twelve translations; corrected model attribution, local-data handling, tokenizer template, current training flow, and deployment cautions against official documentation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed TinyLLaMA, QLoRA, NF4, LoRA adapter, SFT, tokenizer template, evaluation split, and deployment terminology in every edition."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Corrected LoRA update to include alpha/r scaling: delta W=(alpha/r)BA."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced obsolete TRL arguments and wrong ChatML formatting with SFTConfig/SFTTrainer, apply_chat_template, local JSONL, held-out evaluation, and QLoRA preparation. Python syntax parsed; GPU training not run because PyTorch/CUDA and compatible GPU are unavailable."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official TinyLLaMA model card/tokenizer config, TRL, PEFT, Transformers, and PyTorch sources."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Code was syntax-checked only; GPU training was not run because PyTorch/CUDA and a compatible NVIDIA GPU are unavailable.",
+        "Library APIs and hardware support change; verify and pin compatible versions before production use.",
+        "No quality, speed, VRAM, Japanese performance, or safety benchmark was conducted.",
+        "First use fetches the model from Hugging Face; offline operation requires prefetching and outbound-network controls. On-premises operation alone does not ensure confidentiality."
+      ]
+    }
+  }
+}

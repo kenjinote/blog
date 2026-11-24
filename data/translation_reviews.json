@@ -20525,6 +20525,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-176.json",
       "evidenceHash": "f49f08ac9582971f8e7b5018e3e7d361b7767d57aaf1211ce9da94ad415048fa"
+    },
+    "post/TinyLLaMAをオンプレミス環境で最速チューニングする方法/index.en.md": {
+      "source": "post/TinyLLaMAをオンプレミス環境で最速チューニングする方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "ef55a3c68a25850699123cbb79fa3eb577b6b5c5f8bb59b62870fcfe3e61e1b3",
+      "translationHash": "6f84f020bad6fed19d9b719f37bae70102230c1574b6fb2b772a2f4d77dcbace",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-177.json",
+      "evidenceHash": "2f4a2426bb05ef99f10c7f370feb2b0fbda34ae582f44df421708f61c589e3f6"
+    },
+    "post/TinyLLaMAをオンプレミス環境で最速チューニングする方法/index.zh-cn.md": {
+      "source": "post/TinyLLaMAをオンプレミス環境で最速チューニングする方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "ef55a3c68a25850699123cbb79fa3eb577b6b5c5f8bb59b62870fcfe3e61e1b3",
+      "translationHash": "d4243c7ad24c681d8f62555edc77005c11a5daa035f44d7c1a25f50a347eb9f3",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-177.json",
+      "evidenceHash": "23b74925a02020946f2764b41f5ddf3f7c4dd70ee9edd724281a6075d2621b3d"
+    },
+    "post/TinyLLaMAをオンプレミス環境で最速チューニングする方法/index.es.md": {
+      "source": "post/TinyLLaMAをオンプレミス環境で最速チューニングする方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "ef55a3c68a25850699123cbb79fa3eb577b6b5c5f8bb59b62870fcfe3e61e1b3",
+      "translationHash": "230ae512ef1228750af5016cba2932bc00b9f7ddb3f7c45f2acc3c215e7cb94d",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-177.json",
+      "evidenceHash": "08ebcfbd3899be6fd7a8b7f2d1dcd57fd70987feafd7a58eef4e0dc82f7fe7ee"
+    },
+    "post/TinyLLaMAをオンプレミス環境で最速チューニングする方法/index.ko.md": {
+      "source": "post/TinyLLaMAをオンプレミス環境で最速チューニングする方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "ef55a3c68a25850699123cbb79fa3eb577b6b5c5f8bb59b62870fcfe3e61e1b3",
+      "translationHash": "b59764624c21fad48703b135a6fb648eaa129731fabc335605828f4f47d26943",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-177.json",
+      "evidenceHash": "be592c2eb63fc6689d9776db3232c9efdd36542268ea49d3215027169fe7889d"
+    },
+    "post/TinyLLaMAをオンプレミス環境で最速チューニングする方法/index.pt.md": {
+      "source": "post/TinyLLaMAをオンプレミス環境で最速チューニングする方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "ef55a3c68a25850699123cbb79fa3eb577b6b5c5f8bb59b62870fcfe3e61e1b3",
+      "translationHash": "afc7925a9a61f63a4cbe0787cf7b7fa021cd9a098f6e684d5b9054b810dc5462",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-177.json",
+      "evidenceHash": "3e600bbc1848197ec58dd3ffe9c51cf64144cd096f9eea310194bf7270c0fda4"
+    },
+    "post/TinyLLaMAをオンプレミス環境で最速チューニングする方法/index.zh-tw.md": {
+      "source": "post/TinyLLaMAをオンプレミス環境で最速チューニングする方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "ef55a3c68a25850699123cbb79fa3eb577b6b5c5f8bb59b62870fcfe3e61e1b3",
+      "translationHash": "d6ce1bc07e14a9e533198d7a233281101178c1873f5037a640188d3edd177eef",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-177.json",
+      "evidenceHash": "0bee9492370f2865e8a3b00fb3be526c8fdc94e02645d8fc9b54c2d7a059c7b2"
+    },
+    "post/TinyLLaMAをオンプレミス環境で最速チューニングする方法/index.hi.md": {
+      "source": "post/TinyLLaMAをオンプレミス環境で最速チューニングする方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "ef55a3c68a25850699123cbb79fa3eb577b6b5c5f8bb59b62870fcfe3e61e1b3",
+      "translationHash": "e2e1abe494117820ba9e63dce9734566304041ab7eaffb33bec2d3861bd436ee",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-177.json",
+      "evidenceHash": "f0814264edd5a0aa980b869e028b3cfe66cc5acced93a21b509b2156e7ab2121"
+    },
+    "post/TinyLLaMAをオンプレミス環境で最速チューニングする方法/index.fr.md": {
+      "source": "post/TinyLLaMAをオンプレミス環境で最速チューニングする方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "ef55a3c68a25850699123cbb79fa3eb577b6b5c5f8bb59b62870fcfe3e61e1b3",
+      "translationHash": "715482df6315e921f2fbefc6f7da26cdf68be3b46ae5bf7afdb64e5de84621cb",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-177.json",
+      "evidenceHash": "6854a979457abc98e379a92e349a89a54432578eb449f3e3ea7281bfa10712d9"
+    },
+    "post/TinyLLaMAをオンプレミス環境で最速チューニングする方法/index.de.md": {
+      "source": "post/TinyLLaMAをオンプレミス環境で最速チューニングする方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "ef55a3c68a25850699123cbb79fa3eb577b6b5c5f8bb59b62870fcfe3e61e1b3",
+      "translationHash": "04c303c5deae4f8371aa6eba3b59438f63f439b26f98c2d460c4634d06b166d0",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-177.json",
+      "evidenceHash": "31f0c21d13159a14ac9d3809d15c25ffb10bc7e34cde436e5db3339439eee2ac"
+    },
+    "post/TinyLLaMAをオンプレミス環境で最速チューニングする方法/index.ar.md": {
+      "source": "post/TinyLLaMAをオンプレミス環境で最速チューニングする方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "ef55a3c68a25850699123cbb79fa3eb577b6b5c5f8bb59b62870fcfe3e61e1b3",
+      "translationHash": "ac26e9d4062fe18d200c2f72660c4daeec3a32ac08b3f551eb508a948419c100",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-177.json",
+      "evidenceHash": "c69674562b4bcd2525865716857a58ec50682f418dde92c8207bc6130b02f161"
+    },
+    "post/TinyLLaMAをオンプレミス環境で最速チューニングする方法/index.ru.md": {
+      "source": "post/TinyLLaMAをオンプレミス環境で最速チューニングする方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "ef55a3c68a25850699123cbb79fa3eb577b6b5c5f8bb59b62870fcfe3e61e1b3",
+      "translationHash": "e8496d76652f8b8245be2462be1d050b8d4498fb4e99c79817a4bebe2c7993e4",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-177.json",
+      "evidenceHash": "a89c7f825e3c608bb6ad3f3c0f942fe3e7a9791641bb4d4cd1fd4459776ad990"
+    },
+    "post/TinyLLaMAをオンプレミス環境で最速チューニングする方法/index.id.md": {
+      "source": "post/TinyLLaMAをオンプレミス環境で最速チューニングする方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "ef55a3c68a25850699123cbb79fa3eb577b6b5c5f8bb59b62870fcfe3e61e1b3",
+      "translationHash": "7c62cbd4081c058b50417c24070ad464663d5de0f8ac2bb1b6bd902c340243ed",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-177.json",
+      "evidenceHash": "f009a7104132bc63ddd27a7e254d233fa8fc6b9c14055d2ea57f2012f7d48ab3"
     }
   }
 }
