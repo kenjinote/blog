@@ -1,24 +1,29 @@
 ---
-title: 'تحويل نظام التشغيل "MS-DOS 4.0" الذي يعود لحوالي 40 عاماً إلى مصدر مفتوح ونشره'
-date: "2026-09-24T19:44:38+09:00"
+title: "نُشر الكود المصدري لـ MS-DOS 4.00"
 slug: "MS-DOS 4.0 のمفتوح المصدر化"
 date: 2024-05-05T16:44:28+09:00
 tags: ["MS-DOS", "مفتوح المصدر"]
 draft: false
 image: "img.webp"
 categories: ["it-technology"]
-description: 'نعرض خبراً عن جعل الكود المصدري لنظام التشغيل "MS-DOS 4.0"، الذي تم إصداره قبل حوالي 40 عاماً، مفتوح المصدر ونشره على GitHub. سنشرح عن هذه المادة التاريخية التي كُتب معظم كودها بلغة التجميع 8086.'
+description: "نظرة على الكود المصدري لـ MS-DOS 4.00 الذي نشرته Microsoft وIBM في عام 2024، بما في ذلك تجميع 8086 وترخيص MIT ومحتويات المستودع وحالة الأرشفة للقراءة فقط."
+lastmod: 2026-11-24T00:00:00+09:00
 ---
 
-## جعل MS-DOS 4.0 مفتوح المصدر
+# نُشر الكود المصدري لـ MS-DOS 4.00
 
-أصدرت شركة مايكروسوفت الكود المصدري لنظام MS-DOS 4.0، والذي تم إصداره قبل حوالي 40 عامًا.
-إنه مكتوب بالكامل تقريبًا بلغة التجميع 8086.
+في 25 أبريل 2024، نشرت Microsoft الكود المصدري لـ MS-DOS 4.00 بالشراكة مع IBM. كُتب معظم الكود بلغة التجميع 8086، وهو مادة تاريخية لدراسة تنفيذ نظام تشغيل. شرحت Microsoft هذا الإصدار في [مدونة Open Source](https://opensource.microsoft.com/blog/2024/04/25/open-sourcing-ms-dos-4-0/).
 
-## مستودع github
+## محتويات مستودع GitHub
 
-[https://github.com/microsoft/MS-DOS](https://github.com/microsoft/MS-DOS)
+يحتوي [مستودع MS-DOS من Microsoft](https://github.com/microsoft/MS-DOS) على الكود المصدري لـ MS-DOS 4.00 والملفات الثنائية المترجمة والوثائق وصور الأقراص. ووفقًا لإعلان Microsoft، شمل الإصدار أيضًا ملفات ثنائية تجريبية لم تُنشر من قبل وكان Ray Ozzie يحتفظ بها. كما يتضمن المستودع موادًا تخص MS-DOS 1.25 و2.0.
 
-## مواقع مرجعية
+## الترخيص وحالة الأرشفة
 
-- [جعل MS-DOS 4.0 مفتوح المصدر](https://cloudblogs.microsoft.com/opensource/2024/04/25/open-sourcing-ms-dos-4-0/)
+نُشرت ملفات المستودع بموجب ترخيص MIT. راجع [ملف ترخيص v4.0](https://github.com/microsoft/MS-DOS/blob/main/v4.0/LICENSE) لمعرفة الشروط. يوضح GitHub أن المستودع أُرشف في 25 أبريل 2024 وأصبح للقراءة فقط. يمكنك الرجوع إليه كمادة تاريخية أو إنشاء fork لدراسته.
+
+## المراجع
+
+- [مدونة Microsoft Open Source: Open sourcing MS-DOS 4.0](https://opensource.microsoft.com/blog/2024/04/25/open-sourcing-ms-dos-4-0/)
+- [مستودع Microsoft / MS-DOS](https://github.com/microsoft/MS-DOS)
+- [ترخيص MIT لـ MS-DOS 4.0](https://github.com/microsoft/MS-DOS/blob/main/v4.0/LICENSE)

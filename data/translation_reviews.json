@@ -10325,6 +10325,246 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-090.json",
       "evidenceHash": "2f85242dace78a304a5c32fca0f22d1c8937188c86e6cd9001c4e710df543aa0"
+    },
+    "post/LogicPad 開発秘話/index.ar.md": {
+      "source": "post/LogicPad 開発秘話/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "c6b88766f4120dc30d7ee6944bccda5fe81296cb420092b8af65aa62b05513c9",
+      "translationHash": "a5fd09fe1e6fdb85ef644fcbeeb30b124c16a188611e74aa49cb6082fedb46bd",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-091.json",
+      "evidenceHash": "c75a66759ac61735cffb0f37339ae1b44a0f446bef53c6e14de66cd8293c2d02"
+    },
+    "post/LogicPad 開発秘話/index.de.md": {
+      "source": "post/LogicPad 開発秘話/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "c6b88766f4120dc30d7ee6944bccda5fe81296cb420092b8af65aa62b05513c9",
+      "translationHash": "0c614b39c21712d348bf59573c78cb46f51059ec86a3dee094edbaa46b9dcd2b",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-091.json",
+      "evidenceHash": "3bb73cbef503229debccb99222b06ae6cb6851db876093818927955ccb0e2e92"
+    },
+    "post/LogicPad 開発秘話/index.en.md": {
+      "source": "post/LogicPad 開発秘話/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "c6b88766f4120dc30d7ee6944bccda5fe81296cb420092b8af65aa62b05513c9",
+      "translationHash": "e2a382b49064d48e7223001a7a5c916305fa50fa65530d93f65cc7243362cff2",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-091.json",
+      "evidenceHash": "23b1f83a78a1248ac637925352ab585dae6ef39c0e9135e95346658406af457e"
+    },
+    "post/LogicPad 開発秘話/index.es.md": {
+      "source": "post/LogicPad 開発秘話/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "c6b88766f4120dc30d7ee6944bccda5fe81296cb420092b8af65aa62b05513c9",
+      "translationHash": "2f755a3bfef593ccc51b21e1035484015b002698d5ff2e373d2f91d7780ff569",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-091.json",
+      "evidenceHash": "a313d53ce1612aedcbe1b8eda43b7ee3fa3a69269312f5f3daeb2dbe2de50a04"
+    },
+    "post/LogicPad 開発秘話/index.fr.md": {
+      "source": "post/LogicPad 開発秘話/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "c6b88766f4120dc30d7ee6944bccda5fe81296cb420092b8af65aa62b05513c9",
+      "translationHash": "b9e3efba97773be7023efa6700094afc8af4b7db5e3c84e3097a67f87e0ca906",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-091.json",
+      "evidenceHash": "74f2d779b51d11cefad2399f525230758fdfd0bfc0f8dbe5fdcc4e2404652756"
+    },
+    "post/LogicPad 開発秘話/index.hi.md": {
+      "source": "post/LogicPad 開発秘話/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "c6b88766f4120dc30d7ee6944bccda5fe81296cb420092b8af65aa62b05513c9",
+      "translationHash": "36ed1d155406d19daac7d44885668571399468d2f3a942da6d03b3ff71319b07",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-091.json",
+      "evidenceHash": "aa9cdd2195277bec08ce8aa37fdce32a3ed69054b2fe8f37ce7a99f216baf4c6"
+    },
+    "post/LogicPad 開発秘話/index.id.md": {
+      "source": "post/LogicPad 開発秘話/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "c6b88766f4120dc30d7ee6944bccda5fe81296cb420092b8af65aa62b05513c9",
+      "translationHash": "434b28418bdea65fc0e8a03fab522d1699543b80349c2f4af01b8b853d228816",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-091.json",
+      "evidenceHash": "e4511d2f20a9d986aa4cdd17b6fd88cc3fcfadf55e2bb5e0bcd7d19ad7dd08b9"
+    },
+    "post/LogicPad 開発秘話/index.ko.md": {
+      "source": "post/LogicPad 開発秘話/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "c6b88766f4120dc30d7ee6944bccda5fe81296cb420092b8af65aa62b05513c9",
+      "translationHash": "516728a05e4541780789a0576b6b91685608e48b2f803afbf8e985decf7a096d",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-091.json",
+      "evidenceHash": "7c631454780ece730b1e02abf78a510358b9bff6404441140619d92973171f6f"
+    },
+    "post/LogicPad 開発秘話/index.pt.md": {
+      "source": "post/LogicPad 開発秘話/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "c6b88766f4120dc30d7ee6944bccda5fe81296cb420092b8af65aa62b05513c9",
+      "translationHash": "5784555410e91e4d4e4f7cc826a2e965d4469cde29ea6b6635dfa828bc1cb80e",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-091.json",
+      "evidenceHash": "71e830c292c83f0089c76814a795de34f2916dbe163fc41e8756383715e6b36a"
+    },
+    "post/LogicPad 開発秘話/index.ru.md": {
+      "source": "post/LogicPad 開発秘話/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "c6b88766f4120dc30d7ee6944bccda5fe81296cb420092b8af65aa62b05513c9",
+      "translationHash": "e766797ba29ec43246e3c38fc6d08e11f7a91c912d645cad0e2d75bff9f1e5b8",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-091.json",
+      "evidenceHash": "e68fb8be16a9bd291efc9d2eb476e0c8259aaa505207bf5a75029c6fbc72dbcf"
+    },
+    "post/LogicPad 開発秘話/index.zh-cn.md": {
+      "source": "post/LogicPad 開発秘話/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "c6b88766f4120dc30d7ee6944bccda5fe81296cb420092b8af65aa62b05513c9",
+      "translationHash": "21bd70a010f01ced1e67aadd34d62e85bc5112e0ceec4e73d2abc5a42ea1e4dd",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-091.json",
+      "evidenceHash": "a53f461d4c1f8d954bada51237217bbb20dbc2476204ca373b2e1e203a2f5ea9"
+    },
+    "post/LogicPad 開発秘話/index.zh-tw.md": {
+      "source": "post/LogicPad 開発秘話/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "c6b88766f4120dc30d7ee6944bccda5fe81296cb420092b8af65aa62b05513c9",
+      "translationHash": "0724545d61c22b592d88b3abcafaa83dc75bf0eeb18f283fb5f1f6aeb826432a",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-091.json",
+      "evidenceHash": "d4a2ee017b68eb77897393fcb176e56b52bd1c2c9146c593c185b04d82d03519"
+    },
+    "post/MS-DOS 4.0 のオープンソース化/index.ar.md": {
+      "source": "post/MS-DOS 4.0 のオープンソース化/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "01a711ba30fa98879e90b87ce6ab00b29b44c4a0531687904ff3b4f4174c9d78",
+      "translationHash": "fd29f44283b26a169d83d54e374c942287114549eea4c18476ff240a84d0b305",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-092.json",
+      "evidenceHash": "f7b00bc893b887d0f42eba0213926c8670fc48a4b0a2744930aab8a3ea63d27b"
+    },
+    "post/MS-DOS 4.0 のオープンソース化/index.de.md": {
+      "source": "post/MS-DOS 4.0 のオープンソース化/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "01a711ba30fa98879e90b87ce6ab00b29b44c4a0531687904ff3b4f4174c9d78",
+      "translationHash": "86950b8ba78a4f129fc2e962d1b3ac1fa8d58ef338087aa3327c2e5a7466305c",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-092.json",
+      "evidenceHash": "49e9808395eee5f33c09188733aa2985f957924a92e1b8c4d8949cb4e5c1a72e"
+    },
+    "post/MS-DOS 4.0 のオープンソース化/index.en.md": {
+      "source": "post/MS-DOS 4.0 のオープンソース化/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "01a711ba30fa98879e90b87ce6ab00b29b44c4a0531687904ff3b4f4174c9d78",
+      "translationHash": "7100b763a3bcdbebcb44acf8d5deed09858b40a99903b7c7fc2abffd3a1599b6",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-092.json",
+      "evidenceHash": "1b79fa9a0413437d23c5168250b409dfe7355c975a01a51b37a5217c7e2fa6f0"
+    },
+    "post/MS-DOS 4.0 のオープンソース化/index.es.md": {
+      "source": "post/MS-DOS 4.0 のオープンソース化/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "01a711ba30fa98879e90b87ce6ab00b29b44c4a0531687904ff3b4f4174c9d78",
+      "translationHash": "4798dbc567e760ce19c5922b6d482ababceba46f421efe6886121e0a651804aa",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-092.json",
+      "evidenceHash": "babc744d91f62560067ae7acf840a27a4e9e3bfd7105dbc06a0083c732d9abd7"
+    },
+    "post/MS-DOS 4.0 のオープンソース化/index.fr.md": {
+      "source": "post/MS-DOS 4.0 のオープンソース化/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "01a711ba30fa98879e90b87ce6ab00b29b44c4a0531687904ff3b4f4174c9d78",
+      "translationHash": "93af1705423af2abd067f1f56caad6ea893d1bb45d5755c6fb52132c1a15f60d",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-092.json",
+      "evidenceHash": "d941fa0dee6faabef7d1107443ccba54a8799b8c1f1cb510c5ff585a9ca06e63"
+    },
+    "post/MS-DOS 4.0 のオープンソース化/index.hi.md": {
+      "source": "post/MS-DOS 4.0 のオープンソース化/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "01a711ba30fa98879e90b87ce6ab00b29b44c4a0531687904ff3b4f4174c9d78",
+      "translationHash": "f169fdb2f5f17700cb1f92e1627ad7fa6404382ed9d1aa5caf737993e127871d",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-092.json",
+      "evidenceHash": "5e7a51ae9962ebf21fdbb68892bfa8808de888397b65918d00201016ea9d9c12"
+    },
+    "post/MS-DOS 4.0 のオープンソース化/index.id.md": {
+      "source": "post/MS-DOS 4.0 のオープンソース化/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "01a711ba30fa98879e90b87ce6ab00b29b44c4a0531687904ff3b4f4174c9d78",
+      "translationHash": "6b7ca5cbd8a5ec2938cfc969ab3ecdcc4bfb93e00df2e8c21d84ee87eaa4942a",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-092.json",
+      "evidenceHash": "3fa4f0de1b929b69206b9eda56c7bc54c0209be669f3175dcf5b233a49afd3d6"
+    },
+    "post/MS-DOS 4.0 のオープンソース化/index.ko.md": {
+      "source": "post/MS-DOS 4.0 のオープンソース化/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "01a711ba30fa98879e90b87ce6ab00b29b44c4a0531687904ff3b4f4174c9d78",
+      "translationHash": "0442a6f47b7495df7c1dd942fec1283f20684d7130a416e137d5100f6d1ecbcd",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-092.json",
+      "evidenceHash": "f80b3c67002e0a3b420aa0dd9208c9dc24e584fe410077082497e94ac2832d64"
+    },
+    "post/MS-DOS 4.0 のオープンソース化/index.pt.md": {
+      "source": "post/MS-DOS 4.0 のオープンソース化/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "01a711ba30fa98879e90b87ce6ab00b29b44c4a0531687904ff3b4f4174c9d78",
+      "translationHash": "13843c80d9940b075e7c3c3bb0bb9868b010b3eb4f6c39e9774a85182585a293",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-092.json",
+      "evidenceHash": "df78489b9adfce77d910fb0917fb3c9ed6c66f5bf081874db19c2418ad4334d1"
+    },
+    "post/MS-DOS 4.0 のオープンソース化/index.ru.md": {
+      "source": "post/MS-DOS 4.0 のオープンソース化/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "01a711ba30fa98879e90b87ce6ab00b29b44c4a0531687904ff3b4f4174c9d78",
+      "translationHash": "245c63226ba7a99c557d4f77f0a5d79b6da987f5f4ece5ddb93e88fa4885ca0c",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-092.json",
+      "evidenceHash": "db6166dc5bc5b9314380826cc4d04bd7807dda0e7003c58c164a2d38308433d7"
+    },
+    "post/MS-DOS 4.0 のオープンソース化/index.zh-cn.md": {
+      "source": "post/MS-DOS 4.0 のオープンソース化/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "01a711ba30fa98879e90b87ce6ab00b29b44c4a0531687904ff3b4f4174c9d78",
+      "translationHash": "9e281fe95cc1a758bd1edd7acf18d3573066f9b53aca1e9dd812710ef07bfe8c",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-092.json",
+      "evidenceHash": "e10e3a87e8dde0eb7318d30173824452ed62b4f6eedc4fd685ccf86725cf497c"
+    },
+    "post/MS-DOS 4.0 のオープンソース化/index.zh-tw.md": {
+      "source": "post/MS-DOS 4.0 のオープンソース化/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "01a711ba30fa98879e90b87ce6ab00b29b44c4a0531687904ff3b4f4174c9d78",
+      "translationHash": "f34c07b55c60f5aa365e58d24bbc81980525f9716483b1f07ee861468a6b4b80",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-092.json",
+      "evidenceHash": "2b5aeb8f9c3a793cc1bad8bbcb001ef9801c226b2061b926c5548e86cc075d1b"
     }
   }
 }

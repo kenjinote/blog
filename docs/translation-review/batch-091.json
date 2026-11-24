@@ -1,0 +1,453 @@
+{
+  "version": 1,
+  "batch": 91,
+  "article": "LogicPad 開発秘話",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "c6b88766f4120dc30d7ee6944bccda5fe81296cb420092b8af65aa62b05513c9",
+  "sources": [
+    "https://logicpad.org/"
+  ],
+  "scope": "Read the complete Japanese source and all twelve translations. Compared narrative sequence, personal timeline, product terminology and links; checked current product information against the official site.",
+  "findings": [
+    "Removed the duplicate future date from all thirteen editions, retained the original 2025-07-30 publication date, and set lastmod to 2026-11-24.",
+    "Fixed a Spanish link inserted into the middle of 'Podían' that pointed to an unrelated Kubernetes article.",
+    "Corrected repeated Hindi links that pointed to a different LogicPad article; they now point to the product site.",
+    "Changed five titles that incorrectly used passive or plural wording to match the author's first-person account.",
+    "Reframed beta status and the adjacent feature list as information from July 2025, and linked readers to the official site for current features and availability."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/LogicPad 開発秘話/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/LogicPad 開発秘話/index.md",
+      "sourceHash": "c6b88766f4120dc30d7ee6944bccda5fe81296cb420092b8af65aa62b05513c9",
+      "translationHash": "a5fd09fe1e6fdb85ef644fcbeeb30b124c16a188611e74aa49cb6082fedb46bd",
+      "summary": "Compared the complete personal-history article with the Japanese source. Preserved the author's first-person timeline and section sequence; corrected malformed product links and the Spanish mid-word Kubernetes link; dated the beta and feature claims to the July 2025 publication context and linked to current product information.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "The account of the author's motivation, prior CAD and programming experience, first user feedback, goals, and feature list remains in the same sequence."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "LogicPad, low-code, GUI/CAD, Blueprint, beta, and product features retain their intended meaning; the feature list is explicitly historical."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Product references point to logicpad.org; removed an unrelated Spanish Kubernetes link and corrected erroneous Hindi links to a different LogicPad article."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The author's personal recollections and historical feature claims are not independently audited.",
+        "Current product status and availability are referred to the official LogicPad site."
+      ]
+    },
+    "post/LogicPad 開発秘話/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/LogicPad 開発秘話/index.md",
+      "sourceHash": "c6b88766f4120dc30d7ee6944bccda5fe81296cb420092b8af65aa62b05513c9",
+      "translationHash": "0c614b39c21712d348bf59573c78cb46f51059ec86a3dee094edbaa46b9dcd2b",
+      "summary": "Compared the complete personal-history article with the Japanese source. Preserved the author's first-person timeline and section sequence; corrected malformed product links and the Spanish mid-word Kubernetes link; dated the beta and feature claims to the July 2025 publication context and linked to current product information.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "The account of the author's motivation, prior CAD and programming experience, first user feedback, goals, and feature list remains in the same sequence."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "LogicPad, low-code, GUI/CAD, Blueprint, beta, and product features retain their intended meaning; the feature list is explicitly historical."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Product references point to logicpad.org; removed an unrelated Spanish Kubernetes link and corrected erroneous Hindi links to a different LogicPad article."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The author's personal recollections and historical feature claims are not independently audited.",
+        "Current product status and availability are referred to the official LogicPad site."
+      ]
+    },
+    "post/LogicPad 開発秘話/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/LogicPad 開発秘話/index.md",
+      "sourceHash": "c6b88766f4120dc30d7ee6944bccda5fe81296cb420092b8af65aa62b05513c9",
+      "translationHash": "e2a382b49064d48e7223001a7a5c916305fa50fa65530d93f65cc7243362cff2",
+      "summary": "Compared the complete personal-history article with the Japanese source. Preserved the author's first-person timeline and section sequence; corrected malformed product links and the Spanish mid-word Kubernetes link; dated the beta and feature claims to the July 2025 publication context and linked to current product information.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "The account of the author's motivation, prior CAD and programming experience, first user feedback, goals, and feature list remains in the same sequence."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "LogicPad, low-code, GUI/CAD, Blueprint, beta, and product features retain their intended meaning; the feature list is explicitly historical."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Product references point to logicpad.org; removed an unrelated Spanish Kubernetes link and corrected erroneous Hindi links to a different LogicPad article."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The author's personal recollections and historical feature claims are not independently audited.",
+        "Current product status and availability are referred to the official LogicPad site."
+      ]
+    },
+    "post/LogicPad 開発秘話/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/LogicPad 開発秘話/index.md",
+      "sourceHash": "c6b88766f4120dc30d7ee6944bccda5fe81296cb420092b8af65aa62b05513c9",
+      "translationHash": "2f755a3bfef593ccc51b21e1035484015b002698d5ff2e373d2f91d7780ff569",
+      "summary": "Compared the complete personal-history article with the Japanese source. Preserved the author's first-person timeline and section sequence; corrected malformed product links and the Spanish mid-word Kubernetes link; dated the beta and feature claims to the July 2025 publication context and linked to current product information.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "The account of the author's motivation, prior CAD and programming experience, first user feedback, goals, and feature list remains in the same sequence."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "LogicPad, low-code, GUI/CAD, Blueprint, beta, and product features retain their intended meaning; the feature list is explicitly historical."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Product references point to logicpad.org; removed an unrelated Spanish Kubernetes link and corrected erroneous Hindi links to a different LogicPad article."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The author's personal recollections and historical feature claims are not independently audited.",
+        "Current product status and availability are referred to the official LogicPad site."
+      ]
+    },
+    "post/LogicPad 開発秘話/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/LogicPad 開発秘話/index.md",
+      "sourceHash": "c6b88766f4120dc30d7ee6944bccda5fe81296cb420092b8af65aa62b05513c9",
+      "translationHash": "b9e3efba97773be7023efa6700094afc8af4b7db5e3c84e3097a67f87e0ca906",
+      "summary": "Compared the complete personal-history article with the Japanese source. Preserved the author's first-person timeline and section sequence; corrected malformed product links and the Spanish mid-word Kubernetes link; dated the beta and feature claims to the July 2025 publication context and linked to current product information.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "The account of the author's motivation, prior CAD and programming experience, first user feedback, goals, and feature list remains in the same sequence."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "LogicPad, low-code, GUI/CAD, Blueprint, beta, and product features retain their intended meaning; the feature list is explicitly historical."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Product references point to logicpad.org; removed an unrelated Spanish Kubernetes link and corrected erroneous Hindi links to a different LogicPad article."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The author's personal recollections and historical feature claims are not independently audited.",
+        "Current product status and availability are referred to the official LogicPad site."
+      ]
+    },
+    "post/LogicPad 開発秘話/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/LogicPad 開発秘話/index.md",
+      "sourceHash": "c6b88766f4120dc30d7ee6944bccda5fe81296cb420092b8af65aa62b05513c9",
+      "translationHash": "36ed1d155406d19daac7d44885668571399468d2f3a942da6d03b3ff71319b07",
+      "summary": "Compared the complete personal-history article with the Japanese source. Preserved the author's first-person timeline and section sequence; corrected malformed product links and the Spanish mid-word Kubernetes link; dated the beta and feature claims to the July 2025 publication context and linked to current product information.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "The account of the author's motivation, prior CAD and programming experience, first user feedback, goals, and feature list remains in the same sequence."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "LogicPad, low-code, GUI/CAD, Blueprint, beta, and product features retain their intended meaning; the feature list is explicitly historical."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Product references point to logicpad.org; removed an unrelated Spanish Kubernetes link and corrected erroneous Hindi links to a different LogicPad article."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The author's personal recollections and historical feature claims are not independently audited.",
+        "Current product status and availability are referred to the official LogicPad site."
+      ]
+    },
+    "post/LogicPad 開発秘話/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/LogicPad 開発秘話/index.md",
+      "sourceHash": "c6b88766f4120dc30d7ee6944bccda5fe81296cb420092b8af65aa62b05513c9",
+      "translationHash": "434b28418bdea65fc0e8a03fab522d1699543b80349c2f4af01b8b853d228816",
+      "summary": "Compared the complete personal-history article with the Japanese source. Preserved the author's first-person timeline and section sequence; corrected malformed product links and the Spanish mid-word Kubernetes link; dated the beta and feature claims to the July 2025 publication context and linked to current product information.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "The account of the author's motivation, prior CAD and programming experience, first user feedback, goals, and feature list remains in the same sequence."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "LogicPad, low-code, GUI/CAD, Blueprint, beta, and product features retain their intended meaning; the feature list is explicitly historical."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Product references point to logicpad.org; removed an unrelated Spanish Kubernetes link and corrected erroneous Hindi links to a different LogicPad article."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The author's personal recollections and historical feature claims are not independently audited.",
+        "Current product status and availability are referred to the official LogicPad site."
+      ]
+    },
+    "post/LogicPad 開発秘話/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/LogicPad 開発秘話/index.md",
+      "sourceHash": "c6b88766f4120dc30d7ee6944bccda5fe81296cb420092b8af65aa62b05513c9",
+      "translationHash": "516728a05e4541780789a0576b6b91685608e48b2f803afbf8e985decf7a096d",
+      "summary": "Compared the complete personal-history article with the Japanese source. Preserved the author's first-person timeline and section sequence; corrected malformed product links and the Spanish mid-word Kubernetes link; dated the beta and feature claims to the July 2025 publication context and linked to current product information.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "The account of the author's motivation, prior CAD and programming experience, first user feedback, goals, and feature list remains in the same sequence."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "LogicPad, low-code, GUI/CAD, Blueprint, beta, and product features retain their intended meaning; the feature list is explicitly historical."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Product references point to logicpad.org; removed an unrelated Spanish Kubernetes link and corrected erroneous Hindi links to a different LogicPad article."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The author's personal recollections and historical feature claims are not independently audited.",
+        "Current product status and availability are referred to the official LogicPad site."
+      ]
+    },
+    "post/LogicPad 開発秘話/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/LogicPad 開発秘話/index.md",
+      "sourceHash": "c6b88766f4120dc30d7ee6944bccda5fe81296cb420092b8af65aa62b05513c9",
+      "translationHash": "5784555410e91e4d4e4f7cc826a2e965d4469cde29ea6b6635dfa828bc1cb80e",
+      "summary": "Compared the complete personal-history article with the Japanese source. Preserved the author's first-person timeline and section sequence; corrected malformed product links and the Spanish mid-word Kubernetes link; dated the beta and feature claims to the July 2025 publication context and linked to current product information.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "The account of the author's motivation, prior CAD and programming experience, first user feedback, goals, and feature list remains in the same sequence."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "LogicPad, low-code, GUI/CAD, Blueprint, beta, and product features retain their intended meaning; the feature list is explicitly historical."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Product references point to logicpad.org; removed an unrelated Spanish Kubernetes link and corrected erroneous Hindi links to a different LogicPad article."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The author's personal recollections and historical feature claims are not independently audited.",
+        "Current product status and availability are referred to the official LogicPad site."
+      ]
+    },
+    "post/LogicPad 開発秘話/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/LogicPad 開発秘話/index.md",
+      "sourceHash": "c6b88766f4120dc30d7ee6944bccda5fe81296cb420092b8af65aa62b05513c9",
+      "translationHash": "e766797ba29ec43246e3c38fc6d08e11f7a91c912d645cad0e2d75bff9f1e5b8",
+      "summary": "Compared the complete personal-history article with the Japanese source. Preserved the author's first-person timeline and section sequence; corrected malformed product links and the Spanish mid-word Kubernetes link; dated the beta and feature claims to the July 2025 publication context and linked to current product information.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "The account of the author's motivation, prior CAD and programming experience, first user feedback, goals, and feature list remains in the same sequence."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "LogicPad, low-code, GUI/CAD, Blueprint, beta, and product features retain their intended meaning; the feature list is explicitly historical."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Product references point to logicpad.org; removed an unrelated Spanish Kubernetes link and corrected erroneous Hindi links to a different LogicPad article."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The author's personal recollections and historical feature claims are not independently audited.",
+        "Current product status and availability are referred to the official LogicPad site."
+      ]
+    },
+    "post/LogicPad 開発秘話/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/LogicPad 開発秘話/index.md",
+      "sourceHash": "c6b88766f4120dc30d7ee6944bccda5fe81296cb420092b8af65aa62b05513c9",
+      "translationHash": "21bd70a010f01ced1e67aadd34d62e85bc5112e0ceec4e73d2abc5a42ea1e4dd",
+      "summary": "Compared the complete personal-history article with the Japanese source. Preserved the author's first-person timeline and section sequence; corrected malformed product links and the Spanish mid-word Kubernetes link; dated the beta and feature claims to the July 2025 publication context and linked to current product information.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "The account of the author's motivation, prior CAD and programming experience, first user feedback, goals, and feature list remains in the same sequence."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "LogicPad, low-code, GUI/CAD, Blueprint, beta, and product features retain their intended meaning; the feature list is explicitly historical."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Product references point to logicpad.org; removed an unrelated Spanish Kubernetes link and corrected erroneous Hindi links to a different LogicPad article."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The author's personal recollections and historical feature claims are not independently audited.",
+        "Current product status and availability are referred to the official LogicPad site."
+      ]
+    },
+    "post/LogicPad 開発秘話/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/LogicPad 開発秘話/index.md",
+      "sourceHash": "c6b88766f4120dc30d7ee6944bccda5fe81296cb420092b8af65aa62b05513c9",
+      "translationHash": "0724545d61c22b592d88b3abcafaa83dc75bf0eeb18f283fb5f1f6aeb826432a",
+      "summary": "Compared the complete personal-history article with the Japanese source. Preserved the author's first-person timeline and section sequence; corrected malformed product links and the Spanish mid-word Kubernetes link; dated the beta and feature claims to the July 2025 publication context and linked to current product information.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "The account of the author's motivation, prior CAD and programming experience, first user feedback, goals, and feature list remains in the same sequence."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "LogicPad, low-code, GUI/CAD, Blueprint, beta, and product features retain their intended meaning; the feature list is explicitly historical."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Product references point to logicpad.org; removed an unrelated Spanish Kubernetes link and corrected erroneous Hindi links to a different LogicPad article."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The author's personal recollections and historical feature claims are not independently audited.",
+        "Current product status and availability are referred to the official LogicPad site."
+      ]
+    }
+  }
+}

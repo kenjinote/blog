@@ -1,24 +1,29 @@
 ---
-title: '約40年前のOS「MS-DOS 4.0」がオープンソース化されて公開'
-date: "2026-09-24T19:44:38+09:00"
+title: "MS-DOS 4.00のソースコードが公開"
 slug: "MS-DOS 4.0 のオープンソース化"
 date: 2024-05-05T16:44:28+09:00
 tags: ["MS-DOS", "オープンソース"]
 draft: false
 image: "img.webp"
 categories: ["it-technology"]
-description: '約40年前にリリースされたOS「MS-DOS 4.0」のソースコードがオープンソース化され、GitHubで公開されたニュースを紹介します。コードの大部分が8086アセンブリで記述された歴史的な資料について解説します。'
+description: "MicrosoftとIBMが2024年に公開したMS-DOS 4.00のソースコードを紹介します。8086アセンブリ、MITライセンス、GitHubリポジトリの内容と読み取り専用アーカイブの状態を確認します。"
+lastmod: 2026-11-24T00:00:00+09:00
 ---
 
-## MS-DOS 4.0 のオープンソース化
+# MS-DOS 4.00のソースコードが公開
 
-マイクロソフト社は約 40 年前リリースされた MS-DOS 4.0 のソースコードを公開した。
-ほぼ完全に 8086 [アセンブリ](https://kenji.blog/p/programming-languages-history-paradigm-evolution/) コードで書かれている。
+2024年4月25日、MicrosoftはIBMとの協力のもと、MS-DOS 4.00のソースコードを公開しました。コードの大部分は8086アセンブリで書かれており、歴史的なOSの実装を調べられる資料です。公開の経緯は[Microsoft Open Source Blog](https://opensource.microsoft.com/blog/2024/04/25/open-sourcing-ms-dos-4-0/)に記載されています。
 
-## github リポジトリ
+## GitHubリポジトリの内容
 
-[https://github.com/microsoft/MS-DOS](https://github.com/microsoft/MS-DOS)
+[MicrosoftのMS-DOSリポジトリ](https://github.com/microsoft/MS-DOS)には、MS-DOS 4.00のソースコードのほか、コンパイル済みバイナリや文書、ディスクイメージなどが含まれています。Microsoftの説明では、公開資料にはRay Ozzieが保管していた未公開ベータ版のバイナリも含まれます。リポジトリにはMS-DOS 1.25と2.0の資料も収録されています。
 
-## 参考サイト
+## ライセンスとアーカイブ
 
-- [MS-DOS 4.0 のオープンソース化](https://cloudblogs.microsoft.com/opensource/2024/04/25/open-sourcing-ms-dos-4-0/)
+リポジトリ内のファイルはMITライセンスで公開されています。条件の詳細は[v4.0のライセンスファイル](https://github.com/microsoft/MS-DOS/blob/main/v4.0/LICENSE)を確認してください。リポジトリは2024年4月25日にアーカイブされ、現在は読み取り専用です。歴史資料として参照したり、フォークして調査したりできます。
+
+## 参考資料
+
+- [Microsoft Open Source Blog: Open sourcing MS-DOS 4.0](https://opensource.microsoft.com/blog/2024/04/25/open-sourcing-ms-dos-4-0/)
+- [Microsoft / MS-DOS repository](https://github.com/microsoft/MS-DOS)
+- [MS-DOS 4.0 MIT License](https://github.com/microsoft/MS-DOS/blob/main/v4.0/LICENSE)

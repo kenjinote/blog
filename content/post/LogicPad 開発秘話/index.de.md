@@ -1,6 +1,5 @@
 ---
-title: 'Die Entwicklungsgeschichte des Low-Code-Tools „LogicPad“: Warum wurde es erstellt?'
-date: "2026-09-24T19:44:38+09:00"
+title: "Die Geschichte hinter LogicPad: Warum ich das Low-Code-Tool entwickelt habe"
 slug: "LogicPad 開発秘話"
 date: 2025-07-30T23:51:35+09:00
 tags: ["LogicPad", "Entwicklung", "Geheime Geschichte"]
@@ -8,7 +7,13 @@ draft: false
 image: "img.webp"
 categories: ["it-technology"]
 description: 'Die Entstehungsgeschichte des Low-Code-Tools „LogicPad“ für „Leute, die keinen Code schreiben können, aber die Logik beherrschen“. Wir sprechen leidenschaftlich über die persönlichen Gedanken des Autors hinter der Entwicklung und seine Einstellung zur eigenen Karriere.'
+
+
+lastmod: 2026-11-24T00:00:00+09:00
 ---
+
+
+
 
 # Ein Werkzeug für "Leute, die nicht programmieren können, aber Logik verstehen". Der Grund, warum ich LogicPad entwickelt habe
 
@@ -136,8 +141,9 @@ Das ist mein Wunsch.
 
 ## Fazit
 
-LogicPad befindet sich noch in der Beta-Phase und ist nicht fertig.
-Es gibt noch Berge von Dingen zu verbessern und Dinge, die ich tun möchte.
+Als dieser Artikel im Juli 2025 veröffentlicht wurde, befand sich LogicPad noch in der Beta-Phase und die Entwicklung lief weiter.
+Es gab vieles, das ich verbessern und künftig ergänzen wollte.
+Aktuelle Funktionen und Informationen zur Verfügbarkeit finden Sie auf der [offiziellen Website](https://logicpad.org).
 
 Aber ich stecke **alle "Punkte" meines Lebens in dieses Werkzeug.** 
 Jetzt kann ich stolz sagen:
@@ -146,7 +152,7 @@ Jetzt kann ich stolz sagen:
 
 ---
 
-### 👇 Bonus: Was Sie mit LogicPad machen können
+### 👇 Bonus: Was LogicPad zum Zeitpunkt der Veröffentlichung konnte
 
 * Prozesse mit Drag & Drop erstellen
 * Bedingte Verzweigungen und Variablen können ebenfalls in der GUI behandelt werden

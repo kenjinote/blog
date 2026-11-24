@@ -1,6 +1,5 @@
 ---
 title: 'Kisah di Balik Layar Pengembangan Alat Low-Code ''LogicPad'': Mengapa Membuat Ini?'
-date: "2026-09-24T19:44:38+09:00"
 slug: "LogicPad 開発秘話"
 date: 2025-07-30T23:51:35+09:00
 tags: ["LogicPad", "Pengembangan", "Kisah"]
@@ -8,7 +7,13 @@ draft: false
 image: "img.webp"
 categories: ["it-technology"]
 description: 'Kisah awal mula ''LogicPad'', sebuah alat low-code untuk ''orang yang tidak bisa menulis kode tetapi memiliki logika''. Kami menceritakan dengan antusias tentang perasaan pribadi penulis di balik pengembangannya, serta cara pandangnya terhadap kariernya sendiri.'
+
+
+lastmod: 2026-11-24T00:00:00+09:00
 ---
+
+
+
 
 # Alat untuk Mereka yang "Tidak Bisa Menulis Kode, tetapi Memiliki Logika". Mengapa Saya Membuat LogicPad
 
@@ -137,8 +142,9 @@ Itulah harapan saya.
 
 ## Penutup
 
-LogicPad masih dalam versi beta dan belum selesai.
-Masih ada segunung hal yang perlu diperbaiki dan hal yang ingin saya lakukan.
+Saat artikel ini diterbitkan pada Juli 2025, LogicPad masih dalam versi beta dan pengembangannya terus berjalan.
+Masih banyak hal yang ingin saya perbaiki dan fitur yang ingin saya tambahkan.
+Untuk melihat fitur dan ketersediaan terkini, kunjungi [situs resmi](https://logicpad.org).
 
 Namun, saya telah menuangkan **seluruh "titik-titik" kehidupan saya ke dalam alat ini** .
 Sekarang saya bisa mengatakannya dengan bangga.
@@ -147,7 +153,7 @@ Sekarang saya bisa mengatakannya dengan bangga.
 
 ---
 
-### 👇 Bonus: Apa yang Bisa Anda Lakukan dengan LogicPad
+### 👇 Bonus: Kemampuan LogicPad saat artikel ini diterbitkan
 
 * Membangun proses dengan drag & drop
 * Menangani percabangan kondisional dan variabel melalui GUI

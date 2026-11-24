@@ -1,6 +1,5 @@
 ---
-title: 'Low-Code Tool ''LogicPad'' Development Secret Story: Why Was This Created?'
-date: "2026-09-24T19:44:38+09:00"
+title: "The Story Behind LogicPad: Why I Built This Low-Code Tool"
 slug: "LogicPad 開発秘話"
 date: 2025-07-30T23:51:35+09:00
 tags: ["LogicPad", "Development", "Untold Story"]
@@ -8,7 +7,13 @@ draft: false
 image: "img.webp"
 categories: ["it-technology"]
 description: 'The birth story of ''LogicPad'', a low-code tool for ''people who can''t write code but have logic''. The author passionately talks about their personal thoughts behind the development and their approach to their career.'
+
+
+lastmod: 2026-11-24T00:00:00+09:00
 ---
+
+
+
 
 # Tools for those who "have logic but can't write code." Why I created LogicPad
 
@@ -136,8 +141,9 @@ That is my wish.
 
 ## In Conclusion
 
-LogicPad is still in beta and not finished yet.
-There are a mountain of improvements and things I want to do.
+When this article was published in July 2025, LogicPad was still in beta and development was ongoing.
+There were many things I wanted to improve and features I hoped to add.
+For current features and availability, see the [official site](https://logicpad.org).
 
 But I've poured **all the "dots" of my life into this tool.**
 Now, I can say with pride:
@@ -146,7 +152,7 @@ Now, I can say with pride:
 
 ---
 
-### 👇 Bonus: What You Can Do with LogicPad
+### 👇 Bonus: What LogicPad Could Do at the Time of Publication
 
 * Build processes with drag-and-drop
 * Handle conditional branching and variables in the GUI

@@ -7,8 +7,7 @@
 
 
 
-title: 'Historia secreta del desarrollo de la herramienta Low-Code "LogicPad": ¿Por qué la creamos?'
-date: "2026-09-24T19:44:38+09:00"
+title: "La historia detrás de LogicPad: por qué creé esta herramienta low-code"
 slug: "LogicPad 開発秘話"
 date: 2025-07-30T23:51:35+09:00
 tags: ["LogicPad", "Desarrollo", "Historia Secreta"]
@@ -16,7 +15,13 @@ draft: false
 image: "img.webp"
 categories: ["it-technology"]
 description: 'La historia detrás del nacimiento de la herramienta Low-Code "LogicPad", diseñada para "personas que no pueden escribir código pero tienen la lógica". Hablamos apasionadamente sobre los sentimientos personales del creador detrás del desarrollo y cómo afronta su propia carrera.'
+
+
+lastmod: 2026-11-24T00:00:00+09:00
 ---
+
+
+
 
 
 
@@ -63,7 +68,7 @@ Con ese pensamiento, comencé a desarrollar el concepto de LogicPad. Fue hace un
 
 En mi trabajo, había mucha gente brillante.
 
-[Pod](https://kenji.blog/es/p/kubernetes-k8s-architecture-pod-service-ingress/)ían construir lógica. Dominaban las funciones de Excel a voluntad y podían identificar la esencia de un problema.
+Podían construir lógica. Dominaban las funciones de Excel a voluntad y podían identificar la esencia de un problema.
 Pero... se detenían en la etapa de "escribir código".
 
 "Este trabajo, lo hago cada vez siguiendo un manual, ¿no se podría automatizar?"
@@ -152,8 +157,9 @@ Ese es mi deseo.
 
 ## Para terminar
 
-LogicPad todavía está en versión beta y no está terminado.
-Todavía hay muchas cosas que mejorar y que quiero hacer.
+Cuando se publicó este artículo, en julio de 2025, LogicPad todavía estaba en fase beta y su desarrollo continuaba.
+Había muchas cosas que quería mejorar y funciones que esperaba añadir.
+Para conocer las funciones y la disponibilidad actuales, consulta el [sitio oficial](https://logicpad.org).
 
 Pero, **he volcado todos los "puntos" de mi vida en esta herramienta.**
 Ahora puedo decirlo con orgullo.
@@ -162,7 +168,7 @@ Ahora puedo decirlo con orgullo.
 
 ---
 
-### 👇 Extra: Lo que puedes hacer con LogicPad
+### 👇 Extra: Lo que LogicPad podía hacer cuando se publicó este artículo
 
 * Construir procesos arrastrando y soltando
 * Manejar bifurcaciones condicionales, variables, etc. en una GUI

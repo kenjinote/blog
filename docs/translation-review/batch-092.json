@@ -1,0 +1,454 @@
+{
+  "version": 1,
+  "batch": 92,
+  "article": "MS-DOS 4.0 のオープンソース化",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "01a711ba30fa98879e90b87ce6ab00b29b44c4a0531687904ff3b4f4174c9d78",
+  "sources": [
+    "https://opensource.microsoft.com/blog/2024/04/25/open-sourcing-ms-dos-4-0/",
+    "https://github.com/microsoft/MS-DOS",
+    "https://github.com/microsoft/MS-DOS/blob/main/v4.0/LICENSE"
+  ],
+  "scope": "Read the complete Japanese source and all twelve translations. Compared the release date, IBM collaboration, source language, repository contents, MIT license, and archived status with Microsoft's official announcement and repository files.",
+  "findings": [
+    "Replaced the ambiguous 'nearly 40 years old' framing with the exact 2024 publication date and MS-DOS 4.00 version.",
+    "Clarified the IBM partnership, 8086 assembly, repository contents, and previously unreleased beta binaries described in Microsoft's announcement.",
+    "Added the MIT license and the repository's archived, read-only status, with direct links to the official license and repository.",
+    "Removed duplicate future date metadata, retained the original 2024-05-05 publication date, and set lastmod to 2026-11-24."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/MS-DOS 4.0 のオープンソース化/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/MS-DOS 4.0 のオープンソース化/index.md",
+      "sourceHash": "01a711ba30fa98879e90b87ce6ab00b29b44c4a0531687904ff3b4f4174c9d78",
+      "translationHash": "fd29f44283b26a169d83d54e374c942287114549eea4c18476ff240a84d0b305",
+      "summary": "Compared the complete translated article with the Japanese source and checked the April 2024 announcement, repository contents, MIT license, and archived read-only status against Microsoft's official announcement and the Microsoft GitHub repository.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Every edition distinguishes the 2024 release event, the historical source/binary/docs material, and the repository's current archived state."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "MS-DOS 4.00, IBM, Microsoft, 8086 assembly, MIT License, binaries, and read-only archive are consistently identified."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article discusses historical source code but contains no executable code sample."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All editions include the Microsoft announcement, official repository, and v4.0 license file."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "This is a historical article; release dates and repository archive status are stated explicitly.",
+        "The linked repository's MIT terms apply as described by its license file."
+      ]
+    },
+    "post/MS-DOS 4.0 のオープンソース化/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/MS-DOS 4.0 のオープンソース化/index.md",
+      "sourceHash": "01a711ba30fa98879e90b87ce6ab00b29b44c4a0531687904ff3b4f4174c9d78",
+      "translationHash": "86950b8ba78a4f129fc2e962d1b3ac1fa8d58ef338087aa3327c2e5a7466305c",
+      "summary": "Compared the complete translated article with the Japanese source and checked the April 2024 announcement, repository contents, MIT license, and archived read-only status against Microsoft's official announcement and the Microsoft GitHub repository.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Every edition distinguishes the 2024 release event, the historical source/binary/docs material, and the repository's current archived state."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "MS-DOS 4.00, IBM, Microsoft, 8086 assembly, MIT License, binaries, and read-only archive are consistently identified."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article discusses historical source code but contains no executable code sample."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All editions include the Microsoft announcement, official repository, and v4.0 license file."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "This is a historical article; release dates and repository archive status are stated explicitly.",
+        "The linked repository's MIT terms apply as described by its license file."
+      ]
+    },
+    "post/MS-DOS 4.0 のオープンソース化/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/MS-DOS 4.0 のオープンソース化/index.md",
+      "sourceHash": "01a711ba30fa98879e90b87ce6ab00b29b44c4a0531687904ff3b4f4174c9d78",
+      "translationHash": "7100b763a3bcdbebcb44acf8d5deed09858b40a99903b7c7fc2abffd3a1599b6",
+      "summary": "Compared the complete translated article with the Japanese source and checked the April 2024 announcement, repository contents, MIT license, and archived read-only status against Microsoft's official announcement and the Microsoft GitHub repository.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Every edition distinguishes the 2024 release event, the historical source/binary/docs material, and the repository's current archived state."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "MS-DOS 4.00, IBM, Microsoft, 8086 assembly, MIT License, binaries, and read-only archive are consistently identified."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article discusses historical source code but contains no executable code sample."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All editions include the Microsoft announcement, official repository, and v4.0 license file."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "This is a historical article; release dates and repository archive status are stated explicitly.",
+        "The linked repository's MIT terms apply as described by its license file."
+      ]
+    },
+    "post/MS-DOS 4.0 のオープンソース化/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/MS-DOS 4.0 のオープンソース化/index.md",
+      "sourceHash": "01a711ba30fa98879e90b87ce6ab00b29b44c4a0531687904ff3b4f4174c9d78",
+      "translationHash": "4798dbc567e760ce19c5922b6d482ababceba46f421efe6886121e0a651804aa",
+      "summary": "Compared the complete translated article with the Japanese source and checked the April 2024 announcement, repository contents, MIT license, and archived read-only status against Microsoft's official announcement and the Microsoft GitHub repository.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Every edition distinguishes the 2024 release event, the historical source/binary/docs material, and the repository's current archived state."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "MS-DOS 4.00, IBM, Microsoft, 8086 assembly, MIT License, binaries, and read-only archive are consistently identified."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article discusses historical source code but contains no executable code sample."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All editions include the Microsoft announcement, official repository, and v4.0 license file."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "This is a historical article; release dates and repository archive status are stated explicitly.",
+        "The linked repository's MIT terms apply as described by its license file."
+      ]
+    },
+    "post/MS-DOS 4.0 のオープンソース化/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/MS-DOS 4.0 のオープンソース化/index.md",
+      "sourceHash": "01a711ba30fa98879e90b87ce6ab00b29b44c4a0531687904ff3b4f4174c9d78",
+      "translationHash": "93af1705423af2abd067f1f56caad6ea893d1bb45d5755c6fb52132c1a15f60d",
+      "summary": "Compared the complete translated article with the Japanese source and checked the April 2024 announcement, repository contents, MIT license, and archived read-only status against Microsoft's official announcement and the Microsoft GitHub repository.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Every edition distinguishes the 2024 release event, the historical source/binary/docs material, and the repository's current archived state."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "MS-DOS 4.00, IBM, Microsoft, 8086 assembly, MIT License, binaries, and read-only archive are consistently identified."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article discusses historical source code but contains no executable code sample."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All editions include the Microsoft announcement, official repository, and v4.0 license file."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "This is a historical article; release dates and repository archive status are stated explicitly.",
+        "The linked repository's MIT terms apply as described by its license file."
+      ]
+    },
+    "post/MS-DOS 4.0 のオープンソース化/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/MS-DOS 4.0 のオープンソース化/index.md",
+      "sourceHash": "01a711ba30fa98879e90b87ce6ab00b29b44c4a0531687904ff3b4f4174c9d78",
+      "translationHash": "f169fdb2f5f17700cb1f92e1627ad7fa6404382ed9d1aa5caf737993e127871d",
+      "summary": "Compared the complete translated article with the Japanese source and checked the April 2024 announcement, repository contents, MIT license, and archived read-only status against Microsoft's official announcement and the Microsoft GitHub repository.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Every edition distinguishes the 2024 release event, the historical source/binary/docs material, and the repository's current archived state."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "MS-DOS 4.00, IBM, Microsoft, 8086 assembly, MIT License, binaries, and read-only archive are consistently identified."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article discusses historical source code but contains no executable code sample."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All editions include the Microsoft announcement, official repository, and v4.0 license file."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "This is a historical article; release dates and repository archive status are stated explicitly.",
+        "The linked repository's MIT terms apply as described by its license file."
+      ]
+    },
+    "post/MS-DOS 4.0 のオープンソース化/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/MS-DOS 4.0 のオープンソース化/index.md",
+      "sourceHash": "01a711ba30fa98879e90b87ce6ab00b29b44c4a0531687904ff3b4f4174c9d78",
+      "translationHash": "6b7ca5cbd8a5ec2938cfc969ab3ecdcc4bfb93e00df2e8c21d84ee87eaa4942a",
+      "summary": "Compared the complete translated article with the Japanese source and checked the April 2024 announcement, repository contents, MIT license, and archived read-only status against Microsoft's official announcement and the Microsoft GitHub repository.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Every edition distinguishes the 2024 release event, the historical source/binary/docs material, and the repository's current archived state."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "MS-DOS 4.00, IBM, Microsoft, 8086 assembly, MIT License, binaries, and read-only archive are consistently identified."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article discusses historical source code but contains no executable code sample."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All editions include the Microsoft announcement, official repository, and v4.0 license file."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "This is a historical article; release dates and repository archive status are stated explicitly.",
+        "The linked repository's MIT terms apply as described by its license file."
+      ]
+    },
+    "post/MS-DOS 4.0 のオープンソース化/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/MS-DOS 4.0 のオープンソース化/index.md",
+      "sourceHash": "01a711ba30fa98879e90b87ce6ab00b29b44c4a0531687904ff3b4f4174c9d78",
+      "translationHash": "0442a6f47b7495df7c1dd942fec1283f20684d7130a416e137d5100f6d1ecbcd",
+      "summary": "Compared the complete translated article with the Japanese source and checked the April 2024 announcement, repository contents, MIT license, and archived read-only status against Microsoft's official announcement and the Microsoft GitHub repository.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Every edition distinguishes the 2024 release event, the historical source/binary/docs material, and the repository's current archived state."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "MS-DOS 4.00, IBM, Microsoft, 8086 assembly, MIT License, binaries, and read-only archive are consistently identified."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article discusses historical source code but contains no executable code sample."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All editions include the Microsoft announcement, official repository, and v4.0 license file."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "This is a historical article; release dates and repository archive status are stated explicitly.",
+        "The linked repository's MIT terms apply as described by its license file."
+      ]
+    },
+    "post/MS-DOS 4.0 のオープンソース化/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/MS-DOS 4.0 のオープンソース化/index.md",
+      "sourceHash": "01a711ba30fa98879e90b87ce6ab00b29b44c4a0531687904ff3b4f4174c9d78",
+      "translationHash": "13843c80d9940b075e7c3c3bb0bb9868b010b3eb4f6c39e9774a85182585a293",
+      "summary": "Compared the complete translated article with the Japanese source and checked the April 2024 announcement, repository contents, MIT license, and archived read-only status against Microsoft's official announcement and the Microsoft GitHub repository.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Every edition distinguishes the 2024 release event, the historical source/binary/docs material, and the repository's current archived state."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "MS-DOS 4.00, IBM, Microsoft, 8086 assembly, MIT License, binaries, and read-only archive are consistently identified."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article discusses historical source code but contains no executable code sample."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All editions include the Microsoft announcement, official repository, and v4.0 license file."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "This is a historical article; release dates and repository archive status are stated explicitly.",
+        "The linked repository's MIT terms apply as described by its license file."
+      ]
+    },
+    "post/MS-DOS 4.0 のオープンソース化/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/MS-DOS 4.0 のオープンソース化/index.md",
+      "sourceHash": "01a711ba30fa98879e90b87ce6ab00b29b44c4a0531687904ff3b4f4174c9d78",
+      "translationHash": "245c63226ba7a99c557d4f77f0a5d79b6da987f5f4ece5ddb93e88fa4885ca0c",
+      "summary": "Compared the complete translated article with the Japanese source and checked the April 2024 announcement, repository contents, MIT license, and archived read-only status against Microsoft's official announcement and the Microsoft GitHub repository.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Every edition distinguishes the 2024 release event, the historical source/binary/docs material, and the repository's current archived state."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "MS-DOS 4.00, IBM, Microsoft, 8086 assembly, MIT License, binaries, and read-only archive are consistently identified."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article discusses historical source code but contains no executable code sample."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All editions include the Microsoft announcement, official repository, and v4.0 license file."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "This is a historical article; release dates and repository archive status are stated explicitly.",
+        "The linked repository's MIT terms apply as described by its license file."
+      ]
+    },
+    "post/MS-DOS 4.0 のオープンソース化/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/MS-DOS 4.0 のオープンソース化/index.md",
+      "sourceHash": "01a711ba30fa98879e90b87ce6ab00b29b44c4a0531687904ff3b4f4174c9d78",
+      "translationHash": "9e281fe95cc1a758bd1edd7acf18d3573066f9b53aca1e9dd812710ef07bfe8c",
+      "summary": "Compared the complete translated article with the Japanese source and checked the April 2024 announcement, repository contents, MIT license, and archived read-only status against Microsoft's official announcement and the Microsoft GitHub repository.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Every edition distinguishes the 2024 release event, the historical source/binary/docs material, and the repository's current archived state."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "MS-DOS 4.00, IBM, Microsoft, 8086 assembly, MIT License, binaries, and read-only archive are consistently identified."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article discusses historical source code but contains no executable code sample."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All editions include the Microsoft announcement, official repository, and v4.0 license file."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "This is a historical article; release dates and repository archive status are stated explicitly.",
+        "The linked repository's MIT terms apply as described by its license file."
+      ]
+    },
+    "post/MS-DOS 4.0 のオープンソース化/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/MS-DOS 4.0 のオープンソース化/index.md",
+      "sourceHash": "01a711ba30fa98879e90b87ce6ab00b29b44c4a0531687904ff3b4f4174c9d78",
+      "translationHash": "f34c07b55c60f5aa365e58d24bbc81980525f9716483b1f07ee861468a6b4b80",
+      "summary": "Compared the complete translated article with the Japanese source and checked the April 2024 announcement, repository contents, MIT license, and archived read-only status against Microsoft's official announcement and the Microsoft GitHub repository.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Every edition distinguishes the 2024 release event, the historical source/binary/docs material, and the repository's current archived state."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "MS-DOS 4.00, IBM, Microsoft, 8086 assembly, MIT License, binaries, and read-only archive are consistently identified."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article discusses historical source code but contains no executable code sample."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All editions include the Microsoft announcement, official repository, and v4.0 license file."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "This is a historical article; release dates and repository archive status are stated explicitly.",
+        "The linked repository's MIT terms apply as described by its license file."
+      ]
+    }
+  }
+}
