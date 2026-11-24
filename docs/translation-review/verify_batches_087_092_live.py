@@ -352,6 +352,14 @@ ARTICLES = {
         "markers": ["urlopen(request,timeout=15)", "response.headers.get_content_type()", "2*1024*1024", "webbrowser.open(temp_path.as_uri(),new=2)", "temp_path.unlink()", "PNG signature"],
         "date": "2025-02-24",
     },
+    127: {
+        "bundle": ROOT / "content/post/カフェ音楽",
+        "slug": "カフェ音楽",
+        "links": ["https://www.youtube.com/watch?v=1hY8f20tqlI", "https://www.youtube.com/watch?v=jfKfPfyJRdk", "https://www.youtube.com/watch?v=bz5q5gl2uZA", "https://www.youtube.com/watch?v=fWX8zsaTeTc"],
+        "markers": [],
+        "scopeMarkers": {"ja":"Café Swing | Electro Swing Mix 2019","en":"Café Swing | Electro Swing Mix 2019","zh-cn":"Café Swing | Electro Swing Mix 2019","es":"Café Swing | Electro Swing Mix 2019","ko":"Café Swing | Electro Swing Mix 2019","pt":"Café Swing | Electro Swing Mix 2019","zh-tw":"Café Swing | Electro Swing Mix 2019","hi":"Café Swing | Electro Swing Mix 2019","fr":"Café Swing | Electro Swing Mix 2019","de":"Café Swing | Electro Swing Mix 2019","ar":"Café Swing | Electro Swing Mix 2019","ru":"Café Swing | Electro Swing Mix 2019","id":"Café Swing | Electro Swing Mix 2019"},
+        "date": "2022-09-08",
+    },
     126: {
         "bundle": ROOT / "content/post/eguiを使ってみる",
         "slug": "eguiを使ってみる",
@@ -529,7 +537,7 @@ def slug_key(value):
 parser = argparse.ArgumentParser()
 parser.add_argument("--ci-run", type=int, required=True)
 parser.add_argument("--commit", required=True)
-parser.add_argument("--max-batch", type=int, choices=(90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126), default=126)
+parser.add_argument("--max-batch", type=int, choices=(90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127), default=127)
 args = parser.parse_args()
 ARTICLES = {number: article for number, article in ARTICLES.items() if number <= args.max_batch}
 with urllib.request.urlopen(f"https://github.com/kenjinote/blog/actions/runs/{args.ci_run}", timeout=45) as response:

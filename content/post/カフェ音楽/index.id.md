@@ -1,27 +1,32 @@
 ---
-title: 'Fokus Bekerja dan Belajar! Kumpulan Rekomendasi Musik dan BGM Kafe yang Trendi'
-date: "2026-09-24T19:44:38+09:00"
+title: "Empat video musik YouTube untuk playlist kerja atau belajar"
 slug: "KafeMusik"
 date: 2022-09-08T08:39:03+09:00
+lastmod: 2026-11-24T00:00:00+09:00
 tags: ["kafe", "musik"]
 draft: false
 image: "images/img.webp"
 categories: ["lifestyle-miscellaneous"]
-description: 'Merangkum musik kafe yang sempurna sebagai BGM pendamping pekerjaan seperti pemrograman, belajar, atau bekerja jarak jauh (telecommuting). Memperkenalkan pilihan musik pengiring yang tepat untuk bekerja, mulai dari irama tempo cepat Electro Swing hingga Lo-Fi Hip Hop atau Jazz yang bisa bikin relaks sekaligus fokus.'
+description: "Empat video Electro Swing, LoFi Hip Hop, dan jazz untuk diputar saat bekerja atau belajar."
 ---
 **Up-tempo**
 
-**Electro Swing Collection**
-{{<youtube bQXCx1F7nhs>}}
-
-**Electro Swing Mix 2019 Vol.3**
+**Café Swing | Electro Swing Mix 2019**
 {{<youtube 1hY8f20tqlI>}}
+[Tonton di YouTube](https://www.youtube.com/watch?v=1hY8f20tqlI)
+[Tonton di YouTube](https://www.youtube.com/watch?v=1hY8f20tqlI)
 
 **lofi hip hop radio(Live)**
 {{<youtube jfKfPfyJRdk>}}
+[Tonton di YouTube](https://www.youtube.com/watch?v=jfKfPfyJRdk)
+[Tonton di YouTube](https://www.youtube.com/watch?v=jfKfPfyJRdk)
 
 **Jazz LoFi**
 {{<youtube bz5q5gl2uZA>}}
+[Tonton di YouTube](https://www.youtube.com/watch?v=bz5q5gl2uZA)
+[Tonton di YouTube](https://www.youtube.com/watch?v=bz5q5gl2uZA)
 
 **Ini adalah motivasi saya untuk belajar keras setiap hari | 5 hour lofi hip hop / study / work / chill beats**
 {{<youtube fWX8zsaTeTc>}}
+[Tonton di YouTube](https://www.youtube.com/watch?v=fWX8zsaTeTc)
+[Tonton di YouTube](https://www.youtube.com/watch?v=fWX8zsaTeTc)

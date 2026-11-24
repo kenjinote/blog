@@ -1,0 +1,456 @@
+{
+  "version": 1,
+  "batch": 127,
+  "article": "作業用BGM動画の一覧",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "cef6749da55678a96d63985783a03e35a9f856073b2ff27ba64668328933d84a",
+  "sources": [
+    "https://www.youtube.com/watch?v=1hY8f20tqlI",
+    "https://www.youtube.com/watch?v=jfKfPfyJRdk",
+    "https://www.youtube.com/watch?v=bz5q5gl2uZA",
+    "https://www.youtube.com/watch?v=fWX8zsaTeTc"
+  ],
+  "scope": "Read the full Japanese list and all twelve translations; checked each of the five original YouTube IDs, their titles, availability, genre labels, and localized metadata.",
+  "findings": [
+    "Removed the duplicate future date, retained original date 2022-09-08, and set lastmod to the review date.",
+    "One original embed, bQXCx1F7nhs (Electro Swing Collection), returned HTTP 404 from YouTube oEmbed; removed it from all languages.",
+    "The remaining four IDs returned metadata. Corrected the second title to the current video title, Café Swing | Electro Swing Mix 2019.",
+    "Added direct YouTube watch links beside each remaining embed in all languages.",
+    "Replaced the focus/quality recommendation framing with a neutral list description; playback taste and concentration effects are subjective."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/カフェ音楽/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/カフェ音楽/index.md",
+      "sourceHash": "cef6749da55678a96d63985783a03e35a9f856073b2ff27ba64668328933d84a",
+      "translationHash": "1b54b67eb560ca277e7c2d70781651f622477b7f194c0d2265b14f228f7e5a4b",
+      "summary": "Checked the listed video IDs and titles; removed one unavailable video, aligned the remaining title, and added direct links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full article and all translations with the Japanese selection; removed the unavailable first video and aligned the remaining four video names with their current YouTube metadata."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Electro Swing, LoFi Hip Hop, lofi hip hop radio, and jazz genre/title labels across all locales."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formulas, calculations, or quantitative claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or command examples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the four remaining videos using YouTube oEmbed and added direct watch links alongside the embeds."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Video availability and titles can change; checked four IDs returned metadata when reviewed, but playback may vary by region or later removal.",
+        "Whether music helps an individual concentrate is subjective; the page is a selection, not an evidence-based recommendation."
+      ]
+    },
+    "post/カフェ音楽/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/カフェ音楽/index.md",
+      "sourceHash": "cef6749da55678a96d63985783a03e35a9f856073b2ff27ba64668328933d84a",
+      "translationHash": "d915852453e4bd764ecda547ab6180c6d23ca488c386327fd3b8c12ee1cd0536",
+      "summary": "Checked the listed video IDs and titles; removed one unavailable video, aligned the remaining title, and added direct links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full article and all translations with the Japanese selection; removed the unavailable first video and aligned the remaining four video names with their current YouTube metadata."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Electro Swing, LoFi Hip Hop, lofi hip hop radio, and jazz genre/title labels across all locales."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formulas, calculations, or quantitative claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or command examples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the four remaining videos using YouTube oEmbed and added direct watch links alongside the embeds."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Video availability and titles can change; checked four IDs returned metadata when reviewed, but playback may vary by region or later removal.",
+        "Whether music helps an individual concentrate is subjective; the page is a selection, not an evidence-based recommendation."
+      ]
+    },
+    "post/カフェ音楽/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/カフェ音楽/index.md",
+      "sourceHash": "cef6749da55678a96d63985783a03e35a9f856073b2ff27ba64668328933d84a",
+      "translationHash": "d0e5da4fc939389231d2c8fb2bd5ea494ba62f9da497a642e7aebf8ac49697d2",
+      "summary": "Checked the listed video IDs and titles; removed one unavailable video, aligned the remaining title, and added direct links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full article and all translations with the Japanese selection; removed the unavailable first video and aligned the remaining four video names with their current YouTube metadata."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Electro Swing, LoFi Hip Hop, lofi hip hop radio, and jazz genre/title labels across all locales."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formulas, calculations, or quantitative claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or command examples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the four remaining videos using YouTube oEmbed and added direct watch links alongside the embeds."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Video availability and titles can change; checked four IDs returned metadata when reviewed, but playback may vary by region or later removal.",
+        "Whether music helps an individual concentrate is subjective; the page is a selection, not an evidence-based recommendation."
+      ]
+    },
+    "post/カフェ音楽/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/カフェ音楽/index.md",
+      "sourceHash": "cef6749da55678a96d63985783a03e35a9f856073b2ff27ba64668328933d84a",
+      "translationHash": "f74aca7542d5e1946ca624ff36aef7f88c515eb78233984a3c45ab6ff4e9725b",
+      "summary": "Checked the listed video IDs and titles; removed one unavailable video, aligned the remaining title, and added direct links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full article and all translations with the Japanese selection; removed the unavailable first video and aligned the remaining four video names with their current YouTube metadata."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Electro Swing, LoFi Hip Hop, lofi hip hop radio, and jazz genre/title labels across all locales."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formulas, calculations, or quantitative claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or command examples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the four remaining videos using YouTube oEmbed and added direct watch links alongside the embeds."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Video availability and titles can change; checked four IDs returned metadata when reviewed, but playback may vary by region or later removal.",
+        "Whether music helps an individual concentrate is subjective; the page is a selection, not an evidence-based recommendation."
+      ]
+    },
+    "post/カフェ音楽/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/カフェ音楽/index.md",
+      "sourceHash": "cef6749da55678a96d63985783a03e35a9f856073b2ff27ba64668328933d84a",
+      "translationHash": "d045beffddb4c520b19ff5b27158f99a26405c8907d0cf87072651bb4813131a",
+      "summary": "Checked the listed video IDs and titles; removed one unavailable video, aligned the remaining title, and added direct links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full article and all translations with the Japanese selection; removed the unavailable first video and aligned the remaining four video names with their current YouTube metadata."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Electro Swing, LoFi Hip Hop, lofi hip hop radio, and jazz genre/title labels across all locales."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formulas, calculations, or quantitative claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or command examples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the four remaining videos using YouTube oEmbed and added direct watch links alongside the embeds."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Video availability and titles can change; checked four IDs returned metadata when reviewed, but playback may vary by region or later removal.",
+        "Whether music helps an individual concentrate is subjective; the page is a selection, not an evidence-based recommendation."
+      ]
+    },
+    "post/カフェ音楽/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/カフェ音楽/index.md",
+      "sourceHash": "cef6749da55678a96d63985783a03e35a9f856073b2ff27ba64668328933d84a",
+      "translationHash": "4f0b870d1192f11333ff918927ee70e1f78a37d5522d40dd72ad0ea766cab752",
+      "summary": "Checked the listed video IDs and titles; removed one unavailable video, aligned the remaining title, and added direct links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full article and all translations with the Japanese selection; removed the unavailable first video and aligned the remaining four video names with their current YouTube metadata."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Electro Swing, LoFi Hip Hop, lofi hip hop radio, and jazz genre/title labels across all locales."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formulas, calculations, or quantitative claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or command examples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the four remaining videos using YouTube oEmbed and added direct watch links alongside the embeds."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Video availability and titles can change; checked four IDs returned metadata when reviewed, but playback may vary by region or later removal.",
+        "Whether music helps an individual concentrate is subjective; the page is a selection, not an evidence-based recommendation."
+      ]
+    },
+    "post/カフェ音楽/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/カフェ音楽/index.md",
+      "sourceHash": "cef6749da55678a96d63985783a03e35a9f856073b2ff27ba64668328933d84a",
+      "translationHash": "5feee6fbedf4dd1796729aa6022a942d640d1b434fea70ad63f1ef9516b6bb10",
+      "summary": "Checked the listed video IDs and titles; removed one unavailable video, aligned the remaining title, and added direct links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full article and all translations with the Japanese selection; removed the unavailable first video and aligned the remaining four video names with their current YouTube metadata."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Electro Swing, LoFi Hip Hop, lofi hip hop radio, and jazz genre/title labels across all locales."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formulas, calculations, or quantitative claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or command examples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the four remaining videos using YouTube oEmbed and added direct watch links alongside the embeds."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Video availability and titles can change; checked four IDs returned metadata when reviewed, but playback may vary by region or later removal.",
+        "Whether music helps an individual concentrate is subjective; the page is a selection, not an evidence-based recommendation."
+      ]
+    },
+    "post/カフェ音楽/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/カフェ音楽/index.md",
+      "sourceHash": "cef6749da55678a96d63985783a03e35a9f856073b2ff27ba64668328933d84a",
+      "translationHash": "350a2e33bef1d5f8a7a738a379391cded6f3e254d7418e89592f40f3a7b2a3e4",
+      "summary": "Checked the listed video IDs and titles; removed one unavailable video, aligned the remaining title, and added direct links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full article and all translations with the Japanese selection; removed the unavailable first video and aligned the remaining four video names with their current YouTube metadata."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Electro Swing, LoFi Hip Hop, lofi hip hop radio, and jazz genre/title labels across all locales."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formulas, calculations, or quantitative claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or command examples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the four remaining videos using YouTube oEmbed and added direct watch links alongside the embeds."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Video availability and titles can change; checked four IDs returned metadata when reviewed, but playback may vary by region or later removal.",
+        "Whether music helps an individual concentrate is subjective; the page is a selection, not an evidence-based recommendation."
+      ]
+    },
+    "post/カフェ音楽/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/カフェ音楽/index.md",
+      "sourceHash": "cef6749da55678a96d63985783a03e35a9f856073b2ff27ba64668328933d84a",
+      "translationHash": "448aa0f98ba1c106f96901b830a401822540ba9729de5ebc7affb369e106d6ee",
+      "summary": "Checked the listed video IDs and titles; removed one unavailable video, aligned the remaining title, and added direct links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full article and all translations with the Japanese selection; removed the unavailable first video and aligned the remaining four video names with their current YouTube metadata."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Electro Swing, LoFi Hip Hop, lofi hip hop radio, and jazz genre/title labels across all locales."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formulas, calculations, or quantitative claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or command examples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the four remaining videos using YouTube oEmbed and added direct watch links alongside the embeds."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Video availability and titles can change; checked four IDs returned metadata when reviewed, but playback may vary by region or later removal.",
+        "Whether music helps an individual concentrate is subjective; the page is a selection, not an evidence-based recommendation."
+      ]
+    },
+    "post/カフェ音楽/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/カフェ音楽/index.md",
+      "sourceHash": "cef6749da55678a96d63985783a03e35a9f856073b2ff27ba64668328933d84a",
+      "translationHash": "aa4f5c74fb08a98ced5a8487cefca6cdcfc4fa2881e955fded690122dbe11c40",
+      "summary": "Checked the listed video IDs and titles; removed one unavailable video, aligned the remaining title, and added direct links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full article and all translations with the Japanese selection; removed the unavailable first video and aligned the remaining four video names with their current YouTube metadata."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Electro Swing, LoFi Hip Hop, lofi hip hop radio, and jazz genre/title labels across all locales."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formulas, calculations, or quantitative claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or command examples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the four remaining videos using YouTube oEmbed and added direct watch links alongside the embeds."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Video availability and titles can change; checked four IDs returned metadata when reviewed, but playback may vary by region or later removal.",
+        "Whether music helps an individual concentrate is subjective; the page is a selection, not an evidence-based recommendation."
+      ]
+    },
+    "post/カフェ音楽/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/カフェ音楽/index.md",
+      "sourceHash": "cef6749da55678a96d63985783a03e35a9f856073b2ff27ba64668328933d84a",
+      "translationHash": "4bc98948e0d4a13d36f240ec6ee2c8395b1e71798ca640a5affc309c82d9d0a3",
+      "summary": "Checked the listed video IDs and titles; removed one unavailable video, aligned the remaining title, and added direct links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full article and all translations with the Japanese selection; removed the unavailable first video and aligned the remaining four video names with their current YouTube metadata."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Electro Swing, LoFi Hip Hop, lofi hip hop radio, and jazz genre/title labels across all locales."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formulas, calculations, or quantitative claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or command examples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the four remaining videos using YouTube oEmbed and added direct watch links alongside the embeds."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Video availability and titles can change; checked four IDs returned metadata when reviewed, but playback may vary by region or later removal.",
+        "Whether music helps an individual concentrate is subjective; the page is a selection, not an evidence-based recommendation."
+      ]
+    },
+    "post/カフェ音楽/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/カフェ音楽/index.md",
+      "sourceHash": "cef6749da55678a96d63985783a03e35a9f856073b2ff27ba64668328933d84a",
+      "translationHash": "ec14b3fa6a911afde2d03874730cfd2a8b836611882f9eb1677695916f548896",
+      "summary": "Checked the listed video IDs and titles; removed one unavailable video, aligned the remaining title, and added direct links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full article and all translations with the Japanese selection; removed the unavailable first video and aligned the remaining four video names with their current YouTube metadata."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Electro Swing, LoFi Hip Hop, lofi hip hop radio, and jazz genre/title labels across all locales."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formulas, calculations, or quantitative claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or command examples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the four remaining videos using YouTube oEmbed and added direct watch links alongside the embeds."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Video availability and titles can change; checked four IDs returned metadata when reviewed, but playback may vary by region or later removal.",
+        "Whether music helps an individual concentrate is subjective; the page is a selection, not an evidence-based recommendation."
+      ]
+    }
+  }
+}

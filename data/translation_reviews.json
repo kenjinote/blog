@@ -14645,6 +14645,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-126.json",
       "evidenceHash": "d0dae7943808caafb96ca0a50889a0b87c6d9e7c6ce2964754653e8887f82427"
+    },
+    "post/カフェ音楽/index.en.md": {
+      "source": "post/カフェ音楽/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "cef6749da55678a96d63985783a03e35a9f856073b2ff27ba64668328933d84a",
+      "translationHash": "1b54b67eb560ca277e7c2d70781651f622477b7f194c0d2265b14f228f7e5a4b",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-127.json",
+      "evidenceHash": "5528fecabe2f64a51123731ec115a9a07a892f601a1c56cb6af0dcfbcb549e20"
+    },
+    "post/カフェ音楽/index.zh-cn.md": {
+      "source": "post/カフェ音楽/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "cef6749da55678a96d63985783a03e35a9f856073b2ff27ba64668328933d84a",
+      "translationHash": "d915852453e4bd764ecda547ab6180c6d23ca488c386327fd3b8c12ee1cd0536",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-127.json",
+      "evidenceHash": "10c02b6823e158be7c91d1a987b0284b633e8afbf7d1d8a232c8977015f0c6a9"
+    },
+    "post/カフェ音楽/index.es.md": {
+      "source": "post/カフェ音楽/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "cef6749da55678a96d63985783a03e35a9f856073b2ff27ba64668328933d84a",
+      "translationHash": "d0e5da4fc939389231d2c8fb2bd5ea494ba62f9da497a642e7aebf8ac49697d2",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-127.json",
+      "evidenceHash": "684ff20ebf413414d791be3cb4f533251748a2e9dfdcfbd397fbf98d2de8f876"
+    },
+    "post/カフェ音楽/index.ko.md": {
+      "source": "post/カフェ音楽/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "cef6749da55678a96d63985783a03e35a9f856073b2ff27ba64668328933d84a",
+      "translationHash": "f74aca7542d5e1946ca624ff36aef7f88c515eb78233984a3c45ab6ff4e9725b",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-127.json",
+      "evidenceHash": "545c94c2841c97f99155ce142e052e389e3667bf7452701c4eee64daad24524f"
+    },
+    "post/カフェ音楽/index.pt.md": {
+      "source": "post/カフェ音楽/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "cef6749da55678a96d63985783a03e35a9f856073b2ff27ba64668328933d84a",
+      "translationHash": "d045beffddb4c520b19ff5b27158f99a26405c8907d0cf87072651bb4813131a",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-127.json",
+      "evidenceHash": "9286955df24341366997a1f8337843bf3c5588548b93c6ef963f05da32569504"
+    },
+    "post/カフェ音楽/index.zh-tw.md": {
+      "source": "post/カフェ音楽/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "cef6749da55678a96d63985783a03e35a9f856073b2ff27ba64668328933d84a",
+      "translationHash": "4f0b870d1192f11333ff918927ee70e1f78a37d5522d40dd72ad0ea766cab752",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-127.json",
+      "evidenceHash": "d56969de270dcc7c6f48b3ff8254277ee0e10df17c316265ce7e284b59295e2b"
+    },
+    "post/カフェ音楽/index.hi.md": {
+      "source": "post/カフェ音楽/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "cef6749da55678a96d63985783a03e35a9f856073b2ff27ba64668328933d84a",
+      "translationHash": "5feee6fbedf4dd1796729aa6022a942d640d1b434fea70ad63f1ef9516b6bb10",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-127.json",
+      "evidenceHash": "d219de5a038a615d64991c0ac585c6b8bf64fdad6422fc14e46c0268267b5dbe"
+    },
+    "post/カフェ音楽/index.fr.md": {
+      "source": "post/カフェ音楽/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "cef6749da55678a96d63985783a03e35a9f856073b2ff27ba64668328933d84a",
+      "translationHash": "350a2e33bef1d5f8a7a738a379391cded6f3e254d7418e89592f40f3a7b2a3e4",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-127.json",
+      "evidenceHash": "932332b245f2c729d5f1260044bf25f3d80aeebaa1b281b37b73f77e0485978c"
+    },
+    "post/カフェ音楽/index.de.md": {
+      "source": "post/カフェ音楽/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "cef6749da55678a96d63985783a03e35a9f856073b2ff27ba64668328933d84a",
+      "translationHash": "448aa0f98ba1c106f96901b830a401822540ba9729de5ebc7affb369e106d6ee",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-127.json",
+      "evidenceHash": "9dfc6b1ecc51a0d3742423afb9143da95e3b2fccd329693d9bcd15a7a997630e"
+    },
+    "post/カフェ音楽/index.ar.md": {
+      "source": "post/カフェ音楽/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "cef6749da55678a96d63985783a03e35a9f856073b2ff27ba64668328933d84a",
+      "translationHash": "aa4f5c74fb08a98ced5a8487cefca6cdcfc4fa2881e955fded690122dbe11c40",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-127.json",
+      "evidenceHash": "fe8f2dc90e372269e9cf1659e69891e1373f79f529292151ebece09cdea43ac8"
+    },
+    "post/カフェ音楽/index.ru.md": {
+      "source": "post/カフェ音楽/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "cef6749da55678a96d63985783a03e35a9f856073b2ff27ba64668328933d84a",
+      "translationHash": "4bc98948e0d4a13d36f240ec6ee2c8395b1e71798ca640a5affc309c82d9d0a3",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-127.json",
+      "evidenceHash": "6641cd9acf0e4bc5c99fcb2367eaedabdd2ce2b8ea0b57fa4f13189094a653cf"
+    },
+    "post/カフェ音楽/index.id.md": {
+      "source": "post/カフェ音楽/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "cef6749da55678a96d63985783a03e35a9f856073b2ff27ba64668328933d84a",
+      "translationHash": "ec14b3fa6a911afde2d03874730cfd2a8b836611882f9eb1677695916f548896",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-127.json",
+      "evidenceHash": "dea480c6f90da5dcc5ba00a7dc9e623eded9329bd624d525e42f6729370047c8"
     }
   }
 }
