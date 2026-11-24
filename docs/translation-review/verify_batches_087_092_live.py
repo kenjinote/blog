@@ -97,6 +97,7 @@ ARTICLES = {
         ],
         "markers": ["Paint.NET features", "Paint.NET download", "Paint.NET system requirements", "Microsoft Paint layers and transparency announcement"],
         "date": "2022-09-14",
+        "lastmod": "2026-11-25",
     },
     185: {
         "bundle": ROOT / "content/post/macで日本語⇔英語入力切り替えのショートカットキーを変更する方法",
@@ -108,6 +109,7 @@ ARTICLES = {
         ],
         "markers": ["Apple Support", "Option", "macOS"],
         "date": "2023-04-04",
+        "lastmod": "2026-11-25",
     },
     184: {
         "bundle": ROOT / "content/post/エクスプローラーの終了・再起動方法",
@@ -117,6 +119,7 @@ ARTICLES = {
         ],
         "markers": ["explorer.exe", "Microsoft Support", "Ctrl+Shift+Esc"],
         "date": "2024-03-30",
+        "lastmod": "2026-11-25",
     },
     183: {
         "bundle": ROOT / "content/post/数学者が登場する映画",
