@@ -1,0 +1,457 @@
+{
+  "version": 1,
+  "batch": 102,
+  "article": "Microsoft.Windows.AIの最新API活用事例とサンプルコード",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "bb4aa4b5a14f3ef2baa9769631b2a88d5130dff14e4082af6e72eb39f472cf62",
+  "sources": [
+    "https://learn.microsoft.com/en-us/windows/ai/apis",
+    "https://learn.microsoft.com/en-us/windows/ai/apis/get-started",
+    "https://learn.microsoft.com/en-us/windows/ai/apis/phi-silica",
+    "https://learn.microsoft.com/en-us/windows/ai/npu-devices",
+    "https://learn.microsoft.com/en-us/windows/ai/directml/dml-get-started"
+  ],
+  "scope": "Rewrote the full Japanese article and all twelve translations. Checked Windows AI/Phi Silica hardware and access requirements, replaced unsupported API examples, corrected DirectML/NPU claims and memory-bandwidth arithmetic, qualified offline/privacy claims, and aligned the current C# sample and source links across locales.",
+  "findings": [
+    "Removed obsolete conversation and streaming code, unsupported option properties, and device-selection claims; added the current documented C# readiness and generation flow.",
+    "Clarified Phi Silica hardware, regional, and Limited Access Feature restrictions and recorded Microsoft's announced Aion Instruct transition as time-sensitive.",
+    "Clarified Windows ML as the recommended Windows path for custom ONNX models; DirectML remains supported, with new development moved to Windows ML, and is a GPU path.",
+    "Corrected the memory-bandwidth example to 8,533 MT/s × 128 bit ÷ 8 ≈ 136.5 GB/s and removed the duplicate DDR factor and unsupported generic peak-TOPS derivation.",
+    "Qualified local/offline privacy claims, added five Microsoft Learn references, and disclosed that the sample was not compiled in this repository."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/Microsoft.Windows.AIの最新API活用事例とサンプルコード/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Microsoft.Windows.AIの最新API活用事例とサンプルコード/index.md",
+      "sourceHash": "bb4aa4b5a14f3ef2baa9769631b2a88d5130dff14e4082af6e72eb39f472cf62",
+      "translationHash": "1952d7a94d7e1f2dff65a01b30b41954f63f94024f5687ce4d514cebd3d5d203",
+      "summary": "Compared the complete edition with the Japanese source; checked API availability, consent flow, hardware distinction, corrected arithmetic, code shape, and official links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with the Japanese source; checked API availability, consent flow, hardware distinction, corrected arithmetic, code shape, and official links."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Phi Silica, Aion Instruct, Windows App SDK, Windows ML, DirectML, Execution Provider, TOPS, and MT/s in the localized edition."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Corrected memory bandwidth to 8,533 MT/s × 128 bit ÷ 8 ≈ 136.5 GB/s and removed unsupported generic peak-TOPS calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced unsupported API sample with the documented readiness, consent, model creation, and generation flow; not compiled in this repository."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added five checked Microsoft Learn references for Windows AI APIs, setup, Phi Silica, NPU guidance, and DirectML."
+        }
+      },
+      "limitations": [
+        "AI-assisted translation review; no human or native-speaker certification.",
+        "The C# sample follows Microsoft documentation but was not compiled with a Windows SDK in this repository.",
+        "Windows AI API and model availability are time-sensitive; documentation was checked on 2026-11-24."
+      ]
+    },
+    "post/Microsoft.Windows.AIの最新API活用事例とサンプルコード/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Microsoft.Windows.AIの最新API活用事例とサンプルコード/index.md",
+      "sourceHash": "bb4aa4b5a14f3ef2baa9769631b2a88d5130dff14e4082af6e72eb39f472cf62",
+      "translationHash": "b53c5a79c0708a9f47ca065789242d5e96a40288a881d633de656a9a6be3c04d",
+      "summary": "Compared the complete edition with the Japanese source; checked API availability, consent flow, hardware distinction, corrected arithmetic, code shape, and official links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with the Japanese source; checked API availability, consent flow, hardware distinction, corrected arithmetic, code shape, and official links."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Phi Silica, Aion Instruct, Windows App SDK, Windows ML, DirectML, Execution Provider, TOPS, and MT/s in the localized edition."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Corrected memory bandwidth to 8,533 MT/s × 128 bit ÷ 8 ≈ 136.5 GB/s and removed unsupported generic peak-TOPS calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced unsupported API sample with the documented readiness, consent, model creation, and generation flow; not compiled in this repository."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added five checked Microsoft Learn references for Windows AI APIs, setup, Phi Silica, NPU guidance, and DirectML."
+        }
+      },
+      "limitations": [
+        "AI-assisted translation review; no human or native-speaker certification.",
+        "The C# sample follows Microsoft documentation but was not compiled with a Windows SDK in this repository.",
+        "Windows AI API and model availability are time-sensitive; documentation was checked on 2026-11-24."
+      ]
+    },
+    "post/Microsoft.Windows.AIの最新API活用事例とサンプルコード/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Microsoft.Windows.AIの最新API活用事例とサンプルコード/index.md",
+      "sourceHash": "bb4aa4b5a14f3ef2baa9769631b2a88d5130dff14e4082af6e72eb39f472cf62",
+      "translationHash": "a3445ee926af978204f5a8c2438f1fb1bf948cfe2400a56339ef19dc19549744",
+      "summary": "Compared the complete edition with the Japanese source; checked API availability, consent flow, hardware distinction, corrected arithmetic, code shape, and official links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with the Japanese source; checked API availability, consent flow, hardware distinction, corrected arithmetic, code shape, and official links."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Phi Silica, Aion Instruct, Windows App SDK, Windows ML, DirectML, Execution Provider, TOPS, and MT/s in the localized edition."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Corrected memory bandwidth to 8,533 MT/s × 128 bit ÷ 8 ≈ 136.5 GB/s and removed unsupported generic peak-TOPS calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced unsupported API sample with the documented readiness, consent, model creation, and generation flow; not compiled in this repository."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added five checked Microsoft Learn references for Windows AI APIs, setup, Phi Silica, NPU guidance, and DirectML."
+        }
+      },
+      "limitations": [
+        "AI-assisted translation review; no human or native-speaker certification.",
+        "The C# sample follows Microsoft documentation but was not compiled with a Windows SDK in this repository.",
+        "Windows AI API and model availability are time-sensitive; documentation was checked on 2026-11-24."
+      ]
+    },
+    "post/Microsoft.Windows.AIの最新API活用事例とサンプルコード/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Microsoft.Windows.AIの最新API活用事例とサンプルコード/index.md",
+      "sourceHash": "bb4aa4b5a14f3ef2baa9769631b2a88d5130dff14e4082af6e72eb39f472cf62",
+      "translationHash": "9b32c901bf15f30308b830ecc7af4dfa606b44e0b87e2d952c93a2a435e3decd",
+      "summary": "Compared the complete edition with the Japanese source; checked API availability, consent flow, hardware distinction, corrected arithmetic, code shape, and official links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with the Japanese source; checked API availability, consent flow, hardware distinction, corrected arithmetic, code shape, and official links."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Phi Silica, Aion Instruct, Windows App SDK, Windows ML, DirectML, Execution Provider, TOPS, and MT/s in the localized edition."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Corrected memory bandwidth to 8,533 MT/s × 128 bit ÷ 8 ≈ 136.5 GB/s and removed unsupported generic peak-TOPS calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced unsupported API sample with the documented readiness, consent, model creation, and generation flow; not compiled in this repository."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added five checked Microsoft Learn references for Windows AI APIs, setup, Phi Silica, NPU guidance, and DirectML."
+        }
+      },
+      "limitations": [
+        "AI-assisted translation review; no human or native-speaker certification.",
+        "The C# sample follows Microsoft documentation but was not compiled with a Windows SDK in this repository.",
+        "Windows AI API and model availability are time-sensitive; documentation was checked on 2026-11-24."
+      ]
+    },
+    "post/Microsoft.Windows.AIの最新API活用事例とサンプルコード/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Microsoft.Windows.AIの最新API活用事例とサンプルコード/index.md",
+      "sourceHash": "bb4aa4b5a14f3ef2baa9769631b2a88d5130dff14e4082af6e72eb39f472cf62",
+      "translationHash": "df1ad3d6f3109c616cf97d4b882cd94c93e81669da076fd8223d8fc674e7d940",
+      "summary": "Compared the complete edition with the Japanese source; checked API availability, consent flow, hardware distinction, corrected arithmetic, code shape, and official links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with the Japanese source; checked API availability, consent flow, hardware distinction, corrected arithmetic, code shape, and official links."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Phi Silica, Aion Instruct, Windows App SDK, Windows ML, DirectML, Execution Provider, TOPS, and MT/s in the localized edition."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Corrected memory bandwidth to 8,533 MT/s × 128 bit ÷ 8 ≈ 136.5 GB/s and removed unsupported generic peak-TOPS calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced unsupported API sample with the documented readiness, consent, model creation, and generation flow; not compiled in this repository."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added five checked Microsoft Learn references for Windows AI APIs, setup, Phi Silica, NPU guidance, and DirectML."
+        }
+      },
+      "limitations": [
+        "AI-assisted translation review; no human or native-speaker certification.",
+        "The C# sample follows Microsoft documentation but was not compiled with a Windows SDK in this repository.",
+        "Windows AI API and model availability are time-sensitive; documentation was checked on 2026-11-24."
+      ]
+    },
+    "post/Microsoft.Windows.AIの最新API活用事例とサンプルコード/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Microsoft.Windows.AIの最新API活用事例とサンプルコード/index.md",
+      "sourceHash": "bb4aa4b5a14f3ef2baa9769631b2a88d5130dff14e4082af6e72eb39f472cf62",
+      "translationHash": "03b0a633d719756e821fe017a18763527b90f06b039f930528880f46296ddd32",
+      "summary": "Compared the complete edition with the Japanese source; checked API availability, consent flow, hardware distinction, corrected arithmetic, code shape, and official links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with the Japanese source; checked API availability, consent flow, hardware distinction, corrected arithmetic, code shape, and official links."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Phi Silica, Aion Instruct, Windows App SDK, Windows ML, DirectML, Execution Provider, TOPS, and MT/s in the localized edition."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Corrected memory bandwidth to 8,533 MT/s × 128 bit ÷ 8 ≈ 136.5 GB/s and removed unsupported generic peak-TOPS calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced unsupported API sample with the documented readiness, consent, model creation, and generation flow; not compiled in this repository."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added five checked Microsoft Learn references for Windows AI APIs, setup, Phi Silica, NPU guidance, and DirectML."
+        }
+      },
+      "limitations": [
+        "AI-assisted translation review; no human or native-speaker certification.",
+        "The C# sample follows Microsoft documentation but was not compiled with a Windows SDK in this repository.",
+        "Windows AI API and model availability are time-sensitive; documentation was checked on 2026-11-24."
+      ]
+    },
+    "post/Microsoft.Windows.AIの最新API活用事例とサンプルコード/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Microsoft.Windows.AIの最新API活用事例とサンプルコード/index.md",
+      "sourceHash": "bb4aa4b5a14f3ef2baa9769631b2a88d5130dff14e4082af6e72eb39f472cf62",
+      "translationHash": "fc59e0ecc209de6c056ed17a469ef0a0ce27c522de61f76a039eb43f3a995ebc",
+      "summary": "Compared the complete edition with the Japanese source; checked API availability, consent flow, hardware distinction, corrected arithmetic, code shape, and official links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with the Japanese source; checked API availability, consent flow, hardware distinction, corrected arithmetic, code shape, and official links."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Phi Silica, Aion Instruct, Windows App SDK, Windows ML, DirectML, Execution Provider, TOPS, and MT/s in the localized edition."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Corrected memory bandwidth to 8,533 MT/s × 128 bit ÷ 8 ≈ 136.5 GB/s and removed unsupported generic peak-TOPS calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced unsupported API sample with the documented readiness, consent, model creation, and generation flow; not compiled in this repository."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added five checked Microsoft Learn references for Windows AI APIs, setup, Phi Silica, NPU guidance, and DirectML."
+        }
+      },
+      "limitations": [
+        "AI-assisted translation review; no human or native-speaker certification.",
+        "The C# sample follows Microsoft documentation but was not compiled with a Windows SDK in this repository.",
+        "Windows AI API and model availability are time-sensitive; documentation was checked on 2026-11-24."
+      ]
+    },
+    "post/Microsoft.Windows.AIの最新API活用事例とサンプルコード/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Microsoft.Windows.AIの最新API活用事例とサンプルコード/index.md",
+      "sourceHash": "bb4aa4b5a14f3ef2baa9769631b2a88d5130dff14e4082af6e72eb39f472cf62",
+      "translationHash": "2398c3bc35e19ca7d090f35c38e19656ddcef6a1ab3c15c6ea5419442f37f613",
+      "summary": "Compared the complete edition with the Japanese source; checked API availability, consent flow, hardware distinction, corrected arithmetic, code shape, and official links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with the Japanese source; checked API availability, consent flow, hardware distinction, corrected arithmetic, code shape, and official links."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Phi Silica, Aion Instruct, Windows App SDK, Windows ML, DirectML, Execution Provider, TOPS, and MT/s in the localized edition."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Corrected memory bandwidth to 8,533 MT/s × 128 bit ÷ 8 ≈ 136.5 GB/s and removed unsupported generic peak-TOPS calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced unsupported API sample with the documented readiness, consent, model creation, and generation flow; not compiled in this repository."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added five checked Microsoft Learn references for Windows AI APIs, setup, Phi Silica, NPU guidance, and DirectML."
+        }
+      },
+      "limitations": [
+        "AI-assisted translation review; no human or native-speaker certification.",
+        "The C# sample follows Microsoft documentation but was not compiled with a Windows SDK in this repository.",
+        "Windows AI API and model availability are time-sensitive; documentation was checked on 2026-11-24."
+      ]
+    },
+    "post/Microsoft.Windows.AIの最新API活用事例とサンプルコード/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Microsoft.Windows.AIの最新API活用事例とサンプルコード/index.md",
+      "sourceHash": "bb4aa4b5a14f3ef2baa9769631b2a88d5130dff14e4082af6e72eb39f472cf62",
+      "translationHash": "de4b4386f7482b64b5bd035862216a473f3fd9adb19bf1a6df4c6176a2d7243e",
+      "summary": "Compared the complete edition with the Japanese source; checked API availability, consent flow, hardware distinction, corrected arithmetic, code shape, and official links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with the Japanese source; checked API availability, consent flow, hardware distinction, corrected arithmetic, code shape, and official links."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Phi Silica, Aion Instruct, Windows App SDK, Windows ML, DirectML, Execution Provider, TOPS, and MT/s in the localized edition."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Corrected memory bandwidth to 8,533 MT/s × 128 bit ÷ 8 ≈ 136.5 GB/s and removed unsupported generic peak-TOPS calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced unsupported API sample with the documented readiness, consent, model creation, and generation flow; not compiled in this repository."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added five checked Microsoft Learn references for Windows AI APIs, setup, Phi Silica, NPU guidance, and DirectML."
+        }
+      },
+      "limitations": [
+        "AI-assisted translation review; no human or native-speaker certification.",
+        "The C# sample follows Microsoft documentation but was not compiled with a Windows SDK in this repository.",
+        "Windows AI API and model availability are time-sensitive; documentation was checked on 2026-11-24."
+      ]
+    },
+    "post/Microsoft.Windows.AIの最新API活用事例とサンプルコード/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Microsoft.Windows.AIの最新API活用事例とサンプルコード/index.md",
+      "sourceHash": "bb4aa4b5a14f3ef2baa9769631b2a88d5130dff14e4082af6e72eb39f472cf62",
+      "translationHash": "de1ab3b0a503c592fe51be1fccaf6e120f02b1fa11690d1b7f14185c148f873f",
+      "summary": "Compared the complete edition with the Japanese source; checked API availability, consent flow, hardware distinction, corrected arithmetic, code shape, and official links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with the Japanese source; checked API availability, consent flow, hardware distinction, corrected arithmetic, code shape, and official links."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Phi Silica, Aion Instruct, Windows App SDK, Windows ML, DirectML, Execution Provider, TOPS, and MT/s in the localized edition."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Corrected memory bandwidth to 8,533 MT/s × 128 bit ÷ 8 ≈ 136.5 GB/s and removed unsupported generic peak-TOPS calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced unsupported API sample with the documented readiness, consent, model creation, and generation flow; not compiled in this repository."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added five checked Microsoft Learn references for Windows AI APIs, setup, Phi Silica, NPU guidance, and DirectML."
+        }
+      },
+      "limitations": [
+        "AI-assisted translation review; no human or native-speaker certification.",
+        "The C# sample follows Microsoft documentation but was not compiled with a Windows SDK in this repository.",
+        "Windows AI API and model availability are time-sensitive; documentation was checked on 2026-11-24."
+      ]
+    },
+    "post/Microsoft.Windows.AIの最新API活用事例とサンプルコード/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Microsoft.Windows.AIの最新API活用事例とサンプルコード/index.md",
+      "sourceHash": "bb4aa4b5a14f3ef2baa9769631b2a88d5130dff14e4082af6e72eb39f472cf62",
+      "translationHash": "76c3853a168b4f0542a7c9c8761aca46589acf6b76fbdc4a02e370d525dd550d",
+      "summary": "Compared the complete edition with the Japanese source; checked API availability, consent flow, hardware distinction, corrected arithmetic, code shape, and official links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with the Japanese source; checked API availability, consent flow, hardware distinction, corrected arithmetic, code shape, and official links."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Phi Silica, Aion Instruct, Windows App SDK, Windows ML, DirectML, Execution Provider, TOPS, and MT/s in the localized edition."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Corrected memory bandwidth to 8,533 MT/s × 128 bit ÷ 8 ≈ 136.5 GB/s and removed unsupported generic peak-TOPS calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced unsupported API sample with the documented readiness, consent, model creation, and generation flow; not compiled in this repository."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added five checked Microsoft Learn references for Windows AI APIs, setup, Phi Silica, NPU guidance, and DirectML."
+        }
+      },
+      "limitations": [
+        "AI-assisted translation review; no human or native-speaker certification.",
+        "The C# sample follows Microsoft documentation but was not compiled with a Windows SDK in this repository.",
+        "Windows AI API and model availability are time-sensitive; documentation was checked on 2026-11-24."
+      ]
+    },
+    "post/Microsoft.Windows.AIの最新API活用事例とサンプルコード/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Microsoft.Windows.AIの最新API活用事例とサンプルコード/index.md",
+      "sourceHash": "bb4aa4b5a14f3ef2baa9769631b2a88d5130dff14e4082af6e72eb39f472cf62",
+      "translationHash": "e674f23130deef18631237c6a2f6cba63502f933013758386e99da8ca4b224f2",
+      "summary": "Compared the complete edition with the Japanese source; checked API availability, consent flow, hardware distinction, corrected arithmetic, code shape, and official links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with the Japanese source; checked API availability, consent flow, hardware distinction, corrected arithmetic, code shape, and official links."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Phi Silica, Aion Instruct, Windows App SDK, Windows ML, DirectML, Execution Provider, TOPS, and MT/s in the localized edition."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Corrected memory bandwidth to 8,533 MT/s × 128 bit ÷ 8 ≈ 136.5 GB/s and removed unsupported generic peak-TOPS calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced unsupported API sample with the documented readiness, consent, model creation, and generation flow; not compiled in this repository."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added five checked Microsoft Learn references for Windows AI APIs, setup, Phi Silica, NPU guidance, and DirectML."
+        }
+      },
+      "limitations": [
+        "AI-assisted translation review; no human or native-speaker certification.",
+        "The C# sample follows Microsoft documentation but was not compiled with a Windows SDK in this repository.",
+        "Windows AI API and model availability are time-sensitive; documentation was checked on 2026-11-24."
+      ]
+    }
+  }
+}

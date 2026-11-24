@@ -11645,6 +11645,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-101.json",
       "evidenceHash": "3958f775428308e0881ba1dec858032b222c18db3660e0af9c0a06c378d283a3"
+    },
+    "post/Microsoft.Windows.AIの最新API活用事例とサンプルコード/index.ar.md": {
+      "source": "post/Microsoft.Windows.AIの最新API活用事例とサンプルコード/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "bb4aa4b5a14f3ef2baa9769631b2a88d5130dff14e4082af6e72eb39f472cf62",
+      "translationHash": "1952d7a94d7e1f2dff65a01b30b41954f63f94024f5687ce4d514cebd3d5d203",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-102.json",
+      "evidenceHash": "d0288ef14858f6617e51345eab5c3a7c75cef6fabcfbf22b278774d9d1f3dd71"
+    },
+    "post/Microsoft.Windows.AIの最新API活用事例とサンプルコード/index.de.md": {
+      "source": "post/Microsoft.Windows.AIの最新API活用事例とサンプルコード/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "bb4aa4b5a14f3ef2baa9769631b2a88d5130dff14e4082af6e72eb39f472cf62",
+      "translationHash": "b53c5a79c0708a9f47ca065789242d5e96a40288a881d633de656a9a6be3c04d",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-102.json",
+      "evidenceHash": "ade65b1dfb781f531211aed5c0b4fc8c036560f7dd8ebc1b08eeaa9896fd13ab"
+    },
+    "post/Microsoft.Windows.AIの最新API活用事例とサンプルコード/index.en.md": {
+      "source": "post/Microsoft.Windows.AIの最新API活用事例とサンプルコード/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "bb4aa4b5a14f3ef2baa9769631b2a88d5130dff14e4082af6e72eb39f472cf62",
+      "translationHash": "a3445ee926af978204f5a8c2438f1fb1bf948cfe2400a56339ef19dc19549744",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-102.json",
+      "evidenceHash": "785b8fd2022b75b9c08c816b5123fe2370c5a41132c52ffe92fbe06aa58a65b4"
+    },
+    "post/Microsoft.Windows.AIの最新API活用事例とサンプルコード/index.es.md": {
+      "source": "post/Microsoft.Windows.AIの最新API活用事例とサンプルコード/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "bb4aa4b5a14f3ef2baa9769631b2a88d5130dff14e4082af6e72eb39f472cf62",
+      "translationHash": "9b32c901bf15f30308b830ecc7af4dfa606b44e0b87e2d952c93a2a435e3decd",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-102.json",
+      "evidenceHash": "9860ef8de1e9b09c0bcb67fef7f5345f0a8568e99c7a0963b40938757a801c15"
+    },
+    "post/Microsoft.Windows.AIの最新API活用事例とサンプルコード/index.fr.md": {
+      "source": "post/Microsoft.Windows.AIの最新API活用事例とサンプルコード/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "bb4aa4b5a14f3ef2baa9769631b2a88d5130dff14e4082af6e72eb39f472cf62",
+      "translationHash": "df1ad3d6f3109c616cf97d4b882cd94c93e81669da076fd8223d8fc674e7d940",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-102.json",
+      "evidenceHash": "9770229db6af0d3c178f21a318f774273a0d5d27a78ada443a858de74ff40cda"
+    },
+    "post/Microsoft.Windows.AIの最新API活用事例とサンプルコード/index.hi.md": {
+      "source": "post/Microsoft.Windows.AIの最新API活用事例とサンプルコード/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "bb4aa4b5a14f3ef2baa9769631b2a88d5130dff14e4082af6e72eb39f472cf62",
+      "translationHash": "03b0a633d719756e821fe017a18763527b90f06b039f930528880f46296ddd32",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-102.json",
+      "evidenceHash": "59af2d03bb68bb5864c38d76e6d661c0f092cc92eb06021b28d880b136899707"
+    },
+    "post/Microsoft.Windows.AIの最新API活用事例とサンプルコード/index.id.md": {
+      "source": "post/Microsoft.Windows.AIの最新API活用事例とサンプルコード/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "bb4aa4b5a14f3ef2baa9769631b2a88d5130dff14e4082af6e72eb39f472cf62",
+      "translationHash": "fc59e0ecc209de6c056ed17a469ef0a0ce27c522de61f76a039eb43f3a995ebc",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-102.json",
+      "evidenceHash": "ac941349455c5d6e4f2889d7e9af26a362c1cc98fd8b751d25e312727793e473"
+    },
+    "post/Microsoft.Windows.AIの最新API活用事例とサンプルコード/index.ko.md": {
+      "source": "post/Microsoft.Windows.AIの最新API活用事例とサンプルコード/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "bb4aa4b5a14f3ef2baa9769631b2a88d5130dff14e4082af6e72eb39f472cf62",
+      "translationHash": "2398c3bc35e19ca7d090f35c38e19656ddcef6a1ab3c15c6ea5419442f37f613",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-102.json",
+      "evidenceHash": "8551977309bdc4eb4658ec8a28be6881cabdbdb6b1860ce7ae8e0e004c96f072"
+    },
+    "post/Microsoft.Windows.AIの最新API活用事例とサンプルコード/index.pt.md": {
+      "source": "post/Microsoft.Windows.AIの最新API活用事例とサンプルコード/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "bb4aa4b5a14f3ef2baa9769631b2a88d5130dff14e4082af6e72eb39f472cf62",
+      "translationHash": "de4b4386f7482b64b5bd035862216a473f3fd9adb19bf1a6df4c6176a2d7243e",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-102.json",
+      "evidenceHash": "fda344181a0e53069c7378003a50204d82b12287770918be2778909da09307ee"
+    },
+    "post/Microsoft.Windows.AIの最新API活用事例とサンプルコード/index.ru.md": {
+      "source": "post/Microsoft.Windows.AIの最新API活用事例とサンプルコード/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "bb4aa4b5a14f3ef2baa9769631b2a88d5130dff14e4082af6e72eb39f472cf62",
+      "translationHash": "de1ab3b0a503c592fe51be1fccaf6e120f02b1fa11690d1b7f14185c148f873f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-102.json",
+      "evidenceHash": "38fc16afc4aeb4c2cd11ff8e157a30e00ca9cb31b417c74657ab447573da8062"
+    },
+    "post/Microsoft.Windows.AIの最新API活用事例とサンプルコード/index.zh-cn.md": {
+      "source": "post/Microsoft.Windows.AIの最新API活用事例とサンプルコード/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "bb4aa4b5a14f3ef2baa9769631b2a88d5130dff14e4082af6e72eb39f472cf62",
+      "translationHash": "76c3853a168b4f0542a7c9c8761aca46589acf6b76fbdc4a02e370d525dd550d",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-102.json",
+      "evidenceHash": "5fbe2b1694e42c78782faae5a820d4532971cf3596e36f17b1ae7414903caafe"
+    },
+    "post/Microsoft.Windows.AIの最新API活用事例とサンプルコード/index.zh-tw.md": {
+      "source": "post/Microsoft.Windows.AIの最新API活用事例とサンプルコード/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "bb4aa4b5a14f3ef2baa9769631b2a88d5130dff14e4082af6e72eb39f472cf62",
+      "translationHash": "e674f23130deef18631237c6a2f6cba63502f933013758386e99da8ca4b224f2",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-102.json",
+      "evidenceHash": "47b2895214aedc897c2ee23bc2a38e5c3ddf9af1d428fc87f4dbd378e5ea5b16"
     }
   }
 }

@@ -187,6 +187,19 @@ ARTICLES = {
         "markers": ["1904"],
         "date": "2024-07-25",
     },
+    102: {
+        "bundle": ROOT / "content/post/Microsoft.Windows.AIの最新API活用事例とサンプルコード",
+        "slug": "microsoft-windows-ai-api-guide",
+        "links": [
+            "https://learn.microsoft.com/en-us/windows/ai/apis",
+            "https://learn.microsoft.com/en-us/windows/ai/apis/get-started",
+            "https://learn.microsoft.com/en-us/windows/ai/apis/phi-silica",
+            "https://learn.microsoft.com/en-us/windows/ai/npu-devices",
+            "https://learn.microsoft.com/en-us/windows/ai/directml/dml-get-started",
+        ],
+        "markers": ["136.5 GB/s", "EnsureReadyAsync", "Direct3D 12", "Aion Instruct"],
+        "date": "2026-09-11",
+    },
 }
 
 
@@ -252,7 +265,7 @@ def slug_key(value):
 parser = argparse.ArgumentParser()
 parser.add_argument("--ci-run", type=int, required=True)
 parser.add_argument("--commit", required=True)
-parser.add_argument("--max-batch", type=int, choices=(90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101), default=101)
+parser.add_argument("--max-batch", type=int, choices=(90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102), default=102)
 args = parser.parse_args()
 ARTICLES = {number: article for number, article in ARTICLES.items() if number <= args.max_batch}
 with urllib.request.urlopen(f"https://github.com/kenjinote/blog/actions/runs/{args.ci_run}", timeout=45) as response:
