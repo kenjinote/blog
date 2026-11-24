@@ -1,0 +1,473 @@
+{
+  "version": 1,
+  "batch": 168,
+  "article": "Local RAG: Retrieve and Answer from Your Own Documents",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "0e1accec0f21759d6a4eec3b8207bc9ca15790954c36231dbf9bd7fcb1379387",
+  "sources": [
+    "https://huggingface.co/intfloat/multilingual-e5-large",
+    "https://www.sbert.net/docs/sentence_transformer/usage/usage.html",
+    "https://docs.trychroma.com/docs/run-chroma/clients",
+    "https://docs.trychroma.com/docs/collections/add-data",
+    "https://docs.trychroma.com/docs/collections/update-data",
+    "https://docs.trychroma.com/docs/collections/delete-data",
+    "https://docs.trychroma.com/docs/collections/configure",
+    "https://github.com/ollama/ollama-python",
+    "https://ollama.com/library/qwen3",
+    "https://pypdf.readthedocs.io/en/stable/"
+  ],
+  "scope": "Compared the Japanese source and all twelve complete translations, model claims, cosine formula, ANN indexing, privacy statements, Python setup and code, memory/context guidance, metadata, and external links.",
+  "findings": [
+    "Replaced the old LangChain RetrievalQA/Ollama wrapper with direct current Chroma, Sentence Transformers, pypdf, and Ollama Python APIs.",
+    "Added multilingual-E5 query and passage prefixes, token limit context, local persistence, page metadata, and removal of stale chunks on re-indexing.",
+    "Qualified privacy, retrieval quality, HNSW latency, embedding dimensions, and GPU memory claims.",
+    "Updated metadata, explanations, caveats, and official reference links in every language."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/RAG実装入門ローカルAIに自分のドキュメントを読み込ませる方法/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/RAG実装入門ローカルAIに自分のドキュメントを読み込ませる方法/index.md",
+      "sourceHash": "0e1accec0f21759d6a4eec3b8207bc9ca15790954c36231dbf9bd7fcb1379387",
+      "translationHash": "c3cdd871047fb572a8bb08a3ac3f89ca83438a65b83fc0543819a1b8087ab10c",
+      "summary": "Compared the complete localized article with the Japanese source, including technical claims, updated code, model limits and prefixes, local-data caveats, and references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared complete translations and corrected RAG scope, local-processing conditions, limitations, and operational guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed RAG, embeddings, tokens, chunks, cosine similarity, ANN, HNSW, reranking, quantization, and localized security terms."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked cosine formula, E5 dimensions and truncation, and FP16 weight-memory estimate against official model documentation."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced deprecated LangChain example with current direct Chroma, Sentence Transformers, pypdf, and Ollama Python APIs; checked E5 prefixes, local persistence, deletion of stale chunks, metadata, and source display against official documentation. Code was reviewed statically, not executed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced stale or unrelated links with official model, Chroma, Sentence Transformers, Ollama, and pypdf documentation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Code was reviewed against official documentation but not executed; APIs and model tags can change.",
+        "Demonstration covers text PDFs only and is not a production OCR, security, access-control, deletion-audit, or evaluation system.",
+        "Local inference alone does not establish privacy; verify downloads, logs, backups, telemetry, network exposure, and organizational policy."
+      ]
+    },
+    "post/RAG実装入門ローカルAIに自分のドキュメントを読み込ませる方法/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/RAG実装入門ローカルAIに自分のドキュメントを読み込ませる方法/index.md",
+      "sourceHash": "0e1accec0f21759d6a4eec3b8207bc9ca15790954c36231dbf9bd7fcb1379387",
+      "translationHash": "52affd5458742cb25ae53e07364d1e3ff1b8815a9471d75dc7c537da52f316e2",
+      "summary": "Compared the complete localized article with the Japanese source, including technical claims, updated code, model limits and prefixes, local-data caveats, and references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared complete translations and corrected RAG scope, local-processing conditions, limitations, and operational guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed RAG, embeddings, tokens, chunks, cosine similarity, ANN, HNSW, reranking, quantization, and localized security terms."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked cosine formula, E5 dimensions and truncation, and FP16 weight-memory estimate against official model documentation."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced deprecated LangChain example with current direct Chroma, Sentence Transformers, pypdf, and Ollama Python APIs; checked E5 prefixes, local persistence, deletion of stale chunks, metadata, and source display against official documentation. Code was reviewed statically, not executed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced stale or unrelated links with official model, Chroma, Sentence Transformers, Ollama, and pypdf documentation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Code was reviewed against official documentation but not executed; APIs and model tags can change.",
+        "Demonstration covers text PDFs only and is not a production OCR, security, access-control, deletion-audit, or evaluation system.",
+        "Local inference alone does not establish privacy; verify downloads, logs, backups, telemetry, network exposure, and organizational policy."
+      ]
+    },
+    "post/RAG実装入門ローカルAIに自分のドキュメントを読み込ませる方法/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/RAG実装入門ローカルAIに自分のドキュメントを読み込ませる方法/index.md",
+      "sourceHash": "0e1accec0f21759d6a4eec3b8207bc9ca15790954c36231dbf9bd7fcb1379387",
+      "translationHash": "3ea0cee6ab66b56e1ef37e5b7d67a97fca6e095fc7cca3f086b2788da2822c1a",
+      "summary": "Compared the complete localized article with the Japanese source, including technical claims, updated code, model limits and prefixes, local-data caveats, and references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared complete translations and corrected RAG scope, local-processing conditions, limitations, and operational guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed RAG, embeddings, tokens, chunks, cosine similarity, ANN, HNSW, reranking, quantization, and localized security terms."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked cosine formula, E5 dimensions and truncation, and FP16 weight-memory estimate against official model documentation."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced deprecated LangChain example with current direct Chroma, Sentence Transformers, pypdf, and Ollama Python APIs; checked E5 prefixes, local persistence, deletion of stale chunks, metadata, and source display against official documentation. Code was reviewed statically, not executed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced stale or unrelated links with official model, Chroma, Sentence Transformers, Ollama, and pypdf documentation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Code was reviewed against official documentation but not executed; APIs and model tags can change.",
+        "Demonstration covers text PDFs only and is not a production OCR, security, access-control, deletion-audit, or evaluation system.",
+        "Local inference alone does not establish privacy; verify downloads, logs, backups, telemetry, network exposure, and organizational policy."
+      ]
+    },
+    "post/RAG実装入門ローカルAIに自分のドキュメントを読み込ませる方法/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/RAG実装入門ローカルAIに自分のドキュメントを読み込ませる方法/index.md",
+      "sourceHash": "0e1accec0f21759d6a4eec3b8207bc9ca15790954c36231dbf9bd7fcb1379387",
+      "translationHash": "dcfe6d9bd29b94867ff9bf448bad47bd11241793b40895a9ce972566409af47c",
+      "summary": "Compared the complete localized article with the Japanese source, including technical claims, updated code, model limits and prefixes, local-data caveats, and references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared complete translations and corrected RAG scope, local-processing conditions, limitations, and operational guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed RAG, embeddings, tokens, chunks, cosine similarity, ANN, HNSW, reranking, quantization, and localized security terms."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked cosine formula, E5 dimensions and truncation, and FP16 weight-memory estimate against official model documentation."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced deprecated LangChain example with current direct Chroma, Sentence Transformers, pypdf, and Ollama Python APIs; checked E5 prefixes, local persistence, deletion of stale chunks, metadata, and source display against official documentation. Code was reviewed statically, not executed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced stale or unrelated links with official model, Chroma, Sentence Transformers, Ollama, and pypdf documentation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Code was reviewed against official documentation but not executed; APIs and model tags can change.",
+        "Demonstration covers text PDFs only and is not a production OCR, security, access-control, deletion-audit, or evaluation system.",
+        "Local inference alone does not establish privacy; verify downloads, logs, backups, telemetry, network exposure, and organizational policy."
+      ]
+    },
+    "post/RAG実装入門ローカルAIに自分のドキュメントを読み込ませる方法/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/RAG実装入門ローカルAIに自分のドキュメントを読み込ませる方法/index.md",
+      "sourceHash": "0e1accec0f21759d6a4eec3b8207bc9ca15790954c36231dbf9bd7fcb1379387",
+      "translationHash": "c1f934551e6387901cb7861d7bd13b209abe1b875fd3f3b904e6195720c999f2",
+      "summary": "Compared the complete localized article with the Japanese source, including technical claims, updated code, model limits and prefixes, local-data caveats, and references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared complete translations and corrected RAG scope, local-processing conditions, limitations, and operational guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed RAG, embeddings, tokens, chunks, cosine similarity, ANN, HNSW, reranking, quantization, and localized security terms."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked cosine formula, E5 dimensions and truncation, and FP16 weight-memory estimate against official model documentation."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced deprecated LangChain example with current direct Chroma, Sentence Transformers, pypdf, and Ollama Python APIs; checked E5 prefixes, local persistence, deletion of stale chunks, metadata, and source display against official documentation. Code was reviewed statically, not executed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced stale or unrelated links with official model, Chroma, Sentence Transformers, Ollama, and pypdf documentation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Code was reviewed against official documentation but not executed; APIs and model tags can change.",
+        "Demonstration covers text PDFs only and is not a production OCR, security, access-control, deletion-audit, or evaluation system.",
+        "Local inference alone does not establish privacy; verify downloads, logs, backups, telemetry, network exposure, and organizational policy."
+      ]
+    },
+    "post/RAG実装入門ローカルAIに自分のドキュメントを読み込ませる方法/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/RAG実装入門ローカルAIに自分のドキュメントを読み込ませる方法/index.md",
+      "sourceHash": "0e1accec0f21759d6a4eec3b8207bc9ca15790954c36231dbf9bd7fcb1379387",
+      "translationHash": "de33fd9f703f4143c6a6a9462bfac3f646f471fa6d05c1b330dc26396ec36a37",
+      "summary": "Compared the complete localized article with the Japanese source, including technical claims, updated code, model limits and prefixes, local-data caveats, and references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared complete translations and corrected RAG scope, local-processing conditions, limitations, and operational guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed RAG, embeddings, tokens, chunks, cosine similarity, ANN, HNSW, reranking, quantization, and localized security terms."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked cosine formula, E5 dimensions and truncation, and FP16 weight-memory estimate against official model documentation."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced deprecated LangChain example with current direct Chroma, Sentence Transformers, pypdf, and Ollama Python APIs; checked E5 prefixes, local persistence, deletion of stale chunks, metadata, and source display against official documentation. Code was reviewed statically, not executed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced stale or unrelated links with official model, Chroma, Sentence Transformers, Ollama, and pypdf documentation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Code was reviewed against official documentation but not executed; APIs and model tags can change.",
+        "Demonstration covers text PDFs only and is not a production OCR, security, access-control, deletion-audit, or evaluation system.",
+        "Local inference alone does not establish privacy; verify downloads, logs, backups, telemetry, network exposure, and organizational policy."
+      ]
+    },
+    "post/RAG実装入門ローカルAIに自分のドキュメントを読み込ませる方法/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/RAG実装入門ローカルAIに自分のドキュメントを読み込ませる方法/index.md",
+      "sourceHash": "0e1accec0f21759d6a4eec3b8207bc9ca15790954c36231dbf9bd7fcb1379387",
+      "translationHash": "d424287d2355f84812dfcec64ba8bb00209d13e013324b44c872303e670bca10",
+      "summary": "Compared the complete localized article with the Japanese source, including technical claims, updated code, model limits and prefixes, local-data caveats, and references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared complete translations and corrected RAG scope, local-processing conditions, limitations, and operational guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed RAG, embeddings, tokens, chunks, cosine similarity, ANN, HNSW, reranking, quantization, and localized security terms."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked cosine formula, E5 dimensions and truncation, and FP16 weight-memory estimate against official model documentation."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced deprecated LangChain example with current direct Chroma, Sentence Transformers, pypdf, and Ollama Python APIs; checked E5 prefixes, local persistence, deletion of stale chunks, metadata, and source display against official documentation. Code was reviewed statically, not executed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced stale or unrelated links with official model, Chroma, Sentence Transformers, Ollama, and pypdf documentation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Code was reviewed against official documentation but not executed; APIs and model tags can change.",
+        "Demonstration covers text PDFs only and is not a production OCR, security, access-control, deletion-audit, or evaluation system.",
+        "Local inference alone does not establish privacy; verify downloads, logs, backups, telemetry, network exposure, and organizational policy."
+      ]
+    },
+    "post/RAG実装入門ローカルAIに自分のドキュメントを読み込ませる方法/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/RAG実装入門ローカルAIに自分のドキュメントを読み込ませる方法/index.md",
+      "sourceHash": "0e1accec0f21759d6a4eec3b8207bc9ca15790954c36231dbf9bd7fcb1379387",
+      "translationHash": "de14e2a9ea7b03d596e6273540a4b40d71fa189f8461a85b6a92ae4049eebabf",
+      "summary": "Compared the complete localized article with the Japanese source, including technical claims, updated code, model limits and prefixes, local-data caveats, and references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared complete translations and corrected RAG scope, local-processing conditions, limitations, and operational guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed RAG, embeddings, tokens, chunks, cosine similarity, ANN, HNSW, reranking, quantization, and localized security terms."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked cosine formula, E5 dimensions and truncation, and FP16 weight-memory estimate against official model documentation."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced deprecated LangChain example with current direct Chroma, Sentence Transformers, pypdf, and Ollama Python APIs; checked E5 prefixes, local persistence, deletion of stale chunks, metadata, and source display against official documentation. Code was reviewed statically, not executed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced stale or unrelated links with official model, Chroma, Sentence Transformers, Ollama, and pypdf documentation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Code was reviewed against official documentation but not executed; APIs and model tags can change.",
+        "Demonstration covers text PDFs only and is not a production OCR, security, access-control, deletion-audit, or evaluation system.",
+        "Local inference alone does not establish privacy; verify downloads, logs, backups, telemetry, network exposure, and organizational policy."
+      ]
+    },
+    "post/RAG実装入門ローカルAIに自分のドキュメントを読み込ませる方法/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/RAG実装入門ローカルAIに自分のドキュメントを読み込ませる方法/index.md",
+      "sourceHash": "0e1accec0f21759d6a4eec3b8207bc9ca15790954c36231dbf9bd7fcb1379387",
+      "translationHash": "b51ea4b2c88ff6fa4f16b5f72830b9b180581d93d6ac6c20b5558e70dbae420e",
+      "summary": "Compared the complete localized article with the Japanese source, including technical claims, updated code, model limits and prefixes, local-data caveats, and references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared complete translations and corrected RAG scope, local-processing conditions, limitations, and operational guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed RAG, embeddings, tokens, chunks, cosine similarity, ANN, HNSW, reranking, quantization, and localized security terms."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked cosine formula, E5 dimensions and truncation, and FP16 weight-memory estimate against official model documentation."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced deprecated LangChain example with current direct Chroma, Sentence Transformers, pypdf, and Ollama Python APIs; checked E5 prefixes, local persistence, deletion of stale chunks, metadata, and source display against official documentation. Code was reviewed statically, not executed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced stale or unrelated links with official model, Chroma, Sentence Transformers, Ollama, and pypdf documentation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Code was reviewed against official documentation but not executed; APIs and model tags can change.",
+        "Demonstration covers text PDFs only and is not a production OCR, security, access-control, deletion-audit, or evaluation system.",
+        "Local inference alone does not establish privacy; verify downloads, logs, backups, telemetry, network exposure, and organizational policy."
+      ]
+    },
+    "post/RAG実装入門ローカルAIに自分のドキュメントを読み込ませる方法/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/RAG実装入門ローカルAIに自分のドキュメントを読み込ませる方法/index.md",
+      "sourceHash": "0e1accec0f21759d6a4eec3b8207bc9ca15790954c36231dbf9bd7fcb1379387",
+      "translationHash": "7ee871aa93effbd9f46ce8b32edda8aa6061f2c2c38c77509ac681e8fe82ba28",
+      "summary": "Compared the complete localized article with the Japanese source, including technical claims, updated code, model limits and prefixes, local-data caveats, and references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared complete translations and corrected RAG scope, local-processing conditions, limitations, and operational guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed RAG, embeddings, tokens, chunks, cosine similarity, ANN, HNSW, reranking, quantization, and localized security terms."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked cosine formula, E5 dimensions and truncation, and FP16 weight-memory estimate against official model documentation."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced deprecated LangChain example with current direct Chroma, Sentence Transformers, pypdf, and Ollama Python APIs; checked E5 prefixes, local persistence, deletion of stale chunks, metadata, and source display against official documentation. Code was reviewed statically, not executed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced stale or unrelated links with official model, Chroma, Sentence Transformers, Ollama, and pypdf documentation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Code was reviewed against official documentation but not executed; APIs and model tags can change.",
+        "Demonstration covers text PDFs only and is not a production OCR, security, access-control, deletion-audit, or evaluation system.",
+        "Local inference alone does not establish privacy; verify downloads, logs, backups, telemetry, network exposure, and organizational policy."
+      ]
+    },
+    "post/RAG実装入門ローカルAIに自分のドキュメントを読み込ませる方法/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/RAG実装入門ローカルAIに自分のドキュメントを読み込ませる方法/index.md",
+      "sourceHash": "0e1accec0f21759d6a4eec3b8207bc9ca15790954c36231dbf9bd7fcb1379387",
+      "translationHash": "3e7167c3aeae3da3d12d35e6c4cac5ee709187939abfb9352f408509204cfaee",
+      "summary": "Compared the complete localized article with the Japanese source, including technical claims, updated code, model limits and prefixes, local-data caveats, and references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared complete translations and corrected RAG scope, local-processing conditions, limitations, and operational guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed RAG, embeddings, tokens, chunks, cosine similarity, ANN, HNSW, reranking, quantization, and localized security terms."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked cosine formula, E5 dimensions and truncation, and FP16 weight-memory estimate against official model documentation."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced deprecated LangChain example with current direct Chroma, Sentence Transformers, pypdf, and Ollama Python APIs; checked E5 prefixes, local persistence, deletion of stale chunks, metadata, and source display against official documentation. Code was reviewed statically, not executed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced stale or unrelated links with official model, Chroma, Sentence Transformers, Ollama, and pypdf documentation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Code was reviewed against official documentation but not executed; APIs and model tags can change.",
+        "Demonstration covers text PDFs only and is not a production OCR, security, access-control, deletion-audit, or evaluation system.",
+        "Local inference alone does not establish privacy; verify downloads, logs, backups, telemetry, network exposure, and organizational policy."
+      ]
+    },
+    "post/RAG実装入門ローカルAIに自分のドキュメントを読み込ませる方法/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/RAG実装入門ローカルAIに自分のドキュメントを読み込ませる方法/index.md",
+      "sourceHash": "0e1accec0f21759d6a4eec3b8207bc9ca15790954c36231dbf9bd7fcb1379387",
+      "translationHash": "c3bec214ef70a1e07665d2a7a85ceec7c66c649b45118f88f13bb80d4417370a",
+      "summary": "Compared the complete localized article with the Japanese source, including technical claims, updated code, model limits and prefixes, local-data caveats, and references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared complete translations and corrected RAG scope, local-processing conditions, limitations, and operational guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed RAG, embeddings, tokens, chunks, cosine similarity, ANN, HNSW, reranking, quantization, and localized security terms."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked cosine formula, E5 dimensions and truncation, and FP16 weight-memory estimate against official model documentation."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced deprecated LangChain example with current direct Chroma, Sentence Transformers, pypdf, and Ollama Python APIs; checked E5 prefixes, local persistence, deletion of stale chunks, metadata, and source display against official documentation. Code was reviewed statically, not executed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced stale or unrelated links with official model, Chroma, Sentence Transformers, Ollama, and pypdf documentation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Code was reviewed against official documentation but not executed; APIs and model tags can change.",
+        "Demonstration covers text PDFs only and is not a production OCR, security, access-control, deletion-audit, or evaluation system.",
+        "Local inference alone does not establish privacy; verify downloads, logs, backups, telemetry, network exposure, and organizational policy."
+      ]
+    }
+  }
+}

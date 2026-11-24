@@ -19445,6 +19445,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-166.json",
       "evidenceHash": "f646150aa35c67daefbd93d055d9f101c34364ebad0769d10864be17e15aef9e"
+    },
+    "post/RAG実装入門ローカルAIに自分のドキュメントを読み込ませる方法/index.en.md": {
+      "source": "post/RAG実装入門ローカルAIに自分のドキュメントを読み込ませる方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "0e1accec0f21759d6a4eec3b8207bc9ca15790954c36231dbf9bd7fcb1379387",
+      "translationHash": "c3cdd871047fb572a8bb08a3ac3f89ca83438a65b83fc0543819a1b8087ab10c",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-168.json",
+      "evidenceHash": "f68dd9c7ff64c86d1ffe07ac2a902236fd4dbb43669d8cc30b5b354942c16dc4"
+    },
+    "post/RAG実装入門ローカルAIに自分のドキュメントを読み込ませる方法/index.zh-cn.md": {
+      "source": "post/RAG実装入門ローカルAIに自分のドキュメントを読み込ませる方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "0e1accec0f21759d6a4eec3b8207bc9ca15790954c36231dbf9bd7fcb1379387",
+      "translationHash": "52affd5458742cb25ae53e07364d1e3ff1b8815a9471d75dc7c537da52f316e2",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-168.json",
+      "evidenceHash": "be7fb7168098a6cc9d29085e6534092698ce2d7ca7b34f1d77e29913179f2806"
+    },
+    "post/RAG実装入門ローカルAIに自分のドキュメントを読み込ませる方法/index.es.md": {
+      "source": "post/RAG実装入門ローカルAIに自分のドキュメントを読み込ませる方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "0e1accec0f21759d6a4eec3b8207bc9ca15790954c36231dbf9bd7fcb1379387",
+      "translationHash": "3ea0cee6ab66b56e1ef37e5b7d67a97fca6e095fc7cca3f086b2788da2822c1a",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-168.json",
+      "evidenceHash": "9d92c3c15e6b2a0e51d2d2550a66cb2ef5d18e4f42f033b736df6437772a6e71"
+    },
+    "post/RAG実装入門ローカルAIに自分のドキュメントを読み込ませる方法/index.ko.md": {
+      "source": "post/RAG実装入門ローカルAIに自分のドキュメントを読み込ませる方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "0e1accec0f21759d6a4eec3b8207bc9ca15790954c36231dbf9bd7fcb1379387",
+      "translationHash": "dcfe6d9bd29b94867ff9bf448bad47bd11241793b40895a9ce972566409af47c",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-168.json",
+      "evidenceHash": "0dc6b1c6818f3cc5fb9541f0dabf2c7218c0794b9c53d9b908842c533a863e3e"
+    },
+    "post/RAG実装入門ローカルAIに自分のドキュメントを読み込ませる方法/index.pt.md": {
+      "source": "post/RAG実装入門ローカルAIに自分のドキュメントを読み込ませる方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "0e1accec0f21759d6a4eec3b8207bc9ca15790954c36231dbf9bd7fcb1379387",
+      "translationHash": "c1f934551e6387901cb7861d7bd13b209abe1b875fd3f3b904e6195720c999f2",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-168.json",
+      "evidenceHash": "8eeaa67aae96a3be3ecb61639838cadd925c0e7d705f401a76ada3d2a6f39cc0"
+    },
+    "post/RAG実装入門ローカルAIに自分のドキュメントを読み込ませる方法/index.zh-tw.md": {
+      "source": "post/RAG実装入門ローカルAIに自分のドキュメントを読み込ませる方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "0e1accec0f21759d6a4eec3b8207bc9ca15790954c36231dbf9bd7fcb1379387",
+      "translationHash": "de33fd9f703f4143c6a6a9462bfac3f646f471fa6d05c1b330dc26396ec36a37",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-168.json",
+      "evidenceHash": "69e9f19c4c14b4a284292df2695e996dd038e085f220b66541c1e70711f06b16"
+    },
+    "post/RAG実装入門ローカルAIに自分のドキュメントを読み込ませる方法/index.hi.md": {
+      "source": "post/RAG実装入門ローカルAIに自分のドキュメントを読み込ませる方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "0e1accec0f21759d6a4eec3b8207bc9ca15790954c36231dbf9bd7fcb1379387",
+      "translationHash": "d424287d2355f84812dfcec64ba8bb00209d13e013324b44c872303e670bca10",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-168.json",
+      "evidenceHash": "3c997c7d3f5ce52fd052c77e31e5e3bb67737c7abaace0a02a159524a45b5f8a"
+    },
+    "post/RAG実装入門ローカルAIに自分のドキュメントを読み込ませる方法/index.fr.md": {
+      "source": "post/RAG実装入門ローカルAIに自分のドキュメントを読み込ませる方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "0e1accec0f21759d6a4eec3b8207bc9ca15790954c36231dbf9bd7fcb1379387",
+      "translationHash": "de14e2a9ea7b03d596e6273540a4b40d71fa189f8461a85b6a92ae4049eebabf",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-168.json",
+      "evidenceHash": "47a7b76c72b4fa4699beae1535bac73ef6ca71e4081590636233df6904f8a81b"
+    },
+    "post/RAG実装入門ローカルAIに自分のドキュメントを読み込ませる方法/index.de.md": {
+      "source": "post/RAG実装入門ローカルAIに自分のドキュメントを読み込ませる方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "0e1accec0f21759d6a4eec3b8207bc9ca15790954c36231dbf9bd7fcb1379387",
+      "translationHash": "b51ea4b2c88ff6fa4f16b5f72830b9b180581d93d6ac6c20b5558e70dbae420e",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-168.json",
+      "evidenceHash": "64262aef46ca78f7457a944539a98b8a9901b2a97e67fd6edb6def42d0fe737d"
+    },
+    "post/RAG実装入門ローカルAIに自分のドキュメントを読み込ませる方法/index.ar.md": {
+      "source": "post/RAG実装入門ローカルAIに自分のドキュメントを読み込ませる方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "0e1accec0f21759d6a4eec3b8207bc9ca15790954c36231dbf9bd7fcb1379387",
+      "translationHash": "7ee871aa93effbd9f46ce8b32edda8aa6061f2c2c38c77509ac681e8fe82ba28",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-168.json",
+      "evidenceHash": "4864648db9cafa6d504876fbd5a570b32e2870dc29685b0441a849e4caeaa8d2"
+    },
+    "post/RAG実装入門ローカルAIに自分のドキュメントを読み込ませる方法/index.ru.md": {
+      "source": "post/RAG実装入門ローカルAIに自分のドキュメントを読み込ませる方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "0e1accec0f21759d6a4eec3b8207bc9ca15790954c36231dbf9bd7fcb1379387",
+      "translationHash": "3e7167c3aeae3da3d12d35e6c4cac5ee709187939abfb9352f408509204cfaee",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-168.json",
+      "evidenceHash": "d7fad6fae4db187622fd98f0a4e8d7ec0f588a2380e966df537eeb9012ec072b"
+    },
+    "post/RAG実装入門ローカルAIに自分のドキュメントを読み込ませる方法/index.id.md": {
+      "source": "post/RAG実装入門ローカルAIに自分のドキュメントを読み込ませる方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "0e1accec0f21759d6a4eec3b8207bc9ca15790954c36231dbf9bd7fcb1379387",
+      "translationHash": "c3bec214ef70a1e07665d2a7a85ceec7c66c649b45118f88f13bb80d4417370a",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-168.json",
+      "evidenceHash": "02fca116543365fb78f8adb1c23d26e12fb3b4cb607b9b75652f9da100187191"
     }
   }
 }
