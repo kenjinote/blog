@@ -19085,6 +19085,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-163.json",
       "evidenceHash": "8697d3759d0b21ea06efb8307ac7bc199acf3c2c8fd722e1bd91522a5fd3a62c"
+    },
+    "post/wsl で「Temporary failure resolving～」と表示される場合の対処方法/index.en.md": {
+      "source": "post/wsl で「Temporary failure resolving～」と表示される場合の対処方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "762288a2fab4c2a61af38b2d61efffdf2f6473d9691f3961a051024af4ccf310",
+      "translationHash": "eb0a3e800c22d626978d4264c6e2d9c32cf68aa93c8fdc9a9dfff35804436fe6",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-164.json",
+      "evidenceHash": "597ce4b933c13f425d9a22807386daa159e7d59a6006da2180aa8919469be402"
+    },
+    "post/wsl で「Temporary failure resolving～」と表示される場合の対処方法/index.zh-cn.md": {
+      "source": "post/wsl で「Temporary failure resolving～」と表示される場合の対処方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "762288a2fab4c2a61af38b2d61efffdf2f6473d9691f3961a051024af4ccf310",
+      "translationHash": "6038405e1d6ebe60abcf0ce2f95a8c12dadb459ffd84708cfea119ffc16c37ab",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-164.json",
+      "evidenceHash": "4822621046cc15dc1d0d6e1dc594691231e9d627bebad4ceddcb2342d7b0cbc3"
+    },
+    "post/wsl で「Temporary failure resolving～」と表示される場合の対処方法/index.es.md": {
+      "source": "post/wsl で「Temporary failure resolving～」と表示される場合の対処方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "762288a2fab4c2a61af38b2d61efffdf2f6473d9691f3961a051024af4ccf310",
+      "translationHash": "5628a33827725ece65b617809b115255e50187f5875eede83aa1fe076999aa86",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-164.json",
+      "evidenceHash": "a5a07d57f453cf51e08f574dd82a094e0c9880e821f43b5c92c188449d386580"
+    },
+    "post/wsl で「Temporary failure resolving～」と表示される場合の対処方法/index.ko.md": {
+      "source": "post/wsl で「Temporary failure resolving～」と表示される場合の対処方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "762288a2fab4c2a61af38b2d61efffdf2f6473d9691f3961a051024af4ccf310",
+      "translationHash": "3e2b454f2bf8de42fd9cf7e0bece2cd8299d12cce70b01f3b8ee66253d17e203",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-164.json",
+      "evidenceHash": "351d45358c12f680900e8088153f4872847786f3cb429f5c8ccf4abbf828f589"
+    },
+    "post/wsl で「Temporary failure resolving～」と表示される場合の対処方法/index.pt.md": {
+      "source": "post/wsl で「Temporary failure resolving～」と表示される場合の対処方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "762288a2fab4c2a61af38b2d61efffdf2f6473d9691f3961a051024af4ccf310",
+      "translationHash": "985aab67e95f8519f907350bbf25765e44e501bcc34fb68ef2c6b77d8fae674f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-164.json",
+      "evidenceHash": "240fcd31a8a86feb33bb486b296cc10e35e247b42293a39bc131973448b44b89"
+    },
+    "post/wsl で「Temporary failure resolving～」と表示される場合の対処方法/index.zh-tw.md": {
+      "source": "post/wsl で「Temporary failure resolving～」と表示される場合の対処方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "762288a2fab4c2a61af38b2d61efffdf2f6473d9691f3961a051024af4ccf310",
+      "translationHash": "44f11c6317542c1ed3884af2a9dc89319618e128ad43e7e06b9e00722c31ca3d",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-164.json",
+      "evidenceHash": "43248f4132cbc34c3df4182d71f0193e9c19ce7740c088c91dff21dc1c8ff6f6"
+    },
+    "post/wsl で「Temporary failure resolving～」と表示される場合の対処方法/index.hi.md": {
+      "source": "post/wsl で「Temporary failure resolving～」と表示される場合の対処方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "762288a2fab4c2a61af38b2d61efffdf2f6473d9691f3961a051024af4ccf310",
+      "translationHash": "4534c50c25f114430d160ae989f15661026d931c266caa024edd76b3208a3307",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-164.json",
+      "evidenceHash": "82ac19054c425f3745bf50661d4f320817cb423dbc444be8545936f2a359d012"
+    },
+    "post/wsl で「Temporary failure resolving～」と表示される場合の対処方法/index.fr.md": {
+      "source": "post/wsl で「Temporary failure resolving～」と表示される場合の対処方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "762288a2fab4c2a61af38b2d61efffdf2f6473d9691f3961a051024af4ccf310",
+      "translationHash": "72a836990c21d48c1de331991bf06b443a9e7cbdc26db012934f38fa1256c93a",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-164.json",
+      "evidenceHash": "32903cd87f3592cb97f941cdf08b9a84c0340badd553a14babd42133000920d8"
+    },
+    "post/wsl で「Temporary failure resolving～」と表示される場合の対処方法/index.de.md": {
+      "source": "post/wsl で「Temporary failure resolving～」と表示される場合の対処方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "762288a2fab4c2a61af38b2d61efffdf2f6473d9691f3961a051024af4ccf310",
+      "translationHash": "174fb70409bc614ce49d8d0b21846dbd5add260efd1f96c3073116de12e1ecba",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-164.json",
+      "evidenceHash": "2fda7f34a85316128d0e78a26e177bec52c24cdb64515d8b96c41aff28ede79e"
+    },
+    "post/wsl で「Temporary failure resolving～」と表示される場合の対処方法/index.ar.md": {
+      "source": "post/wsl で「Temporary failure resolving～」と表示される場合の対処方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "762288a2fab4c2a61af38b2d61efffdf2f6473d9691f3961a051024af4ccf310",
+      "translationHash": "4cf2ab42db65989303111b576d8c18c7fbc4468570b17862edc1619d178d987c",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-164.json",
+      "evidenceHash": "d9486fa030a4159e7f375049934b2dca66f18a39cbb991311a3ee6dd156ab3b5"
+    },
+    "post/wsl で「Temporary failure resolving～」と表示される場合の対処方法/index.ru.md": {
+      "source": "post/wsl で「Temporary failure resolving～」と表示される場合の対処方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "762288a2fab4c2a61af38b2d61efffdf2f6473d9691f3961a051024af4ccf310",
+      "translationHash": "b2b37c43e8101d38d45ca50a9082b806924ac625facfa4f7d2c1e68cb14cc599",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-164.json",
+      "evidenceHash": "e601b3f259b3ffc9db91555d1b8c38a95476b39c06a3472db82e9cf086e43ff6"
+    },
+    "post/wsl で「Temporary failure resolving～」と表示される場合の対処方法/index.id.md": {
+      "source": "post/wsl で「Temporary failure resolving～」と表示される場合の対処方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "762288a2fab4c2a61af38b2d61efffdf2f6473d9691f3961a051024af4ccf310",
+      "translationHash": "362ec3db0335c9d5b032f97a8c3b567c0a1fb12d0b911861a1274b6d62badc0f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-164.json",
+      "evidenceHash": "320a5a2c0206993407690c0dd04f250fccedc256ab160fdc4b22c882b45087b3"
     }
   }
 }

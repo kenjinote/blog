@@ -1,53 +1,47 @@
 ---
-
-
-
-
-
-
-
-title: 'WSL의 apt update에서 ''Temporary failure resolving'' 에러가 났을 때의 대처법'
-date: "2026-09-24T19:44:38+09:00"
+title: "WSL에서 “Temporary failure resolving” 오류 해결 방법"
 slug: "wsl で「Temporary failure resolving～」と表示される場合の대처 방법"
-date: 2024-03-31T16:57:33+09:00
-tags: ["wsl", "대처 방법"]
+tags: ["WSL", "DNS", "troubleshooting"]
 draft: false
 image: "img.webp"
 categories: ["tools-development-environment"]
-description: 'WSL 환경에서 ''sudo apt update'' 실행 시 ''Temporary failure resolving'' 에러가 발생하는 경우의 해결 방법을 해설합니다. DNS 서버 설정을 변경하여 패키지 매니저의 통신을 정상적으로 복구하는 절차를 소개합니다.'
+description: "WSL 이름 확인 문제를 Windows 네트워크 문제와 구분하고 WSL 업데이트, DNS 터널링, VPN, 방화벽 설정을 점검합니다."
+date: "2024-03-31T16:57:33+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
+# WSL에서 “Temporary failure resolving” 오류 해결 방법
 
+이 오류는 WSL에서 호스트 이름을 IP 주소로 확인하지 못했다는 뜻입니다. DNS 서버 설정만이 원인은 아닙니다. 먼저 Windows와 WSL 중 어디에서 실패하는지 확인하세요.
 
+## 먼저 확인할 사항
 
+1. Windows PowerShell에서 `Resolve-DnsName archive.ubuntu.com`을 실행합니다. Windows에서도 실패하면 Windows 네트워크, DNS, VPN을 먼저 확인하세요.
 
+2. WSL에서 `getent hosts archive.ubuntu.com`을 실행합니다. Windows에서는 이름이 확인되지만 WSL에서만 실패하면 다음 단계를 진행하세요.
 
+PowerShell에서 `wsl --update`를 실행한 다음 `wsl --shutdown`을 실행합니다. WSL을 다시 시작하고 `getent hosts archive.ubuntu.com` 및 `sudo apt update`를 재시도하세요.
 
+Windows 11 버전 22H2 이상에서 최신 WSL은 기본적으로 DNS 터널링을 사용합니다. VPN 사용 중 이름 확인에 실패하면 WSL을 업데이트하고 `.wslconfig`의 `[wsl2]`에서 `dnsTunneling=true`가 꺼져 있지 않은지 확인하세요. 설정을 바꾼 뒤 PowerShell에서 `wsl --shutdown`을 실행하세요.
 
+`8.8.8.8` 같은 임의의 공용 DNS를 `/etc/resolv.conf`에 먼저 고정하지 마세요. VPN이나 조직의 DNS 정책을 우회하거나 WSL 자동 생성 설정과 충돌할 수 있습니다. 수동 재정의가 꼭 필요한 환경이라면 Microsoft의 VPN 관련 절차를 따르고 네트워크 관리자에게 확인하세요.
 
-# wsl에서 「Temporary failure resolving～」라고 표시되는 경우의 대처 방법
+## 문제가 계속되면
 
+문제가 계속되면 VPN, Windows 방화벽, 보안 소프트웨어, 조직 네트워크 정책을 확인하세요. 이름 확인은 되지만 `apt update`만 실패한다면 프록시, 미러, 저장소 설정도 확인하세요.
+
+```powershell
+Resolve-DnsName archive.ubuntu.com
+wsl --update
+wsl --shutdown
 ```
-kenji@MyComputer:~$ sudo apt update
-[sudo] password for kenji:
-Err:1 http://archive.ubuntu.com/ubuntu focal InRelease
-  Temporary failure resolving 'archive.ubuntu.com'
+
+```bash
+getent hosts archive.ubuntu.com
+sudo apt update
 ```
 
-wsl에서 위 오류가 표시될 때는 DNS 서버 설정이 올바르지 않을 가능성이 있습니다.
-제 환경에서는 다음 절차로 해결했습니다.
+## 참고 자료
 
-1. wsl을 시작합니다.
-2. `sudo nano /etc/resolv.conf`를 실행합니다.
-3. `nameserver` 줄을 다음과 같이 변경합니다.
-```
-nameserver 8.8.8.8
-```
-4. `Ctrl` + `S`로 저장하고, `Ctrl` + `X`로 종료합니다.
-5. `sudo apt update`를 실행합니다.
-6. 오류가 표시되지 않으면 해결된 것입니다.
-
-## 위 절차로 해결되지 않는 경우
-
-위 절차로 해결되지 않는 경우도 있는 것 같습니다. 다음 기사를 참고하세요.
-
-- [WSL에서 apt update 시의 『Temporary failure resolving ～』를 해결하는 방법](https://qiita.com/ryosukeYamazaki/items/c04ec3ff78aac6eb8d26)
+- [Microsoft Learn: WSL troubleshooting](https://learn.microsoft.com/en-us/windows/wsl/troubleshooting)
+- [Microsoft Learn: WSL networking and DNS tunneling](https://learn.microsoft.com/en-us/windows/wsl/networking)
+- [Microsoft Learn: WSL configuration](https://learn.microsoft.com/en-us/windows/wsl/wsl-config)

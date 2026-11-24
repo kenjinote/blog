@@ -1,40 +1,47 @@
 ---
-title: 'WSLのapt updateで「Temporary failure resolving」エラーが出た時の対処法'
-date: "2026-09-24T19:44:38+09:00"
+title: "WSLで「Temporary failure resolving」が出る場合のDNS確認方法"
 slug: "wsl で「Temporary failure resolving～」と表示される場合の対処方法"
-date: 2024-03-31T16:57:33+09:00
-tags: ["wsl", "対処方法"]
+tags: ["WSL", "DNS", "troubleshooting"]
 draft: false
 image: "img.webp"
 categories: ["tools-development-environment"]
-description: 'WSL環境で「sudo apt update」実行時に「Temporary failure resolving」エラーが出る場合の解決方法を解説します。DNSサーバーの設定を変更し、パッケージマネージャーの通信を正しく復旧させる手順を紹介します。'
+description: "WSLの名前解決エラーをWindows側とLinux側に分けて調べ、WSL更新、DNSトンネリング、VPNやファイアウォールの確認を行う手順を紹介します。"
+date: "2024-03-31T16:57:33+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
+# WSLで「Temporary failure resolving」が出る場合のDNS確認方法
 
-# wslで「Temporary failure resolving～」と表示される場合の対処方法
+このエラーは、WSL内でホスト名をIPアドレスへ解決できなかったことを示します。原因はDNSサーバーだけとは限りません。まずWindows側とWSL側のどちらで失敗するかを切り分けます。
 
+## 最初に確認すること
+
+1. WindowsのPowerShellで`Resolve-DnsName archive.ubuntu.com`を実行します。Windowsでも失敗する場合は、Windowsのネットワーク、DNS、VPNを先に確認してください。
+
+2. WSLで`getent hosts archive.ubuntu.com`を実行します。Windowsでは解決でき、WSLだけ失敗する場合は次の手順を試します。
+
+PowerShellで`wsl --update`、続けて`wsl --shutdown`を実行し、WSLを起動し直します。その後、WSLで`getent hosts archive.ubuntu.com`と`sudo apt update`を再確認します。
+
+Windows 11 バージョン22H2以降の新しいWSLではDNSトンネリングが既定で有効です。VPN環境で名前解決できない場合はWSLを更新し、`.wslconfig`の`[wsl2]`設定で`dnsTunneling=true`になっているか確認してください。設定を変更したらPowerShellで`wsl --shutdown`を実行します。
+
+`/etc/resolv.conf`に任意の公開DNS（例：`8.8.8.8`）を固定するのは最初の対処として勧めません。VPNや組織のDNSポリシーを迂回したり、WSLが生成する設定と競合したりする場合があります。手動設定が必要な環境では、Microsoftの該当するVPN向け手順に従い、ネットワーク管理者に確認してください。
+
+## 問題が続く場合
+
+解決しない場合はVPN、Windowsファイアウォール、セキュリティソフト、組織のネットワークポリシーを確認します。ホスト名の解決が成功するのに`apt update`だけ失敗する場合は、DNS以外にプロキシ、ミラー、リポジトリの設定も確認してください。
+
+```powershell
+Resolve-DnsName archive.ubuntu.com
+wsl --update
+wsl --shutdown
 ```
-kenji@MyComputer:~$ sudo apt update
-[sudo] password for kenji:
-Err:1 http://archive.ubuntu.com/ubuntu focal InRelease
-  Temporary failure resolving 'archive.ubuntu.com'
+
+```bash
+getent hosts archive.ubuntu.com
+sudo apt update
 ```
 
-wslで上記のエラーが表示されるときは、DNSサーバーの設定が正しくない可能性があります。
-私の環境では、以下の手順で解決しました。
+## 参考資料
 
-1. wslを起動します。
-2. `sudo nano /etc/resolv.conf`を実行します。
-3. `nameserver`の行を以下のように変更します。
-```
-nameserver 8.8.8.8
-```
-4. `Ctrl` + `S`で保存して、`Ctrl` + `X`で終了します。
-5. `sudo apt update`を実行します。
-6. エラーが表示されなければ、解決です。
-
-## 上記手順で解決しない場合
-
-上記手順で解決しない場合もあるようです。以下の記事をご参照ください。
-
-- [WSLにてapt update時の『Temporary failure resolving ～』を解決する方法](https://qiita.com/ryosukeYamazaki/items/c04ec3ff78aac6eb8d26)
-
+- [Microsoft Learn: WSL troubleshooting](https://learn.microsoft.com/en-us/windows/wsl/troubleshooting)
+- [Microsoft Learn: WSL networking and DNS tunneling](https://learn.microsoft.com/en-us/windows/wsl/networking)
+- [Microsoft Learn: WSL configuration](https://learn.microsoft.com/en-us/windows/wsl/wsl-config)

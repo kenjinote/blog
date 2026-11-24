@@ -1,39 +1,47 @@
 ---
-title: 'WSL执行apt update出现“Temporary failure resolving”错误的解决方法'
-date: "2026-09-24T19:44:38+09:00"
+title: "WSL出现“Temporary failure resolving”时的排查方法"
 slug: "wsl で「Temporary failure resolving～」と表示される場合の处理方法"
-date: 2024-03-31T16:57:33+09:00
-tags: ["wsl", "解决方法"]
+tags: ["WSL", "DNS", "troubleshooting"]
 draft: false
 image: "img.webp"
 categories: ["tools-development-environment"]
-description: '讲解在WSL环境中执行“sudo apt update”时出现“Temporary failure resolving”错误的解决方法。介绍通过修改DNS服务器设置，正确恢复包管理器通信的步骤。'
+description: "将WSL域名解析问题与Windows网络问题区分开，并检查WSL更新、DNS隧道、VPN和防火墙设置。"
+date: "2024-03-31T16:57:33+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
+# WSL出现“Temporary failure resolving”时的排查方法
 
-# 在 WSL 中出现“Temporary failure resolving～”时的解决方法
+此错误表示WSL无法将主机名解析为IP地址。原因不一定只是DNS服务器设置。请先判断故障发生在Windows、WSL还是两者都有。
 
+## 首先进行这些检查
+
+1. 在Windows PowerShell中运行`Resolve-DnsName archive.ubuntu.com`。如果Windows也失败，请先检查Windows网络、DNS和VPN。
+
+2. 在WSL中运行`getent hosts archive.ubuntu.com`。如果Windows能解析而WSL不能，请继续以下步骤。
+
+在PowerShell中运行`wsl --update`，然后运行`wsl --shutdown`。重新启动WSL，再运行`getent hosts archive.ubuntu.com`和`sudo apt update`进行确认。
+
+在Windows 11 22H2及更高版本中，较新的WSL默认启用DNS隧道。如果使用VPN时无法解析域名，请更新WSL，并检查`.wslconfig`的`[wsl2]`配置中是否没有禁用`dnsTunneling=true`。更改后请在PowerShell中运行`wsl --shutdown`。
+
+不要一开始就把`8.8.8.8`等任意公共DNS服务器固定写入`/etc/resolv.conf`。这可能绕过VPN或组织的DNS策略，并与WSL自动生成的设置冲突。如环境确实需要手动覆盖，请遵循Microsoft针对VPN的步骤并咨询网络管理员。
+
+## 如果问题仍未解决
+
+如果仍未解决，请检查VPN、Windows防火墙、安全软件和组织网络策略。如果域名解析成功但`apt update`仍失败，也要检查代理、镜像站和软件源设置。
+
+```powershell
+Resolve-DnsName archive.ubuntu.com
+wsl --update
+wsl --shutdown
 ```
-kenji@MyComputer:~$ sudo apt update
-[sudo] password for kenji:
-Err:1 http://archive.ubuntu.com/ubuntu focal InRelease
-  Temporary failure resolving 'archive.ubuntu.com'
+
+```bash
+getent hosts archive.ubuntu.com
+sudo apt update
 ```
 
-当在 WSL 中显示上述错误时，可能是 DNS 服务器的设置不正确。
-在我的环境中，通过以下步骤解决了该问题。
+## 参考资料
 
-1. 启动 WSL。
-2. 运行 `sudo nano /etc/resolv.conf`。
-3. 将 `nameserver` 的行更改如下：
-```
-nameserver 8.8.8.8
-```
-4. 按 `Ctrl` + `S` 保存，然后按 `Ctrl` + `X` 退出。
-5. 运行 `sudo apt update`。
-6. 如果没有显示错误，说明问题已解决。
-
-## 如果上述步骤未能解决问题
-
-似乎也有上述步骤无法解决问题的情况。请参考以下文章。
-
-- [在 WSL 中 apt update 时出现『Temporary failure resolving ～』的解决方法](https://qiita.com/ryosukeYamazaki/items/c04ec3ff78aac6eb8d26)
+- [Microsoft Learn: WSL troubleshooting](https://learn.microsoft.com/en-us/windows/wsl/troubleshooting)
+- [Microsoft Learn: WSL networking and DNS tunneling](https://learn.microsoft.com/en-us/windows/wsl/networking)
+- [Microsoft Learn: WSL configuration](https://learn.microsoft.com/en-us/windows/wsl/wsl-config)

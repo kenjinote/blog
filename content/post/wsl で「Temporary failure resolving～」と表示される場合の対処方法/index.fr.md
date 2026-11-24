@@ -1,39 +1,47 @@
 ---
-title: 'Solution lorsque l''erreur ''Temporary failure resolving'' apparaît lors du apt update sur WSL'
-date: "2026-09-24T19:44:38+09:00"
+title: "Résoudre l’erreur « Temporary failure resolving » dans WSL"
 slug: "wsl で「Temporary failure resolving～」と表示される場合のSolution"
-date: 2024-03-31T16:57:33+09:00
-tags: ["wsl", "Solution"]
+tags: ["WSL", "DNS", "troubleshooting"]
 draft: false
 image: "img.webp"
 categories: ["tools-development-environment"]
-description: 'Nous expliquons comment résoudre l''erreur ''Temporary failure resolving'' qui survient lors de l''exécution de ''sudo apt update'' dans un environnement WSL. Nous présentons la procédure pour modifier les paramètres du serveur DNS et restaurer correctement la communication du gestionnaire de paquets.'
+description: "Distinguez les problèmes de résolution de noms dans WSL des problèmes réseau de Windows, puis vérifiez WSL, DNS tunneling, VPN et pare-feu."
+date: "2024-03-31T16:57:33+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
+# Résoudre l’erreur « Temporary failure resolving » dans WSL
 
-# Comment résoudre l'erreur 'Temporary failure resolving...' dans wsl
+Cette erreur signifie que WSL n’a pas pu résoudre un nom d’hôte en adresse IP. Le serveur DNS n’est qu’une cause possible. Déterminez d’abord si l’échec se produit dans Windows, dans WSL ou dans les deux.
 
+## Vérifications initiales
+
+1. Dans PowerShell sous Windows, exécutez `Resolve-DnsName archive.ubuntu.com`. Si cela échoue aussi dans Windows, vérifiez d’abord le réseau, le DNS et le VPN de Windows.
+
+2. Dans WSL, exécutez `getent hosts archive.ubuntu.com`. Si Windows résout le nom mais pas WSL, suivez les étapes ci-dessous.
+
+Dans PowerShell, exécutez `wsl --update`, puis `wsl --shutdown`. Redémarrez WSL et réessayez `getent hosts archive.ubuntu.com` ainsi que `sudo apt update`.
+
+Sous Windows 11 version 22H2 et ultérieure, les versions récentes de WSL activent DNS tunneling par défaut. Si la résolution échoue avec un VPN, mettez WSL à jour et vérifiez que `dnsTunneling=true` n’est pas désactivé dans la section `[wsl2]` de `.wslconfig`. Après modification, exécutez `wsl --shutdown` dans PowerShell.
+
+Ne commencez pas par imposer un serveur DNS public arbitraire, comme `8.8.8.8`, dans `/etc/resolv.conf`. Cela peut contourner les règles DNS du VPN ou de l’organisation et entrer en conflit avec la configuration générée par WSL. Si votre environnement exige une dérogation manuelle, suivez les instructions Microsoft propres au VPN et consultez l’administrateur réseau.
+
+## Si le problème persiste
+
+Si le problème persiste, vérifiez le VPN, le pare-feu Windows, les logiciels de sécurité et les règles réseau de l’organisation. Si la résolution fonctionne mais que `apt update` échoue, vérifiez aussi le proxy, le miroir et les dépôts.
+
+```powershell
+Resolve-DnsName archive.ubuntu.com
+wsl --update
+wsl --shutdown
 ```
-kenji@MyComputer:~$ sudo apt update
-[sudo] password for kenji:
-Err:1 http://archive.ubuntu.com/ubuntu focal InRelease
-  Temporary failure resolving 'archive.ubuntu.com'
+
+```bash
+getent hosts archive.ubuntu.com
+sudo apt update
 ```
 
-Lorsque l'erreur ci-dessus s'affiche dans wsl, les paramètres du serveur DNS peuvent être incorrects.
-Dans mon environnement, cela a été résolu en suivant les étapes suivantes.
+## Références
 
-1. Démarrez wsl.
-2. Exécutez `sudo nano /etc/resolv.conf`.
-3. Modifiez la ligne `nameserver` comme suit :
-```
-nameserver 8.8.8.8
-```
-4. Enregistrez avec `Ctrl` + `S`, et quittez avec `Ctrl` + `X`.
-5. Exécutez `sudo apt update`.
-6. Si l'erreur ne s'affiche plus, c'est résolu.
-
-## Si les étapes ci-dessus ne résolvent pas le problème
-
-Il semble qu'il y ait des cas où les étapes ci-dessus ne suffisent pas. Veuillez consulter l'article suivant.
-
-- [Comment résoudre 'Temporary failure resolving...' lors d'un apt update dans WSL](https://qiita.com/ryosukeYamazaki/items/c04ec3ff78aac6eb8d26)
+- [Microsoft Learn: WSL troubleshooting](https://learn.microsoft.com/en-us/windows/wsl/troubleshooting)
+- [Microsoft Learn: WSL networking and DNS tunneling](https://learn.microsoft.com/en-us/windows/wsl/networking)
+- [Microsoft Learn: WSL configuration](https://learn.microsoft.com/en-us/windows/wsl/wsl-config)

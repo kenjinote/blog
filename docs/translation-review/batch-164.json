@@ -1,0 +1,442 @@
+{
+  "version": 1,
+  "batch": 164,
+  "article": "Troubleshooting Temporary DNS Resolution Failures in WSL",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "762288a2fab4c2a61af38b2d61efffdf2f6473d9691f3961a051024af4ccf310",
+  "sources": [
+    "https://learn.microsoft.com/en-us/windows/wsl/troubleshooting",
+    "https://learn.microsoft.com/en-us/windows/wsl/networking",
+    "https://learn.microsoft.com/en-us/windows/wsl/wsl-config"
+  ],
+  "scope": "Compared the full Japanese article and twelve translations, tested commands in documented contexts, removed obsolete Ubuntu Focal example and public DNS override, and aligned guidance with current WSL DNS tunneling and VPN documentation.",
+  "findings": [
+    "Removed the duplicate future date and retained the original 2024-03-31 date; set lastmod to 2026-11-24.",
+    "Removed the obsolete hard-coded Google Public DNS workaround and stale Focal/HTTP error screenshot.",
+    "Added separate Windows and WSL DNS checks, WSL update and restart steps, DNS tunneling guidance for current supported systems, and VPN/firewall escalation.",
+    "Clarified that resolver overrides should not be the first step because public DNS can conflict with VPN or organization policies."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/wsl で「Temporary failure resolving～」と表示される場合の対処方法/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/wsl で「Temporary failure resolving～」と表示される場合の対処方法/index.md",
+      "sourceHash": "762288a2fab4c2a61af38b2d61efffdf2f6473d9691f3961a051024af4ccf310",
+      "translationHash": "eb0a3e800c22d626978d4264c6e2d9c32cf68aa93c8fdc9a9dfff35804436fe6",
+      "summary": "Compared the complete translation with the Japanese troubleshooting flow and corrected DNS diagnosis, WSL commands, DNS tunneling/VPN terminology, and current Microsoft guidance.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete troubleshooting flow across source and translations; removed obsolete hard-coded public DNS directions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed WSL, DNS resolution, DNS tunneling, VPN, resolv.conf, wsl.conf, .wslconfig, and Windows/WSL command contexts."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked commands and configuration examples against current Microsoft WSL documentation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current primary Microsoft Learn documentation on troubleshooting, networking/DNS tunneling, and WSL configuration."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "WSL behavior depends on Windows version, WSL version, VPN, firewall, and organizational policy; the steps are diagnostic and may not cover every managed environment."
+      ]
+    },
+    "post/wsl で「Temporary failure resolving～」と表示される場合の対処方法/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/wsl で「Temporary failure resolving～」と表示される場合の対処方法/index.md",
+      "sourceHash": "762288a2fab4c2a61af38b2d61efffdf2f6473d9691f3961a051024af4ccf310",
+      "translationHash": "6038405e1d6ebe60abcf0ce2f95a8c12dadb459ffd84708cfea119ffc16c37ab",
+      "summary": "Compared the complete translation with the Japanese troubleshooting flow and corrected DNS diagnosis, WSL commands, DNS tunneling/VPN terminology, and current Microsoft guidance.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete troubleshooting flow across source and translations; removed obsolete hard-coded public DNS directions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed WSL, DNS resolution, DNS tunneling, VPN, resolv.conf, wsl.conf, .wslconfig, and Windows/WSL command contexts."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked commands and configuration examples against current Microsoft WSL documentation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current primary Microsoft Learn documentation on troubleshooting, networking/DNS tunneling, and WSL configuration."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "WSL behavior depends on Windows version, WSL version, VPN, firewall, and organizational policy; the steps are diagnostic and may not cover every managed environment."
+      ]
+    },
+    "post/wsl で「Temporary failure resolving～」と表示される場合の対処方法/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/wsl で「Temporary failure resolving～」と表示される場合の対処方法/index.md",
+      "sourceHash": "762288a2fab4c2a61af38b2d61efffdf2f6473d9691f3961a051024af4ccf310",
+      "translationHash": "5628a33827725ece65b617809b115255e50187f5875eede83aa1fe076999aa86",
+      "summary": "Compared the complete translation with the Japanese troubleshooting flow and corrected DNS diagnosis, WSL commands, DNS tunneling/VPN terminology, and current Microsoft guidance.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete troubleshooting flow across source and translations; removed obsolete hard-coded public DNS directions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed WSL, DNS resolution, DNS tunneling, VPN, resolv.conf, wsl.conf, .wslconfig, and Windows/WSL command contexts."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked commands and configuration examples against current Microsoft WSL documentation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current primary Microsoft Learn documentation on troubleshooting, networking/DNS tunneling, and WSL configuration."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "WSL behavior depends on Windows version, WSL version, VPN, firewall, and organizational policy; the steps are diagnostic and may not cover every managed environment."
+      ]
+    },
+    "post/wsl で「Temporary failure resolving～」と表示される場合の対処方法/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/wsl で「Temporary failure resolving～」と表示される場合の対処方法/index.md",
+      "sourceHash": "762288a2fab4c2a61af38b2d61efffdf2f6473d9691f3961a051024af4ccf310",
+      "translationHash": "3e2b454f2bf8de42fd9cf7e0bece2cd8299d12cce70b01f3b8ee66253d17e203",
+      "summary": "Compared the complete translation with the Japanese troubleshooting flow and corrected DNS diagnosis, WSL commands, DNS tunneling/VPN terminology, and current Microsoft guidance.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete troubleshooting flow across source and translations; removed obsolete hard-coded public DNS directions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed WSL, DNS resolution, DNS tunneling, VPN, resolv.conf, wsl.conf, .wslconfig, and Windows/WSL command contexts."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked commands and configuration examples against current Microsoft WSL documentation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current primary Microsoft Learn documentation on troubleshooting, networking/DNS tunneling, and WSL configuration."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "WSL behavior depends on Windows version, WSL version, VPN, firewall, and organizational policy; the steps are diagnostic and may not cover every managed environment."
+      ]
+    },
+    "post/wsl で「Temporary failure resolving～」と表示される場合の対処方法/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/wsl で「Temporary failure resolving～」と表示される場合の対処方法/index.md",
+      "sourceHash": "762288a2fab4c2a61af38b2d61efffdf2f6473d9691f3961a051024af4ccf310",
+      "translationHash": "985aab67e95f8519f907350bbf25765e44e501bcc34fb68ef2c6b77d8fae674f",
+      "summary": "Compared the complete translation with the Japanese troubleshooting flow and corrected DNS diagnosis, WSL commands, DNS tunneling/VPN terminology, and current Microsoft guidance.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete troubleshooting flow across source and translations; removed obsolete hard-coded public DNS directions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed WSL, DNS resolution, DNS tunneling, VPN, resolv.conf, wsl.conf, .wslconfig, and Windows/WSL command contexts."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked commands and configuration examples against current Microsoft WSL documentation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current primary Microsoft Learn documentation on troubleshooting, networking/DNS tunneling, and WSL configuration."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "WSL behavior depends on Windows version, WSL version, VPN, firewall, and organizational policy; the steps are diagnostic and may not cover every managed environment."
+      ]
+    },
+    "post/wsl で「Temporary failure resolving～」と表示される場合の対処方法/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/wsl で「Temporary failure resolving～」と表示される場合の対処方法/index.md",
+      "sourceHash": "762288a2fab4c2a61af38b2d61efffdf2f6473d9691f3961a051024af4ccf310",
+      "translationHash": "44f11c6317542c1ed3884af2a9dc89319618e128ad43e7e06b9e00722c31ca3d",
+      "summary": "Compared the complete translation with the Japanese troubleshooting flow and corrected DNS diagnosis, WSL commands, DNS tunneling/VPN terminology, and current Microsoft guidance.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete troubleshooting flow across source and translations; removed obsolete hard-coded public DNS directions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed WSL, DNS resolution, DNS tunneling, VPN, resolv.conf, wsl.conf, .wslconfig, and Windows/WSL command contexts."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked commands and configuration examples against current Microsoft WSL documentation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current primary Microsoft Learn documentation on troubleshooting, networking/DNS tunneling, and WSL configuration."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "WSL behavior depends on Windows version, WSL version, VPN, firewall, and organizational policy; the steps are diagnostic and may not cover every managed environment."
+      ]
+    },
+    "post/wsl で「Temporary failure resolving～」と表示される場合の対処方法/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/wsl で「Temporary failure resolving～」と表示される場合の対処方法/index.md",
+      "sourceHash": "762288a2fab4c2a61af38b2d61efffdf2f6473d9691f3961a051024af4ccf310",
+      "translationHash": "4534c50c25f114430d160ae989f15661026d931c266caa024edd76b3208a3307",
+      "summary": "Compared the complete translation with the Japanese troubleshooting flow and corrected DNS diagnosis, WSL commands, DNS tunneling/VPN terminology, and current Microsoft guidance.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete troubleshooting flow across source and translations; removed obsolete hard-coded public DNS directions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed WSL, DNS resolution, DNS tunneling, VPN, resolv.conf, wsl.conf, .wslconfig, and Windows/WSL command contexts."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked commands and configuration examples against current Microsoft WSL documentation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current primary Microsoft Learn documentation on troubleshooting, networking/DNS tunneling, and WSL configuration."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "WSL behavior depends on Windows version, WSL version, VPN, firewall, and organizational policy; the steps are diagnostic and may not cover every managed environment."
+      ]
+    },
+    "post/wsl で「Temporary failure resolving～」と表示される場合の対処方法/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/wsl で「Temporary failure resolving～」と表示される場合の対処方法/index.md",
+      "sourceHash": "762288a2fab4c2a61af38b2d61efffdf2f6473d9691f3961a051024af4ccf310",
+      "translationHash": "72a836990c21d48c1de331991bf06b443a9e7cbdc26db012934f38fa1256c93a",
+      "summary": "Compared the complete translation with the Japanese troubleshooting flow and corrected DNS diagnosis, WSL commands, DNS tunneling/VPN terminology, and current Microsoft guidance.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete troubleshooting flow across source and translations; removed obsolete hard-coded public DNS directions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed WSL, DNS resolution, DNS tunneling, VPN, resolv.conf, wsl.conf, .wslconfig, and Windows/WSL command contexts."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked commands and configuration examples against current Microsoft WSL documentation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current primary Microsoft Learn documentation on troubleshooting, networking/DNS tunneling, and WSL configuration."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "WSL behavior depends on Windows version, WSL version, VPN, firewall, and organizational policy; the steps are diagnostic and may not cover every managed environment."
+      ]
+    },
+    "post/wsl で「Temporary failure resolving～」と表示される場合の対処方法/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/wsl で「Temporary failure resolving～」と表示される場合の対処方法/index.md",
+      "sourceHash": "762288a2fab4c2a61af38b2d61efffdf2f6473d9691f3961a051024af4ccf310",
+      "translationHash": "174fb70409bc614ce49d8d0b21846dbd5add260efd1f96c3073116de12e1ecba",
+      "summary": "Compared the complete translation with the Japanese troubleshooting flow and corrected DNS diagnosis, WSL commands, DNS tunneling/VPN terminology, and current Microsoft guidance.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete troubleshooting flow across source and translations; removed obsolete hard-coded public DNS directions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed WSL, DNS resolution, DNS tunneling, VPN, resolv.conf, wsl.conf, .wslconfig, and Windows/WSL command contexts."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked commands and configuration examples against current Microsoft WSL documentation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current primary Microsoft Learn documentation on troubleshooting, networking/DNS tunneling, and WSL configuration."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "WSL behavior depends on Windows version, WSL version, VPN, firewall, and organizational policy; the steps are diagnostic and may not cover every managed environment."
+      ]
+    },
+    "post/wsl で「Temporary failure resolving～」と表示される場合の対処方法/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/wsl で「Temporary failure resolving～」と表示される場合の対処方法/index.md",
+      "sourceHash": "762288a2fab4c2a61af38b2d61efffdf2f6473d9691f3961a051024af4ccf310",
+      "translationHash": "4cf2ab42db65989303111b576d8c18c7fbc4468570b17862edc1619d178d987c",
+      "summary": "Compared the complete translation with the Japanese troubleshooting flow and corrected DNS diagnosis, WSL commands, DNS tunneling/VPN terminology, and current Microsoft guidance.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete troubleshooting flow across source and translations; removed obsolete hard-coded public DNS directions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed WSL, DNS resolution, DNS tunneling, VPN, resolv.conf, wsl.conf, .wslconfig, and Windows/WSL command contexts."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked commands and configuration examples against current Microsoft WSL documentation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current primary Microsoft Learn documentation on troubleshooting, networking/DNS tunneling, and WSL configuration."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "WSL behavior depends on Windows version, WSL version, VPN, firewall, and organizational policy; the steps are diagnostic and may not cover every managed environment."
+      ]
+    },
+    "post/wsl で「Temporary failure resolving～」と表示される場合の対処方法/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/wsl で「Temporary failure resolving～」と表示される場合の対処方法/index.md",
+      "sourceHash": "762288a2fab4c2a61af38b2d61efffdf2f6473d9691f3961a051024af4ccf310",
+      "translationHash": "b2b37c43e8101d38d45ca50a9082b806924ac625facfa4f7d2c1e68cb14cc599",
+      "summary": "Compared the complete translation with the Japanese troubleshooting flow and corrected DNS diagnosis, WSL commands, DNS tunneling/VPN terminology, and current Microsoft guidance.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete troubleshooting flow across source and translations; removed obsolete hard-coded public DNS directions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed WSL, DNS resolution, DNS tunneling, VPN, resolv.conf, wsl.conf, .wslconfig, and Windows/WSL command contexts."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked commands and configuration examples against current Microsoft WSL documentation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current primary Microsoft Learn documentation on troubleshooting, networking/DNS tunneling, and WSL configuration."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "WSL behavior depends on Windows version, WSL version, VPN, firewall, and organizational policy; the steps are diagnostic and may not cover every managed environment."
+      ]
+    },
+    "post/wsl で「Temporary failure resolving～」と表示される場合の対処方法/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/wsl で「Temporary failure resolving～」と表示される場合の対処方法/index.md",
+      "sourceHash": "762288a2fab4c2a61af38b2d61efffdf2f6473d9691f3961a051024af4ccf310",
+      "translationHash": "362ec3db0335c9d5b032f97a8c3b567c0a1fb12d0b911861a1274b6d62badc0f",
+      "summary": "Compared the complete translation with the Japanese troubleshooting flow and corrected DNS diagnosis, WSL commands, DNS tunneling/VPN terminology, and current Microsoft guidance.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete troubleshooting flow across source and translations; removed obsolete hard-coded public DNS directions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed WSL, DNS resolution, DNS tunneling, VPN, resolv.conf, wsl.conf, .wslconfig, and Windows/WSL command contexts."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked commands and configuration examples against current Microsoft WSL documentation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current primary Microsoft Learn documentation on troubleshooting, networking/DNS tunneling, and WSL configuration."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "WSL behavior depends on Windows version, WSL version, VPN, firewall, and organizational policy; the steps are diagnostic and may not cover every managed environment."
+      ]
+    }
+  }
+}

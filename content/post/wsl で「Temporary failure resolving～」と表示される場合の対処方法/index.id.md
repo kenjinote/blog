@@ -1,39 +1,47 @@
 ---
-title: 'Cara Mengatasi Kesalahan ''Temporary failure resolving'' Saat apt update di WSL'
-date: "2026-09-24T19:44:38+09:00"
+title: "Cara mengatasi “Temporary failure resolving” di WSL"
 slug: "wsl で「Temporary failure resolving～」と表示される場合のPenanggulangan"
-date: 2024-03-31T16:57:33+09:00
-tags: ["wsl", "pemecahan masalah"]
+tags: ["WSL", "DNS", "troubleshooting"]
 draft: false
 image: "img.webp"
 categories: ["tools-development-environment"]
-description: 'Menjelaskan cara mengatasi masalah saat muncul kesalahan ''Temporary failure resolving'' ketika menjalankan ''sudo apt update'' di lingkungan WSL. Memperkenalkan langkah-langkah untuk mengubah pengaturan server DNS dan memulihkan komunikasi manajer paket dengan benar.'
+description: "Pisahkan masalah resolusi nama di WSL dari masalah jaringan Windows, lalu periksa pembaruan WSL, DNS tunneling, VPN, dan firewall."
+date: "2024-03-31T16:57:33+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
+# Cara mengatasi “Temporary failure resolving” di WSL
 
-# Cara mengatasi 'Temporary failure resolving...' di WSL
+Kesalahan ini berarti WSL tidak dapat menerjemahkan nama host menjadi alamat IP. Pengaturan server DNS hanyalah salah satu kemungkinan penyebab. Tentukan terlebih dahulu apakah kegagalan terjadi di Windows, WSL, atau keduanya.
 
-`
-kenji@MyComputer:~$ sudo apt update
-[sudo] password for kenji:
-Err:1 http://archive.ubuntu.com/ubuntu focal InRelease
-  Temporary failure resolving 'archive.ubuntu.com'
-`
+## Lakukan pemeriksaan ini terlebih dahulu
 
-Ketika kesalahan di atas muncul di WSL, pengaturan server DNS mungkin tidak benar.
-Di lingkungan saya, masalah teratasi dengan langkah-langkah berikut:
+1. Di Windows PowerShell, jalankan `Resolve-DnsName archive.ubuntu.com`. Jika gagal juga di Windows, periksa jaringan Windows, DNS, dan VPN terlebih dahulu.
 
-1. Mulai WSL.
-2. Jalankan `sudo nano /etc/resolv.conf`.
-3. Ubah baris `nameserver` menjadi seperti berikut:
-`
-nameserver 8.8.8.8
-`
-4. Simpan dengan `Ctrl` + `S` dan keluar dengan `Ctrl` + `X`.
-5. Jalankan `sudo apt update`.
-6. Jika kesalahan tidak muncul, masalah selesai.
+2. Di WSL, jalankan `getent hosts archive.ubuntu.com`. Jika Windows dapat meresolusi nama tetapi WSL tidak, lanjutkan dengan langkah berikut.
 
-## Jika langkah di atas tidak menyelesaikan masalah
+Di PowerShell, jalankan `wsl --update`, lalu `wsl --shutdown`. Buka WSL kembali dan coba `getent hosts archive.ubuntu.com` serta `sudo apt update`.
 
-Sepertinya ada kasus di mana langkah di atas tidak menyelesaikan masalah. Silakan merujuk ke artikel berikut.
+Pada Windows 11 versi 22H2 ke atas, WSL versi terbaru mengaktifkan DNS tunneling secara default. Jika resolusi nama gagal saat menggunakan VPN, perbarui WSL dan pastikan `dnsTunneling=true` tidak dinonaktifkan di bagian `[wsl2]` pada `.wslconfig`. Setelah mengubah pengaturan, jalankan `wsl --shutdown` di PowerShell.
 
-- [Cara mengatasi 'Temporary failure resolving...' saat apt update di WSL](https://qiita.com/ryosukeYamazaki/items/c04ec3ff78aac6eb8d26)
+Jangan langsung menetapkan DNS publik sembarang seperti `8.8.8.8` di `/etc/resolv.conf`. Ini dapat melewati kebijakan DNS VPN atau organisasi dan berbenturan dengan pengaturan otomatis WSL. Jika lingkungan Anda memerlukan penggantian manual, ikuti petunjuk khusus VPN dari Microsoft dan tanyakan kepada administrator jaringan.
+
+## Jika masalah berlanjut
+
+Jika masalah berlanjut, periksa VPN, Windows Firewall, perangkat lunak keamanan, dan kebijakan jaringan organisasi. Jika resolusi nama berhasil tetapi `apt update` gagal, periksa juga proxy, mirror, dan konfigurasi repositori.
+
+```powershell
+Resolve-DnsName archive.ubuntu.com
+wsl --update
+wsl --shutdown
+```
+
+```bash
+getent hosts archive.ubuntu.com
+sudo apt update
+```
+
+## Referensi
+
+- [Microsoft Learn: WSL troubleshooting](https://learn.microsoft.com/en-us/windows/wsl/troubleshooting)
+- [Microsoft Learn: WSL networking and DNS tunneling](https://learn.microsoft.com/en-us/windows/wsl/networking)
+- [Microsoft Learn: WSL configuration](https://learn.microsoft.com/en-us/windows/wsl/wsl-config)

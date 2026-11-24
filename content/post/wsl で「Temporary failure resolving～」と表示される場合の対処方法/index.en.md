@@ -1,39 +1,47 @@
 ---
-title: 'How to Fix ''Temporary failure resolving'' Error during apt update in WSL'
-date: "2026-09-24T19:44:38+09:00"
+title: "How to Troubleshoot “Temporary failure resolving” in WSL"
 slug: "wsl で「Temporary failure resolving～」と表示される場合のWorkaround"
-date: 2024-03-31T16:57:33+09:00
-tags: ["wsl", "troubleshooting"]
+tags: ["WSL", "DNS", "troubleshooting"]
 draft: false
 image: "img.webp"
 categories: ["tools-development-environment"]
-description: 'Explains how to resolve the ''Temporary failure resolving'' error that occurs when running ''sudo apt update'' in a WSL environment. Introduces steps to change DNS server settings and properly restore communication for the package manager.'
+description: "Separate WSL name-resolution failures from Windows network issues, then check WSL updates, DNS tunneling, VPNs, and firewall settings."
+date: "2024-03-31T16:57:33+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
+# How to Troubleshoot “Temporary failure resolving” in WSL
 
-# How to Fix "Temporary failure resolving..." Error in WSL
+This error means WSL could not resolve a host name to an IP address. DNS server settings are only one possible cause. First determine whether the failure is on Windows, in WSL, or both.
 
+## Start with these checks
+
+1. In Windows PowerShell, run `Resolve-DnsName archive.ubuntu.com`. If it also fails in Windows, check the Windows network, DNS, and VPN first.
+
+2. In WSL, run `getent hosts archive.ubuntu.com`. If Windows resolves the name but WSL does not, continue with the steps below.
+
+In PowerShell, run `wsl --update`, then `wsl --shutdown`. Start WSL again and retry `getent hosts archive.ubuntu.com` and `sudo apt update`.
+
+On Windows 11 version 22H2 and later, recent WSL versions enable DNS tunneling by default. If name resolution fails while using a VPN, update WSL and check that `dnsTunneling=true` is not disabled under `[wsl2]` in `.wslconfig`. After changing the setting, run `wsl --shutdown` in PowerShell.
+
+Do not start by hard-coding an arbitrary public DNS server such as `8.8.8.8` in `/etc/resolv.conf`. It can bypass VPN or organization DNS policies and conflict with WSL-generated settings. If a manual override is required in your environment, follow Microsoft’s VPN-specific instructions and check with your network administrator.
+
+## If the problem continues
+
+If the issue remains, check the VPN, Windows Firewall, security software, and organizational network policies. If name resolution works but `apt update` still fails, also check proxy, mirror, and repository settings.
+
+```powershell
+Resolve-DnsName archive.ubuntu.com
+wsl --update
+wsl --shutdown
 ```
-kenji@MyComputer:~$ sudo apt update
-[sudo] password for kenji:
-Err:1 http://archive.ubuntu.com/ubuntu focal InRelease
-  Temporary failure resolving 'archive.ubuntu.com'
+
+```bash
+getent hosts archive.ubuntu.com
+sudo apt update
 ```
 
-When the above error appears in WSL, the DNS server settings might be incorrect.
-In my environment, I solved it with the following steps.
+## References
 
-1. Start WSL.
-2. Run `sudo nano /etc/resolv.conf`.
-3. Change the `nameserver` line as follows:
-```
-nameserver 8.8.8.8
-```
-4. Save with `Ctrl` + `S` and exit with `Ctrl` + `X`.
-5. Run `sudo apt update`.
-6. If the error doesn't appear, it's solved.
-
-## If the above steps do not solve the issue
-
-It seems there are cases where the above steps don't resolve the issue. Please refer to the following article:
-
-- [How to resolve 'Temporary failure resolving ~' during apt update in WSL](https://qiita.com/ryosukeYamazaki/items/c04ec3ff78aac6eb8d26)
+- [Microsoft Learn: WSL troubleshooting](https://learn.microsoft.com/en-us/windows/wsl/troubleshooting)
+- [Microsoft Learn: WSL networking and DNS tunneling](https://learn.microsoft.com/en-us/windows/wsl/networking)
+- [Microsoft Learn: WSL configuration](https://learn.microsoft.com/en-us/windows/wsl/wsl-config)
