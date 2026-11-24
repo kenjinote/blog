@@ -1,23 +1,14 @@
 ---
-
-
-
-
-title: '¡De uso gratuito! 7 sitios recomendados de materiales de iconos gratuitos simples'
-date: "2026-09-24T19:44:38+09:00"
-slug: "シンプルなIcono集サイト"
+title: "8 bibliotecas y buscadores de iconos sencillos: notas sobre licencias"
 date: 2022-09-07T16:46:56+09:00
+lastmod: "2026-11-24T00:00:00+09:00"
+slug: "シンプルなIcono集サイト"
 tags: ["iconos", "diseño"]
 draft: false
 image: "img_2.webp"
 categories: ["it-technology"]
-description: 'Una cuidada selección de sitios de materiales de iconos gratuitos, simples y fáciles de usar, ideales para el diseño web y la creación de presentaciones. Lleno de sitios útiles, como Google Material Icons y GitHub Octicons, que incluso se pueden usar comercialmente.'
+description: "Aquí se presentan ocho bibliotecas y sitios para buscar iconos sencillos. Que un sitio permita descargas gratuitas no significa que todos los iconos puedan usarse comercialmente o sin atribución."
 ---
-
-
-
-
-
 ## Google Material Symbols and Icons
 
 [https://fonts.google.com/icons](https://fonts.google.com/icons)
@@ -33,7 +24,7 @@ description: 'Una cuidada selección de sitios de materiales de iconos gratuitos
 [https://sargamicons.com/](https://sargamicons.com/)
 ![img_3.png](img_3.webp)
 
-## Thousands of free icons
+## Icon-Icons
  
 - [https://icon-icons.com/](https://icon-icons.com/)
 ![img.png](images/img.webp)
@@ -57,3 +48,21 @@ description: 'Una cuidada selección de sitios de materiales de iconos gratuitos
 
 - [https://github.com/iconic/open-iconic](https://github.com/iconic/open-iconic)
 ![img_1.png](img_1.webp)
+
+## Notas sobre licencias
+
+Los enlaces y la información de licencias se comprobaron el 24 de noviembre de 2026. Google Material Symbols usa Apache License 2.0; GitHub Octicons y Sargam Icons usan MIT License. Los iconos de Open Iconic usan MIT License y sus fuentes, SIL Open Font License.
+
+La licencia gratuita de Icon-Icons exige atribuir al creador. Flaticon ofrece planes gratuitos y de pago; las condiciones pueden depender del plan y el formato, así que comprueba la información vigente al descargar. Las licencias de Iconfinder varían según el icono y la etiqueta de uso comercial puede tener condiciones. En iconfont, comprueba el autor y la licencia de cada colección.
+
+Antes de usar un icono comercialmente, lee la licencia del archivo concreto, incluidos los requisitos de atribución y las restricciones de redistribución. Los logotipos y marcas pueden estar sujetos a reglas independientes de la licencia del recurso.
+
+## Licencias y condiciones oficiales
+
+- [Google Material Symbols licensing](https://developers.google.com/fonts/docs/material_symbols)
+- [GitHub Octicons MIT license](https://github.com/primer/octicons/blob/main/LICENSE)
+- [Sargam Icons MIT license](https://github.com/planetabhi/sargam-icons/blob/main/LICENSE.txt)
+- [Icon-Icons free license](https://icon-icons.com/id/license)
+- [Flaticon current plans and attribution](https://www.flaticon.com/pricing)
+- [Iconfinder license API documentation](https://legacy-api-docs.iconfinder.com/)
+- [Open Iconic license and formats](https://github.com/iconic/open-iconic)

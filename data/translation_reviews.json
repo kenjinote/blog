@@ -17765,6 +17765,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-152.json",
       "evidenceHash": "28c5bfa5056541fb10c5d86fc2a06b25b18f0c9dec92a2b61c87fab25ec8789a"
+    },
+    "post/シンプルなアイコン集サイト/index.en.md": {
+      "source": "post/シンプルなアイコン集サイト/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "ea8b144ecd28e8d84aa0d2d1309bd6915010e517559c0c222b09f17aa45529f5",
+      "translationHash": "62de356605c705302ef9da577f25f04f985535206f5349780eda192131cd9b10",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-153.json",
+      "evidenceHash": "5efb1850a90243d6f45e94f6a627d4ada90dea072665d888ec70d158e196033c"
+    },
+    "post/シンプルなアイコン集サイト/index.zh-cn.md": {
+      "source": "post/シンプルなアイコン集サイト/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "ea8b144ecd28e8d84aa0d2d1309bd6915010e517559c0c222b09f17aa45529f5",
+      "translationHash": "2e5d6774248b42177b8e64c95fcd6d1a4f8647df5bd76000c222d1a4ac783538",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-153.json",
+      "evidenceHash": "d1f1961fc23cd3819eed277a567687c82ea9f53aec2c8513bece82da78a0aa38"
+    },
+    "post/シンプルなアイコン集サイト/index.es.md": {
+      "source": "post/シンプルなアイコン集サイト/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "ea8b144ecd28e8d84aa0d2d1309bd6915010e517559c0c222b09f17aa45529f5",
+      "translationHash": "17d435afba65ab1496ef6915a4cc18b866dcadc02bb41ea60321b3e6bbe6570d",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-153.json",
+      "evidenceHash": "bd7151988d11d5089f69d29441b10f3bf08f2d31a0d615753e062e4fadffffb6"
+    },
+    "post/シンプルなアイコン集サイト/index.ko.md": {
+      "source": "post/シンプルなアイコン集サイト/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "ea8b144ecd28e8d84aa0d2d1309bd6915010e517559c0c222b09f17aa45529f5",
+      "translationHash": "f5376b7a690fba6c0a18af5fb5b0465061b16c341061dc444606cbe8d04132ba",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-153.json",
+      "evidenceHash": "0883bc9c9f687b3faf5921d6a82ac3523a95a75a2755564c92a0af8b9180c751"
+    },
+    "post/シンプルなアイコン集サイト/index.pt.md": {
+      "source": "post/シンプルなアイコン集サイト/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "ea8b144ecd28e8d84aa0d2d1309bd6915010e517559c0c222b09f17aa45529f5",
+      "translationHash": "e5a96cc48afc0db62d4c65513313befd839bbb631a2cbc863456eca8b739f60b",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-153.json",
+      "evidenceHash": "8b26931966a77467877b666beb8367797e6ccb16ebf4faff918bc7eae6cdde69"
+    },
+    "post/シンプルなアイコン集サイト/index.zh-tw.md": {
+      "source": "post/シンプルなアイコン集サイト/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "ea8b144ecd28e8d84aa0d2d1309bd6915010e517559c0c222b09f17aa45529f5",
+      "translationHash": "f7de534a9daa7ec573c87708079b2cd0dfebc80785b4db63f0dc7d3187ad7019",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-153.json",
+      "evidenceHash": "137ed85ff1103dbd878315a537d9aac3f75b69b24dcdb3e75b389fe58e275260"
+    },
+    "post/シンプルなアイコン集サイト/index.hi.md": {
+      "source": "post/シンプルなアイコン集サイト/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "ea8b144ecd28e8d84aa0d2d1309bd6915010e517559c0c222b09f17aa45529f5",
+      "translationHash": "70ea98a7dabb363851aaa2fd09a36683f203fee165c7e645b5709e99c3fd4c87",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-153.json",
+      "evidenceHash": "7e7ca9619d06fc9af3a6e3d51c067830bca1041b81c8adc7d3d591c02767581d"
+    },
+    "post/シンプルなアイコン集サイト/index.fr.md": {
+      "source": "post/シンプルなアイコン集サイト/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "ea8b144ecd28e8d84aa0d2d1309bd6915010e517559c0c222b09f17aa45529f5",
+      "translationHash": "8389dc31a490f2e3935cc2d6f4bd07343bc5f66dedc5a8ee56d030ac836033ab",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-153.json",
+      "evidenceHash": "9895b439d1e60726926bdf9bd272d12c5863ec7566627565bf1e33e0806b85b6"
+    },
+    "post/シンプルなアイコン集サイト/index.de.md": {
+      "source": "post/シンプルなアイコン集サイト/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "ea8b144ecd28e8d84aa0d2d1309bd6915010e517559c0c222b09f17aa45529f5",
+      "translationHash": "a47a54d5399753b8bad9409f702fb5f36f4f4570f0e7dd4dc48e70249ba22496",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-153.json",
+      "evidenceHash": "2b736fdaf5e402c1e1c2eeeac1b168f97d658f4c28a394757e6967d123168871"
+    },
+    "post/シンプルなアイコン集サイト/index.ar.md": {
+      "source": "post/シンプルなアイコン集サイト/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "ea8b144ecd28e8d84aa0d2d1309bd6915010e517559c0c222b09f17aa45529f5",
+      "translationHash": "f765317558fc0df2ed89262b8ac03a3e52b687ed4b41daa14f85e5b275a7274f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-153.json",
+      "evidenceHash": "68e38771cc3cd71b604deefbfec248dc9b432915172cab6938831c32048a544c"
+    },
+    "post/シンプルなアイコン集サイト/index.ru.md": {
+      "source": "post/シンプルなアイコン集サイト/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "ea8b144ecd28e8d84aa0d2d1309bd6915010e517559c0c222b09f17aa45529f5",
+      "translationHash": "7dd0ac770e2c5253ac33a932433217d49b065165dc1c798b6f197871a3f69f07",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-153.json",
+      "evidenceHash": "887560dc37290289a11aaa3408f18e78efdb4d49f5945a8bf1a096f79f88f4e5"
+    },
+    "post/シンプルなアイコン集サイト/index.id.md": {
+      "source": "post/シンプルなアイコン集サイト/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "ea8b144ecd28e8d84aa0d2d1309bd6915010e517559c0c222b09f17aa45529f5",
+      "translationHash": "ee1cf8396d3aea5d195e555456b23746318ffd71ec4ba10bce73670d2906a107",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-153.json",
+      "evidenceHash": "bdb56719373a79c3d12b10bb4b452d188b4fae5341b45357012d9df622018a10"
     }
   }
 }

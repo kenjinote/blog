@@ -1,0 +1,464 @@
+{
+  "version": 1,
+  "batch": 153,
+  "article": "シンプルなアイコンを探せるサイト8選とライセンス確認のポイント",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "ea8b144ecd28e8d84aa0d2d1309bd6915010e517559c0c222b09f17aa45529f5",
+  "sources": [
+    "https://developers.google.com/fonts/docs/material_symbols",
+    "https://github.com/primer/octicons/blob/main/LICENSE",
+    "https://github.com/planetabhi/sargam-icons/blob/main/LICENSE.txt",
+    "https://icon-icons.com/id/license",
+    "https://www.flaticon.com/pricing",
+    "https://legacy-api-docs.iconfinder.com/",
+    "https://github.com/iconic/open-iconic",
+    "https://fonts.google.com/icons",
+    "https://primer.style/octicons/",
+    "https://sargamicons.com/",
+    "https://www.iconfinder.com/",
+    "https://www.iconfont.cn/"
+  ],
+  "scope": "Compared the entire Japanese article and twelve translations, list count, eight service names and links, license/attribution wording, local image paths, duplicate dates, and current primary license references.",
+  "findings": [
+    "Corrected the title from seven to eight sites; the article has eight list entries.",
+    "Removed the blanket claim that the resources are universally free for commercial use.",
+    "Added dated notes: Material Symbols Apache 2.0; Octicons and Sargam MIT; Open Iconic icons MIT and fonts SIL OFL; Icon-Icons free downloads require attribution; other marketplace terms must be checked per plan, item, or collection.",
+    "Added current provider license references and clarified separate trademark/logo rights.",
+    "Removed duplicate future dates; retained 2022-09-07 and set lastmod to 2026-11-24."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/シンプルなアイコン集サイト/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/シンプルなアイコン集サイト/index.md",
+      "sourceHash": "ea8b144ecd28e8d84aa0d2d1309bd6915010e517559c0c222b09f17aa45529f5",
+      "translationHash": "62de356605c705302ef9da577f25f04f985535206f5349780eda192131cd9b10",
+      "summary": "Compared the complete Japanese list and all twelve translations, corrected the count from seven to eight, removed blanket claims that all assets were free for commercial use, and documented current license differences with official provider references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Verified that the article actually lists eight services, corrected the title count, and clarified that free download does not imply universal commercial rights."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked icon-set names, Apache License 2.0, MIT License, SIL Open Font License, attribution, commercial-use labels, and individual collection terms."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No formulas or mathematical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Retained all eight provider links and added official licensing or usage references; local image references were checked."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "License terms, plans, and asset availability can change; readers should check the exact asset license at download time.",
+        "A material license does not necessarily grant rights to company logos, trademarks, or third-party marks."
+      ]
+    },
+    "post/シンプルなアイコン集サイト/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/シンプルなアイコン集サイト/index.md",
+      "sourceHash": "ea8b144ecd28e8d84aa0d2d1309bd6915010e517559c0c222b09f17aa45529f5",
+      "translationHash": "2e5d6774248b42177b8e64c95fcd6d1a4f8647df5bd76000c222d1a4ac783538",
+      "summary": "Compared the complete Japanese list and all twelve translations, corrected the count from seven to eight, removed blanket claims that all assets were free for commercial use, and documented current license differences with official provider references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Verified that the article actually lists eight services, corrected the title count, and clarified that free download does not imply universal commercial rights."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked icon-set names, Apache License 2.0, MIT License, SIL Open Font License, attribution, commercial-use labels, and individual collection terms."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No formulas or mathematical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Retained all eight provider links and added official licensing or usage references; local image references were checked."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "License terms, plans, and asset availability can change; readers should check the exact asset license at download time.",
+        "A material license does not necessarily grant rights to company logos, trademarks, or third-party marks."
+      ]
+    },
+    "post/シンプルなアイコン集サイト/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/シンプルなアイコン集サイト/index.md",
+      "sourceHash": "ea8b144ecd28e8d84aa0d2d1309bd6915010e517559c0c222b09f17aa45529f5",
+      "translationHash": "17d435afba65ab1496ef6915a4cc18b866dcadc02bb41ea60321b3e6bbe6570d",
+      "summary": "Compared the complete Japanese list and all twelve translations, corrected the count from seven to eight, removed blanket claims that all assets were free for commercial use, and documented current license differences with official provider references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Verified that the article actually lists eight services, corrected the title count, and clarified that free download does not imply universal commercial rights."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked icon-set names, Apache License 2.0, MIT License, SIL Open Font License, attribution, commercial-use labels, and individual collection terms."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No formulas or mathematical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Retained all eight provider links and added official licensing or usage references; local image references were checked."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "License terms, plans, and asset availability can change; readers should check the exact asset license at download time.",
+        "A material license does not necessarily grant rights to company logos, trademarks, or third-party marks."
+      ]
+    },
+    "post/シンプルなアイコン集サイト/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/シンプルなアイコン集サイト/index.md",
+      "sourceHash": "ea8b144ecd28e8d84aa0d2d1309bd6915010e517559c0c222b09f17aa45529f5",
+      "translationHash": "f5376b7a690fba6c0a18af5fb5b0465061b16c341061dc444606cbe8d04132ba",
+      "summary": "Compared the complete Japanese list and all twelve translations, corrected the count from seven to eight, removed blanket claims that all assets were free for commercial use, and documented current license differences with official provider references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Verified that the article actually lists eight services, corrected the title count, and clarified that free download does not imply universal commercial rights."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked icon-set names, Apache License 2.0, MIT License, SIL Open Font License, attribution, commercial-use labels, and individual collection terms."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No formulas or mathematical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Retained all eight provider links and added official licensing or usage references; local image references were checked."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "License terms, plans, and asset availability can change; readers should check the exact asset license at download time.",
+        "A material license does not necessarily grant rights to company logos, trademarks, or third-party marks."
+      ]
+    },
+    "post/シンプルなアイコン集サイト/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/シンプルなアイコン集サイト/index.md",
+      "sourceHash": "ea8b144ecd28e8d84aa0d2d1309bd6915010e517559c0c222b09f17aa45529f5",
+      "translationHash": "e5a96cc48afc0db62d4c65513313befd839bbb631a2cbc863456eca8b739f60b",
+      "summary": "Compared the complete Japanese list and all twelve translations, corrected the count from seven to eight, removed blanket claims that all assets were free for commercial use, and documented current license differences with official provider references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Verified that the article actually lists eight services, corrected the title count, and clarified that free download does not imply universal commercial rights."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked icon-set names, Apache License 2.0, MIT License, SIL Open Font License, attribution, commercial-use labels, and individual collection terms."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No formulas or mathematical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Retained all eight provider links and added official licensing or usage references; local image references were checked."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "License terms, plans, and asset availability can change; readers should check the exact asset license at download time.",
+        "A material license does not necessarily grant rights to company logos, trademarks, or third-party marks."
+      ]
+    },
+    "post/シンプルなアイコン集サイト/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/シンプルなアイコン集サイト/index.md",
+      "sourceHash": "ea8b144ecd28e8d84aa0d2d1309bd6915010e517559c0c222b09f17aa45529f5",
+      "translationHash": "f7de534a9daa7ec573c87708079b2cd0dfebc80785b4db63f0dc7d3187ad7019",
+      "summary": "Compared the complete Japanese list and all twelve translations, corrected the count from seven to eight, removed blanket claims that all assets were free for commercial use, and documented current license differences with official provider references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Verified that the article actually lists eight services, corrected the title count, and clarified that free download does not imply universal commercial rights."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked icon-set names, Apache License 2.0, MIT License, SIL Open Font License, attribution, commercial-use labels, and individual collection terms."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No formulas or mathematical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Retained all eight provider links and added official licensing or usage references; local image references were checked."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "License terms, plans, and asset availability can change; readers should check the exact asset license at download time.",
+        "A material license does not necessarily grant rights to company logos, trademarks, or third-party marks."
+      ]
+    },
+    "post/シンプルなアイコン集サイト/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/シンプルなアイコン集サイト/index.md",
+      "sourceHash": "ea8b144ecd28e8d84aa0d2d1309bd6915010e517559c0c222b09f17aa45529f5",
+      "translationHash": "70ea98a7dabb363851aaa2fd09a36683f203fee165c7e645b5709e99c3fd4c87",
+      "summary": "Compared the complete Japanese list and all twelve translations, corrected the count from seven to eight, removed blanket claims that all assets were free for commercial use, and documented current license differences with official provider references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Verified that the article actually lists eight services, corrected the title count, and clarified that free download does not imply universal commercial rights."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked icon-set names, Apache License 2.0, MIT License, SIL Open Font License, attribution, commercial-use labels, and individual collection terms."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No formulas or mathematical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Retained all eight provider links and added official licensing or usage references; local image references were checked."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "License terms, plans, and asset availability can change; readers should check the exact asset license at download time.",
+        "A material license does not necessarily grant rights to company logos, trademarks, or third-party marks."
+      ]
+    },
+    "post/シンプルなアイコン集サイト/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/シンプルなアイコン集サイト/index.md",
+      "sourceHash": "ea8b144ecd28e8d84aa0d2d1309bd6915010e517559c0c222b09f17aa45529f5",
+      "translationHash": "8389dc31a490f2e3935cc2d6f4bd07343bc5f66dedc5a8ee56d030ac836033ab",
+      "summary": "Compared the complete Japanese list and all twelve translations, corrected the count from seven to eight, removed blanket claims that all assets were free for commercial use, and documented current license differences with official provider references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Verified that the article actually lists eight services, corrected the title count, and clarified that free download does not imply universal commercial rights."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked icon-set names, Apache License 2.0, MIT License, SIL Open Font License, attribution, commercial-use labels, and individual collection terms."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No formulas or mathematical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Retained all eight provider links and added official licensing or usage references; local image references were checked."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "License terms, plans, and asset availability can change; readers should check the exact asset license at download time.",
+        "A material license does not necessarily grant rights to company logos, trademarks, or third-party marks."
+      ]
+    },
+    "post/シンプルなアイコン集サイト/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/シンプルなアイコン集サイト/index.md",
+      "sourceHash": "ea8b144ecd28e8d84aa0d2d1309bd6915010e517559c0c222b09f17aa45529f5",
+      "translationHash": "a47a54d5399753b8bad9409f702fb5f36f4f4570f0e7dd4dc48e70249ba22496",
+      "summary": "Compared the complete Japanese list and all twelve translations, corrected the count from seven to eight, removed blanket claims that all assets were free for commercial use, and documented current license differences with official provider references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Verified that the article actually lists eight services, corrected the title count, and clarified that free download does not imply universal commercial rights."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked icon-set names, Apache License 2.0, MIT License, SIL Open Font License, attribution, commercial-use labels, and individual collection terms."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No formulas or mathematical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Retained all eight provider links and added official licensing or usage references; local image references were checked."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "License terms, plans, and asset availability can change; readers should check the exact asset license at download time.",
+        "A material license does not necessarily grant rights to company logos, trademarks, or third-party marks."
+      ]
+    },
+    "post/シンプルなアイコン集サイト/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/シンプルなアイコン集サイト/index.md",
+      "sourceHash": "ea8b144ecd28e8d84aa0d2d1309bd6915010e517559c0c222b09f17aa45529f5",
+      "translationHash": "f765317558fc0df2ed89262b8ac03a3e52b687ed4b41daa14f85e5b275a7274f",
+      "summary": "Compared the complete Japanese list and all twelve translations, corrected the count from seven to eight, removed blanket claims that all assets were free for commercial use, and documented current license differences with official provider references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Verified that the article actually lists eight services, corrected the title count, and clarified that free download does not imply universal commercial rights."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked icon-set names, Apache License 2.0, MIT License, SIL Open Font License, attribution, commercial-use labels, and individual collection terms."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No formulas or mathematical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Retained all eight provider links and added official licensing or usage references; local image references were checked."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "License terms, plans, and asset availability can change; readers should check the exact asset license at download time.",
+        "A material license does not necessarily grant rights to company logos, trademarks, or third-party marks."
+      ]
+    },
+    "post/シンプルなアイコン集サイト/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/シンプルなアイコン集サイト/index.md",
+      "sourceHash": "ea8b144ecd28e8d84aa0d2d1309bd6915010e517559c0c222b09f17aa45529f5",
+      "translationHash": "7dd0ac770e2c5253ac33a932433217d49b065165dc1c798b6f197871a3f69f07",
+      "summary": "Compared the complete Japanese list and all twelve translations, corrected the count from seven to eight, removed blanket claims that all assets were free for commercial use, and documented current license differences with official provider references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Verified that the article actually lists eight services, corrected the title count, and clarified that free download does not imply universal commercial rights."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked icon-set names, Apache License 2.0, MIT License, SIL Open Font License, attribution, commercial-use labels, and individual collection terms."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No formulas or mathematical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Retained all eight provider links and added official licensing or usage references; local image references were checked."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "License terms, plans, and asset availability can change; readers should check the exact asset license at download time.",
+        "A material license does not necessarily grant rights to company logos, trademarks, or third-party marks."
+      ]
+    },
+    "post/シンプルなアイコン集サイト/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/シンプルなアイコン集サイト/index.md",
+      "sourceHash": "ea8b144ecd28e8d84aa0d2d1309bd6915010e517559c0c222b09f17aa45529f5",
+      "translationHash": "ee1cf8396d3aea5d195e555456b23746318ffd71ec4ba10bce73670d2906a107",
+      "summary": "Compared the complete Japanese list and all twelve translations, corrected the count from seven to eight, removed blanket claims that all assets were free for commercial use, and documented current license differences with official provider references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Verified that the article actually lists eight services, corrected the title count, and clarified that free download does not imply universal commercial rights."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked icon-set names, Apache License 2.0, MIT License, SIL Open Font License, attribution, commercial-use labels, and individual collection terms."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No formulas or mathematical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Retained all eight provider links and added official licensing or usage references; local image references were checked."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "License terms, plans, and asset availability can change; readers should check the exact asset license at download time.",
+        "A material license does not necessarily grant rights to company logos, trademarks, or third-party marks."
+      ]
+    }
+  }
+}

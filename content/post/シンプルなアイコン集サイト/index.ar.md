@@ -1,15 +1,14 @@
 ---
-title: 'يمكن استخدامها مجاناً! 7 مواقع موصى بها لأيقونات بسيطة ومجانية'
-date: "2026-09-24T19:44:38+09:00"
-slug: "シンプルなأيقونة集サイト"
+title: "8 مكتبات ومواقع للبحث عن أيقونات بسيطة مع ملاحظات الترخيص"
 date: 2022-09-07T16:46:56+09:00
+lastmod: "2026-11-24T00:00:00+09:00"
+slug: "シンプルなأيقونة集サイト"
 tags: ["أيقونات","تصميم"]
 draft: false
 image: "img_2.webp"
 categories: ["it-technology"]
-description: 'نقدم مجموعة مختارة من مواقع مواد الأيقونات المجانية البسيطة وسهلة الاستخدام والمفيدة لتصميم الويب وإنشاء المستندات. مليئة بالمواقع المفيدة التي يمكن استخدامها تجارياً أيضاً، مثل Google Material Icons و GitHub Octicons.'
+description: "فيما يلي ثماني مكتبات ومواقع للعثور على أيقونات بسيطة. إتاحة التنزيل مجانًا لا تعني أن كل أيقونة صالحة للاستخدام التجاري أو دون ذكر المصدر."
 ---
-
 ## Google Material Symbols and Icons
 
 [https://fonts.google.com/icons](https://fonts.google.com/icons)
@@ -25,7 +24,7 @@ description: 'نقدم مجموعة مختارة من مواقع مواد الأ
 [https://sargamicons.com/](https://sargamicons.com/)
 ![img_3.png](img_3.webp)
 
-## آلاف الأيقونات المجانية
+## Icon-Icons
  
 - [https://icon-icons.com/](https://icon-icons.com/)
 ![img.png](images/img.webp)
@@ -49,3 +48,21 @@ description: 'نقدم مجموعة مختارة من مواقع مواد الأ
 
 - [https://github.com/iconic/open-iconic](https://github.com/iconic/open-iconic)
 ![img_1.png](img_1.webp)
+
+## ملاحظات الترخيص
+
+تحققنا من الروابط ومعلومات الترخيص في 24 نوفمبر 2026. تستخدم Google Material Symbols ترخيص Apache 2.0، بينما تستخدم GitHub Octicons وSargam Icons ترخيص MIT. تخضع أيقونات Open Iconic لترخيص MIT، وتخضع خطوطها لترخيص SIL Open Font License.
+
+يتطلب الترخيص المجاني في Icon-Icons ذكر اسم المنشئ. تقدم Flaticon خططًا مجانية ومدفوعة، وقد تختلف الشروط حسب الخطة والتنسيق؛ لذا تحقق من المعلومات الحالية عند التنزيل. تختلف تراخيص Iconfinder من أيقونة إلى أخرى، وقد تقترن علامة الاستخدام التجاري بشروط إضافية. تحقق في iconfont من المنشئ وترخيص كل مجموعة.
+
+قبل الاستخدام التجاري، اقرأ ترخيص الملف نفسه وتحقق من متطلبات ذكر المصدر وقيود إعادة التوزيع. قد تخضع شعارات الشركات والعلامات التجارية لقواعد منفصلة عن ترخيص الأيقونة.
+
+## التراخيص وشروط الاستخدام الرسمية
+
+- [Google Material Symbols licensing](https://developers.google.com/fonts/docs/material_symbols)
+- [GitHub Octicons MIT license](https://github.com/primer/octicons/blob/main/LICENSE)
+- [Sargam Icons MIT license](https://github.com/planetabhi/sargam-icons/blob/main/LICENSE.txt)
+- [Icon-Icons free license](https://icon-icons.com/id/license)
+- [Flaticon current plans and attribution](https://www.flaticon.com/pricing)
+- [Iconfinder license API documentation](https://legacy-api-docs.iconfinder.com/)
+- [Open Iconic license and formats](https://github.com/iconic/open-iconic)
