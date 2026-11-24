@@ -1,0 +1,3476 @@
+{
+  "version": 1,
+  "batches": [
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99
+  ],
+  "verifiedAt": "2026-11-24T12:55:13+09:00",
+  "ciRun": 45317725403,
+  "ciUrl": "https://github.com/kenjinote/blog/actions/runs/45317725403",
+  "sourceCommit": "0a93dd27f98dc68aab21b71c56b308e690574d77",
+  "deployment": "success",
+  "pagesVerified": 169,
+  "allPassed": true,
+  "results": {
+    "87": {
+      "pages": [
+        {
+          "language": "ja",
+          "url": "https://kenji.blog/p/intellij-idea%E3%81%A7github-copilot%E3%82%92%E4%BD%BF%E3%81%86/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "en",
+          "url": "https://kenji.blog/en/p/intellij-idea%E3%81%A7github-copilot%E3%82%92%E4%BD%BF%E3%81%86/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "zh-cn",
+          "url": "https://kenji.blog/zh-cn/p/intellij-idea%E3%81%A7github-copilot%E3%82%92%E4%BD%BF%E3%81%86/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "es",
+          "url": "https://kenji.blog/es/p/intellij-idea%E3%81%A7github-copilot%E3%82%92%E4%BD%BF%E3%81%86/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "ko",
+          "url": "https://kenji.blog/ko/p/intellij-idea%E3%81%A7github-copilot%E3%82%92%E4%BD%BF%E3%81%86/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "pt",
+          "url": "https://kenji.blog/pt/p/intellij-idea%E3%81%A7github-copilot%E3%82%92%E4%BD%BF%E3%81%86/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "zh-tw",
+          "url": "https://kenji.blog/zh-tw/p/intellij-idea%E3%81%A7github-copilot%E3%82%92%E4%BD%BF%E3%81%86/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "hi",
+          "url": "https://kenji.blog/hi/p/intellij-idea%E3%81%A7github-copilot%E3%82%92%E4%BD%BF%E3%81%86/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "fr",
+          "url": "https://kenji.blog/fr/p/intellij-idea%E3%81%A7github-copilot%E3%82%92%E4%BD%BF%E3%81%86/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "de",
+          "url": "https://kenji.blog/de/p/intellij-idea%E3%81%A7github-copilot%E3%82%92%E4%BD%BF%E3%81%86/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "ar",
+          "url": "https://kenji.blog/ar/p/intellij-idea%E3%81%A7github-copilot%E3%82%92%E4%BD%BF%E3%81%86/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "ru",
+          "url": "https://kenji.blog/ru/p/intellij-idea%E3%81%A7github-copilot%E3%82%92%E4%BD%BF%E3%81%86/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "id",
+          "url": "https://kenji.blog/id/p/intellij-idea%E3%81%A7github-copilot%E3%82%92%E4%BD%BF%E3%81%86/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        }
+      ],
+      "allPassed": true
+    },
+    "88": {
+      "pages": [
+        {
+          "language": "ja",
+          "url": "https://kenji.blog/p/intellij-idea%E3%81%A7%E6%97%A5%E4%BB%98%E3%82%92%E8%B2%BC%E3%82%8A%E4%BB%98%E3%81%91%E3%82%8B%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%99%E3%82%8B/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "en",
+          "url": "https://kenji.blog/en/p/intellij-idea%E3%81%A7date%E3%82%92%E8%B2%BC%E3%82%8A%E4%BB%98%E3%81%91%E3%82%8Bcommand%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%99%E3%82%8B/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "zh-cn",
+          "url": "https://kenji.blog/zh-cn/p/intellij-idea%E3%81%A7%E6%97%A5%E6%9C%9F%E3%82%92%E8%B2%BC%E3%82%8A%E4%BB%98%E3%81%91%E3%82%8B%E5%91%BD%E4%BB%A4%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%99%E3%82%8B/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "es",
+          "url": "https://kenji.blog/es/p/intellij-idea%E3%81%A7fecha%E3%82%92%E8%B2%BC%E3%82%8A%E4%BB%98%E3%81%91%E3%82%8Bcomando%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%99%E3%82%8B/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "ko",
+          "url": "https://kenji.blog/ko/p/intellij-idea%E3%81%A7%EB%82%A0%EC%A7%9C%E3%82%92%E8%B2%BC%E3%82%8A%E4%BB%98%E3%81%91%E3%82%8B%EB%AA%85%EB%A0%B9%EC%96%B4%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%99%E3%82%8B/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "pt",
+          "url": "https://kenji.blog/pt/p/intellij-idea%E3%81%A7data%E3%82%92%E8%B2%BC%E3%82%8A%E4%BB%98%E3%81%91%E3%82%8Bcomando%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%99%E3%82%8B/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "zh-tw",
+          "url": "https://kenji.blog/zh-tw/p/intellij-idea%E3%81%A7%E6%97%A5%E6%9C%9F%E3%82%92%E8%B2%BC%E3%82%8A%E4%BB%98%E3%81%91%E3%82%8B%E6%8C%87%E4%BB%A4%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%99%E3%82%8B/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "hi",
+          "url": "https://kenji.blog/hi/p/intellij-idea%E3%81%A7%E0%A4%A4%E0%A4%BF%E0%A4%A5%E0%A4%BF%E3%82%92%E8%B2%BC%E3%82%8A%E4%BB%98%E3%81%91%E3%82%8B%E0%A4%95%E0%A4%AE%E0%A4%BE%E0%A4%82%E0%A4%A1%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%99%E3%82%8B/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "fr",
+          "url": "https://kenji.blog/fr/p/intellij-idea%E3%81%A7date%E3%82%92%E8%B2%BC%E3%82%8A%E4%BB%98%E3%81%91%E3%82%8Bcommande%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%99%E3%82%8B/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "de",
+          "url": "https://kenji.blog/de/p/intellij-idea%E3%81%A7datum%E3%82%92%E8%B2%BC%E3%82%8A%E4%BB%98%E3%81%91%E3%82%8Bbefehl%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%99%E3%82%8B/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "ar",
+          "url": "https://kenji.blog/ar/p/intellij-idea%E3%81%A7%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%E3%82%92%E8%B2%BC%E3%82%8A%E4%BB%98%E3%81%91%E3%82%8B%D8%A3%D9%85%D8%B1%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%99%E3%82%8B/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "ru",
+          "url": "https://kenji.blog/ru/p/intellij-idea%E3%81%A7%D0%B4%D0%B0%D1%82%D0%B0%E3%82%92%E8%B2%BC%E3%82%8A%E4%BB%98%E3%81%91%E3%82%8B%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%B0%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%99%E3%82%8B/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "id",
+          "url": "https://kenji.blog/id/p/intellij-idea%E3%81%A7tanggal%E3%82%92%E8%B2%BC%E3%82%8A%E4%BB%98%E3%81%91%E3%82%8Bperintah%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%99%E3%82%8B/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        }
+      ],
+      "allPassed": true
+    },
+    "89": {
+      "pages": [
+        {
+          "language": "ja",
+          "url": "https://kenji.blog/p/loadicon%E3%81%AFdestroyicon%E3%82%92%E5%91%BC%E3%81%B3%E5%87%BA%E3%81%99%E5%BF%85%E8%A6%81%E3%81%AF%E3%81%AA%E3%81%84/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "en",
+          "url": "https://kenji.blog/en/p/loadicon%E3%81%AFdestroyicon%E3%82%92%E5%91%BC%E3%81%B3%E5%87%BA%E3%81%99%E5%BF%85%E8%A6%81%E3%81%AF%E3%81%AA%E3%81%84/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "zh-cn",
+          "url": "https://kenji.blog/zh-cn/p/loadicon%E3%81%AFdestroyicon%E3%82%92%E5%91%BC%E3%81%B3%E5%87%BA%E3%81%99%E5%BF%85%E8%A6%81%E3%81%AF%E3%81%AA%E3%81%84/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "es",
+          "url": "https://kenji.blog/es/p/loadicon%E3%81%AFdestroyicon%E3%82%92%E5%91%BC%E3%81%B3%E5%87%BA%E3%81%99%E5%BF%85%E8%A6%81%E3%81%AF%E3%81%AA%E3%81%84/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "ko",
+          "url": "https://kenji.blog/ko/p/loadicon%E3%81%AFdestroyicon%E3%82%92%E5%91%BC%E3%81%B3%E5%87%BA%E3%81%99%E5%BF%85%E8%A6%81%E3%81%AF%E3%81%AA%E3%81%84/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "pt",
+          "url": "https://kenji.blog/pt/p/loadicon%E3%81%AFdestroyicon%E3%82%92%E5%91%BC%E3%81%B3%E5%87%BA%E3%81%99%E5%BF%85%E8%A6%81%E3%81%AF%E3%81%AA%E3%81%84/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "zh-tw",
+          "url": "https://kenji.blog/zh-tw/p/loadicon%E3%81%AFdestroyicon%E3%82%92%E5%91%BC%E3%81%B3%E5%87%BA%E3%81%99%E5%BF%85%E8%A6%81%E3%81%AF%E3%81%AA%E3%81%84/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "hi",
+          "url": "https://kenji.blog/hi/p/loadicon%E3%81%AFdestroyicon%E3%82%92%E5%91%BC%E3%81%B3%E5%87%BA%E3%81%99%E5%BF%85%E8%A6%81%E3%81%AF%E3%81%AA%E3%81%84/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "fr",
+          "url": "https://kenji.blog/fr/p/loadicon%E3%81%AFdestroyicon%E3%82%92%E5%91%BC%E3%81%B3%E5%87%BA%E3%81%99%E5%BF%85%E8%A6%81%E3%81%AF%E3%81%AA%E3%81%84/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "de",
+          "url": "https://kenji.blog/de/p/loadicon%E3%81%AFdestroyicon%E3%82%92%E5%91%BC%E3%81%B3%E5%87%BA%E3%81%99%E5%BF%85%E8%A6%81%E3%81%AF%E3%81%AA%E3%81%84/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "ar",
+          "url": "https://kenji.blog/ar/p/loadicon%E3%81%AFdestroyicon%E3%82%92%E5%91%BC%E3%81%B3%E5%87%BA%E3%81%99%E5%BF%85%E8%A6%81%E3%81%AF%E3%81%AA%E3%81%84/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "ru",
+          "url": "https://kenji.blog/ru/p/loadicon%E3%81%AFdestroyicon%E3%82%92%E5%91%BC%E3%81%B3%E5%87%BA%E3%81%99%E5%BF%85%E8%A6%81%E3%81%AF%E3%81%AA%E3%81%84/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "id",
+          "url": "https://kenji.blog/id/p/loadicon%E3%81%AFdestroyicon%E3%82%92%E5%91%BC%E3%81%B3%E5%87%BA%E3%81%99%E5%BF%85%E8%A6%81%E3%81%AF%E3%81%AA%E3%81%84/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        }
+      ],
+      "allPassed": true
+    },
+    "90": {
+      "pages": [
+        {
+          "language": "ja",
+          "url": "https://kenji.blog/p/%E3%81%8B%E3%81%A3%E3%81%93%E3%81%84%E3%81%84-web-%E3%83%9A%E3%83%BC%E3%82%B8%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88html5up/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "en",
+          "url": "https://kenji.blog/en/p/%E3%81%8B%E3%81%A3%E3%81%93%E3%81%84%E3%81%84-web-%E3%83%9A%E3%83%BC%E3%82%B8templatehtml5up/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "zh-cn",
+          "url": "https://kenji.blog/zh-cn/p/%E3%81%8B%E3%81%A3%E3%81%93%E3%81%84%E3%81%84-web-%E3%83%9A%E3%83%BC%E3%82%B8%E6%A8%A1%E6%9D%BFhtml5up/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "es",
+          "url": "https://kenji.blog/es/p/%E3%81%8B%E3%81%A3%E3%81%93%E3%81%84%E3%81%84-web-%E3%83%9A%E3%83%BC%E3%82%B8plantillahtml5up/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "ko",
+          "url": "https://kenji.blog/ko/p/%E3%81%8B%E3%81%A3%E3%81%93%E3%81%84%E3%81%84-web-%E3%83%9A%E3%83%BC%E3%82%B8%ED%85%9C%ED%94%8C%EB%A6%BFhtml5up/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "pt",
+          "url": "https://kenji.blog/pt/p/%E3%81%8B%E3%81%A3%E3%81%93%E3%81%84%E3%81%84-web-%E3%83%9A%E3%83%BC%E3%82%B8modelohtml5up/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "zh-tw",
+          "url": "https://kenji.blog/zh-tw/p/%E3%81%8B%E3%81%A3%E3%81%93%E3%81%84%E3%81%84-web-%E3%83%9A%E3%83%BC%E3%82%B8%E7%AF%84%E6%9C%AChtml5up/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "hi",
+          "url": "https://kenji.blog/hi/p/%E3%81%8B%E3%81%A3%E3%81%93%E3%81%84%E3%81%84-web-%E3%83%9A%E3%83%BC%E3%82%B8%E0%A4%9F%E0%A5%87%E0%A4%AE%E0%A5%8D%E0%A4%AA%E0%A4%B2%E0%A5%87%E0%A4%9Fhtml5up/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "fr",
+          "url": "https://kenji.blog/fr/p/%E3%81%8B%E3%81%A3%E3%81%93%E3%81%84%E3%81%84-web-%E3%83%9A%E3%83%BC%E3%82%B8mod%C3%A8lehtml5up/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "de",
+          "url": "https://kenji.blog/de/p/%E3%81%8B%E3%81%A3%E3%81%93%E3%81%84%E3%81%84-web-%E3%83%9A%E3%83%BC%E3%82%B8vorlagehtml5up/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "ar",
+          "url": "https://kenji.blog/ar/p/%E3%81%8B%E3%81%A3%E3%81%93%E3%81%84%E3%81%84-web-%E3%83%9A%E3%83%BC%E3%82%B8%D9%82%D8%A7%D9%84%D8%A8html5up/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "ru",
+          "url": "https://kenji.blog/ru/p/%E3%81%8B%E3%81%A3%E3%81%93%E3%81%84%E3%81%84-web-%E3%83%9A%E3%83%BC%E3%82%B8%D1%88%D0%B0%D0%B1%D0%BB%D0%BE%D0%BDhtml5up/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "id",
+          "url": "https://kenji.blog/id/p/%E3%81%8B%E3%81%A3%E3%81%93%E3%81%84%E3%81%84-web-%E3%83%9A%E3%83%BC%E3%82%B8templathtml5up/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        }
+      ],
+      "allPassed": true
+    },
+    "91": {
+      "pages": [
+        {
+          "language": "ja",
+          "url": "https://kenji.blog/p/logicpad-%E9%96%8B%E7%99%BA%E7%A7%98%E8%A9%B1/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "en",
+          "url": "https://kenji.blog/en/p/logicpad-%E9%96%8B%E7%99%BA%E7%A7%98%E8%A9%B1/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "zh-cn",
+          "url": "https://kenji.blog/zh-cn/p/logicpad-%E9%96%8B%E7%99%BA%E7%A7%98%E8%A9%B1/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "es",
+          "url": "https://kenji.blog/es/p/logicpad-%E9%96%8B%E7%99%BA%E7%A7%98%E8%A9%B1/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "ko",
+          "url": "https://kenji.blog/ko/p/logicpad-%E9%96%8B%E7%99%BA%E7%A7%98%E8%A9%B1/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "pt",
+          "url": "https://kenji.blog/pt/p/logicpad-%E9%96%8B%E7%99%BA%E7%A7%98%E8%A9%B1/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "zh-tw",
+          "url": "https://kenji.blog/zh-tw/p/logicpad-%E9%96%8B%E7%99%BA%E7%A7%98%E8%A9%B1/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "hi",
+          "url": "https://kenji.blog/hi/p/logicpad-%E9%96%8B%E7%99%BA%E7%A7%98%E8%A9%B1/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "fr",
+          "url": "https://kenji.blog/fr/p/logicpad-%E9%96%8B%E7%99%BA%E7%A7%98%E8%A9%B1/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "de",
+          "url": "https://kenji.blog/de/p/logicpad-%E9%96%8B%E7%99%BA%E7%A7%98%E8%A9%B1/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "ar",
+          "url": "https://kenji.blog/ar/p/logicpad-%E9%96%8B%E7%99%BA%E7%A7%98%E8%A9%B1/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "ru",
+          "url": "https://kenji.blog/ru/p/logicpad-%E9%96%8B%E7%99%BA%E7%A7%98%E8%A9%B1/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "id",
+          "url": "https://kenji.blog/id/p/logicpad-%E9%96%8B%E7%99%BA%E7%A7%98%E8%A9%B1/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        }
+      ],
+      "allPassed": true
+    },
+    "92": {
+      "pages": [
+        {
+          "language": "ja",
+          "url": "https://kenji.blog/p/ms-dos-4.0-%E3%81%AE%E3%82%AA%E3%83%BC%E3%83%97%E3%83%B3%E3%82%BD%E3%83%BC%E3%82%B9%E5%8C%96/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "en",
+          "url": "https://kenji.blog/en/p/ms-dos-4.0-%E3%81%AEopen-source%E5%8C%96/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "zh-cn",
+          "url": "https://kenji.blog/zh-cn/p/ms-dos-4.0-%E3%81%AE%E5%BC%80%E6%BA%90%E5%8C%96/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "es",
+          "url": "https://kenji.blog/es/p/ms-dos-4.0-%E3%81%AEc%C3%B3digo-abierto%E5%8C%96/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "ko",
+          "url": "https://kenji.blog/ko/p/ms-dos-4.0-%E3%81%AE%EC%98%A4%ED%94%88-%EC%86%8C%EC%8A%A4%E5%8C%96/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "pt",
+          "url": "https://kenji.blog/pt/p/ms-dos-4.0-%E3%81%AEc%C3%B3digo-aberto%E5%8C%96/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "zh-tw",
+          "url": "https://kenji.blog/zh-tw/p/ms-dos-4.0-%E3%81%AE%E9%96%8B%E6%BA%90%E5%8C%96/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "hi",
+          "url": "https://kenji.blog/hi/p/ms-dos-4.0-%E3%81%AE%E0%A4%93%E0%A4%AA%E0%A4%A8-%E0%A4%B8%E0%A5%8B%E0%A4%B0%E0%A5%8D%E0%A4%B8%E5%8C%96/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "fr",
+          "url": "https://kenji.blog/fr/p/ms-dos-4.0-%E3%81%AEopen-source%E5%8C%96/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "de",
+          "url": "https://kenji.blog/de/p/ms-dos-4.0-%E3%81%AEopen-source%E5%8C%96/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "ar",
+          "url": "https://kenji.blog/ar/p/ms-dos-4.0-%E3%81%AE%D9%85%D9%81%D8%AA%D9%88%D8%AD-%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%E5%8C%96/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "ru",
+          "url": "https://kenji.blog/ru/p/ms-dos-4.0-%E3%81%AE%D0%BE%D1%82%D0%BA%D1%80%D1%8B%D1%82%D1%8B%D0%B9-%D0%B8%D1%81%D1%85%D0%BE%D0%B4%D0%BD%D1%8B%D0%B9-%D0%BA%D0%BE%D0%B4%E5%8C%96/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "id",
+          "url": "https://kenji.blog/id/p/ms-dos-4.0-%E3%81%AEsumber-terbuka%E5%8C%96/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        }
+      ],
+      "allPassed": true
+    },
+    "93": {
+      "pages": [
+        {
+          "language": "ja",
+          "url": "https://kenji.blog/p/%E6%97%A5%E6%9C%AC%E3%81%AE%E7%81%BD%E5%AE%B3/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "en",
+          "url": "https://kenji.blog/en/p/%E6%97%A5%E6%9C%AC%E3%81%AEdisaster/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "zh-cn",
+          "url": "https://kenji.blog/zh-cn/p/%E6%97%A5%E6%9C%AC%E3%81%AE%E7%81%BE%E5%AE%B3/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "es",
+          "url": "https://kenji.blog/es/p/%E6%97%A5%E6%9C%AC%E3%81%AEdesastre/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "ko",
+          "url": "https://kenji.blog/ko/p/%E6%97%A5%E6%9C%AC%E3%81%AE%EC%9E%AC%ED%95%B4/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "pt",
+          "url": "https://kenji.blog/pt/p/%E6%97%A5%E6%9C%AC%E3%81%AEdesastre/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "zh-tw",
+          "url": "https://kenji.blog/zh-tw/p/%E6%97%A5%E6%9C%AC%E3%81%AE%E7%81%BD%E5%AE%B3/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "hi",
+          "url": "https://kenji.blog/hi/p/%E6%97%A5%E6%9C%AC%E3%81%AE%E0%A4%86%E0%A4%AA%E0%A4%A6%E0%A4%BE/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "fr",
+          "url": "https://kenji.blog/fr/p/%E6%97%A5%E6%9C%AC%E3%81%AEcatastrophe/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "de",
+          "url": "https://kenji.blog/de/p/%E6%97%A5%E6%9C%AC%E3%81%AEkatastrophe/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "ar",
+          "url": "https://kenji.blog/ar/p/%E6%97%A5%E6%9C%AC%E3%81%AE%D9%83%D9%88%D8%A7%D8%B1%D8%AB/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "ru",
+          "url": "https://kenji.blog/ru/p/%E6%97%A5%E6%9C%AC%E3%81%AE%D0%BA%D0%B0%D1%82%D0%B0%D1%81%D1%82%D1%80%D0%BE%D1%84%D0%B0/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "id",
+          "url": "https://kenji.blog/id/p/%E6%97%A5%E6%9C%AC%E3%81%AEbencana/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        }
+      ],
+      "allPassed": true
+    },
+    "94": {
+      "pages": [
+        {
+          "language": "ja",
+          "url": "https://kenji.blog/p/mathematica%E3%81%A7%E5%B7%A1%E5%9B%9E%E3%82%BB%E3%83%BC%E3%83%AB%E3%82%B9%E3%83%9E%E3%83%B3%E5%95%8F%E9%A1%8C%E3%82%92%E8%A7%A3%E3%81%8F/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "en",
+          "url": "https://kenji.blog/en/p/mathematica%E3%81%A7travelling-salesman-problem%E3%82%92%E8%A7%A3%E3%81%8F/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "zh-cn",
+          "url": "https://kenji.blog/zh-cn/p/mathematica%E3%81%A7%E6%97%85%E8%A1%8C%E6%8E%A8%E9%94%80%E5%91%98%E9%97%AE%E9%A2%98%E3%82%92%E8%A7%A3%E3%81%8F/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "es",
+          "url": "https://kenji.blog/es/p/mathematica%E3%81%A7problema-del-viajante%E3%82%92%E8%A7%A3%E3%81%8F/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "ko",
+          "url": "https://kenji.blog/ko/p/mathematica%E3%81%A7%EC%99%B8%ED%8C%90%EC%9B%90-%EB%AC%B8%EC%A0%9C%E3%82%92%E8%A7%A3%E3%81%8F/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "pt",
+          "url": "https://kenji.blog/pt/p/mathematica%E3%81%A7problema-do-caixeiro-viajante%E3%82%92%E8%A7%A3%E3%81%8F/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "zh-tw",
+          "url": "https://kenji.blog/zh-tw/p/mathematica%E3%81%A7%E6%97%85%E8%A1%8C%E6%8E%A8%E9%8A%B7%E5%93%A1%E5%95%8F%E9%A1%8C%E3%82%92%E8%A7%A3%E3%81%8F/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "hi",
+          "url": "https://kenji.blog/hi/p/mathematica%E3%81%A7%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A5%88%E0%A4%B5%E0%A4%B2%E0%A4%BF%E0%A4%82%E0%A4%97-%E0%A4%B8%E0%A5%87%E0%A4%B2%E0%A5%8D%E0%A4%B8%E0%A4%AE%E0%A5%88%E0%A4%A8-%E0%A4%B8%E0%A4%AE%E0%A4%B8%E0%A5%8D%E0%A4%AF%E0%A4%BE%E3%82%92%E8%A7%A3%E3%81%8F/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "fr",
+          "url": "https://kenji.blog/fr/p/mathematica%E3%81%A7probl%C3%A8me-du-voyageur-de-commerce%E3%82%92%E8%A7%A3%E3%81%8F/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "de",
+          "url": "https://kenji.blog/de/p/mathematica%E3%81%A7problem-des-handlungsreisenden%E3%82%92%E8%A7%A3%E3%81%8F/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "ar",
+          "url": "https://kenji.blog/ar/p/mathematica%E3%81%A7%D9%85%D8%B4%D9%83%D9%84%D8%A9-%D8%A8%D8%A7%D8%A6%D8%B9-%D8%A7%D9%84%D9%85%D8%AA%D8%AC%D9%88%D9%84%E3%82%92%E8%A7%A3%E3%81%8F/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "ru",
+          "url": "https://kenji.blog/ru/p/mathematica%E3%81%A7%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B0-%D0%BA%D0%BE%D0%BC%D0%BC%D0%B8%D0%B2%D0%BE%D1%8F%D0%B6%D0%B5%D1%80%D0%B0%E3%82%92%E8%A7%A3%E3%81%8F/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "id",
+          "url": "https://kenji.blog/id/p/mathematica%E3%81%A7masalah-pedagang-keliling%E3%82%92%E8%A7%A3%E3%81%8F/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        }
+      ],
+      "allPassed": true
+    },
+    "95": {
+      "pages": [
+        {
+          "language": "ja",
+          "url": "https://kenji.blog/p/mathematica%E5%85%A5%E9%96%80/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "en",
+          "url": "https://kenji.blog/en/p/mathematica%E5%85%A5%E9%96%80/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "zh-cn",
+          "url": "https://kenji.blog/zh-cn/p/mathematica%E5%85%A5%E9%96%80/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "es",
+          "url": "https://kenji.blog/es/p/mathematica%E5%85%A5%E9%96%80/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "ko",
+          "url": "https://kenji.blog/ko/p/mathematica%E5%85%A5%E9%96%80/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "pt",
+          "url": "https://kenji.blog/pt/p/mathematica%E5%85%A5%E9%96%80/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "zh-tw",
+          "url": "https://kenji.blog/zh-tw/p/mathematica%E5%85%A5%E9%96%80/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "hi",
+          "url": "https://kenji.blog/hi/p/mathematica%E5%85%A5%E9%96%80/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "fr",
+          "url": "https://kenji.blog/fr/p/mathematica%E5%85%A5%E9%96%80/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "de",
+          "url": "https://kenji.blog/de/p/mathematica%E5%85%A5%E9%96%80/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "ar",
+          "url": "https://kenji.blog/ar/p/mathematica%E5%85%A5%E9%96%80/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "ru",
+          "url": "https://kenji.blog/ru/p/mathematica%E5%85%A5%E9%96%80/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "id",
+          "url": "https://kenji.blog/id/p/mathematica%E5%85%A5%E9%96%80/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        }
+      ],
+      "allPassed": true
+    },
+    "96": {
+      "pages": [
+        {
+          "language": "ja",
+          "url": "https://kenji.blog/p/microsoft-mvp%E5%8F%97%E8%B3%9E%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A62023-2024/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "en",
+          "url": "https://kenji.blog/en/p/microsoft-mvpaward%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A62023-2024/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "zh-cn",
+          "url": "https://kenji.blog/zh-cn/p/microsoft-mvp%E8%8E%B7%E5%A5%96%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A62023-2024/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "es",
+          "url": "https://kenji.blog/es/p/microsoft-mvppremio%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A62023-2024/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "ko",
+          "url": "https://kenji.blog/ko/p/microsoft-mvp%EC%88%98%EC%83%81%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A62023-2024/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "pt",
+          "url": "https://kenji.blog/pt/p/microsoft-mvppr%C3%AAmio%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A62023-2024/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "zh-tw",
+          "url": "https://kenji.blog/zh-tw/p/microsoft-mvp%E7%8D%B2%E7%8D%8E%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A62023-2024/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "hi",
+          "url": "https://kenji.blog/hi/p/microsoft-mvp%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%BE%E0%A4%B0%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A62023-2024/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "fr",
+          "url": "https://kenji.blog/fr/p/microsoft-mvpr%C3%A9compense%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A62023-2024/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "de",
+          "url": "https://kenji.blog/de/p/microsoft-mvpauszeichnung%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A62023-2024/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "ar",
+          "url": "https://kenji.blog/ar/p/microsoft-mvp%D8%AC%D8%A7%D8%A6%D8%B2%D8%A9%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A62023-2024/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "ru",
+          "url": "https://kenji.blog/ru/p/microsoft-mvp%D0%BD%D0%B0%D0%B3%D1%80%D0%B0%D0%B4%D0%B0%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A62023-2024/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "id",
+          "url": "https://kenji.blog/id/p/microsoft-mvppenghargaan%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A62023-2024/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        }
+      ],
+      "allPassed": true
+    },
+    "97": {
+      "pages": [
+        {
+          "language": "ja",
+          "url": "https://kenji.blog/p/microsoft-mvp2024-2025%E3%82%92%E5%86%8D%E5%8F%97%E8%B3%9E%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "en",
+          "url": "https://kenji.blog/en/p/microsoft-mvp2024-2025%E3%82%92%E5%86%8Daward%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "zh-cn",
+          "url": "https://kenji.blog/zh-cn/p/microsoft-mvp2024-2025%E3%82%92%E5%86%8D%E8%8E%B7%E5%A5%96%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "es",
+          "url": "https://kenji.blog/es/p/microsoft-mvp2024-2025%E3%82%92%E5%86%8Dpremio%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "ko",
+          "url": "https://kenji.blog/ko/p/microsoft-mvp2024-2025%E3%82%92%E5%86%8D%EC%88%98%EC%83%81%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "pt",
+          "url": "https://kenji.blog/pt/p/microsoft-mvp2024-2025%E3%82%92%E5%86%8Dpr%C3%AAmio%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "zh-tw",
+          "url": "https://kenji.blog/zh-tw/p/microsoft-mvp2024-2025%E3%82%92%E5%86%8D%E7%8D%B2%E7%8D%8E%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "hi",
+          "url": "https://kenji.blog/hi/p/microsoft-mvp2024-2025%E3%82%92%E5%86%8D%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%BE%E0%A4%B0%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "fr",
+          "url": "https://kenji.blog/fr/p/microsoft-mvp2024-2025%E3%82%92%E5%86%8Dr%C3%A9compense%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "de",
+          "url": "https://kenji.blog/de/p/microsoft-mvp2024-2025%E3%82%92%E5%86%8Dauszeichnung%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "ar",
+          "url": "https://kenji.blog/ar/p/microsoft-mvp2024-2025%E3%82%92%E5%86%8D%D8%AC%D8%A7%D8%A6%D8%B2%D8%A9%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "ru",
+          "url": "https://kenji.blog/ru/p/microsoft-mvp2024-2025%E3%82%92%E5%86%8D%D0%BD%D0%B0%D0%B3%D1%80%D0%B0%D0%B4%D0%B0%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "id",
+          "url": "https://kenji.blog/id/p/microsoft-mvp2024-2025%E3%82%92%E5%86%8Dpenghargaan%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        }
+      ],
+      "allPassed": true
+    },
+    "98": {
+      "pages": [
+        {
+          "language": "ja",
+          "url": "https://kenji.blog/p/microsoft-mvp2025-2026%E3%82%92%E5%86%8D%E5%8F%97%E8%B3%9E%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "en",
+          "url": "https://kenji.blog/en/p/microsoft-mvp2025-2026%E3%82%92%E5%86%8Daward%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "zh-cn",
+          "url": "https://kenji.blog/zh-cn/p/microsoft-mvp2025-2026%E3%82%92%E5%86%8D%E8%8E%B7%E5%A5%96%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "es",
+          "url": "https://kenji.blog/es/p/microsoft-mvp2025-2026%E3%82%92%E5%86%8Dpremio%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "ko",
+          "url": "https://kenji.blog/ko/p/microsoft-mvp2025-2026%E3%82%92%E5%86%8D%EC%88%98%EC%83%81%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "pt",
+          "url": "https://kenji.blog/pt/p/microsoft-mvp2025-2026%E3%82%92%E5%86%8Dpr%C3%AAmio%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "zh-tw",
+          "url": "https://kenji.blog/zh-tw/p/microsoft-mvp2025-2026%E3%82%92%E5%86%8D%E7%8D%B2%E7%8D%8E%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "hi",
+          "url": "https://kenji.blog/hi/p/microsoft-mvp2025-2026%E3%82%92%E5%86%8D%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%BE%E0%A4%B0%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "fr",
+          "url": "https://kenji.blog/fr/p/microsoft-mvp2025-2026%E3%82%92%E5%86%8Dr%C3%A9compense%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "de",
+          "url": "https://kenji.blog/de/p/microsoft-mvp2025-2026%E3%82%92%E5%86%8Dauszeichnung%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "ar",
+          "url": "https://kenji.blog/ar/p/microsoft-mvp2025-2026%E3%82%92%E5%86%8D%D8%AC%D8%A7%D8%A6%D8%B2%D8%A9%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "ru",
+          "url": "https://kenji.blog/ru/p/microsoft-mvp2025-2026%E3%82%92%E5%86%8D%D0%BD%D0%B0%D0%B3%D1%80%D0%B0%D0%B4%D0%B0%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "id",
+          "url": "https://kenji.blog/id/p/microsoft-mvp2025-2026%E3%82%92%E5%86%8Dpenghargaan%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        }
+      ],
+      "allPassed": true
+    },
+    "99": {
+      "pages": [
+        {
+          "language": "ja",
+          "url": "https://kenji.blog/p/microsoft-word%E3%81%AE%E3%82%B7%E3%83%A7%E3%83%BC%E3%83%88%E3%82%AB%E3%83%83%E3%83%88%E4%B8%80%E8%A6%A7/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "en",
+          "url": "https://kenji.blog/en/p/microsoft-word%E3%81%AEshortcut%E4%B8%80%E8%A6%A7/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "zh-cn",
+          "url": "https://kenji.blog/zh-cn/p/microsoft-word%E3%81%AE%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F%E4%B8%80%E8%A6%A7/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "es",
+          "url": "https://kenji.blog/es/p/microsoft-word%E3%81%AEatajo%E4%B8%80%E8%A6%A7/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "ko",
+          "url": "https://kenji.blog/ko/p/microsoft-word%E3%81%AE%EB%B0%94%EB%A1%9C-%EA%B0%80%EA%B8%B0%E4%B8%80%E8%A6%A7/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "pt",
+          "url": "https://kenji.blog/pt/p/microsoft-word%E3%81%AEatalho%E4%B8%80%E8%A6%A7/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "zh-tw",
+          "url": "https://kenji.blog/zh-tw/p/microsoft-word%E3%81%AE%E6%8D%B7%E5%BE%91%E4%B8%80%E8%A6%A7/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "hi",
+          "url": "https://kenji.blog/hi/p/microsoft-word%E3%81%AE%E0%A4%B6%E0%A5%89%E0%A4%B0%E0%A5%8D%E0%A4%9F%E0%A4%95%E0%A4%9F%E4%B8%80%E8%A6%A7/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "fr",
+          "url": "https://kenji.blog/fr/p/microsoft-word%E3%81%AEraccourci%E4%B8%80%E8%A6%A7/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "de",
+          "url": "https://kenji.blog/de/p/microsoft-word%E3%81%AEverkn%C3%BCpfung%E4%B8%80%E8%A6%A7/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "ar",
+          "url": "https://kenji.blog/ar/p/microsoft-word%E3%81%AE%D8%A7%D8%AE%D8%AA%D8%B5%D8%A7%D8%B1%E4%B8%80%E8%A6%A7/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "ru",
+          "url": "https://kenji.blog/ru/p/microsoft-word%E3%81%AE%D1%8F%D1%80%D0%BB%D1%8B%D0%BA%E4%B8%80%E8%A6%A7/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "id",
+          "url": "https://kenji.blog/id/p/microsoft-word%E3%81%AEpintasan%E4%B8%80%E8%A6%A7/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        }
+      ],
+      "allPassed": true
+    }
+  },
+  "limitations": [
+    "AI-assisted translation reviews only; no human or native-speaker certification.",
+    "IDE menus and account plan details can change; each article links to current official references."
+  ]
+}

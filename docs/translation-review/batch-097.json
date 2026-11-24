@@ -13,7 +13,7 @@
     "Added a date-context note in all editions so relative references remain tied to the original article publication.",
     "Added a link to Microsoft's current official MVP program overview."
   ],
-  "publicationPending": true,
+  "publicationPending": false,
   "reviews": {
     "post/Microsoft MVP（2024-2025）を再受賞しました/index.ar.md": {
       "reviewKind": "ai",
@@ -447,5 +447,11 @@
         "Microsoft's current MVP overview is a JavaScript application; the link is the official program entry point."
       ]
     }
+  },
+  "publication": {
+    "record": "docs/translation-review/publication-087-099.json",
+    "ciRun": 45317725403,
+    "sourceCommit": "0a93dd27f98dc68aab21b71c56b308e690574d77",
+    "allPassed": true
   }
 }

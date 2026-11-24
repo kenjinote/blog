@@ -142,6 +142,28 @@ ARTICLES = {
         "markers": ["2025-2026", "2025", "2026"],
         "date": "2025-07-13",
     },
+    99: {
+        "bundle": ROOT / "content/post/Microsoft Wordのショートカット一覧",
+        "slug": "Microsoft Wordのショートカット一覧",
+        "linkFragment": "95ef89dd-7142-4b50-afb2-f762f663ceb2",
+        "markers": ["F12", "Ctrl"],
+        "scopeMarkers": {
+            "ja": "米国キーボード配列",
+            "en": "U.S. keyboard layout",
+            "zh-cn": "美国键盘布局",
+            "zh-tw": "美國鍵盤配置",
+            "es": "EE. UU.",
+            "fr": "disposition de clavier américaine",
+            "de": "US-Tastaturbelegung",
+            "pt": "layout de teclado dos EUA",
+            "ko": "미국 키보드 배열",
+            "hi": "अमेरिकी कीबोर्ड लेआउट",
+            "ar": "تخطيط لوحة مفاتيح أمريكي",
+            "ru": "американской раскладкой клавиатуры",
+            "id": "tata letak papan ketik AS",
+        },
+        "date": "2024-04-07",
+    },
 }
 
 
@@ -207,7 +229,7 @@ def slug_key(value):
 parser = argparse.ArgumentParser()
 parser.add_argument("--ci-run", type=int, required=True)
 parser.add_argument("--commit", required=True)
-parser.add_argument("--max-batch", type=int, choices=(90, 91, 92, 93, 94, 95, 96, 97, 98), default=98)
+parser.add_argument("--max-batch", type=int, choices=(90, 91, 92, 93, 94, 95, 96, 97, 98, 99), default=99)
 args = parser.parse_args()
 ARTICLES = {number: article for number, article in ARTICLES.items() if number <= args.max_batch}
 with urllib.request.urlopen(f"https://github.com/kenjinote/blog/actions/runs/{args.ci_run}", timeout=45) as response:
@@ -260,8 +282,13 @@ for batch_number, article in ARTICLES.items():
             "description": len(page.description) == 1 and page.description[0].strip() == description,
             "hreflangCount": len(page.hreflang) == 14,
             "hreflangTargets": set(page.hreflang.values()) == targets,
-            "officialReferences": all(link in page.links for link in article["links"]),
-            "articleInstructions": all(marker in compact for marker in article["markers"]),
+            "officialReferences": (
+                all(link in page.links for link in article["links"])
+                if "links" in article
+                else any(article["linkFragment"] in link for link in page.links)
+            ),
+            "articleInstructions": all(marker in compact for marker in article["markers"])
+            and re.sub(r"\s+", "", article.get("scopeMarkers", {}).get(language, "")) in compact,
             "noKnownBadLinks": not any(link in page.links for link in ("https://kenji.blog/es/p/kubernetes-k8s-architecture-pod-service-ingress/", "/hi/p/logicpad-windows-app-development-journey/")),
             "dates": yaml_value(path, "date").startswith(article["date"]) and yaml_value(path, "lastmod").startswith("2026-11-24"),
         }

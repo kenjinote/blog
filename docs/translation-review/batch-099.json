@@ -13,7 +13,7 @@
     "Clarified in all editions that the table covers Word for Windows with a U.S. keyboard layout; macOS and other layouts may differ.",
     "Verified the 22 shortcut combinations and translated action labels against Microsoft's current official Word keyboard-shortcuts article."
   ],
-  "publicationPending": true,
+  "publicationPending": false,
   "reviews": {
     "post/Microsoft Wordのショートカット一覧/index.ar.md": {
       "reviewKind": "ai",
@@ -435,5 +435,11 @@
         "Shortcuts can vary by Word version, platform, and keyboard layout; the table is explicitly scoped to Windows and a U.S. layout."
       ]
     }
+  },
+  "publication": {
+    "record": "docs/translation-review/publication-087-099.json",
+    "ciRun": 45317725403,
+    "sourceCommit": "0a93dd27f98dc68aab21b71c56b308e690574d77",
+    "allPassed": true
   }
 }

@@ -28,7 +28,7 @@
     "Corrected RandomInteger[] to a possible result, identified random samples as illustrative, removed the invalid ellipsis output, and noted seed/version behavior.",
     "Added direct Wolfram documentation links, preserved publication date 2024-07-25, removed duplicate future date, and set lastmod to 2026-11-24."
   ],
-  "publicationPending": true,
+  "publicationPending": false,
   "reviews": {
     "post/Mathematica入門/index.ar.md": {
       "reviewKind": "ai",
@@ -462,5 +462,11 @@
         "Random values are examples, not reproducible outputs; generator sequences can depend on the Wolfram Language version."
       ]
     }
+  },
+  "publication": {
+    "record": "docs/translation-review/publication-087-099.json",
+    "ciRun": 45317725403,
+    "sourceCommit": "0a93dd27f98dc68aab21b71c56b308e690574d77",
+    "allPassed": true
   }
 }

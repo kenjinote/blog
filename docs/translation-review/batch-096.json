@@ -15,7 +15,7 @@
     "Replaced the retired MSDN forum destination with Microsoft's migration notice, labeled the forums read-only, and updated Twitter references to X (formerly Twitter).",
     "Added a link to Microsoft's current official MVP program overview."
   ],
-  "publicationPending": true,
+  "publicationPending": false,
   "reviews": {
     "post/Microsoft MVP受賞について(2023-2024)/index.ar.md": {
       "reviewKind": "ai",
@@ -449,5 +449,11 @@
         "Microsoft's current MVP overview is a JavaScript application; the link is an official program entry point."
       ]
     }
+  },
+  "publication": {
+    "record": "docs/translation-review/publication-087-099.json",
+    "ciRun": 45317725403,
+    "sourceCommit": "0a93dd27f98dc68aab21b71c56b308e690574d77",
+    "allPassed": true
   }
 }

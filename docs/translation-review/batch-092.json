@@ -452,9 +452,9 @@
     }
   },
   "publication": {
-    "record": "docs/translation-review/publication-087-094.json",
-    "ciRun": 45313404832,
-    "sourceCommit": "132229eaaca6302eb7aa7c7b6e273d9edcd057c7",
+    "record": "docs/translation-review/publication-087-099.json",
+    "ciRun": 45317725403,
+    "sourceCommit": "0a93dd27f98dc68aab21b71c56b308e690574d77",
     "allPassed": true
   }
 }
