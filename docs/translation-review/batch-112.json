@@ -1,0 +1,455 @@
+{
+  "version": 1,
+  "batch": 112,
+  "article": "PowerToysのインストール",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "7b5b194f97c23f6d0c2b6f538a1516ba0230f6a28ed2817daee21400de8b0e53",
+  "sources": [
+    "https://learn.microsoft.com/en-us/windows/powertoys/install",
+    "https://learn.microsoft.com/en-us/windows/package-manager/winget/install",
+    "https://learn.microsoft.com/en-us/windows/package-manager/winget/uninstall"
+  ],
+  "scope": "Rewrote the Japanese article and twelve translations against current official Microsoft PowerToys and WinGet documentation. Checked package identity and source selection, exact-match behavior, current OS/architecture/WebView2 requirements, install and uninstall command syntax, translation alignment, links, and duplicate publication dates.",
+  "findings": [
+    "Removed the duplicated future date, preserved the original 2023-09-30 publication date, and set lastmod to 2026-11-24 in every locale.",
+    "Updated the install command to use the explicit Microsoft.PowerToys package ID, exact matching, and the winget source.",
+    "Updated the uninstall command to use the same explicit package ID, exact matching, and winget source.",
+    "Added current OS version, 64-bit x64/ARM64, and WebView2 setup requirements; noted that the official source should be checked because requirements can change.",
+    "Aligned the Japanese article, twelve translations, and code examples with current Microsoft Learn references."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/PowerToysのインストール/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PowerToysのインストール/index.md",
+      "sourceHash": "7b5b194f97c23f6d0c2b6f538a1516ba0230f6a28ed2817daee21400de8b0e53",
+      "translationHash": "9cc3deaefc0cd87987634db61c2f96ea440a28bbccffd128bbce17e071de5a16",
+      "summary": "Rewrote and aligned the translation to the Japanese source and current Microsoft PowerToys/WinGet documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the WinGet installation and removal workflow, current requirements, and the fact that Microsoft recommends GitHub or Microsoft Store as well."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked package ID, exact match, source, x64/ARM64, WebView2 Runtime, Command Prompt, and PowerShell terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared identical install/uninstall commands specifying Microsoft.PowerToys, --exact, and --source winget in all locales against Microsoft Learn."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Linked the current official PowerToys installation guide and WinGet install/uninstall command references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Commands were checked against current Microsoft documentation but were not executed on a separate Windows installation.",
+        "Windows and WinGet requirements or package behavior may change; linked current documentation is the source of truth."
+      ]
+    },
+    "post/PowerToysのインストール/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PowerToysのインストール/index.md",
+      "sourceHash": "7b5b194f97c23f6d0c2b6f538a1516ba0230f6a28ed2817daee21400de8b0e53",
+      "translationHash": "779d5c93f6a411a134e7f01c949da6c75e0735a8cce1f6225352302b363ad914",
+      "summary": "Rewrote and aligned the translation to the Japanese source and current Microsoft PowerToys/WinGet documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the WinGet installation and removal workflow, current requirements, and the fact that Microsoft recommends GitHub or Microsoft Store as well."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked package ID, exact match, source, x64/ARM64, WebView2 Runtime, Command Prompt, and PowerShell terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared identical install/uninstall commands specifying Microsoft.PowerToys, --exact, and --source winget in all locales against Microsoft Learn."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Linked the current official PowerToys installation guide and WinGet install/uninstall command references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Commands were checked against current Microsoft documentation but were not executed on a separate Windows installation.",
+        "Windows and WinGet requirements or package behavior may change; linked current documentation is the source of truth."
+      ]
+    },
+    "post/PowerToysのインストール/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PowerToysのインストール/index.md",
+      "sourceHash": "7b5b194f97c23f6d0c2b6f538a1516ba0230f6a28ed2817daee21400de8b0e53",
+      "translationHash": "815acbb1a35ae8b28dea5f4590e36ad4e3ba17c6f603a2e68f2100bab671a85e",
+      "summary": "Rewrote and aligned the translation to the Japanese source and current Microsoft PowerToys/WinGet documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the WinGet installation and removal workflow, current requirements, and the fact that Microsoft recommends GitHub or Microsoft Store as well."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked package ID, exact match, source, x64/ARM64, WebView2 Runtime, Command Prompt, and PowerShell terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared identical install/uninstall commands specifying Microsoft.PowerToys, --exact, and --source winget in all locales against Microsoft Learn."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Linked the current official PowerToys installation guide and WinGet install/uninstall command references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Commands were checked against current Microsoft documentation but were not executed on a separate Windows installation.",
+        "Windows and WinGet requirements or package behavior may change; linked current documentation is the source of truth."
+      ]
+    },
+    "post/PowerToysのインストール/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PowerToysのインストール/index.md",
+      "sourceHash": "7b5b194f97c23f6d0c2b6f538a1516ba0230f6a28ed2817daee21400de8b0e53",
+      "translationHash": "85bc1f4442f0de94293e807cea71db7c5b3788609a98752b0404822f64b5178b",
+      "summary": "Rewrote and aligned the translation to the Japanese source and current Microsoft PowerToys/WinGet documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the WinGet installation and removal workflow, current requirements, and the fact that Microsoft recommends GitHub or Microsoft Store as well."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked package ID, exact match, source, x64/ARM64, WebView2 Runtime, Command Prompt, and PowerShell terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared identical install/uninstall commands specifying Microsoft.PowerToys, --exact, and --source winget in all locales against Microsoft Learn."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Linked the current official PowerToys installation guide and WinGet install/uninstall command references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Commands were checked against current Microsoft documentation but were not executed on a separate Windows installation.",
+        "Windows and WinGet requirements or package behavior may change; linked current documentation is the source of truth."
+      ]
+    },
+    "post/PowerToysのインストール/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PowerToysのインストール/index.md",
+      "sourceHash": "7b5b194f97c23f6d0c2b6f538a1516ba0230f6a28ed2817daee21400de8b0e53",
+      "translationHash": "30daa00d3790ae72cd3d0dff1295e51d422378d4e364c8f309f9e27d275efed6",
+      "summary": "Rewrote and aligned the translation to the Japanese source and current Microsoft PowerToys/WinGet documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the WinGet installation and removal workflow, current requirements, and the fact that Microsoft recommends GitHub or Microsoft Store as well."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked package ID, exact match, source, x64/ARM64, WebView2 Runtime, Command Prompt, and PowerShell terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared identical install/uninstall commands specifying Microsoft.PowerToys, --exact, and --source winget in all locales against Microsoft Learn."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Linked the current official PowerToys installation guide and WinGet install/uninstall command references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Commands were checked against current Microsoft documentation but were not executed on a separate Windows installation.",
+        "Windows and WinGet requirements or package behavior may change; linked current documentation is the source of truth."
+      ]
+    },
+    "post/PowerToysのインストール/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PowerToysのインストール/index.md",
+      "sourceHash": "7b5b194f97c23f6d0c2b6f538a1516ba0230f6a28ed2817daee21400de8b0e53",
+      "translationHash": "66be01daceaf631ac0c939930c4369dd300c22b274ec555dde0202b2ae42deab",
+      "summary": "Rewrote and aligned the translation to the Japanese source and current Microsoft PowerToys/WinGet documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the WinGet installation and removal workflow, current requirements, and the fact that Microsoft recommends GitHub or Microsoft Store as well."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked package ID, exact match, source, x64/ARM64, WebView2 Runtime, Command Prompt, and PowerShell terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared identical install/uninstall commands specifying Microsoft.PowerToys, --exact, and --source winget in all locales against Microsoft Learn."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Linked the current official PowerToys installation guide and WinGet install/uninstall command references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Commands were checked against current Microsoft documentation but were not executed on a separate Windows installation.",
+        "Windows and WinGet requirements or package behavior may change; linked current documentation is the source of truth."
+      ]
+    },
+    "post/PowerToysのインストール/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PowerToysのインストール/index.md",
+      "sourceHash": "7b5b194f97c23f6d0c2b6f538a1516ba0230f6a28ed2817daee21400de8b0e53",
+      "translationHash": "77771c9b047175f8abb1355cc6aacd1eb6f3233121b9636e550c6617aa5165b9",
+      "summary": "Rewrote and aligned the translation to the Japanese source and current Microsoft PowerToys/WinGet documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the WinGet installation and removal workflow, current requirements, and the fact that Microsoft recommends GitHub or Microsoft Store as well."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked package ID, exact match, source, x64/ARM64, WebView2 Runtime, Command Prompt, and PowerShell terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared identical install/uninstall commands specifying Microsoft.PowerToys, --exact, and --source winget in all locales against Microsoft Learn."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Linked the current official PowerToys installation guide and WinGet install/uninstall command references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Commands were checked against current Microsoft documentation but were not executed on a separate Windows installation.",
+        "Windows and WinGet requirements or package behavior may change; linked current documentation is the source of truth."
+      ]
+    },
+    "post/PowerToysのインストール/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PowerToysのインストール/index.md",
+      "sourceHash": "7b5b194f97c23f6d0c2b6f538a1516ba0230f6a28ed2817daee21400de8b0e53",
+      "translationHash": "6966771cb15c94f245b141185637fc70f8c6de19d9d4e3bc3b539c6ccfc82028",
+      "summary": "Rewrote and aligned the translation to the Japanese source and current Microsoft PowerToys/WinGet documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the WinGet installation and removal workflow, current requirements, and the fact that Microsoft recommends GitHub or Microsoft Store as well."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked package ID, exact match, source, x64/ARM64, WebView2 Runtime, Command Prompt, and PowerShell terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared identical install/uninstall commands specifying Microsoft.PowerToys, --exact, and --source winget in all locales against Microsoft Learn."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Linked the current official PowerToys installation guide and WinGet install/uninstall command references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Commands were checked against current Microsoft documentation but were not executed on a separate Windows installation.",
+        "Windows and WinGet requirements or package behavior may change; linked current documentation is the source of truth."
+      ]
+    },
+    "post/PowerToysのインストール/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PowerToysのインストール/index.md",
+      "sourceHash": "7b5b194f97c23f6d0c2b6f538a1516ba0230f6a28ed2817daee21400de8b0e53",
+      "translationHash": "352f36b955c500cbb500407bf9860337d6a527f86c84c2086ced94d868666342",
+      "summary": "Rewrote and aligned the translation to the Japanese source and current Microsoft PowerToys/WinGet documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the WinGet installation and removal workflow, current requirements, and the fact that Microsoft recommends GitHub or Microsoft Store as well."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked package ID, exact match, source, x64/ARM64, WebView2 Runtime, Command Prompt, and PowerShell terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared identical install/uninstall commands specifying Microsoft.PowerToys, --exact, and --source winget in all locales against Microsoft Learn."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Linked the current official PowerToys installation guide and WinGet install/uninstall command references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Commands were checked against current Microsoft documentation but were not executed on a separate Windows installation.",
+        "Windows and WinGet requirements or package behavior may change; linked current documentation is the source of truth."
+      ]
+    },
+    "post/PowerToysのインストール/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PowerToysのインストール/index.md",
+      "sourceHash": "7b5b194f97c23f6d0c2b6f538a1516ba0230f6a28ed2817daee21400de8b0e53",
+      "translationHash": "bb32aea85114307b771e941ced16b228b926b43e64a34777964af5ede6bb6b98",
+      "summary": "Rewrote and aligned the translation to the Japanese source and current Microsoft PowerToys/WinGet documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the WinGet installation and removal workflow, current requirements, and the fact that Microsoft recommends GitHub or Microsoft Store as well."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked package ID, exact match, source, x64/ARM64, WebView2 Runtime, Command Prompt, and PowerShell terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared identical install/uninstall commands specifying Microsoft.PowerToys, --exact, and --source winget in all locales against Microsoft Learn."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Linked the current official PowerToys installation guide and WinGet install/uninstall command references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Commands were checked against current Microsoft documentation but were not executed on a separate Windows installation.",
+        "Windows and WinGet requirements or package behavior may change; linked current documentation is the source of truth."
+      ]
+    },
+    "post/PowerToysのインストール/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PowerToysのインストール/index.md",
+      "sourceHash": "7b5b194f97c23f6d0c2b6f538a1516ba0230f6a28ed2817daee21400de8b0e53",
+      "translationHash": "30aaa055331e0cb1601cae39427737e09e00cd8d156a1196e34f53f540af0d03",
+      "summary": "Rewrote and aligned the translation to the Japanese source and current Microsoft PowerToys/WinGet documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the WinGet installation and removal workflow, current requirements, and the fact that Microsoft recommends GitHub or Microsoft Store as well."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked package ID, exact match, source, x64/ARM64, WebView2 Runtime, Command Prompt, and PowerShell terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared identical install/uninstall commands specifying Microsoft.PowerToys, --exact, and --source winget in all locales against Microsoft Learn."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Linked the current official PowerToys installation guide and WinGet install/uninstall command references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Commands were checked against current Microsoft documentation but were not executed on a separate Windows installation.",
+        "Windows and WinGet requirements or package behavior may change; linked current documentation is the source of truth."
+      ]
+    },
+    "post/PowerToysのインストール/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PowerToysのインストール/index.md",
+      "sourceHash": "7b5b194f97c23f6d0c2b6f538a1516ba0230f6a28ed2817daee21400de8b0e53",
+      "translationHash": "855c6865eef16a05ea67d139393d2158f05519b25b3ab3fdfa330e23aab132f0",
+      "summary": "Rewrote and aligned the translation to the Japanese source and current Microsoft PowerToys/WinGet documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the WinGet installation and removal workflow, current requirements, and the fact that Microsoft recommends GitHub or Microsoft Store as well."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked package ID, exact match, source, x64/ARM64, WebView2 Runtime, Command Prompt, and PowerShell terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared identical install/uninstall commands specifying Microsoft.PowerToys, --exact, and --source winget in all locales against Microsoft Learn."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Linked the current official PowerToys installation guide and WinGet install/uninstall command references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Commands were checked against current Microsoft documentation but were not executed on a separate Windows installation.",
+        "Windows and WinGet requirements or package behavior may change; linked current documentation is the source of truth."
+      ]
+    }
+  }
+}

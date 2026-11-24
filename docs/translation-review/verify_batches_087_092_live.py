@@ -317,6 +317,17 @@ ARTICLES = {
         "markers": ["Get-ChildItem", "-LiteralPath", "'.DS_Store'", "-File", "-Recurse", "-Force", "-WhatIf"],
         "date": "2022-09-12",
     },
+    112: {
+        "bundle": ROOT / "content/post/PowerToysのインストール",
+        "slug": "PowerToysのインストール",
+        "links": [
+            "https://learn.microsoft.com/en-us/windows/powertoys/install",
+            "https://learn.microsoft.com/en-us/windows/package-manager/winget/install",
+            "https://learn.microsoft.com/en-us/windows/package-manager/winget/uninstall",
+        ],
+        "markers": ["winget install --id Microsoft.PowerToys --exact --source winget", "winget uninstall --id Microsoft.PowerToys --exact --source winget", "ARM64", "WebView2 Runtime"],
+        "date": "2023-09-30",
+    },
 }
 
 
@@ -382,7 +393,7 @@ def slug_key(value):
 parser = argparse.ArgumentParser()
 parser.add_argument("--ci-run", type=int, required=True)
 parser.add_argument("--commit", required=True)
-parser.add_argument("--max-batch", type=int, choices=(90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111), default=111)
+parser.add_argument("--max-batch", type=int, choices=(90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112), default=112)
 args = parser.parse_args()
 ARTICLES = {number: article for number, article in ARTICLES.items() if number <= args.max_batch}
 with urllib.request.urlopen(f"https://github.com/kenjinote/blog/actions/runs/{args.ci_run}", timeout=45) as response:

@@ -1,25 +1,39 @@
 ---
-title: 'Как установить и удалить PowerToys с помощью команды winget'
-date: "2026-09-24T19:44:38+09:00"
+title: "Установка и удаление PowerToys с помощью WinGet"
 slug: "PowerToysのУстановка"
-date: 2023-09-30T21:23:00+09:00
 tags: ["cmd", "командная строка", "PowerToys", "winget"]
 draft: false
 image: "img.webp"
 categories: ["tools-development-environment"]
-description: 'Представлена процедура легкой установки и удаления Microsoft PowerToys в среде Windows с помощью команды winget, пакетного менеджера. Ее можно выполнить сразу из командной строки.'
+description: "Установите или удалите PowerToys в WinGet по идентификатору пакета Microsoft и проверьте актуальные системные требования."
+date: "2023-09-30T21:23:00+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
 
-# Установка PowerToys через командную строку
+PowerToys — набор служебных программ Microsoft для настройки Windows. Microsoft рекомендует устанавливать его через GitHub или Microsoft Store; в этой статье описан способ с WinGet.
 
-Здесь показано, как установить PowerToys через командную строку.
+## Системные требования
 
-```
-winget install Microsoft.PowerToys --source winget
+Текущие требования PowerToys: Windows 11 или Windows 10 версии 2004 (20H1, сборка 19041) или новее и 64-разрядный процессор x64 либо ARM64. Во время установки устанавливается последняя стабильная версия Microsoft Edge WebView2 Runtime. Требования и способы распространения могут измениться, поэтому перед установкой проверьте официальную документацию.
+
+## Установка через WinGet
+
+Сначала выполните `winget --version` в командной строке или PowerShell и убедитесь, что WinGet доступен. Эта команда выбирает пакет с идентификатором Microsoft.PowerToys из источника winget. Прочитайте все уведомления и запросы согласия перед продолжением.
+
+```powershell
+winget install --id Microsoft.PowerToys --exact --source winget
 ```
 
-# Удаление PowerToys через командную строку
+## Удаление
 
+Команда удаления также указывает идентификатор и источник winget. Перед продолжением убедитесь, что выбран PowerToys, и прочитайте запрос подтверждения, если он появится.
+
+```powershell
+winget uninstall --id Microsoft.PowerToys --exact --source winget
 ```
-winget uninstall --name PowerToys 
-```
+
+## Официальные материалы Microsoft
+
+- [Microsoft: Install PowerToys](https://learn.microsoft.com/en-us/windows/powertoys/install)
+- [Microsoft: WinGet install command](https://learn.microsoft.com/en-us/windows/package-manager/winget/install)
+- [Microsoft: WinGet uninstall command](https://learn.microsoft.com/en-us/windows/package-manager/winget/uninstall)

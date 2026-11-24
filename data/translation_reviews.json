@@ -12845,6 +12845,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-111.json",
       "evidenceHash": "8285d949eb4f79a94dd3984d5b0ce858a465b79aa3ad2b3814984970d47a8b8d"
+    },
+    "post/PowerToysのインストール/index.ar.md": {
+      "source": "post/PowerToysのインストール/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "7b5b194f97c23f6d0c2b6f538a1516ba0230f6a28ed2817daee21400de8b0e53",
+      "translationHash": "9cc3deaefc0cd87987634db61c2f96ea440a28bbccffd128bbce17e071de5a16",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-112.json",
+      "evidenceHash": "5b0d451811bd847b3a22bc4b82e96a5c4fe15d6efb2eb8a9081ab8cb494bca17"
+    },
+    "post/PowerToysのインストール/index.de.md": {
+      "source": "post/PowerToysのインストール/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "7b5b194f97c23f6d0c2b6f538a1516ba0230f6a28ed2817daee21400de8b0e53",
+      "translationHash": "779d5c93f6a411a134e7f01c949da6c75e0735a8cce1f6225352302b363ad914",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-112.json",
+      "evidenceHash": "13951c91beb09906439e87ca724b1e8fda5f238d0a39ee6de6ef51e5e6101aee"
+    },
+    "post/PowerToysのインストール/index.en.md": {
+      "source": "post/PowerToysのインストール/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "7b5b194f97c23f6d0c2b6f538a1516ba0230f6a28ed2817daee21400de8b0e53",
+      "translationHash": "815acbb1a35ae8b28dea5f4590e36ad4e3ba17c6f603a2e68f2100bab671a85e",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-112.json",
+      "evidenceHash": "a5eeac22f741d4ba2739ef77cedb360cc28709b4dc3c744b8c7a1cdce815ebb5"
+    },
+    "post/PowerToysのインストール/index.es.md": {
+      "source": "post/PowerToysのインストール/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "7b5b194f97c23f6d0c2b6f538a1516ba0230f6a28ed2817daee21400de8b0e53",
+      "translationHash": "85bc1f4442f0de94293e807cea71db7c5b3788609a98752b0404822f64b5178b",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-112.json",
+      "evidenceHash": "a8595f76b94d0220f8e1fae674cf7c93ed3b920febea1b13153fb0469f4a0b22"
+    },
+    "post/PowerToysのインストール/index.fr.md": {
+      "source": "post/PowerToysのインストール/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "7b5b194f97c23f6d0c2b6f538a1516ba0230f6a28ed2817daee21400de8b0e53",
+      "translationHash": "30daa00d3790ae72cd3d0dff1295e51d422378d4e364c8f309f9e27d275efed6",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-112.json",
+      "evidenceHash": "8c81bb2328dd37b025ad35f1514ec6888245f746b43620b3122f6aa2852d4bdf"
+    },
+    "post/PowerToysのインストール/index.hi.md": {
+      "source": "post/PowerToysのインストール/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "7b5b194f97c23f6d0c2b6f538a1516ba0230f6a28ed2817daee21400de8b0e53",
+      "translationHash": "66be01daceaf631ac0c939930c4369dd300c22b274ec555dde0202b2ae42deab",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-112.json",
+      "evidenceHash": "f69861ca2042128be98bb5b24d854fd486ffcc7270f51aacac8ab23ccaafe198"
+    },
+    "post/PowerToysのインストール/index.id.md": {
+      "source": "post/PowerToysのインストール/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "7b5b194f97c23f6d0c2b6f538a1516ba0230f6a28ed2817daee21400de8b0e53",
+      "translationHash": "77771c9b047175f8abb1355cc6aacd1eb6f3233121b9636e550c6617aa5165b9",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-112.json",
+      "evidenceHash": "df9dd1f4d2c18164468ccd7bfcb7779fd2ba8d4f31c795827989f23ef1405c08"
+    },
+    "post/PowerToysのインストール/index.ko.md": {
+      "source": "post/PowerToysのインストール/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "7b5b194f97c23f6d0c2b6f538a1516ba0230f6a28ed2817daee21400de8b0e53",
+      "translationHash": "6966771cb15c94f245b141185637fc70f8c6de19d9d4e3bc3b539c6ccfc82028",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-112.json",
+      "evidenceHash": "f84697ceafc2ec26bb89e69949eaddee1a488060655f4efe28da22eb39723d3f"
+    },
+    "post/PowerToysのインストール/index.pt.md": {
+      "source": "post/PowerToysのインストール/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "7b5b194f97c23f6d0c2b6f538a1516ba0230f6a28ed2817daee21400de8b0e53",
+      "translationHash": "352f36b955c500cbb500407bf9860337d6a527f86c84c2086ced94d868666342",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-112.json",
+      "evidenceHash": "d5d5ba88e08f7634e25284f54b588ec5b327bb7f699480aacac19008703a0e89"
+    },
+    "post/PowerToysのインストール/index.ru.md": {
+      "source": "post/PowerToysのインストール/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "7b5b194f97c23f6d0c2b6f538a1516ba0230f6a28ed2817daee21400de8b0e53",
+      "translationHash": "bb32aea85114307b771e941ced16b228b926b43e64a34777964af5ede6bb6b98",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-112.json",
+      "evidenceHash": "2cd80be9a66800bdd320e9a1bdfa2fa321d0a1724250c8ef000b49606e5e9f8e"
+    },
+    "post/PowerToysのインストール/index.zh-cn.md": {
+      "source": "post/PowerToysのインストール/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "7b5b194f97c23f6d0c2b6f538a1516ba0230f6a28ed2817daee21400de8b0e53",
+      "translationHash": "30aaa055331e0cb1601cae39427737e09e00cd8d156a1196e34f53f540af0d03",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-112.json",
+      "evidenceHash": "b8f6bbed12156a3258cb4ffdc8da054aa68756489a50334c64bcc912577302b3"
+    },
+    "post/PowerToysのインストール/index.zh-tw.md": {
+      "source": "post/PowerToysのインストール/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "7b5b194f97c23f6d0c2b6f538a1516ba0230f6a28ed2817daee21400de8b0e53",
+      "translationHash": "855c6865eef16a05ea67d139393d2158f05519b25b3ab3fdfa330e23aab132f0",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-112.json",
+      "evidenceHash": "957d3eba99cdaf943398762814256d600fb91d6796a291972692ef2e2c7011c8"
     }
   }
 }
