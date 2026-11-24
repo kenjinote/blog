@@ -1,0 +1,454 @@
+{
+  "version": 1,
+  "batch": 203,
+  "article": "Generate QR codes with curl",
+  "reviewedAt": "2026-11-25",
+  "sourceHash": "c10608bb87fb3f486f825ce1dcec0615959e16bbf158bc96ab95c58292c83535",
+  "sources": [
+    "https://qrenco.de/",
+    "https://goqr.me/api/doc/create-qr-code/",
+    "https://curl.se/docs/manpage.html"
+  ],
+  "scope": "Read the complete Japanese article and all twelve translations; compared both commands, terminal output, image output, API privacy note, URL encoding, file format and extension, metadata, links, and local images. Requested both service endpoints over the network and checked their response behavior against the official GoQR API and curl documentation.",
+  "findings": [
+    "Removed duplicate future publication dates, preserved the original publication date (2024-04-16), and set lastmod to 2026-11-25 in all editions.",
+    "Changed the qrenco.de example to HTTPS and explicit curl.exe; confirmed the endpoint still returns the sample text QR output.",
+    "Corrected the image API example to save its default PNG response as qr.png instead of mislabeling PNG bytes as WebP; added URL-encoding guidance and localized alternative text for the included WebP sample.",
+    "Clarified that QR text is sent to an external service and should not contain confidential information; updated article descriptions to cover both service methods."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/curlでQRコード生成/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/curlでQRコード生成/index.md",
+      "sourceHash": "c10608bb87fb3f486f825ce1dcec0615959e16bbf158bc96ab95c58292c83535",
+      "translationHash": "0a4a5e9e2166757b984684347929572962c633f9e488597d1411103c050911fe",
+      "summary": "Compared the complete translation with the Japanese source, tested both current service responses, corrected HTTP to HTTPS, fixed the PNG filename and encoding guidance, and updated the privacy caveat and metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared both QR generation methods, their output examples, privacy warning, and limitations with the Japanese source; clarified that submitted text goes to external services."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked curl.exe, qrenco.de text response, GoQR API, PNG output, QR image, URL encoding, and data parameter terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Tested the qrenco.de endpoint and confirmed the documented GoQR endpoint responds with image/png; corrected curl output extension and retained quote/URL syntax."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked qrenco.de, the official GoQR API documentation, curl manual, local article images, and the QR sample image."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "QR content is sent to external services; users should not submit confidential data. Service behavior and logging policies may change.",
+        "API endpoints and curl documentation were checked on 2026-11-25."
+      ]
+    },
+    "post/curlでQRコード生成/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/curlでQRコード生成/index.md",
+      "sourceHash": "c10608bb87fb3f486f825ce1dcec0615959e16bbf158bc96ab95c58292c83535",
+      "translationHash": "69092e54544e7b36f469f08f96d9ffc1a63b0422a9eb9411c80e8c6dbb4d4a16",
+      "summary": "Compared the complete translation with the Japanese source, tested both current service responses, corrected HTTP to HTTPS, fixed the PNG filename and encoding guidance, and updated the privacy caveat and metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared both QR generation methods, their output examples, privacy warning, and limitations with the Japanese source; clarified that submitted text goes to external services."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked curl.exe, qrenco.de text response, GoQR API, PNG output, QR image, URL encoding, and data parameter terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Tested the qrenco.de endpoint and confirmed the documented GoQR endpoint responds with image/png; corrected curl output extension and retained quote/URL syntax."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked qrenco.de, the official GoQR API documentation, curl manual, local article images, and the QR sample image."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "QR content is sent to external services; users should not submit confidential data. Service behavior and logging policies may change.",
+        "API endpoints and curl documentation were checked on 2026-11-25."
+      ]
+    },
+    "post/curlでQRコード生成/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/curlでQRコード生成/index.md",
+      "sourceHash": "c10608bb87fb3f486f825ce1dcec0615959e16bbf158bc96ab95c58292c83535",
+      "translationHash": "33ae605d23cc29673ba27055aa99bbf3db2afcfe4da0788529ee47397c105753",
+      "summary": "Compared the complete translation with the Japanese source, tested both current service responses, corrected HTTP to HTTPS, fixed the PNG filename and encoding guidance, and updated the privacy caveat and metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared both QR generation methods, their output examples, privacy warning, and limitations with the Japanese source; clarified that submitted text goes to external services."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked curl.exe, qrenco.de text response, GoQR API, PNG output, QR image, URL encoding, and data parameter terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Tested the qrenco.de endpoint and confirmed the documented GoQR endpoint responds with image/png; corrected curl output extension and retained quote/URL syntax."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked qrenco.de, the official GoQR API documentation, curl manual, local article images, and the QR sample image."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "QR content is sent to external services; users should not submit confidential data. Service behavior and logging policies may change.",
+        "API endpoints and curl documentation were checked on 2026-11-25."
+      ]
+    },
+    "post/curlでQRコード生成/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/curlでQRコード生成/index.md",
+      "sourceHash": "c10608bb87fb3f486f825ce1dcec0615959e16bbf158bc96ab95c58292c83535",
+      "translationHash": "b572923689879954c2b863576958e759f3054c667081e4d1bf8aa9ab6f92403f",
+      "summary": "Compared the complete translation with the Japanese source, tested both current service responses, corrected HTTP to HTTPS, fixed the PNG filename and encoding guidance, and updated the privacy caveat and metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared both QR generation methods, their output examples, privacy warning, and limitations with the Japanese source; clarified that submitted text goes to external services."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked curl.exe, qrenco.de text response, GoQR API, PNG output, QR image, URL encoding, and data parameter terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Tested the qrenco.de endpoint and confirmed the documented GoQR endpoint responds with image/png; corrected curl output extension and retained quote/URL syntax."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked qrenco.de, the official GoQR API documentation, curl manual, local article images, and the QR sample image."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "QR content is sent to external services; users should not submit confidential data. Service behavior and logging policies may change.",
+        "API endpoints and curl documentation were checked on 2026-11-25."
+      ]
+    },
+    "post/curlでQRコード生成/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/curlでQRコード生成/index.md",
+      "sourceHash": "c10608bb87fb3f486f825ce1dcec0615959e16bbf158bc96ab95c58292c83535",
+      "translationHash": "fc7a1c2250fafaea67cbdcd8f56d8aee762a043e5ca25661b6ab9100a4b0c883",
+      "summary": "Compared the complete translation with the Japanese source, tested both current service responses, corrected HTTP to HTTPS, fixed the PNG filename and encoding guidance, and updated the privacy caveat and metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared both QR generation methods, their output examples, privacy warning, and limitations with the Japanese source; clarified that submitted text goes to external services."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked curl.exe, qrenco.de text response, GoQR API, PNG output, QR image, URL encoding, and data parameter terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Tested the qrenco.de endpoint and confirmed the documented GoQR endpoint responds with image/png; corrected curl output extension and retained quote/URL syntax."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked qrenco.de, the official GoQR API documentation, curl manual, local article images, and the QR sample image."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "QR content is sent to external services; users should not submit confidential data. Service behavior and logging policies may change.",
+        "API endpoints and curl documentation were checked on 2026-11-25."
+      ]
+    },
+    "post/curlでQRコード生成/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/curlでQRコード生成/index.md",
+      "sourceHash": "c10608bb87fb3f486f825ce1dcec0615959e16bbf158bc96ab95c58292c83535",
+      "translationHash": "f8edadeca30f5da092f098614819546744f1dcb6f3a0e3c3a30d317b2136719d",
+      "summary": "Compared the complete translation with the Japanese source, tested both current service responses, corrected HTTP to HTTPS, fixed the PNG filename and encoding guidance, and updated the privacy caveat and metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared both QR generation methods, their output examples, privacy warning, and limitations with the Japanese source; clarified that submitted text goes to external services."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked curl.exe, qrenco.de text response, GoQR API, PNG output, QR image, URL encoding, and data parameter terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Tested the qrenco.de endpoint and confirmed the documented GoQR endpoint responds with image/png; corrected curl output extension and retained quote/URL syntax."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked qrenco.de, the official GoQR API documentation, curl manual, local article images, and the QR sample image."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "QR content is sent to external services; users should not submit confidential data. Service behavior and logging policies may change.",
+        "API endpoints and curl documentation were checked on 2026-11-25."
+      ]
+    },
+    "post/curlでQRコード生成/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/curlでQRコード生成/index.md",
+      "sourceHash": "c10608bb87fb3f486f825ce1dcec0615959e16bbf158bc96ab95c58292c83535",
+      "translationHash": "21c9bc8e53cc889d811aa4fef142ad8f751fc9e702cd1abfe26cb93d7032aca1",
+      "summary": "Compared the complete translation with the Japanese source, tested both current service responses, corrected HTTP to HTTPS, fixed the PNG filename and encoding guidance, and updated the privacy caveat and metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared both QR generation methods, their output examples, privacy warning, and limitations with the Japanese source; clarified that submitted text goes to external services."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked curl.exe, qrenco.de text response, GoQR API, PNG output, QR image, URL encoding, and data parameter terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Tested the qrenco.de endpoint and confirmed the documented GoQR endpoint responds with image/png; corrected curl output extension and retained quote/URL syntax."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked qrenco.de, the official GoQR API documentation, curl manual, local article images, and the QR sample image."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "QR content is sent to external services; users should not submit confidential data. Service behavior and logging policies may change.",
+        "API endpoints and curl documentation were checked on 2026-11-25."
+      ]
+    },
+    "post/curlでQRコード生成/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/curlでQRコード生成/index.md",
+      "sourceHash": "c10608bb87fb3f486f825ce1dcec0615959e16bbf158bc96ab95c58292c83535",
+      "translationHash": "c79fd90ab5f7a660eab09f33410e59080c2e88b06f21da6aaf2e2bffd3e54fd7",
+      "summary": "Compared the complete translation with the Japanese source, tested both current service responses, corrected HTTP to HTTPS, fixed the PNG filename and encoding guidance, and updated the privacy caveat and metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared both QR generation methods, their output examples, privacy warning, and limitations with the Japanese source; clarified that submitted text goes to external services."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked curl.exe, qrenco.de text response, GoQR API, PNG output, QR image, URL encoding, and data parameter terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Tested the qrenco.de endpoint and confirmed the documented GoQR endpoint responds with image/png; corrected curl output extension and retained quote/URL syntax."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked qrenco.de, the official GoQR API documentation, curl manual, local article images, and the QR sample image."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "QR content is sent to external services; users should not submit confidential data. Service behavior and logging policies may change.",
+        "API endpoints and curl documentation were checked on 2026-11-25."
+      ]
+    },
+    "post/curlでQRコード生成/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/curlでQRコード生成/index.md",
+      "sourceHash": "c10608bb87fb3f486f825ce1dcec0615959e16bbf158bc96ab95c58292c83535",
+      "translationHash": "ec3039d6335420d4f300bf31c8a2679e160aa2d3bbf4dc78e8732287394555ea",
+      "summary": "Compared the complete translation with the Japanese source, tested both current service responses, corrected HTTP to HTTPS, fixed the PNG filename and encoding guidance, and updated the privacy caveat and metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared both QR generation methods, their output examples, privacy warning, and limitations with the Japanese source; clarified that submitted text goes to external services."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked curl.exe, qrenco.de text response, GoQR API, PNG output, QR image, URL encoding, and data parameter terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Tested the qrenco.de endpoint and confirmed the documented GoQR endpoint responds with image/png; corrected curl output extension and retained quote/URL syntax."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked qrenco.de, the official GoQR API documentation, curl manual, local article images, and the QR sample image."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "QR content is sent to external services; users should not submit confidential data. Service behavior and logging policies may change.",
+        "API endpoints and curl documentation were checked on 2026-11-25."
+      ]
+    },
+    "post/curlでQRコード生成/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/curlでQRコード生成/index.md",
+      "sourceHash": "c10608bb87fb3f486f825ce1dcec0615959e16bbf158bc96ab95c58292c83535",
+      "translationHash": "adb14fb870ea27103eeeca8828a12a3058fc6383a22aa4826973ecd17cf2cd6a",
+      "summary": "Compared the complete translation with the Japanese source, tested both current service responses, corrected HTTP to HTTPS, fixed the PNG filename and encoding guidance, and updated the privacy caveat and metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared both QR generation methods, their output examples, privacy warning, and limitations with the Japanese source; clarified that submitted text goes to external services."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked curl.exe, qrenco.de text response, GoQR API, PNG output, QR image, URL encoding, and data parameter terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Tested the qrenco.de endpoint and confirmed the documented GoQR endpoint responds with image/png; corrected curl output extension and retained quote/URL syntax."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked qrenco.de, the official GoQR API documentation, curl manual, local article images, and the QR sample image."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "QR content is sent to external services; users should not submit confidential data. Service behavior and logging policies may change.",
+        "API endpoints and curl documentation were checked on 2026-11-25."
+      ]
+    },
+    "post/curlでQRコード生成/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/curlでQRコード生成/index.md",
+      "sourceHash": "c10608bb87fb3f486f825ce1dcec0615959e16bbf158bc96ab95c58292c83535",
+      "translationHash": "ea66568c136f9571cb98681764f64cdb7b55559c13b4b1584d0efdb342deae10",
+      "summary": "Compared the complete translation with the Japanese source, tested both current service responses, corrected HTTP to HTTPS, fixed the PNG filename and encoding guidance, and updated the privacy caveat and metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared both QR generation methods, their output examples, privacy warning, and limitations with the Japanese source; clarified that submitted text goes to external services."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked curl.exe, qrenco.de text response, GoQR API, PNG output, QR image, URL encoding, and data parameter terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Tested the qrenco.de endpoint and confirmed the documented GoQR endpoint responds with image/png; corrected curl output extension and retained quote/URL syntax."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked qrenco.de, the official GoQR API documentation, curl manual, local article images, and the QR sample image."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "QR content is sent to external services; users should not submit confidential data. Service behavior and logging policies may change.",
+        "API endpoints and curl documentation were checked on 2026-11-25."
+      ]
+    },
+    "post/curlでQRコード生成/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/curlでQRコード生成/index.md",
+      "sourceHash": "c10608bb87fb3f486f825ce1dcec0615959e16bbf158bc96ab95c58292c83535",
+      "translationHash": "403fdd8813567e7ab148e681e906ac1b848d470d0f6c93a945efa4819abf0dfd",
+      "summary": "Compared the complete translation with the Japanese source, tested both current service responses, corrected HTTP to HTTPS, fixed the PNG filename and encoding guidance, and updated the privacy caveat and metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared both QR generation methods, their output examples, privacy warning, and limitations with the Japanese source; clarified that submitted text goes to external services."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked curl.exe, qrenco.de text response, GoQR API, PNG output, QR image, URL encoding, and data parameter terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Tested the qrenco.de endpoint and confirmed the documented GoQR endpoint responds with image/png; corrected curl output extension and retained quote/URL syntax."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked qrenco.de, the official GoQR API documentation, curl manual, local article images, and the QR sample image."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "QR content is sent to external services; users should not submit confidential data. Service behavior and logging policies may change.",
+        "API endpoints and curl documentation were checked on 2026-11-25."
+      ]
+    }
+  }
+}

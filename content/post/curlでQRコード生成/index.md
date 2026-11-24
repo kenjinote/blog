@@ -1,18 +1,20 @@
 ---
 title: 'curlコマンドを使ってコマンドプロンプトでQRコードを生成する方法'
-date: "2026-09-24T19:44:38+09:00"
 slug: "curlでQRコード生成"
-date: 2024-04-16T00:42:27+09:00
+date: "2024-04-16T00:42:27+09:00"
+lastmod: "2026-11-25"
 tags: ["QRコード", "curl", "コマンドプロンプト"]
 draft: false
 image: "img.webp"
 categories: ["it-technology"]
-description: 'Windowsのコマンドプロンプトでcurlコマンドを使用してテキストベースのQRコードを生成・表示する方法を紹介します。外部API（qrenco.de）を利用するため、個人情報の取り扱いに関する注意点も解説します。'
+description: 'Windowsのコマンドプロンプトでcurlを使い、テキストまたは画像のQRコードを生成する方法を紹介します。外部サービスに送信するデータの扱いについても説明します。'
 ---
 
 ## curlでQRコード生成
 
-注意：紹介する方法は、サーバー側でQRコードを生成したものを返してくため、ログがとられている可能性があります。個人情報など機密情報をQRコードに変換する際は注意してください。
+注意：紹介する方法は、サーバー側で生成されたQRコードが返されるため、ログがとられている可能性があります。個人情報など機密情報をQRコードに変換する際は注意してください。
+
+入力した文字列は外部サービスに送信されるため、機密情報は使用しないでください。
 
 ### 方法1
 
@@ -20,7 +22,7 @@ description: 'Windowsのコマンドプロンプトでcurlコマンドを使用�
 `qrenco.de` はレスポンスをテキストベースで返してくれます。
 
 ```
-curl qrenco.de/kenji.blog
+curl.exe https://qrenco.de/kenji.blog
 ```
 
 - 出力結果
@@ -50,12 +52,15 @@ curl qrenco.de/kenji.blog
 
 `api.qrserver.com` は画像を返してくれます。
 
+GoQR APIはPNG画像を既定で返します。`data`に空白や特殊文字を含める場合はURLエンコードしてください。
+
 ```
-curl -o qr.webp "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=HelloWorld"
+curl.exe -o qr.png "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=HelloWorld"
 ```
 
 - 出力結果
-![](qr.webp)
+![QRコードのサンプル画像](qr.webp)
 
 #### 参考
 - [QR Code Generator](https://goqr.me/api/doc/create-qr-code/)
+- [curl command-line manual](https://curl.se/docs/manpage.html)

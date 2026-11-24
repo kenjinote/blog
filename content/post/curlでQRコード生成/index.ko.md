@@ -7,14 +7,14 @@
 
 
 title: 'curl 명령을 사용하여 명령 프롬프트에서 QR 코드를 생성하는 방법'
-date: "2026-09-24T19:44:38+09:00"
 slug: "curlでQR 코드生成"
-date: 2024-04-16T00:42:27+09:00
+date: "2024-04-16T00:42:27+09:00"
+lastmod: "2026-11-25"
 tags: ["QR 코드", "curl", "명령 프롬프트"]
 draft: false
 image: "img.webp"
 categories: ["it-technology"]
-description: 'Windows 명령 프롬프트에서 curl 명령을 사용하여 텍스트 기반의 QR 코드를 생성 및 표시하는 방법을 소개합니다. 외부 API(qrenco.de)를 이용하기 때문에 개인정보 취급에 관한 주의사항도 함께 해설합니다.'
+description: 'Windows 명령 프롬프트에서 curl로 텍스트 및 이미지 QR 코드를 생성하는 방법과 외부 서비스로 데이터를 보낼 때의 주의점을 설명합니다.'
 ---
 
 
@@ -28,13 +28,15 @@ description: 'Windows 명령 프롬프트에서 curl 명령을 사용하여 텍�
 
 주의: 소개하는 방법은 서버 측에서 QR 코드를 생성하여 반환하기 때문에 로그가 남을 수 있습니다. 개인 정보 등 기밀 정보를 QR 코드로 변환할 때는 주의하세요.
 
+입력한 문자열은 외부 서비스로 전송되므로 기밀 정보를 사용하지 마세요.
+
 ### 방법 1
 
 명령 프롬프트에서 QR 코드를 생성하는 방법입니다.
 `qrenco.de`는 응답을 텍스트 기반으로 반환합니다.
 
 ```
-curl qrenco.de/kenji.blog
+curl.exe https://qrenco.de/kenji.blog
 ```
 
 - 출력 결과
@@ -64,12 +66,15 @@ curl qrenco.de/kenji.blog
 
 `api.qrserver.com`은 이미지를 반환합니다.
 
+GoQR API는 기본적으로 PNG를 반환합니다. `data` 값에 공백이나 특수 문자가 있으면 URL 인코딩하세요.
+
 ```
-curl -o qr.webp "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=HelloWorld"
+curl.exe -o qr.png "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=HelloWorld"
 ```
 
 - 출력 결과
-![](qr.webp)
+![QR 코드 예시 이미지](qr.webp)
 
 #### 참고
 - [QR Code Generator](https://goqr.me/api/doc/create-qr-code/)
+- [curl command-line manual](https://curl.se/docs/manpage.html)

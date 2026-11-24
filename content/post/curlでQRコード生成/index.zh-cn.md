@@ -1,18 +1,20 @@
 ---
 title: '使用curl命令在命令提示符下生成二维码的方法'
-date: "2026-09-24T19:44:38+09:00"
 slug: "curlで二维码生成"
-date: 2024-04-16T00:42:27+09:00
+date: "2024-04-16T00:42:27+09:00"
+lastmod: "2026-11-25"
 tags: ["二维码", "curl", "命令提示符"]
 draft: false
 image: "img.webp"
 categories: ["it-technology"]
-description: '本文介绍在Windows命令提示符下使用curl命令生成和显示基于文本的二维码的方法。由于使用了外部API（qrenco.de），还将讲解处理个人信息时的注意事项。'
+description: '本文介绍如何在 Windows 命令提示符中使用 curl 生成文本和图像二维码，并说明向外部服务发送数据时的注意事项。'
 ---
 
 ## 使用 curl 生成二维码
 
 注意：介绍的方法是由服务器端生成并返回二维码，因此服务器可能会保留日志。在将个人信息等机密信息转换为二维码时请务必小心。
+
+输入的文本会发送到外部服务，因此请勿使用机密信息。
 
 ### 方法1
 
@@ -20,7 +22,7 @@ description: '本文介绍在Windows命令提示符下使用curl命令生成和�
 `qrenco.de` 会返回基于文本的响应。
 
 ```
-curl qrenco.de/kenji.blog
+curl.exe https://qrenco.de/kenji.blog
 ```
 
 - 输出结果
@@ -50,12 +52,15 @@ curl qrenco.de/kenji.blog
 
 `api.qrserver.com` 会返回图像文件。
 
+GoQR API 默认返回 PNG。如果 `data` 值包含空格或特殊字符，请进行 URL 编码。
+
 ```
-curl -o qr.webp "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=HelloWorld"
+curl.exe -o qr.png "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=HelloWorld"
 ```
 
 - 输出结果
-![](qr.webp)
+![二维码示例图片](qr.webp)
 
 #### 参考
 - [QR Code Generator](https://goqr.me/api/doc/create-qr-code/)
+- [curl command-line manual](https://curl.se/docs/manpage.html)

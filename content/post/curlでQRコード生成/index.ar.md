@@ -1,18 +1,20 @@
 ---
 title: 'كيفية توليد رمز QR في موجه الأوامر باستخدام أمر curl'
-date: "2026-09-24T19:44:38+09:00"
 slug: "curlでرمز الاستجابة السريعة生成"
-date: 2024-04-16T00:42:27+09:00
+date: "2024-04-16T00:42:27+09:00"
+lastmod: "2026-11-25"
 tags: ["رمز الاستجابة السريعة", "curl", "موجه الأوامر"]
 draft: false
 image: "img.webp"
 categories: ["it-technology"]
-description: 'نقدم طريقة إنشاء وعرض رموز QR المستندة إلى النصوص في موجه أوامر Windows باستخدام أمر curl. ونظرًا لاستخدام واجهة برمجة تطبيقات خارجية (qrenco.de)، نشرح أيضًا النقاط المهمة المتعلقة بالتعامل مع المعلومات الشخصية.'
+description: 'تشرح هذه المقالة كيفية استخدام curl في موجه أوامر Windows لإنشاء رموز QR نصية وصورية، وتوضح ما ينبغي مراعاته عند إرسال البيانات إلى خدمات خارجية.'
 ---
 
 ## إنشاء رمز الاستجابة السريعة باستخدام curl
 
 ملاحظة: الطريقة الموضحة تعيد رمز الاستجابة السريعة الذي تم إنشاؤه على جانب الخادم، لذلك قد يتم تسجيل السجلات. يرجى الحذر عند تحويل المعلومات السرية مثل المعلومات الشخصية إلى رمز الاستجابة السريعة.
+
+يُرسل النص الذي تدخله إلى خدمة خارجية، لذا لا تستخدم معلومات سرية.
 
 ### الطريقة 1
 
@@ -20,7 +22,7 @@ description: 'نقدم طريقة إنشاء وعرض رموز QR المستند
 يرجع `qrenco.de` الاستجابة كنص.
 
 ```
-curl qrenco.de/kenji.blog
+curl.exe https://qrenco.de/kenji.blog
 ```
 
 - نتيجة الإخراج
@@ -50,12 +52,15 @@ curl qrenco.de/kenji.blog
 
 يرجع `api.qrserver.com` صورة.
 
+تعيد GoQR API صيغة PNG افتراضيًا. شفّر قيمة `data` ضمن URL إذا احتوت على مسافات أو أحرف خاصة.
+
 ```
-curl -o qr.webp "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=HelloWorld"
+curl.exe -o qr.png "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=HelloWorld"
 ```
 
 - نتيجة الإخراج
-![](qr.webp)
+![صورة نموذجية لرمز QR](qr.webp)
 
 #### المراجع
 - [QR Code Generator](https://goqr.me/api/doc/create-qr-code/)
+- [curl command-line manual](https://curl.se/docs/manpage.html)

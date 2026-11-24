@@ -1,18 +1,20 @@
 ---
 title: 'कमांड प्रॉम्प्ट में curl कमांड का उपयोग करके QR कोड जेनरेट करने का तरीका'
-date: "2026-09-24T19:44:38+09:00"
 slug: "curlでQR कोड生成"
-date: 2024-04-16T00:42:27+09:00
+date: "2024-04-16T00:42:27+09:00"
+lastmod: "2026-11-25"
 tags: ["QR कोड", "curl", "कमांड प्रॉम्प्ट"]
 draft: false
 image: "img.webp"
 categories: ["it-technology"]
-description: 'हम Windows कमांड प्रॉम्प्ट में curl कमांड का उपयोग करके टेक्स्ट-आधारित QR कोड उत्पन्न करने और प्रदर्शित करने का तरीका पेश करेंगे। चूंकि एक बाहरी API (qrenco.de) का उपयोग किया जाता है, इसलिए हम व्यक्तिगत जानकारी को संभालने के संबंध में सावधानियों की भी व्याख्या करेंगे。'
+description: 'यह लेख Windows Command Prompt में curl से टेक्स्ट और इमेज QR कोड बनाने का तरीका और बाहरी सेवाओं को डेटा भेजते समय बरती जाने वाली सावधानियाँ बताता है।'
 ---
 
 ## curl के साथ QR कोड जनरेट करें
 
 ध्यान दें: प्रस्तुत विधियाँ सर्वर-साइड पर उत्पन्न एक QR कोड वापस करती हैं, इसलिए लॉग रिकॉर्ड किए जा सकते हैं। [व्यक्तिगत जानकारी](/hi/p/powershell-%E3%81%A7-excel-%E3%81%AE%E0%A4%AE%E0%A5%87%E0%A4%9F%E0%A4%BE%E0%A4%A1%E0%A5%87%E0%A4%9F%E0%A4%BE%E0%A4%B5%E0%A5%8D%E0%A4%AF%E0%A4%95%E0%A5%8D%E0%A4%A4%E0%A4%BF%E0%A4%97%E0%A4%A4-%E0%A4%9C%E0%A4%BE%E0%A4%A8%E0%A4%95%E0%A4%BE%E0%A4%B0%E0%A5%80%E3%82%92%E5%89%8A%E9%99%A4%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/) जैसी गोपनीय जानकारी को QR कोड में परिवर्तित करते समय सावधान रहें।
+
+आपका लिखा हुआ पाठ बाहरी सेवा को भेजा जाता है, इसलिए गोपनीय जानकारी का उपयोग न करें。
 
 ### विधि 1
 
@@ -20,7 +22,7 @@ description: 'हम Windows कमांड प्रॉम्प्ट मे�
 `qrenco.de` टेक्स्ट-आधारित प्रतिक्रिया देता है।
 
 ```
-curl qrenco.de/kenji.blog
+curl.exe https://qrenco.de/kenji.blog
 ```
 
 - आउटपुट परिणाम
@@ -50,12 +52,15 @@ curl qrenco.de/kenji.blog
 
 `api.qrserver.com` एक छवि लौटाता है।
 
+GoQR API डिफ़ॉल्ट रूप से PNG लौटाता है। `data` में रिक्त स्थान या विशेष अक्षर हों तो उसे URL-encode करें।
+
 ```
-curl -o qr.webp "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=HelloWorld"
+curl.exe -o qr.png "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=HelloWorld"
 ```
 
 - आउटपुट परिणाम
-![](qr.webp)
+![QR कोड का उदाहरण चित्र](qr.webp)
 
 #### संदर्भ
 - [QR Code Generator](https://goqr.me/api/doc/create-qr-code/)
+- [curl command-line manual](https://curl.se/docs/manpage.html)

@@ -1,18 +1,20 @@
 ---
 title: 'Comment générer un code QR dans l''invite de commande à l''aide de la commande curl'
-date: "2026-09-24T19:44:38+09:00"
 slug: "curlでCode QR生成"
-date: 2024-04-16T00:42:27+09:00
+date: "2024-04-16T00:42:27+09:00"
+lastmod: "2026-11-25"
 tags: ["Code QR", "curl", "Invite de commandes"]
 draft: false
 image: "img.webp"
 categories: ["it-technology"]
-description: 'Nous présentons comment générer et afficher un code QR textuel en utilisant la commande curl dans l''invite de commande Windows. Étant donné l''utilisation d''une API externe (qrenco.de), nous expliquons également les précautions à prendre concernant le traitement des informations personnelles.'
+description: 'Cet article explique comment utiliser curl dans l’invite de commandes Windows pour générer des QR codes textuels et image, et précise les précautions à prendre lors de l’envoi de données à des services externes.'
 ---
 
 ## Générer un code QR avec curl
 
 Attention : Les méthodes présentées renvoient un code QR généré côté serveur, il est donc possible que des journaux soient enregistrés. Soyez prudent lorsque vous convertissez des informations confidentielles, telles que des informations personnelles, en code QR.
+
+Le texte saisi est envoyé à un service externe ; n’utilisez donc aucune information confidentielle.
 
 ### Méthode 1
 
@@ -20,7 +22,7 @@ Il s'agit d'une méthode pour générer un code QR dans l'invite de commandes.
 `qrenco.de` renvoie une réponse sous forme de texte.
 
 ```
-curl qrenco.de/kenji.blog
+curl.exe https://qrenco.de/kenji.blog
 ```
 
 - Résultat de sortie
@@ -50,12 +52,15 @@ curl qrenco.de/kenji.blog
 
 `api.qrserver.com` renvoie une image.
 
+L’API GoQR renvoie du PNG par défaut. Encodez la valeur de `data` dans l’URL si elle contient des espaces ou des caractères spéciaux.
+
 ```
-curl -o qr.webp "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=HelloWorld"
+curl.exe -o qr.png "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=HelloWorld"
 ```
 
 - Résultat de sortie
-![](qr.webp)
+![Exemple d’image de code QR](qr.webp)
 
 #### Référence
 - [QR Code Generator](https://goqr.me/api/doc/create-qr-code/)
+- [curl command-line manual](https://curl.se/docs/manpage.html)
