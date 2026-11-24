@@ -3,9 +3,9 @@
 
 
 title: 'Cómo actualizar el compilador de Rust (rustc) a la última versión'
-date: "2026-09-24T19:44:38+09:00"
 slug: "rustcをアップデートする方法"
-date: 2023-03-18T10:27:02+09:00
+date: "2023-03-18T10:27:02+09:00"
+lastmod: "2026-11-25"
 tags: ["RUST", "RUSTC", "ACTUALIZAR"]
 draft: false
 image: "img.webp"
@@ -22,6 +22,9 @@ Simplemente ejecuta la siguiente línea en la línea de comandos.
 ```
 rustup update
 ```
+
+
+Esta salida se registró en marzo de 2023; las versiones, los componentes instalados y los mensajes pueden ser distintos hoy. La documentación oficial de rustup indica que las descargas usan HTTPS, pero no se validan sus firmas. No interpretes la advertencia de verificación de firmas de este ejemplo como una descarga verificada; si aparece una advertencia similar, revisa el entorno y la configuración del servidor de distribución. Consulta la [guía oficial de rustup](https://rust-lang.github.io/rustup/basics.html) para ver las instrucciones actuales. Para más información sobre seguridad, consulta la [documentación de seguridad de rustup](https://rust-lang.github.io/rustup/security.html).
 
 # Ejemplo de salida
 

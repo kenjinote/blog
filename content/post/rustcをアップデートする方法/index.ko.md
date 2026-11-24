@@ -4,9 +4,9 @@
 
 
 title: 'Rust 컴파일러(rustc)를 최신 버전으로 업데이트하는 방법'
-date: "2026-09-24T19:44:38+09:00"
 slug: "rustcをアップデートする方法"
-date: 2023-03-18T10:27:02+09:00
+date: "2023-03-18T10:27:02+09:00"
+lastmod: "2026-11-25"
 tags: ["RUST", "RUSTC", "UPDATE"]
 draft: false
 image: "img.webp"
@@ -24,6 +24,9 @@ description: 'Rust의 컴파일러인 rustc를 최신 버전으로 업데이트�
 ```
 rustup update
 ```
+
+
+다음은 2023년 3월에 기록된 출력 예입니다. 현재 버전, 설치되는 구성 요소 및 메시지는 다를 수 있습니다. rustup 공식 문서에 따르면 다운로드는 HTTPS로 이루어지지만 다운로드 서명은 검증되지 않습니다. 이 예의 서명 검증 경고를 다운로드가 검증되었다는 뜻으로 받아들이지 마세요. 비슷한 경고가 나타나면 환경과 배포 서버 설정을 확인하세요. 최신 업데이트 방법은 [rustup 공식 가이드](https://rust-lang.github.io/rustup/basics.html)를 참조하세요. 보안에 관한 자세한 내용은 [rustup 보안 문서](https://rust-lang.github.io/rustup/security.html)를 참조하세요.
 
 # 출력 참고
 

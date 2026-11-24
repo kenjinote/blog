@@ -1,8 +1,8 @@
 ---
 title: 'Cara Memperbarui Kompiler Rust (rustc) ke Versi Terbaru'
-date: "2026-09-24T19:44:38+09:00"
 slug: "rustcをアップデートする方法"
-date: 2023-03-18T10:27:02+09:00
+date: "2023-03-18T10:27:02+09:00"
+lastmod: "2026-11-25"
 tags: ["RUST", "RUSTC", "UPDATE"]
 draft: false
 image: "img.webp"
@@ -16,6 +16,9 @@ Cukup jalankan satu baris berikut dengan perintah.
 ```
 rustup update
 ```
+
+
+Keluaran ini direkam pada Maret 2023; versi, komponen yang dipasang, dan pesannya mungkin berbeda saat ini. Dokumentasi resmi rustup menyatakan bahwa unduhan menggunakan HTTPS, tetapi tanda tangan unduhan tidak divalidasi. Jangan anggap peringatan verifikasi tanda tangan dalam contoh ini sebagai bukti bahwa unduhan telah diverifikasi; jika melihat peringatan serupa, periksa lingkungan dan pengaturan sumber distribusi Anda. Lihat [panduan resmi rustup](https://rust-lang.github.io/rustup/basics.html) untuk petunjuk pembaruan terkini. Untuk detail keamanan, lihat [dokumentasi keamanan rustup](https://rust-lang.github.io/rustup/security.html).
 
 # Referensi keluaran
 

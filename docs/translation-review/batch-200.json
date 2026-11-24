@@ -1,0 +1,453 @@
+{
+  "version": 1,
+  "batch": 200,
+  "article": "How to update the Rust compiler (rustc)",
+  "reviewedAt": "2026-11-25",
+  "sourceHash": "cd13eb022ebf2468f62cca2b4653bb248d3fdb486169530e3a79b31080c2debf",
+  "sources": [
+    "https://rust-lang.github.io/rustup/basics.html",
+    "https://rust-lang.github.io/rustup/security.html"
+  ],
+  "scope": "Read the complete Japanese article and all twelve translations; compared the command, complete terminal transcript, terminology, metadata, links, and image. Checked update behavior and download-signature wording against official rustup documentation.",
+  "findings": [
+    "Removed the duplicate future publication date from all editions, preserved the original publication date (2023-03-18), and set lastmod to 2026-11-25.",
+    "Labeled the captured rustup output as a March 2023 historical example so its version and component list are not mistaken for current output.",
+    "Added a warning that the sample reports signature verification failure and explained from rustup security documentation that downloads use HTTPS but signatures are not validated; readers should not treat the warning as successful verification.",
+    "Added localized links to the official rustup update and security documentation; command and captured output were compared across all editions."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/rustcをアップデートする方法/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/rustcをアップデートする方法/index.md",
+      "sourceHash": "cd13eb022ebf2468f62cca2b4653bb248d3fdb486169530e3a79b31080c2debf",
+      "translationHash": "b2dda627e010d1c8c644473be97276029eadc7cd3a9987e4f119eb15a09ec0e6",
+      "summary": "Compared the complete translation with the Japanese source and official rustup guidance; clarified the historical sample date and signature warning, fixed duplicate/future publication metadata, and added current update and security references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all instructions and the complete captured output with the Japanese source; clarified that the log is historical and that the signature warning is not proof of signature validation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked rustup, rustc, stable-x86_64-pc-windows-msvc, toolchain, components, signature, HTTPS, and update wording."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified the rustup update command and preserved the captured terminal output verbatim; qualified its age and security warning."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added the official rustup basic usage and security documentation links; checked the local article image and retained the command example."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The terminal transcript is a historical capture from March 2023 and is not a current version or reproducible output guarantee.",
+        "rustup documentation was checked on 2026-11-25."
+      ]
+    },
+    "post/rustcをアップデートする方法/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/rustcをアップデートする方法/index.md",
+      "sourceHash": "cd13eb022ebf2468f62cca2b4653bb248d3fdb486169530e3a79b31080c2debf",
+      "translationHash": "5b6d724f592ea753b1eaf6f71a762996a464860ef730b26718923a8eff6710c0",
+      "summary": "Compared the complete translation with the Japanese source and official rustup guidance; clarified the historical sample date and signature warning, fixed duplicate/future publication metadata, and added current update and security references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all instructions and the complete captured output with the Japanese source; clarified that the log is historical and that the signature warning is not proof of signature validation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked rustup, rustc, stable-x86_64-pc-windows-msvc, toolchain, components, signature, HTTPS, and update wording."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified the rustup update command and preserved the captured terminal output verbatim; qualified its age and security warning."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added the official rustup basic usage and security documentation links; checked the local article image and retained the command example."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The terminal transcript is a historical capture from March 2023 and is not a current version or reproducible output guarantee.",
+        "rustup documentation was checked on 2026-11-25."
+      ]
+    },
+    "post/rustcをアップデートする方法/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/rustcをアップデートする方法/index.md",
+      "sourceHash": "cd13eb022ebf2468f62cca2b4653bb248d3fdb486169530e3a79b31080c2debf",
+      "translationHash": "0725447152cf873abca1f750a1664c2ccc0688f8527d05d3c3c538549031a55d",
+      "summary": "Compared the complete translation with the Japanese source and official rustup guidance; clarified the historical sample date and signature warning, fixed duplicate/future publication metadata, and added current update and security references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all instructions and the complete captured output with the Japanese source; clarified that the log is historical and that the signature warning is not proof of signature validation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked rustup, rustc, stable-x86_64-pc-windows-msvc, toolchain, components, signature, HTTPS, and update wording."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified the rustup update command and preserved the captured terminal output verbatim; qualified its age and security warning."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added the official rustup basic usage and security documentation links; checked the local article image and retained the command example."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The terminal transcript is a historical capture from March 2023 and is not a current version or reproducible output guarantee.",
+        "rustup documentation was checked on 2026-11-25."
+      ]
+    },
+    "post/rustcをアップデートする方法/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/rustcをアップデートする方法/index.md",
+      "sourceHash": "cd13eb022ebf2468f62cca2b4653bb248d3fdb486169530e3a79b31080c2debf",
+      "translationHash": "8117c894d9556add03955fb709e6cbf0d6b0dae77d8476da59984f17cb6a33fb",
+      "summary": "Compared the complete translation with the Japanese source and official rustup guidance; clarified the historical sample date and signature warning, fixed duplicate/future publication metadata, and added current update and security references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all instructions and the complete captured output with the Japanese source; clarified that the log is historical and that the signature warning is not proof of signature validation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked rustup, rustc, stable-x86_64-pc-windows-msvc, toolchain, components, signature, HTTPS, and update wording."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified the rustup update command and preserved the captured terminal output verbatim; qualified its age and security warning."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added the official rustup basic usage and security documentation links; checked the local article image and retained the command example."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The terminal transcript is a historical capture from March 2023 and is not a current version or reproducible output guarantee.",
+        "rustup documentation was checked on 2026-11-25."
+      ]
+    },
+    "post/rustcをアップデートする方法/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/rustcをアップデートする方法/index.md",
+      "sourceHash": "cd13eb022ebf2468f62cca2b4653bb248d3fdb486169530e3a79b31080c2debf",
+      "translationHash": "83b19f4d0135b775bc7f28587ade2ff8bb1aa80b3287e8b84c2ff764dd911f85",
+      "summary": "Compared the complete translation with the Japanese source and official rustup guidance; clarified the historical sample date and signature warning, fixed duplicate/future publication metadata, and added current update and security references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all instructions and the complete captured output with the Japanese source; clarified that the log is historical and that the signature warning is not proof of signature validation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked rustup, rustc, stable-x86_64-pc-windows-msvc, toolchain, components, signature, HTTPS, and update wording."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified the rustup update command and preserved the captured terminal output verbatim; qualified its age and security warning."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added the official rustup basic usage and security documentation links; checked the local article image and retained the command example."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The terminal transcript is a historical capture from March 2023 and is not a current version or reproducible output guarantee.",
+        "rustup documentation was checked on 2026-11-25."
+      ]
+    },
+    "post/rustcをアップデートする方法/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/rustcをアップデートする方法/index.md",
+      "sourceHash": "cd13eb022ebf2468f62cca2b4653bb248d3fdb486169530e3a79b31080c2debf",
+      "translationHash": "47e0372dd34812046ad85f64d704e83ab619751495e75e0469e93b5e0f6205a4",
+      "summary": "Compared the complete translation with the Japanese source and official rustup guidance; clarified the historical sample date and signature warning, fixed duplicate/future publication metadata, and added current update and security references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all instructions and the complete captured output with the Japanese source; clarified that the log is historical and that the signature warning is not proof of signature validation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked rustup, rustc, stable-x86_64-pc-windows-msvc, toolchain, components, signature, HTTPS, and update wording."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified the rustup update command and preserved the captured terminal output verbatim; qualified its age and security warning."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added the official rustup basic usage and security documentation links; checked the local article image and retained the command example."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The terminal transcript is a historical capture from March 2023 and is not a current version or reproducible output guarantee.",
+        "rustup documentation was checked on 2026-11-25."
+      ]
+    },
+    "post/rustcをアップデートする方法/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/rustcをアップデートする方法/index.md",
+      "sourceHash": "cd13eb022ebf2468f62cca2b4653bb248d3fdb486169530e3a79b31080c2debf",
+      "translationHash": "f56446ef876f43efb12a20babd606e496f1872c31389124b5303ad509e39b764",
+      "summary": "Compared the complete translation with the Japanese source and official rustup guidance; clarified the historical sample date and signature warning, fixed duplicate/future publication metadata, and added current update and security references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all instructions and the complete captured output with the Japanese source; clarified that the log is historical and that the signature warning is not proof of signature validation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked rustup, rustc, stable-x86_64-pc-windows-msvc, toolchain, components, signature, HTTPS, and update wording."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified the rustup update command and preserved the captured terminal output verbatim; qualified its age and security warning."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added the official rustup basic usage and security documentation links; checked the local article image and retained the command example."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The terminal transcript is a historical capture from March 2023 and is not a current version or reproducible output guarantee.",
+        "rustup documentation was checked on 2026-11-25."
+      ]
+    },
+    "post/rustcをアップデートする方法/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/rustcをアップデートする方法/index.md",
+      "sourceHash": "cd13eb022ebf2468f62cca2b4653bb248d3fdb486169530e3a79b31080c2debf",
+      "translationHash": "513548559a1320c0132a8ecdc1e6d5f14d452471c932cf268106358a312468ed",
+      "summary": "Compared the complete translation with the Japanese source and official rustup guidance; clarified the historical sample date and signature warning, fixed duplicate/future publication metadata, and added current update and security references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all instructions and the complete captured output with the Japanese source; clarified that the log is historical and that the signature warning is not proof of signature validation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked rustup, rustc, stable-x86_64-pc-windows-msvc, toolchain, components, signature, HTTPS, and update wording."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified the rustup update command and preserved the captured terminal output verbatim; qualified its age and security warning."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added the official rustup basic usage and security documentation links; checked the local article image and retained the command example."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The terminal transcript is a historical capture from March 2023 and is not a current version or reproducible output guarantee.",
+        "rustup documentation was checked on 2026-11-25."
+      ]
+    },
+    "post/rustcをアップデートする方法/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/rustcをアップデートする方法/index.md",
+      "sourceHash": "cd13eb022ebf2468f62cca2b4653bb248d3fdb486169530e3a79b31080c2debf",
+      "translationHash": "17b6b32baeb2d0d29974fd2217e2075af52d83c42dc13eb6312f82091244fece",
+      "summary": "Compared the complete translation with the Japanese source and official rustup guidance; clarified the historical sample date and signature warning, fixed duplicate/future publication metadata, and added current update and security references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all instructions and the complete captured output with the Japanese source; clarified that the log is historical and that the signature warning is not proof of signature validation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked rustup, rustc, stable-x86_64-pc-windows-msvc, toolchain, components, signature, HTTPS, and update wording."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified the rustup update command and preserved the captured terminal output verbatim; qualified its age and security warning."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added the official rustup basic usage and security documentation links; checked the local article image and retained the command example."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The terminal transcript is a historical capture from March 2023 and is not a current version or reproducible output guarantee.",
+        "rustup documentation was checked on 2026-11-25."
+      ]
+    },
+    "post/rustcをアップデートする方法/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/rustcをアップデートする方法/index.md",
+      "sourceHash": "cd13eb022ebf2468f62cca2b4653bb248d3fdb486169530e3a79b31080c2debf",
+      "translationHash": "fe9df40779c107f772824a21a21fd5cc4f42bf39b56a798b61cc96c223c47352",
+      "summary": "Compared the complete translation with the Japanese source and official rustup guidance; clarified the historical sample date and signature warning, fixed duplicate/future publication metadata, and added current update and security references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all instructions and the complete captured output with the Japanese source; clarified that the log is historical and that the signature warning is not proof of signature validation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked rustup, rustc, stable-x86_64-pc-windows-msvc, toolchain, components, signature, HTTPS, and update wording."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified the rustup update command and preserved the captured terminal output verbatim; qualified its age and security warning."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added the official rustup basic usage and security documentation links; checked the local article image and retained the command example."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The terminal transcript is a historical capture from March 2023 and is not a current version or reproducible output guarantee.",
+        "rustup documentation was checked on 2026-11-25."
+      ]
+    },
+    "post/rustcをアップデートする方法/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/rustcをアップデートする方法/index.md",
+      "sourceHash": "cd13eb022ebf2468f62cca2b4653bb248d3fdb486169530e3a79b31080c2debf",
+      "translationHash": "7beff039fa163ec7212827e054c0a3a513516ae2b37565fbf494806d08da1b7c",
+      "summary": "Compared the complete translation with the Japanese source and official rustup guidance; clarified the historical sample date and signature warning, fixed duplicate/future publication metadata, and added current update and security references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all instructions and the complete captured output with the Japanese source; clarified that the log is historical and that the signature warning is not proof of signature validation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked rustup, rustc, stable-x86_64-pc-windows-msvc, toolchain, components, signature, HTTPS, and update wording."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified the rustup update command and preserved the captured terminal output verbatim; qualified its age and security warning."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added the official rustup basic usage and security documentation links; checked the local article image and retained the command example."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The terminal transcript is a historical capture from March 2023 and is not a current version or reproducible output guarantee.",
+        "rustup documentation was checked on 2026-11-25."
+      ]
+    },
+    "post/rustcをアップデートする方法/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/rustcをアップデートする方法/index.md",
+      "sourceHash": "cd13eb022ebf2468f62cca2b4653bb248d3fdb486169530e3a79b31080c2debf",
+      "translationHash": "ed6da22082c4b928018d803279e6bd80289349d96ee6ee46418118cf59876389",
+      "summary": "Compared the complete translation with the Japanese source and official rustup guidance; clarified the historical sample date and signature warning, fixed duplicate/future publication metadata, and added current update and security references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all instructions and the complete captured output with the Japanese source; clarified that the log is historical and that the signature warning is not proof of signature validation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked rustup, rustc, stable-x86_64-pc-windows-msvc, toolchain, components, signature, HTTPS, and update wording."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified the rustup update command and preserved the captured terminal output verbatim; qualified its age and security warning."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added the official rustup basic usage and security documentation links; checked the local article image and retained the command example."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The terminal transcript is a historical capture from March 2023 and is not a current version or reproducible output guarantee.",
+        "rustup documentation was checked on 2026-11-25."
+      ]
+    }
+  }
+}

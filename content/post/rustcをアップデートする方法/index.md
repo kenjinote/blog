@@ -1,8 +1,8 @@
 ---
 title: 'Rustコンパイラ(rustc)を最新バージョンにアップデートする方法'
-date: "2026-09-24T19:44:38+09:00"
 slug: "rustcをアップデートする方法"
-date: 2023-03-18T10:27:02+09:00
+date: "2023-03-18T10:27:02+09:00"
+lastmod: "2026-11-25"
 tags: ["RUST", "RUSTC", "UPDATE"]
 draft: false
 image: "img.webp"
@@ -16,6 +16,9 @@ description: 'Rustのコンパイラであるrustcを最新バージョンにア
 ```
 rustup update
 ```
+
+
+以下は2023年3月に記録した出力例です。バージョン、導入コンポーネント、表示内容は現在と異なる場合があります。Rustup公式文書によると、ダウンロードはHTTPSで行われますが、ダウンロードの署名は検証されません。例にある署名検証の警告を無視せず、同様の警告が出た場合は環境や配布元の設定を確認してください。更新手順は [Rustup公式ガイド](https://rust-lang.github.io/rustup/basics.html) を参照してください。 セキュリティ上の詳細は [Rustupのセキュリティ文書](https://rust-lang.github.io/rustup/security.html) を参照してください。
 
 # 出力参考
 

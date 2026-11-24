@@ -23045,6 +23045,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-199.json",
       "evidenceHash": "36aa1991f8e78be8c228f0abeaa2e8fa42c18b298bb24e42584de3cbec75d1bc"
+    },
+    "post/rustcをアップデートする方法/index.en.md": {
+      "source": "post/rustcをアップデートする方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "cd13eb022ebf2468f62cca2b4653bb248d3fdb486169530e3a79b31080c2debf",
+      "translationHash": "b2dda627e010d1c8c644473be97276029eadc7cd3a9987e4f119eb15a09ec0e6",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-200.json",
+      "evidenceHash": "8d56baa0e42ac427579d09bc63c683bf672637ce5823559f120e508fdd6efc13"
+    },
+    "post/rustcをアップデートする方法/index.zh-cn.md": {
+      "source": "post/rustcをアップデートする方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "cd13eb022ebf2468f62cca2b4653bb248d3fdb486169530e3a79b31080c2debf",
+      "translationHash": "5b6d724f592ea753b1eaf6f71a762996a464860ef730b26718923a8eff6710c0",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-200.json",
+      "evidenceHash": "a3242105189a07d587bb15601221dc0901c9eef753388547a04a4333b7f959c3"
+    },
+    "post/rustcをアップデートする方法/index.es.md": {
+      "source": "post/rustcをアップデートする方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "cd13eb022ebf2468f62cca2b4653bb248d3fdb486169530e3a79b31080c2debf",
+      "translationHash": "0725447152cf873abca1f750a1664c2ccc0688f8527d05d3c3c538549031a55d",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-200.json",
+      "evidenceHash": "bc3fafbddc1ca2f1a6b08576a5a74de99863320c4a1beb4b54e06d7fdb2732ca"
+    },
+    "post/rustcをアップデートする方法/index.ko.md": {
+      "source": "post/rustcをアップデートする方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "cd13eb022ebf2468f62cca2b4653bb248d3fdb486169530e3a79b31080c2debf",
+      "translationHash": "8117c894d9556add03955fb709e6cbf0d6b0dae77d8476da59984f17cb6a33fb",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-200.json",
+      "evidenceHash": "fc1d1a64109675fe4354415d5bd113b2626cd17b1c296f3b0a8c5671a3a79a05"
+    },
+    "post/rustcをアップデートする方法/index.pt.md": {
+      "source": "post/rustcをアップデートする方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "cd13eb022ebf2468f62cca2b4653bb248d3fdb486169530e3a79b31080c2debf",
+      "translationHash": "83b19f4d0135b775bc7f28587ade2ff8bb1aa80b3287e8b84c2ff764dd911f85",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-200.json",
+      "evidenceHash": "5240a633d9882eea3e2ea92d694b19e85abae6097e52e5828053b1b06282c3f6"
+    },
+    "post/rustcをアップデートする方法/index.zh-tw.md": {
+      "source": "post/rustcをアップデートする方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "cd13eb022ebf2468f62cca2b4653bb248d3fdb486169530e3a79b31080c2debf",
+      "translationHash": "47e0372dd34812046ad85f64d704e83ab619751495e75e0469e93b5e0f6205a4",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-200.json",
+      "evidenceHash": "0cc66172492fcf2aac223025817db5a2395ce3b164cc305cb7ad31019b8e7f3d"
+    },
+    "post/rustcをアップデートする方法/index.hi.md": {
+      "source": "post/rustcをアップデートする方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "cd13eb022ebf2468f62cca2b4653bb248d3fdb486169530e3a79b31080c2debf",
+      "translationHash": "f56446ef876f43efb12a20babd606e496f1872c31389124b5303ad509e39b764",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-200.json",
+      "evidenceHash": "4c027698ca6e8e1e9fd91e305b809aa0b4f896da89ee79ace3524bca2123220b"
+    },
+    "post/rustcをアップデートする方法/index.fr.md": {
+      "source": "post/rustcをアップデートする方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "cd13eb022ebf2468f62cca2b4653bb248d3fdb486169530e3a79b31080c2debf",
+      "translationHash": "513548559a1320c0132a8ecdc1e6d5f14d452471c932cf268106358a312468ed",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-200.json",
+      "evidenceHash": "a2139386301c937c7e467193f1f6913c371ab9860e7a9a40a6687b9889576f9f"
+    },
+    "post/rustcをアップデートする方法/index.de.md": {
+      "source": "post/rustcをアップデートする方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "cd13eb022ebf2468f62cca2b4653bb248d3fdb486169530e3a79b31080c2debf",
+      "translationHash": "17b6b32baeb2d0d29974fd2217e2075af52d83c42dc13eb6312f82091244fece",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-200.json",
+      "evidenceHash": "b3851cfb4ec4445e7e546cf4fd2b653af917ede3839d639d9d4d751c35a9b9aa"
+    },
+    "post/rustcをアップデートする方法/index.ar.md": {
+      "source": "post/rustcをアップデートする方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "cd13eb022ebf2468f62cca2b4653bb248d3fdb486169530e3a79b31080c2debf",
+      "translationHash": "fe9df40779c107f772824a21a21fd5cc4f42bf39b56a798b61cc96c223c47352",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-200.json",
+      "evidenceHash": "bbd9d5e19330d23ab3c751e89802038116d5778a2b3511168af59eb93650c661"
+    },
+    "post/rustcをアップデートする方法/index.ru.md": {
+      "source": "post/rustcをアップデートする方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "cd13eb022ebf2468f62cca2b4653bb248d3fdb486169530e3a79b31080c2debf",
+      "translationHash": "7beff039fa163ec7212827e054c0a3a513516ae2b37565fbf494806d08da1b7c",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-200.json",
+      "evidenceHash": "426b9716cb89df6051413591f7bd9835c4f0ceb4c872650d6ba966fae33db920"
+    },
+    "post/rustcをアップデートする方法/index.id.md": {
+      "source": "post/rustcをアップデートする方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "cd13eb022ebf2468f62cca2b4653bb248d3fdb486169530e3a79b31080c2debf",
+      "translationHash": "ed6da22082c4b928018d803279e6bd80289349d96ee6ee46418118cf59876389",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-200.json",
+      "evidenceHash": "765bccc5931afe65f45c7e483fd14dde830c4f0ec847e7c1b71043a37ce3140d"
     }
   }
 }

@@ -1,8 +1,8 @@
 ---
 title: '将Rust编译器(rustc)更新到最新版本的方法'
-date: "2026-09-24T19:44:38+09:00"
 slug: "rustcをアップデートする方法"
-date: 2023-03-18T10:27:02+09:00
+date: "2023-03-18T10:27:02+09:00"
+lastmod: "2026-11-25"
 tags: ["RUST", "RUSTC", "UPDATE"]
 draft: false
 image: "img.webp"
@@ -16,6 +16,9 @@ description: '讲解将Rust编译器rustc更新到最新版本的简单方法。
 ```
 rustup update
 ```
+
+
+以下是2023年3月记录的输出示例；当前的版本、安装组件和提示信息可能不同。Rustup官方文档说明，下载通过HTTPS进行，但不会验证下载内容的签名。不要把示例中的签名验证警告当作下载已通过验证的证明；如果遇到类似警告，请检查环境和发行源配置。当前更新方法请参阅[Rustup官方指南](https://rust-lang.github.io/rustup/basics.html)。 有关安全性的详情，请参阅 [rustup 安全文档](https://rust-lang.github.io/rustup/security.html)。
 
 # 输出参考
 
