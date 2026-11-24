@@ -1,0 +1,482 @@
+{
+  "version": 1,
+  "batch": 173,
+  "article": "Post Slack messages with a bot OAuth token from C++",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "eac3d15bcb4e61c7c62973f9a631da284554af3dfaec1bd1beb350cb4aaac673",
+  "sources": [
+    "https://docs.slack.dev/reference/methods/chat.postMessage/",
+    "https://docs.slack.dev/authentication/tokens/",
+    "https://api.slack.com/apps",
+    "https://learn.microsoft.com/en-us/windows/win32/api/winhttp/nf-winhttp-winhttpsendrequest",
+    "https://learn.microsoft.com/en-us/windows/win32/api/winhttp/nf-winhttp-winhttpreaddata",
+    "https://learn.microsoft.com/en-us/windows/win32/api/winhttp/nf-winhttp-winhttpclosehandle"
+  ],
+  "scope": "Compared the Japanese source and all twelve translations, current Slack token and chat.postMessage behavior, scopes, channel membership, JSON encoding, WinHTTP resource cleanup, response handling, metadata, and links.",
+  "findings": [
+    "Clarified that OAuth code exchange is not implemented.",
+    "Moved the bot token to an environment variable and required a channel ID.",
+    "Added JSON escaping, RAII handle cleanup, and HTTP plus Slack ok checks.",
+    "Removed the incorrect token-type table and added current primary references.",
+    "Preserved the 2025 publication date and added lastmod."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/Slack App + OAuth2 を使って Slack にメッセージを投稿する方法/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Slack App + OAuth2 を使って Slack にメッセージを投稿する方法/index.md",
+      "sourceHash": "eac3d15bcb4e61c7c62973f9a631da284554af3dfaec1bd1beb350cb4aaac673",
+      "translationHash": "98df678b40c0570d36d45f8aaf1284c04611377f9554c2b4d140f46086d67387",
+      "summary": "Compared the full translation with the Japanese source and updated token setup/security, scopes, channel permissions, WinHTTP request/response handling, metadata, and references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Clarified that the sample uses an installed app bot token and does not implement OAuth authorization-code exchange."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed Slack bot token, OAuth scope, bearer auth, channel ID, UTF-8 JSON, WinHTTP, and security wording."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced raw JSON concatenation and token literals with escaping, environment loading, RAII handles, HTTP status and Slack JSON ok checks. Static review only; not compiled or sent to Slack."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current Slack chat.postMessage/token docs and Microsoft WinHTTP API references; checked localized internal links."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The C++ sample was reviewed statically but not compiled or sent to a Slack workspace.",
+        "The small response helper checks the top-level ok boolean; production clients should use a JSON parser and robust diagnostics, timeout, and retry handling.",
+        "The example assumes an installed app with permissions; it does not implement OAuth consent, callback handling, or token refresh.",
+        "Use a secure secret store for production tokens."
+      ]
+    },
+    "post/Slack App + OAuth2 を使って Slack にメッセージを投稿する方法/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Slack App + OAuth2 を使って Slack にメッセージを投稿する方法/index.md",
+      "sourceHash": "eac3d15bcb4e61c7c62973f9a631da284554af3dfaec1bd1beb350cb4aaac673",
+      "translationHash": "090439c227546c97f4ee375c19194d28670ab53ed95fff818766c414111c2b92",
+      "summary": "Compared the full translation with the Japanese source and updated token setup/security, scopes, channel permissions, WinHTTP request/response handling, metadata, and references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Clarified that the sample uses an installed app bot token and does not implement OAuth authorization-code exchange."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed Slack bot token, OAuth scope, bearer auth, channel ID, UTF-8 JSON, WinHTTP, and security wording."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced raw JSON concatenation and token literals with escaping, environment loading, RAII handles, HTTP status and Slack JSON ok checks. Static review only; not compiled or sent to Slack."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current Slack chat.postMessage/token docs and Microsoft WinHTTP API references; checked localized internal links."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The C++ sample was reviewed statically but not compiled or sent to a Slack workspace.",
+        "The small response helper checks the top-level ok boolean; production clients should use a JSON parser and robust diagnostics, timeout, and retry handling.",
+        "The example assumes an installed app with permissions; it does not implement OAuth consent, callback handling, or token refresh.",
+        "Use a secure secret store for production tokens."
+      ]
+    },
+    "post/Slack App + OAuth2 を使って Slack にメッセージを投稿する方法/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Slack App + OAuth2 を使って Slack にメッセージを投稿する方法/index.md",
+      "sourceHash": "eac3d15bcb4e61c7c62973f9a631da284554af3dfaec1bd1beb350cb4aaac673",
+      "translationHash": "330de94c4b4e27805e1241492b90b6796cd96b1db258654946b97328af3681dd",
+      "summary": "Compared the full translation with the Japanese source and updated token setup/security, scopes, channel permissions, WinHTTP request/response handling, metadata, and references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Clarified that the sample uses an installed app bot token and does not implement OAuth authorization-code exchange."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed Slack bot token, OAuth scope, bearer auth, channel ID, UTF-8 JSON, WinHTTP, and security wording."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced raw JSON concatenation and token literals with escaping, environment loading, RAII handles, HTTP status and Slack JSON ok checks. Static review only; not compiled or sent to Slack."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current Slack chat.postMessage/token docs and Microsoft WinHTTP API references; checked localized internal links."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The C++ sample was reviewed statically but not compiled or sent to a Slack workspace.",
+        "The small response helper checks the top-level ok boolean; production clients should use a JSON parser and robust diagnostics, timeout, and retry handling.",
+        "The example assumes an installed app with permissions; it does not implement OAuth consent, callback handling, or token refresh.",
+        "Use a secure secret store for production tokens."
+      ]
+    },
+    "post/Slack App + OAuth2 を使って Slack にメッセージを投稿する方法/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Slack App + OAuth2 を使って Slack にメッセージを投稿する方法/index.md",
+      "sourceHash": "eac3d15bcb4e61c7c62973f9a631da284554af3dfaec1bd1beb350cb4aaac673",
+      "translationHash": "ffd3433017db2c628cc54510e56e67ea19c63f7d3f9f381c33741258efeae318",
+      "summary": "Compared the full translation with the Japanese source and updated token setup/security, scopes, channel permissions, WinHTTP request/response handling, metadata, and references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Clarified that the sample uses an installed app bot token and does not implement OAuth authorization-code exchange."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed Slack bot token, OAuth scope, bearer auth, channel ID, UTF-8 JSON, WinHTTP, and security wording."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced raw JSON concatenation and token literals with escaping, environment loading, RAII handles, HTTP status and Slack JSON ok checks. Static review only; not compiled or sent to Slack."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current Slack chat.postMessage/token docs and Microsoft WinHTTP API references; checked localized internal links."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The C++ sample was reviewed statically but not compiled or sent to a Slack workspace.",
+        "The small response helper checks the top-level ok boolean; production clients should use a JSON parser and robust diagnostics, timeout, and retry handling.",
+        "The example assumes an installed app with permissions; it does not implement OAuth consent, callback handling, or token refresh.",
+        "Use a secure secret store for production tokens."
+      ]
+    },
+    "post/Slack App + OAuth2 を使って Slack にメッセージを投稿する方法/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Slack App + OAuth2 を使って Slack にメッセージを投稿する方法/index.md",
+      "sourceHash": "eac3d15bcb4e61c7c62973f9a631da284554af3dfaec1bd1beb350cb4aaac673",
+      "translationHash": "23b42d28407c505d6dfd547c4923d0bc8e31196b758ea33d532966b321b7c38e",
+      "summary": "Compared the full translation with the Japanese source and updated token setup/security, scopes, channel permissions, WinHTTP request/response handling, metadata, and references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Clarified that the sample uses an installed app bot token and does not implement OAuth authorization-code exchange."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed Slack bot token, OAuth scope, bearer auth, channel ID, UTF-8 JSON, WinHTTP, and security wording."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced raw JSON concatenation and token literals with escaping, environment loading, RAII handles, HTTP status and Slack JSON ok checks. Static review only; not compiled or sent to Slack."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current Slack chat.postMessage/token docs and Microsoft WinHTTP API references; checked localized internal links."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The C++ sample was reviewed statically but not compiled or sent to a Slack workspace.",
+        "The small response helper checks the top-level ok boolean; production clients should use a JSON parser and robust diagnostics, timeout, and retry handling.",
+        "The example assumes an installed app with permissions; it does not implement OAuth consent, callback handling, or token refresh.",
+        "Use a secure secret store for production tokens."
+      ]
+    },
+    "post/Slack App + OAuth2 を使って Slack にメッセージを投稿する方法/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Slack App + OAuth2 を使って Slack にメッセージを投稿する方法/index.md",
+      "sourceHash": "eac3d15bcb4e61c7c62973f9a631da284554af3dfaec1bd1beb350cb4aaac673",
+      "translationHash": "0bc5a0ed36e2a75bcba8248ff3f2b22372de0a80ae1402c93c51177e31884be0",
+      "summary": "Compared the full translation with the Japanese source and updated token setup/security, scopes, channel permissions, WinHTTP request/response handling, metadata, and references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Clarified that the sample uses an installed app bot token and does not implement OAuth authorization-code exchange."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed Slack bot token, OAuth scope, bearer auth, channel ID, UTF-8 JSON, WinHTTP, and security wording."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced raw JSON concatenation and token literals with escaping, environment loading, RAII handles, HTTP status and Slack JSON ok checks. Static review only; not compiled or sent to Slack."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current Slack chat.postMessage/token docs and Microsoft WinHTTP API references; checked localized internal links."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The C++ sample was reviewed statically but not compiled or sent to a Slack workspace.",
+        "The small response helper checks the top-level ok boolean; production clients should use a JSON parser and robust diagnostics, timeout, and retry handling.",
+        "The example assumes an installed app with permissions; it does not implement OAuth consent, callback handling, or token refresh.",
+        "Use a secure secret store for production tokens."
+      ]
+    },
+    "post/Slack App + OAuth2 を使って Slack にメッセージを投稿する方法/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Slack App + OAuth2 を使って Slack にメッセージを投稿する方法/index.md",
+      "sourceHash": "eac3d15bcb4e61c7c62973f9a631da284554af3dfaec1bd1beb350cb4aaac673",
+      "translationHash": "4be9742a238974ba9fa6971d9d738a472b11fab2c11b32fafeda18802b022661",
+      "summary": "Compared the full translation with the Japanese source and updated token setup/security, scopes, channel permissions, WinHTTP request/response handling, metadata, and references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Clarified that the sample uses an installed app bot token and does not implement OAuth authorization-code exchange."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed Slack bot token, OAuth scope, bearer auth, channel ID, UTF-8 JSON, WinHTTP, and security wording."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced raw JSON concatenation and token literals with escaping, environment loading, RAII handles, HTTP status and Slack JSON ok checks. Static review only; not compiled or sent to Slack."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current Slack chat.postMessage/token docs and Microsoft WinHTTP API references; checked localized internal links."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The C++ sample was reviewed statically but not compiled or sent to a Slack workspace.",
+        "The small response helper checks the top-level ok boolean; production clients should use a JSON parser and robust diagnostics, timeout, and retry handling.",
+        "The example assumes an installed app with permissions; it does not implement OAuth consent, callback handling, or token refresh.",
+        "Use a secure secret store for production tokens."
+      ]
+    },
+    "post/Slack App + OAuth2 を使って Slack にメッセージを投稿する方法/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Slack App + OAuth2 を使って Slack にメッセージを投稿する方法/index.md",
+      "sourceHash": "eac3d15bcb4e61c7c62973f9a631da284554af3dfaec1bd1beb350cb4aaac673",
+      "translationHash": "02f7262c319f3f99b7577666c1cab7c4eab09447846433b88d393b1e8bdb75d4",
+      "summary": "Compared the full translation with the Japanese source and updated token setup/security, scopes, channel permissions, WinHTTP request/response handling, metadata, and references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Clarified that the sample uses an installed app bot token and does not implement OAuth authorization-code exchange."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed Slack bot token, OAuth scope, bearer auth, channel ID, UTF-8 JSON, WinHTTP, and security wording."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced raw JSON concatenation and token literals with escaping, environment loading, RAII handles, HTTP status and Slack JSON ok checks. Static review only; not compiled or sent to Slack."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current Slack chat.postMessage/token docs and Microsoft WinHTTP API references; checked localized internal links."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The C++ sample was reviewed statically but not compiled or sent to a Slack workspace.",
+        "The small response helper checks the top-level ok boolean; production clients should use a JSON parser and robust diagnostics, timeout, and retry handling.",
+        "The example assumes an installed app with permissions; it does not implement OAuth consent, callback handling, or token refresh.",
+        "Use a secure secret store for production tokens."
+      ]
+    },
+    "post/Slack App + OAuth2 を使って Slack にメッセージを投稿する方法/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Slack App + OAuth2 を使って Slack にメッセージを投稿する方法/index.md",
+      "sourceHash": "eac3d15bcb4e61c7c62973f9a631da284554af3dfaec1bd1beb350cb4aaac673",
+      "translationHash": "f340fde9e9f63c96027b559f860f3d8422a6e856db028cdf32002fbc057c0833",
+      "summary": "Compared the full translation with the Japanese source and updated token setup/security, scopes, channel permissions, WinHTTP request/response handling, metadata, and references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Clarified that the sample uses an installed app bot token and does not implement OAuth authorization-code exchange."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed Slack bot token, OAuth scope, bearer auth, channel ID, UTF-8 JSON, WinHTTP, and security wording."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced raw JSON concatenation and token literals with escaping, environment loading, RAII handles, HTTP status and Slack JSON ok checks. Static review only; not compiled or sent to Slack."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current Slack chat.postMessage/token docs and Microsoft WinHTTP API references; checked localized internal links."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The C++ sample was reviewed statically but not compiled or sent to a Slack workspace.",
+        "The small response helper checks the top-level ok boolean; production clients should use a JSON parser and robust diagnostics, timeout, and retry handling.",
+        "The example assumes an installed app with permissions; it does not implement OAuth consent, callback handling, or token refresh.",
+        "Use a secure secret store for production tokens."
+      ]
+    },
+    "post/Slack App + OAuth2 を使って Slack にメッセージを投稿する方法/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Slack App + OAuth2 を使って Slack にメッセージを投稿する方法/index.md",
+      "sourceHash": "eac3d15bcb4e61c7c62973f9a631da284554af3dfaec1bd1beb350cb4aaac673",
+      "translationHash": "4cceaa478e37eea5689f51195c2d8a81aee303fdd007fe3923f1d65f465b82cf",
+      "summary": "Compared the full translation with the Japanese source and updated token setup/security, scopes, channel permissions, WinHTTP request/response handling, metadata, and references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Clarified that the sample uses an installed app bot token and does not implement OAuth authorization-code exchange."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed Slack bot token, OAuth scope, bearer auth, channel ID, UTF-8 JSON, WinHTTP, and security wording."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced raw JSON concatenation and token literals with escaping, environment loading, RAII handles, HTTP status and Slack JSON ok checks. Static review only; not compiled or sent to Slack."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current Slack chat.postMessage/token docs and Microsoft WinHTTP API references; checked localized internal links."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The C++ sample was reviewed statically but not compiled or sent to a Slack workspace.",
+        "The small response helper checks the top-level ok boolean; production clients should use a JSON parser and robust diagnostics, timeout, and retry handling.",
+        "The example assumes an installed app with permissions; it does not implement OAuth consent, callback handling, or token refresh.",
+        "Use a secure secret store for production tokens."
+      ]
+    },
+    "post/Slack App + OAuth2 を使って Slack にメッセージを投稿する方法/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Slack App + OAuth2 を使って Slack にメッセージを投稿する方法/index.md",
+      "sourceHash": "eac3d15bcb4e61c7c62973f9a631da284554af3dfaec1bd1beb350cb4aaac673",
+      "translationHash": "a0bf9221629f65cf3493c212d15180c322856faf5ab2cbc38bf3a9e1d3fe7522",
+      "summary": "Compared the full translation with the Japanese source and updated token setup/security, scopes, channel permissions, WinHTTP request/response handling, metadata, and references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Clarified that the sample uses an installed app bot token and does not implement OAuth authorization-code exchange."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed Slack bot token, OAuth scope, bearer auth, channel ID, UTF-8 JSON, WinHTTP, and security wording."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced raw JSON concatenation and token literals with escaping, environment loading, RAII handles, HTTP status and Slack JSON ok checks. Static review only; not compiled or sent to Slack."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current Slack chat.postMessage/token docs and Microsoft WinHTTP API references; checked localized internal links."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The C++ sample was reviewed statically but not compiled or sent to a Slack workspace.",
+        "The small response helper checks the top-level ok boolean; production clients should use a JSON parser and robust diagnostics, timeout, and retry handling.",
+        "The example assumes an installed app with permissions; it does not implement OAuth consent, callback handling, or token refresh.",
+        "Use a secure secret store for production tokens."
+      ]
+    },
+    "post/Slack App + OAuth2 を使って Slack にメッセージを投稿する方法/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Slack App + OAuth2 を使って Slack にメッセージを投稿する方法/index.md",
+      "sourceHash": "eac3d15bcb4e61c7c62973f9a631da284554af3dfaec1bd1beb350cb4aaac673",
+      "translationHash": "2ad12b2bf039169b72281a48967d6a03ead98b7e5afa54bc311293fa21a971c5",
+      "summary": "Compared the full translation with the Japanese source and updated token setup/security, scopes, channel permissions, WinHTTP request/response handling, metadata, and references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Clarified that the sample uses an installed app bot token and does not implement OAuth authorization-code exchange."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed Slack bot token, OAuth scope, bearer auth, channel ID, UTF-8 JSON, WinHTTP, and security wording."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced raw JSON concatenation and token literals with escaping, environment loading, RAII handles, HTTP status and Slack JSON ok checks. Static review only; not compiled or sent to Slack."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current Slack chat.postMessage/token docs and Microsoft WinHTTP API references; checked localized internal links."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The C++ sample was reviewed statically but not compiled or sent to a Slack workspace.",
+        "The small response helper checks the top-level ok boolean; production clients should use a JSON parser and robust diagnostics, timeout, and retry handling.",
+        "The example assumes an installed app with permissions; it does not implement OAuth consent, callback handling, or token refresh.",
+        "Use a secure secret store for production tokens."
+      ]
+    }
+  }
+}

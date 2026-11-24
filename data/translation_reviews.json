@@ -20045,6 +20045,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-172.json",
       "evidenceHash": "7ce250f0d79feabdd6af9fbe7a10eb2fdb3714e8781625fb0a33c96529dac44d"
+    },
+    "post/Slack App + OAuth2 を使って Slack にメッセージを投稿する方法/index.en.md": {
+      "source": "post/Slack App + OAuth2 を使って Slack にメッセージを投稿する方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "eac3d15bcb4e61c7c62973f9a631da284554af3dfaec1bd1beb350cb4aaac673",
+      "translationHash": "98df678b40c0570d36d45f8aaf1284c04611377f9554c2b4d140f46086d67387",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-173.json",
+      "evidenceHash": "d550e361ac9df9fd7282fbf4f20ddf7b607547215cbc533ecc35ef217f8b105e"
+    },
+    "post/Slack App + OAuth2 を使って Slack にメッセージを投稿する方法/index.zh-cn.md": {
+      "source": "post/Slack App + OAuth2 を使って Slack にメッセージを投稿する方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "eac3d15bcb4e61c7c62973f9a631da284554af3dfaec1bd1beb350cb4aaac673",
+      "translationHash": "090439c227546c97f4ee375c19194d28670ab53ed95fff818766c414111c2b92",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-173.json",
+      "evidenceHash": "6fb1fb7f13f17ed118ca0278dff2cddb98ca6ca27e9e2d5b2932e6f0873d5817"
+    },
+    "post/Slack App + OAuth2 を使って Slack にメッセージを投稿する方法/index.es.md": {
+      "source": "post/Slack App + OAuth2 を使って Slack にメッセージを投稿する方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "eac3d15bcb4e61c7c62973f9a631da284554af3dfaec1bd1beb350cb4aaac673",
+      "translationHash": "330de94c4b4e27805e1241492b90b6796cd96b1db258654946b97328af3681dd",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-173.json",
+      "evidenceHash": "04a385f4d00b95aac2f8388d06f29eaccc8f64a2af4c958632e0cbfcbc58693a"
+    },
+    "post/Slack App + OAuth2 を使って Slack にメッセージを投稿する方法/index.ko.md": {
+      "source": "post/Slack App + OAuth2 を使って Slack にメッセージを投稿する方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "eac3d15bcb4e61c7c62973f9a631da284554af3dfaec1bd1beb350cb4aaac673",
+      "translationHash": "ffd3433017db2c628cc54510e56e67ea19c63f7d3f9f381c33741258efeae318",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-173.json",
+      "evidenceHash": "5b58c08a42627413c53df2dcf33819c7248170b531210caec62b2112c19a6c78"
+    },
+    "post/Slack App + OAuth2 を使って Slack にメッセージを投稿する方法/index.pt.md": {
+      "source": "post/Slack App + OAuth2 を使って Slack にメッセージを投稿する方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "eac3d15bcb4e61c7c62973f9a631da284554af3dfaec1bd1beb350cb4aaac673",
+      "translationHash": "23b42d28407c505d6dfd547c4923d0bc8e31196b758ea33d532966b321b7c38e",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-173.json",
+      "evidenceHash": "4bb778f0719e3d0715d2b7c19fa01ee2147fc88db80acadcf332e7f93b66fb42"
+    },
+    "post/Slack App + OAuth2 を使って Slack にメッセージを投稿する方法/index.zh-tw.md": {
+      "source": "post/Slack App + OAuth2 を使って Slack にメッセージを投稿する方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "eac3d15bcb4e61c7c62973f9a631da284554af3dfaec1bd1beb350cb4aaac673",
+      "translationHash": "0bc5a0ed36e2a75bcba8248ff3f2b22372de0a80ae1402c93c51177e31884be0",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-173.json",
+      "evidenceHash": "10621dee940610723b46dade5cf30f6934a7205751da93397e0de17170844611"
+    },
+    "post/Slack App + OAuth2 を使って Slack にメッセージを投稿する方法/index.hi.md": {
+      "source": "post/Slack App + OAuth2 を使って Slack にメッセージを投稿する方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "eac3d15bcb4e61c7c62973f9a631da284554af3dfaec1bd1beb350cb4aaac673",
+      "translationHash": "4be9742a238974ba9fa6971d9d738a472b11fab2c11b32fafeda18802b022661",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-173.json",
+      "evidenceHash": "c7087bc4c38fc46fc7823b172a8f07b2067755fdf21d1b28a258d4d5c72ab738"
+    },
+    "post/Slack App + OAuth2 を使って Slack にメッセージを投稿する方法/index.fr.md": {
+      "source": "post/Slack App + OAuth2 を使って Slack にメッセージを投稿する方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "eac3d15bcb4e61c7c62973f9a631da284554af3dfaec1bd1beb350cb4aaac673",
+      "translationHash": "02f7262c319f3f99b7577666c1cab7c4eab09447846433b88d393b1e8bdb75d4",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-173.json",
+      "evidenceHash": "f2ff64e36c35b6c3f62ea2d05ca645f946b7d76250eecbaac6de05d5bad97652"
+    },
+    "post/Slack App + OAuth2 を使って Slack にメッセージを投稿する方法/index.de.md": {
+      "source": "post/Slack App + OAuth2 を使って Slack にメッセージを投稿する方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "eac3d15bcb4e61c7c62973f9a631da284554af3dfaec1bd1beb350cb4aaac673",
+      "translationHash": "f340fde9e9f63c96027b559f860f3d8422a6e856db028cdf32002fbc057c0833",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-173.json",
+      "evidenceHash": "32de29f0ada3ed046cb3f154ceba081c312ef895fc07403ee2e9a7e05f020c9f"
+    },
+    "post/Slack App + OAuth2 を使って Slack にメッセージを投稿する方法/index.ar.md": {
+      "source": "post/Slack App + OAuth2 を使って Slack にメッセージを投稿する方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "eac3d15bcb4e61c7c62973f9a631da284554af3dfaec1bd1beb350cb4aaac673",
+      "translationHash": "4cceaa478e37eea5689f51195c2d8a81aee303fdd007fe3923f1d65f465b82cf",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-173.json",
+      "evidenceHash": "033f70168f88c0eb520c9d1b9f3ee18ed55efe8a9ec2ebcf5b262b5f77695ddd"
+    },
+    "post/Slack App + OAuth2 を使って Slack にメッセージを投稿する方法/index.ru.md": {
+      "source": "post/Slack App + OAuth2 を使って Slack にメッセージを投稿する方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "eac3d15bcb4e61c7c62973f9a631da284554af3dfaec1bd1beb350cb4aaac673",
+      "translationHash": "a0bf9221629f65cf3493c212d15180c322856faf5ab2cbc38bf3a9e1d3fe7522",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-173.json",
+      "evidenceHash": "cb3132b83a3283aacebe488f196ab10ec1249a1766a1b05034cfc79fe94caff2"
+    },
+    "post/Slack App + OAuth2 を使って Slack にメッセージを投稿する方法/index.id.md": {
+      "source": "post/Slack App + OAuth2 を使って Slack にメッセージを投稿する方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "eac3d15bcb4e61c7c62973f9a631da284554af3dfaec1bd1beb350cb4aaac673",
+      "translationHash": "2ad12b2bf039169b72281a48967d6a03ead98b7e5afa54bc311293fa21a971c5",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-173.json",
+      "evidenceHash": "49cbc350ac312d1b0139fb13d321e18763595d6e08f759e988fbf1c17d25723d"
     }
   }
 }

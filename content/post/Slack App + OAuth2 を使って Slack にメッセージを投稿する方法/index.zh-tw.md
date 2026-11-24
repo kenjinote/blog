@@ -1,8 +1,8 @@
 ---
 title: '使用 Slack API 與 OAuth2 發布訊息的方法 (C++ 實作範例)'
-date: "2026-09-24T19:44:38+09:00"
 slug: "Slack App + OAuth2 を使って Slack にメッセージを投稿する方法"
-date: 2025-07-16T23:36:27+09:00
+date: "2025-07-16T23:36:27+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 tags: ["C++", "Win32 API", "WinHTTP", "Slack", "Webhook"]
 draft: false
 image: "img.webp"
@@ -10,131 +10,138 @@ categories: ["blogging"]
 description: '說明如何利用 Slack App 的 OAuth 權杖，透過 Slack Web API 發布訊息。從設定權限範圍及取得存取權杖的步驟，到使用 WinHTTP 的 C++ 具體實作程式碼範例，皆有介紹。'
 ---
 
-## ✅ 使用存取權杖的發文方法（Slack Web API）
+## 發送方式
 
-Slack 的「[OAuth](https://kenji.blog/zh-tw/p/oauth2-oidc-authentication-authorization-difference/) Token（例如 xoxb-... 等）」是用來透過 Slack 的 [Web API](https://api.slack.com/methods/chat.postMessage) 發文的密鑰。
-在這種情況下，與 Webhook 不同，你需要向 **Slack API 端點** 進行帶有 `Authorization: Bearer` 標頭的 `POST` 請求。
+範例使用Slack應用程式安裝後取得的Bot OAuth權杖，不實作OAuth授權碼流程，而是向`chat.postMessage`傳送HTTPS要求。
 
----
+## 設定Slack應用程式
 
-## 🔑 必要前提
+在OAuth & Permissions的Bot Token Scopes加入`chat:write`，再安裝或重新安裝應用程式。將`xoxb-...`權杖存入`SLACK_BOT_TOKEN`，勿寫入原始碼或記錄。
 
-你必須在 Slack 應用程式的 **[OAuth](https://kenji.blog/zh-tw/p/oauth2-oidc-authentication-authorization-difference/) 範圍內包含 `chat:write`** ：
+## 保護權杖
 
-### 設定步驟
+PowerShell目前工作階段可設定`$env:SLACK_BOT_TOKEN = "..."`。正式環境請使用密鑰管理器。
 
-1. 前往 [https://api.slack.com/apps](https://api.slack.com/apps)
-2. 建立應用程式或選擇現有應用程式
-3. 在「[OAuth](https://kenji.blog/zh-tw/p/oauth2-oidc-authentication-authorization-difference/) & Permissions」 > `Scopes` 中
-   → 新增 `chat:write`
-4. 點擊「Install to Workspace」或「Reinstall」以獲取 `Access Token`（例如：`xoxb-xxxxxxxxxx`）
 
----
 
-## 💻 C++ 程式碼（使用 WinHTTP 向 Slack API 發送請求）
+## C++實作（WinHTTP）
+
+範例使用WinHTTP與Windows SDK。請用目前的C++編譯器建置並連結`winhttp.lib`。
 
 ```cpp
 #include <windows.h>
 #include <winhttp.h>
+#include <cctype>
 #include <iostream>
+#include <string>
 
 #pragma comment(lib, "winhttp.lib")
 
-bool PostSlackMessage(const std::wstring& accessToken, const std::string& channel, const std::string& text) {
-    const wchar_t* host = L"slack.com";
-    const wchar_t* path = L"/api/chat.postMessage";
+class Handle {
+public:
+    explicit Handle(HINTERNET value) : value_(value) {}
+    ~Handle() { if (value_) WinHttpCloseHandle(value_); }
+    Handle(const Handle&) = delete;
+    Handle& operator=(const Handle&) = delete;
+    HINTERNET get() const { return value_; }
+private:
+    HINTERNET value_;
+};
 
-    HINTERNET hSession = WinHttpOpen(L"SlackPoster/1.0",
-                                     WINHTTP_ACCESS_TYPE_DEFAULT_PROXY,
-                                     WINHTTP_NO_PROXY_NAME,
-                                     WINHTTP_NO_PROXY_BYPASS, 0);
-    if (!hSession) return false;
-
-    HINTERNET hConnect = WinHttpConnect(hSession, host, INTERNET_DEFAULT_HTTPS_PORT, 0);
-    if (!hConnect) return false;
-
-    HINTERNET hRequest = WinHttpOpenRequest(hConnect, L"POST", path,
-                                            NULL, WINHTTP_NO_REFERER,
-                                            WINHTTP_DEFAULT_ACCEPT_TYPES,
-                                            WINHTTP_FLAG_SECURE);
-
-    // Authorization 標頭與 Content-Type
-    std::wstring headers = L"Content-Type: application/json\r\n";
-    headers += L"Authorization: Bearer " + accessToken + L"\r\n";
-
-    // JSON 內容
-    std::string body = R"({"channel":")" + channel + R"(","text":")" + text + R"("})";
-
-    BOOL result = WinHttpSendRequest(hRequest,
-                                     headers.c_str(),
-                                     (DWORD)-1,
-                                     (LPVOID)body.c_str(),
-                                     body.length(),
-                                     body.length(),
-                                     0);
-
-    if (!result || !WinHttpReceiveResponse(hRequest, NULL)) {
-        std::cerr << "發送錯誤\n";
-        return false;
+std::string escapeJson(const std::string& value) {
+    const char hex[] = "0123456789abcdef";
+    std::string out;
+    for (unsigned char c : value) {
+        if (c == '"') out += "\\\"";
+        else if (c == '\\') out += "\\\\";
+        else if (c == '\n') out += "\\n";
+        else if (c == '\r') out += "\\r";
+        else if (c == '\t') out += "\\t";
+        else if (c < 0x20) { out += "\\u00"; out += hex[c >> 4]; out += hex[c & 15]; }
+        else out += static_cast<char>(c); // Keep valid UTF-8 bytes intact.
     }
-
-    // 確認狀態碼
-    DWORD statusCode = 0;
-    DWORD size = sizeof(statusCode);
-    WinHttpQueryHeaders(hRequest,
-                        WINHTTP_QUERY_STATUS_CODE | WINHTTP_QUERY_FLAG_NUMBER,
-                        WINHTTP_HEADER_NAME_BY_INDEX,
-                        &statusCode, &size, WINHTTP_NO_HEADER_INDEX);
-
-    WinHttpCloseHandle(hRequest);
-    WinHttpCloseHandle(hConnect);
-    WinHttpCloseHandle(hSession);
-
-    return (statusCode == 200);
+    return out;
 }
 
-int main() {
-    std::wstring token = L"xoxb-你的存取權杖"; // 存取權杖
-    std::string channel = "頻道ID或者#general";       // 範例: "#general" 或 "C0123456789"
-    std::string message = "嘗試從 C++ 發送訊息到 Slack！";
+bool slackOk(const std::string& json) {
+    const size_t key = json.find("\"ok\"");
+    if (key == std::string::npos) return false;
+    const size_t colon = json.find(':', key + 4);
+    if (colon == std::string::npos) return false;
+    size_t pos = colon + 1;
+    while (pos < json.size() && std::isspace(static_cast<unsigned char>(json[pos]))) ++pos;
+    if (json.compare(pos, 4, "true") != 0) return false;
+    pos += 4;
+    while (pos < json.size() && std::isspace(static_cast<unsigned char>(json[pos]))) ++pos;
+    return pos == json.size() || json[pos] == ',' || json[pos] == '}';
+}
 
-    if (PostSlackMessage(token, channel, message)) {
-        std::cout << "發文成功！\n";
-    } else {
-        std::cerr << "發文失敗。\n";
+bool readBody(HINTERNET request, std::string& body) {
+    for (;;) {
+        DWORD available = 0;
+        if (!WinHttpQueryDataAvailable(request, &available)) return false;
+        if (available == 0) return true;
+        std::string chunk(available, '\0');
+        DWORD received = 0;
+        if (!WinHttpReadData(request, &chunk[0], available, &received)) return false;
+        body.append(chunk.data(), received);
     }
+}
 
+bool postMessage(const std::wstring& token, const std::string& channelId,
+                 const std::string& text) {
+    Handle session(WinHttpOpen(L"SlackPoster/1.0", WINHTTP_ACCESS_TYPE_DEFAULT_PROXY,
+                               WINHTTP_NO_PROXY_NAME, WINHTTP_NO_PROXY_BYPASS, 0));
+    if (!session.get()) return false;
+    Handle connection(WinHttpConnect(session.get(), L"slack.com", INTERNET_DEFAULT_HTTPS_PORT, 0));
+    if (!connection.get()) return false;
+    Handle request(WinHttpOpenRequest(connection.get(), L"POST", L"/api/chat.postMessage",
+        nullptr, WINHTTP_NO_REFERER, WINHTTP_DEFAULT_ACCEPT_TYPES, WINHTTP_FLAG_SECURE));
+    if (!request.get()) return false;
+
+    const std::wstring headers = L"Content-Type: application/json; charset=utf-8\r\nAuthorization: Bearer " + token + L"\r\n";
+    const std::string payload = "{\"channel\":\"" + escapeJson(channelId) + "\",\"text\":\"" + escapeJson(text) + "\"}";
+    const DWORD length = static_cast<DWORD>(payload.size());
+    if (!WinHttpSendRequest(request.get(), headers.c_str(), static_cast<DWORD>(-1L),
+        const_cast<char*>(payload.data()), length, length, 0) ||
+        !WinHttpReceiveResponse(request.get(), nullptr)) return false;
+
+    DWORD status = 0, statusSize = sizeof(status);
+    if (!WinHttpQueryHeaders(request.get(), WINHTTP_QUERY_STATUS_CODE | WINHTTP_QUERY_FLAG_NUMBER,
+        WINHTTP_HEADER_NAME_BY_INDEX, &status, &statusSize, WINHTTP_NO_HEADER_INDEX) || status != 200)
+        return false;
+    std::string response;
+    return readBody(request.get(), response) && slackOk(response);
+}
+
+int wmain() {
+    const DWORD capacity = GetEnvironmentVariableW(L"SLACK_BOT_TOKEN", nullptr, 0);
+    if (capacity == 0) { std::cerr << "Set SLACK_BOT_TOKEN first.\n"; return 1; }
+    std::wstring token(capacity, L'\0');
+    const DWORD copied = GetEnvironmentVariableW(L"SLACK_BOT_TOKEN", &token[0], capacity);
+    if (copied == 0 || copied >= capacity) return 1;
+    token.resize(copied);
+
+    const std::string channelId = "C0123456789";
+    const std::string message = "Message sent from C++"; // Use UTF-8 for non-ASCII text.
+    if (!postMessage(token, channelId, message)) {
+        std::cerr << "Slack did not confirm the message.\n";
+        return 1;
+    }
+    std::cout << "Slack confirmed the message.\n";
     return 0;
 }
 ```
 
----
+## 頻道與回應檢查
 
-## 📌 如何獲取頻道 ID
+傳入頻道ID（例如`C0123456789`）並邀請Bot加入。若要在Bot未加入的公開頻道發文，需要`chat:write.public`。 HTTP 200不一定代表成功。Slack可能回傳`{"ok":false,...}`，因此範例會檢查HTTP狀態與JSON的`ok`欄位。
 
-僅使用頻道名稱（例如：`#general`）可能會導致錯誤。
-最可靠的方法是使用 Slack 頻道頁面 URL 中的 ID。
+## 參考資料
 
-```
-https://app.slack.com/client/Txxxxx/C0123456789
-                                 ↑這部分就是頻道 ID
-```
-
----
-
-## ✅ 關於權杖類型（補充）
-
-| 權杖格式       | 用途              | 範例        |
-| ------------- | --------------- | -------- |
-| `xoxb-...`    | Bot Token（推薦）   | 發文、編輯、刪除 |
-| `xoxp-...`    | User Token（不推薦） | 非 Bot 相關操作 |
-| Refresh Token | 用於長期權杖更新       | 通常不使用  |
-
----
-
-## 📝 總結
-
-* 要從 C++ 發文到 Slack，使用 Slack Web API + Bearer Token 方式最為可靠
-* 使用 HTTPS POST 發送至 `chat.postMessage` 端點
-* 必須透過 Bearer 標頭發送權杖
-* 確保 **指定頻道 ID** 以確保準確性
+- [Slack `chat.postMessage` API](https://docs.slack.dev/reference/methods/chat.postMessage/)
+- [Slack token types and bot tokens](https://docs.slack.dev/authentication/tokens/)
+- [Slack app settings](https://api.slack.com/apps)
+- [Microsoft WinHttpSendRequest](https://learn.microsoft.com/en-us/windows/win32/api/winhttp/nf-winhttp-winhttpsendrequest)
+- [Microsoft WinHttpReadData](https://learn.microsoft.com/en-us/windows/win32/api/winhttp/nf-winhttp-winhttpreaddata)
+- [Microsoft WinHttpCloseHandle](https://learn.microsoft.com/en-us/windows/win32/api/winhttp/nf-winhttp-winhttpclosehandle)

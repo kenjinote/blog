@@ -1,8 +1,8 @@
 ---
 title: 'Как отправлять сообщения с помощью Slack API и OAuth2 (пример реализации на C++)'
-date: "2026-09-24T19:44:38+09:00"
 slug: "Slack App + OAuth2 を使って Slack にメッセージを投稿する方法"
-date: 2025-07-16T23:36:27+09:00
+date: "2025-07-16T23:36:27+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 tags: ["C++", "Win32 API", "WinHTTP", "Slack", "Webhook"]
 draft: false
 image: "img.webp"
@@ -10,131 +10,138 @@ categories: ["blogging"]
 description: 'Объясняется, как отправлять сообщения через Slack Web API с использованием токена OAuth от Slack App. Рассматриваются шаги от настройки областей видимости (scopes) и получения токена доступа до конкретного примера реализации кода на C++ с использованием WinHTTP.'
 ---
 
-## ✅ Как отправлять сообщения с использованием токена доступа (Slack Web API)
+## Отправка сообщения
 
-«[OAuth](https://kenji.blog/ru/p/oauth2-oidc-authentication-authorization-difference/) Token (например, xoxb- и т.д.)» от Slack — это ключ для публикации сообщений с помощью [Web API](https://api.slack.com/methods/chat.postMessage) от Slack.
-В этом случае, в отличие от Webhook, вы выполняете `POST` запрос к **конечной точке API Slack** с заголовком `Authorization: Bearer`.
+Пример использует OAuth-токен бота после установки приложения Slack и не реализует поток OAuth с кодом авторизации. Он отправляет HTTPS-запрос в `chat.postMessage`.
 
----
+## Настройка приложения Slack
 
-## 🔑 Необходимые условия
+Добавьте `chat:write` в Bot Token Scopes раздела OAuth & Permissions и установите приложение. Храните токен `xoxb-...` в `SLACK_BOT_TOKEN`, а не в коде или журналах.
 
-Вы должны включить **`chat:write` в область действия [OAuth](https://kenji.blog/ru/p/oauth2-oidc-authentication-authorization-difference/)** в вашем приложении Slack:
+## Защита токена
 
-### Шаги настройки
+В PowerShell задайте `$env:SLACK_BOT_TOKEN = "..."` для текущего сеанса. В production используйте менеджер секретов.
 
-1. Перейдите на [https://api.slack.com/apps](https://api.slack.com/apps)
-2. Создайте приложение или выберите существующее
-3. В «[OAuth](https://kenji.blog/ru/p/oauth2-oidc-authentication-authorization-difference/) & Permissions» > `Scopes`
-   → Добавьте `chat:write`
-4. Выполните «Install to Workspace» или «Reinstall», чтобы получить `Access Token` (например: `xoxb-xxxxxxxxxx`)
 
----
 
-## 💻 Код на C++ (Отправка в Slack API через WinHTTP)
+## Реализация на C++ с WinHTTP
+
+В примере используются WinHTTP и Windows SDK. Соберите его современным компилятором C++ и подключите `winhttp.lib`.
 
 ```cpp
 #include <windows.h>
 #include <winhttp.h>
+#include <cctype>
 #include <iostream>
+#include <string>
 
 #pragma comment(lib, "winhttp.lib")
 
-bool PostSlackMessage(const std::wstring& accessToken, const std::string& channel, const std::string& text) {
-    const wchar_t* host = L"slack.com";
-    const wchar_t* path = L"/api/chat.postMessage";
+class Handle {
+public:
+    explicit Handle(HINTERNET value) : value_(value) {}
+    ~Handle() { if (value_) WinHttpCloseHandle(value_); }
+    Handle(const Handle&) = delete;
+    Handle& operator=(const Handle&) = delete;
+    HINTERNET get() const { return value_; }
+private:
+    HINTERNET value_;
+};
 
-    HINTERNET hSession = WinHttpOpen(L"SlackPoster/1.0",
-                                     WINHTTP_ACCESS_TYPE_DEFAULT_PROXY,
-                                     WINHTTP_NO_PROXY_NAME,
-                                     WINHTTP_NO_PROXY_BYPASS, 0);
-    if (!hSession) return false;
-
-    HINTERNET hConnect = WinHttpConnect(hSession, host, INTERNET_DEFAULT_HTTPS_PORT, 0);
-    if (!hConnect) return false;
-
-    HINTERNET hRequest = WinHttpOpenRequest(hConnect, L"POST", path,
-                                            NULL, WINHTTP_NO_REFERER,
-                                            WINHTTP_DEFAULT_ACCEPT_TYPES,
-                                            WINHTTP_FLAG_SECURE);
-
-    // Заголовок Authorization и Content-Type
-    std::wstring headers = L"Content-Type: application/json\r\n";
-    headers += L"Authorization: Bearer " + accessToken + L"\r\n";
-
-    // Тело JSON
-    std::string body = R"({"channel":")" + channel + R"(","text":")" + text + R"("})";
-
-    BOOL result = WinHttpSendRequest(hRequest,
-                                     headers.c_str(),
-                                     (DWORD)-1,
-                                     (LPVOID)body.c_str(),
-                                     body.length(),
-                                     body.length(),
-                                     0);
-
-    if (!result || !WinHttpReceiveResponse(hRequest, NULL)) {
-        std::cerr << "Ошибка отправки\n";
-        return false;
+std::string escapeJson(const std::string& value) {
+    const char hex[] = "0123456789abcdef";
+    std::string out;
+    for (unsigned char c : value) {
+        if (c == '"') out += "\\\"";
+        else if (c == '\\') out += "\\\\";
+        else if (c == '\n') out += "\\n";
+        else if (c == '\r') out += "\\r";
+        else if (c == '\t') out += "\\t";
+        else if (c < 0x20) { out += "\\u00"; out += hex[c >> 4]; out += hex[c & 15]; }
+        else out += static_cast<char>(c); // Keep valid UTF-8 bytes intact.
     }
-
-    // Проверка кода статуса
-    DWORD statusCode = 0;
-    DWORD size = sizeof(statusCode);
-    WinHttpQueryHeaders(hRequest,
-                        WINHTTP_QUERY_STATUS_CODE | WINHTTP_QUERY_FLAG_NUMBER,
-                        WINHTTP_HEADER_NAME_BY_INDEX,
-                        &statusCode, &size, WINHTTP_NO_HEADER_INDEX);
-
-    WinHttpCloseHandle(hRequest);
-    WinHttpCloseHandle(hConnect);
-    WinHttpCloseHandle(hSession);
-
-    return (statusCode == 200);
+    return out;
 }
 
-int main() {
-    std::wstring token = L"xoxb-ваш-токен-доступа"; // Токен доступа
-    std::string channel = "ID-канала-или-#general";       // Пример: "#general" или "C0123456789"
-    std::string message = "Попытка отправки в Slack из C++!";
+bool slackOk(const std::string& json) {
+    const size_t key = json.find("\"ok\"");
+    if (key == std::string::npos) return false;
+    const size_t colon = json.find(':', key + 4);
+    if (colon == std::string::npos) return false;
+    size_t pos = colon + 1;
+    while (pos < json.size() && std::isspace(static_cast<unsigned char>(json[pos]))) ++pos;
+    if (json.compare(pos, 4, "true") != 0) return false;
+    pos += 4;
+    while (pos < json.size() && std::isspace(static_cast<unsigned char>(json[pos]))) ++pos;
+    return pos == json.size() || json[pos] == ',' || json[pos] == '}';
+}
 
-    if (PostSlackMessage(token, channel, message)) {
-        std::cout << "Успешная отправка!\n";
-    } else {
-        std::cerr << "Ошибка при отправке.\n";
+bool readBody(HINTERNET request, std::string& body) {
+    for (;;) {
+        DWORD available = 0;
+        if (!WinHttpQueryDataAvailable(request, &available)) return false;
+        if (available == 0) return true;
+        std::string chunk(available, '\0');
+        DWORD received = 0;
+        if (!WinHttpReadData(request, &chunk[0], available, &received)) return false;
+        body.append(chunk.data(), received);
     }
+}
 
+bool postMessage(const std::wstring& token, const std::string& channelId,
+                 const std::string& text) {
+    Handle session(WinHttpOpen(L"SlackPoster/1.0", WINHTTP_ACCESS_TYPE_DEFAULT_PROXY,
+                               WINHTTP_NO_PROXY_NAME, WINHTTP_NO_PROXY_BYPASS, 0));
+    if (!session.get()) return false;
+    Handle connection(WinHttpConnect(session.get(), L"slack.com", INTERNET_DEFAULT_HTTPS_PORT, 0));
+    if (!connection.get()) return false;
+    Handle request(WinHttpOpenRequest(connection.get(), L"POST", L"/api/chat.postMessage",
+        nullptr, WINHTTP_NO_REFERER, WINHTTP_DEFAULT_ACCEPT_TYPES, WINHTTP_FLAG_SECURE));
+    if (!request.get()) return false;
+
+    const std::wstring headers = L"Content-Type: application/json; charset=utf-8\r\nAuthorization: Bearer " + token + L"\r\n";
+    const std::string payload = "{\"channel\":\"" + escapeJson(channelId) + "\",\"text\":\"" + escapeJson(text) + "\"}";
+    const DWORD length = static_cast<DWORD>(payload.size());
+    if (!WinHttpSendRequest(request.get(), headers.c_str(), static_cast<DWORD>(-1L),
+        const_cast<char*>(payload.data()), length, length, 0) ||
+        !WinHttpReceiveResponse(request.get(), nullptr)) return false;
+
+    DWORD status = 0, statusSize = sizeof(status);
+    if (!WinHttpQueryHeaders(request.get(), WINHTTP_QUERY_STATUS_CODE | WINHTTP_QUERY_FLAG_NUMBER,
+        WINHTTP_HEADER_NAME_BY_INDEX, &status, &statusSize, WINHTTP_NO_HEADER_INDEX) || status != 200)
+        return false;
+    std::string response;
+    return readBody(request.get(), response) && slackOk(response);
+}
+
+int wmain() {
+    const DWORD capacity = GetEnvironmentVariableW(L"SLACK_BOT_TOKEN", nullptr, 0);
+    if (capacity == 0) { std::cerr << "Set SLACK_BOT_TOKEN first.\n"; return 1; }
+    std::wstring token(capacity, L'\0');
+    const DWORD copied = GetEnvironmentVariableW(L"SLACK_BOT_TOKEN", &token[0], capacity);
+    if (copied == 0 || copied >= capacity) return 1;
+    token.resize(copied);
+
+    const std::string channelId = "C0123456789";
+    const std::string message = "Message sent from C++"; // Use UTF-8 for non-ASCII text.
+    if (!postMessage(token, channelId, message)) {
+        std::cerr << "Slack did not confirm the message.\n";
+        return 1;
+    }
+    std::cout << "Slack confirmed the message.\n";
     return 0;
 }
 ```
 
----
+## Проверка канала и ответа
 
-## 📌 Как получить ID канала
+Передайте ID канала (например, `C0123456789`) и пригласите туда бота. Для публикации в публичных каналах без бота нужен `chat:write.public`. HTTP 200 не гарантирует успех. Slack может вернуть `{"ok":false,...}`, поэтому пример проверяет HTTP-статус и поле `ok` в JSON.
 
-Использование только имени канала (например, `#general`) иногда может привести к ошибке.
-Более надежный способ — использовать ID из URL страницы канала в Slack.
+## Источники
 
-```
-https://app.slack.com/client/Txxxxx/C0123456789
-                                 ↑ Эта часть — ID канала
-```
-
----
-
-## ✅ О типах токенов (Дополнительно)
-
-| Формат токена | Назначение        | Пример           |
-| ------------- | ----------------- | ---------------- |
-| `xoxb-...`    | Bot Token (Рекомендуется) | Публикация, редактирование, удаление |
-| `xoxp-...`    | User Token (Не рекомендуется) | Операции не связанные с ботом |
-| Refresh Token | Для обновления долгосрочного токена | Обычно не используется |
-
----
-
-## 📝 Заключение
-
-* Для публикации в Slack из C++ метод Slack Web API + Bearer Token является наиболее надежным
-* Используйте конечную точку `chat.postMessage` с HTTPS POST
-* Токен необходимо передавать в заголовке Bearer
-* Канал надежнее всего указывать **по ID**
+- [Slack `chat.postMessage` API](https://docs.slack.dev/reference/methods/chat.postMessage/)
+- [Slack token types and bot tokens](https://docs.slack.dev/authentication/tokens/)
+- [Slack app settings](https://api.slack.com/apps)
+- [Microsoft WinHttpSendRequest](https://learn.microsoft.com/en-us/windows/win32/api/winhttp/nf-winhttp-winhttpsendrequest)
+- [Microsoft WinHttpReadData](https://learn.microsoft.com/en-us/windows/win32/api/winhttp/nf-winhttp-winhttpreaddata)
+- [Microsoft WinHttpCloseHandle](https://learn.microsoft.com/en-us/windows/win32/api/winhttp/nf-winhttp-winhttpclosehandle)
