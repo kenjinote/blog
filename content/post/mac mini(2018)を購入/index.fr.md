@@ -1,18 +1,17 @@
 ---
 title: 'Raisons et caractéristiques de l''achat d''un Mac mini (2018) d''occasion pour le développement d''applications iOS'
-date: "2026-09-24T19:44:38+09:00"
-slug: "mac mini(2018)を購入"
 date: 2023-04-02T18:05:30+09:00
+lastmod: "2026-11-24T00:00:00+09:00"
+slug: "mac mini(2018)を購入"
 tags: ["Apple", "mac mini", "xcode"]
 draft: false
 image: "img.webp"
 categories: ["pc-gadgets"]
 description: 'Pour mettre en place un environnement de développement d''applications iOS confortable à domicile, j''ai acheté un Mac mini (2018) d''ancienne génération sur Mercari. Je vous présente les raisons de cet achat, ses caractéristiques détaillées et la première étape de la configuration de l''environnement.'
 ---
+# J'ai acheté un Mac mini (2018)
 
-# J'ai acheté un mac mini (2018)
-
-J'ai acheté un mac mini (2018) d'occasion sur Mercari. Les spécifications sont les suivantes.
+J'ai acheté un Mac mini (2018) d'occasion sur Mercari. Les spécifications sont les suivantes.
 
 - CPU : Intel Core i7 6 cœurs à 3,2 GHz
 - Mémoire : 32 [Go](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/)
@@ -22,16 +21,27 @@ Le prix était de ￥ 77 000
 
 # Raison de l'achat
 
-- J'utilise un mac mini avec des spécifications presque identiques au travail pour développer des applications mobiles, mais je voulais configurer un environnement de développement à la maison (en particulier pour exécuter xcode).
-- J'ai un macbook pro, mais je l'ai acheté il y a 9 ans et il est assez lent, donc je ne l'utilise presque pas.
+- J'utilise un Mac mini avec des spécifications presque identiques au travail pour développer des applications mobiles, mais je voulais configurer un environnement de développement à la maison (en particulier pour exécuter Xcode).
+- J'ai un MacBook Pro, mais je l'ai acheté il y a 9 ans et il est assez lent, donc je ne l'utilise presque pas.
 - Je voulais personnellement développer des applications iOS.
 
-# Installation immédiate de xcode et inteliJ IDEA
+# Installation immédiate de Xcode et IntelliJ IDEA
 
-La version de xcode est la Version 14.3 (14E222b)
+La version de Xcode est la Version 14.3 (14E222b)
 ![img_1.png](img_1.webp)
 
-La version d'inteliJ IDEA est 2023.1
+La version d'IntelliJ IDEA est 2023.1
 ![img_2.png](img_2.webp)
 
 Allons-y ! Commençons le développement !
+
+## Note sur la compatibilité actuelle
+
+Cet article relate un achat et un environnement de développement du 2 avril 2023 ; il ne constitue pas une recommandation d’achat actuelle. Au 24 novembre 2026, le Mac mini (2018) ne figure pas dans la liste des modèles compatibles avec macOS Tahoe 26. Xcode 27 fonctionne uniquement sur les Mac avec Apple silicon ; un Mac Intel nécessite Xcode 26 ou une version antérieure. Avant d’acheter un modèle d’occasion ou de configurer l’environnement, vérifiez les versions de macOS et Xcode compatibles.
+
+## Sources officielles
+
+- [Mac mini (2018) 技術仕様](https://support.apple.com/111912)
+- [macOS Tahoe compatibility](https://support.apple.com/122867)
+- [Xcode system requirements](https://developer.apple.com/Xcode/system-requirements/)
+- [Porting your macOS apps to Apple silicon](https://developer.apple.com/documentation/Apple-Silicon/porting-your-macOS-apps-to-Apple-silicon)

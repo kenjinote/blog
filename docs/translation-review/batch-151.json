@@ -1,0 +1,455 @@
+{
+  "version": 1,
+  "batch": 151,
+  "article": "Mac mini (2018) used purchase and iOS development setup",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "6048d9b2e74df633b11fdb17bd2e5bbb01121a3506857f30b9f055308b9da37b",
+  "sources": [
+    "https://support.apple.com/111912",
+    "https://support.apple.com/122867",
+    "https://developer.apple.com/xcode/system-requirements/",
+    "https://developer.apple.com/documentation/Apple-Silicon/porting-your-macOS-apps-to-Apple-silicon"
+  ],
+  "scope": "Compared the complete Japanese source and twelve translations, hardware configuration, purchase context, software versions, metadata dates, image links, and current Apple compatibility information.",
+  "findings": [
+    "Removed the duplicate future date in all 13 files; retained 2023-04-02 and set lastmod to 2026-11-24.",
+    "Corrected IntelliJ IDEA spelling and product capitalization across locales.",
+    "Added a dated note explaining that the article is a historical personal purchase record, and describing current Tahoe 26 and Xcode 27 compatibility limits for Intel Macs.",
+    "Added Apple primary references for hardware specs, OS compatibility, Xcode requirements, and Intel support."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/mac mini(2018)を購入/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/mac mini(2018)を購入/index.md",
+      "sourceHash": "6048d9b2e74df633b11fdb17bd2e5bbb01121a3506857f30b9f055308b9da37b",
+      "translationHash": "100307f7b4a3bc16637d55868d0962ed4eace2d2df845fb1a1c6ea5ee0fc2720",
+      "summary": "Compared the full Japanese purchase record and all twelve translations, corrected duplicate publication dates and product-name spelling, and added a dated compatibility note based on Apple specifications and current macOS/Xcode requirements.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared purchase context, personal reasons, configured CPU/memory/storage, historical price and software versions; clarified that this is a 2023 record rather than a current recommendation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Mac mini (2018), Intel Core i7, Xcode, IntelliJ IDEA, macOS Tahoe, Apple silicon, and model/version names."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No formulas or mathematical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Apple technical specifications, macOS Tahoe compatibility, Xcode system requirements, and Intel/Apple silicon guidance; checked image references are preserved."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Compatibility and Xcode support can change; the note is explicitly dated 2026-11-24 and linked to Apple documentation.",
+        "The reported used-unit configuration and purchase price are the author’s personal record and have not been independently verified."
+      ]
+    },
+    "post/mac mini(2018)を購入/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/mac mini(2018)を購入/index.md",
+      "sourceHash": "6048d9b2e74df633b11fdb17bd2e5bbb01121a3506857f30b9f055308b9da37b",
+      "translationHash": "c2fcd98088d50ed0aeef540a7400fe857196132217436a001d8932fe7ef41791",
+      "summary": "Compared the full Japanese purchase record and all twelve translations, corrected duplicate publication dates and product-name spelling, and added a dated compatibility note based on Apple specifications and current macOS/Xcode requirements.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared purchase context, personal reasons, configured CPU/memory/storage, historical price and software versions; clarified that this is a 2023 record rather than a current recommendation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Mac mini (2018), Intel Core i7, Xcode, IntelliJ IDEA, macOS Tahoe, Apple silicon, and model/version names."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No formulas or mathematical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Apple technical specifications, macOS Tahoe compatibility, Xcode system requirements, and Intel/Apple silicon guidance; checked image references are preserved."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Compatibility and Xcode support can change; the note is explicitly dated 2026-11-24 and linked to Apple documentation.",
+        "The reported used-unit configuration and purchase price are the author’s personal record and have not been independently verified."
+      ]
+    },
+    "post/mac mini(2018)を購入/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/mac mini(2018)を購入/index.md",
+      "sourceHash": "6048d9b2e74df633b11fdb17bd2e5bbb01121a3506857f30b9f055308b9da37b",
+      "translationHash": "89b3397cd2c135467a51d7ac7c59fc3d8feda7a94300f7fadd4f5cd68634ea19",
+      "summary": "Compared the full Japanese purchase record and all twelve translations, corrected duplicate publication dates and product-name spelling, and added a dated compatibility note based on Apple specifications and current macOS/Xcode requirements.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared purchase context, personal reasons, configured CPU/memory/storage, historical price and software versions; clarified that this is a 2023 record rather than a current recommendation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Mac mini (2018), Intel Core i7, Xcode, IntelliJ IDEA, macOS Tahoe, Apple silicon, and model/version names."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No formulas or mathematical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Apple technical specifications, macOS Tahoe compatibility, Xcode system requirements, and Intel/Apple silicon guidance; checked image references are preserved."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Compatibility and Xcode support can change; the note is explicitly dated 2026-11-24 and linked to Apple documentation.",
+        "The reported used-unit configuration and purchase price are the author’s personal record and have not been independently verified."
+      ]
+    },
+    "post/mac mini(2018)を購入/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/mac mini(2018)を購入/index.md",
+      "sourceHash": "6048d9b2e74df633b11fdb17bd2e5bbb01121a3506857f30b9f055308b9da37b",
+      "translationHash": "e6484427f0190e0beb5aa033c935cc334f07e0eeade49e8ca306128a769d3e8a",
+      "summary": "Compared the full Japanese purchase record and all twelve translations, corrected duplicate publication dates and product-name spelling, and added a dated compatibility note based on Apple specifications and current macOS/Xcode requirements.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared purchase context, personal reasons, configured CPU/memory/storage, historical price and software versions; clarified that this is a 2023 record rather than a current recommendation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Mac mini (2018), Intel Core i7, Xcode, IntelliJ IDEA, macOS Tahoe, Apple silicon, and model/version names."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No formulas or mathematical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Apple technical specifications, macOS Tahoe compatibility, Xcode system requirements, and Intel/Apple silicon guidance; checked image references are preserved."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Compatibility and Xcode support can change; the note is explicitly dated 2026-11-24 and linked to Apple documentation.",
+        "The reported used-unit configuration and purchase price are the author’s personal record and have not been independently verified."
+      ]
+    },
+    "post/mac mini(2018)を購入/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/mac mini(2018)を購入/index.md",
+      "sourceHash": "6048d9b2e74df633b11fdb17bd2e5bbb01121a3506857f30b9f055308b9da37b",
+      "translationHash": "e9be2c20becafcf717eaea42f909292f7914240350937d062b99994fe4522ed7",
+      "summary": "Compared the full Japanese purchase record and all twelve translations, corrected duplicate publication dates and product-name spelling, and added a dated compatibility note based on Apple specifications and current macOS/Xcode requirements.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared purchase context, personal reasons, configured CPU/memory/storage, historical price and software versions; clarified that this is a 2023 record rather than a current recommendation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Mac mini (2018), Intel Core i7, Xcode, IntelliJ IDEA, macOS Tahoe, Apple silicon, and model/version names."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No formulas or mathematical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Apple technical specifications, macOS Tahoe compatibility, Xcode system requirements, and Intel/Apple silicon guidance; checked image references are preserved."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Compatibility and Xcode support can change; the note is explicitly dated 2026-11-24 and linked to Apple documentation.",
+        "The reported used-unit configuration and purchase price are the author’s personal record and have not been independently verified."
+      ]
+    },
+    "post/mac mini(2018)を購入/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/mac mini(2018)を購入/index.md",
+      "sourceHash": "6048d9b2e74df633b11fdb17bd2e5bbb01121a3506857f30b9f055308b9da37b",
+      "translationHash": "b980e7c01033ff4d2b777ad0a77d2fb54a3b04fdd0cb52bc5452a2c6ee51fbc4",
+      "summary": "Compared the full Japanese purchase record and all twelve translations, corrected duplicate publication dates and product-name spelling, and added a dated compatibility note based on Apple specifications and current macOS/Xcode requirements.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared purchase context, personal reasons, configured CPU/memory/storage, historical price and software versions; clarified that this is a 2023 record rather than a current recommendation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Mac mini (2018), Intel Core i7, Xcode, IntelliJ IDEA, macOS Tahoe, Apple silicon, and model/version names."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No formulas or mathematical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Apple technical specifications, macOS Tahoe compatibility, Xcode system requirements, and Intel/Apple silicon guidance; checked image references are preserved."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Compatibility and Xcode support can change; the note is explicitly dated 2026-11-24 and linked to Apple documentation.",
+        "The reported used-unit configuration and purchase price are the author’s personal record and have not been independently verified."
+      ]
+    },
+    "post/mac mini(2018)を購入/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/mac mini(2018)を購入/index.md",
+      "sourceHash": "6048d9b2e74df633b11fdb17bd2e5bbb01121a3506857f30b9f055308b9da37b",
+      "translationHash": "1e087060ee1573eb5191a55f486c0210ca0313dc149cc95a4765832da132ba9d",
+      "summary": "Compared the full Japanese purchase record and all twelve translations, corrected duplicate publication dates and product-name spelling, and added a dated compatibility note based on Apple specifications and current macOS/Xcode requirements.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared purchase context, personal reasons, configured CPU/memory/storage, historical price and software versions; clarified that this is a 2023 record rather than a current recommendation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Mac mini (2018), Intel Core i7, Xcode, IntelliJ IDEA, macOS Tahoe, Apple silicon, and model/version names."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No formulas or mathematical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Apple technical specifications, macOS Tahoe compatibility, Xcode system requirements, and Intel/Apple silicon guidance; checked image references are preserved."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Compatibility and Xcode support can change; the note is explicitly dated 2026-11-24 and linked to Apple documentation.",
+        "The reported used-unit configuration and purchase price are the author’s personal record and have not been independently verified."
+      ]
+    },
+    "post/mac mini(2018)を購入/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/mac mini(2018)を購入/index.md",
+      "sourceHash": "6048d9b2e74df633b11fdb17bd2e5bbb01121a3506857f30b9f055308b9da37b",
+      "translationHash": "d84797b636f3f31d7176fd58c1c4b086209d6e1f1bf90985a0294a2766f2e9ca",
+      "summary": "Compared the full Japanese purchase record and all twelve translations, corrected duplicate publication dates and product-name spelling, and added a dated compatibility note based on Apple specifications and current macOS/Xcode requirements.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared purchase context, personal reasons, configured CPU/memory/storage, historical price and software versions; clarified that this is a 2023 record rather than a current recommendation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Mac mini (2018), Intel Core i7, Xcode, IntelliJ IDEA, macOS Tahoe, Apple silicon, and model/version names."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No formulas or mathematical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Apple technical specifications, macOS Tahoe compatibility, Xcode system requirements, and Intel/Apple silicon guidance; checked image references are preserved."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Compatibility and Xcode support can change; the note is explicitly dated 2026-11-24 and linked to Apple documentation.",
+        "The reported used-unit configuration and purchase price are the author’s personal record and have not been independently verified."
+      ]
+    },
+    "post/mac mini(2018)を購入/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/mac mini(2018)を購入/index.md",
+      "sourceHash": "6048d9b2e74df633b11fdb17bd2e5bbb01121a3506857f30b9f055308b9da37b",
+      "translationHash": "6cbc35dc96aca0e47325f1865a3ac0c342993eb76e507a152d6cbc3e062184bb",
+      "summary": "Compared the full Japanese purchase record and all twelve translations, corrected duplicate publication dates and product-name spelling, and added a dated compatibility note based on Apple specifications and current macOS/Xcode requirements.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared purchase context, personal reasons, configured CPU/memory/storage, historical price and software versions; clarified that this is a 2023 record rather than a current recommendation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Mac mini (2018), Intel Core i7, Xcode, IntelliJ IDEA, macOS Tahoe, Apple silicon, and model/version names."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No formulas or mathematical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Apple technical specifications, macOS Tahoe compatibility, Xcode system requirements, and Intel/Apple silicon guidance; checked image references are preserved."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Compatibility and Xcode support can change; the note is explicitly dated 2026-11-24 and linked to Apple documentation.",
+        "The reported used-unit configuration and purchase price are the author’s personal record and have not been independently verified."
+      ]
+    },
+    "post/mac mini(2018)を購入/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/mac mini(2018)を購入/index.md",
+      "sourceHash": "6048d9b2e74df633b11fdb17bd2e5bbb01121a3506857f30b9f055308b9da37b",
+      "translationHash": "f67c1f6de26b14ac7c1f43e9fbdf650dd6b1625a1b5621030fc7497f0ad9471e",
+      "summary": "Compared the full Japanese purchase record and all twelve translations, corrected duplicate publication dates and product-name spelling, and added a dated compatibility note based on Apple specifications and current macOS/Xcode requirements.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared purchase context, personal reasons, configured CPU/memory/storage, historical price and software versions; clarified that this is a 2023 record rather than a current recommendation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Mac mini (2018), Intel Core i7, Xcode, IntelliJ IDEA, macOS Tahoe, Apple silicon, and model/version names."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No formulas or mathematical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Apple technical specifications, macOS Tahoe compatibility, Xcode system requirements, and Intel/Apple silicon guidance; checked image references are preserved."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Compatibility and Xcode support can change; the note is explicitly dated 2026-11-24 and linked to Apple documentation.",
+        "The reported used-unit configuration and purchase price are the author’s personal record and have not been independently verified."
+      ]
+    },
+    "post/mac mini(2018)を購入/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/mac mini(2018)を購入/index.md",
+      "sourceHash": "6048d9b2e74df633b11fdb17bd2e5bbb01121a3506857f30b9f055308b9da37b",
+      "translationHash": "f29b2fedfe0e70364160940e13b0c16b8380dc7f14c27eece32e085c3d86537e",
+      "summary": "Compared the full Japanese purchase record and all twelve translations, corrected duplicate publication dates and product-name spelling, and added a dated compatibility note based on Apple specifications and current macOS/Xcode requirements.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared purchase context, personal reasons, configured CPU/memory/storage, historical price and software versions; clarified that this is a 2023 record rather than a current recommendation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Mac mini (2018), Intel Core i7, Xcode, IntelliJ IDEA, macOS Tahoe, Apple silicon, and model/version names."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No formulas or mathematical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Apple technical specifications, macOS Tahoe compatibility, Xcode system requirements, and Intel/Apple silicon guidance; checked image references are preserved."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Compatibility and Xcode support can change; the note is explicitly dated 2026-11-24 and linked to Apple documentation.",
+        "The reported used-unit configuration and purchase price are the author’s personal record and have not been independently verified."
+      ]
+    },
+    "post/mac mini(2018)を購入/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/mac mini(2018)を購入/index.md",
+      "sourceHash": "6048d9b2e74df633b11fdb17bd2e5bbb01121a3506857f30b9f055308b9da37b",
+      "translationHash": "a8cf999aac9183097fba0c8d120629bbae82ddba91cb1b6151264bde15366cfe",
+      "summary": "Compared the full Japanese purchase record and all twelve translations, corrected duplicate publication dates and product-name spelling, and added a dated compatibility note based on Apple specifications and current macOS/Xcode requirements.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared purchase context, personal reasons, configured CPU/memory/storage, historical price and software versions; clarified that this is a 2023 record rather than a current recommendation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Mac mini (2018), Intel Core i7, Xcode, IntelliJ IDEA, macOS Tahoe, Apple silicon, and model/version names."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No formulas or mathematical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Apple technical specifications, macOS Tahoe compatibility, Xcode system requirements, and Intel/Apple silicon guidance; checked image references are preserved."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Compatibility and Xcode support can change; the note is explicitly dated 2026-11-24 and linked to Apple documentation.",
+        "The reported used-unit configuration and purchase price are the author’s personal record and have not been independently verified."
+      ]
+    }
+  }
+}

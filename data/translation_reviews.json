@@ -17525,6 +17525,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-150.json",
       "evidenceHash": "526e4a9c60c14675775ca0da44f68a040d5db8e9d05cfa96d0f41efcaa5523a4"
+    },
+    "post/mac mini(2018)を購入/index.en.md": {
+      "source": "post/mac mini(2018)を購入/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6048d9b2e74df633b11fdb17bd2e5bbb01121a3506857f30b9f055308b9da37b",
+      "translationHash": "100307f7b4a3bc16637d55868d0962ed4eace2d2df845fb1a1c6ea5ee0fc2720",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-151.json",
+      "evidenceHash": "42101955fcbb0b3e836d6e5030a579fd2941446cb3b663c99927439494bd9ea3"
+    },
+    "post/mac mini(2018)を購入/index.zh-cn.md": {
+      "source": "post/mac mini(2018)を購入/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6048d9b2e74df633b11fdb17bd2e5bbb01121a3506857f30b9f055308b9da37b",
+      "translationHash": "c2fcd98088d50ed0aeef540a7400fe857196132217436a001d8932fe7ef41791",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-151.json",
+      "evidenceHash": "ce27ad73362371f2f2127fb1c6652bbae4091e2477d5eed952c64e2cb551da20"
+    },
+    "post/mac mini(2018)を購入/index.es.md": {
+      "source": "post/mac mini(2018)を購入/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6048d9b2e74df633b11fdb17bd2e5bbb01121a3506857f30b9f055308b9da37b",
+      "translationHash": "89b3397cd2c135467a51d7ac7c59fc3d8feda7a94300f7fadd4f5cd68634ea19",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-151.json",
+      "evidenceHash": "e66b654ad9e452e9f0d6a9105cdf85a7fc03eacb1ca0d786a68d2be904752f81"
+    },
+    "post/mac mini(2018)を購入/index.ko.md": {
+      "source": "post/mac mini(2018)を購入/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6048d9b2e74df633b11fdb17bd2e5bbb01121a3506857f30b9f055308b9da37b",
+      "translationHash": "e6484427f0190e0beb5aa033c935cc334f07e0eeade49e8ca306128a769d3e8a",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-151.json",
+      "evidenceHash": "27218ad0bc3ebd9c0561668a1725c45f6e20210c75b8173ee9439710596bb63a"
+    },
+    "post/mac mini(2018)を購入/index.pt.md": {
+      "source": "post/mac mini(2018)を購入/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6048d9b2e74df633b11fdb17bd2e5bbb01121a3506857f30b9f055308b9da37b",
+      "translationHash": "e9be2c20becafcf717eaea42f909292f7914240350937d062b99994fe4522ed7",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-151.json",
+      "evidenceHash": "409ff459da1d7f9c9e3ecdbb24250dbc42163e36ca2a748e659a5761f5220b22"
+    },
+    "post/mac mini(2018)を購入/index.zh-tw.md": {
+      "source": "post/mac mini(2018)を購入/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6048d9b2e74df633b11fdb17bd2e5bbb01121a3506857f30b9f055308b9da37b",
+      "translationHash": "b980e7c01033ff4d2b777ad0a77d2fb54a3b04fdd0cb52bc5452a2c6ee51fbc4",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-151.json",
+      "evidenceHash": "8d908e85d471ef8ee1b98a6238600d60b4a5bee66eeeaa7dba82121dabdf2230"
+    },
+    "post/mac mini(2018)を購入/index.hi.md": {
+      "source": "post/mac mini(2018)を購入/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6048d9b2e74df633b11fdb17bd2e5bbb01121a3506857f30b9f055308b9da37b",
+      "translationHash": "1e087060ee1573eb5191a55f486c0210ca0313dc149cc95a4765832da132ba9d",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-151.json",
+      "evidenceHash": "de810dc1555c7d926876f46b4af81665bcba3832103f26423ebda314bfd8de11"
+    },
+    "post/mac mini(2018)を購入/index.fr.md": {
+      "source": "post/mac mini(2018)を購入/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6048d9b2e74df633b11fdb17bd2e5bbb01121a3506857f30b9f055308b9da37b",
+      "translationHash": "d84797b636f3f31d7176fd58c1c4b086209d6e1f1bf90985a0294a2766f2e9ca",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-151.json",
+      "evidenceHash": "a91652ef3da52ca3dbd2389cc79eae4944bdf495707c2d671804ae3afd4cd8a2"
+    },
+    "post/mac mini(2018)を購入/index.de.md": {
+      "source": "post/mac mini(2018)を購入/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6048d9b2e74df633b11fdb17bd2e5bbb01121a3506857f30b9f055308b9da37b",
+      "translationHash": "6cbc35dc96aca0e47325f1865a3ac0c342993eb76e507a152d6cbc3e062184bb",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-151.json",
+      "evidenceHash": "38c7f895a4dac20369e6a166fa2c884ce6d35d31ae27f011c73f44b073ff7d49"
+    },
+    "post/mac mini(2018)を購入/index.ar.md": {
+      "source": "post/mac mini(2018)を購入/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6048d9b2e74df633b11fdb17bd2e5bbb01121a3506857f30b9f055308b9da37b",
+      "translationHash": "f67c1f6de26b14ac7c1f43e9fbdf650dd6b1625a1b5621030fc7497f0ad9471e",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-151.json",
+      "evidenceHash": "d5bd5cd8206fb5fbbc9bb246d9b521ed8ae338735b41822c053e3f6b917672c4"
+    },
+    "post/mac mini(2018)を購入/index.ru.md": {
+      "source": "post/mac mini(2018)を購入/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6048d9b2e74df633b11fdb17bd2e5bbb01121a3506857f30b9f055308b9da37b",
+      "translationHash": "f29b2fedfe0e70364160940e13b0c16b8380dc7f14c27eece32e085c3d86537e",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-151.json",
+      "evidenceHash": "555658f80e1378fc264c528748376cbe497a4a57ea702bd045d0050cafd92bb3"
+    },
+    "post/mac mini(2018)を購入/index.id.md": {
+      "source": "post/mac mini(2018)を購入/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6048d9b2e74df633b11fdb17bd2e5bbb01121a3506857f30b9f055308b9da37b",
+      "translationHash": "a8cf999aac9183097fba0c8d120629bbae82ddba91cb1b6151264bde15366cfe",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-151.json",
+      "evidenceHash": "bc263945e1f45d2fe0d56ec8e98ea8c43910deea0bdae2f3631e0ee30e21b0c6"
     }
   }
 }
