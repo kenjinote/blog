@@ -1,29 +1,32 @@
 ---
-title: 'Comandos de Terminal para Desativar e Parar a Geração Automática de .DS_Store no macOS'
-date: "2026-09-24T19:44:38+09:00"
+title: "Controlar a leitura de .DS_Store em compartilhamentos SMB no macOS"
 slug: "macOSで.DS_Storeを自動生成しないようにするComando"
 date: 2022-09-12T16:03:42+09:00
+lastmod: "2026-11-24T00:00:00+09:00"
 tags: ["macOS"]
 draft: false
 image: "img.webp"
 categories: ["pc-gadgets"]
-description: 'Mostramos comandos de terminal no macOS para evitar a criação automática de arquivos indesejados ''.DS_Store'' em unidades de rede, etc. Também abordamos como restaurar a configuração original e as etapas para reiniciar o Finder.'
+description: "Siga as instruções da Apple para desativar ou reativar a leitura de arquivos .DS_Store em compartilhamentos SMB no macOS. Isso não impede sua criação; saia da sessão e entre novamente após alterar a opção."
 ---
-O comando para evitar a geração automática do .DS_Store no macOS é o seguinte.
-Por favor, execute-o no terminal.
+A Apple documenta esta preferência como uma forma de agilizar a navegação SMB: ela instrui o macOS a **não ler arquivos `.DS_Store` em compartilhamentos SMB**. Isso não impede a criação de novos arquivos nem exclui os existentes. A exibição e a ordenação no Finder podem mudar.
+
+### Desativar a leitura em compartilhamentos SMB
+
+Execute este comando no Terminal:
+
 ```bash
-defaults write com.apple.desktopservices DSDontWriteNetworkStores true
-```
-Após executar o comando, reinicie o Finder.
-```bash
-killall Finder
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool TRUE
 ```
 
-Para restaurar a configuração original, execute o seguinte comando.
+Encerre a sessão da conta do macOS e inicie-a novamente para aplicar a alteração. O Finder usará informações básicas em vez dos metadados de `.DS_Store` ao exibir as pastas.
+
+### Reativar a leitura
+
+Defina o valor como `FALSE` para restaurar o comportamento padrão:
+
 ```bash
-defaults delete com.apple.desktopservices DSDontWriteNetworkStores false
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool FALSE
 ```
-Assim como acima, se você alterar a configuração, reinicie o Finder.
-```bash
-killall Finder
-```
+
+Depois, saia da sessão e entre novamente. A Apple apresenta essa opção como um ajuste de navegação SMB e informa que o artigo se destina a administradores de empresas e instituições de ensino. Consulte o [Suporte da Apple](https://support.apple.com/en-us/102064).

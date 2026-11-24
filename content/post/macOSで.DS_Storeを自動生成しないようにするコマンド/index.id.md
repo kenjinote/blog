@@ -1,29 +1,32 @@
 ---
-title: 'Perintah Terminal untuk Menonaktifkan/Menghentikan Pembuatan Otomatis .DS_Store di macOS'
-date: "2026-09-24T19:44:38+09:00"
+title: "Mengatur Pembacaan .DS_Store pada Berbagi SMB di macOS"
 slug: "macOSで.DS_Storeを自動生成しないようにするPerintah"
 date: 2022-09-12T16:03:42+09:00
+lastmod: "2026-11-24T00:00:00+09:00"
 tags: ["macOS"]
 draft: false
 image: "img.webp"
 categories: ["pc-gadgets"]
-description: 'Memperkenalkan perintah terminal untuk mencegah pembuatan file ''.DS_Store'' yang tidak perlu secara otomatis di drive jaringan pada lingkungan macOS. Kami juga merangkum cara mengembalikannya ke pengaturan awal dan langkah merestart Finder.'
+description: "Ikuti petunjuk Apple untuk menonaktifkan atau mengaktifkan kembali pembacaan file .DS_Store pada berbagi SMB di macOS. Ini tidak menghentikan pembuatan file; keluar lalu masuk kembali setelah mengubah pengaturan."
 ---
-Perintah untuk mencegah pembuatan otomatis .DS_Store di macOS adalah sebagai berikut.
-Silakan jalankan di terminal.
+Apple menjelaskan pengaturan ini sebagai cara mempercepat penelusuran SMB: macOS diminta **untuk tidak membaca file `.DS_Store` pada berbagi SMB**. Pengaturan ini tidak mencegah pembuatan file baru dan tidak menghapus file yang sudah ada. Tampilan dan pengurutan di Finder dapat berubah.
+
+### Menonaktifkan pembacaan pada berbagi SMB
+
+Jalankan perintah ini di Terminal:
+
 ```bash
-defaults write com.apple.desktopservices DSDontWriteNetworkStores true
-```
-Setelah menjalankan perintah, mulai ulang Finder.
-```bash
-killall Finder
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool TRUE
 ```
 
-Jika Anda ingin mengembalikan pengaturan seperti semula, silakan jalankan perintah berikut.
+Keluar dari akun macOS lalu masuk kembali agar perubahan berlaku. Finder akan menggunakan informasi dasar, bukan metadata `.DS_Store`, saat menampilkan folder.
+
+### Mengaktifkan kembali pembacaan
+
+Atur nilainya ke `FALSE` untuk memulihkan perilaku default:
+
 ```bash
-defaults delete com.apple.desktopservices DSDontWriteNetworkStores false
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool FALSE
 ```
-Sama seperti di atas, jika Anda mengubah pengaturan, mulai ulang Finder.
-```bash
-killall Finder
-```
+
+Setelah itu, keluar lalu masuk kembali. Apple menjelaskan ini sebagai pengaturan penelusuran SMB dan menyebut panduannya ditujukan terutama bagi administrator perusahaan dan pendidikan. Lihat [Dukungan Apple](https://support.apple.com/en-us/102064).

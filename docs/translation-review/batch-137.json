@@ -1,0 +1,453 @@
+{
+  "version": 1,
+  "batch": 137,
+  "article": "macOSのSMB共有で.DS_Storeの読み取りを切り替える",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "7e01ca898c8b69dc5b19d918f2397fcc06b6db9c0d6958a5183a35e2fa75db76",
+  "sources": [
+    "https://support.apple.com/en-us/102064"
+  ],
+  "scope": "Compared the full Japanese instructions and all twelve translations with Apple Support documentation, including command arguments, effect, scope, reversion, activation timing, dates, and descriptions.",
+  "findings": [
+    "Removed duplicate future dates, retained the original publication date 2022-09-12, and set lastmod to 2026-11-24.",
+    "Corrected the claim from preventing .DS_Store generation to preventing macOS from reading .DS_Store files on SMB shares; the setting neither prevents creation nor deletes files.",
+    "Replaced the invalid restore command `defaults delete ... false` with Apple’s documented `defaults write ... -bool FALSE` command.",
+    "Replaced Finder process restart instructions with Apple’s required log-out/log-in steps after each change.",
+    "Explained that Finder uses basic information for SMB folders when the preference is enabled, and added Apple’s audience caveat for enterprise and education administrators."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/macOSで.DS_Storeを自動生成しないようにするコマンド/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/macOSで.DS_Storeを自動生成しないようにするコマンド/index.md",
+      "sourceHash": "7e01ca898c8b69dc5b19d918f2397fcc06b6db9c0d6958a5183a35e2fa75db76",
+      "translationHash": "09777e5a59de9a1c2b064ec682785b46283b626f8441cdb5ddd74c2dbe182c21",
+      "summary": "Compared the complete instructions with current Apple Support guidance, corrected the scope to reading .DS_Store on SMB shares, fixed the restore command and required logout/login, and clarified that files are neither prevented from being created nor deleted.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all instructions with Apple Support. Corrected the article’s premise: DSDontWriteNetworkStores controls reading .DS_Store files on SMB shares; it does not prevent creation or delete existing files."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked macOS, SMB shares, Finder, defaults preference, boolean values, and the distinction between reading metadata and creating files."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The system-preference guide contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Corrected the commands to Apple’s documented forms using -bool TRUE and -bool FALSE. Replaced Finder restart instructions with the documented log-out/log-in requirement. Commands were reviewed statically and not run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Linked Apple Support document 102064 in all locales and checked its exact command syntax, SMB-only scope, effect on Finder sorting, and audience."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Commands were checked against Apple documentation but not run on macOS.",
+        "Apple presents this SMB browsing adjustment primarily for enterprise and education administrators; behavior on managed systems may be controlled by policy."
+      ]
+    },
+    "post/macOSで.DS_Storeを自動生成しないようにするコマンド/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/macOSで.DS_Storeを自動生成しないようにするコマンド/index.md",
+      "sourceHash": "7e01ca898c8b69dc5b19d918f2397fcc06b6db9c0d6958a5183a35e2fa75db76",
+      "translationHash": "604c86496ab980ecccd5fb1bc11c2ef078cd3626434f45ffc1877381d45072f2",
+      "summary": "Compared the complete instructions with current Apple Support guidance, corrected the scope to reading .DS_Store on SMB shares, fixed the restore command and required logout/login, and clarified that files are neither prevented from being created nor deleted.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all instructions with Apple Support. Corrected the article’s premise: DSDontWriteNetworkStores controls reading .DS_Store files on SMB shares; it does not prevent creation or delete existing files."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked macOS, SMB shares, Finder, defaults preference, boolean values, and the distinction between reading metadata and creating files."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The system-preference guide contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Corrected the commands to Apple’s documented forms using -bool TRUE and -bool FALSE. Replaced Finder restart instructions with the documented log-out/log-in requirement. Commands were reviewed statically and not run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Linked Apple Support document 102064 in all locales and checked its exact command syntax, SMB-only scope, effect on Finder sorting, and audience."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Commands were checked against Apple documentation but not run on macOS.",
+        "Apple presents this SMB browsing adjustment primarily for enterprise and education administrators; behavior on managed systems may be controlled by policy."
+      ]
+    },
+    "post/macOSで.DS_Storeを自動生成しないようにするコマンド/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/macOSで.DS_Storeを自動生成しないようにするコマンド/index.md",
+      "sourceHash": "7e01ca898c8b69dc5b19d918f2397fcc06b6db9c0d6958a5183a35e2fa75db76",
+      "translationHash": "8dd47c8d08e3f117b197e8cd1108074762909f4ec8ab8790a24133edb547916c",
+      "summary": "Compared the complete instructions with current Apple Support guidance, corrected the scope to reading .DS_Store on SMB shares, fixed the restore command and required logout/login, and clarified that files are neither prevented from being created nor deleted.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all instructions with Apple Support. Corrected the article’s premise: DSDontWriteNetworkStores controls reading .DS_Store files on SMB shares; it does not prevent creation or delete existing files."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked macOS, SMB shares, Finder, defaults preference, boolean values, and the distinction between reading metadata and creating files."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The system-preference guide contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Corrected the commands to Apple’s documented forms using -bool TRUE and -bool FALSE. Replaced Finder restart instructions with the documented log-out/log-in requirement. Commands were reviewed statically and not run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Linked Apple Support document 102064 in all locales and checked its exact command syntax, SMB-only scope, effect on Finder sorting, and audience."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Commands were checked against Apple documentation but not run on macOS.",
+        "Apple presents this SMB browsing adjustment primarily for enterprise and education administrators; behavior on managed systems may be controlled by policy."
+      ]
+    },
+    "post/macOSで.DS_Storeを自動生成しないようにするコマンド/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/macOSで.DS_Storeを自動生成しないようにするコマンド/index.md",
+      "sourceHash": "7e01ca898c8b69dc5b19d918f2397fcc06b6db9c0d6958a5183a35e2fa75db76",
+      "translationHash": "ad7622a47c1825fb0bd90bbe4c2081436b09ddba874876feb379ed201deb0db1",
+      "summary": "Compared the complete instructions with current Apple Support guidance, corrected the scope to reading .DS_Store on SMB shares, fixed the restore command and required logout/login, and clarified that files are neither prevented from being created nor deleted.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all instructions with Apple Support. Corrected the article’s premise: DSDontWriteNetworkStores controls reading .DS_Store files on SMB shares; it does not prevent creation or delete existing files."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked macOS, SMB shares, Finder, defaults preference, boolean values, and the distinction between reading metadata and creating files."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The system-preference guide contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Corrected the commands to Apple’s documented forms using -bool TRUE and -bool FALSE. Replaced Finder restart instructions with the documented log-out/log-in requirement. Commands were reviewed statically and not run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Linked Apple Support document 102064 in all locales and checked its exact command syntax, SMB-only scope, effect on Finder sorting, and audience."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Commands were checked against Apple documentation but not run on macOS.",
+        "Apple presents this SMB browsing adjustment primarily for enterprise and education administrators; behavior on managed systems may be controlled by policy."
+      ]
+    },
+    "post/macOSで.DS_Storeを自動生成しないようにするコマンド/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/macOSで.DS_Storeを自動生成しないようにするコマンド/index.md",
+      "sourceHash": "7e01ca898c8b69dc5b19d918f2397fcc06b6db9c0d6958a5183a35e2fa75db76",
+      "translationHash": "4be6363b94ee5806a2c09ba65411dbddb12afe66a0460e74c3f7b2d417602d24",
+      "summary": "Compared the complete instructions with current Apple Support guidance, corrected the scope to reading .DS_Store on SMB shares, fixed the restore command and required logout/login, and clarified that files are neither prevented from being created nor deleted.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all instructions with Apple Support. Corrected the article’s premise: DSDontWriteNetworkStores controls reading .DS_Store files on SMB shares; it does not prevent creation or delete existing files."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked macOS, SMB shares, Finder, defaults preference, boolean values, and the distinction between reading metadata and creating files."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The system-preference guide contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Corrected the commands to Apple’s documented forms using -bool TRUE and -bool FALSE. Replaced Finder restart instructions with the documented log-out/log-in requirement. Commands were reviewed statically and not run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Linked Apple Support document 102064 in all locales and checked its exact command syntax, SMB-only scope, effect on Finder sorting, and audience."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Commands were checked against Apple documentation but not run on macOS.",
+        "Apple presents this SMB browsing adjustment primarily for enterprise and education administrators; behavior on managed systems may be controlled by policy."
+      ]
+    },
+    "post/macOSで.DS_Storeを自動生成しないようにするコマンド/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/macOSで.DS_Storeを自動生成しないようにするコマンド/index.md",
+      "sourceHash": "7e01ca898c8b69dc5b19d918f2397fcc06b6db9c0d6958a5183a35e2fa75db76",
+      "translationHash": "f819b5ce2e8db225676c56fb37d849297f2452f65cbee7e6a8037e7a468c8789",
+      "summary": "Compared the complete instructions with current Apple Support guidance, corrected the scope to reading .DS_Store on SMB shares, fixed the restore command and required logout/login, and clarified that files are neither prevented from being created nor deleted.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all instructions with Apple Support. Corrected the article’s premise: DSDontWriteNetworkStores controls reading .DS_Store files on SMB shares; it does not prevent creation or delete existing files."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked macOS, SMB shares, Finder, defaults preference, boolean values, and the distinction between reading metadata and creating files."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The system-preference guide contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Corrected the commands to Apple’s documented forms using -bool TRUE and -bool FALSE. Replaced Finder restart instructions with the documented log-out/log-in requirement. Commands were reviewed statically and not run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Linked Apple Support document 102064 in all locales and checked its exact command syntax, SMB-only scope, effect on Finder sorting, and audience."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Commands were checked against Apple documentation but not run on macOS.",
+        "Apple presents this SMB browsing adjustment primarily for enterprise and education administrators; behavior on managed systems may be controlled by policy."
+      ]
+    },
+    "post/macOSで.DS_Storeを自動生成しないようにするコマンド/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/macOSで.DS_Storeを自動生成しないようにするコマンド/index.md",
+      "sourceHash": "7e01ca898c8b69dc5b19d918f2397fcc06b6db9c0d6958a5183a35e2fa75db76",
+      "translationHash": "93413e2ebf3c0cfa0245d0d45234734239d3d6a1e6c0e293469d41f99316cfcf",
+      "summary": "Compared the complete instructions with current Apple Support guidance, corrected the scope to reading .DS_Store on SMB shares, fixed the restore command and required logout/login, and clarified that files are neither prevented from being created nor deleted.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all instructions with Apple Support. Corrected the article’s premise: DSDontWriteNetworkStores controls reading .DS_Store files on SMB shares; it does not prevent creation or delete existing files."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked macOS, SMB shares, Finder, defaults preference, boolean values, and the distinction between reading metadata and creating files."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The system-preference guide contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Corrected the commands to Apple’s documented forms using -bool TRUE and -bool FALSE. Replaced Finder restart instructions with the documented log-out/log-in requirement. Commands were reviewed statically and not run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Linked Apple Support document 102064 in all locales and checked its exact command syntax, SMB-only scope, effect on Finder sorting, and audience."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Commands were checked against Apple documentation but not run on macOS.",
+        "Apple presents this SMB browsing adjustment primarily for enterprise and education administrators; behavior on managed systems may be controlled by policy."
+      ]
+    },
+    "post/macOSで.DS_Storeを自動生成しないようにするコマンド/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/macOSで.DS_Storeを自動生成しないようにするコマンド/index.md",
+      "sourceHash": "7e01ca898c8b69dc5b19d918f2397fcc06b6db9c0d6958a5183a35e2fa75db76",
+      "translationHash": "9b56abab584cab107d5420f9a75eec08a4fa3664108791246de8283fe363ef5c",
+      "summary": "Compared the complete instructions with current Apple Support guidance, corrected the scope to reading .DS_Store on SMB shares, fixed the restore command and required logout/login, and clarified that files are neither prevented from being created nor deleted.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all instructions with Apple Support. Corrected the article’s premise: DSDontWriteNetworkStores controls reading .DS_Store files on SMB shares; it does not prevent creation or delete existing files."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked macOS, SMB shares, Finder, defaults preference, boolean values, and the distinction between reading metadata and creating files."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The system-preference guide contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Corrected the commands to Apple’s documented forms using -bool TRUE and -bool FALSE. Replaced Finder restart instructions with the documented log-out/log-in requirement. Commands were reviewed statically and not run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Linked Apple Support document 102064 in all locales and checked its exact command syntax, SMB-only scope, effect on Finder sorting, and audience."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Commands were checked against Apple documentation but not run on macOS.",
+        "Apple presents this SMB browsing adjustment primarily for enterprise and education administrators; behavior on managed systems may be controlled by policy."
+      ]
+    },
+    "post/macOSで.DS_Storeを自動生成しないようにするコマンド/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/macOSで.DS_Storeを自動生成しないようにするコマンド/index.md",
+      "sourceHash": "7e01ca898c8b69dc5b19d918f2397fcc06b6db9c0d6958a5183a35e2fa75db76",
+      "translationHash": "fe2ae7ff4f7e40282289e1fd91738bca49f10246673253a43effd69046cc5415",
+      "summary": "Compared the complete instructions with current Apple Support guidance, corrected the scope to reading .DS_Store on SMB shares, fixed the restore command and required logout/login, and clarified that files are neither prevented from being created nor deleted.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all instructions with Apple Support. Corrected the article’s premise: DSDontWriteNetworkStores controls reading .DS_Store files on SMB shares; it does not prevent creation or delete existing files."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked macOS, SMB shares, Finder, defaults preference, boolean values, and the distinction between reading metadata and creating files."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The system-preference guide contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Corrected the commands to Apple’s documented forms using -bool TRUE and -bool FALSE. Replaced Finder restart instructions with the documented log-out/log-in requirement. Commands were reviewed statically and not run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Linked Apple Support document 102064 in all locales and checked its exact command syntax, SMB-only scope, effect on Finder sorting, and audience."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Commands were checked against Apple documentation but not run on macOS.",
+        "Apple presents this SMB browsing adjustment primarily for enterprise and education administrators; behavior on managed systems may be controlled by policy."
+      ]
+    },
+    "post/macOSで.DS_Storeを自動生成しないようにするコマンド/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/macOSで.DS_Storeを自動生成しないようにするコマンド/index.md",
+      "sourceHash": "7e01ca898c8b69dc5b19d918f2397fcc06b6db9c0d6958a5183a35e2fa75db76",
+      "translationHash": "ed40b27244236512dcfb427e3444152c2ddcbd4024c9e745b5e141e092257528",
+      "summary": "Compared the complete instructions with current Apple Support guidance, corrected the scope to reading .DS_Store on SMB shares, fixed the restore command and required logout/login, and clarified that files are neither prevented from being created nor deleted.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all instructions with Apple Support. Corrected the article’s premise: DSDontWriteNetworkStores controls reading .DS_Store files on SMB shares; it does not prevent creation or delete existing files."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked macOS, SMB shares, Finder, defaults preference, boolean values, and the distinction between reading metadata and creating files."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The system-preference guide contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Corrected the commands to Apple’s documented forms using -bool TRUE and -bool FALSE. Replaced Finder restart instructions with the documented log-out/log-in requirement. Commands were reviewed statically and not run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Linked Apple Support document 102064 in all locales and checked its exact command syntax, SMB-only scope, effect on Finder sorting, and audience."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Commands were checked against Apple documentation but not run on macOS.",
+        "Apple presents this SMB browsing adjustment primarily for enterprise and education administrators; behavior on managed systems may be controlled by policy."
+      ]
+    },
+    "post/macOSで.DS_Storeを自動生成しないようにするコマンド/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/macOSで.DS_Storeを自動生成しないようにするコマンド/index.md",
+      "sourceHash": "7e01ca898c8b69dc5b19d918f2397fcc06b6db9c0d6958a5183a35e2fa75db76",
+      "translationHash": "8cf2e2b8c1bd6e170e47f9bc6cc468541a0561a98c6976879a4235cf337a2b74",
+      "summary": "Compared the complete instructions with current Apple Support guidance, corrected the scope to reading .DS_Store on SMB shares, fixed the restore command and required logout/login, and clarified that files are neither prevented from being created nor deleted.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all instructions with Apple Support. Corrected the article’s premise: DSDontWriteNetworkStores controls reading .DS_Store files on SMB shares; it does not prevent creation or delete existing files."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked macOS, SMB shares, Finder, defaults preference, boolean values, and the distinction between reading metadata and creating files."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The system-preference guide contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Corrected the commands to Apple’s documented forms using -bool TRUE and -bool FALSE. Replaced Finder restart instructions with the documented log-out/log-in requirement. Commands were reviewed statically and not run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Linked Apple Support document 102064 in all locales and checked its exact command syntax, SMB-only scope, effect on Finder sorting, and audience."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Commands were checked against Apple documentation but not run on macOS.",
+        "Apple presents this SMB browsing adjustment primarily for enterprise and education administrators; behavior on managed systems may be controlled by policy."
+      ]
+    },
+    "post/macOSで.DS_Storeを自動生成しないようにするコマンド/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/macOSで.DS_Storeを自動生成しないようにするコマンド/index.md",
+      "sourceHash": "7e01ca898c8b69dc5b19d918f2397fcc06b6db9c0d6958a5183a35e2fa75db76",
+      "translationHash": "dea19bda2a21e1c2cb55f7717640bedecc41a80161baa17ee4a9aa3f93ec0107",
+      "summary": "Compared the complete instructions with current Apple Support guidance, corrected the scope to reading .DS_Store on SMB shares, fixed the restore command and required logout/login, and clarified that files are neither prevented from being created nor deleted.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all instructions with Apple Support. Corrected the article’s premise: DSDontWriteNetworkStores controls reading .DS_Store files on SMB shares; it does not prevent creation or delete existing files."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked macOS, SMB shares, Finder, defaults preference, boolean values, and the distinction between reading metadata and creating files."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The system-preference guide contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Corrected the commands to Apple’s documented forms using -bool TRUE and -bool FALSE. Replaced Finder restart instructions with the documented log-out/log-in requirement. Commands were reviewed statically and not run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Linked Apple Support document 102064 in all locales and checked its exact command syntax, SMB-only scope, effect on Finder sorting, and audience."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Commands were checked against Apple documentation but not run on macOS.",
+        "Apple presents this SMB browsing adjustment primarily for enterprise and education administrators; behavior on managed systems may be controlled by policy."
+      ]
+    }
+  }
+}

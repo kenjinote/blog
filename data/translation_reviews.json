@@ -15845,6 +15845,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-136.json",
       "evidenceHash": "8ba7ad7f187dc3436ffca4ca62f7f7cb20eb872fab5b4d9654152b9cebeec06f"
+    },
+    "post/macOSで.DS_Storeを自動生成しないようにするコマンド/index.en.md": {
+      "source": "post/macOSで.DS_Storeを自動生成しないようにするコマンド/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "7e01ca898c8b69dc5b19d918f2397fcc06b6db9c0d6958a5183a35e2fa75db76",
+      "translationHash": "09777e5a59de9a1c2b064ec682785b46283b626f8441cdb5ddd74c2dbe182c21",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-137.json",
+      "evidenceHash": "258c120e7a8ddf80bf2718bd82fdd44ff5b4965761b5c8ab73176f933caa2a31"
+    },
+    "post/macOSで.DS_Storeを自動生成しないようにするコマンド/index.zh-cn.md": {
+      "source": "post/macOSで.DS_Storeを自動生成しないようにするコマンド/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "7e01ca898c8b69dc5b19d918f2397fcc06b6db9c0d6958a5183a35e2fa75db76",
+      "translationHash": "604c86496ab980ecccd5fb1bc11c2ef078cd3626434f45ffc1877381d45072f2",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-137.json",
+      "evidenceHash": "7e834acd4a0171e130cadc934d1deac1e5073aae325cd4961e32436833e62e24"
+    },
+    "post/macOSで.DS_Storeを自動生成しないようにするコマンド/index.es.md": {
+      "source": "post/macOSで.DS_Storeを自動生成しないようにするコマンド/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "7e01ca898c8b69dc5b19d918f2397fcc06b6db9c0d6958a5183a35e2fa75db76",
+      "translationHash": "8dd47c8d08e3f117b197e8cd1108074762909f4ec8ab8790a24133edb547916c",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-137.json",
+      "evidenceHash": "b1d11b812c1f9625cdda84a3f032999ec6067e11758b67f0ade4ae66a27ad7c5"
+    },
+    "post/macOSで.DS_Storeを自動生成しないようにするコマンド/index.ko.md": {
+      "source": "post/macOSで.DS_Storeを自動生成しないようにするコマンド/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "7e01ca898c8b69dc5b19d918f2397fcc06b6db9c0d6958a5183a35e2fa75db76",
+      "translationHash": "ad7622a47c1825fb0bd90bbe4c2081436b09ddba874876feb379ed201deb0db1",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-137.json",
+      "evidenceHash": "26cff83e8beac3c9e6accfca2d47b51bb83a8185754e2bbc42d08fdba9fd850f"
+    },
+    "post/macOSで.DS_Storeを自動生成しないようにするコマンド/index.pt.md": {
+      "source": "post/macOSで.DS_Storeを自動生成しないようにするコマンド/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "7e01ca898c8b69dc5b19d918f2397fcc06b6db9c0d6958a5183a35e2fa75db76",
+      "translationHash": "4be6363b94ee5806a2c09ba65411dbddb12afe66a0460e74c3f7b2d417602d24",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-137.json",
+      "evidenceHash": "1f4cd00791317e4d509ce07a657b5551e3c421b1f34f1942005bfeec2380fd36"
+    },
+    "post/macOSで.DS_Storeを自動生成しないようにするコマンド/index.zh-tw.md": {
+      "source": "post/macOSで.DS_Storeを自動生成しないようにするコマンド/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "7e01ca898c8b69dc5b19d918f2397fcc06b6db9c0d6958a5183a35e2fa75db76",
+      "translationHash": "f819b5ce2e8db225676c56fb37d849297f2452f65cbee7e6a8037e7a468c8789",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-137.json",
+      "evidenceHash": "e9f0ead07903b3e6fee5fa3503f3894cab0efd5cf22b3ca17f2214ea9c96a168"
+    },
+    "post/macOSで.DS_Storeを自動生成しないようにするコマンド/index.hi.md": {
+      "source": "post/macOSで.DS_Storeを自動生成しないようにするコマンド/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "7e01ca898c8b69dc5b19d918f2397fcc06b6db9c0d6958a5183a35e2fa75db76",
+      "translationHash": "93413e2ebf3c0cfa0245d0d45234734239d3d6a1e6c0e293469d41f99316cfcf",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-137.json",
+      "evidenceHash": "dca0f3030e214156223656eaf278c907d1615357b5459c012a17ee407f7a82a9"
+    },
+    "post/macOSで.DS_Storeを自動生成しないようにするコマンド/index.fr.md": {
+      "source": "post/macOSで.DS_Storeを自動生成しないようにするコマンド/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "7e01ca898c8b69dc5b19d918f2397fcc06b6db9c0d6958a5183a35e2fa75db76",
+      "translationHash": "9b56abab584cab107d5420f9a75eec08a4fa3664108791246de8283fe363ef5c",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-137.json",
+      "evidenceHash": "ef20ec564d638bf9a3b6f9880ea09d7e813ee7a19ce2b5427d626000881fcb69"
+    },
+    "post/macOSで.DS_Storeを自動生成しないようにするコマンド/index.de.md": {
+      "source": "post/macOSで.DS_Storeを自動生成しないようにするコマンド/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "7e01ca898c8b69dc5b19d918f2397fcc06b6db9c0d6958a5183a35e2fa75db76",
+      "translationHash": "fe2ae7ff4f7e40282289e1fd91738bca49f10246673253a43effd69046cc5415",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-137.json",
+      "evidenceHash": "4049a28ce6f589b6f030b1977bfe9b06d9ddb7aae97f639693ccde3a1f88e01e"
+    },
+    "post/macOSで.DS_Storeを自動生成しないようにするコマンド/index.ar.md": {
+      "source": "post/macOSで.DS_Storeを自動生成しないようにするコマンド/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "7e01ca898c8b69dc5b19d918f2397fcc06b6db9c0d6958a5183a35e2fa75db76",
+      "translationHash": "ed40b27244236512dcfb427e3444152c2ddcbd4024c9e745b5e141e092257528",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-137.json",
+      "evidenceHash": "fbc209afac11b3ee50f5a6d2a25dcb7f64c2b8c0070a0443d8aeef7d2a62d9b7"
+    },
+    "post/macOSで.DS_Storeを自動生成しないようにするコマンド/index.ru.md": {
+      "source": "post/macOSで.DS_Storeを自動生成しないようにするコマンド/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "7e01ca898c8b69dc5b19d918f2397fcc06b6db9c0d6958a5183a35e2fa75db76",
+      "translationHash": "8cf2e2b8c1bd6e170e47f9bc6cc468541a0561a98c6976879a4235cf337a2b74",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-137.json",
+      "evidenceHash": "9285fb3b13afd6686bc0bfed80f274eeba6a21e1cda3024f2f437cd2beeadb1d"
+    },
+    "post/macOSで.DS_Storeを自動生成しないようにするコマンド/index.id.md": {
+      "source": "post/macOSで.DS_Storeを自動生成しないようにするコマンド/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "7e01ca898c8b69dc5b19d918f2397fcc06b6db9c0d6958a5183a35e2fa75db76",
+      "translationHash": "dea19bda2a21e1c2cb55f7717640bedecc41a80161baa17ee4a9aa3f93ec0107",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-137.json",
+      "evidenceHash": "7793a1769b2f35097161b8e3a97fe62279fa7e9877bb9a71c69efda192860a67"
     }
   }
 }

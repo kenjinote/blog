@@ -1,29 +1,32 @@
 ---
-title: 'Terminal-Befehl zur Deaktivierung/zum Stoppen der automatischen Generierung von .DS_Store unter macOS'
-date: "2026-09-24T19:44:38+09:00"
+title: "Das Lesen von .DS_Store-Dateien auf SMB-Freigaben in macOS steuern"
 slug: "macOSで.DS_Storeを自動生成しないようにするBefehl"
 date: 2022-09-12T16:03:42+09:00
+lastmod: "2026-11-24T00:00:00+09:00"
 tags: ["macOS"]
 draft: false
 image: "img.webp"
 categories: ["pc-gadgets"]
-description: 'Wir stellen einen Terminal-Befehl vor, der verhindert, dass unnötige „.DS_Store“-Dateien auf Netzlaufwerken usw. in einer macOS-Umgebung automatisch generiert werden. Die Methode zur Wiederherstellung der ursprünglichen Einstellungen und die Schritte zum Neustart des Finders sind ebenfalls zusammengefasst.'
+description: "Nach Apples Anleitung lässt sich das Lesen von .DS_Store-Dateien auf SMB-Freigaben in macOS deaktivieren oder wieder aktivieren. Das verhindert nicht ihre Erstellung; melden Sie sich nach der Änderung ab und wieder an."
 ---
-Der Befehl, um die automatische Generierung von .DS_Store unter macOS zu verhindern, lautet wie folgt.
-Bitte führen Sie ihn im Terminal aus.
+Apple beschreibt diese Einstellung als Möglichkeit, das Durchsuchen von SMB-Freigaben zu beschleunigen: macOS soll **`.DS_Store`-Dateien auf SMB-Freigaben nicht lesen**. Das verhindert weder das Erstellen neuer Dateien noch löscht es vorhandene Dateien. Anzeige und Sortierung im Finder können sich ändern.
+
+### Lesen auf SMB-Freigaben deaktivieren
+
+Führen Sie diesen Befehl im Terminal aus:
+
 ```bash
-defaults write com.apple.desktopservices DSDontWriteNetworkStores true
-```
-Starten Sie den Finder neu, nachdem Sie den Befehl ausgeführt haben.
-```bash
-killall Finder
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool TRUE
 ```
 
-Wenn Sie die Einstellungen wiederherstellen möchten, führen Sie bitte den folgenden Befehl aus.
+Melden Sie sich von Ihrem macOS-Account ab und wieder an, damit die Änderung wirksam wird. Der Finder verwendet beim Anzeigen von Ordnern grundlegende Informationen statt der `.DS_Store`-Metadaten.
+
+### Lesen wieder aktivieren
+
+Setzen Sie den Wert auf `FALSE`, um das Standardverhalten wiederherzustellen:
+
 ```bash
-defaults delete com.apple.desktopservices DSDontWriteNetworkStores false
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool FALSE
 ```
-Wenn Sie die Einstellungen wie oben beschrieben ändern, starten Sie den Finder neu.
-```bash
-killall Finder
-```
+
+Melden Sie sich danach ab und wieder an. Apple beschreibt dies als Anpassung für SMB-Freigaben und richtet den Artikel vor allem an Administratoren in Unternehmen und Bildungseinrichtungen. Siehe den [Apple Support](https://support.apple.com/en-us/102064).

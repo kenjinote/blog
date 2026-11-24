@@ -1,29 +1,32 @@
 ---
-title: 'macOS में .DS_Store के स्वत: जनरेशन को अक्षम और रोकने के लिए टर्मिनल कमांड'
-date: "2026-09-24T19:44:38+09:00"
+title: "macOS में SMB शेयरों पर .DS_Store पढ़ने की सेटिंग"
 slug: "macOSで.DS_Storeを自動生成しないようにするकमांड"
 date: 2022-09-12T16:03:42+09:00
+lastmod: "2026-11-24T00:00:00+09:00"
 tags: ["macOS"]
 draft: false
 image: "img.webp"
 categories: ["pc-gadgets"]
-description: 'हम macOS वातावरण में नेटवर्क ड्राइव आदि पर अनावश्यक ".DS_Store" फ़ाइलों को स्वचालित रूप से उत्पन्न होने से रोकने के लिए टर्मिनल कमांड पेश करेंगे। मूल सेटिंग्स को वापस लाने और Finder को पुनरारंभ करने की प्रक्रिया को भी संक्षेप में प्रस्तुत किया गया है。'
+description: "Apple के निर्देशों के अनुसार macOS में SMB शेयरों पर .DS_Store पढ़ना बंद या फिर चालू करें। यह फ़ाइलें बनना नहीं रोकता; सेटिंग बदलने के बाद लॉग आउट करके फिर लॉग इन करें।"
 ---
-macOS पर .DS_Store को स्वचालित रूप से उत्पन्न होने से रोकने के लिए कमांड निम्नलिखित है।
-कृपया इसे टर्मिनल में चलाएँ।
+Apple इस सेटिंग को SMB ब्राउज़िंग तेज़ करने के तरीके के रूप में बताता है: macOS को SMB शेयरों पर **`.DS_Store` फ़ाइलें न पढ़ने** के लिए कहें। इससे नई फ़ाइलें बनना नहीं रुकता और मौजूदा फ़ाइलें हटती भी नहीं हैं। Finder में फ़ोल्डरों का क्रम और प्रदर्शन बदल सकता है।
+
+### SMB शेयरों पर पढ़ना बंद करें
+
+Terminal में यह कमांड चलाएँ:
+
 ```bash
-defaults write com.apple.desktopservices DSDontWriteNetworkStores true
-```
-कमांड चलाने के बाद, फ़ाइंडर (Finder) को पुनरारंभ करें।
-```bash
-killall Finder
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool TRUE
 ```
 
-यदि आप सेटिंग्स को पुनर्स्थापित करना चाहते हैं, तो कृपया निम्नलिखित कमांड चलाएँ।
+बदलाव लागू करने के लिए macOS खाते से लॉग आउट करके फिर लॉग इन करें। फ़ोल्डर दिखाते समय Finder `.DS_Store` मेटाडेटा के बजाय बुनियादी जानकारी का उपयोग करेगा।
+
+### पढ़ना फिर चालू करें
+
+डिफ़ॉल्ट व्यवहार लौटाने के लिए मान `FALSE` करें:
+
 ```bash
-defaults delete com.apple.desktopservices DSDontWriteNetworkStores false
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool FALSE
 ```
-उपरोक्त की तरह, यदि आपने सेटिंग्स बदली हैं, तो फ़ाइंडर को पुनरारंभ करें।
-```bash
-killall Finder
-```
+
+इसके बाद लॉग आउट करके दोबारा लॉग इन करें। Apple इसे SMB ब्राउज़िंग समायोजन के रूप में बताता है और यह मार्गदर्शन मुख्यतः व्यवसाय तथा शिक्षा प्रशासकों के लिए है। [Apple Support](https://support.apple.com/en-us/102064) देखें।

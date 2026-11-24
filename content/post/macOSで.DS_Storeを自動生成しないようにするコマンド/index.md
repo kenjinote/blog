@@ -1,29 +1,32 @@
 ---
-title: 'macOSで.DS_Storeの自動生成を無効化・停止するターミナルコマンド'
-date: "2026-09-24T19:44:38+09:00"
+title: "macOSのSMB共有で.DS_Storeの読み取りを切り替える"
 slug: "macOSで.DS_Storeを自動生成しないようにするコマンド"
 date: 2022-09-12T16:03:42+09:00
+lastmod: "2026-11-24T00:00:00+09:00"
 tags: ["macOS"]
 draft: false
 image: "img.webp"
 categories: ["pc-gadgets"]
-description: 'macOS環境でネットワークドライブ等に不要な「.DS_Store」ファイルが自動生成されるのを防ぐターミナルコマンドを紹介します。元の設定に戻す方法やFinderの再起動手順もまとめています。'
+description: "Apple公式の手順に基づき、macOSでSMB共有上の.DS_Store読み取りを無効化・再有効化する方法を説明します。ファイルの新規生成を止める設定ではなく、変更後はログアウトと再ログインが必要です。"
 ---
-macOSで.DS_Storeを自動生成しないようにするコマンドは以下の通りです。
-ターミナルで実行してください。
+Appleが案内しているのは、**SMB共有上の`.DS_Store`をmacOSが読み取らないようにする設定**です。`.DS_Store`ファイルの新規生成を止めたり、既存ファイルを削除したりする設定ではありません。この変更後はFinderの並び順などの表示が変わることがあります。
+
+### SMB共有上での読み取りを無効にする
+
+ターミナルで次のコマンドを実行します。
+
 ```bash
-defaults write com.apple.desktopservices DSDontWriteNetworkStores true
-```
-コマンドを実行したらファインダーを再起動させます。
-```bash
-killall Finder
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool TRUE
 ```
 
-設定をもとに戻す場合は以下のコマンドを実行してください。
+変更を反映するには、macOSアカウントからログアウトし、再度ログインします。Finderは`.DS_Store`の情報を使わず、基本情報に基づいてフォルダ内容を表示します。
+
+### 再び有効にする
+
+設定を戻すには、値を`FALSE`にします。
+
 ```bash
-defaults delete com.apple.desktopservices DSDontWriteNetworkStores false
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool FALSE
 ```
-上記と同様に設定を変更した場合は、ファインダーを再起動させます。
-```bash
-killall Finder
-```
+
+その後、ログアウトして再度ログインします。Appleはこの設定をSMB共有の閲覧を調整する方法として案内しており、記事は主に企業・教育機関の管理者向けです。詳しくは[Appleの手順](https://support.apple.com/en-us/102064)を参照してください。
