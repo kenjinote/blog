@@ -1,0 +1,457 @@
+{
+  "version": 1,
+  "batch": 154,
+  "article": "Win32 button control and WM_COMMAND event handling",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "b793e23242e629df3d8047a23598226d038600045d0691f834eaa448337a9779",
+  "sources": [
+    "https://learn.microsoft.com/en-us/windows/win32/controls/button-styles",
+    "https://learn.microsoft.com/en-us/windows/win32/controls/bn-clicked",
+    "https://learn.microsoft.com/en-us/windows/win32/menurc/wm-command",
+    "https://learn.microsoft.com/en-us/windows/win32/learnwin32/creating-a-window",
+    "https://github.com/kenjinote/button/blob/main/main.cpp"
+  ],
+  "scope": "Compared the full Japanese source and twelve translations, C++ sample code, event semantics, control ID handling, source repository, metadata dates, and official Microsoft references.",
+  "findings": [
+    "Removed duplicate future date; retained 2023-01-14 and set lastmod to 2026-11-24.",
+    "Corrected the Japanese typo for GUI control and rewrote the sample as a window-procedure fragment with button creation in WM_CREATE.",
+    "Added the BN_CLICKED test and retained the control ID test because WM_COMMAND can also originate from menus and accelerators.",
+    "Used a pointer-sized HMENU conversion and checked CreateWindow failure.",
+    "Added official Microsoft Learn references and disclosed that the linked external GitHub sample still lacks the BN_CLICKED filter."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/ボタンついて/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/ボタンついて/index.md",
+      "sourceHash": "b793e23242e629df3d8047a23598226d038600045d0691f834eaa448337a9779",
+      "translationHash": "cf29fdbcf9d94da5044a2de929571f0ee8fc64117bdb54dc4effe30c11a08d4c",
+      "summary": "Compared the complete Japanese article and all twelve translations against Microsoft Win32 documentation. Corrected event handling to filter BN_CLICKED as well as the control ID, showed button creation in WM_CREATE, clarified WM_COMMAND message fields, and disclosed that the linked original repository still contains the unfiltered handler.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared button creation, parent-window notification, close action, and the distinction between a click notification and other WM_COMMAND sources."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Verified Win32 button control, WM_CREATE, WM_COMMAND, BN_CLICKED, LOWORD/HIWORD, control ID, parent window, and instance handle."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Rewrote the code fragment to define an ID, create the child button during WM_CREATE, check both ID_BUTTON1 and BN_CLICKED, handle CreateWindow failure, and use pointer-sized HMENU conversion."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Microsoft Learn references for button styles, BN_CLICKED, WM_COMMAND, and window creation; inspected the linked GitHub source and disclosed its current missing BN_CLICKED filter."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The linked GitHub repository is external to this site repository and was not modified; its current main.cpp still handles WM_COMMAND by control ID without checking BN_CLICKED.",
+        "The displayed C++ is a relevant window-procedure fragment, not a complete standalone application."
+      ]
+    },
+    "post/ボタンついて/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/ボタンついて/index.md",
+      "sourceHash": "b793e23242e629df3d8047a23598226d038600045d0691f834eaa448337a9779",
+      "translationHash": "16110dbe1594a3def7545908a9e29cebc057b09ed3c164342e2a5d52f340e7e3",
+      "summary": "Compared the complete Japanese article and all twelve translations against Microsoft Win32 documentation. Corrected event handling to filter BN_CLICKED as well as the control ID, showed button creation in WM_CREATE, clarified WM_COMMAND message fields, and disclosed that the linked original repository still contains the unfiltered handler.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared button creation, parent-window notification, close action, and the distinction between a click notification and other WM_COMMAND sources."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Verified Win32 button control, WM_CREATE, WM_COMMAND, BN_CLICKED, LOWORD/HIWORD, control ID, parent window, and instance handle."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Rewrote the code fragment to define an ID, create the child button during WM_CREATE, check both ID_BUTTON1 and BN_CLICKED, handle CreateWindow failure, and use pointer-sized HMENU conversion."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Microsoft Learn references for button styles, BN_CLICKED, WM_COMMAND, and window creation; inspected the linked GitHub source and disclosed its current missing BN_CLICKED filter."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The linked GitHub repository is external to this site repository and was not modified; its current main.cpp still handles WM_COMMAND by control ID without checking BN_CLICKED.",
+        "The displayed C++ is a relevant window-procedure fragment, not a complete standalone application."
+      ]
+    },
+    "post/ボタンついて/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/ボタンついて/index.md",
+      "sourceHash": "b793e23242e629df3d8047a23598226d038600045d0691f834eaa448337a9779",
+      "translationHash": "07ac29a09cd3457f1d054acfd3d97ebdc8d694feae24f10ddd492f73ba7d3523",
+      "summary": "Compared the complete Japanese article and all twelve translations against Microsoft Win32 documentation. Corrected event handling to filter BN_CLICKED as well as the control ID, showed button creation in WM_CREATE, clarified WM_COMMAND message fields, and disclosed that the linked original repository still contains the unfiltered handler.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared button creation, parent-window notification, close action, and the distinction between a click notification and other WM_COMMAND sources."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Verified Win32 button control, WM_CREATE, WM_COMMAND, BN_CLICKED, LOWORD/HIWORD, control ID, parent window, and instance handle."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Rewrote the code fragment to define an ID, create the child button during WM_CREATE, check both ID_BUTTON1 and BN_CLICKED, handle CreateWindow failure, and use pointer-sized HMENU conversion."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Microsoft Learn references for button styles, BN_CLICKED, WM_COMMAND, and window creation; inspected the linked GitHub source and disclosed its current missing BN_CLICKED filter."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The linked GitHub repository is external to this site repository and was not modified; its current main.cpp still handles WM_COMMAND by control ID without checking BN_CLICKED.",
+        "The displayed C++ is a relevant window-procedure fragment, not a complete standalone application."
+      ]
+    },
+    "post/ボタンついて/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/ボタンついて/index.md",
+      "sourceHash": "b793e23242e629df3d8047a23598226d038600045d0691f834eaa448337a9779",
+      "translationHash": "354abe965fd223060fe23c464b2219f65ac35b03d720fb8d4009fd47ec19b76e",
+      "summary": "Compared the complete Japanese article and all twelve translations against Microsoft Win32 documentation. Corrected event handling to filter BN_CLICKED as well as the control ID, showed button creation in WM_CREATE, clarified WM_COMMAND message fields, and disclosed that the linked original repository still contains the unfiltered handler.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared button creation, parent-window notification, close action, and the distinction between a click notification and other WM_COMMAND sources."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Verified Win32 button control, WM_CREATE, WM_COMMAND, BN_CLICKED, LOWORD/HIWORD, control ID, parent window, and instance handle."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Rewrote the code fragment to define an ID, create the child button during WM_CREATE, check both ID_BUTTON1 and BN_CLICKED, handle CreateWindow failure, and use pointer-sized HMENU conversion."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Microsoft Learn references for button styles, BN_CLICKED, WM_COMMAND, and window creation; inspected the linked GitHub source and disclosed its current missing BN_CLICKED filter."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The linked GitHub repository is external to this site repository and was not modified; its current main.cpp still handles WM_COMMAND by control ID without checking BN_CLICKED.",
+        "The displayed C++ is a relevant window-procedure fragment, not a complete standalone application."
+      ]
+    },
+    "post/ボタンついて/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/ボタンついて/index.md",
+      "sourceHash": "b793e23242e629df3d8047a23598226d038600045d0691f834eaa448337a9779",
+      "translationHash": "23ec90f51b1dfdf5b536d28b4d123d2b4fc68b77e48c96eef9d8d4fb99be6388",
+      "summary": "Compared the complete Japanese article and all twelve translations against Microsoft Win32 documentation. Corrected event handling to filter BN_CLICKED as well as the control ID, showed button creation in WM_CREATE, clarified WM_COMMAND message fields, and disclosed that the linked original repository still contains the unfiltered handler.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared button creation, parent-window notification, close action, and the distinction between a click notification and other WM_COMMAND sources."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Verified Win32 button control, WM_CREATE, WM_COMMAND, BN_CLICKED, LOWORD/HIWORD, control ID, parent window, and instance handle."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Rewrote the code fragment to define an ID, create the child button during WM_CREATE, check both ID_BUTTON1 and BN_CLICKED, handle CreateWindow failure, and use pointer-sized HMENU conversion."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Microsoft Learn references for button styles, BN_CLICKED, WM_COMMAND, and window creation; inspected the linked GitHub source and disclosed its current missing BN_CLICKED filter."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The linked GitHub repository is external to this site repository and was not modified; its current main.cpp still handles WM_COMMAND by control ID without checking BN_CLICKED.",
+        "The displayed C++ is a relevant window-procedure fragment, not a complete standalone application."
+      ]
+    },
+    "post/ボタンついて/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/ボタンついて/index.md",
+      "sourceHash": "b793e23242e629df3d8047a23598226d038600045d0691f834eaa448337a9779",
+      "translationHash": "5b131572343cfdb30a55788537207aa5464980bdd88d8dfa55222084695754c4",
+      "summary": "Compared the complete Japanese article and all twelve translations against Microsoft Win32 documentation. Corrected event handling to filter BN_CLICKED as well as the control ID, showed button creation in WM_CREATE, clarified WM_COMMAND message fields, and disclosed that the linked original repository still contains the unfiltered handler.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared button creation, parent-window notification, close action, and the distinction between a click notification and other WM_COMMAND sources."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Verified Win32 button control, WM_CREATE, WM_COMMAND, BN_CLICKED, LOWORD/HIWORD, control ID, parent window, and instance handle."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Rewrote the code fragment to define an ID, create the child button during WM_CREATE, check both ID_BUTTON1 and BN_CLICKED, handle CreateWindow failure, and use pointer-sized HMENU conversion."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Microsoft Learn references for button styles, BN_CLICKED, WM_COMMAND, and window creation; inspected the linked GitHub source and disclosed its current missing BN_CLICKED filter."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The linked GitHub repository is external to this site repository and was not modified; its current main.cpp still handles WM_COMMAND by control ID without checking BN_CLICKED.",
+        "The displayed C++ is a relevant window-procedure fragment, not a complete standalone application."
+      ]
+    },
+    "post/ボタンついて/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/ボタンついて/index.md",
+      "sourceHash": "b793e23242e629df3d8047a23598226d038600045d0691f834eaa448337a9779",
+      "translationHash": "ef76dcfd5973ca3e78d2dc8fc6bdf9b29c6828b9a64c582ad64068d3c8ef8646",
+      "summary": "Compared the complete Japanese article and all twelve translations against Microsoft Win32 documentation. Corrected event handling to filter BN_CLICKED as well as the control ID, showed button creation in WM_CREATE, clarified WM_COMMAND message fields, and disclosed that the linked original repository still contains the unfiltered handler.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared button creation, parent-window notification, close action, and the distinction between a click notification and other WM_COMMAND sources."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Verified Win32 button control, WM_CREATE, WM_COMMAND, BN_CLICKED, LOWORD/HIWORD, control ID, parent window, and instance handle."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Rewrote the code fragment to define an ID, create the child button during WM_CREATE, check both ID_BUTTON1 and BN_CLICKED, handle CreateWindow failure, and use pointer-sized HMENU conversion."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Microsoft Learn references for button styles, BN_CLICKED, WM_COMMAND, and window creation; inspected the linked GitHub source and disclosed its current missing BN_CLICKED filter."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The linked GitHub repository is external to this site repository and was not modified; its current main.cpp still handles WM_COMMAND by control ID without checking BN_CLICKED.",
+        "The displayed C++ is a relevant window-procedure fragment, not a complete standalone application."
+      ]
+    },
+    "post/ボタンついて/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/ボタンついて/index.md",
+      "sourceHash": "b793e23242e629df3d8047a23598226d038600045d0691f834eaa448337a9779",
+      "translationHash": "af474a5d0d76498d5d83d5a863f232a1d616ef8cc555b41f10301bd114ba722c",
+      "summary": "Compared the complete Japanese article and all twelve translations against Microsoft Win32 documentation. Corrected event handling to filter BN_CLICKED as well as the control ID, showed button creation in WM_CREATE, clarified WM_COMMAND message fields, and disclosed that the linked original repository still contains the unfiltered handler.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared button creation, parent-window notification, close action, and the distinction between a click notification and other WM_COMMAND sources."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Verified Win32 button control, WM_CREATE, WM_COMMAND, BN_CLICKED, LOWORD/HIWORD, control ID, parent window, and instance handle."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Rewrote the code fragment to define an ID, create the child button during WM_CREATE, check both ID_BUTTON1 and BN_CLICKED, handle CreateWindow failure, and use pointer-sized HMENU conversion."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Microsoft Learn references for button styles, BN_CLICKED, WM_COMMAND, and window creation; inspected the linked GitHub source and disclosed its current missing BN_CLICKED filter."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The linked GitHub repository is external to this site repository and was not modified; its current main.cpp still handles WM_COMMAND by control ID without checking BN_CLICKED.",
+        "The displayed C++ is a relevant window-procedure fragment, not a complete standalone application."
+      ]
+    },
+    "post/ボタンついて/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/ボタンついて/index.md",
+      "sourceHash": "b793e23242e629df3d8047a23598226d038600045d0691f834eaa448337a9779",
+      "translationHash": "1dc9c3a47eb23dc3b6735ea690ec4c53b5bc9fc5fd4bb9ab78da8f954d35cb2a",
+      "summary": "Compared the complete Japanese article and all twelve translations against Microsoft Win32 documentation. Corrected event handling to filter BN_CLICKED as well as the control ID, showed button creation in WM_CREATE, clarified WM_COMMAND message fields, and disclosed that the linked original repository still contains the unfiltered handler.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared button creation, parent-window notification, close action, and the distinction between a click notification and other WM_COMMAND sources."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Verified Win32 button control, WM_CREATE, WM_COMMAND, BN_CLICKED, LOWORD/HIWORD, control ID, parent window, and instance handle."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Rewrote the code fragment to define an ID, create the child button during WM_CREATE, check both ID_BUTTON1 and BN_CLICKED, handle CreateWindow failure, and use pointer-sized HMENU conversion."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Microsoft Learn references for button styles, BN_CLICKED, WM_COMMAND, and window creation; inspected the linked GitHub source and disclosed its current missing BN_CLICKED filter."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The linked GitHub repository is external to this site repository and was not modified; its current main.cpp still handles WM_COMMAND by control ID without checking BN_CLICKED.",
+        "The displayed C++ is a relevant window-procedure fragment, not a complete standalone application."
+      ]
+    },
+    "post/ボタンついて/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/ボタンついて/index.md",
+      "sourceHash": "b793e23242e629df3d8047a23598226d038600045d0691f834eaa448337a9779",
+      "translationHash": "9eba6e1bd957054591818bfce71a14411953186773b15828260f8505647cb7a4",
+      "summary": "Compared the complete Japanese article and all twelve translations against Microsoft Win32 documentation. Corrected event handling to filter BN_CLICKED as well as the control ID, showed button creation in WM_CREATE, clarified WM_COMMAND message fields, and disclosed that the linked original repository still contains the unfiltered handler.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared button creation, parent-window notification, close action, and the distinction between a click notification and other WM_COMMAND sources."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Verified Win32 button control, WM_CREATE, WM_COMMAND, BN_CLICKED, LOWORD/HIWORD, control ID, parent window, and instance handle."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Rewrote the code fragment to define an ID, create the child button during WM_CREATE, check both ID_BUTTON1 and BN_CLICKED, handle CreateWindow failure, and use pointer-sized HMENU conversion."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Microsoft Learn references for button styles, BN_CLICKED, WM_COMMAND, and window creation; inspected the linked GitHub source and disclosed its current missing BN_CLICKED filter."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The linked GitHub repository is external to this site repository and was not modified; its current main.cpp still handles WM_COMMAND by control ID without checking BN_CLICKED.",
+        "The displayed C++ is a relevant window-procedure fragment, not a complete standalone application."
+      ]
+    },
+    "post/ボタンついて/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/ボタンついて/index.md",
+      "sourceHash": "b793e23242e629df3d8047a23598226d038600045d0691f834eaa448337a9779",
+      "translationHash": "0a4a0377dbe15d45728c9ef1e04a013c1c36b9c8964ce9d351e7bb76fb540492",
+      "summary": "Compared the complete Japanese article and all twelve translations against Microsoft Win32 documentation. Corrected event handling to filter BN_CLICKED as well as the control ID, showed button creation in WM_CREATE, clarified WM_COMMAND message fields, and disclosed that the linked original repository still contains the unfiltered handler.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared button creation, parent-window notification, close action, and the distinction between a click notification and other WM_COMMAND sources."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Verified Win32 button control, WM_CREATE, WM_COMMAND, BN_CLICKED, LOWORD/HIWORD, control ID, parent window, and instance handle."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Rewrote the code fragment to define an ID, create the child button during WM_CREATE, check both ID_BUTTON1 and BN_CLICKED, handle CreateWindow failure, and use pointer-sized HMENU conversion."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Microsoft Learn references for button styles, BN_CLICKED, WM_COMMAND, and window creation; inspected the linked GitHub source and disclosed its current missing BN_CLICKED filter."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The linked GitHub repository is external to this site repository and was not modified; its current main.cpp still handles WM_COMMAND by control ID without checking BN_CLICKED.",
+        "The displayed C++ is a relevant window-procedure fragment, not a complete standalone application."
+      ]
+    },
+    "post/ボタンついて/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/ボタンついて/index.md",
+      "sourceHash": "b793e23242e629df3d8047a23598226d038600045d0691f834eaa448337a9779",
+      "translationHash": "f5c6933c29a2b1c4e884f14695f11f5545247ff1c7beb392141ba15a0482da91",
+      "summary": "Compared the complete Japanese article and all twelve translations against Microsoft Win32 documentation. Corrected event handling to filter BN_CLICKED as well as the control ID, showed button creation in WM_CREATE, clarified WM_COMMAND message fields, and disclosed that the linked original repository still contains the unfiltered handler.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared button creation, parent-window notification, close action, and the distinction between a click notification and other WM_COMMAND sources."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Verified Win32 button control, WM_CREATE, WM_COMMAND, BN_CLICKED, LOWORD/HIWORD, control ID, parent window, and instance handle."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Rewrote the code fragment to define an ID, create the child button during WM_CREATE, check both ID_BUTTON1 and BN_CLICKED, handle CreateWindow failure, and use pointer-sized HMENU conversion."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Microsoft Learn references for button styles, BN_CLICKED, WM_COMMAND, and window creation; inspected the linked GitHub source and disclosed its current missing BN_CLICKED filter."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The linked GitHub repository is external to this site repository and was not modified; its current main.cpp still handles WM_COMMAND by control ID without checking BN_CLICKED.",
+        "The displayed C++ is a relevant window-procedure fragment, not a complete standalone application."
+      ]
+    }
+  }
+}
