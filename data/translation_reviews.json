@@ -22325,6 +22325,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-191.json",
       "evidenceHash": "083b32e0c0eb8c703cdee1c4a3ec7036fbe7b50f607296eb309af0ef2c306911"
+    },
+    "post/数学の未解決問題/index.en.md": {
+      "source": "post/数学の未解決問題/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "a7e2eba5e7c6bdf31b7acdd9b7e18ded645881149ae33403322dbae78fb6f007",
+      "translationHash": "6805dbc348bdbb67da5f01c33d6844bf871893a4304188f29eca5deb6e5ee453",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-192.json",
+      "evidenceHash": "25c091fcb2301250da8c686edfe176c155642c6f3e36bcda2fc0fe537714a8b4"
+    },
+    "post/数学の未解決問題/index.zh-cn.md": {
+      "source": "post/数学の未解決問題/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "a7e2eba5e7c6bdf31b7acdd9b7e18ded645881149ae33403322dbae78fb6f007",
+      "translationHash": "b745b2df63e1ff7d75390808ce66d3a72b91d5ad5eb0623f4ba588b337a63f3a",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-192.json",
+      "evidenceHash": "127add9021dfa1e161c5521be727485c1540eba1c8576b4c3ad85a4d5908383c"
+    },
+    "post/数学の未解決問題/index.es.md": {
+      "source": "post/数学の未解決問題/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "a7e2eba5e7c6bdf31b7acdd9b7e18ded645881149ae33403322dbae78fb6f007",
+      "translationHash": "6d7e894c45f5daf557b645dae3e6925768cd5e6152e29a4733f2bb601cb1d3bb",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-192.json",
+      "evidenceHash": "ec25d2f4ec987290881c2e65e162992306cbe503ca997037780ae5d46b99510f"
+    },
+    "post/数学の未解決問題/index.ko.md": {
+      "source": "post/数学の未解決問題/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "a7e2eba5e7c6bdf31b7acdd9b7e18ded645881149ae33403322dbae78fb6f007",
+      "translationHash": "f36337fe7db2fc83b9c9cebcf9419616a8b2077b232ca9b6836d55438dd1d4c4",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-192.json",
+      "evidenceHash": "3fa12623c0f750308db11ad4c3aa4f1116a070d9b0a7cdd7a68788b4f43dc576"
+    },
+    "post/数学の未解決問題/index.pt.md": {
+      "source": "post/数学の未解決問題/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "a7e2eba5e7c6bdf31b7acdd9b7e18ded645881149ae33403322dbae78fb6f007",
+      "translationHash": "5d4e3d129b334a292d7bd32d213650d232d731c2fbc2323fee1f7c8aaedfdc75",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-192.json",
+      "evidenceHash": "cefcd9a036f113c47708c0d685d3a7e9484c1984494631a04f32d9853f8b07c2"
+    },
+    "post/数学の未解決問題/index.zh-tw.md": {
+      "source": "post/数学の未解決問題/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "a7e2eba5e7c6bdf31b7acdd9b7e18ded645881149ae33403322dbae78fb6f007",
+      "translationHash": "d78657f6576f8174cb862a169822efa05a0fb91af0336a3cbb9be9520cfbd1f4",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-192.json",
+      "evidenceHash": "b6715fe1e4c288f150328ebe6709a06fcaa67b628352607e510bd7d0f133b2b6"
+    },
+    "post/数学の未解決問題/index.hi.md": {
+      "source": "post/数学の未解決問題/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "a7e2eba5e7c6bdf31b7acdd9b7e18ded645881149ae33403322dbae78fb6f007",
+      "translationHash": "d21d83a5438f3368a369e510c1f9ef8c732800077ceaf64168f503d8d48b1860",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-192.json",
+      "evidenceHash": "666f5e9c148ddb974b83c286c76e0b82fa1c9e50435ee413e490d55c745210c7"
+    },
+    "post/数学の未解決問題/index.fr.md": {
+      "source": "post/数学の未解決問題/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "a7e2eba5e7c6bdf31b7acdd9b7e18ded645881149ae33403322dbae78fb6f007",
+      "translationHash": "51e40bf0a7083520350c02340506e71eb7fe4355bb250f451a63b72bf107f4f0",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-192.json",
+      "evidenceHash": "727183602cf09102f2746bea7c384a6664c976ed402a2d1fd9fb4f419c2dbc52"
+    },
+    "post/数学の未解決問題/index.de.md": {
+      "source": "post/数学の未解決問題/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "a7e2eba5e7c6bdf31b7acdd9b7e18ded645881149ae33403322dbae78fb6f007",
+      "translationHash": "563be95f08ffc6112bde359cd2ab601356f5f7ff487fdb2b98f63f690e789259",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-192.json",
+      "evidenceHash": "0278653cf4d5cab50c7c6c548eaa7248a38b0ae09b0c9e8ddb2727be52555ab0"
+    },
+    "post/数学の未解決問題/index.ar.md": {
+      "source": "post/数学の未解決問題/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "a7e2eba5e7c6bdf31b7acdd9b7e18ded645881149ae33403322dbae78fb6f007",
+      "translationHash": "793f39000b38c72826792fe6160c4460f62e141c4c2e896a04137772e64f3a02",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-192.json",
+      "evidenceHash": "6f6f29487009647c4f0e6c7fd69ba7d6c60cc86df7cd0804e20f04b407c8320a"
+    },
+    "post/数学の未解決問題/index.ru.md": {
+      "source": "post/数学の未解決問題/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "a7e2eba5e7c6bdf31b7acdd9b7e18ded645881149ae33403322dbae78fb6f007",
+      "translationHash": "8740ac93df5b456e18c0e6cf781b5a4cf789d2d5efd47e023e3038d9733ae5ee",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-192.json",
+      "evidenceHash": "f1114afcb609c0710346ddb1d25a9f4d6dbbaf3f518c9f5167b991ee0d604fee"
+    },
+    "post/数学の未解決問題/index.id.md": {
+      "source": "post/数学の未解決問題/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "a7e2eba5e7c6bdf31b7acdd9b7e18ded645881149ae33403322dbae78fb6f007",
+      "translationHash": "f2e2aaac92ac9d54c694c5d5418195994de7156b37e28a42723f3dd42490576f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-192.json",
+      "evidenceHash": "fbb1c412097658558cd56992a98bf55d959721172a9177ac2d3c40ea053a6aa9"
     }
   }
 }

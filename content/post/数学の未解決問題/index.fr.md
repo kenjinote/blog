@@ -1,49 +1,47 @@
 ---
 title: 'Les fascinants problèmes mathématiques non résolus : Qu''est-ce que les nombres parfaits, la conjecture de Goldbach et l''hypothèse de Riemann ?'
-date: "2026-09-24T19:44:38+09:00"
 slug: "MathématiquesのProblèmes non résolus"
-date: 2024-03-02T22:57:36+09:00
 tags: ["Mathématiques","Problèmes non résolus"]
 draft: false
 math: true
 image: "img.webp"
 categories: ["math-cryptography-quantum"]
 description: 'Nous expliquons simplement des problèmes mathématiques fascinants non résolus dont l''énoncé est simple mais qui n''ont pas encore été prouvés. Les nombres parfaits sont-ils infinis ? Nous plongeons dans de nombreux problèmes mystérieux qui continuent de tourmenter les mathématiciens, comme la conjecture de Goldbach et la difficile hypothèse de Riemann.'
+date: "2024-03-02T22:57:36+09:00"
+lastmod: "2026-11-25T00:00:00+09:00"
 ---
 
 # Problèmes non résolus en mathématiques
 
-Nous allons expliquer les problèmes non résolus en mathématiques. Bien que les problèmes eux-mêmes soient simples, il y a encore de nombreux problèmes qui n'ont pas été prouvés.
+Cet article présente des problèmes de théorie des nombres dont l'énoncé est simple, mais pour lesquels aucune preuve n'est connue. Il distingue les résultats démontrés des questions ouvertes.
 
-## Y a-t-il une infinité de nombres parfaits ?
+## Existe-t-il une infinité de nombres parfaits ?
 
-Un nombre parfait est un entier naturel dont la somme de ses diviseurs stricts positifs (c'est-à-dire à l'exclusion de lui-même) est égale à lui-même.
-Par exemple,
+Un nombre parfait est un entier positif égal à la somme de ses diviseurs positifs propres, c'est-à-dire différents du nombre lui-même.
 
-- Les diviseurs de 6 sont 1, 2 et 3. Comme 1+2+3=6, c'est un nombre parfait.
-- Les diviseurs de 28 sont 1, 2, 4, 7 et 14. Comme 1+2+4+7+14=28, c'est un nombre parfait.
+- Les diviseurs positifs propres de 6 sont 1, 2 et 3 ; 1+2+3=6.
+- Ceux de 28 sont 1, 2, 4, 7 et 14 ; 1+2+4+7+14=28.
 
-Actuellement, seuls 51 ont été découverts. On suppose qu'il y en a une infinité,
-mais cela n'a pas encore été prouvé.
+On connaît 52 nombres parfaits pairs, dont celui obtenu à partir du nombre premier de Mersenne confirmé en 2024. Aucun nombre parfait impair n'est connu. La question de savoir s'il existe une infinité de nombres parfaits pairs ou un nombre parfait impair reste ouverte.
 
 ## Conjecture de Goldbach
 
-[La conjecture de Goldbach](/fr/p/goldbachs-conjecture/) affirme que tout nombre pair strictement supérieur à 2 peut s'écrire comme la somme de deux nombres premiers.
-(Un nombre premier est un entier naturel qui n'a d'autres diviseurs que 1 et lui-même.)
+La forme forte (binaire) de la [conjecture de Goldbach](/fr/p/goldbachs-conjecture/) affirme que tout entier pair supérieur à 2 est la somme de deux nombres premiers. Par exemple, 4=2+2, 8=3+5 et 10=3+7. Un nombre premier est un entier supérieur à 1 dont les seuls diviseurs positifs sont 1 et lui-même. Cette forme forte reste ouverte.
 
-Par exemple,
+La forme faible (ternaire), distincte, affirme que tout entier impair supérieur à 5 est la somme de trois nombres premiers. Harald Helfgott l'a démontrée.
 
-- 4=2+2
-- 6=3+3
-- 8=3+5
-- 10=3+7=5+5
+## [Hypothèse de Riemann](https://kenji.blog/fr/p/riemann-hypothesis-prime-distribution-cryptography/)
 
-Le problème en lui-même est très simple, mais il n'a toujours pas été prouvé.
+Pour un nombre complexe $s$ dont la partie réelle est supérieure à 1, la fonction zêta de Riemann est représentée par la série de Dirichlet suivante :
 
-## Hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/)
+$$\zeta(s)=\sum_{n=1}^{\infty}\frac{1}{n^s}=1+\frac{1}{2^s}+\frac{1}{3^s}+\frac{1}{4^s}+\cdots$$
 
-L'hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/) est la conjecture selon laquelle les zéros de la fonction zêta de [Riemann](https://kenji.blog/fr/p/riemann/) sont limités aux entiers pairs négatifs et aux nombres complexes dont la partie réelle est 1/2.
+Cette série converge lorsque $\operatorname{Re}(s)>1$. La fonction zêta se prolonge méromorphiquement à tout le plan complexe et possède un pôle simple en $s=1$. Ses zéros aux entiers pairs négatifs $-2,-4,-6,\ldots$ sont appelés zéros triviaux. Les zéros non triviaux se trouvent dans la bande critique $0<\operatorname{Re}(s)<1$. L'hypothèse de Riemann affirme que leur partie réelle vaut toujours $1/2$. Elle reste ouverte.
 
-La fonction zêta de [Riemann](https://kenji.blog/fr/p/riemann/) est la fonction $\zeta$ définie, pour $s$ un nombre complexe et $n$ un entier naturel, par :
+## Références
 
-$$\zeta(s):=\sum _{n=1}^{\infty }{\frac {1}{n^{s}}}=1+{\frac {1}{2^{s}}}+{\frac {1}{3^{s}}}+{\frac {1}{4^{s}}}+\cdots$$
+- [GIMPS : liste des nombres premiers de Mersenne connus (jusqu'au 52e)](https://www.mersenne.org/primes/)
+- [NIST DLMF §27.4 : série de Dirichlet de la fonction zêta et convergence](https://dlmf.nist.gov/27.4)
+- [NIST DLMF §25.2 : prolongement analytique et pôle de la fonction zêta](https://dlmf.nist.gov/25.2)
+- [Clay Mathematics Institute : hypothèse de Riemann](https://www.claymath.org/millennium/Riemann-Hypothesis/)
+- [H. A. Helfgott : preuve du problème ternaire de Goldbach (arXiv)](https://arxiv.org/abs/1312.7748)

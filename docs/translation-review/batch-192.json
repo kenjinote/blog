@@ -1,0 +1,457 @@
+{
+  "version": 1,
+  "batch": 192,
+  "article": "Unsolved problems in number theory: perfect numbers, Goldbach, and the Riemann hypothesis",
+  "reviewedAt": "2026-11-25",
+  "sourceHash": "a7e2eba5e7c6bdf31b7acdd9b7e18ded645881149ae33403322dbae78fb6f007",
+  "sources": [
+    "https://www.mersenne.org/primes/",
+    "https://dlmf.nist.gov/27.4",
+    "https://dlmf.nist.gov/25.2",
+    "https://www.claymath.org/millennium/Riemann-Hypothesis/",
+    "https://arxiv.org/abs/1312.7748"
+  ],
+  "scope": "Read the complete Japanese original and all twelve translations; compared meaning, mathematical terminology, formulas, internal article links and primary references. Corrected all editions and retained only the reviewed scope in the ledger.",
+  "findings": [
+    "Removed the duplicate future date (2026-09-24), restored original publication date (2024-03-02), and set lastmod to the review date across 13 editions.",
+    "Updated the known even perfect number count from 51 to 52 based on the current GIMPS list; clarified no odd perfect number is known and both infinitude/existence questions remain open.",
+    "Defined primes as integers greater than 1 with positive divisors only 1 and themselves; distinguished the unproved binary Goldbach conjecture from Helfgott’s proved ternary theorem.",
+    "Corrected the Riemann zeta Dirichlet series convergence condition to Re(s)>1; explained analytic continuation and the simple pole at s=1, trivial zeros, critical strip, and the hypothesis for nontrivial zeros.",
+    "Added localized links to five primary references and preserved localized internal article links."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/数学の未解決問題/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/数学の未解決問題/index.md",
+      "sourceHash": "a7e2eba5e7c6bdf31b7acdd9b7e18ded645881149ae33403322dbae78fb6f007",
+      "translationHash": "6805dbc348bdbb67da5f01c33d6844bf871893a4304188f29eca5deb6e5ee453",
+      "summary": "Compared the complete translation with the Japanese source and primary references; corrected stale perfect-number count and mathematical definitions, clarified proven versus open Goldbach forms, and repaired the Riemann zeta domain/zero description.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full Japanese original and translation; aligned the known count and open status of even/odd perfect numbers, distinguished strong and weak Goldbach, and stated the Riemann hypothesis in terms of nontrivial zeros."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked perfect/proper divisors, prime integers, binary and ternary Goldbach, trivial/nontrivial zeros, critical strip, meromorphic continuation, and simple pole across the Japanese source and all twelve editions."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked examples 6 and 28, Goldbach domains (even n>2 and odd n>5), the Dirichlet-series convergence region Re(s)>1, trivial zeros at negative even integers, and the Riemann hypothesis Re(s)=1/2 for every nontrivial zero against primary references."
+        },
+        "code": {
+          "status": "checked",
+          "note": "No executable code occurs in this mathematics article; checked the TeX expressions for consistent variables, indices, signs, and inequalities across all editions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked all five cited primary references (GIMPS, NIST DLMF §§27.4 and 25.2, Clay Mathematics Institute, and Helfgott’s arXiv paper) and each localized internal Goldbach/Riemann article link."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The published count of known Mersenne primes can change; GIMPS list was checked on 2026-11-25.",
+        "Mathematical review covers the claims and formulas present in this article, not a complete proof of the cited theorems."
+      ]
+    },
+    "post/数学の未解決問題/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/数学の未解決問題/index.md",
+      "sourceHash": "a7e2eba5e7c6bdf31b7acdd9b7e18ded645881149ae33403322dbae78fb6f007",
+      "translationHash": "b745b2df63e1ff7d75390808ce66d3a72b91d5ad5eb0623f4ba588b337a63f3a",
+      "summary": "Compared the complete translation with the Japanese source and primary references; corrected stale perfect-number count and mathematical definitions, clarified proven versus open Goldbach forms, and repaired the Riemann zeta domain/zero description.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full Japanese original and translation; aligned the known count and open status of even/odd perfect numbers, distinguished strong and weak Goldbach, and stated the Riemann hypothesis in terms of nontrivial zeros."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked perfect/proper divisors, prime integers, binary and ternary Goldbach, trivial/nontrivial zeros, critical strip, meromorphic continuation, and simple pole across the Japanese source and all twelve editions."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked examples 6 and 28, Goldbach domains (even n>2 and odd n>5), the Dirichlet-series convergence region Re(s)>1, trivial zeros at negative even integers, and the Riemann hypothesis Re(s)=1/2 for every nontrivial zero against primary references."
+        },
+        "code": {
+          "status": "checked",
+          "note": "No executable code occurs in this mathematics article; checked the TeX expressions for consistent variables, indices, signs, and inequalities across all editions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked all five cited primary references (GIMPS, NIST DLMF §§27.4 and 25.2, Clay Mathematics Institute, and Helfgott’s arXiv paper) and each localized internal Goldbach/Riemann article link."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The published count of known Mersenne primes can change; GIMPS list was checked on 2026-11-25.",
+        "Mathematical review covers the claims and formulas present in this article, not a complete proof of the cited theorems."
+      ]
+    },
+    "post/数学の未解決問題/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/数学の未解決問題/index.md",
+      "sourceHash": "a7e2eba5e7c6bdf31b7acdd9b7e18ded645881149ae33403322dbae78fb6f007",
+      "translationHash": "6d7e894c45f5daf557b645dae3e6925768cd5e6152e29a4733f2bb601cb1d3bb",
+      "summary": "Compared the complete translation with the Japanese source and primary references; corrected stale perfect-number count and mathematical definitions, clarified proven versus open Goldbach forms, and repaired the Riemann zeta domain/zero description.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full Japanese original and translation; aligned the known count and open status of even/odd perfect numbers, distinguished strong and weak Goldbach, and stated the Riemann hypothesis in terms of nontrivial zeros."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked perfect/proper divisors, prime integers, binary and ternary Goldbach, trivial/nontrivial zeros, critical strip, meromorphic continuation, and simple pole across the Japanese source and all twelve editions."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked examples 6 and 28, Goldbach domains (even n>2 and odd n>5), the Dirichlet-series convergence region Re(s)>1, trivial zeros at negative even integers, and the Riemann hypothesis Re(s)=1/2 for every nontrivial zero against primary references."
+        },
+        "code": {
+          "status": "checked",
+          "note": "No executable code occurs in this mathematics article; checked the TeX expressions for consistent variables, indices, signs, and inequalities across all editions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked all five cited primary references (GIMPS, NIST DLMF §§27.4 and 25.2, Clay Mathematics Institute, and Helfgott’s arXiv paper) and each localized internal Goldbach/Riemann article link."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The published count of known Mersenne primes can change; GIMPS list was checked on 2026-11-25.",
+        "Mathematical review covers the claims and formulas present in this article, not a complete proof of the cited theorems."
+      ]
+    },
+    "post/数学の未解決問題/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/数学の未解決問題/index.md",
+      "sourceHash": "a7e2eba5e7c6bdf31b7acdd9b7e18ded645881149ae33403322dbae78fb6f007",
+      "translationHash": "f36337fe7db2fc83b9c9cebcf9419616a8b2077b232ca9b6836d55438dd1d4c4",
+      "summary": "Compared the complete translation with the Japanese source and primary references; corrected stale perfect-number count and mathematical definitions, clarified proven versus open Goldbach forms, and repaired the Riemann zeta domain/zero description.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full Japanese original and translation; aligned the known count and open status of even/odd perfect numbers, distinguished strong and weak Goldbach, and stated the Riemann hypothesis in terms of nontrivial zeros."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked perfect/proper divisors, prime integers, binary and ternary Goldbach, trivial/nontrivial zeros, critical strip, meromorphic continuation, and simple pole across the Japanese source and all twelve editions."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked examples 6 and 28, Goldbach domains (even n>2 and odd n>5), the Dirichlet-series convergence region Re(s)>1, trivial zeros at negative even integers, and the Riemann hypothesis Re(s)=1/2 for every nontrivial zero against primary references."
+        },
+        "code": {
+          "status": "checked",
+          "note": "No executable code occurs in this mathematics article; checked the TeX expressions for consistent variables, indices, signs, and inequalities across all editions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked all five cited primary references (GIMPS, NIST DLMF §§27.4 and 25.2, Clay Mathematics Institute, and Helfgott’s arXiv paper) and each localized internal Goldbach/Riemann article link."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The published count of known Mersenne primes can change; GIMPS list was checked on 2026-11-25.",
+        "Mathematical review covers the claims and formulas present in this article, not a complete proof of the cited theorems."
+      ]
+    },
+    "post/数学の未解決問題/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/数学の未解決問題/index.md",
+      "sourceHash": "a7e2eba5e7c6bdf31b7acdd9b7e18ded645881149ae33403322dbae78fb6f007",
+      "translationHash": "5d4e3d129b334a292d7bd32d213650d232d731c2fbc2323fee1f7c8aaedfdc75",
+      "summary": "Compared the complete translation with the Japanese source and primary references; corrected stale perfect-number count and mathematical definitions, clarified proven versus open Goldbach forms, and repaired the Riemann zeta domain/zero description.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full Japanese original and translation; aligned the known count and open status of even/odd perfect numbers, distinguished strong and weak Goldbach, and stated the Riemann hypothesis in terms of nontrivial zeros."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked perfect/proper divisors, prime integers, binary and ternary Goldbach, trivial/nontrivial zeros, critical strip, meromorphic continuation, and simple pole across the Japanese source and all twelve editions."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked examples 6 and 28, Goldbach domains (even n>2 and odd n>5), the Dirichlet-series convergence region Re(s)>1, trivial zeros at negative even integers, and the Riemann hypothesis Re(s)=1/2 for every nontrivial zero against primary references."
+        },
+        "code": {
+          "status": "checked",
+          "note": "No executable code occurs in this mathematics article; checked the TeX expressions for consistent variables, indices, signs, and inequalities across all editions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked all five cited primary references (GIMPS, NIST DLMF §§27.4 and 25.2, Clay Mathematics Institute, and Helfgott’s arXiv paper) and each localized internal Goldbach/Riemann article link."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The published count of known Mersenne primes can change; GIMPS list was checked on 2026-11-25.",
+        "Mathematical review covers the claims and formulas present in this article, not a complete proof of the cited theorems."
+      ]
+    },
+    "post/数学の未解決問題/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/数学の未解決問題/index.md",
+      "sourceHash": "a7e2eba5e7c6bdf31b7acdd9b7e18ded645881149ae33403322dbae78fb6f007",
+      "translationHash": "d78657f6576f8174cb862a169822efa05a0fb91af0336a3cbb9be9520cfbd1f4",
+      "summary": "Compared the complete translation with the Japanese source and primary references; corrected stale perfect-number count and mathematical definitions, clarified proven versus open Goldbach forms, and repaired the Riemann zeta domain/zero description.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full Japanese original and translation; aligned the known count and open status of even/odd perfect numbers, distinguished strong and weak Goldbach, and stated the Riemann hypothesis in terms of nontrivial zeros."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked perfect/proper divisors, prime integers, binary and ternary Goldbach, trivial/nontrivial zeros, critical strip, meromorphic continuation, and simple pole across the Japanese source and all twelve editions."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked examples 6 and 28, Goldbach domains (even n>2 and odd n>5), the Dirichlet-series convergence region Re(s)>1, trivial zeros at negative even integers, and the Riemann hypothesis Re(s)=1/2 for every nontrivial zero against primary references."
+        },
+        "code": {
+          "status": "checked",
+          "note": "No executable code occurs in this mathematics article; checked the TeX expressions for consistent variables, indices, signs, and inequalities across all editions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked all five cited primary references (GIMPS, NIST DLMF §§27.4 and 25.2, Clay Mathematics Institute, and Helfgott’s arXiv paper) and each localized internal Goldbach/Riemann article link."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The published count of known Mersenne primes can change; GIMPS list was checked on 2026-11-25.",
+        "Mathematical review covers the claims and formulas present in this article, not a complete proof of the cited theorems."
+      ]
+    },
+    "post/数学の未解決問題/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/数学の未解決問題/index.md",
+      "sourceHash": "a7e2eba5e7c6bdf31b7acdd9b7e18ded645881149ae33403322dbae78fb6f007",
+      "translationHash": "d21d83a5438f3368a369e510c1f9ef8c732800077ceaf64168f503d8d48b1860",
+      "summary": "Compared the complete translation with the Japanese source and primary references; corrected stale perfect-number count and mathematical definitions, clarified proven versus open Goldbach forms, and repaired the Riemann zeta domain/zero description.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full Japanese original and translation; aligned the known count and open status of even/odd perfect numbers, distinguished strong and weak Goldbach, and stated the Riemann hypothesis in terms of nontrivial zeros."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked perfect/proper divisors, prime integers, binary and ternary Goldbach, trivial/nontrivial zeros, critical strip, meromorphic continuation, and simple pole across the Japanese source and all twelve editions."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked examples 6 and 28, Goldbach domains (even n>2 and odd n>5), the Dirichlet-series convergence region Re(s)>1, trivial zeros at negative even integers, and the Riemann hypothesis Re(s)=1/2 for every nontrivial zero against primary references."
+        },
+        "code": {
+          "status": "checked",
+          "note": "No executable code occurs in this mathematics article; checked the TeX expressions for consistent variables, indices, signs, and inequalities across all editions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked all five cited primary references (GIMPS, NIST DLMF §§27.4 and 25.2, Clay Mathematics Institute, and Helfgott’s arXiv paper) and each localized internal Goldbach/Riemann article link."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The published count of known Mersenne primes can change; GIMPS list was checked on 2026-11-25.",
+        "Mathematical review covers the claims and formulas present in this article, not a complete proof of the cited theorems."
+      ]
+    },
+    "post/数学の未解決問題/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/数学の未解決問題/index.md",
+      "sourceHash": "a7e2eba5e7c6bdf31b7acdd9b7e18ded645881149ae33403322dbae78fb6f007",
+      "translationHash": "51e40bf0a7083520350c02340506e71eb7fe4355bb250f451a63b72bf107f4f0",
+      "summary": "Compared the complete translation with the Japanese source and primary references; corrected stale perfect-number count and mathematical definitions, clarified proven versus open Goldbach forms, and repaired the Riemann zeta domain/zero description.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full Japanese original and translation; aligned the known count and open status of even/odd perfect numbers, distinguished strong and weak Goldbach, and stated the Riemann hypothesis in terms of nontrivial zeros."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked perfect/proper divisors, prime integers, binary and ternary Goldbach, trivial/nontrivial zeros, critical strip, meromorphic continuation, and simple pole across the Japanese source and all twelve editions."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked examples 6 and 28, Goldbach domains (even n>2 and odd n>5), the Dirichlet-series convergence region Re(s)>1, trivial zeros at negative even integers, and the Riemann hypothesis Re(s)=1/2 for every nontrivial zero against primary references."
+        },
+        "code": {
+          "status": "checked",
+          "note": "No executable code occurs in this mathematics article; checked the TeX expressions for consistent variables, indices, signs, and inequalities across all editions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked all five cited primary references (GIMPS, NIST DLMF §§27.4 and 25.2, Clay Mathematics Institute, and Helfgott’s arXiv paper) and each localized internal Goldbach/Riemann article link."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The published count of known Mersenne primes can change; GIMPS list was checked on 2026-11-25.",
+        "Mathematical review covers the claims and formulas present in this article, not a complete proof of the cited theorems."
+      ]
+    },
+    "post/数学の未解決問題/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/数学の未解決問題/index.md",
+      "sourceHash": "a7e2eba5e7c6bdf31b7acdd9b7e18ded645881149ae33403322dbae78fb6f007",
+      "translationHash": "563be95f08ffc6112bde359cd2ab601356f5f7ff487fdb2b98f63f690e789259",
+      "summary": "Compared the complete translation with the Japanese source and primary references; corrected stale perfect-number count and mathematical definitions, clarified proven versus open Goldbach forms, and repaired the Riemann zeta domain/zero description.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full Japanese original and translation; aligned the known count and open status of even/odd perfect numbers, distinguished strong and weak Goldbach, and stated the Riemann hypothesis in terms of nontrivial zeros."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked perfect/proper divisors, prime integers, binary and ternary Goldbach, trivial/nontrivial zeros, critical strip, meromorphic continuation, and simple pole across the Japanese source and all twelve editions."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked examples 6 and 28, Goldbach domains (even n>2 and odd n>5), the Dirichlet-series convergence region Re(s)>1, trivial zeros at negative even integers, and the Riemann hypothesis Re(s)=1/2 for every nontrivial zero against primary references."
+        },
+        "code": {
+          "status": "checked",
+          "note": "No executable code occurs in this mathematics article; checked the TeX expressions for consistent variables, indices, signs, and inequalities across all editions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked all five cited primary references (GIMPS, NIST DLMF §§27.4 and 25.2, Clay Mathematics Institute, and Helfgott’s arXiv paper) and each localized internal Goldbach/Riemann article link."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The published count of known Mersenne primes can change; GIMPS list was checked on 2026-11-25.",
+        "Mathematical review covers the claims and formulas present in this article, not a complete proof of the cited theorems."
+      ]
+    },
+    "post/数学の未解決問題/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/数学の未解決問題/index.md",
+      "sourceHash": "a7e2eba5e7c6bdf31b7acdd9b7e18ded645881149ae33403322dbae78fb6f007",
+      "translationHash": "793f39000b38c72826792fe6160c4460f62e141c4c2e896a04137772e64f3a02",
+      "summary": "Compared the complete translation with the Japanese source and primary references; corrected stale perfect-number count and mathematical definitions, clarified proven versus open Goldbach forms, and repaired the Riemann zeta domain/zero description.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full Japanese original and translation; aligned the known count and open status of even/odd perfect numbers, distinguished strong and weak Goldbach, and stated the Riemann hypothesis in terms of nontrivial zeros."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked perfect/proper divisors, prime integers, binary and ternary Goldbach, trivial/nontrivial zeros, critical strip, meromorphic continuation, and simple pole across the Japanese source and all twelve editions."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked examples 6 and 28, Goldbach domains (even n>2 and odd n>5), the Dirichlet-series convergence region Re(s)>1, trivial zeros at negative even integers, and the Riemann hypothesis Re(s)=1/2 for every nontrivial zero against primary references."
+        },
+        "code": {
+          "status": "checked",
+          "note": "No executable code occurs in this mathematics article; checked the TeX expressions for consistent variables, indices, signs, and inequalities across all editions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked all five cited primary references (GIMPS, NIST DLMF §§27.4 and 25.2, Clay Mathematics Institute, and Helfgott’s arXiv paper) and each localized internal Goldbach/Riemann article link."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The published count of known Mersenne primes can change; GIMPS list was checked on 2026-11-25.",
+        "Mathematical review covers the claims and formulas present in this article, not a complete proof of the cited theorems."
+      ]
+    },
+    "post/数学の未解決問題/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/数学の未解決問題/index.md",
+      "sourceHash": "a7e2eba5e7c6bdf31b7acdd9b7e18ded645881149ae33403322dbae78fb6f007",
+      "translationHash": "8740ac93df5b456e18c0e6cf781b5a4cf789d2d5efd47e023e3038d9733ae5ee",
+      "summary": "Compared the complete translation with the Japanese source and primary references; corrected stale perfect-number count and mathematical definitions, clarified proven versus open Goldbach forms, and repaired the Riemann zeta domain/zero description.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full Japanese original and translation; aligned the known count and open status of even/odd perfect numbers, distinguished strong and weak Goldbach, and stated the Riemann hypothesis in terms of nontrivial zeros."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked perfect/proper divisors, prime integers, binary and ternary Goldbach, trivial/nontrivial zeros, critical strip, meromorphic continuation, and simple pole across the Japanese source and all twelve editions."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked examples 6 and 28, Goldbach domains (even n>2 and odd n>5), the Dirichlet-series convergence region Re(s)>1, trivial zeros at negative even integers, and the Riemann hypothesis Re(s)=1/2 for every nontrivial zero against primary references."
+        },
+        "code": {
+          "status": "checked",
+          "note": "No executable code occurs in this mathematics article; checked the TeX expressions for consistent variables, indices, signs, and inequalities across all editions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked all five cited primary references (GIMPS, NIST DLMF §§27.4 and 25.2, Clay Mathematics Institute, and Helfgott’s arXiv paper) and each localized internal Goldbach/Riemann article link."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The published count of known Mersenne primes can change; GIMPS list was checked on 2026-11-25.",
+        "Mathematical review covers the claims and formulas present in this article, not a complete proof of the cited theorems."
+      ]
+    },
+    "post/数学の未解決問題/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/数学の未解決問題/index.md",
+      "sourceHash": "a7e2eba5e7c6bdf31b7acdd9b7e18ded645881149ae33403322dbae78fb6f007",
+      "translationHash": "f2e2aaac92ac9d54c694c5d5418195994de7156b37e28a42723f3dd42490576f",
+      "summary": "Compared the complete translation with the Japanese source and primary references; corrected stale perfect-number count and mathematical definitions, clarified proven versus open Goldbach forms, and repaired the Riemann zeta domain/zero description.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full Japanese original and translation; aligned the known count and open status of even/odd perfect numbers, distinguished strong and weak Goldbach, and stated the Riemann hypothesis in terms of nontrivial zeros."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked perfect/proper divisors, prime integers, binary and ternary Goldbach, trivial/nontrivial zeros, critical strip, meromorphic continuation, and simple pole across the Japanese source and all twelve editions."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked examples 6 and 28, Goldbach domains (even n>2 and odd n>5), the Dirichlet-series convergence region Re(s)>1, trivial zeros at negative even integers, and the Riemann hypothesis Re(s)=1/2 for every nontrivial zero against primary references."
+        },
+        "code": {
+          "status": "checked",
+          "note": "No executable code occurs in this mathematics article; checked the TeX expressions for consistent variables, indices, signs, and inequalities across all editions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked all five cited primary references (GIMPS, NIST DLMF §§27.4 and 25.2, Clay Mathematics Institute, and Helfgott’s arXiv paper) and each localized internal Goldbach/Riemann article link."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The published count of known Mersenne primes can change; GIMPS list was checked on 2026-11-25.",
+        "Mathematical review covers the claims and formulas present in this article, not a complete proof of the cited theorems."
+      ]
+    }
+  }
+}

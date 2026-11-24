@@ -1,48 +1,47 @@
 ---
 title: 'Masalah Matematika yang Belum Terpecahkan yang Memesona: Apa itu Bilangan Sempurna, Dugaan Goldbach, dan Hipotesis Riemann?'
-date: "2026-09-24T19:44:38+09:00"
 slug: "MatematikaのMasalah yang Belum Terpecahkan"
-date: 2024-03-02T22:57:36+09:00
 tags: ["matematika", "masalah yang belum terpecahkan"]
 draft: false
 math: true
 image: "img.webp"
 categories: ["math-cryptography-quantum"]
 description: 'Kami menjelaskan dengan mudah mengenai masalah-masalah matematika yang belum terpecahkan yang memesona padahal soalnya sendiri sangatlah sederhana dan belum pernah dibuktikan hingga saat ini. Apakah jumlah bilangan sempurna itu tak terhingga? Kita akan mengupas lebih dalam teka-teki dari masalah misterius yang masih membingungkan banyak ahli matematika hingga kini, seperti dugaan Goldbach dan pertanyaan rumit tentang Hipotesis Riemann.'
+date: "2024-03-02T22:57:36+09:00"
+lastmod: "2026-11-25T00:00:00+09:00"
 ---
 
 # Masalah Matematika yang Belum Terpecahkan
 
-Saya akan menjelaskan tentang beberapa masalah matematika yang belum terpecahkan. Meskipun masalahnya sendiri sederhana, masih banyak masalah yang belum terbukti.
+Artikel ini memperkenalkan masalah teori bilangan yang pernyataannya sederhana, tetapi belum diketahui pembuktiannya. Kita membedakan hasil yang sudah terbukti dari pertanyaan yang masih terbuka.
 
-## Apakah ada bilangan sempurna yang tak terhingga jumlahnya?
+## Apakah ada tak terhingga banyaknya bilangan sempurna?
 
-Bilangan sempurna adalah bilangan asli yang jumlah pembagi positifnya, selain dirinya sendiri, sama dengan bilangan itu sendiri.
-Sebagai contoh,
+Bilangan sempurna adalah bilangan bulat positif yang sama dengan jumlah pembagi positif sejatinya, yaitu pembagi positif selain bilangan itu sendiri.
 
-- 6 memiliki pembagi 1, 2, 3, dan 1+2+3=6, jadi ini adalah bilangan sempurna.
-- 28 memiliki pembagi 1, 2, 4, 7, 14, dan 1+2+4+7+14=28, jadi ini adalah bilangan sempurna.
+- Pembagi sejati positif dari 6 adalah 1, 2, dan 3; 1+2+3=6.
+- Pembagi sejati positif dari 28 adalah 1, 2, 4, 7, dan 14; 1+2+4+7+14=28.
 
-Saat ini hanya 51 yang telah ditemukan, dan meskipun diperkirakan jumlahnya tidak terbatas, hal itu belum terbukti.
+Ada 52 bilangan sempurna genap yang diketahui, termasuk yang diperoleh dari bilangan prima Mersenne yang dikonfirmasi pada 2024. Belum ada bilangan sempurna ganjil yang diketahui. Apakah ada tak terhingga banyaknya bilangan sempurna genap dan apakah bilangan sempurna ganjil ada masih menjadi pertanyaan terbuka.
 
-## [Konjektur Goldbach](https://kenji.blog/id/p/goldbachs-conjecture/)
+## Dugaan Goldbach
 
-[Konjektur Goldbach](https://kenji.blog/id/p/goldbachs-conjecture/) adalah konjektur yang menyatakan bahwa setiap bilangan genap yang lebih besar dari 2 dapat dinyatakan sebagai jumlah dari dua bilangan prima.
-(Di sini, bilangan prima adalah bilangan asli yang tidak memiliki pembagi selain 1 dan dirinya sendiri).
+Bentuk kuat (biner) dari [dugaan Goldbach](/id/p/goldbachs-conjecture/) menyatakan bahwa setiap bilangan bulat genap yang lebih besar dari 2 dapat ditulis sebagai jumlah dua bilangan prima. Contohnya, 4=2+2, 8=3+5, dan 10=3+7. Bilangan prima adalah bilangan bulat lebih besar dari 1 yang pembagi positifnya hanya 1 dan dirinya sendiri. Bentuk kuat ini masih terbuka.
 
-Sebagai contoh,
+Bentuk lemah (ternary) yang berbeda menyatakan bahwa setiap bilangan bulat ganjil yang lebih besar dari 5 merupakan jumlah tiga bilangan prima. Harald Helfgott telah membuktikan pernyataan ini.
 
-- 4=2+2
-- 6=3+3
-- 8=3+5
-- 10=3+7=5+5
+## [Hipotesis Riemann](https://kenji.blog/id/p/riemann-hypothesis-prime-distribution-cryptography/)
 
-Masalahnya sendiri sangat sederhana, tetapi masih belum terbukti hingga saat ini.
+Untuk bilangan kompleks $s$ dengan bagian real lebih dari 1, fungsi zeta Riemann dinyatakan oleh deret Dirichlet berikut:
 
-## Hipotesis [Riemann](https://kenji.blog/id/p/riemann/)
+$$\zeta(s)=\sum_{n=1}^{\infty}\frac{1}{n^s}=1+\frac{1}{2^s}+\frac{1}{3^s}+\frac{1}{4^s}+\cdots$$
 
-Ini adalah konjektur yang menyatakan bahwa nol dari fungsi zeta [Riemann](https://kenji.blog/id/p/riemann/) terbatas pada bilangan genap negatif dan bilangan kompleks yang bagian realnya adalah 1 / 2.
+Deret ini konvergen untuk $\operatorname{Re}(s)>1$. Fungsi zeta dapat dilanjutkan secara meromorfik ke seluruh bidang kompleks dan memiliki kutub sederhana di $s=1$. Nolnya pada bilangan bulat genap negatif $-2,-4,-6,\ldots$ disebut nol trivial. Nol nontrivial berada di pita kritis $0<\operatorname{Re}(s)<1$. Hipotesis Riemann menyatakan bahwa bagian real setiap nol nontrivial adalah $1/2$. Hipotesis ini masih terbuka.
 
-Fungsi zeta [Riemann](https://kenji.blog/id/p/riemann/) didefinisikan sebagai berikut, di mana $s$ adalah bilangan kompleks dan $n$ adalah bilangan asli:
+## Referensi
 
-$$\zeta(s):=\sum _{n=1}^{\infty }{\frac {1}{n^{s}}}=1+{\frac {1}{2^{s}}}+{\frac {1}{3^{s}}}+{\frac {1}{4^{s}}}+\cdots$$
+- [GIMPS: daftar bilangan prima Mersenne yang diketahui (hingga yang ke-52)](https://www.mersenne.org/primes/)
+- [NIST DLMF §27.4: deret Dirichlet fungsi zeta dan konvergensinya](https://dlmf.nist.gov/27.4)
+- [NIST DLMF §25.2: kelanjutan analitik dan kutub fungsi zeta](https://dlmf.nist.gov/25.2)
+- [Clay Mathematics Institute: hipotesis Riemann](https://www.claymath.org/millennium/Riemann-Hypothesis/)
+- [H. A. Helfgott: bukti masalah Goldbach ternary (arXiv)](https://arxiv.org/abs/1312.7748)

@@ -1,50 +1,47 @@
 ---
 title: 'Fascinating Unsolved Math Problems: What are Perfect Numbers, Goldbach''s Conjecture, and the Riemann Hypothesis?'
-date: "2026-09-24T19:44:38+09:00"
 slug: "MathematicsのUnsolved Problem"
-date: 2024-03-02T22:57:36+09:00
 tags: ["Mathematics", "Unsolved Problems"]
 draft: false
 math: true
 image: "img.webp"
 categories: ["math-cryptography-quantum"]
 description: 'We explain fascinating unsolved math problems that remain unproven despite their simple premises. Are there infinitely many perfect numbers? We explore the mysterious problems that continue to puzzle mathematicians, such as Goldbach''s conjecture and the difficult Riemann Hypothesis.'
+date: "2024-03-02T22:57:36+09:00"
+lastmod: "2026-11-25T00:00:00+09:00"
 ---
 
 # Unsolved Problems in Mathematics
 
-This is an explanation of unsolved problems in mathematics. Although the problems themselves are simple, there are still many that have not been proven.
+This article introduces number theory problems with concise statements but no known proofs. It distinguishes what has been proved from what remains open.
 
 ## Are there infinitely many perfect numbers?
 
-A perfect number is a positive integer that is equal to the sum of its positive divisors, excluding the number itself.
-For example,
+A perfect number is a positive integer equal to the sum of its positive divisors other than itself.
 
-- 6 has divisors 1, 2, and 3, and 1+2+3=6, so it is a perfect number.
-- 28 has divisors 1, 2, 4, 7, and 14, and 1+2+4+7+14=28, so it is a perfect number.
+- The proper positive divisors of 6 are 1, 2, and 3, and 1+2+3=6.
+- The proper positive divisors of 28 are 1, 2, 4, 7, and 14, and 1+2+4+7+14=28.
 
-Currently, only 51 perfect numbers have been discovered. It is conjectured that there are infinitely many, but this has not yet been proven.
+There are 52 known even perfect numbers, including the one obtained from the Mersenne prime confirmed in 2024. No odd perfect number is known. Whether infinitely many even perfect numbers exist and whether any odd perfect number exists are both open questions.
 
-## [Goldbach's Conjecture](https://kenji.blog/en/p/goldbachs-conjecture/)
+## Goldbach's conjecture
 
-[Goldbach's conjecture](/en/p/goldbachs-conjecture/) states that every even integer greater than 2 can be expressed as the sum of two primes.
-(Here, a prime number is a natural number that has no positive divisors other than 1 and itself.)
+The strong (binary) form of [Goldbach's conjecture](/en/p/goldbachs-conjecture/) says that every even integer greater than 2 is the sum of two primes. For example, 4=2+2, 8=3+5, and 10=3+7. A prime is an integer greater than 1 whose only positive divisors are 1 and itself. This strong form remains open.
 
-For example,
+The distinct weak (ternary) form says that every odd integer greater than 5 is the sum of three primes. Harald Helfgott proved this statement.
 
-- 4=2+2
-- 6=3+3
-- 8=3+5
-- 10=3+7=5+5
+## [The Riemann hypothesis](https://kenji.blog/en/p/riemann-hypothesis-prime-distribution-cryptography/)
 
-The problem itself is very simple, but it remains unproven.
+For a complex number $s$ with real part greater than 1, the Riemann zeta function is represented by the following Dirichlet series:
 
-## [Riemann](https://kenji.blog/en/p/riemann/) Hypothesis
+$$\zeta(s)=\sum_{n=1}^{\infty}\frac{1}{n^s}=1+\frac{1}{2^s}+\frac{1}{3^s}+\frac{1}{4^s}+\cdots$$
 
-The [Riemann hypothesis](https://kenji.blog/en/p/riemann-hypothesis-prime-distribution-cryptography/) is the conjecture that the zeros of the [Riemann](https://kenji.blog/en/p/riemann/) zeta function are restricted to negative even integers and complex numbers with real part 1 / 2.
+This series converges for $\operatorname{Re}(s)>1$. The zeta function extends meromorphically to the whole complex plane, with a simple pole at $s=1$. Its zeros at the negative even integers $-2,-4,-6,\ldots$ are called trivial zeros. The nontrivial zeros lie in the critical strip $0<\operatorname{Re}(s)<1$. The Riemann hypothesis states that every nontrivial zero has real part $1/2$. It remains open.
 
-The [Riemann](https://kenji.blog/en/p/riemann/) zeta function is the function $\zeta$ defined by:
+## References
 
-$$\zeta(s):=\sum _{n=1}^{\infty }{\frac {1}{n^{s}}}=1+{\frac {1}{2^{s}}}+{\frac {1}{3^{s}}}+{\frac {1}{4^{s}}}+\cdots$$
-
-where $s$ is a complex number and $n$ is a natural number.
+- [GIMPS: list of known Mersenne primes (through the 52nd)](https://www.mersenne.org/primes/)
+- [NIST DLMF §27.4: Dirichlet series for the zeta function and its convergence](https://dlmf.nist.gov/27.4)
+- [NIST DLMF §25.2: analytic continuation and the pole of the zeta function](https://dlmf.nist.gov/25.2)
+- [Clay Mathematics Institute: Riemann Hypothesis](https://www.claymath.org/millennium/Riemann-Hypothesis/)
+- [H. A. Helfgott: proof of the ternary Goldbach problem (arXiv)](https://arxiv.org/abs/1312.7748)
