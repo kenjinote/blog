@@ -1,0 +1,457 @@
+{
+  "version": 1,
+  "batch": 161,
+  "article": "Practical Management Notes: Market Choice, Learning, and Sustainable Operations",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "c9249863fbe723d88e12c88609346471ff716d4ed6adb7c56665311034a97e5a",
+  "sources": [
+    "https://www.youtube.com/watch?v=2TALYTLAke0",
+    "https://www.hotpepper.jp/",
+    "https://beauty.hotpepper.jp/top/",
+    "https://www.bunka.go.jp/seisaku/chosakuken/seidokaisetsu/chosakukensha_fumei/"
+  ],
+  "scope": "Compared the Japanese source and twelve translations for meaning, translated business terminology, absolutes and caveats, implications of copying, market-entry advice, metadata, and link quality. The linked video itself was not available for transcript-level verification.",
+  "findings": [
+    "Removed duplicate future publication dates and kept the original 2022-09-07 date; set lastmod to 2026-11-24.",
+    "Reframed the advice as one speaker’s view rather than a universal or research-validated management method.",
+    "Qualified market saturation as one factor and added demand, differentiation, and viability checks.",
+    "Changed “copy thoroughly” to learning from public information and adapting ideas; added a rights, terms, and confidentiality caution.",
+    "Replaced the claim that profit maximization must be the sole management philosophy with a balanced statement about continuity, customer value, employees, duties, and sustainability.",
+    "Added official Hot Pepper context and Agency for Cultural Affairs reference; retained and identified the Japanese video as the source."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/経営者メモ/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/経営者メモ/index.md",
+      "sourceHash": "c9249863fbe723d88e12c88609346471ff716d4ed6adb7c56665311034a97e5a",
+      "translationHash": "2793af60aa0e0f874945cd03eb1d8a27b46283fd24f20e51db195f29fbb672c6",
+      "summary": "Compared the complete translation with the Japanese source and clarified that the recommendations are one speaker’s perspective; revised market, adaptation, operating, and management guidance with matching caveats.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the recommendations, examples, qualifications, and new framing against the Japanese article; the linked video could not be checked against a transcript."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed market entry, customer acquisition, revenue per customer, repeatable work, and management philosophy across each translation."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Kept the original linked video and added official Hot Pepper pages and the Agency for Cultural Affairs guidance on using others’ works."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The linked video could not be verified against a transcript; this review compares the full available Japanese article with its translations.",
+        "The management notes are not individualized business, legal, or financial advice."
+      ]
+    },
+    "post/経営者メモ/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/経営者メモ/index.md",
+      "sourceHash": "c9249863fbe723d88e12c88609346471ff716d4ed6adb7c56665311034a97e5a",
+      "translationHash": "852fc28a95c70751cc62826dc2182de63e06adef76a9be0d2b2b8d8863e43264",
+      "summary": "Compared the complete translation with the Japanese source and clarified that the recommendations are one speaker’s perspective; revised market, adaptation, operating, and management guidance with matching caveats.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the recommendations, examples, qualifications, and new framing against the Japanese article; the linked video could not be checked against a transcript."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed market entry, customer acquisition, revenue per customer, repeatable work, and management philosophy across each translation."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Kept the original linked video and added official Hot Pepper pages and the Agency for Cultural Affairs guidance on using others’ works."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The linked video could not be verified against a transcript; this review compares the full available Japanese article with its translations.",
+        "The management notes are not individualized business, legal, or financial advice."
+      ]
+    },
+    "post/経営者メモ/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/経営者メモ/index.md",
+      "sourceHash": "c9249863fbe723d88e12c88609346471ff716d4ed6adb7c56665311034a97e5a",
+      "translationHash": "a9e3d78a2df2735ddbb1b6979c2ab378adaf872127917ccf3c052c9d8be87226",
+      "summary": "Compared the complete translation with the Japanese source and clarified that the recommendations are one speaker’s perspective; revised market, adaptation, operating, and management guidance with matching caveats.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the recommendations, examples, qualifications, and new framing against the Japanese article; the linked video could not be checked against a transcript."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed market entry, customer acquisition, revenue per customer, repeatable work, and management philosophy across each translation."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Kept the original linked video and added official Hot Pepper pages and the Agency for Cultural Affairs guidance on using others’ works."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The linked video could not be verified against a transcript; this review compares the full available Japanese article with its translations.",
+        "The management notes are not individualized business, legal, or financial advice."
+      ]
+    },
+    "post/経営者メモ/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/経営者メモ/index.md",
+      "sourceHash": "c9249863fbe723d88e12c88609346471ff716d4ed6adb7c56665311034a97e5a",
+      "translationHash": "bf4aa6087e6f649c5454be1df6cadb565310dd72736329dc2286dcd42bdb66b6",
+      "summary": "Compared the complete translation with the Japanese source and clarified that the recommendations are one speaker’s perspective; revised market, adaptation, operating, and management guidance with matching caveats.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the recommendations, examples, qualifications, and new framing against the Japanese article; the linked video could not be checked against a transcript."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed market entry, customer acquisition, revenue per customer, repeatable work, and management philosophy across each translation."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Kept the original linked video and added official Hot Pepper pages and the Agency for Cultural Affairs guidance on using others’ works."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The linked video could not be verified against a transcript; this review compares the full available Japanese article with its translations.",
+        "The management notes are not individualized business, legal, or financial advice."
+      ]
+    },
+    "post/経営者メモ/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/経営者メモ/index.md",
+      "sourceHash": "c9249863fbe723d88e12c88609346471ff716d4ed6adb7c56665311034a97e5a",
+      "translationHash": "118ec538aaa835d60c1bd15a53d53093804e86ae0341de6ff099e3a7e3adc0e0",
+      "summary": "Compared the complete translation with the Japanese source and clarified that the recommendations are one speaker’s perspective; revised market, adaptation, operating, and management guidance with matching caveats.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the recommendations, examples, qualifications, and new framing against the Japanese article; the linked video could not be checked against a transcript."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed market entry, customer acquisition, revenue per customer, repeatable work, and management philosophy across each translation."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Kept the original linked video and added official Hot Pepper pages and the Agency for Cultural Affairs guidance on using others’ works."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The linked video could not be verified against a transcript; this review compares the full available Japanese article with its translations.",
+        "The management notes are not individualized business, legal, or financial advice."
+      ]
+    },
+    "post/経営者メモ/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/経営者メモ/index.md",
+      "sourceHash": "c9249863fbe723d88e12c88609346471ff716d4ed6adb7c56665311034a97e5a",
+      "translationHash": "8cd0c62fdf471c0e10f349bfd238922e3a5703c6f719ccfdc3fa44dec309261a",
+      "summary": "Compared the complete translation with the Japanese source and clarified that the recommendations are one speaker’s perspective; revised market, adaptation, operating, and management guidance with matching caveats.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the recommendations, examples, qualifications, and new framing against the Japanese article; the linked video could not be checked against a transcript."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed market entry, customer acquisition, revenue per customer, repeatable work, and management philosophy across each translation."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Kept the original linked video and added official Hot Pepper pages and the Agency for Cultural Affairs guidance on using others’ works."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The linked video could not be verified against a transcript; this review compares the full available Japanese article with its translations.",
+        "The management notes are not individualized business, legal, or financial advice."
+      ]
+    },
+    "post/経営者メモ/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/経営者メモ/index.md",
+      "sourceHash": "c9249863fbe723d88e12c88609346471ff716d4ed6adb7c56665311034a97e5a",
+      "translationHash": "d7c5c5c57710115187f4c1fef61232d36f9e162ba427d8421f775553909ff425",
+      "summary": "Compared the complete translation with the Japanese source and clarified that the recommendations are one speaker’s perspective; revised market, adaptation, operating, and management guidance with matching caveats.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the recommendations, examples, qualifications, and new framing against the Japanese article; the linked video could not be checked against a transcript."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed market entry, customer acquisition, revenue per customer, repeatable work, and management philosophy across each translation."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Kept the original linked video and added official Hot Pepper pages and the Agency for Cultural Affairs guidance on using others’ works."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The linked video could not be verified against a transcript; this review compares the full available Japanese article with its translations.",
+        "The management notes are not individualized business, legal, or financial advice."
+      ]
+    },
+    "post/経営者メモ/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/経営者メモ/index.md",
+      "sourceHash": "c9249863fbe723d88e12c88609346471ff716d4ed6adb7c56665311034a97e5a",
+      "translationHash": "1fc7c1ef3f0b3e59690e0ce82034f3609577f2943e70f66ad9a70ca4d0a1ca31",
+      "summary": "Compared the complete translation with the Japanese source and clarified that the recommendations are one speaker’s perspective; revised market, adaptation, operating, and management guidance with matching caveats.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the recommendations, examples, qualifications, and new framing against the Japanese article; the linked video could not be checked against a transcript."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed market entry, customer acquisition, revenue per customer, repeatable work, and management philosophy across each translation."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Kept the original linked video and added official Hot Pepper pages and the Agency for Cultural Affairs guidance on using others’ works."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The linked video could not be verified against a transcript; this review compares the full available Japanese article with its translations.",
+        "The management notes are not individualized business, legal, or financial advice."
+      ]
+    },
+    "post/経営者メモ/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/経営者メモ/index.md",
+      "sourceHash": "c9249863fbe723d88e12c88609346471ff716d4ed6adb7c56665311034a97e5a",
+      "translationHash": "5b6320009c0af8b7b0ffb48c0c912a20bb6ba071ab219b9e78754698dd341275",
+      "summary": "Compared the complete translation with the Japanese source and clarified that the recommendations are one speaker’s perspective; revised market, adaptation, operating, and management guidance with matching caveats.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the recommendations, examples, qualifications, and new framing against the Japanese article; the linked video could not be checked against a transcript."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed market entry, customer acquisition, revenue per customer, repeatable work, and management philosophy across each translation."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Kept the original linked video and added official Hot Pepper pages and the Agency for Cultural Affairs guidance on using others’ works."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The linked video could not be verified against a transcript; this review compares the full available Japanese article with its translations.",
+        "The management notes are not individualized business, legal, or financial advice."
+      ]
+    },
+    "post/経営者メモ/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/経営者メモ/index.md",
+      "sourceHash": "c9249863fbe723d88e12c88609346471ff716d4ed6adb7c56665311034a97e5a",
+      "translationHash": "5ed379262a6783a7a2324a8d57bf50db2b27027f935a03f638b6f0e56700141e",
+      "summary": "Compared the complete translation with the Japanese source and clarified that the recommendations are one speaker’s perspective; revised market, adaptation, operating, and management guidance with matching caveats.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the recommendations, examples, qualifications, and new framing against the Japanese article; the linked video could not be checked against a transcript."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed market entry, customer acquisition, revenue per customer, repeatable work, and management philosophy across each translation."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Kept the original linked video and added official Hot Pepper pages and the Agency for Cultural Affairs guidance on using others’ works."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The linked video could not be verified against a transcript; this review compares the full available Japanese article with its translations.",
+        "The management notes are not individualized business, legal, or financial advice."
+      ]
+    },
+    "post/経営者メモ/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/経営者メモ/index.md",
+      "sourceHash": "c9249863fbe723d88e12c88609346471ff716d4ed6adb7c56665311034a97e5a",
+      "translationHash": "c67ff10bad59da8e4a250478fa9f74adfc76277c3fa3945665e17677fff52ef3",
+      "summary": "Compared the complete translation with the Japanese source and clarified that the recommendations are one speaker’s perspective; revised market, adaptation, operating, and management guidance with matching caveats.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the recommendations, examples, qualifications, and new framing against the Japanese article; the linked video could not be checked against a transcript."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed market entry, customer acquisition, revenue per customer, repeatable work, and management philosophy across each translation."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Kept the original linked video and added official Hot Pepper pages and the Agency for Cultural Affairs guidance on using others’ works."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The linked video could not be verified against a transcript; this review compares the full available Japanese article with its translations.",
+        "The management notes are not individualized business, legal, or financial advice."
+      ]
+    },
+    "post/経営者メモ/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/経営者メモ/index.md",
+      "sourceHash": "c9249863fbe723d88e12c88609346471ff716d4ed6adb7c56665311034a97e5a",
+      "translationHash": "2a09b5c6d4293bce700a13f83c139ceebca5a7be4e5161b41e571a938015125a",
+      "summary": "Compared the complete translation with the Japanese source and clarified that the recommendations are one speaker’s perspective; revised market, adaptation, operating, and management guidance with matching caveats.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the recommendations, examples, qualifications, and new framing against the Japanese article; the linked video could not be checked against a transcript."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed market entry, customer acquisition, revenue per customer, repeatable work, and management philosophy across each translation."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Kept the original linked video and added official Hot Pepper pages and the Agency for Cultural Affairs guidance on using others’ works."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The linked video could not be verified against a transcript; this review compares the full available Japanese article with its translations.",
+        "The management notes are not individualized business, legal, or financial advice."
+      ]
+    }
+  }
+}

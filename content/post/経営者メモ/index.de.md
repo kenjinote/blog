@@ -1,32 +1,45 @@
 ---
-title: 'Das Geheimnis erfolgreicher Geschäftsauswahl und Systematisierung: Praxisnahe Notizen für Führungskräfte'
-date: "2026-09-24T19:44:38+09:00"
+title: "Managementnotizen: Geschäftsauswahl und nachhaltiger Betrieb"
 slug: "Managerメモ"
-date: 2022-09-07T02:36:11+09:00
 tags: ["Manager"]
 draft: false
 image: "images/img.webp"
 categories: ["it-technology"]
-description: 'Wir veröffentlichen praxisnahe Notizen, die Führungskräfte kennen sollten, z.B. wie man aufkommende Geschäftsideen findet, gründliche Nachahmung und Verbesserung, und die Kernpunkte der Systematisierung, die jeder durchführen kann. Wir nähern uns auch dem Kern der Managementphilosophie, „die Gewinne des Unternehmens zu maximieren“.'
+description: "Managementnotizen zur Geschäftsauswahl, zu wiederholbaren Abläufen und zum Ausgleich von Gewinn sowie Kunden- und Mitarbeiterinteressen. Eine Zusammenfassung einer Einzelmeinung mit Fragen für die eigene Prüfung."
+date: "2022-09-07T02:36:11+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
+
+
+Dieser Artikel fasst die Meinung eines Unternehmers aus dem verlinkten japanischsprachigen Video zusammen. Sie ist weder eine allgemeingültige noch eine wissenschaftlich geprüfte Managementmethode. Prüfen Sie vor Entscheidungen Ihren Markt, Ihre Region und Ihre Geschäftslage.
+
 # Finde Geschäfte, die populär werden
 - Fragen Sie Insider von Hot Pepper und Buchhalter nach Geschäften, die im Trend liegen
-- Steigen Sie nicht in Geschäfte ein, die bereits gesättigt sind und starke Konkurrenten haben
+- Entscheiden Sie nicht allein anhand der Wettbewerbssituation über einen Markteintritt. Untersuchen Sie Nachfrage, Marktgröße, Differenzierung und Wirtschaftlichkeit.
 - Steigen Sie nur in Geschäfte ein, bei denen Sie sicher sind, dass Sie Kunden anziehen können (steigen Sie nicht in Geschäfte ein, bei denen bestehende Unternehmen spezielle Methoden zur Kundengewinnung verwenden (die nicht imitiert werden können))
 
-# Gründlich imitieren
-- Recherchieren Sie die Geschäftslogik, bevor Sie einsteigen
-- Gründlich kopieren
-- Verbessern Sie darauf aufbauend
+# Lernen und anpassen
+- Untersuchen Sie öffentliche Informationen und Kundenfeedback, um wirksame Ansätze zu erkennen und Ihr Angebot anzupassen.
+- Kopieren Sie geschützte Ausdrucksformen nicht ohne Erlaubnis und verwenden Sie keine vertraulichen Informationen; prüfen Sie die geltenden Rechte und Bedingungen.
+- Testen Sie Verbesserungen und richten Sie weitere Änderungen an Kundenfeedback und Ergebnissen aus.
 
 # Systematisieren
-- Erstellen Sie ein Handbuch für alles, damit es jeder mühelos tun kann
-- Denken Sie über Ideen nach, um den Umsatz zu steigern (Erhöhung der Kundenzahl, Ausgaben pro Kunde) und die Kosten zu senken (Personalkosten, Werbekosten) und systematisieren Sie sie
+- Dokumentieren Sie bei wiederkehrenden Aufgaben Zweck, Schritte, Entscheidungskriterien und den Umgang mit Ausnahmen; schulen Sie Mitarbeitende und überprüfen Sie die Abläufe.
+- Analysieren Sie Umsatz (einschließlich Kundenzahl und Umsatz je Kunde) und Kosten. Erproben Sie Verbesserungen und prüfen Sie deren Wirkung, ohne Qualität oder Kundennutzen zu beeinträchtigen.
 
 # Managementphilosophie
-- Die Philosophie des Managers ist es, "den Unternehmensgewinn zu maximieren", nicht mehr und nicht weniger
-- Sozialer Beitrag oder Beliebtheit bei Mitarbeitern als Managementphilosophie ist nicht gut (denken Sie daran, dass diese Dinge später natürlich kommen werden)
+- Gewinn ist für den Fortbestand eines Unternehmens notwendig, doch eine Managementphilosophie muss sich nicht auf Gewinnmaximierung beschränken.
+- Berücksichtigen Sie auch den Kundennutzen, Sicherheit und Respekt für Mitarbeitende, rechtliche und vertragliche Pflichten sowie langfristige Nachhaltigkeit.
+
+
 
 <!--
 via https://www.youtube.com/watch?v=2TALYTLAke0
 -->
+
+## Quellen
+
+- [Quellen](https://www.youtube.com/watch?v=2TALYTLAke0)
+- [Hot Pepper Gourmet](https://www.hotpepper.jp/)
+- [Hot Pepper Beauty](https://beauty.hotpepper.jp/top/)
+- [Agency for Cultural Affairs: Using other people’s works](https://www.bunka.go.jp/seisaku/chosakuken/seidokaisetsu/chosakukensha_fumei/)

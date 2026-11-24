@@ -1,18 +1,15 @@
 ---
-
-
-
-
 title: 'i18n(국제화)이란? 소프트웨어 개발에서의 의미와 대응 항목'
-date: "2026-09-24T19:44:38+09:00"
 slug: "i18nとは？"
-date: 2023-04-07T00:42:02+09:00
 tags: ["국제화", "i18n", "용어"]
 draft: false
 image: "img.webp"
 categories: ["it-technology"]
 description: '소프트웨어 개발에서 자주 듣는 ''i18n(Internationalization: 국제화)''의 의미와 어원을 알기 쉽게 해설합니다. 문자 코드, 날짜/시간 표기, 통화 정보 등 앱이나 시스템을 글로벌 대응할 때 고려해야 할 주요 항목을 정리했습니다.'
+date: "2023-04-07T00:42:02+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
+
 
 
 
@@ -20,14 +17,18 @@ description: '소프트웨어 개발에서 자주 듣는 ''i18n(Internationaliza
 
 # i18n이란?
 
+## 국제화와 로컬라이제이션
+
+국제화는 언어·지역·문화가 다른 사용자를 위해 제품이나 소프트웨어를 로컬라이즈하기 쉽도록 설계하고 개발하는 것입니다. 로컬라이제이션(l10n)은 특정 로캘에 맞게 제품을 조정합니다. 국제화(i18n)는 번역 자체가 아니라 번역과 지역별 변경을 쉽게 만드는 설계입니다.
+
 `i18n`이란, `Internationalization`의 약자로, 국제화라는 의미입니다. `Internationalization`은 너무 길기 때문에,
 첫 번째 `i`와 마지막 `n` 사이에 18글자가 포함되어 있다는 의미로 `i18n`이라고 생략해서 표기됩니다.
 
 소프트웨어에서의 국제화 대응이라는 문맥에서 사용되기도 합니다.
 
-국제화에서의 주요 대상 항목으로는 다음이 있습니다.[^1]
+국제화에서의 주요 대상 항목으로는 다음이 있습니다.
 
-- 문자 집합 (표준 문자 코드 등)
+- 문자와 언어(Unicode, 문자 인코딩, 언어 태그, 글꼴 지원 범위와 문자 렌더링)
 - 문자의 방향 (왼쪽에서 오른쪽으로, 오른쪽에서 왼쪽으로, 왼쪽을 향해 위에서 아래로, 기타)
 - 문구
 - 폰트
@@ -37,4 +38,15 @@ description: '소프트웨어 개발에서 자주 듣는 ''i18n(Internationaliza
 - 일시 정보의 시차
 - 통화 정보
 
-[^1]: [국제화와 지역화 - 위키백과](https://ko.wikipedia.org/wiki/%EA%B5%AD%EC%A0%9C%ED%99%94%EC%99%80_%EC%A7%80%EC%97%AD%ED%99%94)
+- 문구와 메시지(사용자 텍스트를 코드에서 분리하고 언어별 복수형과 어순을 처리하며 문장 조각을 단순 연결하지 않음)
+- 지역별 정보(이름, 주소, 전화번호, 입력 방식, 키보드, 기호, 색상, 법적 요구사항과 문화적 기대)
+
+## 테스트
+
+유사 로컬라이제이션으로 문자열 확장과 번역 누락을 찾고 대상 언어·로캘별 레이아웃, 입력, 정렬, 숫자·날짜를 테스트합니다. RTL 언어는 화면 방향과 혼합 텍스트도 확인합니다.
+
+## References
+
+- [W3C: Localization vs. Internationalization](https://www.w3.org/International/questions/qa-i18n)
+- [W3C Internationalization Glossary](https://www.w3.org/TR/i18n-glossary/)
+- [Unicode CLDR: Common Locale Data & Rules](https://www.unicode.org/reports/tr35/)

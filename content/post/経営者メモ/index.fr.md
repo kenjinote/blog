@@ -1,32 +1,45 @@
 ---
-title: 'Les secrets du choix d''une entreprise prospère et de sa systématisation : Mémo pratique pour les dirigeants'
-date: "2026-09-24T19:44:38+09:00"
+title: "Notes de gestion : choix d’activité et opérations durables"
 slug: "Managerメモ"
-date: 2022-09-07T02:36:11+09:00
 tags: ["Gestionnaire"]
 draft: false
 image: "images/img.webp"
 categories: ["it-technology"]
-description: 'Nous partageons des notes pratiques que tout dirigeant devrait connaître, comme comment trouver des entreprises tendance, l''art de l''imitation minutieuse et de l''amélioration, ou les points clés pour mettre en place un système réalisable par n''importe qui. Nous abordons également l''essence de la philosophie de gestion visant à « maximiser les profits de l''entreprise ».'
+description: "Notes sur le choix d’une activité, la mise en place d’opérations reproductibles et l’équilibre entre bénéfices et valeur pour les clients et salariés. Résumé d’un point de vue et questions à examiner avant d’agir."
+date: "2022-09-07T02:36:11+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
+
+
+Cet article résume l’avis d’un chef d’entreprise dans la vidéo japonaise indiquée en lien. Il ne s’agit pas d’une méthode de gestion universelle ni validée par la recherche. Avant d’agir, étudiez votre marché, votre région et votre situation.
+
 # Trouver des entreprises qui deviennent populaires
 - Demandez aux personnes de Hot Pepper et aux comptables quelles sont les entreprises à la mode
-- N'entrez pas dans des entreprises qui sont déjà saturées et ont des concurrents forts
+- Ne décidez pas d’entrer sur un marché en fonction de la concurrence uniquement. Étudiez la demande, la taille du marché, la différenciation et la viabilité économique.
 - N'entrez que dans des entreprises où vous êtes sûr de pouvoir attirer des clients (n'entrez pas dans des entreprises où les concurrents existants utilisent des méthodes spéciales (inimitables) pour attirer les clients)
 
-# Imiter minutieusement
-- Recherchez la logique commerciale avant d'entrer
-- Copiez minutieusement
-- Améliorez sur cette base
+# Apprendre et adapter
+- Étudiez les informations publiques et les retours des clients pour comprendre ce qui fonctionne et adapter votre offre.
+- Ne copiez pas sans autorisation des créations protégées et n’utilisez pas d’informations confidentielles ; vérifiez les droits et conditions applicables.
+- Testez les améliorations et utilisez les retours des clients et les résultats pour décider de la suite.
 
 # Systématiser
-- Rédigez un manuel pour tout afin que n'importe qui puisse le faire sans effort
-- Pensez à des idées pour augmenter les ventes (augmentation du nombre de clients, dépense par client) et réduire les coûts (frais de personnel, frais de publicité) et systématisez-les
+- Documentez l’objectif, les étapes, les critères de décision et la gestion des exceptions pour les tâches récurrentes ; formez les personnes concernées et révisez les procédures.
+- Analysez le chiffre d’affaires (nombre de clients et revenu par client compris) et les coûts. Testez des améliorations et vérifiez leur effet sans nuire à la qualité ni à la valeur apportée aux clients.
 
 # Philosophie de gestion
-- La philosophie du gestionnaire est de "maximiser les profits de l'entreprise" et rien de plus ni de moins
-- Faire de la contribution sociale ou être aimé par les employés n'est pas une bonne philosophie de gestion (pensez que ces choses viendront naturellement plus tard)
+- Le bénéfice est nécessaire à la continuité d’une entreprise, mais une philosophie de gestion ne doit pas forcément se limiter à sa maximisation.
+- Prenez aussi en compte la valeur pour les clients, la sécurité et le respect des salariés, les obligations légales et contractuelles, ainsi que la durabilité à long terme.
+
+
 
 <!--
 via https://www.youtube.com/watch?v=2TALYTLAke0
 -->
+
+## Références
+
+- [Références](https://www.youtube.com/watch?v=2TALYTLAke0)
+- [Hot Pepper Gourmet](https://www.hotpepper.jp/)
+- [Hot Pepper Beauty](https://beauty.hotpepper.jp/top/)
+- [Agency for Cultural Affairs: Using other people’s works](https://www.bunka.go.jp/seisaku/chosakuken/seidokaisetsu/chosakukensha_fumei/)

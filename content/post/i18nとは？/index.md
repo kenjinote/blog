@@ -1,25 +1,30 @@
 ---
 title: 'i18n（国際化）とは？ソフトウェア開発における意味と対応項目'
-date: "2026-09-24T19:44:38+09:00"
 slug: "i18nとは？"
-date: 2023-04-07T00:42:02+09:00
 tags: ["Internationalization", "i18n", "用語"]
 draft: false
 image: "img.webp"
 categories: ["it-technology"]
 description: 'ソフトウェア開発でよく聞く「i18n（Internationalization：国際化）」の意味や語源を分かりやすく解説します。文字コード、日時表記、通貨情報など、アプリやシステムをグローバル対応する際に考慮すべき主な項目をまとめました。'
+date: "2023-04-07T00:42:02+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
 
+
 # i18nとは？
+
+## 国際化とローカライズ
+
+国際化（i18n）は、言語・地域・文化の異なる利用者向けに製品をローカライズしやすく設計・開発することです。ローカライズ（l10n）は特定のロケールに合わせた調整です。国際化は翻訳そのものではなく、翻訳や地域別変更を妨げない設計を指します。
 
 `i18n`とは、`Internationalization`の略で、国際化という意味です。`Internationalization`だと長いので、
 最初の`i`と最後の`n`の間に18文字が含まれているということで`i18n`と省略されて表記されます。
 
 ソフトウエアにおける国際化対応という文脈で使われることがあります。
 
-国際化における主な、対象項目としては下記があります。[^1]
+国際化における主な、対象項目としては下記があります。
 
-- 文字セット（標準の文字コードなど）
+- 文字と言語（Unicode、文字エンコーディング、言語タグ、フォントと文字の表示範囲）
 - 文字の方向性（左から右へ、右から左へ、左に向かって上から下へ、他）
 - 文言
 - フォント
@@ -29,4 +34,15 @@ description: 'ソフトウェア開発でよく聞く「i18n（Internationalizat
 - 日時情報の時差
 - 通貨情報
 
-[^1]: [国際化と地域化 - Wikipedia](https://ja.wikipedia.org/wiki/%E5%9B%BD%E9%9A%9B%E5%8C%96%E3%81%A8%E5%9C%B0%E5%9F%9F%E5%8C%96)
+- 文言とメッセージ（文字列をコードから分離し、言語ごとの複数形や語順を扱う。文の断片を単純に連結しない）
+- 地域固有の情報（名前・住所・電話番号、入力方法、キーボード、記号・色、法令や文化的な前提）
+
+## テストのポイント
+
+疑似ローカライズで文字列の拡張や翻訳漏れを探し、各言語・ロケールでレイアウト、入力、並べ替え、数値・日付表示を確認します。RTL言語では画面方向や数字・英語との混在も確認してください。
+
+## References
+
+- [W3C: Localization vs. Internationalization](https://www.w3.org/International/questions/qa-i18n)
+- [W3C Internationalization Glossary](https://www.w3.org/TR/i18n-glossary/)
+- [Unicode CLDR: Common Locale Data & Rules](https://www.unicode.org/reports/tr35/)

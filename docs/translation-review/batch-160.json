@@ -1,0 +1,442 @@
+{
+  "version": 1,
+  "batch": 160,
+  "article": "What Is i18n? Internationalization and Localization Basics",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "8895c364bde49b08a15e91e25dfcb5d51a6ca13a08bd1ef5575885efceba7e37",
+  "sources": [
+    "https://www.w3.org/International/questions/qa-i18n",
+    "https://www.w3.org/TR/i18n-glossary/",
+    "https://www.unicode.org/reports/tr35/"
+  ],
+  "scope": "Compared the full Japanese article and twelve translations, acronym etymology, i18n/l10n distinction, technical terminology, locale-sensitive examples, metadata, and primary references.",
+  "findings": [
+    "Removed duplicate future dates; retained 2023-04-07 and set lastmod to 2026-11-24.",
+    "Corrected the conflation of character sets and character encodings; grounded Unicode and locale guidance in W3C material.",
+    "Added the distinction between internationalization and localization, message plural/order handling, regional data, and a target-locale test checklist.",
+    "Replaced Wikipedia links, including a Spanish article pointing to Japanese Wikipedia, with W3C and Unicode primary sources."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/i18nとは？/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/i18nとは？/index.md",
+      "sourceHash": "8895c364bde49b08a15e91e25dfcb5d51a6ca13a08bd1ef5575885efceba7e37",
+      "translationHash": "8306a84856fc18908814497fdd1a2dff6345b00790a2a162c379c93e0aa1b4e2",
+      "summary": "Compared the complete translation with the Japanese source and corrected internationalization/localization terminology, Unicode/encoding guidance, regional examples, and testing scope.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full source and translations for the definition and scope of internationalization versus localization, acronym count, and checklist coverage."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Corrected character-set versus encoding terminology and checked Unicode, locale, language tags, LTR/RTL, localization, and CLDR terms."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced secondary Wikipedia citations with primary W3C definitions/glossary and the Unicode CLDR specification."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Locale requirements vary; the checklist is a starting point and is not a substitute for testing with target users."
+      ]
+    },
+    "post/i18nとは？/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/i18nとは？/index.md",
+      "sourceHash": "8895c364bde49b08a15e91e25dfcb5d51a6ca13a08bd1ef5575885efceba7e37",
+      "translationHash": "e6cf71051e2c803f9d14ad232516420399e5db88524f125e8c543f99936f85d4",
+      "summary": "Compared the complete translation with the Japanese source and corrected internationalization/localization terminology, Unicode/encoding guidance, regional examples, and testing scope.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full source and translations for the definition and scope of internationalization versus localization, acronym count, and checklist coverage."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Corrected character-set versus encoding terminology and checked Unicode, locale, language tags, LTR/RTL, localization, and CLDR terms."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced secondary Wikipedia citations with primary W3C definitions/glossary and the Unicode CLDR specification."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Locale requirements vary; the checklist is a starting point and is not a substitute for testing with target users."
+      ]
+    },
+    "post/i18nとは？/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/i18nとは？/index.md",
+      "sourceHash": "8895c364bde49b08a15e91e25dfcb5d51a6ca13a08bd1ef5575885efceba7e37",
+      "translationHash": "a634ae5e726b93f64deb094be1910226691d937f26dac58214cb0c51b0db675a",
+      "summary": "Compared the complete translation with the Japanese source and corrected internationalization/localization terminology, Unicode/encoding guidance, regional examples, and testing scope.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full source and translations for the definition and scope of internationalization versus localization, acronym count, and checklist coverage."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Corrected character-set versus encoding terminology and checked Unicode, locale, language tags, LTR/RTL, localization, and CLDR terms."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced secondary Wikipedia citations with primary W3C definitions/glossary and the Unicode CLDR specification."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Locale requirements vary; the checklist is a starting point and is not a substitute for testing with target users."
+      ]
+    },
+    "post/i18nとは？/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/i18nとは？/index.md",
+      "sourceHash": "8895c364bde49b08a15e91e25dfcb5d51a6ca13a08bd1ef5575885efceba7e37",
+      "translationHash": "651f7a7194d505783f560d2d6e996fc4c5e7ad4f55e6f8c5da6e5732bc7b1190",
+      "summary": "Compared the complete translation with the Japanese source and corrected internationalization/localization terminology, Unicode/encoding guidance, regional examples, and testing scope.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full source and translations for the definition and scope of internationalization versus localization, acronym count, and checklist coverage."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Corrected character-set versus encoding terminology and checked Unicode, locale, language tags, LTR/RTL, localization, and CLDR terms."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced secondary Wikipedia citations with primary W3C definitions/glossary and the Unicode CLDR specification."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Locale requirements vary; the checklist is a starting point and is not a substitute for testing with target users."
+      ]
+    },
+    "post/i18nとは？/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/i18nとは？/index.md",
+      "sourceHash": "8895c364bde49b08a15e91e25dfcb5d51a6ca13a08bd1ef5575885efceba7e37",
+      "translationHash": "0512d77f71a0f1c1476a01c96683952e9824e00f75a54389eec7567644abfc25",
+      "summary": "Compared the complete translation with the Japanese source and corrected internationalization/localization terminology, Unicode/encoding guidance, regional examples, and testing scope.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full source and translations for the definition and scope of internationalization versus localization, acronym count, and checklist coverage."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Corrected character-set versus encoding terminology and checked Unicode, locale, language tags, LTR/RTL, localization, and CLDR terms."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced secondary Wikipedia citations with primary W3C definitions/glossary and the Unicode CLDR specification."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Locale requirements vary; the checklist is a starting point and is not a substitute for testing with target users."
+      ]
+    },
+    "post/i18nとは？/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/i18nとは？/index.md",
+      "sourceHash": "8895c364bde49b08a15e91e25dfcb5d51a6ca13a08bd1ef5575885efceba7e37",
+      "translationHash": "30dd468caaa2cb918db77b3c9f102e3f1bef5cd2d18fa065610f45d34f71a850",
+      "summary": "Compared the complete translation with the Japanese source and corrected internationalization/localization terminology, Unicode/encoding guidance, regional examples, and testing scope.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full source and translations for the definition and scope of internationalization versus localization, acronym count, and checklist coverage."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Corrected character-set versus encoding terminology and checked Unicode, locale, language tags, LTR/RTL, localization, and CLDR terms."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced secondary Wikipedia citations with primary W3C definitions/glossary and the Unicode CLDR specification."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Locale requirements vary; the checklist is a starting point and is not a substitute for testing with target users."
+      ]
+    },
+    "post/i18nとは？/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/i18nとは？/index.md",
+      "sourceHash": "8895c364bde49b08a15e91e25dfcb5d51a6ca13a08bd1ef5575885efceba7e37",
+      "translationHash": "5c47d2dfa2210a69e6dc565f2656d25d1cf42325afc8cefca30ecae2c240a795",
+      "summary": "Compared the complete translation with the Japanese source and corrected internationalization/localization terminology, Unicode/encoding guidance, regional examples, and testing scope.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full source and translations for the definition and scope of internationalization versus localization, acronym count, and checklist coverage."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Corrected character-set versus encoding terminology and checked Unicode, locale, language tags, LTR/RTL, localization, and CLDR terms."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced secondary Wikipedia citations with primary W3C definitions/glossary and the Unicode CLDR specification."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Locale requirements vary; the checklist is a starting point and is not a substitute for testing with target users."
+      ]
+    },
+    "post/i18nとは？/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/i18nとは？/index.md",
+      "sourceHash": "8895c364bde49b08a15e91e25dfcb5d51a6ca13a08bd1ef5575885efceba7e37",
+      "translationHash": "c2a6639ecd9f6841dd2c3505fd8fb0c46b7207cb4f0e1502e3f91c169edc791d",
+      "summary": "Compared the complete translation with the Japanese source and corrected internationalization/localization terminology, Unicode/encoding guidance, regional examples, and testing scope.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full source and translations for the definition and scope of internationalization versus localization, acronym count, and checklist coverage."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Corrected character-set versus encoding terminology and checked Unicode, locale, language tags, LTR/RTL, localization, and CLDR terms."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced secondary Wikipedia citations with primary W3C definitions/glossary and the Unicode CLDR specification."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Locale requirements vary; the checklist is a starting point and is not a substitute for testing with target users."
+      ]
+    },
+    "post/i18nとは？/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/i18nとは？/index.md",
+      "sourceHash": "8895c364bde49b08a15e91e25dfcb5d51a6ca13a08bd1ef5575885efceba7e37",
+      "translationHash": "2e994983a22d9ba6090e1cac4b43fc976e0878c80679c5777a8b08e2998667d2",
+      "summary": "Compared the complete translation with the Japanese source and corrected internationalization/localization terminology, Unicode/encoding guidance, regional examples, and testing scope.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full source and translations for the definition and scope of internationalization versus localization, acronym count, and checklist coverage."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Corrected character-set versus encoding terminology and checked Unicode, locale, language tags, LTR/RTL, localization, and CLDR terms."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced secondary Wikipedia citations with primary W3C definitions/glossary and the Unicode CLDR specification."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Locale requirements vary; the checklist is a starting point and is not a substitute for testing with target users."
+      ]
+    },
+    "post/i18nとは？/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/i18nとは？/index.md",
+      "sourceHash": "8895c364bde49b08a15e91e25dfcb5d51a6ca13a08bd1ef5575885efceba7e37",
+      "translationHash": "4b98cc63bee0d8f4d354b4dc2b89b361a5657d1a55456ed3befff00132a93a55",
+      "summary": "Compared the complete translation with the Japanese source and corrected internationalization/localization terminology, Unicode/encoding guidance, regional examples, and testing scope.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full source and translations for the definition and scope of internationalization versus localization, acronym count, and checklist coverage."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Corrected character-set versus encoding terminology and checked Unicode, locale, language tags, LTR/RTL, localization, and CLDR terms."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced secondary Wikipedia citations with primary W3C definitions/glossary and the Unicode CLDR specification."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Locale requirements vary; the checklist is a starting point and is not a substitute for testing with target users."
+      ]
+    },
+    "post/i18nとは？/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/i18nとは？/index.md",
+      "sourceHash": "8895c364bde49b08a15e91e25dfcb5d51a6ca13a08bd1ef5575885efceba7e37",
+      "translationHash": "e058d04e0c55ce4b458a73b0bbd6a7918afcfbd6238e9d49d66a81520f271276",
+      "summary": "Compared the complete translation with the Japanese source and corrected internationalization/localization terminology, Unicode/encoding guidance, regional examples, and testing scope.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full source and translations for the definition and scope of internationalization versus localization, acronym count, and checklist coverage."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Corrected character-set versus encoding terminology and checked Unicode, locale, language tags, LTR/RTL, localization, and CLDR terms."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced secondary Wikipedia citations with primary W3C definitions/glossary and the Unicode CLDR specification."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Locale requirements vary; the checklist is a starting point and is not a substitute for testing with target users."
+      ]
+    },
+    "post/i18nとは？/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/i18nとは？/index.md",
+      "sourceHash": "8895c364bde49b08a15e91e25dfcb5d51a6ca13a08bd1ef5575885efceba7e37",
+      "translationHash": "75ea34774d192e770bdc573ad43db241e7f664c5ed495c2823dbe7e47e0124fb",
+      "summary": "Compared the complete translation with the Japanese source and corrected internationalization/localization terminology, Unicode/encoding guidance, regional examples, and testing scope.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full source and translations for the definition and scope of internationalization versus localization, acronym count, and checklist coverage."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Corrected character-set versus encoding terminology and checked Unicode, locale, language tags, LTR/RTL, localization, and CLDR terms."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced secondary Wikipedia citations with primary W3C definitions/glossary and the Unicode CLDR specification."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Locale requirements vary; the checklist is a starting point and is not a substitute for testing with target users."
+      ]
+    }
+  }
+}
