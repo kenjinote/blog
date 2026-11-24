@@ -1,0 +1,457 @@
+{
+  "version": 1,
+  "batch": 107,
+  "article": "Hugo PaperModのTwitter Card設定",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "646fd1b001cad3e1d5c2bffe061556591f4e7d133d360f7cbb978dd869020168",
+  "sources": [
+    "https://github.com/adityatelange/hugo-PaperMod/wiki/Features",
+    "https://github.com/adityatelange/hugo-PaperMod/wiki/Variables",
+    "https://gohugo.io/content-management/page-bundles/",
+    "https://devcommunity.x.com/t/card-validator-preview-removal/175006"
+  ],
+  "scope": "Rewrote the Japanese article and twelve translations against current PaperMod Features/Variables documentation, Hugo Page Bundle documentation, and X's developer-community notice about Card Validator previews. Compared meaning, theme variables, shared configuration snippets, image-path semantics, card-size claims, preview guidance, links, publication dates, and locale metadata.",
+  "findings": [
+    "Corrected a Japanese typo and removed duplicated conflicting future dates while preserving the original 2022-09-10 publication date; added the actual 2026-11-24 lastmod date.",
+    "Added the production environment setting required by PaperMod's enhanced SEO metadata.",
+    "Clarified site fallback images, per-page cover images, Page Bundle relative paths, and cover.hidden behavior using the theme's documentation.",
+    "Removed the overgeneralized summary_large_image-only and fixed 800x418 claims; presented 1200x630 only as a practical wide-image design target.",
+    "Replaced the obsolete Validator-preview workflow with inspection of rendered metadata and X's post-composer preview; noted cache delay and no posting requirement.",
+    "Replaced stale references with current PaperMod, Hugo, and X developer sources; aligned all twelve translations and code examples to the Japanese source."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/PaperModでTwitter Cardを設定する方法/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PaperModでTwitter Cardを設定する方法/index.md",
+      "sourceHash": "646fd1b001cad3e1d5c2bffe061556591f4e7d133d360f7cbb978dd869020168",
+      "translationHash": "1320aad2941efdd578f0c32cea1773e8e3edce8c62bbc5af01537d0a448cea78",
+      "summary": "Rewrote and checked against the Japanese source, current PaperMod documentation, Hugo page-bundle documentation, and X developer announcement.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned production mode, site fallback image, per-page cover selection, hide behavior, output verification, and the current X preview workflow."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked PaperMod, Page Bundle, cover.image, relative, hidden, structured metadata, Open Graph, Twitter Card, and production terminology."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked the illustrative 1200/630 ratio (approximately 1.90:1, rounded in the article to about 1.90:1); it is explicitly described as a practical design target, not an X requirement."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared shared TOML and YAML examples across locales; verified the static path, page-bundle-relative image path, alt field, and hidden flag."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced stale validator and social image references with current PaperMod/Hugo documentation and the X developer community announcement."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Theme forks, version changes, and site template overrides may change generated metadata; readers should inspect their deployed HTML.",
+        "No authenticated X account was used to test an actual composer preview; the verification instructions are documented but not account-tested."
+      ]
+    },
+    "post/PaperModでTwitter Cardを設定する方法/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PaperModでTwitter Cardを設定する方法/index.md",
+      "sourceHash": "646fd1b001cad3e1d5c2bffe061556591f4e7d133d360f7cbb978dd869020168",
+      "translationHash": "79dd53bd72386fcb8cb84a409cd0eee811ea34aa27b04308268fda3d1b78d6a2",
+      "summary": "Rewrote and checked against the Japanese source, current PaperMod documentation, Hugo page-bundle documentation, and X developer announcement.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned production mode, site fallback image, per-page cover selection, hide behavior, output verification, and the current X preview workflow."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked PaperMod, Page Bundle, cover.image, relative, hidden, structured metadata, Open Graph, Twitter Card, and production terminology."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked the illustrative 1200/630 ratio (approximately 1.90:1, rounded in the article to about 1.90:1); it is explicitly described as a practical design target, not an X requirement."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared shared TOML and YAML examples across locales; verified the static path, page-bundle-relative image path, alt field, and hidden flag."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced stale validator and social image references with current PaperMod/Hugo documentation and the X developer community announcement."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Theme forks, version changes, and site template overrides may change generated metadata; readers should inspect their deployed HTML.",
+        "No authenticated X account was used to test an actual composer preview; the verification instructions are documented but not account-tested."
+      ]
+    },
+    "post/PaperModでTwitter Cardを設定する方法/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PaperModでTwitter Cardを設定する方法/index.md",
+      "sourceHash": "646fd1b001cad3e1d5c2bffe061556591f4e7d133d360f7cbb978dd869020168",
+      "translationHash": "96bb95d2184b04dd933d4bd9445b3e07975b23b84d4a9629b82709713fa75893",
+      "summary": "Rewrote and checked against the Japanese source, current PaperMod documentation, Hugo page-bundle documentation, and X developer announcement.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned production mode, site fallback image, per-page cover selection, hide behavior, output verification, and the current X preview workflow."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked PaperMod, Page Bundle, cover.image, relative, hidden, structured metadata, Open Graph, Twitter Card, and production terminology."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked the illustrative 1200/630 ratio (approximately 1.90:1, rounded in the article to about 1.90:1); it is explicitly described as a practical design target, not an X requirement."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared shared TOML and YAML examples across locales; verified the static path, page-bundle-relative image path, alt field, and hidden flag."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced stale validator and social image references with current PaperMod/Hugo documentation and the X developer community announcement."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Theme forks, version changes, and site template overrides may change generated metadata; readers should inspect their deployed HTML.",
+        "No authenticated X account was used to test an actual composer preview; the verification instructions are documented but not account-tested."
+      ]
+    },
+    "post/PaperModでTwitter Cardを設定する方法/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PaperModでTwitter Cardを設定する方法/index.md",
+      "sourceHash": "646fd1b001cad3e1d5c2bffe061556591f4e7d133d360f7cbb978dd869020168",
+      "translationHash": "d50888020e0dd3d26912e8dc4910a1979ec7f1b987eb2eb1ecbde2cc438a51c9",
+      "summary": "Rewrote and checked against the Japanese source, current PaperMod documentation, Hugo page-bundle documentation, and X developer announcement.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned production mode, site fallback image, per-page cover selection, hide behavior, output verification, and the current X preview workflow."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked PaperMod, Page Bundle, cover.image, relative, hidden, structured metadata, Open Graph, Twitter Card, and production terminology."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked the illustrative 1200/630 ratio (approximately 1.90:1, rounded in the article to about 1.90:1); it is explicitly described as a practical design target, not an X requirement."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared shared TOML and YAML examples across locales; verified the static path, page-bundle-relative image path, alt field, and hidden flag."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced stale validator and social image references with current PaperMod/Hugo documentation and the X developer community announcement."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Theme forks, version changes, and site template overrides may change generated metadata; readers should inspect their deployed HTML.",
+        "No authenticated X account was used to test an actual composer preview; the verification instructions are documented but not account-tested."
+      ]
+    },
+    "post/PaperModでTwitter Cardを設定する方法/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PaperModでTwitter Cardを設定する方法/index.md",
+      "sourceHash": "646fd1b001cad3e1d5c2bffe061556591f4e7d133d360f7cbb978dd869020168",
+      "translationHash": "84146775b51e8f117ae8a128e897db0c8adb096cc01360abc1c259d4348719d7",
+      "summary": "Rewrote and checked against the Japanese source, current PaperMod documentation, Hugo page-bundle documentation, and X developer announcement.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned production mode, site fallback image, per-page cover selection, hide behavior, output verification, and the current X preview workflow."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked PaperMod, Page Bundle, cover.image, relative, hidden, structured metadata, Open Graph, Twitter Card, and production terminology."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked the illustrative 1200/630 ratio (approximately 1.90:1, rounded in the article to about 1.90:1); it is explicitly described as a practical design target, not an X requirement."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared shared TOML and YAML examples across locales; verified the static path, page-bundle-relative image path, alt field, and hidden flag."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced stale validator and social image references with current PaperMod/Hugo documentation and the X developer community announcement."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Theme forks, version changes, and site template overrides may change generated metadata; readers should inspect their deployed HTML.",
+        "No authenticated X account was used to test an actual composer preview; the verification instructions are documented but not account-tested."
+      ]
+    },
+    "post/PaperModでTwitter Cardを設定する方法/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PaperModでTwitter Cardを設定する方法/index.md",
+      "sourceHash": "646fd1b001cad3e1d5c2bffe061556591f4e7d133d360f7cbb978dd869020168",
+      "translationHash": "a1be87e70c5bd2efe3c020ac01a2470af3bd8ed9a9796c4e3c1efc159acdf404",
+      "summary": "Rewrote and checked against the Japanese source, current PaperMod documentation, Hugo page-bundle documentation, and X developer announcement.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned production mode, site fallback image, per-page cover selection, hide behavior, output verification, and the current X preview workflow."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked PaperMod, Page Bundle, cover.image, relative, hidden, structured metadata, Open Graph, Twitter Card, and production terminology."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked the illustrative 1200/630 ratio (approximately 1.90:1, rounded in the article to about 1.90:1); it is explicitly described as a practical design target, not an X requirement."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared shared TOML and YAML examples across locales; verified the static path, page-bundle-relative image path, alt field, and hidden flag."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced stale validator and social image references with current PaperMod/Hugo documentation and the X developer community announcement."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Theme forks, version changes, and site template overrides may change generated metadata; readers should inspect their deployed HTML.",
+        "No authenticated X account was used to test an actual composer preview; the verification instructions are documented but not account-tested."
+      ]
+    },
+    "post/PaperModでTwitter Cardを設定する方法/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PaperModでTwitter Cardを設定する方法/index.md",
+      "sourceHash": "646fd1b001cad3e1d5c2bffe061556591f4e7d133d360f7cbb978dd869020168",
+      "translationHash": "1e87d05e64082e67376228883f24cc8d2bae8b33770f2856640ea6bb44e8155a",
+      "summary": "Rewrote and checked against the Japanese source, current PaperMod documentation, Hugo page-bundle documentation, and X developer announcement.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned production mode, site fallback image, per-page cover selection, hide behavior, output verification, and the current X preview workflow."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked PaperMod, Page Bundle, cover.image, relative, hidden, structured metadata, Open Graph, Twitter Card, and production terminology."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked the illustrative 1200/630 ratio (approximately 1.90:1, rounded in the article to about 1.90:1); it is explicitly described as a practical design target, not an X requirement."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared shared TOML and YAML examples across locales; verified the static path, page-bundle-relative image path, alt field, and hidden flag."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced stale validator and social image references with current PaperMod/Hugo documentation and the X developer community announcement."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Theme forks, version changes, and site template overrides may change generated metadata; readers should inspect their deployed HTML.",
+        "No authenticated X account was used to test an actual composer preview; the verification instructions are documented but not account-tested."
+      ]
+    },
+    "post/PaperModでTwitter Cardを設定する方法/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PaperModでTwitter Cardを設定する方法/index.md",
+      "sourceHash": "646fd1b001cad3e1d5c2bffe061556591f4e7d133d360f7cbb978dd869020168",
+      "translationHash": "607d7c74413e87be34bb46d3a4a980c7d55ef9516ce5bda043c0a816db18cd78",
+      "summary": "Rewrote and checked against the Japanese source, current PaperMod documentation, Hugo page-bundle documentation, and X developer announcement.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned production mode, site fallback image, per-page cover selection, hide behavior, output verification, and the current X preview workflow."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked PaperMod, Page Bundle, cover.image, relative, hidden, structured metadata, Open Graph, Twitter Card, and production terminology."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked the illustrative 1200/630 ratio (approximately 1.90:1, rounded in the article to about 1.90:1); it is explicitly described as a practical design target, not an X requirement."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared shared TOML and YAML examples across locales; verified the static path, page-bundle-relative image path, alt field, and hidden flag."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced stale validator and social image references with current PaperMod/Hugo documentation and the X developer community announcement."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Theme forks, version changes, and site template overrides may change generated metadata; readers should inspect their deployed HTML.",
+        "No authenticated X account was used to test an actual composer preview; the verification instructions are documented but not account-tested."
+      ]
+    },
+    "post/PaperModでTwitter Cardを設定する方法/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PaperModでTwitter Cardを設定する方法/index.md",
+      "sourceHash": "646fd1b001cad3e1d5c2bffe061556591f4e7d133d360f7cbb978dd869020168",
+      "translationHash": "c23c04d95430565fda2be173113f0c8aea50d492507427e80f71a1a336326f08",
+      "summary": "Rewrote and checked against the Japanese source, current PaperMod documentation, Hugo page-bundle documentation, and X developer announcement.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned production mode, site fallback image, per-page cover selection, hide behavior, output verification, and the current X preview workflow."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked PaperMod, Page Bundle, cover.image, relative, hidden, structured metadata, Open Graph, Twitter Card, and production terminology."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked the illustrative 1200/630 ratio (approximately 1.90:1, rounded in the article to about 1.90:1); it is explicitly described as a practical design target, not an X requirement."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared shared TOML and YAML examples across locales; verified the static path, page-bundle-relative image path, alt field, and hidden flag."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced stale validator and social image references with current PaperMod/Hugo documentation and the X developer community announcement."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Theme forks, version changes, and site template overrides may change generated metadata; readers should inspect their deployed HTML.",
+        "No authenticated X account was used to test an actual composer preview; the verification instructions are documented but not account-tested."
+      ]
+    },
+    "post/PaperModでTwitter Cardを設定する方法/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PaperModでTwitter Cardを設定する方法/index.md",
+      "sourceHash": "646fd1b001cad3e1d5c2bffe061556591f4e7d133d360f7cbb978dd869020168",
+      "translationHash": "002a9911b67eac395e0b5fd22ed08d6458af7f725840cfa1a5fab64db9c4ee42",
+      "summary": "Rewrote and checked against the Japanese source, current PaperMod documentation, Hugo page-bundle documentation, and X developer announcement.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned production mode, site fallback image, per-page cover selection, hide behavior, output verification, and the current X preview workflow."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked PaperMod, Page Bundle, cover.image, relative, hidden, structured metadata, Open Graph, Twitter Card, and production terminology."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked the illustrative 1200/630 ratio (approximately 1.90:1, rounded in the article to about 1.90:1); it is explicitly described as a practical design target, not an X requirement."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared shared TOML and YAML examples across locales; verified the static path, page-bundle-relative image path, alt field, and hidden flag."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced stale validator and social image references with current PaperMod/Hugo documentation and the X developer community announcement."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Theme forks, version changes, and site template overrides may change generated metadata; readers should inspect their deployed HTML.",
+        "No authenticated X account was used to test an actual composer preview; the verification instructions are documented but not account-tested."
+      ]
+    },
+    "post/PaperModでTwitter Cardを設定する方法/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PaperModでTwitter Cardを設定する方法/index.md",
+      "sourceHash": "646fd1b001cad3e1d5c2bffe061556591f4e7d133d360f7cbb978dd869020168",
+      "translationHash": "d3a34053290972662b15be399d7aa321ff1e6b3c9cf65c1db37d67e7e35b3634",
+      "summary": "Rewrote and checked against the Japanese source, current PaperMod documentation, Hugo page-bundle documentation, and X developer announcement.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned production mode, site fallback image, per-page cover selection, hide behavior, output verification, and the current X preview workflow."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked PaperMod, Page Bundle, cover.image, relative, hidden, structured metadata, Open Graph, Twitter Card, and production terminology."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked the illustrative 1200/630 ratio (approximately 1.90:1, rounded in the article to about 1.90:1); it is explicitly described as a practical design target, not an X requirement."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared shared TOML and YAML examples across locales; verified the static path, page-bundle-relative image path, alt field, and hidden flag."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced stale validator and social image references with current PaperMod/Hugo documentation and the X developer community announcement."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Theme forks, version changes, and site template overrides may change generated metadata; readers should inspect their deployed HTML.",
+        "No authenticated X account was used to test an actual composer preview; the verification instructions are documented but not account-tested."
+      ]
+    },
+    "post/PaperModでTwitter Cardを設定する方法/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PaperModでTwitter Cardを設定する方法/index.md",
+      "sourceHash": "646fd1b001cad3e1d5c2bffe061556591f4e7d133d360f7cbb978dd869020168",
+      "translationHash": "c30cf927347b4fbd55843e730ab02573a3c5beaf72a75cd6009a2799220a9c07",
+      "summary": "Rewrote and checked against the Japanese source, current PaperMod documentation, Hugo page-bundle documentation, and X developer announcement.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned production mode, site fallback image, per-page cover selection, hide behavior, output verification, and the current X preview workflow."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked PaperMod, Page Bundle, cover.image, relative, hidden, structured metadata, Open Graph, Twitter Card, and production terminology."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked the illustrative 1200/630 ratio (approximately 1.90:1, rounded in the article to about 1.90:1); it is explicitly described as a practical design target, not an X requirement."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared shared TOML and YAML examples across locales; verified the static path, page-bundle-relative image path, alt field, and hidden flag."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced stale validator and social image references with current PaperMod/Hugo documentation and the X developer community announcement."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Theme forks, version changes, and site template overrides may change generated metadata; readers should inspect their deployed HTML.",
+        "No authenticated X account was used to test an actual composer preview; the verification instructions are documented but not account-tested."
+      ]
+    }
+  }
+}

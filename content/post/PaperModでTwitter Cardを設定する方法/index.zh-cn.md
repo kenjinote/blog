@@ -1,74 +1,69 @@
 ---
-title: '如何在Hugo PaperMod中设置Twitter Card（X Card）'
-date: "2026-09-24T19:44:38+09:00"
+title: "如何在 Hugo PaperMod 中设置 Twitter Card（X 卡片）"
 slug: "PaperModでTwitter Cardを設定する方法"
-date: 2022-09-10T18:41:22+09:00
 tags: ["HUGO", "PaperMod", "Twitter"]
 draft: false
 image: "images/img.webp"
 categories: ["blogging"]
-description: '讲解在Hugo的PaperMod主题中设置Twitter Card的方法。介绍应用于全站的config.toml编写方式，以及在每篇文章的Markdown头部单独指定图片的方法。这有助于在社交网络分享时显示吸睛图片。'
+description: "按 PaperMod 文档设置 X 卡片图片，并检查生成的 HTML 及 X 发帖编辑器中的预览。"
+date: "2022-09-10T18:41:22+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
-# 简介
-PaperMod主题支持Twitter Card。
-但是，Twitter Card的设置必须写在`config.toml`或每篇文章的`*.md`头部信息中。
-如果同时在文章和`config.toml`中进行了设置，则优先使用文章的头部信息。
 
-# 设置方法
-## config.toml
-在`config.toml`中，在`[params]`下添加一个名为`images`的项目。
-在`images`中，填写要在Twitter Card中显示的图像路径。
-如果将图像放置在`static`文件夹中，只需指定文件名即可。
+PaperMod 可以生成 Open Graph 和 Twitter Card 元数据。输出会因主题版本和自定义模板而异，因此应检查已发布的 HTML，而不要认为某个配置示例必然产生特定卡片。
 
-```
+## 全站设置
+
+PaperMod 的 SEO 元数据在 production 构建中启用。请将站点环境设为 production。
+
+```toml
 [params]
-  images = ["twitter_card.webp"]
+  env = "production"
 ```
 
-文件夹结构
-```
-root
-│  config.toml (在此编写)
-├─content
-│  └─posts
-│      └─文章文件夹
-│         │  index.md (在此编写)
-│         └─images
-│             cover.webp (放置在此)
-└─static
-    twitter_card.webp (放置在此)
+如需全站默认图片，可将图片放在 `static` 目录并在此配置。当文章没有单独指定图片时，它可能作为候选图片。还应检查部署后实际生成的图片 URL。
+
+```toml
+[params]
+  images = ["/twitter-card-1200x630.webp"]
 ```
 
-## 各文章的头部信息
-在每篇文章的头部信息中，在`cover`下添加一个名为`image`的项目。
-如果将`relative`设置为`true`，则可以使用相对于文章`*.md`的相对路径来指定。
+## 为文章单独指定图片
 
-```
+如需为文章单独指定图片，请将 Page Bundle 中的图片设为 `cover.image`。`relative: true` 表示使用相对于 Bundle 的路径。PaperMod 文档优先使用封面图；若没有封面图，则可能使用页面的 `images` 列表，再尝试符合条件的 Bundle 图片。
+
+```yaml
 cover:
   image: "images/cover.webp"
+  alt: "Describe the image briefly"
   relative: true
 ```
 
-### 如果不想在文章顶部显示
-如果不想在文章顶部显示封面图像，可以在`cover`下添加一个名为`hidden`的项目，并将其设置为`true`。
-```
+## 隐藏文章中的封面
+
+根据 PaperMod 变量文档，`cover.hidden: true` 会在文章页面隐藏封面，但保留结构化元数据中的图片。如果图片只用于社交卡片，这一设置会很有用。使用主题 fork 或自定义模板时，请检查生成的 HTML。
+
+```yaml
 cover:
   image: "images/cover.webp"
+  alt: "Describe the image briefly"
   relative: true
   hidden: true
 ```
 
-# 关于图像尺寸
+## 卡片类型与图片尺寸
 
-根据目前PaperMod的规范，Twitter Card的尺寸似乎只支持`summary_large_image`。
-关于`summary_large_image`的合适尺寸（分辨率）有很多说法，但大约`800 x 418`（图像比例 1.91:1）似乎是不错的选择。
+旧文中“PaperMod 只支持 `summary_large_image`”和“尺寸固定为 800×418”的说法不应一概而论。卡片类型可能取决于主题版本或站点模板。宽图可将 1200×630（约 1.90:1）作为实用设计参考，但这不是 X 保证的显示要求。
 
-[参考网站1](https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/summary-card-with-large-image)
-[参考网站2](https://developers.facebook.com/docs/sharing/best-practices)
+## 检查输出和预览
 
+使用 production 设置构建后，在文章 HTML 中检查 `twitter:card`、`twitter:image`、`og:image`、标题和描述。图片 URL 应通过 HTTPS 公开访问，无需登录且直接返回图片。X 于 2022 年移除了 Card Validator 的预览功能，并建议使用发帖编辑器。将链接粘贴到编辑器，在不发布的情况下查看预览。缓存更新可能需要时间。
 
-建议您在发布前调整图像大小。
+已于 2026-11-24 对照链接的 PaperMod 文档和 X 开发者论坛核查。主题 fork、自定义模板及 X 的变更都可能影响实际输出。
 
-# 确认设置的方法
-要确认Twitter Card的设置，请使用[Twitter Card Validator](https://cards-dev.twitter.com/validator)。
-但是，在我的环境中，预览没有成功显示。因此，如果没有显示预览，建议您在发布之前使用私人帐户等进行确认。
+## 参考资料
+
+- [PaperMod: Features and Twitter Cards](https://github.com/adityatelange/hugo-PaperMod/wiki/Features)
+- [PaperMod: Variables](https://github.com/adityatelange/hugo-PaperMod/wiki/Variables)
+- [Hugo: Page bundles](https://gohugo.io/content-management/page-bundles/)
+- [X Developer Community: Card Validator preview removal](https://devcommunity.x.com/t/card-validator-preview-removal/175006)

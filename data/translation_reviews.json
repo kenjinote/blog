@@ -12245,6 +12245,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-106.json",
       "evidenceHash": "b237d3f541d36906c48d77f6c26aea9aa408f45b96b946c31759daadb4df3563"
+    },
+    "post/PaperModでTwitter Cardを設定する方法/index.ar.md": {
+      "source": "post/PaperModでTwitter Cardを設定する方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "646fd1b001cad3e1d5c2bffe061556591f4e7d133d360f7cbb978dd869020168",
+      "translationHash": "1320aad2941efdd578f0c32cea1773e8e3edce8c62bbc5af01537d0a448cea78",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-107.json",
+      "evidenceHash": "d67ac9ea2ab8d4e000dfb9abca0aadb0b9d89b12c5e52b23d9e5ad6877c05e71"
+    },
+    "post/PaperModでTwitter Cardを設定する方法/index.de.md": {
+      "source": "post/PaperModでTwitter Cardを設定する方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "646fd1b001cad3e1d5c2bffe061556591f4e7d133d360f7cbb978dd869020168",
+      "translationHash": "79dd53bd72386fcb8cb84a409cd0eee811ea34aa27b04308268fda3d1b78d6a2",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-107.json",
+      "evidenceHash": "7b467b34415664d5f759b627e93d80ab9e8e7ab1505d243570b727517329bc0e"
+    },
+    "post/PaperModでTwitter Cardを設定する方法/index.en.md": {
+      "source": "post/PaperModでTwitter Cardを設定する方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "646fd1b001cad3e1d5c2bffe061556591f4e7d133d360f7cbb978dd869020168",
+      "translationHash": "96bb95d2184b04dd933d4bd9445b3e07975b23b84d4a9629b82709713fa75893",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-107.json",
+      "evidenceHash": "d0bb710b7bfe621f1768fdf9014a846778b33f39fab2650900c6fdfe1d4850b0"
+    },
+    "post/PaperModでTwitter Cardを設定する方法/index.es.md": {
+      "source": "post/PaperModでTwitter Cardを設定する方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "646fd1b001cad3e1d5c2bffe061556591f4e7d133d360f7cbb978dd869020168",
+      "translationHash": "d50888020e0dd3d26912e8dc4910a1979ec7f1b987eb2eb1ecbde2cc438a51c9",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-107.json",
+      "evidenceHash": "aaf8c96b4001d1ff5ef1a38a9953e51c90a784b9deb85272493300da085049b4"
+    },
+    "post/PaperModでTwitter Cardを設定する方法/index.fr.md": {
+      "source": "post/PaperModでTwitter Cardを設定する方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "646fd1b001cad3e1d5c2bffe061556591f4e7d133d360f7cbb978dd869020168",
+      "translationHash": "84146775b51e8f117ae8a128e897db0c8adb096cc01360abc1c259d4348719d7",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-107.json",
+      "evidenceHash": "01e0c27c9b220fe9cc776e06c76dfd2f5d371848ef6782654ab0a44e2ab423f6"
+    },
+    "post/PaperModでTwitter Cardを設定する方法/index.hi.md": {
+      "source": "post/PaperModでTwitter Cardを設定する方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "646fd1b001cad3e1d5c2bffe061556591f4e7d133d360f7cbb978dd869020168",
+      "translationHash": "a1be87e70c5bd2efe3c020ac01a2470af3bd8ed9a9796c4e3c1efc159acdf404",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-107.json",
+      "evidenceHash": "07c0d81d7eab1a534297b52c91a4f3f5b3ee7a76397f7ebf2adae6cbd3c81d1d"
+    },
+    "post/PaperModでTwitter Cardを設定する方法/index.id.md": {
+      "source": "post/PaperModでTwitter Cardを設定する方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "646fd1b001cad3e1d5c2bffe061556591f4e7d133d360f7cbb978dd869020168",
+      "translationHash": "1e87d05e64082e67376228883f24cc8d2bae8b33770f2856640ea6bb44e8155a",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-107.json",
+      "evidenceHash": "db2979ac1bfba4701a60150bd5e2aebda86956afd6e574243c99e4ce1f1e8b81"
+    },
+    "post/PaperModでTwitter Cardを設定する方法/index.ko.md": {
+      "source": "post/PaperModでTwitter Cardを設定する方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "646fd1b001cad3e1d5c2bffe061556591f4e7d133d360f7cbb978dd869020168",
+      "translationHash": "607d7c74413e87be34bb46d3a4a980c7d55ef9516ce5bda043c0a816db18cd78",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-107.json",
+      "evidenceHash": "dc3fb6902f486ea20bfc77dde9823fda37f2e0218cf97c7924a3d4e766db8281"
+    },
+    "post/PaperModでTwitter Cardを設定する方法/index.pt.md": {
+      "source": "post/PaperModでTwitter Cardを設定する方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "646fd1b001cad3e1d5c2bffe061556591f4e7d133d360f7cbb978dd869020168",
+      "translationHash": "c23c04d95430565fda2be173113f0c8aea50d492507427e80f71a1a336326f08",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-107.json",
+      "evidenceHash": "c696fe8fc3ae8bc09d126a5b21530cf66bb9db149f22860d98e6bef9f66a7c6f"
+    },
+    "post/PaperModでTwitter Cardを設定する方法/index.ru.md": {
+      "source": "post/PaperModでTwitter Cardを設定する方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "646fd1b001cad3e1d5c2bffe061556591f4e7d133d360f7cbb978dd869020168",
+      "translationHash": "002a9911b67eac395e0b5fd22ed08d6458af7f725840cfa1a5fab64db9c4ee42",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-107.json",
+      "evidenceHash": "db51428132ba7f96ecafe57a269201e47e1b30df8e1ad2f9ad00492dc63c13c3"
+    },
+    "post/PaperModでTwitter Cardを設定する方法/index.zh-cn.md": {
+      "source": "post/PaperModでTwitter Cardを設定する方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "646fd1b001cad3e1d5c2bffe061556591f4e7d133d360f7cbb978dd869020168",
+      "translationHash": "d3a34053290972662b15be399d7aa321ff1e6b3c9cf65c1db37d67e7e35b3634",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-107.json",
+      "evidenceHash": "f04dbdbce4e7d8b22cb030e20e5384af4d6783b42c578ef8d730a5439c485289"
+    },
+    "post/PaperModでTwitter Cardを設定する方法/index.zh-tw.md": {
+      "source": "post/PaperModでTwitter Cardを設定する方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "646fd1b001cad3e1d5c2bffe061556591f4e7d133d360f7cbb978dd869020168",
+      "translationHash": "c30cf927347b4fbd55843e730ab02573a3c5beaf72a75cd6009a2799220a9c07",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-107.json",
+      "evidenceHash": "2ea44b6b1ee75d4ece2e135c494c0522118a9e56311070687358024fbc85ed1c"
     }
   }
 }

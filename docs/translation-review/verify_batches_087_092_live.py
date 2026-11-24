@@ -254,6 +254,18 @@ ARTICLES = {
         "markers": ["180", "170", "240", "33%", "41%", "26%", "2026"],
         "date": "2024-02-04",
     },
+    107: {
+        "bundle": ROOT / "content/post/PaperModでTwitter Cardを設定する方法",
+        "slug": "PaperModでTwitter Cardを設定する方法",
+        "links": [
+            "https://github.com/adityatelange/hugo-PaperMod/wiki/Features",
+            "https://github.com/adityatelange/hugo-PaperMod/wiki/Variables",
+            "https://gohugo.io/content-management/page-bundles/",
+            "https://devcommunity.x.com/t/card-validator-preview-removal/175006",
+        ],
+        "markers": ["twitter:card", "twitter:image", "og:image", "1200x630", "hidden: true", "production"],
+        "date": "2022-09-10",
+    },
 }
 
 
@@ -319,7 +331,7 @@ def slug_key(value):
 parser = argparse.ArgumentParser()
 parser.add_argument("--ci-run", type=int, required=True)
 parser.add_argument("--commit", required=True)
-parser.add_argument("--max-batch", type=int, choices=(90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106), default=106)
+parser.add_argument("--max-batch", type=int, choices=(90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107), default=107)
 args = parser.parse_args()
 ARTICLES = {number: article for number, article in ARTICLES.items() if number <= args.max_batch}
 with urllib.request.urlopen(f"https://github.com/kenjinote/blog/actions/runs/{args.ci_run}", timeout=45) as response:

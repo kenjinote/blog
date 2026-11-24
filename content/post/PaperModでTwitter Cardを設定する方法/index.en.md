@@ -1,74 +1,69 @@
 ---
-title: 'How to Set Up Twitter Cards (X Cards) in Hugo PaperMod'
-date: "2026-09-24T19:44:38+09:00"
+title: "How to Set Up Twitter Cards (X Cards) in Hugo PaperMod"
 slug: "PaperModでTwitter Cardを設定する方法"
-date: 2022-09-10T18:41:22+09:00
 tags: ["HUGO", "PaperMod", "Twitter"]
 draft: false
 image: "images/img.webp"
 categories: ["blogging"]
-description: 'Explains how to set up Twitter Cards in Hugo''s PaperMod theme. Introduces how to write in config.toml to apply it to the entire site, and how to specify images individually in the Markdown header of each article. These are setup steps useful for displaying eye-catching images when sharing on SNS.'
+description: "Configure X card images with PaperMod's documented settings, then check the generated HTML and preview in X's post composer."
+date: "2022-09-10T18:41:22+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
-# Introduction
-The PaperMod theme supports Twitter Cards.
-However, Twitter Card settings need to be described in `config.toml` or the header information of each article's `*.md`.
-If set in both each article and `config.toml`, the header information of each article takes precedence.
 
-# How to Configure
-## config.toml
-In `config.toml`, add an item named `images` under `[params]`.
-In `images`, describe the path to the image to be displayed on the Twitter Card.
-If placing the image in the `static` folder, specifying just the file name is sufficient.
+PaperMod can generate Open Graph and Twitter Card metadata. Output can vary by theme version and custom layouts, so inspect the published HTML instead of assuming a configuration example guarantees a particular card.
 
-```
+## Site-wide configuration
+
+PaperMod's SEO metadata is enabled for production builds. Set the site environment to production.
+
+```toml
 [params]
-  images = ["twitter_card.webp"]
+  env = "production"
 ```
 
-Folder structure
-```
-root
-│  config.toml (Describe here)
-├─content
-│  └─posts
-│      └─article folder
-│         │  index.md (Describe here)
-│         └─images
-│             cover.webp (Place here)
-└─static
-    twitter_card.webp (Place here)
+For a site-wide fallback image, place an image under `static` and set it here. This is a candidate when a post does not provide its own image. Check how the URL is emitted on your deployed site.
+
+```toml
+[params]
+  images = ["/twitter-card-1200x630.webp"]
 ```
 
-## Header Information of Each Article
-In the header information of each article, add an item named `image` under `cover`.
-If you set `relative` to `true`, you can specify it as a relative path from the article's `*.md`.
+## Post-specific image
 
-```
+For a post-specific image, set `cover.image` to an image in the page bundle. `relative: true` tells PaperMod to resolve a page-bundle-relative path. PaperMod documents the cover image as the preferred card image; without one, it can use the page's `images` list and then qualifying bundle images.
+
+```yaml
 cover:
   image: "images/cover.webp"
+  alt: "Describe the image briefly"
   relative: true
 ```
 
-### If You Do Not Want to Display It at the Top of the Article
-If you do not want to display a cover image at the top of the article, add an item named `hidden` under `cover` and set it to `true`.
-```
+## Hide the cover in the article
+
+`cover.hidden: true` hides the cover in the article display while retaining it for structured metadata, according to PaperMod's variables reference. This can be useful when the image is only for social cards. Verify the generated HTML if you use a theme fork or template overrides.
+
+```yaml
 cover:
   image: "images/cover.webp"
+  alt: "Describe the image briefly"
   relative: true
   hidden: true
 ```
 
-# About Image Size
+## Card type and image dimensions
 
-Based on the current specifications of PaperMod, it seems that Twitter Card sizes are only supported for `summary_large_image`.
-The appropriate size (resolution) for `summary_large_image` varies according to different sources, but around `800 x 418` (aspect ratio 1.91:1) seems good.
+The old claims that PaperMod supports only `summary_large_image` and that 800×418 is a fixed size should not be generalized. Card type can depend on the theme version or site templates. For a wide share image, 1200×630 (about 1.90:1) is a practical design target, not a promise of X display requirements.
 
-[Reference Site 1](https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/summary-card-with-large-image)
-[Reference Site 2](https://developers.facebook.com/docs/sharing/best-practices)
+## Inspect output and preview
 
+Build with the production setting and inspect the article's HTML source for `twitter:card`, `twitter:image`, `og:image`, title, and description. Confirm the image URL is HTTPS, publicly reachable without login, and serves the image directly. X removed preview functionality from the Card Validator in 2022 and directed developers to the post composer. Paste the URL into X's composer and inspect the preview without publishing. Cached card data may take time to update.
 
-If possible, it is recommended to resize the image before posting.
+This guide was checked against the linked PaperMod references and X developer forum on 2026-11-24. Forks, template overrides, and changes to X can affect the rendered card.
 
-# How to Check Settings
-To check Twitter Card settings, use the [Twitter Card Validator](https://cards-dev.twitter.com/validator).
-However, in my environment, the preview did not display properly, so if the preview does not appear, it is recommended to check once using a private account or similar before posting.
+## References
+
+- [PaperMod: Features and Twitter Cards](https://github.com/adityatelange/hugo-PaperMod/wiki/Features)
+- [PaperMod: Variables](https://github.com/adityatelange/hugo-PaperMod/wiki/Variables)
+- [Hugo: Page bundles](https://gohugo.io/content-management/page-bundles/)
+- [X Developer Community: Card Validator preview removal](https://devcommunity.x.com/t/card-validator-preview-removal/175006)

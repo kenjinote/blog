@@ -1,82 +1,69 @@
 ---
-
-
-
-
-title: 'Hugo PaperMod에서 Twitter Card(X 카드)를 설정하는 방법'
-date: "2026-09-24T19:44:38+09:00"
+title: "Hugo PaperMod에서 Twitter Card(X 카드) 설정하기"
 slug: "PaperModでTwitter Cardを設定する方法"
-date: 2022-09-10T18:41:22+09:00
 tags: ["HUGO", "PaperMod", "Twitter"]
 draft: false
 image: "images/img.webp"
 categories: ["blogging"]
-description: 'Hugo의 PaperMod 테마에서 Twitter Card 설정 방법을 설명합니다. 사이트 전체에 적용하는 config.toml 작성법과 각 게시물의 Markdown 헤더에 개별적으로 이미지를 지정하는 방법을 소개합니다. SNS 공유 시 썸네일 이미지 표시에 도움이 되는 설정 절차입니다.'
+description: "PaperMod 공식 설정에 맞춰 X 카드 이미지를 지정하고 생성된 HTML과 X 게시물 작성 화면에서 미리보기를 확인합니다."
+date: "2022-09-10T18:41:22+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
 
+PaperMod는 Open Graph와 Twitter Card 메타데이터를 생성할 수 있습니다. 테마 버전과 사용자 지정 레이아웃에 따라 결과가 달라질 수 있으므로 예시만 믿지 말고 배포된 HTML을 확인하세요.
 
+## 사이트 전체 설정
 
+PaperMod의 SEO 메타데이터는 프로덕션 빌드에서 활성화됩니다. 사이트 환경을 production으로 설정하세요.
 
-# 시작하며
-PaperMod 테마는 Twitter Card를 지원합니다.
-단, Twitter Card 설정은 `config.toml` 또는 각 게시물의 `*.md` 헤더 정보에 작성해야 합니다.
-각 게시물과 `config.toml` 양쪽에 설정한 경우에는, 각 게시물의 헤더 정보가 우선됩니다.
-
-# 설정 방법
-## config.toml
-`config.toml`에는 `[params]` 아래에 `images`라는 항목을 추가합니다.
-`images`에는 Twitter Card에 표시할 이미지의 경로를 작성합니다.
-이미지를 `static` 폴더에 배치할 경우에는 파일 이름만 지정하면 됩니다.
-
-```
+```toml
 [params]
-  images = ["twitter_card.webp"]
+  env = "production"
 ```
 
-폴더 구성
-```
-root
-│  config.toml (여기에 작성)
-├─content
-│  └─posts
-│      └─게시물 폴더
-│         │  index.md (여기에 작성)
-│         └─images
-│             cover.webp (여기에 배치)
-└─static
-    twitter_card.webp (여기에 배치)
+사이트 전체의 기본 이미지는 `static` 아래에 두고 여기에 지정합니다. 글에서 별도 이미지를 제공하지 않을 때 사용할 수 있습니다. 배포된 사이트에서 실제 URL도 확인하세요.
+
+```toml
+[params]
+  images = ["/twitter-card-1200x630.webp"]
 ```
 
-## 각 게시물의 헤더 정보
-각 게시물의 헤더 정보에는 `cover` 아래에 `image`라는 항목을 추가합니다.
-`relative`를 `true`로 하면, 게시물의 `*.md`로부터의 상대 경로로 지정할 수 있습니다.
+## 글별 이미지
 
-```
+글별 이미지는 Page Bundle의 파일을 `cover.image`에 지정합니다. `relative: true`는 Bundle 기준 상대 경로를 뜻합니다. PaperMod 문서에서는 cover 이미지가 우선이며, 없으면 페이지의 `images` 목록, 이어서 조건에 맞는 Bundle 이미지가 사용될 수 있습니다.
+
+```yaml
 cover:
   image: "images/cover.webp"
+  alt: "Describe the image briefly"
   relative: true
 ```
 
-### 게시물 상단에는 표시하고 싶지 않은 경우
-게시물 상단에 커버 이미지를 표시하고 싶지 않은 경우에는 `cover` 아래에 `hidden`이라는 항목을 추가하고 `true`로 설정합니다.
-```
+## 본문에서 커버 숨기기
+
+PaperMod 변수 문서에 따르면 `cover.hidden: true`는 글 화면에서 커버를 숨기면서 구조화 메타데이터에는 남깁니다. 소셜 카드에만 이미지를 사용하려는 경우 유용합니다. 테마 fork나 사용자 지정 템플릿에서는 생성 HTML을 확인하세요.
+
+```yaml
 cover:
   image: "images/cover.webp"
+  alt: "Describe the image briefly"
   relative: true
   hidden: true
 ```
 
-# 이미지 크기에 대하여
+## 카드 유형과 이미지 크기
 
-현재 PaperMod의 사양상 Twitter Card의 크기는 `summary_large_image`만 지원하는 것 같습니다.
-`summary_large_image`의 적절한 크기(해상도)는 여러 의견이 있지만 `800 x 418`(이미지 비율 1.91:1) 정도가 좋을 것 같습니다.
+PaperMod가 `summary_large_image`만 지원한다거나 800×418이 고정 크기라는 과거 설명은 일반화할 수 없습니다. 카드 종류는 테마 버전이나 사이트 템플릿에 따라 달라집니다. 가로형 공유 이미지에는 1200×630(약 1.90:1)을 실용적인 디자인 기준으로 삼을 수 있지만 X의 표시를 보장하는 값은 아닙니다.
 
-[참고 사이트1](https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/summary-card-with-large-image)
-[참고 사이트2](https://developers.facebook.com/docs/sharing/best-practices)
+## HTML과 미리보기 확인
 
+프로덕션 설정으로 빌드한 뒤 글 HTML에서 `twitter:card`, `twitter:image`, `og:image`, 제목과 설명을 확인하세요. 이미지 URL은 HTTPS로 로그인 없이 공개 접근 가능해야 합니다. X는 2022년 Card Validator의 미리보기를 제거하고 게시물 작성 화면을 안내했습니다. URL을 작성 화면에 붙여 게시하지 않고 미리보기를 확인하세요. 캐시 갱신에는 시간이 걸릴 수 있습니다.
 
-가능하다면, 이미지 크기를 리사이징하여 게시하는 것을 추천합니다.
+2026-11-24에 링크한 PaperMod 문서와 X 개발자 포럼을 확인했습니다. fork, 템플릿 재정의, X의 변경으로 출력이 달라질 수 있습니다.
 
-# 설정 확인 방법
-Twitter Card의 설정을 확인하려면 [Twitter Card Validator](https://cards-dev.twittercom/validator)를 이용합니다.
-단, 제 환경에서는 미리보기가 잘 표시되지 않았기 때문에, 만약 미리보기가 표시되지 않는다면 비공개 계정 등을 이용해 게시 전에 한번 확인해 보는 것을 추천합니다.
+## 참고 자료
+
+- [PaperMod: Features and Twitter Cards](https://github.com/adityatelange/hugo-PaperMod/wiki/Features)
+- [PaperMod: Variables](https://github.com/adityatelange/hugo-PaperMod/wiki/Variables)
+- [Hugo: Page bundles](https://gohugo.io/content-management/page-bundles/)
+- [X Developer Community: Card Validator preview removal](https://devcommunity.x.com/t/card-validator-preview-removal/175006)

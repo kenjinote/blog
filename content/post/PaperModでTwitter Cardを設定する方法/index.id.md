@@ -1,73 +1,69 @@
 ---
-title: 'Cara Mengatur Twitter Card (X Card) di Tema Hugo PaperMod'
-date: "2026-09-24T19:44:38+09:00"
+title: "Cara Mengatur Twitter Card (X Card) di Hugo PaperMod"
 slug: "PaperModでTwitter Cardを設定する方法"
-date: 2022-09-10T18:41:22+09:00
 tags: ["HUGO", "PaperMod", "Twitter"]
 draft: false
 image: "images/img.webp"
 categories: ["blogging"]
-description: 'Menjelaskan cara mengatur Twitter Card pada tema PaperMod di Hugo. Memperkenalkan cara menulis di config.toml untuk menerapkannya ke seluruh situs, dan cara menentukan gambar satu per satu di header Markdown setiap artikel. Ini adalah prosedur pengaturan yang berguna untuk menampilkan gambar utama saat dibagikan ke media sosial.'
+description: "Atur gambar kartu X dengan opsi PaperMod yang didokumentasikan, lalu periksa HTML dan pratinjau di komposer posting X."
+date: "2022-09-10T18:41:22+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
-# Pendahuluan
-Tema PaperMod mendukung Twitter Card.
-Namun, pengaturan Twitter Card harus ditulis dalam `config.toml` atau di informasi header `*.md` pada setiap artikel.
-Jika diatur di artikel maupun di `config.toml`, informasi header dari setiap artikel akan diprioritaskan.
 
-# Cara Pengaturan
-## config.toml
-Di `config.toml`, tambahkan item bernama `images` di bawah `[params]`.
-Di `images`, tulis path ke gambar yang akan ditampilkan di Twitter Card.
-Jika Anda menempatkan gambar di folder `static`, Anda hanya perlu menentukan nama filenya saja.
+PaperMod dapat membuat metadata Open Graph dan Twitter Card. Hasilnya bergantung pada versi tema dan layout khusus; periksa HTML yang diterbitkan alih-alih menganggap contoh konfigurasi menjamin kartu tertentu.
 
-```
+## Pengaturan seluruh situs
+
+Metadata SEO PaperMod aktif pada build produksi. Atur lingkungan situs ke production.
+
+```toml
 [params]
-  images = ["twitter_card.webp"]
+  env = "production"
 ```
 
-Struktur folder
-```
-root
-│  config.toml (Tulis di sini)
-├─content
-│  └─posts
-│      └─folder artikel
-│         │  index.md (Tulis di sini)
-│         └─images
-│             cover.webp (Tempatkan di sini)
-└─static
-    twitter_card.webp (Tempatkan di sini)
+Untuk gambar cadangan seluruh situs, simpan gambar di `static` dan tetapkan di sini. Gambar ini dapat digunakan ketika suatu artikel tidak menentukan gambar sendiri. Periksa URL yang dihasilkan di situs terbitan.
+
+```toml
+[params]
+  images = ["/twitter-card-1200x630.webp"]
 ```
 
-## Informasi header setiap artikel
-Di informasi header setiap artikel, tambahkan item bernama `image` di bawah `cover`.
-Jika Anda mengatur `relative` menjadi `true`, Anda dapat menentukannya dengan path relatif dari `*.md` artikel tersebut.
+## Gambar khusus artikel
 
-```
+Untuk gambar khusus artikel, tetapkan `cover.image` ke gambar di Page Bundle. `relative: true` memakai jalur relatif terhadap bundle. Dokumentasi PaperMod mengutamakan gambar sampul; jika tidak tersedia, daftar `images` pada halaman lalu gambar bundle yang memenuhi syarat dapat digunakan.
+
+```yaml
 cover:
   image: "images/cover.webp"
+  alt: "Describe the image briefly"
   relative: true
 ```
 
-### Jika Anda tidak ingin menampilkannya di bagian atas artikel
-Jika Anda tidak ingin menampilkan gambar sampul di bagian atas artikel, tambahkan item bernama `hidden` di bawah `cover` dan atur menjadi `true`.
-```
+## Sembunyikan sampul di artikel
+
+Menurut referensi variabel PaperMod, `cover.hidden: true` menyembunyikan sampul pada tampilan artikel tetapi mempertahankannya di metadata terstruktur. Ini berguna bila gambar hanya untuk kartu sosial. Periksa HTML jika memakai fork tema atau override template.
+
+```yaml
 cover:
   image: "images/cover.webp"
+  alt: "Describe the image briefly"
   relative: true
   hidden: true
 ```
 
-# Tentang Ukuran Gambar
+## Jenis kartu dan ukuran gambar
 
-Berdasarkan spesifikasi PaperMod saat ini, ukuran Twitter Card tampaknya hanya mendukung `summary_large_image`.
-Ukuran yang tepat (resolusi) untuk `summary_large_image` bervariasi, namun sekitar `800 x 418` (rasio gambar 1.91:1) tampaknya sudah baik.
+Klaim lama bahwa PaperMod hanya mendukung `summary_large_image` dan ukuran 800×418 selalu tetap tidak berlaku umum. Jenis kartu dapat bergantung pada versi tema atau template situs. Untuk gambar lebar, 1200×630 (sekitar 1,90:1) adalah patokan desain praktis, bukan jaminan persyaratan X.
 
-[Situs referensi 1](https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/summary-card-with-large-image)
-[Situs referensi 2](https://developers.facebook.com/docs/sharing/best-practices)
+## Periksa HTML dan pratinjau
 
-Jika memungkinkan, kami sarankan mengubah ukuran gambar sebelum mempublikasikannya.
+Build dengan pengaturan produksi dan periksa HTML artikel untuk `twitter:card`, `twitter:image`, `og:image`, judul, dan deskripsi. URL gambar harus dapat diakses publik melalui HTTPS tanpa login. Pada 2022 X menghapus preview dari Card Validator dan mengarahkan pengembang ke komposer posting. Tempelkan URL di sana dan lihat pratinjau tanpa menerbitkan. Perubahan cache dapat memerlukan waktu.
 
-# Cara memeriksa pengaturan
-Untuk memeriksa pengaturan Twitter Card, gunakan [Twitter Card Validator](https://cards-dev.twitter.com/validator).
-Namun, di lingkungan saya, pratinjau tidak ditampilkan dengan benar, jadi jika pratinjau tidak muncul, kami sarankan untuk memeriksanya sekali sebelum mempublikasikannya dengan menggunakan akun privat atau sejenisnya.
+Diperiksa pada 24-11-2026 berdasarkan referensi PaperMod dan forum pengembang X yang ditautkan. Fork, override template, dan perubahan X dapat memengaruhi hasil.
+
+## Referensi
+
+- [PaperMod: Features and Twitter Cards](https://github.com/adityatelange/hugo-PaperMod/wiki/Features)
+- [PaperMod: Variables](https://github.com/adityatelange/hugo-PaperMod/wiki/Variables)
+- [Hugo: Page bundles](https://gohugo.io/content-management/page-bundles/)
+- [X Developer Community: Card Validator preview removal](https://devcommunity.x.com/t/card-validator-preview-removal/175006)
