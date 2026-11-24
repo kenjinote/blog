@@ -1,8 +1,8 @@
 ---
 title: 'Git में स्थानीय (Local) और दूरस्थ (Remote) टैग को हटाने का तरीका'
-date: "2026-09-24T19:44:38+09:00"
 slug: "gitでタグを消す"
 date: 2022-10-02T02:18:04+09:00
+lastmod: "2026-11-24T00:00:00+09:00"
 tags: ["git"]
 draft: false
 image: "img.webp"
@@ -16,8 +16,10 @@ description: 'Git में अनावश्यक टैग (tag) को ह�
 
 # रिमोट टैग हटाएं
 
-1. मौजूद रिमोट टैग की जाँच करने के लिए `git ls-remote --tags` का उपयोग करें।
+1. मौजूद रिमोट टैग की जाँच करने के लिए `git ls-remote --tags --refs origin` का उपयोग करें।
 2. मौजूद रिमोट टैग को हटाने के लिए `git push origin --delete v0.1.0` का उपयोग करें। (उस टैग को निर्दिष्ट करें जिसे आप `v0.1.0` की जगह हटाना चाहते हैं)
 
+रिमोट से टैग हटाने पर सहयोगियों की स्थानीय प्रतियाँ अपने-आप नहीं हटतीं। रिमोट के सभी उपयोगकर्ताओं पर असर पड़ता है, इसलिए पहले लक्ष्य जाँचें।
+
 ## संदर्भ
-[gitでtagをリモートとローカルで削除する方法！](https://qumeru.com/magazine/528)
+[git-tag](https://git-scm.com/docs/git-tag), [git-ls-remote](https://git-scm.com/docs/git-ls-remote), [git-push](https://git-scm.com/docs/git-push)

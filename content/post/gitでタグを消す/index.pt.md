@@ -1,8 +1,8 @@
 ---
 title: 'Como Excluir Tags Locais e Remotas no Git'
-date: "2026-09-24T19:44:38+09:00"
 slug: "gitでタグを消す"
 date: 2022-10-02T02:18:04+09:00
+lastmod: "2026-11-24T00:00:00+09:00"
 tags: ["git"]
 draft: false
 image: "img.webp"
@@ -16,8 +16,10 @@ description: 'Explicação simples sobre como deletar tags desnecessárias no Gi
 
 # Excluir uma tag remota
 
-1. Verifique as tags remotas existentes com `git ls-remote --tags`.
+1. Verifique as tags remotas existentes com `git ls-remote --tags --refs origin`.
 2. Exclua a tag remota existente com `git push origin --delete v0.1.0`. (Especifique a tag que você deseja excluir no lugar de `v0.1.0`)
 
-## Referência
-[gitでtagをリモートとローカルで削除する方法！](https://qumeru.com/magazine/528)
+Excluir a tag remota não remove automaticamente as cópias locais dos colaboradores. Confirme o destino, pois isso afeta quem usa o remoto.
+
+## Referências
+[git-tag](https://git-scm.com/docs/git-tag), [git-ls-remote](https://git-scm.com/docs/git-ls-remote), [git-push](https://git-scm.com/docs/git-push)

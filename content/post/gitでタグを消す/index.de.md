@@ -1,8 +1,8 @@
 ---
 title: 'Wie man lokale und Remote-Tags in Git löscht'
-date: "2026-09-24T19:44:38+09:00"
 slug: "gitでタグを消す"
 date: 2022-10-02T02:18:04+09:00
+lastmod: "2026-11-24T00:00:00+09:00"
 tags: ["git"]
 draft: false
 image: "img.webp"
@@ -16,8 +16,10 @@ description: 'Eine einfache Anleitung zum Löschen nicht mehr benötigter Tags i
 
 # Remote-Tag löschen
 
-1. Überprüfen Sie vorhandene Remote-Tags mit `git ls-remote --tags`.
+1. Überprüfen Sie vorhandene Remote-Tags mit `git ls-remote --tags --refs origin`.
 2. Löschen Sie den vorhandenen Remote-Tag mit `git push origin --delete v0.1.0`. (Geben Sie den Tag an, den Sie anstelle von `v0.1.0` löschen möchten)
 
-## Referenz
-[gitでtagをリモートとローカルで削除する方法！](https://qumeru.com/magazine/528)
+Das Löschen auf dem Remote entfernt lokale Kopien bei Mitwirkenden nicht automatisch. Prüfen Sie das Ziel, da der Schritt alle Nutzer des Remotes betrifft.
+
+## Referenzen
+[git-tag](https://git-scm.com/docs/git-tag), [git-ls-remote](https://git-scm.com/docs/git-ls-remote), [git-push](https://git-scm.com/docs/git-push)

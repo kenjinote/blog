@@ -1,8 +1,8 @@
 ---
 title: 'How to Delete Local and Remote Tags in Git'
-date: "2026-09-24T19:44:38+09:00"
 slug: "gitでタグを消す"
 date: 2022-10-02T02:18:04+09:00
+lastmod: "2026-11-24T00:00:00+09:00"
 tags: ["git"]
 draft: false
 image: "img.webp"
@@ -16,8 +16,10 @@ description: 'A simple explanation of how to delete tags that are no longer need
 
 # Delete a remote tag
 
-1. Check existing remote tags with `git ls-remote --tags`.
+1. Check existing remote tags with `git ls-remote --tags --refs origin`.
 2. Delete the remote tag with `git push origin --delete v0.1.0`. (Replace `v0.1.0` with the tag you want to delete)
 
-## Reference
-[How to delete a tag in git locally and remotely!](https://qumeru.com/magazine/528)
+Deleting the remote tag does not automatically remove local copies held by collaborators. Verify the target first because this affects everyone using the remote.
+
+## References
+[git-tag](https://git-scm.com/docs/git-tag), [git-ls-remote](https://git-scm.com/docs/git-ls-remote), [git-push](https://git-scm.com/docs/git-push)

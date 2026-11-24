@@ -1,0 +1,455 @@
+{
+  "version": 1,
+  "batch": 133,
+  "article": "Gitのローカルタグとリモートタグを削除する",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "3687d7222431eeacce721e669acc27cac80d89740dbbfa1fa9d5ed277b58b7cc",
+  "sources": [
+    "https://git-scm.com/docs/git-tag",
+    "https://git-scm.com/docs/git-ls-remote",
+    "https://git-scm.com/docs/git-push",
+    "https://qumeru.com/magazine/528"
+  ],
+  "scope": "Compared the complete Japanese source and twelve translations, including command syntax, local/remote distinctions, warnings, links, dates, and article metadata.",
+  "findings": [
+    "Removed duplicate future dates, retained original publication date 2022-10-02, and set lastmod to 2026-11-24 throughout the bundle.",
+    "Made the remote explicit in the listing command: git ls-remote --tags --refs origin. The --refs option avoids peeled pseudo-ref output for annotated tags.",
+    "Added a warning that deleting a remote tag does not automatically remove local copies held by collaborators and affects users of that remote.",
+    "Replaced the reference that could not be opened in this environment with official Git manuals for git-tag, git-ls-remote, and git-push in all locales."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/gitでタグを消す/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/gitでタグを消す/index.md",
+      "sourceHash": "3687d7222431eeacce721e669acc27cac80d89740dbbfa1fa9d5ed277b58b7cc",
+      "translationHash": "24b6fefb373597c5cbc8efe4ee5b612a4b58ec8b3ef74ce6099f224fac941b7c",
+      "summary": "Reviewed the complete translated procedure and commands, clarified local versus remote deletion, made the remote explicit during tag listing, added a collaborator-impact note, and replaced the inaccessible third-party reference with official Git documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete local-tag and remote-tag instructions in each translation. Confirmed that git tag -d removes the local tag, while git push origin --delete targets the named remote tag."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked local versus remote repository distinctions, tag name, origin remote, and command names. Replaced the tag-listing command with git ls-remote --tags --refs origin to make the remote explicit and list refs without peeled pseudo-refs."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The procedural article contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Statically checked command syntax against the official Git manuals. Commands were not executed because the remote deletion command changes repository state."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the inaccessible third-party reference with official Git manuals for git-tag, git-ls-remote, and git-push; opened each official reference during review."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Commands were checked against documentation but not run; remote deletion is a state-changing operation.",
+        "The original third-party reference was inaccessible through the review environment; the commands and links were checked against official Git manuals."
+      ]
+    },
+    "post/gitでタグを消す/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/gitでタグを消す/index.md",
+      "sourceHash": "3687d7222431eeacce721e669acc27cac80d89740dbbfa1fa9d5ed277b58b7cc",
+      "translationHash": "d053f5fb8b2decf4d29f2e7a37bb1025c95de5315a36177ff8ca0c8f178149c0",
+      "summary": "Reviewed the complete translated procedure and commands, clarified local versus remote deletion, made the remote explicit during tag listing, added a collaborator-impact note, and replaced the inaccessible third-party reference with official Git documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete local-tag and remote-tag instructions in each translation. Confirmed that git tag -d removes the local tag, while git push origin --delete targets the named remote tag."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked local versus remote repository distinctions, tag name, origin remote, and command names. Replaced the tag-listing command with git ls-remote --tags --refs origin to make the remote explicit and list refs without peeled pseudo-refs."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The procedural article contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Statically checked command syntax against the official Git manuals. Commands were not executed because the remote deletion command changes repository state."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the inaccessible third-party reference with official Git manuals for git-tag, git-ls-remote, and git-push; opened each official reference during review."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Commands were checked against documentation but not run; remote deletion is a state-changing operation.",
+        "The original third-party reference was inaccessible through the review environment; the commands and links were checked against official Git manuals."
+      ]
+    },
+    "post/gitでタグを消す/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/gitでタグを消す/index.md",
+      "sourceHash": "3687d7222431eeacce721e669acc27cac80d89740dbbfa1fa9d5ed277b58b7cc",
+      "translationHash": "d1949e8f4469be5c50c41503e62a57beb2243f507d5a4e9059864ad65f99c67d",
+      "summary": "Reviewed the complete translated procedure and commands, clarified local versus remote deletion, made the remote explicit during tag listing, added a collaborator-impact note, and replaced the inaccessible third-party reference with official Git documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete local-tag and remote-tag instructions in each translation. Confirmed that git tag -d removes the local tag, while git push origin --delete targets the named remote tag."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked local versus remote repository distinctions, tag name, origin remote, and command names. Replaced the tag-listing command with git ls-remote --tags --refs origin to make the remote explicit and list refs without peeled pseudo-refs."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The procedural article contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Statically checked command syntax against the official Git manuals. Commands were not executed because the remote deletion command changes repository state."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the inaccessible third-party reference with official Git manuals for git-tag, git-ls-remote, and git-push; opened each official reference during review."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Commands were checked against documentation but not run; remote deletion is a state-changing operation.",
+        "The original third-party reference was inaccessible through the review environment; the commands and links were checked against official Git manuals."
+      ]
+    },
+    "post/gitでタグを消す/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/gitでタグを消す/index.md",
+      "sourceHash": "3687d7222431eeacce721e669acc27cac80d89740dbbfa1fa9d5ed277b58b7cc",
+      "translationHash": "ca3efdfa5b2484f6eab73d2ff0defc6a061fe7f94c2f14069ca4c0668e1ea237",
+      "summary": "Reviewed the complete translated procedure and commands, clarified local versus remote deletion, made the remote explicit during tag listing, added a collaborator-impact note, and replaced the inaccessible third-party reference with official Git documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete local-tag and remote-tag instructions in each translation. Confirmed that git tag -d removes the local tag, while git push origin --delete targets the named remote tag."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked local versus remote repository distinctions, tag name, origin remote, and command names. Replaced the tag-listing command with git ls-remote --tags --refs origin to make the remote explicit and list refs without peeled pseudo-refs."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The procedural article contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Statically checked command syntax against the official Git manuals. Commands were not executed because the remote deletion command changes repository state."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the inaccessible third-party reference with official Git manuals for git-tag, git-ls-remote, and git-push; opened each official reference during review."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Commands were checked against documentation but not run; remote deletion is a state-changing operation.",
+        "The original third-party reference was inaccessible through the review environment; the commands and links were checked against official Git manuals."
+      ]
+    },
+    "post/gitでタグを消す/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/gitでタグを消す/index.md",
+      "sourceHash": "3687d7222431eeacce721e669acc27cac80d89740dbbfa1fa9d5ed277b58b7cc",
+      "translationHash": "e09f261a3710f1a6318396b5fa9c225b088a4e1e7ffc0406c9c518903eb336ea",
+      "summary": "Reviewed the complete translated procedure and commands, clarified local versus remote deletion, made the remote explicit during tag listing, added a collaborator-impact note, and replaced the inaccessible third-party reference with official Git documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete local-tag and remote-tag instructions in each translation. Confirmed that git tag -d removes the local tag, while git push origin --delete targets the named remote tag."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked local versus remote repository distinctions, tag name, origin remote, and command names. Replaced the tag-listing command with git ls-remote --tags --refs origin to make the remote explicit and list refs without peeled pseudo-refs."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The procedural article contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Statically checked command syntax against the official Git manuals. Commands were not executed because the remote deletion command changes repository state."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the inaccessible third-party reference with official Git manuals for git-tag, git-ls-remote, and git-push; opened each official reference during review."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Commands were checked against documentation but not run; remote deletion is a state-changing operation.",
+        "The original third-party reference was inaccessible through the review environment; the commands and links were checked against official Git manuals."
+      ]
+    },
+    "post/gitでタグを消す/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/gitでタグを消す/index.md",
+      "sourceHash": "3687d7222431eeacce721e669acc27cac80d89740dbbfa1fa9d5ed277b58b7cc",
+      "translationHash": "a14c2f9417389379b1e06803504611567521e03237a6eb0a48bfd233445c03e6",
+      "summary": "Reviewed the complete translated procedure and commands, clarified local versus remote deletion, made the remote explicit during tag listing, added a collaborator-impact note, and replaced the inaccessible third-party reference with official Git documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete local-tag and remote-tag instructions in each translation. Confirmed that git tag -d removes the local tag, while git push origin --delete targets the named remote tag."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked local versus remote repository distinctions, tag name, origin remote, and command names. Replaced the tag-listing command with git ls-remote --tags --refs origin to make the remote explicit and list refs without peeled pseudo-refs."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The procedural article contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Statically checked command syntax against the official Git manuals. Commands were not executed because the remote deletion command changes repository state."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the inaccessible third-party reference with official Git manuals for git-tag, git-ls-remote, and git-push; opened each official reference during review."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Commands were checked against documentation but not run; remote deletion is a state-changing operation.",
+        "The original third-party reference was inaccessible through the review environment; the commands and links were checked against official Git manuals."
+      ]
+    },
+    "post/gitでタグを消す/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/gitでタグを消す/index.md",
+      "sourceHash": "3687d7222431eeacce721e669acc27cac80d89740dbbfa1fa9d5ed277b58b7cc",
+      "translationHash": "1900b03e3bed3747cc190bfbb0c392643c9c9af581c9c11d10643e9148536bfe",
+      "summary": "Reviewed the complete translated procedure and commands, clarified local versus remote deletion, made the remote explicit during tag listing, added a collaborator-impact note, and replaced the inaccessible third-party reference with official Git documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete local-tag and remote-tag instructions in each translation. Confirmed that git tag -d removes the local tag, while git push origin --delete targets the named remote tag."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked local versus remote repository distinctions, tag name, origin remote, and command names. Replaced the tag-listing command with git ls-remote --tags --refs origin to make the remote explicit and list refs without peeled pseudo-refs."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The procedural article contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Statically checked command syntax against the official Git manuals. Commands were not executed because the remote deletion command changes repository state."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the inaccessible third-party reference with official Git manuals for git-tag, git-ls-remote, and git-push; opened each official reference during review."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Commands were checked against documentation but not run; remote deletion is a state-changing operation.",
+        "The original third-party reference was inaccessible through the review environment; the commands and links were checked against official Git manuals."
+      ]
+    },
+    "post/gitでタグを消す/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/gitでタグを消す/index.md",
+      "sourceHash": "3687d7222431eeacce721e669acc27cac80d89740dbbfa1fa9d5ed277b58b7cc",
+      "translationHash": "b1c751423465eb77c8ed3dc6f140a049ba105db399be25766d08891c60bc88f6",
+      "summary": "Reviewed the complete translated procedure and commands, clarified local versus remote deletion, made the remote explicit during tag listing, added a collaborator-impact note, and replaced the inaccessible third-party reference with official Git documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete local-tag and remote-tag instructions in each translation. Confirmed that git tag -d removes the local tag, while git push origin --delete targets the named remote tag."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked local versus remote repository distinctions, tag name, origin remote, and command names. Replaced the tag-listing command with git ls-remote --tags --refs origin to make the remote explicit and list refs without peeled pseudo-refs."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The procedural article contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Statically checked command syntax against the official Git manuals. Commands were not executed because the remote deletion command changes repository state."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the inaccessible third-party reference with official Git manuals for git-tag, git-ls-remote, and git-push; opened each official reference during review."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Commands were checked against documentation but not run; remote deletion is a state-changing operation.",
+        "The original third-party reference was inaccessible through the review environment; the commands and links were checked against official Git manuals."
+      ]
+    },
+    "post/gitでタグを消す/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/gitでタグを消す/index.md",
+      "sourceHash": "3687d7222431eeacce721e669acc27cac80d89740dbbfa1fa9d5ed277b58b7cc",
+      "translationHash": "5baabfdabfd40b51d23c943e177d26e7240695979ffc46af9650b8f509571590",
+      "summary": "Reviewed the complete translated procedure and commands, clarified local versus remote deletion, made the remote explicit during tag listing, added a collaborator-impact note, and replaced the inaccessible third-party reference with official Git documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete local-tag and remote-tag instructions in each translation. Confirmed that git tag -d removes the local tag, while git push origin --delete targets the named remote tag."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked local versus remote repository distinctions, tag name, origin remote, and command names. Replaced the tag-listing command with git ls-remote --tags --refs origin to make the remote explicit and list refs without peeled pseudo-refs."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The procedural article contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Statically checked command syntax against the official Git manuals. Commands were not executed because the remote deletion command changes repository state."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the inaccessible third-party reference with official Git manuals for git-tag, git-ls-remote, and git-push; opened each official reference during review."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Commands were checked against documentation but not run; remote deletion is a state-changing operation.",
+        "The original third-party reference was inaccessible through the review environment; the commands and links were checked against official Git manuals."
+      ]
+    },
+    "post/gitでタグを消す/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/gitでタグを消す/index.md",
+      "sourceHash": "3687d7222431eeacce721e669acc27cac80d89740dbbfa1fa9d5ed277b58b7cc",
+      "translationHash": "91d40aed065b55ccbe49d665170fadafd26ab94ff4c3897f74068bb3952efbbe",
+      "summary": "Reviewed the complete translated procedure and commands, clarified local versus remote deletion, made the remote explicit during tag listing, added a collaborator-impact note, and replaced the inaccessible third-party reference with official Git documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete local-tag and remote-tag instructions in each translation. Confirmed that git tag -d removes the local tag, while git push origin --delete targets the named remote tag."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked local versus remote repository distinctions, tag name, origin remote, and command names. Replaced the tag-listing command with git ls-remote --tags --refs origin to make the remote explicit and list refs without peeled pseudo-refs."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The procedural article contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Statically checked command syntax against the official Git manuals. Commands were not executed because the remote deletion command changes repository state."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the inaccessible third-party reference with official Git manuals for git-tag, git-ls-remote, and git-push; opened each official reference during review."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Commands were checked against documentation but not run; remote deletion is a state-changing operation.",
+        "The original third-party reference was inaccessible through the review environment; the commands and links were checked against official Git manuals."
+      ]
+    },
+    "post/gitでタグを消す/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/gitでタグを消す/index.md",
+      "sourceHash": "3687d7222431eeacce721e669acc27cac80d89740dbbfa1fa9d5ed277b58b7cc",
+      "translationHash": "8c76df4f33bbb54b036710d17d68fcf5a2613eb6993f064490011e9bfaae6a31",
+      "summary": "Reviewed the complete translated procedure and commands, clarified local versus remote deletion, made the remote explicit during tag listing, added a collaborator-impact note, and replaced the inaccessible third-party reference with official Git documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete local-tag and remote-tag instructions in each translation. Confirmed that git tag -d removes the local tag, while git push origin --delete targets the named remote tag."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked local versus remote repository distinctions, tag name, origin remote, and command names. Replaced the tag-listing command with git ls-remote --tags --refs origin to make the remote explicit and list refs without peeled pseudo-refs."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The procedural article contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Statically checked command syntax against the official Git manuals. Commands were not executed because the remote deletion command changes repository state."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the inaccessible third-party reference with official Git manuals for git-tag, git-ls-remote, and git-push; opened each official reference during review."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Commands were checked against documentation but not run; remote deletion is a state-changing operation.",
+        "The original third-party reference was inaccessible through the review environment; the commands and links were checked against official Git manuals."
+      ]
+    },
+    "post/gitでタグを消す/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/gitでタグを消す/index.md",
+      "sourceHash": "3687d7222431eeacce721e669acc27cac80d89740dbbfa1fa9d5ed277b58b7cc",
+      "translationHash": "7385d105e1762df8ffd1c84e880e922b094d44d4fd60cd3c6443ff2878f67b0f",
+      "summary": "Reviewed the complete translated procedure and commands, clarified local versus remote deletion, made the remote explicit during tag listing, added a collaborator-impact note, and replaced the inaccessible third-party reference with official Git documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete local-tag and remote-tag instructions in each translation. Confirmed that git tag -d removes the local tag, while git push origin --delete targets the named remote tag."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked local versus remote repository distinctions, tag name, origin remote, and command names. Replaced the tag-listing command with git ls-remote --tags --refs origin to make the remote explicit and list refs without peeled pseudo-refs."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The procedural article contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Statically checked command syntax against the official Git manuals. Commands were not executed because the remote deletion command changes repository state."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the inaccessible third-party reference with official Git manuals for git-tag, git-ls-remote, and git-push; opened each official reference during review."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Commands were checked against documentation but not run; remote deletion is a state-changing operation.",
+        "The original third-party reference was inaccessible through the review environment; the commands and links were checked against official Git manuals."
+      ]
+    }
+  }
+}

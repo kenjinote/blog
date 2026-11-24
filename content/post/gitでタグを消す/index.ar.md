@@ -1,8 +1,8 @@
 ---
 title: 'كيفية حذف العلامات (Tags) المحلية والبعيدة في Git'
-date: "2026-09-24T19:44:38+09:00"
 slug: "gitでタグを消す"
 date: 2022-10-02T02:18:04+09:00
+lastmod: "2026-11-24T00:00:00+09:00"
 tags: ["git"]
 draft: false
 image: "img.webp"
@@ -16,8 +16,10 @@ description: 'شرح مبسط لكيفية حذف العلامات (tag) الت�
 
 # حذف العلامة عن بعد
 
-1. تحقق من العلامات الموجودة عن بعد باستخدام `git ls-remote --tags`.
+1. تحقق من العلامات الموجودة عن بعد باستخدام `git ls-remote --tags --refs origin`.
 2. احذف العلامة الموجودة عن بعد باستخدام `git push origin --delete v0.1.0`. (استبدل `v0.1.0` بالعلامة التي تريد حذفها)
 
+لا يؤدي حذف الوسم عن بُعد إلى حذف النسخ المحلية لدى المتعاونين تلقائيًا. تحقّق من الهدف لأن العملية تؤثر في مستخدمي المستودع البعيد.
+
 ## مراجع
-[كيفية حذف علامة git محليا وعن بعد!](https://qumeru.com/magazine/528)
+[git-tag](https://git-scm.com/docs/git-tag), [git-ls-remote](https://git-scm.com/docs/git-ls-remote), [git-push](https://git-scm.com/docs/git-push)
