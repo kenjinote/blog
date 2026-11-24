@@ -1,0 +1,455 @@
+{
+  "version": 1,
+  "batch": 158,
+  "article": "Diagnose GitHub Copilot Certificate Errors Safely",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "237244d67fcdbb117c687800ab559b9435e1345321a03266d748ceca96ba6f5d",
+  "sources": [
+    "https://docs.github.com/en/copilot/how-tos/troubleshoot-copilot/troubleshoot-network-errors",
+    "https://docs.github.com/en/copilot/concepts/security-governance-and-network-settings/network-settings",
+    "https://docs.github.com/en/copilot/how-tos/copilot-in-your-ide/set-up-copilot/configure-network-settings?tool=jetbrains",
+    "https://support.eset.com/en/kb3126-disable-ssl-filtering-in-eset-windows-products"
+  ],
+  "scope": "Compared the complete Japanese article and twelve translations, error log, TLS/proxy diagnostic guidance, ESET security impact, command example, metadata, and current official GitHub/ESET documentation.",
+  "findings": [
+    "Removed the unverified ESET blame and the instruction to leave global SSL/TLS inspection disabled.",
+    "Added safe network isolation, proxy diagnostics, trusted CA verification, and narrow app-specific ESET guidance.",
+    "Added GitHub’s certificate-validation warning and identified the 2024 license message as historical.",
+    "Removed the unrelated AWS CDK reference and duplicate future date; retained 2024-04-21 and set lastmod to 2026-11-24."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/証明書エラーでGitHub Copilotが使えなくなった場合の対処方法/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/証明書エラーでGitHub Copilotが使えなくなった場合の対処方法/index.md",
+      "sourceHash": "237244d67fcdbb117c687800ab559b9435e1345321a03266d748ceca96ba6f5d",
+      "translationHash": "302518b96575b9e754e66b1818a83eddc7bef28d59bc6397627dfe059aae1f6a",
+      "summary": "Compared this complete translation with the Japanese source and current GitHub/ESET guidance; replaced unsafe blanket TLS disablement with safe diagnostics.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the historical incident, certificate-chain failure meaning, and current proxy/TLS inspection guidance; removed the unsupported claim that ESET was definitively at fault."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Verified proxy, custom CA certificate, OS trust store, TLS inspection, certificate chain, and ESET filtering terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked the historical error log and curl.exe connectivity endpoint against GitHub guidance; no certificate-validation bypass is recommended."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current GitHub troubleshooting, network settings, JetBrains setup, and ESET SSL/TLS filtering references; removed the unrelated AWS CDK link and unsafe screenshot."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The captured error is from April 2024; license wording and UI labels may have changed.",
+        "The original ESET/proxy environment was unavailable for reproduction, so its root cause remains unverified."
+      ]
+    },
+    "post/証明書エラーでGitHub Copilotが使えなくなった場合の対処方法/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/証明書エラーでGitHub Copilotが使えなくなった場合の対処方法/index.md",
+      "sourceHash": "237244d67fcdbb117c687800ab559b9435e1345321a03266d748ceca96ba6f5d",
+      "translationHash": "5d3a6c8def87ab1a4eff5d0a18d2e50638bedbf6dc6ad18dcb78e83dc3e798b7",
+      "summary": "Compared this complete translation with the Japanese source and current GitHub/ESET guidance; replaced unsafe blanket TLS disablement with safe diagnostics.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the historical incident, certificate-chain failure meaning, and current proxy/TLS inspection guidance; removed the unsupported claim that ESET was definitively at fault."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Verified proxy, custom CA certificate, OS trust store, TLS inspection, certificate chain, and ESET filtering terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked the historical error log and curl.exe connectivity endpoint against GitHub guidance; no certificate-validation bypass is recommended."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current GitHub troubleshooting, network settings, JetBrains setup, and ESET SSL/TLS filtering references; removed the unrelated AWS CDK link and unsafe screenshot."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The captured error is from April 2024; license wording and UI labels may have changed.",
+        "The original ESET/proxy environment was unavailable for reproduction, so its root cause remains unverified."
+      ]
+    },
+    "post/証明書エラーでGitHub Copilotが使えなくなった場合の対処方法/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/証明書エラーでGitHub Copilotが使えなくなった場合の対処方法/index.md",
+      "sourceHash": "237244d67fcdbb117c687800ab559b9435e1345321a03266d748ceca96ba6f5d",
+      "translationHash": "0ddc288e12bc689b5cf00288af148df55d4e40be630274d82db337b5cd026b93",
+      "summary": "Compared this complete translation with the Japanese source and current GitHub/ESET guidance; replaced unsafe blanket TLS disablement with safe diagnostics.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the historical incident, certificate-chain failure meaning, and current proxy/TLS inspection guidance; removed the unsupported claim that ESET was definitively at fault."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Verified proxy, custom CA certificate, OS trust store, TLS inspection, certificate chain, and ESET filtering terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked the historical error log and curl.exe connectivity endpoint against GitHub guidance; no certificate-validation bypass is recommended."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current GitHub troubleshooting, network settings, JetBrains setup, and ESET SSL/TLS filtering references; removed the unrelated AWS CDK link and unsafe screenshot."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The captured error is from April 2024; license wording and UI labels may have changed.",
+        "The original ESET/proxy environment was unavailable for reproduction, so its root cause remains unverified."
+      ]
+    },
+    "post/証明書エラーでGitHub Copilotが使えなくなった場合の対処方法/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/証明書エラーでGitHub Copilotが使えなくなった場合の対処方法/index.md",
+      "sourceHash": "237244d67fcdbb117c687800ab559b9435e1345321a03266d748ceca96ba6f5d",
+      "translationHash": "fe5b02db9d538fd7cba51faf13ed0c2c2e2a06bdd22517ef5f5d672242d01548",
+      "summary": "Compared this complete translation with the Japanese source and current GitHub/ESET guidance; replaced unsafe blanket TLS disablement with safe diagnostics.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the historical incident, certificate-chain failure meaning, and current proxy/TLS inspection guidance; removed the unsupported claim that ESET was definitively at fault."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Verified proxy, custom CA certificate, OS trust store, TLS inspection, certificate chain, and ESET filtering terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked the historical error log and curl.exe connectivity endpoint against GitHub guidance; no certificate-validation bypass is recommended."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current GitHub troubleshooting, network settings, JetBrains setup, and ESET SSL/TLS filtering references; removed the unrelated AWS CDK link and unsafe screenshot."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The captured error is from April 2024; license wording and UI labels may have changed.",
+        "The original ESET/proxy environment was unavailable for reproduction, so its root cause remains unverified."
+      ]
+    },
+    "post/証明書エラーでGitHub Copilotが使えなくなった場合の対処方法/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/証明書エラーでGitHub Copilotが使えなくなった場合の対処方法/index.md",
+      "sourceHash": "237244d67fcdbb117c687800ab559b9435e1345321a03266d748ceca96ba6f5d",
+      "translationHash": "bee5a0961bdfbfdb7692094966af0a91377e3f00ff497ddb494268141cbb9e09",
+      "summary": "Compared this complete translation with the Japanese source and current GitHub/ESET guidance; replaced unsafe blanket TLS disablement with safe diagnostics.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the historical incident, certificate-chain failure meaning, and current proxy/TLS inspection guidance; removed the unsupported claim that ESET was definitively at fault."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Verified proxy, custom CA certificate, OS trust store, TLS inspection, certificate chain, and ESET filtering terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked the historical error log and curl.exe connectivity endpoint against GitHub guidance; no certificate-validation bypass is recommended."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current GitHub troubleshooting, network settings, JetBrains setup, and ESET SSL/TLS filtering references; removed the unrelated AWS CDK link and unsafe screenshot."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The captured error is from April 2024; license wording and UI labels may have changed.",
+        "The original ESET/proxy environment was unavailable for reproduction, so its root cause remains unverified."
+      ]
+    },
+    "post/証明書エラーでGitHub Copilotが使えなくなった場合の対処方法/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/証明書エラーでGitHub Copilotが使えなくなった場合の対処方法/index.md",
+      "sourceHash": "237244d67fcdbb117c687800ab559b9435e1345321a03266d748ceca96ba6f5d",
+      "translationHash": "25cf81ee3a118be572e7baeeae713c199d60b2e813443f622087286c20fa41b6",
+      "summary": "Compared this complete translation with the Japanese source and current GitHub/ESET guidance; replaced unsafe blanket TLS disablement with safe diagnostics.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the historical incident, certificate-chain failure meaning, and current proxy/TLS inspection guidance; removed the unsupported claim that ESET was definitively at fault."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Verified proxy, custom CA certificate, OS trust store, TLS inspection, certificate chain, and ESET filtering terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked the historical error log and curl.exe connectivity endpoint against GitHub guidance; no certificate-validation bypass is recommended."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current GitHub troubleshooting, network settings, JetBrains setup, and ESET SSL/TLS filtering references; removed the unrelated AWS CDK link and unsafe screenshot."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The captured error is from April 2024; license wording and UI labels may have changed.",
+        "The original ESET/proxy environment was unavailable for reproduction, so its root cause remains unverified."
+      ]
+    },
+    "post/証明書エラーでGitHub Copilotが使えなくなった場合の対処方法/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/証明書エラーでGitHub Copilotが使えなくなった場合の対処方法/index.md",
+      "sourceHash": "237244d67fcdbb117c687800ab559b9435e1345321a03266d748ceca96ba6f5d",
+      "translationHash": "890246c4342300ffcd3d767a53b057797b33c2793b71a59fbcc736683046e0b3",
+      "summary": "Compared this complete translation with the Japanese source and current GitHub/ESET guidance; replaced unsafe blanket TLS disablement with safe diagnostics.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the historical incident, certificate-chain failure meaning, and current proxy/TLS inspection guidance; removed the unsupported claim that ESET was definitively at fault."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Verified proxy, custom CA certificate, OS trust store, TLS inspection, certificate chain, and ESET filtering terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked the historical error log and curl.exe connectivity endpoint against GitHub guidance; no certificate-validation bypass is recommended."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current GitHub troubleshooting, network settings, JetBrains setup, and ESET SSL/TLS filtering references; removed the unrelated AWS CDK link and unsafe screenshot."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The captured error is from April 2024; license wording and UI labels may have changed.",
+        "The original ESET/proxy environment was unavailable for reproduction, so its root cause remains unverified."
+      ]
+    },
+    "post/証明書エラーでGitHub Copilotが使えなくなった場合の対処方法/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/証明書エラーでGitHub Copilotが使えなくなった場合の対処方法/index.md",
+      "sourceHash": "237244d67fcdbb117c687800ab559b9435e1345321a03266d748ceca96ba6f5d",
+      "translationHash": "4d0f8eaefe448c773d06b85458a343253cea422db4538b1305d08fc648ea6ebc",
+      "summary": "Compared this complete translation with the Japanese source and current GitHub/ESET guidance; replaced unsafe blanket TLS disablement with safe diagnostics.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the historical incident, certificate-chain failure meaning, and current proxy/TLS inspection guidance; removed the unsupported claim that ESET was definitively at fault."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Verified proxy, custom CA certificate, OS trust store, TLS inspection, certificate chain, and ESET filtering terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked the historical error log and curl.exe connectivity endpoint against GitHub guidance; no certificate-validation bypass is recommended."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current GitHub troubleshooting, network settings, JetBrains setup, and ESET SSL/TLS filtering references; removed the unrelated AWS CDK link and unsafe screenshot."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The captured error is from April 2024; license wording and UI labels may have changed.",
+        "The original ESET/proxy environment was unavailable for reproduction, so its root cause remains unverified."
+      ]
+    },
+    "post/証明書エラーでGitHub Copilotが使えなくなった場合の対処方法/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/証明書エラーでGitHub Copilotが使えなくなった場合の対処方法/index.md",
+      "sourceHash": "237244d67fcdbb117c687800ab559b9435e1345321a03266d748ceca96ba6f5d",
+      "translationHash": "7f2ecf926871e6c0905be9c45606e17f931cebb86b7f4684e45fdaabe793c51c",
+      "summary": "Compared this complete translation with the Japanese source and current GitHub/ESET guidance; replaced unsafe blanket TLS disablement with safe diagnostics.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the historical incident, certificate-chain failure meaning, and current proxy/TLS inspection guidance; removed the unsupported claim that ESET was definitively at fault."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Verified proxy, custom CA certificate, OS trust store, TLS inspection, certificate chain, and ESET filtering terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked the historical error log and curl.exe connectivity endpoint against GitHub guidance; no certificate-validation bypass is recommended."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current GitHub troubleshooting, network settings, JetBrains setup, and ESET SSL/TLS filtering references; removed the unrelated AWS CDK link and unsafe screenshot."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The captured error is from April 2024; license wording and UI labels may have changed.",
+        "The original ESET/proxy environment was unavailable for reproduction, so its root cause remains unverified."
+      ]
+    },
+    "post/証明書エラーでGitHub Copilotが使えなくなった場合の対処方法/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/証明書エラーでGitHub Copilotが使えなくなった場合の対処方法/index.md",
+      "sourceHash": "237244d67fcdbb117c687800ab559b9435e1345321a03266d748ceca96ba6f5d",
+      "translationHash": "54c2c7ce648a29facc4ae67d5649aa0d59531812b39b9de49d68cae7f218d5b8",
+      "summary": "Compared this complete translation with the Japanese source and current GitHub/ESET guidance; replaced unsafe blanket TLS disablement with safe diagnostics.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the historical incident, certificate-chain failure meaning, and current proxy/TLS inspection guidance; removed the unsupported claim that ESET was definitively at fault."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Verified proxy, custom CA certificate, OS trust store, TLS inspection, certificate chain, and ESET filtering terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked the historical error log and curl.exe connectivity endpoint against GitHub guidance; no certificate-validation bypass is recommended."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current GitHub troubleshooting, network settings, JetBrains setup, and ESET SSL/TLS filtering references; removed the unrelated AWS CDK link and unsafe screenshot."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The captured error is from April 2024; license wording and UI labels may have changed.",
+        "The original ESET/proxy environment was unavailable for reproduction, so its root cause remains unverified."
+      ]
+    },
+    "post/証明書エラーでGitHub Copilotが使えなくなった場合の対処方法/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/証明書エラーでGitHub Copilotが使えなくなった場合の対処方法/index.md",
+      "sourceHash": "237244d67fcdbb117c687800ab559b9435e1345321a03266d748ceca96ba6f5d",
+      "translationHash": "95d152878d4fb7fc4ca5cebad9c0444dc3ebf998b2a25d58c9f34a4e5cd1c592",
+      "summary": "Compared this complete translation with the Japanese source and current GitHub/ESET guidance; replaced unsafe blanket TLS disablement with safe diagnostics.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the historical incident, certificate-chain failure meaning, and current proxy/TLS inspection guidance; removed the unsupported claim that ESET was definitively at fault."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Verified proxy, custom CA certificate, OS trust store, TLS inspection, certificate chain, and ESET filtering terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked the historical error log and curl.exe connectivity endpoint against GitHub guidance; no certificate-validation bypass is recommended."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current GitHub troubleshooting, network settings, JetBrains setup, and ESET SSL/TLS filtering references; removed the unrelated AWS CDK link and unsafe screenshot."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The captured error is from April 2024; license wording and UI labels may have changed.",
+        "The original ESET/proxy environment was unavailable for reproduction, so its root cause remains unverified."
+      ]
+    },
+    "post/証明書エラーでGitHub Copilotが使えなくなった場合の対処方法/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/証明書エラーでGitHub Copilotが使えなくなった場合の対処方法/index.md",
+      "sourceHash": "237244d67fcdbb117c687800ab559b9435e1345321a03266d748ceca96ba6f5d",
+      "translationHash": "fbfdfc3459480d170901ad18a1379bc1324d2e8d703bb1bad8a761381c69a6ad",
+      "summary": "Compared this complete translation with the Japanese source and current GitHub/ESET guidance; replaced unsafe blanket TLS disablement with safe diagnostics.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the historical incident, certificate-chain failure meaning, and current proxy/TLS inspection guidance; removed the unsupported claim that ESET was definitively at fault."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Verified proxy, custom CA certificate, OS trust store, TLS inspection, certificate chain, and ESET filtering terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked the historical error log and curl.exe connectivity endpoint against GitHub guidance; no certificate-validation bypass is recommended."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current GitHub troubleshooting, network settings, JetBrains setup, and ESET SSL/TLS filtering references; removed the unrelated AWS CDK link and unsafe screenshot."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The captured error is from April 2024; license wording and UI labels may have changed.",
+        "The original ESET/proxy environment was unavailable for reproduction, so its root cause remains unverified."
+      ]
+    }
+  }
+}

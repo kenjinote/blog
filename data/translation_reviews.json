@@ -18365,6 +18365,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-157.json",
       "evidenceHash": "74363d7e6c465cb453f763dcc886762f2026952cf0c0639a17c43951ca2da8b8"
+    },
+    "post/証明書エラーでGitHub Copilotが使えなくなった場合の対処方法/index.en.md": {
+      "source": "post/証明書エラーでGitHub Copilotが使えなくなった場合の対処方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "237244d67fcdbb117c687800ab559b9435e1345321a03266d748ceca96ba6f5d",
+      "translationHash": "302518b96575b9e754e66b1818a83eddc7bef28d59bc6397627dfe059aae1f6a",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-158.json",
+      "evidenceHash": "ee1a25148064e7c6863e21a8e49ea5680cf42c6e450b36dfd6bc78e8f826c4a7"
+    },
+    "post/証明書エラーでGitHub Copilotが使えなくなった場合の対処方法/index.zh-cn.md": {
+      "source": "post/証明書エラーでGitHub Copilotが使えなくなった場合の対処方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "237244d67fcdbb117c687800ab559b9435e1345321a03266d748ceca96ba6f5d",
+      "translationHash": "5d3a6c8def87ab1a4eff5d0a18d2e50638bedbf6dc6ad18dcb78e83dc3e798b7",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-158.json",
+      "evidenceHash": "601d9cd8bad5c8ea0ab46900e9880e73a05c652f7a92a8537d0231b7b7221d55"
+    },
+    "post/証明書エラーでGitHub Copilotが使えなくなった場合の対処方法/index.es.md": {
+      "source": "post/証明書エラーでGitHub Copilotが使えなくなった場合の対処方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "237244d67fcdbb117c687800ab559b9435e1345321a03266d748ceca96ba6f5d",
+      "translationHash": "0ddc288e12bc689b5cf00288af148df55d4e40be630274d82db337b5cd026b93",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-158.json",
+      "evidenceHash": "7686000256556f2fdfaa88b9834dfa28a2d450dcf4a461a6df413c6519421086"
+    },
+    "post/証明書エラーでGitHub Copilotが使えなくなった場合の対処方法/index.ko.md": {
+      "source": "post/証明書エラーでGitHub Copilotが使えなくなった場合の対処方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "237244d67fcdbb117c687800ab559b9435e1345321a03266d748ceca96ba6f5d",
+      "translationHash": "fe5b02db9d538fd7cba51faf13ed0c2c2e2a06bdd22517ef5f5d672242d01548",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-158.json",
+      "evidenceHash": "fee1ef6c2d6ba6092bd8b848832dfab0626c43c4b447d58cad42a2e9917aeb44"
+    },
+    "post/証明書エラーでGitHub Copilotが使えなくなった場合の対処方法/index.pt.md": {
+      "source": "post/証明書エラーでGitHub Copilotが使えなくなった場合の対処方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "237244d67fcdbb117c687800ab559b9435e1345321a03266d748ceca96ba6f5d",
+      "translationHash": "bee5a0961bdfbfdb7692094966af0a91377e3f00ff497ddb494268141cbb9e09",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-158.json",
+      "evidenceHash": "8bc10642f73a1bebdd0425e01aeaf5e072e9e6f2c10782226a14c09911bb1f99"
+    },
+    "post/証明書エラーでGitHub Copilotが使えなくなった場合の対処方法/index.zh-tw.md": {
+      "source": "post/証明書エラーでGitHub Copilotが使えなくなった場合の対処方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "237244d67fcdbb117c687800ab559b9435e1345321a03266d748ceca96ba6f5d",
+      "translationHash": "25cf81ee3a118be572e7baeeae713c199d60b2e813443f622087286c20fa41b6",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-158.json",
+      "evidenceHash": "ecd82768caa40314710e819087197407d0c0ec5bfad25138adb5ed18eb8f4687"
+    },
+    "post/証明書エラーでGitHub Copilotが使えなくなった場合の対処方法/index.hi.md": {
+      "source": "post/証明書エラーでGitHub Copilotが使えなくなった場合の対処方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "237244d67fcdbb117c687800ab559b9435e1345321a03266d748ceca96ba6f5d",
+      "translationHash": "890246c4342300ffcd3d767a53b057797b33c2793b71a59fbcc736683046e0b3",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-158.json",
+      "evidenceHash": "40eccd170c04fc1dc2eaeccb1988de03bb9dedd9c4ff206e16ded0c24cebcffa"
+    },
+    "post/証明書エラーでGitHub Copilotが使えなくなった場合の対処方法/index.fr.md": {
+      "source": "post/証明書エラーでGitHub Copilotが使えなくなった場合の対処方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "237244d67fcdbb117c687800ab559b9435e1345321a03266d748ceca96ba6f5d",
+      "translationHash": "4d0f8eaefe448c773d06b85458a343253cea422db4538b1305d08fc648ea6ebc",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-158.json",
+      "evidenceHash": "9a3e79df164b79ccc79c7e1aa70161e45314f62cb73b4fd15c220ca37891474d"
+    },
+    "post/証明書エラーでGitHub Copilotが使えなくなった場合の対処方法/index.de.md": {
+      "source": "post/証明書エラーでGitHub Copilotが使えなくなった場合の対処方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "237244d67fcdbb117c687800ab559b9435e1345321a03266d748ceca96ba6f5d",
+      "translationHash": "7f2ecf926871e6c0905be9c45606e17f931cebb86b7f4684e45fdaabe793c51c",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-158.json",
+      "evidenceHash": "57a3bcf4ceb7544c4a6cebdeaa6eb3287a1832e58d11588f1226f8d856f6ca27"
+    },
+    "post/証明書エラーでGitHub Copilotが使えなくなった場合の対処方法/index.ar.md": {
+      "source": "post/証明書エラーでGitHub Copilotが使えなくなった場合の対処方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "237244d67fcdbb117c687800ab559b9435e1345321a03266d748ceca96ba6f5d",
+      "translationHash": "54c2c7ce648a29facc4ae67d5649aa0d59531812b39b9de49d68cae7f218d5b8",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-158.json",
+      "evidenceHash": "0336f8a58fd4dfee2ede5f11a28ef1422a7613d9b96aba0dff046961c2d02b49"
+    },
+    "post/証明書エラーでGitHub Copilotが使えなくなった場合の対処方法/index.ru.md": {
+      "source": "post/証明書エラーでGitHub Copilotが使えなくなった場合の対処方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "237244d67fcdbb117c687800ab559b9435e1345321a03266d748ceca96ba6f5d",
+      "translationHash": "95d152878d4fb7fc4ca5cebad9c0444dc3ebf998b2a25d58c9f34a4e5cd1c592",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-158.json",
+      "evidenceHash": "59afbc6b39cdf259fffffb54f209bc09acf9c029cc7645c2513e8f85ccd844f9"
+    },
+    "post/証明書エラーでGitHub Copilotが使えなくなった場合の対処方法/index.id.md": {
+      "source": "post/証明書エラーでGitHub Copilotが使えなくなった場合の対処方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "237244d67fcdbb117c687800ab559b9435e1345321a03266d748ceca96ba6f5d",
+      "translationHash": "fbfdfc3459480d170901ad18a1379bc1324d2e8d703bb1bad8a761381c69a6ad",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-158.json",
+      "evidenceHash": "fd99400a4dc97340b3f096e832e2bbc99bc8870b35cfc9db684eb1921a5eff9c"
     }
   }
 }
