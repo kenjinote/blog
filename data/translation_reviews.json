@@ -11405,6 +11405,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-099.json",
       "evidenceHash": "58d7cba06aed177ee79bc2bb65dfb36d60016f3097062f4147b006dd0a5f85c7"
+    },
+    "post/「日本人ファースト」について思うこと/index.ar.md": {
+      "source": "post/「日本人ファースト」について思うこと/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "bd7cbae0df56d87b38f4216d5e82a62bce4a219688d8a0677391b3cfc8973d0c",
+      "translationHash": "3237c040517147a983ba7f5847514d835f0c29f7891d01d229221bc35257f415",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-100.json",
+      "evidenceHash": "b0e33400e5a0f1c64144901acdb9f93e5febd04e19d599e56ab1d1f909e7e463"
+    },
+    "post/「日本人ファースト」について思うこと/index.de.md": {
+      "source": "post/「日本人ファースト」について思うこと/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "bd7cbae0df56d87b38f4216d5e82a62bce4a219688d8a0677391b3cfc8973d0c",
+      "translationHash": "f23c1c6b5fe061c30f65c90e7d74e2064862575de860b6ec8a799aa0dc1cc86b",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-100.json",
+      "evidenceHash": "bb42e45490cb8cd5ebc9464cc8173d907d22b9188a7a0a75dbb06ff4e022376d"
+    },
+    "post/「日本人ファースト」について思うこと/index.en.md": {
+      "source": "post/「日本人ファースト」について思うこと/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "bd7cbae0df56d87b38f4216d5e82a62bce4a219688d8a0677391b3cfc8973d0c",
+      "translationHash": "64f5287df096c712a7d21e2f5f6467faf39722ce4f5462c5c11a92c522d1cc31",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-100.json",
+      "evidenceHash": "7cce9783829da921d9f05274ce40535efa9509b7ffa782c88f519da50e823746"
+    },
+    "post/「日本人ファースト」について思うこと/index.es.md": {
+      "source": "post/「日本人ファースト」について思うこと/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "bd7cbae0df56d87b38f4216d5e82a62bce4a219688d8a0677391b3cfc8973d0c",
+      "translationHash": "3f4b1f4b78ff1991636b6e7787e4085ca91e5ac4481934fc79fd60b83f5b662e",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-100.json",
+      "evidenceHash": "13b030a50de71104659bfba44147a37275094c3145e17fff6d8b52f680ff9f78"
+    },
+    "post/「日本人ファースト」について思うこと/index.fr.md": {
+      "source": "post/「日本人ファースト」について思うこと/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "bd7cbae0df56d87b38f4216d5e82a62bce4a219688d8a0677391b3cfc8973d0c",
+      "translationHash": "4f2f73017c4f012dd58b908d7be0e4206109f62a5b5feaef2a1df2be5829cbc5",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-100.json",
+      "evidenceHash": "4c30230da4a9f76fdb6161a9249be5b2d2f5d50cdada9a9dbec9c3b4c432e4f8"
+    },
+    "post/「日本人ファースト」について思うこと/index.hi.md": {
+      "source": "post/「日本人ファースト」について思うこと/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "bd7cbae0df56d87b38f4216d5e82a62bce4a219688d8a0677391b3cfc8973d0c",
+      "translationHash": "cc7cc42aff112cefbba555adcf7345d3445471f6262944a29f781e41e1255669",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-100.json",
+      "evidenceHash": "fa5b0ba453a201c736d71970a24c6cfd11436cc2b3525913424c8fcf166fae3f"
+    },
+    "post/「日本人ファースト」について思うこと/index.id.md": {
+      "source": "post/「日本人ファースト」について思うこと/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "bd7cbae0df56d87b38f4216d5e82a62bce4a219688d8a0677391b3cfc8973d0c",
+      "translationHash": "608ae600f87ddd2c183e3e389d520e630d13192363c8196f12d7ce64b62d517d",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-100.json",
+      "evidenceHash": "b01588977982456f3ef975b66da888d014d33e48e9719651be28191bb9b60198"
+    },
+    "post/「日本人ファースト」について思うこと/index.ko.md": {
+      "source": "post/「日本人ファースト」について思うこと/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "bd7cbae0df56d87b38f4216d5e82a62bce4a219688d8a0677391b3cfc8973d0c",
+      "translationHash": "af042d7a6c6be3b3a7635ea34a8bec39fc77d6296a6fe424fffa12237fb5cc68",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-100.json",
+      "evidenceHash": "ae351e9d0a829fddacdc3c336f4acffbb99918a5e72fffd2b1c97d76d8118d65"
+    },
+    "post/「日本人ファースト」について思うこと/index.pt.md": {
+      "source": "post/「日本人ファースト」について思うこと/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "bd7cbae0df56d87b38f4216d5e82a62bce4a219688d8a0677391b3cfc8973d0c",
+      "translationHash": "1b8a904e40c3dc46868baa79acbe71a0878e559981bcba709df6f75db0bcc353",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-100.json",
+      "evidenceHash": "e75140642ca5d77a40f2013f035af9d54016d6da7f658de6fef73b6819b575ec"
+    },
+    "post/「日本人ファースト」について思うこと/index.ru.md": {
+      "source": "post/「日本人ファースト」について思うこと/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "bd7cbae0df56d87b38f4216d5e82a62bce4a219688d8a0677391b3cfc8973d0c",
+      "translationHash": "623057d2883c85a03949efcd7d55ebf3677c356c0967bd9441f2cedf01811ab8",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-100.json",
+      "evidenceHash": "402e6a2e8a09e205aed6fb622b1ea13c336f77bddaca1bfd91928c895ab0c2fb"
+    },
+    "post/「日本人ファースト」について思うこと/index.zh-cn.md": {
+      "source": "post/「日本人ファースト」について思うこと/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "bd7cbae0df56d87b38f4216d5e82a62bce4a219688d8a0677391b3cfc8973d0c",
+      "translationHash": "b83336d4aca36715748c50713819d47b4760d1ac4f20500649e0a774a61ddc00",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-100.json",
+      "evidenceHash": "36c7ef793e5fdb1a23e514e8d7430878485e6eb0786eb7f4e89ebb5fc264a77a"
+    },
+    "post/「日本人ファースト」について思うこと/index.zh-tw.md": {
+      "source": "post/「日本人ファースト」について思うこと/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "bd7cbae0df56d87b38f4216d5e82a62bce4a219688d8a0677391b3cfc8973d0c",
+      "translationHash": "ec6598583cbe0d17c6d40dfcbf3cf3ee44d3a68d148e6cd43c68e923c87bbe40",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-100.json",
+      "evidenceHash": "c4105fec0f13377410ad56c1ab3031072fc587d166ee50f36ed67e76b3074f1d"
     }
   }
 }

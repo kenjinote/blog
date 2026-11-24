@@ -1,28 +1,23 @@
 ---
 title: 'Ilusi dan Realitas ''Japan First'': Tantangan Jepang di Tahun 2026 dan Jalan Menuju Koeksistensi'
-date: "2026-09-24T19:44:38+09:00"
 slug: "「Mengutamakan Orang Jepang」についてPikiran"
 date: 2026-01-23T13:43:41+09:00
 tags: ["Jepang Pertama", "Politik", "Masalah Sosial"]
 draft: false
 image: "img.webp"
 categories: ["it-technology"]
-description: 'Menganalisis realitas kenaikan harga dan populasi yang menua di balik istilah ''Japan First'' yang mendapat dukungan di Jepang pada tahun 2026. Mengesampingkan argumen emosional, menelaah sifat sebenarnya dari isu-isu sosial berdasarkan data objektif, serta masa depan hidup berdampingan.'
+description: "Artikel opini tentang “Jepang Pertama” yang membedakan pandangan penulis dari data resmi ketenagakerjaan, bantuan publik, keamanan, dan industri tradisional."
+lastmod: "2026-11-24T00:00:00+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
 
 # Mitos dan Realitas "Jepang Pertama": Pertahanan Jepang Atas Nama "Koeksistensi" di Tahun 2026
 
-## Pendahuluan: Mengapa Kata-kata Ini Menggetarkan Hati Sekarang
+Artikel opini ini pertama kali diterbitkan pada 23 Januari 2026. Bagian statistik ditinjau dan diperbarui pada 24 November 2026.
 
-Tahun 2026. Kita saat ini berdiri di titik balik era yang belum pernah terjadi sebelumnya. Inflasi yang berkepanjangan, upah riil yang stagnan, dan populasi yang menua dan menyusut dengan cepat. Setiap kali label harga barang di rak supermarket diganti, kecemasan akan masa depan membayangi hati kita.
+## Pendahuluan: membedakan slogan, fakta, dan opini
 
-Di tengah perasaan terjebak ini, ada sebuah frasa yang dengan cepat mendapatkan dukungan. Frasa itu adalah **"Jepang Pertama"** (Japan First).
-
-Keinginan agar "Pemerintah memperkaya kehidupan warganya sendiri terlebih dahulu" dan "Melindungi budaya serta keamanan publik Jepang sebagai prioritas utama" adalah keinginan yang sangat alami dan mendesak sebagai seorang warga negara yang berdaulat, dan sebagai manusia yang hidup di negara ini. Namun, antara "ideal" yang diusung oleh frasa ini dan "realitas" yang ditunjukkan oleh data statistik, terdapat kesenjangan besar yang harus kita hadapi secara langsung.
-
-Dalam artikel ini, kita akan mengesampingkan argumen emosional dan pelabelan, serta mengungkap identitas sebenarnya dari masalah ini berdasarkan data objektif, perubahan kronologis, dan fakta-fakta yang terjadi di berbagai garis depan masyarakat.
-
----
+“Jepang Pertama” adalah ungkapan dalam perdebatan tentang prioritas kebijakan. Artikel ini membahasnya bersama sumber resmi mengenai ketenagakerjaan, jaminan sosial, keamanan publik, dan industri tradisional. Statistik yang dapat diverifikasi dibedakan dari pendapat penulis, dan data tidak digunakan untuk menyimpulkan sebab yang tidak dibuktikannya.
 
 ## Bab 1: Kronologi "Jepang Pertama" dan Latar Belakang Sosial
 
@@ -40,116 +35,46 @@ Keterlambatan pemulihan ekonomi pasca-pandemi dan inflasi yang menyertai pelemah
 
 Dalam pemilihan nasional tahun 2025, kekuatan yang mengusung "Jepang Pertama" sebagai slogan resmi mengamankan sejumlah kursi tertentu. Algoritma media sosial bereaksi terhadap kecemasan masyarakat dengan memprioritaskan postingan radikal, mempercepat "fenomena ruang gema" (echo chamber) di mana hanya nilai-nilai tertentu yang diperkuat.
 
-Jajak pendapat terbaru yang dilakukan oleh berbagai surat kabar (akhir tahun 2025) menyoroti situasi di mana opini publik terbelah dua secara tajam, dengan **42% mengatakan "setuju atau agak setuju"** dan **38% mengatakan "tidak setuju atau agak tidak setuju"** terhadap slogan ini.
+Naskah lama menyebut angka 42% dan 38% sebagai hasil jajak pendapat akhir 2025, tetapi sumber yang mencantumkan nama survei, pertanyaan, dan metodenya tidak dapat ditemukan. Angka dan klaim bahwa opini publik terbelah sama rata telah dihapus.
 
----
+---## Bab 2: Pekerjaan dan jaminan sosial—apa yang ditunjukkan data
 
-## Bab 2: Kebenaran tentang Ekonomi dan Jaminan Sosial —— "Perampas" atau "Pilar Pendukung"?
+### Ketenagakerjaan: jumlah yang dilaporkan
 
-Salah satu pilar logika yang mendukung "Jepang Pertama" adalah anggapan bahwa "sumber daya Jepang dirampas oleh orang asing." Namun, data primer dari kementerian pemerintah menunjukkan realitas yang sangat berlawanan dengan intuisi ini.
+Kementerian Kesehatan, Tenaga Kerja, dan Kesejahteraan Jepang melaporkan 2.302.587 pekerja asing pada akhir Oktober 2024 dan 2.571.037 pada akhir Oktober 2025. Jumlah ini berasal dari laporan pemberi kerja dan tidak mencakup beberapa status tinggal, termasuk penduduk tetap khusus. Jumlah tersebut saja tidak membuktikan dampak kausal terhadap kekurangan tenaga kerja, upah, harga, atau layanan perawatan. Persentase kenaikan sektor dan prediksi bahwa harga akan berlipat ganda telah dihapus karena sumber pendukungnya tidak dapat diverifikasi.
 
-### 1. Tenaga Kerja: "Darah Esensial" yang Mempertahankan Ekonomi Jepang
+### Bantuan publik: aturan dan data yang diterbitkan
 
-Menurut laporan "Status Pekerjaan Orang Asing (per akhir Oktober 2024)" dari Kementerian Kesehatan, Tenaga Kerja, dan Kesejahteraan, jumlah pekerja asing adalah **2.048.675 orang** . Pada perkiraan saat ini di tahun 2026, jumlahnya telah melampaui **2,3 juta orang** .
+Untuk tahun fiskal 2024, kementerian melaporkan rata-rata 47.332 rumah tangga penerima bantuan publik yang kepala keluarganya bukan warga negara Jepang, sekitar 2,9% dari seluruh rumah tangga penerima. Pada 2023 angkanya juga sekitar 2,9%. Data ini berdasarkan kewarganegaraan kepala rumah tangga, bukan semua anggota. Kementerian menyatakan aturan program tidak memprioritaskan warga asing.
 
-| Sektor Industri | Persentase / Tingkat Pertumbuhan Pekerja Asing | Realitas dan Peran |
-| --- | --- | --- |
-| **Konstruksi** | Meningkat sekitar 22,7% dari tahun sebelumnya | Sangat penting untuk pemeliharaan infrastruktur serta perbaikan jembatan dan jalan yang menua. |
-| **Kesehatan dan Kesejahteraan** | Meningkat sekitar 28,1% dari tahun sebelumnya | Berada di garis depan perawatan, mendukung lansia Jepang. |
-| **Manufaktur** | Menyumbang sekitar 26% dari total | Tulang punggung yang mendukung lokasi industri ekspor Jepang. |
+## Bab 3: Keamanan publik dan batas data
 
-Saat ini, mereka tidak mengambil pekerjaan yang ingin dilakukan oleh orang Jepang, melainkan mengisi **"kekosongan yang tidak lagi dapat diisi oleh orang Jepang."** Jika kita mengecualikan mereka atas nama "Jepang Pertama," sistem perawatan kita akan langsung runtuh, dan harga perumahan serta makanan akan melonjak beberapa puluh persen hingga berlipat ganda.
+Badan Kepolisian Nasional Jepang mencatat 12.170 orang yang ditindak pada 2024 dalam kategori “warga asing pendatang”. Kategori ini tidak mencakup penduduk menetap seperti penduduk tetap, personel militer AS di Jepang, atau orang yang status tinggalnya tidak diketahui. Jadi, angka itu tidak mewakili seluruh penduduk asing dan bukan tingkat kriminalitas.
 
-### 2. Jaminan Sosial: Hoaks dan Realitas Seputar Bantuan Hidup (Kesejahteraan)
+Angka lama 5,5%, perbandingan 142,7 dengan 120,0 per 100.000 orang, dan perbandingan usia dihapus karena populasi, definisi, dan perhitungannya tidak dapat diverifikasi. Jumlah penindakan saja tidak membuktikan hubungan sebab-akibat antara kewarganegaraan dan keamanan. Kisah individual di media sosial bukan pengganti data yang representatif.
 
-Hal yang paling sering disebarkan di media sosial adalah klaim bahwa "orang asing menerima bantuan hidup secara prioritas." Namun, memeriksa statistik Kementerian Kesehatan, Tenaga Kerja, dan Kesejahteraan, proporsi orang asing sebagai kepala rumah tangga dari semua rumah tangga penerima bantuan hanya sekitar **2,8 hingga 2,9%** . Selama lebih dari sepuluh tahun terakhir, angka ini hampir tidak berubah.
+## Bab 4: Industri tradisional dan komunitas lokal
 
-Sebaliknya, melihat komposisi usia penduduk asing, mayoritas dari mereka adalah **generasi usia kerja berusia 20-an hingga 40-an** . Mereka membayar asuransi pensiun dan asuransi kesehatan kesejahteraan, dan memainkan peran sebagai **"penyumbang" yang mendukung dana pensiun dan biaya pengobatan yang diterima oleh "lansia Jepang."** Merekalah, dan bukan orang lain, yang mengisi kekosongan populasi usia kerja yang ditinggalkan oleh orang Jepang dan memperpanjang umur sistem jaminan sosial Jepang.
+Seri data yang dikutip dalam laporan Badan Usaha Kecil dan Menengah Jepang menunjukkan jumlah pekerja industri kerajinan tradisional turun dari 288.000 pada 1979 menjadi 69.000 pada 2013. Angka tersebut hanya mencakup periode dalam seri yang diterbitkan, bukan jumlah terkini. Seri itu tidak merinci kewarganegaraan pekerja, sehingga tidak membuktikan bahwa pekerja asing telah “menyelamatkan” industri tersebut.
 
----
+Contoh perajin dari luar negeri atau warga asing yang mengikuti festival lokal perlu didukung sumber setempat. Kasus individual tidak boleh digeneralisasi untuk semua orang atau daerah.
 
-## Bab 3: Bias Keamanan Publik dan Media Sosial —— Dekonstruksi Logis "Kejahatan Orang Asing"
+## Bab 5: Kekhawatiran tentang sekolah
 
-Kecemasan akan keamanan publik adalah hal yang paling kuat merangsang sentimen "Jepang Pertama." Namun, membaca dengan saksama statistik Badan Kepolisian Nasional dan "Buku Putih Kejahatan" dari Kementerian Kehakiman mengungkapkan betapa bayangan "orang asing yang kejam" di internet diciptakan melalui distorsi kognitif.
+Kekhawatiran bahwa ungkapan “orang Jepang lebih dahulu” dapat mendorong pengucilan atau perundungan di antara anak-anak adalah pendapat penulis. Naskah lama mengaitkannya dengan para ahli pendidikan tanpa mencantumkan sumber, sehingga tidak lagi menyajikannya sebagai konsensus ahli yang terbukti.
 
-### 1. Perbandingan yang Tenang antara "Total" dan "Tingkat Kejahatan"
+## Bab 6: Penurunan penduduk dan pilihan kebijakan
 
-Menurut statistik yang dirilis pada tahun 2024, proporsi orang asing di antara total orang yang ditangkap adalah sekitar **5,5%** . Sisa **95%** adalah kejahatan yang dilakukan oleh orang Jepang.
+Jumlah penduduk Jepang menurun, tetapi menyebutnya penurunan tercepat di dunia memerlukan perbandingan negara dan periode dengan ukuran yang sama. Klaim tanpa dukungan itu telah dihapus. Dampak terhadap pekerjaan dan layanan lokal berbeda menurut sektor dan wilayah. Menurut penulis, pembahasan juga perlu mencakup upah, kondisi kerja, produktivitas, dan cara mempertahankan layanan.
 
-Membandingkan jumlah orang yang ditangkap per 100.000 penduduk (tingkat kejahatan) mengungkapkan esensinya lebih jauh.
+## Penutup: membedakan bukti dan opini
 
-| Kategori | Orang yang ditangkap per 100.000 populasi (perkiraan) |
-| --- | --- |
-| **Orang Jepang (Semua usia)** | Sekitar 142,7 orang |
-| **Penduduk Asing (Penduduk Tetap/Penduduk Jangka Panjang)** | **Sekitar 120,0 orang** |
+Kebijakan perlu dinilai dari hasilnya, bukan hanya slogannya. Statistik yang ditinjau di sini tidak membuktikan dampak keseluruhan penduduk asing atau kecenderungan kriminal individu. Menurut penulis, diskusi sebaiknya menggunakan angka yang dapat ditelusuri, aturan yang adil, serta bukti mengenai upah, kondisi kerja, produktivitas, dan layanan lokal. Ini adalah opini; keputusan kebijakan memerlukan evaluasi berkelanjutan.
 
-Adalah fakta statistik bahwa **tingkat kejahatan penduduk asing jangka menengah hingga panjang di Jepang lebih rendah daripada rata-rata keseluruhan penduduk Jepang.**
+## Referensi
 
-### 2. Keajaiban Bias "Generasi"
-
-Mengapa bayangan bahwa "orang asing itu menakutkan" bisa mendominasi? Alasan terbesarnya adalah perbedaan **"komposisi usia"** dalam kriminologi.
-
-* **Orang Jepang:** Sekitar 30% adalah lansia dengan tingkat kejahatan yang sangat rendah. Karena kelompok ini menekan "penyebut", keseluruhan angka Jepang tampak rendah.
-* **Orang Asing:** Karena mereka datang ke Jepang sebagai tenaga kerja, lebih dari 80% berada di **"kelompok usia muda hingga paruh baya," kelompok yang secara statistik rentan terhadap kejahatan.**
-
-Jika kita membandingkan tingkat kejahatan orang Jepang dan orang asing di bawah kondisi yang sama, yaitu kelompok "usia 20-an," tidak ada perbedaan signifikan antara keduanya. Dengan kata lain, bukan "keamanan memburuk karena jumlah orang asing meningkat," tetapi hanya **"kelompok usia yang rentan melakukan kejahatan (generasi muda) hadir di Jepang dalam bentuk orang asing."**
-
-### 3. "Bias Konfirmasi" yang Diciptakan oleh Media Sosial
-
-Algoritma media sosial menggunakan "kecemasan" kita sebagai bahan bakarnya. Ketika satu kejahatan oleh orang asing terjadi, hal itu dihubungkan dengan "atribut (kewarganegaraan)" mereka dan disebarkan secara agresif. Akibatnya, hanya memori "orang asing menyebabkan insiden lagi" yang diperkuat di otak kita.
-
-Ini disebut **"Bias Konfirmasi"** . Kejahatan orang Jepang, yang menyumbang 95% dari total, diabaikan sebagai kejadian "sehari-hari", dan 5% kejahatan orang asing diganti menjadi representasi "semua orang asing."
-
----
-
-## Bab 4: Pewarisan Budaya —— "Perusak" atau "Penyelamat"?
-
-Kekhawatiran bahwa "tradisi dan budaya Jepang sedang dihancurkan" juga berbeda dari realitas di lapangan.
-
-### 1. "Pewaris Terakhir" Kerajinan Tradisional
-
-Jumlah pekerja manufaktur kerajinan tradisional Jepang telah anjlok dari sekitar 300.000 pada tahun 1970-an menjadi hanya sekitar 50.000 hari ini. Yang menyelamatkan krisis kepunahan ini adalah orang asing yang datang ke Jepang dengan rasa hormat yang mendalam terhadap budaya Jepang.
-
-* **Pabrik Sake dan Pembuat Pedang:** Orang asing telah menjadi murid di bengkel-bengkel di mana orang Jepang telah menyerah untuk mewariskannya, dan dengan memasukkan kemampuan mereka untuk menyiarkan ke luar negeri dan sensibilitas baru, mereka membangkitkan budaya yang berada di ambang penutupan menjadi "industri yang berkelanjutan."
-
-### 2. Mempertahankan Komunitas Lokal
-
-Di pemerintah daerah di mana kaum muda telah menghilang dan menjadi "kota dengan kemungkinan punah," peserta pelatihan teknis dan pekerja terampil asing tertentu menjadi pembawa festival lokal dan mendukung fondasi pertanian.
-Siapa yang mengolah lahan pertanian terbengkalai yang ditinggalkan orang Jepang, dan siapa yang melindungi acara tahunan yang telah berlangsung selama ratusan tahun? Jika kita melihat realitas tersebut, menjadi jelas bahwa mereka bukanlah "perusak" budaya, melainkan **"garis pertahanan terakhir"** .
-
----
-
-## Bab 5: Kekhawatiran di Dunia Pendidikan dan Rantai "Perundungan" (Bullying)
-
-Efek samping dari masuknya istilah "Jepang Pertama" ke lingkungan pendidikan sangatlah parah.
-
-* **Dikotomi yang memisahkan "Dalam dan Luar":** Jika anak-anak menginternalisasi rasa elitisme palsu bahwa "orang Jepang adalah kelas istimewa yang harus diprioritaskan," hal ini akan dengan mudah berujung pada perundungan untuk menyingkirkan "mereka yang berbeda dari kita."
-* **Hierarki berdasarkan Akar:** Anak-anak dengan penampilan atau nama yang berbeda diserang sebagai "bukan orang Jepang" meskipun mereka memegang kewarganegaraan Jepang. Ini adalah runtuhnya pendidikan dan tindakan yang merusak bakat yang akan memimpin masa depan Jepang.
-
-Para ahli di bidang pendidikan khawatir bahwa eksklusivitas istilah "Pertama" (First) merusak kemampuan anak-anak untuk hidup berdampingan secara multikultural, berisiko mengisolasi Jepang dari dunia sebagai akibatnya.
-
----
-
-## Bab 6: Tren Global dan Gelombang Populisme
-
-Fenomena ini tidak unik di Jepang. Di negara-negara Barat pun, ada fenomena yang berkelanjutan di mana kelas-kelas yang tidak mendapat manfaat dari globalisasi mengalir ke arah populisme yang mengusung "negaraku pertama" (America First, dll.).
-
-Namun, perbedaan krusial antara Jepang dan negara-negara Barat adalah fakta bahwa **"populasi menyusut dengan kecepatan tercepat di dunia."** Sementara negara lain memiliki pilihan untuk "membatasi," Jepang sudah memiliki banyak infrastruktur sosial yang tidak dapat dipertahankan tanpa "kerja sama." Berpegang teguh pada pendekatan emosional "Pertama" secara logis berarti "bunuh diri perlahan-lahan."
-
----
-
-## Kesimpulan: Apa "Jepang Pertama" yang Sebenarnya?
-
-Keinginan di balik kata-kata "Jepang Pertama"—harapan agar "kehidupan warga negara harus dipikirkan terlebih dahulu"—adalah tanggung jawab paling mendasar yang harus dimiliki oleh pemerintah mana pun.
-
-Namun, cara untuk memenuhi keinginan itu tidak boleh "penyingkiran tetangga." Seperti yang ditunjukkan oleh data objektif, kenyamanan hidup, keamanan publik, budaya tradisional, dan sistem jaminan sosial itu sendiri yang kita nikmati saat ini berada dalam fase "ketergantungan dan koeksistensi" yang tidak dapat lagi dipertahankan tanpa kehadiran orang asing.
-
-**Bukankah "Jepang Pertama" yang sebenarnya adalah dengan tenang mempraktikkan tiga poin berikut?**
-
-1. **Diskusi berdasarkan fakta:** Pahamilah kenyataan berdasarkan statistik kementerian pemerintah alih-alih terbawa oleh hoaks dan informasi yang dilebih-lebihkan.
-2. **Menetapkan aturan yang adil:** Mewajibkan orang asing untuk mematuhi aturan Jepang, sementara di sisi lain, masyarakat Jepang memperlakukan mereka sebagai mitra yang adil.
-3. **Pembaruan internal:** Daripada melihat penerimaan orang asing sebagai "kehilangan Jepang," mengubah persepsi bahwa kita meminjam kekuatan mereka untuk "membangun kembali dan mempertahankan Jepang."
-
-Tahun 2026, kita berdiri di persimpangan jalan yang besar. Apakah kita akan terus meneriakkan kata-kata perpecahan dan mencekik diri kita sendiri? Ataukah kita akan menghadapi kenyataan dan mengambil langkah menuju "Jepang yang berkelanjutan" di mana beragam orang saling mendukung satu sama lain?
-
-Jawabannya terletak pada "kecerdasan" dan "keberanian" di hati setiap individu.
+- [MHLW: laporan pekerja asing, Oktober 2025](https://www.mhlw.go.jp/stf/newpage_68794.html)
+- [MHLW: tanya jawab bantuan publik bagi warga asing](https://www.mhlw.go.jp/content/001684938.pdf)
+- [Kepolisian Nasional: kejahatan warga asing pendatang pada 2024](https://www.npa.go.jp/publications/statistics/kikakubunseki/R6jyousei.pdf)
+- [Badan UKM: industri kerajinan tradisional](https://www.chusho.meti.go.jp/koukai/shingikai/syoukibokihon/2018/download/181012syoukiboKihon04.pdf)
+- [Biro Statistik Jepang: perkiraan penduduk](https://www.stat.go.jp/data/jinsui/2.html)

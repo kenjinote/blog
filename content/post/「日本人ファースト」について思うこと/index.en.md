@@ -1,28 +1,23 @@
 ---
 title: 'The Illusion and Reality of ''Japanese First'': Challenges Facing Japan in 2026 and the Path to Coexistence'
-date: "2026-09-24T19:44:38+09:00"
 slug: "「Japan First」についてThoughts"
 date: 2026-01-23T13:43:41+09:00
 tags: ["Japanese First", "Politics", "Social Issues"]
 draft: false
 image: "img.webp"
 categories: ["it-technology"]
-description: 'Analyzes the realities of soaring prices and an aging population behind the term ''Japanese First'', which is gaining support in Japan in 2026. Eliminates emotional arguments to examine the true nature of social issues based on objective data and considers what future coexistence should look like.'
+description: "An opinion essay on “Japanese First,” separating the author's views from official data on employment, public assistance, public safety, and traditional industries."
+lastmod: "2026-11-24T00:00:00+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
 
 # The Illusion and Reality of "Japanese First": The Defense Mechanism Called "Coexistence" Facing Japan in 2026
 
-## Introduction: Why Does This Phrase Resonate Now?
+This opinion essay was originally published on January 23, 2026. Its statistical sections were reviewed and updated on November 24, 2026.
 
-2026. We now stand at an unprecedented turning point of an era. Prolonged inflation, sluggish real wage growth, and visibly advancing declining birthrates and aging population. Every time the price tags of products on supermarket shelves are rewritten, anxiety about the future casts a shadow over our hearts.
+## Introduction: separating slogans, facts, and opinions
 
-In the midst of this sense of stagnation, a phrase is rapidly gaining support. It is **"Japanese First" (Nihonjin First)**.
-
-The desire to "first enrich the lives of our own citizens" and "protect Japanese culture and public safety as a top priority" is an extremely natural and compelling urge as a sovereign individual, and as a human being living in this country. However, between the "ideal" championed by this phrase and the "reality" shown by statistical data, there exists a large gap that we must face squarely.
-
-In this article, putting aside emotional arguments and labeling, we will close in on the true nature of this issue based on objective data, historical transitions, and facts occurring in various parts of society.
-
----
+“Japanese First” is a phrase used in debates about policy priorities. This essay considers the phrase alongside official material on employment, social security, public safety, and traditional industries. It distinguishes verifiable statistics from the author's views and avoids claiming causes that the cited data cannot establish.
 
 ## Chapter 1: The Timeline and Social Background of "Japanese First"
 
@@ -40,116 +35,46 @@ The delayed economic recovery after the pandemic and inflation accompanying the 
 
 In the 2025 national elections, forces officially using "Japanese First" as a slogan secured a certain number of seats. Social media algorithms, reacting to people's anxieties, preferentially displayed extreme posts, accelerating the "echo chamber phenomenon" where only specific values are reinforced.
 
-The latest public opinion poll conducted by various newspaper companies (late 2025) highlighted the reality that public opinion is split right down the middle regarding this slogan: **42% "Agree / somewhat agree" and 38% "Disagree / somewhat disagree"**.
+The original text gave 42% and 38% as late-2025 poll results, but I could not identify a source with the poll name, question, and method. I have removed those figures and the claim that opinion was evenly split.
 
----
+---## Chapter 2: Work and social security—what the figures show
 
-## Chapter 2: The Truth of the Economy and Social Security — "Usurpers" or "Supporting Pillars"?
+### Employment: reported worker counts
 
-One of the pillars of the logic supporting "Japanese First" is the image that "Japanese resources are being usurped by foreigners." However, primary data from government agencies shows a reality exactly opposite to this intuition.
+Japan's Ministry of Health, Labour and Welfare reports 2,302,587 foreign workers at the end of October 2024 and 2,571,037 at the end of October 2025. These are employer-reported counts and exclude some residence statuses, including special permanent residents. The totals alone do not establish effects on labor shortages, wages, prices, or care services. I removed the previous industry growth rates and the prediction that exclusion would multiply prices because I could not verify their supporting sources.
 
-### 1. Labor Force: The "Indispensable Blood" Maintaining the Japanese Economy
+### Public assistance: rules and published figures
 
-According to the Ministry of Health, Labour and Welfare's "Foreigner Employment Situation (as of the end of October 2024)", the number of foreign workers was **2,048,675 **. Current estimates in 2026 show it has already surpassed ** 2.3 million**.
+For fiscal year 2024, the ministry reports an average of 47,332 public-assistance households whose head did not hold Japanese nationality, about 2.9% of all recipient households. The figure was also about 2.9% in fiscal year 2023. It is based on the household head's nationality and does not describe the nationality of every household member. The ministry says foreign nationals are not given priority over Japanese nationals under the program's rules.
 
-| Industrial Sector | Ratio/Increase Rate of Foreign Workers | Reality and Role |
-| --- | --- | --- |
-| **Construction** | Approx. 22.7% increase YoY | Indispensable for infrastructure maintenance and repair of aging bridges and roads. |
-| **Medical/Welfare** | Approx. 28.1% increase YoY | Serving on the front lines of caregiving, supporting elderly Japanese. |
-| **Manufacturing** | Accounts for approx. 26% of the total | The backbone supporting the front lines of Japan's export industry. |
+## Chapter 3: Public safety and the limits of the data
 
-Currently, they are filling the **"void that Japanese can no longer secure,"** rather than jobs that Japanese people want to do but cannot. If we exclude them in the name of "Japanese First," our caregiving system would immediately collapse, and housing and food prices would jump further from several tens of percent to multiple times.
+The National Police Agency recorded 12,170 people apprehended in 2024 in its category for “visiting foreign nationals.” That category excludes established residents such as permanent residents, U.S. military personnel, and people whose status is unknown. It therefore does not represent all foreign residents or a crime rate.
 
-### 2. Social Security: Rumors and Realities Surrounding Public Assistance
+I removed the previous 5.5% share, the per-100,000 comparison of 142.7 versus 120.0, and the age-group comparison because I could not verify their populations, definitions, or calculations. Raw apprehension counts do not establish a causal link between nationality and public safety or indicate an individual's propensity to offend. Individual social-media stories are not a substitute for representative data.
 
-The most widely spread narrative on social media is that "foreigners are receiving public assistance preferentially." However, looking at the Ministry of Health, Labour and Welfare's statistics, the proportion of households with foreign heads among all recipient households is **about 2.8-2.9%**. Over the past 10-plus years, this figure has remained almost flat.
+## Chapter 4: Traditional industries and local communities
 
-Conversely, looking at the age composition of foreign residents, the majority are in the **working generations in their 20s to 40s**. They pay welfare pensions and health insurance premiums, playing the role of "providers" who support the pensions and medical expenses received by "elderly Japanese." It is none other than them who are prolonging the life of Japan's social security system by filling the void in the working generation left after the Japanese have departed.
+A series cited in a Small and Medium Enterprise Agency report shows employment in traditional craft industries falling from 288,000 in 1979 to 69,000 in 2013. These are the years covered by that published series, not a current headcount. The series does not break workers down by nationality, so it cannot establish that foreign workers have “saved” the industry.
 
----
+Examples of craftspeople from abroad or foreign residents joining local festivals should be supported with local sources. Individual cases should not be generalized to all foreign residents or regions.
 
-## Chapter 3: Public Safety and Social Media Bias — Logical Dismantling of "Foreign Crime"
+## Chapter 5: Concerns about schools
 
-Anxiety about public safety most strongly stimulates the emotions of "Japanese First." However, a detailed reading of the National Police Agency's statistics and the Ministry of Justice's "White Paper on Crime" reveals how much the image of the "vicious foreigner" on the internet is created by cognitive distortion.
+The concern that “Japanese first” language could encourage exclusion or bullying among children is the author's opinion. The original text attributed this concern to education experts but did not cite a source, so it no longer presents that as an established expert consensus.
 
-### 1. A Calm Comparison of "Total Numbers" and "Crime Rates"
+## Chapter 6: Population decline and policy choices
 
-According to statistics published in 2024, foreigners account for **about 5.5%** of all arrested persons. The remaining roughly 95% are crimes committed by Japanese.
+Japan's population is declining, but calling the decline the fastest in the world requires a consistent comparison across countries and time periods. I removed that unsupported superlative. Effects on jobs and local services vary by sector and region. In my view, discussion of migration should also consider wages, working conditions, productivity, and how to sustain services, rather than rely on a slogan alone.
 
-Comparing the number of arrested persons per 100,000 population (crime rate) reveals the essence even further.
+## Conclusion: keeping evidence and opinion distinct
 
-| Category | Arrested Persons per 100,000 Population (Estimate) |
-| --- | --- |
-| **Japanese (All Ages)** | Approx. 142.7 people |
-| **Foreign Residents (Settled/Residents)** | ** Approx. 120.0 people** |
+Whether a policy improves people's lives should be judged by its results, not by a slogan alone. The statistics reviewed here do not establish the overall effects of foreign residents or the criminal tendencies of individuals. In the author's view, discussion should use traceable figures, fair rules, and evidence about wages, working conditions, productivity, and local services. These are opinions; policy decisions require continuing evaluation.
 
-It is a statistical fact that the **crime rate of foreigners residing in Japan in the medium to long term is lower than the overall average for Japanese**.
+## References
 
-### 2. The Magic of Bias Due to "Generation"
-
-Why does the image that "foreigners are scary" take precedence? The biggest factor is the difference in **"age composition"** in criminology.
-
-* **Japanese:** About 30% are elderly people with extremely low crime rates. Because this demographic pushes down the "denominator," the overall figure for Japan appears low.
-* **Foreigners:** Because they come to Japan as a labor force, over 80% are in the **"young to middle-aged group," where crimes are statistically more likely to occur**.
-
-If we compare the crime rates of Japanese and foreigners under the same condition of "those in their 20s," no significant difference is seen between the two. In other words, it is not that "public safety has deteriorated because the number of foreigners has increased," but merely that **"the age group prone to committing crimes (the youth) exists in Japan in the form of foreigners."**
-
-### 3. The "Confirmation Bias" Created by Social Media
-
-Social media algorithms use our "anxiety" as fuel. When one foreign crime occurs, it is intensely spread in association with the "attribute (nationality)." Then, only the memory that "a foreigner caused an incident again" is reinforced in our brains.
-
-This is called **"confirmation bias."** Crimes by Japanese, which account for 95% of the total, are overlooked as "everyday life," and the 5% of foreign crimes are swapped for the image of "all foreigners."
-
----
-
-## Chapter 4: Inheritance of Culture — "Destroyers" or "Saviors"?
-
-The concern that "Japanese traditions and culture will be destroyed" also differs from the reality on the ground.
-
-### 1. The "Last Inheritors" of Traditional Crafts
-
-The number of workers manufacturing Japanese traditional crafts has plummeted from about 300,000 in the 1970s to about 50,000 today. Those saving this crisis of extinction are foreigners who came to Japan with deep respect for Japanese culture.
-
-* **Sake Breweries and Sword Smiths:** Foreigners have become apprentices in workshops where Japanese people have almost given up on inheritance. By incorporating an ability to broadcast overseas and new sensibilities, they are revitalizing cultures on the verge of closure into "sustainable industries."
-
-### 2. Maintenance of Local Communities
-
-In local municipalities that have become "cities at risk of disappearance" due to the disappearance of young people, technical interns and specified skilled foreign workers have become the bearers of local festivals and support the foundation of agriculture.
-Who is tilling the abandoned farmland left behind by departing Japanese and protecting events that have continued for hundreds of years? If we look at that reality, we understand that they are not the "destroyers" of culture, but the **"last line of defense."**
-
----
-
-## Chapter 5: Concerns in the Educational Field and the Chain of "Bullying"
-
-The side effects of bringing the phrase "Japanese First" into the educational field are serious.
-
-* **The Binary Opposition Dividing "Inside and Outside":** If children internalize the mistaken elitism that "Japanese are a privileged class that should be prioritized," it easily leads to bullying that excludes "those who are different from us."
-* **Ranking by Roots:** Children who have Japanese nationality but look different or have different names are attacked as "not Japanese." This is the collapse of education and an act of harming the very human resources who will carry the future of Japan.
-
-Experts in the field of education fear the risk that the exclusivity carried by the word "First" will diminish children's ability for multicultural coexistence, resulting in Japan isolating itself from the world.
-
----
-
-## Chapter 6: Global Trends and the Wave of Populism
-
-This phenomenon is not unique to Japan. Even in Western countries, a phenomenon continues where demographics who could not receive the benefits of globalization drift towards populism championing "My Country First."
-
-However, where Japan differs decisively from the West is that **"its population is decreasing at the fastest speed in the world."** While other countries may have the option of "restriction," in Japan there already exist countless social infrastructures that cannot be maintained without "cooperation." Continuing to adhere to an emotional "First" means a logical "slow suicide."
-
----
-
-## In Conclusion: What is True "Japanese First"?
-
-The desire embedded in the phrase "Japanese First" — the desire to "put the lives of the citizens first" — is in itself the most basic responsibility that a country's government should have.
-
-However, the means to fulfill that desire must not be the "exclusion of our neighbors." Because, as objective data shows, the convenience of life, public safety, traditional culture, and the social security system itself that we currently enjoy are already in a phase of "dependence and coexistence" that cannot be established without the presence of foreigners.
-
-**Is not the true "Japanese First" to calmly put the following three points into practice?**
-
-1. **Discussions Based on Facts:** Do not be swayed by rumors or exaggerated information, but grasp reality based on primary statistics from government agencies.
-2. **Establishment of Fair Rules:** Require foreigners to comply with Japanese rules, while Japanese society treats them as fair partners.
-3. **Internal Update:** Do not view the acceptance of foreigners as "losing Japan," but a paradigm shift recognizing that it is to "rebuild and maintain Japan" with their help.
-
-In 2026, we stand at a major crossroads. Will we continue to shout words of division and strangle ourselves? Or will we face reality and take a step towards a "sustainable Japan" where diverse people support each other?
-
-The answer lies within the "intelligence" and "courage" in the heart of each individual.
+- [MHLW: Foreign worker notifications, October 2025](https://www.mhlw.go.jp/stf/newpage_68794.html)
+- [MHLW: Questions and answers on public assistance for foreign nationals](https://www.mhlw.go.jp/content/001684938.pdf)
+- [National Police Agency: Crime involving visiting foreign nationals in 2024](https://www.npa.go.jp/publications/statistics/kikakubunseki/R6jyousei.pdf)
+- [Small and Medium Enterprise Agency: Traditional craft industry output and employment](https://www.chusho.meti.go.jp/koukai/shingikai/syoukibokihon/2018/download/181012syoukiboKihon04.pdf)
+- [Statistics Bureau of Japan: Population estimates](https://www.stat.go.jp/data/jinsui/2.html)

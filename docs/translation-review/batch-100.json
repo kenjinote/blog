@@ -1,0 +1,459 @@
+{
+  "version": 1,
+  "batch": 100,
+  "article": "「日本人ファースト」について思うこと",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "bd7cbae0df56d87b38f4216d5e82a62bce4a219688d8a0677391b3cfc8973d0c",
+  "sources": [
+    "https://www.mhlw.go.jp/stf/newpage_68794.html",
+    "https://www.mhlw.go.jp/content/001684938.pdf",
+    "https://www.npa.go.jp/publications/statistics/kikakubunseki/R6jyousei.pdf",
+    "https://www.chusho.meti.go.jp/koukai/shingikai/syoukibokihon/2018/download/181012syoukiboKihon04.pdf",
+    "https://www.stat.go.jp/data/jinsui/2.html"
+  ],
+  "scope": "Compared the complete Japanese article and twelve translations. Fact-checked the worker counts, public-assistance figures, foreign-crime category, craft-industry series, and population framing against official sources. Removed unidentified poll figures, unsupported crime-rate comparisons, industry percentages, and causal predictions; corrected terminology, dates, and source links. Preserved the author's argument as opinion.",
+  "findings": [
+    "Removed the duplicate future date, kept the original 2026-01-23 publication date, and set lastmod to 2026-11-24.",
+    "Replaced the mistaken 2024 foreign-worker count with official October 2024 and October 2025 reported counts; removed unverified sector growth figures and price predictions.",
+    "Corrected the public-assistance statistic to the MHLW FY2024 household-head measure and clarified its denominator and scope.",
+    "Removed unsupported foreign-crime shares, per-capita rates, and age comparisons; clarified the NPA's narrower 'visiting foreign nationals' category.",
+    "Replaced the unsupported current traditional-craft headcount with a sourced 1979–2013 series and removed nationality-based causal claims.",
+    "Removed unidentified 42%/38% polling figures and reframed unsupported expert-consensus and population superlatives as the author's view or removed them.",
+    "Corrected the Russian translation that mistranslated public assistance as unemployment benefits; added localized reference labels and five official source links."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/「日本人ファースト」について思うこと/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/「日本人ファースト」について思うこと/index.md",
+      "sourceHash": "bd7cbae0df56d87b38f4216d5e82a62bce4a219688d8a0677391b3cfc8973d0c",
+      "translationHash": "3237c040517147a983ba7f5847514d835f0c29f7891d01d229221bc35257f415",
+      "summary": "قورنت الحجج والأرقام بالأصل؛ وحُذفت الاستطلاعات ومقارنات الجريمة والتوقعات السببية غير الموثقة، مع التمييز بين الرأي والبيانات.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "قورنت الحجج والأرقام بالأصل؛ وحُذفت الاستطلاعات ومقارنات الجريمة والتوقعات السببية غير الموثقة، مع التمييز بين الرأي والبيانات."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "رُوجعت مصطلحات توظيف الأجانب والمساعدة العامة والأشخاص المضبوطين والحرف التقليدية."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical derivations or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "أُضيفت خمسة مصادر رسمية وفُحص نطاقها وسنواتها."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The historical political timeline and broad claims about social-media algorithms were not independently researched in this batch.",
+        "The cited official material is primarily Japanese-language; translated reference labels do not constitute translated source documents."
+      ]
+    },
+    "post/「日本人ファースト」について思うこと/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/「日本人ファースト」について思うこと/index.md",
+      "sourceHash": "bd7cbae0df56d87b38f4216d5e82a62bce4a219688d8a0677391b3cfc8973d0c",
+      "translationHash": "f23c1c6b5fe061c30f65c90e7d74e2064862575de860b6ec8a799aa0dc1cc86b",
+      "summary": "Aussagen und Zahlen mit dem japanischen Text verglichen; nicht belegte Umfragen, Kriminalitätsvergleiche und Kausalprognosen entfernt und Meinung von Statistik getrennt.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aussagen und Zahlen mit dem japanischen Text verglichen; nicht belegte Umfragen, Kriminalitätsvergleiche und Kausalprognosen entfernt und Meinung von Statistik getrennt."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Begriffe zu ausländischer Beschäftigung, Sozialhilfe, festgestellten Personen und traditionellem Handwerk geprüft."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical derivations or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Fünf amtliche Quellen geprüft und Bezugsjahr sowie Umfang der Angaben abgeglichen."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The historical political timeline and broad claims about social-media algorithms were not independently researched in this batch.",
+        "The cited official material is primarily Japanese-language; translated reference labels do not constitute translated source documents."
+      ]
+    },
+    "post/「日本人ファースト」について思うこと/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/「日本人ファースト」について思うこと/index.md",
+      "sourceHash": "bd7cbae0df56d87b38f4216d5e82a62bce4a219688d8a0677391b3cfc8973d0c",
+      "translationHash": "64f5287df096c712a7d21e2f5f6467faf39722ce4f5462c5c11a92c522d1cc31",
+      "summary": "Compared the argument and statistics with the Japanese source; removed untraceable polling figures, unsupported crime-rate comparisons, and causal predictions, while distinguishing opinion from data.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the argument and statistics with the Japanese source; removed untraceable polling figures, unsupported crime-rate comparisons, and causal predictions, while distinguishing opinion from data."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the terms for foreign worker reporting, public assistance, apprehended persons, visiting foreign nationals, and traditional craft industries."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical derivations or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked five official government statistical and policy references, including each figure's scope and year."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The historical political timeline and broad claims about social-media algorithms were not independently researched in this batch.",
+        "The cited official material is primarily Japanese-language; translated reference labels do not constitute translated source documents."
+      ]
+    },
+    "post/「日本人ファースト」について思うこと/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/「日本人ファースト」について思うこと/index.md",
+      "sourceHash": "bd7cbae0df56d87b38f4216d5e82a62bce4a219688d8a0677391b3cfc8973d0c",
+      "translationHash": "3f4b1f4b78ff1991636b6e7787e4085ca91e5ac4481934fc79fd60b83f5b662e",
+      "summary": "Comparé argumentos y cifras con el original; eliminé encuestas no identificables, comparaciones delictivas sin respaldo y predicciones causales, distinguiendo opinión de datos.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Comparé argumentos y cifras con el original; eliminé encuestas no identificables, comparaciones delictivas sin respaldo y predicciones causales, distinguiendo opinión de datos."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Verifiqué los términos de empleo extranjero, asistencia pública, personas investigadas y artesanía tradicional."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical derivations or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Añadí cinco fuentes oficiales y comprobé su alcance y año."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The historical political timeline and broad claims about social-media algorithms were not independently researched in this batch.",
+        "The cited official material is primarily Japanese-language; translated reference labels do not constitute translated source documents."
+      ]
+    },
+    "post/「日本人ファースト」について思うこと/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/「日本人ファースト」について思うこと/index.md",
+      "sourceHash": "bd7cbae0df56d87b38f4216d5e82a62bce4a219688d8a0677391b3cfc8973d0c",
+      "translationHash": "4f2f73017c4f012dd58b908d7be0e4206109f62a5b5feaef2a1df2be5829cbc5",
+      "summary": "Arguments et chiffres comparés au texte japonais ; sondages non traçables, comparaisons criminelles non étayées et prédictions causales retirés, en séparant opinion et données.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Arguments et chiffres comparés au texte japonais ; sondages non traçables, comparaisons criminelles non étayées et prédictions causales retirés, en séparant opinion et données."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Terminologie de l’emploi étranger, de l’aide sociale, des personnes mises en cause et de l’artisanat vérifiée."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical derivations or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Cinq sources officielles ajoutées et vérifiées, avec leurs périodes et périmètres."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The historical political timeline and broad claims about social-media algorithms were not independently researched in this batch.",
+        "The cited official material is primarily Japanese-language; translated reference labels do not constitute translated source documents."
+      ]
+    },
+    "post/「日本人ファースト」について思うこと/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/「日本人ファースト」について思うこと/index.md",
+      "sourceHash": "bd7cbae0df56d87b38f4216d5e82a62bce4a219688d8a0677391b3cfc8973d0c",
+      "translationHash": "cc7cc42aff112cefbba555adcf7345d3445471f6262944a29f781e41e1255669",
+      "summary": "जापानी मूल से तर्क और आँकड़े मिलाए; बिना स्रोत के सर्वेक्षण, अपराध तुलना और कारणात्मक अनुमान हटाए तथा राय और आँकड़ों को अलग किया।",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "जापानी मूल से तर्क और आँकड़े मिलाए; बिना स्रोत के सर्वेक्षण, अपराध तुलना और कारणात्मक अनुमान हटाए तथा राय और आँकड़ों को अलग किया।"
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "विदेशी कामगार, सार्वजनिक सहायता, पकड़े गए व्यक्ति और पारंपरिक हस्तशिल्प के शब्द जाँचे।"
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical derivations or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "पाँच आधिकारिक स्रोत जोड़े; उनके वर्ष और दायरे की जाँच की।"
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The historical political timeline and broad claims about social-media algorithms were not independently researched in this batch.",
+        "The cited official material is primarily Japanese-language; translated reference labels do not constitute translated source documents."
+      ]
+    },
+    "post/「日本人ファースト」について思うこと/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/「日本人ファースト」について思うこと/index.md",
+      "sourceHash": "bd7cbae0df56d87b38f4216d5e82a62bce4a219688d8a0677391b3cfc8973d0c",
+      "translationHash": "608ae600f87ddd2c183e3e389d520e630d13192363c8196f12d7ce64b62d517d",
+      "summary": "Membandingkan argumen dan angka dengan naskah Jepang; menghapus survei, perbandingan kriminalitas, dan prediksi kausal tanpa sumber serta membedakan opini dari data.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Membandingkan argumen dan angka dengan naskah Jepang; menghapus survei, perbandingan kriminalitas, dan prediksi kausal tanpa sumber serta membedakan opini dari data."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Memeriksa istilah pekerja asing, bantuan publik, orang yang ditindak, dan kerajinan tradisional."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical derivations or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Menambahkan lima rujukan resmi dan memeriksa cakupan serta tahunnya."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The historical political timeline and broad claims about social-media algorithms were not independently researched in this batch.",
+        "The cited official material is primarily Japanese-language; translated reference labels do not constitute translated source documents."
+      ]
+    },
+    "post/「日本人ファースト」について思うこと/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/「日本人ファースト」について思うこと/index.md",
+      "sourceHash": "bd7cbae0df56d87b38f4216d5e82a62bce4a219688d8a0677391b3cfc8973d0c",
+      "translationHash": "af042d7a6c6be3b3a7635ea34a8bec39fc77d6296a6fe424fffa12237fb5cc68",
+      "summary": "원문과 논지·수치를 대조하고 출처 없는 여론조사, 범죄율 비교, 인과 예측을 삭제해 의견과 통계를 구분했습니다.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "원문과 논지·수치를 대조하고 출처 없는 여론조사, 범죄율 비교, 인과 예측을 삭제해 의견과 통계를 구분했습니다."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "외국인 고용, 생활보호, 검거 인원, 전통 공예 산업 용어를 확인했습니다."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical derivations or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "정부 통계·정책 자료 5건을 추가하고 기준 연도와 범위를 확인했습니다."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The historical political timeline and broad claims about social-media algorithms were not independently researched in this batch.",
+        "The cited official material is primarily Japanese-language; translated reference labels do not constitute translated source documents."
+      ]
+    },
+    "post/「日本人ファースト」について思うこと/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/「日本人ファースト」について思うこと/index.md",
+      "sourceHash": "bd7cbae0df56d87b38f4216d5e82a62bce4a219688d8a0677391b3cfc8973d0c",
+      "translationHash": "1b8a904e40c3dc46868baa79acbe71a0878e559981bcba709df6f75db0bcc353",
+      "summary": "Comparei argumentos e números com o original; removi pesquisas sem fonte, comparações criminais não verificáveis e previsões causais, distinguindo opinião de dados.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Comparei argumentos e números com o original; removi pesquisas sem fonte, comparações criminais não verificáveis e previsões causais, distinguindo opinião de dados."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Verifiquei os termos de emprego estrangeiro, assistência pública, pessoas indiciadas e artesanato tradicional."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical derivations or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Acrescentei cinco fontes oficiais e conferi escopo e período."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The historical political timeline and broad claims about social-media algorithms were not independently researched in this batch.",
+        "The cited official material is primarily Japanese-language; translated reference labels do not constitute translated source documents."
+      ]
+    },
+    "post/「日本人ファースト」について思うこと/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/「日本人ファースト」について思うこと/index.md",
+      "sourceHash": "bd7cbae0df56d87b38f4216d5e82a62bce4a219688d8a0677391b3cfc8973d0c",
+      "translationHash": "623057d2883c85a03949efcd7d55ebf3677c356c0967bd9441f2cedf01811ab8",
+      "summary": "Сверены аргументы и цифры; удалены опросы, сравнения преступности и причинные прогнозы без источников, отделено мнение от статистики.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Сверены аргументы и цифры; удалены опросы, сравнения преступности и причинные прогнозы без источников, отделено мнение от статистики."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Проверены термины о найме иностранцев, государственной помощи, выявленных лицах и традиционных ремёслах."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical derivations or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Добавлены пять официальных источников; сверены годы и охват данных."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The historical political timeline and broad claims about social-media algorithms were not independently researched in this batch.",
+        "The cited official material is primarily Japanese-language; translated reference labels do not constitute translated source documents."
+      ]
+    },
+    "post/「日本人ファースト」について思うこと/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/「日本人ファースト」について思うこと/index.md",
+      "sourceHash": "bd7cbae0df56d87b38f4216d5e82a62bce4a219688d8a0677391b3cfc8973d0c",
+      "translationHash": "b83336d4aca36715748c50713819d47b4760d1ac4f20500649e0a774a61ddc00",
+      "summary": "对照日文原文核查论点和数据；删除无法追溯的民调、无依据的犯罪率比较和因果预测，并区分观点与统计。",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "对照日文原文核查论点和数据；删除无法追溯的民调、无依据的犯罪率比较和因果预测，并区分观点与统计。"
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "核对外国人雇佣、生活救助、检举人数和传统工艺产业等术语。"
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical derivations or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "新增并核查五项政府统计与政策资料的年份和范围。"
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The historical political timeline and broad claims about social-media algorithms were not independently researched in this batch.",
+        "The cited official material is primarily Japanese-language; translated reference labels do not constitute translated source documents."
+      ]
+    },
+    "post/「日本人ファースト」について思うこと/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/「日本人ファースト」について思うこと/index.md",
+      "sourceHash": "bd7cbae0df56d87b38f4216d5e82a62bce4a219688d8a0677391b3cfc8973d0c",
+      "translationHash": "ec6598583cbe0d17c6d40dfcbf3cf3ee44d3a68d148e6cd43c68e923c87bbe40",
+      "summary": "對照日文原文核查論點與數據；刪除無法追溯的民調、無依據的犯罪率比較和因果預測，並區分觀點與統計。",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "對照日文原文核查論點與數據；刪除無法追溯的民調、無依據的犯罪率比較和因果預測，並區分觀點與統計。"
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "核對外國人雇用、生活扶助、查獲人數及傳統工藝產業等術語。"
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical derivations or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "新增並核查五項政府統計與政策資料的年份與範圍。"
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The historical political timeline and broad claims about social-media algorithms were not independently researched in this batch.",
+        "The cited official material is primarily Japanese-language; translated reference labels do not constitute translated source documents."
+      ]
+    }
+  }
+}
