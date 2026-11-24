@@ -1,17 +1,24 @@
 ---
-title: 'Pourquoi le développement de la LED bleue était-il presque impossible ? Enquête sur ce mystère'
-date: "2026-09-24T19:44:38+09:00"
+title: "Pourquoi les LED bleues étaient si difficiles : GaN et Nobel 2014"
 slug: "なぜ青色LEDを作ることがほぼ不可能だったのか"
-date: 2024-09-15T00:43:52+09:00
 tags: ["Science", "Physique", "Semi-conducteurs"]
 draft: false
 image: "img.webp"
 categories: ["it-technology"]
-description: 'Présentation d''un documentaire en anglais expliquant à quel point la réalisation de la LED bleue a été difficile. Nous abordons également l''exploit des Japonais qui ont résolu un problème considéré comme impossible, et l''écart dans leur évaluation au niveau national.'
+description: "Présentation des défis des matériaux des LED bleues et de l’annonce officielle du Nobel de physique 2014."
+date: 2024-09-15T00:43:52+09:00
+lastmod: 2026-11-24
 ---
+## Pourquoi les LED bleues étaient si difficiles : GaN et Nobel 2014
 
-## Pourquoi il était presque impossible de fabriquer la LED bleue
+Créer une LED bleue ne consistait pas simplement à changer la couleur d’une LED rouge. Les photons bleus sont plus énergétiques que les rouges ; le semi-conducteur doit donc avoir une bande interdite plus large. Le nitrure de gallium (GaN) était prometteur, mais la croissance de cristaux de qualité et la conductivité de type p constituaient des défis majeurs.
 
-Introduction à un documentaire en anglais. Très intéressant. On a la forte impression que le Japonais qui a résolu ce problème extrêmement difficile n'a pas été très apprécié au Japon au début.
+Isamu Akasaki, Hiroshi Amano et Shuji Nakamura ont développé des LED bleues efficaces et reçu le Nobel de physique 2014. La citation officielle indique que leur invention a permis des sources de lumière blanche lumineuses et économes en énergie. « Presque impossible » décrit l’ampleur du défi, pas une impossibilité littérale.
+
+Le documentaire en anglais ci-dessous retrace le développement des LED bleues.
+
+- [2014 Nobel Prize in Physics: official press release](https://www.nobelprize.org/prizes/physics/2014/press-release/)
+
+- Documentary video: [YouTube](https://www.youtube.com/watch?v=AF8d72mA41M)
 
 {{<youtube AF8d72mA41M>}}

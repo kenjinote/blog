@@ -1,17 +1,24 @@
 ---
-title: 'Warum war die Entwicklung von blauen LEDs fast unmöglich? Wir gehen dem Rätsel auf den Grund'
-date: "2026-09-24T19:44:38+09:00"
+title: "Warum blaue LEDs so schwierig waren: GaN und der Nobelpreis 2014"
 slug: "なぜ青色LEDを作ることがほぼ不可能だったのか"
-date: 2024-09-15T00:43:52+09:00
 tags: ["Wissenschaft", "Physik", "Halbleiter"]
 draft: false
 image: "img.webp"
 categories: ["it-technology"]
-description: 'Wir stellen einen englischen Dokumentarfilm vor, der erklärt, wie schwierig die Realisierung blauer LEDs war. Wir gehen auch auf die große Leistung der Japaner ein, die ein Problem gelöst haben, das als unmöglich galt, sowie auf die Kluft bei der Bewertung im eigenen Land.'
+description: "Einführung in die Materialprobleme blauer LEDs und die offizielle Erklärung zum Physik-Nobelpreis 2014."
+date: 2024-09-15T00:43:52+09:00
+lastmod: 2026-11-24
 ---
+## Warum blaue LEDs so schwierig waren: GaN und der Nobelpreis 2014
 
-## Warum es fast unmöglich war, die blaue LED herzustellen
+Eine blaue LED zu entwickeln bedeutete nicht einfach, die Farbe einer roten LED zu ändern. Blaue Photonen sind energiereicher als rote; der Halbleiter benötigt daher eine größere Bandlücke. Galliumnitrid (GaN) war vielversprechend, doch hochwertige Kristalle zu züchten und p-Leitfähigkeit zu erreichen, waren große Herausforderungen.
 
-Einführung in eine englische Dokumentation. Sehr interessant. Es entsteht der starke Eindruck, dass der Japaner, der dieses extrem schwierige Problem gelöst hat, anfangs in Japan nicht sehr geschätzt wurde.
+Isamu Akasaki, Hiroshi Amano und Shuji Nakamura entwickelten effiziente blaue LEDs und erhielten 2014 den Nobelpreis für Physik. Laut offizieller Würdigung ermöglichte ihre Erfindung helle und energiesparende weiße Lichtquellen. „Fast unmöglich“ beschreibt die Größe der Herausforderung, nicht eine wörtliche Unmöglichkeit.
+
+Die folgende englische Dokumentation zeigt die Entwicklungsgeschichte blauer LEDs.
+
+- [2014 Nobel Prize in Physics: official press release](https://www.nobelprize.org/prizes/physics/2014/press-release/)
+
+- Documentary video: [YouTube](https://www.youtube.com/watch?v=AF8d72mA41M)
 
 {{<youtube AF8d72mA41M>}}

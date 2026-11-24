@@ -13685,6 +13685,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-118.json",
       "evidenceHash": "d69ccbba955ee1759cdf8d5409f45ce226c8435407207def0bc1edf5e7c2e2a2"
+    },
+    "post/なぜ青色LEDを作ることがほぼ不可能だったのか/index.en.md": {
+      "source": "post/なぜ青色LEDを作ることがほぼ不可能だったのか/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "a16debbe0b6a7ec33429250da6e16aeaa68ea5709dd922b31087860895f52ccd",
+      "translationHash": "6286fe6224108172962c0d2791ba9e0fdb275bc659c310e11b80687c0209693d",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-119.json",
+      "evidenceHash": "06f55f2df7c443784d465dce438dca976ce5eb2fac1a480626fb0ac72ff80697"
+    },
+    "post/なぜ青色LEDを作ることがほぼ不可能だったのか/index.zh-cn.md": {
+      "source": "post/なぜ青色LEDを作ることがほぼ不可能だったのか/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "a16debbe0b6a7ec33429250da6e16aeaa68ea5709dd922b31087860895f52ccd",
+      "translationHash": "704771ca302f953b29d7855cb951f943a63f05f58a76b4db405d9a582dd308f8",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-119.json",
+      "evidenceHash": "a41d37f802c0587d9fd638832a750e1cf5ba7a7d76b896ea809700b126f566c4"
+    },
+    "post/なぜ青色LEDを作ることがほぼ不可能だったのか/index.es.md": {
+      "source": "post/なぜ青色LEDを作ることがほぼ不可能だったのか/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "a16debbe0b6a7ec33429250da6e16aeaa68ea5709dd922b31087860895f52ccd",
+      "translationHash": "d3ba354dab8208f5e6b4caa8438bb36b4ed63704b68833fa7d4951bb70877bb5",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-119.json",
+      "evidenceHash": "eeb6d65a723d51486f4513f361bf53e6367da8fde78042a6e7fa40e4fb7f77d3"
+    },
+    "post/なぜ青色LEDを作ることがほぼ不可能だったのか/index.ko.md": {
+      "source": "post/なぜ青色LEDを作ることがほぼ不可能だったのか/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "a16debbe0b6a7ec33429250da6e16aeaa68ea5709dd922b31087860895f52ccd",
+      "translationHash": "dc20007b6633f1975d1f573e708e15d6dd6fd1aa39a97327f6f6166bba819d20",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-119.json",
+      "evidenceHash": "db3b618ce6d53de585394dae48a339178a7bc54ac73115deee9674d5f781708c"
+    },
+    "post/なぜ青色LEDを作ることがほぼ不可能だったのか/index.pt.md": {
+      "source": "post/なぜ青色LEDを作ることがほぼ不可能だったのか/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "a16debbe0b6a7ec33429250da6e16aeaa68ea5709dd922b31087860895f52ccd",
+      "translationHash": "216342e7bc3600d7a99df29372e26835370a6c3bf4980c3a525347d7077f14b3",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-119.json",
+      "evidenceHash": "98a53c925c9c3f546f66710674eff7f8d9a11343df14c311a27536f141c1971e"
+    },
+    "post/なぜ青色LEDを作ることがほぼ不可能だったのか/index.zh-tw.md": {
+      "source": "post/なぜ青色LEDを作ることがほぼ不可能だったのか/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "a16debbe0b6a7ec33429250da6e16aeaa68ea5709dd922b31087860895f52ccd",
+      "translationHash": "d9361754b019987d03c9d16bff02fa5f1e804f59b4c97f2884ffbda99d3f9bc2",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-119.json",
+      "evidenceHash": "30cdde78ef5ac981237b7e02c055ec85c5e8e5c8bfa093b6ab98e47d8ee5e8f4"
+    },
+    "post/なぜ青色LEDを作ることがほぼ不可能だったのか/index.hi.md": {
+      "source": "post/なぜ青色LEDを作ることがほぼ不可能だったのか/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "a16debbe0b6a7ec33429250da6e16aeaa68ea5709dd922b31087860895f52ccd",
+      "translationHash": "f31004bdc47dc724793daeb3c4296b684971c41fae5e68d4f0a1d826143f5258",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-119.json",
+      "evidenceHash": "32c41998cc91aca802e0a3ca237a1815e79f9df016bc2792053243128e151d30"
+    },
+    "post/なぜ青色LEDを作ることがほぼ不可能だったのか/index.fr.md": {
+      "source": "post/なぜ青色LEDを作ることがほぼ不可能だったのか/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "a16debbe0b6a7ec33429250da6e16aeaa68ea5709dd922b31087860895f52ccd",
+      "translationHash": "89c4305f82f96ab39e792c00ec8877b1050f266f316efb949210fc75a813009b",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-119.json",
+      "evidenceHash": "592b69425c898cdcb3c49e0ccf8647e736a4808cd8be59a18e7b2873e2e18803"
+    },
+    "post/なぜ青色LEDを作ることがほぼ不可能だったのか/index.de.md": {
+      "source": "post/なぜ青色LEDを作ることがほぼ不可能だったのか/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "a16debbe0b6a7ec33429250da6e16aeaa68ea5709dd922b31087860895f52ccd",
+      "translationHash": "efc512c0f00c26fd49c71d3b278e6b244bdd87fb5249601c5542e96b3ee5eb11",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-119.json",
+      "evidenceHash": "8744f097eac8ab1fc61b695c5779ee589cf3eb02c56af9d51c3ca2fa2eacfc2e"
+    },
+    "post/なぜ青色LEDを作ることがほぼ不可能だったのか/index.ar.md": {
+      "source": "post/なぜ青色LEDを作ることがほぼ不可能だったのか/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "a16debbe0b6a7ec33429250da6e16aeaa68ea5709dd922b31087860895f52ccd",
+      "translationHash": "e832dc9bebeb873cb569fc0950fafed2e7b94238b83be9870ec3ac65d92bc683",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-119.json",
+      "evidenceHash": "f07840bc0ee2d9309ab4026f472e90046bf37b12cf227f0f6cfb14f3f7f814fd"
+    },
+    "post/なぜ青色LEDを作ることがほぼ不可能だったのか/index.ru.md": {
+      "source": "post/なぜ青色LEDを作ることがほぼ不可能だったのか/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "a16debbe0b6a7ec33429250da6e16aeaa68ea5709dd922b31087860895f52ccd",
+      "translationHash": "36560c4ddfa23ba1c89abd7ab8535491cbc379ded6981fd129d1dd16d394eeae",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-119.json",
+      "evidenceHash": "ff1a3d0aa058ee83c75237db0f7b6e3ba7565c80fb7edfbf42324a3962ea55d4"
+    },
+    "post/なぜ青色LEDを作ることがほぼ不可能だったのか/index.id.md": {
+      "source": "post/なぜ青色LEDを作ることがほぼ不可能だったのか/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "a16debbe0b6a7ec33429250da6e16aeaa68ea5709dd922b31087860895f52ccd",
+      "translationHash": "bac250db93b62f1cfb5c61af916ef84834c4e94e15a0b9ce008c7406cdf5c54f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-119.json",
+      "evidenceHash": "b11954c49ea2f6c70f31ccfce5834157f16a6c53b712f7cf1a2661c5442d3dd0"
     }
   }
 }

@@ -1,0 +1,441 @@
+{
+  "version": 1,
+  "batch": 119,
+  "article": "青色LEDの開発史",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "a16debbe0b6a7ec33429250da6e16aeaa68ea5709dd922b31087860895f52ccd",
+  "sources": [
+    "https://www.nobelprize.org/prizes/physics/2014/press-release/",
+    "https://www.youtube.com/watch?v=AF8d72mA41M"
+  ],
+  "scope": "Reviewed the Japanese article and all twelve translations for the basic semiconductor explanation, historical attribution, Nobel wording, dates, and video/source links.",
+  "findings": [
+    "Removed an unsupported generalization about how the researchers were initially evaluated in Japan.",
+    "Explained why blue LEDs required a wider-band-gap semiconductor and why GaN crystal growth and p-type conductivity were difficult.",
+    "Clarified that “nearly impossible” is rhetorical, not literal, and that the three researchers received the 2014 Nobel Prize in Physics for efficient blue LEDs enabling bright, energy-saving white light sources.",
+    "Removed duplicate future dates, preserved original publication date, set lastmod, and added the official Nobel source in all locales."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/なぜ青色LEDを作ることがほぼ不可能だったのか/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/なぜ青色LEDを作ることがほぼ不可能だったのか/index.md",
+      "sourceHash": "a16debbe0b6a7ec33429250da6e16aeaa68ea5709dd922b31087860895f52ccd",
+      "translationHash": "6286fe6224108172962c0d2791ba9e0fdb275bc659c310e11b80687c0209693d",
+      "summary": "Revised and aligned the translation with the scientifically scoped blue-LED history and the official Nobel citation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the documentary introduction with the history and corrected the rhetorical “nearly impossible” framing."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked blue LED, gallium nitride (GaN), band gap, p-type conductivity, and Nobel Prize naming."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Confirmed the qualitative photon-energy/band-gap explanation and the stated 2014 Nobel award against the official Nobel source; no quantitative formula is asserted."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and verified the official 2014 Nobel Prize press release and retained the documentary video."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The article is an introductory summary and links to the Nobel Prize source for fuller technical and historical detail."
+      ]
+    },
+    "post/なぜ青色LEDを作ることがほぼ不可能だったのか/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/なぜ青色LEDを作ることがほぼ不可能だったのか/index.md",
+      "sourceHash": "a16debbe0b6a7ec33429250da6e16aeaa68ea5709dd922b31087860895f52ccd",
+      "translationHash": "704771ca302f953b29d7855cb951f943a63f05f58a76b4db405d9a582dd308f8",
+      "summary": "Revised and aligned the translation with the scientifically scoped blue-LED history and the official Nobel citation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the documentary introduction with the history and corrected the rhetorical “nearly impossible” framing."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked blue LED, gallium nitride (GaN), band gap, p-type conductivity, and Nobel Prize naming."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Confirmed the qualitative photon-energy/band-gap explanation and the stated 2014 Nobel award against the official Nobel source; no quantitative formula is asserted."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and verified the official 2014 Nobel Prize press release and retained the documentary video."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The article is an introductory summary and links to the Nobel Prize source for fuller technical and historical detail."
+      ]
+    },
+    "post/なぜ青色LEDを作ることがほぼ不可能だったのか/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/なぜ青色LEDを作ることがほぼ不可能だったのか/index.md",
+      "sourceHash": "a16debbe0b6a7ec33429250da6e16aeaa68ea5709dd922b31087860895f52ccd",
+      "translationHash": "d3ba354dab8208f5e6b4caa8438bb36b4ed63704b68833fa7d4951bb70877bb5",
+      "summary": "Revised and aligned the translation with the scientifically scoped blue-LED history and the official Nobel citation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the documentary introduction with the history and corrected the rhetorical “nearly impossible” framing."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked blue LED, gallium nitride (GaN), band gap, p-type conductivity, and Nobel Prize naming."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Confirmed the qualitative photon-energy/band-gap explanation and the stated 2014 Nobel award against the official Nobel source; no quantitative formula is asserted."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and verified the official 2014 Nobel Prize press release and retained the documentary video."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The article is an introductory summary and links to the Nobel Prize source for fuller technical and historical detail."
+      ]
+    },
+    "post/なぜ青色LEDを作ることがほぼ不可能だったのか/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/なぜ青色LEDを作ることがほぼ不可能だったのか/index.md",
+      "sourceHash": "a16debbe0b6a7ec33429250da6e16aeaa68ea5709dd922b31087860895f52ccd",
+      "translationHash": "dc20007b6633f1975d1f573e708e15d6dd6fd1aa39a97327f6f6166bba819d20",
+      "summary": "Revised and aligned the translation with the scientifically scoped blue-LED history and the official Nobel citation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the documentary introduction with the history and corrected the rhetorical “nearly impossible” framing."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked blue LED, gallium nitride (GaN), band gap, p-type conductivity, and Nobel Prize naming."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Confirmed the qualitative photon-energy/band-gap explanation and the stated 2014 Nobel award against the official Nobel source; no quantitative formula is asserted."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and verified the official 2014 Nobel Prize press release and retained the documentary video."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The article is an introductory summary and links to the Nobel Prize source for fuller technical and historical detail."
+      ]
+    },
+    "post/なぜ青色LEDを作ることがほぼ不可能だったのか/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/なぜ青色LEDを作ることがほぼ不可能だったのか/index.md",
+      "sourceHash": "a16debbe0b6a7ec33429250da6e16aeaa68ea5709dd922b31087860895f52ccd",
+      "translationHash": "216342e7bc3600d7a99df29372e26835370a6c3bf4980c3a525347d7077f14b3",
+      "summary": "Revised and aligned the translation with the scientifically scoped blue-LED history and the official Nobel citation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the documentary introduction with the history and corrected the rhetorical “nearly impossible” framing."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked blue LED, gallium nitride (GaN), band gap, p-type conductivity, and Nobel Prize naming."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Confirmed the qualitative photon-energy/band-gap explanation and the stated 2014 Nobel award against the official Nobel source; no quantitative formula is asserted."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and verified the official 2014 Nobel Prize press release and retained the documentary video."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The article is an introductory summary and links to the Nobel Prize source for fuller technical and historical detail."
+      ]
+    },
+    "post/なぜ青色LEDを作ることがほぼ不可能だったのか/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/なぜ青色LEDを作ることがほぼ不可能だったのか/index.md",
+      "sourceHash": "a16debbe0b6a7ec33429250da6e16aeaa68ea5709dd922b31087860895f52ccd",
+      "translationHash": "d9361754b019987d03c9d16bff02fa5f1e804f59b4c97f2884ffbda99d3f9bc2",
+      "summary": "Revised and aligned the translation with the scientifically scoped blue-LED history and the official Nobel citation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the documentary introduction with the history and corrected the rhetorical “nearly impossible” framing."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked blue LED, gallium nitride (GaN), band gap, p-type conductivity, and Nobel Prize naming."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Confirmed the qualitative photon-energy/band-gap explanation and the stated 2014 Nobel award against the official Nobel source; no quantitative formula is asserted."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and verified the official 2014 Nobel Prize press release and retained the documentary video."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The article is an introductory summary and links to the Nobel Prize source for fuller technical and historical detail."
+      ]
+    },
+    "post/なぜ青色LEDを作ることがほぼ不可能だったのか/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/なぜ青色LEDを作ることがほぼ不可能だったのか/index.md",
+      "sourceHash": "a16debbe0b6a7ec33429250da6e16aeaa68ea5709dd922b31087860895f52ccd",
+      "translationHash": "f31004bdc47dc724793daeb3c4296b684971c41fae5e68d4f0a1d826143f5258",
+      "summary": "Revised and aligned the translation with the scientifically scoped blue-LED history and the official Nobel citation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the documentary introduction with the history and corrected the rhetorical “nearly impossible” framing."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked blue LED, gallium nitride (GaN), band gap, p-type conductivity, and Nobel Prize naming."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Confirmed the qualitative photon-energy/band-gap explanation and the stated 2014 Nobel award against the official Nobel source; no quantitative formula is asserted."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and verified the official 2014 Nobel Prize press release and retained the documentary video."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The article is an introductory summary and links to the Nobel Prize source for fuller technical and historical detail."
+      ]
+    },
+    "post/なぜ青色LEDを作ることがほぼ不可能だったのか/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/なぜ青色LEDを作ることがほぼ不可能だったのか/index.md",
+      "sourceHash": "a16debbe0b6a7ec33429250da6e16aeaa68ea5709dd922b31087860895f52ccd",
+      "translationHash": "89c4305f82f96ab39e792c00ec8877b1050f266f316efb949210fc75a813009b",
+      "summary": "Revised and aligned the translation with the scientifically scoped blue-LED history and the official Nobel citation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the documentary introduction with the history and corrected the rhetorical “nearly impossible” framing."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked blue LED, gallium nitride (GaN), band gap, p-type conductivity, and Nobel Prize naming."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Confirmed the qualitative photon-energy/band-gap explanation and the stated 2014 Nobel award against the official Nobel source; no quantitative formula is asserted."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and verified the official 2014 Nobel Prize press release and retained the documentary video."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The article is an introductory summary and links to the Nobel Prize source for fuller technical and historical detail."
+      ]
+    },
+    "post/なぜ青色LEDを作ることがほぼ不可能だったのか/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/なぜ青色LEDを作ることがほぼ不可能だったのか/index.md",
+      "sourceHash": "a16debbe0b6a7ec33429250da6e16aeaa68ea5709dd922b31087860895f52ccd",
+      "translationHash": "efc512c0f00c26fd49c71d3b278e6b244bdd87fb5249601c5542e96b3ee5eb11",
+      "summary": "Revised and aligned the translation with the scientifically scoped blue-LED history and the official Nobel citation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the documentary introduction with the history and corrected the rhetorical “nearly impossible” framing."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked blue LED, gallium nitride (GaN), band gap, p-type conductivity, and Nobel Prize naming."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Confirmed the qualitative photon-energy/band-gap explanation and the stated 2014 Nobel award against the official Nobel source; no quantitative formula is asserted."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and verified the official 2014 Nobel Prize press release and retained the documentary video."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The article is an introductory summary and links to the Nobel Prize source for fuller technical and historical detail."
+      ]
+    },
+    "post/なぜ青色LEDを作ることがほぼ不可能だったのか/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/なぜ青色LEDを作ることがほぼ不可能だったのか/index.md",
+      "sourceHash": "a16debbe0b6a7ec33429250da6e16aeaa68ea5709dd922b31087860895f52ccd",
+      "translationHash": "e832dc9bebeb873cb569fc0950fafed2e7b94238b83be9870ec3ac65d92bc683",
+      "summary": "Revised and aligned the translation with the scientifically scoped blue-LED history and the official Nobel citation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the documentary introduction with the history and corrected the rhetorical “nearly impossible” framing."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked blue LED, gallium nitride (GaN), band gap, p-type conductivity, and Nobel Prize naming."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Confirmed the qualitative photon-energy/band-gap explanation and the stated 2014 Nobel award against the official Nobel source; no quantitative formula is asserted."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and verified the official 2014 Nobel Prize press release and retained the documentary video."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The article is an introductory summary and links to the Nobel Prize source for fuller technical and historical detail."
+      ]
+    },
+    "post/なぜ青色LEDを作ることがほぼ不可能だったのか/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/なぜ青色LEDを作ることがほぼ不可能だったのか/index.md",
+      "sourceHash": "a16debbe0b6a7ec33429250da6e16aeaa68ea5709dd922b31087860895f52ccd",
+      "translationHash": "36560c4ddfa23ba1c89abd7ab8535491cbc379ded6981fd129d1dd16d394eeae",
+      "summary": "Revised and aligned the translation with the scientifically scoped blue-LED history and the official Nobel citation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the documentary introduction with the history and corrected the rhetorical “nearly impossible” framing."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked blue LED, gallium nitride (GaN), band gap, p-type conductivity, and Nobel Prize naming."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Confirmed the qualitative photon-energy/band-gap explanation and the stated 2014 Nobel award against the official Nobel source; no quantitative formula is asserted."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and verified the official 2014 Nobel Prize press release and retained the documentary video."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The article is an introductory summary and links to the Nobel Prize source for fuller technical and historical detail."
+      ]
+    },
+    "post/なぜ青色LEDを作ることがほぼ不可能だったのか/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/なぜ青色LEDを作ることがほぼ不可能だったのか/index.md",
+      "sourceHash": "a16debbe0b6a7ec33429250da6e16aeaa68ea5709dd922b31087860895f52ccd",
+      "translationHash": "bac250db93b62f1cfb5c61af916ef84834c4e94e15a0b9ce008c7406cdf5c54f",
+      "summary": "Revised and aligned the translation with the scientifically scoped blue-LED history and the official Nobel citation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the documentary introduction with the history and corrected the rhetorical “nearly impossible” framing."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked blue LED, gallium nitride (GaN), band gap, p-type conductivity, and Nobel Prize naming."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Confirmed the qualitative photon-energy/band-gap explanation and the stated 2014 Nobel award against the official Nobel source; no quantitative formula is asserted."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and verified the official 2014 Nobel Prize press release and retained the documentary video."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The article is an introductory summary and links to the Nobel Prize source for fuller technical and historical detail."
+      ]
+    }
+  }
+}
