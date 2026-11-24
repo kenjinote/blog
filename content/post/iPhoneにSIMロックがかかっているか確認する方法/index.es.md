@@ -1,33 +1,24 @@
 ---
-
-
-
-
-
-
-
-
-title: 'Cómo comprobar fácilmente si un iPhone tiene bloqueo de red (SIM Lock) o no'
-date: "2026-09-24T19:44:38+09:00"
+title: "Cómo comprobar si tu iPhone tiene bloqueo de operador"
 slug: "iPhoneにBloqueo SIMがかかっているか確認する方法"
-date: 2024-09-12T00:32:11+09:00
 tags: ["iPhone", "Bloqueo de SIM"]
 draft: false
 image: "img.webp"
 categories: ["pc-gadgets"]
-description: 'Explicamos paso a paso cómo comprobar fácilmente desde los ajustes si tu iPhone actual está bloqueado (SIM Lock) o liberado. Úsalo como referencia al cambiar a una operadora de bajo coste (MVNO) o comprar un dispositivo de segunda mano.'
+description: "Consulta el estado de bloqueo en Ajustes y descubre a quién contactar para solicitar el desbloqueo."
+date: 2024-09-12T00:32:11+09:00
+lastmod: 2026-11-24
 ---
+# Cómo comprobar si tu iPhone tiene bloqueo de operador
 
+Abre Ajustes > General > Información y busca “Bloqueo del operador”. Si aparece “Sin restricciones de SIM”, el iPhone no está bloqueado por un operador.
 
+La etiqueta puede variar según el idioma o la versión de iOS. Si no aparece “Sin restricciones de SIM” o no queda claro, consulta al vendedor o a tu operador actual. Solo el operador puede desbloquear el iPhone.
 
+Que esté desbloqueado no garantiza compatibilidad con todas las redes. Comprueba también las bandas, la elegibilidad del servicio y la compatibilidad con eSIM. El bloqueo del operador es distinto del PIN de la SIM.
 
+- [Apple Support: iPhone carrier/SIM lock (English)](https://support.apple.com/en-us/109316)
 
+- [Appleサポート：iPhoneのSIMロック解除（日本語）](https://support.apple.com/ja-jp/109316)
 
-
-
-
-# Cómo comprobar si tu iPhone tiene bloqueo de SIM
-
-`Pantalla de inicio` > `Ajustes` > `General` > `Información` > `Bloqueo de SIM`
-
-Comprueba si aparece `Sin bloqueo de SIM` o `Con bloqueo de SIM`.
+- [Appleサポート：中古iPhone購入前の確認（日本語）](https://support.apple.com/ja-jp/104999)

@@ -1,0 +1,454 @@
+{
+  "version": 1,
+  "batch": 120,
+  "article": "iPhoneのSIMロック状態確認",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "e10882700baf0058545f8dce72b0d7db07f522d38bce2774a28f642c59da66ae",
+  "sources": [
+    "https://support.apple.com/en-us/109316",
+    "https://support.apple.com/ja-jp/109316",
+    "https://support.apple.com/ja-jp/104999"
+  ],
+  "scope": "Reviewed the Japanese article and twelve translations for current settings navigation, the official unlocked indicator, carrier-unlock responsibility, used-device context, dates, and links.",
+  "findings": [
+    "Removed duplicate future dates and retained the original publication date; set lastmod to the review date.",
+    "Aligned menu path to Settings > General > About and described “No SIM restrictions” / the localized equivalent as the positive unlocked indicator.",
+    "Clarified that only the current carrier can unlock an iPhone and that unlock status does not guarantee network, service, or eSIM compatibility.",
+    "Distinguished carrier lock from a SIM PIN lock and added current Apple Support references."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/iPhoneにSIMロックがかかっているか確認する方法/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/iPhoneにSIMロックがかかっているか確認する方法/index.md",
+      "sourceHash": "e10882700baf0058545f8dce72b0d7db07f522d38bce2774a28f642c59da66ae",
+      "translationHash": "4cdb40d24c34e6bfa17f3955393634d2b938ca00e90838138dbe3572f189401a",
+      "summary": "Updated this translation against Apple Support, including the positive unlocked indicator and carrier responsibility.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the steps and interpretation with Apple Support; clarified that only the carrier can unlock the device."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Settings, General, About, carrier/SIM lock, eSIM, network compatibility, and SIM PIN distinction."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formula or numerical claim."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no program code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Apple Support articles on checking/unlocking the carrier lock and checking a used iPhone."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Menu labels may differ by iOS version and interface language; confirm the displayed wording on the device.",
+        "Carrier unlock eligibility and supported networks depend on the carrier and device model."
+      ]
+    },
+    "post/iPhoneにSIMロックがかかっているか確認する方法/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/iPhoneにSIMロックがかかっているか確認する方法/index.md",
+      "sourceHash": "e10882700baf0058545f8dce72b0d7db07f522d38bce2774a28f642c59da66ae",
+      "translationHash": "b165b4ae309e9c417d9263e6423a446e978f14d1e502404ca27b9817f15a0917",
+      "summary": "Updated this translation against Apple Support, including the positive unlocked indicator and carrier responsibility.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the steps and interpretation with Apple Support; clarified that only the carrier can unlock the device."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Settings, General, About, carrier/SIM lock, eSIM, network compatibility, and SIM PIN distinction."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formula or numerical claim."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no program code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Apple Support articles on checking/unlocking the carrier lock and checking a used iPhone."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Menu labels may differ by iOS version and interface language; confirm the displayed wording on the device.",
+        "Carrier unlock eligibility and supported networks depend on the carrier and device model."
+      ]
+    },
+    "post/iPhoneにSIMロックがかかっているか確認する方法/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/iPhoneにSIMロックがかかっているか確認する方法/index.md",
+      "sourceHash": "e10882700baf0058545f8dce72b0d7db07f522d38bce2774a28f642c59da66ae",
+      "translationHash": "1b35f48a3ec92df3ade5b91a3887eae94b92813a4aca6e4cb5126b26f1cca226",
+      "summary": "Updated this translation against Apple Support, including the positive unlocked indicator and carrier responsibility.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the steps and interpretation with Apple Support; clarified that only the carrier can unlock the device."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Settings, General, About, carrier/SIM lock, eSIM, network compatibility, and SIM PIN distinction."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formula or numerical claim."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no program code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Apple Support articles on checking/unlocking the carrier lock and checking a used iPhone."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Menu labels may differ by iOS version and interface language; confirm the displayed wording on the device.",
+        "Carrier unlock eligibility and supported networks depend on the carrier and device model."
+      ]
+    },
+    "post/iPhoneにSIMロックがかかっているか確認する方法/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/iPhoneにSIMロックがかかっているか確認する方法/index.md",
+      "sourceHash": "e10882700baf0058545f8dce72b0d7db07f522d38bce2774a28f642c59da66ae",
+      "translationHash": "e6e6c69d64a96c627868f9daa8cacc8e7763ac9a9e514bd108822bbe53555632",
+      "summary": "Updated this translation against Apple Support, including the positive unlocked indicator and carrier responsibility.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the steps and interpretation with Apple Support; clarified that only the carrier can unlock the device."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Settings, General, About, carrier/SIM lock, eSIM, network compatibility, and SIM PIN distinction."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formula or numerical claim."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no program code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Apple Support articles on checking/unlocking the carrier lock and checking a used iPhone."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Menu labels may differ by iOS version and interface language; confirm the displayed wording on the device.",
+        "Carrier unlock eligibility and supported networks depend on the carrier and device model."
+      ]
+    },
+    "post/iPhoneにSIMロックがかかっているか確認する方法/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/iPhoneにSIMロックがかかっているか確認する方法/index.md",
+      "sourceHash": "e10882700baf0058545f8dce72b0d7db07f522d38bce2774a28f642c59da66ae",
+      "translationHash": "7689ce4fe6529a6b2ffe168d9924553edc58c137cf39b6aa70eace6cf5ad19f3",
+      "summary": "Updated this translation against Apple Support, including the positive unlocked indicator and carrier responsibility.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the steps and interpretation with Apple Support; clarified that only the carrier can unlock the device."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Settings, General, About, carrier/SIM lock, eSIM, network compatibility, and SIM PIN distinction."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formula or numerical claim."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no program code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Apple Support articles on checking/unlocking the carrier lock and checking a used iPhone."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Menu labels may differ by iOS version and interface language; confirm the displayed wording on the device.",
+        "Carrier unlock eligibility and supported networks depend on the carrier and device model."
+      ]
+    },
+    "post/iPhoneにSIMロックがかかっているか確認する方法/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/iPhoneにSIMロックがかかっているか確認する方法/index.md",
+      "sourceHash": "e10882700baf0058545f8dce72b0d7db07f522d38bce2774a28f642c59da66ae",
+      "translationHash": "556436993a4d0d6c1bc76c31f874b2c250d08894cb5889e279f3de91c3c0c2bf",
+      "summary": "Updated this translation against Apple Support, including the positive unlocked indicator and carrier responsibility.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the steps and interpretation with Apple Support; clarified that only the carrier can unlock the device."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Settings, General, About, carrier/SIM lock, eSIM, network compatibility, and SIM PIN distinction."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formula or numerical claim."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no program code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Apple Support articles on checking/unlocking the carrier lock and checking a used iPhone."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Menu labels may differ by iOS version and interface language; confirm the displayed wording on the device.",
+        "Carrier unlock eligibility and supported networks depend on the carrier and device model."
+      ]
+    },
+    "post/iPhoneにSIMロックがかかっているか確認する方法/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/iPhoneにSIMロックがかかっているか確認する方法/index.md",
+      "sourceHash": "e10882700baf0058545f8dce72b0d7db07f522d38bce2774a28f642c59da66ae",
+      "translationHash": "1d44f5fcf0c9ea38df94d1ab5188705232012743b3a2156df3ad95fb337f093c",
+      "summary": "Updated this translation against Apple Support, including the positive unlocked indicator and carrier responsibility.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the steps and interpretation with Apple Support; clarified that only the carrier can unlock the device."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Settings, General, About, carrier/SIM lock, eSIM, network compatibility, and SIM PIN distinction."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formula or numerical claim."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no program code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Apple Support articles on checking/unlocking the carrier lock and checking a used iPhone."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Menu labels may differ by iOS version and interface language; confirm the displayed wording on the device.",
+        "Carrier unlock eligibility and supported networks depend on the carrier and device model."
+      ]
+    },
+    "post/iPhoneにSIMロックがかかっているか確認する方法/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/iPhoneにSIMロックがかかっているか確認する方法/index.md",
+      "sourceHash": "e10882700baf0058545f8dce72b0d7db07f522d38bce2774a28f642c59da66ae",
+      "translationHash": "0d1129a9dde97cd8d2e436110d46d878b61aa842466a7ad60f61d01c454e1db2",
+      "summary": "Updated this translation against Apple Support, including the positive unlocked indicator and carrier responsibility.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the steps and interpretation with Apple Support; clarified that only the carrier can unlock the device."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Settings, General, About, carrier/SIM lock, eSIM, network compatibility, and SIM PIN distinction."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formula or numerical claim."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no program code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Apple Support articles on checking/unlocking the carrier lock and checking a used iPhone."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Menu labels may differ by iOS version and interface language; confirm the displayed wording on the device.",
+        "Carrier unlock eligibility and supported networks depend on the carrier and device model."
+      ]
+    },
+    "post/iPhoneにSIMロックがかかっているか確認する方法/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/iPhoneにSIMロックがかかっているか確認する方法/index.md",
+      "sourceHash": "e10882700baf0058545f8dce72b0d7db07f522d38bce2774a28f642c59da66ae",
+      "translationHash": "e545b617e53e65d1ff3ef9d69ee31f0cbdd6b24880f094fe5fa20a089e801d0d",
+      "summary": "Updated this translation against Apple Support, including the positive unlocked indicator and carrier responsibility.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the steps and interpretation with Apple Support; clarified that only the carrier can unlock the device."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Settings, General, About, carrier/SIM lock, eSIM, network compatibility, and SIM PIN distinction."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formula or numerical claim."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no program code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Apple Support articles on checking/unlocking the carrier lock and checking a used iPhone."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Menu labels may differ by iOS version and interface language; confirm the displayed wording on the device.",
+        "Carrier unlock eligibility and supported networks depend on the carrier and device model."
+      ]
+    },
+    "post/iPhoneにSIMロックがかかっているか確認する方法/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/iPhoneにSIMロックがかかっているか確認する方法/index.md",
+      "sourceHash": "e10882700baf0058545f8dce72b0d7db07f522d38bce2774a28f642c59da66ae",
+      "translationHash": "ba5b4976a9451315b382fb0a89a7108932b562fd0a26be60c42a5af9eee50c26",
+      "summary": "Updated this translation against Apple Support, including the positive unlocked indicator and carrier responsibility.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the steps and interpretation with Apple Support; clarified that only the carrier can unlock the device."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Settings, General, About, carrier/SIM lock, eSIM, network compatibility, and SIM PIN distinction."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formula or numerical claim."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no program code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Apple Support articles on checking/unlocking the carrier lock and checking a used iPhone."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Menu labels may differ by iOS version and interface language; confirm the displayed wording on the device.",
+        "Carrier unlock eligibility and supported networks depend on the carrier and device model."
+      ]
+    },
+    "post/iPhoneにSIMロックがかかっているか確認する方法/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/iPhoneにSIMロックがかかっているか確認する方法/index.md",
+      "sourceHash": "e10882700baf0058545f8dce72b0d7db07f522d38bce2774a28f642c59da66ae",
+      "translationHash": "d03fe4eee8121c277036e32f4d6feca5910c92e7fb0e3d1105726138c48c23a9",
+      "summary": "Updated this translation against Apple Support, including the positive unlocked indicator and carrier responsibility.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the steps and interpretation with Apple Support; clarified that only the carrier can unlock the device."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Settings, General, About, carrier/SIM lock, eSIM, network compatibility, and SIM PIN distinction."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formula or numerical claim."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no program code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Apple Support articles on checking/unlocking the carrier lock and checking a used iPhone."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Menu labels may differ by iOS version and interface language; confirm the displayed wording on the device.",
+        "Carrier unlock eligibility and supported networks depend on the carrier and device model."
+      ]
+    },
+    "post/iPhoneにSIMロックがかかっているか確認する方法/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/iPhoneにSIMロックがかかっているか確認する方法/index.md",
+      "sourceHash": "e10882700baf0058545f8dce72b0d7db07f522d38bce2774a28f642c59da66ae",
+      "translationHash": "7fbb4ff4e6d8b6852eb98676e7982fe4ef0e16773c35e0fcfea6d8f6643209a1",
+      "summary": "Updated this translation against Apple Support, including the positive unlocked indicator and carrier responsibility.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the steps and interpretation with Apple Support; clarified that only the carrier can unlock the device."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Settings, General, About, carrier/SIM lock, eSIM, network compatibility, and SIM PIN distinction."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formula or numerical claim."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no program code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Apple Support articles on checking/unlocking the carrier lock and checking a used iPhone."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Menu labels may differ by iOS version and interface language; confirm the displayed wording on the device.",
+        "Carrier unlock eligibility and supported networks depend on the carrier and device model."
+      ]
+    }
+  }
+}
