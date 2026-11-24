@@ -241,6 +241,19 @@ ARTICLES = {
         "markers": ["gemma4:e2b", "/api/chat", "/api/embed", "embeddinggemma", "eval_duration", "ollama.chat"],
         "date": "2026-09-11",
     },
+    106: {
+        "bundle": ROOT / "content/post/PMP勉強",
+        "slug": "PMP勉強",
+        "links": [
+            "https://www.pmi.org/-/media/pmi/documents/public/pdf/certifications/new-pmp-examination-content-outline-2026.pdf",
+            "https://www.pmi.org/certifications/project-management-pmp/new-exam",
+            "https://www.pmi.org/certifications/project-management-pmp",
+            "https://www.pmi.org/-/media/pmi/documents/public/pdf/certifications/generic-certification-handbook.pdf",
+            "https://agilemanifesto.org/",
+        ],
+        "markers": ["180", "170", "240", "33%", "41%", "26%", "2026"],
+        "date": "2024-02-04",
+    },
 }
 
 
@@ -306,7 +319,7 @@ def slug_key(value):
 parser = argparse.ArgumentParser()
 parser.add_argument("--ci-run", type=int, required=True)
 parser.add_argument("--commit", required=True)
-parser.add_argument("--max-batch", type=int, choices=(90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105), default=105)
+parser.add_argument("--max-batch", type=int, choices=(90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106), default=106)
 args = parser.parse_args()
 ARTICLES = {number: article for number, article in ARTICLES.items() if number <= args.max_batch}
 with urllib.request.urlopen(f"https://github.com/kenjinote/blog/actions/runs/{args.ci_run}", timeout=45) as response:

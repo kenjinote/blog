@@ -12125,6 +12125,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-105.json",
       "evidenceHash": "d6da3a5e046fed683ec1a5e445ca216e6fec37e165e6f08fe401db0a10880c9c"
+    },
+    "post/PMP勉強/index.ar.md": {
+      "source": "post/PMP勉強/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "2c1e79824fc8aa11d4094aba24bc58091abd802e22c86423b0ffb990b4d96ff4",
+      "translationHash": "1f7c131d96ff48de4b7a01a66ffa503ab9d7588f937f925d7e1ba1c05c5fd6eb",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-106.json",
+      "evidenceHash": "388f578a8d08e3b25b6a67f1f1b3282b0e57f2f12a4069228f86a75d13e43562"
+    },
+    "post/PMP勉強/index.de.md": {
+      "source": "post/PMP勉強/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "2c1e79824fc8aa11d4094aba24bc58091abd802e22c86423b0ffb990b4d96ff4",
+      "translationHash": "34b76c57fe8da9f6a8c33cff4bc2d2f39a25f4f3f072dd1ea7650433ead59e5e",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-106.json",
+      "evidenceHash": "5eb98198ff0e62f205841f1ccd8087bd2eaa358ff4a84a76b4b7b50034d11a71"
+    },
+    "post/PMP勉強/index.en.md": {
+      "source": "post/PMP勉強/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "2c1e79824fc8aa11d4094aba24bc58091abd802e22c86423b0ffb990b4d96ff4",
+      "translationHash": "a7d68281a1ac54b0e9acd762a97dd498649eb322fbf8e699c7b377a32c0a3b91",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-106.json",
+      "evidenceHash": "50a5e87f744ce44634b8208a20d444657e04e50e5dc44c52240023665068be47"
+    },
+    "post/PMP勉強/index.es.md": {
+      "source": "post/PMP勉強/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "2c1e79824fc8aa11d4094aba24bc58091abd802e22c86423b0ffb990b4d96ff4",
+      "translationHash": "35356359a9aa1aaa2784724e15a667e95f1738e508de897b16489670d41fcc67",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-106.json",
+      "evidenceHash": "ad1a749ecdfc456a4bbdfa8ba4261221387d6f69504be252626f6a3b94c7ffa2"
+    },
+    "post/PMP勉強/index.fr.md": {
+      "source": "post/PMP勉強/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "2c1e79824fc8aa11d4094aba24bc58091abd802e22c86423b0ffb990b4d96ff4",
+      "translationHash": "92a566f49fa3c30342dc194e5b0d68582c13438c5e566d91939e0626343b0d90",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-106.json",
+      "evidenceHash": "6781a1ff196f9c3d23d2ccfcd38af9c1530362e5270cd0a5d206baa382ab71ab"
+    },
+    "post/PMP勉強/index.hi.md": {
+      "source": "post/PMP勉強/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "2c1e79824fc8aa11d4094aba24bc58091abd802e22c86423b0ffb990b4d96ff4",
+      "translationHash": "c06202da9e2f84a3f7849276556899bb4e4c6c109723bb7839dc792e6dd228d5",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-106.json",
+      "evidenceHash": "b3fd5c1ea287d3a057f2bc5efd50a44dd25b76a5a2223cc1f76cfb4a24ccc44f"
+    },
+    "post/PMP勉強/index.id.md": {
+      "source": "post/PMP勉強/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "2c1e79824fc8aa11d4094aba24bc58091abd802e22c86423b0ffb990b4d96ff4",
+      "translationHash": "1f8a7d39c8e139b4abe37c4d8a8068b487c2123e2a37b45a5fc4ca1e7bd57ff5",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-106.json",
+      "evidenceHash": "c5456d085553bdbf33dbfa48cc979455ccf57f6bcddceddb1bb8776040909bfc"
+    },
+    "post/PMP勉強/index.ko.md": {
+      "source": "post/PMP勉強/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "2c1e79824fc8aa11d4094aba24bc58091abd802e22c86423b0ffb990b4d96ff4",
+      "translationHash": "e917096ea99987dd34921670f81695faa24f2f250d5723400671d0916558bb24",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-106.json",
+      "evidenceHash": "b7877a1fbd7e685d1a288c59b352964fcce6e1656d5d8a09d62cb738ef5c3dd2"
+    },
+    "post/PMP勉強/index.pt.md": {
+      "source": "post/PMP勉強/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "2c1e79824fc8aa11d4094aba24bc58091abd802e22c86423b0ffb990b4d96ff4",
+      "translationHash": "3685add79a375ef9ac46beffe5fbb926c74004707113eded04ea4fdc681714a3",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-106.json",
+      "evidenceHash": "c6a35ee4e2bceeece9e48be9d6e808eb311bcd2a83ce67c1e673c8ed008dba79"
+    },
+    "post/PMP勉強/index.ru.md": {
+      "source": "post/PMP勉強/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "2c1e79824fc8aa11d4094aba24bc58091abd802e22c86423b0ffb990b4d96ff4",
+      "translationHash": "5abc7c23a5a5dbfbacaf2efbd333b37a82ec4a4a39dc4c08cac67732b89f35ab",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-106.json",
+      "evidenceHash": "12a74d935032cbb1b59ef6247524035f3f4523aa2b04346a48aa5517958b4c0a"
+    },
+    "post/PMP勉強/index.zh-cn.md": {
+      "source": "post/PMP勉強/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "2c1e79824fc8aa11d4094aba24bc58091abd802e22c86423b0ffb990b4d96ff4",
+      "translationHash": "dc51245ca1d663c0167b7cfbf41b770dcdee94fa44a70b15ca700aec4592f1f5",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-106.json",
+      "evidenceHash": "657e6da93ef6139744a0ebaa9aa4e214d8beb91d95ace324ceac9ee5483287dd"
+    },
+    "post/PMP勉強/index.zh-tw.md": {
+      "source": "post/PMP勉強/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "2c1e79824fc8aa11d4094aba24bc58091abd802e22c86423b0ffb990b4d96ff4",
+      "translationHash": "7b4265e6bb8c189cbd27a46fc45a2d1b9ae31f322596ee50a00fa6c67f8f66a9",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-106.json",
+      "evidenceHash": "b237d3f541d36906c48d77f6c26aea9aa408f45b96b946c31759daadb4df3563"
     }
   }
 }

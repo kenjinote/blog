@@ -1,197 +1,47 @@
 ---
-title: 'PMP考试基础知识与备考总结：对应PMBOK第7版'
-date: "2026-09-24T19:44:38+09:00"
+title: "PMP 考试备考：2026 ECO、考试形式与报考条件"
 slug: "PMP学习"
-date: 2024-02-04T18:41:31+09:00
 tags: ["PMP", "PMBOK", "学习"]
 draft: false
 image: "img.webp"
 categories: ["it-technology"]
-description: '总结了项目管理认证“PMP”备考的要点。除了考试概况和及格线外，还讲解了对应PMBOK第7版的重要内容，如服务型领导的10项原则、敏捷软件开发宣言的4个价值观等。'
+description: "依据 PMI 2026 年 7 月版 PMP 考试大纲，介绍考试领域、题型、报考要求、12 月培训规则变化和实用学习计划。"
+date: "2024-02-04T18:41:31+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
 
-# PMP备考学习总结
+本文面向准备 PMP 考试的考生。2026 年 7 月更新后的考试考查对官方 Exam Content Outline（ECO）所列工作的情境判断能力，而不是背诵某一版《PMBOK® 指南》。选择备考材料前，请先核对 ECO 版本。
 
-这是PMP备考学习的总结。
+## 2026 年考试形式
 
-## 概述
-PMP是项目管理的资格认证。它是基于名为PMBOK（最新第7版）的指南的资格认证。
-PMP考试时间为230分钟，共180道题，其中5道为测试题不计分，因此在175道计分题中答对106道以上即可及格。
-回答为选择题，大部分是单选题（4选1），但也有5选1或多选题。
+2026 年 7 月版考试共 180 题，时长 240 分钟，其中 170 题计分，另有 10 道随机混入的不计分预试题。领域占比为 People 33%、Process 41%、Business Environment 26%。约 40% 采用预测型方法，约 60% 合并考查适应型/敏捷与混合型方法。题型包括单选、多选、拖放、案例/情境题和实践题，并有两次 10 分钟休息。
 
-## 仆人式领导
+## 理解考试范围
 
-不是自上而下发号施令，而是自下而上提供支持的领导风格。
+People 涉及团队领导、冲突处理以及与相关方协调期望。Process 涉及综合规划、价值交付、范围、资源、采购、财务和风险。Business Environment 涉及治理、组织变革、持续改进和外部变化。2026 ECO 还在情境题中强调 AI、可持续发展、价值和业务成果。
 
-### 仆人式领导的10个原则（特征）
-1. 倾听
-2. 共情
-3. 治愈
-4. 觉察
-5. 劝服
-6. 概念化
-7. 远见
-8. 管家
-9. 承诺员工成长
-10. 构建社区
+## 报考资格与培训
 
-## 敏捷宣言 4个核心价值观
+报考资格由学历和过去 10 年内领导项目的非重叠专业经验决定。2026 年 7 月 ECO 列出的经验为：中等教育 60 个月、认可的短周期高等教育/职业资格 48 个月、学士同等学历 36 个月、PMI GAC 认证项目学位 24 个月。此外还需完成符合 ECO 的 35 小时项目管理培训。申请前请向 PMI 核实学历等同性和审核材料要求。 持有有效 CAPM® 认证可满足此培训要求。
 
-我们一直在实践中探寻更好的软件开发方法，
-身体力行的同时也帮助他人。
-由此，我们体会到了以下价值：
+## 2026 年 12 月 1 日培训规则变化
 
-01. 个体和互动 高于 流程和工具
-02. 工作的软件 高于 详尽的文档
-03. 客户合作 高于 合同谈判
-04. 响应变化 高于 遵循计划
+PMI 已宣布培训机构规则将于 2026 年 12 月 1 日变更。符合条件的自学课程仍可使用；从该日起，讲师授课的线下或线上课程只有由 PMI Authorized Training Partner、China Registered Education Provider 或符合条件的认证高等教育项目提供时才计入。报名之前请查看 PMI 最新要求。
 
-也就是说，尽管右项有其价值，
-我们更重视左项的价值。
-    
-[敏捷宣言](https://agilemanifesto.org/iso/zhchs/manifesto.html) 
+## 实用学习计划
 
-## 敏捷 敏捷宣言背后的12条原则
+1. 阅读 2026 年 7 月 ECO，并记录每项任务的掌握程度。2. 先做诊断练习，把错题分为知识缺口、判断不当或读题错误。3. 练习相关方沟通、价值取舍、风险应对、团队支持和组织影响等情境，而不是孤立地背术语。4. 限时完成混合方法的模拟题，再复习薄弱领域。5. 在错题记录中说明正确选项为何适合该情境，以及其他选项可能适用的条件。ECO 是考试范围依据；《PMBOK® 指南》和《敏捷宣言》是辅助资料。
 
-01. 我们最重要的目标，是通过持续不断地及早交付有价值的软件使客户满意。
-02. 欣然面对需求变化，即使在开发后期也一样。为了客户的竞争优势，敏捷过程掌控变化。
-03. 经常地交付可工作的软件，相隔几个星期或几个月，倾向于采取较短的周期。
-04. 业务人员和开发人员必须相互合作，项目中的每一天都不例外。
-05. 激发个体的斗志，以他们为核心搭建项目。提供所需的环境和支援，辅以信任，从而达成目标。
-06. 不论团队内外，传递信息效果最好效率也最高的方式是面对面的交谈。
-07. 可工作的软件是进度的首要度量标准。
-08. 敏捷过程倡导可持续开发。责任人、开发人员和用户要能够共同维持其步调稳定延续。
-09. 坚持不懈地追求技术卓越和良好设计，敏捷能力由此增强。
-10. 以简洁为本，它是极力减少不必要工作量的艺术。
-11. 最好的架构、需求和设计出自自组织团队。
-12. 团队定期地反思如何能提高成效，并依此调整自身的举止表现。
+## 关于通过分数
 
-[敏捷宣言背后的原则](https://agilemanifesto.org/iso/zhchs/principles.html)
+“答对 106 题即可通过”不是 PMI 公布的固定规则。170 题计分，但 PMI 通过心理测量分析设定通过标准，并未公布适用于所有考生的统一百分比。预试题也不会标出。不要把模拟考试正确率当成官方合格线。
 
-### 术语
-- 史诗（Epic，概要）
-- 用户故事（User Story，注册到产品待办事项的单位，进行优先级排序的单位）
-- 任务（Task，技术性工作项目，所需时间估算的对象）
-- 产品待办事项 / 产品待办事项条目（Product Backlog / Product Backlog Item）
-- 产品负责人（Product Owner）
-- 相关方/干系人（Stakeholder）
-- 敏捷实践指南（书籍）
-- 精益开发（Lean Development）
-- 看板（Kanban）
-- 价值链（Value Chain）
-- AC (Actual Cost, 实际成本)
-- EV (Earned Value, 挣值)
-- PV (Planned Value, 计划价值)
-- EVA (Earned Value Analysis, 挣值分析)
-- SPI (Schedule Performance Index, 进度绩效指数 = EV / PV)
-- CPI (Cost Performance Index, 成本绩效指数 = EV / AC)
-- EVM (Earned Value Management, 挣值管理)
-- BAC (Budget at Completion, 完工预算)
-- ETC (Estimate To Complete, 完工尚需估算)
-- EAC (Estimate At Completion, 完工估算)
-- 职能型（Functional）
-- 矩阵型（Matrix）
-- 项目型（Projectized）
-- 仆人式领导（Servant Leadership）
-- 塔克曼阶梯理论（形成阶段、震荡阶段、规范阶段、成熟阶段、解散阶段）
-- 团队章程（Team Charter）
-- 计划扑克（斐波那契数列）
-- 回顾会议（Retrospective，反思活动）
-- 虚拟团队（Virtual Team）
-- 项目章程（Project Charter）
-- 冲突（面对/解决问题、合作、妥协、缓和/包容、强迫、撤退/回避）
-- 价值流图（Value Stream Mapping）
-- 辅导（Mentoring）
-- 教练（Coaching）
-- 培训（Training）
-- 道格拉斯·麦格雷戈的XY理论（Theory X and Theory Y）
-- SWOT分析：Strength（优势）、Weakness（劣势）、Opportunity（机会）、Threat（威胁）
-- SECI模型（Socialization社会化、Externalization外化、Combination组合化、Internalization内化）
-- PDCA, PDSA
-- PESTLE (Political政治、Economic经济、Social社会、Technological技术、Legal法律、Environmental环境)
-- VUCA (Volatility易变性、Uncertainty不确定性、Complexity复杂性、Ambiguity模糊性)
-- 蒙特卡洛分析（Monte Carlo Simulation）
-- 决策树分析（Decision [Tree](https://kenji.blog/zh-cn/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) Analysis）
-- 预期货币价值（EMV, Expected Monetary Value）
-- 净推荐值（NPS, Net Promoter Score）
-- 成本效益分析（Cost-Benefit Analysis）
-- 冲刺评审（Sprint Review）
-- 发布管理（Release Management）
-- SOW (Statement of Work) 工作说明书：“包含项目范围、目标、可交付成果、工期、资源等详细说明的文档”
-- P-SOW（采购工作说明书）
-- RFI (Request For Information) 信息邀请书
-- RFP (Request For Proposal) 建议邀请书
-- 总价合同 (FP: Fixed Price)
-- 工料合同 (T&M: Time and Material)
-- 成本补偿合同 (CR: Cost Reimbursable)
-- 总价加激励费用合同 (FPIF: Fixed Price Incentive Fee)
-- 范围蔓延（Scope Creep）
-- 卡诺模型（Kano Model）
-- 资金分配法 / 资金限制平衡（Funding Limit Reconciliation）
-- 100分法 (100-Point Method)
-- MoSCoW法则 (Must, Should, Could, Won't/Would)
-- 需求跟踪矩阵 (Traceability Matrix)
-- WBS词典 (WBS Dictionary)
-- 速率 / 速度（Velocity，每个迭代中完成的故事点数）
-- 速率图表 (Velocity Chart)
-- 相关方参与度评估矩阵（不知晓、抵制、中立、支持、领导）
-- 阶段关口 (Phase Gate)
-- 信息发射源 (Information Radiator)
-- 燃尽图 (Burndown Chart)
-- 燃起图 (Burnup Chart)
-- 累积流量图 (Cumulative Flow Diagram, CFD)
-- QCD (Quality质量、Cost成本、Delivery交付)
-- 螺旋型 (Spiral)
-- 关键链 (Critical Chain)
-- 特性 (Feature)
-- 迭代 / 冲刺 (Iteration / Sprint)
-- 迭代的 (Iterative)
-- 增量的 (Incremental)
-- 增量 (Increment，增量的可交付成果)
-- 韧性 / 弹性 (Resilience)
-- 管家精神（Stewardship）：诚实守信的行为和负责任的行动（决策）
-- 升级 (Escalation)
-- KPT (Keep保留、Problem问题、Try尝试)
-- RACI矩阵（Responsible执行、Accountable负责、Consulted咨询、Informed知情）
-- PMO（Project Management Office，项目管理办公室）：支持型、控制型、指令型
-- 节奏 (Cadence)
-- 裁剪 (Tailoring)
-- 神经逻辑层次（环境、行为、能力、信念/价值观、身份/自我认知）
-- 商业论证（Business Case：记录项目目的、收益、风险、投资回报等的文档）
-- 趋势分析（使用趋势图进行，并运用数学技术根据结果预测未来的成果）
-- 质量管理计划（定义有关项目可交付成果质量的策略和方法）
-- 治理过程（Governance Process）
-- 产品负责人（产品愿景、产品待办事项优先级排序、产品发布）
-- 项目出资人/发起人（Project Owner/Sponsor：项目的发包方/委托方）
-- 项目经理（管理整个项目）
-- 项目主管/组长（在现场指挥）
-- 项目成员（推进项目）
-- 混合方法（Hybrid Approach）
-- 最小可行产品 (MVP, Minimum Viable Product)
-- 迭代评审 (Iteration Review)
-- 研讨会 (Workshop)
-- 项目收益管理计划（项目目标的收益、实现收益的战略手段以及实现收益的时间框架）
-- 关键绩效指标 (KPI, Key Performance Indicator)
-- 现场 (On-site)
-- 类比估算 (Analogous Estimating)
-- 三点估算 (Three-Point Estimating)
-- 参数估算 (Parametric Estimating)
-- 项目评审 (Project Review)
-- 大爆炸法 (Big Bang Approach)
-- DSDM（动态系统开发方法）
-- 布鲁克斯法则 (Brooks's law)
-- 大爆炸法（同时一次性全部导入）
-- 风险登记册（Risk Register：作为识别项目中潜在挫折的风险管理工具而使用的文档）
-- 风险登记册
-- 情境领导理论 (Situational Leadership Theory：根据对方的情况采取4种行动)
-- 胜任力 (Competence)
-- 承诺 (Commitment)
+考试信息可能变化。申请、购买课程或预约考试前，请重新查看 PMI 页面和最新 ECO。本文于 2026 年 11 月 24 日核对，不保证通过，也不代表 PMI 推荐任何课程。
 
-## 参考
-- [Scrum指南 (Ken Schwaber & Jeff Sutherland)](https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-Japanese.pdf)
-- [PMI ECO 页面](https://www.pmi.org/-/media/pmi/documents/public/pdf/certifications/pmp-examination-content-outline.pdf?sc_lang_temp=ja-JP)
-- [敏捷实践指南](https://www.agilealliance.org/wp-content/uploads/2018/07/AgilePG_JAP.pdf)
-- [PMI道德与专业行为规范](https://www.pmi.org/-/media/pmi/documents/public/pdf/ethics/pmi-code-of-ethics.pdf?sc_lang_temp=ja-JP)
+## 官方资料
 
-## 教材
-- [目标一次通过“PMP®认证考试”！高效备考策略课程（2021）支持敏捷](https://www.udemy.com/course/ace-the-pmp)
+- [PMP Certification Exam Content Outline, July 2026](https://www.pmi.org/-/media/pmi/documents/public/pdf/certifications/new-pmp-examination-content-outline-2026.pdf)
+- [PMI: 2026 PMP exam update and training changes](https://www.pmi.org/certifications/project-management-pmp/new-exam)
+- [PMI: PMP certification and eligibility](https://www.pmi.org/certifications/project-management-pmp)
+- [PMI Certification Handbook](https://www.pmi.org/-/media/pmi/documents/public/pdf/certifications/generic-certification-handbook.pdf)
+- [The Agile Manifesto](https://agilemanifesto.org/)

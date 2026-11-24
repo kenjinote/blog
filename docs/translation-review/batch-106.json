@@ -1,0 +1,459 @@
+{
+  "version": 1,
+  "batch": 106,
+  "article": "PMP勉強",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "2c1e79824fc8aa11d4094aba24bc58091abd802e22c86423b0ffb990b4d96ff4",
+  "sources": [
+    "https://www.pmi.org/-/media/pmi/documents/public/pdf/certifications/new-pmp-examination-content-outline-2026.pdf",
+    "https://www.pmi.org/certifications/project-management-pmp/new-exam",
+    "https://www.pmi.org/certifications/project-management-pmp",
+    "https://www.pmi.org/-/media/pmi/documents/public/pdf/certifications/generic-certification-handbook.pdf",
+    "https://agilemanifesto.org/"
+  ],
+  "scope": "Rewrote the Japanese PMP study guide and twelve translations against the July 2026 PMI ECO and current official certification/training pages. Checked exam length, scored/pretest counts, domain weighting, approach mix, item formats, education/experience pathways, 35 training hours and announced December 1 provider change. Replaced the stale glossary-heavy outline with a practical ECO-based study method and corrected pass-score folklore.",
+  "findings": [
+    "Removed duplicated and conflicting publication dates, preserving the original 2024-02-04 publication date and recording the 2026-11-24 revision date.",
+    "Corrected the obsolete 230-minute, 175-scored-item and fixed 106/175 pass-score claims to PMI's current 180-item, 170-scored, 240-minute exam and psychometric passing standard.",
+    "Updated domain weights to People 33%, Process 41%, Business Environment 26%; clarified approximately 40% predictive and 60% adaptive/agile plus hybrid approaches.",
+    "Added current question formats, two 10-minute breaks, AI/sustainability/value scenario context, and a practical ECO-aligned preparation plan.",
+    "Added current experience pathways, 35 training hours, and PMI's announced 2026-12-01 live-training provider transition; directed readers to confirm eligibility with PMI.",
+    "Recorded the active CAPM training-hour credit so the 35-hour requirement is not overstated.",
+    "Clarified that the ECO, not one PMBOK edition or a legacy memorized list, defines the exam blueprint; replaced stale glossary and copied study notes with sourced guidance."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/PMP勉強/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PMP勉強/index.md",
+      "sourceHash": "2c1e79824fc8aa11d4094aba24bc58091abd802e22c86423b0ffb990b4d96ff4",
+      "translationHash": "1f7c131d96ff48de4b7a01a66ffa503ab9d7588f937f925d7e1ba1c05c5fd6eb",
+      "summary": "Compared and aligned the translation to the Japanese source and PMI's July 2026 Exam Content Outline, eligibility rules, and announced December training transition.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the updated exam, domain weights, approaches, question formats, eligibility, and study guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked PMP, ECO, People, Process, Business Environment, predictive, adaptive/agile, hybrid, PMI GAC, and training terminology in each locale."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked 180 total items, 170 scored plus 10 pretest items, 240 minutes, domain percentages 33/41/26, and education-based experience-month paths."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added the official July 2026 ECO, PMI exam-update page, certification page, current handbook, and Agile Manifesto."
+        }
+      },
+      "limitations": [
+        "AI-assisted translation review; no human or native-speaker certification.",
+        "PMP rules and training eligibility may change; the article is scoped to official PMI material checked on 2026-11-24, including the announced 2026-12-01 transition.",
+        "This is a study orientation, not personalized eligibility advice or a guarantee of passing."
+      ]
+    },
+    "post/PMP勉強/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PMP勉強/index.md",
+      "sourceHash": "2c1e79824fc8aa11d4094aba24bc58091abd802e22c86423b0ffb990b4d96ff4",
+      "translationHash": "34b76c57fe8da9f6a8c33cff4bc2d2f39a25f4f3f072dd1ea7650433ead59e5e",
+      "summary": "Compared and aligned the translation to the Japanese source and PMI's July 2026 Exam Content Outline, eligibility rules, and announced December training transition.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the updated exam, domain weights, approaches, question formats, eligibility, and study guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked PMP, ECO, People, Process, Business Environment, predictive, adaptive/agile, hybrid, PMI GAC, and training terminology in each locale."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked 180 total items, 170 scored plus 10 pretest items, 240 minutes, domain percentages 33/41/26, and education-based experience-month paths."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added the official July 2026 ECO, PMI exam-update page, certification page, current handbook, and Agile Manifesto."
+        }
+      },
+      "limitations": [
+        "AI-assisted translation review; no human or native-speaker certification.",
+        "PMP rules and training eligibility may change; the article is scoped to official PMI material checked on 2026-11-24, including the announced 2026-12-01 transition.",
+        "This is a study orientation, not personalized eligibility advice or a guarantee of passing."
+      ]
+    },
+    "post/PMP勉強/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PMP勉強/index.md",
+      "sourceHash": "2c1e79824fc8aa11d4094aba24bc58091abd802e22c86423b0ffb990b4d96ff4",
+      "translationHash": "a7d68281a1ac54b0e9acd762a97dd498649eb322fbf8e699c7b377a32c0a3b91",
+      "summary": "Compared and aligned the translation to the Japanese source and PMI's July 2026 Exam Content Outline, eligibility rules, and announced December training transition.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the updated exam, domain weights, approaches, question formats, eligibility, and study guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked PMP, ECO, People, Process, Business Environment, predictive, adaptive/agile, hybrid, PMI GAC, and training terminology in each locale."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked 180 total items, 170 scored plus 10 pretest items, 240 minutes, domain percentages 33/41/26, and education-based experience-month paths."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added the official July 2026 ECO, PMI exam-update page, certification page, current handbook, and Agile Manifesto."
+        }
+      },
+      "limitations": [
+        "AI-assisted translation review; no human or native-speaker certification.",
+        "PMP rules and training eligibility may change; the article is scoped to official PMI material checked on 2026-11-24, including the announced 2026-12-01 transition.",
+        "This is a study orientation, not personalized eligibility advice or a guarantee of passing."
+      ]
+    },
+    "post/PMP勉強/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PMP勉強/index.md",
+      "sourceHash": "2c1e79824fc8aa11d4094aba24bc58091abd802e22c86423b0ffb990b4d96ff4",
+      "translationHash": "35356359a9aa1aaa2784724e15a667e95f1738e508de897b16489670d41fcc67",
+      "summary": "Compared and aligned the translation to the Japanese source and PMI's July 2026 Exam Content Outline, eligibility rules, and announced December training transition.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the updated exam, domain weights, approaches, question formats, eligibility, and study guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked PMP, ECO, People, Process, Business Environment, predictive, adaptive/agile, hybrid, PMI GAC, and training terminology in each locale."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked 180 total items, 170 scored plus 10 pretest items, 240 minutes, domain percentages 33/41/26, and education-based experience-month paths."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added the official July 2026 ECO, PMI exam-update page, certification page, current handbook, and Agile Manifesto."
+        }
+      },
+      "limitations": [
+        "AI-assisted translation review; no human or native-speaker certification.",
+        "PMP rules and training eligibility may change; the article is scoped to official PMI material checked on 2026-11-24, including the announced 2026-12-01 transition.",
+        "This is a study orientation, not personalized eligibility advice or a guarantee of passing."
+      ]
+    },
+    "post/PMP勉強/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PMP勉強/index.md",
+      "sourceHash": "2c1e79824fc8aa11d4094aba24bc58091abd802e22c86423b0ffb990b4d96ff4",
+      "translationHash": "92a566f49fa3c30342dc194e5b0d68582c13438c5e566d91939e0626343b0d90",
+      "summary": "Compared and aligned the translation to the Japanese source and PMI's July 2026 Exam Content Outline, eligibility rules, and announced December training transition.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the updated exam, domain weights, approaches, question formats, eligibility, and study guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked PMP, ECO, People, Process, Business Environment, predictive, adaptive/agile, hybrid, PMI GAC, and training terminology in each locale."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked 180 total items, 170 scored plus 10 pretest items, 240 minutes, domain percentages 33/41/26, and education-based experience-month paths."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added the official July 2026 ECO, PMI exam-update page, certification page, current handbook, and Agile Manifesto."
+        }
+      },
+      "limitations": [
+        "AI-assisted translation review; no human or native-speaker certification.",
+        "PMP rules and training eligibility may change; the article is scoped to official PMI material checked on 2026-11-24, including the announced 2026-12-01 transition.",
+        "This is a study orientation, not personalized eligibility advice or a guarantee of passing."
+      ]
+    },
+    "post/PMP勉強/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PMP勉強/index.md",
+      "sourceHash": "2c1e79824fc8aa11d4094aba24bc58091abd802e22c86423b0ffb990b4d96ff4",
+      "translationHash": "c06202da9e2f84a3f7849276556899bb4e4c6c109723bb7839dc792e6dd228d5",
+      "summary": "Compared and aligned the translation to the Japanese source and PMI's July 2026 Exam Content Outline, eligibility rules, and announced December training transition.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the updated exam, domain weights, approaches, question formats, eligibility, and study guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked PMP, ECO, People, Process, Business Environment, predictive, adaptive/agile, hybrid, PMI GAC, and training terminology in each locale."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked 180 total items, 170 scored plus 10 pretest items, 240 minutes, domain percentages 33/41/26, and education-based experience-month paths."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added the official July 2026 ECO, PMI exam-update page, certification page, current handbook, and Agile Manifesto."
+        }
+      },
+      "limitations": [
+        "AI-assisted translation review; no human or native-speaker certification.",
+        "PMP rules and training eligibility may change; the article is scoped to official PMI material checked on 2026-11-24, including the announced 2026-12-01 transition.",
+        "This is a study orientation, not personalized eligibility advice or a guarantee of passing."
+      ]
+    },
+    "post/PMP勉強/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PMP勉強/index.md",
+      "sourceHash": "2c1e79824fc8aa11d4094aba24bc58091abd802e22c86423b0ffb990b4d96ff4",
+      "translationHash": "1f8a7d39c8e139b4abe37c4d8a8068b487c2123e2a37b45a5fc4ca1e7bd57ff5",
+      "summary": "Compared and aligned the translation to the Japanese source and PMI's July 2026 Exam Content Outline, eligibility rules, and announced December training transition.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the updated exam, domain weights, approaches, question formats, eligibility, and study guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked PMP, ECO, People, Process, Business Environment, predictive, adaptive/agile, hybrid, PMI GAC, and training terminology in each locale."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked 180 total items, 170 scored plus 10 pretest items, 240 minutes, domain percentages 33/41/26, and education-based experience-month paths."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added the official July 2026 ECO, PMI exam-update page, certification page, current handbook, and Agile Manifesto."
+        }
+      },
+      "limitations": [
+        "AI-assisted translation review; no human or native-speaker certification.",
+        "PMP rules and training eligibility may change; the article is scoped to official PMI material checked on 2026-11-24, including the announced 2026-12-01 transition.",
+        "This is a study orientation, not personalized eligibility advice or a guarantee of passing."
+      ]
+    },
+    "post/PMP勉強/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PMP勉強/index.md",
+      "sourceHash": "2c1e79824fc8aa11d4094aba24bc58091abd802e22c86423b0ffb990b4d96ff4",
+      "translationHash": "e917096ea99987dd34921670f81695faa24f2f250d5723400671d0916558bb24",
+      "summary": "Compared and aligned the translation to the Japanese source and PMI's July 2026 Exam Content Outline, eligibility rules, and announced December training transition.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the updated exam, domain weights, approaches, question formats, eligibility, and study guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked PMP, ECO, People, Process, Business Environment, predictive, adaptive/agile, hybrid, PMI GAC, and training terminology in each locale."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked 180 total items, 170 scored plus 10 pretest items, 240 minutes, domain percentages 33/41/26, and education-based experience-month paths."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added the official July 2026 ECO, PMI exam-update page, certification page, current handbook, and Agile Manifesto."
+        }
+      },
+      "limitations": [
+        "AI-assisted translation review; no human or native-speaker certification.",
+        "PMP rules and training eligibility may change; the article is scoped to official PMI material checked on 2026-11-24, including the announced 2026-12-01 transition.",
+        "This is a study orientation, not personalized eligibility advice or a guarantee of passing."
+      ]
+    },
+    "post/PMP勉強/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PMP勉強/index.md",
+      "sourceHash": "2c1e79824fc8aa11d4094aba24bc58091abd802e22c86423b0ffb990b4d96ff4",
+      "translationHash": "3685add79a375ef9ac46beffe5fbb926c74004707113eded04ea4fdc681714a3",
+      "summary": "Compared and aligned the translation to the Japanese source and PMI's July 2026 Exam Content Outline, eligibility rules, and announced December training transition.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the updated exam, domain weights, approaches, question formats, eligibility, and study guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked PMP, ECO, People, Process, Business Environment, predictive, adaptive/agile, hybrid, PMI GAC, and training terminology in each locale."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked 180 total items, 170 scored plus 10 pretest items, 240 minutes, domain percentages 33/41/26, and education-based experience-month paths."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added the official July 2026 ECO, PMI exam-update page, certification page, current handbook, and Agile Manifesto."
+        }
+      },
+      "limitations": [
+        "AI-assisted translation review; no human or native-speaker certification.",
+        "PMP rules and training eligibility may change; the article is scoped to official PMI material checked on 2026-11-24, including the announced 2026-12-01 transition.",
+        "This is a study orientation, not personalized eligibility advice or a guarantee of passing."
+      ]
+    },
+    "post/PMP勉強/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PMP勉強/index.md",
+      "sourceHash": "2c1e79824fc8aa11d4094aba24bc58091abd802e22c86423b0ffb990b4d96ff4",
+      "translationHash": "5abc7c23a5a5dbfbacaf2efbd333b37a82ec4a4a39dc4c08cac67732b89f35ab",
+      "summary": "Compared and aligned the translation to the Japanese source and PMI's July 2026 Exam Content Outline, eligibility rules, and announced December training transition.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the updated exam, domain weights, approaches, question formats, eligibility, and study guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked PMP, ECO, People, Process, Business Environment, predictive, adaptive/agile, hybrid, PMI GAC, and training terminology in each locale."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked 180 total items, 170 scored plus 10 pretest items, 240 minutes, domain percentages 33/41/26, and education-based experience-month paths."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added the official July 2026 ECO, PMI exam-update page, certification page, current handbook, and Agile Manifesto."
+        }
+      },
+      "limitations": [
+        "AI-assisted translation review; no human or native-speaker certification.",
+        "PMP rules and training eligibility may change; the article is scoped to official PMI material checked on 2026-11-24, including the announced 2026-12-01 transition.",
+        "This is a study orientation, not personalized eligibility advice or a guarantee of passing."
+      ]
+    },
+    "post/PMP勉強/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PMP勉強/index.md",
+      "sourceHash": "2c1e79824fc8aa11d4094aba24bc58091abd802e22c86423b0ffb990b4d96ff4",
+      "translationHash": "dc51245ca1d663c0167b7cfbf41b770dcdee94fa44a70b15ca700aec4592f1f5",
+      "summary": "Compared and aligned the translation to the Japanese source and PMI's July 2026 Exam Content Outline, eligibility rules, and announced December training transition.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the updated exam, domain weights, approaches, question formats, eligibility, and study guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked PMP, ECO, People, Process, Business Environment, predictive, adaptive/agile, hybrid, PMI GAC, and training terminology in each locale."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked 180 total items, 170 scored plus 10 pretest items, 240 minutes, domain percentages 33/41/26, and education-based experience-month paths."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added the official July 2026 ECO, PMI exam-update page, certification page, current handbook, and Agile Manifesto."
+        }
+      },
+      "limitations": [
+        "AI-assisted translation review; no human or native-speaker certification.",
+        "PMP rules and training eligibility may change; the article is scoped to official PMI material checked on 2026-11-24, including the announced 2026-12-01 transition.",
+        "This is a study orientation, not personalized eligibility advice or a guarantee of passing."
+      ]
+    },
+    "post/PMP勉強/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PMP勉強/index.md",
+      "sourceHash": "2c1e79824fc8aa11d4094aba24bc58091abd802e22c86423b0ffb990b4d96ff4",
+      "translationHash": "7b4265e6bb8c189cbd27a46fc45a2d1b9ae31f322596ee50a00fa6c67f8f66a9",
+      "summary": "Compared and aligned the translation to the Japanese source and PMI's July 2026 Exam Content Outline, eligibility rules, and announced December training transition.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the updated exam, domain weights, approaches, question formats, eligibility, and study guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked PMP, ECO, People, Process, Business Environment, predictive, adaptive/agile, hybrid, PMI GAC, and training terminology in each locale."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked 180 total items, 170 scored plus 10 pretest items, 240 minutes, domain percentages 33/41/26, and education-based experience-month paths."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added the official July 2026 ECO, PMI exam-update page, certification page, current handbook, and Agile Manifesto."
+        }
+      },
+      "limitations": [
+        "AI-assisted translation review; no human or native-speaker certification.",
+        "PMP rules and training eligibility may change; the article is scoped to official PMI material checked on 2026-11-24, including the announced 2026-12-01 transition.",
+        "This is a study orientation, not personalized eligibility advice or a guarantee of passing."
+      ]
+    }
+  }
+}

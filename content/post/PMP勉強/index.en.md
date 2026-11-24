@@ -1,197 +1,47 @@
 ---
-title: 'Basic Knowledge and Study Guide for the PMP Exam: PMBOK 7th Edition Compatible'
-date: "2026-09-24T19:44:38+09:00"
+title: "How to Study for the PMP Exam: 2026 ECO, Format, and Eligibility"
 slug: "PMPStudy"
-date: 2024-02-04T18:41:31+09:00
 tags: ["PMP", "PMBOK", "Study"]
 draft: false
 image: "img.webp"
 categories: ["it-technology"]
-description: 'Summarized the key points for studying for the project management certification ''PMP'' exam. In addition to the exam overview and passing score, it explains important topics compatible with PMBOK 7th Edition, such as the 10 principles of servant leadership and the 4 values of the Agile Software Development Manifesto.'
+description: "A study guide based on PMI's July 2026 PMP Exam Content Outline, covering domains, exam format, eligibility, the December 2026 training change, and a practical study plan."
+date: "2024-02-04T18:41:31+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
 
-# PMP Exam Study Summary
+This guide is for people preparing to take the PMP exam. The exam updated in July 2026 tests judgment across the work described in the official Exam Content Outline (ECO), rather than memorization of one edition of the PMBOK® Guide. Check the ECO version before choosing study materials.
 
-A summary of my studies for the PMP exam.
+## The 2026 exam format
 
-## Overview
-PMP is a project management certification. It is based on a guidebook called PMBOK (latest 7th edition).
-The PMP exam is 230 minutes long and consists of 180 questions, but 5 of them are dummy questions, so you pass if you answer 106 or more of the 175 questions correctly.
-The answers are multiple-choice, mostly with 4 options, but some have 5 options or are multiple-select.
+The July 2026 exam has 180 questions and 240 minutes. Of the questions, 170 are scored and 10 unscored pretest items are mixed in randomly. Domain weighting is People 33%, Process 41%, and Business Environment 26%. About 40% of items use predictive approaches; adaptive/agile and hybrid approaches make up about 60% combined. Formats include single- and multiple-response, drag-and-drop, case/scenario, and practicum questions. There are two 10-minute breaks.
 
-## Servant Leadership
+## Read the exam outline
 
-A leadership style that supports from the bottom rather than commanding from the top.
+People covers leading teams, resolving conflict, and aligning stakeholders and expectations. Process covers integrated planning, value delivery, scope, resources, procurement, finance, and risk. Business Environment covers governance, organizational change, continuous improvement, and external change. The 2026 outline also emphasizes AI, sustainability, value, and business outcomes in scenarios.
 
-### 10 Principles (Characteristics) of Servant Leadership
-1. Listening
-2. Empathy
-3. Healing
-4. Awareness
-5. Persuasion
-6. Conceptualization
-7. Foresight
-8. Stewardship
-9. Commitment to the Growth of People
-10. Building Community
+## Eligibility and training
 
-## Agile Manifesto 4 Values
+Eligibility combines education with non-overlapping professional experience leading projects in the previous 10 years. The July 2026 ECO lists 60 months for secondary-school level, 48 months for a recognized short-cycle tertiary or vocational qualification, 36 months for a bachelor's-equivalent qualification, or 24 months for a degree from a PMI GAC-accredited program. Candidates also need 35 hours of project-management training aligned with the ECO. Confirm equivalency and audit documentation with PMI before applying. An active CAPM® certification satisfies the training requirement.
 
-We are uncovering better ways of developing
-software by doing it and helping others do it.
-Through this work we have come to value:
+## Training change on December 1, 2026
 
-01. Individuals and interactions over processes and tools
-02. Working software over comprehensive documentation
-03. Customer collaboration over contract negotiation
-04. Responding to change over following a plan
+PMI has announced a training-provider change effective December 1, 2026. Eligible on-demand courses remain an option, while instructor-led in-person or online training will count only when delivered by a PMI Authorized Training Partner, China Registered Education Provider, or eligible accredited higher-education program. Check PMI's latest rules before enrolling or submitting hours.
 
-That is, while there is value in the items on
-the left, we value the items on the right more.
-    
-[Agile Manifesto](https://agilemanifesto.org/iso/en/manifesto.html) 
+## A practical study plan
 
-## 12 Principles Behind the Agile Manifesto
+1. Read the July 2026 ECO and track confidence by task. 2. Take a diagnostic practice set and classify each miss as a knowledge gap, judgment issue, or reading error. 3. Practice scenarios about stakeholder conversations, value trade-offs, risk responses, team support, and organizational impact instead of memorizing terms in isolation. 4. Use timed mixed-method mock exams and review weak domains. 5. In an error log, record why the right option fits the situation and when the other options might be appropriate. The ECO is the exam blueprint; the PMBOK® Guide and Agile Manifesto are supporting references.
 
-01. Our highest priority is to satisfy the customer through early and continuous delivery of valuable software.
-02. Welcome changing requirements, even late in development. Agile processes harness change for the customer's competitive advantage.
-03. Deliver working software frequently, from a couple of weeks to a couple of months, with a preference to the shorter timescale.
-04. Business people and developers must work together daily throughout the project.
-05. Build projects around motivated individuals. Give them the environment and support they need, and trust them to get the job done.
-06. The most efficient and effective method of conveying information to and within a development team is face-to-face conversation.
-07. Working software is the primary measure of progress.
-08. Agile processes promote sustainable development. The sponsors, developers, and users should be able to maintain a constant pace indefinitely.
-09. Continuous attention to technical excellence and good design enhances agility.
-10. Simplicity--the art of maximizing the amount of work not done--is essential.
-11. The best architectures, requirements, and designs emerge from self-organizing teams.
-12. At regular intervals, the team reflects on how to become more effective, then tunes and adjusts its behavior accordingly.
+## About the passing score
 
-[Principles behind the Agile Manifesto](https://agilemanifesto.org/iso/en/principles.html)
+A fixed “106 correct answers” pass line is not a published PMI rule. Although 170 items are scored, PMI sets passing standards through psychometric analysis rather than publishing one universal percentage. Pretest items are not identified. Do not treat a practice-test percentage as the official passing threshold; build coverage across domains and scenario judgment.
 
-### Terminology
-- Epic (Outline)
-- User Story (Unit to be registered in the product backlog, unit for prioritization)
-- Task (Technical work item, target for time estimation)
-- Product Backlog / Product Backlog Item
-- Product Owner
-- Stakeholder
-- Agile Practice Guide (Book)
-- Lean Development
-- Kanban
-- Value Chain
-- AC (Actual Cost)
-- EV (Earned Value)
-- PV (Planned Value)
-- EVA (Earned Value Analysis)
-- SPI (Schedule Performance Index = EV / PV)
-- CPI (Cost Performance Index = EV / AC)
-- EVM (Earned Value Management)
-- BAC (Budget at Completion)
-- ETC (Estimate To Complete)
-- EAC (Estimate At Completion)
-- Functional Organization
-- Matrix Organization
-- Projectized Organization
-- Servant Leadership
-- Tuckman's Model (Forming, Storming, Norming, Performing, Adjourning)
-- Team Charter
-- Planning Poker ([Fibonacci](https://kenji.blog/en/p/fibonacci/) sequence)
-- Retrospective (Looking back activity)
-- Virtual Team
-- Project Charter
-- Conflict (6 Coping methods: Confronting/Problem Solving, Collaborating, Compromising, Smoothing/Accommodating, Forcing, Withdrawing/Avoiding)
-- Value Stream Mapping
-- Mentoring
-- Coaching
-- Training
-- Douglas McGregor's Theory X and Theory Y
-- SWOT Analysis: Strength, Weakness, Opportunity, Threat
-- SECI Model (Socialization, Externalization, Combination, Internalization)
-- PDCA, PDSA
-- PESTLE (Political, Economic, Social, Technological, Legal, Environmental)
-- VUCA (Volatility, Uncertainty, Complexity, Ambiguity)
-- Monte Carlo Method
-- Decision [Tree](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) Analysis
-- Expected Monetary Value (EMV)
-- Net Promoter Score
-- Cost-Benefit Analysis
-- Sprint Review
-- Release Management
-- SOW (Statement of Work) "Document containing a detailed description of the project scope, objectives, deliverables, duration, resources, etc."
-- P-SOW (Procurement Statement of Work)
-- RFI (Request For Information)
-- RFP (Request For Proposal)
-- Fixed Price Contract (FP: Fixed Price)
-- Time and Material Contract (T&M: Time and Material)
-- Cost Reimbursable Contract (CR: Cost Reimbursable)
-- Fixed Price Incentive Fee (FPIF)
-- Scope Creep
-- Kano Analysis
-- Funding Limit Reconciliation
-- 100 Points Method
-- MoSCoW Method (Must, Should, Could, Would)
-- Traceability Matrix
-- WBS Dictionary
-- Velocity (Number of story points achieved in each iteration)
-- Velocity Chart
-- Engagement Assessment Matrix (Unaware, Resistant, Neutral, Supportive, Leading)
-- Phase Gate
-- Information Radiator
-- Burndown Chart
-- Burnup Chart
-- Cumulative Flow Diagram
-- QCD (Quality, Cost, Delivery)
-- Spiral Model
-- Critical Chain
-- Feature
-- Iteration / Sprint
-- Iterative
-- Incremental
-- Increment (Deliverable of an increment)
-- Resilience / Resiliency
-- Stewardship: Sincere, trustworthy behavior and responsible actions (decision making)
-- Escalation
-- KPT (Keep, Problem, Try)
-- RACI (Responsible, Accountable, Consulted, Informed)
-- PMO (Project Management Office): Supportive, Controlling, Directive
-- Cadence
-- Tailoring
-- Neurological Levels (Environment, Behavior, Capabilities, Beliefs/Values, Identity)
-- Business Case (Document outlining project objectives, benefits, risks, ROI, etc.)
-- Trend Analysis (Executed using run charts, mathematical techniques to predict future outcomes based on results)
-- Quality Management Plan (Defines the strategy and approach for project deliverables' quality)
-- Governance Process
-- Product Owner (Product vision, product backlog prioritization, product release)
-- Project Owner (Project sponsor/client)
-- Project Manager (Manages the overall project)
-- Project Leader (Directs on site)
-- Project Member (Drives the project)
-- Hybrid Approach
-- Minimum Viable Product (MVP)
-- Iteration Review
-- Workshop
-- Project Benefits Management Plan (Target benefits of project objectives, strategic means to realize them, and timeframes)
-- Key Performance Indicator (KPI)
-- On-site (In the field, locally)
-- Analogous Estimating
-- Three-Point Estimating
-- Parametric Estimating
-- Project Review
-- Big Bang Approach
-- DSDM (Dynamic Systems Development Method)
-- Brooks's Law
-- Big Bang Approach (Introducing everything all at once)
-- Risk Register (Document used as a risk management tool to identify potential setbacks in a project)
-- Risk Register
-- Situational Leadership Theory (SL Theory) (4 behaviors matched to the other party's situation)
-- Competence
-- Commitment
+Exam information can change. Recheck PMI's certification page and the current ECO before applying, buying a course, or scheduling an exam. This guide reflects a review on November 24, 2026; it is not a guarantee of passing or a PMI endorsement of a course.
 
-## References
-- [Scrum Guide (Ken Schwaber & Jeff Sutherland)](https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-US.pdf)
-- [PMI ECO (Japanese Version) Page](https://www.pmi.org/-/media/pmi/documents/public/pdf/certifications/pmp-examination-content-outline.pdf?sc_lang_temp=ja-JP)
-- [Agile Practice Guide](https://www.agilealliance.org/wp-content/uploads/2018/07/AgilePG_JAP.pdf)
-- [PMI Code of Ethics and Professional Conduct](https://www.pmi.org/-/media/pmi/documents/public/pdf/ethics/pmi-code-of-ethics.pdf?sc_lang_temp=ja-JP)
+## Official references
 
-## Study Materials
-- [Aim for First Try Pass in "PMP® Certification Exam"! Strategy Course for Efficient Exam Preparation (2021) Agile Supported](https://www.udemy.com/course/ace-the-pmp)
+- [PMP Certification Exam Content Outline, July 2026](https://www.pmi.org/-/media/pmi/documents/public/pdf/certifications/new-pmp-examination-content-outline-2026.pdf)
+- [PMI: 2026 PMP exam update and training changes](https://www.pmi.org/certifications/project-management-pmp/new-exam)
+- [PMI: PMP certification and eligibility](https://www.pmi.org/certifications/project-management-pmp)
+- [PMI Certification Handbook](https://www.pmi.org/-/media/pmi/documents/public/pdf/certifications/generic-certification-handbook.pdf)
+- [The Agile Manifesto](https://agilemanifesto.org/)
