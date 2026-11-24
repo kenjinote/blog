@@ -1,8 +1,8 @@
 ---
 title: 'Ein Muss! Eine persönliche Film-TODO-Liste und Aufzeichnungen bereits gesehener empfohlener Werke'
-date: "2026-09-24T19:44:38+09:00"
 slug: "FilmTODOリスト"
 date: 2023-04-17T00:34:13+09:00
+lastmod: "2026-11-25T00:00:00+09:00"
 tags: ["Filme", "TODO"]
 draft: false
 image: "image.webp"
@@ -11,6 +11,9 @@ description: 'Dies ist eine TODO-Liste von Film-Meisterwerken und Animes, die ic
 ---
 
 # Filme, die ich sehen möchte (beim Ansehen abhaken)
+
+Die Kästchen zeigen den Sehstatus des Autors bei Veröffentlichung dieser Liste am 17. April 2023; inzwischen kann sich dieser geändert haben.
+
 - [ ] Maquia: Eine unsterbliche Liebesgeschichte
 - [ ] Das Geheimnis der blauen Tropfen
 - [x] Summer Wars

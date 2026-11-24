@@ -21965,6 +21965,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-188.json",
       "evidenceHash": "3550943cb68533d54e76e6cf5067612a181b65745901057c25bb1f64a6c3645e"
+    },
+    "post/映画TODOリスト/index.en.md": {
+      "source": "post/映画TODOリスト/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9157100990e34572ab0db7c534d95c96321063db64f7af25d9fad0e556f5fbbc",
+      "translationHash": "b9d31cdcd95f387a2eadb77d8ec279c901f8e8f1a431b729d32354973d8d484f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-189.json",
+      "evidenceHash": "9bdec0dfe6564e7b6a426eaa518534419298f43b47a77dc679676f9dd6cd70d6"
+    },
+    "post/映画TODOリスト/index.zh-cn.md": {
+      "source": "post/映画TODOリスト/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9157100990e34572ab0db7c534d95c96321063db64f7af25d9fad0e556f5fbbc",
+      "translationHash": "d37509db560700da4e475dcd13fdae8638551ad9b690677c19b45be6fd18bdbb",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-189.json",
+      "evidenceHash": "3c179065ee12b8f2537a94d3aafecbd6a975eef6614da59ff0048385879ecb66"
+    },
+    "post/映画TODOリスト/index.es.md": {
+      "source": "post/映画TODOリスト/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9157100990e34572ab0db7c534d95c96321063db64f7af25d9fad0e556f5fbbc",
+      "translationHash": "95951910d73c367079720dd587786a07bd2e60d4c6cb75821d3098878876cd82",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-189.json",
+      "evidenceHash": "22952c4d27b5bff0371a92e3ff904e217cd9ae27ba018678b7ccc257301105b4"
+    },
+    "post/映画TODOリスト/index.fr.md": {
+      "source": "post/映画TODOリスト/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9157100990e34572ab0db7c534d95c96321063db64f7af25d9fad0e556f5fbbc",
+      "translationHash": "8dc796d4ddbf514f359bb6c142fcd210898792fa4b7c21c2e67a3a28554a7235",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-189.json",
+      "evidenceHash": "25f11d069f7b9ea1f9d5976acc72242919aabb4ed89f4f04fd2859aafc14fbeb"
+    },
+    "post/映画TODOリスト/index.de.md": {
+      "source": "post/映画TODOリスト/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9157100990e34572ab0db7c534d95c96321063db64f7af25d9fad0e556f5fbbc",
+      "translationHash": "7415efebc309373b0e248401e0d0bc9cedb9941bd6e69e2d7e4fe0146c1ba876",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-189.json",
+      "evidenceHash": "a36ee065d07059443633556197b63ec1b7e750ced50fce663f2884d699e1ebac"
+    },
+    "post/映画TODOリスト/index.pt.md": {
+      "source": "post/映画TODOリスト/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9157100990e34572ab0db7c534d95c96321063db64f7af25d9fad0e556f5fbbc",
+      "translationHash": "7a29882d2638333f8a22e009eb92cffebf6fb3a6aff52f82599f0137cd916832",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-189.json",
+      "evidenceHash": "de476164db25c019a47405df91c74a6e6e3c871aeb71869b08bd6304eca5e1a5"
+    },
+    "post/映画TODOリスト/index.id.md": {
+      "source": "post/映画TODOリスト/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9157100990e34572ab0db7c534d95c96321063db64f7af25d9fad0e556f5fbbc",
+      "translationHash": "d9c7f1fe5351f56897d45eda4c220339e0200503f1740b55725b4ae9fad5c5a9",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-189.json",
+      "evidenceHash": "18c28cca2f8387c0007ba8b23250f440ad42e333f992300b131a6b017c034fef"
+    },
+    "post/映画TODOリスト/index.ko.md": {
+      "source": "post/映画TODOリスト/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9157100990e34572ab0db7c534d95c96321063db64f7af25d9fad0e556f5fbbc",
+      "translationHash": "e3c056db9ab4d23f166302f274b0e039d2333c44bc3e8e640840c23bb32178ee",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-189.json",
+      "evidenceHash": "23d30d51b1671868cbb2922c7df7546230ba032e580dc46c13cff3f6aa413a2e"
+    },
+    "post/映画TODOリスト/index.zh-tw.md": {
+      "source": "post/映画TODOリスト/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9157100990e34572ab0db7c534d95c96321063db64f7af25d9fad0e556f5fbbc",
+      "translationHash": "317c5b6fcc32e65b9ec28bac03815d44d1fadc227f83e76e5e039e2f90ca4357",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-189.json",
+      "evidenceHash": "0ef2e5e1981f699b4dc1b35dc8fea4acb08800c13293830e5538fc0d6602ab24"
+    },
+    "post/映画TODOリスト/index.hi.md": {
+      "source": "post/映画TODOリスト/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9157100990e34572ab0db7c534d95c96321063db64f7af25d9fad0e556f5fbbc",
+      "translationHash": "a8e691c5984eeda325288608241200b94e82409f484907590d5e4805e040792d",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-189.json",
+      "evidenceHash": "8c4531e91f7044d7334e8b319d19281f8b7a5e77589e4d42766dea406fd00c9c"
+    },
+    "post/映画TODOリスト/index.ru.md": {
+      "source": "post/映画TODOリスト/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9157100990e34572ab0db7c534d95c96321063db64f7af25d9fad0e556f5fbbc",
+      "translationHash": "d479d50d30f857ff6068ecfcbca102ed7c0bafcc76114becf337239e99009db2",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-189.json",
+      "evidenceHash": "041e457295e36a049f873a751e348cd39ea102c13b3d0f9064a6d958f5272245"
+    },
+    "post/映画TODOリスト/index.ar.md": {
+      "source": "post/映画TODOリスト/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9157100990e34572ab0db7c534d95c96321063db64f7af25d9fad0e556f5fbbc",
+      "translationHash": "3f3fb1cc400ab91c0595c362cf14dbab8d699688e9e6582a358eef56484af6db",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-189.json",
+      "evidenceHash": "b4822b1b96d50fe3ffdc2b20bd453b79992a192665abd6b2ddadaa7d0c6dffcf"
     }
   }
 }

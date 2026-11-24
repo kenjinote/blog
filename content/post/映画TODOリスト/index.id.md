@@ -1,8 +1,8 @@
 ---
 title: 'Wajib Tonton! Daftar TODO Pribadi untuk Menonton Film dan Catatan Karya Rekomendasi yang Sudah Ditonton'
-date: "2026-09-24T19:44:38+09:00"
 slug: "FilmTODOリスト"
 date: 2023-04-17T00:34:13+09:00
+lastmod: "2026-11-25T00:00:00+09:00"
 tags: ["film", "TODO"]
 draft: false
 image: "image.webp"
@@ -11,6 +11,9 @@ description: 'Ini adalah daftar TODO film masterpiece dan anime yang ingin saya 
 ---
 
 # Film yang ingin ditonton (beri centang setelah menonton)
+
+Kotak centang menunjukkan status tontonan penulis saat daftar ini diterbitkan pada 17 April 2023; statusnya mungkin telah berubah.
+
 - [ ] Maquia: When the Promised Flower Blooms
 - [ ] The Professor and His Beloved Equation
 - [x] Summer Wars

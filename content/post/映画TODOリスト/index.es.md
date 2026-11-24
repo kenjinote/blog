@@ -4,9 +4,9 @@
 
 
 title: '¡Imprescindible! Lista de tareas (TODO) personal de películas por ver y registro de obras recomendadas que ya he visto'
-date: "2026-09-24T19:44:38+09:00"
 slug: "PelículaTODOリスト"
 date: 2023-04-17T00:34:13+09:00
+lastmod: "2026-11-25T00:00:00+09:00"
 tags: ["Películas", "TODO"]
 draft: false
 image: "image.webp"
@@ -19,6 +19,9 @@ description: 'Esta es una lista de películas clásicas y anime que quiero ver e
 
 
 # Películas que quiero ver (marcar al verlas)
+
+Las casillas reflejan lo que el autor había visto al publicar esta lista el 17 de abril de 2023; la situación puede haber cambiado.
+
 - [ ] Maquia: Una historia de amor inmortal
 - [ ] La fórmula preferida del profesor
 - [x] Summer Wars

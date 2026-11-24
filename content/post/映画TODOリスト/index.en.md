@@ -1,8 +1,8 @@
 ---
 title: 'Must-See! Personal Movie Watchlist and Log of Recommended Works Already Watched'
-date: "2026-09-24T19:44:38+09:00"
 slug: "MovieTODOリスト"
 date: 2023-04-17T00:34:13+09:00
+lastmod: "2026-11-25T00:00:00+09:00"
 tags: ["Movie", "TODO"]
 draft: false
 image: "image.webp"
@@ -11,6 +11,9 @@ description: 'This is a TODO list of masterpiece movies and anime I want to watc
 ---
 
 # Movies to watch (check off as I watch them)
+
+The checkboxes show the author’s viewing status when this list was published on April 17, 2023; the status may have changed since then.
+
 - [ ] Maquia: When the Promised Flower Blooms
 - [ ] The Professor's Beloved Equation
 - [x] Summer Wars

@@ -1,8 +1,8 @@
 ---
 title: 'Imperdível! Minha lista pessoal de tarefas de filmes para assistir e registro de obras recomendadas já assistidas'
-date: "2026-09-24T19:44:38+09:00"
 slug: "FilmeTODOリスト"
 date: 2023-04-17T00:34:13+09:00
+lastmod: "2026-11-25T00:00:00+09:00"
 tags: ["Filmes", "TODO"]
 draft: false
 image: "image.webp"
@@ -11,6 +11,9 @@ description: 'Esta é uma lista TODO de clássicos do cinema e anime que quero a
 ---
 
 # Filmes para assistir (marcar quando assistir)
+
+As caixas indicam o que o autor havia assistido quando esta lista foi publicada em 17 de abril de 2023; isso pode ter mudado desde então.
+
 - [ ] Maquia: Quando a Flor Prometida Floresce
 - [ ] A Fórmula Preferida do Professor
 - [x] Summer Wars

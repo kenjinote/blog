@@ -1,8 +1,8 @@
 ---
 title: 'Incontournable ! Ma liste de films personnels à voir et les recommandations des œuvres déjà visionnées'
-date: "2026-09-24T19:44:38+09:00"
 slug: "FilmTODOリスト"
 date: 2023-04-17T00:34:13+09:00
+lastmod: "2026-11-25T00:00:00+09:00"
 tags: ["Films", "TODO"]
 draft: false
 image: "image.webp"
@@ -11,6 +11,9 @@ description: 'Voici ma liste TODO des grands films et animes que je veux voir à
 ---
 
 # Films à voir (cochez après avoir vu)
+
+Les cases indiquent ce que l’auteur avait vu lors de la publication de cette liste, le 17 avril 2023 ; la situation a pu changer depuis.
+
 - [ ] Maquia: When the Promised Flower Blooms
 - [ ] La Formule préférée du professeur
 - [x] Summer Wars
