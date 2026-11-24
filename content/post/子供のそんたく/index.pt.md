@@ -1,16 +1,16 @@
 ---
-title: 'Emocionado com a gentileza de uma criança de 2 anos! Um episódio reconfortante sobre ler o ambiente e a consideração de uma criança'
-date: "2026-09-24T19:44:38+09:00"
+title: "As palavras atenciosas de uma menina de dois anos à mãe doente"
 slug: "Criançaのそんたく"
 date: 2022-09-07T04:40:52+09:00
+lastmod: "2026-11-24T00:00:00+09:00"
 tags: ["Criança"]
 draft: false
 image: "images/img.webp"
-categories: ["it-technology"]
-description: 'Apresento um episódio reconfortante em que senti a empatia e consideração de uma criança, através da atitude da minha filha de 2 anos cuidando da mãe doente e acamada. Compartilho o registro do desenvolvimento do coração bondoso que pensa nos outros, escondido nas palavras ''Não, porque a mamãe está dormindo!'', e a cura proporcionada na criação dos filhos.'
+categories: ["lifestyle-miscellaneous"]
+description: "Quando perguntei se deveríamos pedir ajuda à minha esposa, que estava doente, para preparar o jantar ou o banho, nossa filha de dois anos respondeu: “Não, ela está dormindo!”. Um pequeno momento em família que me pareceu uma forma infantil de consideração."
 ---
-Quando a mãe ficou doente e estava de cama,
-Ao preparar o jantar ou o banho, perguntei à minha filha (2 anos): "Devemos pedir à mãe para fazer isso?",
-Ela respondeu: "Não, ela está dormindo!" e pensei que, à sua maneira, ela estava sendo atenciosa.
+Isso aconteceu quando minha esposa não estava se sentindo bem e descansava na cama.
 
-Fiquei feliz em ver que ela está se tornando alguém que se importa com os outros.
+Enquanto preparava o jantar ou o banho, perguntei à nossa filha de dois anos: “Vamos pedir à mamãe para fazer isso?”. Ela respondeu: “Não, ela está dormindo!”. Senti que, à sua maneira de criança, ela estava cuidando da mãe.
+
+Fiquei feliz ao pensar que ela parece estar aprendendo a se importar com os outros.

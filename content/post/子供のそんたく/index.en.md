@@ -1,16 +1,16 @@
 ---
-title: 'Moved by a 2-Year-Old''s Kindness! A Heartwarming Episode Showing a Child''s Consideration and Empathy'
-date: "2026-09-24T19:44:38+09:00"
+title: "A Two-Year-Old’s Thoughtful Words to Her Sick Mother"
 slug: "Childのそんたく"
 date: 2022-09-07T04:40:52+09:00
+lastmod: "2026-11-24T00:00:00+09:00"
 tags: ["Child"]
 draft: false
 image: "images/img.webp"
-categories: ["it-technology"]
-description: 'We introduce a heartwarming episode of a child''s consideration and empathy seen through the actions of a 2-year-old daughter caring for her mother who is bedridden with illness. We share the healing of parenting and the growth of a gentle heart caring for others hidden behind the words, ''No, Mommy is sleeping!'''
+categories: ["lifestyle-miscellaneous"]
+description: "When I asked whether we should ask my sick wife to help with dinner or bath preparations, our two-year-old replied, “No, she’s sleeping!” A small family moment that felt like consideration in a child’s own way."
 ---
-When Mom was sick and resting in bed,
-I asked my daughter (2 years old) about preparing dinner or the bath, saying, "Should we ask Mom to do this?"
-She replied, "No, because she's sleeping!" and I realized that she was being considerate in her own childish way.
+This happened when my wife was feeling unwell and resting in bed.
 
-I'm glad she seems to be growing into someone who is considerate of others.
+While getting dinner or bath preparations ready, I asked our two-year-old daughter, “Shall we ask Mom to do this?” She replied, “No, because she’s sleeping!” It felt as though she was looking out for her mom in her own little way.
+
+I was glad to see what seemed to be the beginnings of a caring attitude toward others.

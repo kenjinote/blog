@@ -1,0 +1,438 @@
+{
+  "version": 1,
+  "batch": 132,
+  "article": "病気で休む母を気遣った、2歳の娘のひと言",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "84f525a8f2f04c5e881d929c25b35f6c6d812ee322b78f6c79ad1bd8c34cb822",
+  "sources": [],
+  "scope": "Compared the entire Japanese anecdote and all twelve translations, including the quotations, family roles, daughter’s age, metadata, descriptions, and categories.",
+  "findings": [
+    "Removed the duplicate future date, retained the original publication date 2022-09-07, and recorded lastmod 2026-11-24 across the bundle.",
+    "Corrected an unrelated it-technology category to the existing lifestyle-miscellaneous category.",
+    "Rewrote descriptions to summarize the event without claiming a broad developmental or therapeutic outcome.",
+    "Fixed the German opening fragment and checked the child’s quote and the narrator’s personal interpretation across all locales."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/子供のそんたく/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/子供のそんたく/index.md",
+      "sourceHash": "84f525a8f2f04c5e881d929c25b35f6c6d812ee322b78f6c79ad1bd8c34cb822",
+      "translationHash": "10a662bd7604367e162c84b37d35b19e83ab6d804650354b38fe864e8849056f",
+      "summary": "Reviewed the complete localized anecdote against Japanese, keeping the child’s quote and the narrator’s interpretation distinct; corrected the German fragment, aligned concise descriptions, removed duplicated future dates, and categorized the personal family story appropriately.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the entire short personal anecdote with the Japanese source: the father asks his two-year-old daughter whether to ask her sick, resting mother to help; the child says no because mother is sleeping; the father interprets this as childlike consideration and feels glad."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked kinship and speaker references (wife/mother, father/narrator, two-year-old daughter), the illness/resting context, dinner and bath preparations, and the quoted response in each locale."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The anecdote contains no formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The anecdote contains no code or commands."
+        },
+        "links": {
+          "status": "not_applicable",
+          "note": "The source is a personal anecdote and has no factual claims requiring external links."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "This is a personal anecdote, not evidence of a general developmental or psychological claim."
+      ]
+    },
+    "post/子供のそんたく/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/子供のそんたく/index.md",
+      "sourceHash": "84f525a8f2f04c5e881d929c25b35f6c6d812ee322b78f6c79ad1bd8c34cb822",
+      "translationHash": "062ce1042187caa08957fa82face56aab4bdca3995372a251f1e2fb55acc3bf6",
+      "summary": "Reviewed the complete localized anecdote against Japanese, keeping the child’s quote and the narrator’s interpretation distinct; corrected the German fragment, aligned concise descriptions, removed duplicated future dates, and categorized the personal family story appropriately.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the entire short personal anecdote with the Japanese source: the father asks his two-year-old daughter whether to ask her sick, resting mother to help; the child says no because mother is sleeping; the father interprets this as childlike consideration and feels glad."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked kinship and speaker references (wife/mother, father/narrator, two-year-old daughter), the illness/resting context, dinner and bath preparations, and the quoted response in each locale."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The anecdote contains no formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The anecdote contains no code or commands."
+        },
+        "links": {
+          "status": "not_applicable",
+          "note": "The source is a personal anecdote and has no factual claims requiring external links."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "This is a personal anecdote, not evidence of a general developmental or psychological claim."
+      ]
+    },
+    "post/子供のそんたく/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/子供のそんたく/index.md",
+      "sourceHash": "84f525a8f2f04c5e881d929c25b35f6c6d812ee322b78f6c79ad1bd8c34cb822",
+      "translationHash": "58a6fbb7336ceadb4eec48e306ffa2dd061aa0481e40504450cea916dc332f70",
+      "summary": "Reviewed the complete localized anecdote against Japanese, keeping the child’s quote and the narrator’s interpretation distinct; corrected the German fragment, aligned concise descriptions, removed duplicated future dates, and categorized the personal family story appropriately.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the entire short personal anecdote with the Japanese source: the father asks his two-year-old daughter whether to ask her sick, resting mother to help; the child says no because mother is sleeping; the father interprets this as childlike consideration and feels glad."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked kinship and speaker references (wife/mother, father/narrator, two-year-old daughter), the illness/resting context, dinner and bath preparations, and the quoted response in each locale."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The anecdote contains no formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The anecdote contains no code or commands."
+        },
+        "links": {
+          "status": "not_applicable",
+          "note": "The source is a personal anecdote and has no factual claims requiring external links."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "This is a personal anecdote, not evidence of a general developmental or psychological claim."
+      ]
+    },
+    "post/子供のそんたく/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/子供のそんたく/index.md",
+      "sourceHash": "84f525a8f2f04c5e881d929c25b35f6c6d812ee322b78f6c79ad1bd8c34cb822",
+      "translationHash": "1f5a1ef5f15e6d1378cd2d37d8f7582075e179a0b1df864cc1eeafb803f1822e",
+      "summary": "Reviewed the complete localized anecdote against Japanese, keeping the child’s quote and the narrator’s interpretation distinct; corrected the German fragment, aligned concise descriptions, removed duplicated future dates, and categorized the personal family story appropriately.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the entire short personal anecdote with the Japanese source: the father asks his two-year-old daughter whether to ask her sick, resting mother to help; the child says no because mother is sleeping; the father interprets this as childlike consideration and feels glad."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked kinship and speaker references (wife/mother, father/narrator, two-year-old daughter), the illness/resting context, dinner and bath preparations, and the quoted response in each locale."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The anecdote contains no formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The anecdote contains no code or commands."
+        },
+        "links": {
+          "status": "not_applicable",
+          "note": "The source is a personal anecdote and has no factual claims requiring external links."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "This is a personal anecdote, not evidence of a general developmental or psychological claim."
+      ]
+    },
+    "post/子供のそんたく/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/子供のそんたく/index.md",
+      "sourceHash": "84f525a8f2f04c5e881d929c25b35f6c6d812ee322b78f6c79ad1bd8c34cb822",
+      "translationHash": "2542a28f5dda705307fa35c1e43bbd83039d22a89a1caf2df1ed8e54e9b18fa7",
+      "summary": "Reviewed the complete localized anecdote against Japanese, keeping the child’s quote and the narrator’s interpretation distinct; corrected the German fragment, aligned concise descriptions, removed duplicated future dates, and categorized the personal family story appropriately.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the entire short personal anecdote with the Japanese source: the father asks his two-year-old daughter whether to ask her sick, resting mother to help; the child says no because mother is sleeping; the father interprets this as childlike consideration and feels glad."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked kinship and speaker references (wife/mother, father/narrator, two-year-old daughter), the illness/resting context, dinner and bath preparations, and the quoted response in each locale."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The anecdote contains no formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The anecdote contains no code or commands."
+        },
+        "links": {
+          "status": "not_applicable",
+          "note": "The source is a personal anecdote and has no factual claims requiring external links."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "This is a personal anecdote, not evidence of a general developmental or psychological claim."
+      ]
+    },
+    "post/子供のそんたく/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/子供のそんたく/index.md",
+      "sourceHash": "84f525a8f2f04c5e881d929c25b35f6c6d812ee322b78f6c79ad1bd8c34cb822",
+      "translationHash": "aa4bd5f119452407644762d68cbb5ddf5cbba9731ec213c6280d0500702670e4",
+      "summary": "Reviewed the complete localized anecdote against Japanese, keeping the child’s quote and the narrator’s interpretation distinct; corrected the German fragment, aligned concise descriptions, removed duplicated future dates, and categorized the personal family story appropriately.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the entire short personal anecdote with the Japanese source: the father asks his two-year-old daughter whether to ask her sick, resting mother to help; the child says no because mother is sleeping; the father interprets this as childlike consideration and feels glad."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked kinship and speaker references (wife/mother, father/narrator, two-year-old daughter), the illness/resting context, dinner and bath preparations, and the quoted response in each locale."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The anecdote contains no formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The anecdote contains no code or commands."
+        },
+        "links": {
+          "status": "not_applicable",
+          "note": "The source is a personal anecdote and has no factual claims requiring external links."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "This is a personal anecdote, not evidence of a general developmental or psychological claim."
+      ]
+    },
+    "post/子供のそんたく/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/子供のそんたく/index.md",
+      "sourceHash": "84f525a8f2f04c5e881d929c25b35f6c6d812ee322b78f6c79ad1bd8c34cb822",
+      "translationHash": "485f6ea877b753b5bba625c4246d776a9bef62ae1fc4e022840ceb4326a275d0",
+      "summary": "Reviewed the complete localized anecdote against Japanese, keeping the child’s quote and the narrator’s interpretation distinct; corrected the German fragment, aligned concise descriptions, removed duplicated future dates, and categorized the personal family story appropriately.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the entire short personal anecdote with the Japanese source: the father asks his two-year-old daughter whether to ask her sick, resting mother to help; the child says no because mother is sleeping; the father interprets this as childlike consideration and feels glad."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked kinship and speaker references (wife/mother, father/narrator, two-year-old daughter), the illness/resting context, dinner and bath preparations, and the quoted response in each locale."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The anecdote contains no formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The anecdote contains no code or commands."
+        },
+        "links": {
+          "status": "not_applicable",
+          "note": "The source is a personal anecdote and has no factual claims requiring external links."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "This is a personal anecdote, not evidence of a general developmental or psychological claim."
+      ]
+    },
+    "post/子供のそんたく/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/子供のそんたく/index.md",
+      "sourceHash": "84f525a8f2f04c5e881d929c25b35f6c6d812ee322b78f6c79ad1bd8c34cb822",
+      "translationHash": "5d452ece61e05782f1be6fdace3a787b95f94d7b45ddbbe834930509fb1a39c5",
+      "summary": "Reviewed the complete localized anecdote against Japanese, keeping the child’s quote and the narrator’s interpretation distinct; corrected the German fragment, aligned concise descriptions, removed duplicated future dates, and categorized the personal family story appropriately.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the entire short personal anecdote with the Japanese source: the father asks his two-year-old daughter whether to ask her sick, resting mother to help; the child says no because mother is sleeping; the father interprets this as childlike consideration and feels glad."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked kinship and speaker references (wife/mother, father/narrator, two-year-old daughter), the illness/resting context, dinner and bath preparations, and the quoted response in each locale."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The anecdote contains no formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The anecdote contains no code or commands."
+        },
+        "links": {
+          "status": "not_applicable",
+          "note": "The source is a personal anecdote and has no factual claims requiring external links."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "This is a personal anecdote, not evidence of a general developmental or psychological claim."
+      ]
+    },
+    "post/子供のそんたく/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/子供のそんたく/index.md",
+      "sourceHash": "84f525a8f2f04c5e881d929c25b35f6c6d812ee322b78f6c79ad1bd8c34cb822",
+      "translationHash": "7263e557145531da7bc275d26342ca79d15923c8a77c8f0a515ed5c397b69164",
+      "summary": "Reviewed the complete localized anecdote against Japanese, keeping the child’s quote and the narrator’s interpretation distinct; corrected the German fragment, aligned concise descriptions, removed duplicated future dates, and categorized the personal family story appropriately.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the entire short personal anecdote with the Japanese source: the father asks his two-year-old daughter whether to ask her sick, resting mother to help; the child says no because mother is sleeping; the father interprets this as childlike consideration and feels glad."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked kinship and speaker references (wife/mother, father/narrator, two-year-old daughter), the illness/resting context, dinner and bath preparations, and the quoted response in each locale."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The anecdote contains no formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The anecdote contains no code or commands."
+        },
+        "links": {
+          "status": "not_applicable",
+          "note": "The source is a personal anecdote and has no factual claims requiring external links."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "This is a personal anecdote, not evidence of a general developmental or psychological claim."
+      ]
+    },
+    "post/子供のそんたく/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/子供のそんたく/index.md",
+      "sourceHash": "84f525a8f2f04c5e881d929c25b35f6c6d812ee322b78f6c79ad1bd8c34cb822",
+      "translationHash": "e032ee716a52eb9482bca5f47388dc8e11578c7283409ff790c8b810ea3541c7",
+      "summary": "Reviewed the complete localized anecdote against Japanese, keeping the child’s quote and the narrator’s interpretation distinct; corrected the German fragment, aligned concise descriptions, removed duplicated future dates, and categorized the personal family story appropriately.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the entire short personal anecdote with the Japanese source: the father asks his two-year-old daughter whether to ask her sick, resting mother to help; the child says no because mother is sleeping; the father interprets this as childlike consideration and feels glad."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked kinship and speaker references (wife/mother, father/narrator, two-year-old daughter), the illness/resting context, dinner and bath preparations, and the quoted response in each locale."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The anecdote contains no formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The anecdote contains no code or commands."
+        },
+        "links": {
+          "status": "not_applicable",
+          "note": "The source is a personal anecdote and has no factual claims requiring external links."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "This is a personal anecdote, not evidence of a general developmental or psychological claim."
+      ]
+    },
+    "post/子供のそんたく/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/子供のそんたく/index.md",
+      "sourceHash": "84f525a8f2f04c5e881d929c25b35f6c6d812ee322b78f6c79ad1bd8c34cb822",
+      "translationHash": "1b18bc6149dcc85701a336fa8d8022f7a54c3c7c1b9ceb7333a9527c2b51e128",
+      "summary": "Reviewed the complete localized anecdote against Japanese, keeping the child’s quote and the narrator’s interpretation distinct; corrected the German fragment, aligned concise descriptions, removed duplicated future dates, and categorized the personal family story appropriately.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the entire short personal anecdote with the Japanese source: the father asks his two-year-old daughter whether to ask her sick, resting mother to help; the child says no because mother is sleeping; the father interprets this as childlike consideration and feels glad."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked kinship and speaker references (wife/mother, father/narrator, two-year-old daughter), the illness/resting context, dinner and bath preparations, and the quoted response in each locale."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The anecdote contains no formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The anecdote contains no code or commands."
+        },
+        "links": {
+          "status": "not_applicable",
+          "note": "The source is a personal anecdote and has no factual claims requiring external links."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "This is a personal anecdote, not evidence of a general developmental or psychological claim."
+      ]
+    },
+    "post/子供のそんたく/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/子供のそんたく/index.md",
+      "sourceHash": "84f525a8f2f04c5e881d929c25b35f6c6d812ee322b78f6c79ad1bd8c34cb822",
+      "translationHash": "aa5b1d6daa1b253a61d27b99140f5b2b36f4e586d2997605534434871aba7f6d",
+      "summary": "Reviewed the complete localized anecdote against Japanese, keeping the child’s quote and the narrator’s interpretation distinct; corrected the German fragment, aligned concise descriptions, removed duplicated future dates, and categorized the personal family story appropriately.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the entire short personal anecdote with the Japanese source: the father asks his two-year-old daughter whether to ask her sick, resting mother to help; the child says no because mother is sleeping; the father interprets this as childlike consideration and feels glad."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked kinship and speaker references (wife/mother, father/narrator, two-year-old daughter), the illness/resting context, dinner and bath preparations, and the quoted response in each locale."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The anecdote contains no formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The anecdote contains no code or commands."
+        },
+        "links": {
+          "status": "not_applicable",
+          "note": "The source is a personal anecdote and has no factual claims requiring external links."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "This is a personal anecdote, not evidence of a general developmental or psychological claim."
+      ]
+    }
+  }
+}

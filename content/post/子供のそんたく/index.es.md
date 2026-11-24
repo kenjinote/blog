@@ -1,24 +1,16 @@
 ---
-
-
-
-
-title: '¡Conmovido por la amabilidad de un niño de 2 años! Un episodio reconfortante donde sentí la empatía y la consideración de un niño'
-date: "2026-09-24T19:44:38+09:00"
+title: "Las palabras consideradas de una niña de dos años a su madre enferma"
 slug: "Niñoのそんたく"
 date: 2022-09-07T04:40:52+09:00
+lastmod: "2026-11-24T00:00:00+09:00"
 tags: ["Niños"]
 draft: false
 image: "images/img.webp"
-categories: ["it-technology"]
-description: 'Te presento un episodio reconfortante en el que sentí la consideración y la empatía de un niño a partir del comportamiento de mi hija de 2 años que cuidaba de su madre postrada en cama por enfermedad. Compartiré este récord de crecimiento de un corazón amable que se preocupa por los demás, oculto en las palabras "¡No, está durmiendo!", y la curación de la crianza de los hijos.'
+categories: ["lifestyle-miscellaneous"]
+description: "Cuando pregunté si debíamos pedirle a mi esposa, que estaba enferma, que ayudara con la cena o el baño, nuestra hija de dos años respondió: «¡No, está durmiendo!». Un pequeño momento familiar que me pareció una muestra de consideración a su manera."
 ---
+Esto ocurrió cuando mi esposa se encontraba mal y descansaba en la cama.
 
+Mientras preparaba la cena o el baño, le pregunté a nuestra hija de dos años: «¿Le pedimos a mamá que haga esto?». Respondió: «¡No, está durmiendo!». Sentí que, a su manera de niña, estaba cuidando de su madre.
 
-
-
-Cuando mamá se enfermó y tuvo que quedarse en cama,
-al preguntarle a mi hija (2 años) sobre preparar la cena o el baño, "¿Le pedimos esto a mamá?",
-me respondió: "¡No, está durmiendo!", y pensé que, a su manera, estaba siendo considerada.
-
-Me alegra ver que parece estar convirtiéndose en alguien que se preocupa por los demás.
+Me alegró pensar que parece estar aprendiendo a tener en cuenta a los demás.

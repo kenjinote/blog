@@ -1,16 +1,16 @@
 ---
-title: 'Tersentuh oleh Kebaikan Anak Usia 2 Tahun! Episode Mengharukan yang Merasakan Perhatian dan Sikap Membaca Situasi Anak'
-date: "2026-09-24T19:44:38+09:00"
+title: "Ucapan Penuh Perhatian dari Putri Berusia Dua Tahun untuk Ibunya yang Sakit"
 slug: "Anakのそんたく"
 date: 2022-09-07T04:40:52+09:00
+lastmod: "2026-11-24T00:00:00+09:00"
 tags: ["Anak"]
 draft: false
 image: "images/img.webp"
-categories: ["it-technology"]
-description: 'Kami akan memperkenalkan episode yang menghangatkan hati mengenai sikap anak dalam membaca situasi dan perhatiannya dari tindakan putri berusia 2 tahun yang mengkhawatirkan ibunya yang sedang sakit terbaring di tempat tidur. Kami berbagi catatan pertumbuhan hati yang lembut dalam mempedulikan orang lain dan menenangkan hati dalam mengasuh anak yang tersembunyi di balik kata-katanya, ''Tidak boleh, ibu sedang bubuk!'''
+categories: ["lifestyle-miscellaneous"]
+description: "Saat saya bertanya apakah kami perlu meminta istri yang sedang sakit membantu menyiapkan makan malam atau mandi, putri kami yang berusia dua tahun menjawab, “Tidak, Ibu sedang tidur!” Momen kecil keluarga yang terasa seperti bentuk perhatian dengan caranya sendiri."
 ---
-Saat ibu sedang tidak enak badan dan harus berbaring di tempat tidur,
-ketika saya bertanya kepada putri kami (2 tahun) tentang persiapan makan malam atau mandi, "Bolehkah kita meminta tolong pada ibu untuk ini?"
-Dia menjawab, "Tidak boleh, ibu sedang tidur!" dan saya berpikir bahwa bahkan seorang anak pun tahu bagaimana harus bersikap penuh perhatian.
+Ini terjadi saat istri saya sedang kurang sehat dan beristirahat di tempat tidur.
 
-Saya senang dia tampaknya tumbuh menjadi seseorang yang bisa berempati terhadap orang lain.
+Saat menyiapkan makan malam atau mandi, saya bertanya kepada putri kami yang berusia dua tahun, “Bagaimana kalau kita minta Ibu melakukan ini?” Ia menjawab, “Jangan, Ibu sedang tidur!” Saya merasa ia sedang memperhatikan ibunya dengan caranya sendiri sebagai anak kecil.
+
+Saya senang melihatnya tampak mulai belajar memikirkan orang lain.

@@ -1,16 +1,16 @@
 ---
-title: 'Touché par la gentillesse d''une enfant de 2 ans ! Un épisode réconfortant où j''ai ressenti sa considération et son attention'
-date: "2026-09-24T19:44:38+09:00"
+title: "Les mots attentionnés d’une fillette de deux ans pour sa mère malade"
 slug: "Enfantのそんたく"
 date: 2022-09-07T04:40:52+09:00
+lastmod: "2026-11-24T00:00:00+09:00"
 tags: ["Enfant"]
 draft: false
 image: "images/img.webp"
-categories: ["it-technology"]
-description: 'Nous vous présentons un épisode chaleureux où j''ai ressenti la considération et l''attention d''un enfant à travers les actions de ma fille de 2 ans, soucieuse de sa mère alitée et malade. Nous partageons la croissance de son cœur tendre caché derrière les mots « Non, elle fait dodo ! » et ce moment apaisant de la parentalité.'
+categories: ["lifestyle-miscellaneous"]
+description: "Quand j’ai demandé s’il fallait solliciter mon épouse malade pour préparer le dîner ou le bain, notre fille de deux ans a répondu : « Non, maman dort ! » Un petit moment familial qui m’a semblé témoigner de sa façon bien à elle de faire attention aux autres."
 ---
-Quand la mère est tombée malade et a dû rester au lit,
-Lors de la préparation du dîner ou du bain, j'ai demandé à ma fille (2 ans) : "Devrions-nous demander à maman de faire ça ?",
-Elle a répondu : "Non, elle dort !" et j'ai pensé qu'à sa manière, elle était prévenante.
+Cela s’est passé alors que mon épouse ne se sentait pas bien et se reposait au lit.
 
-J'étais heureux de voir qu'elle devient quelqu'un qui se soucie des autres.
+En préparant le dîner ou le bain, j’ai demandé à notre fille de deux ans : « On demande à maman de s’en occuper ? » Elle a répondu : « Non, maman dort ! » J’ai eu l’impression qu’elle veillait sur sa mère à sa façon d’enfant.
+
+J’étais heureux de penser qu’elle semble apprendre à se soucier des autres.

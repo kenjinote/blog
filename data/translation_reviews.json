@@ -15245,6 +15245,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-131.json",
       "evidenceHash": "d7318163335046fbf0b726c9323517038871f090613643e37f913bdb23920b83"
+    },
+    "post/子供のそんたく/index.en.md": {
+      "source": "post/子供のそんたく/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "84f525a8f2f04c5e881d929c25b35f6c6d812ee322b78f6c79ad1bd8c34cb822",
+      "translationHash": "10a662bd7604367e162c84b37d35b19e83ab6d804650354b38fe864e8849056f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-132.json",
+      "evidenceHash": "ac6593bfaf661a3b8550e33dc4c71aa0c2e9bca6423343fd74f0a82bea3b368c"
+    },
+    "post/子供のそんたく/index.zh-cn.md": {
+      "source": "post/子供のそんたく/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "84f525a8f2f04c5e881d929c25b35f6c6d812ee322b78f6c79ad1bd8c34cb822",
+      "translationHash": "062ce1042187caa08957fa82face56aab4bdca3995372a251f1e2fb55acc3bf6",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-132.json",
+      "evidenceHash": "f80737076acf4b42fdaade433ae287e2405786c3789c92987cd36d12a1eeb9a5"
+    },
+    "post/子供のそんたく/index.es.md": {
+      "source": "post/子供のそんたく/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "84f525a8f2f04c5e881d929c25b35f6c6d812ee322b78f6c79ad1bd8c34cb822",
+      "translationHash": "58a6fbb7336ceadb4eec48e306ffa2dd061aa0481e40504450cea916dc332f70",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-132.json",
+      "evidenceHash": "65b8db8fc2762f8c578ec6712dd37a586480b145ebf6c31ea7575c8c104b5b07"
+    },
+    "post/子供のそんたく/index.ko.md": {
+      "source": "post/子供のそんたく/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "84f525a8f2f04c5e881d929c25b35f6c6d812ee322b78f6c79ad1bd8c34cb822",
+      "translationHash": "1f5a1ef5f15e6d1378cd2d37d8f7582075e179a0b1df864cc1eeafb803f1822e",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-132.json",
+      "evidenceHash": "3d6dea65788f48d9d331501bdd2d8a05273633d081599ff54925d57cea66705f"
+    },
+    "post/子供のそんたく/index.pt.md": {
+      "source": "post/子供のそんたく/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "84f525a8f2f04c5e881d929c25b35f6c6d812ee322b78f6c79ad1bd8c34cb822",
+      "translationHash": "2542a28f5dda705307fa35c1e43bbd83039d22a89a1caf2df1ed8e54e9b18fa7",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-132.json",
+      "evidenceHash": "c2965b9140f6be6daba0e643f70b72ad891c3f69284d8352a68aea97c68d5bf6"
+    },
+    "post/子供のそんたく/index.zh-tw.md": {
+      "source": "post/子供のそんたく/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "84f525a8f2f04c5e881d929c25b35f6c6d812ee322b78f6c79ad1bd8c34cb822",
+      "translationHash": "aa4bd5f119452407644762d68cbb5ddf5cbba9731ec213c6280d0500702670e4",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-132.json",
+      "evidenceHash": "fc293f800c35fc1aab31f2adda1294eb4c9edd261297c8176e10a5e49d3c0c43"
+    },
+    "post/子供のそんたく/index.hi.md": {
+      "source": "post/子供のそんたく/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "84f525a8f2f04c5e881d929c25b35f6c6d812ee322b78f6c79ad1bd8c34cb822",
+      "translationHash": "485f6ea877b753b5bba625c4246d776a9bef62ae1fc4e022840ceb4326a275d0",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-132.json",
+      "evidenceHash": "1704388bc6382c0c131968cfcc6323398373520c1a2897111ab8af96f867d3fa"
+    },
+    "post/子供のそんたく/index.fr.md": {
+      "source": "post/子供のそんたく/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "84f525a8f2f04c5e881d929c25b35f6c6d812ee322b78f6c79ad1bd8c34cb822",
+      "translationHash": "5d452ece61e05782f1be6fdace3a787b95f94d7b45ddbbe834930509fb1a39c5",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-132.json",
+      "evidenceHash": "21e61415364eb850e0c3474cd7504730f6e4c6e4026c9c3673b43509bf5544cd"
+    },
+    "post/子供のそんたく/index.de.md": {
+      "source": "post/子供のそんたく/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "84f525a8f2f04c5e881d929c25b35f6c6d812ee322b78f6c79ad1bd8c34cb822",
+      "translationHash": "7263e557145531da7bc275d26342ca79d15923c8a77c8f0a515ed5c397b69164",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-132.json",
+      "evidenceHash": "f48c7b94ee85f43f1b785c2909b9c75dc5d082df60785b75d4a35f93d43b79e4"
+    },
+    "post/子供のそんたく/index.ar.md": {
+      "source": "post/子供のそんたく/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "84f525a8f2f04c5e881d929c25b35f6c6d812ee322b78f6c79ad1bd8c34cb822",
+      "translationHash": "e032ee716a52eb9482bca5f47388dc8e11578c7283409ff790c8b810ea3541c7",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-132.json",
+      "evidenceHash": "aa3d0daf96047a7fd6859f32d08a08ac7ed77e041d411cd1cbda7ebb04c812a9"
+    },
+    "post/子供のそんたく/index.ru.md": {
+      "source": "post/子供のそんたく/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "84f525a8f2f04c5e881d929c25b35f6c6d812ee322b78f6c79ad1bd8c34cb822",
+      "translationHash": "1b18bc6149dcc85701a336fa8d8022f7a54c3c7c1b9ceb7333a9527c2b51e128",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-132.json",
+      "evidenceHash": "f3870f74cbaa9f5f034392bcd7c24828b53c6f8e2142207e1049fd39bad87c78"
+    },
+    "post/子供のそんたく/index.id.md": {
+      "source": "post/子供のそんたく/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "84f525a8f2f04c5e881d929c25b35f6c6d812ee322b78f6c79ad1bd8c34cb822",
+      "translationHash": "aa5b1d6daa1b253a61d27b99140f5b2b36f4e586d2997605534434871aba7f6d",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-132.json",
+      "evidenceHash": "509ec22e9775b544d153b541e67b4285bb9bf52520cf12c2d439b7e51a64f1fc"
     }
   }
 }
