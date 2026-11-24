@@ -1,32 +1,18 @@
 ---
+title: "22 acciones japonesas de la lista de 2024: riesgos de dividendos y fuentes actuales"
 
-
-
-
-
-
-
-
-title: 'Lista de las mejores acciones japonesas con alto rendimiento de dividendos recomendadas'
-date: "2026-09-24T19:44:38+09:00"
 slug: "高配当Accionesまとめ"
 date: 2024-12-22T00:56:14+09:00
+lastmod: "2026-11-24T00:00:00+09:00"
 tags: ["acciones"]
 draft: false
 image: "img.webp"
-categories: ["it-technology"]
-description: 'Presentamos una lista de recomendaciones de excelentes acciones con alto rendimiento por dividendo representativas en Japón, tales como Mitsubishi UFJ, Mitsubishi Corporation, NTT y KDDI. ¡Esta es una lista imprescindible para aquellos que buscan ingresos por dividendos mediante inversiones a largo plazo o para construir su portafolio!'
+categories: ["finance"]
+description: "Reproducción histórica de 22 acciones japonesas del artículo original del 22 de diciembre de 2024. No es una recomendación actual ni una clasificación por rentabilidad; consulta datos recientes y comprende los riesgos."
 ---
+La lista siguiente reproduce las acciones del artículo original publicado el **2024-12-22**. No incluía rendimientos por dividendo, criterios de selección ni fecha de cálculo, por lo que no debe interpretarse como una lista actual de alta rentabilidad ni como recomendación de inversión. Los dividendos pueden reducirse o suspenderse y las acciones pueden bajar, incluso por debajo del precio de compra. Antes de invertir, verifica el nombre, código, política de dividendos e información financiera actual en la bolsa y en las páginas de relaciones con inversores de cada empresa.
 
-
-
-
-
-
-
-
-
-# Resumen de acciones de altos dividendos
+## Las 22 acciones del artículo original
 
 1. Mitsubishi UFJ Financial Group (8306)
 2. Sumitomo Mitsui Financial Group (8316)
@@ -50,3 +36,9 @@ description: 'Presentamos una lista de recomendaciones de excelentes acciones co
 20. Orix (8591)
 21. Mitsubishi HC Capital (8593)
 22. Hulic (3003)
+
+## Referencias
+
+- [TSE Listed Company Search — Japan Exchange Group](https://www2.jpx.co.jp/tseHpFront/JJK020010Action.do)
+- [Investment risks — Securities and Exchange Surveillance Commission of Japan](https://www.fsa.go.jp/sesc/support/advice.html)
+- [Basic Knowledge Concerning Securities Markets — Japan Securities Dealers Association](https://www.jsda.or.jp/en/about/major-activities/content/Sales_Representatives_Manual_Volume1_EnglishEdition.pdf)

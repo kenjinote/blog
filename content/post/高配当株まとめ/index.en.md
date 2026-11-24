@@ -1,16 +1,18 @@
 ---
-title: 'List of Recommended Blue-Chip High-Dividend Stocks in Japan'
-date: "2026-09-24T19:44:38+09:00"
+title: "22 Japanese Stocks Listed in 2024: Dividend Risks and Where to Check Updates"
+
 slug: "高配当Stockまとめ"
 date: 2024-12-22T00:56:14+09:00
+lastmod: "2026-11-24T00:00:00+09:00"
 tags: ["Stocks"]
 draft: false
 image: "img.webp"
-categories: ["it-technology"]
-description: 'We summarize and list recommended blue-chip high-dividend stocks representing Japan, such as Mitsubishi UFJ, Mitsubishi Corporation, NTT, and KDDI. This is a must-see list of notable stocks for those aiming for dividends through long-term investing and portfolio building.'
+categories: ["finance"]
+description: "A historical copy of 22 Japanese stocks in the original article dated December 22, 2024. It is not a current recommendation or yield ranking; check updated company and exchange information and understand the risks."
 ---
+The list below reproduces the stocks in the original article published on **2024-12-22**. It did not include dividend yields, selection criteria, or a calculation date, so it should not be read as a current high-yield list or investment recommendation. Dividends may be reduced or suspended, and share prices can fall, including below the purchase price. Before investing, verify each company name, securities code, dividend policy, and financial information with the exchange and the issuer’s investor-relations pages.
 
-# High Dividend Yield Stocks Summary
+## The 22 stocks in the original article
 
 1. Mitsubishi UFJ Financial Group (8306)
 2. Sumitomo Mitsui Financial Group (8316)
@@ -34,3 +36,9 @@ description: 'We summarize and list recommended blue-chip high-dividend stocks r
 20. ORIX (8591)
 21. Mitsubishi HC Capital (8593)
 22. Hulic (3003)
+
+## References
+
+- [TSE Listed Company Search — Japan Exchange Group](https://www2.jpx.co.jp/tseHpFront/JJK020010Action.do)
+- [Investment risks — Securities and Exchange Surveillance Commission of Japan](https://www.fsa.go.jp/sesc/support/advice.html)
+- [Basic Knowledge Concerning Securities Markets — Japan Securities Dealers Association](https://www.jsda.or.jp/en/about/major-activities/content/Sales_Representatives_Manual_Volume1_EnglishEdition.pdf)

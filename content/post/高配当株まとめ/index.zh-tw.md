@@ -1,16 +1,18 @@
 ---
-title: '日本優質高股息推薦個股總整理一覽'
-date: "2026-09-24T19:44:38+09:00"
+title: "2024 年列出的 22 檔日本股票：股息風險與最新資訊查核"
+
 slug: "高配当股票まとめ"
 date: 2024-12-22T00:56:14+09:00
+lastmod: "2026-11-24T00:00:00+09:00"
 tags: ["股票"]
 draft: false
 image: "img.webp"
-categories: ["it-technology"]
-description: '將三菱UFJ、三菱商事、NTT、KDDI等日本具代表性的優質高股息推薦個股彙整成一覽表來介紹。這是想以賺取股息為目標進行長期投資，或作為建立投資組合參考的人必看的焦點個股清單。'
+categories: ["finance"]
+description: "重現原文於 2024 年 12 月 22 日刊載的 22 檔日本股票。這不是目前的投資建議或殖利率排名；請查核最新公司與交易所資訊並了解風險。"
 ---
+以下列表重現**原文於 2024-12-22 發布時**列出的股票。原文未提供殖利率、篩選標準或計算日期，因此不應視為目前的高股息名單或投資建議。股息可能調降或停止，股價也可能下跌造成本金損失。投資前請透過交易所和各公司投資人關係頁面確認公司名稱、證券代碼、股息政策及最新財務資訊。
 
-# 高股息股票總結
+## 原文列出的 22 檔股票
 
 1. 三菱日聯金融集團 (8306)
 2. 三井住友金融集團 (8316)
@@ -34,3 +36,9 @@ description: '將三菱UFJ、三菱商事、NTT、KDDI等日本具代表性的�
 20. 歐力士 (8591)
 21. 三菱HC資本 (8593)
 22. Hulic (3003)
+
+## 參考資料
+
+- [TSE Listed Company Search — Japan Exchange Group](https://www2.jpx.co.jp/tseHpFront/JJK020010Action.do)
+- [Investment risks — Securities and Exchange Surveillance Commission of Japan](https://www.fsa.go.jp/sesc/support/advice.html)
+- [Basic Knowledge Concerning Securities Markets — Japan Securities Dealers Association](https://www.jsda.or.jp/en/about/major-activities/content/Sales_Representatives_Manual_Volume1_EnglishEdition.pdf)

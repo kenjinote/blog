@@ -1,16 +1,18 @@
 ---
-title: 'Eine zusammenfassende Liste empfohlener japanischer Blue-Chip-Aktien mit hoher Dividende'
-date: "2026-09-24T19:44:38+09:00"
+title: "22 japanische Aktien aus der Liste von 2024: Dividendenrisiken und aktuelle Quellen"
+
 slug: "高配当Aktieまとめ"
 date: 2024-12-22T00:56:14+09:00
+lastmod: "2026-11-24T00:00:00+09:00"
 tags: ["Aktien"]
 draft: false
 image: "img.webp"
-categories: ["it-technology"]
-description: 'Wir stellen eine zusammenfassende Liste empfohlener Aktien repräsentativer japanischer Blue-Chip-Unternehmen mit hoher Dividende vor, wie Mitsubishi UFJ, Mitsubishi Corporation, NTT und KDDI. Dies ist eine Liste von Aktien, die Aufmerksamkeit verdienen und ein Muss für diejenigen sind, die eine langfristige Anlage mit dem Ziel von Dividendenerträgen oder den Aufbau eines Portfolios planen.'
+categories: ["finance"]
+description: "Historische Wiedergabe der 22 japanischen Aktien aus dem Originalartikel vom 22. Dezember 2024. Keine aktuelle Empfehlung und keine Renditerangliste; prüfen Sie aktuelle Angaben und Risiken."
 ---
+Die folgende Liste gibt die Aktien aus dem ursprünglichen Artikel vom **2024-12-22** wieder. Er enthielt weder Dividendenrenditen noch Auswahlkriterien oder ein Berechnungsdatum und ist daher keine aktuelle Hochdividendenliste oder Anlageempfehlung. Dividenden können gekürzt oder ausgesetzt werden; Aktienkurse können unter den Kaufpreis fallen. Prüfen Sie vor einer Anlage Namen, Wertpapiercode, Dividendenpolitik und aktuelle Finanzdaten bei der Börse und in den Investor-Relations-Angaben des jeweiligen Unternehmens.
 
-# Zusammenfassung Dividendenstarker Aktien
+## Die 22 Aktien aus dem Originalartikel
 
 1. Mitsubishi UFJ Financial Group (8306)
 2. Sumitomo Mitsui Financial Group (8316)
@@ -34,3 +36,9 @@ description: 'Wir stellen eine zusammenfassende Liste empfohlener Aktien repräs
 20. Orix (8591)
 21. Mitsubishi HC Capital (8593)
 22. Hulic (3003)
+
+## Quellen
+
+- [TSE Listed Company Search — Japan Exchange Group](https://www2.jpx.co.jp/tseHpFront/JJK020010Action.do)
+- [Investment risks — Securities and Exchange Surveillance Commission of Japan](https://www.fsa.go.jp/sesc/support/advice.html)
+- [Basic Knowledge Concerning Securities Markets — Japan Securities Dealers Association](https://www.jsda.or.jp/en/about/major-activities/content/Sales_Representatives_Manual_Volume1_EnglishEdition.pdf)

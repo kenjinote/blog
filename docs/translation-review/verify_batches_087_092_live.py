@@ -360,6 +360,14 @@ ARTICLES = {
         "scopeMarkers": {"ja":"行き詰まった時に見返したい言葉","en":"Words to revisit when I feel stuck","zh-cn":"感到受挫时可以重看的话","es":"Palabras que vuelvo a leer cuando me atasco","ko":"막막할 때 다시 보는 말","pt":"Palavras que revejo quando me sinto travado","zh-tw":"感到受挫時可以重看的話","hi":"जब मन अटक जाए तो फिर से पढ़ने योग्य शब्द","fr":"Des mots à relire quand je me sens bloqué","de":"Worte, die ich bei Stillstand erneut lese","ar":"كلمات أعود إليها عندما أشعر بالتعثر","ru":"Слова, к которым я возвращаюсь в трудный момент","id":"Kata-kata yang saya baca kembali saat merasa buntu"},
         "date": "2022-09-08",
     },
+    145: {
+        "bundle": ROOT / "content/post/高配当株まとめ",
+        "slug": "高配当株まとめ",
+        "links": ["https://www2.jpx.co.jp/tseHpFront/JJK020010Action.do", "https://www.fsa.go.jp/sesc/support/advice.html", "https://www.jsda.or.jp/en/about/major-activities/content/Sales_Representatives_Manual_Volume1_EnglishEdition.pdf"],
+        "markers": ["8306", "3003"],
+        "scopeMarkers": {"ja":"2024-12-22", "en":"2024-12-22", "zh-cn":"2024-12-22", "es":"2024-12-22", "ko":"2024-12-22", "pt":"2024-12-22", "zh-tw":"2024-12-22", "hi":"2024-12-22", "fr":"2024-12-22", "de":"2024-12-22", "ar":"2024-12-22", "ru":"2024-12-22", "id":"2024-12-22"},
+        "date": "2024-12-22",
+    },
     144: {
         "bundle": ROOT / "content/post/Salesforceチャッター全消しコマンド",
         "slug": "Salesforceチャッター全消しコマンド",
@@ -692,7 +700,7 @@ def slug_key(value):
 parser = argparse.ArgumentParser()
 parser.add_argument("--ci-run", type=int, required=True)
 parser.add_argument("--commit", required=True)
-parser.add_argument("--max-batch", type=int, choices=(90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144), default=144)
+parser.add_argument("--max-batch", type=int, choices=(90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145), default=145)
 args = parser.parse_args()
 ARTICLES = {number: article for number, article in ARTICLES.items() if number <= args.max_batch}
 with urllib.request.urlopen(f"https://github.com/kenjinote/blog/actions/runs/{args.ci_run}", timeout=45) as response:

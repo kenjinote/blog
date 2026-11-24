@@ -1,0 +1,456 @@
+{
+  "version": 1,
+  "batch": 145,
+  "article": "2024年掲載の日本株22銘柄：配当リスクと最新情報の確認先",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "328aef2c402e6310e3e889bcc4e403a0a85b08d053d250895ce10af7c4a68b0d",
+  "sources": [
+    "https://www2.jpx.co.jp/tseHpFront/JJK020010Action.do",
+    "https://www.fsa.go.jp/sesc/support/advice.html",
+    "https://www.jsda.or.jp/en/about/major-activities/content/Sales_Representatives_Manual_Volume1_EnglishEdition.pdf"
+  ],
+  "scope": "Compared the full Japanese article and all twelve translations, all 22 company names and codes, historical publication framing, risk statements, finance metadata, and official links.",
+  "findings": [
+    "Removed the duplicate future date and retained 2024-12-22 as the publication date; recorded lastmod 2026-11-24.",
+    "Removed unsupported current “recommended/high dividend” framing because the article contains no dividend yields, selection criteria, or calculation date.",
+    "Reframed the 22 names as a historical copy of the original article list; did not claim current listing, yield, or suitability.",
+    "Added that dividends can be reduced or suspended and share prices can fall below purchase price.",
+    "Directed readers to current exchange and issuer disclosures before making an investment decision.",
+    "Changed the category from it-technology to finance and added official JPX, FSA, and JSDA references."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/高配当株まとめ/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/高配当株まとめ/index.md",
+      "sourceHash": "328aef2c402e6310e3e889bcc4e403a0a85b08d053d250895ce10af7c4a68b0d",
+      "translationHash": "41b9c3babd6918fea5702afa5b12643336d6db928fd6d9145706ecaa4189df50",
+      "summary": "Compared the full Japanese list and twelve translations with Tokyo Stock Exchange and investor-risk references; recast the unsubstantiated high-yield recommendation as a dated 2024 historical list and added current-data checks and dividend/principal risk.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all 22 names and securities codes across languages and clarified that the original 2024 list had no yield data, selection criteria, or calculation date and is not a current recommendation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked company names, Japanese stock/security codes, dividends, yield, issuer investor-relations disclosures, TSE listed-company search, and the distinction between historical list and current screening."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article lists company names and securities codes only; it provides no dividend-yield figures or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked the TSE Listed Company Search, Japan FSA/Securities and Exchange Surveillance Commission investment risk guidance, and Japan Securities Dealers Association securities risk material."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "No company-by-company current dividend yield, financial health, or suitability analysis was performed; the tickers are reproduced from the original 2024 article and should be rechecked before use.",
+        "This is general historical information, not individualized investment advice; dividends and share prices can change."
+      ]
+    },
+    "post/高配当株まとめ/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/高配当株まとめ/index.md",
+      "sourceHash": "328aef2c402e6310e3e889bcc4e403a0a85b08d053d250895ce10af7c4a68b0d",
+      "translationHash": "769529fa5ce1f182fb7c4b5ff9e4cafeb3a4a2a58f784bffbef2852e9a413874",
+      "summary": "Compared the full Japanese list and twelve translations with Tokyo Stock Exchange and investor-risk references; recast the unsubstantiated high-yield recommendation as a dated 2024 historical list and added current-data checks and dividend/principal risk.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all 22 names and securities codes across languages and clarified that the original 2024 list had no yield data, selection criteria, or calculation date and is not a current recommendation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked company names, Japanese stock/security codes, dividends, yield, issuer investor-relations disclosures, TSE listed-company search, and the distinction between historical list and current screening."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article lists company names and securities codes only; it provides no dividend-yield figures or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked the TSE Listed Company Search, Japan FSA/Securities and Exchange Surveillance Commission investment risk guidance, and Japan Securities Dealers Association securities risk material."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "No company-by-company current dividend yield, financial health, or suitability analysis was performed; the tickers are reproduced from the original 2024 article and should be rechecked before use.",
+        "This is general historical information, not individualized investment advice; dividends and share prices can change."
+      ]
+    },
+    "post/高配当株まとめ/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/高配当株まとめ/index.md",
+      "sourceHash": "328aef2c402e6310e3e889bcc4e403a0a85b08d053d250895ce10af7c4a68b0d",
+      "translationHash": "fa08d4e1b4ce574d6401b37df1b6d64c5cb6a9599b9875469c1b69cfc5a3cafa",
+      "summary": "Compared the full Japanese list and twelve translations with Tokyo Stock Exchange and investor-risk references; recast the unsubstantiated high-yield recommendation as a dated 2024 historical list and added current-data checks and dividend/principal risk.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all 22 names and securities codes across languages and clarified that the original 2024 list had no yield data, selection criteria, or calculation date and is not a current recommendation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked company names, Japanese stock/security codes, dividends, yield, issuer investor-relations disclosures, TSE listed-company search, and the distinction between historical list and current screening."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article lists company names and securities codes only; it provides no dividend-yield figures or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked the TSE Listed Company Search, Japan FSA/Securities and Exchange Surveillance Commission investment risk guidance, and Japan Securities Dealers Association securities risk material."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "No company-by-company current dividend yield, financial health, or suitability analysis was performed; the tickers are reproduced from the original 2024 article and should be rechecked before use.",
+        "This is general historical information, not individualized investment advice; dividends and share prices can change."
+      ]
+    },
+    "post/高配当株まとめ/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/高配当株まとめ/index.md",
+      "sourceHash": "328aef2c402e6310e3e889bcc4e403a0a85b08d053d250895ce10af7c4a68b0d",
+      "translationHash": "9687861ba53b6972d06663dcba90a388f0f3f0e32e36881400e0373790790cb4",
+      "summary": "Compared the full Japanese list and twelve translations with Tokyo Stock Exchange and investor-risk references; recast the unsubstantiated high-yield recommendation as a dated 2024 historical list and added current-data checks and dividend/principal risk.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all 22 names and securities codes across languages and clarified that the original 2024 list had no yield data, selection criteria, or calculation date and is not a current recommendation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked company names, Japanese stock/security codes, dividends, yield, issuer investor-relations disclosures, TSE listed-company search, and the distinction between historical list and current screening."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article lists company names and securities codes only; it provides no dividend-yield figures or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked the TSE Listed Company Search, Japan FSA/Securities and Exchange Surveillance Commission investment risk guidance, and Japan Securities Dealers Association securities risk material."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "No company-by-company current dividend yield, financial health, or suitability analysis was performed; the tickers are reproduced from the original 2024 article and should be rechecked before use.",
+        "This is general historical information, not individualized investment advice; dividends and share prices can change."
+      ]
+    },
+    "post/高配当株まとめ/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/高配当株まとめ/index.md",
+      "sourceHash": "328aef2c402e6310e3e889bcc4e403a0a85b08d053d250895ce10af7c4a68b0d",
+      "translationHash": "d25f108bcd2b41950a828899e9fe8c89f9eb7c764b079f69654db4797dc5450e",
+      "summary": "Compared the full Japanese list and twelve translations with Tokyo Stock Exchange and investor-risk references; recast the unsubstantiated high-yield recommendation as a dated 2024 historical list and added current-data checks and dividend/principal risk.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all 22 names and securities codes across languages and clarified that the original 2024 list had no yield data, selection criteria, or calculation date and is not a current recommendation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked company names, Japanese stock/security codes, dividends, yield, issuer investor-relations disclosures, TSE listed-company search, and the distinction between historical list and current screening."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article lists company names and securities codes only; it provides no dividend-yield figures or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked the TSE Listed Company Search, Japan FSA/Securities and Exchange Surveillance Commission investment risk guidance, and Japan Securities Dealers Association securities risk material."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "No company-by-company current dividend yield, financial health, or suitability analysis was performed; the tickers are reproduced from the original 2024 article and should be rechecked before use.",
+        "This is general historical information, not individualized investment advice; dividends and share prices can change."
+      ]
+    },
+    "post/高配当株まとめ/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/高配当株まとめ/index.md",
+      "sourceHash": "328aef2c402e6310e3e889bcc4e403a0a85b08d053d250895ce10af7c4a68b0d",
+      "translationHash": "0058fc3f27da139988365bc6df802a46a3e90d9af75e9ebc3db8716b353b2a2f",
+      "summary": "Compared the full Japanese list and twelve translations with Tokyo Stock Exchange and investor-risk references; recast the unsubstantiated high-yield recommendation as a dated 2024 historical list and added current-data checks and dividend/principal risk.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all 22 names and securities codes across languages and clarified that the original 2024 list had no yield data, selection criteria, or calculation date and is not a current recommendation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked company names, Japanese stock/security codes, dividends, yield, issuer investor-relations disclosures, TSE listed-company search, and the distinction between historical list and current screening."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article lists company names and securities codes only; it provides no dividend-yield figures or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked the TSE Listed Company Search, Japan FSA/Securities and Exchange Surveillance Commission investment risk guidance, and Japan Securities Dealers Association securities risk material."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "No company-by-company current dividend yield, financial health, or suitability analysis was performed; the tickers are reproduced from the original 2024 article and should be rechecked before use.",
+        "This is general historical information, not individualized investment advice; dividends and share prices can change."
+      ]
+    },
+    "post/高配当株まとめ/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/高配当株まとめ/index.md",
+      "sourceHash": "328aef2c402e6310e3e889bcc4e403a0a85b08d053d250895ce10af7c4a68b0d",
+      "translationHash": "71a2e094cc0b4f3a2beca6b11e129e56b9f1099a52a41e45d429437828f067f3",
+      "summary": "Compared the full Japanese list and twelve translations with Tokyo Stock Exchange and investor-risk references; recast the unsubstantiated high-yield recommendation as a dated 2024 historical list and added current-data checks and dividend/principal risk.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all 22 names and securities codes across languages and clarified that the original 2024 list had no yield data, selection criteria, or calculation date and is not a current recommendation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked company names, Japanese stock/security codes, dividends, yield, issuer investor-relations disclosures, TSE listed-company search, and the distinction between historical list and current screening."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article lists company names and securities codes only; it provides no dividend-yield figures or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked the TSE Listed Company Search, Japan FSA/Securities and Exchange Surveillance Commission investment risk guidance, and Japan Securities Dealers Association securities risk material."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "No company-by-company current dividend yield, financial health, or suitability analysis was performed; the tickers are reproduced from the original 2024 article and should be rechecked before use.",
+        "This is general historical information, not individualized investment advice; dividends and share prices can change."
+      ]
+    },
+    "post/高配当株まとめ/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/高配当株まとめ/index.md",
+      "sourceHash": "328aef2c402e6310e3e889bcc4e403a0a85b08d053d250895ce10af7c4a68b0d",
+      "translationHash": "4818a57883c34aade9c22ac5acafd05fa27afcda315f0ee514013d09962c2705",
+      "summary": "Compared the full Japanese list and twelve translations with Tokyo Stock Exchange and investor-risk references; recast the unsubstantiated high-yield recommendation as a dated 2024 historical list and added current-data checks and dividend/principal risk.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all 22 names and securities codes across languages and clarified that the original 2024 list had no yield data, selection criteria, or calculation date and is not a current recommendation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked company names, Japanese stock/security codes, dividends, yield, issuer investor-relations disclosures, TSE listed-company search, and the distinction between historical list and current screening."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article lists company names and securities codes only; it provides no dividend-yield figures or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked the TSE Listed Company Search, Japan FSA/Securities and Exchange Surveillance Commission investment risk guidance, and Japan Securities Dealers Association securities risk material."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "No company-by-company current dividend yield, financial health, or suitability analysis was performed; the tickers are reproduced from the original 2024 article and should be rechecked before use.",
+        "This is general historical information, not individualized investment advice; dividends and share prices can change."
+      ]
+    },
+    "post/高配当株まとめ/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/高配当株まとめ/index.md",
+      "sourceHash": "328aef2c402e6310e3e889bcc4e403a0a85b08d053d250895ce10af7c4a68b0d",
+      "translationHash": "03d28b941e57d7e121b8e46bdf394cf65a4e92d18ca2e5c6f5e27690acddcd95",
+      "summary": "Compared the full Japanese list and twelve translations with Tokyo Stock Exchange and investor-risk references; recast the unsubstantiated high-yield recommendation as a dated 2024 historical list and added current-data checks and dividend/principal risk.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all 22 names and securities codes across languages and clarified that the original 2024 list had no yield data, selection criteria, or calculation date and is not a current recommendation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked company names, Japanese stock/security codes, dividends, yield, issuer investor-relations disclosures, TSE listed-company search, and the distinction between historical list and current screening."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article lists company names and securities codes only; it provides no dividend-yield figures or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked the TSE Listed Company Search, Japan FSA/Securities and Exchange Surveillance Commission investment risk guidance, and Japan Securities Dealers Association securities risk material."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "No company-by-company current dividend yield, financial health, or suitability analysis was performed; the tickers are reproduced from the original 2024 article and should be rechecked before use.",
+        "This is general historical information, not individualized investment advice; dividends and share prices can change."
+      ]
+    },
+    "post/高配当株まとめ/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/高配当株まとめ/index.md",
+      "sourceHash": "328aef2c402e6310e3e889bcc4e403a0a85b08d053d250895ce10af7c4a68b0d",
+      "translationHash": "8e40e73b21c54f731c103e14954bc8ba6c696a65425dc5afe2f3a4a69932374c",
+      "summary": "Compared the full Japanese list and twelve translations with Tokyo Stock Exchange and investor-risk references; recast the unsubstantiated high-yield recommendation as a dated 2024 historical list and added current-data checks and dividend/principal risk.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all 22 names and securities codes across languages and clarified that the original 2024 list had no yield data, selection criteria, or calculation date and is not a current recommendation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked company names, Japanese stock/security codes, dividends, yield, issuer investor-relations disclosures, TSE listed-company search, and the distinction between historical list and current screening."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article lists company names and securities codes only; it provides no dividend-yield figures or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked the TSE Listed Company Search, Japan FSA/Securities and Exchange Surveillance Commission investment risk guidance, and Japan Securities Dealers Association securities risk material."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "No company-by-company current dividend yield, financial health, or suitability analysis was performed; the tickers are reproduced from the original 2024 article and should be rechecked before use.",
+        "This is general historical information, not individualized investment advice; dividends and share prices can change."
+      ]
+    },
+    "post/高配当株まとめ/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/高配当株まとめ/index.md",
+      "sourceHash": "328aef2c402e6310e3e889bcc4e403a0a85b08d053d250895ce10af7c4a68b0d",
+      "translationHash": "cd970f43f92abc60720a6529fb01505d817229da646d17f45a319f7fc7750385",
+      "summary": "Compared the full Japanese list and twelve translations with Tokyo Stock Exchange and investor-risk references; recast the unsubstantiated high-yield recommendation as a dated 2024 historical list and added current-data checks and dividend/principal risk.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all 22 names and securities codes across languages and clarified that the original 2024 list had no yield data, selection criteria, or calculation date and is not a current recommendation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked company names, Japanese stock/security codes, dividends, yield, issuer investor-relations disclosures, TSE listed-company search, and the distinction between historical list and current screening."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article lists company names and securities codes only; it provides no dividend-yield figures or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked the TSE Listed Company Search, Japan FSA/Securities and Exchange Surveillance Commission investment risk guidance, and Japan Securities Dealers Association securities risk material."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "No company-by-company current dividend yield, financial health, or suitability analysis was performed; the tickers are reproduced from the original 2024 article and should be rechecked before use.",
+        "This is general historical information, not individualized investment advice; dividends and share prices can change."
+      ]
+    },
+    "post/高配当株まとめ/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/高配当株まとめ/index.md",
+      "sourceHash": "328aef2c402e6310e3e889bcc4e403a0a85b08d053d250895ce10af7c4a68b0d",
+      "translationHash": "be17589916768faa4eaf35034efc31c5a6275a3b4bdcb1cb612ebb9d40100537",
+      "summary": "Compared the full Japanese list and twelve translations with Tokyo Stock Exchange and investor-risk references; recast the unsubstantiated high-yield recommendation as a dated 2024 historical list and added current-data checks and dividend/principal risk.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all 22 names and securities codes across languages and clarified that the original 2024 list had no yield data, selection criteria, or calculation date and is not a current recommendation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked company names, Japanese stock/security codes, dividends, yield, issuer investor-relations disclosures, TSE listed-company search, and the distinction between historical list and current screening."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article lists company names and securities codes only; it provides no dividend-yield figures or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked the TSE Listed Company Search, Japan FSA/Securities and Exchange Surveillance Commission investment risk guidance, and Japan Securities Dealers Association securities risk material."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "No company-by-company current dividend yield, financial health, or suitability analysis was performed; the tickers are reproduced from the original 2024 article and should be rechecked before use.",
+        "This is general historical information, not individualized investment advice; dividends and share prices can change."
+      ]
+    }
+  }
+}

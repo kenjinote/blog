@@ -1,16 +1,18 @@
 ---
-title: 'Daftar Rangkuman Rekomendasi Saham dengan Dividen Tinggi yang Unggul di Jepang'
-date: "2026-09-24T19:44:38+09:00"
+title: "22 Saham Jepang dalam Daftar 2024: Risiko Dividen dan Sumber Informasi Terkini"
+
 slug: "高配当Sahamまとめ"
 date: 2024-12-22T00:56:14+09:00
+lastmod: "2026-11-24T00:00:00+09:00"
 tags: ["Saham"]
 draft: false
 image: "img.webp"
-categories: ["it-technology"]
-description: 'Kami menyusun sekaligus memperkenalkan dalam format daftar, rekomendasi saham unggulan dari Jepang dengan bayaran dividen tinggi, seperti KDDI, NTT, Mitsubishi Corporation, maupun Mitsubishi UFJ. Daftar saham-saham yang wajib dilihat bagi siapa saja yang ingin mencari panduan mengenai portofolio serta mencari keuntungan lewat investasi dalam jangka waktu panjang dari pembagian dividen.'
+categories: ["finance"]
+description: "Salinan historis 22 saham Jepang dari artikel asli tertanggal 22 Desember 2024. Ini bukan rekomendasi terkini atau peringkat imbal hasil; periksa informasi terbaru dan pahami risikonya."
 ---
+Daftar di bawah menyalin saham dalam artikel asli yang diterbitkan pada **2024-12-22**. Artikel tersebut tidak mencantumkan imbal hasil dividen, kriteria pemilihan, atau tanggal perhitungan, sehingga daftar ini bukan daftar imbal hasil tinggi terkini maupun rekomendasi investasi. Dividen dapat dikurangi atau dihentikan, dan harga saham dapat turun di bawah harga beli. Sebelum berinvestasi, verifikasi nama perusahaan, kode efek, kebijakan dividen, dan informasi keuangan terbaru melalui bursa serta halaman hubungan investor masing-masing perusahaan.
 
-# Ringkasan Saham Dividen Tinggi
+## 22 saham dalam artikel asli
 
 1. Mitsubishi UFJ Financial Group (8306)
 2. Sumitomo Mitsui Financial Group (8316)
@@ -34,3 +36,9 @@ description: 'Kami menyusun sekaligus memperkenalkan dalam format daftar, rekome
 20. ORIX (8591)
 21. Mitsubishi HC Capital (8593)
 22. Hulic (3003)
+
+## Referensi
+
+- [TSE Listed Company Search — Japan Exchange Group](https://www2.jpx.co.jp/tseHpFront/JJK020010Action.do)
+- [Investment risks — Securities and Exchange Surveillance Commission of Japan](https://www.fsa.go.jp/sesc/support/advice.html)
+- [Basic Knowledge Concerning Securities Markets — Japan Securities Dealers Association](https://www.jsda.or.jp/en/about/major-activities/content/Sales_Representatives_Manual_Volume1_EnglishEdition.pdf)

@@ -1,16 +1,18 @@
 ---
-title: 'Список лучших дивидендных акций Японии: подборка рекомендаций'
-date: "2026-09-24T19:44:38+09:00"
+title: "22 японские акции из списка 2024 года: риски дивидендов и актуальные источники"
+
 slug: "高配当Акцииまとめ"
 date: 2024-12-22T00:56:14+09:00
+lastmod: "2026-11-24T00:00:00+09:00"
 tags: ["Акции"]
 draft: false
 image: "img.webp"
-categories: ["it-technology"]
-description: 'Мы представляем список рекомендуемых качественных дивидендных акций Японии, таких как Mitsubishi UFJ, Mitsubishi Corporation, NTT и KDDI. Это обязательный список для тех, кто ищет идеи для долгосрочных инвестиций с целью получения дивидендов или для формирования портфеля.'
+categories: ["finance"]
+description: "Историческая копия списка из 22 японских акций в исходной статье от 22 декабря 2024 года. Это не актуальная рекомендация и не рейтинг доходности; проверяйте свежие данные и риски."
 ---
+Ниже приведен список акций из исходной статьи, опубликованной **2024-12-22**. В ней не были указаны дивидендная доходность, критерии отбора и дата расчета, поэтому список не является актуальным рейтингом высоких дивидендов или инвестиционной рекомендацией. Дивиденды могут сократить или отменить, а цена акций может упасть ниже цены покупки. Перед инвестированием проверьте название компании, код ценной бумаги, дивидендную политику и актуальную отчетность на сайте биржи и в разделе для инвесторов каждой компании.
 
-# Сводка акций с высокими дивидендами
+## 22 акции из исходной статьи
 
 1. Mitsubishi UFJ Financial Group (8306)
 2. Sumitomo Mitsui Financial Group (8316)
@@ -34,3 +36,9 @@ description: 'Мы представляем список рекомендуем�
 20. ORIX (8591)
 21. Mitsubishi HC Capital (8593)
 22. Hulic (3003)
+
+## Источники
+
+- [TSE Listed Company Search — Japan Exchange Group](https://www2.jpx.co.jp/tseHpFront/JJK020010Action.do)
+- [Investment risks — Securities and Exchange Surveillance Commission of Japan](https://www.fsa.go.jp/sesc/support/advice.html)
+- [Basic Knowledge Concerning Securities Markets — Japan Securities Dealers Association](https://www.jsda.or.jp/en/about/major-activities/content/Sales_Representatives_Manual_Volume1_EnglishEdition.pdf)

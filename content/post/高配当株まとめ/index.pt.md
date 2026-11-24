@@ -1,16 +1,18 @@
 ---
-title: 'Lista resumida de ações recomendadas de excelentes empresas de alto rendimento de dividendos no Japão'
-date: "2026-09-24T19:44:38+09:00"
+title: "22 ações japonesas listadas em 2024: riscos de dividendos e fontes atualizadas"
+
 slug: "高配当Açõesまとめ"
 date: 2024-12-22T00:56:14+09:00
+lastmod: "2026-11-24T00:00:00+09:00"
 tags: ["Ações"]
 draft: false
 image: "img.webp"
-categories: ["it-technology"]
-description: 'Apresentaremos uma lista resumida de ações recomendadas de excelentes empresas japonesas típicas com altos dividendos, como Mitsubishi UFJ, Mitsubishi Corporation, NTT e KDDI. Esta é uma lista de ações em destaque imperdível para quem deseja usar como referência para investimentos de longo prazo visando dividendos e para a construção de portfólio.'
+categories: ["finance"]
+description: "Registro histórico de 22 ações japonesas do artigo original de 22 de dezembro de 2024. Não é recomendação atual nem ranking de rendimento; consulte dados atualizados e entenda os riscos."
 ---
+A lista abaixo reproduz as ações do artigo original publicado em **2024-12-22**. O texto não informava dividend yield, critérios de seleção nem data de cálculo; portanto, não deve ser interpretado como uma lista atual de alto rendimento ou recomendação de investimento. Os dividendos podem ser reduzidos ou suspensos, e o preço das ações pode cair abaixo do preço de compra. Antes de investir, confirme nome, código, política de dividendos e dados financeiros atuais na bolsa e nas páginas de relações com investidores de cada empresa.
 
-# Resumo de Ações com Altos Dividendos
+## As 22 ações do artigo original
 
 1. Mitsubishi UFJ Financial Group (8306)
 2. Sumitomo Mitsui Financial Group (8316)
@@ -34,3 +36,9 @@ description: 'Apresentaremos uma lista resumida de ações recomendadas de excel
 20. Orix (8591)
 21. Mitsubishi HC Capital (8593)
 22. Hulic (3003)
+
+## Referências
+
+- [TSE Listed Company Search — Japan Exchange Group](https://www2.jpx.co.jp/tseHpFront/JJK020010Action.do)
+- [Investment risks — Securities and Exchange Surveillance Commission of Japan](https://www.fsa.go.jp/sesc/support/advice.html)
+- [Basic Knowledge Concerning Securities Markets — Japan Securities Dealers Association](https://www.jsda.or.jp/en/about/major-activities/content/Sales_Representatives_Manual_Volume1_EnglishEdition.pdf)

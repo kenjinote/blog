@@ -16805,6 +16805,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-144.json",
       "evidenceHash": "e607fb5ee1237552e9ff43d80b8a8650f9abd4447a4e4c3ac1e42891ec8df5e4"
+    },
+    "post/高配当株まとめ/index.en.md": {
+      "source": "post/高配当株まとめ/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "328aef2c402e6310e3e889bcc4e403a0a85b08d053d250895ce10af7c4a68b0d",
+      "translationHash": "41b9c3babd6918fea5702afa5b12643336d6db928fd6d9145706ecaa4189df50",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-145.json",
+      "evidenceHash": "540863451c96fdf42a1232efeb77f41010cfb646e9a9c6907649e2285a343293"
+    },
+    "post/高配当株まとめ/index.zh-cn.md": {
+      "source": "post/高配当株まとめ/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "328aef2c402e6310e3e889bcc4e403a0a85b08d053d250895ce10af7c4a68b0d",
+      "translationHash": "769529fa5ce1f182fb7c4b5ff9e4cafeb3a4a2a58f784bffbef2852e9a413874",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-145.json",
+      "evidenceHash": "ee2e4b94b80875437ddbcc41237b37cf8002fa474f80e95365bc940d832ea0c8"
+    },
+    "post/高配当株まとめ/index.es.md": {
+      "source": "post/高配当株まとめ/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "328aef2c402e6310e3e889bcc4e403a0a85b08d053d250895ce10af7c4a68b0d",
+      "translationHash": "fa08d4e1b4ce574d6401b37df1b6d64c5cb6a9599b9875469c1b69cfc5a3cafa",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-145.json",
+      "evidenceHash": "4fc2c48e07ff7a00d5f0f81e04aead9811d78e91fd715db274c5d778c5ea71d8"
+    },
+    "post/高配当株まとめ/index.ko.md": {
+      "source": "post/高配当株まとめ/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "328aef2c402e6310e3e889bcc4e403a0a85b08d053d250895ce10af7c4a68b0d",
+      "translationHash": "9687861ba53b6972d06663dcba90a388f0f3f0e32e36881400e0373790790cb4",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-145.json",
+      "evidenceHash": "ed68fc7f7cf0c7628f1998db0faf2f24123fc87b9902bcd195d62dad65e37f2a"
+    },
+    "post/高配当株まとめ/index.pt.md": {
+      "source": "post/高配当株まとめ/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "328aef2c402e6310e3e889bcc4e403a0a85b08d053d250895ce10af7c4a68b0d",
+      "translationHash": "d25f108bcd2b41950a828899e9fe8c89f9eb7c764b079f69654db4797dc5450e",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-145.json",
+      "evidenceHash": "bef81ff8c0d9a52ced6eee04d2f7a4713aed12479d3c1725aa7f0380b4660f38"
+    },
+    "post/高配当株まとめ/index.zh-tw.md": {
+      "source": "post/高配当株まとめ/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "328aef2c402e6310e3e889bcc4e403a0a85b08d053d250895ce10af7c4a68b0d",
+      "translationHash": "0058fc3f27da139988365bc6df802a46a3e90d9af75e9ebc3db8716b353b2a2f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-145.json",
+      "evidenceHash": "0071236369fb17091e707d0fc929e2fb8fa8cbb3b244c745b504b8ae354cb07e"
+    },
+    "post/高配当株まとめ/index.hi.md": {
+      "source": "post/高配当株まとめ/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "328aef2c402e6310e3e889bcc4e403a0a85b08d053d250895ce10af7c4a68b0d",
+      "translationHash": "71a2e094cc0b4f3a2beca6b11e129e56b9f1099a52a41e45d429437828f067f3",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-145.json",
+      "evidenceHash": "75fe234657d1a7112ed887cfb70b3555a9e90b1387c16d96a780ee923a2c74ac"
+    },
+    "post/高配当株まとめ/index.fr.md": {
+      "source": "post/高配当株まとめ/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "328aef2c402e6310e3e889bcc4e403a0a85b08d053d250895ce10af7c4a68b0d",
+      "translationHash": "4818a57883c34aade9c22ac5acafd05fa27afcda315f0ee514013d09962c2705",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-145.json",
+      "evidenceHash": "10c19fa108eab5253ca4aea0200f18cebbfd79f449ecd7b8cf6568b07d87abf1"
+    },
+    "post/高配当株まとめ/index.de.md": {
+      "source": "post/高配当株まとめ/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "328aef2c402e6310e3e889bcc4e403a0a85b08d053d250895ce10af7c4a68b0d",
+      "translationHash": "03d28b941e57d7e121b8e46bdf394cf65a4e92d18ca2e5c6f5e27690acddcd95",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-145.json",
+      "evidenceHash": "49dd578a79ea4dff766ead4d7f877319e346c954d63df2c1a1f551ce4b8c26f8"
+    },
+    "post/高配当株まとめ/index.ar.md": {
+      "source": "post/高配当株まとめ/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "328aef2c402e6310e3e889bcc4e403a0a85b08d053d250895ce10af7c4a68b0d",
+      "translationHash": "8e40e73b21c54f731c103e14954bc8ba6c696a65425dc5afe2f3a4a69932374c",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-145.json",
+      "evidenceHash": "8e06efe11b0f4927b06896cd9f81e7b8b117407d8a47567517d9b28e007ca8fa"
+    },
+    "post/高配当株まとめ/index.ru.md": {
+      "source": "post/高配当株まとめ/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "328aef2c402e6310e3e889bcc4e403a0a85b08d053d250895ce10af7c4a68b0d",
+      "translationHash": "cd970f43f92abc60720a6529fb01505d817229da646d17f45a319f7fc7750385",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-145.json",
+      "evidenceHash": "ae37e1b537a72cf8a546d8ad4c6ca40fb667a2d257604374c3947e219c90cd4e"
+    },
+    "post/高配当株まとめ/index.id.md": {
+      "source": "post/高配当株まとめ/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "328aef2c402e6310e3e889bcc4e403a0a85b08d053d250895ce10af7c4a68b0d",
+      "translationHash": "be17589916768faa4eaf35034efc31c5a6275a3b4bdcb1cb612ebb9d40100537",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-145.json",
+      "evidenceHash": "7f7e1c149e5025ed0587ab3ed5b47cb3efd0550378bf2823de7491a7594a2c24"
     }
   }
 }
