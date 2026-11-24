@@ -1,18 +1,20 @@
 ---
-title: 'Was sind die 5 Hauptmerkmale der Programmiersprache Rust?'
-date: "2026-09-24T19:44:38+09:00"
+title: "Fünf zentrale Merkmale von Rust: Sicherheit, Ownership und Cargo"
 slug: "Rustの特徴"
 date: 2022-10-03T22:47:20+09:00
+lastmod: "2026-11-24T00:00:00+09:00"
 tags: ["Rust"]
 draft: false
 image: "img.webp"
 categories: ["programming"]
-description: 'Erklärt leicht verständlich die Hauptmerkmale der von Mozilla entwickelten Programmiersprache „Rust“. Stellt vor, warum sie gewählt wird, einschließlich schneller Ausführung, keiner Garbage Collection, Speichersicherheit durch Eigentum (Ownership) und Ausleihen (Borrowing) sowie plattformübergreifender Unterstützung.'
+description: "Überblick über Rusts Ursprung, Speichermodell, Ownership und Borrowing, Plattformunterstützung und Cargo sowie über Grenzen der Sicherheitsgarantien."
 ---
-# Eigenschaften von [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/)
+Rust ist eine Open-Source-Programmiersprache für zuverlässige und effiziente Software. Hier sind fünf wichtige Merkmale.
 
-- Eine relativ neue Open-Source-Programmiersprache, die von Mozilla entwickelt wird
-- Eine schnelle Sprache ohne [Garbage Collection](https://kenji.blog/de/p/memory-management-garbage-collection/), die auf Systemprogrammierung spezialisiert ist
-- Garantiert Speichersicherheit durch einzigartige Mechanismen für Besitz (ownership) und Ausleihen (borrowing) als Teil der Sprachspezifikation
-- Funktioniert plattformübergreifend
-- Besitzt standardmäßig den hervorragenden Paketmanager Cargo
+1. **Community-Projekt mit Ursprung bei Mozilla**: Rust begann als Mozilla-Research-Projekt. Seit 2015 sind Ausrichtung und Governance des Projekts unabhängig von Mozilla.
+2. **Kein integrierter Garbage Collector**: Rust ist auf Leistung und Speichereffizienz ausgelegt, ohne auf einen integrierten Garbage Collector angewiesen zu sein.
+3. **Ownership und Borrowing**: Ownership, Referenzen und Borrowing ermöglichen dem Compiler, viele Speicher-Sicherheitsgarantien für gewöhnlichen sicheren Rust-Code durchzusetzen. `unsafe`-Code und Schnittstellen zu anderen Sprachen müssen weiterhin sorgfältig geprüft werden.
+4. **Unterstützung vieler Plattformen**: Rust kann auf zahlreiche Betriebssysteme und Prozessorarchitekturen ausgerichtet werden; Umfang und Garantien der Unterstützung unterscheiden sich jedoch je nach Target.
+5. **Cargo**: Das Standardwerkzeug Cargo verwaltet Pakete und übernimmt außerdem Aufgaben wie Build und Tests.
+
+Das Rust-Projekt wird von der Community gesteuert und von der Rust Foundation unterstützt. Siehe die [offizielle Rust-Website](https://www.rust-lang.org/), die [Projektgeschichte](https://blog.rust-lang.org/2020/08/18/laying-the-foundation-for-rusts-future.html), den [Ownership-Leitfaden](https://doc.rust-lang.org/book/ch04-00-understanding-ownership.html), das [Cargo Book](https://doc.rust-lang.org/cargo/), die [Plattformunterstützung](https://doc.rust-lang.org/rustc/platform-support.html) und [Unsafe Rust](https://doc.rust-lang.org/book/ch20-01-unsafe-rust.html).

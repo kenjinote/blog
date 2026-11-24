@@ -1,0 +1,458 @@
+{
+  "version": 1,
+  "batch": 136,
+  "article": "Rustの主な特徴5つ",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "fadf26fea469b992d3ec814cf1c2274a5701dedfbe1bf0461a19bff4fea5fd7a",
+  "sources": [
+    "https://www.rust-lang.org/",
+    "https://blog.rust-lang.org/2020/08/18/laying-the-foundation-for-rusts-future.html",
+    "https://doc.rust-lang.org/book/ch04-00-understanding-ownership.html",
+    "https://doc.rust-lang.org/cargo/",
+    "https://doc.rust-lang.org/rustc/platform-support.html",
+    "https://doc.rust-lang.org/book/ch20-01-unsafe-rust.html"
+  ],
+  "scope": "Compared all five feature claims and the full Japanese article with twelve translations; checked history, memory-safety wording, platform support, Cargo, dates, and links against current official Rust documentation.",
+  "findings": [
+    "Removed duplicate future dates and retained publication date 2022-10-03; added lastmod 2026-11-24.",
+    "Corrected the outdated statement that Mozilla develops Rust: it began as a Mozilla Research project, while project direction and governance have been independent of Mozilla since 2015; the project is now community-governed with Rust Foundation support.",
+    "Scoped memory-safety guarantees to ordinary safe Rust and added a warning that unsafe code and foreign-language interfaces need careful review.",
+    "Clarified that Rust platform support levels and guarantees vary by target.",
+    "Expanded Cargo from “package manager” to its package-management, build, and test roles; added five official references in every locale."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/Rustの特徴/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Rustの特徴/index.md",
+      "sourceHash": "fadf26fea469b992d3ec814cf1c2274a5701dedfbe1bf0461a19bff4fea5fd7a",
+      "translationHash": "2adae9fabd7f6682b526aa9e8736b4c7d519f2c4404f8936986639457e88cc81",
+      "summary": "Reviewed the complete feature overview against Japanese and official Rust documentation, updated project governance, scoped memory-safety claims to safe Rust, clarified target tiers and Cargo’s role, and added official references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete feature list in every locale and corrected the outdated statement that Mozilla currently develops Rust; retained that Rust originated at Mozilla and is now an independent community-governed project."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked ownership, borrowing, references, safe versus unsafe Rust, garbage collection, target/platform support tiers, and Cargo as package manager and build tool."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The overview contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The overview contains no executable code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and opened official Rust references for project history/governance, ownership, Cargo, platform support, and Unsafe Rust."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Safety guarantees depend on the safe/unsafe boundary and soundness of unsafe code and foreign interfaces.",
+        "Platform support tiers can change; the article links to the current Rust target support policy."
+      ]
+    },
+    "post/Rustの特徴/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Rustの特徴/index.md",
+      "sourceHash": "fadf26fea469b992d3ec814cf1c2274a5701dedfbe1bf0461a19bff4fea5fd7a",
+      "translationHash": "c51197e4473731dc25c569f381781e3fa051d6b2e249e6a9253558ef61d134f8",
+      "summary": "Reviewed the complete feature overview against Japanese and official Rust documentation, updated project governance, scoped memory-safety claims to safe Rust, clarified target tiers and Cargo’s role, and added official references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete feature list in every locale and corrected the outdated statement that Mozilla currently develops Rust; retained that Rust originated at Mozilla and is now an independent community-governed project."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked ownership, borrowing, references, safe versus unsafe Rust, garbage collection, target/platform support tiers, and Cargo as package manager and build tool."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The overview contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The overview contains no executable code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and opened official Rust references for project history/governance, ownership, Cargo, platform support, and Unsafe Rust."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Safety guarantees depend on the safe/unsafe boundary and soundness of unsafe code and foreign interfaces.",
+        "Platform support tiers can change; the article links to the current Rust target support policy."
+      ]
+    },
+    "post/Rustの特徴/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Rustの特徴/index.md",
+      "sourceHash": "fadf26fea469b992d3ec814cf1c2274a5701dedfbe1bf0461a19bff4fea5fd7a",
+      "translationHash": "c4a9524372c49605cb9eda4810a9e85c884c0dcd14d53668a0d6a46f36cca643",
+      "summary": "Reviewed the complete feature overview against Japanese and official Rust documentation, updated project governance, scoped memory-safety claims to safe Rust, clarified target tiers and Cargo’s role, and added official references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete feature list in every locale and corrected the outdated statement that Mozilla currently develops Rust; retained that Rust originated at Mozilla and is now an independent community-governed project."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked ownership, borrowing, references, safe versus unsafe Rust, garbage collection, target/platform support tiers, and Cargo as package manager and build tool."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The overview contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The overview contains no executable code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and opened official Rust references for project history/governance, ownership, Cargo, platform support, and Unsafe Rust."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Safety guarantees depend on the safe/unsafe boundary and soundness of unsafe code and foreign interfaces.",
+        "Platform support tiers can change; the article links to the current Rust target support policy."
+      ]
+    },
+    "post/Rustの特徴/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Rustの特徴/index.md",
+      "sourceHash": "fadf26fea469b992d3ec814cf1c2274a5701dedfbe1bf0461a19bff4fea5fd7a",
+      "translationHash": "e42a01e0df069139f273dd94a49471a227ee472252f1e8f77ec076061bdc1701",
+      "summary": "Reviewed the complete feature overview against Japanese and official Rust documentation, updated project governance, scoped memory-safety claims to safe Rust, clarified target tiers and Cargo’s role, and added official references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete feature list in every locale and corrected the outdated statement that Mozilla currently develops Rust; retained that Rust originated at Mozilla and is now an independent community-governed project."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked ownership, borrowing, references, safe versus unsafe Rust, garbage collection, target/platform support tiers, and Cargo as package manager and build tool."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The overview contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The overview contains no executable code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and opened official Rust references for project history/governance, ownership, Cargo, platform support, and Unsafe Rust."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Safety guarantees depend on the safe/unsafe boundary and soundness of unsafe code and foreign interfaces.",
+        "Platform support tiers can change; the article links to the current Rust target support policy."
+      ]
+    },
+    "post/Rustの特徴/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Rustの特徴/index.md",
+      "sourceHash": "fadf26fea469b992d3ec814cf1c2274a5701dedfbe1bf0461a19bff4fea5fd7a",
+      "translationHash": "9781fe1fac1789b3c84798dd142e56279979197bb2985323bdfeaa9fa0c8fb87",
+      "summary": "Reviewed the complete feature overview against Japanese and official Rust documentation, updated project governance, scoped memory-safety claims to safe Rust, clarified target tiers and Cargo’s role, and added official references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete feature list in every locale and corrected the outdated statement that Mozilla currently develops Rust; retained that Rust originated at Mozilla and is now an independent community-governed project."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked ownership, borrowing, references, safe versus unsafe Rust, garbage collection, target/platform support tiers, and Cargo as package manager and build tool."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The overview contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The overview contains no executable code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and opened official Rust references for project history/governance, ownership, Cargo, platform support, and Unsafe Rust."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Safety guarantees depend on the safe/unsafe boundary and soundness of unsafe code and foreign interfaces.",
+        "Platform support tiers can change; the article links to the current Rust target support policy."
+      ]
+    },
+    "post/Rustの特徴/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Rustの特徴/index.md",
+      "sourceHash": "fadf26fea469b992d3ec814cf1c2274a5701dedfbe1bf0461a19bff4fea5fd7a",
+      "translationHash": "d119c79b699cea9cbdcaaf9474127cdc66b81097ebe7a42d57bce5b98282998f",
+      "summary": "Reviewed the complete feature overview against Japanese and official Rust documentation, updated project governance, scoped memory-safety claims to safe Rust, clarified target tiers and Cargo’s role, and added official references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete feature list in every locale and corrected the outdated statement that Mozilla currently develops Rust; retained that Rust originated at Mozilla and is now an independent community-governed project."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked ownership, borrowing, references, safe versus unsafe Rust, garbage collection, target/platform support tiers, and Cargo as package manager and build tool."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The overview contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The overview contains no executable code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and opened official Rust references for project history/governance, ownership, Cargo, platform support, and Unsafe Rust."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Safety guarantees depend on the safe/unsafe boundary and soundness of unsafe code and foreign interfaces.",
+        "Platform support tiers can change; the article links to the current Rust target support policy."
+      ]
+    },
+    "post/Rustの特徴/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Rustの特徴/index.md",
+      "sourceHash": "fadf26fea469b992d3ec814cf1c2274a5701dedfbe1bf0461a19bff4fea5fd7a",
+      "translationHash": "487ac29744ef1e6fc731eabc1a605806b89a7eafe6374d10f192091019e9f804",
+      "summary": "Reviewed the complete feature overview against Japanese and official Rust documentation, updated project governance, scoped memory-safety claims to safe Rust, clarified target tiers and Cargo’s role, and added official references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete feature list in every locale and corrected the outdated statement that Mozilla currently develops Rust; retained that Rust originated at Mozilla and is now an independent community-governed project."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked ownership, borrowing, references, safe versus unsafe Rust, garbage collection, target/platform support tiers, and Cargo as package manager and build tool."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The overview contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The overview contains no executable code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and opened official Rust references for project history/governance, ownership, Cargo, platform support, and Unsafe Rust."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Safety guarantees depend on the safe/unsafe boundary and soundness of unsafe code and foreign interfaces.",
+        "Platform support tiers can change; the article links to the current Rust target support policy."
+      ]
+    },
+    "post/Rustの特徴/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Rustの特徴/index.md",
+      "sourceHash": "fadf26fea469b992d3ec814cf1c2274a5701dedfbe1bf0461a19bff4fea5fd7a",
+      "translationHash": "9c20f18cca19d5084d30bdb3c87d43d47fdc2f1a6e2b6ad37a9cb462d020cd25",
+      "summary": "Reviewed the complete feature overview against Japanese and official Rust documentation, updated project governance, scoped memory-safety claims to safe Rust, clarified target tiers and Cargo’s role, and added official references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete feature list in every locale and corrected the outdated statement that Mozilla currently develops Rust; retained that Rust originated at Mozilla and is now an independent community-governed project."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked ownership, borrowing, references, safe versus unsafe Rust, garbage collection, target/platform support tiers, and Cargo as package manager and build tool."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The overview contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The overview contains no executable code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and opened official Rust references for project history/governance, ownership, Cargo, platform support, and Unsafe Rust."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Safety guarantees depend on the safe/unsafe boundary and soundness of unsafe code and foreign interfaces.",
+        "Platform support tiers can change; the article links to the current Rust target support policy."
+      ]
+    },
+    "post/Rustの特徴/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Rustの特徴/index.md",
+      "sourceHash": "fadf26fea469b992d3ec814cf1c2274a5701dedfbe1bf0461a19bff4fea5fd7a",
+      "translationHash": "b85fa0605ea32ec39700d3aad34e7f190bca5a8daefd1a37161511569c887459",
+      "summary": "Reviewed the complete feature overview against Japanese and official Rust documentation, updated project governance, scoped memory-safety claims to safe Rust, clarified target tiers and Cargo’s role, and added official references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete feature list in every locale and corrected the outdated statement that Mozilla currently develops Rust; retained that Rust originated at Mozilla and is now an independent community-governed project."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked ownership, borrowing, references, safe versus unsafe Rust, garbage collection, target/platform support tiers, and Cargo as package manager and build tool."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The overview contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The overview contains no executable code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and opened official Rust references for project history/governance, ownership, Cargo, platform support, and Unsafe Rust."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Safety guarantees depend on the safe/unsafe boundary and soundness of unsafe code and foreign interfaces.",
+        "Platform support tiers can change; the article links to the current Rust target support policy."
+      ]
+    },
+    "post/Rustの特徴/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Rustの特徴/index.md",
+      "sourceHash": "fadf26fea469b992d3ec814cf1c2274a5701dedfbe1bf0461a19bff4fea5fd7a",
+      "translationHash": "93b8c1421b365c366bef3af79eb732f0ed0f035b43336ca707a03373ce3ac284",
+      "summary": "Reviewed the complete feature overview against Japanese and official Rust documentation, updated project governance, scoped memory-safety claims to safe Rust, clarified target tiers and Cargo’s role, and added official references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete feature list in every locale and corrected the outdated statement that Mozilla currently develops Rust; retained that Rust originated at Mozilla and is now an independent community-governed project."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked ownership, borrowing, references, safe versus unsafe Rust, garbage collection, target/platform support tiers, and Cargo as package manager and build tool."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The overview contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The overview contains no executable code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and opened official Rust references for project history/governance, ownership, Cargo, platform support, and Unsafe Rust."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Safety guarantees depend on the safe/unsafe boundary and soundness of unsafe code and foreign interfaces.",
+        "Platform support tiers can change; the article links to the current Rust target support policy."
+      ]
+    },
+    "post/Rustの特徴/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Rustの特徴/index.md",
+      "sourceHash": "fadf26fea469b992d3ec814cf1c2274a5701dedfbe1bf0461a19bff4fea5fd7a",
+      "translationHash": "7fccbed9c66b8831df71a2be8857b3373cfae5200d01f00c7265cf6363e4b0fc",
+      "summary": "Reviewed the complete feature overview against Japanese and official Rust documentation, updated project governance, scoped memory-safety claims to safe Rust, clarified target tiers and Cargo’s role, and added official references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete feature list in every locale and corrected the outdated statement that Mozilla currently develops Rust; retained that Rust originated at Mozilla and is now an independent community-governed project."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked ownership, borrowing, references, safe versus unsafe Rust, garbage collection, target/platform support tiers, and Cargo as package manager and build tool."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The overview contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The overview contains no executable code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and opened official Rust references for project history/governance, ownership, Cargo, platform support, and Unsafe Rust."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Safety guarantees depend on the safe/unsafe boundary and soundness of unsafe code and foreign interfaces.",
+        "Platform support tiers can change; the article links to the current Rust target support policy."
+      ]
+    },
+    "post/Rustの特徴/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Rustの特徴/index.md",
+      "sourceHash": "fadf26fea469b992d3ec814cf1c2274a5701dedfbe1bf0461a19bff4fea5fd7a",
+      "translationHash": "efbdc115ddc116fbf74a15c23af9a67740fce48bf8571a077e76eb15803873a3",
+      "summary": "Reviewed the complete feature overview against Japanese and official Rust documentation, updated project governance, scoped memory-safety claims to safe Rust, clarified target tiers and Cargo’s role, and added official references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete feature list in every locale and corrected the outdated statement that Mozilla currently develops Rust; retained that Rust originated at Mozilla and is now an independent community-governed project."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked ownership, borrowing, references, safe versus unsafe Rust, garbage collection, target/platform support tiers, and Cargo as package manager and build tool."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The overview contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The overview contains no executable code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and opened official Rust references for project history/governance, ownership, Cargo, platform support, and Unsafe Rust."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Safety guarantees depend on the safe/unsafe boundary and soundness of unsafe code and foreign interfaces.",
+        "Platform support tiers can change; the article links to the current Rust target support policy."
+      ]
+    }
+  }
+}

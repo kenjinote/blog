@@ -1,18 +1,20 @@
 ---
-title: 'What Are the 5 Main Features of the Programming Language Rust?'
-date: "2026-09-24T19:44:38+09:00"
+title: "Five Key Features of Rust: Safety, Ownership, and Cargo"
 slug: "Rustの特徴"
 date: 2022-10-03T22:47:20+09:00
+lastmod: "2026-11-24T00:00:00+09:00"
 tags: ["Rust"]
 draft: false
 image: "img.webp"
 categories: ["programming"]
-description: 'Explains the main features of the programming language ''Rust'' developed by Mozilla in an easy-to-understand manner. Introduces the reasons why it is chosen, such as high-speed performance, no garbage collection, memory safety through ownership and borrowing, and cross-platform compatibility.'
+description: "An overview of Rust’s origins, memory model, ownership and borrowing, platform support, and Cargo, with notes on the limits of safety guarantees and differences among targets."
 ---
-# Features of [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/)
+Rust is an open-source programming language focused on reliable and efficient software. Here are five of its key features.
 
-- A relatively new open-source programming language developed by Mozilla.
-- A fast, systems programming language without garbage collection.
-- Guarantees memory safety through unique language features called ownership and borrowing.
-- Operates cross-platform.
-- Comes with an excellent standard package manager called Cargo.
+1. **A community project with roots at Mozilla**: Rust began as a Mozilla Research project. Since 2015, its project direction and governance have been independent of Mozilla.
+2. **No built-in garbage collector**: Rust is designed for performance and memory efficiency without relying on a built-in garbage collector.
+3. **Ownership and borrowing**: Ownership, references, and borrowing allow the compiler to enforce many memory-safety guarantees in ordinary safe Rust. `unsafe` code and foreign-language interfaces still require careful review.
+4. **Broad platform support**: Rust can target many operating systems and processor architectures, but support levels and guarantees vary by target.
+5. **Cargo**: Rust’s standard tool Cargo manages packages and also handles tasks such as building and testing.
+
+The Rust project is community-governed and supported by the Rust Foundation. See the [official Rust site](https://www.rust-lang.org/), [project history](https://blog.rust-lang.org/2020/08/18/laying-the-foundation-for-rusts-future.html), [ownership guide](https://doc.rust-lang.org/book/ch04-00-understanding-ownership.html), [Cargo Book](https://doc.rust-lang.org/cargo/), [platform support](https://doc.rust-lang.org/rustc/platform-support.html), and [Unsafe Rust](https://doc.rust-lang.org/book/ch20-01-unsafe-rust.html).
