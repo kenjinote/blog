@@ -1,35 +1,25 @@
 ---
-
-
-
-
-
-title: '브라우저에서 쉽게 그래프 작성! 무료의 편리한 웹 그래프 에디터 사용법'
-date: "2026-09-24T19:44:38+09:00"
+title: "CS Academy Graph Editor로 그래프 그리기"
 slug: "그래프エディタ"
-date: 2022-10-13T23:31:11+09:00
 tags: ["tools", "그래프"]
 draft: false
 image: "img.webp"
 categories: ["tools-development-environment"]
-description: '브라우저 상에서 수치를 입력하는 것만으로 간단히 도표나 그래프를 작성할 수 있는 편리한 웹 기반 그래프 에디터를 소개합니다. 마우스 조작을 통한 요소 이동이나 방향 그래프 작성, 생성한 그래프의 PNG 이미지 다운로드 기능에 대해서도 자세히 해설합니다.'
+description: "CS Academy Graph Editor를 사용해 브라우저에서 그래프 이론의 정점과 간선을 배치하고, 방향 그래프를 만든 뒤 PNG 이미지로 저장하는 방법을 소개합니다."
+date: "2022-10-13T23:31:11+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
+# CS Academy Graph Editor로 그래프 그리기
 
+[CS Academy Graph Editor](https://csacademy.com/app/graph_editor/)는 그래프 이론에서 사용하는 정점과 간선을 브라우저에서 시각화하는 도구입니다.
 
+아래 이미지는 이 글에 저장된 조작 예시입니다. 페이지의 입력란에 그래프 데이터를 지정하고 `Directed`를 선택해 방향 그래프를 만든 다음, 마우스로 정점의 위치를 조정하고 `Download as PNG`로 이미지를 저장합니다.
 
+![PNG로 저장한 방향 그래프 예시](img_1.webp)
 
+> **확인 메모(2026년 11월 24일):** 도구 페이지는 JavaScript를 활성화하라는 메시지를 반환했습니다. 자동 텍스트 탐색으로는 현재 화면과 각 기능의 동작을 확인하지 못했습니다. 위의 절차는 저장된 이미지와 이전 설명을 바탕으로 하므로 실제 화면은 다를 수 있습니다.
 
-# 그래프 에디터
+## 참고 자료
 
-간단한 그래프를 생성할 수 있는 웹 페이지를 소개합니다.
-
-[https://csacademy.com/app/graph_editor/](https://csacademy.com/app/graph_editor/)
-
-숫자를 입력하여 그래프를 생성할 수 있습니다.
-또한, 마우스로 요소를 이동하는 것도 가능합니다.
-
-`Directed`를 클릭하면 방향 그래프(유향 그래프)도 생성할 수 있습니다.
-
-![img_1.png](img_1.webp)
-
-생성된 그래프는 `Download as PNG`를 통해 이미지로 저장할 수 있습니다.
+- [CS Academy Graph Editor](https://csacademy.com/app/graph_editor/)
+- [Codeforces의 CS Academy Graph Editor 공개 안내](https://codeforces.com/blog/entry/45758)

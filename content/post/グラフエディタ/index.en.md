@@ -1,25 +1,25 @@
 ---
-title: 'Easy Graph Creation in Your Browser! How to Use Free and Handy Web Graph Editors'
-date: "2026-09-24T19:44:38+09:00"
+title: "Create Graphs with the CS Academy Graph Editor"
 slug: "Graphエディタ"
-date: 2022-10-13T23:31:11+09:00
 tags: ["tools", "graph"]
 draft: false
 image: "img.webp"
 categories: ["tools-development-environment"]
-description: 'Introduces handy web-based graph editors that let you easily create charts and graphs just by entering numbers in your browser. Details features like moving elements via mouse, creating directed graphs, and downloading created graphs as PNG images.'
+description: "Use the CS Academy Graph Editor to arrange vertices and edges in a browser, create a directed graph, and save it as a PNG image."
+date: "2022-10-13T23:31:11+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
-# [Graph](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) Editor
+# Create Graphs with the CS Academy Graph Editor
 
-This is an introduction to a web page where you can easily create simple graphs.
+[CS Academy Graph Editor](https://csacademy.com/app/graph_editor/) is a browser-based tool for visualizing vertices and edges from graph theory.
 
-[https://csacademy.com/app/graph_editor/](https://csacademy.com/app/graph_editor/)
+The image below is an example saved with this article. Enter graph data in the page, select `Directed` to create a directed graph, adjust vertex positions with the mouse, and save an image with `Download as PNG`.
 
-You can create graphs by entering numerical values.
-You can also move elements around using the mouse.
+![Example of a directed graph saved as PNG](img_1.webp)
 
-By clicking `Directed`, you can create directed graphs as well.
+> **Review note (November 24, 2026):** The tool page returned a message asking for JavaScript to be enabled. Its current interface and feature behavior could not be verified with automated text-only browsing. The steps above describe the saved image and the earlier article, so the live interface may differ.
 
-![img_1.png](img_1.webp)
+## References
 
-You can save the graphs you create as images using `Download as PNG`.
+- [CS Academy Graph Editor](https://csacademy.com/app/graph_editor/)
+- [CS Academy announcement of the Graph Editor on Codeforces](https://codeforces.com/blog/entry/45758)

@@ -1,25 +1,25 @@
 ---
-title: '在瀏覽器輕鬆製作圖表！免費且實用的網頁版圖表編輯器用法'
-date: "2026-09-24T19:44:38+09:00"
+title: "使用 CS Academy Graph Editor 繪製圖論圖形"
 slug: "圖表エディタ"
-date: 2022-10-13T23:31:11+09:00
 tags: ["tools", "圖形"]
 draft: false
 image: "img.webp"
 categories: ["tools-development-environment"]
-description: '介紹只要在瀏覽器上輸入數值，就能輕鬆建立圖表或圖形的實用網頁版圖表編輯器。詳細解說使用滑鼠移動元素、建立有向圖，以及將建立好的圖表下載為 PNG 圖片等功能。'
+description: "介紹如何使用 CS Academy Graph Editor 在瀏覽器中配置圖論的頂點與邊、建立有向圖，並將圖形儲存為 PNG 圖片。"
+date: "2022-10-13T23:31:11+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
-# 圖形編輯器
+# 使用 CS Academy Graph Editor 繪製圖論圖形
 
-介紹一個可以創建簡單圖形的網頁。
+[CS Academy Graph Editor](https://csacademy.com/app/graph_editor/) 是一款可在瀏覽器中呈現圖論頂點與邊的工具。
 
-[https://csacademy.com/app/graph_editor/](https://csacademy.com/app/graph_editor/)
+下圖是本文保存的操作範例。在頁面的輸入區指定圖形資料，選擇 `Directed` 建立有向圖，用滑鼠調整頂點位置，再透過 `Download as PNG` 儲存圖片。
 
-您可以透過輸入數值來創建圖形。
-此外，似乎也可以用滑鼠移動元素。
+![儲存為 PNG 的有向圖範例](img_1.webp)
 
-點擊 `Directed` 也可創建有向圖。
+> **核對說明（2026 年 11 月 24 日）：** 工具頁面回覆要求啟用 JavaScript 的訊息。透過自動化文字瀏覽，無法確認目前介面及各項功能的實際運作情形。以上步驟依據本文保存的圖片與先前說明，實際頁面可能有所不同。
 
-![img_1.png](img_1.webp)
+## 參考資料
 
-您可以使用 `Download as PNG` 將創建的圖形保存為圖片。
+- [CS Academy Graph Editor](https://csacademy.com/app/graph_editor/)
+- [CS Academy 在 Codeforces 上發布 Graph Editor 的公告](https://codeforces.com/blog/entry/45758)

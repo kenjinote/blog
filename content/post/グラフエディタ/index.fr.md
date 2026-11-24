@@ -1,25 +1,25 @@
 ---
-title: 'Création facile de graphiques dans le navigateur ! Comment utiliser un éditeur de graphiques Web gratuit et pratique'
-date: "2026-09-24T19:44:38+09:00"
+title: "Créer des graphes avec CS Academy Graph Editor"
 slug: "Grapheエディタ"
-date: 2022-10-13T23:31:11+09:00
 tags: ["tools", "graphes"]
 draft: false
 image: "img.webp"
 categories: ["tools-development-environment"]
-description: 'Nous présentons un éditeur de graphiques Web pratique qui vous permet de créer facilement des diagrammes et des graphiques en saisissant simplement des chiffres dans le navigateur. Nous expliquons également en détail la manipulation des éléments à la souris, la création de graphes orientés et la fonction de téléchargement des graphiques créés sous forme d''images PNG.'
+description: "Utilisez CS Academy Graph Editor pour disposer des sommets et des arêtes de la théorie des graphes dans un navigateur, créer un graphe orienté et l’enregistrer au format PNG."
+date: "2022-10-13T23:31:11+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
-# Éditeur de graphes
+# Créer des graphes avec CS Academy Graph Editor
 
-Présentation d'une page Web permettant de créer des graphes simples.
+[CS Academy Graph Editor](https://csacademy.com/app/graph_editor/) est un outil dans le navigateur qui permet de visualiser les sommets et les arêtes de la théorie des graphes.
 
-[https://csacademy.com/app/graph_editor/](https://csacademy.com/app/graph_editor/)
+L’image ci-dessous est un exemple enregistré avec cet article. Saisissez les données du graphe dans la page, choisissez `Directed` pour créer un graphe orienté, déplacez les sommets à la souris, puis enregistrez l’image avec `Download as PNG`.
 
-Vous pouvez créer des graphes en entrant des valeurs numériques.
-De plus, il semble que vous puissiez également déplacer les éléments avec la souris.
+![Exemple de graphe orienté enregistré en PNG](img_1.webp)
 
-Vous pouvez également créer un graphe orienté en cliquant sur `Directed`.
+> **Note de vérification (24 novembre 2026) :** La page de l’outil a renvoyé un message demandant d’activer JavaScript. La navigation automatisée en texte seul n’a pas permis de vérifier l’interface actuelle ni le fonctionnement des commandes. Les étapes ci-dessus s’appuient sur l’image enregistrée et l’ancienne description de l’article ; la page en ligne peut être différente.
 
-![img_1.png](img_1.webp)
+## Références
 
-Vous pouvez enregistrer les graphes que vous avez créés sous forme d'image à l'aide de `Download as PNG`.
+- [CS Academy Graph Editor](https://csacademy.com/app/graph_editor/)
+- [Annonce de CS Academy sur le lancement de Graph Editor sur Codeforces](https://codeforces.com/blog/entry/45758)

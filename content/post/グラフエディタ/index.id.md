@@ -1,25 +1,25 @@
 ---
-title: 'Buat Grafik dengan Mudah di Browser! Cara Menggunakan Editor Grafik Web Gratis yang Praktis'
-date: "2026-09-24T19:44:38+09:00"
+title: "Membuat Graf dengan CS Academy Graph Editor"
 slug: "Grafikエディタ"
-date: 2022-10-13T23:31:11+09:00
 tags: ["tools", "grafik"]
 draft: false
 image: "img.webp"
 categories: ["tools-development-environment"]
-description: 'Memperkenalkan editor grafik berbasis web yang praktis untuk membuat bagan dan grafik dengan mudah hanya dengan memasukkan angka di browser. Juga menjelaskan fitur memindahkan elemen dengan mouse, membuat grafik berarah, dan kemampuan mengunduh hasil grafik sebagai gambar PNG.'
+description: "Cara menggunakan CS Academy Graph Editor untuk menyusun simpul dan sisi dalam teori graf di browser, membuat graf berarah, dan menyimpannya sebagai gambar PNG."
+date: "2022-10-13T23:31:11+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
-# Editor Grafik
+# Membuat Graf dengan CS Academy Graph Editor
 
-Ini adalah pengenalan ke halaman web yang memungkinkan Anda membuat grafik sederhana.
+[CS Academy Graph Editor](https://csacademy.com/app/graph_editor/) adalah alat berbasis browser untuk memvisualisasikan simpul dan sisi dalam teori graf.
 
-[https://csacademy.com/app/graph_editor/](https://csacademy.com/app/graph_editor/)
+Gambar di bawah adalah contoh yang disimpan bersama artikel ini. Masukkan data graf pada halaman, pilih `Directed` untuk membuat graf berarah, atur posisi simpul dengan mouse, lalu simpan gambar menggunakan `Download as PNG`.
 
-Anda dapat membuat grafik dengan memasukkan nilai numerik.
-Selain itu, sepertinya Anda juga dapat memindahkan elemen menggunakan mouse.
+![Contoh graf berarah yang disimpan sebagai PNG](img_1.webp)
 
-Dengan mengklik `Directed`, Anda juga dapat membuat grafik berarah.
+> **Catatan pemeriksaan (24 November 2026):** Halaman alat menampilkan pesan agar JavaScript diaktifkan. Antarmuka saat ini dan perilaku fiturnya tidak dapat diverifikasi melalui penelusuran teks otomatis. Langkah-langkah di atas didasarkan pada gambar tersimpan dan uraian artikel sebelumnya; halaman langsung mungkin berbeda.
 
-![img_1.png](img_1.webp)
+## Referensi
 
-Anda dapat menyimpan grafik yang telah Anda buat atau grafik yang dibuat melalui `Download as PNG` sebagai gambar.
+- [CS Academy Graph Editor](https://csacademy.com/app/graph_editor/)
+- [Pengumuman CS Academy tentang Graph Editor di Codeforces](https://codeforces.com/blog/entry/45758)

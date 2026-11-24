@@ -1,25 +1,25 @@
 ---
-title: 'Erstellen Sie Diagramme ganz einfach im Browser! So verwenden Sie den kostenlosen und nützlichen Web-Diagrammeditor'
-date: "2026-09-24T19:44:38+09:00"
+title: "Graphen mit dem CS Academy Graph Editor erstellen"
 slug: "Graphエディタ"
-date: 2022-10-13T23:31:11+09:00
 tags: ["tools", "Graphen"]
 draft: false
 image: "img.webp"
 categories: ["tools-development-environment"]
-description: 'Wir stellen einen praktischen webbasierten Diagrammeditor vor, mit dem Sie durch einfache Eingabe von Zahlen in Ihrem Browser Diagramme und Grafiken erstellen können. Wir erläutern auch detailliert, wie Elemente mit der Maus bewegt werden, wie man gerichtete Graphen erstellt und wie man die erstellten Graphen als PNG-Bilder herunterlädt.'
+description: "So ordnen Sie mit dem CS Academy Graph Editor Knoten und Kanten der Graphentheorie im Browser an, erstellen einen gerichteten Graphen und speichern ihn als PNG-Bild."
+date: "2022-10-13T23:31:11+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
-# Graphen-Editor
+# Graphen mit dem CS Academy Graph Editor erstellen
 
-Vorstellung einer Webseite, auf der Sie einfache Graphen erstellen können.
+Der [CS Academy Graph Editor](https://csacademy.com/app/graph_editor/) ist ein browserbasiertes Werkzeug zur Visualisierung von Knoten und Kanten aus der Graphentheorie.
 
-[https://csacademy.com/app/graph_editor/](https://csacademy.com/app/graph_editor/)
+Das folgende Bild ist ein in diesem Artikel gespeichertes Beispiel. Geben Sie die Graphdaten auf der Seite ein, wählen Sie `Directed` für einen gerichteten Graphen, passen Sie die Position der Knoten mit der Maus an und speichern Sie das Bild über `Download as PNG`.
 
-Sie können Graphen erstellen, indem Sie numerische Werte eingeben.
-Außerdem scheint es, dass man die Elemente auch mit der Maus bewegen kann.
+![Beispiel eines als PNG gespeicherten gerichteten Graphen](img_1.webp)
 
-Durch Klicken auf `Directed` können Sie auch einen gerichteten Graphen erstellen.
+> **Prüfhinweis (24. November 2026):** Die Werkzeugseite gab einen Hinweis zurück, JavaScript zu aktivieren. Die aktuelle Oberfläche und das Verhalten der Funktionen ließen sich mit automatisierter Textansicht nicht überprüfen. Die obigen Schritte beruhen auf dem gespeicherten Bild und der früheren Artikelbeschreibung; die aktuelle Seite kann abweichen.
 
-![img_1.png](img_1.webp)
+## Quellen
 
-Sie können die erstellten Graphen als Bild speichern, indem Sie `Download as PNG` verwenden.
+- [CS Academy Graph Editor](https://csacademy.com/app/graph_editor/)
+- [Ankündigung des CS Academy Graph Editors auf Codeforces](https://codeforces.com/blog/entry/45758)

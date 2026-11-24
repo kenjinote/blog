@@ -1,25 +1,25 @@
 ---
-title: 'Crie gráficos facilmente no seu navegador! Como usar editores de gráficos da web gratuitos e convenientes'
-date: "2026-09-24T19:44:38+09:00"
+title: "Criar grafos com o CS Academy Graph Editor"
 slug: "Grafoエディタ"
-date: 2022-10-13T23:31:11+09:00
 tags: ["tools", "grafos"]
 draft: false
 image: "img.webp"
 categories: ["tools-development-environment"]
-description: 'Apresentamos editores de gráficos da web úteis que permitem criar facilmente tabelas e gráficos apenas inserindo valores numéricos no navegador. Também detalhamos a movimentação de elementos com o mouse, a criação de gráficos direcionados e a função de download de imagem PNG dos gráficos criados.'
+description: "Saiba como usar o CS Academy Graph Editor para posicionar vértices e arestas da teoria dos grafos no navegador, criar um grafo direcionado e salvá-lo como imagem PNG."
+date: "2022-10-13T23:31:11+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
-# Editor de Grafos
+# Criar grafos com o CS Academy Graph Editor
 
-Apresentando uma página web onde você pode criar grafos simples.
+O [CS Academy Graph Editor](https://csacademy.com/app/graph_editor/) é uma ferramenta no navegador para visualizar vértices e arestas da teoria dos grafos.
 
-[https://csacademy.com/app/graph_editor/](https://csacademy.com/app/graph_editor/)
+A imagem abaixo é um exemplo salvo com este artigo. Informe os dados do grafo na página, selecione `Directed` para criar um grafo direcionado, ajuste a posição dos vértices com o mouse e salve a imagem com `Download as PNG`.
 
-Você pode criar grafos inserindo valores numéricos.
-Além disso, parece que você também pode mover os elementos com o mouse.
+![Exemplo de grafo direcionado salvo como PNG](img_1.webp)
 
-Você também pode criar um grafo direcionado clicando em `Directed`.
+> **Nota de revisão (24 de novembro de 2026):** A página da ferramenta retornou uma mensagem solicitando que o JavaScript fosse ativado. Não foi possível verificar a interface atual nem o funcionamento dos recursos por meio da navegação automatizada somente em texto. As instruções acima se baseiam na imagem salva e na descrição anterior do artigo; a página atual pode ser diferente.
 
-![img_1.png](img_1.webp)
+## Referências
 
-Você pode salvar os grafos que criou como uma imagem usando `Download as PNG`.
+- [CS Academy Graph Editor](https://csacademy.com/app/graph_editor/)
+- [Anúncio da CS Academy sobre o Graph Editor no Codeforces](https://codeforces.com/blog/entry/45758)

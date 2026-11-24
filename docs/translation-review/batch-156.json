@@ -1,0 +1,453 @@
+{
+  "version": 1,
+  "batch": 156,
+  "article": "Create Graphs with the CS Academy Graph Editor",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "62b95733c98a3bae58edfb63c825e3f97a90afdce78923152933ac1796040dd8",
+  "sources": [
+    "https://csacademy.com/app/graph_editor/",
+    "https://codeforces.com/blog/entry/45758"
+  ],
+  "scope": "Compared the complete Japanese article and all twelve translations, graph-theory meaning and terminology, the saved graph image, internal and external links, metadata, and the official CS Academy announcement. Checked the current tool URL with text-only browsing.",
+  "findings": [
+    "Removed duplicate future dates and kept the original publication date 2022-10-13; set lastmod to 2026-11-24.",
+    "Rewrote all locales to consistently describe mathematical graphs (vertices and edges), not charts or data plots; removed unsupported claims that the service is free.",
+    "Clarified the article’s saved-image example and the Directed and Download as PNG labels.",
+    "Added a dated limitation in every locale: the current page returned a JavaScript-required response to text-only browsing, so current UI and feature behavior could not be verified. Added the tool URL and CS Academy’s original announcement."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/グラフエディタ/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/グラフエディタ/index.md",
+      "sourceHash": "62b95733c98a3bae58edfb63c825e3f97a90afdce78923152933ac1796040dd8",
+      "translationHash": "4245f12c86a53669c14589e945fb6e86bce971f47f59d17bf686a1f26b7b2818",
+      "summary": "Compared the full Japanese article with this complete translation. Corrected mathematical graph terminology, date metadata, and unverified claims; added the current UI verification limitation and references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the article purpose, graph-theory vertices/edges, directed versus undirected terminology, mouse positioning, and PNG export across all 12 translations."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Corrected chart/graph ambiguities and aligned graph-theory terms; retained the UI labels Directed and Download as PNG."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formulas or algorithmic claims; it only introduces a graph visualization tool."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the CS Academy tool URL, the original CS Academy announcement on Codeforces, the internal related-article link where present, and the local image reference. Text-only browsing confirmed the tool response requests JavaScript, but did not expose the interactive UI."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The current interactive interface and feature behavior could not be verified with text-only browsing; the descriptions are explicitly tied to the saved image and may no longer match the live UI.",
+        "The cited CS Academy announcement is the original announcement from about ten years ago, not current product documentation."
+      ]
+    },
+    "post/グラフエディタ/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/グラフエディタ/index.md",
+      "sourceHash": "62b95733c98a3bae58edfb63c825e3f97a90afdce78923152933ac1796040dd8",
+      "translationHash": "bea54731169f13c5a7f6a2934234afa001e47743d21ba738c104354589fc2c6d",
+      "summary": "Compared the full Japanese article with this complete translation. Corrected mathematical graph terminology, date metadata, and unverified claims; added the current UI verification limitation and references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the article purpose, graph-theory vertices/edges, directed versus undirected terminology, mouse positioning, and PNG export across all 12 translations."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Corrected chart/graph ambiguities and aligned graph-theory terms; retained the UI labels Directed and Download as PNG."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formulas or algorithmic claims; it only introduces a graph visualization tool."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the CS Academy tool URL, the original CS Academy announcement on Codeforces, the internal related-article link where present, and the local image reference. Text-only browsing confirmed the tool response requests JavaScript, but did not expose the interactive UI."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The current interactive interface and feature behavior could not be verified with text-only browsing; the descriptions are explicitly tied to the saved image and may no longer match the live UI.",
+        "The cited CS Academy announcement is the original announcement from about ten years ago, not current product documentation."
+      ]
+    },
+    "post/グラフエディタ/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/グラフエディタ/index.md",
+      "sourceHash": "62b95733c98a3bae58edfb63c825e3f97a90afdce78923152933ac1796040dd8",
+      "translationHash": "3a7b991b585eca8aeb54c662c6af52b6719144ee28f1b88d398734b4da3b6cd0",
+      "summary": "Compared the full Japanese article with this complete translation. Corrected mathematical graph terminology, date metadata, and unverified claims; added the current UI verification limitation and references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the article purpose, graph-theory vertices/edges, directed versus undirected terminology, mouse positioning, and PNG export across all 12 translations."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Corrected chart/graph ambiguities and aligned graph-theory terms; retained the UI labels Directed and Download as PNG."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formulas or algorithmic claims; it only introduces a graph visualization tool."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the CS Academy tool URL, the original CS Academy announcement on Codeforces, the internal related-article link where present, and the local image reference. Text-only browsing confirmed the tool response requests JavaScript, but did not expose the interactive UI."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The current interactive interface and feature behavior could not be verified with text-only browsing; the descriptions are explicitly tied to the saved image and may no longer match the live UI.",
+        "The cited CS Academy announcement is the original announcement from about ten years ago, not current product documentation."
+      ]
+    },
+    "post/グラフエディタ/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/グラフエディタ/index.md",
+      "sourceHash": "62b95733c98a3bae58edfb63c825e3f97a90afdce78923152933ac1796040dd8",
+      "translationHash": "2928fa70cd5af1e006315f971320f195cbbadb1476592b9d3b271df08b2fe2ab",
+      "summary": "Compared the full Japanese article with this complete translation. Corrected mathematical graph terminology, date metadata, and unverified claims; added the current UI verification limitation and references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the article purpose, graph-theory vertices/edges, directed versus undirected terminology, mouse positioning, and PNG export across all 12 translations."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Corrected chart/graph ambiguities and aligned graph-theory terms; retained the UI labels Directed and Download as PNG."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formulas or algorithmic claims; it only introduces a graph visualization tool."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the CS Academy tool URL, the original CS Academy announcement on Codeforces, the internal related-article link where present, and the local image reference. Text-only browsing confirmed the tool response requests JavaScript, but did not expose the interactive UI."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The current interactive interface and feature behavior could not be verified with text-only browsing; the descriptions are explicitly tied to the saved image and may no longer match the live UI.",
+        "The cited CS Academy announcement is the original announcement from about ten years ago, not current product documentation."
+      ]
+    },
+    "post/グラフエディタ/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/グラフエディタ/index.md",
+      "sourceHash": "62b95733c98a3bae58edfb63c825e3f97a90afdce78923152933ac1796040dd8",
+      "translationHash": "674fe9ab781351fe0223a02c5fe4ddeca56f384f3542b1f8ef18d0aa9a7abbe8",
+      "summary": "Compared the full Japanese article with this complete translation. Corrected mathematical graph terminology, date metadata, and unverified claims; added the current UI verification limitation and references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the article purpose, graph-theory vertices/edges, directed versus undirected terminology, mouse positioning, and PNG export across all 12 translations."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Corrected chart/graph ambiguities and aligned graph-theory terms; retained the UI labels Directed and Download as PNG."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formulas or algorithmic claims; it only introduces a graph visualization tool."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the CS Academy tool URL, the original CS Academy announcement on Codeforces, the internal related-article link where present, and the local image reference. Text-only browsing confirmed the tool response requests JavaScript, but did not expose the interactive UI."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The current interactive interface and feature behavior could not be verified with text-only browsing; the descriptions are explicitly tied to the saved image and may no longer match the live UI.",
+        "The cited CS Academy announcement is the original announcement from about ten years ago, not current product documentation."
+      ]
+    },
+    "post/グラフエディタ/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/グラフエディタ/index.md",
+      "sourceHash": "62b95733c98a3bae58edfb63c825e3f97a90afdce78923152933ac1796040dd8",
+      "translationHash": "5696a443e138ee78b008c42a9b5d2c91eb25408cbdb8e4cebc45a14273d563ff",
+      "summary": "Compared the full Japanese article with this complete translation. Corrected mathematical graph terminology, date metadata, and unverified claims; added the current UI verification limitation and references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the article purpose, graph-theory vertices/edges, directed versus undirected terminology, mouse positioning, and PNG export across all 12 translations."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Corrected chart/graph ambiguities and aligned graph-theory terms; retained the UI labels Directed and Download as PNG."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formulas or algorithmic claims; it only introduces a graph visualization tool."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the CS Academy tool URL, the original CS Academy announcement on Codeforces, the internal related-article link where present, and the local image reference. Text-only browsing confirmed the tool response requests JavaScript, but did not expose the interactive UI."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The current interactive interface and feature behavior could not be verified with text-only browsing; the descriptions are explicitly tied to the saved image and may no longer match the live UI.",
+        "The cited CS Academy announcement is the original announcement from about ten years ago, not current product documentation."
+      ]
+    },
+    "post/グラフエディタ/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/グラフエディタ/index.md",
+      "sourceHash": "62b95733c98a3bae58edfb63c825e3f97a90afdce78923152933ac1796040dd8",
+      "translationHash": "b2d10a771c0a2c5914a20422d74c3a87cc60ce5fe6f80bf41d168418d32f7d4b",
+      "summary": "Compared the full Japanese article with this complete translation. Corrected mathematical graph terminology, date metadata, and unverified claims; added the current UI verification limitation and references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the article purpose, graph-theory vertices/edges, directed versus undirected terminology, mouse positioning, and PNG export across all 12 translations."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Corrected chart/graph ambiguities and aligned graph-theory terms; retained the UI labels Directed and Download as PNG."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formulas or algorithmic claims; it only introduces a graph visualization tool."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the CS Academy tool URL, the original CS Academy announcement on Codeforces, the internal related-article link where present, and the local image reference. Text-only browsing confirmed the tool response requests JavaScript, but did not expose the interactive UI."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The current interactive interface and feature behavior could not be verified with text-only browsing; the descriptions are explicitly tied to the saved image and may no longer match the live UI.",
+        "The cited CS Academy announcement is the original announcement from about ten years ago, not current product documentation."
+      ]
+    },
+    "post/グラフエディタ/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/グラフエディタ/index.md",
+      "sourceHash": "62b95733c98a3bae58edfb63c825e3f97a90afdce78923152933ac1796040dd8",
+      "translationHash": "37887c484e90e121dbcc845c632db1b5834628031abf1c207f2ae7fedfc05942",
+      "summary": "Compared the full Japanese article with this complete translation. Corrected mathematical graph terminology, date metadata, and unverified claims; added the current UI verification limitation and references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the article purpose, graph-theory vertices/edges, directed versus undirected terminology, mouse positioning, and PNG export across all 12 translations."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Corrected chart/graph ambiguities and aligned graph-theory terms; retained the UI labels Directed and Download as PNG."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formulas or algorithmic claims; it only introduces a graph visualization tool."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the CS Academy tool URL, the original CS Academy announcement on Codeforces, the internal related-article link where present, and the local image reference. Text-only browsing confirmed the tool response requests JavaScript, but did not expose the interactive UI."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The current interactive interface and feature behavior could not be verified with text-only browsing; the descriptions are explicitly tied to the saved image and may no longer match the live UI.",
+        "The cited CS Academy announcement is the original announcement from about ten years ago, not current product documentation."
+      ]
+    },
+    "post/グラフエディタ/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/グラフエディタ/index.md",
+      "sourceHash": "62b95733c98a3bae58edfb63c825e3f97a90afdce78923152933ac1796040dd8",
+      "translationHash": "6fe391e69b2f9f8d0935fa9bb63d36effc1678f50bab2b54f954e8942a41dde1",
+      "summary": "Compared the full Japanese article with this complete translation. Corrected mathematical graph terminology, date metadata, and unverified claims; added the current UI verification limitation and references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the article purpose, graph-theory vertices/edges, directed versus undirected terminology, mouse positioning, and PNG export across all 12 translations."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Corrected chart/graph ambiguities and aligned graph-theory terms; retained the UI labels Directed and Download as PNG."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formulas or algorithmic claims; it only introduces a graph visualization tool."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the CS Academy tool URL, the original CS Academy announcement on Codeforces, the internal related-article link where present, and the local image reference. Text-only browsing confirmed the tool response requests JavaScript, but did not expose the interactive UI."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The current interactive interface and feature behavior could not be verified with text-only browsing; the descriptions are explicitly tied to the saved image and may no longer match the live UI.",
+        "The cited CS Academy announcement is the original announcement from about ten years ago, not current product documentation."
+      ]
+    },
+    "post/グラフエディタ/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/グラフエディタ/index.md",
+      "sourceHash": "62b95733c98a3bae58edfb63c825e3f97a90afdce78923152933ac1796040dd8",
+      "translationHash": "8ed45c371e2c58f8cf94d202b8ffe5f01978bb606c947f3b21305b456d8e3478",
+      "summary": "Compared the full Japanese article with this complete translation. Corrected mathematical graph terminology, date metadata, and unverified claims; added the current UI verification limitation and references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the article purpose, graph-theory vertices/edges, directed versus undirected terminology, mouse positioning, and PNG export across all 12 translations."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Corrected chart/graph ambiguities and aligned graph-theory terms; retained the UI labels Directed and Download as PNG."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formulas or algorithmic claims; it only introduces a graph visualization tool."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the CS Academy tool URL, the original CS Academy announcement on Codeforces, the internal related-article link where present, and the local image reference. Text-only browsing confirmed the tool response requests JavaScript, but did not expose the interactive UI."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The current interactive interface and feature behavior could not be verified with text-only browsing; the descriptions are explicitly tied to the saved image and may no longer match the live UI.",
+        "The cited CS Academy announcement is the original announcement from about ten years ago, not current product documentation."
+      ]
+    },
+    "post/グラフエディタ/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/グラフエディタ/index.md",
+      "sourceHash": "62b95733c98a3bae58edfb63c825e3f97a90afdce78923152933ac1796040dd8",
+      "translationHash": "9f477c0eb0923e58304d322277400854cce2072f0348db711f8b4e002dd86715",
+      "summary": "Compared the full Japanese article with this complete translation. Corrected mathematical graph terminology, date metadata, and unverified claims; added the current UI verification limitation and references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the article purpose, graph-theory vertices/edges, directed versus undirected terminology, mouse positioning, and PNG export across all 12 translations."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Corrected chart/graph ambiguities and aligned graph-theory terms; retained the UI labels Directed and Download as PNG."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formulas or algorithmic claims; it only introduces a graph visualization tool."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the CS Academy tool URL, the original CS Academy announcement on Codeforces, the internal related-article link where present, and the local image reference. Text-only browsing confirmed the tool response requests JavaScript, but did not expose the interactive UI."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The current interactive interface and feature behavior could not be verified with text-only browsing; the descriptions are explicitly tied to the saved image and may no longer match the live UI.",
+        "The cited CS Academy announcement is the original announcement from about ten years ago, not current product documentation."
+      ]
+    },
+    "post/グラフエディタ/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/グラフエディタ/index.md",
+      "sourceHash": "62b95733c98a3bae58edfb63c825e3f97a90afdce78923152933ac1796040dd8",
+      "translationHash": "486fd5f8ce1088e1e103a1f955d9f66cfda0456d8c1c05c2e522f990149ebdd7",
+      "summary": "Compared the full Japanese article with this complete translation. Corrected mathematical graph terminology, date metadata, and unverified claims; added the current UI verification limitation and references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the article purpose, graph-theory vertices/edges, directed versus undirected terminology, mouse positioning, and PNG export across all 12 translations."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Corrected chart/graph ambiguities and aligned graph-theory terms; retained the UI labels Directed and Download as PNG."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formulas or algorithmic claims; it only introduces a graph visualization tool."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the CS Academy tool URL, the original CS Academy announcement on Codeforces, the internal related-article link where present, and the local image reference. Text-only browsing confirmed the tool response requests JavaScript, but did not expose the interactive UI."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The current interactive interface and feature behavior could not be verified with text-only browsing; the descriptions are explicitly tied to the saved image and may no longer match the live UI.",
+        "The cited CS Academy announcement is the original announcement from about ten years ago, not current product documentation."
+      ]
+    }
+  }
+}
