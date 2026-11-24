@@ -1,8 +1,8 @@
 ---
 title: '用C++运行TinyLLaMA！使用llama.cpp搭建本地LLM环境的步骤'
-date: "2026-09-24T19:44:38+09:00"
+date: "2025-07-19T09:40:53+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 slug: "TinyLLaMA を C++ から呼び出せるようにする手順（llama.cpp使用）"
-date: 2025-07-19T09:40:53+09:00
 tags: ["C++", "llama.cpp", "TinyLLaMA", "AI"]
 draft: false
 image: "img.webp"
@@ -10,158 +10,51 @@ categories: ["programming"]
 description: '讲解从C++调用并运行TinyLLaMA的配置步骤。从llama.cpp的编译、从HuggingFace获取模型，到在各类环境中搭建的方法，为初学者进行了通俗易懂的总结。'
 ---
 
-# ✅ TinyLLaMA × C++ 设置步骤（使用 `llama.cpp`）
+本文于2026年11月24日修订。2025年7月旧版的转换命令和C++代码无法直接用于当前llama.cpp，因此改用当前GGUF模型和官方C++示例。
 
----
+## 1. 安装
 
-## 🔧 Step 1: 准备 llama.cpp
+llama.cpp提供推理库和命令行工具。Windows可用WinGet，macOS/Linux可用官方安装程序。
 
-### 1-1. 运行环境（最低要求）
+```powershell
+winget install llama.cpp
+```
 
-* OS: Windows / Linux / macOS
-* 开发环境: g++ / clang / MSVC
-* Git / CMake
+macOS/Linux官方安装程序：
 
-### 1-2. 获取并构建 llama.cpp
+```sh
+curl -LsSf https://llama.app/install.sh | sh
+```
 
-```bash
-git clone https://github.com/ggerganov/llama.cpp
+## 2. 运行模型
+
+TinyLLaMA原始权重为Hugging Face格式。本文使用第三方转换的Q4_K_M GGUF，无需自行转换原始权重。首次运行会下载约669 MB。
+
+```sh
+llama cli -hf TheBloke/TinyLlama-1.1B-Chat-v1.0-GGUF:Q4_K_M
+```
+
+## 3. 构建C++示例
+
+若要集成到C++应用，请参考官方`llama-simple`示例。当前C++17代码和CMake目标展示模型加载、分词、推理、采样及释放。API会变化，请使用同一源码版本中的示例和头文件。
+
+```sh
+git clone https://github.com/ggml-org/llama.cpp.git
 cd llama.cpp
-mkdir build
-cd build
-cmake ..
-cmake --build . --config Release
+cmake -B build -DLLAMA_BUILD_EXAMPLES=ON
+cmake --build build --config Release --target llama-simple
 ```
 
-> 如果是 Windows 系统，在 `Visual Studio Developer Command Prompt` 中使用 `cmake --build . --config Release` 会更方便。
+## 4. 模型大小与限制
 
----
+Q4_K_M文件约669 MB。模型卡给出的纯CPU RAM参考值约3.17 GB，实际需求会随系统和上下文长度变化。TinyLLaMA 1.1B Chat v1.0是较小的旧模型。请评估输出质量和语言支持，并在采取行动前验证结果。
 
-## 📦 Step 2: 下载并转换 TinyLLaMA 模型
+## 参考资料
 
-### 2-1. 从 HuggingFace 获取原模型
-
-示例: [TinyLLaMA-1.1B](https://huggingface.co/openaccess-ai-collective/TinyLlama-1.1B-Chat-v1.0)
-
-```bash
-# 根据需要使用 transformers 进行下载
-pip install transformers huggingface_hub
-
-python3 -m transformers.models.llama.convert_llama_weights_to_hf \
-    --input_dir ./TinyLlama-1.1B-Chat \
-    --model_size 1B \
-    --output_dir ./hf_model
-```
-
-> 这是转换为 Hugging Face 格式的步骤。
-
----
-
-### 2-2. 转换为 GGUF 格式（供 `llama.cpp` 使用）
-
-```bash
-cd llama.cpp
-python3 convert.py ./hf_model --outfile tinyllama.gguf
-```
-
-### 2-3. 模型量化（减小体积）
-
-```bash
-./quantize ./tinyllama.gguf ./tinyllama-q4.gguf q4_0
-```
-
-> `q4_0` 是 4bit 量化。模型大小将缩小至约 **350MB左右** 。
-
----
-
-## 🧪 Step 3: 从 C++ 调用模型（代码示例）
-
-### 3-1. 简单的 C++ 代码（推理）
-
-```cpp
-#include "llama.h"
-#include <iostream>
-
-int main() {
-    llama_model_params model_params = llama_model_default_params();
-    llama_context_params ctx_params = llama_context_default_params();
-
-    llama_model *model = llama_load_model_from_file("tinyllama-q4.gguf", model_params);
-    llama_context *ctx = llama_new_context_with_model(model, ctx_params);
-
-    std::string prompt = "用户说想读取Excel数据、进行过滤并保存。节点结构是怎样的？";
-    llama_batch batch = llama_batch_init(512, 0, 1);
-    llama_token BOS = llama_token_bos(model);
-    batch.token[0] = BOS;
-
-    // 词法分析 (Tokenize)
-    std::vector<llama_token> tokens(prompt.size() + 8);
-    int n = llama_tokenize(model, prompt.c_str(), tokens.data(), tokens.size(), true);
-    tokens.resize(n);
-
-    for (size_t i = 0; i < tokens.size(); ++i) {
-        batch.token[i + 1] = tokens[i];
-    }
-
-    batch.n_tokens = tokens.size() + 1;
-    llama_decode(ctx, batch);
-
-    // 获取推理结果
-    for (int i = 0; i < 50; ++i) {
-        llama_token next = llama_sample_token(ctx, nullptr);
-        std::cout << llama_token_to_str(model, next);
-        llama_batch next_batch = llama_batch_init(1, 0, 1);
-        next_batch.token[0] = next;
-        next_batch.n_tokens = 1;
-        llama_decode(ctx, next_batch);
-    }
-
-    llama_free(ctx);
-    llama_free_model(model);
-    return 0;
-}
-```
-
----
-
-## 🧱 Step 4: 编译方法（示例）
-
-```bash
-g++ -I./llama.cpp main.cpp ./llama.cpp/build/libllama.a -o tiny_infer -pthread -std=c++11
-```
-
-> `libllama.a` 将在构建后生成于 `build/` 目录中。
-
----
-
-## ✅ 产物结构示例（整理）
-
-```
-my_app/
-├── tinyllama-q4.gguf      # 已量化模型 (~350MB)
-├── main.cpp               # 上述 C++ 代码
-├── llama.cpp/             # llama.cpp 本体
-└── build/
-    └── libllama.a         # 已编译库
-```
-
----
-
-## 🧠 适用于用例的补充说明
-
-* 在 C++ 中编写接收输出并 `匹配和选择节点模板` 的代码
-* 示例：包含“Excel”、“过滤”、“保存” → 生成对应的节点组
-* 这部分使用诸如 `if 语句 + JSON 模板读取` 的简单结构即可
-
----
-
-## 📌 总结
-
-| 项目 | 内容 |
-| ----- | ------------------------------------ |
-| 推荐模型 | TinyLLaMA-1.1B-Chat v1.0（GGUF + 量化） |
-| 大小 | ～350〜450MB（4bit量化） |
-| C++集成 | 可以使用 `llama.cpp`，几乎没有外部依赖 |
-| 处理能力 | 足以满足简单的意图理解和输出文本生成（自然语言→结构） |
-| 可扩展性 | 结合槽位填充和模板调用，可构建节点生成AI |
-
+- [llama.cpp官方仓库](https://github.com/ggml-org/llama.cpp)
+- [官方C++示例](https://github.com/ggml-org/llama.cpp/blob/master/examples/simple/simple.cpp)
+- [官方CMake目标](https://github.com/ggml-org/llama.cpp/blob/master/examples/simple/CMakeLists.txt)
+- [示例运行方法](https://github.com/ggml-org/llama.cpp/blob/master/examples/simple/README.md)
+- [TinyLLaMA原始模型](https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0)
+- [TinyLLaMA GGUF模型卡](https://huggingface.co/TheBloke/TinyLlama-1.1B-Chat-v1.0-GGUF)
+- [Q4_K_M文件](https://huggingface.co/TheBloke/TinyLlama-1.1B-Chat-v1.0-GGUF/resolve/main/tinyllama-1.1b-chat-v1.0.Q4_K_M.gguf)

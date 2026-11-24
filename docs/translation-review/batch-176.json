@@ -1,0 +1,471 @@
+{
+  "version": 1,
+  "batch": 176,
+  "article": "Run TinyLLaMA from C++ using llama.cpp",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "16fb93ab64c5a68ec35080a8820caf957b65d0ce7a61b68fc744ea8303d31cf5",
+  "sources": [
+    "https://github.com/ggml-org/llama.cpp",
+    "https://github.com/ggml-org/llama.cpp/blob/master/examples/simple/simple.cpp",
+    "https://github.com/ggml-org/llama.cpp/blob/master/examples/simple/CMakeLists.txt",
+    "https://github.com/ggml-org/llama.cpp/blob/master/examples/simple/README.md",
+    "https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+    "https://huggingface.co/TheBloke/TinyLlama-1.1B-Chat-v1.0-GGUF",
+    "https://huggingface.co/TheBloke/TinyLlama-1.1B-Chat-v1.0-GGUF/resolve/main/tinyllama-1.1b-chat-v1.0.Q4_K_M.gguf"
+  ],
+  "scope": "Compared the full Japanese article and all twelve translations, model acquisition, build steps, C++ APIs and CMake target against current official sources, and reviewed model size and performance claims.",
+  "findings": [
+    "Removed obsolete Transformers conversion commands and stale llama.cpp C API calls.",
+    "Replaced them with the current GGUF workflow and official C++17 llama-simple example/CMake target.",
+    "Corrected the quantized file size to approximately 669 MB and qualified the model-card CPU RAM estimate.",
+    "Removed unsupported model-capability claims and added output-validation guidance.",
+    "Removed duplicate date metadata; retained original publication date and recorded lastmod."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/TinyLLaMA を C++ から呼び出せるようにする手順（llama.cpp使用）/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/TinyLLaMA を C++ から呼び出せるようにする手順（llama.cpp使用）/index.md",
+      "sourceHash": "16fb93ab64c5a68ec35080a8820caf957b65d0ce7a61b68fc744ea8303d31cf5",
+      "translationHash": "0c1e373d599cf4cc11beb560c6ee62e66d4a9b3dfb62c6a740c9dd1317f30595",
+      "summary": "Compared the complete translation with the Japanese source and current llama.cpp documentation, official example/build target, model card, and technical caveats.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all instructions and claims with current upstream llama.cpp and model-card guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed TinyLLaMA, GGUF, Q4_K_M, C++17, CMake, inference, and quantization terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or formulas occur in this article."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Removed obsolete conversion and C++ API examples; commands and the official llama-simple source/CMake target were checked against upstream. Compilation was attempted but this environment lacks NMake and a C++ compiler."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Updated official repository, C++ source and CMake references, and original/GGUF model cards."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Build could not be completed locally because no NMake/MSVC/MinGW/Clang toolchain is available; the current upstream sample and target were inspected.",
+        "The GGUF conversion is third-party; verify publisher, license, and provenance before production use.",
+        "Model quality and multilingual performance were not benchmarked."
+      ]
+    },
+    "post/TinyLLaMA を C++ から呼び出せるようにする手順（llama.cpp使用）/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/TinyLLaMA を C++ から呼び出せるようにする手順（llama.cpp使用）/index.md",
+      "sourceHash": "16fb93ab64c5a68ec35080a8820caf957b65d0ce7a61b68fc744ea8303d31cf5",
+      "translationHash": "be035f26220d4a619fa872f07dbbc19d7b690ebd24519f32705633266a74bb03",
+      "summary": "Compared the complete translation with the Japanese source and current llama.cpp documentation, official example/build target, model card, and technical caveats.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all instructions and claims with current upstream llama.cpp and model-card guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed TinyLLaMA, GGUF, Q4_K_M, C++17, CMake, inference, and quantization terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or formulas occur in this article."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Removed obsolete conversion and C++ API examples; commands and the official llama-simple source/CMake target were checked against upstream. Compilation was attempted but this environment lacks NMake and a C++ compiler."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Updated official repository, C++ source and CMake references, and original/GGUF model cards."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Build could not be completed locally because no NMake/MSVC/MinGW/Clang toolchain is available; the current upstream sample and target were inspected.",
+        "The GGUF conversion is third-party; verify publisher, license, and provenance before production use.",
+        "Model quality and multilingual performance were not benchmarked."
+      ]
+    },
+    "post/TinyLLaMA を C++ から呼び出せるようにする手順（llama.cpp使用）/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/TinyLLaMA を C++ から呼び出せるようにする手順（llama.cpp使用）/index.md",
+      "sourceHash": "16fb93ab64c5a68ec35080a8820caf957b65d0ce7a61b68fc744ea8303d31cf5",
+      "translationHash": "9d6d35415467f178a52d2d7edf91d7f9676e08054e61230ad4127db69bd14c7a",
+      "summary": "Compared the complete translation with the Japanese source and current llama.cpp documentation, official example/build target, model card, and technical caveats.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all instructions and claims with current upstream llama.cpp and model-card guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed TinyLLaMA, GGUF, Q4_K_M, C++17, CMake, inference, and quantization terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or formulas occur in this article."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Removed obsolete conversion and C++ API examples; commands and the official llama-simple source/CMake target were checked against upstream. Compilation was attempted but this environment lacks NMake and a C++ compiler."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Updated official repository, C++ source and CMake references, and original/GGUF model cards."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Build could not be completed locally because no NMake/MSVC/MinGW/Clang toolchain is available; the current upstream sample and target were inspected.",
+        "The GGUF conversion is third-party; verify publisher, license, and provenance before production use.",
+        "Model quality and multilingual performance were not benchmarked."
+      ]
+    },
+    "post/TinyLLaMA を C++ から呼び出せるようにする手順（llama.cpp使用）/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/TinyLLaMA を C++ から呼び出せるようにする手順（llama.cpp使用）/index.md",
+      "sourceHash": "16fb93ab64c5a68ec35080a8820caf957b65d0ce7a61b68fc744ea8303d31cf5",
+      "translationHash": "cd064eafd77b5c2e5054b4c1929c2f0604843675019c2153543726e1ce78be7c",
+      "summary": "Compared the complete translation with the Japanese source and current llama.cpp documentation, official example/build target, model card, and technical caveats.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all instructions and claims with current upstream llama.cpp and model-card guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed TinyLLaMA, GGUF, Q4_K_M, C++17, CMake, inference, and quantization terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or formulas occur in this article."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Removed obsolete conversion and C++ API examples; commands and the official llama-simple source/CMake target were checked against upstream. Compilation was attempted but this environment lacks NMake and a C++ compiler."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Updated official repository, C++ source and CMake references, and original/GGUF model cards."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Build could not be completed locally because no NMake/MSVC/MinGW/Clang toolchain is available; the current upstream sample and target were inspected.",
+        "The GGUF conversion is third-party; verify publisher, license, and provenance before production use.",
+        "Model quality and multilingual performance were not benchmarked."
+      ]
+    },
+    "post/TinyLLaMA を C++ から呼び出せるようにする手順（llama.cpp使用）/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/TinyLLaMA を C++ から呼び出せるようにする手順（llama.cpp使用）/index.md",
+      "sourceHash": "16fb93ab64c5a68ec35080a8820caf957b65d0ce7a61b68fc744ea8303d31cf5",
+      "translationHash": "cf683fe054fa7f91491451653ee5de88045eb3e84905c49a9f2aae49f0154975",
+      "summary": "Compared the complete translation with the Japanese source and current llama.cpp documentation, official example/build target, model card, and technical caveats.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all instructions and claims with current upstream llama.cpp and model-card guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed TinyLLaMA, GGUF, Q4_K_M, C++17, CMake, inference, and quantization terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or formulas occur in this article."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Removed obsolete conversion and C++ API examples; commands and the official llama-simple source/CMake target were checked against upstream. Compilation was attempted but this environment lacks NMake and a C++ compiler."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Updated official repository, C++ source and CMake references, and original/GGUF model cards."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Build could not be completed locally because no NMake/MSVC/MinGW/Clang toolchain is available; the current upstream sample and target were inspected.",
+        "The GGUF conversion is third-party; verify publisher, license, and provenance before production use.",
+        "Model quality and multilingual performance were not benchmarked."
+      ]
+    },
+    "post/TinyLLaMA を C++ から呼び出せるようにする手順（llama.cpp使用）/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/TinyLLaMA を C++ から呼び出せるようにする手順（llama.cpp使用）/index.md",
+      "sourceHash": "16fb93ab64c5a68ec35080a8820caf957b65d0ce7a61b68fc744ea8303d31cf5",
+      "translationHash": "968926390cd62f1fc0616776e9b4c4ec753af5b62f85b94c2e623108af1aaff3",
+      "summary": "Compared the complete translation with the Japanese source and current llama.cpp documentation, official example/build target, model card, and technical caveats.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all instructions and claims with current upstream llama.cpp and model-card guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed TinyLLaMA, GGUF, Q4_K_M, C++17, CMake, inference, and quantization terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or formulas occur in this article."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Removed obsolete conversion and C++ API examples; commands and the official llama-simple source/CMake target were checked against upstream. Compilation was attempted but this environment lacks NMake and a C++ compiler."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Updated official repository, C++ source and CMake references, and original/GGUF model cards."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Build could not be completed locally because no NMake/MSVC/MinGW/Clang toolchain is available; the current upstream sample and target were inspected.",
+        "The GGUF conversion is third-party; verify publisher, license, and provenance before production use.",
+        "Model quality and multilingual performance were not benchmarked."
+      ]
+    },
+    "post/TinyLLaMA を C++ から呼び出せるようにする手順（llama.cpp使用）/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/TinyLLaMA を C++ から呼び出せるようにする手順（llama.cpp使用）/index.md",
+      "sourceHash": "16fb93ab64c5a68ec35080a8820caf957b65d0ce7a61b68fc744ea8303d31cf5",
+      "translationHash": "8713e23a5daf779dc29082937be56e239614ab5b20ad67f5721a6c25c77f95fa",
+      "summary": "Compared the complete translation with the Japanese source and current llama.cpp documentation, official example/build target, model card, and technical caveats.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all instructions and claims with current upstream llama.cpp and model-card guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed TinyLLaMA, GGUF, Q4_K_M, C++17, CMake, inference, and quantization terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or formulas occur in this article."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Removed obsolete conversion and C++ API examples; commands and the official llama-simple source/CMake target were checked against upstream. Compilation was attempted but this environment lacks NMake and a C++ compiler."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Updated official repository, C++ source and CMake references, and original/GGUF model cards."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Build could not be completed locally because no NMake/MSVC/MinGW/Clang toolchain is available; the current upstream sample and target were inspected.",
+        "The GGUF conversion is third-party; verify publisher, license, and provenance before production use.",
+        "Model quality and multilingual performance were not benchmarked."
+      ]
+    },
+    "post/TinyLLaMA を C++ から呼び出せるようにする手順（llama.cpp使用）/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/TinyLLaMA を C++ から呼び出せるようにする手順（llama.cpp使用）/index.md",
+      "sourceHash": "16fb93ab64c5a68ec35080a8820caf957b65d0ce7a61b68fc744ea8303d31cf5",
+      "translationHash": "ec5df1959f054255927b8fedcbcdd3be8a918a241742627695cd33b5fdf8ae5a",
+      "summary": "Compared the complete translation with the Japanese source and current llama.cpp documentation, official example/build target, model card, and technical caveats.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all instructions and claims with current upstream llama.cpp and model-card guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed TinyLLaMA, GGUF, Q4_K_M, C++17, CMake, inference, and quantization terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or formulas occur in this article."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Removed obsolete conversion and C++ API examples; commands and the official llama-simple source/CMake target were checked against upstream. Compilation was attempted but this environment lacks NMake and a C++ compiler."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Updated official repository, C++ source and CMake references, and original/GGUF model cards."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Build could not be completed locally because no NMake/MSVC/MinGW/Clang toolchain is available; the current upstream sample and target were inspected.",
+        "The GGUF conversion is third-party; verify publisher, license, and provenance before production use.",
+        "Model quality and multilingual performance were not benchmarked."
+      ]
+    },
+    "post/TinyLLaMA を C++ から呼び出せるようにする手順（llama.cpp使用）/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/TinyLLaMA を C++ から呼び出せるようにする手順（llama.cpp使用）/index.md",
+      "sourceHash": "16fb93ab64c5a68ec35080a8820caf957b65d0ce7a61b68fc744ea8303d31cf5",
+      "translationHash": "2c5e7bef03ecd359d53221a8fadbded6a952bbe3823f6dd627575e1575d94ae9",
+      "summary": "Compared the complete translation with the Japanese source and current llama.cpp documentation, official example/build target, model card, and technical caveats.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all instructions and claims with current upstream llama.cpp and model-card guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed TinyLLaMA, GGUF, Q4_K_M, C++17, CMake, inference, and quantization terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or formulas occur in this article."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Removed obsolete conversion and C++ API examples; commands and the official llama-simple source/CMake target were checked against upstream. Compilation was attempted but this environment lacks NMake and a C++ compiler."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Updated official repository, C++ source and CMake references, and original/GGUF model cards."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Build could not be completed locally because no NMake/MSVC/MinGW/Clang toolchain is available; the current upstream sample and target were inspected.",
+        "The GGUF conversion is third-party; verify publisher, license, and provenance before production use.",
+        "Model quality and multilingual performance were not benchmarked."
+      ]
+    },
+    "post/TinyLLaMA を C++ から呼び出せるようにする手順（llama.cpp使用）/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/TinyLLaMA を C++ から呼び出せるようにする手順（llama.cpp使用）/index.md",
+      "sourceHash": "16fb93ab64c5a68ec35080a8820caf957b65d0ce7a61b68fc744ea8303d31cf5",
+      "translationHash": "803358b77394e00c339189b7c24fd338a7db82203fce73cbeeb72942d0007f54",
+      "summary": "Compared the complete translation with the Japanese source and current llama.cpp documentation, official example/build target, model card, and technical caveats.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all instructions and claims with current upstream llama.cpp and model-card guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed TinyLLaMA, GGUF, Q4_K_M, C++17, CMake, inference, and quantization terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or formulas occur in this article."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Removed obsolete conversion and C++ API examples; commands and the official llama-simple source/CMake target were checked against upstream. Compilation was attempted but this environment lacks NMake and a C++ compiler."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Updated official repository, C++ source and CMake references, and original/GGUF model cards."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Build could not be completed locally because no NMake/MSVC/MinGW/Clang toolchain is available; the current upstream sample and target were inspected.",
+        "The GGUF conversion is third-party; verify publisher, license, and provenance before production use.",
+        "Model quality and multilingual performance were not benchmarked."
+      ]
+    },
+    "post/TinyLLaMA を C++ から呼び出せるようにする手順（llama.cpp使用）/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/TinyLLaMA を C++ から呼び出せるようにする手順（llama.cpp使用）/index.md",
+      "sourceHash": "16fb93ab64c5a68ec35080a8820caf957b65d0ce7a61b68fc744ea8303d31cf5",
+      "translationHash": "69e725e4ddf8ed4164c542010101860cb80fb147d56adc9b67dcfbcd889c4b1f",
+      "summary": "Compared the complete translation with the Japanese source and current llama.cpp documentation, official example/build target, model card, and technical caveats.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all instructions and claims with current upstream llama.cpp and model-card guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed TinyLLaMA, GGUF, Q4_K_M, C++17, CMake, inference, and quantization terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or formulas occur in this article."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Removed obsolete conversion and C++ API examples; commands and the official llama-simple source/CMake target were checked against upstream. Compilation was attempted but this environment lacks NMake and a C++ compiler."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Updated official repository, C++ source and CMake references, and original/GGUF model cards."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Build could not be completed locally because no NMake/MSVC/MinGW/Clang toolchain is available; the current upstream sample and target were inspected.",
+        "The GGUF conversion is third-party; verify publisher, license, and provenance before production use.",
+        "Model quality and multilingual performance were not benchmarked."
+      ]
+    },
+    "post/TinyLLaMA を C++ から呼び出せるようにする手順（llama.cpp使用）/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/TinyLLaMA を C++ から呼び出せるようにする手順（llama.cpp使用）/index.md",
+      "sourceHash": "16fb93ab64c5a68ec35080a8820caf957b65d0ce7a61b68fc744ea8303d31cf5",
+      "translationHash": "06373aa6e2bde72ce8234c19f3d82506bbc2b26b9e8c8e1117ea1cd16f970b31",
+      "summary": "Compared the complete translation with the Japanese source and current llama.cpp documentation, official example/build target, model card, and technical caveats.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all instructions and claims with current upstream llama.cpp and model-card guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed TinyLLaMA, GGUF, Q4_K_M, C++17, CMake, inference, and quantization terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or formulas occur in this article."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Removed obsolete conversion and C++ API examples; commands and the official llama-simple source/CMake target were checked against upstream. Compilation was attempted but this environment lacks NMake and a C++ compiler."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Updated official repository, C++ source and CMake references, and original/GGUF model cards."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Build could not be completed locally because no NMake/MSVC/MinGW/Clang toolchain is available; the current upstream sample and target were inspected.",
+        "The GGUF conversion is third-party; verify publisher, license, and provenance before production use.",
+        "Model quality and multilingual performance were not benchmarked."
+      ]
+    }
+  }
+}

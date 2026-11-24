@@ -1,8 +1,8 @@
 ---
 title: 'تشغيل TinyLLaMA باستخدام C++! خطوات إعداد بيئة LLM محلية باستخدام llama.cpp'
-date: "2026-09-24T19:44:38+09:00"
+date: "2025-07-19T09:40:53+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 slug: "TinyLLaMA を C++ から呼び出せるようにする手順（llama.cpp使用）"
-date: 2025-07-19T09:40:53+09:00
 tags: ["C++", "llama.cpp", "TinyLLaMA", "AI"]
 draft: false
 image: "img.webp"
@@ -10,157 +10,51 @@ categories: ["programming"]
 description: 'نشرح خطوات الإعداد لاستدعاء وتشغيل نموذج TinyLLaMA من C++. قمنا بتلخيص الخطوات بوضوح للمبتدئين، بدءاً من بناء llama.cpp، مروراً بالحصول على النموذج من HuggingFace، ووصولاً إلى طرق الإعداد في مختلف البيئات.'
 ---
 
-# ✅ خطوات إعداد TinyLLaMA × C++ (باستخدام `llama.cpp`)
+رُوجع هذا الدليل في 24 نوفمبر 2026. أوامر التحويل وكود C++ من إصدار يوليو 2025 لا يعملان كما كُتبا مع llama.cpp الحالي؛ يستخدم هذا الدليل نموذج GGUF ومثال C++ الرسمي.
 
----
+## 1. التثبيت
 
-## 🔧 الخطوة 1: تجهيز llama.cpp
+يوفر llama.cpp مكتبة استدلال وأدوات سطر الأوامر. استخدم WinGet في Windows والمثبت الرسمي في macOS/Linux.
 
-### 1-1. البيئة المطلوبة (الحد الأدنى)
+```powershell
+winget install llama.cpp
+```
 
-* نظام التشغيل: Windows / Linux / macOS
-* بيئة التطوير: g++ / clang / MSVC
-* Git / CMake
+المثبّت الرسمي لنظامي macOS/Linux:
 
-### 1-2. الحصول على llama.cpp وبناؤه
+```sh
+curl -LsSf https://llama.app/install.sh | sh
+```
 
-```bash
-git clone https://github.com/ggerganov/llama.cpp
+## 2. تشغيل النموذج
+
+الأوزان الأصلية لـ TinyLLaMA بصيغة Hugging Face. نستخدم هنا تحويلًا خارجيًا إلى GGUF بنمط Q4_K_M لـ llama.cpp؛ لا حاجة لتحويل الأوزان بنفسك. يُنزّل التشغيل الأول نحو 669 MB.
+
+```sh
+llama cli -hf TheBloke/TinyLlama-1.1B-Chat-v1.0-GGUF:Q4_K_M
+```
+
+## 3. بناء مثال C++
+
+لتطبيق C++ خاص بك، راجع المثال الرسمي `llama-simple`. يوضح كوده الحالي C++17 وهدف CMake تحميل النموذج والتجزئة والاستدلال وأخذ العينات والتحرير. تتغير الواجهة البرمجية؛ استخدم المثال والترويسة من نسخة المصدر نفسها.
+
+```sh
+git clone https://github.com/ggml-org/llama.cpp.git
 cd llama.cpp
-mkdir build
-cd build
-cmake ..
-cmake --build . --config Release
+cmake -B build -DLLAMA_BUILD_EXAMPLES=ON
+cmake --build build --config Release --target llama-simple
 ```
 
-> إذا كنت تستخدم Windows، فمن الأسهل استخدام `Visual Studio Developer Command Prompt` مع `cmake --build . --config Release`.
+## 4. حجم النموذج وحدوده
 
----
+حجم ملف Q4_K_M نحو 669 MB. تقدّر بطاقة النموذج RAM بنحو 3.17 GB لاستخدام CPU فقط، ويتغير الاحتياج حسب النظام والسياق. TinyLLaMA 1.1B Chat v1.0 نموذج صغير وقديم. قيّم الجودة واللغات وتحقق من المخرجات قبل اتخاذ أي إجراء.
 
-## 📦 الخطوة 2: تنزيل نموذج TinyLLaMA وتحويله
+## المراجع
 
-### 2-1. الحصول على النموذج الأصلي من HuggingFace
-
-مثال: [TinyLLaMA-1.1B](https://huggingface.co/openaccess-ai-collective/TinyLlama-1.1B-Chat-v1.0)
-
-```bash
-# قم بالتنزيل باستخدام transformers إذا لزم الأمر
-pip install transformers huggingface_hub
-
-python3 -m transformers.models.llama.convert_llama_weights_to_hf \
-    --input_dir ./TinyLlama-1.1B-Chat \
-    --model_size 1B \
-    --output_dir ./hf_model
-```
-
-> هذه هي خطوة التحويل إلى تنسيق Hugging Face.
-
----
-
-### 2-2. التحويل إلى تنسيق GGUF (من أجل `llama.cpp`)
-
-```bash
-cd llama.cpp
-python3 convert.py ./hf_model --outfile tinyllama.gguf
-```
-
-### 2-3. تكميم النموذج (تقليل الحجم)
-
-```bash
-./quantize ./tinyllama.gguf ./tinyllama-q4.gguf q4_0
-```
-
-> `q4_0` هو تكميم 4 بت. سيتم تقليل حجم النموذج إلى حوالي ** 350 ميجابايت ** تقريباً.
-
----
-
-## 🧪 الخطوة 3: استدعاء النموذج من C++ (مثال على الكود)
-
-### 3-1. كود C++ بسيط (استدلال)
-
-```cpp
-#include "llama.h"
-#include <iostream>
-
-int main() {
-    llama_model_params model_params = llama_model_default_params();
-    llama_context_params ctx_params = llama_context_default_params();
-
-    llama_model *model = llama_load_model_from_file("tinyllama-q4.gguf", model_params);
-    llama_context *ctx = llama_new_context_with_model(model, ctx_params);
-
-    std::string prompt = "يقول المستخدم إنه يريد تحميل بيانات Excel وتصفيتها وحفظها. ما هو تكوين العقدة؟";
-    llama_batch batch = llama_batch_init(512, 0, 1);
-    llama_token BOS = llama_token_bos(model);
-    batch.token[0] = BOS;
-
-    // تقسيم النص إلى رموز
-    std::vector<llama_token> tokens(prompt.size() + 8);
-    int n = llama_tokenize(model, prompt.c_str(), tokens.data(), tokens.size(), true);
-    tokens.resize(n);
-
-    for (size_t i = 0; i < tokens.size(); ++i) {
-        batch.token[i + 1] = tokens[i];
-    }
-
-    batch.n_tokens = tokens.size() + 1;
-    llama_decode(ctx, batch);
-
-    // الحصول على نتيجة الاستدلال
-    for (int i = 0; i < 50; ++i) {
-        llama_token next = llama_sample_token(ctx, nullptr);
-        std::cout << llama_token_to_str(model, next);
-        llama_batch next_batch = llama_batch_init(1, 0, 1);
-        next_batch.token[0] = next;
-        next_batch.n_tokens = 1;
-        llama_decode(ctx, next_batch);
-    }
-
-    llama_free(ctx);
-    llama_free_model(model);
-    return 0;
-}
-```
-
----
-
-## 🧱 الخطوة 4: طريقة الترجمة (مثال)
-
-```bash
-g++ -I./llama.cpp main.cpp ./llama.cpp/build/libllama.a -o tiny_infer -pthread -std=c++11
-```
-
-> يتم إنشاء `libllama.a` في الدليل `build/` بعد البناء.
-
----
-
-## ✅ مثال على بنية المخرجات (منظمة)
-
-```
-my_app/
-├── tinyllama-q4.gguf      # نموذج مكمم (~350 ميجابايت)
-├── main.cpp               # كود C++ أعلاه
-├── llama.cpp/             # نواة llama.cpp
-└── build/
-    └── libllama.a         # المكتبة المترجمة
-```
-
----
-
-## 🧠 ملاحظات للتطبيق على حالات الاستخدام
-
-* وجود كود في C++ لـ `مطابقة وتحديد قوالب العقدة` بناءً على المخرجات
-* مثال: إذا كان يحتوي على "Excel" ، "تصفية" ، "حفظ" -> إنشاء مجموعة العقدة المقابلة
-* هذا الجزء مقبول بتكوين بسيط مثل `عبارة if + تحميل قالب JSON`
-
----
-
-## 📌 الخلاصة
-
-| العنصر | المحتوى |
-| ----- | ------------------------------------ |
-| النموذج الموصى به | TinyLLaMA-1.1B-Chat v1.0 (GGUF + تكميم) |
-| الحجم | ~350-450 ميجابايت (تكميم 4 بت) |
-| تكامل C++ | ممكن باستخدام `llama.cpp` ، لا توجد تبعيات خارجية تقريبًا |
-| قوة المعالجة | كافية لفهم النوايا البسيطة وإنشاء النص (نص طبيعي -> تكوين) |
-| قابلية التوسع | يمكن تحويله إلى ذكاء اصطناعي لإنشاء العقدة عن طريق الدمج مع ملء الفتحات واستدعاء القالب |
+- [مستودع llama.cpp](https://github.com/ggml-org/llama.cpp)
+- [مثال C++ الرسمي](https://github.com/ggml-org/llama.cpp/blob/master/examples/simple/simple.cpp)
+- [هدف CMake الرسمي](https://github.com/ggml-org/llama.cpp/blob/master/examples/simple/CMakeLists.txt)
+- [طريقة تشغيل المثال](https://github.com/ggml-org/llama.cpp/blob/master/examples/simple/README.md)
+- [نموذج TinyLLaMA الأصلي](https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0)
+- [بطاقة نموذج TinyLLaMA GGUF](https://huggingface.co/TheBloke/TinyLlama-1.1B-Chat-v1.0-GGUF)
+- [ملف Q4_K_M](https://huggingface.co/TheBloke/TinyLlama-1.1B-Chat-v1.0-GGUF/resolve/main/tinyllama-1.1b-chat-v1.0.Q4_K_M.gguf)

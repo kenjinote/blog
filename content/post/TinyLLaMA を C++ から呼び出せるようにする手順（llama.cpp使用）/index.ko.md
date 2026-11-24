@@ -1,16 +1,8 @@
 ---
-
-
-
-
-
-
-
-
 title: 'TinyLLaMA를 C++에서 실행! llama.cpp를 사용한 로컬 LLM 환경 구축 절차'
-date: "2026-09-24T19:44:38+09:00"
+date: "2025-07-19T09:40:53+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 slug: "TinyLLaMA を C++ から呼び出せるようにする手順（llama.cpp使用）"
-date: 2025-07-19T09:40:53+09:00
 tags: ["C++", "llama.cpp", "TinyLLaMA", "AI"]
 draft: false
 image: "img.webp"
@@ -18,165 +10,51 @@ categories: ["programming"]
 description: 'TinyLLaMA를 C++에서 호출하여 실행하기 위한 설정 절차를 설명합니다. llama.cpp 빌드부터 HuggingFace에서의 모델 가져오기, 다양한 환경에서의 구축 방법까지 초보자도 알기 쉽게 정리했습니다.'
 ---
 
+2026년 11월 24일에 개정했습니다. 2025년 7월 버전의 변환 명령과 C++ 코드는 현재 llama.cpp에서 그대로 동작하지 않아 현재 GGUF 모델과 공식 C++ 예제로 바꿨습니다.
 
+## 1. 설치
 
+llama.cpp는 추론 라이브러리와 명령줄 도구를 제공합니다. Windows에서는 WinGet, macOS/Linux에서는 공식 설치 프로그램을 사용하세요.
 
+```powershell
+winget install llama.cpp
+```
 
+macOS/Linux 공식 설치 프로그램:
 
+```sh
+curl -LsSf https://llama.app/install.sh | sh
+```
 
+## 2. 모델 실행
 
+TinyLLaMA 원본 가중치는 Hugging Face 형식입니다. 여기서는 llama.cpp용으로 제3자가 변환한 Q4_K_M GGUF를 사용하므로 직접 변환할 필요가 없습니다. 최초 실행 시 약 669 MB를 다운로드합니다.
 
-# ✅ TinyLLaMA × C++ 설정 절차(`llama.cpp` 사용)
+```sh
+llama cli -hf TheBloke/TinyLlama-1.1B-Chat-v1.0-GGUF:Q4_K_M
+```
 
----
+## 3. C++ 예제 빌드
 
-## 🔧 Step 1: llama.cpp 준비하기
+C++ 앱에 통합하려면 공식 `llama-simple` 예제를 참고하세요. 최신 C++17 코드와 CMake 대상은 모델 로드, 토큰화, 추론, 샘플링, 해제를 보여 줍니다. API가 바뀔 수 있으므로 같은 소스 버전의 예제와 헤더를 사용하세요.
 
-### 1-1. 필요한 환경 (최소한)
-
-* OS: Windows / Linux / macOS
-* 개발 환경: g++ / clang / MSVC
-* Git / CMake
-
-### 1-2. llama.cpp 가져오기 및 빌드
-
-```bash
-git clone https://github.com/ggerganov/llama.cpp
+```sh
+git clone https://github.com/ggml-org/llama.cpp.git
 cd llama.cpp
-mkdir build
-cd build
-cmake ..
-cmake --build . --config Release
+cmake -B build -DLLAMA_BUILD_EXAMPLES=ON
+cmake --build build --config Release --target llama-simple
 ```
 
-> Windows라면 `Visual Studio Developer Command Prompt`에서 `cmake --build . --config Release`를 사용하면 편합니다.
+## 4. 모델 크기와 한계
 
----
+Q4_K_M 파일은 약 669 MB입니다. 모델 카드의 CPU 전용 RAM 기준은 약 3.17 GB이며 실제 요구량은 OS와 컨텍스트 등에 따라 달라집니다. TinyLLaMA 1.1B Chat v1.0은 작고 오래된 모델입니다. 품질과 언어 지원을 평가하고 결과를 검증한 뒤 사용하세요.
 
-## 📦 Step 2: TinyLLaMA 모델 다운로드 및 변환
+## 참고 자료
 
-### 2-1. HuggingFace에서 원본 모델 가져오기
-
-예: [TinyLLaMA-1.1B](https://huggingface.co/openaccess-ai-collective/TinyLlama-1.1B-Chat-v1.0)
-
-```bash
-# 필요에 따라 transformers를 사용하여 다운로드
-pip install transformers huggingface_hub
-
-python3 -m transformers.models.llama.convert_llama_weights_to_hf \
-    --input_dir ./TinyLlama-1.1B-Chat \
-    --model_size 1B \
-    --output_dir ./hf_model
-```
-
-> 이는 Hugging Face 형식으로 변환하는 단계입니다.
-
----
-
-### 2-2. GGUF 형식으로 변환(`llama.cpp`용)
-
-```bash
-cd llama.cpp
-python3 convert.py ./hf_model --outfile tinyllama.gguf
-```
-
-### 2-3. 모델 양자화(크기 축소)
-
-```bash
-./quantize ./tinyllama.gguf ./tinyllama-q4.gguf q4_0
-```
-
-> `q4_0`은 4bit 양자화입니다. 모델 크기가 약 **350MB 내외** 로 작아집니다.
-
----
-
-## 🧪 Step 3: C++에서 모델 호출하기(코드 예시)
-
-### 3-1. 간단한 C++ 코드(추론)
-
-```cpp
-#include "llama.h"
-#include <iostream>
-
-int main() {
-    llama_model_params model_params = llama_model_default_params();
-    llama_context_params ctx_params = llama_context_default_params();
-
-    llama_model *model = llama_load_model_from_file("tinyllama-q4.gguf", model_params);
-    llama_context *ctx = llama_new_context_with_model(model, ctx_params);
-
-    std::string prompt = "사용자가 Excel 데이터를 읽어와 필터링한 후 저장하고 싶다고 합니다. 노드 구성은?";
-    llama_batch batch = llama_batch_init(512, 0, 1);
-    llama_token BOS = llama_token_bos(model);
-    batch.token[0] = BOS;
-
-    // 토크나이즈
-    std::vector<llama_token> tokens(prompt.size() + 8);
-    int n = llama_tokenize(model, prompt.c_str(), tokens.data(), tokens.size(), true);
-    tokens.resize(n);
-
-    for (size_t i = 0; i < tokens.size(); ++i) {
-        batch.token[i + 1] = tokens[i];
-    }
-
-    batch.n_tokens = tokens.size() + 1;
-    llama_decode(ctx, batch);
-
-    // 추론 결과 가져오기
-    for (int i = 0; i < 50; ++i) {
-        llama_token next = llama_sample_token(ctx, nullptr);
-        std::cout << llama_token_to_str(model, next);
-        llama_batch next_batch = llama_batch_init(1, 0, 1);
-        next_batch.token[0] = next;
-        next_batch.n_tokens = 1;
-        llama_decode(ctx, next_batch);
-    }
-
-    llama_free(ctx);
-    llama_free_model(model);
-    return 0;
-}
-```
-
----
-
-## 🧱 Step 4: 컴파일 방법(예시)
-
-```bash
-g++ -I./llama.cpp main.cpp ./llama.cpp/build/libllama.a -o tiny_infer -pthread -std=c++11
-```
-
-> `libllama.a`는 빌드 후 `build/` 디렉토리에 생성됩니다.
-
----
-
-## ✅ 결과물 구성 예시(정리)
-
-```
-my_app/
-├── tinyllama-q4.gguf      # 양자화된 모델 (~350MB)
-├── main.cpp               # 위의 C++ 코드
-├── llama.cpp/             # llama.cpp 본체
-└── build/
-    └── libllama.a         # 컴파일된 라이브러리
-```
-
----
-
-## 🧠 사용 사례 적용을 위한 보충
-
-* 출력을 받아 `노드 템플릿을 대조 및 선정`하는 코드를 C++ 내에 둠
-* 예: "Excel", "필터", "저장"이 포함됨 → 해당 노드 그룹 생성
-* 이 부분은 `if 문 + JSON 템플릿 읽기`와 같은 간단한 구성으로 충분함
-
----
-
-## 📌 요약
-
-| 항목 | 내용 |
-| ----- | ------------------------------------ |
-| 권장 모델 | TinyLLaMA-1.1B-Chat v1.0 (GGUF + 양자화) |
-| 크기 | \~350〜450MB (4bit 양자화) |
-| C++ 연동 | `llama.cpp`를 사용하여 가능, 외부 의존성 거의 없음 |
-| 처리 능력 | 간단한 의도 파악 및 출력문 생성에 충분 (자연어→구성) |
-| 확장성 | 슬롯 채우기 및 템플릿 호출과 결합하여 노드 생성 AI로 활용 가능 |
+- [llama.cpp 공식 저장소](https://github.com/ggml-org/llama.cpp)
+- [공식 C++ 예제](https://github.com/ggml-org/llama.cpp/blob/master/examples/simple/simple.cpp)
+- [공식 CMake 대상](https://github.com/ggml-org/llama.cpp/blob/master/examples/simple/CMakeLists.txt)
+- [예제 실행 방법](https://github.com/ggml-org/llama.cpp/blob/master/examples/simple/README.md)
+- [TinyLLaMA 원본 모델](https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0)
+- [TinyLLaMA GGUF 모델 카드](https://huggingface.co/TheBloke/TinyLlama-1.1B-Chat-v1.0-GGUF)
+- [Q4_K_M 파일](https://huggingface.co/TheBloke/TinyLlama-1.1B-Chat-v1.0-GGUF/resolve/main/tinyllama-1.1b-chat-v1.0.Q4_K_M.gguf)

@@ -1,8 +1,8 @@
 ---
 title: 'TinyLLaMA in C++ ausführen! Schritte zur Einrichtung einer lokalen LLM-Umgebung mit llama.cpp'
-date: "2026-09-24T19:44:38+09:00"
+date: "2025-07-19T09:40:53+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 slug: "TinyLLaMA を C++ から呼び出せるようにする手順（llama.cpp使用）"
-date: 2025-07-19T09:40:53+09:00
 tags: ["C++", "llama.cpp", "TinyLLaMA", "AI"]
 draft: false
 image: "img.webp"
@@ -10,157 +10,51 @@ categories: ["programming"]
 description: 'Erklärt die Einrichtungsschritte zum Aufrufen und Ausführen von TinyLLaMA in C++. Fasst für Anfänger leicht verständlich zusammen, vom Erstellen von llama.cpp über das Abrufen von Modellen von HuggingFace bis hin zu Konstruktionsmethoden in verschiedenen Umgebungen.'
 ---
 
-# ✅ Einrichtung von TinyLLaMA × C++ (mit `llama.cpp`)
+Überarbeitet am 24. November 2026. Die Konvertierungsbefehle und der C++-Code vom Juli 2025 funktionieren mit aktuellem llama.cpp nicht unverändert. Diese Anleitung nutzt ein GGUF-Modell und das offizielle C++-Beispiel.
 
----
+## 1. Installieren
 
-## 🔧 Schritt 1: llama.cpp vorbereiten
+llama.cpp bietet eine Inferenzbibliothek und Befehlszeilenwerkzeuge. Verwende WinGet unter Windows oder den offiziellen Installer unter macOS/Linux.
 
-### 1-1. Erforderliche Umgebung (Minimum)
+```powershell
+winget install llama.cpp
+```
 
-* OS: Windows / Linux / macOS
-* Entwicklungsumgebung: g++ / clang / MSVC
-* Git / CMake
+Offizieller Installer für macOS/Linux:
 
-### 1-2. llama.cpp abrufen und kompilieren
+```sh
+curl -LsSf https://llama.app/install.sh | sh
+```
 
-```bash
-git clone https://github.com/ggerganov/llama.cpp
+## 2. Modell ausführen
+
+Die Originalgewichte von TinyLLaMA liegen im Hugging-Face-Format vor. Hier verwenden wir eine Drittanbieter-Konvertierung als Q4_K_M-GGUF für llama.cpp; eine eigene Konvertierung ist nicht nötig. Beim ersten Start werden etwa 669 MB geladen.
+
+```sh
+llama cli -hf TheBloke/TinyLlama-1.1B-Chat-v1.0-GGUF:Q4_K_M
+```
+
+## 3. C++-Beispiel bauen
+
+Für eine C++-Anwendung siehe das offizielle Beispiel `llama-simple`. Der aktuelle C++17-Code und das CMake-Ziel zeigen Laden, Tokenisierung, Inferenz, Sampling und Freigabe. Die API ändert sich; verwende Beispiel und Header aus demselben Checkout wie beim Build.
+
+```sh
+git clone https://github.com/ggml-org/llama.cpp.git
 cd llama.cpp
-mkdir build
-cd build
-cmake ..
-cmake --build . --config Release
+cmake -B build -DLLAMA_BUILD_EXAMPLES=ON
+cmake --build build --config Release --target llama-simple
 ```
 
-> Unter Windows ist es am einfachsten, die `Visual Studio Developer Command Prompt` mit `cmake --build . --config Release` zu verwenden.
+## 4. Modellgröße und Grenzen
 
----
+Die Q4_K_M-Datei ist etwa 669 MB groß. Die Modellkarte nennt rund 3,17 GB RAM für reine CPU-Nutzung; der Bedarf hängt auch von System und Kontext ab. TinyLLaMA 1.1B Chat v1.0 ist ein kleines älteres Modell. Prüfe Qualität und Sprachen und validiere Ausgaben vor jeder Aktion.
 
-## 📦 Schritt 2: TinyLLaMA-Modell herunterladen und konvertieren
+## Quellen
 
-### 2-1. Originalmodell von HuggingFace beziehen
-
-Beispiel: [TinyLLaMA-1.1B](https://huggingface.co/openaccess-ai-collective/TinyLlama-1.1B-Chat-v1.0)
-
-```bash
-# Falls erforderlich, transformers zum Herunterladen verwenden
-pip install transformers huggingface_hub
-
-python3 -m transformers.models.llama.convert_llama_weights_to_hf \
-    --input_dir ./TinyLlama-1.1B-Chat \
-    --model_size 1B \
-    --output_dir ./hf_model
-```
-
-> Dies ist der Schritt zur Konvertierung in das Hugging Face-Format.
-
----
-
-### 2-2. In das GGUF-Format konvertieren (für `llama.cpp`)
-
-```bash
-cd llama.cpp
-python3 convert.py ./hf_model --outfile tinyllama.gguf
-```
-
-### 2-3. Modellquantisierung (Größenreduzierung)
-
-```bash
-./quantize ./tinyllama.gguf ./tinyllama-q4.gguf q4_0
-```
-
-> `q4_0` steht für 4-Bit-Quantisierung. Die Modellgröße schrumpft auf etwa ** 350MB ** .
-
----
-
-## 🧪 Schritt 3: Das Modell aus C++ aufrufen (Codebeispiel)
-
-### 3-1. Einfacher C++-Code (Inferenz)
-
-```cpp
-#include "llama.h"
-#include <iostream>
-
-int main() {
-    llama_model_params model_params = llama_model_default_params();
-    llama_context_params ctx_params = llama_context_default_params();
-
-    llama_model *model = llama_load_model_from_file("tinyllama-q4.gguf", model_params);
-    llama_context *ctx = llama_new_context_with_model(model, ctx_params);
-
-    std::string prompt = "Der Benutzer sagt, dass er Excel-Daten laden, filtern und speichern möchte. Wie sieht die Knotenkonfiguration aus?";
-    llama_batch batch = llama_batch_init(512, 0, 1);
-    llama_token BOS = llama_token_bos(model);
-    batch.token[0] = BOS;
-
-    // Tokenisierung
-    std::vector<llama_token> tokens(prompt.size() + 8);
-    int n = llama_tokenize(model, prompt.c_str(), tokens.data(), tokens.size(), true);
-    tokens.resize(n);
-
-    for (size_t i = 0; i < tokens.size(); ++i) {
-        batch.token[i + 1] = tokens[i];
-    }
-
-    batch.n_tokens = tokens.size() + 1;
-    llama_decode(ctx, batch);
-
-    // Inferenz-Ergebnis abrufen
-    for (int i = 0; i < 50; ++i) {
-        llama_token next = llama_sample_token(ctx, nullptr);
-        std::cout << llama_token_to_str(model, next);
-        llama_batch next_batch = llama_batch_init(1, 0, 1);
-        next_batch.token[0] = next;
-        next_batch.n_tokens = 1;
-        llama_decode(ctx, next_batch);
-    }
-
-    llama_free(ctx);
-    llama_free_model(model);
-    return 0;
-}
-```
-
----
-
-## 🧱 Schritt 4: Kompilierungsmethode (Beispiel)
-
-```bash
-g++ -I./llama.cpp main.cpp ./llama.cpp/build/libllama.a -o tiny_infer -pthread -std=c++11
-```
-
-> `libllama.a` wird nach der Erstellung im Verzeichnis `build/` generiert.
-
----
-
-## ✅ Beispiel für die Struktur der Artefakte (Organisation)
-
-```
-my_app/
-├── tinyllama-q4.gguf      # Quantisiertes Modell (~350MB)
-├── main.cpp               # Obiger C++-Code
-├── llama.cpp/             # llama.cpp-Quellcode
-└── build/
-    └── libllama.a         # Kompilierte Bibliothek
-```
-
----
-
-## 🧠 Zusätzliche Hinweise zur Anwendung auf Anwendungsfälle
-
-* Code in C++ einbauen, um die Ausgabe entgegenzunehmen und `Knoten-Templates abzugleichen/auszuwählen`.
-* Beispiel: Wenn "Excel", "Filter", "Speichern" enthalten sind → entsprechende Knotengruppen generieren.
-* Dieser Teil kann mit einer einfachen Struktur wie `if-Anweisungen + Laden von JSON-Vorlagen` umgesetzt werden.
-
----
-
-## 📌 Zusammenfassung
-
-| Element | Beschreibung |
-| ----- | ------------------------------------ |
-| Empfohlenes Modell | TinyLLaMA-1.1B-Chat v1.0 (GGUF + Quantisierung) |
-| Größe | ~350 bis 450MB (4-Bit-Quantisierung) |
-| C++-Integration | Möglich durch `llama.cpp`, fast keine externen Abhängigkeiten |
-| Verarbeitungsleistung | Ausreichend für einfache Intentionserkennung und Satzgenerierung (Natürliche Sprache → Struktur) |
-| Erweiterbarkeit | Kann durch Kombination mit Slot-Filling und Template-Aufrufen zu einer KI für Knotengenerierung werden |
+- [llama.cpp-Repository](https://github.com/ggml-org/llama.cpp)
+- [Offizielles C++-Beispiel](https://github.com/ggml-org/llama.cpp/blob/master/examples/simple/simple.cpp)
+- [Offizielles CMake-Ziel](https://github.com/ggml-org/llama.cpp/blob/master/examples/simple/CMakeLists.txt)
+- [Beispiel ausführen](https://github.com/ggml-org/llama.cpp/blob/master/examples/simple/README.md)
+- [Originales TinyLLaMA-Modell](https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0)
+- [TinyLLaMA-GGUF-Modellkarte](https://huggingface.co/TheBloke/TinyLlama-1.1B-Chat-v1.0-GGUF)
+- [Q4_K_M-Datei](https://huggingface.co/TheBloke/TinyLlama-1.1B-Chat-v1.0-GGUF/resolve/main/tinyllama-1.1b-chat-v1.0.Q4_K_M.gguf)

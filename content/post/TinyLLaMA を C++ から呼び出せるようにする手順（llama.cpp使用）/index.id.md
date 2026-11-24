@@ -1,8 +1,8 @@
 ---
 title: 'Menjalankan TinyLLaMA di C++! Prosedur Pembangunan Lingkungan LLM Lokal Menggunakan llama.cpp'
-date: "2026-09-24T19:44:38+09:00"
+date: "2025-07-19T09:40:53+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 slug: "TinyLLaMA を C++ から呼び出せるようにする手順（llama.cpp使用）"
-date: 2025-07-19T09:40:53+09:00
 tags: ["C++", "llama.cpp", "TinyLLaMA", "AI"]
 draft: false
 image: "img.webp"
@@ -10,157 +10,51 @@ categories: ["programming"]
 description: 'Menjelaskan prosedur pengaturan untuk memanggil dan menjalankan TinyLLaMA dari C++. Merangkumnya dengan mudah dipahami oleh pemula, mulai dari membangun llama.cpp hingga mendapatkan model dari HuggingFace, dan metode pembangunan di berbagai lingkungan.'
 ---
 
-# ✅ Langkah Persiapan TinyLLaMA × C++ (menggunakan `llama.cpp`)
+Ditinjau pada 24 November 2026. Perintah konversi dan kode C++ dari versi Juli 2025 tidak lagi berfungsi apa adanya pada llama.cpp terkini; panduan ini memakai model GGUF dan contoh C++ resmi.
 
----
+## 1. Instalasi
 
-## 🔧 Langkah 1: Siapkan llama.cpp
+llama.cpp menyediakan pustaka inferensi dan alat baris perintah. Gunakan WinGet di Windows atau pemasang resmi di macOS/Linux.
 
-### 1-1. Lingkungan yang Dibutuhkan (Minimum)
+```powershell
+winget install llama.cpp
+```
 
-* OS: Windows / Linux / macOS
-* Lingkungan Pengembangan: g++ / clang / MSVC
-* Git / CMake
+Pemasang resmi untuk macOS/Linux:
 
-### 1-2. Dapatkan dan build llama.cpp
+```sh
+curl -LsSf https://llama.app/install.sh | sh
+```
 
-```bash
-git clone https://github.com/ggerganov/llama.cpp
+## 2. Jalankan model
+
+Bobot asli TinyLLaMA berformat Hugging Face. Panduan ini memakai konversi Q4_K_M GGUF pihak ketiga untuk llama.cpp; Anda tidak perlu mengonversi bobot sendiri. Pertama kali dijalankan, model sekitar 669 MB akan diunduh.
+
+```sh
+llama cli -hf TheBloke/TinyLlama-1.1B-Chat-v1.0-GGUF:Q4_K_M
+```
+
+## 3. Build contoh C++
+
+Untuk aplikasi C++, lihat contoh resmi `llama-simple`. Kode C++17 dan target CMake terkini menunjukkan pemuatan, tokenisasi, inferensi, sampling, dan pelepasan sumber daya. API berubah; gunakan contoh dan header dari checkout yang sama dengan build.
+
+```sh
+git clone https://github.com/ggml-org/llama.cpp.git
 cd llama.cpp
-mkdir build
-cd build
-cmake ..
-cmake --build . --config Release
+cmake -B build -DLLAMA_BUILD_EXAMPLES=ON
+cmake --build build --config Release --target llama-simple
 ```
 
-> Jika menggunakan Windows, menggunakan `Visual Studio Developer Command Prompt` dengan `cmake --build . --config Release` akan lebih mudah.
+## 4. Ukuran dan batas model
 
----
+Berkas Q4_K_M berukuran sekitar 669 MB. Kartu model memperkirakan RAM sekitar 3,17 GB untuk CPU saja; kebutuhan sebenarnya bergantung pada OS dan konteks. TinyLLaMA 1.1B Chat v1.0 adalah model kecil generasi lama. Evaluasi kualitas dan bahasa, lalu validasi keluaran sebelum bertindak.
 
-## 📦 Langkah 2: Unduh dan konversi model TinyLLaMA
+## Referensi
 
-### 2-1. Dapatkan model asli dari HuggingFace
-
-Contoh: [TinyLLaMA-1.1B](https://huggingface.co/openaccess-ai-collective/TinyLlama-1.1B-Chat-v1.0)
-
-```bash
-# Unduh menggunakan transformers jika perlu
-pip install transformers huggingface_hub
-
-python3 -m transformers.models.llama.convert_llama_weights_to_hf \
-    --input_dir ./TinyLlama-1.1B-Chat \
-    --model_size 1B \
-    --output_dir ./hf_model
-```
-
-> Ini adalah langkah konversi ke format Hugging Face.
-
----
-
-### 2-2. Konversi ke format GGUF (untuk `llama.cpp`)
-
-```bash
-cd llama.cpp
-python3 convert.py ./hf_model --outfile tinyllama.gguf
-```
-
-### 2-3. Kuantisasi model (mengurangi ukuran)
-
-```bash
-./quantize ./tinyllama.gguf ./tinyllama-q4.gguf q4_0
-```
-
-> `q4_0` adalah kuantisasi 4bit. Ukuran model akan berkurang menjadi sekitar ** 350MB **.
-
----
-
-## 🧪 Langkah 3: Panggil model dari C++ (Contoh Kode)
-
-### 3-1. Kode C++ Sederhana (Inferensi)
-
-```cpp
-#include "llama.h"
-#include <iostream>
-
-int main() {
-    llama_model_params model_params = llama_model_default_params();
-    llama_context_params ctx_params = llama_context_default_params();
-
-    llama_model *model = llama_load_model_from_file("tinyllama-q4.gguf", model_params);
-    llama_context *ctx = llama_new_context_with_model(model, ctx_params);
-
-    std::string prompt = "Pengguna mengatakan mereka ingin memuat data Excel, memfilternya, dan menyimpannya. Apa konfigurasi nodenya?";
-    llama_batch batch = llama_batch_init(512, 0, 1);
-    llama_token BOS = llama_token_bos(model);
-    batch.token[0] = BOS;
-
-    // Tokenisasi
-    std::vector<llama_token> tokens(prompt.size() + 8);
-    int n = llama_tokenize(model, prompt.c_str(), tokens.data(), tokens.size(), true);
-    tokens.resize(n);
-
-    for (size_t i = 0; i < tokens.size(); ++i) {
-        batch.token[i + 1] = tokens[i];
-    }
-
-    batch.n_tokens = tokens.size() + 1;
-    llama_decode(ctx, batch);
-
-    // Dapatkan hasil inferensi
-    for (int i = 0; i < 50; ++i) {
-        llama_token next = llama_sample_token(ctx, nullptr);
-        std::cout << llama_token_to_str(model, next);
-        llama_batch next_batch = llama_batch_init(1, 0, 1);
-        next_batch.token[0] = next;
-        next_batch.n_tokens = 1;
-        llama_decode(ctx, next_batch);
-    }
-
-    llama_free(ctx);
-    llama_free_model(model);
-    return 0;
-}
-```
-
----
-
-## 🧱 Langkah 4: Metode Kompilasi (Contoh)
-
-```bash
-g++ -I./llama.cpp main.cpp ./llama.cpp/build/libllama.a -o tiny_infer -pthread -std=c++11
-```
-
-> `libllama.a` dibuat di direktori `build/` setelah proses build selesai.
-
----
-
-## ✅ Contoh Struktur Hasil (Terorganisir)
-
-```
-my_app/
-├── tinyllama-q4.gguf      # Model terkuantisasi (~350MB)
-├── main.cpp               # Kode C++ di atas
-├── llama.cpp/             # Inti llama.cpp
-└── build/
-    └── libllama.a         # Pustaka terkompilasi
-```
-
----
-
-## 🧠 Catatan untuk penerapan pada use case
-
-* Miliki kode di C++ untuk `mencocokkan dan memilih templat node` berdasarkan output
-* Contoh: Jika mengandung "Excel", "filter", "simpan" -> Buat grup node yang sesuai
-* Bagian ini cukup dengan konfigurasi sederhana seperti `pernyataan if + pemuatan templat JSON`
-
----
-
-## 📌 Ringkasan
-
-| Item | Konten |
-| ----- | ------------------------------------ |
-| Model Rekomendasi | TinyLLaMA-1.1B-Chat v1.0 (GGUF + Kuantisasi) |
-| Ukuran | ~350-450MB (kuantisasi 4bit) |
-| Integrasi C++ | Memungkinkan menggunakan `llama.cpp`, hampir tanpa dependensi eksternal |
-| Kekuatan Pemrosesan | Cukup untuk pemahaman niat sederhana & pembuatan teks (Teks alami -> Konfigurasi) |
-| Ekstensibilitas | Dapat diubah menjadi AI pembuat node dengan menggabungkan pengisian slot dan pemanggilan templat |
+- [Repositori llama.cpp](https://github.com/ggml-org/llama.cpp)
+- [Contoh C++ resmi](https://github.com/ggml-org/llama.cpp/blob/master/examples/simple/simple.cpp)
+- [Target CMake resmi](https://github.com/ggml-org/llama.cpp/blob/master/examples/simple/CMakeLists.txt)
+- [Cara menjalankan contoh](https://github.com/ggml-org/llama.cpp/blob/master/examples/simple/README.md)
+- [Model TinyLLaMA asli](https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0)
+- [Kartu model TinyLLaMA GGUF](https://huggingface.co/TheBloke/TinyLlama-1.1B-Chat-v1.0-GGUF)
+- [Berkas Q4_K_M](https://huggingface.co/TheBloke/TinyLlama-1.1B-Chat-v1.0-GGUF/resolve/main/tinyllama-1.1b-chat-v1.0.Q4_K_M.gguf)

@@ -20405,6 +20405,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-175.json",
       "evidenceHash": "8a6831096711e21b1a3ba92e07aa5d1813a3ac49a4cf07d05dabb2181f1b1926"
+    },
+    "post/TinyLLaMA を C++ から呼び出せるようにする手順（llama.cpp使用）/index.en.md": {
+      "source": "post/TinyLLaMA を C++ から呼び出せるようにする手順（llama.cpp使用）/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "16fb93ab64c5a68ec35080a8820caf957b65d0ce7a61b68fc744ea8303d31cf5",
+      "translationHash": "0c1e373d599cf4cc11beb560c6ee62e66d4a9b3dfb62c6a740c9dd1317f30595",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-176.json",
+      "evidenceHash": "c547434c895ab686dc74e6450763257682e0cc7eb6989fca578e6f07a456d025"
+    },
+    "post/TinyLLaMA を C++ から呼び出せるようにする手順（llama.cpp使用）/index.zh-cn.md": {
+      "source": "post/TinyLLaMA を C++ から呼び出せるようにする手順（llama.cpp使用）/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "16fb93ab64c5a68ec35080a8820caf957b65d0ce7a61b68fc744ea8303d31cf5",
+      "translationHash": "be035f26220d4a619fa872f07dbbc19d7b690ebd24519f32705633266a74bb03",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-176.json",
+      "evidenceHash": "f2135738b0ac9cf9bcb808b30a9e0314e4116ad62fc9e917c4e6774d30abcb79"
+    },
+    "post/TinyLLaMA を C++ から呼び出せるようにする手順（llama.cpp使用）/index.es.md": {
+      "source": "post/TinyLLaMA を C++ から呼び出せるようにする手順（llama.cpp使用）/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "16fb93ab64c5a68ec35080a8820caf957b65d0ce7a61b68fc744ea8303d31cf5",
+      "translationHash": "9d6d35415467f178a52d2d7edf91d7f9676e08054e61230ad4127db69bd14c7a",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-176.json",
+      "evidenceHash": "d327b6f09b1b62e076212ca9bd53bd1bddf55e2688797b1bcc6a9a82732cd2e1"
+    },
+    "post/TinyLLaMA を C++ から呼び出せるようにする手順（llama.cpp使用）/index.ko.md": {
+      "source": "post/TinyLLaMA を C++ から呼び出せるようにする手順（llama.cpp使用）/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "16fb93ab64c5a68ec35080a8820caf957b65d0ce7a61b68fc744ea8303d31cf5",
+      "translationHash": "cd064eafd77b5c2e5054b4c1929c2f0604843675019c2153543726e1ce78be7c",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-176.json",
+      "evidenceHash": "f1429e2354a3a32e87281f29ead899d291b7658b683dea921d6f56d0ccb0cfd8"
+    },
+    "post/TinyLLaMA を C++ から呼び出せるようにする手順（llama.cpp使用）/index.pt.md": {
+      "source": "post/TinyLLaMA を C++ から呼び出せるようにする手順（llama.cpp使用）/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "16fb93ab64c5a68ec35080a8820caf957b65d0ce7a61b68fc744ea8303d31cf5",
+      "translationHash": "cf683fe054fa7f91491451653ee5de88045eb3e84905c49a9f2aae49f0154975",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-176.json",
+      "evidenceHash": "8bfd95d9eb493ea52ee008c7b4072f9d4841b4807094c007a559a40849ad8fca"
+    },
+    "post/TinyLLaMA を C++ から呼び出せるようにする手順（llama.cpp使用）/index.zh-tw.md": {
+      "source": "post/TinyLLaMA を C++ から呼び出せるようにする手順（llama.cpp使用）/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "16fb93ab64c5a68ec35080a8820caf957b65d0ce7a61b68fc744ea8303d31cf5",
+      "translationHash": "968926390cd62f1fc0616776e9b4c4ec753af5b62f85b94c2e623108af1aaff3",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-176.json",
+      "evidenceHash": "39d188749105f64841e26f6926fe3a8ed127d4056d8abde0960cca417f58a596"
+    },
+    "post/TinyLLaMA を C++ から呼び出せるようにする手順（llama.cpp使用）/index.hi.md": {
+      "source": "post/TinyLLaMA を C++ から呼び出せるようにする手順（llama.cpp使用）/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "16fb93ab64c5a68ec35080a8820caf957b65d0ce7a61b68fc744ea8303d31cf5",
+      "translationHash": "8713e23a5daf779dc29082937be56e239614ab5b20ad67f5721a6c25c77f95fa",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-176.json",
+      "evidenceHash": "b42de583dc42e72e129c1487fde796b2d9cb9dfc9b648b5c29f901b667d53779"
+    },
+    "post/TinyLLaMA を C++ から呼び出せるようにする手順（llama.cpp使用）/index.fr.md": {
+      "source": "post/TinyLLaMA を C++ から呼び出せるようにする手順（llama.cpp使用）/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "16fb93ab64c5a68ec35080a8820caf957b65d0ce7a61b68fc744ea8303d31cf5",
+      "translationHash": "ec5df1959f054255927b8fedcbcdd3be8a918a241742627695cd33b5fdf8ae5a",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-176.json",
+      "evidenceHash": "3fbd01323e9677a2567473053e517335405c85c23499f9c73c72277aea8e31df"
+    },
+    "post/TinyLLaMA を C++ から呼び出せるようにする手順（llama.cpp使用）/index.de.md": {
+      "source": "post/TinyLLaMA を C++ から呼び出せるようにする手順（llama.cpp使用）/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "16fb93ab64c5a68ec35080a8820caf957b65d0ce7a61b68fc744ea8303d31cf5",
+      "translationHash": "2c5e7bef03ecd359d53221a8fadbded6a952bbe3823f6dd627575e1575d94ae9",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-176.json",
+      "evidenceHash": "4475124f1c2c042e3f77095245aa51e3e519beea83d62f11e8cc61de3178a2ce"
+    },
+    "post/TinyLLaMA を C++ から呼び出せるようにする手順（llama.cpp使用）/index.ar.md": {
+      "source": "post/TinyLLaMA を C++ から呼び出せるようにする手順（llama.cpp使用）/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "16fb93ab64c5a68ec35080a8820caf957b65d0ce7a61b68fc744ea8303d31cf5",
+      "translationHash": "803358b77394e00c339189b7c24fd338a7db82203fce73cbeeb72942d0007f54",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-176.json",
+      "evidenceHash": "8ff6da41740ca83eeda2798569ad7ddbabd477b78e4588905e9a1ca6c8d4e037"
+    },
+    "post/TinyLLaMA を C++ から呼び出せるようにする手順（llama.cpp使用）/index.ru.md": {
+      "source": "post/TinyLLaMA を C++ から呼び出せるようにする手順（llama.cpp使用）/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "16fb93ab64c5a68ec35080a8820caf957b65d0ce7a61b68fc744ea8303d31cf5",
+      "translationHash": "69e725e4ddf8ed4164c542010101860cb80fb147d56adc9b67dcfbcd889c4b1f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-176.json",
+      "evidenceHash": "5f0e790178f437379589027f7296bbfd8c33cdc0e89b8ba152112a6e8481f5f6"
+    },
+    "post/TinyLLaMA を C++ から呼び出せるようにする手順（llama.cpp使用）/index.id.md": {
+      "source": "post/TinyLLaMA を C++ から呼び出せるようにする手順（llama.cpp使用）/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "16fb93ab64c5a68ec35080a8820caf957b65d0ce7a61b68fc744ea8303d31cf5",
+      "translationHash": "06373aa6e2bde72ce8234c19f3d82506bbc2b26b9e8c8e1117ea1cd16f970b31",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-176.json",
+      "evidenceHash": "f49f08ac9582971f8e7b5018e3e7d361b7767d57aaf1211ce9da94ad415048fa"
     }
   }
 }
