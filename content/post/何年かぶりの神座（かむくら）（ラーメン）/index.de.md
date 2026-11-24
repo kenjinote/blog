@@ -1,13 +1,13 @@
 ---
-title: '„Kamukura“ nach mehreren Jahren! Den empfohlenen Frühlingszwiebel-Kimchi-Ramen genießen'
-date: "2026-09-24T19:44:38+09:00"
+title: "Nach Jahren wieder bei Kamukura: Ramen mit Negi-Kimchi"
 slug: "何年かぶりのKamukura（かむくら）（Ramen）"
 date: 2022-09-09T21:45:19+09:00
+lastmod: 2026-11-24T00:00:00+09:00
 tags: ["Ramen", "Kamukura"]
 draft: false
 image: "images/img2.webp"
 categories: ["it-technology"]
-description: 'Ich bin zum ersten Mal seit langer Zeit in das beliebte Ramen-Restaurant „Dotonbori Kamukura“ gegangen. Dieses Mal habe ich den empfohlenen „Frühlingszwiebel-Kimchi-Ramen“ bestellt! Die Kombination aus der einzigartigen, köstlichen Brühe, auf die man ab und zu große Lust hat, mit viel Gemüse und Frühlingszwiebel-Kimchi war fantastisch.'
+description: "Kurzer persönlicher Bericht über meinen Besuch bei Dotonbori Kamukura nach mehreren Jahren und das dort gegessene Negi-Kimchi-Ramen."
 ---
 
 Ich war zum ersten Mal seit Jahren wieder bei Kamukura (Ramen).

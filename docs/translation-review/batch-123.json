@@ -1,0 +1,450 @@
+{
+  "version": 1,
+  "batch": 123,
+  "article": "久しぶりの神座（ラーメン体験記）",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "a5d7bb7371e1821faeac6615d3077a86dcf2aa9b953992cefaf555be52844ed3",
+  "sources": [],
+  "scope": "Compared the full Japanese body with all twelve translations, including titles, descriptions, dish-name terminology, image references, publication dates, and personal point of view.",
+  "findings": [
+    "Removed duplicate future dates, retained the original 2022-09-09 date, and set lastmod to the review date.",
+    "Changed titles/descriptions that called the restaurant popular and the dish recommended or claimed an objectively perfect pairing, because the brief source does not substantiate those claims.",
+    "Aligned every description with the limited first-person account: a return after several years, ordering negi kimchi ramen, and enjoying it.",
+    "Kept the translated body text and both shared image references; no body meaning or image-link mismatch was found."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/何年かぶりの神座（かむくら）（ラーメン）/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/何年かぶりの神座（かむくら）（ラーメン）/index.md",
+      "sourceHash": "a5d7bb7371e1821faeac6615d3077a86dcf2aa9b953992cefaf555be52844ed3",
+      "translationHash": "da231bf11b196761e78b1b63f0e2426f11f62e428c802e055944397318fc40c7",
+      "summary": "Compared the full short visit report with Japanese and narrowed unsupported promotional descriptions to the author’s own visit and meal.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete note and compared all translations; preserved that this is a personal visit after several years, that the author ate negi kimchi ramen, and that the author enjoyed it."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Kamukura/Dotonbori Kamukura naming and the transliteration of negi (green onion/leek) kimchi ramen across all translations."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No formulas, calculations, or numerical claims appear in this restaurant visit note."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or command examples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked that both localized image references are retained and point to the shared bundle assets; the article has no external references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The dining experience is a personal account from September 2022, not a current review of the restaurant, menu, or service.",
+        "The original uses ネギキムチラーメン; ingredient naming varies by locale, so translations use the closest common leek/green-onion term."
+      ]
+    },
+    "post/何年かぶりの神座（かむくら）（ラーメン）/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/何年かぶりの神座（かむくら）（ラーメン）/index.md",
+      "sourceHash": "a5d7bb7371e1821faeac6615d3077a86dcf2aa9b953992cefaf555be52844ed3",
+      "translationHash": "dce63a04bc39864354d4e090838f574d77d5fee44b8572172fad56315d51580e",
+      "summary": "Compared the full short visit report with Japanese and narrowed unsupported promotional descriptions to the author’s own visit and meal.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete note and compared all translations; preserved that this is a personal visit after several years, that the author ate negi kimchi ramen, and that the author enjoyed it."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Kamukura/Dotonbori Kamukura naming and the transliteration of negi (green onion/leek) kimchi ramen across all translations."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No formulas, calculations, or numerical claims appear in this restaurant visit note."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or command examples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked that both localized image references are retained and point to the shared bundle assets; the article has no external references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The dining experience is a personal account from September 2022, not a current review of the restaurant, menu, or service.",
+        "The original uses ネギキムチラーメン; ingredient naming varies by locale, so translations use the closest common leek/green-onion term."
+      ]
+    },
+    "post/何年かぶりの神座（かむくら）（ラーメン）/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/何年かぶりの神座（かむくら）（ラーメン）/index.md",
+      "sourceHash": "a5d7bb7371e1821faeac6615d3077a86dcf2aa9b953992cefaf555be52844ed3",
+      "translationHash": "c8f268c96ebb331db99fbe4f2c5f816c84fccff6cc2bc9273736343ae6aabb5f",
+      "summary": "Compared the full short visit report with Japanese and narrowed unsupported promotional descriptions to the author’s own visit and meal.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete note and compared all translations; preserved that this is a personal visit after several years, that the author ate negi kimchi ramen, and that the author enjoyed it."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Kamukura/Dotonbori Kamukura naming and the transliteration of negi (green onion/leek) kimchi ramen across all translations."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No formulas, calculations, or numerical claims appear in this restaurant visit note."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or command examples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked that both localized image references are retained and point to the shared bundle assets; the article has no external references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The dining experience is a personal account from September 2022, not a current review of the restaurant, menu, or service.",
+        "The original uses ネギキムチラーメン; ingredient naming varies by locale, so translations use the closest common leek/green-onion term."
+      ]
+    },
+    "post/何年かぶりの神座（かむくら）（ラーメン）/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/何年かぶりの神座（かむくら）（ラーメン）/index.md",
+      "sourceHash": "a5d7bb7371e1821faeac6615d3077a86dcf2aa9b953992cefaf555be52844ed3",
+      "translationHash": "e53328eed3a10770a6d5e36950b6290d6409147405ddc7d8253f8ea5ed3d4b72",
+      "summary": "Compared the full short visit report with Japanese and narrowed unsupported promotional descriptions to the author’s own visit and meal.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete note and compared all translations; preserved that this is a personal visit after several years, that the author ate negi kimchi ramen, and that the author enjoyed it."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Kamukura/Dotonbori Kamukura naming and the transliteration of negi (green onion/leek) kimchi ramen across all translations."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No formulas, calculations, or numerical claims appear in this restaurant visit note."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or command examples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked that both localized image references are retained and point to the shared bundle assets; the article has no external references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The dining experience is a personal account from September 2022, not a current review of the restaurant, menu, or service.",
+        "The original uses ネギキムチラーメン; ingredient naming varies by locale, so translations use the closest common leek/green-onion term."
+      ]
+    },
+    "post/何年かぶりの神座（かむくら）（ラーメン）/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/何年かぶりの神座（かむくら）（ラーメン）/index.md",
+      "sourceHash": "a5d7bb7371e1821faeac6615d3077a86dcf2aa9b953992cefaf555be52844ed3",
+      "translationHash": "af801c1593af7b336e26d793f2042ed0c212e33c96408bb8fe93b7d139690346",
+      "summary": "Compared the full short visit report with Japanese and narrowed unsupported promotional descriptions to the author’s own visit and meal.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete note and compared all translations; preserved that this is a personal visit after several years, that the author ate negi kimchi ramen, and that the author enjoyed it."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Kamukura/Dotonbori Kamukura naming and the transliteration of negi (green onion/leek) kimchi ramen across all translations."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No formulas, calculations, or numerical claims appear in this restaurant visit note."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or command examples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked that both localized image references are retained and point to the shared bundle assets; the article has no external references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The dining experience is a personal account from September 2022, not a current review of the restaurant, menu, or service.",
+        "The original uses ネギキムチラーメン; ingredient naming varies by locale, so translations use the closest common leek/green-onion term."
+      ]
+    },
+    "post/何年かぶりの神座（かむくら）（ラーメン）/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/何年かぶりの神座（かむくら）（ラーメン）/index.md",
+      "sourceHash": "a5d7bb7371e1821faeac6615d3077a86dcf2aa9b953992cefaf555be52844ed3",
+      "translationHash": "d9d24cad0cf81ee1968464852419784916494096b66d20a8043d7ffd04880a83",
+      "summary": "Compared the full short visit report with Japanese and narrowed unsupported promotional descriptions to the author’s own visit and meal.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete note and compared all translations; preserved that this is a personal visit after several years, that the author ate negi kimchi ramen, and that the author enjoyed it."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Kamukura/Dotonbori Kamukura naming and the transliteration of negi (green onion/leek) kimchi ramen across all translations."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No formulas, calculations, or numerical claims appear in this restaurant visit note."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or command examples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked that both localized image references are retained and point to the shared bundle assets; the article has no external references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The dining experience is a personal account from September 2022, not a current review of the restaurant, menu, or service.",
+        "The original uses ネギキムチラーメン; ingredient naming varies by locale, so translations use the closest common leek/green-onion term."
+      ]
+    },
+    "post/何年かぶりの神座（かむくら）（ラーメン）/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/何年かぶりの神座（かむくら）（ラーメン）/index.md",
+      "sourceHash": "a5d7bb7371e1821faeac6615d3077a86dcf2aa9b953992cefaf555be52844ed3",
+      "translationHash": "8fcb5e7f9117236d6417145058322240661807326aac004cbf14d88390e5d771",
+      "summary": "Compared the full short visit report with Japanese and narrowed unsupported promotional descriptions to the author’s own visit and meal.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete note and compared all translations; preserved that this is a personal visit after several years, that the author ate negi kimchi ramen, and that the author enjoyed it."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Kamukura/Dotonbori Kamukura naming and the transliteration of negi (green onion/leek) kimchi ramen across all translations."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No formulas, calculations, or numerical claims appear in this restaurant visit note."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or command examples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked that both localized image references are retained and point to the shared bundle assets; the article has no external references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The dining experience is a personal account from September 2022, not a current review of the restaurant, menu, or service.",
+        "The original uses ネギキムチラーメン; ingredient naming varies by locale, so translations use the closest common leek/green-onion term."
+      ]
+    },
+    "post/何年かぶりの神座（かむくら）（ラーメン）/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/何年かぶりの神座（かむくら）（ラーメン）/index.md",
+      "sourceHash": "a5d7bb7371e1821faeac6615d3077a86dcf2aa9b953992cefaf555be52844ed3",
+      "translationHash": "f9db93411ad78905a0394d765390fdcf360e2b88652b067a5a246bf2ab8dd965",
+      "summary": "Compared the full short visit report with Japanese and narrowed unsupported promotional descriptions to the author’s own visit and meal.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete note and compared all translations; preserved that this is a personal visit after several years, that the author ate negi kimchi ramen, and that the author enjoyed it."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Kamukura/Dotonbori Kamukura naming and the transliteration of negi (green onion/leek) kimchi ramen across all translations."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No formulas, calculations, or numerical claims appear in this restaurant visit note."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or command examples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked that both localized image references are retained and point to the shared bundle assets; the article has no external references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The dining experience is a personal account from September 2022, not a current review of the restaurant, menu, or service.",
+        "The original uses ネギキムチラーメン; ingredient naming varies by locale, so translations use the closest common leek/green-onion term."
+      ]
+    },
+    "post/何年かぶりの神座（かむくら）（ラーメン）/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/何年かぶりの神座（かむくら）（ラーメン）/index.md",
+      "sourceHash": "a5d7bb7371e1821faeac6615d3077a86dcf2aa9b953992cefaf555be52844ed3",
+      "translationHash": "747b325a2f76da5f96de602247fa0791ced1079e0d0cbe65597b418bea3ca970",
+      "summary": "Compared the full short visit report with Japanese and narrowed unsupported promotional descriptions to the author’s own visit and meal.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete note and compared all translations; preserved that this is a personal visit after several years, that the author ate negi kimchi ramen, and that the author enjoyed it."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Kamukura/Dotonbori Kamukura naming and the transliteration of negi (green onion/leek) kimchi ramen across all translations."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No formulas, calculations, or numerical claims appear in this restaurant visit note."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or command examples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked that both localized image references are retained and point to the shared bundle assets; the article has no external references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The dining experience is a personal account from September 2022, not a current review of the restaurant, menu, or service.",
+        "The original uses ネギキムチラーメン; ingredient naming varies by locale, so translations use the closest common leek/green-onion term."
+      ]
+    },
+    "post/何年かぶりの神座（かむくら）（ラーメン）/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/何年かぶりの神座（かむくら）（ラーメン）/index.md",
+      "sourceHash": "a5d7bb7371e1821faeac6615d3077a86dcf2aa9b953992cefaf555be52844ed3",
+      "translationHash": "925639b38e167a0b36a74cf24cf397dda6da8c1483e89f729d671d2c48345249",
+      "summary": "Compared the full short visit report with Japanese and narrowed unsupported promotional descriptions to the author’s own visit and meal.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete note and compared all translations; preserved that this is a personal visit after several years, that the author ate negi kimchi ramen, and that the author enjoyed it."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Kamukura/Dotonbori Kamukura naming and the transliteration of negi (green onion/leek) kimchi ramen across all translations."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No formulas, calculations, or numerical claims appear in this restaurant visit note."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or command examples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked that both localized image references are retained and point to the shared bundle assets; the article has no external references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The dining experience is a personal account from September 2022, not a current review of the restaurant, menu, or service.",
+        "The original uses ネギキムチラーメン; ingredient naming varies by locale, so translations use the closest common leek/green-onion term."
+      ]
+    },
+    "post/何年かぶりの神座（かむくら）（ラーメン）/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/何年かぶりの神座（かむくら）（ラーメン）/index.md",
+      "sourceHash": "a5d7bb7371e1821faeac6615d3077a86dcf2aa9b953992cefaf555be52844ed3",
+      "translationHash": "20dd459db422a516edc8995e9c8bd5f02041b64e67fe2a4791bbb5390d404f5f",
+      "summary": "Compared the full short visit report with Japanese and narrowed unsupported promotional descriptions to the author’s own visit and meal.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete note and compared all translations; preserved that this is a personal visit after several years, that the author ate negi kimchi ramen, and that the author enjoyed it."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Kamukura/Dotonbori Kamukura naming and the transliteration of negi (green onion/leek) kimchi ramen across all translations."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No formulas, calculations, or numerical claims appear in this restaurant visit note."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or command examples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked that both localized image references are retained and point to the shared bundle assets; the article has no external references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The dining experience is a personal account from September 2022, not a current review of the restaurant, menu, or service.",
+        "The original uses ネギキムチラーメン; ingredient naming varies by locale, so translations use the closest common leek/green-onion term."
+      ]
+    },
+    "post/何年かぶりの神座（かむくら）（ラーメン）/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/何年かぶりの神座（かむくら）（ラーメン）/index.md",
+      "sourceHash": "a5d7bb7371e1821faeac6615d3077a86dcf2aa9b953992cefaf555be52844ed3",
+      "translationHash": "5dd9299d7e77806d0548ccae451a28f98f67fd52b2b552a304d77aab5e09b5b9",
+      "summary": "Compared the full short visit report with Japanese and narrowed unsupported promotional descriptions to the author’s own visit and meal.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete note and compared all translations; preserved that this is a personal visit after several years, that the author ate negi kimchi ramen, and that the author enjoyed it."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Kamukura/Dotonbori Kamukura naming and the transliteration of negi (green onion/leek) kimchi ramen across all translations."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No formulas, calculations, or numerical claims appear in this restaurant visit note."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or command examples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked that both localized image references are retained and point to the shared bundle assets; the article has no external references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The dining experience is a personal account from September 2022, not a current review of the restaurant, menu, or service.",
+        "The original uses ネギキムチラーメン; ingredient naming varies by locale, so translations use the closest common leek/green-onion term."
+      ]
+    }
+  }
+}

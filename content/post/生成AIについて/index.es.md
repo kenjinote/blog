@@ -6,15 +6,15 @@
 
 
 
-title: '¡Aprende sobre la IA generativa! Colección de videos de conferencias recomendados impartidos por profesores de la Universidad de Tokio'
-date: "2026-09-24T19:44:38+09:00"
+title: "Tres videos de conferencias del Japan National Press Club sobre IA generativa"
 slug: "IA generativaについて"
 date: 2024-04-16T02:13:56+09:00
+lastmod: 2026-11-24T00:00:00+09:00
 tags: ["IA generativa", "YouTube", "Conferencia"]
 draft: false
 image: "img.webp"
 categories: ["ai-technology"]
-description: 'Una compilación de videos de clases por parte del cuerpo docente de la Universidad de Tokio donde puedes aprender en profundidad sobre la tendencia en la IA generativa. Presentaremos explicaciones en video fáciles de entender e informativas impartidas por líderes en la investigación de IA como el profesor Masayuki Nakao, el profesor Kuniyoshi Sakai y el profesor Yutaka Matsuo entre 2023 y 2024.'
+description: "Lista de tres videos del Japan National Press Club de 2023–2024 sobre IA generativa, con Masayuki Nakao, Kuniyoshi Sakai y Yutaka Matsuo."
 ---
 
 
@@ -30,10 +30,16 @@ description: 'Una compilación de videos de clases por parte del cuerpo docente 
 
 {{<youtube uN0eilnXl4E>}}
 
+[Registro del Japan National Press Club](https://www.jnpc.or.jp/archive/conferences/36601/report)
+
 - "IA generativa" (2) Kuniyoshi Sakai, profesor de posgrado de la Universidad de Tokio, 2023.10.11
 
 {{<youtube wz1-DOZoQt0>}}
 
+[Registro del Japan National Press Club](https://www.jnpc.or.jp/archive/conferences/36631/report)
+
 - "IA generativa" (3) Yutaka Matsuo, profesor de posgrado de la Universidad de Tokio, 2024.3.15
 
 {{<youtube U9vhGvFxKu0>}}
+
+[Registro del Japan National Press Club](https://www.jnpc.or.jp/archive/conferences/36714/report)

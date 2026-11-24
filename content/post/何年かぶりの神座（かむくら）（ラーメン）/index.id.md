@@ -1,13 +1,13 @@
 ---
-title: 'Ke ''Kamukura'' Lagi Setelah Bertahun-tahun! Menikmati Ramen Negi Kimchi yang Direkomendasikan'
-date: "2026-09-24T19:44:38+09:00"
+title: "Kembali ke Kamukura setelah bertahun-tahun untuk menikmati ramen negi kimchi"
 slug: "何年かぶりのKamukura（かむくら）（Ramen）"
 date: 2022-09-09T21:45:19+09:00
+lastmod: 2026-11-24T00:00:00+09:00
 tags: ["Ramen", "Kamukura"]
 draft: false
 image: "images/img2.webp"
 categories: ["it-technology"]
-description: 'Saya pergi lagi ke kedai ramen populer ''Dotonbori Kamukura'' setelah sekian lama. Kali ini saya memesan ''Ramen Negi Kimchi'' yang direkomendasikan! Kaldu unik dan lezat yang terkadang sangat ingin saya makan ini sangat serasi dengan banyak sayuran dan kimchi daun bawang.'
+description: "Catatan pribadi singkat tentang kunjungan saya kembali ke Dotonbori Kamukura setelah beberapa tahun dan ramen negi kimchi yang saya santap."
 ---
 
 Saya pergi ke Kamukura (Ramen) untuk pertama kalinya dalam beberapa tahun.

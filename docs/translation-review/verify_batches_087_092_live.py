@@ -352,11 +352,36 @@ ARTICLES = {
         "markers": ["urlopen(request,timeout=15)", "response.headers.get_content_type()", "2*1024*1024", "webbrowser.open(temp_path.as_uri(),new=2)", "temp_path.unlink()", "PNG signature"],
         "date": "2025-02-24",
     },
+    125: {
+        "bundle": ROOT / "content/post/自分にできないことができる人に敬意を払おう",
+        "slug": "自分にできないことができる人に敬意を払おう",
+        "links": [],
+        "markers": [],
+        "scopeMarkers": {"ja": "敬意を払おう", "en": "Respect", "zh-cn": "尊重", "es": "Respet", "ko": "존중", "pt": "Respeit", "zh-tw": "尊重", "hi": "सम्मान", "fr": "Respect", "de": "RespektierenwirMenschen", "ar": "لنحترم", "ru": "Уважать", "id": "Hormati"},
+        "date": "2023-08-01",
+    },
+    124: {
+        "bundle": ROOT / "content/post/生成AIについて",
+        "slug": "生成AIについて",
+        "links": ["https://www.jnpc.or.jp/archive/conferences/36601/report", "https://www.jnpc.or.jp/archive/conferences/36631/report", "https://www.jnpc.or.jp/archive/conferences/36714/report"],
+        "markers": [],
+        "scopeMarkers": {"ja": "日本記者クラブの会見記録", "en": "Japan National Press Club event record", "zh-cn": "日本记者俱乐部会见记录", "es": "Registro del Japan National Press Club", "ko": "일본기자클럽 행사 기록", "pt": "Registro do Japan National Press Club", "zh-tw": "日本記者俱樂部會見紀錄", "hi": "Japan National Press Club का कार्यक्रम विवरण", "fr": "Compte rendu du Japan National Press Club", "de": "Veranstaltungsbericht des Japan National Press Club", "ar": "سجل الفعالية لدى نادي الصحافة الوطني الياباني", "ru": "Запись мероприятия Японского национального пресс-клуба", "id": "Catatan acara Japan National Press Club"},
+        "date": "2024-04-16",
+    },
+    123: {
+        "bundle": ROOT / "content/post/何年かぶりの神座（かむくら）（ラーメン）",
+        "slug": "何年かぶりの神座（かむくら）（ラーメン）",
+        "links": [],
+        "markers": [],
+        "scopeMarkers": {"ja": "ネギキムチラーメン", "en": "Green Onion Kimchi Ramen", "zh-cn": "葱花泡菜拉面", "es": "Ramen de cebolla verde y kimchi", "ko": "파김치 라멘", "pt": "Ramen de Kimchi e Cebolinha", "zh-tw": "蔥泡菜拉麵", "hi": "हरी प्याज किमची रामेन", "fr": "Ramen au Kimchi et à la Ciboule", "de": "Frühlingszwiebel-Kimchi-Ramen", "ar": "رامن كيمتشي البصل الأخضر", "ru": "Рамэн с зеленым луком и кимчи", "id": "Ramen Daun Bawang Kimchi"},
+        "date": "2022-09-09",
+    },
     122: {
         "bundle": ROOT / "content/post/今日の作業環境",
         "slug": "今日の作業環境",
         "links": [],
-        "markers": ["Lightning", "iPad", "park"],
+        "markers": [],
+        "scopeMarkers": {"ja": "子供の机", "en": "Children's Desk", "zh-cn": "孩子的书桌", "es": "El escritorio del niño", "ko": "아이의 책상", "pt": "Mesa das crianças", "zh-tw": "孩子的書桌", "hi": "बच्चों की मेज", "fr": "Le bureau des enfants", "de": "Kinderschreibtisch", "ar": "مكتب الطفل", "ru": "Детский стол", "id": "Meja Anak"},
         "date": "2022-09-04",
     },
     121: {
@@ -497,7 +522,7 @@ def slug_key(value):
 parser = argparse.ArgumentParser()
 parser.add_argument("--ci-run", type=int, required=True)
 parser.add_argument("--commit", required=True)
-parser.add_argument("--max-batch", type=int, choices=(90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122), default=122)
+parser.add_argument("--max-batch", type=int, choices=(90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125), default=125)
 args = parser.parse_args()
 ARTICLES = {number: article for number, article in ARTICLES.items() if number <= args.max_batch}
 with urllib.request.urlopen(f"https://github.com/kenjinote/blog/actions/runs/{args.ci_run}", timeout=45) as response:

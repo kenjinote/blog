@@ -1,13 +1,13 @@
 ---
-title: '学习生成式AI！东京大学教授团队的推荐讲座视频总结'
-date: "2026-09-24T19:44:38+09:00"
+title: "日本记者俱乐部的三场生成式AI讲座视频"
 slug: "生成式AIについて"
 date: 2024-04-16T02:13:56+09:00
+lastmod: 2026-11-24T00:00:00+09:00
 tags: ["生成式AI", "YouTube", "讲座"]
 draft: false
 image: "img.webp"
 categories: ["ai-technology"]
-description: '总结了由东京大学教授团队带来的、能深度学习热门话题“生成式AI”的讲座视频。介绍了由中尾政之教授、酒井邦嘉教授、松尾丰教授等AI研究的领军人物们在2023年至2024年间主讲的、通俗易懂且大有裨益的解说视频。'
+description: "汇总了2023至2024年日本记者俱乐部举办的三场生成式AI讲座视频，主讲人为中尾政之、酒井邦嘉和松尾丰。"
 ---
 
 ## 关于生成式AI的讲座视频
@@ -16,10 +16,16 @@ description: '总结了由东京大学教授团队带来的、能深度学习热
 
 {{<youtube uN0eilnXl4E>}}
 
+[日本记者俱乐部会见记录](https://www.jnpc.or.jp/archive/conferences/36601/report)
+
 - 「生成式AI」(2) 酒井邦嘉・东京大学研究生院教授 2023.10.11
 
 {{<youtube wz1-DOZoQt0>}}
 
+[日本记者俱乐部会见记录](https://www.jnpc.or.jp/archive/conferences/36631/report)
+
 - 「生成式AI」(3) 松尾丰・东京大学研究生院教授 2024.3.15
 
 {{<youtube U9vhGvFxKu0>}}
+
+[日本记者俱乐部会见记录](https://www.jnpc.or.jp/archive/conferences/36714/report)

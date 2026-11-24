@@ -1,0 +1,455 @@
+{
+  "version": 1,
+  "batch": 124,
+  "article": "日本記者クラブの生成AI講演動画3本",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "eee4299f542087a2e1cafd7ca1230f4474c742ea9e8138a7791a757078829974",
+  "sources": [
+    "https://www.jnpc.or.jp/archive/conferences/36601/report",
+    "https://www.jnpc.or.jp/archive/conferences/36631/report",
+    "https://www.jnpc.or.jp/archive/conferences/36714/report"
+  ],
+  "scope": "Compared titles, descriptions, speaker names and roles, dates, all three embedded video IDs, links, and complete translated articles against the Japanese source and official Japan National Press Club event records.",
+  "findings": [
+    "Removed duplicate future dates, retained the 2024-04-16 publication date, and set lastmod to the review date.",
+    "Changed the recommendation framing to a neutral list of three recorded talks; the source provides no comparative basis for calling them recommended or identifying the speakers as leading researchers.",
+    "Confirmed Nakao on 2023-09-08, Sakai on 2023-10-11, and Matsuo on 2024-03-15 against the Club’s event records.",
+    "Added the corresponding official Club event record below each embedded video in Japanese and all twelve translations.",
+    "Retained the original YouTube embeds and the short list format; did not characterize the talks’ claims as settled facts."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/生成AIについて/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/生成AIについて/index.md",
+      "sourceHash": "eee4299f542087a2e1cafd7ca1230f4474c742ea9e8138a7791a757078829974",
+      "translationHash": "0228dbfb5c0bdba2209f4870682fa21d9a6a7552eb977360986392dd448223d1",
+      "summary": "Reviewed the complete video list against Japanese and official Japan National Press Club records; removed unsupported recommendation framing and added provenance links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full list with the Japanese source and Japan National Press Club records; verified the three speakers, event dates, and that this is a video collection rather than an evaluation of the talks."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked generative AI terminology, speaker names, and institutional roles against the Japanese Club records and preserved them consistently in this translation."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article is a video list and contains no mathematical formulas or numerical claims beyond event dates and sequence labels."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked direct links to the three corresponding Japan National Press Club event records; preserved the embedded YouTube video IDs."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "These are recordings from 2023–2024; this curated list is not a comprehensive or current survey of generative AI research.",
+        "The videos were not transcribed or independently reviewed for the accuracy of the speakers’ arguments."
+      ]
+    },
+    "post/生成AIについて/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/生成AIについて/index.md",
+      "sourceHash": "eee4299f542087a2e1cafd7ca1230f4474c742ea9e8138a7791a757078829974",
+      "translationHash": "721f7b2194f6da906a166f1e6b0a72ff13c2f690b0a5d0fb4179afdb9f7f4510",
+      "summary": "Reviewed the complete video list against Japanese and official Japan National Press Club records; removed unsupported recommendation framing and added provenance links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full list with the Japanese source and Japan National Press Club records; verified the three speakers, event dates, and that this is a video collection rather than an evaluation of the talks."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked generative AI terminology, speaker names, and institutional roles against the Japanese Club records and preserved them consistently in this translation."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article is a video list and contains no mathematical formulas or numerical claims beyond event dates and sequence labels."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked direct links to the three corresponding Japan National Press Club event records; preserved the embedded YouTube video IDs."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "These are recordings from 2023–2024; this curated list is not a comprehensive or current survey of generative AI research.",
+        "The videos were not transcribed or independently reviewed for the accuracy of the speakers’ arguments."
+      ]
+    },
+    "post/生成AIについて/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/生成AIについて/index.md",
+      "sourceHash": "eee4299f542087a2e1cafd7ca1230f4474c742ea9e8138a7791a757078829974",
+      "translationHash": "8d2f6a7f166fc1bed05281a38613ebf59c791e76e8b8eafbc6a69a55acf341cc",
+      "summary": "Reviewed the complete video list against Japanese and official Japan National Press Club records; removed unsupported recommendation framing and added provenance links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full list with the Japanese source and Japan National Press Club records; verified the three speakers, event dates, and that this is a video collection rather than an evaluation of the talks."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked generative AI terminology, speaker names, and institutional roles against the Japanese Club records and preserved them consistently in this translation."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article is a video list and contains no mathematical formulas or numerical claims beyond event dates and sequence labels."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked direct links to the three corresponding Japan National Press Club event records; preserved the embedded YouTube video IDs."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "These are recordings from 2023–2024; this curated list is not a comprehensive or current survey of generative AI research.",
+        "The videos were not transcribed or independently reviewed for the accuracy of the speakers’ arguments."
+      ]
+    },
+    "post/生成AIについて/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/生成AIについて/index.md",
+      "sourceHash": "eee4299f542087a2e1cafd7ca1230f4474c742ea9e8138a7791a757078829974",
+      "translationHash": "2ce37ed946e95626c487b2b54253094a5d8ea9fab00cf73c4d82e38c5414bc0d",
+      "summary": "Reviewed the complete video list against Japanese and official Japan National Press Club records; removed unsupported recommendation framing and added provenance links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full list with the Japanese source and Japan National Press Club records; verified the three speakers, event dates, and that this is a video collection rather than an evaluation of the talks."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked generative AI terminology, speaker names, and institutional roles against the Japanese Club records and preserved them consistently in this translation."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article is a video list and contains no mathematical formulas or numerical claims beyond event dates and sequence labels."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked direct links to the three corresponding Japan National Press Club event records; preserved the embedded YouTube video IDs."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "These are recordings from 2023–2024; this curated list is not a comprehensive or current survey of generative AI research.",
+        "The videos were not transcribed or independently reviewed for the accuracy of the speakers’ arguments."
+      ]
+    },
+    "post/生成AIについて/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/生成AIについて/index.md",
+      "sourceHash": "eee4299f542087a2e1cafd7ca1230f4474c742ea9e8138a7791a757078829974",
+      "translationHash": "048cd8626a1bed1d22426f5269763104c8a061e1633566c016267adf93a43fda",
+      "summary": "Reviewed the complete video list against Japanese and official Japan National Press Club records; removed unsupported recommendation framing and added provenance links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full list with the Japanese source and Japan National Press Club records; verified the three speakers, event dates, and that this is a video collection rather than an evaluation of the talks."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked generative AI terminology, speaker names, and institutional roles against the Japanese Club records and preserved them consistently in this translation."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article is a video list and contains no mathematical formulas or numerical claims beyond event dates and sequence labels."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked direct links to the three corresponding Japan National Press Club event records; preserved the embedded YouTube video IDs."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "These are recordings from 2023–2024; this curated list is not a comprehensive or current survey of generative AI research.",
+        "The videos were not transcribed or independently reviewed for the accuracy of the speakers’ arguments."
+      ]
+    },
+    "post/生成AIについて/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/生成AIについて/index.md",
+      "sourceHash": "eee4299f542087a2e1cafd7ca1230f4474c742ea9e8138a7791a757078829974",
+      "translationHash": "b5553bd1888af410fc7b8a821a3e4648e209971d5d94e13ef8663a49f1a687c5",
+      "summary": "Reviewed the complete video list against Japanese and official Japan National Press Club records; removed unsupported recommendation framing and added provenance links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full list with the Japanese source and Japan National Press Club records; verified the three speakers, event dates, and that this is a video collection rather than an evaluation of the talks."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked generative AI terminology, speaker names, and institutional roles against the Japanese Club records and preserved them consistently in this translation."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article is a video list and contains no mathematical formulas or numerical claims beyond event dates and sequence labels."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked direct links to the three corresponding Japan National Press Club event records; preserved the embedded YouTube video IDs."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "These are recordings from 2023–2024; this curated list is not a comprehensive or current survey of generative AI research.",
+        "The videos were not transcribed or independently reviewed for the accuracy of the speakers’ arguments."
+      ]
+    },
+    "post/生成AIについて/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/生成AIについて/index.md",
+      "sourceHash": "eee4299f542087a2e1cafd7ca1230f4474c742ea9e8138a7791a757078829974",
+      "translationHash": "c5753a161d33446e180dbde5497c8a9300c12b12e8e495d3144223cebb7c64bd",
+      "summary": "Reviewed the complete video list against Japanese and official Japan National Press Club records; removed unsupported recommendation framing and added provenance links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full list with the Japanese source and Japan National Press Club records; verified the three speakers, event dates, and that this is a video collection rather than an evaluation of the talks."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked generative AI terminology, speaker names, and institutional roles against the Japanese Club records and preserved them consistently in this translation."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article is a video list and contains no mathematical formulas or numerical claims beyond event dates and sequence labels."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked direct links to the three corresponding Japan National Press Club event records; preserved the embedded YouTube video IDs."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "These are recordings from 2023–2024; this curated list is not a comprehensive or current survey of generative AI research.",
+        "The videos were not transcribed or independently reviewed for the accuracy of the speakers’ arguments."
+      ]
+    },
+    "post/生成AIについて/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/生成AIについて/index.md",
+      "sourceHash": "eee4299f542087a2e1cafd7ca1230f4474c742ea9e8138a7791a757078829974",
+      "translationHash": "9a09602a523565795d70344234ba5460bd282e0c8f368b822353a43f3ff43608",
+      "summary": "Reviewed the complete video list against Japanese and official Japan National Press Club records; removed unsupported recommendation framing and added provenance links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full list with the Japanese source and Japan National Press Club records; verified the three speakers, event dates, and that this is a video collection rather than an evaluation of the talks."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked generative AI terminology, speaker names, and institutional roles against the Japanese Club records and preserved them consistently in this translation."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article is a video list and contains no mathematical formulas or numerical claims beyond event dates and sequence labels."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked direct links to the three corresponding Japan National Press Club event records; preserved the embedded YouTube video IDs."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "These are recordings from 2023–2024; this curated list is not a comprehensive or current survey of generative AI research.",
+        "The videos were not transcribed or independently reviewed for the accuracy of the speakers’ arguments."
+      ]
+    },
+    "post/生成AIについて/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/生成AIについて/index.md",
+      "sourceHash": "eee4299f542087a2e1cafd7ca1230f4474c742ea9e8138a7791a757078829974",
+      "translationHash": "e054504bf021312808ce50fffc64af2a679b151d3b33de1bd597909a11599d33",
+      "summary": "Reviewed the complete video list against Japanese and official Japan National Press Club records; removed unsupported recommendation framing and added provenance links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full list with the Japanese source and Japan National Press Club records; verified the three speakers, event dates, and that this is a video collection rather than an evaluation of the talks."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked generative AI terminology, speaker names, and institutional roles against the Japanese Club records and preserved them consistently in this translation."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article is a video list and contains no mathematical formulas or numerical claims beyond event dates and sequence labels."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked direct links to the three corresponding Japan National Press Club event records; preserved the embedded YouTube video IDs."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "These are recordings from 2023–2024; this curated list is not a comprehensive or current survey of generative AI research.",
+        "The videos were not transcribed or independently reviewed for the accuracy of the speakers’ arguments."
+      ]
+    },
+    "post/生成AIについて/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/生成AIについて/index.md",
+      "sourceHash": "eee4299f542087a2e1cafd7ca1230f4474c742ea9e8138a7791a757078829974",
+      "translationHash": "73a92382ae8c6ab9167e60202b350740107aad01ced2d7b10924a3b006ba6a87",
+      "summary": "Reviewed the complete video list against Japanese and official Japan National Press Club records; removed unsupported recommendation framing and added provenance links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full list with the Japanese source and Japan National Press Club records; verified the three speakers, event dates, and that this is a video collection rather than an evaluation of the talks."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked generative AI terminology, speaker names, and institutional roles against the Japanese Club records and preserved them consistently in this translation."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article is a video list and contains no mathematical formulas or numerical claims beyond event dates and sequence labels."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked direct links to the three corresponding Japan National Press Club event records; preserved the embedded YouTube video IDs."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "These are recordings from 2023–2024; this curated list is not a comprehensive or current survey of generative AI research.",
+        "The videos were not transcribed or independently reviewed for the accuracy of the speakers’ arguments."
+      ]
+    },
+    "post/生成AIについて/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/生成AIについて/index.md",
+      "sourceHash": "eee4299f542087a2e1cafd7ca1230f4474c742ea9e8138a7791a757078829974",
+      "translationHash": "3eaca478df6b3d3946330d0559178444e336e6f0d8de4b078d981b0b53e736d2",
+      "summary": "Reviewed the complete video list against Japanese and official Japan National Press Club records; removed unsupported recommendation framing and added provenance links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full list with the Japanese source and Japan National Press Club records; verified the three speakers, event dates, and that this is a video collection rather than an evaluation of the talks."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked generative AI terminology, speaker names, and institutional roles against the Japanese Club records and preserved them consistently in this translation."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article is a video list and contains no mathematical formulas or numerical claims beyond event dates and sequence labels."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked direct links to the three corresponding Japan National Press Club event records; preserved the embedded YouTube video IDs."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "These are recordings from 2023–2024; this curated list is not a comprehensive or current survey of generative AI research.",
+        "The videos were not transcribed or independently reviewed for the accuracy of the speakers’ arguments."
+      ]
+    },
+    "post/生成AIについて/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/生成AIについて/index.md",
+      "sourceHash": "eee4299f542087a2e1cafd7ca1230f4474c742ea9e8138a7791a757078829974",
+      "translationHash": "67b09f71cb61698420557df0a66799f832a06cda41f9cf5e611a1c7ad8385d91",
+      "summary": "Reviewed the complete video list against Japanese and official Japan National Press Club records; removed unsupported recommendation framing and added provenance links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full list with the Japanese source and Japan National Press Club records; verified the three speakers, event dates, and that this is a video collection rather than an evaluation of the talks."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked generative AI terminology, speaker names, and institutional roles against the Japanese Club records and preserved them consistently in this translation."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article is a video list and contains no mathematical formulas or numerical claims beyond event dates and sequence labels."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked direct links to the three corresponding Japan National Press Club event records; preserved the embedded YouTube video IDs."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "These are recordings from 2023–2024; this curated list is not a comprehensive or current survey of generative AI research.",
+        "The videos were not transcribed or independently reviewed for the accuracy of the speakers’ arguments."
+      ]
+    }
+  }
+}

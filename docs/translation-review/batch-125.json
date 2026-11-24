@@ -1,0 +1,438 @@
+{
+  "version": 1,
+  "batch": 125,
+  "article": "自分にできない仕事をする人への敬意",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "55079e798ee5d95bd95c3b75fd749b861b46dc31ec8c69c32853237061820665",
+  "sources": [],
+  "scope": "Compared the complete Japanese reflection, title, and description against all twelve translated versions, including language consistency and register.",
+  "findings": [
+    "Removed duplicate future dates, retained original publication date 2023-08-01, and set lastmod to the review date.",
+    "Narrowed descriptions that claimed additional advice about improving relationships or mutual respect not present in the source.",
+    "Found and corrected a serious German-language error: the German file body was in Spanish. Replaced it with a complete German translation.",
+    "Kept the remaining concise translations aligned to the four source statements and first-person closing."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/自分にできないことができる人に敬意を払おう/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/自分にできないことができる人に敬意を払おう/index.md",
+      "sourceHash": "55079e798ee5d95bd95c3b75fd749b861b46dc31ec8c69c32853237061820665",
+      "translationHash": "72dafd7bd9e52dce6db53eefcf60bd6e4a4f6fd1e59437154c940b4f014322cc",
+      "summary": "Reviewed the full short reflection against Japanese, narrowed descriptions to the actual text, and corrected the German translation, which had contained Spanish instead.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all four brief source statements with each language, including the claim that people sometimes rank jobs or positions and the author’s intention to remember the principle."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked respectful register and the meaning of people doing work beyond one’s own abilities; corrected the German body that had accidentally contained Spanish text."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The reflection contains no formulas, calculations, or numerical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The reflection contains no code or command examples."
+        },
+        "links": {
+          "status": "not_applicable",
+          "note": "The article contains no external links."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The short essay presents the author’s personal maxim, not an empirical claim about how common disrespect is."
+      ]
+    },
+    "post/自分にできないことができる人に敬意を払おう/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/自分にできないことができる人に敬意を払おう/index.md",
+      "sourceHash": "55079e798ee5d95bd95c3b75fd749b861b46dc31ec8c69c32853237061820665",
+      "translationHash": "1ef9994623b47f1bafbd3507df2540aa7989d35b473c66693824080cb0586d94",
+      "summary": "Reviewed the full short reflection against Japanese, narrowed descriptions to the actual text, and corrected the German translation, which had contained Spanish instead.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all four brief source statements with each language, including the claim that people sometimes rank jobs or positions and the author’s intention to remember the principle."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked respectful register and the meaning of people doing work beyond one’s own abilities; corrected the German body that had accidentally contained Spanish text."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The reflection contains no formulas, calculations, or numerical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The reflection contains no code or command examples."
+        },
+        "links": {
+          "status": "not_applicable",
+          "note": "The article contains no external links."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The short essay presents the author’s personal maxim, not an empirical claim about how common disrespect is."
+      ]
+    },
+    "post/自分にできないことができる人に敬意を払おう/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/自分にできないことができる人に敬意を払おう/index.md",
+      "sourceHash": "55079e798ee5d95bd95c3b75fd749b861b46dc31ec8c69c32853237061820665",
+      "translationHash": "78514f84451540d2252379cbba966468961bbb5e7dae85935c9716abbb078f7b",
+      "summary": "Reviewed the full short reflection against Japanese, narrowed descriptions to the actual text, and corrected the German translation, which had contained Spanish instead.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all four brief source statements with each language, including the claim that people sometimes rank jobs or positions and the author’s intention to remember the principle."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked respectful register and the meaning of people doing work beyond one’s own abilities; corrected the German body that had accidentally contained Spanish text."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The reflection contains no formulas, calculations, or numerical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The reflection contains no code or command examples."
+        },
+        "links": {
+          "status": "not_applicable",
+          "note": "The article contains no external links."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The short essay presents the author’s personal maxim, not an empirical claim about how common disrespect is."
+      ]
+    },
+    "post/自分にできないことができる人に敬意を払おう/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/自分にできないことができる人に敬意を払おう/index.md",
+      "sourceHash": "55079e798ee5d95bd95c3b75fd749b861b46dc31ec8c69c32853237061820665",
+      "translationHash": "168471646e960316f2ff7fb9ebb8b3db80ff96dd5e9e6f484e3081397724e15b",
+      "summary": "Reviewed the full short reflection against Japanese, narrowed descriptions to the actual text, and corrected the German translation, which had contained Spanish instead.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all four brief source statements with each language, including the claim that people sometimes rank jobs or positions and the author’s intention to remember the principle."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked respectful register and the meaning of people doing work beyond one’s own abilities; corrected the German body that had accidentally contained Spanish text."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The reflection contains no formulas, calculations, or numerical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The reflection contains no code or command examples."
+        },
+        "links": {
+          "status": "not_applicable",
+          "note": "The article contains no external links."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The short essay presents the author’s personal maxim, not an empirical claim about how common disrespect is."
+      ]
+    },
+    "post/自分にできないことができる人に敬意を払おう/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/自分にできないことができる人に敬意を払おう/index.md",
+      "sourceHash": "55079e798ee5d95bd95c3b75fd749b861b46dc31ec8c69c32853237061820665",
+      "translationHash": "7bd3d3707d065138a1590bbedbba54c3b96849c58221fbc197e639355550a052",
+      "summary": "Reviewed the full short reflection against Japanese, narrowed descriptions to the actual text, and corrected the German translation, which had contained Spanish instead.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all four brief source statements with each language, including the claim that people sometimes rank jobs or positions and the author’s intention to remember the principle."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked respectful register and the meaning of people doing work beyond one’s own abilities; corrected the German body that had accidentally contained Spanish text."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The reflection contains no formulas, calculations, or numerical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The reflection contains no code or command examples."
+        },
+        "links": {
+          "status": "not_applicable",
+          "note": "The article contains no external links."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The short essay presents the author’s personal maxim, not an empirical claim about how common disrespect is."
+      ]
+    },
+    "post/自分にできないことができる人に敬意を払おう/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/自分にできないことができる人に敬意を払おう/index.md",
+      "sourceHash": "55079e798ee5d95bd95c3b75fd749b861b46dc31ec8c69c32853237061820665",
+      "translationHash": "f09cef1ec68e7f06caef3d2163f3a6eef0cbffd0bb1596a9b3b468e92452e243",
+      "summary": "Reviewed the full short reflection against Japanese, narrowed descriptions to the actual text, and corrected the German translation, which had contained Spanish instead.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all four brief source statements with each language, including the claim that people sometimes rank jobs or positions and the author’s intention to remember the principle."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked respectful register and the meaning of people doing work beyond one’s own abilities; corrected the German body that had accidentally contained Spanish text."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The reflection contains no formulas, calculations, or numerical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The reflection contains no code or command examples."
+        },
+        "links": {
+          "status": "not_applicable",
+          "note": "The article contains no external links."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The short essay presents the author’s personal maxim, not an empirical claim about how common disrespect is."
+      ]
+    },
+    "post/自分にできないことができる人に敬意を払おう/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/自分にできないことができる人に敬意を払おう/index.md",
+      "sourceHash": "55079e798ee5d95bd95c3b75fd749b861b46dc31ec8c69c32853237061820665",
+      "translationHash": "579869fada290ec7244df715db26d218c399a3fe22954f38a903b18df0402a74",
+      "summary": "Reviewed the full short reflection against Japanese, narrowed descriptions to the actual text, and corrected the German translation, which had contained Spanish instead.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all four brief source statements with each language, including the claim that people sometimes rank jobs or positions and the author’s intention to remember the principle."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked respectful register and the meaning of people doing work beyond one’s own abilities; corrected the German body that had accidentally contained Spanish text."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The reflection contains no formulas, calculations, or numerical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The reflection contains no code or command examples."
+        },
+        "links": {
+          "status": "not_applicable",
+          "note": "The article contains no external links."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The short essay presents the author’s personal maxim, not an empirical claim about how common disrespect is."
+      ]
+    },
+    "post/自分にできないことができる人に敬意を払おう/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/自分にできないことができる人に敬意を払おう/index.md",
+      "sourceHash": "55079e798ee5d95bd95c3b75fd749b861b46dc31ec8c69c32853237061820665",
+      "translationHash": "5942241489806ab2fda0dd42074a871c300ad81da8b64a7598047e7d45a5bb0d",
+      "summary": "Reviewed the full short reflection against Japanese, narrowed descriptions to the actual text, and corrected the German translation, which had contained Spanish instead.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all four brief source statements with each language, including the claim that people sometimes rank jobs or positions and the author’s intention to remember the principle."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked respectful register and the meaning of people doing work beyond one’s own abilities; corrected the German body that had accidentally contained Spanish text."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The reflection contains no formulas, calculations, or numerical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The reflection contains no code or command examples."
+        },
+        "links": {
+          "status": "not_applicable",
+          "note": "The article contains no external links."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The short essay presents the author’s personal maxim, not an empirical claim about how common disrespect is."
+      ]
+    },
+    "post/自分にできないことができる人に敬意を払おう/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/自分にできないことができる人に敬意を払おう/index.md",
+      "sourceHash": "55079e798ee5d95bd95c3b75fd749b861b46dc31ec8c69c32853237061820665",
+      "translationHash": "fe7222196023a499a1808bf5e7fd5a58fb7c2b429f2198d56829f19a19f0ed76",
+      "summary": "Reviewed the full short reflection against Japanese, narrowed descriptions to the actual text, and corrected the German translation, which had contained Spanish instead.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all four brief source statements with each language, including the claim that people sometimes rank jobs or positions and the author’s intention to remember the principle."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked respectful register and the meaning of people doing work beyond one’s own abilities; corrected the German body that had accidentally contained Spanish text."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The reflection contains no formulas, calculations, or numerical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The reflection contains no code or command examples."
+        },
+        "links": {
+          "status": "not_applicable",
+          "note": "The article contains no external links."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The short essay presents the author’s personal maxim, not an empirical claim about how common disrespect is."
+      ]
+    },
+    "post/自分にできないことができる人に敬意を払おう/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/自分にできないことができる人に敬意を払おう/index.md",
+      "sourceHash": "55079e798ee5d95bd95c3b75fd749b861b46dc31ec8c69c32853237061820665",
+      "translationHash": "f82be56925d456eed657263fcc073462c9c9097397106fa70a1a9ccf9744be27",
+      "summary": "Reviewed the full short reflection against Japanese, narrowed descriptions to the actual text, and corrected the German translation, which had contained Spanish instead.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all four brief source statements with each language, including the claim that people sometimes rank jobs or positions and the author’s intention to remember the principle."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked respectful register and the meaning of people doing work beyond one’s own abilities; corrected the German body that had accidentally contained Spanish text."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The reflection contains no formulas, calculations, or numerical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The reflection contains no code or command examples."
+        },
+        "links": {
+          "status": "not_applicable",
+          "note": "The article contains no external links."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The short essay presents the author’s personal maxim, not an empirical claim about how common disrespect is."
+      ]
+    },
+    "post/自分にできないことができる人に敬意を払おう/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/自分にできないことができる人に敬意を払おう/index.md",
+      "sourceHash": "55079e798ee5d95bd95c3b75fd749b861b46dc31ec8c69c32853237061820665",
+      "translationHash": "797f259daed3ea5c0c9e41982db53ba907fa199dcc241129aa569fc9e8646db8",
+      "summary": "Reviewed the full short reflection against Japanese, narrowed descriptions to the actual text, and corrected the German translation, which had contained Spanish instead.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all four brief source statements with each language, including the claim that people sometimes rank jobs or positions and the author’s intention to remember the principle."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked respectful register and the meaning of people doing work beyond one’s own abilities; corrected the German body that had accidentally contained Spanish text."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The reflection contains no formulas, calculations, or numerical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The reflection contains no code or command examples."
+        },
+        "links": {
+          "status": "not_applicable",
+          "note": "The article contains no external links."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The short essay presents the author’s personal maxim, not an empirical claim about how common disrespect is."
+      ]
+    },
+    "post/自分にできないことができる人に敬意を払おう/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/自分にできないことができる人に敬意を払おう/index.md",
+      "sourceHash": "55079e798ee5d95bd95c3b75fd749b861b46dc31ec8c69c32853237061820665",
+      "translationHash": "05bd204157693a248c871f3352b53326c41276f0c6c0d5dad6c81c1648e25769",
+      "summary": "Reviewed the full short reflection against Japanese, narrowed descriptions to the actual text, and corrected the German translation, which had contained Spanish instead.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all four brief source statements with each language, including the claim that people sometimes rank jobs or positions and the author’s intention to remember the principle."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked respectful register and the meaning of people doing work beyond one’s own abilities; corrected the German body that had accidentally contained Spanish text."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The reflection contains no formulas, calculations, or numerical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The reflection contains no code or command examples."
+        },
+        "links": {
+          "status": "not_applicable",
+          "note": "The article contains no external links."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The short essay presents the author’s personal maxim, not an empirical claim about how common disrespect is."
+      ]
+    }
+  }
+}

@@ -1,13 +1,13 @@
 ---
-title: 'Faites preuve de respect envers ceux qui peuvent faire ce que vous ne pouvez pas | État d''esprit pour supprimer la supériorité au travail'
-date: "2026-09-24T19:44:38+09:00"
+title: "Respectons les personnes capables de faire ce que nous ne pouvons pas"
 slug: "自分にできないことができる人に敬意を払おう"
 date: 2023-08-01T23:42:31+09:00
+lastmod: 2026-11-24T00:00:00+09:00
 tags: ["Poème", "Pensées"]
 draft: false
 image: "img.webp"
 categories: ["it-technology"]
-description: 'Ceci est un essai qui prêche l''importance de ne pas classer les métiers et les positions sociales, et de respecter toutes les personnes qui accomplissent des tâches dont vous êtes incapable. Nous vous présentons des éléments clés de cette façon de penser pour faciliter les relations humaines et se respecter mutuellement.'
+description: "Courte réflexion personnelle sur le respect des personnes qui accomplissent des tâches que nous ne savons pas faire."
 ---
 
 # Montrons du respect

@@ -1,13 +1,13 @@
 ---
-title: '生成AIを学ぶ！東京大学教授陣によるおすすめ講義動画まとめ'
-date: "2026-09-24T19:44:38+09:00"
+title: "生成AIに関する日本記者クラブの講義動画3本"
 slug: "生成AIについて"
 date: 2024-04-16T02:13:56+09:00
+lastmod: 2026-11-24T00:00:00+09:00
 tags: ["生成AI", "YouTube", "講義"]
 draft: false
 image: "img.webp"
 categories: ["ai-technology"]
-description: '話題の生成AIについて深く学べる、東京大学の教授陣による講義動画のまとめです。中尾政之教授、酒井邦嘉教授、松尾豊教授といったAI研究の第一人者たちが2023年から2024年にかけて行った、わかりやすく有益な解説動画を紹介します。'
+description: "2023年から2024年に日本記者クラブで行われた、中尾政之・酒井邦嘉・松尾豊の生成AIに関する講演動画をまとめました。"
 ---
 
 ## 生成AIについての講義動画
@@ -16,10 +16,16 @@ description: '話題の生成AIについて深く学べる、東京大学の教�
 
 {{<youtube uN0eilnXl4E>}}
 
+[日本記者クラブの会見記録](https://www.jnpc.or.jp/archive/conferences/36601/report)
+
 - 「生成AI」(2) 酒井邦嘉・東京大学大学院教授　2023.10.11
 
 {{<youtube wz1-DOZoQt0>}}
 
+[日本記者クラブの会見記録](https://www.jnpc.or.jp/archive/conferences/36631/report)
+
 - 「生成AI」(3) 松尾豊・東京大学大学院教授　2024.3.15
 
 {{<youtube U9vhGvFxKu0>}}
+
+[日本記者クラブの会見記録](https://www.jnpc.or.jp/archive/conferences/36714/report)

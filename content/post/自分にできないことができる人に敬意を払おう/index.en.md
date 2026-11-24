@@ -1,13 +1,13 @@
 ---
-title: 'Pay Respect to Those Who Can Do What You Cannot | A Mindset to Eliminate Superiority and Inferiority in Work'
-date: "2026-09-24T19:44:38+09:00"
+title: "Respect People Who Can Do What We Cannot"
 slug: "自分にできないことができる人に敬意を払おう"
 date: 2023-08-01T23:42:31+09:00
+lastmod: 2026-11-24T00:00:00+09:00
 tags: ["Opinion", "Thoughts"]
 draft: false
 image: "img.webp"
 categories: ["it-technology"]
-description: 'An essay preaching the importance of not ranking jobs or positions in society and paying respect to everyone who accomplishes work you cannot do. We introduce key mindset points that smooth human relationships and allow mutual respect.'
+description: "A short personal reflection on showing respect to people who do work we cannot do ourselves."
 ---
 
 # Let's show respect

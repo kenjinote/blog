@@ -1,13 +1,13 @@
 ---
-title: 'Mari Hormati Mereka yang Bisa Melakukan Apa yang Tidak Bisa Kita Lakukan | Pola Pikir untuk Menghilangkan Kesenjangan dalam Pekerjaan'
-date: "2026-09-24T19:44:38+09:00"
+title: "Hormati orang yang mampu melakukan hal yang tidak mampu kita lakukan"
 slug: "自分にできないことができる人に敬意を払おう"
 date: 2023-08-01T23:42:31+09:00
+lastmod: 2026-11-24T00:00:00+09:00
 tags: ["puisi", "pemikiran"]
 draft: false
 image: "img.webp"
 categories: ["it-technology"]
-description: 'Ini adalah esai yang menerangkan betapa pentingnya kita memberikan rasa hormat terhadap setiap orang yang telah merampungkan tugas-tugas di mana hal itu tidak dapat kita lakukan, dan tanpa memberikan diskriminasi pada posisi maupun pekerjaan mereka di dalam masyarakat. Kami akan memperkenalkan prinsip-prinsip untuk melancarkan interaksi manusia serta saling menghargai satu sama lain.'
+description: "Refleksi singkat tentang menghormati orang yang melakukan pekerjaan yang tidak dapat kita lakukan sendiri."
 ---
 
 # Mari kita tunjukkan rasa hormat

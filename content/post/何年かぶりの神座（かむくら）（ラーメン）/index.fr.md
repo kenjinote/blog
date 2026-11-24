@@ -1,13 +1,13 @@
 ---
-title: 'Premier « Kamukura » depuis des années ! Dégustation de leur ramen aux poireaux et kimchi recommandé'
-date: "2026-09-24T19:44:38+09:00"
+title: "Retour chez Kamukura pour un ramen au negi et au kimchi"
 slug: "何年かぶりのKamukura（かむくら）（Ramen）"
 date: 2022-09-09T21:45:19+09:00
+lastmod: 2026-11-24T00:00:00+09:00
 tags: ["Ramen", "Kamukura"]
 draft: false
 image: "images/img2.webp"
 categories: ["it-technology"]
-description: 'Je suis allé au populaire restaurant de ramen « Dotonbori Kamukura » pour la première fois depuis longtemps. Cette fois, j''ai commandé leur « Ramen aux poireaux et kimchi » recommandé ! Cette soupe délicieuse et unique, qu''on a envie de manger de temps en temps, se marie parfaitement avec l''abondance de légumes et de poireaux-kimchi.'
+description: "Courte note personnelle sur mon retour chez Dotonbori Kamukura après plusieurs années et le ramen au negi et au kimchi que j’y ai mangé."
 ---
 
 Je suis allé au Kamukura (Ramen) pour la première fois depuis des années.

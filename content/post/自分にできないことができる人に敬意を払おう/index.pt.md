@@ -1,13 +1,13 @@
 ---
-title: 'Respeite as pessoas que podem fazer o que você não pode | Uma atitude para eliminar a superioridade ou inferioridade no trabalho'
-date: "2026-09-24T19:44:38+09:00"
+title: "Respeitemos quem consegue fazer o que não conseguimos"
 slug: "自分にできないことができる人に敬意を払おう"
 date: 2023-08-01T23:42:31+09:00
+lastmod: 2026-11-24T00:00:00+09:00
 tags: ["Poema", "Pensamentos"]
 draft: false
 image: "img.webp"
 categories: ["it-technology"]
-description: 'Um ensaio que prega a importância de respeitar todas as pessoas que realizam trabalhos que você não pode fazer, sem colocar superioridade ou inferioridade nos trabalhos e posições na sociedade. Apresentaremos pontos de mentalidade para suavizar as relações humanas e respeitarmos uns aos outros.'
+description: "Breve reflexão pessoal sobre respeitar quem realiza trabalhos que nós não conseguimos fazer."
 ---
 
 # Vamos mostrar respeito

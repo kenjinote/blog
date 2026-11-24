@@ -14165,6 +14165,366 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-122.json",
       "evidenceHash": "8d92f5dec44db8e85a6d861d678374a3a138d21bb86df8189528043538d4b1e1"
+    },
+    "post/何年かぶりの神座（かむくら）（ラーメン）/index.en.md": {
+      "source": "post/何年かぶりの神座（かむくら）（ラーメン）/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "a5d7bb7371e1821faeac6615d3077a86dcf2aa9b953992cefaf555be52844ed3",
+      "translationHash": "da231bf11b196761e78b1b63f0e2426f11f62e428c802e055944397318fc40c7",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-123.json",
+      "evidenceHash": "360ffba7618f25e3dd314c875b121c04a1f6d5eb6a9df43d7e853aaf76238c2a"
+    },
+    "post/何年かぶりの神座（かむくら）（ラーメン）/index.zh-cn.md": {
+      "source": "post/何年かぶりの神座（かむくら）（ラーメン）/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "a5d7bb7371e1821faeac6615d3077a86dcf2aa9b953992cefaf555be52844ed3",
+      "translationHash": "dce63a04bc39864354d4e090838f574d77d5fee44b8572172fad56315d51580e",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-123.json",
+      "evidenceHash": "e008a7bb233d50bf78305320a7d90e073b05090c88ca1f1f4cca9c33c857bb76"
+    },
+    "post/何年かぶりの神座（かむくら）（ラーメン）/index.es.md": {
+      "source": "post/何年かぶりの神座（かむくら）（ラーメン）/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "a5d7bb7371e1821faeac6615d3077a86dcf2aa9b953992cefaf555be52844ed3",
+      "translationHash": "c8f268c96ebb331db99fbe4f2c5f816c84fccff6cc2bc9273736343ae6aabb5f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-123.json",
+      "evidenceHash": "c4c8a865545b6351a59c9370f25f7b3598b53376d60f71385ff43d26e68e5292"
+    },
+    "post/何年かぶりの神座（かむくら）（ラーメン）/index.ko.md": {
+      "source": "post/何年かぶりの神座（かむくら）（ラーメン）/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "a5d7bb7371e1821faeac6615d3077a86dcf2aa9b953992cefaf555be52844ed3",
+      "translationHash": "e53328eed3a10770a6d5e36950b6290d6409147405ddc7d8253f8ea5ed3d4b72",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-123.json",
+      "evidenceHash": "5285f4e65255ee3d43098eb3fcf3ad6ee4c7d2856b3bfe8822b990639b1498a5"
+    },
+    "post/何年かぶりの神座（かむくら）（ラーメン）/index.pt.md": {
+      "source": "post/何年かぶりの神座（かむくら）（ラーメン）/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "a5d7bb7371e1821faeac6615d3077a86dcf2aa9b953992cefaf555be52844ed3",
+      "translationHash": "af801c1593af7b336e26d793f2042ed0c212e33c96408bb8fe93b7d139690346",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-123.json",
+      "evidenceHash": "ab424d89d6221a12bca30f9f57fdab29fc06af3b96ee73417a2303358511727b"
+    },
+    "post/何年かぶりの神座（かむくら）（ラーメン）/index.zh-tw.md": {
+      "source": "post/何年かぶりの神座（かむくら）（ラーメン）/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "a5d7bb7371e1821faeac6615d3077a86dcf2aa9b953992cefaf555be52844ed3",
+      "translationHash": "d9d24cad0cf81ee1968464852419784916494096b66d20a8043d7ffd04880a83",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-123.json",
+      "evidenceHash": "4ceb6ca77e504233e2d1378671deef0259cfb6fd072494722e8a963adce8c406"
+    },
+    "post/何年かぶりの神座（かむくら）（ラーメン）/index.hi.md": {
+      "source": "post/何年かぶりの神座（かむくら）（ラーメン）/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "a5d7bb7371e1821faeac6615d3077a86dcf2aa9b953992cefaf555be52844ed3",
+      "translationHash": "8fcb5e7f9117236d6417145058322240661807326aac004cbf14d88390e5d771",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-123.json",
+      "evidenceHash": "c783b984f7cc69601160e53a5463bb7d3a335e2fb01dbf82064cf4950136aa14"
+    },
+    "post/何年かぶりの神座（かむくら）（ラーメン）/index.fr.md": {
+      "source": "post/何年かぶりの神座（かむくら）（ラーメン）/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "a5d7bb7371e1821faeac6615d3077a86dcf2aa9b953992cefaf555be52844ed3",
+      "translationHash": "f9db93411ad78905a0394d765390fdcf360e2b88652b067a5a246bf2ab8dd965",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-123.json",
+      "evidenceHash": "b1820e547bb1b5b0e98993b2adfee9860080b673f24ba7693c35d83c44d2af92"
+    },
+    "post/何年かぶりの神座（かむくら）（ラーメン）/index.de.md": {
+      "source": "post/何年かぶりの神座（かむくら）（ラーメン）/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "a5d7bb7371e1821faeac6615d3077a86dcf2aa9b953992cefaf555be52844ed3",
+      "translationHash": "747b325a2f76da5f96de602247fa0791ced1079e0d0cbe65597b418bea3ca970",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-123.json",
+      "evidenceHash": "241890e1da73b74076d04c015f32a42e93e6dc67aee858f308d964048bd8e433"
+    },
+    "post/何年かぶりの神座（かむくら）（ラーメン）/index.ar.md": {
+      "source": "post/何年かぶりの神座（かむくら）（ラーメン）/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "a5d7bb7371e1821faeac6615d3077a86dcf2aa9b953992cefaf555be52844ed3",
+      "translationHash": "925639b38e167a0b36a74cf24cf397dda6da8c1483e89f729d671d2c48345249",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-123.json",
+      "evidenceHash": "c8b17f00d9addba21600fe383024069194eeb2a080ccd998f4ae1dbe868298b7"
+    },
+    "post/何年かぶりの神座（かむくら）（ラーメン）/index.ru.md": {
+      "source": "post/何年かぶりの神座（かむくら）（ラーメン）/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "a5d7bb7371e1821faeac6615d3077a86dcf2aa9b953992cefaf555be52844ed3",
+      "translationHash": "20dd459db422a516edc8995e9c8bd5f02041b64e67fe2a4791bbb5390d404f5f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-123.json",
+      "evidenceHash": "a0d104cceec76f44e9abc8a8a06f5c6e74bd389d3cfe27006e155d1eb7de3c9d"
+    },
+    "post/何年かぶりの神座（かむくら）（ラーメン）/index.id.md": {
+      "source": "post/何年かぶりの神座（かむくら）（ラーメン）/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "a5d7bb7371e1821faeac6615d3077a86dcf2aa9b953992cefaf555be52844ed3",
+      "translationHash": "5dd9299d7e77806d0548ccae451a28f98f67fd52b2b552a304d77aab5e09b5b9",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-123.json",
+      "evidenceHash": "58ab42aea753d8b6a577b28b20fcf5d7db6c2ee3c075a0a0e3f99a561e34e0cb"
+    },
+    "post/生成AIについて/index.en.md": {
+      "source": "post/生成AIについて/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "eee4299f542087a2e1cafd7ca1230f4474c742ea9e8138a7791a757078829974",
+      "translationHash": "0228dbfb5c0bdba2209f4870682fa21d9a6a7552eb977360986392dd448223d1",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-124.json",
+      "evidenceHash": "22ba9126e2a436ca1fd19b76edc6a7f11320e5e8ab07310a9b5b652996f4df80"
+    },
+    "post/生成AIについて/index.zh-cn.md": {
+      "source": "post/生成AIについて/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "eee4299f542087a2e1cafd7ca1230f4474c742ea9e8138a7791a757078829974",
+      "translationHash": "721f7b2194f6da906a166f1e6b0a72ff13c2f690b0a5d0fb4179afdb9f7f4510",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-124.json",
+      "evidenceHash": "b2ce807eb81c9b2d270a03a80027fad919ec4fb66ce135e4d684fd242b8a0b11"
+    },
+    "post/生成AIについて/index.es.md": {
+      "source": "post/生成AIについて/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "eee4299f542087a2e1cafd7ca1230f4474c742ea9e8138a7791a757078829974",
+      "translationHash": "8d2f6a7f166fc1bed05281a38613ebf59c791e76e8b8eafbc6a69a55acf341cc",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-124.json",
+      "evidenceHash": "5a5869c1f0f4a71037bcf3f40c65b0bedb99c9e4eef88792ccd14b92f2457c91"
+    },
+    "post/生成AIについて/index.ko.md": {
+      "source": "post/生成AIについて/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "eee4299f542087a2e1cafd7ca1230f4474c742ea9e8138a7791a757078829974",
+      "translationHash": "2ce37ed946e95626c487b2b54253094a5d8ea9fab00cf73c4d82e38c5414bc0d",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-124.json",
+      "evidenceHash": "cb4bbb0d1ce5d8d5d14f1b923051941fb580b061b4677299141add45b4bc4d86"
+    },
+    "post/生成AIについて/index.pt.md": {
+      "source": "post/生成AIについて/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "eee4299f542087a2e1cafd7ca1230f4474c742ea9e8138a7791a757078829974",
+      "translationHash": "048cd8626a1bed1d22426f5269763104c8a061e1633566c016267adf93a43fda",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-124.json",
+      "evidenceHash": "fa33c740ca4f691c50d054a083e4a403f27193011fad3971efdaef7f685be604"
+    },
+    "post/生成AIについて/index.zh-tw.md": {
+      "source": "post/生成AIについて/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "eee4299f542087a2e1cafd7ca1230f4474c742ea9e8138a7791a757078829974",
+      "translationHash": "b5553bd1888af410fc7b8a821a3e4648e209971d5d94e13ef8663a49f1a687c5",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-124.json",
+      "evidenceHash": "843ecf02d7118dbaff2add914c6c21f1eb05b3927be163483ae1155f2828ee04"
+    },
+    "post/生成AIについて/index.hi.md": {
+      "source": "post/生成AIについて/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "eee4299f542087a2e1cafd7ca1230f4474c742ea9e8138a7791a757078829974",
+      "translationHash": "c5753a161d33446e180dbde5497c8a9300c12b12e8e495d3144223cebb7c64bd",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-124.json",
+      "evidenceHash": "c1e87a19ef9f39ffa11c7aa5769cde15236696927ee19d37065faaf260c22ac3"
+    },
+    "post/生成AIについて/index.fr.md": {
+      "source": "post/生成AIについて/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "eee4299f542087a2e1cafd7ca1230f4474c742ea9e8138a7791a757078829974",
+      "translationHash": "9a09602a523565795d70344234ba5460bd282e0c8f368b822353a43f3ff43608",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-124.json",
+      "evidenceHash": "d08d9e71f497bc304d7e794c47ac268c7b003baab70792eefef10e2542b1f2de"
+    },
+    "post/生成AIについて/index.de.md": {
+      "source": "post/生成AIについて/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "eee4299f542087a2e1cafd7ca1230f4474c742ea9e8138a7791a757078829974",
+      "translationHash": "e054504bf021312808ce50fffc64af2a679b151d3b33de1bd597909a11599d33",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-124.json",
+      "evidenceHash": "d39328b7837d90e80490723d54c2cf869d356a97910ec0be3a80774ee0936c2e"
+    },
+    "post/生成AIについて/index.ar.md": {
+      "source": "post/生成AIについて/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "eee4299f542087a2e1cafd7ca1230f4474c742ea9e8138a7791a757078829974",
+      "translationHash": "73a92382ae8c6ab9167e60202b350740107aad01ced2d7b10924a3b006ba6a87",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-124.json",
+      "evidenceHash": "66f3375e39215ba741b5f90ac6b79716f0402d3272dc3d7d6f3aa018c0c8f4bb"
+    },
+    "post/生成AIについて/index.ru.md": {
+      "source": "post/生成AIについて/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "eee4299f542087a2e1cafd7ca1230f4474c742ea9e8138a7791a757078829974",
+      "translationHash": "3eaca478df6b3d3946330d0559178444e336e6f0d8de4b078d981b0b53e736d2",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-124.json",
+      "evidenceHash": "b689e6c80ed5fe5c5ee84fb077faf01157823e82635af2bdda1743db852c2b87"
+    },
+    "post/生成AIについて/index.id.md": {
+      "source": "post/生成AIについて/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "eee4299f542087a2e1cafd7ca1230f4474c742ea9e8138a7791a757078829974",
+      "translationHash": "67b09f71cb61698420557df0a66799f832a06cda41f9cf5e611a1c7ad8385d91",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-124.json",
+      "evidenceHash": "e2e8cb2a38e22f160b848f35be14da6ff34119f6369042fdede4a2196999ec55"
+    },
+    "post/自分にできないことができる人に敬意を払おう/index.en.md": {
+      "source": "post/自分にできないことができる人に敬意を払おう/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "55079e798ee5d95bd95c3b75fd749b861b46dc31ec8c69c32853237061820665",
+      "translationHash": "72dafd7bd9e52dce6db53eefcf60bd6e4a4f6fd1e59437154c940b4f014322cc",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-125.json",
+      "evidenceHash": "5e147fee50768ab4702b0fbae284cfafe57c102aff1748e480d582ed79b87e8d"
+    },
+    "post/自分にできないことができる人に敬意を払おう/index.zh-cn.md": {
+      "source": "post/自分にできないことができる人に敬意を払おう/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "55079e798ee5d95bd95c3b75fd749b861b46dc31ec8c69c32853237061820665",
+      "translationHash": "1ef9994623b47f1bafbd3507df2540aa7989d35b473c66693824080cb0586d94",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-125.json",
+      "evidenceHash": "ba217dcf6a207d1363d627081d9cbe20fd1ff6e60d0acf0512b2700223d07cd3"
+    },
+    "post/自分にできないことができる人に敬意を払おう/index.es.md": {
+      "source": "post/自分にできないことができる人に敬意を払おう/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "55079e798ee5d95bd95c3b75fd749b861b46dc31ec8c69c32853237061820665",
+      "translationHash": "78514f84451540d2252379cbba966468961bbb5e7dae85935c9716abbb078f7b",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-125.json",
+      "evidenceHash": "0c71a16372cf136fdc825c23821e7639c2a0acef5fe415f7bc0e292750fa2881"
+    },
+    "post/自分にできないことができる人に敬意を払おう/index.ko.md": {
+      "source": "post/自分にできないことができる人に敬意を払おう/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "55079e798ee5d95bd95c3b75fd749b861b46dc31ec8c69c32853237061820665",
+      "translationHash": "168471646e960316f2ff7fb9ebb8b3db80ff96dd5e9e6f484e3081397724e15b",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-125.json",
+      "evidenceHash": "bd7bcf8a1a12bdaf632d5f1cf283935f5583b0a450a52b4914d53c6b91ce2a23"
+    },
+    "post/自分にできないことができる人に敬意を払おう/index.pt.md": {
+      "source": "post/自分にできないことができる人に敬意を払おう/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "55079e798ee5d95bd95c3b75fd749b861b46dc31ec8c69c32853237061820665",
+      "translationHash": "7bd3d3707d065138a1590bbedbba54c3b96849c58221fbc197e639355550a052",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-125.json",
+      "evidenceHash": "a94bf66b5758a89f127815b396c7a01459a81f33c8dbfc628b1d4e7e8a8cb7d1"
+    },
+    "post/自分にできないことができる人に敬意を払おう/index.zh-tw.md": {
+      "source": "post/自分にできないことができる人に敬意を払おう/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "55079e798ee5d95bd95c3b75fd749b861b46dc31ec8c69c32853237061820665",
+      "translationHash": "f09cef1ec68e7f06caef3d2163f3a6eef0cbffd0bb1596a9b3b468e92452e243",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-125.json",
+      "evidenceHash": "a38a266e5821f42cdd5ebe7af03f52007a3bfb996679ec27691190fb7178888b"
+    },
+    "post/自分にできないことができる人に敬意を払おう/index.hi.md": {
+      "source": "post/自分にできないことができる人に敬意を払おう/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "55079e798ee5d95bd95c3b75fd749b861b46dc31ec8c69c32853237061820665",
+      "translationHash": "579869fada290ec7244df715db26d218c399a3fe22954f38a903b18df0402a74",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-125.json",
+      "evidenceHash": "5b757322b68fd7b9b82c6ccb562de4b4ebfedac8f068e317f42c7f8704579ff9"
+    },
+    "post/自分にできないことができる人に敬意を払おう/index.fr.md": {
+      "source": "post/自分にできないことができる人に敬意を払おう/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "55079e798ee5d95bd95c3b75fd749b861b46dc31ec8c69c32853237061820665",
+      "translationHash": "5942241489806ab2fda0dd42074a871c300ad81da8b64a7598047e7d45a5bb0d",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-125.json",
+      "evidenceHash": "5a76a2da319bac8bf8ad4fd1c5193e7e18a3794932f3b36e490b33827fe4e4c5"
+    },
+    "post/自分にできないことができる人に敬意を払おう/index.de.md": {
+      "source": "post/自分にできないことができる人に敬意を払おう/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "55079e798ee5d95bd95c3b75fd749b861b46dc31ec8c69c32853237061820665",
+      "translationHash": "fe7222196023a499a1808bf5e7fd5a58fb7c2b429f2198d56829f19a19f0ed76",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-125.json",
+      "evidenceHash": "a1ac0035f2b8f10b1d23eab9c7e770ec15b836a257420eef46f00fd466350606"
+    },
+    "post/自分にできないことができる人に敬意を払おう/index.ar.md": {
+      "source": "post/自分にできないことができる人に敬意を払おう/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "55079e798ee5d95bd95c3b75fd749b861b46dc31ec8c69c32853237061820665",
+      "translationHash": "f82be56925d456eed657263fcc073462c9c9097397106fa70a1a9ccf9744be27",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-125.json",
+      "evidenceHash": "0fb29a8ad19d5fb37b405c83e3dfe033946d3c82fb1861e6379b981e0463d7e3"
+    },
+    "post/自分にできないことができる人に敬意を払おう/index.ru.md": {
+      "source": "post/自分にできないことができる人に敬意を払おう/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "55079e798ee5d95bd95c3b75fd749b861b46dc31ec8c69c32853237061820665",
+      "translationHash": "797f259daed3ea5c0c9e41982db53ba907fa199dcc241129aa569fc9e8646db8",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-125.json",
+      "evidenceHash": "9da04210c9a24eaf8e009755b7046a0764e342d76f2122c3db2609f2e95bedef"
+    },
+    "post/自分にできないことができる人に敬意を払おう/index.id.md": {
+      "source": "post/自分にできないことができる人に敬意を払おう/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "55079e798ee5d95bd95c3b75fd749b861b46dc31ec8c69c32853237061820665",
+      "translationHash": "05bd204157693a248c871f3352b53326c41276f0c6c0d5dad6c81c1648e25769",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-125.json",
+      "evidenceHash": "cfbdc4fc7a1bdc3374491e308584cf4d25a767fc05c63fa9192387d23e334df1"
     }
   }
 }

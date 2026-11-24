@@ -1,13 +1,13 @@
 ---
-title: 'Belajar AI Generatif! Kumpulan Video Kuliah Rekomendasi oleh Para Profesor Universitas Tokyo'
-date: "2026-09-24T19:44:38+09:00"
+title: "Tiga video ceramah Japan National Press Club tentang AI generatif"
 slug: "AI Generatifについて"
 date: 2024-04-16T02:13:56+09:00
+lastmod: 2026-11-24T00:00:00+09:00
 tags: ["AI Generatif", "YouTube", "Kuliah"]
 draft: false
 image: "img.webp"
 categories: ["ai-technology"]
-description: 'Ini adalah kumpulan video perkuliahan oleh profesor dari Universitas Tokyo di mana Anda bisa belajar lebih dalam mengenai AI Generatif yang sedang ramai diperbincangkan. Kami memperkenalkan video penjelasan yang mudah dipahami dan bermanfaat, yang dibawakan antara tahun 2023 dan 2024 oleh para ahli penelitian AI terkemuka, seperti Profesor Masayuki Nakao, Profesor Kuniyoshi Sakai, dan Profesor Yutaka Matsuo.'
+description: "Daftar tiga video Japan National Press Club tahun 2023–2024 tentang AI generatif bersama Masayuki Nakao, Kuniyoshi Sakai, dan Yutaka Matsuo."
 ---
 
 ## Video Kuliah tentang AI Generatif
@@ -16,10 +16,16 @@ description: 'Ini adalah kumpulan video perkuliahan oleh profesor dari Universit
 
 {{<youtube uN0eilnXl4E>}}
 
+[Catatan acara Japan National Press Club](https://www.jnpc.or.jp/archive/conferences/36601/report)
+
 - "AI Generatif" (2) Profesor Kuniyoshi Sakai, Universitas Tokyo 2023.10.11
 
 {{<youtube wz1-DOZoQt0>}}
 
+[Catatan acara Japan National Press Club](https://www.jnpc.or.jp/archive/conferences/36631/report)
+
 - "AI Generatif" (3) Profesor Yutaka Matsuo, Universitas Tokyo 2024.3.15
 
 {{<youtube U9vhGvFxKu0>}}
+
+[Catatan acara Japan National Press Club](https://www.jnpc.or.jp/archive/conferences/36714/report)

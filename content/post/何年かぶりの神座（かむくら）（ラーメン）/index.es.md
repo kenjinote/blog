@@ -3,15 +3,15 @@
 
 
 
-title: '¡De vuelta a "Kamukura" después de años! Disfrutando del recomendado Ramen de Kimchi y Cebolleta'
-date: "2026-09-24T19:44:38+09:00"
+title: "Volví a Kamukura y probé el ramen de negi y kimchi"
 slug: "何年かぶりのKamukura（かむくら）（Ramen）"
 date: 2022-09-09T21:45:19+09:00
+lastmod: 2026-11-24T00:00:00+09:00
 tags: ["Ramen", "Kamukura"]
 draft: false
 image: "images/img2.webp"
 categories: ["it-technology"]
-description: 'Visité la popular tienda de ramen "Dotonbori Kamukura" por primera vez en mucho tiempo. ¡Esta vez pedí el recomendado "Ramen de Kimchi y Cebolleta"! La combinación de la abundante verdura y el kimchi de cebolleta con esa sopa única y deliciosa, que a veces se te antoja irresistiblemente, fue excelente.'
+description: "Nota personal breve sobre mi regreso a Dotonbori Kamukura después de varios años y el ramen de negi y kimchi que comí."
 ---
 
 
