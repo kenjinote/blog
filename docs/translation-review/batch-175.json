@@ -1,0 +1,455 @@
+{
+  "version": 1,
+  "batch": 175,
+  "article": "Bought a used ThinkPad T470s",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "aaa5f0d0c2824a2260304f3fac180658d48fe6db76f2224d7000bde421397c69",
+  "sources": [
+    "https://support.microsoft.com/en-us/windows/deployment/updates-lifecycle/windows-10-support-has-ended-on-october-14-2025",
+    "https://learn.microsoft.com/en-us/windows-hardware/design/minimum/supported/windows-11-supported-intel-processors",
+    "https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_T470s/ThinkPad_T470s_Spec.PDF"
+  ],
+  "scope": "Compared the complete Japanese article and all twelve translations, duplicate publication metadata, product specifications against Lenovo PSREF, personal keyboard behavior, Windows 10 lifecycle, Windows 11 processor support, and reference links.",
+  "findings": [
+    "Removed duplicate publication dates, retained the 2023 purchase date, and set lastmod to the review date.",
+    "Clarified that the Pause-to-Settings shortcut was a personal key mapping, and that Shift+F10 opens the context menu when no App key is present.",
+    "Added a current support note: Windows 10 regular support ended in 2025, ESU terms are stated with current scope, and this Core i7-7600U is absent from Microsoft’s supported Windows 11 processor list.",
+    "Updated the Lenovo reference to the current PSREF and added official Microsoft sources.",
+    "Clarified that personal condition and battery observations describe the January 2023 review period."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/ThinkPad（中古）を買った/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/ThinkPad（中古）を買った/index.md",
+      "sourceHash": "aaa5f0d0c2824a2260304f3fac180658d48fe6db76f2224d7000bde421397c69",
+      "translationHash": "0db413b59f818760d6f6da55c19e2c968ce9a18d797b6864b9100330fb94cb78",
+      "summary": "Compared the complete translation against the Japanese source, corrected personal key-mapping/context-menu meaning, retained the historical purchase context, and added current Windows support and model compatibility information.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full review, personal-use context, historical purchase date, keyboard behavior, and current Windows support status across the source and translation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked ThinkPad T470s model, Core i7-7600U, Pause/App keys, context menu, Windows 10 ESU, and Windows 11 eligibility terms."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or formulas occur in this article."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No programming code occurs in this article; product identifiers and keyboard names were checked."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the legacy Lenovo Japan PDF with the current Lenovo PSREF and added current Microsoft support lifecycle and Windows 11 processor references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The purchase, wear, and battery comments are the author’s personal observations from January 2023, not independently verified current condition.",
+        "Windows 11 eligibility can depend on the full device configuration; the processor statement is based on Microsoft’s current supported-processor list. ESU availability and eligibility may vary by region and device."
+      ]
+    },
+    "post/ThinkPad（中古）を買った/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/ThinkPad（中古）を買った/index.md",
+      "sourceHash": "aaa5f0d0c2824a2260304f3fac180658d48fe6db76f2224d7000bde421397c69",
+      "translationHash": "4d7e0790bde9dbad3bb48f0902b1835e15b73c9bec1f34149b1c4aead52a92a5",
+      "summary": "Compared the complete translation against the Japanese source, corrected personal key-mapping/context-menu meaning, retained the historical purchase context, and added current Windows support and model compatibility information.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full review, personal-use context, historical purchase date, keyboard behavior, and current Windows support status across the source and translation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked ThinkPad T470s model, Core i7-7600U, Pause/App keys, context menu, Windows 10 ESU, and Windows 11 eligibility terms."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or formulas occur in this article."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No programming code occurs in this article; product identifiers and keyboard names were checked."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the legacy Lenovo Japan PDF with the current Lenovo PSREF and added current Microsoft support lifecycle and Windows 11 processor references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The purchase, wear, and battery comments are the author’s personal observations from January 2023, not independently verified current condition.",
+        "Windows 11 eligibility can depend on the full device configuration; the processor statement is based on Microsoft’s current supported-processor list. ESU availability and eligibility may vary by region and device."
+      ]
+    },
+    "post/ThinkPad（中古）を買った/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/ThinkPad（中古）を買った/index.md",
+      "sourceHash": "aaa5f0d0c2824a2260304f3fac180658d48fe6db76f2224d7000bde421397c69",
+      "translationHash": "455c2096280dac4bda4e7543e829d06063499ea10aa3e8a48282b9c9132c014f",
+      "summary": "Compared the complete translation against the Japanese source, corrected personal key-mapping/context-menu meaning, retained the historical purchase context, and added current Windows support and model compatibility information.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full review, personal-use context, historical purchase date, keyboard behavior, and current Windows support status across the source and translation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked ThinkPad T470s model, Core i7-7600U, Pause/App keys, context menu, Windows 10 ESU, and Windows 11 eligibility terms."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or formulas occur in this article."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No programming code occurs in this article; product identifiers and keyboard names were checked."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the legacy Lenovo Japan PDF with the current Lenovo PSREF and added current Microsoft support lifecycle and Windows 11 processor references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The purchase, wear, and battery comments are the author’s personal observations from January 2023, not independently verified current condition.",
+        "Windows 11 eligibility can depend on the full device configuration; the processor statement is based on Microsoft’s current supported-processor list. ESU availability and eligibility may vary by region and device."
+      ]
+    },
+    "post/ThinkPad（中古）を買った/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/ThinkPad（中古）を買った/index.md",
+      "sourceHash": "aaa5f0d0c2824a2260304f3fac180658d48fe6db76f2224d7000bde421397c69",
+      "translationHash": "e3e4b3d9834d23be90fb7462888d8d6fa93106f8112a787b16cafa7521188b57",
+      "summary": "Compared the complete translation against the Japanese source, corrected personal key-mapping/context-menu meaning, retained the historical purchase context, and added current Windows support and model compatibility information.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full review, personal-use context, historical purchase date, keyboard behavior, and current Windows support status across the source and translation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked ThinkPad T470s model, Core i7-7600U, Pause/App keys, context menu, Windows 10 ESU, and Windows 11 eligibility terms."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or formulas occur in this article."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No programming code occurs in this article; product identifiers and keyboard names were checked."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the legacy Lenovo Japan PDF with the current Lenovo PSREF and added current Microsoft support lifecycle and Windows 11 processor references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The purchase, wear, and battery comments are the author’s personal observations from January 2023, not independently verified current condition.",
+        "Windows 11 eligibility can depend on the full device configuration; the processor statement is based on Microsoft’s current supported-processor list. ESU availability and eligibility may vary by region and device."
+      ]
+    },
+    "post/ThinkPad（中古）を買った/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/ThinkPad（中古）を買った/index.md",
+      "sourceHash": "aaa5f0d0c2824a2260304f3fac180658d48fe6db76f2224d7000bde421397c69",
+      "translationHash": "4b5e3c30457b1941eda055a3c26abf4baf8ee15c08266ba84479872ba39b2ef5",
+      "summary": "Compared the complete translation against the Japanese source, corrected personal key-mapping/context-menu meaning, retained the historical purchase context, and added current Windows support and model compatibility information.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full review, personal-use context, historical purchase date, keyboard behavior, and current Windows support status across the source and translation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked ThinkPad T470s model, Core i7-7600U, Pause/App keys, context menu, Windows 10 ESU, and Windows 11 eligibility terms."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or formulas occur in this article."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No programming code occurs in this article; product identifiers and keyboard names were checked."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the legacy Lenovo Japan PDF with the current Lenovo PSREF and added current Microsoft support lifecycle and Windows 11 processor references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The purchase, wear, and battery comments are the author’s personal observations from January 2023, not independently verified current condition.",
+        "Windows 11 eligibility can depend on the full device configuration; the processor statement is based on Microsoft’s current supported-processor list. ESU availability and eligibility may vary by region and device."
+      ]
+    },
+    "post/ThinkPad（中古）を買った/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/ThinkPad（中古）を買った/index.md",
+      "sourceHash": "aaa5f0d0c2824a2260304f3fac180658d48fe6db76f2224d7000bde421397c69",
+      "translationHash": "35b75ff5ebea12e7851969138e4a3585f469d870daae231e776868c1cead2b04",
+      "summary": "Compared the complete translation against the Japanese source, corrected personal key-mapping/context-menu meaning, retained the historical purchase context, and added current Windows support and model compatibility information.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full review, personal-use context, historical purchase date, keyboard behavior, and current Windows support status across the source and translation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked ThinkPad T470s model, Core i7-7600U, Pause/App keys, context menu, Windows 10 ESU, and Windows 11 eligibility terms."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or formulas occur in this article."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No programming code occurs in this article; product identifiers and keyboard names were checked."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the legacy Lenovo Japan PDF with the current Lenovo PSREF and added current Microsoft support lifecycle and Windows 11 processor references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The purchase, wear, and battery comments are the author’s personal observations from January 2023, not independently verified current condition.",
+        "Windows 11 eligibility can depend on the full device configuration; the processor statement is based on Microsoft’s current supported-processor list. ESU availability and eligibility may vary by region and device."
+      ]
+    },
+    "post/ThinkPad（中古）を買った/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/ThinkPad（中古）を買った/index.md",
+      "sourceHash": "aaa5f0d0c2824a2260304f3fac180658d48fe6db76f2224d7000bde421397c69",
+      "translationHash": "18e5baee7c0ad5528e788fdf288015beb3ba65362daa2751b37a6e312587b23e",
+      "summary": "Compared the complete translation against the Japanese source, corrected personal key-mapping/context-menu meaning, retained the historical purchase context, and added current Windows support and model compatibility information.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full review, personal-use context, historical purchase date, keyboard behavior, and current Windows support status across the source and translation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked ThinkPad T470s model, Core i7-7600U, Pause/App keys, context menu, Windows 10 ESU, and Windows 11 eligibility terms."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or formulas occur in this article."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No programming code occurs in this article; product identifiers and keyboard names were checked."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the legacy Lenovo Japan PDF with the current Lenovo PSREF and added current Microsoft support lifecycle and Windows 11 processor references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The purchase, wear, and battery comments are the author’s personal observations from January 2023, not independently verified current condition.",
+        "Windows 11 eligibility can depend on the full device configuration; the processor statement is based on Microsoft’s current supported-processor list. ESU availability and eligibility may vary by region and device."
+      ]
+    },
+    "post/ThinkPad（中古）を買った/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/ThinkPad（中古）を買った/index.md",
+      "sourceHash": "aaa5f0d0c2824a2260304f3fac180658d48fe6db76f2224d7000bde421397c69",
+      "translationHash": "e3a4e6795d307a3601aed162a528027f7f9dce4c8e7ac37cf2a45b4367881bfa",
+      "summary": "Compared the complete translation against the Japanese source, corrected personal key-mapping/context-menu meaning, retained the historical purchase context, and added current Windows support and model compatibility information.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full review, personal-use context, historical purchase date, keyboard behavior, and current Windows support status across the source and translation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked ThinkPad T470s model, Core i7-7600U, Pause/App keys, context menu, Windows 10 ESU, and Windows 11 eligibility terms."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or formulas occur in this article."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No programming code occurs in this article; product identifiers and keyboard names were checked."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the legacy Lenovo Japan PDF with the current Lenovo PSREF and added current Microsoft support lifecycle and Windows 11 processor references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The purchase, wear, and battery comments are the author’s personal observations from January 2023, not independently verified current condition.",
+        "Windows 11 eligibility can depend on the full device configuration; the processor statement is based on Microsoft’s current supported-processor list. ESU availability and eligibility may vary by region and device."
+      ]
+    },
+    "post/ThinkPad（中古）を買った/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/ThinkPad（中古）を買った/index.md",
+      "sourceHash": "aaa5f0d0c2824a2260304f3fac180658d48fe6db76f2224d7000bde421397c69",
+      "translationHash": "13b2940989d6b8f19fc8c29cb14e0c761a0bb0e58fb602abfa49a53f74d911ee",
+      "summary": "Compared the complete translation against the Japanese source, corrected personal key-mapping/context-menu meaning, retained the historical purchase context, and added current Windows support and model compatibility information.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full review, personal-use context, historical purchase date, keyboard behavior, and current Windows support status across the source and translation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked ThinkPad T470s model, Core i7-7600U, Pause/App keys, context menu, Windows 10 ESU, and Windows 11 eligibility terms."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or formulas occur in this article."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No programming code occurs in this article; product identifiers and keyboard names were checked."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the legacy Lenovo Japan PDF with the current Lenovo PSREF and added current Microsoft support lifecycle and Windows 11 processor references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The purchase, wear, and battery comments are the author’s personal observations from January 2023, not independently verified current condition.",
+        "Windows 11 eligibility can depend on the full device configuration; the processor statement is based on Microsoft’s current supported-processor list. ESU availability and eligibility may vary by region and device."
+      ]
+    },
+    "post/ThinkPad（中古）を買った/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/ThinkPad（中古）を買った/index.md",
+      "sourceHash": "aaa5f0d0c2824a2260304f3fac180658d48fe6db76f2224d7000bde421397c69",
+      "translationHash": "9cde6bea120e94cb7fb2ed831b06a7af1a3a59d4b0017dcd6e209af3c6a00639",
+      "summary": "Compared the complete translation against the Japanese source, corrected personal key-mapping/context-menu meaning, retained the historical purchase context, and added current Windows support and model compatibility information.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full review, personal-use context, historical purchase date, keyboard behavior, and current Windows support status across the source and translation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked ThinkPad T470s model, Core i7-7600U, Pause/App keys, context menu, Windows 10 ESU, and Windows 11 eligibility terms."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or formulas occur in this article."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No programming code occurs in this article; product identifiers and keyboard names were checked."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the legacy Lenovo Japan PDF with the current Lenovo PSREF and added current Microsoft support lifecycle and Windows 11 processor references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The purchase, wear, and battery comments are the author’s personal observations from January 2023, not independently verified current condition.",
+        "Windows 11 eligibility can depend on the full device configuration; the processor statement is based on Microsoft’s current supported-processor list. ESU availability and eligibility may vary by region and device."
+      ]
+    },
+    "post/ThinkPad（中古）を買った/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/ThinkPad（中古）を買った/index.md",
+      "sourceHash": "aaa5f0d0c2824a2260304f3fac180658d48fe6db76f2224d7000bde421397c69",
+      "translationHash": "0f61572e6325e8842f7cfe850b2f5f48969e8e1fb5935c399ad9890025a58278",
+      "summary": "Compared the complete translation against the Japanese source, corrected personal key-mapping/context-menu meaning, retained the historical purchase context, and added current Windows support and model compatibility information.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full review, personal-use context, historical purchase date, keyboard behavior, and current Windows support status across the source and translation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked ThinkPad T470s model, Core i7-7600U, Pause/App keys, context menu, Windows 10 ESU, and Windows 11 eligibility terms."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or formulas occur in this article."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No programming code occurs in this article; product identifiers and keyboard names were checked."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the legacy Lenovo Japan PDF with the current Lenovo PSREF and added current Microsoft support lifecycle and Windows 11 processor references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The purchase, wear, and battery comments are the author’s personal observations from January 2023, not independently verified current condition.",
+        "Windows 11 eligibility can depend on the full device configuration; the processor statement is based on Microsoft’s current supported-processor list. ESU availability and eligibility may vary by region and device."
+      ]
+    },
+    "post/ThinkPad（中古）を買った/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/ThinkPad（中古）を買った/index.md",
+      "sourceHash": "aaa5f0d0c2824a2260304f3fac180658d48fe6db76f2224d7000bde421397c69",
+      "translationHash": "0fa6ce0240455f623c76ea2441b6f72bd0188b0d8ddc005ec10655aa6d2a33f2",
+      "summary": "Compared the complete translation against the Japanese source, corrected personal key-mapping/context-menu meaning, retained the historical purchase context, and added current Windows support and model compatibility information.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full review, personal-use context, historical purchase date, keyboard behavior, and current Windows support status across the source and translation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked ThinkPad T470s model, Core i7-7600U, Pause/App keys, context menu, Windows 10 ESU, and Windows 11 eligibility terms."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or formulas occur in this article."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No programming code occurs in this article; product identifiers and keyboard names were checked."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the legacy Lenovo Japan PDF with the current Lenovo PSREF and added current Microsoft support lifecycle and Windows 11 processor references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The purchase, wear, and battery comments are the author’s personal observations from January 2023, not independently verified current condition.",
+        "Windows 11 eligibility can depend on the full device configuration; the processor statement is based on Microsoft’s current supported-processor list. ESU availability and eligibility may vary by region and device."
+      ]
+    }
+  }
+}

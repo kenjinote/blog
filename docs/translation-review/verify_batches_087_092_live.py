@@ -360,6 +360,13 @@ ARTICLES = {
         "scopeMarkers": {"ja":"行き詰まった時に見返したい言葉","en":"Words to revisit when I feel stuck","zh-cn":"感到受挫时可以重看的话","es":"Palabras que vuelvo a leer cuando me atasco","ko":"막막할 때 다시 보는 말","pt":"Palavras que revejo quando me sinto travado","zh-tw":"感到受挫時可以重看的話","hi":"जब मन अटक जाए तो फिर से पढ़ने योग्य शब्द","fr":"Des mots à relire quand je me sens bloqué","de":"Worte, die ich bei Stillstand erneut lese","ar":"كلمات أعود إليها عندما أشعر بالتعثر","ru":"Слова, к которым я возвращаюсь в трудный момент","id":"Kata-kata yang saya baca kembali saat merasa buntu"},
         "date": "2022-09-08",
     },
+    175: {
+        "bundle": ROOT / "content/post/ThinkPad（中古）を買った",
+        "slug": "ThinkPad（中古）を買った",
+        "links": ["https://support.microsoft.com/en-us/windows/deployment/updates-lifecycle/windows-10-support-has-ended-on-october-14-2025", "https://learn.microsoft.com/en-us/windows-hardware/design/minimum/supported/windows-11-supported-intel-processors", "https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_T470s/ThinkPad_T470s_Spec.PDF"],
+        "markers": ["Corei7-7600U", "Windows10", "Windows11", "Shift+F10", "2026"],
+        "date": "2023-01-13",
+    },
     174: {
         "bundle": ROOT / "content/post/Snipping Toolの使い方",
         "slug": "Snipping Toolの使い方",
@@ -910,7 +917,7 @@ def slug_key(value):
 parser = argparse.ArgumentParser()
 parser.add_argument("--ci-run", type=int, required=True)
 parser.add_argument("--commit", required=True)
-parser.add_argument("--max-batch", type=int, choices=(90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174), default=174)
+parser.add_argument("--max-batch", type=int, choices=(90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175), default=175)
 args = parser.parse_args()
 ARTICLES = {number: article for number, article in ARTICLES.items() if number <= args.max_batch}
 with urllib.request.urlopen(f"https://github.com/kenjinote/blog/actions/runs/{args.ci_run}", timeout=45) as response:

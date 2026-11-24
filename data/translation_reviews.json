@@ -20285,6 +20285,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-174.json",
       "evidenceHash": "83a59692fd0da6c4c68382f48ab4919e6605c476b1e1c6a51dfcab8960e87cae"
+    },
+    "post/ThinkPad（中古）を買った/index.en.md": {
+      "source": "post/ThinkPad（中古）を買った/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "aaa5f0d0c2824a2260304f3fac180658d48fe6db76f2224d7000bde421397c69",
+      "translationHash": "0db413b59f818760d6f6da55c19e2c968ce9a18d797b6864b9100330fb94cb78",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-175.json",
+      "evidenceHash": "41a05c3a779f53a31c3cb36fd80c1fba2a1b0566079ca9c22bdf69caec557e82"
+    },
+    "post/ThinkPad（中古）を買った/index.zh-cn.md": {
+      "source": "post/ThinkPad（中古）を買った/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "aaa5f0d0c2824a2260304f3fac180658d48fe6db76f2224d7000bde421397c69",
+      "translationHash": "4d7e0790bde9dbad3bb48f0902b1835e15b73c9bec1f34149b1c4aead52a92a5",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-175.json",
+      "evidenceHash": "a2c21508b61c7298be340de95b4689dcbdbb6a4a709a22a565df7cd1b62c976b"
+    },
+    "post/ThinkPad（中古）を買った/index.es.md": {
+      "source": "post/ThinkPad（中古）を買った/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "aaa5f0d0c2824a2260304f3fac180658d48fe6db76f2224d7000bde421397c69",
+      "translationHash": "455c2096280dac4bda4e7543e829d06063499ea10aa3e8a48282b9c9132c014f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-175.json",
+      "evidenceHash": "ee93284fab716a55bfadd2ecd31576829bbd17bf50fd151559e77a81f242a7f8"
+    },
+    "post/ThinkPad（中古）を買った/index.ko.md": {
+      "source": "post/ThinkPad（中古）を買った/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "aaa5f0d0c2824a2260304f3fac180658d48fe6db76f2224d7000bde421397c69",
+      "translationHash": "e3e4b3d9834d23be90fb7462888d8d6fa93106f8112a787b16cafa7521188b57",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-175.json",
+      "evidenceHash": "568741b34f7d38eb1e266d2f5fe49105cfefc0f69cdcee8c72c8b70772062fff"
+    },
+    "post/ThinkPad（中古）を買った/index.pt.md": {
+      "source": "post/ThinkPad（中古）を買った/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "aaa5f0d0c2824a2260304f3fac180658d48fe6db76f2224d7000bde421397c69",
+      "translationHash": "4b5e3c30457b1941eda055a3c26abf4baf8ee15c08266ba84479872ba39b2ef5",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-175.json",
+      "evidenceHash": "130ea160cb2d16347040915d38baf8d4bd7f457cc8211a0955aac8256c9d9868"
+    },
+    "post/ThinkPad（中古）を買った/index.zh-tw.md": {
+      "source": "post/ThinkPad（中古）を買った/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "aaa5f0d0c2824a2260304f3fac180658d48fe6db76f2224d7000bde421397c69",
+      "translationHash": "35b75ff5ebea12e7851969138e4a3585f469d870daae231e776868c1cead2b04",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-175.json",
+      "evidenceHash": "7920563a6ae1f1656205afa05de4ddd68cba78626151161c8ca1867a8ffa44fb"
+    },
+    "post/ThinkPad（中古）を買った/index.hi.md": {
+      "source": "post/ThinkPad（中古）を買った/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "aaa5f0d0c2824a2260304f3fac180658d48fe6db76f2224d7000bde421397c69",
+      "translationHash": "18e5baee7c0ad5528e788fdf288015beb3ba65362daa2751b37a6e312587b23e",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-175.json",
+      "evidenceHash": "b050472093ff756aedfa645c46cda674b1465e5068330fe3ba09eb1eb75d77d6"
+    },
+    "post/ThinkPad（中古）を買った/index.fr.md": {
+      "source": "post/ThinkPad（中古）を買った/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "aaa5f0d0c2824a2260304f3fac180658d48fe6db76f2224d7000bde421397c69",
+      "translationHash": "e3a4e6795d307a3601aed162a528027f7f9dce4c8e7ac37cf2a45b4367881bfa",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-175.json",
+      "evidenceHash": "6bbe8c82f1953589f7210a4cbd61ad232549a06d2a1e42f1f373c7995a2f464e"
+    },
+    "post/ThinkPad（中古）を買った/index.de.md": {
+      "source": "post/ThinkPad（中古）を買った/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "aaa5f0d0c2824a2260304f3fac180658d48fe6db76f2224d7000bde421397c69",
+      "translationHash": "13b2940989d6b8f19fc8c29cb14e0c761a0bb0e58fb602abfa49a53f74d911ee",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-175.json",
+      "evidenceHash": "09a697e1f13a8ea1ec6a731be31b88f1e0aebbd60365888b36e11a3792447428"
+    },
+    "post/ThinkPad（中古）を買った/index.ar.md": {
+      "source": "post/ThinkPad（中古）を買った/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "aaa5f0d0c2824a2260304f3fac180658d48fe6db76f2224d7000bde421397c69",
+      "translationHash": "9cde6bea120e94cb7fb2ed831b06a7af1a3a59d4b0017dcd6e209af3c6a00639",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-175.json",
+      "evidenceHash": "0a1c13b7a6c4d4f7b66aeafc894d24eb05740248cea62aae6b0a3a561247cafa"
+    },
+    "post/ThinkPad（中古）を買った/index.ru.md": {
+      "source": "post/ThinkPad（中古）を買った/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "aaa5f0d0c2824a2260304f3fac180658d48fe6db76f2224d7000bde421397c69",
+      "translationHash": "0f61572e6325e8842f7cfe850b2f5f48969e8e1fb5935c399ad9890025a58278",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-175.json",
+      "evidenceHash": "b8f77fae826b0e2eb92c6d547f47650f0062349b1511cc19e6f268bd39ed1756"
+    },
+    "post/ThinkPad（中古）を買った/index.id.md": {
+      "source": "post/ThinkPad（中古）を買った/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "aaa5f0d0c2824a2260304f3fac180658d48fe6db76f2224d7000bde421397c69",
+      "translationHash": "0fa6ce0240455f623c76ea2441b6f72bd0188b0d8ddc005ec10655aa6d2a33f2",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-175.json",
+      "evidenceHash": "8a6831096711e21b1a3ba92e07aa5d1813a3ac49a4cf07d05dabb2181f1b1926"
     }
   }
 }

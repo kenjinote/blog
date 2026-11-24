@@ -1,8 +1,9 @@
 ---
 title: 'Ein gebrauchtes ThinkPad T470s gekauft! Eine ehrliche Bewertung von Spezifikationen, Benutzerfreundlichkeit und Kritikpunkten'
-date: "2026-09-24T19:44:38+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
+date: "2023-01-13T19:07:00+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 slug: "ThinkPad（中古）を買った"
-date: 2023-01-13T19:07:00+09:00
 tags: ["ThinkPad", "Laptop"]
 draft: false
 image: "img.webp"
@@ -18,7 +19,7 @@ Die Spezifikationen sind unten aufgeführt, und der Preis lag bei etwa 55.000 Ye
 
 ## ThinkPad T470s
 
-- CPU: Intel Core i7 7600U
+- CPU: Intel Core i7-7600U
 - RAM: 24GB
 - SSD: 512GB
 - OS: Windows 10 Pro 64bit
@@ -31,12 +32,19 @@ Da es gebraucht ist, dachte ich, es könnte Gebrauchsspuren oder Kratzer geben, 
 Auch der Akku funktioniert bisher problemlos.
 
 ## Aktuelle Unzufriedenheiten
-- Die `Pause`- und `App`-Tasten fehlen. Ich habe die `Pause`-Taste als Verknüpfung verwendet, um die Systemeinstellungen zu öffnen. Außerdem habe ich die `App`-Taste verwendet, um das Pop-up-Menü zu öffnen, daher ist es unpraktisch, sie nicht zu haben.
+- Diese Tastatur hat keine eigenen `Pause`- oder `App`-Tasten. Ich hatte `Pause` in meiner persönlichen Tastenkonfiguration so belegt, dass die Einstellungen geöffnet werden; das ist keine Windows-Standardaktion. Die `App`-Taste öffnet normalerweise das Kontextmenü, das sich auch mit `Shift + F10` öffnen lässt.
 - Die Tasten `PageUp` und `PageDown` befinden sich direkt neben den Pfeiltasten der Tastatur, sodass ich sie oft versehentlich drücke. Das ist vielleicht Gewöhnungssache.
 
 ## Andere PCs, die ich in Betracht gezogen, aber nicht gekauft habe
 - ASUS Chromebook Flip C436FA (C436FA-ENG)
 - HP Laptop HP15s-fq
 
+## Supportstatus (Stand November 2026)
 
-Referenzen: [ThinkPad T470s](https://www.lenovojp.com/business/product/note/pdf/thinkpad_t470s.pdf)
+Dieser Artikel beschreibt den Kauf im Januar 2023 und ist keine aktuelle Kaufempfehlung. Der reguläre Support für Windows 10 endete am 14. Oktober 2025. Nicht für ESU angemeldete PCs erhalten keine regulären Sicherheitsupdates mehr. Berechtigte Windows-10-PCs können über ESU weiterhin Updates erhalten; prüfe die Anmeldebedingungen und Laufzeit (Microsoft gibt das ESU-Programm für Verbraucher derzeit bis zum 12. Oktober 2027 an). Der Core i7-7600U dieses Geräts steht nicht auf Microsofts aktueller Liste unterstützter Windows-11-Prozessoren. Prüfe vor dem Kauf den Betriebssystemsupport und die Upgrade-Berechtigung.
+
+## Quellen
+
+- [Microsoft: Der Support für Windows 10 ist beendet](https://support.microsoft.com/en-us/windows/deployment/updates-lifecycle/windows-10-support-has-ended-on-october-14-2025)
+- [Microsoft Learn: Unterstützte Intel-Prozessoren für Windows 11](https://learn.microsoft.com/en-us/windows-hardware/design/minimum/supported/windows-11-supported-intel-processors)
+- [Lenovo PSREF: ThinkPad T470s](https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_T470s/ThinkPad_T470s_Spec.PDF)

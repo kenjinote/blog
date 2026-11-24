@@ -1,8 +1,9 @@
 ---
 title: 'Membeli ThinkPad T470s Bekas! Ulasan Jujur tentang Spesifikasi, Kegunaan, dan Kekurangan'
-date: "2026-09-24T19:44:38+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
+date: "2023-01-13T19:07:00+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 slug: "ThinkPad（中古）を買った"
-date: 2023-01-13T19:07:00+09:00
 tags: ["ThinkPad", "Laptop"]
 draft: false
 image: "img.webp"
@@ -18,7 +19,7 @@ Spesifikasinya seperti di bawah ini, dan harganya sekitar 55.000 yen menggunakan
 
 ## ThinkPad T470s
 
-- CPU: Intel Core i7 7600U
+- CPU: Intel Core i7-7600U
 - RAM: 24GB
 - SSD: 512GB
 - OS: Windows 10 Pro 64bit
@@ -31,11 +32,19 @@ Karena bekas, saya pikir mungkin ada tanda-tanda penggunaan atau goresan, tetapi
 Baterai juga berfungsi tanpa masalah sejauh ini.
 
 ## Keluhan yang bisa saya pikirkan saat ini
-- Tidak ada tombol `Pause` dan tombol `App`. Saya menggunakan tombol `Pause` sebagai pintasan untuk membuka pengaturan sistem. Selain itu, saya menggunakan tombol `App` untuk membuka menu pop-up, jadi tidak nyaman tanpa tombol tersebut.
+- Keyboard ini tidak memiliki tombol khusus `Pause` dan `App`. Saya pernah memetakan `Pause` dalam pengaturan pintasan pribadi untuk membuka Settings; ini bukan tindakan bawaan Windows. Tombol `App` biasanya membuka menu konteks, yang juga dapat dibuka dengan `Shift + F10`.
 - Tombol `PageUp` dan `PageDown` berada tepat di sebelah tombol panah pada keyboard, jadi saya sering salah menekannya. Mungkin ini hanya masalah kebiasaan.
 
 ## PC lain yang saya pertimbangkan tetapi tidak dibeli
 - ASUS Chromebook Flip C436FA (C436FA-ENG)
 - HP Laptop HP15s-fq
 
-Bahan referensi: [ThinkPad T470s](https://www.lenovojp.com/business/product/note/pdf/thinkpad_t470s.pdf)
+## Status dukungan (diperiksa November 2026)
+
+Artikel ini mencatat kondisi saat laptop dibeli pada Januari 2023; ini bukan rekomendasi pembelian terkini. Dukungan reguler Windows 10 berakhir pada 14 Oktober 2025. PC yang tidak terdaftar dalam ESU tidak lagi menerima pembaruan keamanan reguler. PC Windows 10 yang memenuhi syarat dapat terus menerima pembaruan melalui ESU; periksa persyaratan pendaftaran dan masa berlakunya (Microsoft saat ini mencantumkan program ESU konsumen hingga 12 Oktober 2027). Core i7-7600U pada unit ini tidak tercantum dalam daftar prosesor Windows 11 yang saat ini didukung Microsoft. Periksa dukungan OS dan kelayakan peningkatan sebelum membeli.
+
+## Referensi
+
+- [Microsoft: dukungan Windows 10 telah berakhir](https://support.microsoft.com/en-us/windows/deployment/updates-lifecycle/windows-10-support-has-ended-on-october-14-2025)
+- [Microsoft Learn: prosesor Intel yang didukung Windows 11](https://learn.microsoft.com/en-us/windows-hardware/design/minimum/supported/windows-11-supported-intel-processors)
+- [Lenovo PSREF: ThinkPad T470s](https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_T470s/ThinkPad_T470s_Spec.PDF)

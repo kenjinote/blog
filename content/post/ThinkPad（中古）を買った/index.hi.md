@@ -1,8 +1,9 @@
 ---
 title: 'मैंने एक इस्तेमाल किया हुआ ThinkPad T470s खरीदा! इसके स्पेक्स, उपयोगिता और कमियों की ईमानदार समीक्षा'
-date: "2026-09-24T19:44:38+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
+date: "2023-01-13T19:07:00+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 slug: "ThinkPad（中古）を買った"
-date: 2023-01-13T19:07:00+09:00
 tags: ["ThinkPad", "लैपटॉप"]
 draft: false
 image: "img.webp"
@@ -18,7 +19,7 @@ description: 'यह दूरस्थ कार्य के लिए उप�
 
 ## ThinkPad T470s
 
-- CPU: Intel Core i7 7600U
+- CPU: Intel Core i7-7600U
 - RAM: 24GB
 - SSD: 512GB
 - OS: Windows 10 Pro 64bit
@@ -31,12 +32,19 @@ description: 'यह दूरस्थ कार्य के लिए उप�
 बैटरी भी अब तक बिना किसी समस्या के काम कर रही है।
 
 ## वर्तमान असंतोष
-- इसमें `Pause` और `App` कुंजियों का अभाव है। मैं सिस्टम सेटिंग्स खोलने के शॉर्टकट के रूप में `Pause` कुंजी का उपयोग करता था। इसके अलावा, मैं पॉप-अप मेनू खोलने के लिए `App` कुंजी का उपयोग करता था, इसलिए इसके बिना यह असुविधाजनक है।
+- इस कीबोर्ड में अलग `Pause` और `App` कुंजियाँ नहीं हैं। मैंने अपनी कस्टम शॉर्टकट सेटिंग में `Pause` को Settings खोलने के लिए मैप किया था; यह Windows की डिफ़ॉल्ट क्रिया नहीं है। `App` कुंजी आमतौर पर संदर्भ मेनू खोलती है; इसके बिना `Shift + F10` भी इस्तेमाल किया जा सकता है।
 - `PageUp` और `PageDown` कुंजियाँ कीबोर्ड पर तीर कुंजियों के ठीक बगल में हैं, इसलिए मैं अक्सर उन्हें गलती से दबा देता हूँ। यह आदत की बात हो सकती है।
 
 ## अन्य पीसी जिन पर मैंने विचार किया लेकिन खरीदा नहीं
 - ASUS Chromebook Flip C436FA (C436FA-ENG)
 - HP लैपटॉप HP15s-fq
 
+## वर्तमान समर्थन स्थिति (नवंबर 2026 में जाँची गई)
 
-संदर्भ: [ThinkPad T470s](https://www.lenovojp.com/business/product/note/pdf/thinkpad_t470s.pdf)
+यह लेख जनवरी 2023 में खरीद के समय की स्थिति दर्ज करता है; यह आज की खरीद सलाह नहीं है। Windows 10 का सामान्य समर्थन 14 अक्टूबर 2025 को समाप्त हो गया। ESU में नामांकित न किए गए PC को अब नियमित सुरक्षा अपडेट नहीं मिलते। पात्र Windows 10 PC को ESU के माध्यम से अपडेट मिल सकते हैं; नामांकन की शर्तें और अवधि जाँचें (Microsoft के अनुसार उपभोक्ता ESU कार्यक्रम फिलहाल 12 अक्टूबर 2027 तक है)। इस डिवाइस का Core i7-7600U Microsoft की वर्तमान Windows 11 समर्थित प्रोसेसर सूची में नहीं है। खरीदने से पहले OS समर्थन और अपग्रेड पात्रता जाँचें।
+
+## संदर्भ
+
+- [Microsoft: Windows 10 समर्थन समाप्त हो गया है](https://support.microsoft.com/en-us/windows/deployment/updates-lifecycle/windows-10-support-has-ended-on-october-14-2025)
+- [Microsoft Learn: Windows 11 समर्थित Intel प्रोसेसर](https://learn.microsoft.com/en-us/windows-hardware/design/minimum/supported/windows-11-supported-intel-processors)
+- [Lenovo PSREF: ThinkPad T470s](https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_T470s/ThinkPad_T470s_Spec.PDF)

@@ -4,9 +4,10 @@
 
 
 title: '중고 ThinkPad T470s 구입! 사양과 사용 편의성, 불만 사항 솔직 리뷰'
-date: "2026-09-24T19:44:38+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
+date: "2023-01-13T19:07:00+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 slug: "ThinkPad（中古）を買った"
-date: 2023-01-13T19:07:00+09:00
 tags: ["ThinkPad", "노트북"]
 draft: false
 image: "img.webp"
@@ -26,7 +27,7 @@ description: '원격 작업용으로 중고 ThinkPad T470s를 구입한 리뷰 �
 
 ## ThinkPad T470s
 
-- CPU: Intel Core i7 7600U
+- CPU: Intel Core i7-7600U
 - RAM: 24GB
 - SSD: 512GB
 - OS: Windows 10 Pro 64bit
@@ -39,12 +40,19 @@ description: '원격 작업용으로 중고 ThinkPad T470s를 구입한 리뷰 �
 배터리도 현재 문제없이 사용하고 있습니다.
 
 ## 현재 생각나는 불만점
-- `Pause` 키와 `App` 키가 없다. `Pause` 키는 시스템 설정을 여는 단축키로 사용하고 있었다. 또한, `App` 키는 팝업 메뉴를 열 때 사용하고 있었으므로 없으면 불편하다.
+- 이 키보드에는 전용 `Pause` 키와 `App` 키가 없습니다. 저는 개인 단축키 설정에서 `Pause` 키를 설정을 여는 동작으로 지정해 사용했습니다(Windows 기본 동작은 아닙니다). `App` 키는 보통 컨텍스트 메뉴를 열며, 없을 때는 `Shift + F10`으로도 열 수 있습니다.
 - 키보드의 화살표 키 바로 곁에 `PageUp` 키와 `PageDown` 키가 있어서 자주 잘못 누른다. 이것은 익숙해지는 것일지도 모른다.
 
 ## 그 밖에 검토했지만 사지 않은 PC
 - ASUS Chromebook Flip C436FA (C436FA-ENG)
 - HP 노트북 HP15s-fq
 
+## 현재 지원 상태(2026년 11월 확인)
 
-참고 자료: [ThinkPad T470s](https://www.lenovojp.com/business/product/note/pdf/thinkpad_t470s.pdf)
+이 글은 2023년 1월 구매 당시의 기록이며 현재의 구매 권장 사항이 아닙니다. Windows 10 일반 지원은 2025년 10월 14일에 종료되었습니다. ESU에 등록하지 않은 PC는 일반 보안 업데이트를 더 이상 받지 못합니다. 조건을 충족하는 Windows 10 PC는 ESU를 통해 업데이트를 받을 수 있으므로 등록 조건과 기간을 확인하세요(현재 Microsoft는 소비자용 ESU 프로그램을 2027년 10월 12일까지로 안내합니다). 이 제품의 Core i7-7600U는 Microsoft의 현재 Windows 11 지원 프로세서 목록에 없습니다. 구매 전 OS 지원 및 업그레이드 가능 여부를 확인하세요.
+
+## 참고 자료
+
+- [Microsoft: Windows 10 지원 종료](https://support.microsoft.com/en-us/windows/deployment/updates-lifecycle/windows-10-support-has-ended-on-october-14-2025)
+- [Microsoft Learn: Windows 11 지원 Intel 프로세서](https://learn.microsoft.com/en-us/windows-hardware/design/minimum/supported/windows-11-supported-intel-processors)
+- [Lenovo PSREF: ThinkPad T470s](https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_T470s/ThinkPad_T470s_Spec.PDF)
