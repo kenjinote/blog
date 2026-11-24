@@ -12,7 +12,7 @@
     "https://doi.org/10.1016/j.ijadhadh.2013.02.015",
     "https://doi.org/10.11618/adhesion.36.370"
   ],
-  "scope": "All 12 current translations in this Japanese-source article bundle have AI review records tied to exact source and translation hashes. The concise editions disclose their content-parity limits; batch publication verification remains pending.",
+  "scope": "All 12 current translations in this Japanese-source article bundle have AI review records tied to exact source and translation hashes. The concise editions disclose their content-parity limits. CI build, multilingual, search, HTTPS, deployment, and post-deployment URL checks passed.",
   "findings": [
     "Corrected the claim that aircraft such as the 787 are joined exclusively by epoxy films; clarified composite weight fraction, mixed joining methods, process qualification, inspection, and damage tolerance.",
     "Removed categorical claims about epoxy shrinkage, residual stress, creep, and chemical resistance.",
@@ -20,7 +20,6 @@
     "Rewrote surface-energy explanations to include the solid-liquid interfacial energy and avoid unsupported universal energy values/contact angles.",
     "Restored the fracture mechanics, aircraft joining, biomimetic adhesion, and nondestructive inspection/self-healing sections in German.",
     "Proofread the complete French edition, corrected overclaims, aligned the full section structure, and restored the fracture, aerospace, biomimetic, and inspection/self-healing topics; source-only inline formulas remain a documented follow-up.",
-    "Rewrote the Arabic edition, correcting aircraft-joining, wetting, epoxy, PSA, and biological-adhesion overclaims; added all source sections and references while documenting omitted equations, examples, and diagrams.",
     "Rewrote the Arabic edition, correcting aircraft-joining, wetting, epoxy, PSA, and biological-adhesion overclaims; added all source sections and references while documenting omitted equations, examples, and diagrams.",
     "Completed a full English-to-Japanese comparison and checked all article sections, included equations, diagrams, references, and technical claims; corrected the previously documented overclaims.",
     "Rewrote the Simplified Chinese edition, correcting claims about 787 joining, wetting, epoxy, pressure-sensitive adhesives, and biomimetic adhesion; restored all source sections and references while disclosing omitted equations and figures.",
@@ -32,7 +31,7 @@
     "Rewrote the Portuguese edition in European Portuguese, correcting claims about aircraft joining, wetting, epoxy, PSAs, and biomimetic adhesion; restored all source sections and references while documenting omitted equations and diagrams.",
     "Rewrote the Russian edition, correcting aircraft-joining, wetting, epoxy, PSA, and silane claims; restored all source sections and references while documenting omitted equations and diagrams."
   ],
-  "publicationPending": true,
+  "publicationPending": false,
   "reviews": {
     "post/adhesion-science-molecular-bonding-epoxy-structural-mechanics/index.de.md": {
       "source": "post/adhesion-science-molecular-bonding-epoxy-structural-mechanics/index.ja.md",
@@ -466,5 +465,6 @@
         "External link reachability was not live-tested. The other eleven translated editions in this bundle now have AI review records, but publication verification for batch 206 remains pending."
       ]
     }
-  }
+  },
+  "publicationReceipt": "docs/translation-review/publication-batch-206.json"
 }

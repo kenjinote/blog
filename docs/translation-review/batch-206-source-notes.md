@@ -4,7 +4,7 @@ Date: 2026-11-25 (Asia/Tokyo)
 
 ## Status
 
-All 12 translated editions in this article bundle have current AI review records in `batch-206.json`. Each record names Codex as an AI reviewer and binds the exact Japanese source and translation revisions by SHA-256. The 11 concise translations disclose omitted details in their individual records; the English edition is more extensive. No human or native-language reviewer has confirmed these editions. Publication verification for B206 is pending.
+All 12 translated editions in this article bundle have current AI review records in `batch-206.json`. Each record names Codex as an AI reviewer and binds the exact Japanese source and translation revisions by SHA-256. The 11 concise translations disclose omitted details in their individual records; the English edition is more extensive. No human or native-language reviewer has confirmed these editions. CI and post-deployment verification for B206 passed; the receipt is `publication-batch-206.json`.
 
 ## Current revisions
 
@@ -47,14 +47,14 @@ The hashes identify the revisions covered by the review records. Any later edit 
 
 - A Hugo build limited to this article bundle completed successfully. Generated pages for all 13 site languages; canonical URLs, `html lang`, 14 alternate links (`hreflang` plus `x-default`), selector targets, and the 18 article subsections were checked on every generated page.
 - A full-site local build was stopped after Hugo memory use exceeded 8 GB. The isolated build reports expected missing search/archive layouts because it does not include the rest of the site. Hugo also reports existing missing Portuguese theme strings (`toggleMenu`, `darkMode`, article/list/footer labels); these warnings are unrelated to the article text and remain open.
-- The site-wide deployment build and live URL checks remain necessary before publication can be marked verified.
+- The site-wide deployment build, CI checks, and live URL checks all passed. Receipt: `publication-batch-206.json`; CI run 45476289362, commit `8617c22dca42e3e94ea9f50ba7ca930752db317f`.
 
 ## Remaining work
 
-- Run the local site build and generated-page checks for this completed bundle, then publish and verify all 13 language URLs.
-- Continue the site-wide review queue. The current ledger reports 2,388 reviewed and 10,644 unreviewed translations; this article bundle is only one part of the remaining work.
+- Continue the site-wide review queue. The current ledger reports 2,388 reviewed and 10,644 unreviewed translations; this article bundle is one completed part of the remaining site-wide work.
 - Native-language editorial confirmation remains outstanding for the 12 AI-reviewed translations.
 
 ## Related publication checks
 
 - B204 and B205 passed the targeted 13-language live URL verification in CI run 45459920625 at commit `56a3404dbd4c8dd215c4885e8021c00efa986e65`. Receipts: `publication-batch-204.json` and `publication-batch-205.json`. Those targeted checks do not establish that unrelated historic batches pass.
+- B206 passed the full deployment workflow and targeted 13-language live checks in CI run 45476289362 at commit `8617c22dca42e3e94ea9f50ba7ca930752db317f`.

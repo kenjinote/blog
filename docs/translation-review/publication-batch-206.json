@@ -1,0 +1,297 @@
+{
+  "version": 1,
+  "batches": [
+    206
+  ],
+  "verifiedAt": "2026-11-25T05:32:22+09:00",
+  "ciRun": 45476289362,
+  "ciUrl": "https://github.com/kenjinote/blog/actions/runs/45476289362",
+  "sourceCommit": "8617c22dca42e3e94ea9f50ba7ca930752db317f",
+  "deployment": "success",
+  "pagesVerified": 13,
+  "allPassed": true,
+  "results": {
+    "206": {
+      "pages": [
+        {
+          "language": "ja",
+          "url": "https://kenji.blog/p/adhesion-science-molecular-bonding-epoxy-structural-mechanics/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "languageSelector": true,
+            "officialReferences": true,
+            "localAssets": true,
+            "articleSections": true,
+            "httpsLinks": true
+          },
+          "passed": true
+        },
+        {
+          "language": "en",
+          "url": "https://kenji.blog/en/p/adhesion-science-molecular-bonding-epoxy-structural-mechanics/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "languageSelector": true,
+            "officialReferences": true,
+            "localAssets": true,
+            "articleSections": true,
+            "httpsLinks": true
+          },
+          "passed": true
+        },
+        {
+          "language": "zh-cn",
+          "url": "https://kenji.blog/zh-cn/p/adhesion-science-molecular-bonding-epoxy-structural-mechanics/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "languageSelector": true,
+            "officialReferences": true,
+            "localAssets": true,
+            "articleSections": true,
+            "httpsLinks": true
+          },
+          "passed": true
+        },
+        {
+          "language": "es",
+          "url": "https://kenji.blog/es/p/adhesion-science-molecular-bonding-epoxy-structural-mechanics/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "languageSelector": true,
+            "officialReferences": true,
+            "localAssets": true,
+            "articleSections": true,
+            "httpsLinks": true
+          },
+          "passed": true
+        },
+        {
+          "language": "ko",
+          "url": "https://kenji.blog/ko/p/adhesion-science-molecular-bonding-epoxy-structural-mechanics/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "languageSelector": true,
+            "officialReferences": true,
+            "localAssets": true,
+            "articleSections": true,
+            "httpsLinks": true
+          },
+          "passed": true
+        },
+        {
+          "language": "pt",
+          "url": "https://kenji.blog/pt/p/adhesion-science-molecular-bonding-epoxy-structural-mechanics/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "languageSelector": true,
+            "officialReferences": true,
+            "localAssets": true,
+            "articleSections": true,
+            "httpsLinks": true
+          },
+          "passed": true
+        },
+        {
+          "language": "zh-tw",
+          "url": "https://kenji.blog/zh-tw/p/adhesion-science-molecular-bonding-epoxy-structural-mechanics/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "languageSelector": true,
+            "officialReferences": true,
+            "localAssets": true,
+            "articleSections": true,
+            "httpsLinks": true
+          },
+          "passed": true
+        },
+        {
+          "language": "hi",
+          "url": "https://kenji.blog/hi/p/adhesion-science-molecular-bonding-epoxy-structural-mechanics/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "languageSelector": true,
+            "officialReferences": true,
+            "localAssets": true,
+            "articleSections": true,
+            "httpsLinks": true
+          },
+          "passed": true
+        },
+        {
+          "language": "fr",
+          "url": "https://kenji.blog/fr/p/adhesion-science-molecular-bonding-epoxy-structural-mechanics/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "languageSelector": true,
+            "officialReferences": true,
+            "localAssets": true,
+            "articleSections": true,
+            "httpsLinks": true
+          },
+          "passed": true
+        },
+        {
+          "language": "de",
+          "url": "https://kenji.blog/de/p/adhesion-science-molecular-bonding-epoxy-structural-mechanics/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "languageSelector": true,
+            "officialReferences": true,
+            "localAssets": true,
+            "articleSections": true,
+            "httpsLinks": true
+          },
+          "passed": true
+        },
+        {
+          "language": "ar",
+          "url": "https://kenji.blog/ar/p/adhesion-science-molecular-bonding-epoxy-structural-mechanics/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "languageSelector": true,
+            "officialReferences": true,
+            "localAssets": true,
+            "articleSections": true,
+            "httpsLinks": true
+          },
+          "passed": true
+        },
+        {
+          "language": "ru",
+          "url": "https://kenji.blog/ru/p/adhesion-science-molecular-bonding-epoxy-structural-mechanics/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "languageSelector": true,
+            "officialReferences": true,
+            "localAssets": true,
+            "articleSections": true,
+            "httpsLinks": true
+          },
+          "passed": true
+        },
+        {
+          "language": "id",
+          "url": "https://kenji.blog/id/p/adhesion-science-molecular-bonding-epoxy-structural-mechanics/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "languageSelector": true,
+            "officialReferences": true,
+            "localAssets": true,
+            "articleSections": true,
+            "httpsLinks": true
+          },
+          "passed": true
+        }
+      ],
+      "allPassed": true
+    }
+  },
+  "limitations": [
+    "Live HTTP, canonical, language, hreflang, selector, references, local assets, article sections, and HTTPS links were checked after deployment. External reference endpoints were not independently fetched.",
+    "The translation reviews are AI-assisted; no native-speaker or human technical review is represented."
+  ]
+}
