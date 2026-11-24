@@ -16925,6 +16925,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-145.json",
       "evidenceHash": "7f7e1c149e5025ed0587ab3ed5b47cb3efd0550378bf2823de7491a7594a2c24"
+    },
+    "post/ブログで使える写真素材サイト「Unsplash」について/index.en.md": {
+      "source": "post/ブログで使える写真素材サイト「Unsplash」について/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "19fafbe62ba2fd6bb677c5b6a52a1fc7644b6c2e7147e7535432e84806c9abea",
+      "translationHash": "7189314aaf3a90f42e555b2fa9479f7369936df6edd54f990a564e4a7b6f5413",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-146.json",
+      "evidenceHash": "05f392f9da7c75cbd94aef9d0ab88f17401de4bb41c41ddd69f7aebe28987bc0"
+    },
+    "post/ブログで使える写真素材サイト「Unsplash」について/index.zh-cn.md": {
+      "source": "post/ブログで使える写真素材サイト「Unsplash」について/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "19fafbe62ba2fd6bb677c5b6a52a1fc7644b6c2e7147e7535432e84806c9abea",
+      "translationHash": "e821bb390b226582dc912a257c2471a200a670f314b351e33d8d6ccaf7a51d94",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-146.json",
+      "evidenceHash": "66973bd7cc38a744be57fed6d306f40820d77faa25c4b2844c7dd2383db974f1"
+    },
+    "post/ブログで使える写真素材サイト「Unsplash」について/index.es.md": {
+      "source": "post/ブログで使える写真素材サイト「Unsplash」について/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "19fafbe62ba2fd6bb677c5b6a52a1fc7644b6c2e7147e7535432e84806c9abea",
+      "translationHash": "da8b792e23dcd5c400de8dfa0c4bec5d3d23a80512b71cc4b72033c58e84f7da",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-146.json",
+      "evidenceHash": "d6a4ae1d3ae4f99c53c97bdd33a24059f805933abbd50f56d1b2a814407497d8"
+    },
+    "post/ブログで使える写真素材サイト「Unsplash」について/index.ko.md": {
+      "source": "post/ブログで使える写真素材サイト「Unsplash」について/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "19fafbe62ba2fd6bb677c5b6a52a1fc7644b6c2e7147e7535432e84806c9abea",
+      "translationHash": "610908eca77cc4b81b1878dd202f2822196e2782dbe64460828d786255828333",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-146.json",
+      "evidenceHash": "5997d90858385a04068bc003e18d1b57a594fac4c5004efad5be9398fcbd8ce4"
+    },
+    "post/ブログで使える写真素材サイト「Unsplash」について/index.pt.md": {
+      "source": "post/ブログで使える写真素材サイト「Unsplash」について/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "19fafbe62ba2fd6bb677c5b6a52a1fc7644b6c2e7147e7535432e84806c9abea",
+      "translationHash": "508bc3d3559e3f7694482eada49bf9deddd7b974fdca2a419eadcb623d4a90c1",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-146.json",
+      "evidenceHash": "f88bc3794da9a3e53e3a84ff03ca09a3859e4e55d29f55461c7a977976406b64"
+    },
+    "post/ブログで使える写真素材サイト「Unsplash」について/index.zh-tw.md": {
+      "source": "post/ブログで使える写真素材サイト「Unsplash」について/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "19fafbe62ba2fd6bb677c5b6a52a1fc7644b6c2e7147e7535432e84806c9abea",
+      "translationHash": "f62c9b219b5c99df41523c4e694d072ab3b0d1b983a90658670824241e544462",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-146.json",
+      "evidenceHash": "22e2531c5f9a97ea7e3a8412737d00146cdbf81bb038ad6089daa75f0bf47282"
+    },
+    "post/ブログで使える写真素材サイト「Unsplash」について/index.hi.md": {
+      "source": "post/ブログで使える写真素材サイト「Unsplash」について/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "19fafbe62ba2fd6bb677c5b6a52a1fc7644b6c2e7147e7535432e84806c9abea",
+      "translationHash": "32f499b4b8584a9d0c5d8e8bbf5ea504537cd3720558a26f4ec18f89a0ad5cc3",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-146.json",
+      "evidenceHash": "4b9226502a1b19e7449aa74196359846335d6593764363fb735663d33c05cf78"
+    },
+    "post/ブログで使える写真素材サイト「Unsplash」について/index.fr.md": {
+      "source": "post/ブログで使える写真素材サイト「Unsplash」について/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "19fafbe62ba2fd6bb677c5b6a52a1fc7644b6c2e7147e7535432e84806c9abea",
+      "translationHash": "1a0f3656504ab57493aa8e33f4e5113db575828d35ae16c8b660fd6bdbb58831",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-146.json",
+      "evidenceHash": "04a377736207ee46af75992c8e407ecc5c502c830057a310a9e31a6132115c74"
+    },
+    "post/ブログで使える写真素材サイト「Unsplash」について/index.de.md": {
+      "source": "post/ブログで使える写真素材サイト「Unsplash」について/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "19fafbe62ba2fd6bb677c5b6a52a1fc7644b6c2e7147e7535432e84806c9abea",
+      "translationHash": "c3740ce606e31ce1d115e71275b6e5c0f378e16808b2a1a505f0d60440d00a40",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-146.json",
+      "evidenceHash": "eac7661314c54f63f6973a67c07a4462147e77b412326e043cbc2241259d2117"
+    },
+    "post/ブログで使える写真素材サイト「Unsplash」について/index.ar.md": {
+      "source": "post/ブログで使える写真素材サイト「Unsplash」について/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "19fafbe62ba2fd6bb677c5b6a52a1fc7644b6c2e7147e7535432e84806c9abea",
+      "translationHash": "225810e8c6cbced7f5196b13eba5b24539e590d334d8930af2a31b87f44e13d0",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-146.json",
+      "evidenceHash": "575ff1db18e1601a6f517a0589b6291dff6c08abba76bf5b6c606415d2afe4c8"
+    },
+    "post/ブログで使える写真素材サイト「Unsplash」について/index.ru.md": {
+      "source": "post/ブログで使える写真素材サイト「Unsplash」について/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "19fafbe62ba2fd6bb677c5b6a52a1fc7644b6c2e7147e7535432e84806c9abea",
+      "translationHash": "49006b242c3c58ce8c9a009bcb0982e9a8e7d7e2f9a30f1eac9b014b16ca0a0c",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-146.json",
+      "evidenceHash": "9ba17a08662cc6f2995bbd9193342bd67f8a023123e1a0af4256a7bb2dcc1acd"
+    },
+    "post/ブログで使える写真素材サイト「Unsplash」について/index.id.md": {
+      "source": "post/ブログで使える写真素材サイト「Unsplash」について/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "19fafbe62ba2fd6bb677c5b6a52a1fc7644b6c2e7147e7535432e84806c9abea",
+      "translationHash": "38ca433d1ddf58f795863fe1cfd60b84fe977b460f9294ebf1bf6a37e71ea195",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-146.json",
+      "evidenceHash": "c8eb878ae2c3812b1227b50e8aba3cf978483cb5b7640b26cecc7fa3108f6ba5"
     }
   }
 }

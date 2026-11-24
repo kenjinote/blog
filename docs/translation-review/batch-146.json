@@ -1,0 +1,445 @@
+{
+  "version": 1,
+  "batch": 146,
+  "article": "Unsplashの写真をブログで使う前に確認したいライセンスと権利",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "19fafbe62ba2fd6bb677c5b6a52a1fc7644b6c2e7147e7535432e84806c9abea",
+  "sources": [
+    "https://unsplash.com/license",
+    "https://unsplash.com/terms",
+    "https://help.unsplash.com/en/articles/2612315-can-i-use-unsplash-images-for-personal-or-commercial-projects",
+    "https://help.unsplash.com/en/articles/2646379-what-if-there-s-a-brand-or-identifiable-person-depicted-in-an-image-that-i-download",
+    "https://help.unsplash.com/en/articles/6604652-what-is-the-unsplash-license"
+  ],
+  "scope": "Compared the entire Japanese source and all twelve localized files, including title, description, publication metadata, complete prose, license statements, restrictions, third-party rights, Unsplash+ distinction, and reference links.",
+  "findings": [
+    "Removed duplicate future date; retained the 2023-04-02 original publication timestamp and recorded lastmod 2026-11-24.",
+    "Qualified blanket claims: statements about free/commercial use, permission, and attribution apply to images under the standard Unsplash License and do not clear every depicted third-party right.",
+    "Added restrictions on unmodified resale and compiling images into a competing service, plus a pointer to additional restrictions in the Terms.",
+    "Added image-specific checks for identifiable people, brands, artwork, and locations, and clarified that Unsplash+ has a separate paid license.",
+    "Rewrote and synchronized all twelve translations and added official references."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/ブログで使える写真素材サイト「Unsplash」について/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/ブログで使える写真素材サイト「Unsplash」について/index.md",
+      "sourceHash": "19fafbe62ba2fd6bb677c5b6a52a1fc7644b6c2e7147e7535432e84806c9abea",
+      "translationHash": "7189314aaf3a90f42e555b2fa9479f7369936df6edd54f990a564e4a7b6f5413",
+      "summary": "Compared the complete Japanese article and all twelve translations against current official Unsplash License, Terms, Help Center guidance on commercial use and depicted third-party rights, and the separate Unsplash+ license. Qualified the original blanket claims and synchronized all locale content.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full text in all languages and aligned free use, commercial/non-commercial purposes, permission, optional attribution, restrictions, third-party rights, and the distinction between standard images and Unsplash+."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked license, attribution, significant modification, competing service, third-party rights, likeness/privacy, trademark, and Unsplash+ terminology against Unsplash official materials."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or executable instructions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Unsplash License and Terms, Help Center guidance on commercial use and people/brands in images, and Unsplash+ license FAQ."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "This is a general summary, not legal advice; the applicable law, image-specific license, current Unsplash Terms, and required third-party permissions depend on context and can change."
+      ]
+    },
+    "post/ブログで使える写真素材サイト「Unsplash」について/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/ブログで使える写真素材サイト「Unsplash」について/index.md",
+      "sourceHash": "19fafbe62ba2fd6bb677c5b6a52a1fc7644b6c2e7147e7535432e84806c9abea",
+      "translationHash": "e821bb390b226582dc912a257c2471a200a670f314b351e33d8d6ccaf7a51d94",
+      "summary": "Compared the complete Japanese article and all twelve translations against current official Unsplash License, Terms, Help Center guidance on commercial use and depicted third-party rights, and the separate Unsplash+ license. Qualified the original blanket claims and synchronized all locale content.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full text in all languages and aligned free use, commercial/non-commercial purposes, permission, optional attribution, restrictions, third-party rights, and the distinction between standard images and Unsplash+."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked license, attribution, significant modification, competing service, third-party rights, likeness/privacy, trademark, and Unsplash+ terminology against Unsplash official materials."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or executable instructions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Unsplash License and Terms, Help Center guidance on commercial use and people/brands in images, and Unsplash+ license FAQ."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "This is a general summary, not legal advice; the applicable law, image-specific license, current Unsplash Terms, and required third-party permissions depend on context and can change."
+      ]
+    },
+    "post/ブログで使える写真素材サイト「Unsplash」について/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/ブログで使える写真素材サイト「Unsplash」について/index.md",
+      "sourceHash": "19fafbe62ba2fd6bb677c5b6a52a1fc7644b6c2e7147e7535432e84806c9abea",
+      "translationHash": "da8b792e23dcd5c400de8dfa0c4bec5d3d23a80512b71cc4b72033c58e84f7da",
+      "summary": "Compared the complete Japanese article and all twelve translations against current official Unsplash License, Terms, Help Center guidance on commercial use and depicted third-party rights, and the separate Unsplash+ license. Qualified the original blanket claims and synchronized all locale content.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full text in all languages and aligned free use, commercial/non-commercial purposes, permission, optional attribution, restrictions, third-party rights, and the distinction between standard images and Unsplash+."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked license, attribution, significant modification, competing service, third-party rights, likeness/privacy, trademark, and Unsplash+ terminology against Unsplash official materials."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or executable instructions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Unsplash License and Terms, Help Center guidance on commercial use and people/brands in images, and Unsplash+ license FAQ."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "This is a general summary, not legal advice; the applicable law, image-specific license, current Unsplash Terms, and required third-party permissions depend on context and can change."
+      ]
+    },
+    "post/ブログで使える写真素材サイト「Unsplash」について/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/ブログで使える写真素材サイト「Unsplash」について/index.md",
+      "sourceHash": "19fafbe62ba2fd6bb677c5b6a52a1fc7644b6c2e7147e7535432e84806c9abea",
+      "translationHash": "610908eca77cc4b81b1878dd202f2822196e2782dbe64460828d786255828333",
+      "summary": "Compared the complete Japanese article and all twelve translations against current official Unsplash License, Terms, Help Center guidance on commercial use and depicted third-party rights, and the separate Unsplash+ license. Qualified the original blanket claims and synchronized all locale content.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full text in all languages and aligned free use, commercial/non-commercial purposes, permission, optional attribution, restrictions, third-party rights, and the distinction between standard images and Unsplash+."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked license, attribution, significant modification, competing service, third-party rights, likeness/privacy, trademark, and Unsplash+ terminology against Unsplash official materials."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or executable instructions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Unsplash License and Terms, Help Center guidance on commercial use and people/brands in images, and Unsplash+ license FAQ."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "This is a general summary, not legal advice; the applicable law, image-specific license, current Unsplash Terms, and required third-party permissions depend on context and can change."
+      ]
+    },
+    "post/ブログで使える写真素材サイト「Unsplash」について/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/ブログで使える写真素材サイト「Unsplash」について/index.md",
+      "sourceHash": "19fafbe62ba2fd6bb677c5b6a52a1fc7644b6c2e7147e7535432e84806c9abea",
+      "translationHash": "508bc3d3559e3f7694482eada49bf9deddd7b974fdca2a419eadcb623d4a90c1",
+      "summary": "Compared the complete Japanese article and all twelve translations against current official Unsplash License, Terms, Help Center guidance on commercial use and depicted third-party rights, and the separate Unsplash+ license. Qualified the original blanket claims and synchronized all locale content.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full text in all languages and aligned free use, commercial/non-commercial purposes, permission, optional attribution, restrictions, third-party rights, and the distinction between standard images and Unsplash+."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked license, attribution, significant modification, competing service, third-party rights, likeness/privacy, trademark, and Unsplash+ terminology against Unsplash official materials."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or executable instructions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Unsplash License and Terms, Help Center guidance on commercial use and people/brands in images, and Unsplash+ license FAQ."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "This is a general summary, not legal advice; the applicable law, image-specific license, current Unsplash Terms, and required third-party permissions depend on context and can change."
+      ]
+    },
+    "post/ブログで使える写真素材サイト「Unsplash」について/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/ブログで使える写真素材サイト「Unsplash」について/index.md",
+      "sourceHash": "19fafbe62ba2fd6bb677c5b6a52a1fc7644b6c2e7147e7535432e84806c9abea",
+      "translationHash": "f62c9b219b5c99df41523c4e694d072ab3b0d1b983a90658670824241e544462",
+      "summary": "Compared the complete Japanese article and all twelve translations against current official Unsplash License, Terms, Help Center guidance on commercial use and depicted third-party rights, and the separate Unsplash+ license. Qualified the original blanket claims and synchronized all locale content.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full text in all languages and aligned free use, commercial/non-commercial purposes, permission, optional attribution, restrictions, third-party rights, and the distinction between standard images and Unsplash+."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked license, attribution, significant modification, competing service, third-party rights, likeness/privacy, trademark, and Unsplash+ terminology against Unsplash official materials."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or executable instructions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Unsplash License and Terms, Help Center guidance on commercial use and people/brands in images, and Unsplash+ license FAQ."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "This is a general summary, not legal advice; the applicable law, image-specific license, current Unsplash Terms, and required third-party permissions depend on context and can change."
+      ]
+    },
+    "post/ブログで使える写真素材サイト「Unsplash」について/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/ブログで使える写真素材サイト「Unsplash」について/index.md",
+      "sourceHash": "19fafbe62ba2fd6bb677c5b6a52a1fc7644b6c2e7147e7535432e84806c9abea",
+      "translationHash": "32f499b4b8584a9d0c5d8e8bbf5ea504537cd3720558a26f4ec18f89a0ad5cc3",
+      "summary": "Compared the complete Japanese article and all twelve translations against current official Unsplash License, Terms, Help Center guidance on commercial use and depicted third-party rights, and the separate Unsplash+ license. Qualified the original blanket claims and synchronized all locale content.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full text in all languages and aligned free use, commercial/non-commercial purposes, permission, optional attribution, restrictions, third-party rights, and the distinction between standard images and Unsplash+."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked license, attribution, significant modification, competing service, third-party rights, likeness/privacy, trademark, and Unsplash+ terminology against Unsplash official materials."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or executable instructions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Unsplash License and Terms, Help Center guidance on commercial use and people/brands in images, and Unsplash+ license FAQ."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "This is a general summary, not legal advice; the applicable law, image-specific license, current Unsplash Terms, and required third-party permissions depend on context and can change."
+      ]
+    },
+    "post/ブログで使える写真素材サイト「Unsplash」について/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/ブログで使える写真素材サイト「Unsplash」について/index.md",
+      "sourceHash": "19fafbe62ba2fd6bb677c5b6a52a1fc7644b6c2e7147e7535432e84806c9abea",
+      "translationHash": "1a0f3656504ab57493aa8e33f4e5113db575828d35ae16c8b660fd6bdbb58831",
+      "summary": "Compared the complete Japanese article and all twelve translations against current official Unsplash License, Terms, Help Center guidance on commercial use and depicted third-party rights, and the separate Unsplash+ license. Qualified the original blanket claims and synchronized all locale content.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full text in all languages and aligned free use, commercial/non-commercial purposes, permission, optional attribution, restrictions, third-party rights, and the distinction between standard images and Unsplash+."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked license, attribution, significant modification, competing service, third-party rights, likeness/privacy, trademark, and Unsplash+ terminology against Unsplash official materials."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or executable instructions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Unsplash License and Terms, Help Center guidance on commercial use and people/brands in images, and Unsplash+ license FAQ."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "This is a general summary, not legal advice; the applicable law, image-specific license, current Unsplash Terms, and required third-party permissions depend on context and can change."
+      ]
+    },
+    "post/ブログで使える写真素材サイト「Unsplash」について/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/ブログで使える写真素材サイト「Unsplash」について/index.md",
+      "sourceHash": "19fafbe62ba2fd6bb677c5b6a52a1fc7644b6c2e7147e7535432e84806c9abea",
+      "translationHash": "c3740ce606e31ce1d115e71275b6e5c0f378e16808b2a1a505f0d60440d00a40",
+      "summary": "Compared the complete Japanese article and all twelve translations against current official Unsplash License, Terms, Help Center guidance on commercial use and depicted third-party rights, and the separate Unsplash+ license. Qualified the original blanket claims and synchronized all locale content.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full text in all languages and aligned free use, commercial/non-commercial purposes, permission, optional attribution, restrictions, third-party rights, and the distinction between standard images and Unsplash+."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked license, attribution, significant modification, competing service, third-party rights, likeness/privacy, trademark, and Unsplash+ terminology against Unsplash official materials."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or executable instructions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Unsplash License and Terms, Help Center guidance on commercial use and people/brands in images, and Unsplash+ license FAQ."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "This is a general summary, not legal advice; the applicable law, image-specific license, current Unsplash Terms, and required third-party permissions depend on context and can change."
+      ]
+    },
+    "post/ブログで使える写真素材サイト「Unsplash」について/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/ブログで使える写真素材サイト「Unsplash」について/index.md",
+      "sourceHash": "19fafbe62ba2fd6bb677c5b6a52a1fc7644b6c2e7147e7535432e84806c9abea",
+      "translationHash": "225810e8c6cbced7f5196b13eba5b24539e590d334d8930af2a31b87f44e13d0",
+      "summary": "Compared the complete Japanese article and all twelve translations against current official Unsplash License, Terms, Help Center guidance on commercial use and depicted third-party rights, and the separate Unsplash+ license. Qualified the original blanket claims and synchronized all locale content.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full text in all languages and aligned free use, commercial/non-commercial purposes, permission, optional attribution, restrictions, third-party rights, and the distinction between standard images and Unsplash+."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked license, attribution, significant modification, competing service, third-party rights, likeness/privacy, trademark, and Unsplash+ terminology against Unsplash official materials."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or executable instructions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Unsplash License and Terms, Help Center guidance on commercial use and people/brands in images, and Unsplash+ license FAQ."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "This is a general summary, not legal advice; the applicable law, image-specific license, current Unsplash Terms, and required third-party permissions depend on context and can change."
+      ]
+    },
+    "post/ブログで使える写真素材サイト「Unsplash」について/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/ブログで使える写真素材サイト「Unsplash」について/index.md",
+      "sourceHash": "19fafbe62ba2fd6bb677c5b6a52a1fc7644b6c2e7147e7535432e84806c9abea",
+      "translationHash": "49006b242c3c58ce8c9a009bcb0982e9a8e7d7e2f9a30f1eac9b014b16ca0a0c",
+      "summary": "Compared the complete Japanese article and all twelve translations against current official Unsplash License, Terms, Help Center guidance on commercial use and depicted third-party rights, and the separate Unsplash+ license. Qualified the original blanket claims and synchronized all locale content.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full text in all languages and aligned free use, commercial/non-commercial purposes, permission, optional attribution, restrictions, third-party rights, and the distinction between standard images and Unsplash+."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked license, attribution, significant modification, competing service, third-party rights, likeness/privacy, trademark, and Unsplash+ terminology against Unsplash official materials."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or executable instructions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Unsplash License and Terms, Help Center guidance on commercial use and people/brands in images, and Unsplash+ license FAQ."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "This is a general summary, not legal advice; the applicable law, image-specific license, current Unsplash Terms, and required third-party permissions depend on context and can change."
+      ]
+    },
+    "post/ブログで使える写真素材サイト「Unsplash」について/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/ブログで使える写真素材サイト「Unsplash」について/index.md",
+      "sourceHash": "19fafbe62ba2fd6bb677c5b6a52a1fc7644b6c2e7147e7535432e84806c9abea",
+      "translationHash": "38ca433d1ddf58f795863fe1cfd60b84fe977b460f9294ebf1bf6a37e71ea195",
+      "summary": "Compared the complete Japanese article and all twelve translations against current official Unsplash License, Terms, Help Center guidance on commercial use and depicted third-party rights, and the separate Unsplash+ license. Qualified the original blanket claims and synchronized all locale content.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full text in all languages and aligned free use, commercial/non-commercial purposes, permission, optional attribution, restrictions, third-party rights, and the distinction between standard images and Unsplash+."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked license, attribution, significant modification, competing service, third-party rights, likeness/privacy, trademark, and Unsplash+ terminology against Unsplash official materials."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or executable instructions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Unsplash License and Terms, Help Center guidance on commercial use and people/brands in images, and Unsplash+ license FAQ."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "This is a general summary, not legal advice; the applicable law, image-specific license, current Unsplash Terms, and required third-party permissions depend on context and can change."
+      ]
+    }
+  }
+}

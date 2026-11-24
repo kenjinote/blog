@@ -1,30 +1,30 @@
 ---
-title: 'Cara Menggunakan Situs Stok Foto Gratis ''Unsplash'' untuk Blog Beserta Lisensi dan Penggunaan Komersialnya'
-date: "2026-09-24T19:44:38+09:00"
+title: "Lisensi dan hak yang perlu diperiksa sebelum memakai foto Unsplash di blog"
+date: "2023-04-02T14:44:17+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 slug: "Blogで使えるMateri Fotoサイト「Unsplash」について"
-date: 2023-04-02T14:44:17+09:00
 tags: ["Materi Foto", "Blog", "Unsplash"]
 draft: false
 image: "img_1.webp"
 categories: ["blogging"]
-description: 'Kami akan memperkenalkan ''Unsplash'', situs stok foto gratis yang sangat cocok untuk artikel blog. Ini adalah layanan gambar berkualitas tinggi yang sangat praktis, gratis, boleh digunakan untuk komersial, dapat diedit, serta tidak memerlukan pencantuman kredit atau izin penggunaan.'
+description: "Ringkasan berdasarkan sumber resmi tentang Lisensi Unsplash standar, batasan penjualan ulang dan layanan pesaing, hak pihak ketiga, serta perbedaan Unsplash+."
 ---
-## Tentang "Unsplash"
+## Tentang Unsplash
 
-[https://unsplash.com/ja/](https://unsplash.com/ja/)
+Gambar yang tercakup dalam Lisensi Unsplash standar dapat diunduh gratis dan digunakan untuk keperluan komersial maupun nonkomersial. Anda tidak wajib meminta izin terpisah dari Unsplash atau fotografer maupun mencantumkan kredit, tetapi kredit dihargai. Jangan berasumsi semua gambar memakai lisensi yang sama: periksa label seperti Unsplash+ dan ketentuan tiap gambar.
 
-Ringkasan tentang situs materi foto "Unsplash" adalah sebagai berikut:
+### Hal yang perlu diperiksa sebelum memakai gambar
 
-- Semua gambar dapat digunakan secara gratis
-- Boleh digunakan untuk tujuan komersial
-- Modifikasi gambar diperbolehkan
-- Tidak memerlukan izin penggunaan
-- Tidak memerlukan atribusi
+Lisensi tidak mengizinkan penjualan ulang satu gambar tanpa perubahan kreatif yang signifikan atau pengumpulan gambar Unsplash untuk membuat layanan serupa atau pesaing. Ketentuan penggunaan juga memuat larangan tambahan, termasuk penggunaan dalam kumpulan data pelatihan AI dan teknologi yang ditujukan untuk mengidentifikasi orang perseorangan.
 
-Sangat mudah digunakan saat menulis artikel di blog, jadi silakan dicoba.
+Lisensi hak cipta dari fotografer tidak otomatis mencakup semua hak atas hal yang tampak di foto, seperti hak atas citra atau privasi seseorang, merek dagang, karya seni, atau lokasi. Unsplash menyatakan bahwa beberapa penggunaan mungkin memerlukan izin pihak ketiga dan pengguna bertanggung jawab memeriksanya. Sebelum memakai gambar untuk iklan, produk, atau konteks sensitif, periksa hak dan izin yang diperlukan untuk gambar tersebut. Unsplash+ memiliki lisensi berbayar yang terpisah.
 
-※ Untuk lisensi, silakan merujuk ke "catatan kaki" di bawah ini. [^footnote_license]
+Sebelum memakai foto, baca lisensi yang berlaku untuk gambar tersebut dan Ketentuan Unsplash terbaru, lalu dapatkan izin yang diperlukan untuk tujuan penggunaan Anda. Meski lisensi standar tidak mewajibkan kredit, Anda tetap dapat mencantumkan nama fotografer sebagai bentuk apresiasi.
 
-Saya juga akan memanfaatkannya di situs ini.
+### Referensi
 
-[^footnote_license]: [Lisensi Unsplash](https://unsplash.com/ja/%E3%83%A9%E3%82%A4%E3%82%BB%E3%83%B3%E3%82%B9)
+- [Unsplash License](https://unsplash.com/license)
+- [Unsplash Terms](https://unsplash.com/terms)
+- [Personal and commercial projects](https://help.unsplash.com/en/articles/2612315-can-i-use-unsplash-images-for-personal-or-commercial-projects)
+- [People and brands in images](https://help.unsplash.com/en/articles/2646379-what-if-there-s-a-brand-or-identifiable-person-depicted-in-an-image-that-i-download)
+- [Unsplash+ License](https://help.unsplash.com/en/articles/6604652-what-is-the-unsplash-license)
