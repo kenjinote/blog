@@ -1,0 +1,451 @@
+{
+  "version": 1,
+  "batch": 167,
+  "article": "Central Limit Theorem: Conditions and Normal Approximation of the Sample Mean",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "eda284793fcdfc248f42800517a7048c38c4e9e7c3a8f620c53945f54c4b73e7",
+  "sources": [
+    "https://math.mit.edu/~dav/05.dir/class6-prep.pdf"
+  ],
+  "scope": "Compared the full Japanese source and twelve translations, definitions and assumptions, every displayed formula, proof sketch, history notes, Python simulation, Mermaid visualization, localized cross-links, metadata, and cited MIT course notes.",
+  "findings": [
+    "Changed the main standardized statistic and sample-mean notation to Z_n and X-bar_n, making the sequence indexed by sample size explicit.",
+    "Replaced a diagram that conflated individual samples and sample means with one that shows repeated samples of size n, their means, and the distribution across many means.",
+    "Updated lastmod to 2026-11-24 across all thirteen language files; retained the original 2026-09-14 publication date."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/central-limit-theorem/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/central-limit-theorem/index.md",
+      "sourceHash": "eda284793fcdfc248f42800517a7048c38c4e9e7c3a8f620c53945f54c4b73e7",
+      "translationHash": "a0ee90355403bfb2c63862b3e192385420283f7a22c68b141bec76a31c3511c5",
+      "summary": "Compared the complete translation with the Japanese source and checked assumptions, formulas, simulation code, proof outline, localized terminology, diagram, and links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete text in all twelve languages; clarified repeated samples and the distribution of sample means, and made the indexed sequence explicit."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked CLT, i.i.d., sample mean, standard error, convergence in distribution, characteristic function, and related localized terms."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified the finite-mean finite-positive-variance i.i.d. conditions, standardization, standard error identities, characteristic-function expansion and limit, and Cauchy example against MIT course notes."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared Python and Mermaid blocks across languages; Python simulation is unchanged and the diagram now shows repeated samples of size n and their sampling distribution."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked localized internal links to the Gaussian, Taylor-series, law-of-large-numbers, and Cauchy articles, plus the cited MIT 18.05 PDF."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The Python example is a stochastic simulation; individual runs vary.",
+        "The CLT is asymptotic and does not give a universal sample-size threshold; the article notes that approximation accuracy depends on the distribution."
+      ]
+    },
+    "post/central-limit-theorem/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/central-limit-theorem/index.md",
+      "sourceHash": "eda284793fcdfc248f42800517a7048c38c4e9e7c3a8f620c53945f54c4b73e7",
+      "translationHash": "e8551c68a1cab876b775dd9a409794c6ede95ef047b1db8e48bf7db354594a15",
+      "summary": "Compared the complete translation with the Japanese source and checked assumptions, formulas, simulation code, proof outline, localized terminology, diagram, and links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete text in all twelve languages; clarified repeated samples and the distribution of sample means, and made the indexed sequence explicit."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked CLT, i.i.d., sample mean, standard error, convergence in distribution, characteristic function, and related localized terms."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified the finite-mean finite-positive-variance i.i.d. conditions, standardization, standard error identities, characteristic-function expansion and limit, and Cauchy example against MIT course notes."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared Python and Mermaid blocks across languages; Python simulation is unchanged and the diagram now shows repeated samples of size n and their sampling distribution."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked localized internal links to the Gaussian, Taylor-series, law-of-large-numbers, and Cauchy articles, plus the cited MIT 18.05 PDF."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The Python example is a stochastic simulation; individual runs vary.",
+        "The CLT is asymptotic and does not give a universal sample-size threshold; the article notes that approximation accuracy depends on the distribution."
+      ]
+    },
+    "post/central-limit-theorem/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/central-limit-theorem/index.md",
+      "sourceHash": "eda284793fcdfc248f42800517a7048c38c4e9e7c3a8f620c53945f54c4b73e7",
+      "translationHash": "a8be08c69499133fd28a26e0970292787d70ad4e071cf800ce250aaa02ba269e",
+      "summary": "Compared the complete translation with the Japanese source and checked assumptions, formulas, simulation code, proof outline, localized terminology, diagram, and links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete text in all twelve languages; clarified repeated samples and the distribution of sample means, and made the indexed sequence explicit."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked CLT, i.i.d., sample mean, standard error, convergence in distribution, characteristic function, and related localized terms."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified the finite-mean finite-positive-variance i.i.d. conditions, standardization, standard error identities, characteristic-function expansion and limit, and Cauchy example against MIT course notes."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared Python and Mermaid blocks across languages; Python simulation is unchanged and the diagram now shows repeated samples of size n and their sampling distribution."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked localized internal links to the Gaussian, Taylor-series, law-of-large-numbers, and Cauchy articles, plus the cited MIT 18.05 PDF."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The Python example is a stochastic simulation; individual runs vary.",
+        "The CLT is asymptotic and does not give a universal sample-size threshold; the article notes that approximation accuracy depends on the distribution."
+      ]
+    },
+    "post/central-limit-theorem/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/central-limit-theorem/index.md",
+      "sourceHash": "eda284793fcdfc248f42800517a7048c38c4e9e7c3a8f620c53945f54c4b73e7",
+      "translationHash": "eea9cc19a98ac5fd8e25437cdde4071032052beee9f26ffdd3838c835335d460",
+      "summary": "Compared the complete translation with the Japanese source and checked assumptions, formulas, simulation code, proof outline, localized terminology, diagram, and links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete text in all twelve languages; clarified repeated samples and the distribution of sample means, and made the indexed sequence explicit."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked CLT, i.i.d., sample mean, standard error, convergence in distribution, characteristic function, and related localized terms."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified the finite-mean finite-positive-variance i.i.d. conditions, standardization, standard error identities, characteristic-function expansion and limit, and Cauchy example against MIT course notes."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared Python and Mermaid blocks across languages; Python simulation is unchanged and the diagram now shows repeated samples of size n and their sampling distribution."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked localized internal links to the Gaussian, Taylor-series, law-of-large-numbers, and Cauchy articles, plus the cited MIT 18.05 PDF."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The Python example is a stochastic simulation; individual runs vary.",
+        "The CLT is asymptotic and does not give a universal sample-size threshold; the article notes that approximation accuracy depends on the distribution."
+      ]
+    },
+    "post/central-limit-theorem/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/central-limit-theorem/index.md",
+      "sourceHash": "eda284793fcdfc248f42800517a7048c38c4e9e7c3a8f620c53945f54c4b73e7",
+      "translationHash": "9d3a24c71e3c03f428a2f4facf814c0550ee2c3d690d221b5467fd76a0b5b950",
+      "summary": "Compared the complete translation with the Japanese source and checked assumptions, formulas, simulation code, proof outline, localized terminology, diagram, and links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete text in all twelve languages; clarified repeated samples and the distribution of sample means, and made the indexed sequence explicit."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked CLT, i.i.d., sample mean, standard error, convergence in distribution, characteristic function, and related localized terms."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified the finite-mean finite-positive-variance i.i.d. conditions, standardization, standard error identities, characteristic-function expansion and limit, and Cauchy example against MIT course notes."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared Python and Mermaid blocks across languages; Python simulation is unchanged and the diagram now shows repeated samples of size n and their sampling distribution."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked localized internal links to the Gaussian, Taylor-series, law-of-large-numbers, and Cauchy articles, plus the cited MIT 18.05 PDF."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The Python example is a stochastic simulation; individual runs vary.",
+        "The CLT is asymptotic and does not give a universal sample-size threshold; the article notes that approximation accuracy depends on the distribution."
+      ]
+    },
+    "post/central-limit-theorem/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/central-limit-theorem/index.md",
+      "sourceHash": "eda284793fcdfc248f42800517a7048c38c4e9e7c3a8f620c53945f54c4b73e7",
+      "translationHash": "51847548408a1d7e38dd1b3b3569f19615d7113c102d1bff4309272e0151ac32",
+      "summary": "Compared the complete translation with the Japanese source and checked assumptions, formulas, simulation code, proof outline, localized terminology, diagram, and links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete text in all twelve languages; clarified repeated samples and the distribution of sample means, and made the indexed sequence explicit."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked CLT, i.i.d., sample mean, standard error, convergence in distribution, characteristic function, and related localized terms."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified the finite-mean finite-positive-variance i.i.d. conditions, standardization, standard error identities, characteristic-function expansion and limit, and Cauchy example against MIT course notes."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared Python and Mermaid blocks across languages; Python simulation is unchanged and the diagram now shows repeated samples of size n and their sampling distribution."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked localized internal links to the Gaussian, Taylor-series, law-of-large-numbers, and Cauchy articles, plus the cited MIT 18.05 PDF."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The Python example is a stochastic simulation; individual runs vary.",
+        "The CLT is asymptotic and does not give a universal sample-size threshold; the article notes that approximation accuracy depends on the distribution."
+      ]
+    },
+    "post/central-limit-theorem/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/central-limit-theorem/index.md",
+      "sourceHash": "eda284793fcdfc248f42800517a7048c38c4e9e7c3a8f620c53945f54c4b73e7",
+      "translationHash": "a9fd3a905d0cc91546dc12cffb58b3ced569c6c0b4494305b90057c4d5fc11fd",
+      "summary": "Compared the complete translation with the Japanese source and checked assumptions, formulas, simulation code, proof outline, localized terminology, diagram, and links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete text in all twelve languages; clarified repeated samples and the distribution of sample means, and made the indexed sequence explicit."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked CLT, i.i.d., sample mean, standard error, convergence in distribution, characteristic function, and related localized terms."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified the finite-mean finite-positive-variance i.i.d. conditions, standardization, standard error identities, characteristic-function expansion and limit, and Cauchy example against MIT course notes."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared Python and Mermaid blocks across languages; Python simulation is unchanged and the diagram now shows repeated samples of size n and their sampling distribution."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked localized internal links to the Gaussian, Taylor-series, law-of-large-numbers, and Cauchy articles, plus the cited MIT 18.05 PDF."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The Python example is a stochastic simulation; individual runs vary.",
+        "The CLT is asymptotic and does not give a universal sample-size threshold; the article notes that approximation accuracy depends on the distribution."
+      ]
+    },
+    "post/central-limit-theorem/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/central-limit-theorem/index.md",
+      "sourceHash": "eda284793fcdfc248f42800517a7048c38c4e9e7c3a8f620c53945f54c4b73e7",
+      "translationHash": "90ed3d187156faa9975245f0b4540a92554637da404dabd0d7da7ea19c5cf08a",
+      "summary": "Compared the complete translation with the Japanese source and checked assumptions, formulas, simulation code, proof outline, localized terminology, diagram, and links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete text in all twelve languages; clarified repeated samples and the distribution of sample means, and made the indexed sequence explicit."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked CLT, i.i.d., sample mean, standard error, convergence in distribution, characteristic function, and related localized terms."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified the finite-mean finite-positive-variance i.i.d. conditions, standardization, standard error identities, characteristic-function expansion and limit, and Cauchy example against MIT course notes."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared Python and Mermaid blocks across languages; Python simulation is unchanged and the diagram now shows repeated samples of size n and their sampling distribution."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked localized internal links to the Gaussian, Taylor-series, law-of-large-numbers, and Cauchy articles, plus the cited MIT 18.05 PDF."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The Python example is a stochastic simulation; individual runs vary.",
+        "The CLT is asymptotic and does not give a universal sample-size threshold; the article notes that approximation accuracy depends on the distribution."
+      ]
+    },
+    "post/central-limit-theorem/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/central-limit-theorem/index.md",
+      "sourceHash": "eda284793fcdfc248f42800517a7048c38c4e9e7c3a8f620c53945f54c4b73e7",
+      "translationHash": "b19262498635ee982397e2910678c1347d4b5cce5116a032b8ca4ae3d06afc97",
+      "summary": "Compared the complete translation with the Japanese source and checked assumptions, formulas, simulation code, proof outline, localized terminology, diagram, and links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete text in all twelve languages; clarified repeated samples and the distribution of sample means, and made the indexed sequence explicit."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked CLT, i.i.d., sample mean, standard error, convergence in distribution, characteristic function, and related localized terms."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified the finite-mean finite-positive-variance i.i.d. conditions, standardization, standard error identities, characteristic-function expansion and limit, and Cauchy example against MIT course notes."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared Python and Mermaid blocks across languages; Python simulation is unchanged and the diagram now shows repeated samples of size n and their sampling distribution."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked localized internal links to the Gaussian, Taylor-series, law-of-large-numbers, and Cauchy articles, plus the cited MIT 18.05 PDF."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The Python example is a stochastic simulation; individual runs vary.",
+        "The CLT is asymptotic and does not give a universal sample-size threshold; the article notes that approximation accuracy depends on the distribution."
+      ]
+    },
+    "post/central-limit-theorem/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/central-limit-theorem/index.md",
+      "sourceHash": "eda284793fcdfc248f42800517a7048c38c4e9e7c3a8f620c53945f54c4b73e7",
+      "translationHash": "0182b9f510ec89a62f5423a4af4bbda72eae180efd3e5914f66199af7bd8f9c7",
+      "summary": "Compared the complete translation with the Japanese source and checked assumptions, formulas, simulation code, proof outline, localized terminology, diagram, and links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete text in all twelve languages; clarified repeated samples and the distribution of sample means, and made the indexed sequence explicit."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked CLT, i.i.d., sample mean, standard error, convergence in distribution, characteristic function, and related localized terms."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified the finite-mean finite-positive-variance i.i.d. conditions, standardization, standard error identities, characteristic-function expansion and limit, and Cauchy example against MIT course notes."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared Python and Mermaid blocks across languages; Python simulation is unchanged and the diagram now shows repeated samples of size n and their sampling distribution."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked localized internal links to the Gaussian, Taylor-series, law-of-large-numbers, and Cauchy articles, plus the cited MIT 18.05 PDF."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The Python example is a stochastic simulation; individual runs vary.",
+        "The CLT is asymptotic and does not give a universal sample-size threshold; the article notes that approximation accuracy depends on the distribution."
+      ]
+    },
+    "post/central-limit-theorem/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/central-limit-theorem/index.md",
+      "sourceHash": "eda284793fcdfc248f42800517a7048c38c4e9e7c3a8f620c53945f54c4b73e7",
+      "translationHash": "0b120b2f23f131180b696061735f127a5fe1b49db0742a089a37c071c6981df4",
+      "summary": "Compared the complete translation with the Japanese source and checked assumptions, formulas, simulation code, proof outline, localized terminology, diagram, and links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete text in all twelve languages; clarified repeated samples and the distribution of sample means, and made the indexed sequence explicit."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked CLT, i.i.d., sample mean, standard error, convergence in distribution, characteristic function, and related localized terms."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified the finite-mean finite-positive-variance i.i.d. conditions, standardization, standard error identities, characteristic-function expansion and limit, and Cauchy example against MIT course notes."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared Python and Mermaid blocks across languages; Python simulation is unchanged and the diagram now shows repeated samples of size n and their sampling distribution."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked localized internal links to the Gaussian, Taylor-series, law-of-large-numbers, and Cauchy articles, plus the cited MIT 18.05 PDF."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The Python example is a stochastic simulation; individual runs vary.",
+        "The CLT is asymptotic and does not give a universal sample-size threshold; the article notes that approximation accuracy depends on the distribution."
+      ]
+    },
+    "post/central-limit-theorem/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/central-limit-theorem/index.md",
+      "sourceHash": "eda284793fcdfc248f42800517a7048c38c4e9e7c3a8f620c53945f54c4b73e7",
+      "translationHash": "b6c4815f0ac0c778b5b0f298c2cf1b18ba8d5d0123445a9763f2cbf167602f8c",
+      "summary": "Compared the complete translation with the Japanese source and checked assumptions, formulas, simulation code, proof outline, localized terminology, diagram, and links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete text in all twelve languages; clarified repeated samples and the distribution of sample means, and made the indexed sequence explicit."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked CLT, i.i.d., sample mean, standard error, convergence in distribution, characteristic function, and related localized terms."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified the finite-mean finite-positive-variance i.i.d. conditions, standardization, standard error identities, characteristic-function expansion and limit, and Cauchy example against MIT course notes."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared Python and Mermaid blocks across languages; Python simulation is unchanged and the diagram now shows repeated samples of size n and their sampling distribution."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked localized internal links to the Gaussian, Taylor-series, law-of-large-numbers, and Cauchy articles, plus the cited MIT 18.05 PDF."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The Python example is a stochastic simulation; individual runs vary.",
+        "The CLT is asymptotic and does not give a universal sample-size threshold; the article notes that approximation accuracy depends on the distribution."
+      ]
+    }
+  }
+}

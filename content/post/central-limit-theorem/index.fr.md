@@ -2,7 +2,7 @@
 title: "Théorème central limite : conditions et approximation normale de la moyenne empirique"
 description: "Une explication détaillée du Théorème Central Limite, l'un des théorèmes les plus importants en statistiques, de la compréhension intuitive à la preuve mathématique et la simulation avec Python."
 date: 2026-09-14T13:20:38+09:00
-lastmod: 2026-11-23T02:00:00+09:00
+lastmod: 2026-11-24T00:00:00+09:00
 image: "eyecatch.jpg"
 categories: ["mathematics", "statistics"]
 tags: ["Théorème Central Limite", "Probabilités", "Science des Données", "Python"]
@@ -27,11 +27,11 @@ Prenons l'exemple des dés. Lorsque vous lancez un seul dé, la distribution des
 
 Supposons que les $n$ observations $X_1, X_2, \dots, X_n$ soient indépendantes et identiquement distribuées (i.i.d.), de moyenne commune finie $\mu$ et de variance $0<\sigma^2<\infty$.
 
-Soit la moyenne empirique $\bar{X} = \frac{1}{n} \sum_{i=1}^{n} X_i$. Selon le Théorème Central Limite, lorsque $n$ est suffisamment grand, la variable standardisée $Z$ comme illustré ci-dessous converge vers la distribution normale standard $\mathcal{N}(0, 1)$.
+Soit la moyenne empirique $\bar{X}_n = \frac{1}{n} \sum_{i=1}^{n} X_i$. Selon le Théorème Central Limite, lorsque $n$ est suffisamment grand, la variable standardisée $Z_n$ comme illustré ci-dessous converge vers la distribution normale standard $\mathcal{N}(0, 1)$.
 
 
 $$
-Z = \frac{\bar{X} - \mu}{\frac{\sigma}{\sqrt{n}}} \xrightarrow{d} \mathcal{N}(0, 1) \text{ pour } n \to \infty
+Z_n = \frac{\bar{X}_n - \mu}{\frac{\sigma}{\sqrt{n}}} \xrightarrow{d} \mathcal{N}(0, 1) \text{ pour } n \to \infty
 $$
 
 
@@ -43,15 +43,10 @@ Pour comprendre visuellement comment fonctionne le Théorème Central Limite, vo
 
 ```mermaid
 graph TD
-    A["Distribution d'Origine (Non Normale)"] -->|"Échantillonnage"| B["Échantillon 1"]
-    A -->|"Échantillonnage"| C["Échantillon 2"]
-    A -->|"Échantillonnage"| D["Échantillon N"]
-    B -->|"Calcul de la Moyenne"| E["Moyenne empirique 1"]
-    C -->|"Calcul de la Moyenne"| F["Moyenne empirique 2"]
-    D -->|"Calcul de la Moyenne"| G["Moyenne empirique N"]
-    E -->|"Dessin de la Distribution"| H["Approximation à la Distribution Normale"]
-    F -->|"Dessin de la Distribution"| H
-    G -->|"Dessin de la Distribution"| H
+    A["Distribution de la population (pas nécessairement normale)"] --> B["Prélever plusieurs fois un échantillon de taille n"]
+    B --> C["Calculer la moyenne de chaque échantillon"]
+    C --> D["Examiner la distribution de nombreuses moyennes empiriques"]
+    D --> E["Quand n augmente, la distribution standardisée tend vers la loi normale centrée réduite"]
 ```
 
 ## 4. Simulation avec Python
@@ -111,7 +106,7 @@ Les erreurs de mesure et de nombreux bruits naturels peuvent être modélisés c
 
 Les fonctions caractéristiques et le [développement de Taylor](/fr/p/taylor-and-maclaurin-series/) sont utilisés pour une preuve stricte du Théorème Central Limite. En voici un bref aperçu.
 
-En utilisant la fonction caractéristique $\phi_X(t) = E[e^{itX}]$, la fonction caractéristique de la somme de variables aléatoires indépendantes est le produit de leurs fonctions caractéristiques respectives. Lorsque nous calculons la fonction caractéristique de la variable standardisée $Z$ et prenons la limite pour $n \to \infty$, on peut montrer qu'elle converge vers $e^{-t^2/2}$, qui est la fonction caractéristique de la distribution normale standard. Cela montre que la distribution de la variable standardisée converge vers la loi normale standard.
+En utilisant la fonction caractéristique $\phi_X(t) = E[e^{itX}]$, la fonction caractéristique de la somme de variables aléatoires indépendantes est le produit de leurs fonctions caractéristiques respectives. Lorsque nous calculons la fonction caractéristique de la variable standardisée $Z_n$ et prenons la limite pour $n \to \infty$, on peut montrer qu'elle converge vers $e^{-t^2/2}$, qui est la fonction caractéristique de la distribution normale standard. Cela montre que la distribution de la variable standardisée converge vers la loi normale standard.
 
 ## 7. Conclusion
 

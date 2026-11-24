@@ -10,121 +10,121 @@
       "source": "post/central-limit-theorem/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "a31fec87d03bcaa8047c756a0bd8dc1e6060809b3d0f21ea30d8f06487d1962f",
-      "translationHash": "9ee3c9b5b6154e45bd3204003e570d7f51712ac6c53962ffb97d8dc6f92d3dab",
+      "sourceHash": "eda284793fcdfc248f42800517a7048c38c4e9e7c3a8f620c53945f54c4b73e7",
+      "translationHash": "a0ee90355403bfb2c63862b3e192385420283f7a22c68b141bec76a31c3511c5",
       "reviewKind": "ai",
-      "evidence": "docs/translation-review/batch-083.json",
-      "evidenceHash": "5baf28c82dc0862e6b2123bb4130dc8d44c2c2b4c97507b2a3c74f77b58b1bee"
+      "evidence": "docs/translation-review/batch-167.json",
+      "evidenceHash": "58e274aef11b05e61bfc918bf64c0d9af4f29326b9652ab4b98fdf5be6823fa9"
     },
     "post/central-limit-theorem/index.zh-cn.md": {
       "source": "post/central-limit-theorem/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "a31fec87d03bcaa8047c756a0bd8dc1e6060809b3d0f21ea30d8f06487d1962f",
-      "translationHash": "40361bde0d7e7aba54af1854fc54f44a0212149a122f94475c9da570c920e417",
+      "sourceHash": "eda284793fcdfc248f42800517a7048c38c4e9e7c3a8f620c53945f54c4b73e7",
+      "translationHash": "e8551c68a1cab876b775dd9a409794c6ede95ef047b1db8e48bf7db354594a15",
       "reviewKind": "ai",
-      "evidence": "docs/translation-review/batch-083.json",
-      "evidenceHash": "806275491ae0dc3bdab462264ef0f53afd1fc3612f2ff5e4ac19ce2ffe677ecc"
+      "evidence": "docs/translation-review/batch-167.json",
+      "evidenceHash": "fdf366d8a8641d5994e1ae05374a16775ba4032b2a5a3f271993cc3fc7432ba0"
     },
     "post/central-limit-theorem/index.es.md": {
       "source": "post/central-limit-theorem/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "a31fec87d03bcaa8047c756a0bd8dc1e6060809b3d0f21ea30d8f06487d1962f",
-      "translationHash": "64e134b9af8f0013956af7d4e70458da7c667da82dc783d41d5aedf77232852f",
+      "sourceHash": "eda284793fcdfc248f42800517a7048c38c4e9e7c3a8f620c53945f54c4b73e7",
+      "translationHash": "a8be08c69499133fd28a26e0970292787d70ad4e071cf800ce250aaa02ba269e",
       "reviewKind": "ai",
-      "evidence": "docs/translation-review/batch-083.json",
-      "evidenceHash": "3a0141019a1784d55eaef951de01a02a8ca8035c1bb2d85adc9884026798bbdf"
+      "evidence": "docs/translation-review/batch-167.json",
+      "evidenceHash": "4cb08834cb0fc2f44c973fe85beec1b222c82d66001f6ee64fd53d44e4f8e152"
     },
     "post/central-limit-theorem/index.ko.md": {
       "source": "post/central-limit-theorem/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "a31fec87d03bcaa8047c756a0bd8dc1e6060809b3d0f21ea30d8f06487d1962f",
-      "translationHash": "5eca0197a049c0e3a30f34ae2bfc474b4527d4fd99d102d82b081a7239e7eec0",
+      "sourceHash": "eda284793fcdfc248f42800517a7048c38c4e9e7c3a8f620c53945f54c4b73e7",
+      "translationHash": "eea9cc19a98ac5fd8e25437cdde4071032052beee9f26ffdd3838c835335d460",
       "reviewKind": "ai",
-      "evidence": "docs/translation-review/batch-083.json",
-      "evidenceHash": "21535bebef086340d486730906a7bbfdd00ebc976484a6fe25b5a2ac9ae9d36e"
+      "evidence": "docs/translation-review/batch-167.json",
+      "evidenceHash": "3e330f3d27af2861103b588a4f3111142c4cee499e78b37269542c9084ab2cce"
     },
     "post/central-limit-theorem/index.pt.md": {
       "source": "post/central-limit-theorem/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "a31fec87d03bcaa8047c756a0bd8dc1e6060809b3d0f21ea30d8f06487d1962f",
-      "translationHash": "6780be2eff03914ec325a79200e1e7a20ae6a8d708e589a59bb4da1f8334341b",
+      "sourceHash": "eda284793fcdfc248f42800517a7048c38c4e9e7c3a8f620c53945f54c4b73e7",
+      "translationHash": "9d3a24c71e3c03f428a2f4facf814c0550ee2c3d690d221b5467fd76a0b5b950",
       "reviewKind": "ai",
-      "evidence": "docs/translation-review/batch-083.json",
-      "evidenceHash": "eef53867511786b5071a8e85458572f512bc5465784905fc6a847ad41f02f096"
+      "evidence": "docs/translation-review/batch-167.json",
+      "evidenceHash": "7cfab7df4681771e757f4db882ca8e52e106d1929d7198566a6c85f0caacb825"
     },
     "post/central-limit-theorem/index.zh-tw.md": {
       "source": "post/central-limit-theorem/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "a31fec87d03bcaa8047c756a0bd8dc1e6060809b3d0f21ea30d8f06487d1962f",
-      "translationHash": "5297d66bedc924d8154f60d37c9c4686fb4b595a57c99eafc6c09a0c30e8afc3",
+      "sourceHash": "eda284793fcdfc248f42800517a7048c38c4e9e7c3a8f620c53945f54c4b73e7",
+      "translationHash": "51847548408a1d7e38dd1b3b3569f19615d7113c102d1bff4309272e0151ac32",
       "reviewKind": "ai",
-      "evidence": "docs/translation-review/batch-083.json",
-      "evidenceHash": "b94f5c69085e7ab5e7dfd065bb95828337fd31e28da98c50156e44b0f7521a44"
+      "evidence": "docs/translation-review/batch-167.json",
+      "evidenceHash": "0130e2acac5b121cc79637be5a223107ab216e0f568a4e4d1f3832f91e7d023f"
     },
     "post/central-limit-theorem/index.hi.md": {
       "source": "post/central-limit-theorem/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "a31fec87d03bcaa8047c756a0bd8dc1e6060809b3d0f21ea30d8f06487d1962f",
-      "translationHash": "516b6359c4dd8857a421e5f2e89f383ed47af8ea5e54c5f28b298b43285f1820",
+      "sourceHash": "eda284793fcdfc248f42800517a7048c38c4e9e7c3a8f620c53945f54c4b73e7",
+      "translationHash": "a9fd3a905d0cc91546dc12cffb58b3ced569c6c0b4494305b90057c4d5fc11fd",
       "reviewKind": "ai",
-      "evidence": "docs/translation-review/batch-083.json",
-      "evidenceHash": "3f09c700448e7ea1fcd1cbc53050a55ca522d067e5176262a88f766614ea72c2"
+      "evidence": "docs/translation-review/batch-167.json",
+      "evidenceHash": "d126f489a4fc2de1db61fe93fdab5819152793eabf527174827fc11ecdd47bcf"
     },
     "post/central-limit-theorem/index.fr.md": {
       "source": "post/central-limit-theorem/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "a31fec87d03bcaa8047c756a0bd8dc1e6060809b3d0f21ea30d8f06487d1962f",
-      "translationHash": "c1ee76a9f43182c474524fb21164f94a9818b14cb63b085e007b15d75be508d7",
+      "sourceHash": "eda284793fcdfc248f42800517a7048c38c4e9e7c3a8f620c53945f54c4b73e7",
+      "translationHash": "90ed3d187156faa9975245f0b4540a92554637da404dabd0d7da7ea19c5cf08a",
       "reviewKind": "ai",
-      "evidence": "docs/translation-review/batch-083.json",
-      "evidenceHash": "ebf1e4da29f47310cdba9972915bfcf7bfd32a8f30ac2cccce8a4bc9654f2872"
+      "evidence": "docs/translation-review/batch-167.json",
+      "evidenceHash": "f9ca0e9989e5e077fca5ee9c7d6a485a2345a5ec973444465789959d76a2a1b2"
     },
     "post/central-limit-theorem/index.de.md": {
       "source": "post/central-limit-theorem/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "a31fec87d03bcaa8047c756a0bd8dc1e6060809b3d0f21ea30d8f06487d1962f",
-      "translationHash": "8aebed4e4725b75dd27bffbfea8d4061f6d6ce6c8e149eadbdf7235b24a48006",
+      "sourceHash": "eda284793fcdfc248f42800517a7048c38c4e9e7c3a8f620c53945f54c4b73e7",
+      "translationHash": "b19262498635ee982397e2910678c1347d4b5cce5116a032b8ca4ae3d06afc97",
       "reviewKind": "ai",
-      "evidence": "docs/translation-review/batch-083.json",
-      "evidenceHash": "384c2840e657e1508aedfba03c0c29853f0fd6451e171e44d0d93e20b7d32948"
+      "evidence": "docs/translation-review/batch-167.json",
+      "evidenceHash": "ea0fe0156d9aeee20d0f529287626f1309135388f3678a88a37031b1593dee0d"
     },
     "post/central-limit-theorem/index.ar.md": {
       "source": "post/central-limit-theorem/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "a31fec87d03bcaa8047c756a0bd8dc1e6060809b3d0f21ea30d8f06487d1962f",
-      "translationHash": "10184f9c1dd117fff22482b5888e956c14a6cae487bb5553dc1a9f078cf0e6d7",
+      "sourceHash": "eda284793fcdfc248f42800517a7048c38c4e9e7c3a8f620c53945f54c4b73e7",
+      "translationHash": "0182b9f510ec89a62f5423a4af4bbda72eae180efd3e5914f66199af7bd8f9c7",
       "reviewKind": "ai",
-      "evidence": "docs/translation-review/batch-083.json",
-      "evidenceHash": "33d5c43fec009c75d1d0507a0bc3920540f81a36a2f70149ff151ff2c4229330"
+      "evidence": "docs/translation-review/batch-167.json",
+      "evidenceHash": "f9f59e3c73e03c7fb5e05e9591812c40971a56dc05d1f10b211ffa9d37a0ecfc"
     },
     "post/central-limit-theorem/index.ru.md": {
       "source": "post/central-limit-theorem/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "a31fec87d03bcaa8047c756a0bd8dc1e6060809b3d0f21ea30d8f06487d1962f",
-      "translationHash": "f3d675f49280c3e6717077e7017d8276b96e3e4f56dc965796394fdbe2a3e9a3",
+      "sourceHash": "eda284793fcdfc248f42800517a7048c38c4e9e7c3a8f620c53945f54c4b73e7",
+      "translationHash": "0b120b2f23f131180b696061735f127a5fe1b49db0742a089a37c071c6981df4",
       "reviewKind": "ai",
-      "evidence": "docs/translation-review/batch-083.json",
-      "evidenceHash": "c0769f38f8b980d7951da0ab2e70a00f7cbe615cfb9951493f88ad774d5121c9"
+      "evidence": "docs/translation-review/batch-167.json",
+      "evidenceHash": "4682b6bb064ba4b3b7739c9db22b0787921e2f968e61c20e0c994b391b0da99d"
     },
     "post/central-limit-theorem/index.id.md": {
       "source": "post/central-limit-theorem/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "a31fec87d03bcaa8047c756a0bd8dc1e6060809b3d0f21ea30d8f06487d1962f",
-      "translationHash": "e8f4a39dba35b7c16cf7a7c278b273bafd37af64a1720850165d9b0a8ff10df6",
+      "sourceHash": "eda284793fcdfc248f42800517a7048c38c4e9e7c3a8f620c53945f54c4b73e7",
+      "translationHash": "b6c4815f0ac0c778b5b0f298c2cf1b18ba8d5d0123445a9763f2cbf167602f8c",
       "reviewKind": "ai",
-      "evidence": "docs/translation-review/batch-083.json",
-      "evidenceHash": "1eb2b48b01a1888bf8d5884238a78b8cf776d195c2e4ed6a261b2d4c11f9d405"
+      "evidence": "docs/translation-review/batch-167.json",
+      "evidenceHash": "dd8a638a746b68925d8f2d5d43816e839788874fc430f5b00497f4c1e7d2a22c"
     },
     "post/cross-site-scripting-xss-csrf-security/index.en.md": {
       "source": "post/cross-site-scripting-xss-csrf-security/index.md",

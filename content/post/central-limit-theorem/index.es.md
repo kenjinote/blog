@@ -2,7 +2,7 @@
 title: "Teorema del límite central: condiciones y aproximación normal de la media muestral"
 description: "Una explicación detallada del Teorema del Límite Central, uno de los teoremas más importantes en estadística, desde la comprensión intuitiva hasta la demostración matemática y la simulación con Python."
 date: 2026-09-14T13:20:38+09:00
-lastmod: 2026-11-23T02:00:00+09:00
+lastmod: 2026-11-24T00:00:00+09:00
 image: "eyecatch.jpg"
 categories: ["mathematics", "statistics"]
 tags: ["Teorema del Límite Central", "Probabilidad", "Ciencia de Datos", "Python"]
@@ -27,11 +27,11 @@ Pensemos en los dados. Cuando tiras un dado, la distribución de los resultados 
 
 Supongamos que las $n$ observaciones $X_1, X_2, \dots, X_n$ son independientes e idénticamente distribuidas (i.i.d.), con media común finita $\mu$ y varianza $0<\sigma^2<\infty$.
 
-Sea la media muestral $\bar{X} = \frac{1}{n} \sum_{i=1}^{n} X_i$. Según el Teorema del Límite Central, cuando $n$ es suficientemente grande, la variable estandarizada $Z$ mostrada a continuación converge a la distribución normal estándar $\mathcal{N}(0, 1)$.
+Sea la media muestral $\bar{X}_n = \frac{1}{n} \sum_{i=1}^{n} X_i$. Según el Teorema del Límite Central, cuando $n$ es suficientemente grande, la variable estandarizada $Z_n$ mostrada a continuación converge a la distribución normal estándar $\mathcal{N}(0, 1)$.
 
 
 $$
-Z = \frac{\bar{X} - \mu}{\frac{\sigma}{\sqrt{n}}} \xrightarrow{d} \mathcal{N}(0, 1) \text{ a medida que } n \to \infty
+Z_n = \frac{\bar{X}_n - \mu}{\frac{\sigma}{\sqrt{n}}} \xrightarrow{d} \mathcal{N}(0, 1) \text{ a medida que } n \to \infty
 $$
 
 
@@ -43,15 +43,10 @@ Para comprender visualmente cómo funciona el Teorema del Límite Central, aquí
 
 ```mermaid
 graph TD
-    A["Distribución Original (No Normal)"] -->|"Muestreo"| B["Muestra 1"]
-    A -->|"Muestreo"| C["Muestra 2"]
-    A -->|"Muestreo"| D["Muestra N"]
-    B -->|"Calcular Media"| E["Media Muestral 1"]
-    C -->|"Calcular Media"| F["Media Muestral 2"]
-    D -->|"Calcular Media"| G["Media Muestral N"]
-    E -->|"Dibujar Distribución"| H["Aproximación a Distribución Normal"]
-    F -->|"Dibujar Distribución"| H
-    G -->|"Dibujar Distribución"| H
+    A["Distribución de la población (no tiene que ser normal)"] --> B["Extraer repetidamente muestras de tamaño n"]
+    B --> C["Calcular la media de cada muestra"]
+    C --> D["Examinar la distribución de muchas medias muestrales"]
+    D --> E["Al aumentar n, la distribución estandarizada se aproxima a la normal estándar"]
 ```
 
 ## 4. Simulación con Python
@@ -111,7 +106,7 @@ Los errores de medición y muchos tipos de ruido natural pueden modelarse como s
 
 Para una demostración estricta del Teorema del Límite Central se utilizan funciones características y la [expansión de Taylor](/es/p/taylor-and-maclaurin-series/). Aquí presentamos un breve resumen.
 
-Usando la función característica $\phi_X(t) = E[e^{itX}]$, la función característica de la suma de variables aleatorias independientes es el producto de sus respectivas funciones características. Al calcular la función característica de la variable estandarizada $Z$ y tomar el límite a medida que $n \to \infty$, se puede demostrar que converge a la función característica de la distribución normal estándar $e^{-t^2/2}$. Esto muestra que la distribución de la variable estandarizada converge a la distribución normal estándar.
+Usando la función característica $\phi_X(t) = E[e^{itX}]$, la función característica de la suma de variables aleatorias independientes es el producto de sus respectivas funciones características. Al calcular la función característica de la variable estandarizada $Z_n$ y tomar el límite a medida que $n \to \infty$, se puede demostrar que converge a la función característica de la distribución normal estándar $e^{-t^2/2}$. Esto muestra que la distribución de la variable estandarizada converge a la distribución normal estándar.
 
 ## 7. Conclusión
 

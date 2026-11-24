@@ -6,7 +6,7 @@ image: "eyecatch.jpg"
 categories: ["mathematics", "statistics"]
 tags: ["Central Limit Theorem", "Probability", "Data Science", "Python"]
 slug: "central-limit-theorem"
-lastmod: 2026-11-23T02:00:00+09:00
+lastmod: 2026-11-24T00:00:00+09:00
 ---
 
 ## 1. Introduction
@@ -27,11 +27,11 @@ Consider dice. When you roll one die, the distribution of the outcomes is a unif
 
 Suppose $n$ observations $X_1, X_2, \dots, X_n$ drawn from a population are independent and identically distributed (i.i.d.). Assume that their common mean (expected value) $\mu$ is finite and their variance satisfies $0<\sigma^2<\infty$.
 
-Let the sample mean be $\bar{X} = \frac{1}{n} \sum_{i=1}^{n} X_i$. According to the Central Limit Theorem, when $n$ is sufficiently large, the standardized variable $Z$ as shown below converges to the standard normal distribution $\mathcal{N}(0, 1)$.
+Let the sample mean be $\bar{X}_n = \frac{1}{n} \sum_{i=1}^{n} X_i$. According to the Central Limit Theorem, when $n$ is sufficiently large, the standardized variable $Z_n$ as shown below converges to the standard normal distribution $\mathcal{N}(0, 1)$.
 
 
 $$
-Z = \frac{\bar{X} - \mu}{\frac{\sigma}{\sqrt{n}}} \xrightarrow{d} \mathcal{N}(0, 1) \text{ as } n \to \infty
+Z_n = \frac{\bar{X}_n - \mu}{\frac{\sigma}{\sqrt{n}}} \xrightarrow{d} \mathcal{N}(0, 1) \text{ as } n \to \infty
 $$
 
 
@@ -43,15 +43,10 @@ To visually understand how the Central Limit Theorem works, here is a process di
 
 ```mermaid
 graph TD
-    A["Original Distribution (Non-normal)"] -->|"Sampling"| B["Sample 1"]
-    A -->|"Sampling"| C["Sample 2"]
-    A -->|"Sampling"| D["Sample N"]
-    B -->|"Calculate Mean"| E["Sample Mean 1"]
-    C -->|"Calculate Mean"| F["Sample Mean 2"]
-    D -->|"Calculate Mean"| G["Sample Mean N"]
-    E -->|"Draw Distribution"| H["Approximate to Normal Distribution"]
-    F -->|"Draw Distribution"| H
-    G -->|"Draw Distribution"| H
+    A["Population distribution (need not be normal)"] --> B["Repeatedly draw samples of size n"]
+    B --> C["Calculate the mean of each sample"]
+    C --> D["Examine the distribution of many sample means"]
+    D --> E["As n increases, the standardized distribution approaches the standard normal"]
 ```
 
 ## 4. Simulation with Python
@@ -111,7 +106,7 @@ Measurement errors and many natural sources of noise can be modeled as sums of m
 
 Characteristic functions and [Taylor expansion](/en/p/taylor-and-maclaurin-series/) are used for a strict proof of the Central Limit Theorem. Here is a brief overview.
 
-Using the characteristic function $\phi_X(t) = E[e^{itX}]$, the characteristic function of the sum of independent random variables is the product of their respective characteristic functions. When we calculate the characteristic function of the standardized variable $Z$ and take the limit as $n \to \infty$, it can be shown to converge to $e^{-t^2/2}$, which is the characteristic function of the standard normal distribution. This shows that the distribution of the standardized variable converges to the standard normal distribution.
+Using the characteristic function $\phi_X(t) = E[e^{itX}]$, the characteristic function of the sum of independent random variables is the product of their respective characteristic functions. When we calculate the characteristic function of the standardized variable $Z_n$ and take the limit as $n \to \infty$, it can be shown to converge to $e^{-t^2/2}$, which is the characteristic function of the standard normal distribution. This shows that the distribution of the standardized variable converges to the standard normal distribution.
 
 ## 7. Conclusion
 

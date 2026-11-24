@@ -2,7 +2,7 @@
 title: "Zentraler Grenzwertsatz: Bedingungen und Normalapproximation des Stichprobenmittelwerts"
 description: "Eine detaillierte Erklärung des zentralen Grenzwertsatzes, eines der wichtigsten Theoreme der Statistik, vom intuitiven Verständnis über den mathematischen Beweis bis hin zur Simulation mit Python."
 date: 2026-09-14T13:20:38+09:00
-lastmod: 2026-11-23T02:00:00+09:00
+lastmod: 2026-11-24T00:00:00+09:00
 image: "eyecatch.jpg"
 categories: ["mathematics", "statistics"]
 tags: ["Zentraler Grenzwertsatz", "Wahrscheinlichkeit", "Datenwissenschaft", "Python"]
@@ -27,11 +27,11 @@ Denken wir an Würfel. Wenn Sie einen einzelnen Würfel werfen, ist die Verteilu
 
 Angenommen, die $n$ Beobachtungen $X_1, X_2, \dots, X_n$ sind unabhängig und identisch verteilt (i.i.d.), mit endlichem gemeinsamen Erwartungswert $\mu$ und Varianz $0<\sigma^2<\infty$.
 
-Sei der Stichprobenmittelwert $\bar{X} = \frac{1}{n} \sum_{i=1}^{n} X_i$. Gemäß dem zentralen Grenzwertsatz konvergiert die unten gezeigte standardisierte Variable $Z$ für ein ausreichend großes $n$ gegen die Standardnormalverteilung $\mathcal{N}(0, 1)$.
+Sei der Stichprobenmittelwert $\bar{X}_n = \frac{1}{n} \sum_{i=1}^{n} X_i$. Gemäß dem zentralen Grenzwertsatz konvergiert die unten gezeigte standardisierte Variable $Z_n$ für ein ausreichend großes $n$ gegen die Standardnormalverteilung $\mathcal{N}(0, 1)$.
 
 
 $$
-Z = \frac{\bar{X} - \mu}{\frac{\sigma}{\sqrt{n}}} \xrightarrow{d} \mathcal{N}(0, 1) \text{ für } n \to \infty
+Z_n = \frac{\bar{X}_n - \mu}{\frac{\sigma}{\sqrt{n}}} \xrightarrow{d} \mathcal{N}(0, 1) \text{ für } n \to \infty
 $$
 
 
@@ -43,15 +43,10 @@ Um visuell zu verstehen, wie der zentrale Grenzwertsatz funktioniert, ist hier e
 
 ```mermaid
 graph TD
-    A["Ursprüngliche Verteilung (nicht normal)"] -->|"Stichprobenziehung"| B["Stichprobe 1"]
-    A -->|"Stichprobenziehung"| C["Stichprobe 2"]
-    A -->|"Stichprobenziehung"| D["Stichprobe N"]
-    B -->|"Mittelwert berechnen"| E["Stichprobenmittelwert 1"]
-    C -->|"Mittelwert berechnen"| F["Stichprobenmittelwert 2"]
-    D -->|"Mittelwert berechnen"| G["Stichprobenmittelwert N"]
-    E -->|"Verteilung zeichnen"| H["Annäherung an Normalverteilung"]
-    F -->|"Verteilung zeichnen"| H
-    G -->|"Verteilung zeichnen"| H
+    A["Verteilung der Grundgesamtheit (muss nicht normal sein)"] --> B["Wiederholt Stichproben mit Umfang n ziehen"]
+    B --> C["Den Mittelwert jeder Stichprobe berechnen"]
+    C --> D["Die Verteilung vieler Stichprobenmittelwerte betrachten"]
+    D --> E["Mit wachsendem n nähert sich die standardisierte Verteilung der Standardnormalverteilung"]
 ```
 
 ## 4. Simulation mit Python
@@ -111,7 +106,7 @@ Messfehler und viele natürliche Rauschquellen lassen sich als Summen kleiner Ei
 
 Für einen strengen Beweis des zentralen Grenzwertsatzes werden charakteristische Funktionen und die [Taylor-Entwicklung](/de/p/taylor-and-maclaurin-series/) verwendet. Hier ein kurzer Überblick.
 
-Unter Verwendung der charakteristischen Funktion $\phi_X(t) = E[e^{itX}]$ ist die charakteristische Funktion der Summe unabhängiger Zufallsvariablen das Produkt ihrer jeweiligen charakteristischen Funktionen. Wenn wir die charakteristische Funktion der standardisierten Variablen $Z$ berechnen und den Grenzwert für $n \to \infty$ nehmen, kann gezeigt werden, dass sie gegen die charakteristische Funktion der Standardnormalverteilung $e^{-t^2/2}$ konvergiert. Damit ist gezeigt, dass die Verteilung der standardisierten Variablen gegen die Standardnormalverteilung konvergiert.
+Unter Verwendung der charakteristischen Funktion $\phi_X(t) = E[e^{itX}]$ ist die charakteristische Funktion der Summe unabhängiger Zufallsvariablen das Produkt ihrer jeweiligen charakteristischen Funktionen. Wenn wir die charakteristische Funktion der standardisierten Variablen $Z_n$ berechnen und den Grenzwert für $n \to \infty$ nehmen, kann gezeigt werden, dass sie gegen die charakteristische Funktion der Standardnormalverteilung $e^{-t^2/2}$ konvergiert. Damit ist gezeigt, dass die Verteilung der standardisierten Variablen gegen die Standardnormalverteilung konvergiert.
 
 ## 7. Fazit
 

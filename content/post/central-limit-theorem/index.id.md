@@ -27,11 +27,11 @@ Pertimbangkan dadu. Saat Anda melempar satu dadu, distribusi hasilnya adalah dis
 
 Misalkan $n$ pengamatan $X_1, X_2, \dots, X_n$ saling independen dan berdistribusi identik (i.i.d.), dengan nilai harapan bersama $\mu$ yang berhingga dan varians $0<\sigma^2<\infty$.
 
-Misalkan rata-rata sampel adalah $\bar{X} = \frac{1}{n} \sum_{i=1}^{n} X_i$. Menurut Teorema Limit Pusat, ketika $n$ cukup besar, variabel terstandarisasi $Z$ yang ditunjukkan di bawah ini akan konvergen ke distribusi normal standar $\mathcal{N}(0, 1)$.
+Misalkan rata-rata sampel adalah $\bar{X}_n = \frac{1}{n} \sum_{i=1}^{n} X_i$. Menurut Teorema Limit Pusat, ketika $n$ cukup besar, variabel terstandarisasi $Z_n$ yang ditunjukkan di bawah ini akan konvergen ke distribusi normal standar $\mathcal{N}(0, 1)$.
 
 
 $$
-Z = \frac{\bar{X} - \mu}{\frac{\sigma}{\sqrt{n}}} \xrightarrow{d} \mathcal{N}(0, 1) \text{ saat } n \to \infty
+Z_n = \frac{\bar{X}_n - \mu}{\frac{\sigma}{\sqrt{n}}} \xrightarrow{d} \mathcal{N}(0, 1) \text{ saat } n \to \infty
 $$
 
 
@@ -43,15 +43,10 @@ Untuk memahami secara visual bagaimana Teorema Limit Pusat bekerja, berikut adal
 
 ```mermaid
 graph TD
-    A["Distribusi Asli (Bukan Normal)"] -->|"Pengambilan Sampel"| B["Sampel 1"]
-    A -->|"Pengambilan Sampel"| C["Sampel 2"]
-    A -->|"Pengambilan Sampel"| D["Sampel N"]
-    B -->|"Hitung Rata-rata"| E["Rata-rata Sampel 1"]
-    C -->|"Hitung Rata-rata"| F["Rata-rata Sampel 2"]
-    D -->|"Hitung Rata-rata"| G["Rata-rata Sampel N"]
-    E -->|"Gambar Distribusi"| H["Mendekati Distribusi Normal"]
-    F -->|"Gambar Distribusi"| H
-    G -->|"Gambar Distribusi"| H
+    A["Distribusi populasi (tidak harus normal)"] --> B["Ambil sampel berukuran n berulang kali"]
+    B --> C["Hitung rata-rata setiap sampel"]
+    C --> D["Amati distribusi banyak rata-rata sampel"]
+    D --> E["Saat n meningkat, distribusi terstandardisasi mendekati normal standar"]
 ```
 
 ## 4. Simulasi dengan Python
@@ -111,7 +106,7 @@ Kesalahan pengukuran dan banyak sumber derau alami dapat dimodelkan sebagai juml
 
 Fungsi karakteristik dan [ekspansi Taylor](/id/p/taylor-and-maclaurin-series/) digunakan dalam pembuktian ketat Teorema Limit Pusat. Berikut ringkasannya.
 
-Menggunakan fungsi karakteristik $\phi_X(t) = E[e^{itX}]$, fungsi karakteristik dari jumlah variabel acak independen adalah hasil kali dari masing-masing fungsi karakteristiknya. Ketika kita menghitung fungsi karakteristik dari variabel terstandarisasi $Z$ dan mengambil batas saat $n \to \infty$, itu dapat terbukti konvergen ke $e^{-t^2/2}$, yang merupakan fungsi karakteristik dari distribusi normal standar. Ini menunjukkan bahwa distribusi variabel terstandarisasi konvergen ke distribusi normal standar.
+Menggunakan fungsi karakteristik $\phi_X(t) = E[e^{itX}]$, fungsi karakteristik dari jumlah variabel acak independen adalah hasil kali dari masing-masing fungsi karakteristiknya. Ketika kita menghitung fungsi karakteristik dari variabel terstandarisasi $Z_n$ dan mengambil batas saat $n \to \infty$, itu dapat terbukti konvergen ke $e^{-t^2/2}$, yang merupakan fungsi karakteristik dari distribusi normal standar. Ini menunjukkan bahwa distribusi variabel terstandarisasi konvergen ke distribusi normal standar.
 
 ## 7. Kesimpulan
 
