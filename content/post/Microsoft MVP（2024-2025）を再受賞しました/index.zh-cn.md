@@ -1,6 +1,5 @@
 ---
 title: '再次荣获Microsoft MVP（2024-2025）！附MVP制度解说'
-date: "2026-09-24T19:44:38+09:00"
 slug: "Microsoft MVP（2024-2025）を再获奖しました"
 date: 2024-09-03T21:25:20+09:00
 tags: ["Microsoft MVP"]
@@ -8,9 +7,12 @@ draft: false
 image: "img.webp"
 categories: ["tools-development-environment"]
 description: '汇报本人今年第8次荣获Microsoft MVP（2024-2025）。同时介绍Microsoft MVP制度的概况及评估的活动内容，并分享本次获奖理由以及对过去一年的回顾。'
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
 
 # 再次荣获 Microsoft MVP（2024-2025）
+
+本文发布于 2024 年 9 月，记录 Microsoft MVP（2024–2025）获奖情况及当时的活动。文中的“今年”和“过去一年”均以发布日期为准。
 
 ![img\_1.png](img_1.webp)
 
@@ -64,3 +66,4 @@ description: '汇报本人今年第8次荣获Microsoft MVP（2024-2025）。同�
 
 今后也请多多关照。
 
+请参阅 Microsoft [当前 MVP 计划官方介绍](https://mvp.microsoft.com/mvpintro/)。

@@ -10810,121 +10810,481 @@
       "source": "post/Mathematica入門/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "4bef0e58726b75dc877ebfd1e3363217e8b3f8101464251fe66cb099bb24907c",
-      "translationHash": "e11ddf97698c561cbb8d88fa05809461bc94d148fad3ba7a17a3c1d482483ae7",
+      "sourceHash": "3b4f58c17d90f83b18897bb74846e82be8cbef684755085e4402f0b783700297",
+      "translationHash": "b0ec650e54b75a849d6ef51c9d23341a51e8d02ef43c9ab79eb5befe6c7de89f",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-095.json",
-      "evidenceHash": "1ef9ced3df4d4bf27dd9c896bb4da29ceed0b8f55888d4eab411a908714ed1ad"
+      "evidenceHash": "b7f336b0d230787881561357486ccb751b2c8110361a5b8ec3f1bcecc01ec3f7"
     },
     "post/Mathematica入門/index.de.md": {
       "source": "post/Mathematica入門/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "4bef0e58726b75dc877ebfd1e3363217e8b3f8101464251fe66cb099bb24907c",
-      "translationHash": "c5259a0c14c8d313764f1f1fe7b4123af41ec18ffd358c558780c779f9975748",
+      "sourceHash": "3b4f58c17d90f83b18897bb74846e82be8cbef684755085e4402f0b783700297",
+      "translationHash": "1b9ba2ba343c8f72f47969dd72b1f704c8e17a8fee3c265fba67b1d0500cb3b4",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-095.json",
-      "evidenceHash": "4bd2542c73a9f5f1e79ac784d3f7100635f45c944c3c2bd2358f0fd1a6a2e65a"
+      "evidenceHash": "a517e12de1cfa4dc9516c9f65d1137577bd41181a7ed3a346a269e0576285211"
     },
     "post/Mathematica入門/index.en.md": {
       "source": "post/Mathematica入門/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "4bef0e58726b75dc877ebfd1e3363217e8b3f8101464251fe66cb099bb24907c",
-      "translationHash": "4c460a4576ee03beaa63d4a174baa4c6bb18d3f9b3b92901498729516491e955",
+      "sourceHash": "3b4f58c17d90f83b18897bb74846e82be8cbef684755085e4402f0b783700297",
+      "translationHash": "5d6368cdf58d0fde8af5c102afbc25e62beec1f14676ccdc8a41a5dd1a2a51d9",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-095.json",
-      "evidenceHash": "5ad608b8e2ac621e50e2285342f429c3a743ad753f1431a1ee1114b5007a6cc6"
+      "evidenceHash": "e987f7df0dc67c6da061565624e4eb04ed9d2c16d03d115eede0136d1aebb1f8"
     },
     "post/Mathematica入門/index.es.md": {
       "source": "post/Mathematica入門/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "4bef0e58726b75dc877ebfd1e3363217e8b3f8101464251fe66cb099bb24907c",
-      "translationHash": "b9a1ff4312266bb50d18aee08d1ffec868140bd40110f0ed2e4ae232d5cc873a",
+      "sourceHash": "3b4f58c17d90f83b18897bb74846e82be8cbef684755085e4402f0b783700297",
+      "translationHash": "bcf5f8545cca754cd19d0b01656bd5ebd3000f5ff637af224c2a046ea417e751",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-095.json",
-      "evidenceHash": "04e86c633f9f80a54c6c3967582009a4d7a83a274a2a0adc9e125b19c9f092a0"
+      "evidenceHash": "a5fac573bd777eed60cfada8621195a0290d436e1694858d6d3f7cded76386dc"
     },
     "post/Mathematica入門/index.fr.md": {
       "source": "post/Mathematica入門/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "4bef0e58726b75dc877ebfd1e3363217e8b3f8101464251fe66cb099bb24907c",
-      "translationHash": "a96b925eb0feb49ab3ff1890f1305fe2f637bf92ed1225a921fc9d4871b2483e",
+      "sourceHash": "3b4f58c17d90f83b18897bb74846e82be8cbef684755085e4402f0b783700297",
+      "translationHash": "a7eebd53fac746d5acf309e56ccfa777c6698bb47e6c8249e45436af92e40d16",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-095.json",
-      "evidenceHash": "b9cd9c8cd17c97c012010ccff6ebcfff2374fb8e7a19e35f16d7caa58810bd68"
+      "evidenceHash": "55f7fc07083e92e98be6048217a5c321e573db7635922ddfff833a51e39a93da"
     },
     "post/Mathematica入門/index.hi.md": {
       "source": "post/Mathematica入門/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "4bef0e58726b75dc877ebfd1e3363217e8b3f8101464251fe66cb099bb24907c",
-      "translationHash": "dbbf17e36963b67d8a03dbbef7c8b71a1f7667a53a6329d0f779859125bfc9f8",
+      "sourceHash": "3b4f58c17d90f83b18897bb74846e82be8cbef684755085e4402f0b783700297",
+      "translationHash": "e6eaef4e11d352736b70b3c715ba26805f4577868d59b3afc6218d02062c6674",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-095.json",
-      "evidenceHash": "3e347f6c0a9cc3f077b4d0444c0c7774549e8f854022777d3ac4df8cf6844d24"
+      "evidenceHash": "db9824559e98bee3f759ad72465c66c4c7ec48966dafaf52f7752c91cb1fbcdf"
     },
     "post/Mathematica入門/index.id.md": {
       "source": "post/Mathematica入門/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "4bef0e58726b75dc877ebfd1e3363217e8b3f8101464251fe66cb099bb24907c",
-      "translationHash": "543745e91b90b80a87a0fd543284bd13070c1fb4a3e4c3e63a3515f524655441",
+      "sourceHash": "3b4f58c17d90f83b18897bb74846e82be8cbef684755085e4402f0b783700297",
+      "translationHash": "cd3cb24064f57e0efbe4c4a6ba9ab9bf74cc454c2587f7e0c2071352fdba23e1",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-095.json",
-      "evidenceHash": "3d4c89e95f98942b7430bfacbb38ed5f7311f23c122a7a90d411ce0069371518"
+      "evidenceHash": "9fef948595ffdc9c2c1f10361e9f70fd65742a6184ed83f867f243c893ae0eec"
     },
     "post/Mathematica入門/index.ko.md": {
       "source": "post/Mathematica入門/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "4bef0e58726b75dc877ebfd1e3363217e8b3f8101464251fe66cb099bb24907c",
-      "translationHash": "ccdcc1ea4d5fb8931d37f30c083a959d4f67750305846e83281bc6e680a1f484",
+      "sourceHash": "3b4f58c17d90f83b18897bb74846e82be8cbef684755085e4402f0b783700297",
+      "translationHash": "6f8e96305a0799596fad1051ebb4d0e8589bf8aec80698b105787c6f294cfe81",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-095.json",
-      "evidenceHash": "40ed552e00a443e43125e75976eb50186ca72744210e4a2457a94662c7134bf3"
+      "evidenceHash": "9e4b9e6c549271404828e15ce5f22e4e255a5d1fa5a5be4e9aebb932a7bcde0b"
     },
     "post/Mathematica入門/index.pt.md": {
       "source": "post/Mathematica入門/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "4bef0e58726b75dc877ebfd1e3363217e8b3f8101464251fe66cb099bb24907c",
-      "translationHash": "611d80bdb13d79c47ef4d070355a66e2773c4dc2d798a3c35470bde9328516c2",
+      "sourceHash": "3b4f58c17d90f83b18897bb74846e82be8cbef684755085e4402f0b783700297",
+      "translationHash": "c36f365ccfedf21c2ac62af7bfd45dea7ca52288efeaf05f8a8d8ae643922007",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-095.json",
-      "evidenceHash": "a2a335bc11b224f7597ea2262b003820a2368ec77c74eede892f8ce6d309ae76"
+      "evidenceHash": "264df66a5e65e7d0d4a9dce2ff60962226ef17d8e1601b60486447daa4c9c6f0"
     },
     "post/Mathematica入門/index.ru.md": {
       "source": "post/Mathematica入門/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "4bef0e58726b75dc877ebfd1e3363217e8b3f8101464251fe66cb099bb24907c",
-      "translationHash": "afc59e6ef510d6409d475c971f96f10d9874c22cb23ff44a71caa7565cd31c48",
+      "sourceHash": "3b4f58c17d90f83b18897bb74846e82be8cbef684755085e4402f0b783700297",
+      "translationHash": "6bd7d499f3a935c3d4ff86298eead8e88f7b8fd470781a6731bade7e2e05317f",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-095.json",
-      "evidenceHash": "0d9ad49e8efb8747bd1a770963135b3ecab0e8bab0596d9260cadd9dfdd84924"
+      "evidenceHash": "3e01d5f2abea0f424a27be47619660bd00bc2de296aad88024f256b1ea227998"
     },
     "post/Mathematica入門/index.zh-cn.md": {
       "source": "post/Mathematica入門/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "4bef0e58726b75dc877ebfd1e3363217e8b3f8101464251fe66cb099bb24907c",
-      "translationHash": "761b425c4dd3874224f74c169edd03fde80e1fddf78cedfb0a085cd1132466e0",
+      "sourceHash": "3b4f58c17d90f83b18897bb74846e82be8cbef684755085e4402f0b783700297",
+      "translationHash": "81b0713015dc179c5c5b67b76c4a0c9eef2d449a2e67a9eacb602416d34b7f95",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-095.json",
-      "evidenceHash": "f9c1a70fde827425df82b0b833fb69dbb0b96ccf1fec77647ee44f384ba14224"
+      "evidenceHash": "fd97ee1e4fe485aca7dac16a17775fae07e0fa20373ccb4b146fa72d137b94dd"
     },
     "post/Mathematica入門/index.zh-tw.md": {
       "source": "post/Mathematica入門/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "4bef0e58726b75dc877ebfd1e3363217e8b3f8101464251fe66cb099bb24907c",
-      "translationHash": "082b207eacd298c1ccc61c0f7c54b3e15becafaa6c48f2687b764e2f91d34611",
+      "sourceHash": "3b4f58c17d90f83b18897bb74846e82be8cbef684755085e4402f0b783700297",
+      "translationHash": "6d675adca42e9eea526d288658cd8c69b2ee4554b4b5b35c8c8b8109540102f3",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-095.json",
-      "evidenceHash": "71894134d8578fbc164e8038fb238add4ac9498f3349ce41586a2957af01d97f"
+      "evidenceHash": "e277a6267910273f32314942cc18075e676a6c0390a81d60c30a9bad45ba4c21"
+    },
+    "post/Microsoft MVP受賞について(2023-2024)/index.ar.md": {
+      "source": "post/Microsoft MVP受賞について(2023-2024)/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "de5ff858a37b810df7eaa8d913a2fe59bc4b3a3cac0d83926d5522a922795f4c",
+      "translationHash": "3ad5f2ed6d6c4d5ea1af9c5d9b15f5a4b1ef1d44266a1d39c6ceaaac50f07cfd",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-096.json",
+      "evidenceHash": "180a0a33b44d89ecfc262929da9b924c6a318a5db9fa65e9b0d3cc61e085ec04"
+    },
+    "post/Microsoft MVP受賞について(2023-2024)/index.de.md": {
+      "source": "post/Microsoft MVP受賞について(2023-2024)/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "de5ff858a37b810df7eaa8d913a2fe59bc4b3a3cac0d83926d5522a922795f4c",
+      "translationHash": "423bcefbd242c0d1211eabc6a5e134cecaeed828112cb5e293dd9c5418969eb9",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-096.json",
+      "evidenceHash": "22f0246acb2d215abb878eb89363db6f631772b6538b02f77e54426190d5a9ac"
+    },
+    "post/Microsoft MVP受賞について(2023-2024)/index.en.md": {
+      "source": "post/Microsoft MVP受賞について(2023-2024)/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "de5ff858a37b810df7eaa8d913a2fe59bc4b3a3cac0d83926d5522a922795f4c",
+      "translationHash": "98ccb8b46ed6bedfa0e92e12491bfc5c11460a5c30978688153ae70c1cdf2828",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-096.json",
+      "evidenceHash": "2410903a1b1b182f7e1a13e134ba0a9d9b5104ea7fb8c95ef5634843972bb49b"
+    },
+    "post/Microsoft MVP受賞について(2023-2024)/index.es.md": {
+      "source": "post/Microsoft MVP受賞について(2023-2024)/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "de5ff858a37b810df7eaa8d913a2fe59bc4b3a3cac0d83926d5522a922795f4c",
+      "translationHash": "a9b64bad7f7e179deaf2fdfd8b4230a68fbffd92b338a5eaa92044ddcbdbeec0",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-096.json",
+      "evidenceHash": "2f243c601443d1b1a0890eb38a6a213b788023a8ff77dc36ce431d1c2e5da3cd"
+    },
+    "post/Microsoft MVP受賞について(2023-2024)/index.fr.md": {
+      "source": "post/Microsoft MVP受賞について(2023-2024)/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "de5ff858a37b810df7eaa8d913a2fe59bc4b3a3cac0d83926d5522a922795f4c",
+      "translationHash": "360e4fc865c2464659cc6876c27a0246a2b4d8a5e1703129386d7d3a1587cada",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-096.json",
+      "evidenceHash": "6c2be28dcfa9e42683f961651616b0c95f5f56a5e0779e7500713b77b3def448"
+    },
+    "post/Microsoft MVP受賞について(2023-2024)/index.hi.md": {
+      "source": "post/Microsoft MVP受賞について(2023-2024)/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "de5ff858a37b810df7eaa8d913a2fe59bc4b3a3cac0d83926d5522a922795f4c",
+      "translationHash": "d3080459b8cb090c676bed7a292f64a221f3eda2529dc88ceb0f342d4ae92293",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-096.json",
+      "evidenceHash": "b07355ad3e472bf9536dbeb109a3fdbbf9893c3079c4f0c1e120baec51ff2a15"
+    },
+    "post/Microsoft MVP受賞について(2023-2024)/index.id.md": {
+      "source": "post/Microsoft MVP受賞について(2023-2024)/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "de5ff858a37b810df7eaa8d913a2fe59bc4b3a3cac0d83926d5522a922795f4c",
+      "translationHash": "6cfe8a4d8ac2986609ee30c979b0036f97d49a24e9e00f1ea538ffd0260c16d4",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-096.json",
+      "evidenceHash": "479baf61ffc7a1878d3d699d88bab44e6f548146258e1a0bf5b34ec84571ecb2"
+    },
+    "post/Microsoft MVP受賞について(2023-2024)/index.ko.md": {
+      "source": "post/Microsoft MVP受賞について(2023-2024)/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "de5ff858a37b810df7eaa8d913a2fe59bc4b3a3cac0d83926d5522a922795f4c",
+      "translationHash": "6f76f6ecc99c3aaa9b30c3c54c8deb5e5ba72ca8ef23e7f93f7d916062f85000",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-096.json",
+      "evidenceHash": "b402ec918e50a3e81757218b209490442eee90288bb56a2dd9ffbb0ee09fb807"
+    },
+    "post/Microsoft MVP受賞について(2023-2024)/index.pt.md": {
+      "source": "post/Microsoft MVP受賞について(2023-2024)/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "de5ff858a37b810df7eaa8d913a2fe59bc4b3a3cac0d83926d5522a922795f4c",
+      "translationHash": "cdfac36ae2f407b9a836fdf9e51a45198f1dd496f6658c3f7e878d56573f01fa",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-096.json",
+      "evidenceHash": "be1bdf8cad18190479788e290b234565a7f50fe599492a88f4ba6ac0e69c8229"
+    },
+    "post/Microsoft MVP受賞について(2023-2024)/index.ru.md": {
+      "source": "post/Microsoft MVP受賞について(2023-2024)/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "de5ff858a37b810df7eaa8d913a2fe59bc4b3a3cac0d83926d5522a922795f4c",
+      "translationHash": "d86dc878057731c86dfdb527413a9a4560307fc96a538152f7a70e5f2f67ea78",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-096.json",
+      "evidenceHash": "c048cb89b626bd30c8ed74adf76b646aea04c535b59bde5704e95650881e91ac"
+    },
+    "post/Microsoft MVP受賞について(2023-2024)/index.zh-cn.md": {
+      "source": "post/Microsoft MVP受賞について(2023-2024)/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "de5ff858a37b810df7eaa8d913a2fe59bc4b3a3cac0d83926d5522a922795f4c",
+      "translationHash": "8b85d941c5c106d82671c655d8a4dd7f0f94c1998cdd2f0f0bf464ba245c4932",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-096.json",
+      "evidenceHash": "defe677bca00438e4e8677f2385923fab4dc7b5cb04f2c686eb624a4dfafa845"
+    },
+    "post/Microsoft MVP受賞について(2023-2024)/index.zh-tw.md": {
+      "source": "post/Microsoft MVP受賞について(2023-2024)/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "de5ff858a37b810df7eaa8d913a2fe59bc4b3a3cac0d83926d5522a922795f4c",
+      "translationHash": "5c39a6ae208587e598a883e9c35280ebb7ab22a5af805bc59e802f1b421c70de",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-096.json",
+      "evidenceHash": "ff32f11a236642e945d9124f74b5db26444c0a57626209f83d056ee1d122bd1d"
+    },
+    "post/Microsoft MVP（2024-2025）を再受賞しました/index.ar.md": {
+      "source": "post/Microsoft MVP（2024-2025）を再受賞しました/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "08df2cf89696d4267df28e313e1e13b7e9e7686dd6bc21b1d9ec86b3880a3cee",
+      "translationHash": "c1181d1ab2a03cd621e068f6271b86145783ee1bae5441baba907352fc776e92",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-097.json",
+      "evidenceHash": "786aacc5598310503771faa803cd609a64980e05c49f83c1221f8bccaf346f68"
+    },
+    "post/Microsoft MVP（2024-2025）を再受賞しました/index.de.md": {
+      "source": "post/Microsoft MVP（2024-2025）を再受賞しました/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "08df2cf89696d4267df28e313e1e13b7e9e7686dd6bc21b1d9ec86b3880a3cee",
+      "translationHash": "d9908e669083708d3aa4b22276a8eb07430153bb0b44d83db7009aca0629f079",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-097.json",
+      "evidenceHash": "2c63ba9935e2edf1a96118e46494086cfce3424e680e62e63dde14e42b06a6cb"
+    },
+    "post/Microsoft MVP（2024-2025）を再受賞しました/index.en.md": {
+      "source": "post/Microsoft MVP（2024-2025）を再受賞しました/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "08df2cf89696d4267df28e313e1e13b7e9e7686dd6bc21b1d9ec86b3880a3cee",
+      "translationHash": "082cf722e8b234ac8b9e9517db947c0fdd4ce0c9810872c7418e747516077a2c",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-097.json",
+      "evidenceHash": "3ff89870e9edb6fdfbc23d1621f2051c26eecddce152b52afbf7434a88dd3e59"
+    },
+    "post/Microsoft MVP（2024-2025）を再受賞しました/index.es.md": {
+      "source": "post/Microsoft MVP（2024-2025）を再受賞しました/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "08df2cf89696d4267df28e313e1e13b7e9e7686dd6bc21b1d9ec86b3880a3cee",
+      "translationHash": "6dd046ca5555ea8b396982cb392230ea31b1785530e29fb365ab5882051f7977",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-097.json",
+      "evidenceHash": "78df825c3c31eca244835f50920c9cba4006b2de82f5b60e7ef612c55cf49a8e"
+    },
+    "post/Microsoft MVP（2024-2025）を再受賞しました/index.fr.md": {
+      "source": "post/Microsoft MVP（2024-2025）を再受賞しました/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "08df2cf89696d4267df28e313e1e13b7e9e7686dd6bc21b1d9ec86b3880a3cee",
+      "translationHash": "0d832a60052318758ac2cbec19b37ce721b84e03675dc6be87722872dacc460f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-097.json",
+      "evidenceHash": "b6ddd2d7175a7174d2ffcc3eaac66c96f9730d10560084a2cd81bedee86ad294"
+    },
+    "post/Microsoft MVP（2024-2025）を再受賞しました/index.hi.md": {
+      "source": "post/Microsoft MVP（2024-2025）を再受賞しました/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "08df2cf89696d4267df28e313e1e13b7e9e7686dd6bc21b1d9ec86b3880a3cee",
+      "translationHash": "a820d401feef7a98281b5f4d015764b02eda2ace524ac71815c5dc2de04b7bc8",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-097.json",
+      "evidenceHash": "a45025811a2ca347c2533e7c2af46cea0e571d86b2cd4e6f860300b76ce80693"
+    },
+    "post/Microsoft MVP（2024-2025）を再受賞しました/index.id.md": {
+      "source": "post/Microsoft MVP（2024-2025）を再受賞しました/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "08df2cf89696d4267df28e313e1e13b7e9e7686dd6bc21b1d9ec86b3880a3cee",
+      "translationHash": "a329c48bf3aec374c1edade4c0f1d66ee63eead775fbc236156762060b1e9723",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-097.json",
+      "evidenceHash": "9ca8f8fe7bd9ad484a1ccd55c4be1722d5bb434c2340d0db82c05093a166868a"
+    },
+    "post/Microsoft MVP（2024-2025）を再受賞しました/index.ko.md": {
+      "source": "post/Microsoft MVP（2024-2025）を再受賞しました/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "08df2cf89696d4267df28e313e1e13b7e9e7686dd6bc21b1d9ec86b3880a3cee",
+      "translationHash": "9b9ca57429bb83c9df04f16b697fe160e3da29699a1d261dd3a291ee651d3c44",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-097.json",
+      "evidenceHash": "b69a25968780c8db97b65ab244c5a6ca1c5c52b50f667656320eca235974dd07"
+    },
+    "post/Microsoft MVP（2024-2025）を再受賞しました/index.pt.md": {
+      "source": "post/Microsoft MVP（2024-2025）を再受賞しました/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "08df2cf89696d4267df28e313e1e13b7e9e7686dd6bc21b1d9ec86b3880a3cee",
+      "translationHash": "02e14a4c472c2597e0b2033146b9d0b837e897d670c47b3d0ce7ef8d156ac60f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-097.json",
+      "evidenceHash": "799bcd9ab9d4b4d2573e0810320c140658f17684934e12ebf3dac3df07ee7987"
+    },
+    "post/Microsoft MVP（2024-2025）を再受賞しました/index.ru.md": {
+      "source": "post/Microsoft MVP（2024-2025）を再受賞しました/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "08df2cf89696d4267df28e313e1e13b7e9e7686dd6bc21b1d9ec86b3880a3cee",
+      "translationHash": "b37871bb1f34b4c0354742ddb13174ae5b5cbfb1b721d682991c22b87c2dbb13",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-097.json",
+      "evidenceHash": "f57bac33bb34607b0940f10b845d8d5c73714c486ce3d8b62efc22ac491230e9"
+    },
+    "post/Microsoft MVP（2024-2025）を再受賞しました/index.zh-cn.md": {
+      "source": "post/Microsoft MVP（2024-2025）を再受賞しました/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "08df2cf89696d4267df28e313e1e13b7e9e7686dd6bc21b1d9ec86b3880a3cee",
+      "translationHash": "7c5e7b515b009d5fb03a1be9b43406d3b7fb7e1474fee6d2505b4726c0415093",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-097.json",
+      "evidenceHash": "d1a9264041b68475bc38abac69454e14354581cb81bba26f34eb50bb63b49a85"
+    },
+    "post/Microsoft MVP（2024-2025）を再受賞しました/index.zh-tw.md": {
+      "source": "post/Microsoft MVP（2024-2025）を再受賞しました/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "08df2cf89696d4267df28e313e1e13b7e9e7686dd6bc21b1d9ec86b3880a3cee",
+      "translationHash": "f636ab9253e583ebc91ca2e5201cdb1712a96aab689b2c7a0a073d959c9288d2",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-097.json",
+      "evidenceHash": "4d7e405636270620c638aea4498a6a07644aa483b26ca10691003078634445de"
+    },
+    "post/Microsoft MVP（2025-2026）を再受賞しました/index.ar.md": {
+      "source": "post/Microsoft MVP（2025-2026）を再受賞しました/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b3da75b2124c818f1d076744f82ca2eacf223a513e2f535466f968dea68369bd",
+      "translationHash": "0412a0ae0c5ab80a838380002a008aa961a21b8e5ce85512278429160c4d794a",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-098.json",
+      "evidenceHash": "4bb9efda68d2c04ef9e0bd909ef4af7de69e66becf23694f778b86a6ffd1cae6"
+    },
+    "post/Microsoft MVP（2025-2026）を再受賞しました/index.de.md": {
+      "source": "post/Microsoft MVP（2025-2026）を再受賞しました/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b3da75b2124c818f1d076744f82ca2eacf223a513e2f535466f968dea68369bd",
+      "translationHash": "23710525a324b3ba205585ded83418be6f24fa148597a8b043b70123967fcb1c",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-098.json",
+      "evidenceHash": "6d3968d1f814797af6d8ea2c9fd9c379feb332738b51c2a7329b6d86a88d683a"
+    },
+    "post/Microsoft MVP（2025-2026）を再受賞しました/index.en.md": {
+      "source": "post/Microsoft MVP（2025-2026）を再受賞しました/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b3da75b2124c818f1d076744f82ca2eacf223a513e2f535466f968dea68369bd",
+      "translationHash": "e896f809f15db73ecf5d0fe94232e2adc9eaed83464f68ea4216ffc6dc6365e0",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-098.json",
+      "evidenceHash": "10d5212babde83ab68b3bef1434d190f4ae0a52592870b2c0f5ddb60378f1195"
+    },
+    "post/Microsoft MVP（2025-2026）を再受賞しました/index.es.md": {
+      "source": "post/Microsoft MVP（2025-2026）を再受賞しました/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b3da75b2124c818f1d076744f82ca2eacf223a513e2f535466f968dea68369bd",
+      "translationHash": "dc3b47a35640ae19c7bb12a13a1e249758e82ad1b44c09ab2e58463ab630d8c3",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-098.json",
+      "evidenceHash": "943758f98e1bd8b630935c8018b053c18d25d1e18aa852a4416952ecc386723e"
+    },
+    "post/Microsoft MVP（2025-2026）を再受賞しました/index.fr.md": {
+      "source": "post/Microsoft MVP（2025-2026）を再受賞しました/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b3da75b2124c818f1d076744f82ca2eacf223a513e2f535466f968dea68369bd",
+      "translationHash": "c25b8417d6686613467dd7ddc63aea924ef3de5058c66aee8c2602480e5a6aba",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-098.json",
+      "evidenceHash": "dec4880ac50c58a8aa66757ec37bdc041b4fda6b76fdf54e81581cfdfdc22e78"
+    },
+    "post/Microsoft MVP（2025-2026）を再受賞しました/index.hi.md": {
+      "source": "post/Microsoft MVP（2025-2026）を再受賞しました/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b3da75b2124c818f1d076744f82ca2eacf223a513e2f535466f968dea68369bd",
+      "translationHash": "10ec23772d1afca2d6b3baf41036b774b5ce47bca098f6c976dbf59530ffa818",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-098.json",
+      "evidenceHash": "ac310796f6c59cd881e4ae40616b2aebfe6250af8e95f8f2d71c93a745a0358d"
+    },
+    "post/Microsoft MVP（2025-2026）を再受賞しました/index.id.md": {
+      "source": "post/Microsoft MVP（2025-2026）を再受賞しました/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b3da75b2124c818f1d076744f82ca2eacf223a513e2f535466f968dea68369bd",
+      "translationHash": "ee44673265fa49a8e0b0eed33d55147b90cae7abefc6af683d1ec6173291f72a",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-098.json",
+      "evidenceHash": "9192a7629b425976aeb96cc9f8609592afb4441c7fabcfe1a4fd533467c368b4"
+    },
+    "post/Microsoft MVP（2025-2026）を再受賞しました/index.ko.md": {
+      "source": "post/Microsoft MVP（2025-2026）を再受賞しました/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b3da75b2124c818f1d076744f82ca2eacf223a513e2f535466f968dea68369bd",
+      "translationHash": "a5be9c25554d31bdab947b4b105e39904e32083e359e592ad2d57ce9cde70f12",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-098.json",
+      "evidenceHash": "8d6f8432ef057c8b68e664f94a78c6ba3810cdcc103e74d3f334f633a014f36a"
+    },
+    "post/Microsoft MVP（2025-2026）を再受賞しました/index.pt.md": {
+      "source": "post/Microsoft MVP（2025-2026）を再受賞しました/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b3da75b2124c818f1d076744f82ca2eacf223a513e2f535466f968dea68369bd",
+      "translationHash": "8b35b5dc0f73e74fa6f0aa9f8f8c1e17bf140528a56da4bb0fbfb8e121b22d60",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-098.json",
+      "evidenceHash": "c83849402dee870da48215c5525ffcf5bc30d1d9b0ad2ddfd10c54ac20c47f0f"
+    },
+    "post/Microsoft MVP（2025-2026）を再受賞しました/index.ru.md": {
+      "source": "post/Microsoft MVP（2025-2026）を再受賞しました/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b3da75b2124c818f1d076744f82ca2eacf223a513e2f535466f968dea68369bd",
+      "translationHash": "d21f4e00575974e92e57044bf6ee910ab7743df83622caf78b10de60afa332a7",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-098.json",
+      "evidenceHash": "468aa020eabc86deb5ccde476bd8157c5c677495c421b7d566af7c9d0dc747f4"
+    },
+    "post/Microsoft MVP（2025-2026）を再受賞しました/index.zh-cn.md": {
+      "source": "post/Microsoft MVP（2025-2026）を再受賞しました/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b3da75b2124c818f1d076744f82ca2eacf223a513e2f535466f968dea68369bd",
+      "translationHash": "feaeba3dc520fccb0c8148dd68c62677a8cef5f23936d0f1ab764e182b246df1",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-098.json",
+      "evidenceHash": "5f39f62f9a6dce0072ccbdbe5f8032398de67d5c638f59ac21c34e68707cc268"
+    },
+    "post/Microsoft MVP（2025-2026）を再受賞しました/index.zh-tw.md": {
+      "source": "post/Microsoft MVP（2025-2026）を再受賞しました/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b3da75b2124c818f1d076744f82ca2eacf223a513e2f535466f968dea68369bd",
+      "translationHash": "8ba6c1895e610cc790e9f2b005f68a7b70f159948dfa10aa363caa347565195e",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-098.json",
+      "evidenceHash": "158e7f63884748eb22d60d633137c082718583c7fcc6986a540d6d6b4fc8880e"
     }
   }
 }

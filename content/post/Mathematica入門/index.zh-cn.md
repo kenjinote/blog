@@ -1,4 +1,5 @@
----le: 'Mathematica入门：方程、微积分等基本命令的使用方法'
+---
+title: 'Mathematica入门：方程、微积分等基本命令的使用方法'
 slug: "Mathematica入門"
 date: 2024-07-25T01:36:19+09:00
 tags: ["Mathematica", "数学", "算法"]
@@ -7,7 +8,7 @@ image: "img.webp"
 categories: ["math-cryptography-quantum"]
 description: '面向初学者讲解Mathematica的基本使用方法和计算命令。总结了常用的函数及具体示例，包括方程式及联立方程式的求解（Solve）、不等式（Reduce）、微分（D）、积分（Integrate）和矩阵计算等。'
 lastmod: "2026-11-24T00:00:00+09:00"
-
+mermaid: true
 ---
 # Mathematica入门
 

@@ -118,7 +118,7 @@ for lang in LANGS:
     parts[82] = "\n\n" + random_note + parts[82]
     refs = "\n\n## " + refs_title + "\n\n" + " · ".join(f"[{name}]({url})" for name, url in URLS.items()) + "\n"
     body = "```".join(parts) + refs
-    prepared[path] = "---" + front + "\n---\n" + body
+    prepared[path] = "---\n" + front.strip("\r\n") + "\n---\n" + body
 
 # Validate every transformation before writing any article.
 for path, text in prepared.items():

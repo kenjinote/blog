@@ -1,14 +1,5 @@
 ---
-
-
-
-
-
-
-
-
 title: 'Microsoft MVP(2024-2025)를 재수상했습니다! MVP 제도의 설명도'
-date: "2026-09-24T19:44:38+09:00"
 slug: "Microsoft MVP（2024-2025）を再수상しました"
 date: 2024-09-03T21:25:20+09:00
 tags: ["Microsoft MVP"]
@@ -16,6 +7,7 @@ draft: false
 image: "img.webp"
 categories: ["tools-development-environment"]
 description: '올해로 8회째가 되는 Microsoft MVP(2024-2025)를 재수상했다는 보고입니다. Microsoft MVP 제도의 개요와 평가받는 활동 내용, 이번 수상 이유 및 지난 1년간의 회고를 소개합니다.'
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
 
 
@@ -27,6 +19,8 @@ description: '올해로 8회째가 되는 Microsoft MVP(2024-2025)를 재수상�
 
 
 # Microsoft MVP（2024-2025）를 재수상했습니다
+
+이 글은 2024년 9월에 게시되었으며 Microsoft MVP(2024–2025) 수상과 당시 활동을 기록합니다. 글의 ‘올해’와 ‘지난 1년’은 게시 시점을 기준으로 합니다.
 
 ![img\_1.png](img_1.webp)
 
@@ -80,3 +74,5 @@ MVP라고 해도, 스포츠의 최우수 선수를 말하는 것은 아닙니다
 어떤 형태로든, 「아, 그거 도움이 됐어」라고 누군가 생각해 줄 만한 정보를 전달해 갈 수 있다면 좋겠습니다.
 
 앞으로도, 아무쪼록 잘 부탁드립니다.
+
+Microsoft의 [현재 MVP 프로그램 공식 안내](https://mvp.microsoft.com/mvpintro/)를 참고하세요.

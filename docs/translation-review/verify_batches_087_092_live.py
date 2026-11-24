@@ -118,6 +118,30 @@ ARTICLES = {
         "markers": ["Sqrt[33]", "Projection", "ReflectionTransform", "RandomInteger[]"],
         "date": "2024-07-25",
     },
+    96: {
+        "bundle": ROOT / "content/post/Microsoft MVP受賞について(2023-2024)",
+        "slug": "Microsoft MVP受賞について(2023-2024)",
+        "links": [
+            "https://learn.microsoft.com/en-us/teamblog/msdn-technet-migration",
+            "https://mvp.microsoft.com/mvpintro/",
+        ],
+        "markers": ["2017", "2023-2024", "MSDN"],
+        "date": "2023-07-31",
+    },
+    97: {
+        "bundle": ROOT / "content/post/Microsoft MVP（2024-2025）を再受賞しました",
+        "slug": "Microsoft MVP（2024-2025）を再受賞しました",
+        "links": ["https://mvp.microsoft.com/mvpintro/"],
+        "markers": ["2024", "2025"],
+        "date": "2024-09-03",
+    },
+    98: {
+        "bundle": ROOT / "content/post/Microsoft MVP（2025-2026）を再受賞しました",
+        "slug": "Microsoft MVP（2025-2026）を再受賞しました",
+        "links": ["https://mvp.microsoft.com/mvpintro/"],
+        "markers": ["2025-2026", "2025", "2026"],
+        "date": "2025-07-13",
+    },
 }
 
 
@@ -183,7 +207,7 @@ def slug_key(value):
 parser = argparse.ArgumentParser()
 parser.add_argument("--ci-run", type=int, required=True)
 parser.add_argument("--commit", required=True)
-parser.add_argument("--max-batch", type=int, choices=(90, 91, 92, 93, 94, 95), default=95)
+parser.add_argument("--max-batch", type=int, choices=(90, 91, 92, 93, 94, 95, 96, 97, 98), default=98)
 args = parser.parse_args()
 ARTICLES = {number: article for number, article in ARTICLES.items() if number <= args.max_batch}
 with urllib.request.urlopen(f"https://github.com/kenjinote/blog/actions/runs/{args.ci_run}", timeout=45) as response:

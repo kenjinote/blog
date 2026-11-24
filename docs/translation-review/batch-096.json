@@ -1,0 +1,453 @@
+{
+  "version": 1,
+  "batch": 96,
+  "article": "Microsoft MVP受賞について(2023-2024)",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "de5ff858a37b810df7eaa8d913a2fe59bc4b3a3cac0d83926d5522a922795f4c",
+  "sources": [
+    "https://learn.microsoft.com/en-us/teamblog/msdn-technet-migration",
+    "https://mvp.microsoft.com/mvpintro/"
+  ],
+  "scope": "Read the complete Japanese article and all twelve translations. Compared dates, category and award-cycle terminology, historical context, and outbound links; treated first-person contribution claims as author statements.",
+  "findings": [
+    "Corrected the Japanese headline typo and wording typo; clarified that this is a July 2023 historical award report in every edition.",
+    "Removed the duplicate 2026 date, kept the original 2023-07-31 publication date, and set lastmod to 2026-11-24.",
+    "Replaced the retired MSDN forum destination with Microsoft's migration notice, labeled the forums read-only, and updated Twitter references to X (formerly Twitter).",
+    "Added a link to Microsoft's current official MVP program overview."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/Microsoft MVP受賞について(2023-2024)/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Microsoft MVP受賞について(2023-2024)/index.md",
+      "sourceHash": "de5ff858a37b810df7eaa8d913a2fe59bc4b3a3cac0d83926d5522a922795f4c",
+      "translationHash": "3ad5f2ed6d6c4d5ea1af9c5d9b15f5a4b1ef1d44266a1d39c6ceaaac50f07cfd",
+      "summary": "Compared the complete translation with the Japanese source; verified the award year, seven-year claim, historical time frame, and updated reference links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "The article is clearly framed as a July 2023 first-person account of the 2023-2024 award, and the seven-consecutive-year claim is preserved."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Microsoft MVP and Developer Technologies retain their official names; the former MSDN forum is labeled read-only and X is identified as formerly Twitter."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "GitHub, X, Microsoft's MSDN migration notice, and the current official MVP program page are linked."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The award and activity statements are the author's first-person account and were not independently verified.",
+        "Microsoft's current MVP overview is a JavaScript application; the link is an official program entry point."
+      ]
+    },
+    "post/Microsoft MVP受賞について(2023-2024)/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Microsoft MVP受賞について(2023-2024)/index.md",
+      "sourceHash": "de5ff858a37b810df7eaa8d913a2fe59bc4b3a3cac0d83926d5522a922795f4c",
+      "translationHash": "423bcefbd242c0d1211eabc6a5e134cecaeed828112cb5e293dd9c5418969eb9",
+      "summary": "Compared the complete translation with the Japanese source; verified the award year, seven-year claim, historical time frame, and updated reference links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "The article is clearly framed as a July 2023 first-person account of the 2023-2024 award, and the seven-consecutive-year claim is preserved."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Microsoft MVP and Developer Technologies retain their official names; the former MSDN forum is labeled read-only and X is identified as formerly Twitter."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "GitHub, X, Microsoft's MSDN migration notice, and the current official MVP program page are linked."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The award and activity statements are the author's first-person account and were not independently verified.",
+        "Microsoft's current MVP overview is a JavaScript application; the link is an official program entry point."
+      ]
+    },
+    "post/Microsoft MVP受賞について(2023-2024)/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Microsoft MVP受賞について(2023-2024)/index.md",
+      "sourceHash": "de5ff858a37b810df7eaa8d913a2fe59bc4b3a3cac0d83926d5522a922795f4c",
+      "translationHash": "98ccb8b46ed6bedfa0e92e12491bfc5c11460a5c30978688153ae70c1cdf2828",
+      "summary": "Compared the complete translation with the Japanese source; verified the award year, seven-year claim, historical time frame, and updated reference links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "The article is clearly framed as a July 2023 first-person account of the 2023-2024 award, and the seven-consecutive-year claim is preserved."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Microsoft MVP and Developer Technologies retain their official names; the former MSDN forum is labeled read-only and X is identified as formerly Twitter."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "GitHub, X, Microsoft's MSDN migration notice, and the current official MVP program page are linked."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The award and activity statements are the author's first-person account and were not independently verified.",
+        "Microsoft's current MVP overview is a JavaScript application; the link is an official program entry point."
+      ]
+    },
+    "post/Microsoft MVP受賞について(2023-2024)/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Microsoft MVP受賞について(2023-2024)/index.md",
+      "sourceHash": "de5ff858a37b810df7eaa8d913a2fe59bc4b3a3cac0d83926d5522a922795f4c",
+      "translationHash": "a9b64bad7f7e179deaf2fdfd8b4230a68fbffd92b338a5eaa92044ddcbdbeec0",
+      "summary": "Compared the complete translation with the Japanese source; verified the award year, seven-year claim, historical time frame, and updated reference links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "The article is clearly framed as a July 2023 first-person account of the 2023-2024 award, and the seven-consecutive-year claim is preserved."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Microsoft MVP and Developer Technologies retain their official names; the former MSDN forum is labeled read-only and X is identified as formerly Twitter."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "GitHub, X, Microsoft's MSDN migration notice, and the current official MVP program page are linked."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The award and activity statements are the author's first-person account and were not independently verified.",
+        "Microsoft's current MVP overview is a JavaScript application; the link is an official program entry point."
+      ]
+    },
+    "post/Microsoft MVP受賞について(2023-2024)/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Microsoft MVP受賞について(2023-2024)/index.md",
+      "sourceHash": "de5ff858a37b810df7eaa8d913a2fe59bc4b3a3cac0d83926d5522a922795f4c",
+      "translationHash": "360e4fc865c2464659cc6876c27a0246a2b4d8a5e1703129386d7d3a1587cada",
+      "summary": "Compared the complete translation with the Japanese source; verified the award year, seven-year claim, historical time frame, and updated reference links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "The article is clearly framed as a July 2023 first-person account of the 2023-2024 award, and the seven-consecutive-year claim is preserved."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Microsoft MVP and Developer Technologies retain their official names; the former MSDN forum is labeled read-only and X is identified as formerly Twitter."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "GitHub, X, Microsoft's MSDN migration notice, and the current official MVP program page are linked."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The award and activity statements are the author's first-person account and were not independently verified.",
+        "Microsoft's current MVP overview is a JavaScript application; the link is an official program entry point."
+      ]
+    },
+    "post/Microsoft MVP受賞について(2023-2024)/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Microsoft MVP受賞について(2023-2024)/index.md",
+      "sourceHash": "de5ff858a37b810df7eaa8d913a2fe59bc4b3a3cac0d83926d5522a922795f4c",
+      "translationHash": "d3080459b8cb090c676bed7a292f64a221f3eda2529dc88ceb0f342d4ae92293",
+      "summary": "Compared the complete translation with the Japanese source; verified the award year, seven-year claim, historical time frame, and updated reference links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "The article is clearly framed as a July 2023 first-person account of the 2023-2024 award, and the seven-consecutive-year claim is preserved."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Microsoft MVP and Developer Technologies retain their official names; the former MSDN forum is labeled read-only and X is identified as formerly Twitter."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "GitHub, X, Microsoft's MSDN migration notice, and the current official MVP program page are linked."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The award and activity statements are the author's first-person account and were not independently verified.",
+        "Microsoft's current MVP overview is a JavaScript application; the link is an official program entry point."
+      ]
+    },
+    "post/Microsoft MVP受賞について(2023-2024)/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Microsoft MVP受賞について(2023-2024)/index.md",
+      "sourceHash": "de5ff858a37b810df7eaa8d913a2fe59bc4b3a3cac0d83926d5522a922795f4c",
+      "translationHash": "6cfe8a4d8ac2986609ee30c979b0036f97d49a24e9e00f1ea538ffd0260c16d4",
+      "summary": "Compared the complete translation with the Japanese source; verified the award year, seven-year claim, historical time frame, and updated reference links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "The article is clearly framed as a July 2023 first-person account of the 2023-2024 award, and the seven-consecutive-year claim is preserved."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Microsoft MVP and Developer Technologies retain their official names; the former MSDN forum is labeled read-only and X is identified as formerly Twitter."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "GitHub, X, Microsoft's MSDN migration notice, and the current official MVP program page are linked."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The award and activity statements are the author's first-person account and were not independently verified.",
+        "Microsoft's current MVP overview is a JavaScript application; the link is an official program entry point."
+      ]
+    },
+    "post/Microsoft MVP受賞について(2023-2024)/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Microsoft MVP受賞について(2023-2024)/index.md",
+      "sourceHash": "de5ff858a37b810df7eaa8d913a2fe59bc4b3a3cac0d83926d5522a922795f4c",
+      "translationHash": "6f76f6ecc99c3aaa9b30c3c54c8deb5e5ba72ca8ef23e7f93f7d916062f85000",
+      "summary": "Compared the complete translation with the Japanese source; verified the award year, seven-year claim, historical time frame, and updated reference links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "The article is clearly framed as a July 2023 first-person account of the 2023-2024 award, and the seven-consecutive-year claim is preserved."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Microsoft MVP and Developer Technologies retain their official names; the former MSDN forum is labeled read-only and X is identified as formerly Twitter."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "GitHub, X, Microsoft's MSDN migration notice, and the current official MVP program page are linked."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The award and activity statements are the author's first-person account and were not independently verified.",
+        "Microsoft's current MVP overview is a JavaScript application; the link is an official program entry point."
+      ]
+    },
+    "post/Microsoft MVP受賞について(2023-2024)/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Microsoft MVP受賞について(2023-2024)/index.md",
+      "sourceHash": "de5ff858a37b810df7eaa8d913a2fe59bc4b3a3cac0d83926d5522a922795f4c",
+      "translationHash": "cdfac36ae2f407b9a836fdf9e51a45198f1dd496f6658c3f7e878d56573f01fa",
+      "summary": "Compared the complete translation with the Japanese source; verified the award year, seven-year claim, historical time frame, and updated reference links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "The article is clearly framed as a July 2023 first-person account of the 2023-2024 award, and the seven-consecutive-year claim is preserved."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Microsoft MVP and Developer Technologies retain their official names; the former MSDN forum is labeled read-only and X is identified as formerly Twitter."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "GitHub, X, Microsoft's MSDN migration notice, and the current official MVP program page are linked."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The award and activity statements are the author's first-person account and were not independently verified.",
+        "Microsoft's current MVP overview is a JavaScript application; the link is an official program entry point."
+      ]
+    },
+    "post/Microsoft MVP受賞について(2023-2024)/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Microsoft MVP受賞について(2023-2024)/index.md",
+      "sourceHash": "de5ff858a37b810df7eaa8d913a2fe59bc4b3a3cac0d83926d5522a922795f4c",
+      "translationHash": "d86dc878057731c86dfdb527413a9a4560307fc96a538152f7a70e5f2f67ea78",
+      "summary": "Compared the complete translation with the Japanese source; verified the award year, seven-year claim, historical time frame, and updated reference links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "The article is clearly framed as a July 2023 first-person account of the 2023-2024 award, and the seven-consecutive-year claim is preserved."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Microsoft MVP and Developer Technologies retain their official names; the former MSDN forum is labeled read-only and X is identified as formerly Twitter."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "GitHub, X, Microsoft's MSDN migration notice, and the current official MVP program page are linked."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The award and activity statements are the author's first-person account and were not independently verified.",
+        "Microsoft's current MVP overview is a JavaScript application; the link is an official program entry point."
+      ]
+    },
+    "post/Microsoft MVP受賞について(2023-2024)/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Microsoft MVP受賞について(2023-2024)/index.md",
+      "sourceHash": "de5ff858a37b810df7eaa8d913a2fe59bc4b3a3cac0d83926d5522a922795f4c",
+      "translationHash": "8b85d941c5c106d82671c655d8a4dd7f0f94c1998cdd2f0f0bf464ba245c4932",
+      "summary": "Compared the complete translation with the Japanese source; verified the award year, seven-year claim, historical time frame, and updated reference links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "The article is clearly framed as a July 2023 first-person account of the 2023-2024 award, and the seven-consecutive-year claim is preserved."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Microsoft MVP and Developer Technologies retain their official names; the former MSDN forum is labeled read-only and X is identified as formerly Twitter."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "GitHub, X, Microsoft's MSDN migration notice, and the current official MVP program page are linked."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The award and activity statements are the author's first-person account and were not independently verified.",
+        "Microsoft's current MVP overview is a JavaScript application; the link is an official program entry point."
+      ]
+    },
+    "post/Microsoft MVP受賞について(2023-2024)/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Microsoft MVP受賞について(2023-2024)/index.md",
+      "sourceHash": "de5ff858a37b810df7eaa8d913a2fe59bc4b3a3cac0d83926d5522a922795f4c",
+      "translationHash": "5c39a6ae208587e598a883e9c35280ebb7ab22a5af805bc59e802f1b421c70de",
+      "summary": "Compared the complete translation with the Japanese source; verified the award year, seven-year claim, historical time frame, and updated reference links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "The article is clearly framed as a July 2023 first-person account of the 2023-2024 award, and the seven-consecutive-year claim is preserved."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Microsoft MVP and Developer Technologies retain their official names; the former MSDN forum is labeled read-only and X is identified as formerly Twitter."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "GitHub, X, Microsoft's MSDN migration notice, and the current official MVP program page are linked."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The award and activity statements are the author's first-person account and were not independently verified.",
+        "Microsoft's current MVP overview is a JavaScript application; the link is an official program entry point."
+      ]
+    }
+  }
+}

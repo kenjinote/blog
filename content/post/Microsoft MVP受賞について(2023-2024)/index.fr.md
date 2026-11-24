@@ -1,6 +1,5 @@
 ---
 title: 'J''ai reçu le prix Microsoft MVP (2023-2024)'
-date: "2026-09-24T19:44:38+09:00"
 slug: "Microsoft MVPRécompenseについて(2023-2024)"
 date: 2023-07-31T19:15:14+09:00
 tags: ["Microsoft MVP", "Récompense"]
@@ -8,9 +7,12 @@ draft: false
 image: "img.webp"
 categories: ["tools-development-environment"]
 description: 'Annonce de l''obtention du prix Microsoft MVP (2023-2024) dans la catégorie Developer Technologies. Il s''agit de ma 7ème année consécutive de prix depuis 2017. Je reviens sur ma diffusion d''informations passée via le blog technique et les activités de la communauté.'
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
 
 # À propos de la récompense Microsoft MVP (2023-2024)
+
+Publié en juillet 2023, cet article relate le prix 2023-2024 et mes activités de l'époque.
 
 J'ai le plaisir d'annoncer que j'ai reçu le prix Microsoft MVP (2023-2024).
 C'est ma 7ème année consécutive de réception de ce prix depuis 2017.
@@ -20,10 +22,12 @@ La catégorie récompensée est **Developer Technologies** .
 En repensant à mes activités passées, j'ai participé aux éléments suivants :
 
 - Publication de code sur [GitHub](https://github.com/kenjinote)
-- Partage d'informations techniques sur le blog et les [réseaux sociaux (comme Twitter)](https://twitter.com/kenjinote)
-- Contributions sur le [forum MSDN](https://social.msdn.microsoft.com/Forums/ja-JP/home)
+- Partage d'informations techniques sur le blog et les [réseaux sociaux (comme X (anciennement Twitter))](https://x.com/kenjinote)
+- Contributions sur le [forums MSDN (désormais en lecture seule)](https://learn.microsoft.com/en-us/teamblog/msdn-technet-migration)
 - Retours d'expérience sur les produits Microsoft
 
 Je continuerai à faire de mon mieux pour écrire de meilleurs articles et partager des informations à l'avenir.
 
 Merci pour votre soutien continu.
+
+Consultez la [présentation officielle de Microsoft](https://mvp.microsoft.com/mvpintro/) pour découvrir le programme MVP actuel.

@@ -34,7 +34,9 @@ CHANGES = {31:"Projection[{1, 2}, {3, 4}]",32:"{33/25, 44/25}",33:"RotationMatri
 for lang in LANGS:
     path = BUNDLE / ("index.md" if lang == "ja" else f"index.{lang}.md")
     raw = path.read_text(encoding="utf-8")
-    front, body = raw[4:].split("\n---\n",1)
+    if not raw.startswith("---\n"):
+        raise SystemExit(f"{lang}: expected valid front matter before finalization")
+    front, body = raw.split("---",1)[1].split("\n---\n",1)
     parts = body.split("```")
     if len(parts) != 135:
         raise SystemExit(f"{lang}: expected 67 code fences, got {(len(parts)-1)//2}")

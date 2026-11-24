@@ -1,14 +1,5 @@
 ---
-
-
-
-
-
-
-
-
 title: 'Microsoft MVP(2025-2026) 재수상 보고와 그동안의 활동'
-date: "2026-09-24T19:44:38+09:00"
 slug: "Microsoft MVP（2025-2026）を再수상しました"
 date: 2025-07-13T22:01:15+09:00
 tags: ["Microsoft MVP"]
@@ -16,6 +7,7 @@ draft: false
 image: "img.webp"
 categories: ["tools-development-environment"]
 description: '통산 9회째가 되는 Microsoft MVP(2025-2026)를 수상했다는 보고입니다. 기술 커뮤니티에 기여하는 MVP 제도에 대한 설명과 함께, 지난 1년간 특히 힘써온 기술 정보 발신 및 커뮤니티 활동의 회고를 전해드립니다.'
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
 
 
@@ -27,6 +19,8 @@ description: '통산 9회째가 되는 Microsoft MVP(2025-2026)를 수상했다�
 
 
 # Microsoft MVP（2025-2026）를 재수상했습니다!
+
+이 글은 2025년 7월에 게시되었으며 Microsoft MVP(2025–2026) 수상과 당시 활동을 기록합니다. 글에서 말하는 ‘내년’은 작성 당시 기준 2026년입니다.
 
 안녕하세요, kenji입니다.
 
@@ -99,3 +93,4 @@ MVP라는 타이틀은 어디까지나 통과점 중 하나입니다.
 * 기술 블로그: https://hack.jp
 * X: https://twitter.com/kenjinote
 
+Microsoft의 [현재 MVP 프로그램 공식 안내](https://mvp.microsoft.com/mvpintro/)를 참고하세요.

@@ -1,6 +1,5 @@
 ---
 title: '荣获Microsoft MVP（2025-2026）的汇报与过往活动回顾'
-date: "2026-09-24T19:44:38+09:00"
 slug: "Microsoft MVP（2025-2026）を再获奖しました"
 date: 2025-07-13T22:01:15+09:00
 tags: ["Microsoft MVP"]
@@ -8,9 +7,12 @@ draft: false
 image: "img.webp"
 categories: ["tools-development-environment"]
 description: '汇报本人总计第9次荣获Microsoft MVP（2025-2026）。在解说旨在为技术社区做贡献的MVP制度的同时，也将回顾过去一年里特别致力于技术信息分享与社区活动的心得。'
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
 
 # 再次荣获 Microsoft MVP（2025-2026）！
+
+本文发布于 2025 年 7 月，记录 Microsoft MVP（2025–2026）获奖情况及当时的活动。文中的“明年”是指文章发布时所说的 2026 年。
 
 大家好，我是 kenji。
 
@@ -83,3 +85,4 @@ MVP 这个头衔，仅仅只是一个里程碑。
 * 技术博客: https://hack.jp
 * X: https://twitter.com/kenjinote
 
+请参阅 Microsoft [当前 MVP 计划官方介绍](https://mvp.microsoft.com/mvpintro/)。

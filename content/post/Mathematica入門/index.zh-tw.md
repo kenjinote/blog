@@ -1,4 +1,5 @@
----le: 'Mathematica 入門：方程式、微積分等基本指令的使用方法'
+---
+title: 'Mathematica 入門：方程式、微積分等基本指令的使用方法'
 slug: "Mathematica入門"
 date: 2024-07-25T01:36:19+09:00
 tags: ["Mathematica", "數學", "演算法"]
@@ -7,7 +8,7 @@ image: "img.webp"
 categories: ["math-cryptography-quantum"]
 description: '為初學者說明 Mathematica 的基本使用方法與計算指令。整理了方程式與聯立方程式的解法 (Solve)、不等式 (Reduce)、微分 (D)、積分 (Integrate) 及矩陣計算等常用函數的具體範例。'
 lastmod: "2026-11-24T00:00:00+09:00"
-
+mermaid: true
 ---
 # Mathematica 入門
 

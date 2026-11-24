@@ -1,6 +1,5 @@
 ---
 title: 'Saya Menerima Penghargaan Kembali Microsoft MVP (2024-2025)! Penjelasan tentang Sistem MVP'
-date: "2026-09-24T19:44:38+09:00"
 slug: "Microsoft MVP（2024-2025）を再Penghargaanしました"
 date: 2024-09-03T21:25:20+09:00
 tags: ["Microsoft MVP"]
@@ -8,9 +7,12 @@ draft: false
 image: "img.webp"
 categories: ["tools-development-environment"]
 description: 'Ini adalah laporan bahwa saya menerima penghargaan kembali Microsoft MVP (2024-2025) untuk yang ke-8 kalinya tahun ini. Kami memperkenalkan gambaran umum sistem Microsoft MVP, aktivitas yang dievaluasi, alasan penghargaan kali ini, dan kilas balik setahun terakhir.'
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
 
 # Saya Kembali Menerima Penghargaan Microsoft MVP (2024-2025)
+
+Artikel ini diterbitkan pada September 2024 dan mencatat penghargaan Microsoft MVP (2024-2025) serta kegiatan saat itu. Istilah “tahun ini” dan “setahun terakhir” mengacu pada tanggal penerbitan.
 
 ![img\_1.png](img_1.webp)
 
@@ -62,3 +64,5 @@ Saya akan terus melanjutkannya tanpa memaksakan diri, dengan kecepatan saya send
 Saya akan senang jika bisa menyampaikan informasi yang membuat seseorang berpikir, "Ah, itu membantu," dalam bentuk apa pun.
 
 Saya menantikan dukungan Anda yang berkelanjutan di masa depan.
+
+Lihat [ringkasan resmi program MVP saat ini](https://mvp.microsoft.com/mvpintro/) dari Microsoft.

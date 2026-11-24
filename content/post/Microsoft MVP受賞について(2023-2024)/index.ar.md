@@ -1,6 +1,5 @@
 ---
 title: 'حصلت على جائزة Microsoft MVP (2023-2024)'
-date: "2026-09-24T19:44:38+09:00"
 slug: "Microsoft MVPجائزةについて(2023-2024)"
 date: 2023-07-31T19:15:14+09:00
 tags: ["Microsoft MVP", "جائزة"]
@@ -8,9 +7,12 @@ draft: false
 image: "img.webp"
 categories: ["tools-development-environment"]
 description: 'هذا تقرير عن حصولي على جائزة Microsoft MVP (2023-2024) في فئة تقنيات المطورين. هذه هي السنة السابعة على التوالي منذ عام 2017. سنسترجع ما قمت بنشره من معلومات على المدونة التقنية وأنشطة المجتمع حتى الآن.'
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
 
 # حول جائزة Microsoft MVP (2023-2024)
+
+نُشر هذا المقال في يوليو 2023، ويوثق جائزة 2023-2024 وأنشطتي في ذلك الوقت.
 
 لقد حصلت مؤخرًا على جائزة Microsoft MVP (2023-2024).
 هذا هو العام السابع على التوالي منذ عام 2017 الذي أحصل فيه على هذه الجائزة.
@@ -20,10 +22,12 @@ description: 'هذا تقرير عن حصولي على جائزة Microsoft MVP 
 بالنظر إلى أنشطتي السابقة، فقد قمت بما يلي:
 
 - نشر الكود على [GitHub](https://github.com/kenjinote)
-- مشاركة المعلومات التقنية على المدونة و [وسائل التواصل الاجتماعي (مثل Twitter)](https://twitter.com/kenjinote)
-- النشر في [منتدى MSDN](https://social.msdn.microsoft.com/Forums/ja-JP/home)
+- مشاركة المعلومات التقنية على المدونة و [وسائل التواصل الاجتماعي (مثل Twitter)](https://x.com/kenjinote)
+- النشر في [منتديات MSDN (للقراءة فقط الآن)](https://learn.microsoft.com/en-us/teamblog/msdn-technet-migration)
 - تقديم ملاحظات حول منتجات مايكروسوفت
 
 سأستمر في كتابة مقالات أفضل ومشاركة المعلومات في المستقبل.
 
 شكرا جزيلا لكم.
+
+للاطلاع على برنامج MVP الحالي، راجع [الصفحة الرسمية من Microsoft](https://mvp.microsoft.com/mvpintro/).

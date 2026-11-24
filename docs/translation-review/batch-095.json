@@ -3,7 +3,7 @@
   "batch": 95,
   "article": "Mathematica入門",
   "reviewedAt": "2026-11-24",
-  "sourceHash": "4bef0e58726b75dc877ebfd1e3363217e8b3f8101464251fe66cb099bb24907c",
+  "sourceHash": "3b4f58c17d90f83b18897bb74846e82be8cbef684755085e4402f0b783700297",
   "sources": [
     "https://reference.wolfram.com/language/ref/Solve.html",
     "https://reference.wolfram.com/language/ref/Reduce.html",
@@ -35,8 +35,8 @@
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
       "source": "post/Mathematica入門/index.md",
-      "sourceHash": "4bef0e58726b75dc877ebfd1e3363217e8b3f8101464251fe66cb099bb24907c",
-      "translationHash": "e11ddf97698c561cbb8d88fa05809461bc94d148fad3ba7a17a3c1d482483ae7",
+      "sourceHash": "3b4f58c17d90f83b18897bb74846e82be8cbef684755085e4402f0b783700297",
+      "translationHash": "b0ec650e54b75a849d6ef51c9d23341a51e8d02ef43c9ab79eb5befe6c7de89f",
       "summary": "Compared the complete translation with the Japanese source and checked the equations, matrix results, vector operations, transforms, random-number semantics, and Wolfram references.",
       "checks": {
         "meaning": {
@@ -71,8 +71,8 @@
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
       "source": "post/Mathematica入門/index.md",
-      "sourceHash": "4bef0e58726b75dc877ebfd1e3363217e8b3f8101464251fe66cb099bb24907c",
-      "translationHash": "c5259a0c14c8d313764f1f1fe7b4123af41ec18ffd358c558780c779f9975748",
+      "sourceHash": "3b4f58c17d90f83b18897bb74846e82be8cbef684755085e4402f0b783700297",
+      "translationHash": "1b9ba2ba343c8f72f47969dd72b1f704c8e17a8fee3c265fba67b1d0500cb3b4",
       "summary": "Compared the complete translation with the Japanese source and checked the equations, matrix results, vector operations, transforms, random-number semantics, and Wolfram references.",
       "checks": {
         "meaning": {
@@ -107,8 +107,8 @@
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
       "source": "post/Mathematica入門/index.md",
-      "sourceHash": "4bef0e58726b75dc877ebfd1e3363217e8b3f8101464251fe66cb099bb24907c",
-      "translationHash": "4c460a4576ee03beaa63d4a174baa4c6bb18d3f9b3b92901498729516491e955",
+      "sourceHash": "3b4f58c17d90f83b18897bb74846e82be8cbef684755085e4402f0b783700297",
+      "translationHash": "5d6368cdf58d0fde8af5c102afbc25e62beec1f14676ccdc8a41a5dd1a2a51d9",
       "summary": "Compared the complete translation with the Japanese source and checked the equations, matrix results, vector operations, transforms, random-number semantics, and Wolfram references.",
       "checks": {
         "meaning": {
@@ -143,8 +143,8 @@
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
       "source": "post/Mathematica入門/index.md",
-      "sourceHash": "4bef0e58726b75dc877ebfd1e3363217e8b3f8101464251fe66cb099bb24907c",
-      "translationHash": "b9a1ff4312266bb50d18aee08d1ffec868140bd40110f0ed2e4ae232d5cc873a",
+      "sourceHash": "3b4f58c17d90f83b18897bb74846e82be8cbef684755085e4402f0b783700297",
+      "translationHash": "bcf5f8545cca754cd19d0b01656bd5ebd3000f5ff637af224c2a046ea417e751",
       "summary": "Compared the complete translation with the Japanese source and checked the equations, matrix results, vector operations, transforms, random-number semantics, and Wolfram references.",
       "checks": {
         "meaning": {
@@ -179,8 +179,8 @@
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
       "source": "post/Mathematica入門/index.md",
-      "sourceHash": "4bef0e58726b75dc877ebfd1e3363217e8b3f8101464251fe66cb099bb24907c",
-      "translationHash": "a96b925eb0feb49ab3ff1890f1305fe2f637bf92ed1225a921fc9d4871b2483e",
+      "sourceHash": "3b4f58c17d90f83b18897bb74846e82be8cbef684755085e4402f0b783700297",
+      "translationHash": "a7eebd53fac746d5acf309e56ccfa777c6698bb47e6c8249e45436af92e40d16",
       "summary": "Compared the complete translation with the Japanese source and checked the equations, matrix results, vector operations, transforms, random-number semantics, and Wolfram references.",
       "checks": {
         "meaning": {
@@ -215,8 +215,8 @@
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
       "source": "post/Mathematica入門/index.md",
-      "sourceHash": "4bef0e58726b75dc877ebfd1e3363217e8b3f8101464251fe66cb099bb24907c",
-      "translationHash": "dbbf17e36963b67d8a03dbbef7c8b71a1f7667a53a6329d0f779859125bfc9f8",
+      "sourceHash": "3b4f58c17d90f83b18897bb74846e82be8cbef684755085e4402f0b783700297",
+      "translationHash": "e6eaef4e11d352736b70b3c715ba26805f4577868d59b3afc6218d02062c6674",
       "summary": "Compared the complete translation with the Japanese source and checked the equations, matrix results, vector operations, transforms, random-number semantics, and Wolfram references.",
       "checks": {
         "meaning": {
@@ -251,8 +251,8 @@
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
       "source": "post/Mathematica入門/index.md",
-      "sourceHash": "4bef0e58726b75dc877ebfd1e3363217e8b3f8101464251fe66cb099bb24907c",
-      "translationHash": "543745e91b90b80a87a0fd543284bd13070c1fb4a3e4c3e63a3515f524655441",
+      "sourceHash": "3b4f58c17d90f83b18897bb74846e82be8cbef684755085e4402f0b783700297",
+      "translationHash": "cd3cb24064f57e0efbe4c4a6ba9ab9bf74cc454c2587f7e0c2071352fdba23e1",
       "summary": "Compared the complete translation with the Japanese source and checked the equations, matrix results, vector operations, transforms, random-number semantics, and Wolfram references.",
       "checks": {
         "meaning": {
@@ -287,8 +287,8 @@
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
       "source": "post/Mathematica入門/index.md",
-      "sourceHash": "4bef0e58726b75dc877ebfd1e3363217e8b3f8101464251fe66cb099bb24907c",
-      "translationHash": "ccdcc1ea4d5fb8931d37f30c083a959d4f67750305846e83281bc6e680a1f484",
+      "sourceHash": "3b4f58c17d90f83b18897bb74846e82be8cbef684755085e4402f0b783700297",
+      "translationHash": "6f8e96305a0799596fad1051ebb4d0e8589bf8aec80698b105787c6f294cfe81",
       "summary": "Compared the complete translation with the Japanese source and checked the equations, matrix results, vector operations, transforms, random-number semantics, and Wolfram references.",
       "checks": {
         "meaning": {
@@ -323,8 +323,8 @@
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
       "source": "post/Mathematica入門/index.md",
-      "sourceHash": "4bef0e58726b75dc877ebfd1e3363217e8b3f8101464251fe66cb099bb24907c",
-      "translationHash": "611d80bdb13d79c47ef4d070355a66e2773c4dc2d798a3c35470bde9328516c2",
+      "sourceHash": "3b4f58c17d90f83b18897bb74846e82be8cbef684755085e4402f0b783700297",
+      "translationHash": "c36f365ccfedf21c2ac62af7bfd45dea7ca52288efeaf05f8a8d8ae643922007",
       "summary": "Compared the complete translation with the Japanese source and checked the equations, matrix results, vector operations, transforms, random-number semantics, and Wolfram references.",
       "checks": {
         "meaning": {
@@ -359,8 +359,8 @@
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
       "source": "post/Mathematica入門/index.md",
-      "sourceHash": "4bef0e58726b75dc877ebfd1e3363217e8b3f8101464251fe66cb099bb24907c",
-      "translationHash": "afc59e6ef510d6409d475c971f96f10d9874c22cb23ff44a71caa7565cd31c48",
+      "sourceHash": "3b4f58c17d90f83b18897bb74846e82be8cbef684755085e4402f0b783700297",
+      "translationHash": "6bd7d499f3a935c3d4ff86298eead8e88f7b8fd470781a6731bade7e2e05317f",
       "summary": "Compared the complete translation with the Japanese source and checked the equations, matrix results, vector operations, transforms, random-number semantics, and Wolfram references.",
       "checks": {
         "meaning": {
@@ -395,8 +395,8 @@
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
       "source": "post/Mathematica入門/index.md",
-      "sourceHash": "4bef0e58726b75dc877ebfd1e3363217e8b3f8101464251fe66cb099bb24907c",
-      "translationHash": "761b425c4dd3874224f74c169edd03fde80e1fddf78cedfb0a085cd1132466e0",
+      "sourceHash": "3b4f58c17d90f83b18897bb74846e82be8cbef684755085e4402f0b783700297",
+      "translationHash": "81b0713015dc179c5c5b67b76c4a0c9eef2d449a2e67a9eacb602416d34b7f95",
       "summary": "Compared the complete translation with the Japanese source and checked the equations, matrix results, vector operations, transforms, random-number semantics, and Wolfram references.",
       "checks": {
         "meaning": {
@@ -431,8 +431,8 @@
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
       "source": "post/Mathematica入門/index.md",
-      "sourceHash": "4bef0e58726b75dc877ebfd1e3363217e8b3f8101464251fe66cb099bb24907c",
-      "translationHash": "082b207eacd298c1ccc61c0f7c54b3e15becafaa6c48f2687b764e2f91d34611",
+      "sourceHash": "3b4f58c17d90f83b18897bb74846e82be8cbef684755085e4402f0b783700297",
+      "translationHash": "6d675adca42e9eea526d288658cd8c69b2ee4554b4b5b35c8c8b8109540102f3",
       "summary": "Compared the complete translation with the Japanese source and checked the equations, matrix results, vector operations, transforms, random-number semantics, and Wolfram references.",
       "checks": {
         "meaning": {

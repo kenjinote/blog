@@ -1,14 +1,5 @@
 ---
-
-
-
-
-
-
-
-
 title: '¡Renovado como Microsoft MVP (2024-2025)! Explicación del programa MVP'
-date: "2026-09-24T19:44:38+09:00"
 slug: "Microsoft MVP（2024-2025）を再Premioしました"
 date: 2024-09-03T21:25:20+09:00
 tags: ["Microsoft MVP"]
@@ -16,6 +7,7 @@ draft: false
 image: "img.webp"
 categories: ["tools-development-environment"]
 description: 'Un informe sobre haber sido galardonado nuevamente como Microsoft MVP (2024-2025) por octava vez. Presento un resumen del programa Microsoft MVP, las actividades que se evalúan, las razones de este premio y un repaso del último año.'
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
 
 
@@ -27,6 +19,8 @@ description: 'Un informe sobre haber sido galardonado nuevamente como Microsoft 
 
 
 # He vuelto a recibir el premio Microsoft MVP (2024-2025)
+
+Publicado en septiembre de 2024, este artículo documenta el premio Microsoft MVP (2024-2025) y las actividades de entonces. «Este año» y «el último año» se refieren a la fecha de publicación.
 
 ![img\_1.png](img_1.webp)
 
@@ -78,3 +72,5 @@ A partir de ahora, espero seguir haciéndolo a mi propio ritmo y sin presiones.
 Me haría feliz si, de alguna forma, puedo proporcionar información que haga que alguien piense: "Ah, eso me ayudó".
 
 Espero contar con su apoyo en el futuro.
+
+Consulta la [presentación oficial del programa MVP actual](https://mvp.microsoft.com/mvpintro/) de Microsoft.

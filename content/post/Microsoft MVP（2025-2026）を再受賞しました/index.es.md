@@ -1,14 +1,5 @@
 ---
-
-
-
-
-
-
-
-
 title: 'Informe de renovación como Microsoft MVP (2025-2026) y actividades pasadas'
-date: "2026-09-24T19:44:38+09:00"
 slug: "Microsoft MVP（2025-2026）を再Premioしました"
 date: 2025-07-13T22:01:15+09:00
 tags: ["Microsoft MVP"]
@@ -16,6 +7,7 @@ draft: false
 image: "img.webp"
 categories: ["tools-development-environment"]
 description: 'Un informe sobre haber recibido el premio Microsoft MVP (2025-2026) por novena vez en total. Junto con una explicación del programa MVP que contribuye a la comunidad tecnológica, ofrezco un repaso de la difusión de información técnica y actividades comunitarias en las que me he centrado especialmente este año.'
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
 
 
@@ -27,6 +19,8 @@ description: 'Un informe sobre haber recibido el premio Microsoft MVP (2025-2026
 
 
 # ¡He sido galardonado nuevamente como Microsoft MVP (2025-2026)!
+
+Publicado en julio de 2025, este artículo documenta el premio Microsoft MVP (2025-2026) y las actividades de entonces. «El próximo año» se refiere a 2026 desde la perspectiva original del artículo.
 
 Hola, soy kenji.
 
@@ -96,3 +90,5 @@ Espero contar con su apoyo en el futuro.
 * GitHub: https://github.com/kenjinote
 * Blog técnico: https://hack.jp
 * X: https://twitter.com/kenjinote
+
+Consulta la [presentación oficial del programa MVP actual](https://mvp.microsoft.com/mvpintro/) de Microsoft.

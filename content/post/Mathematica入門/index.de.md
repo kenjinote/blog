@@ -1,4 +1,5 @@
----le: 'Einführung in Mathematica: Verwendung grundlegender Befehle für Gleichungen, Differential- und Integralrechnung usw.'
+---
+title: 'Einführung in Mathematica: Verwendung grundlegender Befehle für Gleichungen, Differential- und Integralrechnung usw.'
 slug: "Mathematica入門"
 date: 2024-07-25T01:36:19+09:00
 tags: ["Mathematica", "Mathematik", "Algorithmus"]
@@ -7,7 +8,7 @@ image: "img.webp"
 categories: ["math-cryptography-quantum"]
 description: 'Erklärt die grundlegende Verwendung und Berechnungsbefehle von Mathematica für Anfänger. Fasst konkrete Beispiele häufig verwendeter Funktionen zusammen, wie das Lösen von Gleichungen und Gleichungssystemen (Solve), Ungleichungen (Reduce), Differenziation (D), Integration (Integrate) und Matrixberechnungen.'
 lastmod: "2026-11-24T00:00:00+09:00"
-
+mermaid: true
 ---
 # Einführung in Mathematica
 

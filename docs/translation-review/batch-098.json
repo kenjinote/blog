@@ -1,0 +1,451 @@
+{
+  "version": 1,
+  "batch": 98,
+  "article": "Microsoft MVP（2025-2026）を再受賞しました",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "b3da75b2124c818f1d076744f82ca2eacf223a513e2f535466f968dea68369bd",
+  "sources": [
+    "https://mvp.microsoft.com/mvpintro/"
+  ],
+  "scope": "Read the complete Japanese article and all twelve translations for the 98 edition. Checked award-cycle dates, first-person context, relative time expressions, and the official Microsoft MVP program link.",
+  "findings": [
+    "Removed the duplicate future date, preserved the original publication date, and set lastmod to 2026-11-24.",
+    "Added a date-context note in all editions so relative references remain tied to the original article publication.",
+    "Added a link to Microsoft's current official MVP program overview."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/Microsoft MVP（2025-2026）を再受賞しました/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Microsoft MVP（2025-2026）を再受賞しました/index.md",
+      "sourceHash": "b3da75b2124c818f1d076744f82ca2eacf223a513e2f535466f968dea68369bd",
+      "translationHash": "0412a0ae0c5ab80a838380002a008aa961a21b8e5ce85512278429160c4d794a",
+      "summary": "Compared the complete translation with the Japanese source and checked award dates, historical wording, award count, links, and translations of temporal references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "The edition describes a dated first-person award report; relative references are explicitly anchored to its original publication period."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Microsoft MVP and the 2024-2025 or 2025-2026 award cycle retain consistent official names."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Each edition links to Microsoft's current MVP program overview."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The award and personal activity statements are the author's first-person account and were not independently verified.",
+        "Microsoft's current MVP overview is a JavaScript application; the link is the official program entry point."
+      ]
+    },
+    "post/Microsoft MVP（2025-2026）を再受賞しました/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Microsoft MVP（2025-2026）を再受賞しました/index.md",
+      "sourceHash": "b3da75b2124c818f1d076744f82ca2eacf223a513e2f535466f968dea68369bd",
+      "translationHash": "23710525a324b3ba205585ded83418be6f24fa148597a8b043b70123967fcb1c",
+      "summary": "Compared the complete translation with the Japanese source and checked award dates, historical wording, award count, links, and translations of temporal references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "The edition describes a dated first-person award report; relative references are explicitly anchored to its original publication period."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Microsoft MVP and the 2024-2025 or 2025-2026 award cycle retain consistent official names."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Each edition links to Microsoft's current MVP program overview."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The award and personal activity statements are the author's first-person account and were not independently verified.",
+        "Microsoft's current MVP overview is a JavaScript application; the link is the official program entry point."
+      ]
+    },
+    "post/Microsoft MVP（2025-2026）を再受賞しました/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Microsoft MVP（2025-2026）を再受賞しました/index.md",
+      "sourceHash": "b3da75b2124c818f1d076744f82ca2eacf223a513e2f535466f968dea68369bd",
+      "translationHash": "e896f809f15db73ecf5d0fe94232e2adc9eaed83464f68ea4216ffc6dc6365e0",
+      "summary": "Compared the complete translation with the Japanese source and checked award dates, historical wording, award count, links, and translations of temporal references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "The edition describes a dated first-person award report; relative references are explicitly anchored to its original publication period."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Microsoft MVP and the 2024-2025 or 2025-2026 award cycle retain consistent official names."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Each edition links to Microsoft's current MVP program overview."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The award and personal activity statements are the author's first-person account and were not independently verified.",
+        "Microsoft's current MVP overview is a JavaScript application; the link is the official program entry point."
+      ]
+    },
+    "post/Microsoft MVP（2025-2026）を再受賞しました/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Microsoft MVP（2025-2026）を再受賞しました/index.md",
+      "sourceHash": "b3da75b2124c818f1d076744f82ca2eacf223a513e2f535466f968dea68369bd",
+      "translationHash": "dc3b47a35640ae19c7bb12a13a1e249758e82ad1b44c09ab2e58463ab630d8c3",
+      "summary": "Compared the complete translation with the Japanese source and checked award dates, historical wording, award count, links, and translations of temporal references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "The edition describes a dated first-person award report; relative references are explicitly anchored to its original publication period."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Microsoft MVP and the 2024-2025 or 2025-2026 award cycle retain consistent official names."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Each edition links to Microsoft's current MVP program overview."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The award and personal activity statements are the author's first-person account and were not independently verified.",
+        "Microsoft's current MVP overview is a JavaScript application; the link is the official program entry point."
+      ]
+    },
+    "post/Microsoft MVP（2025-2026）を再受賞しました/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Microsoft MVP（2025-2026）を再受賞しました/index.md",
+      "sourceHash": "b3da75b2124c818f1d076744f82ca2eacf223a513e2f535466f968dea68369bd",
+      "translationHash": "c25b8417d6686613467dd7ddc63aea924ef3de5058c66aee8c2602480e5a6aba",
+      "summary": "Compared the complete translation with the Japanese source and checked award dates, historical wording, award count, links, and translations of temporal references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "The edition describes a dated first-person award report; relative references are explicitly anchored to its original publication period."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Microsoft MVP and the 2024-2025 or 2025-2026 award cycle retain consistent official names."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Each edition links to Microsoft's current MVP program overview."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The award and personal activity statements are the author's first-person account and were not independently verified.",
+        "Microsoft's current MVP overview is a JavaScript application; the link is the official program entry point."
+      ]
+    },
+    "post/Microsoft MVP（2025-2026）を再受賞しました/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Microsoft MVP（2025-2026）を再受賞しました/index.md",
+      "sourceHash": "b3da75b2124c818f1d076744f82ca2eacf223a513e2f535466f968dea68369bd",
+      "translationHash": "10ec23772d1afca2d6b3baf41036b774b5ce47bca098f6c976dbf59530ffa818",
+      "summary": "Compared the complete translation with the Japanese source and checked award dates, historical wording, award count, links, and translations of temporal references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "The edition describes a dated first-person award report; relative references are explicitly anchored to its original publication period."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Microsoft MVP and the 2024-2025 or 2025-2026 award cycle retain consistent official names."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Each edition links to Microsoft's current MVP program overview."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The award and personal activity statements are the author's first-person account and were not independently verified.",
+        "Microsoft's current MVP overview is a JavaScript application; the link is the official program entry point."
+      ]
+    },
+    "post/Microsoft MVP（2025-2026）を再受賞しました/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Microsoft MVP（2025-2026）を再受賞しました/index.md",
+      "sourceHash": "b3da75b2124c818f1d076744f82ca2eacf223a513e2f535466f968dea68369bd",
+      "translationHash": "ee44673265fa49a8e0b0eed33d55147b90cae7abefc6af683d1ec6173291f72a",
+      "summary": "Compared the complete translation with the Japanese source and checked award dates, historical wording, award count, links, and translations of temporal references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "The edition describes a dated first-person award report; relative references are explicitly anchored to its original publication period."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Microsoft MVP and the 2024-2025 or 2025-2026 award cycle retain consistent official names."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Each edition links to Microsoft's current MVP program overview."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The award and personal activity statements are the author's first-person account and were not independently verified.",
+        "Microsoft's current MVP overview is a JavaScript application; the link is the official program entry point."
+      ]
+    },
+    "post/Microsoft MVP（2025-2026）を再受賞しました/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Microsoft MVP（2025-2026）を再受賞しました/index.md",
+      "sourceHash": "b3da75b2124c818f1d076744f82ca2eacf223a513e2f535466f968dea68369bd",
+      "translationHash": "a5be9c25554d31bdab947b4b105e39904e32083e359e592ad2d57ce9cde70f12",
+      "summary": "Compared the complete translation with the Japanese source and checked award dates, historical wording, award count, links, and translations of temporal references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "The edition describes a dated first-person award report; relative references are explicitly anchored to its original publication period."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Microsoft MVP and the 2024-2025 or 2025-2026 award cycle retain consistent official names."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Each edition links to Microsoft's current MVP program overview."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The award and personal activity statements are the author's first-person account and were not independently verified.",
+        "Microsoft's current MVP overview is a JavaScript application; the link is the official program entry point."
+      ]
+    },
+    "post/Microsoft MVP（2025-2026）を再受賞しました/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Microsoft MVP（2025-2026）を再受賞しました/index.md",
+      "sourceHash": "b3da75b2124c818f1d076744f82ca2eacf223a513e2f535466f968dea68369bd",
+      "translationHash": "8b35b5dc0f73e74fa6f0aa9f8f8c1e17bf140528a56da4bb0fbfb8e121b22d60",
+      "summary": "Compared the complete translation with the Japanese source and checked award dates, historical wording, award count, links, and translations of temporal references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "The edition describes a dated first-person award report; relative references are explicitly anchored to its original publication period."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Microsoft MVP and the 2024-2025 or 2025-2026 award cycle retain consistent official names."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Each edition links to Microsoft's current MVP program overview."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The award and personal activity statements are the author's first-person account and were not independently verified.",
+        "Microsoft's current MVP overview is a JavaScript application; the link is the official program entry point."
+      ]
+    },
+    "post/Microsoft MVP（2025-2026）を再受賞しました/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Microsoft MVP（2025-2026）を再受賞しました/index.md",
+      "sourceHash": "b3da75b2124c818f1d076744f82ca2eacf223a513e2f535466f968dea68369bd",
+      "translationHash": "d21f4e00575974e92e57044bf6ee910ab7743df83622caf78b10de60afa332a7",
+      "summary": "Compared the complete translation with the Japanese source and checked award dates, historical wording, award count, links, and translations of temporal references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "The edition describes a dated first-person award report; relative references are explicitly anchored to its original publication period."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Microsoft MVP and the 2024-2025 or 2025-2026 award cycle retain consistent official names."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Each edition links to Microsoft's current MVP program overview."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The award and personal activity statements are the author's first-person account and were not independently verified.",
+        "Microsoft's current MVP overview is a JavaScript application; the link is the official program entry point."
+      ]
+    },
+    "post/Microsoft MVP（2025-2026）を再受賞しました/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Microsoft MVP（2025-2026）を再受賞しました/index.md",
+      "sourceHash": "b3da75b2124c818f1d076744f82ca2eacf223a513e2f535466f968dea68369bd",
+      "translationHash": "feaeba3dc520fccb0c8148dd68c62677a8cef5f23936d0f1ab764e182b246df1",
+      "summary": "Compared the complete translation with the Japanese source and checked award dates, historical wording, award count, links, and translations of temporal references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "The edition describes a dated first-person award report; relative references are explicitly anchored to its original publication period."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Microsoft MVP and the 2024-2025 or 2025-2026 award cycle retain consistent official names."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Each edition links to Microsoft's current MVP program overview."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The award and personal activity statements are the author's first-person account and were not independently verified.",
+        "Microsoft's current MVP overview is a JavaScript application; the link is the official program entry point."
+      ]
+    },
+    "post/Microsoft MVP（2025-2026）を再受賞しました/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Microsoft MVP（2025-2026）を再受賞しました/index.md",
+      "sourceHash": "b3da75b2124c818f1d076744f82ca2eacf223a513e2f535466f968dea68369bd",
+      "translationHash": "8ba6c1895e610cc790e9f2b005f68a7b70f159948dfa10aa363caa347565195e",
+      "summary": "Compared the complete translation with the Japanese source and checked award dates, historical wording, award count, links, and translations of temporal references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "The edition describes a dated first-person award report; relative references are explicitly anchored to its original publication period."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Microsoft MVP and the 2024-2025 or 2025-2026 award cycle retain consistent official names."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Each edition links to Microsoft's current MVP program overview."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The award and personal activity statements are the author's first-person account and were not independently verified.",
+        "Microsoft's current MVP overview is a JavaScript application; the link is the official program entry point."
+      ]
+    }
+  }
+}

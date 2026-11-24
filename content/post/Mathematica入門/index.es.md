@@ -1,8 +1,4 @@
 ---
-
-
-
-
 title: 'Introducción a Mathematica: Cómo usar comandos básicos como ecuaciones, derivadas e integrales'
 slug: "Mathematica入門"
 date: 2024-07-25T01:36:19+09:00
@@ -12,7 +8,7 @@ image: "img.webp"
 categories: ["math-cryptography-quantum"]
 description: 'Explicamos el uso básico y los comandos de cálculo de Mathematica para principiantes. Resumimos ejemplos concretos de funciones de uso frecuente como resolución de ecuaciones y sistemas de ecuaciones (Solve), desigualdades (Reduce), derivadas (D), integrales (Integrate) y cálculo de matrices.'
 lastmod: "2026-11-24T00:00:00+09:00"
-
+mermaid: true
 ---
 
 

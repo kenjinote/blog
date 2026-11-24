@@ -1,4 +1,5 @@
----le: 'Mathematica入門：方程式・微分積分など基本コマンドの使い方'
+---
+title: 'Mathematica入門：方程式・微分積分など基本コマンドの使い方'
 slug: "Mathematica入門"
 date: 2024-07-25T01:36:19+09:00
 tags: ["Mathematica", "数学", "アルゴリズム"]
@@ -7,7 +8,7 @@ image: "img.webp"
 categories: ["math-cryptography-quantum"]
 description: '初心者向けにMathematicaの基本的な使い方と計算コマンドを解説します。方程式や連立方程式の解法（Solve）、不等式（Reduce）、微分（D）、積分（Integrate）、行列計算など、よく使う関数の具体例をまとめました。'
 lastmod: "2026-11-24T00:00:00+09:00"
-
+mermaid: true
 ---
 # Mathematica入門
 
