@@ -76,6 +76,16 @@ ARTICLES = {
         "markers": ["2024", "8086", "MIT"],
         "date": "2024-05-05",
     },
+    93: {
+        "bundle": ROOT / "content/post/日本の災害",
+        "slug": "日本の災害",
+        "links": [
+            "https://www.jma.go.jp/jma/menu/20240101_noto_jishin.html",
+            "https://www.fdma.go.jp/disaster/info/items/b055402cefac7721623c30034b25489118dbec38.pdf",
+        ],
+        "markers": ["2024", "720", "492", "165", "813"],
+        "date": "2024-01-07",
+    },
 }
 
 
@@ -141,7 +151,7 @@ def slug_key(value):
 parser = argparse.ArgumentParser()
 parser.add_argument("--ci-run", type=int, required=True)
 parser.add_argument("--commit", required=True)
-parser.add_argument("--max-batch", type=int, choices=(90, 91, 92), default=92)
+parser.add_argument("--max-batch", type=int, choices=(90, 91, 92, 93), default=93)
 args = parser.parse_args()
 ARTICLES = {number: article for number, article in ARTICLES.items() if number <= args.max_batch}
 with urllib.request.urlopen(f"https://github.com/kenjinote/blog/actions/runs/{args.ci_run}", timeout=45) as response:

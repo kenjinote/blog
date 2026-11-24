@@ -6,26 +6,28 @@
 
 
 
-title: 'Registro de desastres naturales ocurridos en Japón: El terremoto de la península de Noto en 2024 y situación de los daños'
-date: "2026-09-24T19:44:38+09:00"
+title: "Terremoto de la península de Noto de 2024: resumen y daños"
 slug: "日本のDesastre"
 date: 2024-01-07T00:50:09+09:00
 tags: ["Desastres", "Datos"]
 draft: false
 image: "img.webp"
 categories: ["it-technology"]
-description: 'Esta página resume los registros y notas sobre desastres naturales ocurridos en Japón en el pasado. Se organizan los registros sobre terremotos y desastres, incluido el panorama general y la situación de los daños del terremoto de la península de Noto, ocurrido el 1 de enero de 2024. Es un memorando para aprender sobre la prevención de desastres y desastres anteriores.'
+description: "Resumen del terremoto de Noto del 1 de enero de 2024 y de las cifras del informe 123 de la Agencia de Gestión de Incendios y Desastres de Japón, fechado el 31 de marzo de 2026. Los datos son preliminares y pueden cambiar."
+lastmod: 2026-11-24T00:00:00+09:00
 ---
 
+# Terremoto de la península de Noto de 2024: resumen y daños
 
+El 1 de enero de 2024 a las 16:10, hora estándar de Japón, un terremoto de magnitud 7,6 sacudió la región de Noto, en la prefectura de Ishikawa, y alcanzó una intensidad sísmica máxima de 7 en la escala japonesa. La Agencia Meteorológica de Japón dio el nombre de Terremoto de la península de Noto de 2024 a este evento y a la secuencia sísmica relacionada iniciada en diciembre de 2020. Consulta la [página informativa de la agencia](https://www.jma.go.jp/jma/menu/20240101_noto_jishin.html).
 
+## Resumen de daños
 
+El informe 123 de la Agencia de Gestión de Incendios y Desastres de Japón, fechado el 31 de marzo de 2026, contabiliza 720 fallecidos —492 de ellos por causas relacionadas con el desastre—, 2 personas desaparecidas y daños en 165.813 edificios residenciales. Son cifras preliminares del informe y pueden revisarse. Consulta el [informe oficial](https://www.fdma.go.jp/disaster/info/items/b055402cefac7721623c30034b25489118dbec38.pdf) para ver las definiciones y el desglose completo.
 
+![Edificio derrumbado tras el terremoto de la península de Noto](img.webp)
 
+## Fuentes
 
-
-# Resumen
-Notas sobre desastres naturales ocurridos en Japón
-
-## 1 de enero de 2024 Terremoto de la península de Noto
-![img.png](img.webp)
+- [Agencia Meteorológica de Japón: información sobre el terremoto de Noto de 2024](https://www.jma.go.jp/jma/menu/20240101_noto_jishin.html)
+- [Agencia de Gestión de Incendios y Desastres: informe 123 sobre el terremoto de Noto](https://www.fdma.go.jp/disaster/info/items/b055402cefac7721623c30034b25489118dbec38.pdf)

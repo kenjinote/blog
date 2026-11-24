@@ -1,0 +1,453 @@
+{
+  "version": 1,
+  "batch": 93,
+  "article": "日本の災害",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "4d0229737c39eaa48831c6dcd89fa128a0e7f5d2c8bede5f7a941a0c8a84c32a",
+  "sources": [
+    "https://www.jma.go.jp/jma/menu/20240101_noto_jishin.html",
+    "https://www.fdma.go.jp/disaster/info/items/b055402cefac7721623c30034b25489118dbec38.pdf"
+  ],
+  "scope": "Read the complete Japanese source and all twelve translations. Verified the event's time, magnitude, maximum intensity, and dated casualty/housing snapshot against the JMA and FDMA primary sources.",
+  "findings": [
+    "Replaced a title-only placeholder with a concise event overview, a dated damage snapshot, and direct primary-source references in all thirteen editions.",
+    "Confirmed the JMA event data: January 1, 2024 at 16:10 JST, magnitude 7.6, maximum intensity 7.",
+    "Recorded the FDMA report 123 snapshot as of March 31, 2026: 720 deaths including 492 disaster-related deaths, 2 missing persons, and 165,813 residential buildings damaged; retained the source's preliminary-data caveat.",
+    "Improved the image alternative text, removed duplicate future date metadata, retained the original 2024-01-07 publication date, and set lastmod to 2026-11-24."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/日本の災害/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/日本の災害/index.md",
+      "sourceHash": "4d0229737c39eaa48831c6dcd89fa128a0e7f5d2c8bede5f7a941a0c8a84c32a",
+      "translationHash": "4f8091439b0b33fd8cfe9fc517ab413d975b8fdacf33b139f170de3a3208d8e4",
+      "summary": "Compared the complete translation with the Japanese source and verified the earthquake time, magnitude, maximum intensity, report date, casualty and housing-damage snapshot against JMA and Fire and Disaster Management Agency primary sources.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Every edition separates the earthquake overview from the explicitly dated preliminary damage snapshot."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Magnitude, Japan's seismic intensity scale, disaster-related deaths, missing persons, and residential-building damage are distinguished."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Every edition links directly to the Japan Meteorological Agency and the dated FDMA situation report."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "FDMA report 123 is explicitly marked preliminary; its figures may change.",
+        "The photograph is contextual and is not presented as a statistical or location-specific record."
+      ]
+    },
+    "post/日本の災害/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/日本の災害/index.md",
+      "sourceHash": "4d0229737c39eaa48831c6dcd89fa128a0e7f5d2c8bede5f7a941a0c8a84c32a",
+      "translationHash": "30802a3c7e84739d520de67df2b38556e15cfedfc3f0deb43ca78fbe4867df8e",
+      "summary": "Compared the complete translation with the Japanese source and verified the earthquake time, magnitude, maximum intensity, report date, casualty and housing-damage snapshot against JMA and Fire and Disaster Management Agency primary sources.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Every edition separates the earthquake overview from the explicitly dated preliminary damage snapshot."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Magnitude, Japan's seismic intensity scale, disaster-related deaths, missing persons, and residential-building damage are distinguished."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Every edition links directly to the Japan Meteorological Agency and the dated FDMA situation report."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "FDMA report 123 is explicitly marked preliminary; its figures may change.",
+        "The photograph is contextual and is not presented as a statistical or location-specific record."
+      ]
+    },
+    "post/日本の災害/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/日本の災害/index.md",
+      "sourceHash": "4d0229737c39eaa48831c6dcd89fa128a0e7f5d2c8bede5f7a941a0c8a84c32a",
+      "translationHash": "006c58111a0b456c7c34ba48b7f0f678813bdd89b22f5b504f9893609527e806",
+      "summary": "Compared the complete translation with the Japanese source and verified the earthquake time, magnitude, maximum intensity, report date, casualty and housing-damage snapshot against JMA and Fire and Disaster Management Agency primary sources.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Every edition separates the earthquake overview from the explicitly dated preliminary damage snapshot."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Magnitude, Japan's seismic intensity scale, disaster-related deaths, missing persons, and residential-building damage are distinguished."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Every edition links directly to the Japan Meteorological Agency and the dated FDMA situation report."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "FDMA report 123 is explicitly marked preliminary; its figures may change.",
+        "The photograph is contextual and is not presented as a statistical or location-specific record."
+      ]
+    },
+    "post/日本の災害/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/日本の災害/index.md",
+      "sourceHash": "4d0229737c39eaa48831c6dcd89fa128a0e7f5d2c8bede5f7a941a0c8a84c32a",
+      "translationHash": "a449fee958ed15b9f9a6127dae93cffc554f0ae5261617fa79c94bbb6230ccf3",
+      "summary": "Compared the complete translation with the Japanese source and verified the earthquake time, magnitude, maximum intensity, report date, casualty and housing-damage snapshot against JMA and Fire and Disaster Management Agency primary sources.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Every edition separates the earthquake overview from the explicitly dated preliminary damage snapshot."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Magnitude, Japan's seismic intensity scale, disaster-related deaths, missing persons, and residential-building damage are distinguished."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Every edition links directly to the Japan Meteorological Agency and the dated FDMA situation report."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "FDMA report 123 is explicitly marked preliminary; its figures may change.",
+        "The photograph is contextual and is not presented as a statistical or location-specific record."
+      ]
+    },
+    "post/日本の災害/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/日本の災害/index.md",
+      "sourceHash": "4d0229737c39eaa48831c6dcd89fa128a0e7f5d2c8bede5f7a941a0c8a84c32a",
+      "translationHash": "32951d09fbb9bce47e04b4a47b805ebbf3ee9fb2f694b0d6a02f13a000b4e9ab",
+      "summary": "Compared the complete translation with the Japanese source and verified the earthquake time, magnitude, maximum intensity, report date, casualty and housing-damage snapshot against JMA and Fire and Disaster Management Agency primary sources.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Every edition separates the earthquake overview from the explicitly dated preliminary damage snapshot."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Magnitude, Japan's seismic intensity scale, disaster-related deaths, missing persons, and residential-building damage are distinguished."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Every edition links directly to the Japan Meteorological Agency and the dated FDMA situation report."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "FDMA report 123 is explicitly marked preliminary; its figures may change.",
+        "The photograph is contextual and is not presented as a statistical or location-specific record."
+      ]
+    },
+    "post/日本の災害/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/日本の災害/index.md",
+      "sourceHash": "4d0229737c39eaa48831c6dcd89fa128a0e7f5d2c8bede5f7a941a0c8a84c32a",
+      "translationHash": "d55b17648bc0b96aab4b2e3e5d79ae9935900bf9db14ac606cceb7db4beb35ca",
+      "summary": "Compared the complete translation with the Japanese source and verified the earthquake time, magnitude, maximum intensity, report date, casualty and housing-damage snapshot against JMA and Fire and Disaster Management Agency primary sources.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Every edition separates the earthquake overview from the explicitly dated preliminary damage snapshot."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Magnitude, Japan's seismic intensity scale, disaster-related deaths, missing persons, and residential-building damage are distinguished."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Every edition links directly to the Japan Meteorological Agency and the dated FDMA situation report."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "FDMA report 123 is explicitly marked preliminary; its figures may change.",
+        "The photograph is contextual and is not presented as a statistical or location-specific record."
+      ]
+    },
+    "post/日本の災害/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/日本の災害/index.md",
+      "sourceHash": "4d0229737c39eaa48831c6dcd89fa128a0e7f5d2c8bede5f7a941a0c8a84c32a",
+      "translationHash": "fc00220dd65d924f5505b6ebc0642e2ad3b1f79e41ebe3bb57fa7a3c59e9852d",
+      "summary": "Compared the complete translation with the Japanese source and verified the earthquake time, magnitude, maximum intensity, report date, casualty and housing-damage snapshot against JMA and Fire and Disaster Management Agency primary sources.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Every edition separates the earthquake overview from the explicitly dated preliminary damage snapshot."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Magnitude, Japan's seismic intensity scale, disaster-related deaths, missing persons, and residential-building damage are distinguished."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Every edition links directly to the Japan Meteorological Agency and the dated FDMA situation report."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "FDMA report 123 is explicitly marked preliminary; its figures may change.",
+        "The photograph is contextual and is not presented as a statistical or location-specific record."
+      ]
+    },
+    "post/日本の災害/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/日本の災害/index.md",
+      "sourceHash": "4d0229737c39eaa48831c6dcd89fa128a0e7f5d2c8bede5f7a941a0c8a84c32a",
+      "translationHash": "a1c3eb24ca9009c0479e39cc3ba8e532c15b5c383f1b16f880ff3c5416a21e45",
+      "summary": "Compared the complete translation with the Japanese source and verified the earthquake time, magnitude, maximum intensity, report date, casualty and housing-damage snapshot against JMA and Fire and Disaster Management Agency primary sources.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Every edition separates the earthquake overview from the explicitly dated preliminary damage snapshot."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Magnitude, Japan's seismic intensity scale, disaster-related deaths, missing persons, and residential-building damage are distinguished."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Every edition links directly to the Japan Meteorological Agency and the dated FDMA situation report."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "FDMA report 123 is explicitly marked preliminary; its figures may change.",
+        "The photograph is contextual and is not presented as a statistical or location-specific record."
+      ]
+    },
+    "post/日本の災害/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/日本の災害/index.md",
+      "sourceHash": "4d0229737c39eaa48831c6dcd89fa128a0e7f5d2c8bede5f7a941a0c8a84c32a",
+      "translationHash": "6ce8a2347651834e11b3290c107496ea8d3ca13374d0eee278f30fbfc98f929b",
+      "summary": "Compared the complete translation with the Japanese source and verified the earthquake time, magnitude, maximum intensity, report date, casualty and housing-damage snapshot against JMA and Fire and Disaster Management Agency primary sources.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Every edition separates the earthquake overview from the explicitly dated preliminary damage snapshot."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Magnitude, Japan's seismic intensity scale, disaster-related deaths, missing persons, and residential-building damage are distinguished."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Every edition links directly to the Japan Meteorological Agency and the dated FDMA situation report."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "FDMA report 123 is explicitly marked preliminary; its figures may change.",
+        "The photograph is contextual and is not presented as a statistical or location-specific record."
+      ]
+    },
+    "post/日本の災害/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/日本の災害/index.md",
+      "sourceHash": "4d0229737c39eaa48831c6dcd89fa128a0e7f5d2c8bede5f7a941a0c8a84c32a",
+      "translationHash": "ac9d02080c5c55bf7e9092615e3f897e20a22be7acc0446c566df15aae6148d1",
+      "summary": "Compared the complete translation with the Japanese source and verified the earthquake time, magnitude, maximum intensity, report date, casualty and housing-damage snapshot against JMA and Fire and Disaster Management Agency primary sources.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Every edition separates the earthquake overview from the explicitly dated preliminary damage snapshot."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Magnitude, Japan's seismic intensity scale, disaster-related deaths, missing persons, and residential-building damage are distinguished."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Every edition links directly to the Japan Meteorological Agency and the dated FDMA situation report."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "FDMA report 123 is explicitly marked preliminary; its figures may change.",
+        "The photograph is contextual and is not presented as a statistical or location-specific record."
+      ]
+    },
+    "post/日本の災害/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/日本の災害/index.md",
+      "sourceHash": "4d0229737c39eaa48831c6dcd89fa128a0e7f5d2c8bede5f7a941a0c8a84c32a",
+      "translationHash": "a66dfea30af26076916abebaf654771144eeea43f03e12e446ce44e38b756d95",
+      "summary": "Compared the complete translation with the Japanese source and verified the earthquake time, magnitude, maximum intensity, report date, casualty and housing-damage snapshot against JMA and Fire and Disaster Management Agency primary sources.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Every edition separates the earthquake overview from the explicitly dated preliminary damage snapshot."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Magnitude, Japan's seismic intensity scale, disaster-related deaths, missing persons, and residential-building damage are distinguished."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Every edition links directly to the Japan Meteorological Agency and the dated FDMA situation report."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "FDMA report 123 is explicitly marked preliminary; its figures may change.",
+        "The photograph is contextual and is not presented as a statistical or location-specific record."
+      ]
+    },
+    "post/日本の災害/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/日本の災害/index.md",
+      "sourceHash": "4d0229737c39eaa48831c6dcd89fa128a0e7f5d2c8bede5f7a941a0c8a84c32a",
+      "translationHash": "3af47fe4871c4bc9eadbfeb1a5f994a7a28f81622b241c6000db68747f219fb4",
+      "summary": "Compared the complete translation with the Japanese source and verified the earthquake time, magnitude, maximum intensity, report date, casualty and housing-damage snapshot against JMA and Fire and Disaster Management Agency primary sources.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Every edition separates the earthquake overview from the explicitly dated preliminary damage snapshot."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Magnitude, Japan's seismic intensity scale, disaster-related deaths, missing persons, and residential-building damage are distinguished."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Every edition links directly to the Japan Meteorological Agency and the dated FDMA situation report."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "FDMA report 123 is explicitly marked preliminary; its figures may change.",
+        "The photograph is contextual and is not presented as a statistical or location-specific record."
+      ]
+    }
+  }
+}

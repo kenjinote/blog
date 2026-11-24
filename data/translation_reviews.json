@@ -10565,6 +10565,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-092.json",
       "evidenceHash": "2b5aeb8f9c3a793cc1bad8bbcb001ef9801c226b2061b926c5548e86cc075d1b"
+    },
+    "post/日本の災害/index.ar.md": {
+      "source": "post/日本の災害/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "4d0229737c39eaa48831c6dcd89fa128a0e7f5d2c8bede5f7a941a0c8a84c32a",
+      "translationHash": "4f8091439b0b33fd8cfe9fc517ab413d975b8fdacf33b139f170de3a3208d8e4",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-093.json",
+      "evidenceHash": "7dcbcf8e251be4ed62b7715abca3b1e14ccf9e56f6c0742c0cea6be774317531"
+    },
+    "post/日本の災害/index.de.md": {
+      "source": "post/日本の災害/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "4d0229737c39eaa48831c6dcd89fa128a0e7f5d2c8bede5f7a941a0c8a84c32a",
+      "translationHash": "30802a3c7e84739d520de67df2b38556e15cfedfc3f0deb43ca78fbe4867df8e",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-093.json",
+      "evidenceHash": "bd1da35701cb8b67c02de52c5f5e35716bb99fe6409fc566b3b2ca35a97484e8"
+    },
+    "post/日本の災害/index.en.md": {
+      "source": "post/日本の災害/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "4d0229737c39eaa48831c6dcd89fa128a0e7f5d2c8bede5f7a941a0c8a84c32a",
+      "translationHash": "006c58111a0b456c7c34ba48b7f0f678813bdd89b22f5b504f9893609527e806",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-093.json",
+      "evidenceHash": "445f4e2a341d473be0b2e4810f1d7a9cce09ab6d7bbb8b953473400aab9d7ea5"
+    },
+    "post/日本の災害/index.es.md": {
+      "source": "post/日本の災害/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "4d0229737c39eaa48831c6dcd89fa128a0e7f5d2c8bede5f7a941a0c8a84c32a",
+      "translationHash": "a449fee958ed15b9f9a6127dae93cffc554f0ae5261617fa79c94bbb6230ccf3",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-093.json",
+      "evidenceHash": "c27bc9a1ff40532196a90b8678cbdc82a9331924e2160aec6c7c299f6306e768"
+    },
+    "post/日本の災害/index.fr.md": {
+      "source": "post/日本の災害/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "4d0229737c39eaa48831c6dcd89fa128a0e7f5d2c8bede5f7a941a0c8a84c32a",
+      "translationHash": "32951d09fbb9bce47e04b4a47b805ebbf3ee9fb2f694b0d6a02f13a000b4e9ab",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-093.json",
+      "evidenceHash": "aaf51a4ec064d2f92a2e36a6b44e78bec8aa09ea261ce9b195f98f1bd27528f2"
+    },
+    "post/日本の災害/index.hi.md": {
+      "source": "post/日本の災害/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "4d0229737c39eaa48831c6dcd89fa128a0e7f5d2c8bede5f7a941a0c8a84c32a",
+      "translationHash": "d55b17648bc0b96aab4b2e3e5d79ae9935900bf9db14ac606cceb7db4beb35ca",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-093.json",
+      "evidenceHash": "fb20e5cfa0738144f6440305ba99891103410054bc4e8c2a3e1cc2967292e106"
+    },
+    "post/日本の災害/index.id.md": {
+      "source": "post/日本の災害/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "4d0229737c39eaa48831c6dcd89fa128a0e7f5d2c8bede5f7a941a0c8a84c32a",
+      "translationHash": "fc00220dd65d924f5505b6ebc0642e2ad3b1f79e41ebe3bb57fa7a3c59e9852d",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-093.json",
+      "evidenceHash": "ceb85681023eac5fb91b31cf1a786f5fe1f5ac3b843d9917f2bc80fa47fd6aeb"
+    },
+    "post/日本の災害/index.ko.md": {
+      "source": "post/日本の災害/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "4d0229737c39eaa48831c6dcd89fa128a0e7f5d2c8bede5f7a941a0c8a84c32a",
+      "translationHash": "a1c3eb24ca9009c0479e39cc3ba8e532c15b5c383f1b16f880ff3c5416a21e45",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-093.json",
+      "evidenceHash": "3d4b86f2a09e36fb036d71189a394d0efe0ec0d7fb05ef72e9b58f0b77dfe3ab"
+    },
+    "post/日本の災害/index.pt.md": {
+      "source": "post/日本の災害/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "4d0229737c39eaa48831c6dcd89fa128a0e7f5d2c8bede5f7a941a0c8a84c32a",
+      "translationHash": "6ce8a2347651834e11b3290c107496ea8d3ca13374d0eee278f30fbfc98f929b",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-093.json",
+      "evidenceHash": "3c0bbf30b251e8214506aa7bcad9ea511c13241bd07d7dd35d44875592a84117"
+    },
+    "post/日本の災害/index.ru.md": {
+      "source": "post/日本の災害/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "4d0229737c39eaa48831c6dcd89fa128a0e7f5d2c8bede5f7a941a0c8a84c32a",
+      "translationHash": "ac9d02080c5c55bf7e9092615e3f897e20a22be7acc0446c566df15aae6148d1",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-093.json",
+      "evidenceHash": "f1dcc2fd4350e8a353f67cec2302b1aa4d267ce8531402b79d188d816f91fc6e"
+    },
+    "post/日本の災害/index.zh-cn.md": {
+      "source": "post/日本の災害/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "4d0229737c39eaa48831c6dcd89fa128a0e7f5d2c8bede5f7a941a0c8a84c32a",
+      "translationHash": "a66dfea30af26076916abebaf654771144eeea43f03e12e446ce44e38b756d95",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-093.json",
+      "evidenceHash": "475be69365e4b5e7c9c9f981a0d8e7851baf8c32eabb89d083663b0a13f11c44"
+    },
+    "post/日本の災害/index.zh-tw.md": {
+      "source": "post/日本の災害/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "4d0229737c39eaa48831c6dcd89fa128a0e7f5d2c8bede5f7a941a0c8a84c32a",
+      "translationHash": "3af47fe4871c4bc9eadbfeb1a5f994a7a28f81622b241c6000db68747f219fb4",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-093.json",
+      "evidenceHash": "e35a1253ec0a3e49c6a504bc556164d4061d16b87b73d33984f03cca825eb707"
     }
   }
 }

@@ -1,17 +1,26 @@
 ---
-title: 'Aufzeichnungen über Naturkatastrophen in Japan: Das Noto-Halbinsel-Erdbeben 2024 und Schadensmeldungen'
-date: "2026-09-24T19:44:38+09:00"
+title: "Noto-Erdbeben 2024: Überblick und Schadensbilanz"
 slug: "日本のKatastrophe"
 date: 2024-01-07T00:50:09+09:00
 tags: ["Katastrophen", "Daten"]
 draft: false
 image: "img.webp"
 categories: ["it-technology"]
-description: 'Dies ist eine Seite, die Aufzeichnungen und Notizen zu Naturkatastrophen zusammenfasst, die sich in der Vergangenheit in Japan ereignet haben. Sie organisiert Aufzeichnungen über Erdbeben und Katastrophen, einschließlich des Ausmaßes der Schäden und eines Überblicks über das Erdbeben auf der Noto-Halbinsel am 1. Januar 2024. Es ist ein Notizbuch zum Lernen über Katastrophenschutz und vergangene Katastrophen.'
+description: "Ein Überblick über das Noto-Erdbeben vom 1. Januar 2024 und die Zahlen aus Bericht 123 der japanischen Feuerwehr- und Katastrophenschutzbehörde vom 31. März 2026. Die Angaben sind vorläufig und können sich ändern."
+lastmod: 2026-11-24T00:00:00+09:00
 ---
 
-# Überblick
-Notizen zu Naturkatastrophen in Japan.
+# Noto-Erdbeben 2024: Überblick und Schadensbilanz
 
-## 1. Januar 2024 Erdbeben auf der Noto-Halbinsel
-![img.png](img.webp)
+Am 1. Januar 2024 um 16:10 Uhr japanischer Normalzeit erschütterte ein Erdbeben der Magnitude 7,6 die Region Noto in der Präfektur Ishikawa. Auf der japanischen Intensitätsskala wurde maximal Stufe 7 gemessen. Die Japanische Meteorologische Agentur bezeichnete dieses Ereignis und die zusammenhängende Erdbebenserie seit Dezember 2020 als Noto-Erdbeben 2024. Weitere Informationen stehen auf der [JMA-Themenseite](https://www.jma.go.jp/jma/menu/20240101_noto_jishin.html).
+
+## Schadensbilanz
+
+Bericht 123 der japanischen Feuerwehr- und Katastrophenschutzbehörde vom 31. März 2026 nennt 720 Todesopfer, darunter 492 katastrophenbedingte Todesfälle, 2 Vermisste und Schäden an 165.813 Wohngebäuden. Diese vorläufigen Zahlen können noch geändert werden. Definitionen und Aufschlüsselung finden Sie im [Bericht der Behörde](https://www.fdma.go.jp/disaster/info/items/b055402cefac7721623c30034b25489118dbec38.pdf).
+
+![Eingestürztes Gebäude nach dem Noto-Erdbeben](img.webp)
+
+## Quellen
+
+- [Japanische Meteorologische Agentur: Informationen zum Noto-Erdbeben 2024](https://www.jma.go.jp/jma/menu/20240101_noto_jishin.html)
+- [Feuerwehr- und Katastrophenschutzbehörde: Lagebericht 123 zum Noto-Erdbeben](https://www.fdma.go.jp/disaster/info/items/b055402cefac7721623c30034b25489118dbec38.pdf)
