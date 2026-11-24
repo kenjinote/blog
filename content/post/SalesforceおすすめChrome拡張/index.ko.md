@@ -1,39 +1,30 @@
 ---
-
-
-
-
-title: 'Salesforce 개발이 순조로워진다! 추천 Chrome 확장 프로그램 정리'
-date: "2026-09-24T19:44:38+09:00"
+title: "Salesforce용 Chrome 확장 프로그램 2종: 기능과 보안 확인 사항"
 slug: "Salesforce추천Chrome 확장"
 date: 2022-05-02T10:39:36+09:00
+lastmod: "2026-11-24T00:00:00+09:00"
 tags: ["Salesforce", "Chrome 확장 프로그램"]
 draft: false
 image: "img.webp"
 categories: ["it-technology"]
-description: 'Salesforce 개발 및 운영을 극적으로 효율화해 주는 추천 Chrome 확장 프로그램을 소개합니다. 사용자 지정 필드 검색이나 SOQL 작성에 편리한 DevTools, 코드 검색에 유용한 확장 프로그램 등 엔지니어 필수 도구를 엄선했습니다.'
+description: "Chrome 웹 스토어 정보를 바탕으로 Salesforce DevTools와 Salesforce advanced Code searcher를 소개하고, 확인 날짜·권한·개인정보 공개 및 업무 조직 연결 전 관리자 승인을 안내합니다."
 ---
+Salesforce 개발에 사용할 수 있는 Chrome 확장 프로그램 두 가지를 소개합니다. 둘 다 Salesforce와 별개인 제3자 제품입니다. 아래 내용은 **2026-11-24에 확인한 스토어 정보**이며 기능과 권한은 바뀔 수 있습니다. 업무용 조직에 연결하기 전에 최신 권한 및 개인정보 공개 내용을 확인하고 Salesforce 관리자에게 승인을 받으세요.
 
+## Salesforce DevTools
 
+![Salesforce DevTools](img_1.webp)
 
+![Salesforce DevTools 쿼리 화면](img_2.webp)
 
+Chrome 웹 스토어에는 SOQL 및 Apex 작성, 개체와 필드 검색, 정의 정보 내보내기 등의 기능이 안내되어 있습니다. 등록 페이지는 버전 3.12.1, 최종 업데이트 2026-07-23으로 표시하며, 데이터 처리 항목에 Location과 Web history를 공개합니다. 설치 전 최신 권한과 개발자 개인정보 처리방침을 확인하세요.
 
-### Salesforce DevTools
+[Salesforce DevTools — Chrome 웹 스토어](https://chromewebstore.google.com/detail/salesforce-devtools/ehgmhinnhggigkogkbhnbodhbfjgncjf)
 
-![img_1.png](img_1.webp)
+## Salesforce advanced Code searcher
 
-![img_2.png](img_2.webp)
+![Salesforce advanced Code searcher](img.webp)
 
-사용자 정의 필드를 검색하거나, 사용자 정의 객체의 필드를 일괄적으로 출력할 수 있습니다.
+등록 페이지는 Salesforce REST API 기능을 이용해 Apex 클래스, 트리거, Visualforce 페이지/컴포넌트 및 기타 Salesforce 코드를 검색할 수 있다고 설명합니다. 버전 1.30, 최종 업데이트 2024-11-06으로 표시됩니다. 개발자 개인정보 처리방침에 따르면 Salesforce 인스턴스 URL과 액세스/리프레시 토큰을 브라우저 로컬 저장소에 보관해 Salesforce API를 호출합니다. 업무용 조직을 연결하기 전에 OAuth 승인 범위와 조직 보안 정책을 확인하세요.
 
-그 자리에서 SOQL을 작성할 수 있는 것도 편리합니다.
-
-[Salesforce DevTools](https://chrome.google.com/webstore/detail/salesforce-devtools/ehgmhinnhggigkogkbhnbodhbfjgncjf)
-
-### Salesforce advanced Code searcher
-
-![img.png](img.webp)
-
-[Salesforce](/ko/p/salesforce%E3%81%AEsoql%E3%82%92%E5%88%A9%E7%94%A8%E3%81%97%E3%81%A6%E6%97%A5%E5%88%A5%E3%81%AE%E3%83%AC%E3%82%B3%E3%83%BC%E3%83%89%E4%BD%9C%E6%88%90%E6%95%B0%E3%82%92%E5%8F%96%E5%BE%97%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/) 코드를 검색할 때 편리합니다.
-
-[Salesforce advanced Code searcher](https://chrome.google.com/webstore/detail/salesforce-advanced-code/lnkgcmpjkkkeffambkllliefdpjdklmi)
+[Salesforce advanced Code searcher — Chrome 웹 스토어](https://chromewebstore.google.com/detail/salesforce-advanced-code/lnkgcmpjkkkeffambkllliefdpjdklmi) · [개발자 개인정보 처리방침](https://sf-advanced-code-searcher.web.app/)

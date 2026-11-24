@@ -1,31 +1,30 @@
 ---
-title: 'Pengembangan Salesforce Menjadi Lebih Mudah! Ringkasan Ekstensi Chrome yang Direkomendasikan'
-date: "2026-09-24T19:44:38+09:00"
+title: "Dua Ekstensi Chrome untuk Salesforce: Fitur dan Catatan Keamanan"
 slug: "SalesforceRekomendasiEkstensi Chrome"
 date: 2022-05-02T10:39:36+09:00
+lastmod: "2026-11-24T00:00:00+09:00"
 tags: ["Salesforce", "Ekstensi Chrome"]
 draft: false
 image: "img.webp"
 categories: ["it-technology"]
-description: 'Memperkenalkan ekstensi Chrome yang direkomendasikan yang secara dramatis merampingkan pengembangan dan pengoperasian Salesforce. Kami memilih alat yang wajib dilihat oleh para insinyur, seperti DevTools yang berguna untuk mencari bidang khusus dan menyusun SOQL, serta ekstensi yang berguna untuk pencarian kode.'
+description: "Ikhtisar Salesforce DevTools dan Salesforce advanced Code searcher berdasarkan halaman Chrome Web Store, termasuk tanggal pemeriksaan, izin, privasi, dan persetujuan admin sebelum menghubungkan organisasi kerja."
 ---
+Berikut dua ekstensi Chrome untuk pengembangan Salesforce. Keduanya merupakan produk pihak ketiga yang independen dari Salesforce. Informasi ini berdasarkan halaman toko yang diperiksa pada **2026-11-24**; fitur dan izin dapat berubah. Sebelum menghubungkannya ke organisasi kerja, periksa izin dan pengungkapan privasi terbaru serta minta persetujuan admin Salesforce.
 
-### Salesforce DevTools
+## Salesforce DevTools
 
-![img_1.png](img_1.webp)
+![Salesforce DevTools](img_1.webp)
 
-![img_2.png](img_2.webp)
+![Antarmuka kueri Salesforce DevTools](img_2.webp)
 
-Anda dapat mencari bidang kustom, atau menampilkan bidang objek kustom sekaligus.
+Halaman Chrome Web Store menjelaskan fitur untuk menyusun SOQL dan Apex, mencari objek dan field, serta mengekspor definisi. Halaman mencantumkan versi 3.12.1, terakhir diperbarui 2026-07-23, dan menyatakan bahwa ekstensi menangani data Location dan Web history. Tinjau izin terbaru dan kebijakan privasi pengembang sebelum memasang.
 
-Juga sangat mudah untuk merakit SOQL di tempat.
+[Salesforce DevTools — Chrome Web Store](https://chromewebstore.google.com/detail/salesforce-devtools/ehgmhinnhggigkogkbhnbodhbfjgncjf)
 
-[Salesforce DevTools](https://chrome.google.com/webstore/detail/salesforce-devtools/ehgmhinnhggigkogkbhnbodhbfjgncjf)
+## Salesforce advanced Code searcher
 
-### Salesforce advanced Code searcher
+![Salesforce advanced Code searcher](img.webp)
 
-![img.png](img.webp)
+Halaman tersebut menjelaskan pencarian kelas Apex, trigger, halaman/komponen Visualforce, dan kode Salesforce lain melalui fitur Salesforce REST API. Versi 1.30 tercatat terakhir diperbarui 2024-11-06. Menurut kebijakan privasi pengembang, ekstensi menyimpan URL instance Salesforce dan token akses/refresh di penyimpanan lokal browser untuk memanggil Salesforce API. Periksa cakupan otorisasi OAuth dan kebijakan keamanan organisasi sebelum menghubungkannya.
 
-Berguna saat mencari kode [Salesforce](/id/p/salesforceceloteh%E5%85%A8%E6%B6%88%E3%81%97perintah/).
-
-[Salesforce advanced Code searcher](https://chrome.google.com/webstore/detail/salesforce-advanced-code/lnkgcmpjkkkeffambkllliefdpjdklmi)
+[Salesforce advanced Code searcher — Chrome Web Store](https://chromewebstore.google.com/detail/salesforce-advanced-code/lnkgcmpjkkkeffambkllliefdpjdklmi) · [Kebijakan privasi pengembang](https://sf-advanced-code-searcher.web.app/)

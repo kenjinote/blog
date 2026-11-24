@@ -1,0 +1,455 @@
+{
+  "version": 1,
+  "batch": 139,
+  "article": "Salesforce開発向けChrome拡張2選：機能と導入前の確認点",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "fde16c43bd12e065710dcc37950036fe12ce1feeb1ca8dc900e6abdd76e82fb8",
+  "sources": [
+    "https://chromewebstore.google.com/detail/salesforce-devtools/ehgmhinnhggigkogkbhnbodhbfjgncjf",
+    "https://chromewebstore.google.com/detail/salesforce-advanced-code/lnkgcmpjkkkeffambkllliefdpjdklmi",
+    "https://sf-advanced-code-searcher.web.app/"
+  ],
+  "scope": "Compared the complete Japanese article and all twelve translations: descriptions, features, terminology, data and permission disclosures, privacy policy, dated listing metadata, descriptions, and links. Mathematical formulas and executable code are not present.",
+  "findings": [
+    "Removed a duplicate future publication date and retained publication date 2022-05-02; set lastmod to 2026-11-24.",
+    "Reframed the recommendations as a dated snapshot because extension features, permissions, and store metadata can change.",
+    "Added the DevTools listing disclosure for Location and Web history and its displayed version/update date.",
+    "Added the Code Searcher developer policy statement that the Salesforce instance URL and access/refresh tokens are stored in browser local storage for API calls.",
+    "Added a caution to inspect current permissions/privacy disclosures and obtain organization administrator approval before connecting a work Salesforce org."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/SalesforceおすすめChrome拡張/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/SalesforceおすすめChrome拡張/index.md",
+      "sourceHash": "fde16c43bd12e065710dcc37950036fe12ce1feeb1ca8dc900e6abdd76e82fb8",
+      "translationHash": "50ccf4afb11367f85df8d687e84a14a11602be3870af21b4e7280befed138d17",
+      "summary": "Compared the full Japanese article and twelve translations with current Chrome Web Store listings and the Code Searcher developer privacy policy; corrected factual scope, data-handling disclosures, dates, and work-org cautions.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared full descriptions, supported development tasks, third-party status, listing dates, and installation cautions across the Japanese source and all translations."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked product names, SOQL, Apex, Visualforce, Salesforce REST API, OAuth, access/refresh tokens, browser local storage, Location, and Web history disclosures."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No formulas or calculations are present; versions and dates were checked as listing metadata."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code or commands are included; feature descriptions were compared with the cited store listings."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked both Chrome Web Store product pages and the Code Searcher developer privacy policy, which says the Salesforce instance URL and access/refresh tokens are kept in browser local storage for API calls."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Extension use, permissions, functionality, and vendor disclosures were not tested in a live Salesforce org; listings and policies may change after the review date.",
+        "The vendor privacy policy is a provider statement and was not independently audited."
+      ]
+    },
+    "post/SalesforceおすすめChrome拡張/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/SalesforceおすすめChrome拡張/index.md",
+      "sourceHash": "fde16c43bd12e065710dcc37950036fe12ce1feeb1ca8dc900e6abdd76e82fb8",
+      "translationHash": "54498fc6ffba4764b068e2f24207f0012506745fda7e52ec0021eb25a87157f3",
+      "summary": "Compared the full Japanese article and twelve translations with current Chrome Web Store listings and the Code Searcher developer privacy policy; corrected factual scope, data-handling disclosures, dates, and work-org cautions.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared full descriptions, supported development tasks, third-party status, listing dates, and installation cautions across the Japanese source and all translations."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked product names, SOQL, Apex, Visualforce, Salesforce REST API, OAuth, access/refresh tokens, browser local storage, Location, and Web history disclosures."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No formulas or calculations are present; versions and dates were checked as listing metadata."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code or commands are included; feature descriptions were compared with the cited store listings."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked both Chrome Web Store product pages and the Code Searcher developer privacy policy, which says the Salesforce instance URL and access/refresh tokens are kept in browser local storage for API calls."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Extension use, permissions, functionality, and vendor disclosures were not tested in a live Salesforce org; listings and policies may change after the review date.",
+        "The vendor privacy policy is a provider statement and was not independently audited."
+      ]
+    },
+    "post/SalesforceおすすめChrome拡張/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/SalesforceおすすめChrome拡張/index.md",
+      "sourceHash": "fde16c43bd12e065710dcc37950036fe12ce1feeb1ca8dc900e6abdd76e82fb8",
+      "translationHash": "7aec887d12413e82feedcd39a724d142b86707edd84cb03771b9ccb0cded79f5",
+      "summary": "Compared the full Japanese article and twelve translations with current Chrome Web Store listings and the Code Searcher developer privacy policy; corrected factual scope, data-handling disclosures, dates, and work-org cautions.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared full descriptions, supported development tasks, third-party status, listing dates, and installation cautions across the Japanese source and all translations."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked product names, SOQL, Apex, Visualforce, Salesforce REST API, OAuth, access/refresh tokens, browser local storage, Location, and Web history disclosures."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No formulas or calculations are present; versions and dates were checked as listing metadata."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code or commands are included; feature descriptions were compared with the cited store listings."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked both Chrome Web Store product pages and the Code Searcher developer privacy policy, which says the Salesforce instance URL and access/refresh tokens are kept in browser local storage for API calls."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Extension use, permissions, functionality, and vendor disclosures were not tested in a live Salesforce org; listings and policies may change after the review date.",
+        "The vendor privacy policy is a provider statement and was not independently audited."
+      ]
+    },
+    "post/SalesforceおすすめChrome拡張/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/SalesforceおすすめChrome拡張/index.md",
+      "sourceHash": "fde16c43bd12e065710dcc37950036fe12ce1feeb1ca8dc900e6abdd76e82fb8",
+      "translationHash": "c36679c59461b619f3823ba7ec2b0cd5aa46cab0122d721e93e5c6c3c29bf783",
+      "summary": "Compared the full Japanese article and twelve translations with current Chrome Web Store listings and the Code Searcher developer privacy policy; corrected factual scope, data-handling disclosures, dates, and work-org cautions.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared full descriptions, supported development tasks, third-party status, listing dates, and installation cautions across the Japanese source and all translations."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked product names, SOQL, Apex, Visualforce, Salesforce REST API, OAuth, access/refresh tokens, browser local storage, Location, and Web history disclosures."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No formulas or calculations are present; versions and dates were checked as listing metadata."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code or commands are included; feature descriptions were compared with the cited store listings."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked both Chrome Web Store product pages and the Code Searcher developer privacy policy, which says the Salesforce instance URL and access/refresh tokens are kept in browser local storage for API calls."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Extension use, permissions, functionality, and vendor disclosures were not tested in a live Salesforce org; listings and policies may change after the review date.",
+        "The vendor privacy policy is a provider statement and was not independently audited."
+      ]
+    },
+    "post/SalesforceおすすめChrome拡張/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/SalesforceおすすめChrome拡張/index.md",
+      "sourceHash": "fde16c43bd12e065710dcc37950036fe12ce1feeb1ca8dc900e6abdd76e82fb8",
+      "translationHash": "eaf8859ccf901897049c6a3780863ea8b453baec5e5a4ee10f82ee812752c47c",
+      "summary": "Compared the full Japanese article and twelve translations with current Chrome Web Store listings and the Code Searcher developer privacy policy; corrected factual scope, data-handling disclosures, dates, and work-org cautions.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared full descriptions, supported development tasks, third-party status, listing dates, and installation cautions across the Japanese source and all translations."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked product names, SOQL, Apex, Visualforce, Salesforce REST API, OAuth, access/refresh tokens, browser local storage, Location, and Web history disclosures."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No formulas or calculations are present; versions and dates were checked as listing metadata."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code or commands are included; feature descriptions were compared with the cited store listings."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked both Chrome Web Store product pages and the Code Searcher developer privacy policy, which says the Salesforce instance URL and access/refresh tokens are kept in browser local storage for API calls."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Extension use, permissions, functionality, and vendor disclosures were not tested in a live Salesforce org; listings and policies may change after the review date.",
+        "The vendor privacy policy is a provider statement and was not independently audited."
+      ]
+    },
+    "post/SalesforceおすすめChrome拡張/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/SalesforceおすすめChrome拡張/index.md",
+      "sourceHash": "fde16c43bd12e065710dcc37950036fe12ce1feeb1ca8dc900e6abdd76e82fb8",
+      "translationHash": "b70f373724230e6dc91f773fdc49c94bfe5f8cda6f5f8e2bb38e5580ae31cef3",
+      "summary": "Compared the full Japanese article and twelve translations with current Chrome Web Store listings and the Code Searcher developer privacy policy; corrected factual scope, data-handling disclosures, dates, and work-org cautions.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared full descriptions, supported development tasks, third-party status, listing dates, and installation cautions across the Japanese source and all translations."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked product names, SOQL, Apex, Visualforce, Salesforce REST API, OAuth, access/refresh tokens, browser local storage, Location, and Web history disclosures."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No formulas or calculations are present; versions and dates were checked as listing metadata."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code or commands are included; feature descriptions were compared with the cited store listings."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked both Chrome Web Store product pages and the Code Searcher developer privacy policy, which says the Salesforce instance URL and access/refresh tokens are kept in browser local storage for API calls."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Extension use, permissions, functionality, and vendor disclosures were not tested in a live Salesforce org; listings and policies may change after the review date.",
+        "The vendor privacy policy is a provider statement and was not independently audited."
+      ]
+    },
+    "post/SalesforceおすすめChrome拡張/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/SalesforceおすすめChrome拡張/index.md",
+      "sourceHash": "fde16c43bd12e065710dcc37950036fe12ce1feeb1ca8dc900e6abdd76e82fb8",
+      "translationHash": "75f8939d3a33d178e4bedec8208dce0aaa055ca65ae986d3d9a3f0a08dd63666",
+      "summary": "Compared the full Japanese article and twelve translations with current Chrome Web Store listings and the Code Searcher developer privacy policy; corrected factual scope, data-handling disclosures, dates, and work-org cautions.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared full descriptions, supported development tasks, third-party status, listing dates, and installation cautions across the Japanese source and all translations."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked product names, SOQL, Apex, Visualforce, Salesforce REST API, OAuth, access/refresh tokens, browser local storage, Location, and Web history disclosures."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No formulas or calculations are present; versions and dates were checked as listing metadata."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code or commands are included; feature descriptions were compared with the cited store listings."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked both Chrome Web Store product pages and the Code Searcher developer privacy policy, which says the Salesforce instance URL and access/refresh tokens are kept in browser local storage for API calls."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Extension use, permissions, functionality, and vendor disclosures were not tested in a live Salesforce org; listings and policies may change after the review date.",
+        "The vendor privacy policy is a provider statement and was not independently audited."
+      ]
+    },
+    "post/SalesforceおすすめChrome拡張/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/SalesforceおすすめChrome拡張/index.md",
+      "sourceHash": "fde16c43bd12e065710dcc37950036fe12ce1feeb1ca8dc900e6abdd76e82fb8",
+      "translationHash": "f6f5eef89c75a49128ee0626849082c48929833486862e8c774ed8c91ef6aa2d",
+      "summary": "Compared the full Japanese article and twelve translations with current Chrome Web Store listings and the Code Searcher developer privacy policy; corrected factual scope, data-handling disclosures, dates, and work-org cautions.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared full descriptions, supported development tasks, third-party status, listing dates, and installation cautions across the Japanese source and all translations."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked product names, SOQL, Apex, Visualforce, Salesforce REST API, OAuth, access/refresh tokens, browser local storage, Location, and Web history disclosures."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No formulas or calculations are present; versions and dates were checked as listing metadata."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code or commands are included; feature descriptions were compared with the cited store listings."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked both Chrome Web Store product pages and the Code Searcher developer privacy policy, which says the Salesforce instance URL and access/refresh tokens are kept in browser local storage for API calls."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Extension use, permissions, functionality, and vendor disclosures were not tested in a live Salesforce org; listings and policies may change after the review date.",
+        "The vendor privacy policy is a provider statement and was not independently audited."
+      ]
+    },
+    "post/SalesforceおすすめChrome拡張/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/SalesforceおすすめChrome拡張/index.md",
+      "sourceHash": "fde16c43bd12e065710dcc37950036fe12ce1feeb1ca8dc900e6abdd76e82fb8",
+      "translationHash": "9049c0901cbc6ea13397e1b7e573c18e86142fcd62bfdc81f9e7f09d5c8d7bc6",
+      "summary": "Compared the full Japanese article and twelve translations with current Chrome Web Store listings and the Code Searcher developer privacy policy; corrected factual scope, data-handling disclosures, dates, and work-org cautions.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared full descriptions, supported development tasks, third-party status, listing dates, and installation cautions across the Japanese source and all translations."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked product names, SOQL, Apex, Visualforce, Salesforce REST API, OAuth, access/refresh tokens, browser local storage, Location, and Web history disclosures."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No formulas or calculations are present; versions and dates were checked as listing metadata."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code or commands are included; feature descriptions were compared with the cited store listings."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked both Chrome Web Store product pages and the Code Searcher developer privacy policy, which says the Salesforce instance URL and access/refresh tokens are kept in browser local storage for API calls."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Extension use, permissions, functionality, and vendor disclosures were not tested in a live Salesforce org; listings and policies may change after the review date.",
+        "The vendor privacy policy is a provider statement and was not independently audited."
+      ]
+    },
+    "post/SalesforceおすすめChrome拡張/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/SalesforceおすすめChrome拡張/index.md",
+      "sourceHash": "fde16c43bd12e065710dcc37950036fe12ce1feeb1ca8dc900e6abdd76e82fb8",
+      "translationHash": "c82d6dcaed42c14feed74d581a3da0a13051d1886fc32216e3d703ef4898cd1d",
+      "summary": "Compared the full Japanese article and twelve translations with current Chrome Web Store listings and the Code Searcher developer privacy policy; corrected factual scope, data-handling disclosures, dates, and work-org cautions.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared full descriptions, supported development tasks, third-party status, listing dates, and installation cautions across the Japanese source and all translations."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked product names, SOQL, Apex, Visualforce, Salesforce REST API, OAuth, access/refresh tokens, browser local storage, Location, and Web history disclosures."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No formulas or calculations are present; versions and dates were checked as listing metadata."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code or commands are included; feature descriptions were compared with the cited store listings."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked both Chrome Web Store product pages and the Code Searcher developer privacy policy, which says the Salesforce instance URL and access/refresh tokens are kept in browser local storage for API calls."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Extension use, permissions, functionality, and vendor disclosures were not tested in a live Salesforce org; listings and policies may change after the review date.",
+        "The vendor privacy policy is a provider statement and was not independently audited."
+      ]
+    },
+    "post/SalesforceおすすめChrome拡張/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/SalesforceおすすめChrome拡張/index.md",
+      "sourceHash": "fde16c43bd12e065710dcc37950036fe12ce1feeb1ca8dc900e6abdd76e82fb8",
+      "translationHash": "af9bfe60ff28186204f470ed1fac5131976953437fd8e658d693ec8c8ff2bb49",
+      "summary": "Compared the full Japanese article and twelve translations with current Chrome Web Store listings and the Code Searcher developer privacy policy; corrected factual scope, data-handling disclosures, dates, and work-org cautions.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared full descriptions, supported development tasks, third-party status, listing dates, and installation cautions across the Japanese source and all translations."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked product names, SOQL, Apex, Visualforce, Salesforce REST API, OAuth, access/refresh tokens, browser local storage, Location, and Web history disclosures."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No formulas or calculations are present; versions and dates were checked as listing metadata."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code or commands are included; feature descriptions were compared with the cited store listings."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked both Chrome Web Store product pages and the Code Searcher developer privacy policy, which says the Salesforce instance URL and access/refresh tokens are kept in browser local storage for API calls."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Extension use, permissions, functionality, and vendor disclosures were not tested in a live Salesforce org; listings and policies may change after the review date.",
+        "The vendor privacy policy is a provider statement and was not independently audited."
+      ]
+    },
+    "post/SalesforceおすすめChrome拡張/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/SalesforceおすすめChrome拡張/index.md",
+      "sourceHash": "fde16c43bd12e065710dcc37950036fe12ce1feeb1ca8dc900e6abdd76e82fb8",
+      "translationHash": "8b396cce205b042ea6c9a50a0ae64c2091fece85144f51cea7b6b55ba17f5a22",
+      "summary": "Compared the full Japanese article and twelve translations with current Chrome Web Store listings and the Code Searcher developer privacy policy; corrected factual scope, data-handling disclosures, dates, and work-org cautions.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared full descriptions, supported development tasks, third-party status, listing dates, and installation cautions across the Japanese source and all translations."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked product names, SOQL, Apex, Visualforce, Salesforce REST API, OAuth, access/refresh tokens, browser local storage, Location, and Web history disclosures."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No formulas or calculations are present; versions and dates were checked as listing metadata."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code or commands are included; feature descriptions were compared with the cited store listings."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked both Chrome Web Store product pages and the Code Searcher developer privacy policy, which says the Salesforce instance URL and access/refresh tokens are kept in browser local storage for API calls."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Extension use, permissions, functionality, and vendor disclosures were not tested in a live Salesforce org; listings and policies may change after the review date.",
+        "The vendor privacy policy is a provider statement and was not independently audited."
+      ]
+    }
+  }
+}

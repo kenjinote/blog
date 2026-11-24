@@ -16085,6 +16085,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-138.json",
       "evidenceHash": "b1c4ffe0f5201b8c87144b57a1d37c44b0d141b9fe112459629a6107f1c0d299"
+    },
+    "post/SalesforceおすすめChrome拡張/index.en.md": {
+      "source": "post/SalesforceおすすめChrome拡張/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "fde16c43bd12e065710dcc37950036fe12ce1feeb1ca8dc900e6abdd76e82fb8",
+      "translationHash": "50ccf4afb11367f85df8d687e84a14a11602be3870af21b4e7280befed138d17",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-139.json",
+      "evidenceHash": "875883a68f5e37a9a13fe7823879f0d9719d549beb870f423bf81a26f7eea6cf"
+    },
+    "post/SalesforceおすすめChrome拡張/index.zh-cn.md": {
+      "source": "post/SalesforceおすすめChrome拡張/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "fde16c43bd12e065710dcc37950036fe12ce1feeb1ca8dc900e6abdd76e82fb8",
+      "translationHash": "54498fc6ffba4764b068e2f24207f0012506745fda7e52ec0021eb25a87157f3",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-139.json",
+      "evidenceHash": "af2199db8ba444aa513987fe5fbc620ab3d51a6989cf924fd8c494abb880bd97"
+    },
+    "post/SalesforceおすすめChrome拡張/index.es.md": {
+      "source": "post/SalesforceおすすめChrome拡張/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "fde16c43bd12e065710dcc37950036fe12ce1feeb1ca8dc900e6abdd76e82fb8",
+      "translationHash": "7aec887d12413e82feedcd39a724d142b86707edd84cb03771b9ccb0cded79f5",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-139.json",
+      "evidenceHash": "d50a108852dd93b56e2168d23d654a9e263e1a54738561035d138e08ce00ce06"
+    },
+    "post/SalesforceおすすめChrome拡張/index.ko.md": {
+      "source": "post/SalesforceおすすめChrome拡張/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "fde16c43bd12e065710dcc37950036fe12ce1feeb1ca8dc900e6abdd76e82fb8",
+      "translationHash": "c36679c59461b619f3823ba7ec2b0cd5aa46cab0122d721e93e5c6c3c29bf783",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-139.json",
+      "evidenceHash": "83978b8dc84280fbcbd1b1eefbbdadc2ad7ec3b890da3521aa47496d2866ff38"
+    },
+    "post/SalesforceおすすめChrome拡張/index.pt.md": {
+      "source": "post/SalesforceおすすめChrome拡張/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "fde16c43bd12e065710dcc37950036fe12ce1feeb1ca8dc900e6abdd76e82fb8",
+      "translationHash": "eaf8859ccf901897049c6a3780863ea8b453baec5e5a4ee10f82ee812752c47c",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-139.json",
+      "evidenceHash": "eb31066f3b471b54133566de7e2c062495ef186fca9953bc4343839df04a6e8d"
+    },
+    "post/SalesforceおすすめChrome拡張/index.zh-tw.md": {
+      "source": "post/SalesforceおすすめChrome拡張/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "fde16c43bd12e065710dcc37950036fe12ce1feeb1ca8dc900e6abdd76e82fb8",
+      "translationHash": "b70f373724230e6dc91f773fdc49c94bfe5f8cda6f5f8e2bb38e5580ae31cef3",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-139.json",
+      "evidenceHash": "9702fada189b870dfa91c3d1bd7af448dd23fcd34d6174550972fc23e516ea7d"
+    },
+    "post/SalesforceおすすめChrome拡張/index.hi.md": {
+      "source": "post/SalesforceおすすめChrome拡張/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "fde16c43bd12e065710dcc37950036fe12ce1feeb1ca8dc900e6abdd76e82fb8",
+      "translationHash": "75f8939d3a33d178e4bedec8208dce0aaa055ca65ae986d3d9a3f0a08dd63666",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-139.json",
+      "evidenceHash": "fd79741311637b2848eb7397bae3e0ef29fddabe2d3e28e19ddeac2c538bfc18"
+    },
+    "post/SalesforceおすすめChrome拡張/index.fr.md": {
+      "source": "post/SalesforceおすすめChrome拡張/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "fde16c43bd12e065710dcc37950036fe12ce1feeb1ca8dc900e6abdd76e82fb8",
+      "translationHash": "f6f5eef89c75a49128ee0626849082c48929833486862e8c774ed8c91ef6aa2d",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-139.json",
+      "evidenceHash": "e8e76730a3ac74e2bd46f0c7a56bbcc2c36a8a2fc0eb4ea033a279f3df527495"
+    },
+    "post/SalesforceおすすめChrome拡張/index.de.md": {
+      "source": "post/SalesforceおすすめChrome拡張/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "fde16c43bd12e065710dcc37950036fe12ce1feeb1ca8dc900e6abdd76e82fb8",
+      "translationHash": "9049c0901cbc6ea13397e1b7e573c18e86142fcd62bfdc81f9e7f09d5c8d7bc6",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-139.json",
+      "evidenceHash": "e32656fa84717b94c8e9efa96616e94337417599d3e27a2a24ad808e75d70d88"
+    },
+    "post/SalesforceおすすめChrome拡張/index.ar.md": {
+      "source": "post/SalesforceおすすめChrome拡張/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "fde16c43bd12e065710dcc37950036fe12ce1feeb1ca8dc900e6abdd76e82fb8",
+      "translationHash": "c82d6dcaed42c14feed74d581a3da0a13051d1886fc32216e3d703ef4898cd1d",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-139.json",
+      "evidenceHash": "66619bae16668fcfbb77de4051a5f02c19fcdbdae2dd2be824697b4e06df8765"
+    },
+    "post/SalesforceおすすめChrome拡張/index.ru.md": {
+      "source": "post/SalesforceおすすめChrome拡張/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "fde16c43bd12e065710dcc37950036fe12ce1feeb1ca8dc900e6abdd76e82fb8",
+      "translationHash": "af9bfe60ff28186204f470ed1fac5131976953437fd8e658d693ec8c8ff2bb49",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-139.json",
+      "evidenceHash": "dcd5ed6ce23dc8533545e394d18f0ba6aab10bf91f2574fb87dc7a1b318f0228"
+    },
+    "post/SalesforceおすすめChrome拡張/index.id.md": {
+      "source": "post/SalesforceおすすめChrome拡張/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "fde16c43bd12e065710dcc37950036fe12ce1feeb1ca8dc900e6abdd76e82fb8",
+      "translationHash": "8b396cce205b042ea6c9a50a0ae64c2091fece85144f51cea7b6b55ba17f5a22",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-139.json",
+      "evidenceHash": "6b552eee0feade20c702c7b6ee300db94bd3e150a5b549e24ff0226ebdebb819"
     }
   }
 }

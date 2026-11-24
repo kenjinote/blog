@@ -1,31 +1,30 @@
 ---
-title: 'Améliorez le développement Salesforce ! Un résumé des extensions Chrome recommandées'
-date: "2026-09-24T19:44:38+09:00"
+title: "Deux extensions Chrome pour Salesforce : fonctions et précautions"
 slug: "SalesforceRecommandationExtension Chrome"
 date: 2022-05-02T10:39:36+09:00
+lastmod: "2026-11-24T00:00:00+09:00"
 tags: ["Salesforce", "Extension Chrome"]
 draft: false
 image: "img.webp"
 categories: ["it-technology"]
-description: 'Présente des extensions Chrome recommandées qui améliorent considérablement l''efficacité du développement et des opérations de Salesforce. Une sélection stricte d''outils incontournables pour les ingénieurs, tels que DevTools utiles pour la recherche de champs personnalisés et l''assemblage SOQL, et des extensions utiles pour la recherche de code.'
+description: "Présentation de Salesforce DevTools et Salesforce advanced Code searcher d’après leurs fiches Chrome Web Store, avec la date, les autorisations, la confidentialité et l’accord de l’administrateur avant toute connexion à une organisation professionnelle."
 ---
+Voici deux extensions Chrome pour le développement Salesforce. Ce sont des produits tiers indépendants de Salesforce. Les informations ci-dessous proviennent des fiches consultées le **2026-11-24** ; les fonctions et autorisations peuvent évoluer. Avant de connecter une organisation professionnelle, vérifiez les autorisations et les informations de confidentialité actuelles et demandez l’accord de l’administrateur Salesforce.
 
-### Salesforce DevTools
+## Salesforce DevTools
 
-![img_1.png](img_1.webp)
+![Salesforce DevTools](img_1.webp)
 
-![img_2.png](img_2.webp)
+![Interface de requête Salesforce DevTools](img_2.webp)
 
-Vous pouvez rechercher des champs personnalisés ou exporter des champs d'objets personnalisés en masse.
+La fiche Chrome Web Store présente des fonctions de création de requêtes SOQL et de code Apex, de recherche d’objets/champs et d’export de définitions. Elle indique la version 3.12.1, mise à jour le 2026-07-23, et déclare traiter les données Location et Web history. Consultez les autorisations actuelles et la politique de confidentialité du développeur avant l’installation.
 
-Il est également utile de pouvoir créer du SOQL sur place.
+[Salesforce DevTools — Chrome Web Store](https://chromewebstore.google.com/detail/salesforce-devtools/ehgmhinnhggigkogkbhnbodhbfjgncjf)
 
-[Salesforce DevTools](https://chrome.google.com/webstore/detail/salesforce-devtools/ehgmhinnhggigkogkbhnbodhbfjgncjf)
+## Salesforce advanced Code searcher
 
-### Salesforce advanced Code searcher
+![Salesforce advanced Code searcher](img.webp)
 
-![img.png](img.webp)
+La fiche décrit la recherche de classes Apex, déclencheurs, pages/composants Visualforce et d’autres codes Salesforce à l’aide de fonctions de Salesforce REST API. Elle indique la version 1.30, mise à jour le 2024-11-06. Selon la politique de confidentialité du développeur, l’extension conserve l’URL de l’instance Salesforce et les jetons d’accès/renouvellement dans le stockage local du navigateur pour appeler les API Salesforce. Vérifiez le périmètre OAuth et la politique de sécurité de votre organisation avant la connexion.
 
-Pratique lors de la recherche de code [Salesforce](/fr/p/salesforcechatter%E5%85%A8%E6%B6%88%E3%81%97commande/).
-
-[Salesforce advanced Code searcher](https://chrome.google.com/webstore/detail/salesforce-advanced-code/lnkgcmpjkkkeffambkllliefdpjdklmi)
+[Salesforce advanced Code searcher — Chrome Web Store](https://chromewebstore.google.com/detail/salesforce-advanced-code/lnkgcmpjkkkeffambkllliefdpjdklmi) · [Politique de confidentialité du développeur](https://sf-advanced-code-searcher.web.app/)

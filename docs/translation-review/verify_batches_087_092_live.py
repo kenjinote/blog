@@ -360,6 +360,14 @@ ARTICLES = {
         "scopeMarkers": {"ja":"行き詰まった時に見返したい言葉","en":"Words to revisit when I feel stuck","zh-cn":"感到受挫时可以重看的话","es":"Palabras que vuelvo a leer cuando me atasco","ko":"막막할 때 다시 보는 말","pt":"Palavras que revejo quando me sinto travado","zh-tw":"感到受挫時可以重看的話","hi":"जब मन अटक जाए तो फिर से पढ़ने योग्य शब्द","fr":"Des mots à relire quand je me sens bloqué","de":"Worte, die ich bei Stillstand erneut lese","ar":"كلمات أعود إليها عندما أشعر بالتعثر","ru":"Слова, к которым я возвращаюсь в трудный момент","id":"Kata-kata yang saya baca kembali saat merasa buntu"},
         "date": "2022-09-08",
     },
+    139: {
+        "bundle": ROOT / "content/post/SalesforceおすすめChrome拡張",
+        "slug": "SalesforceおすすめChrome拡張",
+        "links": ["https://chromewebstore.google.com/detail/salesforce-devtools/ehgmhinnhggigkogkbhnbodhbfjgncjf", "https://chromewebstore.google.com/detail/salesforce-advanced-code/lnkgcmpjkkkeffambkllliefdpjdklmi", "https://sf-advanced-code-searcher.web.app/"],
+        "markers": ["Salesforce DevTools", "Salesforce advanced Code searcher", "Salesforce REST API"],
+        "scopeMarkers": {"ja":"業務用組織に接続する前に", "en":"Before connecting either extension to a work org", "zh-cn":"连接工作组织前请查看最新权限与隐私说明", "es":"Antes de conectar una organización de trabajo revisa los permisos", "ko":"업무용 조직에 연결하기 전에 최신 권한", "pt":"Antes de conectar uma organização de trabalho confira as permissões", "zh-tw":"連接工作組織前請先查看最新權限", "hi":"काम के संगठन से जोड़ने से पहले मौजूदा अनुमतियाँ", "fr":"Avant de connecter une organisation professionnelle vérifiez les autorisations", "de":"Prüfen Sie vor einer Verbindung mit einer Arbeitsorganisation die aktuellen Berechtigungs", "ar":"قبل ربط أي منهما بمؤسسة العمل راجع الأذونات", "ru":"Перед подключением к рабочей организации проверьте актуальные разрешения", "id":"Sebelum menghubungkannya ke organisasi kerja periksa izin"},
+        "date": "2022-05-02",
+    },
     138: {
         "bundle": ROOT / "content/post/macでコピー＆ペーストのショートカットキーをWindowsと合わせる方法",
         "slug": "macでコピー＆ペーストのショートカットキーをWindowsと合わせる方法",
@@ -644,7 +652,7 @@ def slug_key(value):
 parser = argparse.ArgumentParser()
 parser.add_argument("--ci-run", type=int, required=True)
 parser.add_argument("--commit", required=True)
-parser.add_argument("--max-batch", type=int, choices=(90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138), default=138)
+parser.add_argument("--max-batch", type=int, choices=(90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139), default=139)
 args = parser.parse_args()
 ARTICLES = {number: article for number, article in ARTICLES.items() if number <= args.max_batch}
 with urllib.request.urlopen(f"https://github.com/kenjinote/blog/actions/runs/{args.ci_run}", timeout=45) as response:

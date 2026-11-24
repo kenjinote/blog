@@ -1,31 +1,30 @@
 ---
-title: 'Salesforce का विकास तेज़ होगा! अनुशंसित Chrome एक्सटेंशन की सूची'
-date: "2026-09-24T19:44:38+09:00"
+title: "Salesforce के लिए Chrome एक्सटेंशन: सुविधाएँ और सुरक्षा संबंधी बातें"
 slug: "SalesforceअनुशंसाChrome एक्सटेंशन"
 date: 2022-05-02T10:39:36+09:00
+lastmod: "2026-11-24T00:00:00+09:00"
 tags: ["Salesforce", "Chrome एक्सटेंशन"]
 draft: false
 image: "img.webp"
 categories: ["it-technology"]
-description: 'हम अनुशंसित Chrome एक्सटेंशन प्रस्तुत करते हैं जो Salesforce के विकास और संचालन को नाटकीय रूप से सुव्यवस्थित करते हैं। हमने कस्टम फ़ील्ड्स को खोजने और SOQL बनाने के लिए सुविधाजनक DevTools, और कोड खोजने के लिए एक्सटेंशन जैसे इंजीनियरों के लिए आवश्यक टूल का चयन किया है।'
+description: "Chrome Web Store की जानकारी के आधार पर Salesforce DevTools और Salesforce advanced Code searcher का परिचय, साथ में तारीख, अनुमतियों, गोपनीयता और कार्य-संगठन से जुड़ने से पहले व्यवस्थापक की मंज़ूरी पर नोट।"
 ---
+Salesforce विकास के लिए दो Chrome एक्सटेंशन यहाँ दिए गए हैं। दोनों Salesforce से स्वतंत्र तीसरे पक्ष के उत्पाद हैं। नीचे की जानकारी **2026-11-24 को देखी गई स्टोर सूचियों** पर आधारित है; सुविधाएँ और अनुमतियाँ बदल सकती हैं। काम के संगठन से जोड़ने से पहले मौजूदा अनुमतियाँ और गोपनीयता विवरण पढ़ें तथा Salesforce व्यवस्थापक की मंज़ूरी लें।
 
-### Salesforce DevTools
+## Salesforce DevTools
 
-![img_1.png](img_1.webp)
+![Salesforce DevTools](img_1.webp)
 
-![img_2.png](img_2.webp)
+![Salesforce DevTools क्वेरी इंटरफ़ेस](img_2.webp)
 
-आप कस्टम फ़ील्ड खोज सकते हैं या कस्टम ऑब्जेक्ट फ़ील्ड को एक साथ निर्यात कर सकते हैं।
+Chrome Web Store सूची में SOQL और Apex बनाने, ऑब्जेक्ट/फ़ील्ड खोजने तथा परिभाषाएँ निर्यात करने की सुविधाएँ बताई गई हैं। वहाँ संस्करण 3.12.1 और अंतिम अपडेट 2026-07-23 दिखता है; डेटा विवरण में Location और Web history शामिल हैं। इंस्टॉल करने से पहले वर्तमान अनुमतियाँ और डेवलपर की गोपनीयता नीति देखें।
 
-मौके पर SOQL बनाने में सक्षम होना भी उपयोगी है।
+[Salesforce DevTools — Chrome Web Store](https://chromewebstore.google.com/detail/salesforce-devtools/ehgmhinnhggigkogkbhnbodhbfjgncjf)
 
-[Salesforce DevTools](https://chrome.google.com/webstore/detail/salesforce-devtools/ehgmhinnhggigkogkbhnbodhbfjgncjf)
+## Salesforce advanced Code searcher
 
-### Salesforce advanced Code searcher
+![Salesforce advanced Code searcher](img.webp)
 
-![img.png](img.webp)
+सूची में Salesforce REST API सुविधाओं से Apex classes, triggers, Visualforce pages/components और अन्य Salesforce code खोजने की बात है। यह संस्करण 1.30 और अंतिम अपडेट 2024-11-06 दिखाती है। डेवलपर की गोपनीयता नीति के अनुसार, एक्सटेंशन Salesforce API कॉल के लिए Salesforce instance URL और access/refresh tokens को ब्राउज़र के local storage में रखता है। कार्य-संगठन से जोड़ने से पहले OAuth अनुमति और संगठन की सुरक्षा नीति जाँचें।
 
-[Salesforce](/hi/p/salesforce%E3%81%AEsoql%E3%82%92%E5%88%A9%E7%94%A8%E3%81%97%E3%81%A6%E6%97%A5%E5%88%A5%E3%81%AE%E3%83%AC%E3%82%B3%E3%83%BC%E3%83%89%E4%BD%9C%E6%88%90%E6%95%B0%E3%82%92%E5%8F%96%E5%BE%97%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/) कोड खोजते समय उपयोगी।
-
-[Salesforce advanced Code searcher](https://chrome.google.com/webstore/detail/salesforce-advanced-code/lnkgcmpjkkkeffambkllliefdpjdklmi)
+[Salesforce advanced Code searcher — Chrome Web Store](https://chromewebstore.google.com/detail/salesforce-advanced-code/lnkgcmpjkkkeffambkllliefdpjdklmi) · [डेवलपर की गोपनीयता नीति](https://sf-advanced-code-searcher.web.app/)
