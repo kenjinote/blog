@@ -1,0 +1,441 @@
+{
+  "version": 1,
+  "batch": 149,
+  "article": "コミュニティ運営の参考にしたいScratchの6つの指針",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "3f3eacc0f24880a6cf24cc0506fef15b70ffd99532474f2e0caf990147557036",
+  "sources": [
+    "https://scratch.mit.edu/community_guidelines/"
+  ],
+  "scope": "Compared full Japanese source and twelve translations, six principles, remix attribution, privacy/safety, moderation/reporting wording, publication metadata, and reference URL against Scratch official guidelines.",
+  "findings": [
+    "Removed duplicate future date; retained publication date 2022-09-23 and recorded lastmod 2026-11-24.",
+    "Replaced the Japanese Scratch Wiki link with the current official Scratch Community Guidelines.",
+    "Clarified constructive feedback, attribution when remixing, and reporting inappropriate content.",
+    "Reframed Scratch rules as a model to adapt rather than universal rules for every community.",
+    "Updated all twelve translations and corrected the category from it-technology to philosophy."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/コミュニティに必要なこと/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/コミュニティに必要なこと/index.md",
+      "sourceHash": "3f3eacc0f24880a6cf24cc0506fef15b70ffd99532474f2e0caf990147557036",
+      "translationHash": "d443e92b6d9b9352d898fc11a88da4843ee2e853cf521f5fc995ff5d93d06e18",
+      "summary": "Compared the full Japanese article and twelve translations with the current official Scratch Community Guidelines. Aligned all six principles, including constructive feedback, credit when remixing, privacy, honesty, and using Report; clarified that Scratch guidance is an example to adapt, not a universal policy.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all six principles and the community-specific caveat across locales; restored attribution when remixing and reporting inappropriate content."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked community guidelines, remix, attribution/credit, privacy, constructive feedback, impersonation/rumors, and report function against Scratch official wording."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No formulas or numerical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the Japanese Scratch Wiki URL with Scratch’s official Community Guidelines page."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "These are Scratch-specific guidelines, not a complete universal moderation policy; each community must adapt them to its audience, purpose, privacy needs, and reporting process."
+      ]
+    },
+    "post/コミュニティに必要なこと/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/コミュニティに必要なこと/index.md",
+      "sourceHash": "3f3eacc0f24880a6cf24cc0506fef15b70ffd99532474f2e0caf990147557036",
+      "translationHash": "e2bc1062d7c91aca9693d81aaf1b9000435a37e4934a5dfabe78e0c0f2c27632",
+      "summary": "Compared the full Japanese article and twelve translations with the current official Scratch Community Guidelines. Aligned all six principles, including constructive feedback, credit when remixing, privacy, honesty, and using Report; clarified that Scratch guidance is an example to adapt, not a universal policy.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all six principles and the community-specific caveat across locales; restored attribution when remixing and reporting inappropriate content."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked community guidelines, remix, attribution/credit, privacy, constructive feedback, impersonation/rumors, and report function against Scratch official wording."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No formulas or numerical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the Japanese Scratch Wiki URL with Scratch’s official Community Guidelines page."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "These are Scratch-specific guidelines, not a complete universal moderation policy; each community must adapt them to its audience, purpose, privacy needs, and reporting process."
+      ]
+    },
+    "post/コミュニティに必要なこと/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/コミュニティに必要なこと/index.md",
+      "sourceHash": "3f3eacc0f24880a6cf24cc0506fef15b70ffd99532474f2e0caf990147557036",
+      "translationHash": "42c1227dc35d91496cfb5fed07d0c7a5249b937f66b371853fb3f7f1cc9bdccd",
+      "summary": "Compared the full Japanese article and twelve translations with the current official Scratch Community Guidelines. Aligned all six principles, including constructive feedback, credit when remixing, privacy, honesty, and using Report; clarified that Scratch guidance is an example to adapt, not a universal policy.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all six principles and the community-specific caveat across locales; restored attribution when remixing and reporting inappropriate content."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked community guidelines, remix, attribution/credit, privacy, constructive feedback, impersonation/rumors, and report function against Scratch official wording."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No formulas or numerical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the Japanese Scratch Wiki URL with Scratch’s official Community Guidelines page."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "These are Scratch-specific guidelines, not a complete universal moderation policy; each community must adapt them to its audience, purpose, privacy needs, and reporting process."
+      ]
+    },
+    "post/コミュニティに必要なこと/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/コミュニティに必要なこと/index.md",
+      "sourceHash": "3f3eacc0f24880a6cf24cc0506fef15b70ffd99532474f2e0caf990147557036",
+      "translationHash": "efe4be18fd47921736f20015f339fdd05335ae35d763e0a7b4a9735546e310a5",
+      "summary": "Compared the full Japanese article and twelve translations with the current official Scratch Community Guidelines. Aligned all six principles, including constructive feedback, credit when remixing, privacy, honesty, and using Report; clarified that Scratch guidance is an example to adapt, not a universal policy.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all six principles and the community-specific caveat across locales; restored attribution when remixing and reporting inappropriate content."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked community guidelines, remix, attribution/credit, privacy, constructive feedback, impersonation/rumors, and report function against Scratch official wording."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No formulas or numerical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the Japanese Scratch Wiki URL with Scratch’s official Community Guidelines page."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "These are Scratch-specific guidelines, not a complete universal moderation policy; each community must adapt them to its audience, purpose, privacy needs, and reporting process."
+      ]
+    },
+    "post/コミュニティに必要なこと/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/コミュニティに必要なこと/index.md",
+      "sourceHash": "3f3eacc0f24880a6cf24cc0506fef15b70ffd99532474f2e0caf990147557036",
+      "translationHash": "7ee35937e3bcea3a6893e0b53f81b31bec43a953740f1439c887ecde396236a0",
+      "summary": "Compared the full Japanese article and twelve translations with the current official Scratch Community Guidelines. Aligned all six principles, including constructive feedback, credit when remixing, privacy, honesty, and using Report; clarified that Scratch guidance is an example to adapt, not a universal policy.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all six principles and the community-specific caveat across locales; restored attribution when remixing and reporting inappropriate content."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked community guidelines, remix, attribution/credit, privacy, constructive feedback, impersonation/rumors, and report function against Scratch official wording."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No formulas or numerical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the Japanese Scratch Wiki URL with Scratch’s official Community Guidelines page."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "These are Scratch-specific guidelines, not a complete universal moderation policy; each community must adapt them to its audience, purpose, privacy needs, and reporting process."
+      ]
+    },
+    "post/コミュニティに必要なこと/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/コミュニティに必要なこと/index.md",
+      "sourceHash": "3f3eacc0f24880a6cf24cc0506fef15b70ffd99532474f2e0caf990147557036",
+      "translationHash": "fcd17824d1e72e611f856dcd4b3a6ec1bd033c0a28b9cb02ee1b669c312dc54d",
+      "summary": "Compared the full Japanese article and twelve translations with the current official Scratch Community Guidelines. Aligned all six principles, including constructive feedback, credit when remixing, privacy, honesty, and using Report; clarified that Scratch guidance is an example to adapt, not a universal policy.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all six principles and the community-specific caveat across locales; restored attribution when remixing and reporting inappropriate content."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked community guidelines, remix, attribution/credit, privacy, constructive feedback, impersonation/rumors, and report function against Scratch official wording."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No formulas or numerical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the Japanese Scratch Wiki URL with Scratch’s official Community Guidelines page."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "These are Scratch-specific guidelines, not a complete universal moderation policy; each community must adapt them to its audience, purpose, privacy needs, and reporting process."
+      ]
+    },
+    "post/コミュニティに必要なこと/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/コミュニティに必要なこと/index.md",
+      "sourceHash": "3f3eacc0f24880a6cf24cc0506fef15b70ffd99532474f2e0caf990147557036",
+      "translationHash": "be385b857061026f234a09321e51e05e0db8e1935b31e9f4bd53c2d97a24e1eb",
+      "summary": "Compared the full Japanese article and twelve translations with the current official Scratch Community Guidelines. Aligned all six principles, including constructive feedback, credit when remixing, privacy, honesty, and using Report; clarified that Scratch guidance is an example to adapt, not a universal policy.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all six principles and the community-specific caveat across locales; restored attribution when remixing and reporting inappropriate content."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked community guidelines, remix, attribution/credit, privacy, constructive feedback, impersonation/rumors, and report function against Scratch official wording."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No formulas or numerical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the Japanese Scratch Wiki URL with Scratch’s official Community Guidelines page."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "These are Scratch-specific guidelines, not a complete universal moderation policy; each community must adapt them to its audience, purpose, privacy needs, and reporting process."
+      ]
+    },
+    "post/コミュニティに必要なこと/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/コミュニティに必要なこと/index.md",
+      "sourceHash": "3f3eacc0f24880a6cf24cc0506fef15b70ffd99532474f2e0caf990147557036",
+      "translationHash": "8e9233addbd7136f572a063fd1984bbe17c075a25c46e07d7635ca9084bc7467",
+      "summary": "Compared the full Japanese article and twelve translations with the current official Scratch Community Guidelines. Aligned all six principles, including constructive feedback, credit when remixing, privacy, honesty, and using Report; clarified that Scratch guidance is an example to adapt, not a universal policy.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all six principles and the community-specific caveat across locales; restored attribution when remixing and reporting inappropriate content."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked community guidelines, remix, attribution/credit, privacy, constructive feedback, impersonation/rumors, and report function against Scratch official wording."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No formulas or numerical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the Japanese Scratch Wiki URL with Scratch’s official Community Guidelines page."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "These are Scratch-specific guidelines, not a complete universal moderation policy; each community must adapt them to its audience, purpose, privacy needs, and reporting process."
+      ]
+    },
+    "post/コミュニティに必要なこと/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/コミュニティに必要なこと/index.md",
+      "sourceHash": "3f3eacc0f24880a6cf24cc0506fef15b70ffd99532474f2e0caf990147557036",
+      "translationHash": "0014400782054688f4b3b370e438b839ee6deb13b45da140ea331e1b2775fd8f",
+      "summary": "Compared the full Japanese article and twelve translations with the current official Scratch Community Guidelines. Aligned all six principles, including constructive feedback, credit when remixing, privacy, honesty, and using Report; clarified that Scratch guidance is an example to adapt, not a universal policy.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all six principles and the community-specific caveat across locales; restored attribution when remixing and reporting inappropriate content."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked community guidelines, remix, attribution/credit, privacy, constructive feedback, impersonation/rumors, and report function against Scratch official wording."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No formulas or numerical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the Japanese Scratch Wiki URL with Scratch’s official Community Guidelines page."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "These are Scratch-specific guidelines, not a complete universal moderation policy; each community must adapt them to its audience, purpose, privacy needs, and reporting process."
+      ]
+    },
+    "post/コミュニティに必要なこと/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/コミュニティに必要なこと/index.md",
+      "sourceHash": "3f3eacc0f24880a6cf24cc0506fef15b70ffd99532474f2e0caf990147557036",
+      "translationHash": "83dd8212c5013322314c67908cf19ece7c2a6a4103680082071a223fb0b51792",
+      "summary": "Compared the full Japanese article and twelve translations with the current official Scratch Community Guidelines. Aligned all six principles, including constructive feedback, credit when remixing, privacy, honesty, and using Report; clarified that Scratch guidance is an example to adapt, not a universal policy.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all six principles and the community-specific caveat across locales; restored attribution when remixing and reporting inappropriate content."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked community guidelines, remix, attribution/credit, privacy, constructive feedback, impersonation/rumors, and report function against Scratch official wording."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No formulas or numerical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the Japanese Scratch Wiki URL with Scratch’s official Community Guidelines page."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "These are Scratch-specific guidelines, not a complete universal moderation policy; each community must adapt them to its audience, purpose, privacy needs, and reporting process."
+      ]
+    },
+    "post/コミュニティに必要なこと/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/コミュニティに必要なこと/index.md",
+      "sourceHash": "3f3eacc0f24880a6cf24cc0506fef15b70ffd99532474f2e0caf990147557036",
+      "translationHash": "89dd99cb7bdd9b95e12e8cd4affb00d2816cb70ad7b316c5261428539dd1c71b",
+      "summary": "Compared the full Japanese article and twelve translations with the current official Scratch Community Guidelines. Aligned all six principles, including constructive feedback, credit when remixing, privacy, honesty, and using Report; clarified that Scratch guidance is an example to adapt, not a universal policy.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all six principles and the community-specific caveat across locales; restored attribution when remixing and reporting inappropriate content."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked community guidelines, remix, attribution/credit, privacy, constructive feedback, impersonation/rumors, and report function against Scratch official wording."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No formulas or numerical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the Japanese Scratch Wiki URL with Scratch’s official Community Guidelines page."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "These are Scratch-specific guidelines, not a complete universal moderation policy; each community must adapt them to its audience, purpose, privacy needs, and reporting process."
+      ]
+    },
+    "post/コミュニティに必要なこと/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/コミュニティに必要なこと/index.md",
+      "sourceHash": "3f3eacc0f24880a6cf24cc0506fef15b70ffd99532474f2e0caf990147557036",
+      "translationHash": "f59f95d0f5655906d8e44076ac710666fbf98bfed5533daa8cfce449e53f63ea",
+      "summary": "Compared the full Japanese article and twelve translations with the current official Scratch Community Guidelines. Aligned all six principles, including constructive feedback, credit when remixing, privacy, honesty, and using Report; clarified that Scratch guidance is an example to adapt, not a universal policy.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all six principles and the community-specific caveat across locales; restored attribution when remixing and reporting inappropriate content."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked community guidelines, remix, attribution/credit, privacy, constructive feedback, impersonation/rumors, and report function against Scratch official wording."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No formulas or numerical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the Japanese Scratch Wiki URL with Scratch’s official Community Guidelines page."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "These are Scratch-specific guidelines, not a complete universal moderation policy; each community must adapt them to its audience, purpose, privacy needs, and reporting process."
+      ]
+    }
+  }
+}

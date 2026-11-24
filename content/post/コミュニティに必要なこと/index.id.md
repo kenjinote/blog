@@ -1,31 +1,27 @@
 ---
-title: 'Apa yang Dibutuhkan untuk Komunitas yang Baik? Tips Manajemen Belajar dari Pedoman Scratch'
-date: "2026-09-24T19:44:38+09:00"
-slug: "Komunitasに必要なこと"
+title: "Enam Pedoman Scratch sebagai Inspirasi Komunitas"
 date: 2022-09-23T01:37:43+09:00
+lastmod: "2026-11-24T00:00:00+09:00"
+slug: "Komunitasに必要なこと"
 tags: ["Komunitas", "Lain-lain"]
 draft: false
 image: "img.webp"
-categories: ["it-technology"]
-description: 'Menyelidiki elemen-elemen yang diperlukan untuk menjalankan komunitas yang sehat dan nyaman berdasarkan pedoman komunitas canggih dari situs belajar pemrograman ''Scratch''. Memperkenalkan perspektif penting yang berlaku di setiap perkumpulan, seperti rasa hormat kepada orang lain dan memastikan keamanan.'
+categories: ["philosophy"]
+description: "Ringkasan enam pedoman resmi Scratch: rasa hormat, privasi, masukan membangun, remix dengan atribusi, kejujuran, dan pelaporan, serta catatan adaptasi."
 ---
-# Apa yang Dibutuhkan Komunitas
+## Pedoman Komunitas Scratch
 
-Saya merasa bahwa pedoman komunitas Scratch sangat disempurnakan dan bagus.
-Hal-hal berikut ini tertulis.
+Pedoman resmi Komunitas Scratch memuat enam gagasan:
 
-> Perlakukan semua orang dengan hormat.
+1. **Hormati semua orang.** Ingat bahwa orang dari berbagai usia dan latar belakang akan melihat konten yang Anda bagikan.
+2. **Jaga keamanan dan privasi.** Jangan memublikasikan data pribadi seperti nama asli, nomor telepon, atau alamat.
+3. **Berikan masukan yang membangun.** Sebutkan hal positif dan berikan saran yang berguna.
+4. **Berbagi dan melakukan remix dengan bertanggung jawab.** Jika mengembangkan proyek Scratch, cantumkan kredit bagi pembuat karya yang digunakan.
+5. **Bersikap jujur.** Jangan menyamar sebagai orang lain atau menyebarkan rumor.
+6. **Bantu menjaga ruang tetap ramah.** Laporkan konten yang tidak pantas alih-alih memperbesar pertengkaran.
 
-> Tetap aman: jangan mempublikasikan informasi pribadi atau kontak.
+Pedoman ini dibuat untuk Scratch dan penggunanya. Komunitas lain perlu menyesuaikan aturan dengan peserta, tujuan, privasi, moderasi, serta jalur bantuan dan pelaporan. Scratch dapat menjadi titik awal, bukan kebijakan operasional lengkap untuk setiap kelompok.
 
-> Berikan komentar yang bermanfaat.
+## Referensi resmi
 
-> Pahami budaya remix.
-
-> Bersikaplah jujur.
-
-> Jadikan situs ini tempat yang nyaman.
-
-Saya pikir perspektif ini berlaku untuk komunitas mana pun.
-
-https://ja.scratch-wiki.info/wiki/%E3%82%B3%E3%83%9F%E3%83%A5%E3%83%8B%E3%83%86%E3%82%A3%E3%83%BC%E3%82%AC%E3%82%A4%E3%83%89%E3%83%A9%E3%82%A4%E3%83%B3
+- [Pedoman Komunitas Scratch](https://scratch.mit.edu/community_guidelines/)

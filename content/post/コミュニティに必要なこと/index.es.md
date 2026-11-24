@@ -1,39 +1,27 @@
 ---
-
-
-
-
-title: '¿Qué se necesita para una buena comunidad? Pistas de gestión de las directrices de Scratch'
-date: "2026-09-24T19:44:38+09:00"
-slug: "Comunidadに必要なこと"
+title: "Seis pautas de Scratch útiles para crear una comunidad"
 date: 2022-09-23T01:37:43+09:00
+lastmod: "2026-11-24T00:00:00+09:00"
+slug: "Comunidadに必要なこと"
 tags: ["Comunidad", "Miscelánea"]
 draft: false
 image: "img.webp"
-categories: ["it-technology"]
-description: 'Consideramos los elementos necesarios para gestionar una comunidad sana y agradable a partir de las sofisticadas directrices de la comunidad del sitio de aprendizaje de programación ''Scratch''. Presentamos perspectivas importantes aplicables a cualquier grupo, como el respeto a los demás y garantizar la seguridad.'
+categories: ["philosophy"]
+description: "Resumen de seis pautas oficiales de Scratch: respeto, privacidad, comentarios constructivos, remix con crédito, honestidad y denuncias; incluye notas para adaptarlas a otros espacios."
 ---
+## Directrices de la comunidad Scratch
 
+Las pautas oficiales de la comunidad de Scratch presentan seis ideas:
 
+1. **Respeto.** Recuerda que personas de distintas edades y contextos verán lo que compartes.
+2. **Seguridad y privacidad.** No publiques datos personales como nombres reales, teléfonos o direcciones.
+3. **Comentarios constructivos.** Señala algo positivo y ofrece sugerencias útiles.
+4. **Compartir y remezclar con responsabilidad.** Si partes de un proyecto de Scratch, da crédito a quienes crearon el material que usas.
+5. **Honestidad.** No suplantes a otras personas ni difundas rumores.
+6. **Mantener un espacio cordial.** Usa la opción de denunciar contenido inapropiado en vez de agravar una discusión.
 
+Estas pautas están pensadas para Scratch y su público. Cada comunidad debe adaptarlas a sus participantes, objetivos, necesidades de privacidad, moderación y vías de ayuda o denuncia. Scratch sirve como punto de partida, no como una política completa para todos los grupos.
 
-# Lo que necesita una comunidad
+## Referencia oficial
 
-Sentí que las pautas de la comunidad de Scratch son muy refinadas y buenas.
-Estaba escrito lo siguiente:
-
-> Trata a todos con respeto.
-
-> Mantente seguro: no publiques información personal o de contacto.
-
-> Haz comentarios útiles.
-
-> Comprende la cultura del remix.
-
-> Sé honesto.
-
-> Haz que el sitio sea un lugar agradable.
-
-Creo que estas perspectivas son aplicables a cualquier comunidad.
-
-https://ja.scratch-wiki.info/wiki/%E3%82%B3%E3%83%9F%E3%83%A5%E3%83%8B%E3%83%86%E3%82%A3%E3%83%BC%E3%82%AC%E3%82%A4%E3%83%89%E3%83%A9%E3%82%A4%E3%83%B3
+- [Directrices de la comunidad Scratch](https://scratch.mit.edu/community_guidelines/)

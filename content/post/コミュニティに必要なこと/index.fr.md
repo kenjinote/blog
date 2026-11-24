@@ -1,31 +1,27 @@
 ---
-title: 'Que faut-il pour avoir une bonne communauté ? Des conseils de gestion tirés des directives de Scratch'
-date: "2026-09-24T19:44:38+09:00"
-slug: "Communautéに必要なこと"
+title: "Six principes de Scratch pour guider la vie d’une communauté"
 date: 2022-09-23T01:37:43+09:00
+lastmod: "2026-11-24T00:00:00+09:00"
+slug: "Communautéに必要なこと"
 tags: ["Communauté", "Divers"]
 draft: false
 image: "img.webp"
-categories: ["it-technology"]
-description: 'À partir des directives communautaires sophistiquées du site d''apprentissage de la programmation ''Scratch'', nous examinons les éléments nécessaires à la gestion d''une communauté saine et agréable. Nous présentons des perspectives importantes valables pour tout rassemblement, telles que le respect d''autrui et la garantie de la sécurité.'
+categories: ["philosophy"]
+description: "Présentation de six principes officiels de Scratch : respect, vie privée, retours constructifs, remix avec crédit, honnêteté et signalement, avec des conseils d’adaptation."
 ---
-# Ce dont une communauté a besoin
+## Principes de la communauté Scratch
 
-J'ai trouvé que les lignes directrices de la communauté Scratch sont très raffinées et excellentes.
-Les choses suivantes étaient écrites :
+Les principes officiels de la communauté Scratch présentent six idées :
 
-> Traitez tout le monde avec respect.
+1. **Respecter chacun.** Gardez à l’esprit que des personnes d’âges et d’horizons différents verront vos publications.
+2. **Protéger la sécurité et la vie privée.** Ne publiez pas de données personnelles comme un vrai nom, un numéro de téléphone ou une adresse.
+3. **Faire des retours constructifs.** Soulignez un point positif et proposez des pistes utiles.
+4. **Partager et remixer de manière responsable.** Si vous partez d’un projet Scratch, créditez les auteurs des éléments utilisés.
+5. **Être honnête.** N’usurpez pas l’identité d’autrui et ne répandez pas de rumeurs.
+6. **Contribuer à un espace accueillant.** Signalez les contenus inappropriés au lieu d’envenimer une dispute.
 
-> Restez en sécurité : Ne divulguez pas d'informations personnelles ou de contact.
+Ces principes sont conçus pour Scratch et son public. Les autres communautés doivent adapter leurs règles aux participants, aux objectifs, à la vie privée, à la modération et aux moyens de demander de l’aide ou de signaler un problème. Scratch constitue un point de départ, pas un règlement complet pour tous les groupes.
 
-> Faites des commentaires utiles.
+## Référence officielle
 
-> Comprenez la culture du remix.
-
-> Soyez honnête.
-
-> Faites du site un endroit agréable.
-
-Je crois que ces perspectives s'appliquent à n'importe quelle communauté.
-
-https://ja.scratch-wiki.info/wiki/%E3%82%B3%E3%83%9F%E3%83%A5%E3%83%8B%E3%83%86%E3%82%A3%E3%83%BC%E3%82%AC%E3%82%A4%E3%83%89%E3%83%A9%E3%82%A4%E3%83%B3
+- [Principes de la communauté Scratch](https://scratch.mit.edu/community_guidelines/)

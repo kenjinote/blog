@@ -17285,6 +17285,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-148.json",
       "evidenceHash": "3ab1d73501e7664b8aaeae7cfc653f1ef8f906544f923e018d6d58aa7658d120"
+    },
+    "post/コミュニティに必要なこと/index.en.md": {
+      "source": "post/コミュニティに必要なこと/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "3f3eacc0f24880a6cf24cc0506fef15b70ffd99532474f2e0caf990147557036",
+      "translationHash": "d443e92b6d9b9352d898fc11a88da4843ee2e853cf521f5fc995ff5d93d06e18",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-149.json",
+      "evidenceHash": "6349ca38b2f4ddd5898f72b17fc41e4fab5bc7827961f5b1728ebbe9ddf124fa"
+    },
+    "post/コミュニティに必要なこと/index.zh-cn.md": {
+      "source": "post/コミュニティに必要なこと/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "3f3eacc0f24880a6cf24cc0506fef15b70ffd99532474f2e0caf990147557036",
+      "translationHash": "e2bc1062d7c91aca9693d81aaf1b9000435a37e4934a5dfabe78e0c0f2c27632",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-149.json",
+      "evidenceHash": "227a5d7b45e0a40a50404122f95d96fd1bd5a787a0e4bb23ba84d16b971ff820"
+    },
+    "post/コミュニティに必要なこと/index.es.md": {
+      "source": "post/コミュニティに必要なこと/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "3f3eacc0f24880a6cf24cc0506fef15b70ffd99532474f2e0caf990147557036",
+      "translationHash": "42c1227dc35d91496cfb5fed07d0c7a5249b937f66b371853fb3f7f1cc9bdccd",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-149.json",
+      "evidenceHash": "e662fa7e9756764cb5bc0234ffaaedf5e80b218b79829a09013f79d4b6348869"
+    },
+    "post/コミュニティに必要なこと/index.ko.md": {
+      "source": "post/コミュニティに必要なこと/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "3f3eacc0f24880a6cf24cc0506fef15b70ffd99532474f2e0caf990147557036",
+      "translationHash": "efe4be18fd47921736f20015f339fdd05335ae35d763e0a7b4a9735546e310a5",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-149.json",
+      "evidenceHash": "70daf162babb337aa91a7402358173ed3e8dae59f4401b32d7f90baa53a030f5"
+    },
+    "post/コミュニティに必要なこと/index.pt.md": {
+      "source": "post/コミュニティに必要なこと/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "3f3eacc0f24880a6cf24cc0506fef15b70ffd99532474f2e0caf990147557036",
+      "translationHash": "7ee35937e3bcea3a6893e0b53f81b31bec43a953740f1439c887ecde396236a0",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-149.json",
+      "evidenceHash": "587474b1f263a129e964ece0f16363765b9016ea1782d61b9710ed05a932fb8a"
+    },
+    "post/コミュニティに必要なこと/index.zh-tw.md": {
+      "source": "post/コミュニティに必要なこと/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "3f3eacc0f24880a6cf24cc0506fef15b70ffd99532474f2e0caf990147557036",
+      "translationHash": "fcd17824d1e72e611f856dcd4b3a6ec1bd033c0a28b9cb02ee1b669c312dc54d",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-149.json",
+      "evidenceHash": "f44e570b1c4f1eb26504d6f324022f44492a2073e9fb537de97d9bd9b6476de9"
+    },
+    "post/コミュニティに必要なこと/index.hi.md": {
+      "source": "post/コミュニティに必要なこと/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "3f3eacc0f24880a6cf24cc0506fef15b70ffd99532474f2e0caf990147557036",
+      "translationHash": "be385b857061026f234a09321e51e05e0db8e1935b31e9f4bd53c2d97a24e1eb",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-149.json",
+      "evidenceHash": "86ebf7d9a9a3c819136223120ebb96cbc5426211190bd3ab25db2f4a83855f39"
+    },
+    "post/コミュニティに必要なこと/index.fr.md": {
+      "source": "post/コミュニティに必要なこと/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "3f3eacc0f24880a6cf24cc0506fef15b70ffd99532474f2e0caf990147557036",
+      "translationHash": "8e9233addbd7136f572a063fd1984bbe17c075a25c46e07d7635ca9084bc7467",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-149.json",
+      "evidenceHash": "57e6c80329c500a31d5f7ac0173e10cb6c6ae46907a44a36146d554ab70408e1"
+    },
+    "post/コミュニティに必要なこと/index.de.md": {
+      "source": "post/コミュニティに必要なこと/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "3f3eacc0f24880a6cf24cc0506fef15b70ffd99532474f2e0caf990147557036",
+      "translationHash": "0014400782054688f4b3b370e438b839ee6deb13b45da140ea331e1b2775fd8f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-149.json",
+      "evidenceHash": "1ee5bea85aa484dfb226a0110480d6ae7adeead45eee7da8184d4ef195dcd502"
+    },
+    "post/コミュニティに必要なこと/index.ar.md": {
+      "source": "post/コミュニティに必要なこと/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "3f3eacc0f24880a6cf24cc0506fef15b70ffd99532474f2e0caf990147557036",
+      "translationHash": "83dd8212c5013322314c67908cf19ece7c2a6a4103680082071a223fb0b51792",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-149.json",
+      "evidenceHash": "a652dd9071944a37ddc73aeb301c3de53495884526a6476ad60c8643077866cf"
+    },
+    "post/コミュニティに必要なこと/index.ru.md": {
+      "source": "post/コミュニティに必要なこと/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "3f3eacc0f24880a6cf24cc0506fef15b70ffd99532474f2e0caf990147557036",
+      "translationHash": "89dd99cb7bdd9b95e12e8cd4affb00d2816cb70ad7b316c5261428539dd1c71b",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-149.json",
+      "evidenceHash": "650bcce6ce760caf6432b0e753174878712d96f92589884c0aec637fab73d968"
+    },
+    "post/コミュニティに必要なこと/index.id.md": {
+      "source": "post/コミュニティに必要なこと/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "3f3eacc0f24880a6cf24cc0506fef15b70ffd99532474f2e0caf990147557036",
+      "translationHash": "f59f95d0f5655906d8e44076ac710666fbf98bfed5533daa8cfce449e53f63ea",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-149.json",
+      "evidenceHash": "5297dfff35710f5dd1d410f1a75e9e73b30874f28503fcbb05bf697f2faff3f2"
     }
   }
 }

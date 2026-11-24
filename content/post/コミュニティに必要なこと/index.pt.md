@@ -1,31 +1,27 @@
 ---
-title: 'O que é necessário para uma boa comunidade? Dicas de gerenciamento aprendidas com as diretrizes do Scratch'
-date: "2026-09-24T19:44:38+09:00"
-slug: "Comunidadeに必要なこと"
+title: "Seis diretrizes do Scratch para inspirar uma comunidade"
 date: 2022-09-23T01:37:43+09:00
+lastmod: "2026-11-24T00:00:00+09:00"
+slug: "Comunidadeに必要なこと"
 tags: ["Comunidade", "Diversos"]
 draft: false
 image: "img.webp"
-categories: ["it-technology"]
-description: 'Discutimos os elementos essenciais para administrar uma comunidade saudável e confortável a partir das sofisticadas diretrizes da comunidade do site de aprendizado de programação ''Scratch''. Apresentamos perspectivas importantes aplicáveis a qualquer grupo, como o respeito aos outros e a garantia de segurança.'
+categories: ["philosophy"]
+description: "Resumo de seis diretrizes oficiais do Scratch: respeito, privacidade, feedback construtivo, remix com crédito, honestidade e denúncia, além de notas para adaptação."
 ---
-# O que uma comunidade precisa
+## Diretrizes da Comunidade Scratch
 
-Senti que as diretrizes da comunidade do Scratch são muito refinadas e excelentes.
-As seguintes coisas estavam escritas:
+As diretrizes oficiais da comunidade Scratch apresentam seis ideias:
 
-> Trate a todos com respeito.
+1. **Respeito.** Lembre-se de que pessoas de diferentes idades e origens verão o que você compartilha.
+2. **Segurança e privacidade.** Não publique dados pessoais, como nome real, telefone ou endereço.
+3. **Feedback construtivo.** Destaque algo positivo e ofereça sugestões úteis.
+4. **Compartilhar e remixar com responsabilidade.** Ao criar com base em um projeto do Scratch, dê crédito aos autores do material utilizado.
+5. **Honestidade.** Não se passe por outras pessoas nem espalhe rumores.
+6. **Manter um espaço acolhedor.** Use o recurso de denúncia para conteúdo inadequado em vez de aumentar uma briga.
 
-> Mantenha a segurança: Não revele informações pessoais ou de contato.
+Essas diretrizes foram feitas para o Scratch e seu público. Outras comunidades devem adaptar as regras às pessoas participantes, aos objetivos, à privacidade, à moderação e aos canais de ajuda e denúncia. O Scratch é um ponto de partida, não uma política completa para todos os grupos.
 
-> Faça comentários úteis.
+## Referência oficial
 
-> Entenda a cultura do remix.
-
-> Seja honesto.
-
-> Torne o site um lugar agradável.
-
-Acredito que essas perspectivas se aplicam a qualquer comunidade.
-
-https://ja.scratch-wiki.info/wiki/%E3%82%B3%E3%83%9F%E3%83%A5%E3%83%8B%E3%83%86%E3%82%A3%E3%83%BC%E3%82%AC%E3%82%A4%E3%83%89%E3%83%A9%E3%82%A4%E3%83%B3
+- [Diretrizes da Comunidade Scratch](https://scratch.mit.edu/community_guidelines/)

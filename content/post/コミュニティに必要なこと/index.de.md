@@ -1,31 +1,27 @@
 ---
-title: 'Was braucht eine gute Community? Management-Tipps aus den Scratch-Richtlinien'
-date: "2026-09-24T19:44:38+09:00"
-slug: "Gemeinschaftに必要なこと"
+title: "Sechs Scratch-Leitlinien als Anregung für Gemeinschaften"
 date: 2022-09-23T01:37:43+09:00
+lastmod: "2026-11-24T00:00:00+09:00"
+slug: "Gemeinschaftに必要なこと"
 tags: ["Community", "Verschiedenes"]
 draft: false
 image: "img.webp"
-categories: ["it-technology"]
-description: 'Wir betrachten die Elemente, die für den Betrieb einer gesunden und komfortablen Community erforderlich sind, anhand der ausgefeilten Community-Richtlinien der Programmier-Lernseite „Scratch“. Wir stellen wichtige Perspektiven vor, die auf jede Versammlung anwendbar sind, wie z. B. Respekt gegenüber anderen und die Gewährleistung der Sicherheit.'
+categories: ["philosophy"]
+description: "Sechs offizielle Scratch-Leitlinien zu Respekt, Datenschutz, konstruktivem Feedback, Remix mit Quellenangabe, Ehrlichkeit und Meldungen sowie Hinweise zur Übertragung."
 ---
-# Was eine Community braucht
+## Scratch-Community-Leitlinien
 
-Ich fand die Community-Richtlinien von Scratch sehr raffiniert und ausgezeichnet.
-Folgende Dinge standen dort geschrieben:
+Die offiziellen Scratch-Community-Leitlinien nennen sechs Grundsätze:
 
-> Behandle jeden mit Respekt.
+1. **Respektvoll sein.** Denken Sie daran, dass Menschen unterschiedlichen Alters und Hintergrunds Ihre Beiträge sehen.
+2. **Sicherheit und Datenschutz schützen.** Veröffentlichen Sie keine persönlichen Daten wie echte Namen, Telefonnummern oder Adressen.
+3. **Konstruktives Feedback geben.** Nennen Sie etwas Positives und machen Sie hilfreiche Vorschläge.
+4. **Verantwortungsvoll teilen und remixen.** Wenn Sie auf einem Scratch-Projekt aufbauen, nennen Sie die Urheber der verwendeten Werke.
+5. **Ehrlich sein.** Geben Sie sich nicht als andere aus und verbreiten Sie keine Gerüchte.
+6. **Zu einem freundlichen Ort beitragen.** Melden Sie unangemessene Inhalte, statt einen Streit zu verschärfen.
 
-> Bleibe sicher: Gib keine persönlichen Daten oder Kontaktinformationen preis.
+Diese Leitlinien sind für Scratch und dessen Publikum gedacht. Andere Gemeinschaften sollten ihre Regeln an Teilnehmende, Zweck, Datenschutz, Moderation und Wege für Hilfe oder Meldungen anpassen. Scratch ist eine Anregung, aber kein vollständiges Regelwerk für jede Gruppe.
 
-> Mache hilfreiche Kommentare.
+## Offizielle Quelle
 
-> Verstehe die Remix-Kultur.
-
-> Sei ehrlich.
-
-> Mache die Seite zu einem angenehmen Ort.
-
-Ich glaube, dass diese Perspektiven auf jede Community zutreffen.
-
-https://ja.scratch-wiki.info/wiki/%E3%82%B3%E3%83%9F%E3%83%A5%E3%83%8B%E3%83%86%E3%82%A3%E3%83%BC%E3%82%AC%E3%82%A4%E3%83%89%E3%83%A9%E3%82%A4%E3%83%B3
+- [Scratch-Community-Leitlinien](https://scratch.mit.edu/community_guidelines/)
