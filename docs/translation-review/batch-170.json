@@ -1,0 +1,471 @@
+{
+  "version": 1,
+  "batch": 170,
+  "article": "Display a simple Windows window using Rust and windows-sys",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "7107b6056aeb2db8d40837154ae63e40e3825e912fff5f7fc449d0dd2df0a91b",
+  "sources": [
+    "https://docs.rs/windows-sys/latest/windows_sys/Win32/UI/WindowsAndMessaging/",
+    "https://docs.rs/windows-sys/latest/windows_sys/Win32/UI/WindowsAndMessaging/struct.WNDCLASSW.html",
+    "https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-registerclassw",
+    "https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-createwindowexw",
+    "https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-getmessagew",
+    "https://learn.microsoft.com/en-us/windows/win32/winmsg/about-window-classes",
+    "https://docs.rs/windows-sys/latest/windows_sys/Win32/Graphics/Gdi/fn.GetStockObject.html"
+  ],
+  "scope": "Compared the complete Japanese source and all twelve translations, Cargo metadata, Win32 class registration and window creation, UTF-16 strings, callback ABI, message-loop initialization/error handling, and external/internal links.",
+  "findings": [
+    "Replaced obsolete winapi 0.3 with windows-sys 0.61 and the specific GDI, LibraryLoader, and WindowsAndMessaging features.",
+    "Removed deprecated mem::uninitialized::<MSG>() and now initialize MSG with Default.",
+    "Handled null module/window handles, RegisterClassW failure, and GetMessageW error (-1), quit (0), and message (>0) results.",
+    "Aligned project metadata and updated all references to current Microsoft and windows-sys documentation.",
+    "The Rust sample passed cargo check on Windows without compiler warnings; the GUI was not launched."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/Rustでシンプルなウィンドウを表示する/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Rustでシンプルなウィンドウを表示する/index.md",
+      "sourceHash": "7107b6056aeb2db8d40837154ae63e40e3825e912fff5f7fc449d0dd2df0a91b",
+      "translationHash": "364dd799575a25191f89f6b093f7d0c921c1e5613285ae1045ea414ee1f704f3",
+      "summary": "Compared the full translation with the Japanese source and updated its Win32 setup, modern Rust bindings, safe message-loop behavior, metadata, and references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete procedural explanation and clarified window creation, message handling, and Windows-only scope."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed Win32 window class, HWND, message loop, UTF-16, FFI, and localized Windows terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compiled with cargo check on Windows against windows-sys 0.61.2; it passed without warnings. The GUI was not launched. Static review covered MSG initialization, GetMessageW return cases, and the GDI stock background brush."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the older third-party example with windows-sys API documentation and current Microsoft references for registering a class, creating a window, and processing messages."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The Rust sample passed cargo check on Windows but the GUI was not launched; visual behavior was not confirmed.",
+        "The sample is a minimal windowing demonstration and does not cover DPI, keyboard accelerators, icons, menus, or comprehensive OS error reporting.",
+        "Crate versions and generated bindings can change; recheck current documentation when updating."
+      ]
+    },
+    "post/Rustでシンプルなウィンドウを表示する/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Rustでシンプルなウィンドウを表示する/index.md",
+      "sourceHash": "7107b6056aeb2db8d40837154ae63e40e3825e912fff5f7fc449d0dd2df0a91b",
+      "translationHash": "e73ececd3afef317da33e7a8088ae8a002519939cd74e1ebc2c7e93ef3ec3bc1",
+      "summary": "Compared the full translation with the Japanese source and updated its Win32 setup, modern Rust bindings, safe message-loop behavior, metadata, and references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete procedural explanation and clarified window creation, message handling, and Windows-only scope."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed Win32 window class, HWND, message loop, UTF-16, FFI, and localized Windows terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compiled with cargo check on Windows against windows-sys 0.61.2; it passed without warnings. The GUI was not launched. Static review covered MSG initialization, GetMessageW return cases, and the GDI stock background brush."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the older third-party example with windows-sys API documentation and current Microsoft references for registering a class, creating a window, and processing messages."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The Rust sample passed cargo check on Windows but the GUI was not launched; visual behavior was not confirmed.",
+        "The sample is a minimal windowing demonstration and does not cover DPI, keyboard accelerators, icons, menus, or comprehensive OS error reporting.",
+        "Crate versions and generated bindings can change; recheck current documentation when updating."
+      ]
+    },
+    "post/Rustでシンプルなウィンドウを表示する/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Rustでシンプルなウィンドウを表示する/index.md",
+      "sourceHash": "7107b6056aeb2db8d40837154ae63e40e3825e912fff5f7fc449d0dd2df0a91b",
+      "translationHash": "77195472cff97fd47e20d2c29a82126095a757bbb6b5158c9df159b1417351c7",
+      "summary": "Compared the full translation with the Japanese source and updated its Win32 setup, modern Rust bindings, safe message-loop behavior, metadata, and references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete procedural explanation and clarified window creation, message handling, and Windows-only scope."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed Win32 window class, HWND, message loop, UTF-16, FFI, and localized Windows terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compiled with cargo check on Windows against windows-sys 0.61.2; it passed without warnings. The GUI was not launched. Static review covered MSG initialization, GetMessageW return cases, and the GDI stock background brush."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the older third-party example with windows-sys API documentation and current Microsoft references for registering a class, creating a window, and processing messages."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The Rust sample passed cargo check on Windows but the GUI was not launched; visual behavior was not confirmed.",
+        "The sample is a minimal windowing demonstration and does not cover DPI, keyboard accelerators, icons, menus, or comprehensive OS error reporting.",
+        "Crate versions and generated bindings can change; recheck current documentation when updating."
+      ]
+    },
+    "post/Rustでシンプルなウィンドウを表示する/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Rustでシンプルなウィンドウを表示する/index.md",
+      "sourceHash": "7107b6056aeb2db8d40837154ae63e40e3825e912fff5f7fc449d0dd2df0a91b",
+      "translationHash": "425e2322a31d4f0755f0950233b0b2cc6d8fcfc070fdf32690f7bdb5cc1fd83f",
+      "summary": "Compared the full translation with the Japanese source and updated its Win32 setup, modern Rust bindings, safe message-loop behavior, metadata, and references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete procedural explanation and clarified window creation, message handling, and Windows-only scope."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed Win32 window class, HWND, message loop, UTF-16, FFI, and localized Windows terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compiled with cargo check on Windows against windows-sys 0.61.2; it passed without warnings. The GUI was not launched. Static review covered MSG initialization, GetMessageW return cases, and the GDI stock background brush."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the older third-party example with windows-sys API documentation and current Microsoft references for registering a class, creating a window, and processing messages."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The Rust sample passed cargo check on Windows but the GUI was not launched; visual behavior was not confirmed.",
+        "The sample is a minimal windowing demonstration and does not cover DPI, keyboard accelerators, icons, menus, or comprehensive OS error reporting.",
+        "Crate versions and generated bindings can change; recheck current documentation when updating."
+      ]
+    },
+    "post/Rustでシンプルなウィンドウを表示する/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Rustでシンプルなウィンドウを表示する/index.md",
+      "sourceHash": "7107b6056aeb2db8d40837154ae63e40e3825e912fff5f7fc449d0dd2df0a91b",
+      "translationHash": "e5ce771b75f0c50eb390269cc5102463010545d7a8f8a52e5cc68f5d7774858b",
+      "summary": "Compared the full translation with the Japanese source and updated its Win32 setup, modern Rust bindings, safe message-loop behavior, metadata, and references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete procedural explanation and clarified window creation, message handling, and Windows-only scope."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed Win32 window class, HWND, message loop, UTF-16, FFI, and localized Windows terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compiled with cargo check on Windows against windows-sys 0.61.2; it passed without warnings. The GUI was not launched. Static review covered MSG initialization, GetMessageW return cases, and the GDI stock background brush."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the older third-party example with windows-sys API documentation and current Microsoft references for registering a class, creating a window, and processing messages."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The Rust sample passed cargo check on Windows but the GUI was not launched; visual behavior was not confirmed.",
+        "The sample is a minimal windowing demonstration and does not cover DPI, keyboard accelerators, icons, menus, or comprehensive OS error reporting.",
+        "Crate versions and generated bindings can change; recheck current documentation when updating."
+      ]
+    },
+    "post/Rustでシンプルなウィンドウを表示する/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Rustでシンプルなウィンドウを表示する/index.md",
+      "sourceHash": "7107b6056aeb2db8d40837154ae63e40e3825e912fff5f7fc449d0dd2df0a91b",
+      "translationHash": "2207663976b3f20abcf18529a5d1127f3adfb77cbeb85b88cb2f3c9f0ace0e77",
+      "summary": "Compared the full translation with the Japanese source and updated its Win32 setup, modern Rust bindings, safe message-loop behavior, metadata, and references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete procedural explanation and clarified window creation, message handling, and Windows-only scope."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed Win32 window class, HWND, message loop, UTF-16, FFI, and localized Windows terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compiled with cargo check on Windows against windows-sys 0.61.2; it passed without warnings. The GUI was not launched. Static review covered MSG initialization, GetMessageW return cases, and the GDI stock background brush."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the older third-party example with windows-sys API documentation and current Microsoft references for registering a class, creating a window, and processing messages."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The Rust sample passed cargo check on Windows but the GUI was not launched; visual behavior was not confirmed.",
+        "The sample is a minimal windowing demonstration and does not cover DPI, keyboard accelerators, icons, menus, or comprehensive OS error reporting.",
+        "Crate versions and generated bindings can change; recheck current documentation when updating."
+      ]
+    },
+    "post/Rustでシンプルなウィンドウを表示する/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Rustでシンプルなウィンドウを表示する/index.md",
+      "sourceHash": "7107b6056aeb2db8d40837154ae63e40e3825e912fff5f7fc449d0dd2df0a91b",
+      "translationHash": "e10e7ba071fad992ef550417a6b2bc49aaf5bbe1790a46e5d84de9c43d298a3f",
+      "summary": "Compared the full translation with the Japanese source and updated its Win32 setup, modern Rust bindings, safe message-loop behavior, metadata, and references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete procedural explanation and clarified window creation, message handling, and Windows-only scope."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed Win32 window class, HWND, message loop, UTF-16, FFI, and localized Windows terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compiled with cargo check on Windows against windows-sys 0.61.2; it passed without warnings. The GUI was not launched. Static review covered MSG initialization, GetMessageW return cases, and the GDI stock background brush."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the older third-party example with windows-sys API documentation and current Microsoft references for registering a class, creating a window, and processing messages."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The Rust sample passed cargo check on Windows but the GUI was not launched; visual behavior was not confirmed.",
+        "The sample is a minimal windowing demonstration and does not cover DPI, keyboard accelerators, icons, menus, or comprehensive OS error reporting.",
+        "Crate versions and generated bindings can change; recheck current documentation when updating."
+      ]
+    },
+    "post/Rustでシンプルなウィンドウを表示する/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Rustでシンプルなウィンドウを表示する/index.md",
+      "sourceHash": "7107b6056aeb2db8d40837154ae63e40e3825e912fff5f7fc449d0dd2df0a91b",
+      "translationHash": "c9d90679e9353a2eb644acea5b6fb80eeee850e5b01758092be8d302b8a5a8c1",
+      "summary": "Compared the full translation with the Japanese source and updated its Win32 setup, modern Rust bindings, safe message-loop behavior, metadata, and references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete procedural explanation and clarified window creation, message handling, and Windows-only scope."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed Win32 window class, HWND, message loop, UTF-16, FFI, and localized Windows terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compiled with cargo check on Windows against windows-sys 0.61.2; it passed without warnings. The GUI was not launched. Static review covered MSG initialization, GetMessageW return cases, and the GDI stock background brush."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the older third-party example with windows-sys API documentation and current Microsoft references for registering a class, creating a window, and processing messages."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The Rust sample passed cargo check on Windows but the GUI was not launched; visual behavior was not confirmed.",
+        "The sample is a minimal windowing demonstration and does not cover DPI, keyboard accelerators, icons, menus, or comprehensive OS error reporting.",
+        "Crate versions and generated bindings can change; recheck current documentation when updating."
+      ]
+    },
+    "post/Rustでシンプルなウィンドウを表示する/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Rustでシンプルなウィンドウを表示する/index.md",
+      "sourceHash": "7107b6056aeb2db8d40837154ae63e40e3825e912fff5f7fc449d0dd2df0a91b",
+      "translationHash": "004f43e62113ed9c82fda6b390991973eabbbe634967168b5d1ec2e9ec5b02cc",
+      "summary": "Compared the full translation with the Japanese source and updated its Win32 setup, modern Rust bindings, safe message-loop behavior, metadata, and references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete procedural explanation and clarified window creation, message handling, and Windows-only scope."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed Win32 window class, HWND, message loop, UTF-16, FFI, and localized Windows terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compiled with cargo check on Windows against windows-sys 0.61.2; it passed without warnings. The GUI was not launched. Static review covered MSG initialization, GetMessageW return cases, and the GDI stock background brush."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the older third-party example with windows-sys API documentation and current Microsoft references for registering a class, creating a window, and processing messages."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The Rust sample passed cargo check on Windows but the GUI was not launched; visual behavior was not confirmed.",
+        "The sample is a minimal windowing demonstration and does not cover DPI, keyboard accelerators, icons, menus, or comprehensive OS error reporting.",
+        "Crate versions and generated bindings can change; recheck current documentation when updating."
+      ]
+    },
+    "post/Rustでシンプルなウィンドウを表示する/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Rustでシンプルなウィンドウを表示する/index.md",
+      "sourceHash": "7107b6056aeb2db8d40837154ae63e40e3825e912fff5f7fc449d0dd2df0a91b",
+      "translationHash": "2f48e1dfe06bb1be5494191694d0f00362188b4aa384ab1d11a5dc71734231ee",
+      "summary": "Compared the full translation with the Japanese source and updated its Win32 setup, modern Rust bindings, safe message-loop behavior, metadata, and references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete procedural explanation and clarified window creation, message handling, and Windows-only scope."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed Win32 window class, HWND, message loop, UTF-16, FFI, and localized Windows terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compiled with cargo check on Windows against windows-sys 0.61.2; it passed without warnings. The GUI was not launched. Static review covered MSG initialization, GetMessageW return cases, and the GDI stock background brush."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the older third-party example with windows-sys API documentation and current Microsoft references for registering a class, creating a window, and processing messages."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The Rust sample passed cargo check on Windows but the GUI was not launched; visual behavior was not confirmed.",
+        "The sample is a minimal windowing demonstration and does not cover DPI, keyboard accelerators, icons, menus, or comprehensive OS error reporting.",
+        "Crate versions and generated bindings can change; recheck current documentation when updating."
+      ]
+    },
+    "post/Rustでシンプルなウィンドウを表示する/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Rustでシンプルなウィンドウを表示する/index.md",
+      "sourceHash": "7107b6056aeb2db8d40837154ae63e40e3825e912fff5f7fc449d0dd2df0a91b",
+      "translationHash": "b398adc37469eb1ec9c29e446766ccdcfa8ed0b7507226dd4b58b628cbf56f4f",
+      "summary": "Compared the full translation with the Japanese source and updated its Win32 setup, modern Rust bindings, safe message-loop behavior, metadata, and references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete procedural explanation and clarified window creation, message handling, and Windows-only scope."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed Win32 window class, HWND, message loop, UTF-16, FFI, and localized Windows terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compiled with cargo check on Windows against windows-sys 0.61.2; it passed without warnings. The GUI was not launched. Static review covered MSG initialization, GetMessageW return cases, and the GDI stock background brush."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the older third-party example with windows-sys API documentation and current Microsoft references for registering a class, creating a window, and processing messages."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The Rust sample passed cargo check on Windows but the GUI was not launched; visual behavior was not confirmed.",
+        "The sample is a minimal windowing demonstration and does not cover DPI, keyboard accelerators, icons, menus, or comprehensive OS error reporting.",
+        "Crate versions and generated bindings can change; recheck current documentation when updating."
+      ]
+    },
+    "post/Rustでシンプルなウィンドウを表示する/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Rustでシンプルなウィンドウを表示する/index.md",
+      "sourceHash": "7107b6056aeb2db8d40837154ae63e40e3825e912fff5f7fc449d0dd2df0a91b",
+      "translationHash": "b8c9b4262626c14d21089937d0b82820550eb526695d79c513dad1a8ec3f1f91",
+      "summary": "Compared the full translation with the Japanese source and updated its Win32 setup, modern Rust bindings, safe message-loop behavior, metadata, and references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete procedural explanation and clarified window creation, message handling, and Windows-only scope."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed Win32 window class, HWND, message loop, UTF-16, FFI, and localized Windows terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compiled with cargo check on Windows against windows-sys 0.61.2; it passed without warnings. The GUI was not launched. Static review covered MSG initialization, GetMessageW return cases, and the GDI stock background brush."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the older third-party example with windows-sys API documentation and current Microsoft references for registering a class, creating a window, and processing messages."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The Rust sample passed cargo check on Windows but the GUI was not launched; visual behavior was not confirmed.",
+        "The sample is a minimal windowing demonstration and does not cover DPI, keyboard accelerators, icons, menus, or comprehensive OS error reporting.",
+        "Crate versions and generated bindings can change; recheck current documentation when updating."
+      ]
+    }
+  }
+}
