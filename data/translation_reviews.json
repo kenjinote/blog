@@ -19205,6 +19205,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-164.json",
       "evidenceHash": "320a5a2c0206993407690c0dd04f250fccedc256ab160fdc4b22c882b45087b3"
+    },
+    "post/yt-dlp.exe による YouTube 動画のダウンロード方法/index.en.md": {
+      "source": "post/yt-dlp.exe による YouTube 動画のダウンロード方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b7fd98de1559a76b8a83f6d0f84cf97910a06eaafa7b1a345a18d31f5c1c05ed",
+      "translationHash": "530f62a52dc2d5e56be2695c2bc8e510737744260742410a9bbf97e9723b0281",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-165.json",
+      "evidenceHash": "63f2c6ec5d872af4d6adf1293d6e85b5b247955cde4c6265cdf78ba92c278f76"
+    },
+    "post/yt-dlp.exe による YouTube 動画のダウンロード方法/index.zh-cn.md": {
+      "source": "post/yt-dlp.exe による YouTube 動画のダウンロード方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b7fd98de1559a76b8a83f6d0f84cf97910a06eaafa7b1a345a18d31f5c1c05ed",
+      "translationHash": "234d56af0b5e270d7eef2efe5a5bb4bcdad5d0065c4296d050a2421e52df1ed7",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-165.json",
+      "evidenceHash": "65038abbbf9b4fa4d016b7a4478eddb6f80f98fc4b5838b1ce0585a655e0f87a"
+    },
+    "post/yt-dlp.exe による YouTube 動画のダウンロード方法/index.es.md": {
+      "source": "post/yt-dlp.exe による YouTube 動画のダウンロード方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b7fd98de1559a76b8a83f6d0f84cf97910a06eaafa7b1a345a18d31f5c1c05ed",
+      "translationHash": "942bbc8ba14083d045f2b70dbeb074279110e0a499b944b2b1babf6e2ddcf9f9",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-165.json",
+      "evidenceHash": "751a89a4fb2f6674d74368e5de3fc4957b5d092a9319be5a39d50fb4262e9056"
+    },
+    "post/yt-dlp.exe による YouTube 動画のダウンロード方法/index.ko.md": {
+      "source": "post/yt-dlp.exe による YouTube 動画のダウンロード方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b7fd98de1559a76b8a83f6d0f84cf97910a06eaafa7b1a345a18d31f5c1c05ed",
+      "translationHash": "ca2e8563a32e420b9caf1896ad4159805acdb267cea726f718707cb92b8b4822",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-165.json",
+      "evidenceHash": "645b23f5694cac07f9688a3087481c61012349710e19f2d49ed08e377bba8f71"
+    },
+    "post/yt-dlp.exe による YouTube 動画のダウンロード方法/index.pt.md": {
+      "source": "post/yt-dlp.exe による YouTube 動画のダウンロード方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b7fd98de1559a76b8a83f6d0f84cf97910a06eaafa7b1a345a18d31f5c1c05ed",
+      "translationHash": "b7eb986173b73a8cd5d99a6acf83aae589aeba3bbd108022ff13d851b1e40634",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-165.json",
+      "evidenceHash": "257e7755e8cd09e6cd9f896900dddd45a102fbe305ff0470c292dae12727b9da"
+    },
+    "post/yt-dlp.exe による YouTube 動画のダウンロード方法/index.zh-tw.md": {
+      "source": "post/yt-dlp.exe による YouTube 動画のダウンロード方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b7fd98de1559a76b8a83f6d0f84cf97910a06eaafa7b1a345a18d31f5c1c05ed",
+      "translationHash": "325378616ea310571be21ebefbf1ae5690e52ae387ed4078aa265e670f0d2701",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-165.json",
+      "evidenceHash": "baae4f145ad23fac91d77be4b6b97d82008c51ba16a019c039a68390c42ba364"
+    },
+    "post/yt-dlp.exe による YouTube 動画のダウンロード方法/index.hi.md": {
+      "source": "post/yt-dlp.exe による YouTube 動画のダウンロード方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b7fd98de1559a76b8a83f6d0f84cf97910a06eaafa7b1a345a18d31f5c1c05ed",
+      "translationHash": "7e3f2928be14a589d8393559baf62f5caa0356d1115f0ea5dca962348b1d4611",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-165.json",
+      "evidenceHash": "9f71eaece82c883e2f98ac4982aee3ed0071ae4fdc09d733cf54c993b123f75a"
+    },
+    "post/yt-dlp.exe による YouTube 動画のダウンロード方法/index.fr.md": {
+      "source": "post/yt-dlp.exe による YouTube 動画のダウンロード方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b7fd98de1559a76b8a83f6d0f84cf97910a06eaafa7b1a345a18d31f5c1c05ed",
+      "translationHash": "a1b8c3d9172d2b505c1f4dfb497f2644d7873f5826f4a6dc2398cb01a6a6135b",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-165.json",
+      "evidenceHash": "0f3b42f224060424600cb3810db234b7c36e559d5597cc0ea9f5549d1caaece2"
+    },
+    "post/yt-dlp.exe による YouTube 動画のダウンロード方法/index.de.md": {
+      "source": "post/yt-dlp.exe による YouTube 動画のダウンロード方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b7fd98de1559a76b8a83f6d0f84cf97910a06eaafa7b1a345a18d31f5c1c05ed",
+      "translationHash": "cbb97ba561e60e9975f50bfdcf41336b1d5494425fdd0c459ab5e726e274e8e6",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-165.json",
+      "evidenceHash": "c468823d1bc9046da70b8a1dca76da89a77516975702b844f3c5ec6db06868f4"
+    },
+    "post/yt-dlp.exe による YouTube 動画のダウンロード方法/index.ar.md": {
+      "source": "post/yt-dlp.exe による YouTube 動画のダウンロード方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b7fd98de1559a76b8a83f6d0f84cf97910a06eaafa7b1a345a18d31f5c1c05ed",
+      "translationHash": "87b78c5adecc2772b15f6c52fa1effb86233190f4deed3acafad0fc8295763f4",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-165.json",
+      "evidenceHash": "c19fa3a65cc5c99ad37b5ac81726304c0fa0993e9b70ef9f4efbff2f79a4d864"
+    },
+    "post/yt-dlp.exe による YouTube 動画のダウンロード方法/index.ru.md": {
+      "source": "post/yt-dlp.exe による YouTube 動画のダウンロード方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b7fd98de1559a76b8a83f6d0f84cf97910a06eaafa7b1a345a18d31f5c1c05ed",
+      "translationHash": "b80a41bdbf57aec61c90bf8c7b15bb80608600c964087ae573f5de482c32614b",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-165.json",
+      "evidenceHash": "01b5e2c65db49155a39e0cd7d331d94d9096664ca11f644510b363c0117c6948"
+    },
+    "post/yt-dlp.exe による YouTube 動画のダウンロード方法/index.id.md": {
+      "source": "post/yt-dlp.exe による YouTube 動画のダウンロード方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b7fd98de1559a76b8a83f6d0f84cf97910a06eaafa7b1a345a18d31f5c1c05ed",
+      "translationHash": "694cc3c04adba5de6cb17cecf7f09f5b103adefe958521b3b69cf728d8253838",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-165.json",
+      "evidenceHash": "dd42fc4c43ba992a02968491f6d4119c226025f8250c68201fd1cc92676fe99c"
     }
   }
 }

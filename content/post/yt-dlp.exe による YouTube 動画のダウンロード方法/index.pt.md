@@ -1,40 +1,56 @@
 ---
-title: 'Como usar o yt-dlp: Como baixar e salvar vídeos e áudios do YouTube'
-date: "2026-09-24T19:44:38+09:00"
+title: "Como usar yt-dlp.exe: baixar conteúdo autorizado e converter para MP3"
 slug: "yt-dlp.exe による YouTube VídeoのDownload方法"
-date: 2024-09-03T14:09:26+09:00
-tags: ["YouTube", "Download"]
+tags: ["yt-dlp", "YouTube", "media tools"]
 draft: false
 image: "img_1.webp"
 categories: ["it-technology"]
-description: 'Explicamos de forma fácil de entender como usar a ferramenta de linha de comando ''yt-dlp'' para baixar e salvar vídeos do YouTube em alta qualidade, bem como o procedimento para extrair e salvar como arquivos de áudio mp3. Cobrindo desde a instalação até o uso.'
+description: "Como obter e atualizar yt-dlp.exe, salvar um vídeo e converter áudio para MP3. Use a ferramenta de acordo com os direitos do conteúdo e os termos do YouTube."
+date: "2024-09-03T14:09:26+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
-# O que é o yt-dlp
+# Como usar yt-dlp.exe: baixar conteúdo autorizado e converter para MP3
 
-O `yt-dlp` é uma ferramenta de linha de comando para baixar vídeos do YouTube.
-Além de baixar vídeos, você também pode baixá-los como arquivos de música no formato mp3.
+yt-dlp é uma ferramenta de linha de comando de código aberto para baixar vídeos e áudio. Estes exemplos mostram o uso básico no Windows.
 
-## Download e Instalação
+## Use somente quando permitido
 
-1. Baixe o yt-dlp.exe mais recente da [página de lançamentos do yt-dlp](https://github.com/yt-dlp/yt-dlp/releases).
-2. Coloque o yt-dlp.exe em qualquer pasta.
-3. Adicione o caminho da pasta do yt-dlp.exe à variável de ambiente Path.
+Use yt-dlp apenas com conteúdo de sua propriedade ou com autorização do titular, e somente quando permitido pelos termos do YouTube e pela legislação aplicável. Você pode baixar seus próprios vídeos enviados pelo YouTube Studio.
 
-## Como Usar
+## Instalação e atualização
 
-Execute o yt-dlp.exe no prompt de comando e especifique a URL do vídeo do YouTube.
+Baixe o `yt-dlp.exe` para Windows na página oficial de versões e coloque-o em uma pasta. Adicione essa pasta ao `PATH` para executá-lo de qualquer diretório. Obtenha o executável somente nas versões oficiais.
 
+```powershell
+yt-dlp.exe --version
+yt-dlp.exe -U
 ```
+
+## Uso básico
+
+No Prompt de Comando ou no PowerShell, informe o URL do vídeo. O arquivo será salvo no diretório atual.
+
+```powershell
 yt-dlp.exe "https://www.youtube.com/watch?v=VIDEO_ID"
 ```
-※ O argumento pode ser apenas a parte do VIDEO_ID.
 
-Para baixar como um arquivo de música mp3, execute o seguinte comando:
+Para converter o áudio em MP3, use `-x` e `--audio-format mp3`.
 
+```powershell
+yt-dlp.exe -x --audio-format mp3 "https://www.youtube.com/watch?v=VIDEO_ID"
 ```
-yt-dlp.exe --extract-audio --audio-format mp3 --embed-thumbnail --add-metadata "https://www.youtube.com/watch?v=VIDEO_ID"
-```
 
-Com isso, o vídeo será baixado no diretório atual de onde o comando foi executado.
+Confira a versão com `yt-dlp.exe --version`. Atualize um binário de versão com `yt-dlp.exe -U`. A conversão para MP3 requer `ffmpeg` e `ffprobe`. Se a extração parar de funcionar após mudanças no YouTube, atualize o yt-dlp e consulte as dependências atuais no README oficial.
 
-Isso é tudo.
+Para incorporar miniaturas ou metadados, adicione `--embed-thumbnail` ou `--embed-metadata`; dependendo do formato, outras ferramentas podem ser necessárias.
+
+## Se não funcionar
+
+Atualize para a versão mais recente e consulte a documentação oficial sobre dependências e suporte atuais. Não contorne restrições nem baixe conteúdo sem autorização.
+
+## Referências
+
+- [yt-dlp official releases](https://github.com/yt-dlp/yt-dlp/releases/latest)
+- [yt-dlp README and documentation](https://github.com/yt-dlp/yt-dlp#readme)
+- [YouTube Terms of Service](https://www.youtube.com/t/terms)
+- [YouTube Help: download your own videos](https://support.google.com/youtube/answer/56100)

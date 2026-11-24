@@ -1,56 +1,56 @@
 ---
-
-
-
-
-
-
-
-
-title: 'yt-dlp 사용법: YouTube 동영상 및 오디오를 다운로드하고 저장하는 방법'
-date: "2026-09-24T19:44:38+09:00"
+title: "yt-dlp.exe 사용법: 허가된 동영상 다운로드와 MP3 변환"
 slug: "yt-dlp.exe による YouTube 동영상の다운로드方法"
-date: 2024-09-03T14:09:26+09:00
-tags: ["YouTube", "다운로드"]
+tags: ["yt-dlp", "YouTube", "media tools"]
 draft: false
 image: "img_1.webp"
 categories: ["it-technology"]
-description: '명령줄 도구 ''yt-dlp''를 사용하여 YouTube 동영상을 고화질로 다운로드하고 저장하는 방법이나, mp3 오디오 파일로 추출하여 저장하는 절차를 알기 쉽게 해설합니다. 설치부터 사용법까지 망라했습니다.'
+description: "yt-dlp.exe를 다운로드하고 업데이트하여 동영상을 저장하거나 오디오를 MP3로 변환하는 기본 방법입니다. 콘텐츠 권리와 YouTube 약관을 준수하세요."
+date: "2024-09-03T14:09:26+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
+# yt-dlp.exe 사용법: 허가된 동영상 다운로드와 MP3 변환
 
+yt-dlp는 동영상과 오디오를 내려받는 오픈 소스 명령줄 도구입니다. 다음은 Windows의 기본 사용 예입니다.
 
+## 허가된 경우에만 사용
 
+자신에게 권리가 있거나 권리자의 허가를 받은 콘텐츠만 처리하고 YouTube 약관과 적용 법률이 허용하는 범위에서 사용하세요. 직접 업로드한 동영상은 YouTube Studio에서 다운로드할 수 있습니다.
 
+## 설치 및 업데이트
 
+공식 릴리스 페이지에서 Windows용 `yt-dlp.exe`를 내려받아 폴더에 둡니다. 해당 폴더를 `PATH`에 추가하면 어느 디렉터리에서든 실행할 수 있습니다. 실행 파일은 공식 릴리스에서만 받으세요.
 
-
-
-# yt-dlp란
-
-`yt-dlp`는 YouTube 동영상을 다운로드하기 위한 명령줄 도구입니다.
-동영상을 다운로드할 뿐만 아니라, 음악 파일인 mp3 형식으로 다운로드할 수도 있습니다.
-
-## 다운로드 및 설치
-
-1. [yt-dlp 릴리스 페이지](https://github.com/yt-dlp/yt-dlp/releases)에서 최신 yt-dlp.exe를 다운로드합니다.
-2. yt-dlp.exe를 원하는 폴더에 배치합니다.
-3. yt-dlp.exe의 폴더 경로를 환경 변수 Path에 추가합니다.
-
-## 사용 방법
-
-yt-dlp.exe를 명령 프롬프트에서 실행하고, YouTube 동영상의 URL을 지정합니다.
-
+```powershell
+yt-dlp.exe --version
+yt-dlp.exe -U
 ```
+
+## 기본 사용법
+
+명령 프롬프트나 PowerShell에서 동영상 URL을 지정합니다. 결과 파일은 현재 디렉터리에 저장됩니다.
+
+```powershell
 yt-dlp.exe "https://www.youtube.com/watch?v=VIDEO_ID"
 ```
-※인수는 VIDEO_ID 부분만 있어도 괜찮습니다.
 
-음악 파일 mp3로 다운로드할 경우에는 다음 명령을 실행합니다.
+오디오를 MP3로 변환하려면 `-x`와 `--audio-format mp3`를 사용하세요.
 
+```powershell
+yt-dlp.exe -x --audio-format mp3 "https://www.youtube.com/watch?v=VIDEO_ID"
 ```
-yt-dlp.exe --extract-audio --audio-format mp3 --embed-thumbnail --add-metadata "https://www.youtube.com/watch?v=VIDEO_ID"
-```
 
-이제 명령을 실행한 현재 디렉터리에 동영상이 다운로드됩니다.
+`yt-dlp.exe --version`으로 버전을 확인할 수 있습니다. 릴리스 바이너리는 `yt-dlp.exe -U`로 업데이트할 수 있습니다. MP3 변환에는 `ffmpeg`와 `ffprobe`가 필요합니다. YouTube 변경 후 추출이 안 되면 yt-dlp를 업데이트하고 공식 README의 최신 의존성을 확인하세요.
 
-이상.
+썸네일이나 메타데이터를 포함하려면 `--embed-thumbnail` 또는 `--embed-metadata`를 추가할 수 있습니다. 파일 형식에 따라 추가 도구가 필요할 수 있습니다.
+
+## 작동하지 않는 경우
+
+최신 릴리스로 업데이트하고 공식 문서에서 현재 의존성과 지원 상황을 확인하세요. 제한을 우회하거나 허가되지 않은 콘텐츠를 다운로드하지 마세요.
+
+## 참고 자료
+
+- [yt-dlp official releases](https://github.com/yt-dlp/yt-dlp/releases/latest)
+- [yt-dlp README and documentation](https://github.com/yt-dlp/yt-dlp#readme)
+- [YouTube Terms of Service](https://www.youtube.com/t/terms)
+- [YouTube Help: download your own videos](https://support.google.com/youtube/answer/56100)

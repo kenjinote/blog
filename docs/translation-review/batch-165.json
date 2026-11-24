@@ -1,0 +1,455 @@
+{
+  "version": 1,
+  "batch": 165,
+  "article": "Using yt-dlp.exe for Authorized Downloads and MP3 Conversion",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "b7fd98de1559a76b8a83f6d0f84cf97910a06eaafa7b1a345a18d31f5c1c05ed",
+  "sources": [
+    "https://github.com/yt-dlp/yt-dlp/releases/latest",
+    "https://github.com/yt-dlp/yt-dlp#readme",
+    "https://www.youtube.com/t/terms",
+    "https://support.google.com/youtube/answer/56100"
+  ],
+  "scope": "Compared the full Japanese source and twelve translations, installation and PATH steps, command flags, audio dependencies, update guidance, metadata options, content-rights and terms caveat, and source quality.",
+  "findings": [
+    "Removed the duplicate future publication date and retained the original 2024-09-03 date; set lastmod to 2026-11-24.",
+    "Replaced generic unrestricted download language with a localized reminder to download only content the user owns or is authorized to download, where terms and law permit; linked official YouTube guidance for own uploads.",
+    "Updated the executable update command to `-U` and the metadata option to the current `--embed-metadata` name.",
+    "Added the documented `ffmpeg` and `ffprobe` requirement for audio extraction and refreshed the current official README/release links."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/yt-dlp.exe による YouTube 動画のダウンロード方法/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/yt-dlp.exe による YouTube 動画のダウンロード方法/index.md",
+      "sourceHash": "b7fd98de1559a76b8a83f6d0f84cf97910a06eaafa7b1a345a18d31f5c1c05ed",
+      "translationHash": "530f62a52dc2d5e56be2695c2bc8e510737744260742410a9bbf97e9723b0281",
+      "summary": "Compared the complete translation with the Japanese tutorial and corrected current commands, audio dependencies, update steps, and permission/terms guidance.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete source and translations and revised outdated installation, update, audio conversion, and rights guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked yt-dlp.exe, PATH, command prompt/PowerShell, ffmpeg, ffprobe, metadata embedding, and MP3 terminology against the current README."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked command flags and executable update command against the current yt-dlp documentation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official yt-dlp releases/README, YouTube Terms of Service, and YouTube Help for downloading one’s own uploads."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Tool behavior and YouTube support can change; consult the current official README and release notes.",
+        "This general article does not determine whether a particular download is lawful or permitted; users must have authorization and follow applicable terms and law."
+      ]
+    },
+    "post/yt-dlp.exe による YouTube 動画のダウンロード方法/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/yt-dlp.exe による YouTube 動画のダウンロード方法/index.md",
+      "sourceHash": "b7fd98de1559a76b8a83f6d0f84cf97910a06eaafa7b1a345a18d31f5c1c05ed",
+      "translationHash": "234d56af0b5e270d7eef2efe5a5bb4bcdad5d0065c4296d050a2421e52df1ed7",
+      "summary": "Compared the complete translation with the Japanese tutorial and corrected current commands, audio dependencies, update steps, and permission/terms guidance.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete source and translations and revised outdated installation, update, audio conversion, and rights guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked yt-dlp.exe, PATH, command prompt/PowerShell, ffmpeg, ffprobe, metadata embedding, and MP3 terminology against the current README."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked command flags and executable update command against the current yt-dlp documentation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official yt-dlp releases/README, YouTube Terms of Service, and YouTube Help for downloading one’s own uploads."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Tool behavior and YouTube support can change; consult the current official README and release notes.",
+        "This general article does not determine whether a particular download is lawful or permitted; users must have authorization and follow applicable terms and law."
+      ]
+    },
+    "post/yt-dlp.exe による YouTube 動画のダウンロード方法/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/yt-dlp.exe による YouTube 動画のダウンロード方法/index.md",
+      "sourceHash": "b7fd98de1559a76b8a83f6d0f84cf97910a06eaafa7b1a345a18d31f5c1c05ed",
+      "translationHash": "942bbc8ba14083d045f2b70dbeb074279110e0a499b944b2b1babf6e2ddcf9f9",
+      "summary": "Compared the complete translation with the Japanese tutorial and corrected current commands, audio dependencies, update steps, and permission/terms guidance.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete source and translations and revised outdated installation, update, audio conversion, and rights guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked yt-dlp.exe, PATH, command prompt/PowerShell, ffmpeg, ffprobe, metadata embedding, and MP3 terminology against the current README."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked command flags and executable update command against the current yt-dlp documentation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official yt-dlp releases/README, YouTube Terms of Service, and YouTube Help for downloading one’s own uploads."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Tool behavior and YouTube support can change; consult the current official README and release notes.",
+        "This general article does not determine whether a particular download is lawful or permitted; users must have authorization and follow applicable terms and law."
+      ]
+    },
+    "post/yt-dlp.exe による YouTube 動画のダウンロード方法/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/yt-dlp.exe による YouTube 動画のダウンロード方法/index.md",
+      "sourceHash": "b7fd98de1559a76b8a83f6d0f84cf97910a06eaafa7b1a345a18d31f5c1c05ed",
+      "translationHash": "ca2e8563a32e420b9caf1896ad4159805acdb267cea726f718707cb92b8b4822",
+      "summary": "Compared the complete translation with the Japanese tutorial and corrected current commands, audio dependencies, update steps, and permission/terms guidance.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete source and translations and revised outdated installation, update, audio conversion, and rights guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked yt-dlp.exe, PATH, command prompt/PowerShell, ffmpeg, ffprobe, metadata embedding, and MP3 terminology against the current README."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked command flags and executable update command against the current yt-dlp documentation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official yt-dlp releases/README, YouTube Terms of Service, and YouTube Help for downloading one’s own uploads."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Tool behavior and YouTube support can change; consult the current official README and release notes.",
+        "This general article does not determine whether a particular download is lawful or permitted; users must have authorization and follow applicable terms and law."
+      ]
+    },
+    "post/yt-dlp.exe による YouTube 動画のダウンロード方法/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/yt-dlp.exe による YouTube 動画のダウンロード方法/index.md",
+      "sourceHash": "b7fd98de1559a76b8a83f6d0f84cf97910a06eaafa7b1a345a18d31f5c1c05ed",
+      "translationHash": "b7eb986173b73a8cd5d99a6acf83aae589aeba3bbd108022ff13d851b1e40634",
+      "summary": "Compared the complete translation with the Japanese tutorial and corrected current commands, audio dependencies, update steps, and permission/terms guidance.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete source and translations and revised outdated installation, update, audio conversion, and rights guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked yt-dlp.exe, PATH, command prompt/PowerShell, ffmpeg, ffprobe, metadata embedding, and MP3 terminology against the current README."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked command flags and executable update command against the current yt-dlp documentation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official yt-dlp releases/README, YouTube Terms of Service, and YouTube Help for downloading one’s own uploads."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Tool behavior and YouTube support can change; consult the current official README and release notes.",
+        "This general article does not determine whether a particular download is lawful or permitted; users must have authorization and follow applicable terms and law."
+      ]
+    },
+    "post/yt-dlp.exe による YouTube 動画のダウンロード方法/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/yt-dlp.exe による YouTube 動画のダウンロード方法/index.md",
+      "sourceHash": "b7fd98de1559a76b8a83f6d0f84cf97910a06eaafa7b1a345a18d31f5c1c05ed",
+      "translationHash": "325378616ea310571be21ebefbf1ae5690e52ae387ed4078aa265e670f0d2701",
+      "summary": "Compared the complete translation with the Japanese tutorial and corrected current commands, audio dependencies, update steps, and permission/terms guidance.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete source and translations and revised outdated installation, update, audio conversion, and rights guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked yt-dlp.exe, PATH, command prompt/PowerShell, ffmpeg, ffprobe, metadata embedding, and MP3 terminology against the current README."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked command flags and executable update command against the current yt-dlp documentation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official yt-dlp releases/README, YouTube Terms of Service, and YouTube Help for downloading one’s own uploads."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Tool behavior and YouTube support can change; consult the current official README and release notes.",
+        "This general article does not determine whether a particular download is lawful or permitted; users must have authorization and follow applicable terms and law."
+      ]
+    },
+    "post/yt-dlp.exe による YouTube 動画のダウンロード方法/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/yt-dlp.exe による YouTube 動画のダウンロード方法/index.md",
+      "sourceHash": "b7fd98de1559a76b8a83f6d0f84cf97910a06eaafa7b1a345a18d31f5c1c05ed",
+      "translationHash": "7e3f2928be14a589d8393559baf62f5caa0356d1115f0ea5dca962348b1d4611",
+      "summary": "Compared the complete translation with the Japanese tutorial and corrected current commands, audio dependencies, update steps, and permission/terms guidance.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete source and translations and revised outdated installation, update, audio conversion, and rights guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked yt-dlp.exe, PATH, command prompt/PowerShell, ffmpeg, ffprobe, metadata embedding, and MP3 terminology against the current README."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked command flags and executable update command against the current yt-dlp documentation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official yt-dlp releases/README, YouTube Terms of Service, and YouTube Help for downloading one’s own uploads."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Tool behavior and YouTube support can change; consult the current official README and release notes.",
+        "This general article does not determine whether a particular download is lawful or permitted; users must have authorization and follow applicable terms and law."
+      ]
+    },
+    "post/yt-dlp.exe による YouTube 動画のダウンロード方法/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/yt-dlp.exe による YouTube 動画のダウンロード方法/index.md",
+      "sourceHash": "b7fd98de1559a76b8a83f6d0f84cf97910a06eaafa7b1a345a18d31f5c1c05ed",
+      "translationHash": "a1b8c3d9172d2b505c1f4dfb497f2644d7873f5826f4a6dc2398cb01a6a6135b",
+      "summary": "Compared the complete translation with the Japanese tutorial and corrected current commands, audio dependencies, update steps, and permission/terms guidance.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete source and translations and revised outdated installation, update, audio conversion, and rights guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked yt-dlp.exe, PATH, command prompt/PowerShell, ffmpeg, ffprobe, metadata embedding, and MP3 terminology against the current README."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked command flags and executable update command against the current yt-dlp documentation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official yt-dlp releases/README, YouTube Terms of Service, and YouTube Help for downloading one’s own uploads."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Tool behavior and YouTube support can change; consult the current official README and release notes.",
+        "This general article does not determine whether a particular download is lawful or permitted; users must have authorization and follow applicable terms and law."
+      ]
+    },
+    "post/yt-dlp.exe による YouTube 動画のダウンロード方法/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/yt-dlp.exe による YouTube 動画のダウンロード方法/index.md",
+      "sourceHash": "b7fd98de1559a76b8a83f6d0f84cf97910a06eaafa7b1a345a18d31f5c1c05ed",
+      "translationHash": "cbb97ba561e60e9975f50bfdcf41336b1d5494425fdd0c459ab5e726e274e8e6",
+      "summary": "Compared the complete translation with the Japanese tutorial and corrected current commands, audio dependencies, update steps, and permission/terms guidance.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete source and translations and revised outdated installation, update, audio conversion, and rights guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked yt-dlp.exe, PATH, command prompt/PowerShell, ffmpeg, ffprobe, metadata embedding, and MP3 terminology against the current README."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked command flags and executable update command against the current yt-dlp documentation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official yt-dlp releases/README, YouTube Terms of Service, and YouTube Help for downloading one’s own uploads."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Tool behavior and YouTube support can change; consult the current official README and release notes.",
+        "This general article does not determine whether a particular download is lawful or permitted; users must have authorization and follow applicable terms and law."
+      ]
+    },
+    "post/yt-dlp.exe による YouTube 動画のダウンロード方法/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/yt-dlp.exe による YouTube 動画のダウンロード方法/index.md",
+      "sourceHash": "b7fd98de1559a76b8a83f6d0f84cf97910a06eaafa7b1a345a18d31f5c1c05ed",
+      "translationHash": "87b78c5adecc2772b15f6c52fa1effb86233190f4deed3acafad0fc8295763f4",
+      "summary": "Compared the complete translation with the Japanese tutorial and corrected current commands, audio dependencies, update steps, and permission/terms guidance.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete source and translations and revised outdated installation, update, audio conversion, and rights guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked yt-dlp.exe, PATH, command prompt/PowerShell, ffmpeg, ffprobe, metadata embedding, and MP3 terminology against the current README."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked command flags and executable update command against the current yt-dlp documentation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official yt-dlp releases/README, YouTube Terms of Service, and YouTube Help for downloading one’s own uploads."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Tool behavior and YouTube support can change; consult the current official README and release notes.",
+        "This general article does not determine whether a particular download is lawful or permitted; users must have authorization and follow applicable terms and law."
+      ]
+    },
+    "post/yt-dlp.exe による YouTube 動画のダウンロード方法/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/yt-dlp.exe による YouTube 動画のダウンロード方法/index.md",
+      "sourceHash": "b7fd98de1559a76b8a83f6d0f84cf97910a06eaafa7b1a345a18d31f5c1c05ed",
+      "translationHash": "b80a41bdbf57aec61c90bf8c7b15bb80608600c964087ae573f5de482c32614b",
+      "summary": "Compared the complete translation with the Japanese tutorial and corrected current commands, audio dependencies, update steps, and permission/terms guidance.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete source and translations and revised outdated installation, update, audio conversion, and rights guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked yt-dlp.exe, PATH, command prompt/PowerShell, ffmpeg, ffprobe, metadata embedding, and MP3 terminology against the current README."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked command flags and executable update command against the current yt-dlp documentation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official yt-dlp releases/README, YouTube Terms of Service, and YouTube Help for downloading one’s own uploads."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Tool behavior and YouTube support can change; consult the current official README and release notes.",
+        "This general article does not determine whether a particular download is lawful or permitted; users must have authorization and follow applicable terms and law."
+      ]
+    },
+    "post/yt-dlp.exe による YouTube 動画のダウンロード方法/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/yt-dlp.exe による YouTube 動画のダウンロード方法/index.md",
+      "sourceHash": "b7fd98de1559a76b8a83f6d0f84cf97910a06eaafa7b1a345a18d31f5c1c05ed",
+      "translationHash": "694cc3c04adba5de6cb17cecf7f09f5b103adefe958521b3b69cf728d8253838",
+      "summary": "Compared the complete translation with the Japanese tutorial and corrected current commands, audio dependencies, update steps, and permission/terms guidance.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete source and translations and revised outdated installation, update, audio conversion, and rights guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked yt-dlp.exe, PATH, command prompt/PowerShell, ffmpeg, ffprobe, metadata embedding, and MP3 terminology against the current README."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked command flags and executable update command against the current yt-dlp documentation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official yt-dlp releases/README, YouTube Terms of Service, and YouTube Help for downloading one’s own uploads."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Tool behavior and YouTube support can change; consult the current official README and release notes.",
+        "This general article does not determine whether a particular download is lawful or permitted; users must have authorization and follow applicable terms and law."
+      ]
+    }
+  }
+}

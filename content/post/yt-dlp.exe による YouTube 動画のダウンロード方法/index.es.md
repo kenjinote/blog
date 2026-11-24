@@ -1,56 +1,56 @@
 ---
-
-
-
-
-
-
-
-
-title: 'Cómo usar yt-dlp: descargar y guardar videos y audios de YouTube'
-date: "2026-09-24T19:44:38+09:00"
+title: "Cómo usar yt-dlp.exe: descargar contenido autorizado y convertirlo a MP3"
 slug: "yt-dlp.exe による YouTube VideoのDescargar方法"
-date: 2024-09-03T14:09:26+09:00
-tags: ["YouTube", "Descarga"]
+tags: ["yt-dlp", "YouTube", "media tools"]
 draft: false
 image: "img_1.webp"
 categories: ["it-technology"]
-description: 'Explicación clara de cómo usar la herramienta de línea de comandos ''yt-dlp'' para descargar y guardar videos de YouTube en alta calidad, y el procedimiento para extraerlos y guardarlos como archivos de audio mp3. Cubre desde la instalación hasta su uso.'
+description: "Cómo obtener y actualizar yt-dlp.exe, guardar un vídeo y convertir audio a MP3. Úsalo de acuerdo con los derechos del contenido y las condiciones de YouTube."
+date: "2024-09-03T14:09:26+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
+# Cómo usar yt-dlp.exe: descargar contenido autorizado y convertirlo a MP3
 
+yt-dlp es una herramienta de línea de comandos de código abierto para descargar vídeo y audio. Estos ejemplos muestran el uso básico en Windows.
 
+## Úsalo solo cuando esté permitido
 
+Usa yt-dlp únicamente con contenido propio o cuyo titular te haya autorizado a descargar, y solo cuando lo permitan las condiciones de YouTube y la legislación aplicable. Puedes descargar tus propias subidas desde YouTube Studio.
 
+## Instalación y actualización
 
+Descarga el `yt-dlp.exe` para Windows desde la página oficial de versiones y guárdalo en una carpeta. Añade esa carpeta a `PATH` para ejecutarlo desde cualquier directorio. Obtén el ejecutable solo de las versiones oficiales.
 
-
-
-# ¿Qué es yt-dlp?
-
-`yt-dlp` es una herramienta de línea de comandos para descargar videos de YouTube.
-No solo te permite descargar videos, sino que también puedes descargarlos como archivos de música en formato mp3.
-
-## Descarga e instalación
-
-1. Descarga la versión más reciente de yt-dlp.exe desde la [página de lanzamientos de yt-dlp](https://github.com/yt-dlp/yt-dlp/releases).
-2. Coloca yt-dlp.exe en la carpeta que desees.
-3. Agrega la ruta de la carpeta de yt-dlp.exe a la variable de entorno Path.
-
-## Modo de uso
-
-Ejecuta yt-dlp.exe en el símbolo del sistema y especifica la URL del video de YouTube.
-
+```powershell
+yt-dlp.exe --version
+yt-dlp.exe -U
 ```
+
+## Uso básico
+
+En el Símbolo del sistema o PowerShell, indica la URL del vídeo. El archivo se guarda en el directorio actual.
+
+```powershell
 yt-dlp.exe "https://www.youtube.com/watch?v=VIDEO_ID"
 ```
-※ Como argumento, puedes usar solo la parte de VIDEO_ID en lugar de la URL completa.
 
-Si deseas descargar un archivo de música en formato mp3, ejecuta el siguiente comando:
+Para convertir el audio a MP3, usa `-x` y `--audio-format mp3`.
 
+```powershell
+yt-dlp.exe -x --audio-format mp3 "https://www.youtube.com/watch?v=VIDEO_ID"
 ```
-yt-dlp.exe --extract-audio --audio-format mp3 --embed-thumbnail --add-metadata "https://www.youtube.com/watch?v=VIDEO_ID"
-```
 
-Con esto, el video se descargará en el directorio actual desde donde ejecutaste el comando.
+Comprueba la versión con `yt-dlp.exe --version`. Puedes actualizar una versión binaria con `yt-dlp.exe -U`. La conversión a MP3 requiere `ffmpeg` y `ffprobe`. Si YouTube cambia y deja de funcionar la extracción, actualiza yt-dlp y consulta las dependencias actuales en el README oficial.
 
-Eso es todo.
+Para incrustar miniaturas o metadatos, puedes añadir `--embed-thumbnail` o `--embed-metadata`; según el formato, quizá se necesiten herramientas adicionales.
+
+## Si no funciona
+
+Actualiza a la versión más reciente y consulta la documentación oficial sobre dependencias y compatibilidad actuales. No eludas restricciones ni descargues contenido sin autorización.
+
+## Referencias
+
+- [yt-dlp official releases](https://github.com/yt-dlp/yt-dlp/releases/latest)
+- [yt-dlp README and documentation](https://github.com/yt-dlp/yt-dlp#readme)
+- [YouTube Terms of Service](https://www.youtube.com/t/terms)
+- [YouTube Help: download your own videos](https://support.google.com/youtube/answer/56100)
