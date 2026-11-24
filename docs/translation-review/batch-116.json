@@ -1,0 +1,443 @@
+{
+  "version": 1,
+  "batch": 116,
+  "article": "P≠NP予想",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "3e2e9ea0508cd7c820fba9ba11e18ea371be3b545fd97dfeb1508681377a4fa7",
+  "sources": [
+    "[Clay Mathematics Institute: P vs NP](https://www.claymath.org/millennium/p-vs-np/)",
+    "[Stephen Cook, official problem description (PDF)](https://www.claymath.org/wp-content/uploads/2022/02/MPPc.pdf)",
+    "[MIT OpenCourseWare: NP-Completeness, Lecture 16 (PDF)](https://ocw.mit.edu/courses/6-046j-design-and-analysis-of-algorithms-spring-2015/f2829e57caade7e7f21d765b8e7b9058_MIT6_046JS15_lec16.pdf)"
+  ],
+  "scope": "Reviewed the Japanese article and all twelve translations for meaning, terminology, mathematical definitions and implications, code applicability, and links. Added an input-size polynomial bound on certificate length, a SAT/NP-completeness example, and the current unresolved status; removed an unsourced claim about what many researchers believe.",
+  "findings": [
+    "Removed the duplicate future date and restored the original publication date, with lastmod set to the review date.",
+    "Defined NP with a certificate whose length is polynomially bounded by input size; explained why P is a subset of NP.",
+    "Added SAT as an NP-complete example and the conditional implication that polynomial-time SAT yields P=NP.",
+    "Stated that P vs. NP remains unsolved and did not present P≠NP as a proven result.",
+    "Added primary Clay Institute sources and MIT OpenCourseWare notes in all locales."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/P≠NP予想/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/P≠NP予想/index.md",
+      "sourceHash": "3e2e9ea0508cd7c820fba9ba11e18ea371be3b545fd97dfeb1508681377a4fa7",
+      "translationHash": "9caedff5de6c516269e273d430defbb209a2033e238a10de0cf2f1a598eb7c5f",
+      "summary": "Revised and aligned the article/translation using CMI and MIT primary educational references; corrected the missing polynomial certificate-length bound.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the definitions, implication P subset NP, SAT certificate example, NP-completeness consequence, and unresolved status against the Japanese source and primary references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked consistent use of decision problem, polynomial time, certificate/witness, SAT, reduction, and NP-complete."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Confirmed certificate length is polynomial in input size, P subset NP, polynomial-time SAT implies P=NP, and no separation is claimed as proved."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no program code or executable algorithm."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked the Clay Mathematics Institute problem page and official problem description plus MIT OpenCourseWare lecture notes."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker language certification.",
+        "This is an introductory overview, not a proof of P≠NP or a formal complexity-theory textbook."
+      ]
+    },
+    "post/P≠NP予想/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/P≠NP予想/index.md",
+      "sourceHash": "3e2e9ea0508cd7c820fba9ba11e18ea371be3b545fd97dfeb1508681377a4fa7",
+      "translationHash": "24d4ba533e2b1644b8c6ad16c00ea39a1799852f8d392594a0a6a9dc809c2dad",
+      "summary": "Revised and aligned the article/translation using CMI and MIT primary educational references; corrected the missing polynomial certificate-length bound.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the definitions, implication P subset NP, SAT certificate example, NP-completeness consequence, and unresolved status against the Japanese source and primary references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked consistent use of decision problem, polynomial time, certificate/witness, SAT, reduction, and NP-complete."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Confirmed certificate length is polynomial in input size, P subset NP, polynomial-time SAT implies P=NP, and no separation is claimed as proved."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no program code or executable algorithm."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked the Clay Mathematics Institute problem page and official problem description plus MIT OpenCourseWare lecture notes."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker language certification.",
+        "This is an introductory overview, not a proof of P≠NP or a formal complexity-theory textbook."
+      ]
+    },
+    "post/P≠NP予想/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/P≠NP予想/index.md",
+      "sourceHash": "3e2e9ea0508cd7c820fba9ba11e18ea371be3b545fd97dfeb1508681377a4fa7",
+      "translationHash": "0185c4d664d177ac3eb1e304dcf652782ec8eeb9232cdff84a4e8a544e0d0fe0",
+      "summary": "Revised and aligned the article/translation using CMI and MIT primary educational references; corrected the missing polynomial certificate-length bound.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the definitions, implication P subset NP, SAT certificate example, NP-completeness consequence, and unresolved status against the Japanese source and primary references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked consistent use of decision problem, polynomial time, certificate/witness, SAT, reduction, and NP-complete."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Confirmed certificate length is polynomial in input size, P subset NP, polynomial-time SAT implies P=NP, and no separation is claimed as proved."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no program code or executable algorithm."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked the Clay Mathematics Institute problem page and official problem description plus MIT OpenCourseWare lecture notes."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker language certification.",
+        "This is an introductory overview, not a proof of P≠NP or a formal complexity-theory textbook."
+      ]
+    },
+    "post/P≠NP予想/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/P≠NP予想/index.md",
+      "sourceHash": "3e2e9ea0508cd7c820fba9ba11e18ea371be3b545fd97dfeb1508681377a4fa7",
+      "translationHash": "565b157abc5057edfc73c8c56078e2a2da6eb2feb0f7c799749a1f8078229128",
+      "summary": "Revised and aligned the article/translation using CMI and MIT primary educational references; corrected the missing polynomial certificate-length bound.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the definitions, implication P subset NP, SAT certificate example, NP-completeness consequence, and unresolved status against the Japanese source and primary references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked consistent use of decision problem, polynomial time, certificate/witness, SAT, reduction, and NP-complete."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Confirmed certificate length is polynomial in input size, P subset NP, polynomial-time SAT implies P=NP, and no separation is claimed as proved."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no program code or executable algorithm."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked the Clay Mathematics Institute problem page and official problem description plus MIT OpenCourseWare lecture notes."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker language certification.",
+        "This is an introductory overview, not a proof of P≠NP or a formal complexity-theory textbook."
+      ]
+    },
+    "post/P≠NP予想/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/P≠NP予想/index.md",
+      "sourceHash": "3e2e9ea0508cd7c820fba9ba11e18ea371be3b545fd97dfeb1508681377a4fa7",
+      "translationHash": "87a6872fe0c34e2184c8b7fc110be638f8dbb880ac56451d5573e0cbac997cd2",
+      "summary": "Revised and aligned the article/translation using CMI and MIT primary educational references; corrected the missing polynomial certificate-length bound.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the definitions, implication P subset NP, SAT certificate example, NP-completeness consequence, and unresolved status against the Japanese source and primary references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked consistent use of decision problem, polynomial time, certificate/witness, SAT, reduction, and NP-complete."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Confirmed certificate length is polynomial in input size, P subset NP, polynomial-time SAT implies P=NP, and no separation is claimed as proved."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no program code or executable algorithm."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked the Clay Mathematics Institute problem page and official problem description plus MIT OpenCourseWare lecture notes."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker language certification.",
+        "This is an introductory overview, not a proof of P≠NP or a formal complexity-theory textbook."
+      ]
+    },
+    "post/P≠NP予想/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/P≠NP予想/index.md",
+      "sourceHash": "3e2e9ea0508cd7c820fba9ba11e18ea371be3b545fd97dfeb1508681377a4fa7",
+      "translationHash": "8ff6072b2b521b7dbf93e74bf9c5392e2382f4f152b5439be717440f0ee51bc5",
+      "summary": "Revised and aligned the article/translation using CMI and MIT primary educational references; corrected the missing polynomial certificate-length bound.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the definitions, implication P subset NP, SAT certificate example, NP-completeness consequence, and unresolved status against the Japanese source and primary references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked consistent use of decision problem, polynomial time, certificate/witness, SAT, reduction, and NP-complete."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Confirmed certificate length is polynomial in input size, P subset NP, polynomial-time SAT implies P=NP, and no separation is claimed as proved."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no program code or executable algorithm."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked the Clay Mathematics Institute problem page and official problem description plus MIT OpenCourseWare lecture notes."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker language certification.",
+        "This is an introductory overview, not a proof of P≠NP or a formal complexity-theory textbook."
+      ]
+    },
+    "post/P≠NP予想/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/P≠NP予想/index.md",
+      "sourceHash": "3e2e9ea0508cd7c820fba9ba11e18ea371be3b545fd97dfeb1508681377a4fa7",
+      "translationHash": "15580b5e390a6f07962830ebae294a8533d801b6e67af581990ad9bb03b20ec0",
+      "summary": "Revised and aligned the article/translation using CMI and MIT primary educational references; corrected the missing polynomial certificate-length bound.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the definitions, implication P subset NP, SAT certificate example, NP-completeness consequence, and unresolved status against the Japanese source and primary references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked consistent use of decision problem, polynomial time, certificate/witness, SAT, reduction, and NP-complete."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Confirmed certificate length is polynomial in input size, P subset NP, polynomial-time SAT implies P=NP, and no separation is claimed as proved."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no program code or executable algorithm."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked the Clay Mathematics Institute problem page and official problem description plus MIT OpenCourseWare lecture notes."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker language certification.",
+        "This is an introductory overview, not a proof of P≠NP or a formal complexity-theory textbook."
+      ]
+    },
+    "post/P≠NP予想/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/P≠NP予想/index.md",
+      "sourceHash": "3e2e9ea0508cd7c820fba9ba11e18ea371be3b545fd97dfeb1508681377a4fa7",
+      "translationHash": "7914a43a7545fb147e1a211df990c4fb73afd8fbed29d0149b8158b656aabaaa",
+      "summary": "Revised and aligned the article/translation using CMI and MIT primary educational references; corrected the missing polynomial certificate-length bound.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the definitions, implication P subset NP, SAT certificate example, NP-completeness consequence, and unresolved status against the Japanese source and primary references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked consistent use of decision problem, polynomial time, certificate/witness, SAT, reduction, and NP-complete."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Confirmed certificate length is polynomial in input size, P subset NP, polynomial-time SAT implies P=NP, and no separation is claimed as proved."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no program code or executable algorithm."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked the Clay Mathematics Institute problem page and official problem description plus MIT OpenCourseWare lecture notes."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker language certification.",
+        "This is an introductory overview, not a proof of P≠NP or a formal complexity-theory textbook."
+      ]
+    },
+    "post/P≠NP予想/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/P≠NP予想/index.md",
+      "sourceHash": "3e2e9ea0508cd7c820fba9ba11e18ea371be3b545fd97dfeb1508681377a4fa7",
+      "translationHash": "fd325eba355c92d8d820e0b99933201ecf9585380dbe1a34e3cb44a935ede57c",
+      "summary": "Revised and aligned the article/translation using CMI and MIT primary educational references; corrected the missing polynomial certificate-length bound.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the definitions, implication P subset NP, SAT certificate example, NP-completeness consequence, and unresolved status against the Japanese source and primary references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked consistent use of decision problem, polynomial time, certificate/witness, SAT, reduction, and NP-complete."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Confirmed certificate length is polynomial in input size, P subset NP, polynomial-time SAT implies P=NP, and no separation is claimed as proved."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no program code or executable algorithm."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked the Clay Mathematics Institute problem page and official problem description plus MIT OpenCourseWare lecture notes."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker language certification.",
+        "This is an introductory overview, not a proof of P≠NP or a formal complexity-theory textbook."
+      ]
+    },
+    "post/P≠NP予想/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/P≠NP予想/index.md",
+      "sourceHash": "3e2e9ea0508cd7c820fba9ba11e18ea371be3b545fd97dfeb1508681377a4fa7",
+      "translationHash": "dc0a3f5ecab822c71e189917a209e508fd396f79db3404669020705585f591d0",
+      "summary": "Revised and aligned the article/translation using CMI and MIT primary educational references; corrected the missing polynomial certificate-length bound.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the definitions, implication P subset NP, SAT certificate example, NP-completeness consequence, and unresolved status against the Japanese source and primary references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked consistent use of decision problem, polynomial time, certificate/witness, SAT, reduction, and NP-complete."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Confirmed certificate length is polynomial in input size, P subset NP, polynomial-time SAT implies P=NP, and no separation is claimed as proved."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no program code or executable algorithm."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked the Clay Mathematics Institute problem page and official problem description plus MIT OpenCourseWare lecture notes."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker language certification.",
+        "This is an introductory overview, not a proof of P≠NP or a formal complexity-theory textbook."
+      ]
+    },
+    "post/P≠NP予想/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/P≠NP予想/index.md",
+      "sourceHash": "3e2e9ea0508cd7c820fba9ba11e18ea371be3b545fd97dfeb1508681377a4fa7",
+      "translationHash": "984da3dfb72bf901b4db4ca4ed17831dd668ad3b5baf14adb597297aa3c8bdb9",
+      "summary": "Revised and aligned the article/translation using CMI and MIT primary educational references; corrected the missing polynomial certificate-length bound.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the definitions, implication P subset NP, SAT certificate example, NP-completeness consequence, and unresolved status against the Japanese source and primary references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked consistent use of decision problem, polynomial time, certificate/witness, SAT, reduction, and NP-complete."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Confirmed certificate length is polynomial in input size, P subset NP, polynomial-time SAT implies P=NP, and no separation is claimed as proved."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no program code or executable algorithm."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked the Clay Mathematics Institute problem page and official problem description plus MIT OpenCourseWare lecture notes."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker language certification.",
+        "This is an introductory overview, not a proof of P≠NP or a formal complexity-theory textbook."
+      ]
+    },
+    "post/P≠NP予想/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/P≠NP予想/index.md",
+      "sourceHash": "3e2e9ea0508cd7c820fba9ba11e18ea371be3b545fd97dfeb1508681377a4fa7",
+      "translationHash": "c550e07c699b9167c16a00c980f7d7c266530f050141486ea3d6918f64c2af80",
+      "summary": "Revised and aligned the article/translation using CMI and MIT primary educational references; corrected the missing polynomial certificate-length bound.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the definitions, implication P subset NP, SAT certificate example, NP-completeness consequence, and unresolved status against the Japanese source and primary references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked consistent use of decision problem, polynomial time, certificate/witness, SAT, reduction, and NP-complete."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Confirmed certificate length is polynomial in input size, P subset NP, polynomial-time SAT implies P=NP, and no separation is claimed as proved."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no program code or executable algorithm."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked the Clay Mathematics Institute problem page and official problem description plus MIT OpenCourseWare lecture notes."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker language certification.",
+        "This is an introductory overview, not a proof of P≠NP or a formal complexity-theory textbook."
+      ]
+    }
+  }
+}

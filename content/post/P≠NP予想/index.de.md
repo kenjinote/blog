@@ -1,18 +1,28 @@
 ---
-title: 'Was ist das P-NP-Problem? Das ungelöste Problem der Komplexitätstheorie und der Unterschied zwischen Klasse P und NP leicht verständlich erklärt'
-date: "2026-09-24T19:44:38+09:00"
+title: "Die P-NP-Frage: ein offenes Problem der Komplexitätstheorie"
 slug: "P≠NP-Vermutung"
-date: 2024-09-11T02:22:39+09:00
 tags: ["P≠NP-Vermutung", "Mathematik", "Ungelöste Probleme"]
 draft: false
 categories: ["math-cryptography-quantum"]
-description: 'Bietet einen leicht verständlichen Überblick über das größte ungelöste Problem der Informatik, das „P-NP-Problem“, aus der Perspektive deterministischer Turingmaschinen, und erklärt dabei den Unterschied zwischen „Klasse P“, die in Polynomzeit gelöst werden kann, und „Klasse NP“, deren Lösungsgültigkeit in Polynomzeit verifiziert werden kann.'
+description: "Einführung in P, NP, polynomial lange Zertifikate, SAT und die offene Frage, ob P gleich NP ist."
 image: eyecatch.jpg
+date: 2024-09-11T02:22:39+09:00
+lastmod: 2026-11-24
 ---
-# Überblick
+# Was sind P und NP?
 
-```
-Die Klasse P ist die Klasse von Problemen, die in polynomieller Zeit von einer deterministischen Turingmaschine entschieden werden können, und die Klasse NP ist die Klasse von Problemen, bei denen bei Vorliegen eines Beweises (genannt Witness oder Zeuge) für die Antwort "Ja" die Gültigkeit des Witness in polynomieller Zeit beurteilt (das nennt man Verifikation) werden kann. Da in polynomieller Zeit entscheidbare Probleme in polynomieller Zeit verifiziert werden können, ist offensichtlich P⊆NP, aber es ist nicht klar, ob P eine echte Teilmenge von NP ist. Es gibt noch keinen Beweis, aber viele Forscher glauben, dass P≠NP ist. Die Vermutung, dass diese Klasse P und Klasse NP nicht gleich sind, wird als "P≠NP-Vermutung" bezeichnet.
-```
+**P** ist die Klasse der Entscheidungsprobleme, die in Polynomialzeit bezüglich der Eingabelänge lösbar sind. **NP** ist die Klasse der Entscheidungsprobleme, bei denen jede Ja-Instanz ein Zertifikat (einen Lösungsvorschlag) besitzt, dessen Länge durch ein Polynom der Eingabelänge beschränkt ist und das in Polynomialzeit überprüft werden kann. Eine Lösung für ein Problem in P lässt sich ebenfalls in Polynomialzeit prüfen; daher gilt **P ⊆ NP**.
 
-Referenzseite : https://daigakudenki.com/np-hard/
+## SAT als Beispiel
+
+SAT fragt, ob es eine Variablenbelegung gibt, die eine gegebene boolesche Formel erfüllt. Bei einer Ja-Instanz ist diese Belegung das Zertifikat; die Prüfung aller Klauseln benötigt polynomielle Zeit in der Formellänge. SAT, einschließlich 3-SAT, ist NP-vollständig. Ein Polynomialzeitalgorithmus für SAT würde daher **P = NP** implizieren. NP-vollständig bedeutet, dass sich jedes Problem aus NP in Polynomialzeit auf dieses Problem reduzieren lässt.
+
+## Die offene Frage
+
+Ob **P = NP** oder **P ≠ NP** gilt, ist weiterhin offen. Das Clay Mathematics Institute führt P vs. NP als ungelöst. P≠NP ist eine viel untersuchte Vermutung, kein bewiesener Satz. Vereinfacht lautet die Frage: Kann jedes Problem, dessen Lösungsvorschlag effizient überprüfbar ist, auch effizient gelöst werden?
+
+## Quellen
+
+- [Clay Mathematics Institute: P vs NP](https://www.claymath.org/millennium/p-vs-np/)
+- [Stephen Cook, official problem description (PDF)](https://www.claymath.org/wp-content/uploads/2022/02/MPPc.pdf)
+- [MIT OpenCourseWare: NP-Completeness, Lecture 16 (PDF)](https://ocw.mit.edu/courses/6-046j-design-and-analysis-of-algorithms-spring-2015/f2829e57caade7e7f21d765b8e7b9058_MIT6_046JS15_lec16.pdf)

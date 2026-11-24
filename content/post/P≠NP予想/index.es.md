@@ -1,18 +1,28 @@
 ---
-title: '¿Qué es la conjetura P≠NP? Explicación sencilla del problema no resuelto de la teoría de la complejidad computacional y la diferencia entre P y NP'
-date: "2026-09-24T19:44:38+09:00"
+title: "La conjetura P ≠ NP: un problema abierto de complejidad"
 slug: "Conjetura P≠NP"
-date: 2024-09-11T02:22:39+09:00
 tags: ["Conjetura P≠NP", "Matemáticas", "Problemas no resueltos"]
 draft: false
 categories: ["math-cryptography-quantum"]
-description: 'Sobre la ''conjetura P≠NP'', el mayor problema no resuelto en ciencias de la computación, explicamos su concepto desde la perspectiva de las máquinas de Turing deterministas, aclarando la diferencia entre la ''clase P'', que se puede resolver en tiempo polinomial, y la ''clase NP'', donde la exactitud de la solución se puede verificar en tiempo polinomial.'
+description: "Introducción a P, NP, los certificados de longitud polinómica, SAT y la pregunta abierta de si P es igual a NP."
 image: eyecatch.jpg
+date: 2024-09-11T02:22:39+09:00
+lastmod: 2026-11-24
 ---
-# Resumen
+# ¿Qué son P y NP?
 
-```
-La clase P es la clase de problemas que pueden ser resueltos en tiempo polinómico por una máquina de Turing determinista, y la clase NP es la clase de problemas para los cuales, cuando se da una prueba de que la respuesta es afirmativa (llamada testigo), la validez del testigo puede ser verificada en tiempo polinómico (esto se llama verificación). Dado que los problemas que se pueden resolver en tiempo polinómico también se pueden verificar en tiempo polinómico, es evidente que P⊆NP, pero no está claro si P es un subconjunto propio de NP o no. Aunque todavía no hay pruebas, muchos investigadores creen que P≠NP. La conjetura de que la clase P y la clase NP no son iguales se llama "Conjetura P≠NP".
-```
+**P** es la clase de problemas de decisión que pueden resolverse en tiempo polinómico respecto del tamaño de la entrada. **NP** es la clase de problemas de decisión para los que cada instancia con respuesta sí tiene un certificado (una solución propuesta) de longitud acotada por un polinomio del tamaño de la entrada, cuya validez puede comprobarse en tiempo polinómico. Todo problema de P también se puede verificar en tiempo polinómico, por lo que **P ⊆ NP**.
 
-Sitio de referencia : https://daigakudenki.com/np-hard/
+## SAT como ejemplo
+
+SAT pregunta si una fórmula booleana dada tiene una asignación que la hace verdadera. Para una instancia afirmativa, la asignación es el certificado: comprobar que satisface cada cláusula requiere tiempo polinómico en el tamaño de la fórmula. SAT, incluido 3-SAT, es NP-completo. Por tanto, un algoritmo de tiempo polinómico para SAT implicaría **P = NP**. NP-completo significa que todo problema de NP se puede reducir a ese problema en tiempo polinómico.
+
+## La pregunta abierta
+
+Aún no se sabe si **P = NP** o **P ≠ NP**. El Clay Mathematics Institute clasifica P vs. NP como no resuelto. P≠NP es una conjetura ampliamente estudiada, no un teorema demostrado. En términos sencillos, se pregunta si todo problema cuya solución propuesta puede verificarse eficientemente también puede resolverse eficientemente.
+
+## Referencias
+
+- [Clay Mathematics Institute: P vs NP](https://www.claymath.org/millennium/p-vs-np/)
+- [Stephen Cook, official problem description (PDF)](https://www.claymath.org/wp-content/uploads/2022/02/MPPc.pdf)
+- [MIT OpenCourseWare: NP-Completeness, Lecture 16 (PDF)](https://ocw.mit.edu/courses/6-046j-design-and-analysis-of-algorithms-spring-2015/f2829e57caade7e7f21d765b8e7b9058_MIT6_046JS15_lec16.pdf)

@@ -352,6 +352,17 @@ ARTICLES = {
         "markers": ["urlopen(request,timeout=15)", "response.headers.get_content_type()", "2*1024*1024", "webbrowser.open(temp_path.as_uri(),new=2)", "temp_path.unlink()", "PNG signature"],
         "date": "2025-02-24",
     },
+    116: {
+        "bundle": ROOT / "content/post/P≠NP予想",
+        "slug": "P≠NP予想",
+        "links": [
+            "https://www.claymath.org/millennium/p-vs-np/",
+            "https://www.claymath.org/wp-content/uploads/2022/02/MPPc.pdf",
+            "https://ocw.mit.edu/courses/6-046j-design-and-analysis-of-algorithms-spring-2015/f2829e57caade7e7f21d765b8e7b9058_MIT6_046JS15_lec16.pdf",
+        ],
+        "markers": ["P = NP", "P ⊆ NP", "P ≠ NP", "SAT"],
+        "date": "2024-09-11",
+    },
     115: {
         "bundle": ROOT / "content/post/Python不要C++だけでAI推論エンジンを構築してみた",
         "slug": "building-ai-inference-engine-cpp-only",
@@ -431,7 +442,7 @@ def slug_key(value):
 parser = argparse.ArgumentParser()
 parser.add_argument("--ci-run", type=int, required=True)
 parser.add_argument("--commit", required=True)
-parser.add_argument("--max-batch", type=int, choices=(90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115), default=115)
+parser.add_argument("--max-batch", type=int, choices=(90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116), default=116)
 args = parser.parse_args()
 ARTICLES = {number: article for number, article in ARTICLES.items() if number <= args.max_batch}
 with urllib.request.urlopen(f"https://github.com/kenjinote/blog/actions/runs/{args.ci_run}", timeout=45) as response:

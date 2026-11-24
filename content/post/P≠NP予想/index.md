@@ -1,18 +1,28 @@
 ---
-title: 'P≠NP予想とは？計算量理論の未解決問題とクラスP・NPの違いをわかりやすく解説'
-date: "2026-09-24T19:44:38+09:00"
+title: "P≠NP予想：計算量理論の未解決問題"
 slug: "P≠NP予想"
-date: 2024-09-11T02:22:39+09:00
 tags: ["P≠NP予想", "数学", "未解決問題"]
 draft: false
 categories: ["math-cryptography-quantum"]
-description: '情報科学における最大の未解決問題「P≠NP予想」について、多項式時間で解ける「クラスP」と、解の正当性を多項式時間で検証できる「クラスNP」の違いを交えながら、決定性チューリングマシンの観点からわかりやすく概要を解説します。'
+description: "クラスPとNP、証明書の長さ、SATの例を通して、PとNPが等しいかという未解決問題を説明します。"
 image: eyecatch.jpg
+date: 2024-09-11T02:22:39+09:00
+lastmod: 2026-11-24
 ---
-# 概要
+# PとNPとは
 
-```
-クラスPとは、決定性チューリングマシンにおいて、多項式時間で判定可能な問題のクラスであり、クラスNPは、Yesとなる証拠（Witnessという）が与えられたとき、多項式時間でWitnessの正当性の判定（これを検証という）が可能な問題のクラスである。多項式時間で判定可能な問題は、多項式時間で検証可能であるので、P⊆NPであることは明らかであるが、PがNPの真部分集合であるか否かについては明確ではない。証明はまだないが、多くの研究者はP≠NPだと信じている。そして、このクラスPとクラスNPが等しくないという予想を「P≠NP予想」という。
-```
+**P**は、入力サイズの多項式時間で解ける決定問題のクラスです。**NP**は、Yesである入力について、入力サイズの多項式で抑えられる長さの証明書（解の候補）があれば、それを多項式時間で検証できる決定問題のクラスです。ここで「多項式」は入力サイズに対するものです。解ける問題は解を求めてから検証できるため、**P ⊆ NP**です。
 
-参考サイト : https://daigakudenki.com/np-hard/
+## SATを例にする
+
+SATは、与えられた論理式を真にする変数への割当てが存在するかを問う問題です。Yesの例では、その割当てを証明書として渡し、各節が満たされるかを式のサイズに対して多項式時間で確認できます。SAT（3-SATを含む）はNP完全です。したがってSATに多項式時間アルゴリズムが見つかれば **P = NP** が導かれます。NP完全とは、NPのどの問題も多項式時間でその問題へ帰着できることを指します。
+
+## 未解決の問い
+
+**P = NPか、それともP ≠ NPか**は未解決です。クレイ数学研究所はP対NP問題を未解決問題として掲載しています。P≠NPは広く研究される予想ですが、証明済みの定理として述べることはできません。この問題は、解を効率よく検証できるなら効率よく見つけられるのか、という問いです。
+
+## 参考資料
+
+- [Clay Mathematics Institute: P vs NP](https://www.claymath.org/millennium/p-vs-np/)
+- [Stephen Cook, official problem description (PDF)](https://www.claymath.org/wp-content/uploads/2022/02/MPPc.pdf)
+- [MIT OpenCourseWare: NP-Completeness, Lecture 16 (PDF)](https://ocw.mit.edu/courses/6-046j-design-and-analysis-of-algorithms-spring-2015/f2829e57caade7e7f21d765b8e7b9058_MIT6_046JS15_lec16.pdf)

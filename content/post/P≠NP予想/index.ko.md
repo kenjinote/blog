@@ -1,18 +1,28 @@
 ---
-title: 'P≠NP 문제란? 계산 복잡도 이론의 미해결 문제와 클래스 P·NP의 차이를 알기 쉽게 설명'
-date: "2026-09-24T19:44:38+09:00"
+title: "P 대 NP 추측: 계산 복잡도 이론의 미해결 문제"
 slug: "P≠NP 예상"
-date: 2024-09-11T02:22:39+09:00
 tags: ["P≠NP 예상", "수학", "미해결 문제"]
 draft: false
 categories: ["math-cryptography-quantum"]
-description: '정보 과학의 최대 미해결 문제인 ''P≠NP 문제''에 대하여, 다항 시간 내에 풀 수 있는 ''클래스 P''와 해답의 정당성을 다항 시간 내에 검증할 수 있는 ''클래스 NP''의 차이를 바탕으로 결정론적 튜링 기계의 관점에서 개요를 알기 쉽게 설명합니다.'
+description: "다항식 길이 증명서와 SAT 예시를 통해 P, NP와 P=NP 여부라는 미해결 문제를 설명합니다."
 image: eyecatch.jpg
+date: 2024-09-11T02:22:39+09:00
+lastmod: 2026-11-24
 ---
-# 개요
+# P와 NP란?
 
-```
-클래스 P란, 결정론적 튜링 기계에서 다항 시간에 판정 가능한 문제의 클래스이며, 클래스 NP는 Yes가 되는 증거(Witness라고 함)가 주어졌을 때 다항 시간에 Witness의 정당성 판정(이를 검증이라고 함)이 가능한 문제의 클래스이다. 다항 시간에 판정 가능한 문제는 다항 시간에 검증 가능하므로 P⊆NP인 것은 분명하지만, P가 NP의 진부분집합인지 여부에 대해서는 명확하지 않다. 아직 증명되지는 않았지만, 많은 연구자는 P≠NP라고 믿고 있다. 그리고 이 클래스 P와 클래스 NP가 같지 않다는 예상을 'P≠NP 예상'이라고 한다.
-```
+**P**는 입력 크기에 대한 다항 시간 안에 풀 수 있는 결정 문제의 집합입니다. **NP**는 답이 ‘예’인 각 입력에 대해 입력 크기의 다항식으로 길이가 제한되는 증명서(제안된 해)가 있고, 이를 다항 시간 안에 검증할 수 있는 결정 문제의 집합입니다. P의 해도 다항 시간에 검증할 수 있으므로 **P ⊆ NP**입니다.
 
-참고 사이트 : https://daigakudenki.com/np-hard/
+## SAT 예시
+
+SAT는 주어진 불리언 식을 참으로 만드는 변수 할당이 존재하는지 묻습니다. ‘예’인 입력에서는 그 할당이 증명서이며, 모든 절을 만족하는지 식의 크기에 대한 다항 시간에 확인할 수 있습니다. 3-SAT를 포함한 SAT는 NP-완전입니다. 따라서 SAT를 다항 시간에 푸는 알고리즘이 있다면 **P = NP**가 됩니다. NP-완전이란 NP의 모든 문제가 다항 시간 환원을 통해 해당 문제로 변환될 수 있다는 뜻입니다.
+
+## 미해결 질문
+
+**P = NP인지 P ≠ NP인지**는 아직 밝혀지지 않았습니다. 클레이 수학연구소는 P 대 NP를 미해결 문제로 분류합니다. P≠NP는 널리 연구되는 추측이지 증명된 정리는 아닙니다. 쉽게 말해, 제안된 해를 효율적으로 검증할 수 있는 모든 문제를 효율적으로 풀 수도 있는지를 묻는 문제입니다.
+
+## 참고 자료
+
+- [Clay Mathematics Institute: P vs NP](https://www.claymath.org/millennium/p-vs-np/)
+- [Stephen Cook, official problem description (PDF)](https://www.claymath.org/wp-content/uploads/2022/02/MPPc.pdf)
+- [MIT OpenCourseWare: NP-Completeness, Lecture 16 (PDF)](https://ocw.mit.edu/courses/6-046j-design-and-analysis-of-algorithms-spring-2015/f2829e57caade7e7f21d765b8e7b9058_MIT6_046JS15_lec16.pdf)

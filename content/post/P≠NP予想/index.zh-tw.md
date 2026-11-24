@@ -1,18 +1,28 @@
 ---
-title: '什麼是 P≠NP 猜想？淺顯易懂解說計算複雜度理論的未解之謎與 P、NP 類別的差異'
-date: "2026-09-24T19:44:38+09:00"
+title: "P 與 NP 問題：計算複雜度理論中的未解問題"
 slug: "P≠NP猜想"
-date: 2024-09-11T02:22:39+09:00
 tags: ["P≠NP猜想", "數學", "未解問題"]
 draft: false
 categories: ["math-cryptography-quantum"]
-description: '針對資訊科學中最大的未解之謎「P≠NP 猜想」，結合可在多項式時間內求解的「P 類別」，與可在多項式時間內驗證解之正確性的「NP 類別」之間的差異，從決定性圖靈機的觀點，淺顯易懂地解說其概要。'
+description: "透過多項式長度證明憑證與 SAT 範例，介紹 P、NP，以及 P 是否等於 NP 這個未解問題。"
 image: eyecatch.jpg
+date: 2024-09-11T02:22:39+09:00
+lastmod: 2026-11-24
 ---
-# 概要
+# 什麼是 P 與 NP？
 
-```
-P類別是在確定性圖靈機上可以在多項式時間內判定的一類問題，而NP類別是當給定一個結果為Yes的證據（稱為Witness）時，可以在多項式時間內判定Witness正確性（稱為驗證）的一類問題。由於在多項式時間內可判定的問題可以在多項式時間內驗證，因此P⊆NP是顯而易見的，但P是否為NP的真子集仍不清楚。目前尚無證明，但許多研究人員相信P≠NP。而這種認為P類別和NP類別不相等的猜想被稱為「P≠NP猜想」。
-```
+**P** 是指可在相對於輸入大小的多項式時間內解決的判定問題類別。**NP** 是指對每個答案為「是」的輸入，都有一份長度受輸入大小多項式界定的證明憑證（候選解），且可在多項式時間內驗證其正確性的判定問題類別。P 中的問題也能在多項式時間內驗證，因此 **P ⊆ NP**。
 
-參考網站 : https://daigakudenki.com/np-hard/
+## 以 SAT 為例
+
+SAT 詢問給定布林公式是否存在能使公式為真的變數指派。對答案為「是」的輸入，該指派就是證明憑證；檢查它是否滿足每個子句，只需相對於公式大小的多項式時間。SAT（包括 3-SAT）是 NP 完全問題。因此，若 SAT 有多項式時間演算法，就能推出 **P = NP**。NP 完全表示 NP 中的每個問題都能在多項式時間內歸約至該問題。
+
+## 尚未解決的問題
+
+**P = NP 還是 P ≠ NP** 仍未解決。克雷數學研究所將 P 與 NP 問題列為未解問題。P≠NP 是廣受研究的猜想，並非已證明的定理。簡單來說，這是在問：凡是能有效率地驗證候選解的問題，是否也都能有效率地求解？
+
+## 參考資料
+
+- [Clay Mathematics Institute: P vs NP](https://www.claymath.org/millennium/p-vs-np/)
+- [Stephen Cook, official problem description (PDF)](https://www.claymath.org/wp-content/uploads/2022/02/MPPc.pdf)
+- [MIT OpenCourseWare: NP-Completeness, Lecture 16 (PDF)](https://ocw.mit.edu/courses/6-046j-design-and-analysis-of-algorithms-spring-2015/f2829e57caade7e7f21d765b8e7b9058_MIT6_046JS15_lec16.pdf)
