@@ -1,0 +1,455 @@
+{
+  "version": 1,
+  "batch": 111,
+  "article": "PowerShellで.DS_Storeを一括削除",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "141771da15f66841cb1d637996273195fb34a96935d04f314508a16af4bfe937",
+  "sources": [
+    "https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-childitem",
+    "https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/remove-item",
+    "https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_commonparameters"
+  ],
+  "scope": "Rewrote the Japanese article and twelve translations against current Microsoft PowerShell documentation for Get-ChildItem, Remove-Item, LiteralPath, hidden files, recursion, and WhatIf. Checked match scope, file-vs-directory handling, destructive-action preview, access limitations, translation alignment, code, links, and publication metadata.",
+  "findings": [
+    "Removed the duplicated future date, preserved the original 2022-09-12 publication date, and recorded lastmod 2026-11-24 in every locale.",
+    "Replaced the one-line immediate recursive delete with an explicitly selected root folder, exact `.DS_Store` file filter, hidden-file inclusion, and full-path candidate listing.",
+    "Added a mandatory preview step using Remove-Item -WhatIf; the article tells readers to remove WhatIf only after reviewing the exact candidates.",
+    "Used LiteralPath for both root and matched files, File to exclude directories with that name, and Force only to include hidden items; documented that Force does not bypass permissions.",
+    "Aligned the Japanese article, twelve translations, and identical PowerShell sample with official Microsoft cmdlet documentation."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/PowerShellで.DS_Storeを一括削除する/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PowerShellで.DS_Storeを一括削除する/index.md",
+      "sourceHash": "141771da15f66841cb1d637996273195fb34a96935d04f314508a16af4bfe937",
+      "translationHash": "bba990f51749c6808e8bf501d90d58c8b170c7bfe29c76103dbc527f7a761192",
+      "summary": "Rewrote and aligned the translation to the Japanese source and current Microsoft PowerShell Get-ChildItem, Remove-Item, and WhatIf documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the explicit target-root scope, candidate listing, dry-run preview, and only-delete-after-review workflow."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked LiteralPath, Filter, File, Recurse, Force, WhatIf, hidden item, and access-permission terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no numerical claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the shared PowerShell code across all locales; it targets only files with the exact .DS_Store name under the selected root, lists full paths, and uses Remove-Item -LiteralPath with -WhatIf."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Microsoft PowerShell documentation for Get-ChildItem, Remove-Item, and WhatIf."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The PowerShell snippet was checked against documentation but was not executed in a separate test directory.",
+        "The selected root controls the full recursive scope; inspect every listed path before running the deletion without WhatIf."
+      ]
+    },
+    "post/PowerShellで.DS_Storeを一括削除する/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PowerShellで.DS_Storeを一括削除する/index.md",
+      "sourceHash": "141771da15f66841cb1d637996273195fb34a96935d04f314508a16af4bfe937",
+      "translationHash": "85880895ded6286e436af0d75ea96c5781d92e16b576d5ac9557b7978d7887f5",
+      "summary": "Rewrote and aligned the translation to the Japanese source and current Microsoft PowerShell Get-ChildItem, Remove-Item, and WhatIf documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the explicit target-root scope, candidate listing, dry-run preview, and only-delete-after-review workflow."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked LiteralPath, Filter, File, Recurse, Force, WhatIf, hidden item, and access-permission terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no numerical claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the shared PowerShell code across all locales; it targets only files with the exact .DS_Store name under the selected root, lists full paths, and uses Remove-Item -LiteralPath with -WhatIf."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Microsoft PowerShell documentation for Get-ChildItem, Remove-Item, and WhatIf."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The PowerShell snippet was checked against documentation but was not executed in a separate test directory.",
+        "The selected root controls the full recursive scope; inspect every listed path before running the deletion without WhatIf."
+      ]
+    },
+    "post/PowerShellで.DS_Storeを一括削除する/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PowerShellで.DS_Storeを一括削除する/index.md",
+      "sourceHash": "141771da15f66841cb1d637996273195fb34a96935d04f314508a16af4bfe937",
+      "translationHash": "0ab643e97552fdae3452edec3ebc3cf14110edd31b53efee5377724d774717db",
+      "summary": "Rewrote and aligned the translation to the Japanese source and current Microsoft PowerShell Get-ChildItem, Remove-Item, and WhatIf documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the explicit target-root scope, candidate listing, dry-run preview, and only-delete-after-review workflow."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked LiteralPath, Filter, File, Recurse, Force, WhatIf, hidden item, and access-permission terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no numerical claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the shared PowerShell code across all locales; it targets only files with the exact .DS_Store name under the selected root, lists full paths, and uses Remove-Item -LiteralPath with -WhatIf."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Microsoft PowerShell documentation for Get-ChildItem, Remove-Item, and WhatIf."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The PowerShell snippet was checked against documentation but was not executed in a separate test directory.",
+        "The selected root controls the full recursive scope; inspect every listed path before running the deletion without WhatIf."
+      ]
+    },
+    "post/PowerShellで.DS_Storeを一括削除する/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PowerShellで.DS_Storeを一括削除する/index.md",
+      "sourceHash": "141771da15f66841cb1d637996273195fb34a96935d04f314508a16af4bfe937",
+      "translationHash": "5f0ddeaa4acf33e5f888d10d28626a9982049751d7e0a153331b239bb826504f",
+      "summary": "Rewrote and aligned the translation to the Japanese source and current Microsoft PowerShell Get-ChildItem, Remove-Item, and WhatIf documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the explicit target-root scope, candidate listing, dry-run preview, and only-delete-after-review workflow."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked LiteralPath, Filter, File, Recurse, Force, WhatIf, hidden item, and access-permission terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no numerical claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the shared PowerShell code across all locales; it targets only files with the exact .DS_Store name under the selected root, lists full paths, and uses Remove-Item -LiteralPath with -WhatIf."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Microsoft PowerShell documentation for Get-ChildItem, Remove-Item, and WhatIf."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The PowerShell snippet was checked against documentation but was not executed in a separate test directory.",
+        "The selected root controls the full recursive scope; inspect every listed path before running the deletion without WhatIf."
+      ]
+    },
+    "post/PowerShellで.DS_Storeを一括削除する/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PowerShellで.DS_Storeを一括削除する/index.md",
+      "sourceHash": "141771da15f66841cb1d637996273195fb34a96935d04f314508a16af4bfe937",
+      "translationHash": "9f1e85c3316a835f87d865bdc8a9ddb2db67cc33f21ec4b4f845708b49bf81e8",
+      "summary": "Rewrote and aligned the translation to the Japanese source and current Microsoft PowerShell Get-ChildItem, Remove-Item, and WhatIf documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the explicit target-root scope, candidate listing, dry-run preview, and only-delete-after-review workflow."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked LiteralPath, Filter, File, Recurse, Force, WhatIf, hidden item, and access-permission terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no numerical claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the shared PowerShell code across all locales; it targets only files with the exact .DS_Store name under the selected root, lists full paths, and uses Remove-Item -LiteralPath with -WhatIf."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Microsoft PowerShell documentation for Get-ChildItem, Remove-Item, and WhatIf."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The PowerShell snippet was checked against documentation but was not executed in a separate test directory.",
+        "The selected root controls the full recursive scope; inspect every listed path before running the deletion without WhatIf."
+      ]
+    },
+    "post/PowerShellで.DS_Storeを一括削除する/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PowerShellで.DS_Storeを一括削除する/index.md",
+      "sourceHash": "141771da15f66841cb1d637996273195fb34a96935d04f314508a16af4bfe937",
+      "translationHash": "dd4a3209c67056eefd54a170c40379da244452aa84c30b65edc81c98d5c0f03b",
+      "summary": "Rewrote and aligned the translation to the Japanese source and current Microsoft PowerShell Get-ChildItem, Remove-Item, and WhatIf documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the explicit target-root scope, candidate listing, dry-run preview, and only-delete-after-review workflow."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked LiteralPath, Filter, File, Recurse, Force, WhatIf, hidden item, and access-permission terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no numerical claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the shared PowerShell code across all locales; it targets only files with the exact .DS_Store name under the selected root, lists full paths, and uses Remove-Item -LiteralPath with -WhatIf."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Microsoft PowerShell documentation for Get-ChildItem, Remove-Item, and WhatIf."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The PowerShell snippet was checked against documentation but was not executed in a separate test directory.",
+        "The selected root controls the full recursive scope; inspect every listed path before running the deletion without WhatIf."
+      ]
+    },
+    "post/PowerShellで.DS_Storeを一括削除する/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PowerShellで.DS_Storeを一括削除する/index.md",
+      "sourceHash": "141771da15f66841cb1d637996273195fb34a96935d04f314508a16af4bfe937",
+      "translationHash": "87c84b02c08ce5ee1249f241355edc080edc3e62fc10114f5dddda96afdfa72e",
+      "summary": "Rewrote and aligned the translation to the Japanese source and current Microsoft PowerShell Get-ChildItem, Remove-Item, and WhatIf documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the explicit target-root scope, candidate listing, dry-run preview, and only-delete-after-review workflow."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked LiteralPath, Filter, File, Recurse, Force, WhatIf, hidden item, and access-permission terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no numerical claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the shared PowerShell code across all locales; it targets only files with the exact .DS_Store name under the selected root, lists full paths, and uses Remove-Item -LiteralPath with -WhatIf."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Microsoft PowerShell documentation for Get-ChildItem, Remove-Item, and WhatIf."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The PowerShell snippet was checked against documentation but was not executed in a separate test directory.",
+        "The selected root controls the full recursive scope; inspect every listed path before running the deletion without WhatIf."
+      ]
+    },
+    "post/PowerShellで.DS_Storeを一括削除する/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PowerShellで.DS_Storeを一括削除する/index.md",
+      "sourceHash": "141771da15f66841cb1d637996273195fb34a96935d04f314508a16af4bfe937",
+      "translationHash": "7c1957b70bed41ab08a57851493a6c5efe1c8d418df1b1876bf46379108688bb",
+      "summary": "Rewrote and aligned the translation to the Japanese source and current Microsoft PowerShell Get-ChildItem, Remove-Item, and WhatIf documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the explicit target-root scope, candidate listing, dry-run preview, and only-delete-after-review workflow."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked LiteralPath, Filter, File, Recurse, Force, WhatIf, hidden item, and access-permission terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no numerical claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the shared PowerShell code across all locales; it targets only files with the exact .DS_Store name under the selected root, lists full paths, and uses Remove-Item -LiteralPath with -WhatIf."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Microsoft PowerShell documentation for Get-ChildItem, Remove-Item, and WhatIf."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The PowerShell snippet was checked against documentation but was not executed in a separate test directory.",
+        "The selected root controls the full recursive scope; inspect every listed path before running the deletion without WhatIf."
+      ]
+    },
+    "post/PowerShellで.DS_Storeを一括削除する/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PowerShellで.DS_Storeを一括削除する/index.md",
+      "sourceHash": "141771da15f66841cb1d637996273195fb34a96935d04f314508a16af4bfe937",
+      "translationHash": "77fbef735cfbe473cefffca8a7b44f21158d4dd469c16c8b96913ae74ee66def",
+      "summary": "Rewrote and aligned the translation to the Japanese source and current Microsoft PowerShell Get-ChildItem, Remove-Item, and WhatIf documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the explicit target-root scope, candidate listing, dry-run preview, and only-delete-after-review workflow."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked LiteralPath, Filter, File, Recurse, Force, WhatIf, hidden item, and access-permission terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no numerical claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the shared PowerShell code across all locales; it targets only files with the exact .DS_Store name under the selected root, lists full paths, and uses Remove-Item -LiteralPath with -WhatIf."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Microsoft PowerShell documentation for Get-ChildItem, Remove-Item, and WhatIf."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The PowerShell snippet was checked against documentation but was not executed in a separate test directory.",
+        "The selected root controls the full recursive scope; inspect every listed path before running the deletion without WhatIf."
+      ]
+    },
+    "post/PowerShellで.DS_Storeを一括削除する/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PowerShellで.DS_Storeを一括削除する/index.md",
+      "sourceHash": "141771da15f66841cb1d637996273195fb34a96935d04f314508a16af4bfe937",
+      "translationHash": "5ce8a6210a7410a95adda74940579af10bc442a9b249a46d7c25a11a39dcd7bc",
+      "summary": "Rewrote and aligned the translation to the Japanese source and current Microsoft PowerShell Get-ChildItem, Remove-Item, and WhatIf documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the explicit target-root scope, candidate listing, dry-run preview, and only-delete-after-review workflow."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked LiteralPath, Filter, File, Recurse, Force, WhatIf, hidden item, and access-permission terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no numerical claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the shared PowerShell code across all locales; it targets only files with the exact .DS_Store name under the selected root, lists full paths, and uses Remove-Item -LiteralPath with -WhatIf."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Microsoft PowerShell documentation for Get-ChildItem, Remove-Item, and WhatIf."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The PowerShell snippet was checked against documentation but was not executed in a separate test directory.",
+        "The selected root controls the full recursive scope; inspect every listed path before running the deletion without WhatIf."
+      ]
+    },
+    "post/PowerShellで.DS_Storeを一括削除する/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PowerShellで.DS_Storeを一括削除する/index.md",
+      "sourceHash": "141771da15f66841cb1d637996273195fb34a96935d04f314508a16af4bfe937",
+      "translationHash": "400dd1e8b75053d12f3492ed9ad1b2351fd7715ed0cb9ebed38a658f98c509ee",
+      "summary": "Rewrote and aligned the translation to the Japanese source and current Microsoft PowerShell Get-ChildItem, Remove-Item, and WhatIf documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the explicit target-root scope, candidate listing, dry-run preview, and only-delete-after-review workflow."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked LiteralPath, Filter, File, Recurse, Force, WhatIf, hidden item, and access-permission terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no numerical claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the shared PowerShell code across all locales; it targets only files with the exact .DS_Store name under the selected root, lists full paths, and uses Remove-Item -LiteralPath with -WhatIf."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Microsoft PowerShell documentation for Get-ChildItem, Remove-Item, and WhatIf."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The PowerShell snippet was checked against documentation but was not executed in a separate test directory.",
+        "The selected root controls the full recursive scope; inspect every listed path before running the deletion without WhatIf."
+      ]
+    },
+    "post/PowerShellで.DS_Storeを一括削除する/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PowerShellで.DS_Storeを一括削除する/index.md",
+      "sourceHash": "141771da15f66841cb1d637996273195fb34a96935d04f314508a16af4bfe937",
+      "translationHash": "87d9165a66c78a56f6e06dc3e05496c36bd0b26a1ca3b247bc4791b621e62f6f",
+      "summary": "Rewrote and aligned the translation to the Japanese source and current Microsoft PowerShell Get-ChildItem, Remove-Item, and WhatIf documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the explicit target-root scope, candidate listing, dry-run preview, and only-delete-after-review workflow."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked LiteralPath, Filter, File, Recurse, Force, WhatIf, hidden item, and access-permission terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no numerical claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the shared PowerShell code across all locales; it targets only files with the exact .DS_Store name under the selected root, lists full paths, and uses Remove-Item -LiteralPath with -WhatIf."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Microsoft PowerShell documentation for Get-ChildItem, Remove-Item, and WhatIf."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The PowerShell snippet was checked against documentation but was not executed in a separate test directory.",
+        "The selected root controls the full recursive scope; inspect every listed path before running the deletion without WhatIf."
+      ]
+    }
+  }
+}

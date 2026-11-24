@@ -12725,6 +12725,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-110.json",
       "evidenceHash": "38698531d6a47981ccd727b4c7a53fcc2647230d35c98ce64a8189cdc90bc1bd"
+    },
+    "post/PowerShellで.DS_Storeを一括削除する/index.ar.md": {
+      "source": "post/PowerShellで.DS_Storeを一括削除する/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "141771da15f66841cb1d637996273195fb34a96935d04f314508a16af4bfe937",
+      "translationHash": "bba990f51749c6808e8bf501d90d58c8b170c7bfe29c76103dbc527f7a761192",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-111.json",
+      "evidenceHash": "ec3330d60e224d5c52c13c9a6936579b2d960dfe5c868deb1759ae7a328a57bd"
+    },
+    "post/PowerShellで.DS_Storeを一括削除する/index.de.md": {
+      "source": "post/PowerShellで.DS_Storeを一括削除する/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "141771da15f66841cb1d637996273195fb34a96935d04f314508a16af4bfe937",
+      "translationHash": "85880895ded6286e436af0d75ea96c5781d92e16b576d5ac9557b7978d7887f5",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-111.json",
+      "evidenceHash": "11247fa3f10f54752d47099205b90d667760dce8e582b5de04d2568d0c1c4d91"
+    },
+    "post/PowerShellで.DS_Storeを一括削除する/index.en.md": {
+      "source": "post/PowerShellで.DS_Storeを一括削除する/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "141771da15f66841cb1d637996273195fb34a96935d04f314508a16af4bfe937",
+      "translationHash": "0ab643e97552fdae3452edec3ebc3cf14110edd31b53efee5377724d774717db",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-111.json",
+      "evidenceHash": "00c55833782e74d450cbfa899dfa4d61cbca4cdffdbca5a35b96f5c584858608"
+    },
+    "post/PowerShellで.DS_Storeを一括削除する/index.es.md": {
+      "source": "post/PowerShellで.DS_Storeを一括削除する/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "141771da15f66841cb1d637996273195fb34a96935d04f314508a16af4bfe937",
+      "translationHash": "5f0ddeaa4acf33e5f888d10d28626a9982049751d7e0a153331b239bb826504f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-111.json",
+      "evidenceHash": "11573d46b1c8d4ccb3bc789dbf58307795873642762b0d801cc0e2a892e330b6"
+    },
+    "post/PowerShellで.DS_Storeを一括削除する/index.fr.md": {
+      "source": "post/PowerShellで.DS_Storeを一括削除する/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "141771da15f66841cb1d637996273195fb34a96935d04f314508a16af4bfe937",
+      "translationHash": "9f1e85c3316a835f87d865bdc8a9ddb2db67cc33f21ec4b4f845708b49bf81e8",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-111.json",
+      "evidenceHash": "32c1e7ce104c81353f789436841a2fa01d247340cbed22e596519a977d3b3705"
+    },
+    "post/PowerShellで.DS_Storeを一括削除する/index.hi.md": {
+      "source": "post/PowerShellで.DS_Storeを一括削除する/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "141771da15f66841cb1d637996273195fb34a96935d04f314508a16af4bfe937",
+      "translationHash": "dd4a3209c67056eefd54a170c40379da244452aa84c30b65edc81c98d5c0f03b",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-111.json",
+      "evidenceHash": "994ccf91073432cc6c74efd2127a1a3b1f0c868f4284e370c2053e0a967f67e8"
+    },
+    "post/PowerShellで.DS_Storeを一括削除する/index.id.md": {
+      "source": "post/PowerShellで.DS_Storeを一括削除する/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "141771da15f66841cb1d637996273195fb34a96935d04f314508a16af4bfe937",
+      "translationHash": "87c84b02c08ce5ee1249f241355edc080edc3e62fc10114f5dddda96afdfa72e",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-111.json",
+      "evidenceHash": "df46f317176f3e5531d1b6884817e488bbb166caeb871ace518a08edbfbe95e8"
+    },
+    "post/PowerShellで.DS_Storeを一括削除する/index.ko.md": {
+      "source": "post/PowerShellで.DS_Storeを一括削除する/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "141771da15f66841cb1d637996273195fb34a96935d04f314508a16af4bfe937",
+      "translationHash": "7c1957b70bed41ab08a57851493a6c5efe1c8d418df1b1876bf46379108688bb",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-111.json",
+      "evidenceHash": "743eac00ccac1755346932e24055744b7c93d30afd029854da10012a22538240"
+    },
+    "post/PowerShellで.DS_Storeを一括削除する/index.pt.md": {
+      "source": "post/PowerShellで.DS_Storeを一括削除する/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "141771da15f66841cb1d637996273195fb34a96935d04f314508a16af4bfe937",
+      "translationHash": "77fbef735cfbe473cefffca8a7b44f21158d4dd469c16c8b96913ae74ee66def",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-111.json",
+      "evidenceHash": "7d7416978c54c898aa258c75ef8bfee90e5caf9114aff90968f3d86d367da2ee"
+    },
+    "post/PowerShellで.DS_Storeを一括削除する/index.ru.md": {
+      "source": "post/PowerShellで.DS_Storeを一括削除する/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "141771da15f66841cb1d637996273195fb34a96935d04f314508a16af4bfe937",
+      "translationHash": "5ce8a6210a7410a95adda74940579af10bc442a9b249a46d7c25a11a39dcd7bc",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-111.json",
+      "evidenceHash": "5c682498cb53f39524e5c864987eeaf048460a938e54aecda891d78259768069"
+    },
+    "post/PowerShellで.DS_Storeを一括削除する/index.zh-cn.md": {
+      "source": "post/PowerShellで.DS_Storeを一括削除する/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "141771da15f66841cb1d637996273195fb34a96935d04f314508a16af4bfe937",
+      "translationHash": "400dd1e8b75053d12f3492ed9ad1b2351fd7715ed0cb9ebed38a658f98c509ee",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-111.json",
+      "evidenceHash": "cd5113013ae671d4594cd19a8f367ae396a47af188bd772498b25af32544bee1"
+    },
+    "post/PowerShellで.DS_Storeを一括削除する/index.zh-tw.md": {
+      "source": "post/PowerShellで.DS_Storeを一括削除する/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "141771da15f66841cb1d637996273195fb34a96935d04f314508a16af4bfe937",
+      "translationHash": "87d9165a66c78a56f6e06dc3e05496c36bd0b26a1ca3b247bc4791b621e62f6f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-111.json",
+      "evidenceHash": "8285d949eb4f79a94dd3984d5b0ce858a465b79aa3ad2b3814984970d47a8b8d"
     }
   }
 }

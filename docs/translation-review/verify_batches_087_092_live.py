@@ -306,6 +306,17 @@ ARTICLES = {
         "markers": ["RemoveDocumentInformation(4)", "xlRDIRemovePersonalInformation", "AutomationSecurity", "*.xlsx", "Document Inspector"],
         "date": "2025-07-30",
     },
+    111: {
+        "bundle": ROOT / "content/post/PowerShellで.DS_Storeを一括削除する",
+        "slug": "PowerShellで.DS_Storeを一括削除する",
+        "links": [
+            "https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-childitem",
+            "https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/remove-item",
+            "https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_commonparameters",
+        ],
+        "markers": ["Get-ChildItem", "-LiteralPath", "'.DS_Store'", "-File", "-Recurse", "-Force", "-WhatIf"],
+        "date": "2022-09-12",
+    },
 }
 
 
@@ -371,7 +382,7 @@ def slug_key(value):
 parser = argparse.ArgumentParser()
 parser.add_argument("--ci-run", type=int, required=True)
 parser.add_argument("--commit", required=True)
-parser.add_argument("--max-batch", type=int, choices=(90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110), default=110)
+parser.add_argument("--max-batch", type=int, choices=(90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111), default=111)
 args = parser.parse_args()
 ARTICLES = {number: article for number, article in ARTICLES.items() if number <= args.max_batch}
 with urllib.request.urlopen(f"https://github.com/kenjinote/blog/actions/runs/{args.ci_run}", timeout=45) as response:
