@@ -12365,6 +12365,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-107.json",
       "evidenceHash": "2ea44b6b1ee75d4ece2e135c494c0522118a9e56311070687358024fbc85ed1c"
+    },
+    "post/PaperModの画像の配置変更/index.ar.md": {
+      "source": "post/PaperModの画像の配置変更/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "dbe79e7f47998e322201b03334b3353e4ecf0ad71f86b4d4b74b38be38e5633f",
+      "translationHash": "05a2656d86947988aded1b247ae046849a68521f5bde24165bf7a5e5a19baf80",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-108.json",
+      "evidenceHash": "5afdf019034527643326576527c5acb771701394fc27e8b95812c984b5d16d85"
+    },
+    "post/PaperModの画像の配置変更/index.de.md": {
+      "source": "post/PaperModの画像の配置変更/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "dbe79e7f47998e322201b03334b3353e4ecf0ad71f86b4d4b74b38be38e5633f",
+      "translationHash": "8c23390334412013ee5477c10e8464e5ae93750fff349904fd8f53e2d047fe89",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-108.json",
+      "evidenceHash": "71c40d3f631a97a8aa6c99d01c7c253d4f1145e38c23cfde970c946318d24651"
+    },
+    "post/PaperModの画像の配置変更/index.en.md": {
+      "source": "post/PaperModの画像の配置変更/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "dbe79e7f47998e322201b03334b3353e4ecf0ad71f86b4d4b74b38be38e5633f",
+      "translationHash": "36f21731268fce2611e3cb7581e6dd4b34ce071ca9b34d39a6f031cdc05ba1ba",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-108.json",
+      "evidenceHash": "c35467b771dad3015d40d97015a8a99b5603180e67ad9f98892039b7fd367a50"
+    },
+    "post/PaperModの画像の配置変更/index.es.md": {
+      "source": "post/PaperModの画像の配置変更/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "dbe79e7f47998e322201b03334b3353e4ecf0ad71f86b4d4b74b38be38e5633f",
+      "translationHash": "9a906affe87f8132a79d5db814e9d764cbdbe47f573416a25254f119b4280a84",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-108.json",
+      "evidenceHash": "5fcef39abbfeca11484c32808f0041f23018a19f559b9ba9fd6839dbfc6ca72a"
+    },
+    "post/PaperModの画像の配置変更/index.fr.md": {
+      "source": "post/PaperModの画像の配置変更/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "dbe79e7f47998e322201b03334b3353e4ecf0ad71f86b4d4b74b38be38e5633f",
+      "translationHash": "10b93cc4f4c654d48faa8e901170196971559d61f7a75bb41fc114eba198e715",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-108.json",
+      "evidenceHash": "f39159dbc5bb7a6b6249c3d73a64843b2ee9b9bcb6b3f7ece7b2a973129df7bc"
+    },
+    "post/PaperModの画像の配置変更/index.hi.md": {
+      "source": "post/PaperModの画像の配置変更/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "dbe79e7f47998e322201b03334b3353e4ecf0ad71f86b4d4b74b38be38e5633f",
+      "translationHash": "9dae57a1fc8d91da7600d6821ea9a12d5b9b4b9d88f3db6c901259a7de44b289",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-108.json",
+      "evidenceHash": "e591f2ed5e95b74f9cbd7bd995b893fe7c89e6d821821a6b66b267afad2e3c2f"
+    },
+    "post/PaperModの画像の配置変更/index.id.md": {
+      "source": "post/PaperModの画像の配置変更/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "dbe79e7f47998e322201b03334b3353e4ecf0ad71f86b4d4b74b38be38e5633f",
+      "translationHash": "9d70a6925137b1c093f8e519f4c78a83e3142c971cbc7c8849e05a500d334a17",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-108.json",
+      "evidenceHash": "33bf210e85bdbb7e42f4778f94ae299dfa526715b2b393a2cb26de5ecfc15ab2"
+    },
+    "post/PaperModの画像の配置変更/index.ko.md": {
+      "source": "post/PaperModの画像の配置変更/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "dbe79e7f47998e322201b03334b3353e4ecf0ad71f86b4d4b74b38be38e5633f",
+      "translationHash": "a10561c688550ddc429245eabfceaf8dd2ec13a740e81599b2458e79dc0bf34f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-108.json",
+      "evidenceHash": "a0003f9b6bc0ee59917916f2b80299ef82d08292a2a3c5727ebcd2aa91c2fb41"
+    },
+    "post/PaperModの画像の配置変更/index.pt.md": {
+      "source": "post/PaperModの画像の配置変更/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "dbe79e7f47998e322201b03334b3353e4ecf0ad71f86b4d4b74b38be38e5633f",
+      "translationHash": "b517fd130b991e887b04e7046076c729960f78adc1976b18e6c883d01f8c3147",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-108.json",
+      "evidenceHash": "d96326c08fe6d71a8112f2a27cb4ab836dbd134f547bdb97f765ab01507f947e"
+    },
+    "post/PaperModの画像の配置変更/index.ru.md": {
+      "source": "post/PaperModの画像の配置変更/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "dbe79e7f47998e322201b03334b3353e4ecf0ad71f86b4d4b74b38be38e5633f",
+      "translationHash": "591516cd7ced6d5af6a5ec896b2990db99191a84b705ccd50845c03a789c6f6d",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-108.json",
+      "evidenceHash": "e01a3c5efeb8916622b054f4919be1b08c72a1dc71dc30095be7de0e6211d553"
+    },
+    "post/PaperModの画像の配置変更/index.zh-cn.md": {
+      "source": "post/PaperModの画像の配置変更/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "dbe79e7f47998e322201b03334b3353e4ecf0ad71f86b4d4b74b38be38e5633f",
+      "translationHash": "10ffbbb5a9f0ef2873ff6b11e17bab293f9488d0e37b14c756b5debe4f92785b",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-108.json",
+      "evidenceHash": "792e17952ffd4e7c8511f3c433b5cf8498f973f20fceff78cbb385e3c6b1f7ec"
+    },
+    "post/PaperModの画像の配置変更/index.zh-tw.md": {
+      "source": "post/PaperModの画像の配置変更/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "dbe79e7f47998e322201b03334b3353e4ecf0ad71f86b4d4b74b38be38e5633f",
+      "translationHash": "277df428bd015479a60f31755d9e6c2e052dc66ffd52e4bba0a858ecac86d2e5",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-108.json",
+      "evidenceHash": "cfe0285b7f9591197f5e07853c7bd9b3916f483912418f66e59c9d79665533f6"
     }
   }
 }

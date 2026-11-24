@@ -1,106 +1,81 @@
 ---
-
-
-
-
-title: 'Hugo PaperMod 테마의 이미지 크기 및 배치를 CSS로 커스터마이징하는 방법'
-date: "2026-09-24T19:44:38+09:00"
+title: "PaperMod 글 목록에서 커버 이미지 크기와 위치 바꾸기"
 slug: "PaperModの이미지の配置変更"
-date: 2022-09-11T18:50:40+09:00
 tags: ["HUGO", "PaperMod"]
 draft: false
 image: "images/img.webp"
 categories: ["blogging"]
-description: 'Hugo의 PaperMod 테마에서 게시물 내 이미지 크기와 배치를 커스터마이징하는 방법을 설명합니다. 기본 가로 100% 및 가운데 정렬에서 이미지 텍스트 감싸기 또는 축소를 수행하기 위한 CSS(blank.css 및 post-entry.css)의 구체적인 편집 절차를 소개합니다.'
+description: "PaperMod의 확장 CSS와 CSS Grid를 사용해 글 카드의 커버 이미지를 줄이고 요약 옆에 배치합니다."
+date: "2022-09-11T18:50:40+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
 
+이 예시는 PaperMod 글 목록 카드의 커버 이미지를 줄여 제목 아래, 요약 옆에 배치합니다. 테마에 포함된 CSS나 템플릿을 직접 고치지 않고 사이트의 확장 CSS를 사용합니다. PaperMod 클래스 선택자를 사용하므로 테마 업데이트 후 브라우저에서 결과를 확인하세요.
 
+## 확장 CSS 추가
 
+사이트 루트에 `assets/css/extended/custom.css`를 만드세요. PaperMod는 이 폴더의 CSS를 테마 스타일과 함께 포함합니다. CSS Grid는 기존 HTML 구조를 바꾸지 않고 화면 배치만 조정합니다.
 
-기본 레이아웃은 이미지가 중앙에 가로폭 100%로 배치되어 있지만,
-조금 크다고 느껴질 때가 있어서, 이미지를 제목 아래에 둘러싸이게 하고,
-가로폭을 150px 정도로 변경해 보았습니다.
-
-파일의 변경 사항은 다음과 같습니다.
-
-## blank.css
-여백이나 이미지 크기, 텍스트 표시 줄 수를 변경하기 위해, blank.css에 다음 내용을 추가합니다.
-
-```css:blank.css
-.entry-content {
-    -webkit-line-clamp: 4;
+```css
+/* Add to assets/css/extended/custom.css */
+.post-entry {
+    display: grid;
+    grid-template-columns: minmax(0, 150px) minmax(0, 1fr);
+    grid-template-areas:
+        "cover title"
+        "cover summary"
+        "cover meta";
+    column-gap: 1rem;
+    align-items: start;
 }
 
-.entry-footer {
-	text-align: right;
+.post-entry > .entry-cover {
+    grid-area: cover;
+    margin-bottom: 0;
 }
 
-.entry-cover {
-    margin-bottom: initial;
-    text-align: center;
+.post-entry > .entry-header {
+    grid-area: title;
+    min-width: 0;
 }
 
-.entry-cover img {
-    border-radius: 4px;
-    display: inline;
-    max-width: 100%;
+.post-entry > .entry-content {
+    grid-area: summary;
+    min-width: 0;
 }
 
-.post-meta {
+.post-entry > .entry-footer {
+    grid-area: meta;
+}
+
+.post-entry .entry-cover img {
     display: block;
-    text-align: right;
-}
-```
-
-## post-entry.css
-blank.css 쪽에서 정의를 삭제할 수 없었기 때문에, post-entry.css에서 아래의 1줄을 삭제합니다.
-
-```css:post-entry.css
-.entry-cover img {
-    border-radius: var(--radius);
-    pointer-events: none;
-    /* width: 100%; */ ← 이 줄을 삭제
+    width: 100%;
     height: auto;
 }
+
+@media (max-width: 600px) {
+    .post-entry {
+        grid-template-columns: minmax(0, 96px) minmax(0, 1fr);
+        column-gap: 0.75rem;
+    }
+}
 ```
 
-## list.html
-이미지 배치를 변경하기 위해, list.html의 다음 부분을 변경했습니다.
+## 좁은 화면 조정
 
-```html:list.html
-<article class="{{ $class }}">
-  <!-- {{- $isHidden := (site.Params.cover.hidden | default site.Params.cover.hiddenInList) }} --><!-- 아래로 이동 -->
-  <!-- {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }} --><!-- 아래로 이동 -->
-  <header class="entry-header">
-    <h2>
-      {{- .Title }}
-      {{- if .Draft }}<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>{{- end }}
-    </h2>
-  </header>
-  <div style="display:flex;"><!-- 추가 -->
-    <div style="max-width:150px;margin:11px 15px 0px 0px;"><!-- 추가 -->
-      {{- $isHidden := (site.Params.cover.hidden | default site.Params.cover.hiddenInList) }}<!-- 위에서 이동 -->
-      {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}<!-- 위에서 이동 -->
-    </div><!-- 추가 -->
-    <div style="width:100%;"><!-- 추가 -->
-      {{- if (ne (.Param "hideSummary") true) }}
-      <div class="entry-content">
-        <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
-      </div>
-      {{- end }}
-      {{- if not (.Param "hideMeta") }}
-      <footer class="entry-footer">
-        {{- partial "post_meta.html" . -}}
-      </footer>
-      {{- end }}
-      <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
-    </div><!-- 추가 -->
-  </div><!-- 추가 -->
-</article>
-```
+좁은 화면에서는 요약을 읽기 쉽도록 열 너비와 간격을 줄이세요. 150px와 중단점을 디자인에 맞게 조절할 수 있습니다. `height: auto`는 이미지 비율을 유지합니다. 이미지를 같은 모양으로 자를 경우에만 `aspect-ratio`와 `object-fit: cover`를 추가하세요.
 
-비슷한 요구 사항이 적지 않게 있는 것 같습니다.
+## 테마 파일 직접 수정 피하기
 
-[https://github.com/adityatelange/hugo-PaperMod/discussions/159#discussioncomment-247844](https://github.com/adityatelange/hugo-PaperMod/discussions/159#discussioncomment-247844)
+PaperMod 문서에서 `blank.css`는 확장 CSS 폴더에 파일이 없을 때 사용하는 빈 자리표시자입니다. 테마의 `post-entry.css`를 수정하거나 주석 처리된 `/* width: 100%; */`를 지울 필요가 없습니다. CSS 주석을 삭제해도 스타일은 변하지 않습니다. HTML 구조를 바꿔야 한다면 사이트의 `layouts/`에 템플릿을 복사해 재정의할 수 있지만, 테마 업데이트 때 복사본을 직접 관리해야 합니다.
 
-본가(공식) 쪽에서도 지원해 주면 좋겠네요.
+## 레이아웃 확인
+
+Hugo를 실행하고 홈, 태그, 카테고리 목록을 넓은 화면과 좁은 화면에서 확인하세요. 이미지, 제목, 요약, 메타 정보가 겹치지 않고 카드 전체 링크도 동작해야 합니다. 테마 업데이트로 클래스나 HTML이 바뀌면 CSS를 맞추세요. 이 예시는 글 목록의 커버에만 적용되며 본문 이미지는 바꾸지 않습니다.
+
+## 참고 자료
+
+- [PaperMod FAQ: bundling custom CSS and overriding templates](https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs)
+- [PaperMod: current post-entry CSS selectors](https://github.com/adityatelange/hugo-PaperMod/blob/master/assets/css/common/post-entry.css)
+- [PaperMod discussion #159](https://github.com/adityatelange/hugo-PaperMod/discussions/159#discussioncomment-247844)

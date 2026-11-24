@@ -1,96 +1,81 @@
 ---
-title: 'كيفية تخصيص حجم الصور وموضعها في قالب Hugo PaperMod باستخدام CSS'
-date: "2026-09-24T19:44:38+09:00"
+title: "تغيير حجم صور الغلاف وموضعها في قوائم Hugo PaperMod"
 slug: "PaperModのصورةの配置変更"
-date: 2022-09-11T18:50:40+09:00
 tags: ["HUGO", "PaperMod"]
 draft: false
 image: "images/img.webp"
 categories: ["blogging"]
-description: 'نشرح كيفية تخصيص حجم الصور وموضعها داخل المقالات في قالب Hugo PaperMod. نعرض خطوات محددة لتعديل ملفات CSS (وهما blank.css و post-entry.css) لتغيير العرض الافتراضي بنسبة 100% والمحاذاة المركزية إلى التفاف النص حول الصورة أو تصغيرها.'
+description: "استخدم CSS الموسع في PaperMod وCSS Grid لتصغير صور أغلفة البطاقات ووضعها بجانب الملخص."
+date: "2022-09-11T18:50:40+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
-بالنسبة للتخطيط الافتراضي، يتم وضع الصورة في المركز بعرض 100%، لكنني شعرت في بعض الأحيان أنها كبيرة قليلاً، لذا حاولت التفاف الصورة أسفل العنوان وتغيير العرض إلى حوالي 150 بكسل.
 
-مواقع تغيير الملفات هي كما يلي.
+يقلل هذا المثال حجم صور الغلاف في بطاقات قوائم PaperMod ويضعها أسفل العنوان بجانب الملخص. يستخدم CSS الموسع الخاص بالموقع بدلاً من تعديل ملفات الأنماط أو القوالب المرفقة بالثيم. تعتمد المحددات على فئات PaperMod، لذا افحص النتيجة في المتصفح بعد تحديث الثيم.
 
-## blank.css
-لتغيير الهوامش وحجم الصورة وخطوط عرض النص، أضف الوصف التالي إلى blank.css.
+## إضافة CSS موسع
 
-```css:blank.css
-.entry-content {
-    -webkit-line-clamp: 4;
+أنشئ `assets/css/extended/custom.css` في جذر الموقع. يضم PaperMod ملفات CSS من هذا المجلد إلى أنماط الثيم. يغيّر CSS Grid الترتيب المرئي مع الإبقاء على بنية HTML الحالية.
+
+```css
+/* Add to assets/css/extended/custom.css */
+.post-entry {
+    display: grid;
+    grid-template-columns: minmax(0, 150px) minmax(0, 1fr);
+    grid-template-areas:
+        "cover title"
+        "cover summary"
+        "cover meta";
+    column-gap: 1rem;
+    align-items: start;
 }
 
-.entry-footer {
-	text-align: right;
+.post-entry > .entry-cover {
+    grid-area: cover;
+    margin-bottom: 0;
 }
 
-.entry-cover {
-    margin-bottom: initial;
-    text-align: center;
+.post-entry > .entry-header {
+    grid-area: title;
+    min-width: 0;
 }
 
-.entry-cover img {
-    border-radius: 4px;
-    display: inline;
-    max-width: 100%;
+.post-entry > .entry-content {
+    grid-area: summary;
+    min-width: 0;
 }
 
-.post-meta {
+.post-entry > .entry-footer {
+    grid-area: meta;
+}
+
+.post-entry .entry-cover img {
     display: block;
-    text-align: right;
-}
-```
-
-## post-entry.css
-نظرًا لأنه لم يكن من الممكن حذف التعريف على جانب blank.css، احذف السطر التالي في post-entry.css.
-
-```css:post-entry.css
-.entry-cover img {
-    border-radius: var(--radius);
-    pointer-events: none;
-    /* width: 100%; */ ← احذف هذا السطر
+    width: 100%;
     height: auto;
 }
+
+@media (max-width: 600px) {
+    .post-entry {
+        grid-template-columns: minmax(0, 96px) minmax(0, 1fr);
+        column-gap: 0.75rem;
+    }
+}
 ```
 
-## list.html
-لتغيير تخطيط الصورة، قمت بتغيير الأجزاء التالية من list.html.
+## الضبط للشاشات الضيقة
 
-```html:list.html
-<article class="{{ $class }}">
-  <!-- {{- $isHidden := (site.Params.cover.hidden | default site.Params.cover.hiddenInList) }} --><!-- تحرك لأسفل -->
-  <!-- {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }} --><!-- تحرك لأسفل -->
-  <header class="entry-header">
-    <h2>
-      {{- .Title }}
-      {{- if .Draft }}<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>{{- end }}
-    </h2>
-  </header>
-  <div style="display:flex;"><!-- إضافة -->
-    <div style="max-width:150px;margin:11px 15px 0px 0px;"><!-- إضافة -->
-      {{- $isHidden := (site.Params.cover.hidden | default site.Params.cover.hiddenInList) }}<!-- انتقل من الأعلى -->
-      {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}<!-- انتقل من الأعلى -->
-    </div><!-- إضافة -->
-    <div style="width:100%;"><!-- إضافة -->
-      {{- if (ne (.Param "hideSummary") true) }}
-      <div class="entry-content">
-        <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
-      </div>
-      {{- end }}
-      {{- if not (.Param "hideMeta") }}
-      <footer class="entry-footer">
-        {{- partial "post_meta.html" . -}}
-      </footer>
-      {{- end }}
-      <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
-    </div><!-- إضافة -->
-  </div><!-- إضافة -->
-</article>
-```
+قلل عرض العمود والمسافة على الشاشات الضيقة كي يظل الملخص مقروءاً. عدّل 150px ونقطة التوقف بما يناسب التصميم. تحافظ `height: auto` على نسبة الصورة. أضف `aspect-ratio` و`object-fit: cover` فقط إذا أردت قص الصور بأبعاد موحدة.
 
-يبدو أن هناك عددًا لا بأس به من الطلبات المماثلة.
+## تجنب تعديل ملفات الثيم مباشرة
 
-[https://github.com/adityatelange/hugo-PaperMod/discussions/159#discussioncomment-247844](https://github.com/adityatelange/hugo-PaperMod/discussions/159#discussioncomment-247844)
+تصف وثائق PaperMod ملف `blank.css` بأنه عنصر نائب يُستخدم عندما يكون مجلد CSS الموسع فارغاً. لا حاجة لتعديل `post-entry.css` المرفق بالثيم أو حذف السطر المعلّق `/* width: 100%; */`؛ فحذف تعليق CSS لا يغيّر النمط. إذا أردت تغيير بنية HTML نفسها، انسخ القالب إلى مجلد `layouts/` في موقعك واستبدله، لكن حافظ على النسخة عند تحديث الثيم.
 
-سأكون ممتنًا لو تفضل المطورون الأصليون بدعمه أيضًا.
+## فحص التخطيط
+
+شغّل Hugo وافحص قوائم الصفحة الرئيسية والوسوم والتصنيفات على الشاشات الواسعة والضيقة. تأكد من عدم تداخل الصورة والعنوان والملخص والبيانات الوصفية، ومن عمل الرابط الذي يغطي البطاقة كلها. عدّل CSS إذا غيّر تحديث الثيم الفئات أو HTML. يخص هذا المثال أغلفة بطاقات القوائم، ولا يغيّر الصور داخل المقالات.
+
+## المراجع
+
+- [PaperMod FAQ: bundling custom CSS and overriding templates](https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs)
+- [PaperMod: current post-entry CSS selectors](https://github.com/adityatelange/hugo-PaperMod/blob/master/assets/css/common/post-entry.css)
+- [PaperMod discussion #159](https://github.com/adityatelange/hugo-PaperMod/discussions/159#discussioncomment-247844)

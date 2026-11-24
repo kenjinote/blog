@@ -1,98 +1,81 @@
 ---
-title: 'Comment personnaliser la taille et l''alignement des images du thème Hugo PaperMod avec CSS'
-date: "2026-09-24T19:44:38+09:00"
+title: "Redimensionner et repositionner les couvertures dans les listes PaperMod"
 slug: "PaperModのImageの配置変更"
-date: 2022-09-11T18:50:40+09:00
 tags: ["HUGO", "PaperMod"]
 draft: false
 image: "images/img.webp"
 categories: ["blogging"]
-description: 'Explique comment personnaliser la taille et le placement des images dans les articles avec le thème PaperMod de Hugo. Présente les étapes concrètes de modification des CSS (blank.css et post-entry.css) pour envelopper et réduire les images à partir de la valeur par défaut de 100% de largeur et centrées.'
+description: "Utilisez le CSS étendu de PaperMod et CSS Grid pour réduire les images de couverture des cartes et les placer à côté du résumé."
+date: "2022-09-11T18:50:40+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
-La disposition par défaut place l'image au centre avec une largeur de 100 %,
-mais comme je la trouvais parfois un peu grande, j'ai essayé de faire en sorte que l'image s'enroule sous le titre,
-et j'ai modifié la largeur à environ 150px.
 
-Les modifications apportées aux fichiers sont les suivantes.
+Cet exemple réduit les images de couverture des cartes dans les listes PaperMod et les place sous le titre, à côté du résumé. Il utilise le CSS étendu du site au lieu de modifier les feuilles de style ou modèles fournis avec le thème. Les sélecteurs ciblent des classes PaperMod ; vérifiez donc le résultat dans un navigateur après toute mise à jour du thème.
 
-## blank.css
-Pour modifier les marges, la taille de l'image et les lignes d'affichage du texte, ajoutez la description suivante dans blank.css.
+## Ajouter du CSS étendu
 
-```css:blank.css
-.entry-content {
-    -webkit-line-clamp: 4;
+Créez `assets/css/extended/custom.css` à la racine du site. PaperMod intègre les feuilles de style de ce dossier à ses styles. CSS Grid modifie la disposition visuelle sans changer la structure HTML existante.
+
+```css
+/* Add to assets/css/extended/custom.css */
+.post-entry {
+    display: grid;
+    grid-template-columns: minmax(0, 150px) minmax(0, 1fr);
+    grid-template-areas:
+        "cover title"
+        "cover summary"
+        "cover meta";
+    column-gap: 1rem;
+    align-items: start;
 }
 
-.entry-footer {
-	text-align: right;
+.post-entry > .entry-cover {
+    grid-area: cover;
+    margin-bottom: 0;
 }
 
-.entry-cover {
-    margin-bottom: initial;
-    text-align: center;
+.post-entry > .entry-header {
+    grid-area: title;
+    min-width: 0;
 }
 
-.entry-cover img {
-    border-radius: 4px;
-    display: inline;
-    max-width: 100%;
+.post-entry > .entry-content {
+    grid-area: summary;
+    min-width: 0;
 }
 
-.post-meta {
+.post-entry > .entry-footer {
+    grid-area: meta;
+}
+
+.post-entry .entry-cover img {
     display: block;
-    text-align: right;
-}
-```
-
-## post-entry.css
-Comme je n'ai pas pu supprimer la définition du côté de blank.css, j'ai supprimé 1 ligne à l'emplacement suivant dans post-entry.css.
-
-```css:post-entry.css
-.entry-cover img {
-    border-radius: var(--radius);
-    pointer-events: none;
-    /* width: 100%; */ ← Supprimer cette ligne
+    width: 100%;
     height: auto;
 }
+
+@media (max-width: 600px) {
+    .post-entry {
+        grid-template-columns: minmax(0, 96px) minmax(0, 1fr);
+        column-gap: 0.75rem;
+    }
+}
 ```
 
-## list.html
-Pour modifier la disposition de l'image, j'ai modifié l'emplacement suivant dans list.html.
+## Adapter aux petits écrans
 
-```html:list.html
-<article class="{{ $class }}">
-  <!-- {{- $isHidden := (site.Params.cover.hidden | default site.Params.cover.hiddenInList) }} --><!-- Déplacé vers le bas -->
-  <!-- {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }} --><!-- Déplacé vers le bas -->
-  <header class="entry-header">
-    <h2>
-      {{- .Title }}
-      {{- if .Draft }}<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>{{- end }}
-    </h2>
-  </header>
-  <div style="display:flex;"><!-- Ajouté -->
-    <div style="max-width:150px;margin:11px 15px 0px 0px;"><!-- Ajouté -->
-      {{- $isHidden := (site.Params.cover.hidden | default site.Params.cover.hiddenInList) }}<!-- Déplacé du haut -->
-      {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}<!-- Déplacé du haut -->
-    </div><!-- Ajouté -->
-    <div style="width:100%;"><!-- Ajouté -->
-      {{- if (ne (.Param "hideSummary") true) }}
-      <div class="entry-content">
-        <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
-      </div>
-      {{- end }}
-      {{- if not (.Param "hideMeta") }}
-      <footer class="entry-footer">
-        {{- partial "post_meta.html" . -}}
-      </footer>
-      {{- end }}
-      <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
-    </div><!-- Ajouté -->
-  </div><!-- Ajouté -->
-</article>
-```
+Réduisez la largeur de colonne et l’espacement sur les petits écrans pour garder un résumé lisible. Ajustez les 150 px et le point de rupture selon votre mise en page. `height: auto` conserve les proportions de l’image. N’ajoutez `aspect-ratio` et `object-fit: cover` que si vous voulez recadrer les images dans une forme uniforme.
 
-Il semble qu'il y ait pas mal de demandes similaires.
+## Éviter de modifier les fichiers du thème
 
-[https://github.com/adityatelange/hugo-PaperMod/discussions/159#discussioncomment-247844](https://github.com/adityatelange/hugo-PaperMod/discussions/159#discussioncomment-247844)
+PaperMod décrit `blank.css` comme un fichier vide de remplacement utilisé lorsque le dossier CSS étendu ne contient aucun fichier. Il n’est pas nécessaire de modifier le `post-entry.css` du thème ni de supprimer la ligne commentée `/* width: 100%; */` : retirer un commentaire CSS ne change pas le style. Pour modifier la structure HTML, vous pouvez copier un modèle dans le dossier `layouts/` du site et le remplacer, mais cette copie devra être entretenue lorsque le thème évolue.
 
-Ce serait bien si les développeurs officiels pouvaient également le prendre en charge.
+## Vérifier la mise en page
+
+Lancez Hugo et vérifiez les listes d’accueil, de tags et de catégories sur grand et petit écran. L’image, le titre, le résumé et les métadonnées ne doivent pas se chevaucher ; le lien couvrant toute la carte doit rester utilisable. Si une mise à jour du thème change les classes ou le HTML, adaptez le CSS. Cet exemple concerne les couvertures des listes, pas les images du corps des articles.
+
+## Références
+
+- [PaperMod FAQ: bundling custom CSS and overriding templates](https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs)
+- [PaperMod: current post-entry CSS selectors](https://github.com/adityatelange/hugo-PaperMod/blob/master/assets/css/common/post-entry.css)
+- [PaperMod discussion #159](https://github.com/adityatelange/hugo-PaperMod/discussions/159#discussioncomment-247844)

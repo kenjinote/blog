@@ -1,98 +1,81 @@
 ---
-title: 'Wie man Bildgröße und -platzierung im Hugo PaperMod-Theme mit CSS anpasst'
-date: "2026-09-24T19:44:38+09:00"
+title: "Cover-Bilder in PaperMod-Beitragslisten verkleinern und verschieben"
 slug: "PaperModのBildの配置変更"
-date: 2022-09-11T18:50:40+09:00
 tags: ["HUGO", "PaperMod"]
 draft: false
 image: "images/img.webp"
 categories: ["blogging"]
-description: 'Erklärt, wie man Bildgröße und -platzierung in Artikeln des Hugo PaperMod-Themes anpasst. Stellt konkrete Bearbeitungsschritte für CSS (blank.css und post-entry.css) vor, um von der standardmäßigen 100%-Breite und Zentrierung zu Textumfluss und Bildverkleinerung zu wechseln.'
+description: "Mit der erweiterten CSS-Funktion von PaperMod und CSS Grid Cover-Bilder in Beitragskarten verkleinern und neben der Zusammenfassung platzieren."
+date: "2022-09-11T18:50:40+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
-Das Standardlayout zentriert das Bild mit einer Breite von 100 %,
-aber da es mir manchmal etwas zu groß vorkam, habe ich versucht, das Bild unter dem Titel umfließen zu lassen,
-und die Breite auf etwa 150px geändert.
 
-Die Änderungen an den Dateien sind wie folgt.
+Dieses Beispiel verkleinert Cover-Bilder in PaperMod-Beitragskarten und platziert sie unter dem Titel neben der Zusammenfassung. Es verwendet erweitertes CSS auf Website-Ebene statt Theme-CSS oder mitgelieferte Templates zu bearbeiten. Die Selektoren beziehen sich auf PaperMod-Klassen; prüfen Sie das Ergebnis daher nach einem Theme-Update im Browser.
 
-## blank.css
-Um Ränder, Bildgröße und Textanzeigezeilen zu ändern, fügen Sie die folgende Beschreibung in blank.css hinzu.
+## Erweitertes CSS hinzufügen
 
-```css:blank.css
-.entry-content {
-    -webkit-line-clamp: 4;
+Erstellen Sie im Stammverzeichnis der Website `assets/css/extended/custom.css`. PaperMod bindet CSS aus diesem Ordner zusätzlich zu den Theme-Stilen ein. CSS Grid ändert die sichtbare Anordnung, ohne die vorhandene HTML-Struktur zu ändern.
+
+```css
+/* Add to assets/css/extended/custom.css */
+.post-entry {
+    display: grid;
+    grid-template-columns: minmax(0, 150px) minmax(0, 1fr);
+    grid-template-areas:
+        "cover title"
+        "cover summary"
+        "cover meta";
+    column-gap: 1rem;
+    align-items: start;
 }
 
-.entry-footer {
-	text-align: right;
+.post-entry > .entry-cover {
+    grid-area: cover;
+    margin-bottom: 0;
 }
 
-.entry-cover {
-    margin-bottom: initial;
-    text-align: center;
+.post-entry > .entry-header {
+    grid-area: title;
+    min-width: 0;
 }
 
-.entry-cover img {
-    border-radius: 4px;
-    display: inline;
-    max-width: 100%;
+.post-entry > .entry-content {
+    grid-area: summary;
+    min-width: 0;
 }
 
-.post-meta {
+.post-entry > .entry-footer {
+    grid-area: meta;
+}
+
+.post-entry .entry-cover img {
     display: block;
-    text-align: right;
-}
-```
-
-## post-entry.css
-Da ich die Definition in blank.css nicht löschen konnte, habe ich 1 Zeile an der folgenden Stelle in post-entry.css gelöscht.
-
-```css:post-entry.css
-.entry-cover img {
-    border-radius: var(--radius);
-    pointer-events: none;
-    /* width: 100%; */ ← Diese Zeile löschen
+    width: 100%;
     height: auto;
 }
+
+@media (max-width: 600px) {
+    .post-entry {
+        grid-template-columns: minmax(0, 96px) minmax(0, 1fr);
+        column-gap: 0.75rem;
+    }
+}
 ```
 
-## list.html
-Um das Bildlayout zu ändern, habe ich die folgende Stelle in list.html geändert.
+## Für schmale Bildschirme anpassen
 
-```html:list.html
-<article class="{{ $class }}">
-  <!-- {{- $isHidden := (site.Params.cover.hidden | default site.Params.cover.hiddenInList) }} --><!-- Nach unten verschoben -->
-  <!-- {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }} --><!-- Nach unten verschoben -->
-  <header class="entry-header">
-    <h2>
-      {{- .Title }}
-      {{- if .Draft }}<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>{{- end }}
-    </h2>
-  </header>
-  <div style="display:flex;"><!-- Hinzugefügt -->
-    <div style="max-width:150px;margin:11px 15px 0px 0px;"><!-- Hinzugefügt -->
-      {{- $isHidden := (site.Params.cover.hidden | default site.Params.cover.hiddenInList) }}<!-- Von oben verschoben -->
-      {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}<!-- Von oben verschoben -->
-    </div><!-- Hinzugefügt -->
-    <div style="width:100%;"><!-- Hinzugefügt -->
-      {{- if (ne (.Param "hideSummary") true) }}
-      <div class="entry-content">
-        <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
-      </div>
-      {{- end }}
-      {{- if not (.Param "hideMeta") }}
-      <footer class="entry-footer">
-        {{- partial "post_meta.html" . -}}
-      </footer>
-      {{- end }}
-      <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
-    </div><!-- Hinzugefügt -->
-  </div><!-- Hinzugefügt -->
-</article>
-```
+Verringern Sie auf schmalen Bildschirmen Spaltenbreite und Abstand, damit die Zusammenfassung lesbar bleibt. Passen Sie 150 px und den Breakpoint an Ihr Design an. `height: auto` erhält das Seitenverhältnis. Ergänzen Sie `aspect-ratio` und `object-fit: cover` nur, wenn Sie Bilder einheitlich zuschneiden möchten.
 
-Es scheint, dass es nicht wenige ähnliche Anfragen gibt.
+## Theme-Dateien nicht direkt bearbeiten
 
-[https://github.com/adityatelange/hugo-PaperMod/discussions/159#discussioncomment-247844](https://github.com/adityatelange/hugo-PaperMod/discussions/159#discussioncomment-247844)
+PaperMod beschreibt `blank.css` als Platzhalter, der verwendet wird, wenn das Verzeichnis für erweitertes CSS leer ist. Sie müssen weder die mitgelieferte `post-entry.css` bearbeiten noch die auskommentierte Zeile `/* width: 100%; */` entfernen; das Löschen eines CSS-Kommentars ändert den Stil nicht. Wenn Sie die HTML-Struktur ändern müssen, können Sie ein Template in das eigene `layouts/`-Verzeichnis kopieren und überschreiben. Diese Kopie muss bei Theme-Änderungen gepflegt werden.
 
-Es wäre toll, wenn die offiziellen Entwickler dies ebenfalls unterstützen könnten.
+## Layout prüfen
+
+Starten Sie Hugo und prüfen Sie Listen auf der Start-, Tag- und Kategorieseite auf breiten und schmalen Bildschirmen. Bild, Titel, Zusammenfassung und Metadaten dürfen sich nicht überdecken; auch der Theme-Link über die ganze Karte muss funktionieren. Ändert ein Theme-Update Klassen oder Markup, passen Sie das CSS an. Dieses Beispiel betrifft Cover in Beitragslisten, nicht Bilder im Artikeltext.
+
+## Quellen
+
+- [PaperMod FAQ: bundling custom CSS and overriding templates](https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs)
+- [PaperMod: current post-entry CSS selectors](https://github.com/adityatelange/hugo-PaperMod/blob/master/assets/css/common/post-entry.css)
+- [PaperMod discussion #159](https://github.com/adityatelange/hugo-PaperMod/discussions/159#discussioncomment-247844)

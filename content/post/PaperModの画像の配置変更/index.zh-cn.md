@@ -1,96 +1,81 @@
 ---
-title: '如何通过CSS自定义Hugo PaperMod主题的图片大小与对齐方式'
-date: "2026-09-24T19:44:38+09:00"
+title: "调整 PaperMod 文章列表中封面图的大小与位置"
 slug: "PaperModの图像の配置変更"
-date: 2022-09-11T18:50:40+09:00
 tags: ["HUGO", "PaperMod"]
 draft: false
 image: "images/img.webp"
 categories: ["blogging"]
-description: '讲解如何在Hugo的PaperMod主题中自定义文章内图片的大小与对齐方式。介绍如何修改CSS（blank.css和post-entry.css），将默认的100%宽度及居中对齐更改为图片环绕或缩小的具体步骤。'
+description: "使用 PaperMod 的扩展 CSS 功能和 CSS Grid 缩小文章卡片封面图，并将其放在摘要旁边。"
+date: "2022-09-11T18:50:40+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
-默认布局中，图片位于中央且宽度为 100%，但我有时觉得太大了，所以尝试将图片绕排在标题下方，并将其宽度更改为 150px 左右。
 
-修改的文件及内容如下。
+本文示例会缩小 PaperMod 文章列表卡片中的封面图，并将其放在标题下方、摘要旁边。通过站点级扩展 CSS 实现，无需直接修改主题自带的样式表或模板。选择器依赖 PaperMod 的类名，升级主题后请在浏览器中检查效果。
 
-## blank.css
-为了更改边距、图片大小和文本显示行数，请在 blank.css 中添加以下描述。
+## 添加扩展 CSS
 
-```css:blank.css
-.entry-content {
-    -webkit-line-clamp: 4;
+在站点根目录创建 `assets/css/extended/custom.css`。PaperMod 会将此目录中的 CSS 与主题样式一同加载。CSS Grid 可以调整视觉布局，同时保留现有 HTML 结构。
+
+```css
+/* Add to assets/css/extended/custom.css */
+.post-entry {
+    display: grid;
+    grid-template-columns: minmax(0, 150px) minmax(0, 1fr);
+    grid-template-areas:
+        "cover title"
+        "cover summary"
+        "cover meta";
+    column-gap: 1rem;
+    align-items: start;
 }
 
-.entry-footer {
-	text-align: right;
+.post-entry > .entry-cover {
+    grid-area: cover;
+    margin-bottom: 0;
 }
 
-.entry-cover {
-    margin-bottom: initial;
-    text-align: center;
+.post-entry > .entry-header {
+    grid-area: title;
+    min-width: 0;
 }
 
-.entry-cover img {
-    border-radius: 4px;
-    display: inline;
-    max-width: 100%;
+.post-entry > .entry-content {
+    grid-area: summary;
+    min-width: 0;
 }
 
-.post-meta {
+.post-entry > .entry-footer {
+    grid-area: meta;
+}
+
+.post-entry .entry-cover img {
     display: block;
-    text-align: right;
-}
-```
-
-## post-entry.css
-由于无法在 blank.css 中删除定义，请删除 post-entry.css 中以下位置的一行。
-
-```css:post-entry.css
-.entry-cover img {
-    border-radius: var(--radius);
-    pointer-events: none;
-    /* width: 100%; */ ← 删除此行
+    width: 100%;
     height: auto;
 }
+
+@media (max-width: 600px) {
+    .post-entry {
+        grid-template-columns: minmax(0, 96px) minmax(0, 1fr);
+        column-gap: 0.75rem;
+    }
+}
 ```
 
-## list.html
-为了更改图片的布局，我修改了 list.html 中的以下位置。
+## 适配窄屏
 
-```html:list.html
-<article class="{{ $class }}">
-  <!-- {{- $isHidden := (site.Params.cover.hidden | default site.Params.cover.hiddenInList) }} --><!-- 移至下方 -->
-  <!-- {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }} --><!-- 移至下方 -->
-  <header class="entry-header">
-    <h2>
-      {{- .Title }}
-      {{- if .Draft }}<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>{{- end }}
-    </h2>
-  </header>
-  <div style="display:flex;"><!-- 添加 -->
-    <div style="max-width:150px;margin:11px 15px 0px 0px;"><!-- 添加 -->
-      {{- $isHidden := (site.Params.cover.hidden | default site.Params.cover.hiddenInList) }}<!-- 从上方移来 -->
-      {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}<!-- 从上方移来 -->
-    </div><!-- 添加 -->
-    <div style="width:100%;"><!-- 添加 -->
-      {{- if (ne (.Param "hideSummary") true) }}
-      <div class="entry-content">
-        <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
-      </div>
-      {{- end }}
-      {{- if not (.Param "hideMeta") }}
-      <footer class="entry-footer">
-        {{- partial "post_meta.html" . -}}
-      </footer>
-      {{- end }}
-      <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
-    </div><!-- 添加 -->
-  </div><!-- 添加 -->
-</article>
-```
+在窄屏上缩小列宽和间距，让摘要保持易读。可根据设计调整 150px 和断点。`height: auto` 会保留图片比例。只有需要统一裁切形状时才添加 `aspect-ratio` 和 `object-fit: cover`。
 
-似乎也有不少类似的需求。
+## 避免直接修改主题文件
 
-[https://github.com/adityatelange/hugo-PaperMod/discussions/159#discussioncomment-247844](https://github.com/adityatelange/hugo-PaperMod/discussions/159#discussioncomment-247844)
+PaperMod 文档说明，`blank.css` 是扩展 CSS 目录为空时使用的占位文件。无需修改主题自带的 `post-entry.css`，也无需删除其中注释掉的 `/* width: 100%; */`；删除 CSS 注释不会改变样式。如果确实要更改 HTML 结构，可以将模板复制到站点的 `layouts/` 目录进行覆盖，但主题更新后需要维护这份副本。
 
-如果官方能支持这个功能就好了。
+## 检查布局
+
+运行 Hugo，在宽屏和窄屏上检查首页、标签页和分类页列表。图片、标题、摘要和元数据不应互相遮挡，覆盖整张卡片的链接也应继续可用。若主题更新更改了类名或 HTML，请相应调整 CSS。此示例只影响列表卡片的封面，不影响文章正文中的图片。
+
+## 参考资料
+
+- [PaperMod FAQ: bundling custom CSS and overriding templates](https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs)
+- [PaperMod: current post-entry CSS selectors](https://github.com/adityatelange/hugo-PaperMod/blob/master/assets/css/common/post-entry.css)
+- [PaperMod discussion #159](https://github.com/adityatelange/hugo-PaperMod/discussions/159#discussioncomment-247844)

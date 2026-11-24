@@ -1,98 +1,81 @@
 ---
-title: '使用 CSS 自訂 Hugo PaperMod 主題的圖片大小與配置方法'
-date: "2026-09-24T19:44:38+09:00"
+title: "調整 PaperMod 文章列表中封面圖片的大小與位置"
 slug: "PaperModの圖片の配置変更"
-date: 2022-09-11T18:50:40+09:00
 tags: ["HUGO", "PaperMod"]
 draft: false
 image: "images/img.webp"
 categories: ["blogging"]
-description: '說明如何在 Hugo 的 PaperMod 主題中自訂文章內的圖片大小與配置。介紹如何編輯 CSS (blank.css 與 post-entry.css)，將預設的寬度 100%、置中對齊，改為圖片文繞圖或縮小等具體步驟。'
+description: "使用 PaperMod 的擴充 CSS 功能與 CSS Grid 縮小文章卡片封面圖，並將它放在摘要旁邊。"
+date: "2022-09-11T18:50:40+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
-預設的佈局是將圖片置中且寬度為 100%，
-但因為有時覺得有點大，所以我嘗試讓圖片環繞在標題下方，
-並將寬度更改為約 150px。
 
-檔案的變更如下。
+本文範例會縮小 PaperMod 文章列表卡片中的封面圖，並將它放在標題下方、摘要旁邊。透過網站端的擴充 CSS 完成，不必直接修改主題內附的樣式表或版型。選擇器依賴 PaperMod 類別名稱，更新主題後請在瀏覽器檢查結果。
 
-## blank.css
-為了更改邊距、圖片大小和文字顯示行數，在 blank.css 中加入以下描述。
+## 新增擴充 CSS
 
-```css:blank.css
-.entry-content {
-    -webkit-line-clamp: 4;
+在網站根目錄建立 `assets/css/extended/custom.css`。PaperMod 會將此目錄中的 CSS 與主題樣式一併載入。CSS Grid 可調整視覺排列，同時保留現有 HTML 結構。
+
+```css
+/* Add to assets/css/extended/custom.css */
+.post-entry {
+    display: grid;
+    grid-template-columns: minmax(0, 150px) minmax(0, 1fr);
+    grid-template-areas:
+        "cover title"
+        "cover summary"
+        "cover meta";
+    column-gap: 1rem;
+    align-items: start;
 }
 
-.entry-footer {
-	text-align: right;
+.post-entry > .entry-cover {
+    grid-area: cover;
+    margin-bottom: 0;
 }
 
-.entry-cover {
-    margin-bottom: initial;
-    text-align: center;
+.post-entry > .entry-header {
+    grid-area: title;
+    min-width: 0;
 }
 
-.entry-cover img {
-    border-radius: 4px;
-    display: inline;
-    max-width: 100%;
+.post-entry > .entry-content {
+    grid-area: summary;
+    min-width: 0;
 }
 
-.post-meta {
+.post-entry > .entry-footer {
+    grid-area: meta;
+}
+
+.post-entry .entry-cover img {
     display: block;
-    text-align: right;
-}
-```
-
-## post-entry.css
-由於無法在 blank.css 端刪除定義，因此在 post-entry.css 中刪除以下位置的 1 行。
-
-```css:post-entry.css
-.entry-cover img {
-    border-radius: var(--radius);
-    pointer-events: none;
-    /* width: 100%; */ ← 刪除此行
+    width: 100%;
     height: auto;
 }
+
+@media (max-width: 600px) {
+    .post-entry {
+        grid-template-columns: minmax(0, 96px) minmax(0, 1fr);
+        column-gap: 0.75rem;
+    }
+}
 ```
 
-## list.html
-為了更改圖片佈局，我修改了 list.html 中的以下位置。
+## 調整窄螢幕版面
 
-```html:list.html
-<article class="{{ $class }}">
-  <!-- {{- $isHidden := (site.Params.cover.hidden | default site.Params.cover.hiddenInList) }} --><!-- 移至下方 -->
-  <!-- {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }} --><!-- 移至下方 -->
-  <header class="entry-header">
-    <h2>
-      {{- .Title }}
-      {{- if .Draft }}<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>{{- end }}
-    </h2>
-  </header>
-  <div style="display:flex;"><!-- 新增 -->
-    <div style="max-width:150px;margin:11px 15px 0px 0px;"><!-- 新增 -->
-      {{- $isHidden := (site.Params.cover.hidden | default site.Params.cover.hiddenInList) }}<!-- 從上方移來 -->
-      {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}<!-- 從上方移來 -->
-    </div><!-- 新增 -->
-    <div style="width:100%;"><!-- 新增 -->
-      {{- if (ne (.Param "hideSummary") true) }}
-      <div class="entry-content">
-        <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
-      </div>
-      {{- end }}
-      {{- if not (.Param "hideMeta") }}
-      <footer class="entry-footer">
-        {{- partial "post_meta.html" . -}}
-      </footer>
-      {{- end }}
-      <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
-    </div><!-- 新增 -->
-  </div><!-- 新增 -->
-</article>
-```
+在窄螢幕上縮小欄寬與間距，讓摘要維持易讀。可依設計調整 150px 和斷點。`height: auto` 會保留圖片比例。只有需要統一裁切形狀時才加入 `aspect-ratio` 和 `object-fit: cover`。
 
-似乎有不少類似的要求。
+## 避免直接修改主題檔案
 
-[https://github.com/adityatelange/hugo-PaperMod/discussions/159#discussioncomment-247844](https://github.com/adityatelange/hugo-PaperMod/discussions/159#discussioncomment-247844)
+PaperMod 文件說明，`blank.css` 是擴充 CSS 目錄沒有檔案時使用的佔位檔。不必修改主題內附的 `post-entry.css`，也不必刪除其中註解掉的 `/* width: 100%; */`；移除 CSS 註解不會改變樣式。若要更改 HTML 結構，可將版型複製到網站的 `layouts/` 目錄覆寫，但主題更新後必須維護這份副本。
 
-如果官方也能支援就太好了。
+## 檢查版面
+
+執行 Hugo，並在寬螢幕和窄螢幕檢查首頁、標籤頁與分類頁列表。圖片、標題、摘要和中繼資料不可互相遮擋，覆蓋整張卡片的連結也應正常運作。若主題更新變更類別名稱或 HTML，請調整 CSS。此範例只影響列表卡片封面，不影響文章內文圖片。
+
+## 參考資料
+
+- [PaperMod FAQ: bundling custom CSS and overriding templates](https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs)
+- [PaperMod: current post-entry CSS selectors](https://github.com/adityatelange/hugo-PaperMod/blob/master/assets/css/common/post-entry.css)
+- [PaperMod discussion #159](https://github.com/adityatelange/hugo-PaperMod/discussions/159#discussioncomment-247844)

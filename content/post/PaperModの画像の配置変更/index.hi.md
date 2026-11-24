@@ -1,98 +1,81 @@
 ---
-title: 'CSS का उपयोग करके Hugo PaperMod थीम में छवि आकार और प्लेसमेंट को कैसे कस्टमाइज़ करें'
-date: "2026-09-24T19:44:38+09:00"
+title: "PaperMod पोस्ट सूची में कवर चित्रों का आकार और स्थान बदलें"
 slug: "PaperModのछविの配置変更"
-date: 2022-09-11T18:50:40+09:00
 tags: ["HUGO", "PaperMod"]
 draft: false
 image: "images/img.webp"
 categories: ["blogging"]
-description: 'हम बताते हैं कि Hugo PaperMod थीम में लेखों के भीतर छवियों के आकार और प्लेसमेंट को कैसे अनुकूलित किया जाए। डिफ़ॉल्ट 100% चौड़ाई और केंद्र संरेखण से छवि रैपिंग और स्केलिंग के लिए CSS (blank.css और post-entry.css) को संपादित करने की विशिष्ट प्रक्रिया प्रस्तुत करता है।'
+description: "PaperMod के extended CSS और CSS Grid से पोस्ट कार्ड के कवर छोटे करें और सारांश के पास रखें।"
+date: "2022-09-11T18:50:40+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
-डिफ़ॉल्ट लेआउट में इमेज को 100% चौड़ाई के साथ केंद्र में रखा गया है,
-लेकिन क्योंकि मुझे कभी-कभी यह थोड़ा बड़ा लगता था, मैंने इमेज को शीर्षक के नीचे रैप करने की कोशिश की,
-और चौड़ाई को लगभग 150px में बदल दिया।
 
-फ़ाइलों में परिवर्तन इस प्रकार हैं।
+यह उदाहरण PaperMod पोस्ट सूची के कार्ड में कवर चित्रों को छोटा करके शीर्षक के नीचे और सारांश के बगल में रखता है। इसमें थीम की CSS या शामिल template को बदलने के बजाय साइट का extended CSS इस्तेमाल होता है। चयनकर्ता PaperMod की classes पर निर्भर हैं, इसलिए theme अपडेट के बाद ब्राउज़र में परिणाम जाँचें।
 
-## blank.css
-मार्जिन, इमेज का आकार और टेक्स्ट डिस्प्ले लाइन को बदलने के लिए, blank.css में निम्नलिखित विवरण जोड़ें।
+## Extended CSS जोड़ें
 
-```css:blank.css
-.entry-content {
-    -webkit-line-clamp: 4;
+साइट की root में `assets/css/extended/custom.css` बनाएँ। PaperMod इस फ़ोल्डर की CSS को अपनी theme styles के साथ शामिल करता है। CSS Grid मौजूदा HTML संरचना बदले बिना दृश्य क्रम बदलता है।
+
+```css
+/* Add to assets/css/extended/custom.css */
+.post-entry {
+    display: grid;
+    grid-template-columns: minmax(0, 150px) minmax(0, 1fr);
+    grid-template-areas:
+        "cover title"
+        "cover summary"
+        "cover meta";
+    column-gap: 1rem;
+    align-items: start;
 }
 
-.entry-footer {
-	text-align: right;
+.post-entry > .entry-cover {
+    grid-area: cover;
+    margin-bottom: 0;
 }
 
-.entry-cover {
-    margin-bottom: initial;
-    text-align: center;
+.post-entry > .entry-header {
+    grid-area: title;
+    min-width: 0;
 }
 
-.entry-cover img {
-    border-radius: 4px;
-    display: inline;
-    max-width: 100%;
+.post-entry > .entry-content {
+    grid-area: summary;
+    min-width: 0;
 }
 
-.post-meta {
+.post-entry > .entry-footer {
+    grid-area: meta;
+}
+
+.post-entry .entry-cover img {
     display: block;
-    text-align: right;
-}
-```
-
-## post-entry.css
-चूंकि मैं blank.css में परिभाषा को नहीं हटा सका, इसलिए मैंने post-entry.css में निम्नलिखित स्थान पर 1 पंक्ति हटा दी।
-
-```css:post-entry.css
-.entry-cover img {
-    border-radius: var(--radius);
-    pointer-events: none;
-    /* width: 100%; */ ← इस लाइन को हटा दें
+    width: 100%;
     height: auto;
 }
+
+@media (max-width: 600px) {
+    .post-entry {
+        grid-template-columns: minmax(0, 96px) minmax(0, 1fr);
+        column-gap: 0.75rem;
+    }
+}
 ```
 
-## list.html
-इमेज लेआउट को बदलने के लिए, मैंने list.html में निम्नलिखित स्थान को संशोधित किया है।
+## संकीर्ण स्क्रीन के लिए समायोजन
 
-```html:list.html
-<article class="{{ $class }}">
-  <!-- {{- $isHidden := (site.Params.cover.hidden | default site.Params.cover.hiddenInList) }} --><!-- नीचे ले जाएँ -->
-  <!-- {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }} --><!-- नीचे ले जाएँ -->
-  <header class="entry-header">
-    <h2>
-      {{- .Title }}
-      {{- if .Draft }}<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>{{- end }}
-    </h2>
-  </header>
-  <div style="display:flex;"><!-- जोड़ा गया -->
-    <div style="max-width:150px;margin:11px 15px 0px 0px;"><!-- जोड़ा गया -->
-      {{- $isHidden := (site.Params.cover.hidden | default site.Params.cover.hiddenInList) }}<!-- ऊपर से लाया गया -->
-      {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}<!-- ऊपर से लाया गया -->
-    </div><!-- जोड़ा गया -->
-    <div style="width:100%;"><!-- जोड़ा गया -->
-      {{- if (ne (.Param "hideSummary") true) }}
-      <div class="entry-content">
-        <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
-      </div>
-      {{- end }}
-      {{- if not (.Param "hideMeta") }}
-      <footer class="entry-footer">
-        {{- partial "post_meta.html" . -}}
-      </footer>
-      {{- end }}
-      <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
-    </div><!-- जोड़ा गया -->
-  </div><!-- जोड़ा गया -->
-</article>
-```
+संकीर्ण स्क्रीन पर कॉलम और gap छोटे करें ताकि सारांश पढ़ने योग्य रहे। 150px और breakpoint को अपने डिज़ाइन के अनुसार बदलें। `height: auto` चित्र का अनुपात बनाए रखता है। समान आकार में crop करना हो तभी `aspect-ratio` और `object-fit: cover` जोड़ें।
 
-ऐसा लगता है कि ऐसे कुछ अनुरोध नहीं हैं।
+## Theme फ़ाइलें सीधे न बदलें
 
-[https://github.com/adityatelange/hugo-PaperMod/discussions/159#discussioncomment-247844](https://github.com/adityatelange/hugo-PaperMod/discussions/159#discussioncomment-247844)
+PaperMod के अनुसार `blank.css` उस placeholder फ़ाइल की तरह है जो extended CSS फ़ोल्डर खाली होने पर काम आती है। थीम के `post-entry.css` को बदलने या टिप्पणी वाली `/* width: 100%; */` पंक्ति हटाने की ज़रूरत नहीं है; CSS comment हटाने से style नहीं बदलता। HTML संरचना बदलनी हो तो site के `layouts/` में template की प्रति रखकर override कर सकते हैं, लेकिन theme बदलने पर उस प्रति को बनाए रखना होगा।
 
-अगर मूल डेवलपर्स भी इसका समर्थन कर सकें तो बहुत अच्छा होगा।
+## लेआउट जाँचें
+
+Hugo चलाकर home, tag और category सूचियों को चौड़ी तथा संकीर्ण स्क्रीन पर देखें। चित्र, शीर्षक, सारांश और metadata एक-दूसरे पर न चढ़ें और पूरे कार्ड का link काम करे। Theme update में classes या HTML बदलें तो CSS समायोजित करें। यह उदाहरण सूची के cover पर लागू है, लेख के अंदर की छवियों पर नहीं।
+
+## संदर्भ
+
+- [PaperMod FAQ: bundling custom CSS and overriding templates](https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs)
+- [PaperMod: current post-entry CSS selectors](https://github.com/adityatelange/hugo-PaperMod/blob/master/assets/css/common/post-entry.css)
+- [PaperMod discussion #159](https://github.com/adityatelange/hugo-PaperMod/discussions/159#discussioncomment-247844)

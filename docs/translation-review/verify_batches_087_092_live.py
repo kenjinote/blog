@@ -266,6 +266,17 @@ ARTICLES = {
         "markers": ["twitter:card", "twitter:image", "og:image", "1200x630", "hidden: true", "production"],
         "date": "2022-09-10",
     },
+    108: {
+        "bundle": ROOT / "content/post/PaperModの画像の配置変更",
+        "slug": "PaperModの画像の配置変更",
+        "links": [
+            "https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs",
+            "https://github.com/adityatelange/hugo-PaperMod/blob/master/assets/css/common/post-entry.css",
+            "https://github.com/adityatelange/hugo-PaperMod/discussions/159#discussioncomment-247844",
+        ],
+        "markers": ["assets/css/extended/custom.css", "grid-template-areas", "grid-template-columns", "@media (max-width: 600px)", "width: 100%;", "height: auto;"],
+        "date": "2022-09-11",
+    },
 }
 
 
@@ -331,7 +342,7 @@ def slug_key(value):
 parser = argparse.ArgumentParser()
 parser.add_argument("--ci-run", type=int, required=True)
 parser.add_argument("--commit", required=True)
-parser.add_argument("--max-batch", type=int, choices=(90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107), default=107)
+parser.add_argument("--max-batch", type=int, choices=(90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108), default=108)
 args = parser.parse_args()
 ARTICLES = {number: article for number, article in ARTICLES.items() if number <= args.max_batch}
 with urllib.request.urlopen(f"https://github.com/kenjinote/blog/actions/runs/{args.ci_run}", timeout=45) as response:

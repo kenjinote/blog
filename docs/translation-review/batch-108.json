@@ -1,0 +1,444 @@
+{
+  "version": 1,
+  "batch": 108,
+  "article": "PaperModの記事一覧の画像配置",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "dbe79e7f47998e322201b03334b3353e4ecf0ad71f86b4d4b74b38be38e5633f",
+  "sources": [
+    "https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs",
+    "https://github.com/adityatelange/hugo-PaperMod/blob/master/assets/css/common/post-entry.css",
+    "https://github.com/adityatelange/hugo-PaperMod/discussions/159#discussioncomment-247844"
+  ],
+  "scope": "Rewrote the Japanese article and twelve translations against PaperMod's official FAQ and current upstream post-entry stylesheet. Compared the legacy CSS/template instructions, selectors, HTML assumptions, responsive behavior, language alignment, links, and publication metadata.",
+  "findings": [
+    "Removed duplicated conflicting future dates, preserved the original 2022-09-11 publication date, and added lastmod 2026-11-24 in every locale.",
+    "Replaced instructions to edit bundled blank.css and post-entry.css with PaperMod's supported assets/css/extended/custom.css approach.",
+    "Corrected the ineffective instruction to delete a commented-out width declaration; removing the comment would not change CSS behavior.",
+    "Replaced brittle inline-flex/template edits and incomplete line-clamp rules with a responsive CSS Grid layout using PaperMod's current post-entry classes.",
+    "Clarified that the snippet changes list-card covers, not images inside article content, and added browser checks for narrow screens and full-card links.",
+    "Aligned the Japanese article, twelve translations, and identical code sample; replaced stale instructions with official current references."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/PaperModの画像の配置変更/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PaperModの画像の配置変更/index.md",
+      "sourceHash": "dbe79e7f47998e322201b03334b3353e4ecf0ad71f86b4d4b74b38be38e5633f",
+      "translationHash": "05a2656d86947988aded1b247ae046849a68521f5bde24165bf7a5e5a19baf80",
+      "summary": "Rewrote and checked against the Japanese source, current PaperMod FAQ and its upstream post-entry CSS; aligned all locale text and the shared responsive CSS Grid example.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the target (post-list cover cards), extension-CSS workflow, CSS Grid behavior, responsive adjustment, and distinction from article-body images."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked PaperMod, extended CSS, post-entry, entry-cover, grid areas, breakpoint, theme override, and responsive terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The example uses an illustrative 150px desktop column and 96px narrow-screen column; neither is a factual or mathematical claim."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the exact shared CSS across locales; confirmed it targets current documented PaperMod classes, keeps image height automatic, and avoids editing bundled theme files or relying on a commented-out declaration."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added PaperMod's official FAQ and upstream stylesheet, plus the original discussion for context."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The CSS relies on PaperMod's current post-list classes; theme updates or forks may change the markup, so verify in a browser."
+      ]
+    },
+    "post/PaperModの画像の配置変更/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PaperModの画像の配置変更/index.md",
+      "sourceHash": "dbe79e7f47998e322201b03334b3353e4ecf0ad71f86b4d4b74b38be38e5633f",
+      "translationHash": "8c23390334412013ee5477c10e8464e5ae93750fff349904fd8f53e2d047fe89",
+      "summary": "Rewrote and checked against the Japanese source, current PaperMod FAQ and its upstream post-entry CSS; aligned all locale text and the shared responsive CSS Grid example.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the target (post-list cover cards), extension-CSS workflow, CSS Grid behavior, responsive adjustment, and distinction from article-body images."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked PaperMod, extended CSS, post-entry, entry-cover, grid areas, breakpoint, theme override, and responsive terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The example uses an illustrative 150px desktop column and 96px narrow-screen column; neither is a factual or mathematical claim."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the exact shared CSS across locales; confirmed it targets current documented PaperMod classes, keeps image height automatic, and avoids editing bundled theme files or relying on a commented-out declaration."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added PaperMod's official FAQ and upstream stylesheet, plus the original discussion for context."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The CSS relies on PaperMod's current post-list classes; theme updates or forks may change the markup, so verify in a browser."
+      ]
+    },
+    "post/PaperModの画像の配置変更/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PaperModの画像の配置変更/index.md",
+      "sourceHash": "dbe79e7f47998e322201b03334b3353e4ecf0ad71f86b4d4b74b38be38e5633f",
+      "translationHash": "36f21731268fce2611e3cb7581e6dd4b34ce071ca9b34d39a6f031cdc05ba1ba",
+      "summary": "Rewrote and checked against the Japanese source, current PaperMod FAQ and its upstream post-entry CSS; aligned all locale text and the shared responsive CSS Grid example.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the target (post-list cover cards), extension-CSS workflow, CSS Grid behavior, responsive adjustment, and distinction from article-body images."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked PaperMod, extended CSS, post-entry, entry-cover, grid areas, breakpoint, theme override, and responsive terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The example uses an illustrative 150px desktop column and 96px narrow-screen column; neither is a factual or mathematical claim."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the exact shared CSS across locales; confirmed it targets current documented PaperMod classes, keeps image height automatic, and avoids editing bundled theme files or relying on a commented-out declaration."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added PaperMod's official FAQ and upstream stylesheet, plus the original discussion for context."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The CSS relies on PaperMod's current post-list classes; theme updates or forks may change the markup, so verify in a browser."
+      ]
+    },
+    "post/PaperModの画像の配置変更/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PaperModの画像の配置変更/index.md",
+      "sourceHash": "dbe79e7f47998e322201b03334b3353e4ecf0ad71f86b4d4b74b38be38e5633f",
+      "translationHash": "9a906affe87f8132a79d5db814e9d764cbdbe47f573416a25254f119b4280a84",
+      "summary": "Rewrote and checked against the Japanese source, current PaperMod FAQ and its upstream post-entry CSS; aligned all locale text and the shared responsive CSS Grid example.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the target (post-list cover cards), extension-CSS workflow, CSS Grid behavior, responsive adjustment, and distinction from article-body images."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked PaperMod, extended CSS, post-entry, entry-cover, grid areas, breakpoint, theme override, and responsive terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The example uses an illustrative 150px desktop column and 96px narrow-screen column; neither is a factual or mathematical claim."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the exact shared CSS across locales; confirmed it targets current documented PaperMod classes, keeps image height automatic, and avoids editing bundled theme files or relying on a commented-out declaration."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added PaperMod's official FAQ and upstream stylesheet, plus the original discussion for context."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The CSS relies on PaperMod's current post-list classes; theme updates or forks may change the markup, so verify in a browser."
+      ]
+    },
+    "post/PaperModの画像の配置変更/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PaperModの画像の配置変更/index.md",
+      "sourceHash": "dbe79e7f47998e322201b03334b3353e4ecf0ad71f86b4d4b74b38be38e5633f",
+      "translationHash": "10b93cc4f4c654d48faa8e901170196971559d61f7a75bb41fc114eba198e715",
+      "summary": "Rewrote and checked against the Japanese source, current PaperMod FAQ and its upstream post-entry CSS; aligned all locale text and the shared responsive CSS Grid example.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the target (post-list cover cards), extension-CSS workflow, CSS Grid behavior, responsive adjustment, and distinction from article-body images."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked PaperMod, extended CSS, post-entry, entry-cover, grid areas, breakpoint, theme override, and responsive terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The example uses an illustrative 150px desktop column and 96px narrow-screen column; neither is a factual or mathematical claim."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the exact shared CSS across locales; confirmed it targets current documented PaperMod classes, keeps image height automatic, and avoids editing bundled theme files or relying on a commented-out declaration."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added PaperMod's official FAQ and upstream stylesheet, plus the original discussion for context."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The CSS relies on PaperMod's current post-list classes; theme updates or forks may change the markup, so verify in a browser."
+      ]
+    },
+    "post/PaperModの画像の配置変更/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PaperModの画像の配置変更/index.md",
+      "sourceHash": "dbe79e7f47998e322201b03334b3353e4ecf0ad71f86b4d4b74b38be38e5633f",
+      "translationHash": "9dae57a1fc8d91da7600d6821ea9a12d5b9b4b9d88f3db6c901259a7de44b289",
+      "summary": "Rewrote and checked against the Japanese source, current PaperMod FAQ and its upstream post-entry CSS; aligned all locale text and the shared responsive CSS Grid example.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the target (post-list cover cards), extension-CSS workflow, CSS Grid behavior, responsive adjustment, and distinction from article-body images."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked PaperMod, extended CSS, post-entry, entry-cover, grid areas, breakpoint, theme override, and responsive terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The example uses an illustrative 150px desktop column and 96px narrow-screen column; neither is a factual or mathematical claim."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the exact shared CSS across locales; confirmed it targets current documented PaperMod classes, keeps image height automatic, and avoids editing bundled theme files or relying on a commented-out declaration."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added PaperMod's official FAQ and upstream stylesheet, plus the original discussion for context."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The CSS relies on PaperMod's current post-list classes; theme updates or forks may change the markup, so verify in a browser."
+      ]
+    },
+    "post/PaperModの画像の配置変更/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PaperModの画像の配置変更/index.md",
+      "sourceHash": "dbe79e7f47998e322201b03334b3353e4ecf0ad71f86b4d4b74b38be38e5633f",
+      "translationHash": "9d70a6925137b1c093f8e519f4c78a83e3142c971cbc7c8849e05a500d334a17",
+      "summary": "Rewrote and checked against the Japanese source, current PaperMod FAQ and its upstream post-entry CSS; aligned all locale text and the shared responsive CSS Grid example.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the target (post-list cover cards), extension-CSS workflow, CSS Grid behavior, responsive adjustment, and distinction from article-body images."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked PaperMod, extended CSS, post-entry, entry-cover, grid areas, breakpoint, theme override, and responsive terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The example uses an illustrative 150px desktop column and 96px narrow-screen column; neither is a factual or mathematical claim."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the exact shared CSS across locales; confirmed it targets current documented PaperMod classes, keeps image height automatic, and avoids editing bundled theme files or relying on a commented-out declaration."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added PaperMod's official FAQ and upstream stylesheet, plus the original discussion for context."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The CSS relies on PaperMod's current post-list classes; theme updates or forks may change the markup, so verify in a browser."
+      ]
+    },
+    "post/PaperModの画像の配置変更/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PaperModの画像の配置変更/index.md",
+      "sourceHash": "dbe79e7f47998e322201b03334b3353e4ecf0ad71f86b4d4b74b38be38e5633f",
+      "translationHash": "a10561c688550ddc429245eabfceaf8dd2ec13a740e81599b2458e79dc0bf34f",
+      "summary": "Rewrote and checked against the Japanese source, current PaperMod FAQ and its upstream post-entry CSS; aligned all locale text and the shared responsive CSS Grid example.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the target (post-list cover cards), extension-CSS workflow, CSS Grid behavior, responsive adjustment, and distinction from article-body images."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked PaperMod, extended CSS, post-entry, entry-cover, grid areas, breakpoint, theme override, and responsive terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The example uses an illustrative 150px desktop column and 96px narrow-screen column; neither is a factual or mathematical claim."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the exact shared CSS across locales; confirmed it targets current documented PaperMod classes, keeps image height automatic, and avoids editing bundled theme files or relying on a commented-out declaration."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added PaperMod's official FAQ and upstream stylesheet, plus the original discussion for context."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The CSS relies on PaperMod's current post-list classes; theme updates or forks may change the markup, so verify in a browser."
+      ]
+    },
+    "post/PaperModの画像の配置変更/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PaperModの画像の配置変更/index.md",
+      "sourceHash": "dbe79e7f47998e322201b03334b3353e4ecf0ad71f86b4d4b74b38be38e5633f",
+      "translationHash": "b517fd130b991e887b04e7046076c729960f78adc1976b18e6c883d01f8c3147",
+      "summary": "Rewrote and checked against the Japanese source, current PaperMod FAQ and its upstream post-entry CSS; aligned all locale text and the shared responsive CSS Grid example.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the target (post-list cover cards), extension-CSS workflow, CSS Grid behavior, responsive adjustment, and distinction from article-body images."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked PaperMod, extended CSS, post-entry, entry-cover, grid areas, breakpoint, theme override, and responsive terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The example uses an illustrative 150px desktop column and 96px narrow-screen column; neither is a factual or mathematical claim."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the exact shared CSS across locales; confirmed it targets current documented PaperMod classes, keeps image height automatic, and avoids editing bundled theme files or relying on a commented-out declaration."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added PaperMod's official FAQ and upstream stylesheet, plus the original discussion for context."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The CSS relies on PaperMod's current post-list classes; theme updates or forks may change the markup, so verify in a browser."
+      ]
+    },
+    "post/PaperModの画像の配置変更/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PaperModの画像の配置変更/index.md",
+      "sourceHash": "dbe79e7f47998e322201b03334b3353e4ecf0ad71f86b4d4b74b38be38e5633f",
+      "translationHash": "591516cd7ced6d5af6a5ec896b2990db99191a84b705ccd50845c03a789c6f6d",
+      "summary": "Rewrote and checked against the Japanese source, current PaperMod FAQ and its upstream post-entry CSS; aligned all locale text and the shared responsive CSS Grid example.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the target (post-list cover cards), extension-CSS workflow, CSS Grid behavior, responsive adjustment, and distinction from article-body images."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked PaperMod, extended CSS, post-entry, entry-cover, grid areas, breakpoint, theme override, and responsive terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The example uses an illustrative 150px desktop column and 96px narrow-screen column; neither is a factual or mathematical claim."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the exact shared CSS across locales; confirmed it targets current documented PaperMod classes, keeps image height automatic, and avoids editing bundled theme files or relying on a commented-out declaration."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added PaperMod's official FAQ and upstream stylesheet, plus the original discussion for context."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The CSS relies on PaperMod's current post-list classes; theme updates or forks may change the markup, so verify in a browser."
+      ]
+    },
+    "post/PaperModの画像の配置変更/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PaperModの画像の配置変更/index.md",
+      "sourceHash": "dbe79e7f47998e322201b03334b3353e4ecf0ad71f86b4d4b74b38be38e5633f",
+      "translationHash": "10ffbbb5a9f0ef2873ff6b11e17bab293f9488d0e37b14c756b5debe4f92785b",
+      "summary": "Rewrote and checked against the Japanese source, current PaperMod FAQ and its upstream post-entry CSS; aligned all locale text and the shared responsive CSS Grid example.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the target (post-list cover cards), extension-CSS workflow, CSS Grid behavior, responsive adjustment, and distinction from article-body images."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked PaperMod, extended CSS, post-entry, entry-cover, grid areas, breakpoint, theme override, and responsive terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The example uses an illustrative 150px desktop column and 96px narrow-screen column; neither is a factual or mathematical claim."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the exact shared CSS across locales; confirmed it targets current documented PaperMod classes, keeps image height automatic, and avoids editing bundled theme files or relying on a commented-out declaration."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added PaperMod's official FAQ and upstream stylesheet, plus the original discussion for context."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The CSS relies on PaperMod's current post-list classes; theme updates or forks may change the markup, so verify in a browser."
+      ]
+    },
+    "post/PaperModの画像の配置変更/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PaperModの画像の配置変更/index.md",
+      "sourceHash": "dbe79e7f47998e322201b03334b3353e4ecf0ad71f86b4d4b74b38be38e5633f",
+      "translationHash": "277df428bd015479a60f31755d9e6c2e052dc66ffd52e4bba0a858ecac86d2e5",
+      "summary": "Rewrote and checked against the Japanese source, current PaperMod FAQ and its upstream post-entry CSS; aligned all locale text and the shared responsive CSS Grid example.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the target (post-list cover cards), extension-CSS workflow, CSS Grid behavior, responsive adjustment, and distinction from article-body images."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked PaperMod, extended CSS, post-entry, entry-cover, grid areas, breakpoint, theme override, and responsive terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The example uses an illustrative 150px desktop column and 96px narrow-screen column; neither is a factual or mathematical claim."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the exact shared CSS across locales; confirmed it targets current documented PaperMod classes, keeps image height automatic, and avoids editing bundled theme files or relying on a commented-out declaration."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added PaperMod's official FAQ and upstream stylesheet, plus the original discussion for context."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The CSS relies on PaperMod's current post-list classes; theme updates or forks may change the markup, so verify in a browser."
+      ]
+    }
+  }
+}

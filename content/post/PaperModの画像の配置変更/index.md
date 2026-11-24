@@ -1,98 +1,81 @@
 ---
-title: 'Hugo PaperModテーマの画像サイズ・配置をCSSでカスタマイズする方法'
-date: "2026-09-24T19:44:38+09:00"
+title: "Hugo PaperModの記事一覧でカバー画像のサイズと配置を変える"
 slug: "PaperModの画像の配置変更"
-date: 2022-09-11T18:50:40+09:00
 tags: ["HUGO", "PaperMod"]
 draft: false
 image: "images/img.webp"
 categories: ["blogging"]
-description: 'HugoのPaperModテーマで、記事内の画像サイズや配置をカスタマイズする方法を解説します。既定の横幅100%・中央揃えから、画像の回り込みや縮小を行うためのCSS（blank.cssとpost-entry.css）の具体的な編集手順を紹介します。'
+description: "PaperMod公式の拡張CSS機能とCSS Gridを使い、記事一覧カードのカバー画像を小さくして本文の横に配置します。"
+date: "2022-09-11T18:50:40+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
-既定のレイアウトは、画像を中央に横幅100%で配置されていますが、
-少し大きいなと感じることがあったため、画像をタイトルの下に周り込ませて、
-横幅を150px程度に変更してみました。
 
-ファイルの変更箇所は下記のとおりとなります。
+この記事は、PaperModの記事一覧にあるカードのカバー画像を小さくし、タイトルの下で要約の横に置く例です。テーマのCSSファイルや配布テンプレートは直接編集せず、サイト側の拡張CSSを使います。PaperModのクラス名を対象にするため、テーマを更新した後はブラウザーで表示を確認してください。
 
-## blank.css
-余白や画像のサイズ、テキストの表示行を変更するために、blank.cssに下記の記述を追加します。
+## 拡張CSSを追加する
 
-```css:blank.css
-.entry-content {
-    -webkit-line-clamp: 4;
+サイトのルートに`assets/css/extended/custom.css`を作成します。PaperModはこのフォルダー内のCSSをテーマのスタイルに追加します。画像とテキストの順番は既存のHTMLを保ったままCSS Gridで配置します。
+
+```css
+/* Add to assets/css/extended/custom.css */
+.post-entry {
+    display: grid;
+    grid-template-columns: minmax(0, 150px) minmax(0, 1fr);
+    grid-template-areas:
+        "cover title"
+        "cover summary"
+        "cover meta";
+    column-gap: 1rem;
+    align-items: start;
 }
 
-.entry-footer {
-	text-align: right;
+.post-entry > .entry-cover {
+    grid-area: cover;
+    margin-bottom: 0;
 }
 
-.entry-cover {
-    margin-bottom: initial;
-    text-align: center;
+.post-entry > .entry-header {
+    grid-area: title;
+    min-width: 0;
 }
 
-.entry-cover img {
-    border-radius: 4px;
-    display: inline;
-    max-width: 100%;
+.post-entry > .entry-content {
+    grid-area: summary;
+    min-width: 0;
 }
 
-.post-meta {
+.post-entry > .entry-footer {
+    grid-area: meta;
+}
+
+.post-entry .entry-cover img {
     display: block;
-    text-align: right;
-}
-```
-
-## post-entry.css
-blank.css側で定義を削除できなかったので、post-entry.cssに下記の場所を1行削除します。
-
-```css:post-entry.css
-.entry-cover img {
-    border-radius: var(--radius);
-    pointer-events: none;
-    /* width: 100%; */ ← この行を削除
+    width: 100%;
     height: auto;
 }
+
+@media (max-width: 600px) {
+    .post-entry {
+        grid-template-columns: minmax(0, 96px) minmax(0, 1fr);
+        column-gap: 0.75rem;
+    }
+}
 ```
 
-## list.html
-画像の配置を変更するために、list.htmlの下記箇所を変更しました。
+## 狭い画面で調整する
 
-```html:list.html
-<article class="{{ $class }}">
-  <!-- {{- $isHidden := (site.Params.cover.hidden | default site.Params.cover.hiddenInList) }} --><!-- 下に移動 -->
-  <!-- {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }} --><!-- 下に移動 -->
-  <header class="entry-header">
-    <h2>
-      {{- .Title }}
-      {{- if .Draft }}<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>{{- end }}
-    </h2>
-  </header>
-  <div style="display:flex;"><!-- 追加 -->
-    <div style="max-width:150px;margin:11px 15px 0px 0px;"><!-- 追加 -->
-      {{- $isHidden := (site.Params.cover.hidden | default site.Params.cover.hiddenInList) }}<!-- 上から移動 -->
-      {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}<!-- 上から移動 -->
-    </div><!-- 追加 -->
-    <div style="width:100%;"><!-- 追加 -->
-      {{- if (ne (.Param "hideSummary") true) }}
-      <div class="entry-content">
-        <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
-      </div>
-      {{- end }}
-      {{- if not (.Param "hideMeta") }}
-      <footer class="entry-footer">
-        {{- partial "post_meta.html" . -}}
-      </footer>
-      {{- end }}
-      <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
-    </div><!-- 追加 -->
-  </div><!-- 追加 -->
-</article>
-```
+画面が狭いときは列幅と間隔を小さくして、本文が読みづらくならないようにします。好みの見た目に合わせて150pxやブレークポイントを調整してください。画像は`height: auto`で縦横比を保ちます。切り抜きたい場合だけ`aspect-ratio`と`object-fit: cover`を追加します。
 
-似た要望は少なからずあるようです。
+## テーマファイルを直接編集しない
 
-[https://github.com/adityatelange/hugo-PaperMod/discussions/159#discussioncomment-247844](https://github.com/adityatelange/hugo-PaperMod/discussions/159#discussioncomment-247844)
+以前の例にあった`blank.css`は拡張CSSが空のときに使われるプレースホルダーです。テーマ同梱の`post-entry.css`を変更したり、そこにあるコメント済みの`/* width: 100%; */`を削除したりする必要はありません。コメントを消してもスタイルは変わりません。HTML構造そのものを変えたい場合はサイト側にレイアウトを複製してオーバーライドできますが、テーマ更新時に差分を保守する必要があります。
 
-本家の方でも対応してくれるとありがたいなぁ。
+## 表示を確認する
+
+Hugoを起動し、ホームとタグ・カテゴリ一覧を広い画面と狭い画面で確認します。カード内で画像、タイトル、要約、メタデータが重ならず、記事リンクを覆うテーマ既定のクリック領域も動作することを確かめます。テーマ更新でクラス名やHTMLが変わった場合はCSSを調整してください。この記事の例はPaperModの一覧カード用で、記事本文中の画像には適用されません。
+
+## 参考資料
+
+- [PaperMod FAQ: bundling custom CSS and overriding templates](https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs)
+- [PaperMod: current post-entry CSS selectors](https://github.com/adityatelange/hugo-PaperMod/blob/master/assets/css/common/post-entry.css)
+- [PaperMod discussion #159](https://github.com/adityatelange/hugo-PaperMod/discussions/159#discussioncomment-247844)
