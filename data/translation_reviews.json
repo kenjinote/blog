@@ -17165,6 +17165,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-147.json",
       "evidenceHash": "c32d7a30a8e67ac6c9e651b4dd99fefd0d5ad44666675dd1de862440407e3886"
+    },
+    "post/macでWindowsライク（Alt+Tab）にアプリケーション切り替えする方法/index.en.md": {
+      "source": "post/macでWindowsライク（Alt+Tab）にアプリケーション切り替えする方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "e4a3ddc277c052239f594bf97d4c5d3c60db1db71acaf57013a676d4abd2e015",
+      "translationHash": "389d12eb26493d9a88394271212852c66283469b6bf795c943bce2e8c81c4d05",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-148.json",
+      "evidenceHash": "6c486836890c38bccc8c619717656fe25fb0ce41beea593d43731b7d6e960809"
+    },
+    "post/macでWindowsライク（Alt+Tab）にアプリケーション切り替えする方法/index.zh-cn.md": {
+      "source": "post/macでWindowsライク（Alt+Tab）にアプリケーション切り替えする方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "e4a3ddc277c052239f594bf97d4c5d3c60db1db71acaf57013a676d4abd2e015",
+      "translationHash": "a54bf080479ab8b307f2eceb5ec3eb626bf78378b765b380783975d17c38283c",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-148.json",
+      "evidenceHash": "0030341b42c0f9bf6613ee34f405993578d998ee26cb5c6cdef26086392f5841"
+    },
+    "post/macでWindowsライク（Alt+Tab）にアプリケーション切り替えする方法/index.es.md": {
+      "source": "post/macでWindowsライク（Alt+Tab）にアプリケーション切り替えする方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "e4a3ddc277c052239f594bf97d4c5d3c60db1db71acaf57013a676d4abd2e015",
+      "translationHash": "955970876bf60359378515deb72bfe52b6675293b0cf39c0a34117bb623baa96",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-148.json",
+      "evidenceHash": "f4505cb7ebbde2a1ec4d3f66ef6647b93f3f39ee1926fbcfdbf1148d44e5ba04"
+    },
+    "post/macでWindowsライク（Alt+Tab）にアプリケーション切り替えする方法/index.ko.md": {
+      "source": "post/macでWindowsライク（Alt+Tab）にアプリケーション切り替えする方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "e4a3ddc277c052239f594bf97d4c5d3c60db1db71acaf57013a676d4abd2e015",
+      "translationHash": "6a39afa398d0f884ea7eec99c7db316112c5947e71e11c221d6c731a393618e0",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-148.json",
+      "evidenceHash": "c6ca235b0bd8e5f11174643d3f920b5a68f3d8ac29f385ad2a5ea174f58ff29c"
+    },
+    "post/macでWindowsライク（Alt+Tab）にアプリケーション切り替えする方法/index.pt.md": {
+      "source": "post/macでWindowsライク（Alt+Tab）にアプリケーション切り替えする方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "e4a3ddc277c052239f594bf97d4c5d3c60db1db71acaf57013a676d4abd2e015",
+      "translationHash": "b3cb661e53339c92f6f80f61021f0adb6ec15b289f5ca01ccda343030ff57c57",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-148.json",
+      "evidenceHash": "f83e11aac3448e844c171207794999b11aba02b8d9c0861b081823a637e95239"
+    },
+    "post/macでWindowsライク（Alt+Tab）にアプリケーション切り替えする方法/index.zh-tw.md": {
+      "source": "post/macでWindowsライク（Alt+Tab）にアプリケーション切り替えする方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "e4a3ddc277c052239f594bf97d4c5d3c60db1db71acaf57013a676d4abd2e015",
+      "translationHash": "c5f8380b433e5d4eb90ba8018ada08c101f114d4665318525c5ce2dace970d8c",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-148.json",
+      "evidenceHash": "acb4f11705c20c084cee549e745e7b9310498f6407a0427233070c4f26246a74"
+    },
+    "post/macでWindowsライク（Alt+Tab）にアプリケーション切り替えする方法/index.hi.md": {
+      "source": "post/macでWindowsライク（Alt+Tab）にアプリケーション切り替えする方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "e4a3ddc277c052239f594bf97d4c5d3c60db1db71acaf57013a676d4abd2e015",
+      "translationHash": "59f9d1ba9fb72f01210ded00c4a2c8af6dd0e581e321b43bc856e1dd689135ef",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-148.json",
+      "evidenceHash": "88bb1bc4aa8c6f0adf266e7d186403d56f4b8c94545c19b736256ab9dcb3825d"
+    },
+    "post/macでWindowsライク（Alt+Tab）にアプリケーション切り替えする方法/index.fr.md": {
+      "source": "post/macでWindowsライク（Alt+Tab）にアプリケーション切り替えする方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "e4a3ddc277c052239f594bf97d4c5d3c60db1db71acaf57013a676d4abd2e015",
+      "translationHash": "ff4596ecf6878a5a3b35e437c2f61c15e267148cf70ae3a94db43fe64281c325",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-148.json",
+      "evidenceHash": "9756b7e150ac3b5a0734d506718bf7a419afd8d032ccb6e9287881e46c59eb4a"
+    },
+    "post/macでWindowsライク（Alt+Tab）にアプリケーション切り替えする方法/index.de.md": {
+      "source": "post/macでWindowsライク（Alt+Tab）にアプリケーション切り替えする方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "e4a3ddc277c052239f594bf97d4c5d3c60db1db71acaf57013a676d4abd2e015",
+      "translationHash": "171c00e1cbf0bdd5fc8a03b8a063d794292e4c485d126509194605067ba9766c",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-148.json",
+      "evidenceHash": "43e654736598120d17b105bf961f0a5ae744c7d81ef50bbb47093c4d50b8b1a0"
+    },
+    "post/macでWindowsライク（Alt+Tab）にアプリケーション切り替えする方法/index.ar.md": {
+      "source": "post/macでWindowsライク（Alt+Tab）にアプリケーション切り替えする方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "e4a3ddc277c052239f594bf97d4c5d3c60db1db71acaf57013a676d4abd2e015",
+      "translationHash": "9c217f0b4b0209aa21c1e22ee8bf92baba9aa432a611c738bd6aba63b115eac3",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-148.json",
+      "evidenceHash": "2eae6e6d452e0485e54bc3dd8d5ec6e4241962803671ad304e812c306e3ef63f"
+    },
+    "post/macでWindowsライク（Alt+Tab）にアプリケーション切り替えする方法/index.ru.md": {
+      "source": "post/macでWindowsライク（Alt+Tab）にアプリケーション切り替えする方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "e4a3ddc277c052239f594bf97d4c5d3c60db1db71acaf57013a676d4abd2e015",
+      "translationHash": "97319b61b2b6c9c17cc41fe3aa47481915c75581ce2f7e9f5008891f6eb271d5",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-148.json",
+      "evidenceHash": "6774802814d5f0e017c672819c78783d39aadc5b6554123a4956495587e0c750"
+    },
+    "post/macでWindowsライク（Alt+Tab）にアプリケーション切り替えする方法/index.id.md": {
+      "source": "post/macでWindowsライク（Alt+Tab）にアプリケーション切り替えする方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "e4a3ddc277c052239f594bf97d4c5d3c60db1db71acaf57013a676d4abd2e015",
+      "translationHash": "3167a9ba49a3333b2739ba486dfc7932902b729919c39214e2310dffe05cb476",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-148.json",
+      "evidenceHash": "3ab1d73501e7664b8aaeae7cfc653f1ef8f906544f923e018d6d58aa7658d120"
     }
   }
 }

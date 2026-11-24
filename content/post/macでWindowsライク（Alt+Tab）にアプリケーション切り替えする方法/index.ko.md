@@ -1,39 +1,28 @@
 ---
-
-
-
-
-title: 'Mac에서 Windows 스타일(Alt+Tab)로 앱을 전환하는 설정 방법'
-date: "2026-09-24T19:44:38+09:00"
-slug: "macでWindowsライク（Alt+Tab）に애플리케이션 전환する方法"
+title: "AltTab으로 Mac 앱과 창 전환하기"
 date: 2023-04-05T02:20:12+09:00
+lastmod: "2026-11-24T00:00:00+09:00"
+draft: false
+slug: "macでWindowsライク（Alt+Tab）に애플리케이션 전환する方法"
 tags: ["macos", "mac", "단축키", "애플리케이션 전환"]
-draft: 
 image: "img.webp"
 categories: ["pc-gadgets"]
-description: 'Mac의 표준 기능으로는 어려운, Windows의 ''Alt+Tab''과 같은 애플리케이션 전환을 실현하는 편리한 타사 앱의 설치 절차 및 설정 방법을 알기 쉽게 해설합니다.'
+description: "macOS 기본 앱·창 전환 단축키와 AltTab의 개별 창 전환, 권한, 무료·Pro 기능을 설명합니다."
 ---
+## 기본 전환 기능과 AltTab
 
+macOS에는 앱 전환용 `Command-Tab`과 현재 앱의 창 전환용 `Command-`(백쿼트)가 기본으로 있습니다. Windows처럼 개별 창을 선택하려면 [AltTab 공식 사이트](https://alt-tab.app/)에서 다운로드하세요. 기본 단축키는 `Option-Tab`이며 `Command-Tab`으로 바꿀 수 있지만 macOS 기본 앱 전환 단축키를 대체합니다.
 
+창 전환에는 ‘손쉬운 사용’ 권한이 필요합니다. 미리보기에는 ‘화면 기록’ 권한이 필요하며, 거부해도 미리보기 없이 앱을 사용할 수 있습니다. 기본 기능은 무료이고 Pro 기능은 별도 유료입니다. 권한을 허용하기 전에 [공식 FAQ](https://alt-tab.app/faq)와 [개인정보 처리방침](https://alt-tab.app/privacy)을 확인하세요.
 
+### 이전 버전 동작 예시(현재 화면과 다를 수 있음)
 
-
-# 소개
-
-Mac에서 Windows처럼 (Alt+Tab) 애플리케이션을 전환하는 방법을 소개합니다.
-
-이것은 기본 설정을 변경하는 방법으로는 구현하기 어렵기 때문에 애플리케이션을 설치하는 방법입니다.
-
-# 동작 이미지
 ![animation.gif](animation.gif)
 
-# 설정 방법 (macOS Ventura)
+### 공식 자료
 
-1. [https://alt-tab-macos.netlify.app](https://alt-tab-macos.netlify.app)을 엽니다.
-2. `Download the latest release`를 클릭합니다.
-3. 다운로드된 애플리케이션을 엽니다.
-4. 나머지는 절차에 따라 설치합니다.
-
-이제 Windows와 마찬가지로 Alt+Tab을 사용하여 애플리케이션을 전환할 수 있습니다.
-
-이상
+- [AltTab official site](https://alt-tab.app/)
+- [AltTab FAQ](https://alt-tab.app/faq)
+- [AltTab privacy policy](https://alt-tab.app/privacy)
+- [AltTab Terms](https://alt-tab.app/terms)
+- [Apple: Mac keyboard shortcuts](https://support.apple.com/en-us/102650)

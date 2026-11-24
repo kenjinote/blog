@@ -1,31 +1,28 @@
 ---
-title: 'كيفية إعداد التبديل بين التطبيقات في Mac ليكون شبيهاً بـ Windows (Alt+Tab)'
-date: "2026-09-24T19:44:38+09:00"
-slug: "macでWindowsライク（Alt+Tab）にتبديل التطبيقاتする方法"
+title: "التبديل بين تطبيقات ونوافذ Mac باستخدام AltTab"
 date: 2023-04-05T02:20:12+09:00
+lastmod: "2026-11-24T00:00:00+09:00"
+draft: false
+slug: "macでWindowsライク（Alt+Tab）にتبديل التطبيقاتする方法"
 tags: ["macos", "mac", "مفاتيح الاختصار", "تبديل التطبيقات"]
-draft: 
 image: "img.webp"
 categories: ["pc-gadgets"]
-description: 'نشرح بطريقة سهلة الفهم خطوات التثبيت والإعداد لتطبيق طرف ثالث مفيد يتيح التبديل بين التطبيقات بشكل يشبه ''Alt+Tab'' في Windows، وهو أمر يصعب تحقيقه باستخدام ميزات Mac القياسية.'
+description: "تعرف على اختصارات التطبيقات والنوافذ في macOS وطريقة التبديل بين النوافذ باستخدام AltTab، مع الأذونات وميزات المجاني وPro."
 ---
+## التبديل المدمج وAltTab
 
-# مقدمة
+يوفر macOS اختصار `Command-Tab` للتبديل بين التطبيقات و`Command-` (العلامة الخلفية) للتنقل بين نوافذ التطبيق الحالي. لاختيار نوافذ منفردة بأسلوب Windows، نزّل AltTab من [موقعه الرسمي](https://alt-tab.app/). الاختصار الافتراضي هو `Option-Tab`؛ ويمكن تغييره إلى `Command-Tab`، ما يستبدل اختصار macOS الأصلي للتطبيقات.
 
-أقدم لكم طريقة لتبديل التطبيقات على Mac بشكل مشابه لـ Windows (Alt+Tab).
+يحتاج AltTab إلى إذن تسهيلات الاستخدام للتبديل بين النوافذ. ويتيح إذن تسجيل الشاشة الصور المصغرة؛ ومن دونه يعمل التطبيق دون معاينات. الميزة الأساسية مجانية وميزات Pro مدفوعة منفصلة. راجع [الأسئلة الشائعة](https://alt-tab.app/faq) و[سياسة الخصوصية](https://alt-tab.app/privacy) قبل منح الأذونات.
 
-نظرًا لصعوبة تحقيق ذلك عن طريق تغيير الإعدادات القياسية، فإن هذه الطريقة تتطلب تثبيت تطبيق.
+### مثال من إصدار سابق (قد تختلف الواجهة الحالية)
 
-# صورة توضيحية للعمل
 ![animation.gif](animation.gif)
 
-# طريقة الإعداد (macOS Ventura)
+### المراجع الرسمية
 
-1. افتح [https://alt-tab-macos.netlify.app](https://alt-tab-macos.netlify.app)
-2. انقر على `Download the latest release`
-3. افتح التطبيق الذي تم تنزيله
-4. اتبع الخطوات للتثبيت
-
-الآن، يمكنك تبديل التطبيقات باستخدام Alt+Tab كما هو الحال في Windows.
-
-انتهى
+- [AltTab official site](https://alt-tab.app/)
+- [AltTab FAQ](https://alt-tab.app/faq)
+- [AltTab privacy policy](https://alt-tab.app/privacy)
+- [AltTab Terms](https://alt-tab.app/terms)
+- [Apple: Mac keyboard shortcuts](https://support.apple.com/en-us/102650)

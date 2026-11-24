@@ -1,31 +1,28 @@
 ---
-title: '在Mac上实现类似Windows（Alt+Tab）切换应用的设置方法'
-date: "2026-09-24T19:44:38+09:00"
-slug: "macでWindowsライク（Alt+Tab）に应用切换する方法"
+title: "在 Mac 上切换应用和窗口：使用 AltTab"
 date: 2023-04-05T02:20:12+09:00
+lastmod: "2026-11-24T00:00:00+09:00"
+draft: false
+slug: "macでWindowsライク（Alt+Tab）に应用切换する方法"
 tags: ["macos", "mac", "快捷键", "应用程序切换"]
-draft:
 image: "img.webp"
 categories: ["pc-gadgets"]
-description: '简单明了地讲解如何安装和设置实用的第三方应用，以实现在Mac标准功能中难以实现的类似Windows的“Alt+Tab”应用切换。'
+description: "介绍 macOS 内置的应用和窗口快捷键，以及 AltTab 的逐窗口切换、权限、快捷键和免费及 Pro 功能。"
 ---
+## 系统内置切换与 AltTab
 
-# 简介
+macOS 已内置 `Command-Tab` 用于切换应用，`Command-`（反引号）用于切换当前应用的窗口。如需类似 Windows 的逐窗口选择器，可从[AltTab 官方网站](https://alt-tab.app/)下载。默认快捷键为 `Option-Tab`；可改为 `Command-Tab`，但会替换 macOS 内置的应用切换操作。
 
-本文将介绍如何在 Mac 上实现类似 Windows (Alt+Tab) 的应用程序切换方法。
+AltTab 需要“辅助功能”权限来切换窗口；缩略图需要“屏幕录制”权限。拒绝后应用仍可使用，但不显示预览。核心切换功能免费，Pro 功能另行收费。授权前请查看[官方 FAQ](https://alt-tab.app/faq)和[隐私政策](https://alt-tab.app/privacy)。
 
-由于很难通过修改系统标准设置来实现这一点，因此我们将采用安装应用程序的方法。
+### 旧版操作示意（当前界面可能不同）
 
-# 运行演示
 ![animation.gif](animation.gif)
 
-# 设置方法 (macOS Ventura)
+### 官方资料
 
-1. 打开 [https://alt-tab-macos.netlify.app](https://alt-tab-macos.netlify.app)
-2. 点击 `Download the latest release`
-3. 打开下载的应用程序
-4. 按照提示步骤完成安装
-
-这样，您就可以像在 Windows 中一样使用 Alt+Tab 来切换应用程序了。
-
-以上
+- [AltTab official site](https://alt-tab.app/)
+- [AltTab FAQ](https://alt-tab.app/faq)
+- [AltTab privacy policy](https://alt-tab.app/privacy)
+- [AltTab Terms](https://alt-tab.app/terms)
+- [Apple: Mac keyboard shortcuts](https://support.apple.com/en-us/102650)

@@ -1,31 +1,28 @@
 ---
-title: 'Konfigurationsmethode zum Umschalten von Apps auf dem Mac im Windows-Stil (Alt+Tab)'
-date: "2026-09-24T19:44:38+09:00"
-slug: "macでWindowsライク（Alt+Tab）にAnwendungswechselする方法"
+title: "Mit AltTab zwischen Mac-Apps und Fenstern wechseln"
 date: 2023-04-05T02:20:12+09:00
+lastmod: "2026-11-24T00:00:00+09:00"
+draft: false
+slug: "macでWindowsライク（Alt+Tab）にAnwendungswechselする方法"
 tags: ["macos", "mac", "tastenkombinationen", "anwendungswechsel"]
-draft: 
 image: "img.webp"
 categories: ["pc-gadgets"]
-description: 'Wir erklären verständlich die Installationsschritte und Konfigurationsmethoden für praktische Drittanbieter-Apps, die das Umschalten von Anwendungen ähnlich wie „Alt+Tab“ unter Windows ermöglichen, was mit Standard-Mac-Funktionen schwierig ist.'
+description: "Erfahren Sie mehr über macOS-Tastenkürzel und den Fensterwechsel mit AltTab sowie über Berechtigungen und Gratis-/Pro-Funktionen."
 ---
+## Integrierter Wechsel und AltTab
 
-# Einführung
+macOS bietet bereits `Command-Tab` für den App-Wechsel und `Command-` (Gravis) für Fenster der aktuellen App. Für eine Windows-ähnliche Auswahl einzelner Fenster laden Sie AltTab von der [offiziellen Website](https://alt-tab.app/) herunter. Standardmäßig gilt `Option-Tab`; die Umstellung auf `Command-Tab` ersetzt den integrierten macOS-App-Wechsel.
 
-Hier zeige ich, wie man auf dem Mac ähnlich wie unter Windows (Alt+Tab) zwischen Anwendungen wechseln kann.
+AltTab benötigt Bedienungshilfen-Zugriff zum Fensterwechsel. Bildschirmaufnahme ermöglicht Vorschaubilder; ohne diese Berechtigung funktioniert die App ohne Vorschau. Die Kernfunktion ist kostenlos, Pro-Funktionen kosten extra. Lesen Sie vor der Freigabe die [FAQ](https://alt-tab.app/faq) und [Datenschutzerklärung](https://alt-tab.app/privacy).
 
-Da dies durch Ändern der Standardeinstellungen nur schwer zu erreichen ist, beinhaltet diese Methode die Installation einer Anwendung.
+### Beispiel einer früheren Version (die aktuelle Oberfläche kann abweichen)
 
-# Demonstrationsbild
 ![animation.gif](animation.gif)
 
-# Einrichtungsmethode (macOS Ventura)
+### Offizielle Quellen
 
-1. Öffnen Sie [https://alt-tab-macos.netlify.app](https://alt-tab-macos.netlify.app)
-2. Klicken Sie auf `Download the latest release`
-3. Öffnen Sie die heruntergeladene Anwendung
-4. Befolgen Sie die Anweisungen zur Installation
-
-Jetzt können Sie wie unter Windows mit Alt+Tab zwischen den Anwendungen wechseln.
-
-Das ist alles
+- [AltTab official site](https://alt-tab.app/)
+- [AltTab FAQ](https://alt-tab.app/faq)
+- [AltTab privacy policy](https://alt-tab.app/privacy)
+- [AltTab Terms](https://alt-tab.app/terms)
+- [Apple: Mac keyboard shortcuts](https://support.apple.com/en-us/102650)
