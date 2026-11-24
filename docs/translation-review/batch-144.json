@@ -1,0 +1,458 @@
+{
+  "version": 1,
+  "batch": 144,
+  "article": "Salesforce Chatter投稿の整理方法とストレージの注意点",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "6dfda678c4602cc643c0661e4adf959a1a30d387c75eef7b98eea048d3f1961b",
+  "sources": [
+    "https://help.salesforce.com/s/articleView?id=experience.collab_posts_parent.htm&language=en_US&type=5",
+    "https://help.salesforce.com/s/articleView?id=xcloud.admin_monitorresources.htm&language=en_US&type=5",
+    "https://help.salesforce.com/s/articleView?id=000198685&language=en_US&type=1",
+    "https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-feeditem.html",
+    "https://help.salesforce.com/s/articleView?id=experience.collab_attachments_del.htm&language=en_US&type=5"
+  ],
+  "scope": "Compared the full Japanese article and all twelve translations, including storage claims, SOQL, object scope, permissions, reversibility, file-share effects, instructions, metadata, and official references.",
+  "findings": [
+    "Removed the duplicate future date and retained 2022-09-19 as publication date; set lastmod to 2026-11-24.",
+    "Corrected the premise: Chatter posts, comments, and tracked changes do not count toward data storage; files are counted separately as file storage.",
+    "Removed unfiltered DML deleting every FeedItem, FeedAttachment, and ContentDocument, as well as the org-wide Recycle Bin purge.",
+    "Replaced destructive code with a read-only ContentPost FeedItem query and a backup, sandbox, review, approval, and selected-ID Data Loader workflow aligned with Salesforce Help.",
+    "Warned that FeedItem deletion may be hard delete and explained that removing a Chatter attachment from a post does not guarantee the underlying file is purged from all locations.",
+    "Added Salesforce official references on storage categories and safe bulk cleanup."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/Salesforceチャッター全消しコマンド/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Salesforceチャッター全消しコマンド/index.md",
+      "sourceHash": "6dfda678c4602cc643c0661e4adf959a1a30d387c75eef7b98eea048d3f1961b",
+      "translationHash": "cd5124062640380daf76717e4a8401b5195a090756f1cd433bb50eaaee25ecb6",
+      "summary": "Compared the complete Japanese article and twelve translations with Salesforce documentation; corrected the storage premise, removed unfiltered destructive Apex, and replaced it with a read-only review query and an approved, scoped Data Loader workflow.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Verified that Chatter posts/comments/tracked changes do not count toward data storage while files count toward file storage; clarified that deleting all posts does not resolve data-storage pressure."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Chatter FeedItem, ContentPost, attachments, Data Loader, Workbench, Recycle Bin, data versus file storage, Storage Usage, and deletion permissions across all locales."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "This Salesforce operations guide contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced unfiltered DML and recycle-bin purge commands with a read-only FeedItem query filtered to Type=ContentPost; documented export, review, backup, sandbox test, approval, and scoped Data Loader deletion."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Salesforce Help and Developer references on Chatter storage, data/file storage usage, bulk deletion of attachment posts, FeedItem deletion, and file behavior in Chatter feeds."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The export/delete workflow was not run in a Salesforce org; permissions, org configuration, and data-specific retention requirements must be confirmed by the organization.",
+        "Deleting a FeedItem can be irreversible; whether a file remains at its original location or other shares depends on its state."
+      ]
+    },
+    "post/Salesforceチャッター全消しコマンド/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Salesforceチャッター全消しコマンド/index.md",
+      "sourceHash": "6dfda678c4602cc643c0661e4adf959a1a30d387c75eef7b98eea048d3f1961b",
+      "translationHash": "691605f4e88f86675eadc272f037df9853e52d8bce8e2d7544f8939217c9e079",
+      "summary": "Compared the complete Japanese article and twelve translations with Salesforce documentation; corrected the storage premise, removed unfiltered destructive Apex, and replaced it with a read-only review query and an approved, scoped Data Loader workflow.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Verified that Chatter posts/comments/tracked changes do not count toward data storage while files count toward file storage; clarified that deleting all posts does not resolve data-storage pressure."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Chatter FeedItem, ContentPost, attachments, Data Loader, Workbench, Recycle Bin, data versus file storage, Storage Usage, and deletion permissions across all locales."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "This Salesforce operations guide contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced unfiltered DML and recycle-bin purge commands with a read-only FeedItem query filtered to Type=ContentPost; documented export, review, backup, sandbox test, approval, and scoped Data Loader deletion."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Salesforce Help and Developer references on Chatter storage, data/file storage usage, bulk deletion of attachment posts, FeedItem deletion, and file behavior in Chatter feeds."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The export/delete workflow was not run in a Salesforce org; permissions, org configuration, and data-specific retention requirements must be confirmed by the organization.",
+        "Deleting a FeedItem can be irreversible; whether a file remains at its original location or other shares depends on its state."
+      ]
+    },
+    "post/Salesforceチャッター全消しコマンド/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Salesforceチャッター全消しコマンド/index.md",
+      "sourceHash": "6dfda678c4602cc643c0661e4adf959a1a30d387c75eef7b98eea048d3f1961b",
+      "translationHash": "d1195237720a5cdc05ebd17113df86c7171f6d9b4ac85da705f4683646bb7803",
+      "summary": "Compared the complete Japanese article and twelve translations with Salesforce documentation; corrected the storage premise, removed unfiltered destructive Apex, and replaced it with a read-only review query and an approved, scoped Data Loader workflow.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Verified that Chatter posts/comments/tracked changes do not count toward data storage while files count toward file storage; clarified that deleting all posts does not resolve data-storage pressure."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Chatter FeedItem, ContentPost, attachments, Data Loader, Workbench, Recycle Bin, data versus file storage, Storage Usage, and deletion permissions across all locales."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "This Salesforce operations guide contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced unfiltered DML and recycle-bin purge commands with a read-only FeedItem query filtered to Type=ContentPost; documented export, review, backup, sandbox test, approval, and scoped Data Loader deletion."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Salesforce Help and Developer references on Chatter storage, data/file storage usage, bulk deletion of attachment posts, FeedItem deletion, and file behavior in Chatter feeds."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The export/delete workflow was not run in a Salesforce org; permissions, org configuration, and data-specific retention requirements must be confirmed by the organization.",
+        "Deleting a FeedItem can be irreversible; whether a file remains at its original location or other shares depends on its state."
+      ]
+    },
+    "post/Salesforceチャッター全消しコマンド/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Salesforceチャッター全消しコマンド/index.md",
+      "sourceHash": "6dfda678c4602cc643c0661e4adf959a1a30d387c75eef7b98eea048d3f1961b",
+      "translationHash": "6fed6e849aa5a8669b75bd99377f4d0eec122e5367f7966993d0f46e2ff93699",
+      "summary": "Compared the complete Japanese article and twelve translations with Salesforce documentation; corrected the storage premise, removed unfiltered destructive Apex, and replaced it with a read-only review query and an approved, scoped Data Loader workflow.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Verified that Chatter posts/comments/tracked changes do not count toward data storage while files count toward file storage; clarified that deleting all posts does not resolve data-storage pressure."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Chatter FeedItem, ContentPost, attachments, Data Loader, Workbench, Recycle Bin, data versus file storage, Storage Usage, and deletion permissions across all locales."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "This Salesforce operations guide contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced unfiltered DML and recycle-bin purge commands with a read-only FeedItem query filtered to Type=ContentPost; documented export, review, backup, sandbox test, approval, and scoped Data Loader deletion."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Salesforce Help and Developer references on Chatter storage, data/file storage usage, bulk deletion of attachment posts, FeedItem deletion, and file behavior in Chatter feeds."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The export/delete workflow was not run in a Salesforce org; permissions, org configuration, and data-specific retention requirements must be confirmed by the organization.",
+        "Deleting a FeedItem can be irreversible; whether a file remains at its original location or other shares depends on its state."
+      ]
+    },
+    "post/Salesforceチャッター全消しコマンド/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Salesforceチャッター全消しコマンド/index.md",
+      "sourceHash": "6dfda678c4602cc643c0661e4adf959a1a30d387c75eef7b98eea048d3f1961b",
+      "translationHash": "c214e2616071bb4b0075a5c63b248155375b89cdaa2790f16df8f091dc72e29b",
+      "summary": "Compared the complete Japanese article and twelve translations with Salesforce documentation; corrected the storage premise, removed unfiltered destructive Apex, and replaced it with a read-only review query and an approved, scoped Data Loader workflow.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Verified that Chatter posts/comments/tracked changes do not count toward data storage while files count toward file storage; clarified that deleting all posts does not resolve data-storage pressure."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Chatter FeedItem, ContentPost, attachments, Data Loader, Workbench, Recycle Bin, data versus file storage, Storage Usage, and deletion permissions across all locales."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "This Salesforce operations guide contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced unfiltered DML and recycle-bin purge commands with a read-only FeedItem query filtered to Type=ContentPost; documented export, review, backup, sandbox test, approval, and scoped Data Loader deletion."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Salesforce Help and Developer references on Chatter storage, data/file storage usage, bulk deletion of attachment posts, FeedItem deletion, and file behavior in Chatter feeds."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The export/delete workflow was not run in a Salesforce org; permissions, org configuration, and data-specific retention requirements must be confirmed by the organization.",
+        "Deleting a FeedItem can be irreversible; whether a file remains at its original location or other shares depends on its state."
+      ]
+    },
+    "post/Salesforceチャッター全消しコマンド/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Salesforceチャッター全消しコマンド/index.md",
+      "sourceHash": "6dfda678c4602cc643c0661e4adf959a1a30d387c75eef7b98eea048d3f1961b",
+      "translationHash": "e62869f88d2f1796a43b8a6970ce718b723de782cf72452c97007116dce31a66",
+      "summary": "Compared the complete Japanese article and twelve translations with Salesforce documentation; corrected the storage premise, removed unfiltered destructive Apex, and replaced it with a read-only review query and an approved, scoped Data Loader workflow.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Verified that Chatter posts/comments/tracked changes do not count toward data storage while files count toward file storage; clarified that deleting all posts does not resolve data-storage pressure."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Chatter FeedItem, ContentPost, attachments, Data Loader, Workbench, Recycle Bin, data versus file storage, Storage Usage, and deletion permissions across all locales."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "This Salesforce operations guide contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced unfiltered DML and recycle-bin purge commands with a read-only FeedItem query filtered to Type=ContentPost; documented export, review, backup, sandbox test, approval, and scoped Data Loader deletion."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Salesforce Help and Developer references on Chatter storage, data/file storage usage, bulk deletion of attachment posts, FeedItem deletion, and file behavior in Chatter feeds."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The export/delete workflow was not run in a Salesforce org; permissions, org configuration, and data-specific retention requirements must be confirmed by the organization.",
+        "Deleting a FeedItem can be irreversible; whether a file remains at its original location or other shares depends on its state."
+      ]
+    },
+    "post/Salesforceチャッター全消しコマンド/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Salesforceチャッター全消しコマンド/index.md",
+      "sourceHash": "6dfda678c4602cc643c0661e4adf959a1a30d387c75eef7b98eea048d3f1961b",
+      "translationHash": "667afe2837b714ad299f805b440f13823fafc4c40d89ab4ec8e07b5f72089e83",
+      "summary": "Compared the complete Japanese article and twelve translations with Salesforce documentation; corrected the storage premise, removed unfiltered destructive Apex, and replaced it with a read-only review query and an approved, scoped Data Loader workflow.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Verified that Chatter posts/comments/tracked changes do not count toward data storage while files count toward file storage; clarified that deleting all posts does not resolve data-storage pressure."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Chatter FeedItem, ContentPost, attachments, Data Loader, Workbench, Recycle Bin, data versus file storage, Storage Usage, and deletion permissions across all locales."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "This Salesforce operations guide contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced unfiltered DML and recycle-bin purge commands with a read-only FeedItem query filtered to Type=ContentPost; documented export, review, backup, sandbox test, approval, and scoped Data Loader deletion."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Salesforce Help and Developer references on Chatter storage, data/file storage usage, bulk deletion of attachment posts, FeedItem deletion, and file behavior in Chatter feeds."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The export/delete workflow was not run in a Salesforce org; permissions, org configuration, and data-specific retention requirements must be confirmed by the organization.",
+        "Deleting a FeedItem can be irreversible; whether a file remains at its original location or other shares depends on its state."
+      ]
+    },
+    "post/Salesforceチャッター全消しコマンド/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Salesforceチャッター全消しコマンド/index.md",
+      "sourceHash": "6dfda678c4602cc643c0661e4adf959a1a30d387c75eef7b98eea048d3f1961b",
+      "translationHash": "f0ea0d92e449b31b192ee53f9d2a8d58f8779e48b6f9a2be0cb42343a87cc527",
+      "summary": "Compared the complete Japanese article and twelve translations with Salesforce documentation; corrected the storage premise, removed unfiltered destructive Apex, and replaced it with a read-only review query and an approved, scoped Data Loader workflow.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Verified that Chatter posts/comments/tracked changes do not count toward data storage while files count toward file storage; clarified that deleting all posts does not resolve data-storage pressure."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Chatter FeedItem, ContentPost, attachments, Data Loader, Workbench, Recycle Bin, data versus file storage, Storage Usage, and deletion permissions across all locales."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "This Salesforce operations guide contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced unfiltered DML and recycle-bin purge commands with a read-only FeedItem query filtered to Type=ContentPost; documented export, review, backup, sandbox test, approval, and scoped Data Loader deletion."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Salesforce Help and Developer references on Chatter storage, data/file storage usage, bulk deletion of attachment posts, FeedItem deletion, and file behavior in Chatter feeds."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The export/delete workflow was not run in a Salesforce org; permissions, org configuration, and data-specific retention requirements must be confirmed by the organization.",
+        "Deleting a FeedItem can be irreversible; whether a file remains at its original location or other shares depends on its state."
+      ]
+    },
+    "post/Salesforceチャッター全消しコマンド/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Salesforceチャッター全消しコマンド/index.md",
+      "sourceHash": "6dfda678c4602cc643c0661e4adf959a1a30d387c75eef7b98eea048d3f1961b",
+      "translationHash": "d83eaf78e024ecbd17643c4738e5e3cfa68e35e6fe88e6ac0a26d6fc316aefc5",
+      "summary": "Compared the complete Japanese article and twelve translations with Salesforce documentation; corrected the storage premise, removed unfiltered destructive Apex, and replaced it with a read-only review query and an approved, scoped Data Loader workflow.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Verified that Chatter posts/comments/tracked changes do not count toward data storage while files count toward file storage; clarified that deleting all posts does not resolve data-storage pressure."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Chatter FeedItem, ContentPost, attachments, Data Loader, Workbench, Recycle Bin, data versus file storage, Storage Usage, and deletion permissions across all locales."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "This Salesforce operations guide contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced unfiltered DML and recycle-bin purge commands with a read-only FeedItem query filtered to Type=ContentPost; documented export, review, backup, sandbox test, approval, and scoped Data Loader deletion."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Salesforce Help and Developer references on Chatter storage, data/file storage usage, bulk deletion of attachment posts, FeedItem deletion, and file behavior in Chatter feeds."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The export/delete workflow was not run in a Salesforce org; permissions, org configuration, and data-specific retention requirements must be confirmed by the organization.",
+        "Deleting a FeedItem can be irreversible; whether a file remains at its original location or other shares depends on its state."
+      ]
+    },
+    "post/Salesforceチャッター全消しコマンド/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Salesforceチャッター全消しコマンド/index.md",
+      "sourceHash": "6dfda678c4602cc643c0661e4adf959a1a30d387c75eef7b98eea048d3f1961b",
+      "translationHash": "643ba742b0e92f0b9d9e160948f25cc840a20ca355642e851ff26f27ae8629f3",
+      "summary": "Compared the complete Japanese article and twelve translations with Salesforce documentation; corrected the storage premise, removed unfiltered destructive Apex, and replaced it with a read-only review query and an approved, scoped Data Loader workflow.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Verified that Chatter posts/comments/tracked changes do not count toward data storage while files count toward file storage; clarified that deleting all posts does not resolve data-storage pressure."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Chatter FeedItem, ContentPost, attachments, Data Loader, Workbench, Recycle Bin, data versus file storage, Storage Usage, and deletion permissions across all locales."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "This Salesforce operations guide contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced unfiltered DML and recycle-bin purge commands with a read-only FeedItem query filtered to Type=ContentPost; documented export, review, backup, sandbox test, approval, and scoped Data Loader deletion."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Salesforce Help and Developer references on Chatter storage, data/file storage usage, bulk deletion of attachment posts, FeedItem deletion, and file behavior in Chatter feeds."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The export/delete workflow was not run in a Salesforce org; permissions, org configuration, and data-specific retention requirements must be confirmed by the organization.",
+        "Deleting a FeedItem can be irreversible; whether a file remains at its original location or other shares depends on its state."
+      ]
+    },
+    "post/Salesforceチャッター全消しコマンド/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Salesforceチャッター全消しコマンド/index.md",
+      "sourceHash": "6dfda678c4602cc643c0661e4adf959a1a30d387c75eef7b98eea048d3f1961b",
+      "translationHash": "17428dbe9d72a2fd685f32b0bce62e85202a60a5b134a9014c4c99fc7e985314",
+      "summary": "Compared the complete Japanese article and twelve translations with Salesforce documentation; corrected the storage premise, removed unfiltered destructive Apex, and replaced it with a read-only review query and an approved, scoped Data Loader workflow.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Verified that Chatter posts/comments/tracked changes do not count toward data storage while files count toward file storage; clarified that deleting all posts does not resolve data-storage pressure."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Chatter FeedItem, ContentPost, attachments, Data Loader, Workbench, Recycle Bin, data versus file storage, Storage Usage, and deletion permissions across all locales."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "This Salesforce operations guide contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced unfiltered DML and recycle-bin purge commands with a read-only FeedItem query filtered to Type=ContentPost; documented export, review, backup, sandbox test, approval, and scoped Data Loader deletion."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Salesforce Help and Developer references on Chatter storage, data/file storage usage, bulk deletion of attachment posts, FeedItem deletion, and file behavior in Chatter feeds."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The export/delete workflow was not run in a Salesforce org; permissions, org configuration, and data-specific retention requirements must be confirmed by the organization.",
+        "Deleting a FeedItem can be irreversible; whether a file remains at its original location or other shares depends on its state."
+      ]
+    },
+    "post/Salesforceチャッター全消しコマンド/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Salesforceチャッター全消しコマンド/index.md",
+      "sourceHash": "6dfda678c4602cc643c0661e4adf959a1a30d387c75eef7b98eea048d3f1961b",
+      "translationHash": "6efb0d4b568fe89b75ab3cf4003f38b52cf5379879935c3c843a8c9ab42a9843",
+      "summary": "Compared the complete Japanese article and twelve translations with Salesforce documentation; corrected the storage premise, removed unfiltered destructive Apex, and replaced it with a read-only review query and an approved, scoped Data Loader workflow.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Verified that Chatter posts/comments/tracked changes do not count toward data storage while files count toward file storage; clarified that deleting all posts does not resolve data-storage pressure."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Chatter FeedItem, ContentPost, attachments, Data Loader, Workbench, Recycle Bin, data versus file storage, Storage Usage, and deletion permissions across all locales."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "This Salesforce operations guide contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced unfiltered DML and recycle-bin purge commands with a read-only FeedItem query filtered to Type=ContentPost; documented export, review, backup, sandbox test, approval, and scoped Data Loader deletion."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Salesforce Help and Developer references on Chatter storage, data/file storage usage, bulk deletion of attachment posts, FeedItem deletion, and file behavior in Chatter feeds."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The export/delete workflow was not run in a Salesforce org; permissions, org configuration, and data-specific retention requirements must be confirmed by the organization.",
+        "Deleting a FeedItem can be irreversible; whether a file remains at its original location or other shares depends on its state."
+      ]
+    }
+  }
+}

@@ -16685,6 +16685,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-143.json",
       "evidenceHash": "3f74f125e09d0b1e91c31e1a276e65f31b005ba7614a61ca09b75a6a896bf825"
+    },
+    "post/Salesforceチャッター全消しコマンド/index.en.md": {
+      "source": "post/Salesforceチャッター全消しコマンド/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6dfda678c4602cc643c0661e4adf959a1a30d387c75eef7b98eea048d3f1961b",
+      "translationHash": "cd5124062640380daf76717e4a8401b5195a090756f1cd433bb50eaaee25ecb6",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-144.json",
+      "evidenceHash": "5f8456de34312564f96d0f4fc84793613678f0924f519d178a7a2210e4039deb"
+    },
+    "post/Salesforceチャッター全消しコマンド/index.zh-cn.md": {
+      "source": "post/Salesforceチャッター全消しコマンド/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6dfda678c4602cc643c0661e4adf959a1a30d387c75eef7b98eea048d3f1961b",
+      "translationHash": "691605f4e88f86675eadc272f037df9853e52d8bce8e2d7544f8939217c9e079",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-144.json",
+      "evidenceHash": "414e8e8883761d939e4230a1faf5ec276b6d5964027a70413a784702e1c99080"
+    },
+    "post/Salesforceチャッター全消しコマンド/index.es.md": {
+      "source": "post/Salesforceチャッター全消しコマンド/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6dfda678c4602cc643c0661e4adf959a1a30d387c75eef7b98eea048d3f1961b",
+      "translationHash": "d1195237720a5cdc05ebd17113df86c7171f6d9b4ac85da705f4683646bb7803",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-144.json",
+      "evidenceHash": "426599a8704f887d8d99e848f26ed904db1916b1fa4da326699ea61f7177b65d"
+    },
+    "post/Salesforceチャッター全消しコマンド/index.ko.md": {
+      "source": "post/Salesforceチャッター全消しコマンド/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6dfda678c4602cc643c0661e4adf959a1a30d387c75eef7b98eea048d3f1961b",
+      "translationHash": "6fed6e849aa5a8669b75bd99377f4d0eec122e5367f7966993d0f46e2ff93699",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-144.json",
+      "evidenceHash": "9eb2f302f67e831401e4bfcffd786c050482510bb7b9d35b05f73d899a1e4077"
+    },
+    "post/Salesforceチャッター全消しコマンド/index.pt.md": {
+      "source": "post/Salesforceチャッター全消しコマンド/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6dfda678c4602cc643c0661e4adf959a1a30d387c75eef7b98eea048d3f1961b",
+      "translationHash": "c214e2616071bb4b0075a5c63b248155375b89cdaa2790f16df8f091dc72e29b",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-144.json",
+      "evidenceHash": "d5860af2079c36f856471c4e5f033e7c17dc3eb8d36e1143cbb311a0e1cd8902"
+    },
+    "post/Salesforceチャッター全消しコマンド/index.zh-tw.md": {
+      "source": "post/Salesforceチャッター全消しコマンド/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6dfda678c4602cc643c0661e4adf959a1a30d387c75eef7b98eea048d3f1961b",
+      "translationHash": "e62869f88d2f1796a43b8a6970ce718b723de782cf72452c97007116dce31a66",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-144.json",
+      "evidenceHash": "0882b803dfdb997a72feda5f0c4fae2f1878089240c6828a3d21a1f13e890eee"
+    },
+    "post/Salesforceチャッター全消しコマンド/index.hi.md": {
+      "source": "post/Salesforceチャッター全消しコマンド/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6dfda678c4602cc643c0661e4adf959a1a30d387c75eef7b98eea048d3f1961b",
+      "translationHash": "667afe2837b714ad299f805b440f13823fafc4c40d89ab4ec8e07b5f72089e83",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-144.json",
+      "evidenceHash": "fc87393bd5030083f4196774ea770d0dacd001a32d0c39beeb370c9479becc6e"
+    },
+    "post/Salesforceチャッター全消しコマンド/index.fr.md": {
+      "source": "post/Salesforceチャッター全消しコマンド/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6dfda678c4602cc643c0661e4adf959a1a30d387c75eef7b98eea048d3f1961b",
+      "translationHash": "f0ea0d92e449b31b192ee53f9d2a8d58f8779e48b6f9a2be0cb42343a87cc527",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-144.json",
+      "evidenceHash": "a6dce5b73c6a7d5517a192b287aa52191ede2600f6bdb15298e61de1cd8e4dc4"
+    },
+    "post/Salesforceチャッター全消しコマンド/index.de.md": {
+      "source": "post/Salesforceチャッター全消しコマンド/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6dfda678c4602cc643c0661e4adf959a1a30d387c75eef7b98eea048d3f1961b",
+      "translationHash": "d83eaf78e024ecbd17643c4738e5e3cfa68e35e6fe88e6ac0a26d6fc316aefc5",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-144.json",
+      "evidenceHash": "1e34faffc320f7e83fd1a8c0f0b6483b66b6aa7cab8c4485dedfab772b3fda03"
+    },
+    "post/Salesforceチャッター全消しコマンド/index.ar.md": {
+      "source": "post/Salesforceチャッター全消しコマンド/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6dfda678c4602cc643c0661e4adf959a1a30d387c75eef7b98eea048d3f1961b",
+      "translationHash": "643ba742b0e92f0b9d9e160948f25cc840a20ca355642e851ff26f27ae8629f3",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-144.json",
+      "evidenceHash": "a5f86643b1554bbb6267bd747d00f52207dc66819ff5dd510e8227d4f76051d7"
+    },
+    "post/Salesforceチャッター全消しコマンド/index.ru.md": {
+      "source": "post/Salesforceチャッター全消しコマンド/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6dfda678c4602cc643c0661e4adf959a1a30d387c75eef7b98eea048d3f1961b",
+      "translationHash": "17428dbe9d72a2fd685f32b0bce62e85202a60a5b134a9014c4c99fc7e985314",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-144.json",
+      "evidenceHash": "4ad4e852729d5dec3b8c18fb1e686e0eab1e17a769f823c0cd36f03a6ce6e630"
+    },
+    "post/Salesforceチャッター全消しコマンド/index.id.md": {
+      "source": "post/Salesforceチャッター全消しコマンド/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6dfda678c4602cc643c0661e4adf959a1a30d387c75eef7b98eea048d3f1961b",
+      "translationHash": "6efb0d4b568fe89b75ab3cf4003f38b52cf5379879935c3c843a8c9ab42a9843",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-144.json",
+      "evidenceHash": "e607fb5ee1237552e9ff43d80b8a8650f9abd4447a4e4c3ac1e42891ec8df5e4"
     }
   }
 }

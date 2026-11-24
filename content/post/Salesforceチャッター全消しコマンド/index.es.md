@@ -1,30 +1,38 @@
 ---
+title: "Limpiar publicaciones de Salesforce Chatter: almacenamiento y pasos seguros"
 
-
-
-title: 'Salesforce: Comando para borrar todas las publicaciones y archivos adjuntos de Chatter'
-date: "2026-09-24T19:44:38+09:00"
 slug: "SalesforceChatter全消しComando"
 date: 2022-09-19T21:59:14+09:00
+lastmod: "2026-11-24T00:00:00+09:00"
 tags: ["Salesforce", "Chatter"]
 draft: false
 image: "img_1.webp"
 categories: ["it-technology"]
-description: 'Presentamos comandos para eliminar masivamente todas las publicaciones, archivos adjuntos de Chatter y datos de la papelera, muy útiles cuando la capacidad de almacenamiento de la organización en Salesforce está llena. Se trata de un método rápido de limpieza utilizando la Ventana de Ejecución Anónima desde la Consola del Desarrollador.'
+description: "Las publicaciones de Chatter no consumen el almacenamiento de datos de Salesforce. Comprueba el tipo de almacenamiento, revisa y respalda las publicaciones seleccionadas y elimínalas con Data Loader."
 ---
+**Importante:** Las publicaciones, los comentarios y los cambios registrados de Chatter no cuentan para el almacenamiento de datos de Salesforce. Los archivos adjuntos sí cuentan para el almacenamiento de archivos. Comprueba primero **Storage Usage** en Setup para saber qué categoría está cerca del límite. Borrar todas las publicaciones no libera almacenamiento de datos.
 
+## Revisar de forma segura las publicaciones con archivos adjuntos
 
+El siguiente ejemplo de SOQL es de solo lectura. Muestra publicaciones con archivos adjuntos (`Type = 'ContentPost'`) para revisarlas; no elimina nada.
 
-# Comando para eliminar todo en Salesforce Chatter
-Este es un comando para eliminar todas las publicaciones y archivos adjuntos en Salesforce Chatter.
-Abra la Consola del desarrollador, seleccione "Open Execute anonymous Window" en el menú Debug, pegue el siguiente código y ejecútelo.
-Personalmente, lo utilizo cuando la capacidad de almacenamiento de la organización está al límite.
-
+```sql
+SELECT Id, CreatedDate, CreatedById, ParentId, Type
+FROM FeedItem
+WHERE Type = 'ContentPost'
+ORDER BY CreatedDate ASC
 ```
-delete [select id from FeedItem];
-delete [select id from FeedAttachment];
-delete [select id from ContentDocument];
 
-// Vaciar papelera de reciclaje
-database.emptyRecycleBin([select id from ContentDocument where IsDeleted = true ALL ROWS]);
-```
+1. Exporta los ID candidatos con Data Loader o Workbench y reduce el conjunto por fecha, autor, registro principal u otros criterios aprobados.
+2. Comprueba el plan de copias de seguridad y recuperación de la organización y prueba el proceso en un Sandbox. Pide al administrador y al propietario de los datos que revisen los ID y el número de eliminaciones.
+3. Tras obtener la aprobación, elimina solo los ID seleccionados con Data Loader. El procedimiento masivo documentado por Salesforce también exporta primero los ID de FeedItem con `Type = ContentPost`.
+
+Al borrar un FeedItem, puede eliminarse de forma permanente sin pasar por la papelera y ser irrecuperable. Borrar una publicación quita el archivo del feed; que el archivo siga en su ubicación original o en otros recursos compartidos depende de su estado. No ejecutes un borrado sin filtros de todos los `ContentDocument` ni vacíes toda la papelera. Para liberar almacenamiento de archivos, consulta Storage Usage y revisa el propietario, los accesos compartidos y el impacto de cada archivo antes de actuar.
+
+## Referencias
+
+- [Work with Chatter Posts — Salesforce Help](https://help.salesforce.com/s/articleView?id=experience.collab_posts_parent.htm&language=en_US&type=5)
+- [Data and Storage Resources — Salesforce Help](https://help.salesforce.com/s/articleView?id=xcloud.admin_monitorresources.htm&language=en_US&type=5)
+- [Mass Delete Chatter Feed Item records that contain an attachment — Salesforce Help](https://help.salesforce.com/s/articleView?id=000198685&language=en_US&type=1)
+- [FeedItem — Salesforce Developers](https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-feeditem.html)
+- [Delete Files and Links from Chatter Feeds — Salesforce Help](https://help.salesforce.com/s/articleView?id=experience.collab_attachments_del.htm&language=en_US&type=5)
