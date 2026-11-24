@@ -1,59 +1,65 @@
 ---
-title: 'Comment tweeter automatiquement avec l''API Twitter et Google Colaboratory [Python]'
-date: "2026-09-24T19:44:38+09:00"
+title: "Publier avec l’API X et Google Colab [Python]"
+date: "2023-04-08T18:48:32+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 slug: "Twitter APIとGoogle Colaboratoryを使ってTweetする方法"
-date: 2023-04-08T18:48:32+09:00
 tags: ["Twitter", "Twitter API", "Google Colaboratory", "tweepy"]
 draft: false
 image: "img.webp"
 categories: ["programming"]
-description: 'Explique la procédure pour exécuter des tweets automatiques en Python (tweepy) à l''aide de l''API Twitter et Google Colaboratory. De la configuration des clés API au code réel, vous pouvez l''essayer immédiatement par copier-coller.'
+description: "Lisez les identifiants depuis Google Colab Secrets et publiez un message avec Tweepy et X API v2. Vérifiez les conditions d’accès et les tarifs actuels avant l’exécution."
 ---
 
-# Ce dont vous avez besoin
+# Introduction
 
-- Twitter API
-- Twitter API SECRET
-- Twitter ACCESS TOKEN
-- Twitter ACCESS TOKEN SECRET
-- Compte Google
+Cet exemple minimal utilise Tweepy dans Google Colab pour publier un message sur votre propre compte avec X API v2. L’accès, les tarifs et les exigences d’authentification peuvent changer ; consultez la documentation officielle et Developer Console avant de l’exécuter.
 
-Consultez le site de référence pour savoir comment obtenir l'API Twitter.
+## Important : identifiants de la version précédente
 
-# Étapes pour tweeter à l'aide de l'API
+Une ancienne version de cet article contenait des clés API et des jetons d’accès dans le texte. Considérez comme compromis tout identifiant qui a été publié. Si ces valeurs étaient réelles et actives, révoquez les clés et jetons concernés dans X Developer Console et créez-en de nouveaux. Des copies peuvent subsister dans l’historique du dépôt ; les supprimer de la page actuelle ne suffit donc pas.
 
-1. Accédez à [https://colab.research.google.com/](https://colab.research.google.com/)
-2. Sélectionnez "Fichier" -> "Nouveau notebook"
-3. Collez et exécutez le code ci-dessous (veuillez utiliser vos propres valeurs réelles obtenues)
-```
-API_KEY = '9Smu2f2RoLqbVQHQq6n79Z2JW'
-API_SECRET = 'uGVRIkLL2l8sRyPv2Lr4mXxXppnQF1isMoRnvktcXCtFgAK2R8'
-ACCESS_TOKEN = '0367292979164670705-7hSErDoQbO6fkFtnn5UY0vqpvecy0O'
-ACCESS_TOKEN_SECRET = 'pUv81U9GVzZirz5g4AxZPHAJ4GpSXnBo8GUcZ1egtjw9q'
-```
-3. Collez et exécutez le code ci-dessous
-```
+# Avant de commencer
+
+1. Créez un Project et une App dans [X Developer Console](https://developer.x.com/en/portal/dashboard), puis créez des identifiants utilisateur autorisés à publier. Avec OAuth 1.0a User Context, configurez les droits de lecture et d’écriture de l’App avant de générer les jetons d’accès. Avec OAuth 2.0 PKCE, demandez les scopes nécessaires, dont `tweet.write`.
+2. Consultez dans Developer Console l’offre actuelle, le tarif du point de terminaison d’écriture et les limites d’utilisation. Les tarifs et l’accès peuvent changer ; ne vous fiez pas aux anciens tutoriels ni aux anciens montants.
+3. Créez un notebook dans [Google Colab](https://colab.research.google.com/). Dans le panneau Secrets (icône de clé), ajoutez quatre secrets portant les noms ci-dessous et autorisez ce notebook à y accéder. Saisissez les valeurs de votre App ; ne les collez pas dans le code ou la sortie du notebook.
+   - `X_API_KEY`
+   - `X_API_KEY_SECRET`
+   - `X_ACCESS_TOKEN`
+   - `X_ACCESS_TOKEN_SECRET`
+
+# Publier un message
+
+L’exécution de cette cellule publie le texte de `text` depuis votre compte X. Vérifiez le compte et le message avant de l’exécuter. Des frais X API peuvent s’appliquer.
+
+```python
+%pip install -q tweepy
+
+from google.colab import userdata
 import tweepy
-```
-4. Collez et exécutez le code ci-dessous (API v1.1)
-```
-auth = tweepy.OAuthHandler(API_KEY, API_SECRET)
-auth.set_access_token(ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
-api = tweepy.API(auth)
-api.update_status("hello")
-```
-→ Un tweet disant `hello` sera publié.
 
-5. Collez et exécutez le code ci-dessous (API v2.0)
-```
-client = tweepy.Client(consumer_key=API_KEY, consumer_secret=API_SECRET, access_token=ACCESS_TOKEN, access_token_secret=ACCESS_TOKEN_SECRET)
-client.create_tweet(text='hello v2')
-```
-→ Un tweet disant `hello v2` sera publié.
+client = tweepy.Client(
+    consumer_key=userdata.get("X_API_KEY"),
+    consumer_secret=userdata.get("X_API_KEY_SECRET"),
+    access_token=userdata.get("X_ACCESS_TOKEN"),
+    access_token_secret=userdata.get("X_ACCESS_TOKEN_SECRET"),
+)
 
-C'est tout.
+text = "Hello from the X API"
+response = client.create_tweet(text=text)
+print(response.data["id"])
+```
 
-# Référence
-- [【À partir d'avril 2021】Explication détaillée de la demande d'utilisation de l'API Twitter avec des exemples de phrases d'utilisation et des captures d'écran](https://bloomtectec.com/twitter-api-application-procedure/)
-- [【Pas besoin de paramètres compliqués !】Google Colaboratory est recommandé comme environnement de test pour l'API Twitter 【Le code source est également partagé】](https://bloomtectec.com/use-twitter-api-in-google-colab/)
-- [【Tweepy】Twitter API v2 : Tweets, réponses, tweets avec sondages, tweets avec médias (v1.1) [Python]](https://3pysci.com/tweepy-28/)
+## À propos de l’automatisation
+
+Cet exemple publie un seul message lorsque vous exécutez la cellule manuellement. Avant de l’étendre à des publications programmées ou à des réponses automatisées, consultez les [règles d’automatisation de X](https://help.x.com/en/rules-and-policies/x-automation). Les réponses automatisées sont soumises à des conditions supplémentaires, notamment une intention clairement exprimée par le destinataire. Colab ne garantit pas une exécution permanente ; ses sessions et limites peuvent changer.
+
+## Références
+
+- [X API: Create or Edit Post](https://docs.x.com/x-api/posts/create-post)
+- [X API v2 authentication mapping](https://docs.x.com/fundamentals/authentication/guides/v2-authentication-mapping)
+- [X API pricing and credits](https://docs.x.com/x-api/getting-started/pricing)
+- [X automation rules](https://help.x.com/en/rules-and-policies/x-automation)
+- [Google Colab FAQ](https://research.google.com/colaboratory/faq.html)
+- [Tweepy Client reference](https://docs.tweepy.org/en/stable/client.html)
+- [Tweepy authentication guide](https://docs.tweepy.org/en/stable/authentication.html)

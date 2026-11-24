@@ -1,59 +1,65 @@
 ---
-title: 'Cara Melakukan Cuitan Otomatis dengan Twitter API dan Google Colaboratory [Python]'
-date: "2026-09-24T19:44:38+09:00"
+title: "Membuat Postingan dengan X API dan Google Colab [Python]"
+date: "2023-04-08T18:48:32+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 slug: "Twitter APIとGoogle Colaboratoryを使ってTweetする方法"
-date: 2023-04-08T18:48:32+09:00
 tags: ["Twitter", "Twitter API", "Google Colaboratory", "tweepy"]
 draft: false
 image: "img.webp"
 categories: ["programming"]
-description: 'Menjelaskan prosedur untuk menjalankan cuitan otomatis di Python (tweepy) menggunakan Twitter API dan Google Colaboratory. Anda dapat langsung mencobanya dengan salin tempel, mulai dari pengaturan kunci API hingga kode aktual.'
+description: "Baca kredensial dari Google Colab Secrets lalu terbitkan satu postingan dengan Tweepy dan X API v2. Periksa akses dan harga API terbaru sebelum menjalankan contoh."
 ---
 
-# Apa yang Dibutuhkan
+# Pendahuluan
 
-- Twitter API
-- Twitter API SECRET
-- Twitter ACCESS TOKEN
-- Twitter ACCESS TOKEN SECRET
-- Akun Google
+Ini adalah contoh sederhana yang menggunakan Tweepy di Google Colab untuk menerbitkan satu postingan ke akun Anda sendiri melalui X API v2. Akses, harga, dan persyaratan autentikasi dapat berubah, jadi periksa dokumentasi resmi dan Developer Console sebelum menjalankannya.
 
-Silakan merujuk ke situs referensi tentang cara mendapatkan Twitter API.
+## Penting: kredensial di versi sebelumnya
 
-# Langkah-langkah Tweet menggunakan API
+Versi sebelumnya dari artikel ini mencantumkan API key dan access token di dalam teks. Anggap semua kredensial yang pernah dipublikasikan telah bocor. Jika nilainya asli dan masih aktif, cabut key dan token terkait di X Developer Console lalu buat yang baru. Salinannya mungkin masih ada di riwayat repositori, jadi menghapusnya dari halaman saat ini saja tidak cukup.
 
-1. Kunjungi [https://colab.research.google.com/](https://colab.research.google.com/)
-2. Pilih "File" -> "Buku catatan baru"
-3. Tempel dan jalankan kode berikut (Gunakan nilai aktual yang Anda dapatkan sendiri)
-```
-API_KEY = '9Smu2f2RoLqbVQHQq6n79Z2JW'
-API_SECRET = 'uGVRIkLL2l8sRyPv2Lr4mXxXppnQF1isMoRnvktcXCtFgAK2R8'
-ACCESS_TOKEN = '0367292979164670705-7hSErDoQbO6fkFtnn5UY0vqpvecy0O'
-ACCESS_TOKEN_SECRET = 'pUv81U9GVzZirz5g4AxZPHAJ4GpSXnBo8GUcZ1egtjw9q'
-```
-3. Tempel dan jalankan kode berikut
-```
+# Sebelum memulai
+
+1. Buat Project dan App di [X Developer Console](https://developer.x.com/en/portal/dashboard), lalu buat kredensial pengguna yang memiliki izin untuk memposting. Untuk OAuth 1.0a User Context, atur izin baca dan tulis App sebelum membuat access token. Untuk OAuth 2.0 PKCE, minta cakupan yang diperlukan, termasuk `tweet.write`.
+2. Periksa paket saat ini, harga endpoint penulisan, dan batas penggunaan di Developer Console. Harga dan akses dapat berubah; jangan mengandalkan tutorial atau harga lama.
+3. Buat notebook di [Google Colab](https://colab.research.google.com/). Di panel Secrets (ikon kunci), tambahkan empat secret dengan nama di bawah dan izinkan notebook ini mengaksesnya. Masukkan nilai App Anda sendiri; jangan menempelkannya ke kode atau output notebook.
+   - `X_API_KEY`
+   - `X_API_KEY_SECRET`
+   - `X_ACCESS_TOKEN`
+   - `X_ACCESS_TOKEN_SECRET`
+
+# Terbitkan satu postingan
+
+Saat sel ini dijalankan, teks di `text` akan dipublikasikan dari akun X Anda. Periksa akun dan teks sebelum menjalankannya. Biaya X API mungkin berlaku.
+
+```python
+%pip install -q tweepy
+
+from google.colab import userdata
 import tweepy
-```
-4. Tempel dan jalankan kode berikut (API v1.1)
-```
-auth = tweepy.OAuthHandler(API_KEY, API_SECRET)
-auth.set_access_token(ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
-api = tweepy.API(auth)
-api.update_status("hello")
-```
-→ Tweet `hello` akan diposting
 
-5. Tempel dan jalankan kode berikut (API v2.0)
-```
-client = tweepy.Client(consumer_key=API_KEY, consumer_secret=API_SECRET, access_token=ACCESS_TOKEN, access_token_secret=ACCESS_TOKEN_SECRET)
-client.create_tweet(text='hello v2')
-```
-→ Tweet `hello v2` akan diposting
+client = tweepy.Client(
+    consumer_key=userdata.get("X_API_KEY"),
+    consumer_secret=userdata.get("X_API_KEY_SECRET"),
+    access_token=userdata.get("X_ACCESS_TOKEN"),
+    access_token_secret=userdata.get("X_ACCESS_TOKEN_SECRET"),
+)
 
-Selesai
+text = "Hello from the X API"
+response = client.create_tweet(text=text)
+print(response.data["id"])
+```
 
-# Referensi
-- [[Per April 2021] Penjelasan lengkap tentang aplikasi penggunaan Twitter API dengan contoh penggunaan dan tangkapan layar](https://bloomtectec.com/twitter-api-application-procedure/)
-- [[Tidak perlu pengaturan yang merepotkan!] Kami merekomendasikan Google Colaboratory sebagai lingkungan uji coba untuk Twitter API [Kode sumber juga akan dibagikan]](https://bloomtectec.com/use-twitter-api-in-google-colab/)
-- [[Tweepy] Twitter API v2: Tweet, balasan (reply), tweet dengan polling, tweet dengan media (v1.1) [Python]](https://3pysci.com/tweepy-28/)
+## Tentang otomatisasi
+
+Contoh ini hanya menerbitkan satu postingan saat Anda menjalankan sel secara manual. Sebelum mengembangkannya untuk posting terjadwal atau balasan otomatis, baca [Aturan Otomatisasi X](https://help.x.com/en/rules-and-policies/x-automation). Balasan otomatis memiliki persyaratan tambahan, termasuk adanya maksud yang jelas dari penerima. Colab tidak menjamin pekerjaan berjalan terus-menerus; sesi dan batas penggunaan dapat berubah.
+
+## Referensi
+
+- [X API: Create or Edit Post](https://docs.x.com/x-api/posts/create-post)
+- [X API v2 authentication mapping](https://docs.x.com/fundamentals/authentication/guides/v2-authentication-mapping)
+- [X API pricing and credits](https://docs.x.com/x-api/getting-started/pricing)
+- [X automation rules](https://help.x.com/en/rules-and-policies/x-automation)
+- [Google Colab FAQ](https://research.google.com/colaboratory/faq.html)
+- [Tweepy Client reference](https://docs.tweepy.org/en/stable/client.html)
+- [Tweepy authentication guide](https://docs.tweepy.org/en/stable/authentication.html)

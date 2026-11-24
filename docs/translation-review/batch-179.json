@@ -1,0 +1,472 @@
+{
+  "version": 1,
+  "batch": 179,
+  "article": "Post with the X API and Google Colab",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "82c2081719b5f2f42133cedfbfd0a25b8efec493f9c571bfac99ece2f40fd75a",
+  "sources": [
+    "https://developer.x.com/en/portal/dashboard",
+    "https://docs.x.com/x-api/posts/create-post",
+    "https://docs.x.com/fundamentals/authentication/guides/v2-authentication-mapping",
+    "https://docs.x.com/x-api/getting-started/pricing",
+    "https://help.x.com/en/rules-and-policies/x-automation",
+    "https://research.google.com/colaboratory/faq.html",
+    "https://docs.tweepy.org/en/stable/client.html",
+    "https://docs.tweepy.org/en/stable/authentication.html"
+  ],
+  "scope": "Compared the complete Japanese article and all twelve translations, including credential handling and previous exposure, current X API v2 authentication and post creation, API cost/access caveats, automation policy, code, terminology, links, and publication metadata.",
+  "findings": [
+    "Removed hard-coded API credentials and advised treating previously published values as compromised; users should revoke and replace them if real.",
+    "Replaced legacy API v1.1/v2 snippets with a Colab Secrets and Tweepy Client example using OAuth 1.0a User Context and X API v2.",
+    "Added current official X API authentication, post creation, pay-per-use pricing, automation policy, Colab, and Tweepy references.",
+    "Clarified that running the cell publishes a real public post and may incur API fees; limited the example to manual one-post execution.",
+    "Preserved the original publication date (2023-04-08) and added lastmod (2026-11-24)."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/Twitter APIとGoogle Colaboratoryを使ってTweetする方法/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Twitter APIとGoogle Colaboratoryを使ってTweetする方法/index.md",
+      "sourceHash": "82c2081719b5f2f42133cedfbfd0a25b8efec493f9c571bfac99ece2f40fd75a",
+      "translationHash": "50faa493324b5db25fe1edd842c0235398498f281b9408459e817161f69b538e",
+      "summary": "Compared the complete translation against the Japanese source and current official X API, authentication, pricing, automation, Colab, and Tweepy references; removed exposed credentials, replaced the legacy posting example, and checked meaning, terminology, code, metadata, and links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article with all twelve rewritten translations, including the prior credential exposure, OAuth 1.0a flow, current API v2 example, usage/pricing caveat, and automation restrictions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked X API, Project/App, OAuth 1.0a User Context, OAuth 2.0 PKCE, access token, Colab Secrets, endpoint, and automated posting terminology in each locale."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked the shared Tweepy Client credential arguments, Colab userdata secret names, create_tweet call, and returned post ID against current Tweepy/X docs. Code was inspected but not executed because execution would publish a real post and requires user credentials."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced obsolete third-party 2021 references with X Developer Console, official X API create-post/authentication/pricing docs, X automation policy, Google Colab FAQ, and Tweepy Client docs."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The posting code was not executed because doing so would publish a real post and requires the user’s X credentials.",
+        "X API availability, pricing, permissions, and platform policies may change; recheck the linked official sources before use.",
+        "Previously published credentials may remain in repository history or copies; revoke them in the X Developer Console if they were real and active."
+      ]
+    },
+    "post/Twitter APIとGoogle Colaboratoryを使ってTweetする方法/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Twitter APIとGoogle Colaboratoryを使ってTweetする方法/index.md",
+      "sourceHash": "82c2081719b5f2f42133cedfbfd0a25b8efec493f9c571bfac99ece2f40fd75a",
+      "translationHash": "7248d419fd4bfdc929ee88a72768aca292176f1a15e7590ecf826e79e462c71c",
+      "summary": "Compared the complete translation against the Japanese source and current official X API, authentication, pricing, automation, Colab, and Tweepy references; removed exposed credentials, replaced the legacy posting example, and checked meaning, terminology, code, metadata, and links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article with all twelve rewritten translations, including the prior credential exposure, OAuth 1.0a flow, current API v2 example, usage/pricing caveat, and automation restrictions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked X API, Project/App, OAuth 1.0a User Context, OAuth 2.0 PKCE, access token, Colab Secrets, endpoint, and automated posting terminology in each locale."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked the shared Tweepy Client credential arguments, Colab userdata secret names, create_tweet call, and returned post ID against current Tweepy/X docs. Code was inspected but not executed because execution would publish a real post and requires user credentials."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced obsolete third-party 2021 references with X Developer Console, official X API create-post/authentication/pricing docs, X automation policy, Google Colab FAQ, and Tweepy Client docs."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The posting code was not executed because doing so would publish a real post and requires the user’s X credentials.",
+        "X API availability, pricing, permissions, and platform policies may change; recheck the linked official sources before use.",
+        "Previously published credentials may remain in repository history or copies; revoke them in the X Developer Console if they were real and active."
+      ]
+    },
+    "post/Twitter APIとGoogle Colaboratoryを使ってTweetする方法/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Twitter APIとGoogle Colaboratoryを使ってTweetする方法/index.md",
+      "sourceHash": "82c2081719b5f2f42133cedfbfd0a25b8efec493f9c571bfac99ece2f40fd75a",
+      "translationHash": "a9bf3f86f69a0a7dfd3a884214b21a1cf7d0a3b05a0b0c48e5ed75f4e8aec1ca",
+      "summary": "Compared the complete translation against the Japanese source and current official X API, authentication, pricing, automation, Colab, and Tweepy references; removed exposed credentials, replaced the legacy posting example, and checked meaning, terminology, code, metadata, and links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article with all twelve rewritten translations, including the prior credential exposure, OAuth 1.0a flow, current API v2 example, usage/pricing caveat, and automation restrictions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked X API, Project/App, OAuth 1.0a User Context, OAuth 2.0 PKCE, access token, Colab Secrets, endpoint, and automated posting terminology in each locale."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked the shared Tweepy Client credential arguments, Colab userdata secret names, create_tweet call, and returned post ID against current Tweepy/X docs. Code was inspected but not executed because execution would publish a real post and requires user credentials."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced obsolete third-party 2021 references with X Developer Console, official X API create-post/authentication/pricing docs, X automation policy, Google Colab FAQ, and Tweepy Client docs."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The posting code was not executed because doing so would publish a real post and requires the user’s X credentials.",
+        "X API availability, pricing, permissions, and platform policies may change; recheck the linked official sources before use.",
+        "Previously published credentials may remain in repository history or copies; revoke them in the X Developer Console if they were real and active."
+      ]
+    },
+    "post/Twitter APIとGoogle Colaboratoryを使ってTweetする方法/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Twitter APIとGoogle Colaboratoryを使ってTweetする方法/index.md",
+      "sourceHash": "82c2081719b5f2f42133cedfbfd0a25b8efec493f9c571bfac99ece2f40fd75a",
+      "translationHash": "8584a3d33b709bb75ed9d009feecada7737f06b8a49536a37d1e2710b185359f",
+      "summary": "Compared the complete translation against the Japanese source and current official X API, authentication, pricing, automation, Colab, and Tweepy references; removed exposed credentials, replaced the legacy posting example, and checked meaning, terminology, code, metadata, and links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article with all twelve rewritten translations, including the prior credential exposure, OAuth 1.0a flow, current API v2 example, usage/pricing caveat, and automation restrictions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked X API, Project/App, OAuth 1.0a User Context, OAuth 2.0 PKCE, access token, Colab Secrets, endpoint, and automated posting terminology in each locale."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked the shared Tweepy Client credential arguments, Colab userdata secret names, create_tweet call, and returned post ID against current Tweepy/X docs. Code was inspected but not executed because execution would publish a real post and requires user credentials."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced obsolete third-party 2021 references with X Developer Console, official X API create-post/authentication/pricing docs, X automation policy, Google Colab FAQ, and Tweepy Client docs."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The posting code was not executed because doing so would publish a real post and requires the user’s X credentials.",
+        "X API availability, pricing, permissions, and platform policies may change; recheck the linked official sources before use.",
+        "Previously published credentials may remain in repository history or copies; revoke them in the X Developer Console if they were real and active."
+      ]
+    },
+    "post/Twitter APIとGoogle Colaboratoryを使ってTweetする方法/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Twitter APIとGoogle Colaboratoryを使ってTweetする方法/index.md",
+      "sourceHash": "82c2081719b5f2f42133cedfbfd0a25b8efec493f9c571bfac99ece2f40fd75a",
+      "translationHash": "1983b3fb6f3db8c1cb6f74c9003a7d993fea7a67a6481e28d7c999b61e3f5c4b",
+      "summary": "Compared the complete translation against the Japanese source and current official X API, authentication, pricing, automation, Colab, and Tweepy references; removed exposed credentials, replaced the legacy posting example, and checked meaning, terminology, code, metadata, and links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article with all twelve rewritten translations, including the prior credential exposure, OAuth 1.0a flow, current API v2 example, usage/pricing caveat, and automation restrictions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked X API, Project/App, OAuth 1.0a User Context, OAuth 2.0 PKCE, access token, Colab Secrets, endpoint, and automated posting terminology in each locale."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked the shared Tweepy Client credential arguments, Colab userdata secret names, create_tweet call, and returned post ID against current Tweepy/X docs. Code was inspected but not executed because execution would publish a real post and requires user credentials."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced obsolete third-party 2021 references with X Developer Console, official X API create-post/authentication/pricing docs, X automation policy, Google Colab FAQ, and Tweepy Client docs."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The posting code was not executed because doing so would publish a real post and requires the user’s X credentials.",
+        "X API availability, pricing, permissions, and platform policies may change; recheck the linked official sources before use.",
+        "Previously published credentials may remain in repository history or copies; revoke them in the X Developer Console if they were real and active."
+      ]
+    },
+    "post/Twitter APIとGoogle Colaboratoryを使ってTweetする方法/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Twitter APIとGoogle Colaboratoryを使ってTweetする方法/index.md",
+      "sourceHash": "82c2081719b5f2f42133cedfbfd0a25b8efec493f9c571bfac99ece2f40fd75a",
+      "translationHash": "b52374e4c62807701d1f382467d3e3a9b3baba0f8e032779acd71004aec86cfd",
+      "summary": "Compared the complete translation against the Japanese source and current official X API, authentication, pricing, automation, Colab, and Tweepy references; removed exposed credentials, replaced the legacy posting example, and checked meaning, terminology, code, metadata, and links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article with all twelve rewritten translations, including the prior credential exposure, OAuth 1.0a flow, current API v2 example, usage/pricing caveat, and automation restrictions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked X API, Project/App, OAuth 1.0a User Context, OAuth 2.0 PKCE, access token, Colab Secrets, endpoint, and automated posting terminology in each locale."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked the shared Tweepy Client credential arguments, Colab userdata secret names, create_tweet call, and returned post ID against current Tweepy/X docs. Code was inspected but not executed because execution would publish a real post and requires user credentials."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced obsolete third-party 2021 references with X Developer Console, official X API create-post/authentication/pricing docs, X automation policy, Google Colab FAQ, and Tweepy Client docs."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The posting code was not executed because doing so would publish a real post and requires the user’s X credentials.",
+        "X API availability, pricing, permissions, and platform policies may change; recheck the linked official sources before use.",
+        "Previously published credentials may remain in repository history or copies; revoke them in the X Developer Console if they were real and active."
+      ]
+    },
+    "post/Twitter APIとGoogle Colaboratoryを使ってTweetする方法/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Twitter APIとGoogle Colaboratoryを使ってTweetする方法/index.md",
+      "sourceHash": "82c2081719b5f2f42133cedfbfd0a25b8efec493f9c571bfac99ece2f40fd75a",
+      "translationHash": "f53448d083bf14eb8c25ff1040e45ca0c4372699c19ae3057fced48312e2a2a9",
+      "summary": "Compared the complete translation against the Japanese source and current official X API, authentication, pricing, automation, Colab, and Tweepy references; removed exposed credentials, replaced the legacy posting example, and checked meaning, terminology, code, metadata, and links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article with all twelve rewritten translations, including the prior credential exposure, OAuth 1.0a flow, current API v2 example, usage/pricing caveat, and automation restrictions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked X API, Project/App, OAuth 1.0a User Context, OAuth 2.0 PKCE, access token, Colab Secrets, endpoint, and automated posting terminology in each locale."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked the shared Tweepy Client credential arguments, Colab userdata secret names, create_tweet call, and returned post ID against current Tweepy/X docs. Code was inspected but not executed because execution would publish a real post and requires user credentials."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced obsolete third-party 2021 references with X Developer Console, official X API create-post/authentication/pricing docs, X automation policy, Google Colab FAQ, and Tweepy Client docs."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The posting code was not executed because doing so would publish a real post and requires the user’s X credentials.",
+        "X API availability, pricing, permissions, and platform policies may change; recheck the linked official sources before use.",
+        "Previously published credentials may remain in repository history or copies; revoke them in the X Developer Console if they were real and active."
+      ]
+    },
+    "post/Twitter APIとGoogle Colaboratoryを使ってTweetする方法/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Twitter APIとGoogle Colaboratoryを使ってTweetする方法/index.md",
+      "sourceHash": "82c2081719b5f2f42133cedfbfd0a25b8efec493f9c571bfac99ece2f40fd75a",
+      "translationHash": "d7cbbae1687b4ea9df0747100a79df910a3d7d081b815eb4d5adc5eb5f1992a6",
+      "summary": "Compared the complete translation against the Japanese source and current official X API, authentication, pricing, automation, Colab, and Tweepy references; removed exposed credentials, replaced the legacy posting example, and checked meaning, terminology, code, metadata, and links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article with all twelve rewritten translations, including the prior credential exposure, OAuth 1.0a flow, current API v2 example, usage/pricing caveat, and automation restrictions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked X API, Project/App, OAuth 1.0a User Context, OAuth 2.0 PKCE, access token, Colab Secrets, endpoint, and automated posting terminology in each locale."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked the shared Tweepy Client credential arguments, Colab userdata secret names, create_tweet call, and returned post ID against current Tweepy/X docs. Code was inspected but not executed because execution would publish a real post and requires user credentials."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced obsolete third-party 2021 references with X Developer Console, official X API create-post/authentication/pricing docs, X automation policy, Google Colab FAQ, and Tweepy Client docs."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The posting code was not executed because doing so would publish a real post and requires the user’s X credentials.",
+        "X API availability, pricing, permissions, and platform policies may change; recheck the linked official sources before use.",
+        "Previously published credentials may remain in repository history or copies; revoke them in the X Developer Console if they were real and active."
+      ]
+    },
+    "post/Twitter APIとGoogle Colaboratoryを使ってTweetする方法/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Twitter APIとGoogle Colaboratoryを使ってTweetする方法/index.md",
+      "sourceHash": "82c2081719b5f2f42133cedfbfd0a25b8efec493f9c571bfac99ece2f40fd75a",
+      "translationHash": "6a0dd6e7ac5abed9b71c6bf6798c0e93402c10352dfb125317f338f11d26e7b6",
+      "summary": "Compared the complete translation against the Japanese source and current official X API, authentication, pricing, automation, Colab, and Tweepy references; removed exposed credentials, replaced the legacy posting example, and checked meaning, terminology, code, metadata, and links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article with all twelve rewritten translations, including the prior credential exposure, OAuth 1.0a flow, current API v2 example, usage/pricing caveat, and automation restrictions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked X API, Project/App, OAuth 1.0a User Context, OAuth 2.0 PKCE, access token, Colab Secrets, endpoint, and automated posting terminology in each locale."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked the shared Tweepy Client credential arguments, Colab userdata secret names, create_tweet call, and returned post ID against current Tweepy/X docs. Code was inspected but not executed because execution would publish a real post and requires user credentials."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced obsolete third-party 2021 references with X Developer Console, official X API create-post/authentication/pricing docs, X automation policy, Google Colab FAQ, and Tweepy Client docs."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The posting code was not executed because doing so would publish a real post and requires the user’s X credentials.",
+        "X API availability, pricing, permissions, and platform policies may change; recheck the linked official sources before use.",
+        "Previously published credentials may remain in repository history or copies; revoke them in the X Developer Console if they were real and active."
+      ]
+    },
+    "post/Twitter APIとGoogle Colaboratoryを使ってTweetする方法/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Twitter APIとGoogle Colaboratoryを使ってTweetする方法/index.md",
+      "sourceHash": "82c2081719b5f2f42133cedfbfd0a25b8efec493f9c571bfac99ece2f40fd75a",
+      "translationHash": "f4e18c45d6b495f24bb91c2158b29757e1ca40bcd1d93ef85852b61f1b6de126",
+      "summary": "Compared the complete translation against the Japanese source and current official X API, authentication, pricing, automation, Colab, and Tweepy references; removed exposed credentials, replaced the legacy posting example, and checked meaning, terminology, code, metadata, and links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article with all twelve rewritten translations, including the prior credential exposure, OAuth 1.0a flow, current API v2 example, usage/pricing caveat, and automation restrictions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked X API, Project/App, OAuth 1.0a User Context, OAuth 2.0 PKCE, access token, Colab Secrets, endpoint, and automated posting terminology in each locale."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked the shared Tweepy Client credential arguments, Colab userdata secret names, create_tweet call, and returned post ID against current Tweepy/X docs. Code was inspected but not executed because execution would publish a real post and requires user credentials."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced obsolete third-party 2021 references with X Developer Console, official X API create-post/authentication/pricing docs, X automation policy, Google Colab FAQ, and Tweepy Client docs."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The posting code was not executed because doing so would publish a real post and requires the user’s X credentials.",
+        "X API availability, pricing, permissions, and platform policies may change; recheck the linked official sources before use.",
+        "Previously published credentials may remain in repository history or copies; revoke them in the X Developer Console if they were real and active."
+      ]
+    },
+    "post/Twitter APIとGoogle Colaboratoryを使ってTweetする方法/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Twitter APIとGoogle Colaboratoryを使ってTweetする方法/index.md",
+      "sourceHash": "82c2081719b5f2f42133cedfbfd0a25b8efec493f9c571bfac99ece2f40fd75a",
+      "translationHash": "4fd1b973f232214ae96e48d66b90295c53e0c86441afc598b6eb095e4f355b4c",
+      "summary": "Compared the complete translation against the Japanese source and current official X API, authentication, pricing, automation, Colab, and Tweepy references; removed exposed credentials, replaced the legacy posting example, and checked meaning, terminology, code, metadata, and links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article with all twelve rewritten translations, including the prior credential exposure, OAuth 1.0a flow, current API v2 example, usage/pricing caveat, and automation restrictions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked X API, Project/App, OAuth 1.0a User Context, OAuth 2.0 PKCE, access token, Colab Secrets, endpoint, and automated posting terminology in each locale."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked the shared Tweepy Client credential arguments, Colab userdata secret names, create_tweet call, and returned post ID against current Tweepy/X docs. Code was inspected but not executed because execution would publish a real post and requires user credentials."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced obsolete third-party 2021 references with X Developer Console, official X API create-post/authentication/pricing docs, X automation policy, Google Colab FAQ, and Tweepy Client docs."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The posting code was not executed because doing so would publish a real post and requires the user’s X credentials.",
+        "X API availability, pricing, permissions, and platform policies may change; recheck the linked official sources before use.",
+        "Previously published credentials may remain in repository history or copies; revoke them in the X Developer Console if they were real and active."
+      ]
+    },
+    "post/Twitter APIとGoogle Colaboratoryを使ってTweetする方法/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Twitter APIとGoogle Colaboratoryを使ってTweetする方法/index.md",
+      "sourceHash": "82c2081719b5f2f42133cedfbfd0a25b8efec493f9c571bfac99ece2f40fd75a",
+      "translationHash": "5da231dc410044705dc3187d65c78a0c2900009569a018e2f5186fbbfeb95cfe",
+      "summary": "Compared the complete translation against the Japanese source and current official X API, authentication, pricing, automation, Colab, and Tweepy references; removed exposed credentials, replaced the legacy posting example, and checked meaning, terminology, code, metadata, and links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article with all twelve rewritten translations, including the prior credential exposure, OAuth 1.0a flow, current API v2 example, usage/pricing caveat, and automation restrictions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked X API, Project/App, OAuth 1.0a User Context, OAuth 2.0 PKCE, access token, Colab Secrets, endpoint, and automated posting terminology in each locale."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked the shared Tweepy Client credential arguments, Colab userdata secret names, create_tweet call, and returned post ID against current Tweepy/X docs. Code was inspected but not executed because execution would publish a real post and requires user credentials."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced obsolete third-party 2021 references with X Developer Console, official X API create-post/authentication/pricing docs, X automation policy, Google Colab FAQ, and Tweepy Client docs."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The posting code was not executed because doing so would publish a real post and requires the user’s X credentials.",
+        "X API availability, pricing, permissions, and platform policies may change; recheck the linked official sources before use.",
+        "Previously published credentials may remain in repository history or copies; revoke them in the X Developer Console if they were real and active."
+      ]
+    }
+  }
+}

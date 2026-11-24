@@ -20765,6 +20765,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-178.json",
       "evidenceHash": "2218d3e33e6bd956e6b489c20eaa1fb26b14ac93ddfd136cd0acdd351f6e2c35"
+    },
+    "post/Twitter APIとGoogle Colaboratoryを使ってTweetする方法/index.en.md": {
+      "source": "post/Twitter APIとGoogle Colaboratoryを使ってTweetする方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "82c2081719b5f2f42133cedfbfd0a25b8efec493f9c571bfac99ece2f40fd75a",
+      "translationHash": "50faa493324b5db25fe1edd842c0235398498f281b9408459e817161f69b538e",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-179.json",
+      "evidenceHash": "17a0191255755a74dd80cfb039ce3c712fb6936010a84cb9d42d9005c8edfbb7"
+    },
+    "post/Twitter APIとGoogle Colaboratoryを使ってTweetする方法/index.zh-cn.md": {
+      "source": "post/Twitter APIとGoogle Colaboratoryを使ってTweetする方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "82c2081719b5f2f42133cedfbfd0a25b8efec493f9c571bfac99ece2f40fd75a",
+      "translationHash": "7248d419fd4bfdc929ee88a72768aca292176f1a15e7590ecf826e79e462c71c",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-179.json",
+      "evidenceHash": "724058d258495b652b04c95fa44805bb1803a8eb4551dfad9dccc3cc5429dd18"
+    },
+    "post/Twitter APIとGoogle Colaboratoryを使ってTweetする方法/index.es.md": {
+      "source": "post/Twitter APIとGoogle Colaboratoryを使ってTweetする方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "82c2081719b5f2f42133cedfbfd0a25b8efec493f9c571bfac99ece2f40fd75a",
+      "translationHash": "a9bf3f86f69a0a7dfd3a884214b21a1cf7d0a3b05a0b0c48e5ed75f4e8aec1ca",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-179.json",
+      "evidenceHash": "8e511c1877925cb8218a0e5745ca677322fe7841250709966dc9c497b7518eaa"
+    },
+    "post/Twitter APIとGoogle Colaboratoryを使ってTweetする方法/index.ko.md": {
+      "source": "post/Twitter APIとGoogle Colaboratoryを使ってTweetする方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "82c2081719b5f2f42133cedfbfd0a25b8efec493f9c571bfac99ece2f40fd75a",
+      "translationHash": "8584a3d33b709bb75ed9d009feecada7737f06b8a49536a37d1e2710b185359f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-179.json",
+      "evidenceHash": "2d7956c1dc4a63b1896dd7dd95d37880c1e6ea64ccaca844fa4d7c5bbf3669ee"
+    },
+    "post/Twitter APIとGoogle Colaboratoryを使ってTweetする方法/index.pt.md": {
+      "source": "post/Twitter APIとGoogle Colaboratoryを使ってTweetする方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "82c2081719b5f2f42133cedfbfd0a25b8efec493f9c571bfac99ece2f40fd75a",
+      "translationHash": "1983b3fb6f3db8c1cb6f74c9003a7d993fea7a67a6481e28d7c999b61e3f5c4b",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-179.json",
+      "evidenceHash": "2c44055e89c199ac773d77ef5d4d6f5dca91001597b60c67f815553eceb43632"
+    },
+    "post/Twitter APIとGoogle Colaboratoryを使ってTweetする方法/index.zh-tw.md": {
+      "source": "post/Twitter APIとGoogle Colaboratoryを使ってTweetする方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "82c2081719b5f2f42133cedfbfd0a25b8efec493f9c571bfac99ece2f40fd75a",
+      "translationHash": "b52374e4c62807701d1f382467d3e3a9b3baba0f8e032779acd71004aec86cfd",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-179.json",
+      "evidenceHash": "8ae8de024f21ef7a53dbe0896d629944e32eaec37d773eacd4077bda8b92b440"
+    },
+    "post/Twitter APIとGoogle Colaboratoryを使ってTweetする方法/index.hi.md": {
+      "source": "post/Twitter APIとGoogle Colaboratoryを使ってTweetする方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "82c2081719b5f2f42133cedfbfd0a25b8efec493f9c571bfac99ece2f40fd75a",
+      "translationHash": "f53448d083bf14eb8c25ff1040e45ca0c4372699c19ae3057fced48312e2a2a9",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-179.json",
+      "evidenceHash": "014756fd47cec0ecad074153a6e02be9e9435b48312fc2ca0e8c46e1b4679406"
+    },
+    "post/Twitter APIとGoogle Colaboratoryを使ってTweetする方法/index.fr.md": {
+      "source": "post/Twitter APIとGoogle Colaboratoryを使ってTweetする方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "82c2081719b5f2f42133cedfbfd0a25b8efec493f9c571bfac99ece2f40fd75a",
+      "translationHash": "d7cbbae1687b4ea9df0747100a79df910a3d7d081b815eb4d5adc5eb5f1992a6",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-179.json",
+      "evidenceHash": "c64f3233d3246fadc7b2609633c0fcde5f7f7e793efabd5b64037bfcac1f6a65"
+    },
+    "post/Twitter APIとGoogle Colaboratoryを使ってTweetする方法/index.de.md": {
+      "source": "post/Twitter APIとGoogle Colaboratoryを使ってTweetする方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "82c2081719b5f2f42133cedfbfd0a25b8efec493f9c571bfac99ece2f40fd75a",
+      "translationHash": "6a0dd6e7ac5abed9b71c6bf6798c0e93402c10352dfb125317f338f11d26e7b6",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-179.json",
+      "evidenceHash": "f0322b4186b2a1a51c018075e51732e600f0d06db8622d27230e700604898048"
+    },
+    "post/Twitter APIとGoogle Colaboratoryを使ってTweetする方法/index.ar.md": {
+      "source": "post/Twitter APIとGoogle Colaboratoryを使ってTweetする方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "82c2081719b5f2f42133cedfbfd0a25b8efec493f9c571bfac99ece2f40fd75a",
+      "translationHash": "f4e18c45d6b495f24bb91c2158b29757e1ca40bcd1d93ef85852b61f1b6de126",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-179.json",
+      "evidenceHash": "d69b0b705a7c99bf7997390b80d6ee1aaac8cf60682cd22cbd80d1f8d61749c8"
+    },
+    "post/Twitter APIとGoogle Colaboratoryを使ってTweetする方法/index.ru.md": {
+      "source": "post/Twitter APIとGoogle Colaboratoryを使ってTweetする方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "82c2081719b5f2f42133cedfbfd0a25b8efec493f9c571bfac99ece2f40fd75a",
+      "translationHash": "4fd1b973f232214ae96e48d66b90295c53e0c86441afc598b6eb095e4f355b4c",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-179.json",
+      "evidenceHash": "6a92b2c80ea0083178a62a3f707ebea3d2b76b10e38278659313c69bb0ade58a"
+    },
+    "post/Twitter APIとGoogle Colaboratoryを使ってTweetする方法/index.id.md": {
+      "source": "post/Twitter APIとGoogle Colaboratoryを使ってTweetする方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "82c2081719b5f2f42133cedfbfd0a25b8efec493f9c571bfac99ece2f40fd75a",
+      "translationHash": "5da231dc410044705dc3187d65c78a0c2900009569a018e2f5186fbbfeb95cfe",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-179.json",
+      "evidenceHash": "d5fd5e778591b0eee4aea274924a20c754851c55001f59fac93adca4831cd607"
     }
   }
 }
