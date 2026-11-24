@@ -1,26 +1,31 @@
 ---
+title: "Eliminar una carpeta grande desde el símbolo del sistema de Windows: pasos y riesgos"
 
-
-
-
-title: 'Cómo eliminar por lotes y a alta velocidad carpetas grandes en Windows 【Símbolo del sistema】'
-date: "2026-09-24T19:44:38+09:00"
 slug: "大きなフォルダーを高速一括削除"
 date: 2022-09-20T16:04:02+09:00
+lastmod: "2026-11-24T00:00:00+09:00"
 tags: ["Símbolo del sistema"]
 draft: false
 image: "img.webp"
 categories: ["it-technology"]
-description: 'Te explicamos cómo eliminar de manera rápida y masiva carpetas de gran tamaño en el entorno de Windows. Tareas de eliminación que toman mucho tiempo en el Explorador se pueden acelerar drásticamente usando los comandos DEL y RMDIR en el símbolo del sistema.'
+description: "Método documentado por Microsoft para borrar carpetas con DEL y RMDIR, con advertencias sobre el borrado recursivo silencioso, la ruta y las copias de seguridad."
 ---
+Estos comandos eliminan de forma recursiva los archivos y subcarpetas del objetivo. `/Q` omite la confirmación. Un objetivo equivocado puede provocar una pérdida de datos irreversible: haz una copia de seguridad y comprueba la ruta del directorio padre y el nombre de la carpeta antes de ejecutar el borrado. La velocidad depende del número de archivos y del almacenamiento; no se garantiza que sea mayor.
 
+## Pasos
 
+En este ejemplo, `C:\Parent` es el directorio padre y `Large Folder` es la carpeta que se eliminará. Primero muestra el contenido y verifica el objetivo; después, bórralo.
 
+```bat
+cd /d "C:\Parent"
+dir /a "Large Folder"
+DEL /F /Q /S "Large Folder\*" > NUL
+RMDIR /S /Q "Large Folder"
+```
 
-## Eliminar carpetas grandes rápidamente
-Al eliminar carpetas grandes en el Explorador, la velocidad es lenta porque primero se realiza una búsqueda completa del contenido de la carpeta antes de ejecutar la eliminación.
-Al eliminar usando comandos como se muestra a continuación, la búsqueda y la eliminación se ejecutan simultáneamente, lo que permite eliminar carpetas grandes rápidamente.
+`DEL /F /Q /S` elimina los archivos del objetivo (`/F` incluye archivos de solo lectura, `/Q` omite avisos y `/S` incluye subdirectorios). Después, `RMDIR /S /Q` elimina todo el árbol de directorios sin pedir confirmación. Sustituye `C:\Parent` y `Large Folder` por los valores reales y revisa la salida de `dir` antes de ejecutar cualquier comando de borrado.
 
-1. Navegue al directorio de la carpeta de destino en el Símbolo del sistema.
-2. Ejecute `DEL /F /Q /S nombre_de_la_carpeta > NUL`.
-3. Ejecute `RMDIR /Q /S nombre_de_la_carpeta`.
+## Microsoft documentation
+
+- [del command](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/del)
+- [rmdir command](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/rmdir)

@@ -1,18 +1,31 @@
 ---
-title: '在Windows中快速批量删除超大文件夹的方法【命令提示符】'
-date: "2026-09-24T19:44:38+09:00"
+title: "在 Windows 命令提示符中删除大文件夹：步骤与风险"
+
 slug: "大きなフォルダーを高速一括削除"
 date: 2022-09-20T16:04:02+09:00
+lastmod: "2026-11-24T00:00:00+09:00"
 tags: ["命令提示符"]
 draft: false
 image: "img.webp"
 categories: ["it-technology"]
-description: '解说在Windows环境下快速批量删除大容量文件夹的方法。原本在资源管理器中需要花费很长时间的删除操作，通过利用命令提示符的DEL和RMDIR命令，可以大幅提升处理速度。'
+description: "依据 Microsoft 文档说明使用 DEL 和 RMDIR 删除文件夹，并提醒静默递归删除、路径核对和备份风险。"
 ---
-## 快速批量删除大文件夹
-在文件资源管理器中删除大文件夹时，由于会先完全扫描文件夹内容后再执行删除，所以速度较慢。
-像下面这样使用命令删除的话，扫描和删除会同时执行，因此可以高速删除大文件夹。
+这些命令会递归删除目标中的文件和子文件夹。`/Q` 不会显示确认提示。选错目标可能造成无法恢复的数据丢失，因此请先备份重要数据，并在执行前核对父目录路径和文件夹名称。速度会因文件数量和存储介质而异，不能保证一定更快。
 
-1. 在命令提示符中，移动到目标文件夹所在的目录。
-2. 执行 `DEL /F /Q /S 文件夹名 > NUL`。
-3. 执行 `RMDIR /Q /S 文件夹名`。
+## 操作步骤
+
+以下示例中，`C:\Parent` 是父目录，`Large Folder` 是待删除文件夹。先列出目标并核对，再执行删除。
+
+```bat
+cd /d "C:\Parent"
+dir /a "Large Folder"
+DEL /F /Q /S "Large Folder\*" > NUL
+RMDIR /S /Q "Large Folder"
+```
+
+`DEL /F /Q /S` 会删除目标下的文件（`/F` 包括只读文件，`/Q` 不提示确认，`/S` 包括子目录）。随后 `RMDIR /S /Q` 会在不确认的情况下删除整个目录树。请将 `C:\Parent` 和 `Large Folder` 替换为实际路径，并先检查 `dir` 的输出，再运行删除命令。
+
+## Microsoft documentation
+
+- [del command](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/del)
+- [rmdir command](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/rmdir)

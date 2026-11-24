@@ -360,6 +360,14 @@ ARTICLES = {
         "scopeMarkers": {"ja":"行き詰まった時に見返したい言葉","en":"Words to revisit when I feel stuck","zh-cn":"感到受挫时可以重看的话","es":"Palabras que vuelvo a leer cuando me atasco","ko":"막막할 때 다시 보는 말","pt":"Palavras que revejo quando me sinto travado","zh-tw":"感到受挫時可以重看的話","hi":"जब मन अटक जाए तो फिर से पढ़ने योग्य शब्द","fr":"Des mots à relire quand je me sens bloqué","de":"Worte, die ich bei Stillstand erneut lese","ar":"كلمات أعود إليها عندما أشعر بالتعثر","ru":"Слова, к которым я возвращаюсь в трудный момент","id":"Kata-kata yang saya baca kembali saat merasa buntu"},
         "date": "2022-09-08",
     },
+    141: {
+        "bundle": ROOT / "content/post/大きなフォルダーを高速一括削除",
+        "slug": "大きなフォルダーを高速一括削除",
+        "links": ["https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/del", "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/rmdir"],
+        "markers": ["DEL/F/Q/S", "RMDIR/S/Q"],
+        "scopeMarkers": {"ja":"dir /a \"Large Folder\"", "en":"dir /a \"Large Folder\"", "zh-cn":"dir /a \"Large Folder\"", "es":"dir /a \"Large Folder\"", "ko":"dir /a \"Large Folder\"", "pt":"dir /a \"Large Folder\"", "zh-tw":"dir /a \"Large Folder\"", "hi":"dir /a \"Large Folder\"", "fr":"dir /a \"Large Folder\"", "de":"dir /a \"Large Folder\"", "ar":"dir /a \"Large Folder\"", "ru":"dir /a \"Large Folder\"", "id":"dir /a \"Large Folder\""},
+        "date": "2022-09-20",
+    },
     140: {
         "bundle": ROOT / "content/post/好きな数式",
         "slug": "好きな数式",
@@ -660,7 +668,7 @@ def slug_key(value):
 parser = argparse.ArgumentParser()
 parser.add_argument("--ci-run", type=int, required=True)
 parser.add_argument("--commit", required=True)
-parser.add_argument("--max-batch", type=int, choices=(90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140), default=140)
+parser.add_argument("--max-batch", type=int, choices=(90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141), default=141)
 args = parser.parse_args()
 ARTICLES = {number: article for number, article in ARTICLES.items() if number <= args.max_batch}
 with urllib.request.urlopen(f"https://github.com/kenjinote/blog/actions/runs/{args.ci_run}", timeout=45) as response:

@@ -1,18 +1,31 @@
 ---
-title: 'Como deletar grandes pastas de forma rápida e em lote no Windows [Prompt de Comando]'
-date: "2026-09-24T19:44:38+09:00"
+title: "Excluir uma pasta grande no Prompt de Comando do Windows: etapas e riscos"
+
 slug: "大きなフォルダーを高速一括削除"
 date: 2022-09-20T16:04:02+09:00
+lastmod: "2026-11-24T00:00:00+09:00"
 tags: ["Prompt de Comando"]
 draft: false
 image: "img.webp"
 categories: ["it-technology"]
-description: 'Explicaremos como excluir pastas grandes de maneira rápida e em lote no ambiente Windows. Aproveitando os comandos DEL e RMDIR no Prompt de Comando, é possível acelerar drasticamente o processo de exclusão, que leva muito tempo no Explorador de Arquivos.'
+description: "Método documentado pela Microsoft para excluir pastas com DEL e RMDIR, incluindo riscos da exclusão recursiva silenciosa, conferência do caminho e backups."
 ---
-## Exclusão Rápida em Lote de Pastas Grandes
-Ao excluir pastas grandes com o Explorer, a velocidade é lenta porque o conteúdo da pasta é verificado primeiro antes da execução da exclusão.
-Ao excluir com comandos como abaixo, a verificação e a exclusão são executadas ao mesmo tempo, permitindo a exclusão rápida de pastas grandes.
+Esses comandos excluem recursivamente os arquivos e subpastas do destino. `/Q` suprime a confirmação. Um destino incorreto pode causar perda irreversível de dados; faça backup do que for importante e confira o caminho da pasta pai e o nome da pasta antes de executar. A velocidade varia conforme a quantidade de arquivos e o armazenamento; não há garantia de que será maior.
 
-1. No Prompt de Comando, navegue até a hierarquia da pasta de destino.
-2. Execute `DEL /F /Q /S NomeDaPasta > NUL`.
-3. Execute `RMDIR /Q /S NomeDaPasta`.
+## Etapas
+
+Neste exemplo, `C:\Parent` é a pasta pai e `Large Folder` é a pasta que será excluída. Primeiro liste o destino para conferi-lo; depois, faça a exclusão.
+
+```bat
+cd /d "C:\Parent"
+dir /a "Large Folder"
+DEL /F /Q /S "Large Folder\*" > NUL
+RMDIR /S /Q "Large Folder"
+```
+
+`DEL /F /Q /S` exclui os arquivos do destino (`/F` inclui arquivos somente leitura, `/Q` suprime confirmações e `/S` inclui subpastas). Em seguida, `RMDIR /S /Q` exclui toda a árvore de diretórios sem confirmação. Substitua `C:\Parent` e `Large Folder` pelos valores reais e confira a saída de `dir` antes de executar os comandos de exclusão.
+
+## Microsoft documentation
+
+- [del command](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/del)
+- [rmdir command](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/rmdir)

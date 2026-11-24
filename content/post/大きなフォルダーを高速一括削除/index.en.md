@@ -1,18 +1,31 @@
 ---
-title: 'How to Quickly Bulk Delete Large Folders in Windows [Command Prompt]'
-date: "2026-09-24T19:44:38+09:00"
+title: "Deleting a Large Folder from Windows Command Prompt: Steps and Risks"
+
 slug: "大きなフォルダーを高速一括削除"
 date: 2022-09-20T16:04:02+09:00
+lastmod: "2026-11-24T00:00:00+09:00"
 tags: ["Command Prompt"]
 draft: false
 image: "img.webp"
 categories: ["it-technology"]
-description: 'We explain how to quickly and bulk delete large folders in a Windows environment. Deletion tasks that take time in Explorer can be dramatically sped up by utilizing the DEL and RMDIR commands in the Command Prompt.'
+description: "A Microsoft-documented Command Prompt method using DEL and RMDIR, with the exact effects of quiet recursive deletion, path checks, and backup precautions."
 ---
-## Fast Batch Deletion of Large Folders
-When deleting a large folder in Explorer, the deletion is executed after all the folder contents are fully searched, which is slow.
-By deleting with a command as shown below, the search and deletion are executed simultaneously, allowing you to delete large folders at high speed.
+These commands recursively delete the files and subfolders in the target. `/Q` suppresses confirmation. A wrong target can cause irreversible data loss, so back up anything important and verify both the parent path and folder name before running the deletion. Speed varies with the number of files and storage; it is not guaranteed to be faster.
 
-1. Move to the target folder level in the Command Prompt.
-2. Execute `DEL /F /Q /S folder_name > NUL`.
-3. Execute `RMDIR /Q /S folder_name`.
+## Steps
+
+In this example, `C:\Parent` is the parent directory and `Large Folder` is the folder to remove. First list the target to verify it, then delete it.
+
+```bat
+cd /d "C:\Parent"
+dir /a "Large Folder"
+DEL /F /Q /S "Large Folder\*" > NUL
+RMDIR /S /Q "Large Folder"
+```
+
+`DEL /F /Q /S` deletes files under the target (`/F` includes read-only files, `/Q` suppresses prompts, and `/S` includes subdirectories). `RMDIR /S /Q` then deletes the entire directory tree without confirmation. Replace `C:\Parent` and `Large Folder` with the real values, and inspect the `dir` output before running either deletion command.
+
+## Microsoft documentation
+
+- [del command](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/del)
+- [rmdir command](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/rmdir)

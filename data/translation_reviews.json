@@ -16325,6 +16325,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-140.json",
       "evidenceHash": "c94f5e944266958a5d4d93798b4c092d7bd9b0a8cbcbb6733480313086d15ecc"
+    },
+    "post/大きなフォルダーを高速一括削除/index.en.md": {
+      "source": "post/大きなフォルダーを高速一括削除/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "95901aaa7679801f268173a50768337352d8d4cbd61c2f119fda87c24cdd8205",
+      "translationHash": "ffa85e2f6584318a4c06803116d37dd7c8fb677564c15e6f6deea4675fff860c",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-141.json",
+      "evidenceHash": "3eac170a716429dca83efab61aee921cd9cf5602abea554becdc2f1a60f572e8"
+    },
+    "post/大きなフォルダーを高速一括削除/index.zh-cn.md": {
+      "source": "post/大きなフォルダーを高速一括削除/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "95901aaa7679801f268173a50768337352d8d4cbd61c2f119fda87c24cdd8205",
+      "translationHash": "da8517dd0fed5f6af6ca785f79ab82667b0b38aa85c1c8a19ab9cb9f69e4597b",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-141.json",
+      "evidenceHash": "cf662e6cd3de0391444eb9b613973e8b014a0e7ad6475be75d1f50e45ac33073"
+    },
+    "post/大きなフォルダーを高速一括削除/index.es.md": {
+      "source": "post/大きなフォルダーを高速一括削除/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "95901aaa7679801f268173a50768337352d8d4cbd61c2f119fda87c24cdd8205",
+      "translationHash": "56901ace226407adb620e5bd3bdc34026207a9530db903751db83d312095ba87",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-141.json",
+      "evidenceHash": "99637f42f802ecf87c2635be88a9ad2518bf3d395f03b693c48a8157ba35bc0d"
+    },
+    "post/大きなフォルダーを高速一括削除/index.ko.md": {
+      "source": "post/大きなフォルダーを高速一括削除/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "95901aaa7679801f268173a50768337352d8d4cbd61c2f119fda87c24cdd8205",
+      "translationHash": "de7c7b9e05c6eb77f49be918651cfc601de5b7bdff5502f9d3e27b6220b54ba6",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-141.json",
+      "evidenceHash": "b122c5b69cc6b5d3f658f13c891faab598397b900b458d630ed2d2df83946ff5"
+    },
+    "post/大きなフォルダーを高速一括削除/index.pt.md": {
+      "source": "post/大きなフォルダーを高速一括削除/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "95901aaa7679801f268173a50768337352d8d4cbd61c2f119fda87c24cdd8205",
+      "translationHash": "ea9fb030a7ac3a1201fa7d50d3f0b00807b8e1553a71cd0dadeaa591b3c09405",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-141.json",
+      "evidenceHash": "11abb4ab5069aa5efb465f34459cdad222238aae8891328dd76e4a4683ac9d46"
+    },
+    "post/大きなフォルダーを高速一括削除/index.zh-tw.md": {
+      "source": "post/大きなフォルダーを高速一括削除/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "95901aaa7679801f268173a50768337352d8d4cbd61c2f119fda87c24cdd8205",
+      "translationHash": "d2497a024c6e4c70e825f187e42a07f16d0949a9233e61aaddf740345ba36c3e",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-141.json",
+      "evidenceHash": "0c7a88d71a2c92a6cd83b6cf6a7729fea9611db5cad8ed6e225abc3be430e6c7"
+    },
+    "post/大きなフォルダーを高速一括削除/index.hi.md": {
+      "source": "post/大きなフォルダーを高速一括削除/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "95901aaa7679801f268173a50768337352d8d4cbd61c2f119fda87c24cdd8205",
+      "translationHash": "b181fb5e99757480ee0f1f83728e9615c995822e0495b55e781ee8258fc9884f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-141.json",
+      "evidenceHash": "6bde568115802ffc97ec23ba26779c116daa2540fe6fe715ce33125d09badea3"
+    },
+    "post/大きなフォルダーを高速一括削除/index.fr.md": {
+      "source": "post/大きなフォルダーを高速一括削除/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "95901aaa7679801f268173a50768337352d8d4cbd61c2f119fda87c24cdd8205",
+      "translationHash": "e37b1e937bc44e9904708084452b10aadd826ae4d21a4276127a72fd0a2b1245",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-141.json",
+      "evidenceHash": "c8474c2bae2e47f48b5d34707f695256906498d3e49d0559dc837cdc45acc713"
+    },
+    "post/大きなフォルダーを高速一括削除/index.de.md": {
+      "source": "post/大きなフォルダーを高速一括削除/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "95901aaa7679801f268173a50768337352d8d4cbd61c2f119fda87c24cdd8205",
+      "translationHash": "a5e0165122d8adb436c4222ef1c0715c3b1bbaae2a3d9740e3605993984bdda9",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-141.json",
+      "evidenceHash": "8762de848a7658190eaa921f0461beb2a41e06d3720d4aaff193965eace5efcb"
+    },
+    "post/大きなフォルダーを高速一括削除/index.ar.md": {
+      "source": "post/大きなフォルダーを高速一括削除/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "95901aaa7679801f268173a50768337352d8d4cbd61c2f119fda87c24cdd8205",
+      "translationHash": "f7009ff3bafae3adfd14c73d9c8ccee2f2e73679f73b4aced0721d22cba74504",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-141.json",
+      "evidenceHash": "deaf4531442760b3d0313fa9e51f6a0c300653dd34dfad8f849696e7499e6e33"
+    },
+    "post/大きなフォルダーを高速一括削除/index.ru.md": {
+      "source": "post/大きなフォルダーを高速一括削除/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "95901aaa7679801f268173a50768337352d8d4cbd61c2f119fda87c24cdd8205",
+      "translationHash": "681f3fa2c2796f51df100e753ea21d741e631fed601210f9d2070d1ab21ca1f1",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-141.json",
+      "evidenceHash": "46863abf505396c6fe45cc9ffc4609614c1c068c438122a0ef64175aee1343d8"
+    },
+    "post/大きなフォルダーを高速一括削除/index.id.md": {
+      "source": "post/大きなフォルダーを高速一括削除/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "95901aaa7679801f268173a50768337352d8d4cbd61c2f119fda87c24cdd8205",
+      "translationHash": "6732ff4b7b9bfe8271ecc7663eec3ac5ee71921824533371cf6308607922b3b1",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-141.json",
+      "evidenceHash": "f27d063973de05a8a4fbf298a411884e2d05f6bf2ebdc1e1680420a59c27f883"
     }
   }
 }
