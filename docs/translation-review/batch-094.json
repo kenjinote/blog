@@ -15,7 +15,7 @@
     "Clarified that the shortest tour has length 137 and that exactly two directed orders are optimal, including the reverse route.",
     "Added official Wolfram documentation links, preserved the original 2022-10-12 publication date, removed the duplicate future date, and set lastmod to 2026-11-24."
   ],
-  "publicationPending": true,
+  "publicationPending": false,
   "reviews": {
     "post/Mathematicaで巡回セールスマン問題を解く/index.ar.md": {
       "reviewKind": "ai",
@@ -449,5 +449,11 @@
         "The exhaustive verification covers this nine-city example; the performance note is qualitative."
       ]
     }
+  },
+  "publication": {
+    "record": "docs/translation-review/publication-087-094.json",
+    "ciRun": 45313404832,
+    "sourceCommit": "132229eaaca6302eb7aa7c7b6e273d9edcd057c7",
+    "allPassed": true
   }
 }

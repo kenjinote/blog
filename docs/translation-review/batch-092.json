@@ -16,7 +16,7 @@
     "Added the MIT license and the repository's archived, read-only status, with direct links to the official license and repository.",
     "Removed duplicate future date metadata, retained the original 2024-05-05 publication date, and set lastmod to 2026-11-24."
   ],
-  "publicationPending": true,
+  "publicationPending": false,
   "reviews": {
     "post/MS-DOS 4.0 のオープンソース化/index.ar.md": {
       "reviewKind": "ai",
@@ -450,5 +450,11 @@
         "The linked repository's MIT terms apply as described by its license file."
       ]
     }
+  },
+  "publication": {
+    "record": "docs/translation-review/publication-087-094.json",
+    "ciRun": 45313404832,
+    "sourceCommit": "132229eaaca6302eb7aa7c7b6e273d9edcd057c7",
+    "allPassed": true
   }
 }

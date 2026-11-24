@@ -15,7 +15,7 @@
     "Recorded the FDMA report 123 snapshot as of March 31, 2026: 720 deaths including 492 disaster-related deaths, 2 missing persons, and 165,813 residential buildings damaged; retained the source's preliminary-data caveat.",
     "Improved the image alternative text, removed duplicate future date metadata, retained the original 2024-01-07 publication date, and set lastmod to 2026-11-24."
   ],
-  "publicationPending": true,
+  "publicationPending": false,
   "reviews": {
     "post/日本の災害/index.ar.md": {
       "reviewKind": "ai",
@@ -449,5 +449,11 @@
         "The photograph is contextual and is not presented as a statistical or location-specific record."
       ]
     }
+  },
+  "publication": {
+    "record": "docs/translation-review/publication-087-094.json",
+    "ciRun": 45313404832,
+    "sourceCommit": "132229eaaca6302eb7aa7c7b6e273d9edcd057c7",
+    "allPassed": true
   }
 }

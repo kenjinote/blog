@@ -15,7 +15,7 @@
     "Changed five titles that incorrectly used passive or plural wording to match the author's first-person account.",
     "Reframed beta status and the adjacent feature list as information from July 2025, and linked readers to the official site for current features and availability."
   ],
-  "publicationPending": true,
+  "publicationPending": false,
   "reviews": {
     "post/LogicPad 開発秘話/index.ar.md": {
       "reviewKind": "ai",
@@ -449,5 +449,11 @@
         "Current product status and availability are referred to the official LogicPad site."
       ]
     }
+  },
+  "publication": {
+    "record": "docs/translation-review/publication-087-094.json",
+    "ciRun": 45313404832,
+    "sourceCommit": "132229eaaca6302eb7aa7c7b6e273d9edcd057c7",
+    "allPassed": true
   }
 }
