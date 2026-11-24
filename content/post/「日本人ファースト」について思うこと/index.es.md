@@ -8,17 +8,7 @@ image: "img.webp"
 categories: ["it-technology"]
 description: "Artículo de opinión sobre «Primero los japoneses» que distingue las opiniones del autor de los datos oficiales sobre empleo, asistencia pública, seguridad e industrias tradicionales."
 lastmod: "2026-11-24T00:00:00+09:00"
-lastmod: "2026-11-24T00:00:00+09:00"
 ---
-
-
-
-
-
-
-
-
-
 # La imagen falsa y verdadera de "Primero los Japoneses": La medida de defensa llamada "coexistencia" a la que se enfrenta Japón en 2026
 
 Este artículo de opinión se publicó originalmente el 23 de enero de 2026. Las secciones estadísticas se revisaron y actualizaron el 24 de noviembre de 2026.

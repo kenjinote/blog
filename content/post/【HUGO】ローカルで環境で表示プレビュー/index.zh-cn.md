@@ -1,68 +1,41 @@
 ---
-title: '【Hugo入门】在Windows上的安装与本地环境预览显示方法'
-date: "2026-09-24T19:44:38+09:00"
+title: "在 Windows 安装 Hugo 并本地预览网站"
 slug: "【HUGO】ローカルで環境で表示プレビュー"
-date: 2022-09-05T12:28:01+09:00
 tags: ["HUGO"]
 draft: false
 image: "img.webp"
 categories: ["blogging"]
-description: '通俗易懂地讲解在Windows环境中安装静态网站生成器“Hugo”的步骤、配置环境变量Path的方法，以及启动本地服务器预览博客文章的命令用法。'
+description: "介绍如何在 Windows 安装 Hugo、按需配置 PATH，并使用当前命令在本地预览包含草稿的网站。"
+date: "2022-09-05T12:28:01+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
-# 安装 HUGO
+# 在 Windows 安装 Hugo 并本地预览网站
 
-## 下载
-[下载 HUGO](https://github.com/gohugoio/hugo/releases)
+> **更新日期：2026 年 11 月 24 日。** 旧文依赖 Hugo 0.102.3 的输出和 2022 年的 Windows 操作步骤。本文已按当前官方 Windows 安装与 CLI 文档重写。Hugo、Windows 对话框和软件包会更新；若界面不同，请以链接的官方说明为准。
 
-从上述网站，下载适合您环境的 Windows 模块并解压。
-就我而言，我下载了“hugo_0.102.3_Windows-64bit.zip”。
+## 安装 Hugo
 
-## 解压
-解压下载的 zip 文件，将其中的 hugo.exe 复制到您创建的文件夹（例如 C:\bin）。
+Windows 10 及更高版本可使用 WinGet 安装。安装后打开新的终端并运行下方命令。也可以从官方发行页下载适用于当前 Windows 版本和 CPU 架构的压缩包，解压后将 `hugo.exe` 放入文件夹。添加到 PATH 的应是可执行文件所在的文件夹，而不是文件本身。
 
-## 注册到环境变量
-为了能从任何位置执行 hugo.exe，将其注册到环境变量。
-这是在 Windows 11 下的操作，但您应该可以通过以下步骤进行注册。
+手动设置 PATH 时，在开始菜单搜索“编辑帐户的环境变量”，然后将例如 `C:/Hugo/bin` 添加到用户变量 `Path`。之后重新打开终端。
 
-1. 按 Win+Pause 键打开关于/版本信息。
-2. 点击“高级系统设置”。
-3. 点击“环境变量”。
-4. 选择 Path，然后点击“编辑”。
-5. 点击“新建”，在新行中输入“C:\bin”，然后点击“确定”关闭对话框。
- 
-# 预览博客
-在命令提示符中移动到 HUGO 博客文件夹，并执行以下命令。
+## 安装 Hugo
 
-`hugo server -D`
-
-执行结果如下。（-D 是显示草稿文章的选项。）
-
-```
-C:\Users\win11\IdeaProjects\kenji.blog>hugo server -D
-Start building sites …
-hugo v0.102.3-b76146b129d7caa52417f8e914fc5b9271bf56fc windows/amd64 BuildDate=2022-09-01T10:16:19Z VendorInfo=gohugoio
-
-                   | JA
--------------------+-----
-Pages            | 39
-Paginator pages  |  0
-Non-page files   |  7
-Static files     |  0
-Processed images |  0
-Aliases          | 13
-Sitemaps         |  1
-Cleaned          |  0
-
-Built in 161 ms
-Watching for changes in C:\Users\win11\IdeaProjects\kenji.blog\{archetypes,content,themes}
-Watching for config changes in C:\Users\win11\IdeaProjects\kenji.blog\config.toml
-Environment: "development"
-Serving pages from memory
-Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender
-Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
-Press Ctrl+C to stop
+```powershell
+winget install -e --id Hugo.Hugo
+hugo version
 ```
 
-执行时会输出地址（在上述示例中为 `http://localhost:1313/`），将其复制到浏览器中。
-每次保存文件时，预览将自动更新。
-要结束预览，请在命令提示符中按 Ctrl+C。
+```powershell
+hugo server --buildDrafts
+```
+
+## 本地预览
+
+在 Hugo 项目根目录（配置文件或配置目录所在位置）启动服务器。`--buildDrafts` 会在预览中包含草稿页面。不要将包含草稿的构建结果用于正式发布。在浏览器中打开 Hugo 输出的 URL。默认地址是 `http://localhost:1313/`；若端口已被占用，请以命令输出为准。在终端按 Ctrl+C 停止服务器。
+
+## 官方资料
+
+- [Windows 安装](https://gohugo.io/installation/windows/)
+- [基本用法与草稿](https://gohugo.io/getting-started/usage/)
+- [hugo server 命令](https://gohugo.io/commands/hugo_server/)

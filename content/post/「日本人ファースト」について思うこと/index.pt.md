@@ -8,9 +8,7 @@ image: "img.webp"
 categories: ["it-technology"]
 description: "Artigo de opinião sobre “Japoneses em primeiro lugar”, que separa as opiniões do autor dos dados oficiais sobre emprego, assistência pública, segurança e indústrias tradicionais."
 lastmod: "2026-11-24T00:00:00+09:00"
-lastmod: "2026-11-24T00:00:00+09:00"
 ---
-
 # A Ilusão e a Realidade do "Japão em Primeiro Lugar": A Defesa Chamada "Coexistência" Enfrentada pelo Japão em 2026
 
 Este artigo de opinião foi publicado originalmente em 23 de janeiro de 2026. As seções estatísticas foram revisadas e atualizadas em 24 de novembro de 2026.

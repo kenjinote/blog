@@ -7,7 +7,6 @@ draft: false
 description: "日露戦争中に与謝野晶子が弟を思って詠んだ詩の全文と、1904年の発表背景・作品の読みどころを紹介します。"
 image: eyecatch.jpg
 lastmod: "2026-11-24T00:00:00+09:00"
-lastmod: "2026-11-24T00:00:00+09:00"
 ---
 ![img.png](img.webp)
 

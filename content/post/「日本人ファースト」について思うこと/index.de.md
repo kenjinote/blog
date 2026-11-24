@@ -8,9 +8,7 @@ image: "img.webp"
 categories: ["it-technology"]
 description: "Ein Meinungsbeitrag zu „Japaner zuerst“, der die Ansichten des Autors von amtlichen Daten zu Beschäftigung, Sozialhilfe, Sicherheit und traditionellen Branchen trennt."
 lastmod: "2026-11-24T00:00:00+09:00"
-lastmod: "2026-11-24T00:00:00+09:00"
 ---
-
 # "Japaner First" – Schein und Wirklichkeit: Japans Verteidigungsstrategie der "Koexistenz" im Jahr 2026
 
 Dieser Meinungsbeitrag erschien ursprünglich am 23. Januar 2026. Die statistischen Abschnitte wurden am 24. November 2026 überprüft und aktualisiert.

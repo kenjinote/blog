@@ -3,7 +3,7 @@
   "batch": 100,
   "article": "「日本人ファースト」について思うこと",
   "reviewedAt": "2026-11-24",
-  "sourceHash": "bd7cbae0df56d87b38f4216d5e82a62bce4a219688d8a0677391b3cfc8973d0c",
+  "sourceHash": "0af212e7ecfb3c33f3a4603583635de5b94c7dbaa0cbbcc7f7640a1d2ccbfb5a",
   "sources": [
     "https://www.mhlw.go.jp/stf/newpage_68794.html",
     "https://www.mhlw.go.jp/content/001684938.pdf",
@@ -19,7 +19,8 @@
     "Removed unsupported foreign-crime shares, per-capita rates, and age comparisons; clarified the NPA's narrower 'visiting foreign nationals' category.",
     "Replaced the unsupported current traditional-craft headcount with a sourced 1979–2013 series and removed nationality-based causal claims.",
     "Removed unidentified 42%/38% polling figures and reframed unsupported expert-consensus and population superlatives as the author's view or removed them.",
-    "Corrected the Russian translation that mistranslated public assistance as unemployment benefits; added localized reference labels and five official source links."
+    "Corrected the Russian translation that mistranslated public assistance as unemployment benefits; added localized reference labels and five official source links.",
+    "Removed duplicate lastmod front-matter keys from index.ar.md, index.de.md, index.en.md, index.es.md, index.fr.md, index.hi.md, index.id.md, index.ko.md, index.md, index.pt.md, index.ru.md, index.zh-cn.md, index.zh-tw.md; refreshed source/translation hashes to match these metadata-only revisions and set publication verification pending."
   ],
   "publicationPending": true,
   "reviews": {
@@ -28,8 +29,8 @@
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
       "source": "post/「日本人ファースト」について思うこと/index.md",
-      "sourceHash": "bd7cbae0df56d87b38f4216d5e82a62bce4a219688d8a0677391b3cfc8973d0c",
-      "translationHash": "3237c040517147a983ba7f5847514d835f0c29f7891d01d229221bc35257f415",
+      "sourceHash": "0af212e7ecfb3c33f3a4603583635de5b94c7dbaa0cbbcc7f7640a1d2ccbfb5a",
+      "translationHash": "8dfb0631f273ac37bdfe76b789362d0a55f64ff76afc3824aa80577e97b089c6",
       "summary": "قورنت الحجج والأرقام بالأصل؛ وحُذفت الاستطلاعات ومقارنات الجريمة والتوقعات السببية غير الموثقة، مع التمييز بين الرأي والبيانات.",
       "checks": {
         "meaning": {
@@ -64,8 +65,8 @@
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
       "source": "post/「日本人ファースト」について思うこと/index.md",
-      "sourceHash": "bd7cbae0df56d87b38f4216d5e82a62bce4a219688d8a0677391b3cfc8973d0c",
-      "translationHash": "f23c1c6b5fe061c30f65c90e7d74e2064862575de860b6ec8a799aa0dc1cc86b",
+      "sourceHash": "0af212e7ecfb3c33f3a4603583635de5b94c7dbaa0cbbcc7f7640a1d2ccbfb5a",
+      "translationHash": "7c4c6523066d4200bbd39fd8e9705685b67cd10e0d678cd81183d2b9829b3d1c",
       "summary": "Aussagen und Zahlen mit dem japanischen Text verglichen; nicht belegte Umfragen, Kriminalitätsvergleiche und Kausalprognosen entfernt und Meinung von Statistik getrennt.",
       "checks": {
         "meaning": {
@@ -100,8 +101,8 @@
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
       "source": "post/「日本人ファースト」について思うこと/index.md",
-      "sourceHash": "bd7cbae0df56d87b38f4216d5e82a62bce4a219688d8a0677391b3cfc8973d0c",
-      "translationHash": "64f5287df096c712a7d21e2f5f6467faf39722ce4f5462c5c11a92c522d1cc31",
+      "sourceHash": "0af212e7ecfb3c33f3a4603583635de5b94c7dbaa0cbbcc7f7640a1d2ccbfb5a",
+      "translationHash": "bce1a5824debc6b43b9c403dec55717a273b622d0e6341ed22cdf358e9e17da4",
       "summary": "Compared the argument and statistics with the Japanese source; removed untraceable polling figures, unsupported crime-rate comparisons, and causal predictions, while distinguishing opinion from data.",
       "checks": {
         "meaning": {
@@ -136,8 +137,8 @@
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
       "source": "post/「日本人ファースト」について思うこと/index.md",
-      "sourceHash": "bd7cbae0df56d87b38f4216d5e82a62bce4a219688d8a0677391b3cfc8973d0c",
-      "translationHash": "3f4b1f4b78ff1991636b6e7787e4085ca91e5ac4481934fc79fd60b83f5b662e",
+      "sourceHash": "0af212e7ecfb3c33f3a4603583635de5b94c7dbaa0cbbcc7f7640a1d2ccbfb5a",
+      "translationHash": "1c4bea1dd9b46aac91874afd70be92606109fa8a5f0aaba12b6a819ccfb6a09a",
       "summary": "Comparé argumentos y cifras con el original; eliminé encuestas no identificables, comparaciones delictivas sin respaldo y predicciones causales, distinguiendo opinión de datos.",
       "checks": {
         "meaning": {
@@ -172,8 +173,8 @@
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
       "source": "post/「日本人ファースト」について思うこと/index.md",
-      "sourceHash": "bd7cbae0df56d87b38f4216d5e82a62bce4a219688d8a0677391b3cfc8973d0c",
-      "translationHash": "4f2f73017c4f012dd58b908d7be0e4206109f62a5b5feaef2a1df2be5829cbc5",
+      "sourceHash": "0af212e7ecfb3c33f3a4603583635de5b94c7dbaa0cbbcc7f7640a1d2ccbfb5a",
+      "translationHash": "1c7194db3e898e40f8d6497bf3d4eff552cd0618ef8e004955b482e185bb023c",
       "summary": "Arguments et chiffres comparés au texte japonais ; sondages non traçables, comparaisons criminelles non étayées et prédictions causales retirés, en séparant opinion et données.",
       "checks": {
         "meaning": {
@@ -208,8 +209,8 @@
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
       "source": "post/「日本人ファースト」について思うこと/index.md",
-      "sourceHash": "bd7cbae0df56d87b38f4216d5e82a62bce4a219688d8a0677391b3cfc8973d0c",
-      "translationHash": "cc7cc42aff112cefbba555adcf7345d3445471f6262944a29f781e41e1255669",
+      "sourceHash": "0af212e7ecfb3c33f3a4603583635de5b94c7dbaa0cbbcc7f7640a1d2ccbfb5a",
+      "translationHash": "796a465b22211ad0f20da59d66f4ed3ac8bf3237562bb0a5c95da329776091a1",
       "summary": "जापानी मूल से तर्क और आँकड़े मिलाए; बिना स्रोत के सर्वेक्षण, अपराध तुलना और कारणात्मक अनुमान हटाए तथा राय और आँकड़ों को अलग किया।",
       "checks": {
         "meaning": {
@@ -244,8 +245,8 @@
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
       "source": "post/「日本人ファースト」について思うこと/index.md",
-      "sourceHash": "bd7cbae0df56d87b38f4216d5e82a62bce4a219688d8a0677391b3cfc8973d0c",
-      "translationHash": "608ae600f87ddd2c183e3e389d520e630d13192363c8196f12d7ce64b62d517d",
+      "sourceHash": "0af212e7ecfb3c33f3a4603583635de5b94c7dbaa0cbbcc7f7640a1d2ccbfb5a",
+      "translationHash": "0516e53f842f01f89218f48b039f8e5e282a463bcc7afc612bcd659ca9431066",
       "summary": "Membandingkan argumen dan angka dengan naskah Jepang; menghapus survei, perbandingan kriminalitas, dan prediksi kausal tanpa sumber serta membedakan opini dari data.",
       "checks": {
         "meaning": {
@@ -280,8 +281,8 @@
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
       "source": "post/「日本人ファースト」について思うこと/index.md",
-      "sourceHash": "bd7cbae0df56d87b38f4216d5e82a62bce4a219688d8a0677391b3cfc8973d0c",
-      "translationHash": "af042d7a6c6be3b3a7635ea34a8bec39fc77d6296a6fe424fffa12237fb5cc68",
+      "sourceHash": "0af212e7ecfb3c33f3a4603583635de5b94c7dbaa0cbbcc7f7640a1d2ccbfb5a",
+      "translationHash": "d916a9afbfc8485e1d9d1a84b1b0cac3ec0bbb1434a658c0888d67b39b7b84df",
       "summary": "원문과 논지·수치를 대조하고 출처 없는 여론조사, 범죄율 비교, 인과 예측을 삭제해 의견과 통계를 구분했습니다.",
       "checks": {
         "meaning": {
@@ -316,8 +317,8 @@
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
       "source": "post/「日本人ファースト」について思うこと/index.md",
-      "sourceHash": "bd7cbae0df56d87b38f4216d5e82a62bce4a219688d8a0677391b3cfc8973d0c",
-      "translationHash": "1b8a904e40c3dc46868baa79acbe71a0878e559981bcba709df6f75db0bcc353",
+      "sourceHash": "0af212e7ecfb3c33f3a4603583635de5b94c7dbaa0cbbcc7f7640a1d2ccbfb5a",
+      "translationHash": "892f7402ee27b64030eeec6709bf96ef66ddf22ef7e85051b736f007b5b5585f",
       "summary": "Comparei argumentos e números com o original; removi pesquisas sem fonte, comparações criminais não verificáveis e previsões causais, distinguindo opinião de dados.",
       "checks": {
         "meaning": {
@@ -352,8 +353,8 @@
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
       "source": "post/「日本人ファースト」について思うこと/index.md",
-      "sourceHash": "bd7cbae0df56d87b38f4216d5e82a62bce4a219688d8a0677391b3cfc8973d0c",
-      "translationHash": "623057d2883c85a03949efcd7d55ebf3677c356c0967bd9441f2cedf01811ab8",
+      "sourceHash": "0af212e7ecfb3c33f3a4603583635de5b94c7dbaa0cbbcc7f7640a1d2ccbfb5a",
+      "translationHash": "da5141f06bd18d25fa1706c73ec36abd3dbec5e5b3ed3dd042929002719814cf",
       "summary": "Сверены аргументы и цифры; удалены опросы, сравнения преступности и причинные прогнозы без источников, отделено мнение от статистики.",
       "checks": {
         "meaning": {
@@ -388,8 +389,8 @@
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
       "source": "post/「日本人ファースト」について思うこと/index.md",
-      "sourceHash": "bd7cbae0df56d87b38f4216d5e82a62bce4a219688d8a0677391b3cfc8973d0c",
-      "translationHash": "b83336d4aca36715748c50713819d47b4760d1ac4f20500649e0a774a61ddc00",
+      "sourceHash": "0af212e7ecfb3c33f3a4603583635de5b94c7dbaa0cbbcc7f7640a1d2ccbfb5a",
+      "translationHash": "88bc6db47aefa37d5a0f13f7b393507da25b5cd3f41ec0f04f867eee97226786",
       "summary": "对照日文原文核查论点和数据；删除无法追溯的民调、无依据的犯罪率比较和因果预测，并区分观点与统计。",
       "checks": {
         "meaning": {
@@ -424,8 +425,8 @@
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
       "source": "post/「日本人ファースト」について思うこと/index.md",
-      "sourceHash": "bd7cbae0df56d87b38f4216d5e82a62bce4a219688d8a0677391b3cfc8973d0c",
-      "translationHash": "ec6598583cbe0d17c6d40dfcbf3cf3ee44d3a68d148e6cd43c68e923c87bbe40",
+      "sourceHash": "0af212e7ecfb3c33f3a4603583635de5b94c7dbaa0cbbcc7f7640a1d2ccbfb5a",
+      "translationHash": "5125bf64f05f99d7338b02780cb66d5eb0908a6dd0153be9d5b4d1fccf077dd0",
       "summary": "對照日文原文核查論點與數據；刪除無法追溯的民調、無依據的犯罪率比較和因果預測，並區分觀點與統計。",
       "checks": {
         "meaning": {

@@ -8,9 +8,7 @@ categories: ["blogging"]
 description: "So finden und bearbeiten Sie die responsiven HTML- und CSS-Vorlagen von HTML5 UP und nennen die Urheberangabe gemäß CC BY 3.0."
 lastmod: 2026-11-24T00:00:00+09:00
 date: 2023-04-17T00:26:55+09:00
-lastmod: 2026-11-24T00:00:00+09:00
 ---
-
 # Website-Vorlagen von HTML5 UP verwenden
 
 Mit einer sorgfältig gestalteten Vorlage lassen sich Layout und Erscheinungsbild einer Website schneller erproben, als wenn jede Seite von Grund auf neu entsteht. HTML5 UP veröffentlicht responsive Website-Vorlagen mit HTML5 und CSS3. Katalog und Verfügbarkeit können sich ändern; die aktuelle Auswahl finden Sie auf der [offiziellen Website](https://html5up.net/).

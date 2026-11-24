@@ -3,14 +3,12 @@ title: 'IntelliJ IDEAでGitHub Copilotを導入・有効化する方法'
 slug: "IntelliJ IDEAでGitHub Copilotを使う"
 date: 2022-09-10T09:44:55+09:00
 lastmod: 2026-11-24T00:00:00+09:00
-lastmod: 2026-11-24T00:00:00+09:00
 tags: ["IntelliJ IDEA","GitHub Copilot"]
 draft: false
 image: "images/img.webp"
 categories: ["tools-development-environment"]
 description: 'IntelliJ IDEAにGitHub Copilotプラグインをインストールし、GitHubアカウントで認証してコード補完を使う手順を紹介します。必要なCopilotアクセス、現在のサインイン方法、提案の受け入れ方を公式資料に基づいて説明します。'
 ---
-
 # はじめに
 
 GitHub CopilotプラグインをJetBrains IDEに追加すると、入力中のコード候補やCopilot Chatを利用できます。このページではIntelliJ IDEAでの基本的な導入とサインインを説明します。メニュー名や画面はIDE・プラグインのバージョンによって異なる場合があります。

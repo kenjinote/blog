@@ -1,76 +1,41 @@
 ---
-
-
-
-
-title: '[Introducción a Hugo] Instalación en Windows y cómo previsualizar en el entorno local'
-date: "2026-09-24T19:44:38+09:00"
+title: "Instalar Hugo en Windows y previsualizar el sitio localmente"
 slug: "【HUGO】ローカルで環境で表示プレビュー"
-date: 2022-09-05T12:28:01+09:00
 tags: ["HUGO"]
 draft: false
 image: "img.webp"
 categories: ["blogging"]
-description: 'Explicación clara de los procedimientos para instalar el generador de sitios estáticos ''Hugo'' en un entorno Windows, cómo configurar la variable de entorno Path, y cómo usar comandos para iniciar un servidor local y previsualizar los artículos del blog.'
+description: "Instala Hugo en Windows, configura PATH si hace falta y previsualiza un sitio local con borradores mediante los comandos actuales."
+date: "2022-09-05T12:28:01+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
+# Instalar Hugo en Windows y previsualizar un sitio localmente
 
+> **Actualizado el 24 de noviembre de 2026.** El artículo anterior dependía de la salida de Hugo 0.102.3 y de pasos de Windows de 2022. Esta versión sigue la documentación oficial actual de instalación en Windows y de la CLI. Hugo, los cuadros de Windows y los paquetes pueden cambiar; consulta las guías oficiales enlazadas si la pantalla no coincide.
 
+## Instalar Hugo
 
+En Windows 10 o posterior, WinGet es una opción sencilla. Abre un terminal nuevo después de instalar y ejecuta el comando siguiente. Como alternativa, descarga del área oficial de versiones el archivo adecuado para tu versión de Windows y arquitectura de CPU, extráelo y coloca `hugo.exe` en una carpeta. Añade a PATH la carpeta que contiene el ejecutable, no el archivo en sí.
 
-# Instalación de HUGO
+Para modificar PATH manualmente, busca en Inicio «Editar las variables de entorno de tu cuenta» y añade, por ejemplo, `C:/Hugo/bin` a la variable de usuario `Path`. Después abre un terminal nuevo.
 
-## Descargar
-[Descarga de HUGO](https://github.com/gohugoio/hugo/releases)
+## Instalar Hugo
 
-Descarga el módulo de Windows que se adapte a tu entorno desde el sitio anterior y extráelo.
-En mi caso, descargué "hugo_0.102.3_Windows-64bit.zip".
-
-## Extraer
-Extrae el archivo zip descargado y copia el archivo hugo.exe que contiene en una carpeta, por ejemplo, C:\bin.
-
-## Registrar en variables de entorno
-Regístralo en las variables de entorno para poder ejecutar hugo.exe desde cualquier lugar.
-La operación es para Windows 11, pero creo que puedes registrarlo siguiendo estos pasos.
-
-1. Presiona las teclas Win+Pause para abrir la información de la versión
-2. Haz clic en Configuración avanzada del sistema
-3. Haz clic en Variables de entorno
-4. Selecciona Path y haz clic en Editar
-5. Haz clic en Nuevo, ingresa "C:\bin" en una nueva línea y cierra el cuadro de diálogo con Aceptar
- 
-# Previsualizar el blog
-Ve a la carpeta del blog de HUGO en el símbolo del sistema y ejecuta el siguiente comando.
-
-`hugo server -D`
-
-El resultado de la ejecución es el siguiente. (La opción -D muestra los artículos en borrador).
-
-```
-C:\Users\win11\IdeaProjects\kenji.blog>hugo server -D
-Start building sites …
-hugo v0.102.3-b76146b129d7caa52417f8e914fc5b9271bf56fc windows/amd64 BuildDate=2022-09-01T10:16:19Z VendorInfo=gohugoio
-
-                   | JA
--------------------+-----
-Pages            | 39
-Paginator pages  |  0
-Non-page files   |  7
-Static files     |  0
-Processed images |  0
-Aliases          | 13
-Sitemaps         |  1
-Cleaned          |  0
-
-Built in 161 ms
-Watching for changes in C:\Users\win11\IdeaProjects\kenji.blog\{archetypes,content,themes}
-Watching for config changes in C:\Users\win11\IdeaProjects\kenji.blog\config.toml
-Environment: "development"
-Serving pages from memory
-Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender
-Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
-Press Ctrl+C to stop
+```powershell
+winget install -e --id Hugo.Hugo
+hugo version
 ```
 
-La dirección se muestra al ejecutar el comando (en el ejemplo anterior `http://localhost:1313/`), cópiala en el navegador.
-La vista previa se actualiza automáticamente cada vez que se guarda el archivo.
-Para finalizar la vista previa, presiona Ctrl+C en el símbolo del sistema.
+```powershell
+hugo server --buildDrafts
+```
+
+## Previsualizar localmente
+
+Inicia el servidor desde la raíz del proyecto Hugo, donde está el archivo o directorio de configuración. `--buildDrafts` incluye los borradores en la vista previa. No uses una salida que incluya borradores para publicar en producción. Abre en el navegador la URL que muestra Hugo. La dirección predeterminada es `http://localhost:1313/`, pero comprueba la salida si el puerto está ocupado. Pulsa Ctrl+C en el terminal para detener el servidor.
+
+## Referencias oficiales
+
+- [Instalación en Windows](https://gohugo.io/installation/windows/)
+- [Uso básico y borradores](https://gohugo.io/getting-started/usage/)
+- [Comando hugo server](https://gohugo.io/commands/hugo_server/)

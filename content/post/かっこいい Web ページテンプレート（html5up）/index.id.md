@@ -8,9 +8,7 @@ categories: ["blogging"]
 description: "Pelajari cara menjelajahi dan menyesuaikan template HTML dan CSS responsif dari HTML5 UP, serta mencantumkan kredit desain sesuai CC BY 3.0."
 lastmod: 2026-11-24T00:00:00+09:00
 date: 2023-04-17T00:26:55+09:00
-lastmod: 2026-11-24T00:00:00+09:00
 ---
-
 # Menggunakan template situs web HTML5 UP
 
 Memulai dari template yang dirancang dengan baik membantu Anda mencoba tata letak dan tampilan situs lebih cepat daripada membuat setiap halaman dari awal. HTML5 UP menerbitkan template situs responsif yang dibuat dengan HTML5 dan CSS3. Katalog dan ketersediaannya dapat berubah, jadi lihat [situs resminya](https://html5up.net/) untuk daftar terbaru.

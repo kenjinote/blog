@@ -7,7 +7,6 @@ draft: false
 description: "The full text of Akiko Yosano's poem for her brother during the Russo-Japanese War, with context on its 1904 publication and themes."
 image: eyecatch.jpg
 lastmod: "2026-11-24T00:00:00+09:00"
-lastmod: "2026-11-24T00:00:00+09:00"
 ---
 ![img.png](img.webp)
 

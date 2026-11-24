@@ -1,68 +1,41 @@
 ---
-title: '[مقدمة إلى Hugo] من التثبيت على Windows إلى طريقة عرض المعاينة في البيئة المحلية'
-date: "2026-09-24T19:44:38+09:00"
+title: "تثبيت Hugo في Windows ومعاينة الموقع محلياً"
 slug: "【HUGO】ローカルで環境で表示プレビュー"
-date: 2022-09-05T12:28:01+09:00
 tags: ["HUGO"]
 draft: false
 image: "img.webp"
 categories: ["blogging"]
-description: 'نشرح بوضوح خطوات تثبيت منشئ المواقع الثابتة "Hugo" في بيئة Windows، وكيفية إعداد مسار متغير البيئة Path، وكيفية استخدام الأوامر لتشغيل خادم محلي ومعاينة مقالات المدونة.'
+description: "تثبيت Hugo في Windows، وإعداد PATH عند الحاجة، ومعاينة الموقع محلياً مع المسودات باستخدام الأوامر الحالية."
+date: "2022-09-05T12:28:01+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
-# تثبيت HUGO
+# تثبيت Hugo في Windows ومعاينة الموقع محلياً
 
-## التحميل
-[تحميل HUGO](https://github.com/gohugoio/hugo/releases)
+> **آخر تحديث: 24 نوفمبر 2026.** اعتمد المقال السابق على مخرجات Hugo 0.102.3 وخطوات Windows من عام 2022. تتبع هذه النسخة وثائق التثبيت وأوامر CLI الرسمية الحالية. قد تتغير Hugo ونوافذ Windows والحزم؛ إذا اختلفت الشاشة، فارجع إلى الإرشادات الرسمية المرتبطة.
 
-من الموقع أعلاه، قم بتنزيل واستخراج وحدة Windows التي تناسب بيئتك.
-في حالتي، قمت بتنزيل "hugo_0.102.3_Windows-64bit.zip".
+## تثبيت Hugo
 
-## الاستخراج
-قم باستخراج ملف zip الذي تم تنزيله وانسخ hugo.exe الموجود بداخله إلى مجلد تقوم بإنشائه، مثل C:\bin.
+في Windows 10 والإصدارات الأحدث، يعد WinGet خياراً سهلاً. بعد التثبيت افتح محطة طرفية جديدة وشغّل الأمر أدناه. أو نزّل من صفحة الإصدارات الرسمية الأرشيف الملائم لإصدار Windows وبنية المعالج، وفكّه وضع `hugo.exe` في مجلد. أضف إلى PATH المجلد الذي يحتوي الملف التنفيذي، لا الملف نفسه.
 
-## التسجيل في متغيرات البيئة
-قم بالتسجيل في متغيرات البيئة لتشغيل hugo.exe من أي مكان.
-هذه العملية في Windows 11، لكن أعتقد أنه يمكنك تسجيلها باتباع الخطوات التالية.
+لتعديل PATH يدوياً، ابحث في قائمة ابدأ عن “Edit environment variables for your account”، ثم أضف مثلاً `C:/Hugo/bin` إلى متغير المستخدم `Path`. بعد ذلك افتح محطة طرفية جديدة.
 
-1. اضغط على زر Win+Pause لفتح حول.
-2. انقر فوق إعدادات النظام المتقدمة.
-3. انقر فوق متغيرات البيئة.
-4. حدد Path وانقر فوق تحرير.
-5. انقر فوق جديد، واكتب "C:\bin" في سطر جديد، ثم انقر فوق موافق لإغلاق مربع الحوار.
- 
-# معاينة المدونة
-انتقل إلى مجلد مدونة HUGO في موجه الأوامر وقم بتشغيل الأمر التالي.
+## تثبيت Hugo
 
-`hugo server -D`
-
-نتيجة التنفيذ أدناه. (-D هو خيار لعرض مسودات المقالات.)
-
-```
-C:\Users\win11\IdeaProjects\kenji.blog>hugo server -D
-Start building sites …
-hugo v0.102.3-b76146b129d7caa52417f8e914fc5b9271bf56fc windows/amd64 BuildDate=2022-09-01T10:16:19Z VendorInfo=gohugoio
-
-                   | JA
--------------------+-----
-  Pages            | 39
-  Paginator pages  |  0
-  Non-page files   |  7
-  Static files     |  0
-  Processed images |  0
-  Aliases          | 13
-  Sitemaps         |  1
-  Cleaned          |  0
-
-Built in 161 ms
-Watching for changes in C:\Users\win11\IdeaProjects\kenji.blog\{archetypes,content,themes}
-Watching for config changes in C:\Users\win11\IdeaProjects\kenji.blog\config.toml
-Environment: "development"
-Serving pages from memory
-Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender
-Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
-Press Ctrl+C to stop
+```powershell
+winget install -e --id Hugo.Hugo
+hugo version
 ```
 
-يتم إخراج العنوان في وقت التنفيذ (في المثال أعلاه، `http://localhost:1313/`)، لذلك انسخ العنوان إلى متصفحك.
-يتم تحديث المعاينة تلقائيًا في كل مرة يتم فيها حفظ الملف.
-لإنهاء المعاينة، أدخل Ctrl+C في موجه الأوامر.
+```powershell
+hugo server --buildDrafts
+```
+
+## المعاينة محلياً
+
+شغّل الخادم من جذر مشروع Hugo، أي المجلد الذي يحتوي ملف الإعداد أو مجلده. يضمّن الخيار `--buildDrafts` المسودات في المعاينة. لا تستخدم ناتجاً يتضمن المسودات للنشر الإنتاجي. افتح في المتصفح عنوان URL الذي يعرضه Hugo. العنوان الافتراضي هو `http://localhost:1313/`؛ وإذا كان المنفذ مستخدماً فتحقق من المخرجات. لإيقاف الخادم اضغط Ctrl+C في الطرفية.
+
+## مراجع رسمية
+
+- [التثبيت في Windows](https://gohugo.io/installation/windows/)
+- [الاستخدام الأساسي والمسودات](https://gohugo.io/getting-started/usage/)
+- [أمر hugo server](https://gohugo.io/commands/hugo_server/)

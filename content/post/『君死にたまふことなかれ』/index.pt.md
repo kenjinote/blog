@@ -7,7 +7,6 @@ draft: false
 description: "Texto integral do poema de Akiko Yosano dedicado ao irmão durante a Guerra Russo-Japonesa, com contexto de sua publicação em 1904 e seus temas."
 image: eyecatch.jpg
 lastmod: "2026-11-24T00:00:00+09:00"
-lastmod: "2026-11-24T00:00:00+09:00"
 ---
 ![img.png](img.webp)
 

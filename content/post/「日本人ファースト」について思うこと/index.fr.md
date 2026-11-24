@@ -8,9 +8,7 @@ image: "img.webp"
 categories: ["it-technology"]
 description: "Article d’opinion sur « Les Japonais d’abord », distinguant les vues de l’auteur des données officielles sur l’emploi, l’aide sociale, la sécurité et les industries traditionnelles."
 lastmod: "2026-11-24T00:00:00+09:00"
-lastmod: "2026-11-24T00:00:00+09:00"
 ---
-
 # Mythes et réalités du « Japonais d'abord » : La « coexistence » comme stratégie de défense pour le Japon de 2026
 
 Cet article d’opinion a été publié le 23 janvier 2026. Les sections statistiques ont été vérifiées et mises à jour le 24 novembre 2026.

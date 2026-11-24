@@ -1,68 +1,41 @@
 ---
-title: '[Pengantar Hugo] Dari Instalasi di Windows hingga Cara Menampilkan Pratinjau di Lingkungan Lokal'
-date: "2026-09-24T19:44:38+09:00"
+title: "Memasang Hugo di Windows dan melihat pratinjau lokal"
 slug: "【HUGO】ローカルで環境で表示プレビュー"
-date: 2022-09-05T12:28:01+09:00
 tags: ["HUGO"]
 draft: false
 image: "img.webp"
 categories: ["blogging"]
-description: 'Menjelaskan dengan mudah prosedur instalasi pembuat situs statis ''Hugo'' di lingkungan Windows, cara mengatur variabel lingkungan Path, dan cara menggunakan perintah untuk menjalankan server lokal agar bisa melihat pratinjau artikel blog.'
+description: "Pasang Hugo di Windows, atur PATH bila diperlukan, lalu pratinjau situs secara lokal termasuk konten draf dengan perintah saat ini."
+date: "2022-09-05T12:28:01+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
-# Instalasi HUGO
+# Memasang Hugo di Windows dan melihat pratinjau situs secara lokal
 
-## Unduhan
-[Unduh HUGO](https://github.com/gohugoio/hugo/releases)
+> **Diperbarui 24 November 2026.** Artikel lama bergantung pada keluaran Hugo 0.102.3 dan langkah Windows dari tahun 2022. Versi ini mengikuti dokumentasi resmi terkini untuk instalasi Windows dan CLI. Hugo, dialog Windows, dan paket dapat berubah; rujuk panduan resmi yang ditautkan bila tampilannya berbeda.
 
-Dari situs web di atas, unduh dan ekstrak modul Windows yang sesuai dengan lingkungan Anda.
-Dalam kasus saya, saya mengunduh "hugo_0.102.3_Windows-64bit.zip".
+## Memasang Hugo
 
-## Ekstrak
-Ekstrak file zip yang diunduh dan salin hugo.exe di dalamnya ke direktori yang Anda buat, misalnya C:\bin.
+Di Windows 10 atau yang lebih baru, WinGet adalah pilihan praktis. Setelah instalasi, buka terminal baru dan jalankan perintah di bawah. Sebagai alternatif, unduh arsip resmi yang sesuai dengan versi Windows dan arsitektur CPU, ekstrak, lalu letakkan `hugo.exe` dalam sebuah folder. Tambahkan folder yang berisi executable ke PATH, bukan file executable itu sendiri.
 
-## Daftarkan ke Variabel Lingkungan
-Daftarkan ke variabel lingkungan untuk menjalankan hugo.exe dari lokasi mana pun.
-Ini adalah operasi di Windows 11, tetapi Anda dapat mendaftarkannya dengan prosedur berikut.
+Untuk mengubah PATH secara manual, cari “Edit environment variables for your account” dari menu Start, lalu tambahkan misalnya `C:/Hugo/bin` ke variabel pengguna `Path`. Setelah itu, buka terminal baru.
 
-1. Tekan tombol Win+Pause untuk membuka Tentang.
-2. Klik Pengaturan sistem lanjutan.
-3. Klik Variabel Lingkungan.
-4. Pilih Path dan klik Edit.
-5. Klik Baru, masukkan "C:\bin" di baris baru, dan klik OK untuk menutup dialog.
- 
-# Pratinjau Blog
-Pergi ke folder blog HUGO di Command Prompt dan jalankan perintah berikut.
+## Memasang Hugo
 
-`hugo server -D`
-
-Hasil eksekusinya ada di bawah. (-D adalah opsi untuk menampilkan artikel draf.)
-
-```
-C:\Users\win11\IdeaProjects\kenji.blog>hugo server -D
-Start building sites …
-hugo v0.102.3-b76146b129d7caa52417f8e914fc5b9271bf56fc windows/amd64 BuildDate=2022-09-01T10:16:19Z VendorInfo=gohugoio
-
-                   | JA
--------------------+-----
-  Pages            | 39
-  Paginator pages  |  0
-  Non-page files   |  7
-  Static files     |  0
-  Processed images |  0
-  Aliases          | 13
-  Sitemaps         |  1
-  Cleaned          |  0
-
-Built in 161 ms
-Watching for changes in C:\Users\win11\IdeaProjects\kenji.blog\{archetypes,content,themes}
-Watching for config changes in C:\Users\win11\IdeaProjects\kenji.blog\config.toml
-Environment: "development"
-Serving pages from memory
-Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender
-Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
-Press Ctrl+C to stop
+```powershell
+winget install -e --id Hugo.Hugo
+hugo version
 ```
 
-Alamat akan ditampilkan pada saat eksekusi (dalam contoh di atas, `http://localhost:1313/`), jadi salin alamat tersebut ke browser Anda.
-Pratinjau akan diperbarui secara otomatis setiap kali file disimpan.
-Untuk mengakhiri pratinjau, masukkan Ctrl+C di command prompt.
+```powershell
+hugo server --buildDrafts
+```
+
+## Pratinjau secara lokal
+
+Jalankan server dari root proyek Hugo, yaitu folder yang berisi file atau direktori konfigurasi. `--buildDrafts` menyertakan halaman draf dalam pratinjau. Jangan gunakan hasil yang menyertakan draf untuk build produksi. Buka URL yang ditampilkan Hugo di browser. Alamat default ialah `http://localhost:1313/`; periksa keluaran jika port sedang digunakan. Tekan Ctrl+C di terminal untuk menghentikan server.
+
+## Referensi resmi
+
+- [Instalasi di Windows](https://gohugo.io/installation/windows/)
+- [Penggunaan dasar dan konten draf](https://gohugo.io/getting-started/usage/)
+- [Perintah hugo server](https://gohugo.io/commands/hugo_server/)

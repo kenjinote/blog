@@ -3,7 +3,7 @@
   "batch": 99,
   "article": "Microsoft Wordのショートカット一覧",
   "reviewedAt": "2026-11-24",
-  "sourceHash": "57074828402737990ec46a5b92bbe6312cea98dc1db90ea5e1e9ec06681222c1",
+  "sourceHash": "4a121bf04b0176ddbd710363b7682ab56452aca9a1ab2bdc149c054cd6fab4e0",
   "sources": [
     "https://support.microsoft.com/ja-jp/accessibility/word/keyboard-shortcuts-in-word"
   ],
@@ -11,16 +11,17 @@
   "findings": [
     "Removed the duplicate future 2026-09-24 date, retained the original 2024-04-07 publication date, and set lastmod to 2026-11-24 in all editions.",
     "Clarified in all editions that the table covers Word for Windows with a U.S. keyboard layout; macOS and other layouts may differ.",
-    "Verified the 22 shortcut combinations and translated action labels against Microsoft's current official Word keyboard-shortcuts article."
+    "Verified the 22 shortcut combinations and translated action labels against Microsoft's current official Word keyboard-shortcuts article.",
+    "Removed duplicate lastmod front-matter keys from index.md; refreshed source/translation hashes to match these metadata-only revisions and set publication verification pending."
   ],
-  "publicationPending": false,
+  "publicationPending": true,
   "reviews": {
     "post/Microsoft Wordのショートカット一覧/index.ar.md": {
       "reviewKind": "ai",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
       "source": "post/Microsoft Wordのショートカット一覧/index.md",
-      "sourceHash": "57074828402737990ec46a5b92bbe6312cea98dc1db90ea5e1e9ec06681222c1",
+      "sourceHash": "4a121bf04b0176ddbd710363b7682ab56452aca9a1ab2bdc149c054cd6fab4e0",
       "translationHash": "c033cba24aed6059e3b1ec5f634d73e4c1e7d2c338c9af5e473babc3e43c7661",
       "summary": "Compared the complete translation with the Japanese source, including all 22 shortcut keys, their descriptions, scope, and the official reference.",
       "checks": {
@@ -55,7 +56,7 @@
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
       "source": "post/Microsoft Wordのショートカット一覧/index.md",
-      "sourceHash": "57074828402737990ec46a5b92bbe6312cea98dc1db90ea5e1e9ec06681222c1",
+      "sourceHash": "4a121bf04b0176ddbd710363b7682ab56452aca9a1ab2bdc149c054cd6fab4e0",
       "translationHash": "1f604f6b11bbbc4a9ac525eec562a7bd91ed15674bf0c310915dfd93b6aa6efa",
       "summary": "Compared the complete translation with the Japanese source, including all 22 shortcut keys, their descriptions, scope, and the official reference.",
       "checks": {
@@ -90,7 +91,7 @@
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
       "source": "post/Microsoft Wordのショートカット一覧/index.md",
-      "sourceHash": "57074828402737990ec46a5b92bbe6312cea98dc1db90ea5e1e9ec06681222c1",
+      "sourceHash": "4a121bf04b0176ddbd710363b7682ab56452aca9a1ab2bdc149c054cd6fab4e0",
       "translationHash": "add31418721d0427743b77caf2435e0c592f027478d60b116144a945487d9be2",
       "summary": "Compared the complete translation with the Japanese source, including all 22 shortcut keys, their descriptions, scope, and the official reference.",
       "checks": {
@@ -125,7 +126,7 @@
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
       "source": "post/Microsoft Wordのショートカット一覧/index.md",
-      "sourceHash": "57074828402737990ec46a5b92bbe6312cea98dc1db90ea5e1e9ec06681222c1",
+      "sourceHash": "4a121bf04b0176ddbd710363b7682ab56452aca9a1ab2bdc149c054cd6fab4e0",
       "translationHash": "eaefc8b6abab195525e4d12cf3e445dc16084f40bff14fa488f7946ec6b9aef9",
       "summary": "Compared the complete translation with the Japanese source, including all 22 shortcut keys, their descriptions, scope, and the official reference.",
       "checks": {
@@ -160,7 +161,7 @@
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
       "source": "post/Microsoft Wordのショートカット一覧/index.md",
-      "sourceHash": "57074828402737990ec46a5b92bbe6312cea98dc1db90ea5e1e9ec06681222c1",
+      "sourceHash": "4a121bf04b0176ddbd710363b7682ab56452aca9a1ab2bdc149c054cd6fab4e0",
       "translationHash": "0d0c37e07241658db2675f75d65f2ccdd2a312d63cd68590860885de76a60e20",
       "summary": "Compared the complete translation with the Japanese source, including all 22 shortcut keys, their descriptions, scope, and the official reference.",
       "checks": {
@@ -195,7 +196,7 @@
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
       "source": "post/Microsoft Wordのショートカット一覧/index.md",
-      "sourceHash": "57074828402737990ec46a5b92bbe6312cea98dc1db90ea5e1e9ec06681222c1",
+      "sourceHash": "4a121bf04b0176ddbd710363b7682ab56452aca9a1ab2bdc149c054cd6fab4e0",
       "translationHash": "a33427ce19d1438d6a3ee804343d99ab5fcb3717c9e8b825c565052ac1951952",
       "summary": "Compared the complete translation with the Japanese source, including all 22 shortcut keys, their descriptions, scope, and the official reference.",
       "checks": {
@@ -230,7 +231,7 @@
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
       "source": "post/Microsoft Wordのショートカット一覧/index.md",
-      "sourceHash": "57074828402737990ec46a5b92bbe6312cea98dc1db90ea5e1e9ec06681222c1",
+      "sourceHash": "4a121bf04b0176ddbd710363b7682ab56452aca9a1ab2bdc149c054cd6fab4e0",
       "translationHash": "543084b08ec2dc30e837899fe33cf7baaac7e861df3c8175dda3255a42dbc23c",
       "summary": "Compared the complete translation with the Japanese source, including all 22 shortcut keys, their descriptions, scope, and the official reference.",
       "checks": {
@@ -265,7 +266,7 @@
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
       "source": "post/Microsoft Wordのショートカット一覧/index.md",
-      "sourceHash": "57074828402737990ec46a5b92bbe6312cea98dc1db90ea5e1e9ec06681222c1",
+      "sourceHash": "4a121bf04b0176ddbd710363b7682ab56452aca9a1ab2bdc149c054cd6fab4e0",
       "translationHash": "f36ec4ed4122401a0c41618174d80d1c28870e3b21fd1e1f63924be5e11dde1d",
       "summary": "Compared the complete translation with the Japanese source, including all 22 shortcut keys, their descriptions, scope, and the official reference.",
       "checks": {
@@ -300,7 +301,7 @@
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
       "source": "post/Microsoft Wordのショートカット一覧/index.md",
-      "sourceHash": "57074828402737990ec46a5b92bbe6312cea98dc1db90ea5e1e9ec06681222c1",
+      "sourceHash": "4a121bf04b0176ddbd710363b7682ab56452aca9a1ab2bdc149c054cd6fab4e0",
       "translationHash": "5b391c0e4196988a61cc1249bd990f171850fe19307dd3a11022d41d04fdf177",
       "summary": "Compared the complete translation with the Japanese source, including all 22 shortcut keys, their descriptions, scope, and the official reference.",
       "checks": {
@@ -335,7 +336,7 @@
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
       "source": "post/Microsoft Wordのショートカット一覧/index.md",
-      "sourceHash": "57074828402737990ec46a5b92bbe6312cea98dc1db90ea5e1e9ec06681222c1",
+      "sourceHash": "4a121bf04b0176ddbd710363b7682ab56452aca9a1ab2bdc149c054cd6fab4e0",
       "translationHash": "013bcc4dcfc57ac173116f0233a4e319005e026a02d190edbf2dab7a80e490b7",
       "summary": "Compared the complete translation with the Japanese source, including all 22 shortcut keys, their descriptions, scope, and the official reference.",
       "checks": {
@@ -370,7 +371,7 @@
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
       "source": "post/Microsoft Wordのショートカット一覧/index.md",
-      "sourceHash": "57074828402737990ec46a5b92bbe6312cea98dc1db90ea5e1e9ec06681222c1",
+      "sourceHash": "4a121bf04b0176ddbd710363b7682ab56452aca9a1ab2bdc149c054cd6fab4e0",
       "translationHash": "10c6340833b3783e77ae1ee6a5bda2520b1d6cb9abb7dcfd01cd2c8436b2e3a6",
       "summary": "Compared the complete translation with the Japanese source, including all 22 shortcut keys, their descriptions, scope, and the official reference.",
       "checks": {
@@ -405,7 +406,7 @@
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
       "source": "post/Microsoft Wordのショートカット一覧/index.md",
-      "sourceHash": "57074828402737990ec46a5b92bbe6312cea98dc1db90ea5e1e9ec06681222c1",
+      "sourceHash": "4a121bf04b0176ddbd710363b7682ab56452aca9a1ab2bdc149c054cd6fab4e0",
       "translationHash": "92f9a7d2a285d5cd5a565e71a214e2aeb9d50137928e172644743e2b55775fd8",
       "summary": "Compared the complete translation with the Japanese source, including all 22 shortcut keys, their descriptions, scope, and the official reference.",
       "checks": {
@@ -435,11 +436,5 @@
         "Shortcuts can vary by Word version, platform, and keyboard layout; the table is explicitly scoped to Windows and a U.S. layout."
       ]
     }
-  },
-  "publication": {
-    "record": "docs/translation-review/publication-087-099.json",
-    "ciRun": 45317725403,
-    "sourceCommit": "0a93dd27f98dc68aab21b71c56b308e690574d77",
-    "allPassed": true
   }
 }

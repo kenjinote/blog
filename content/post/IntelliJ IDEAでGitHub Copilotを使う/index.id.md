@@ -3,14 +3,12 @@ title: 'Cara Menginstal dan Mengaktifkan GitHub Copilot di IntelliJ IDEA'
 slug: "IntelliJ IDEAでGitHub Copilotを使う"
 date: 2022-09-10T09:44:55+09:00
 lastmod: 2026-11-24T00:00:00+09:00
-lastmod: 2026-11-24T00:00:00+09:00
 tags: ["IntelliJ IDEA","GitHub Copilot"]
 draft: false
 image: "images/img.webp"
 categories: ["tools-development-environment"]
 description: 'Pelajari cara memasang plugin GitHub Copilot di IntelliJ IDEA, masuk dengan GitHub, dan menggunakan saran kode inline. Panduan ini menjelaskan persyaratan akses serta alur autentikasi saat ini, dan menyertakan tautan ke petunjuk resmi.'
 ---
-
 # Pendahuluan
 
 Plugin GitHub Copilot menambahkan saran kode inline dan Copilot Chat ke IDE JetBrains. Panduan ini menjelaskan instalasi dasar dan proses masuk di IntelliJ IDEA. Nama menu dan tampilannya dapat berbeda menurut versi IDE dan plugin.

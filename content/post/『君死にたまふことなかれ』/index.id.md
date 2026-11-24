@@ -7,7 +7,6 @@ draft: false
 description: "Teks lengkap puisi Akiko Yosano untuk adiknya pada Perang Rusia-Jepang, disertai konteks penerbitan tahun 1904 dan temanya."
 image: eyecatch.jpg
 lastmod: "2026-11-24T00:00:00+09:00"
-lastmod: "2026-11-24T00:00:00+09:00"
 ---
 ![img.png](img.webp)
 

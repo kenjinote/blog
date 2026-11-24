@@ -1,0 +1,455 @@
+{
+  "version": 1,
+  "batch": 103,
+  "article": "【HUGO】ローカルで環境で表示プレビュー",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "ddf93d75596baee5c92c1d48ea4011a19f398a2db3747d7636a5cfe173942260",
+  "sources": [
+    "https://gohugo.io/installation/windows/",
+    "https://gohugo.io/getting-started/usage/",
+    "https://gohugo.io/commands/hugo_server/"
+  ],
+  "scope": "Rewrote the Japanese Windows Hugo guide and all twelve translations. Replaced the obsolete 2022/Hugo 0.102.3 transcript, verified current WinGet installation and CLI examples against Hugo-maintained docs, clarified PATH directory setup and draft-preview behavior, preserved original publication date, and added localized official references.",
+  "findings": [
+    "Removed duplicate 2026 date and retained 2022-09-05 as publication date; recorded lastmod 2026-11-24.",
+    "Replaced version-specific download transcript with current WinGet and official release archive options.",
+    "Clarified that PATH must contain the directory holding hugo.exe and that a new terminal should be opened after editing it.",
+    "Retained the valid --buildDrafts preview use, clarified the project root and server URL behavior, and warned not to publish a draft-inclusive build.",
+    "Added Hugo-maintained Windows installation, usage/draft, and hugo server references in every locale."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/【HUGO】ローカルで環境で表示プレビュー/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/【HUGO】ローカルで環境で表示プレビュー/index.md",
+      "sourceHash": "ddf93d75596baee5c92c1d48ea4011a19f398a2db3747d7636a5cfe173942260",
+      "translationHash": "032897fdb781fa82bc78e467c6b89d22d1e7f5e11e376d75a9b48f777bdeb4ab",
+      "summary": "Compared the full localized setup guide with Japanese: install options, PATH directory semantics, draft flag, local server flow, and version-specific caveats.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full localized setup guide with Japanese: install options, PATH directory semantics, draft flag, local server flow, and version-specific caveats."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Hugo, WinGet, PATH, Windows architecture, drafts, project root, and local server terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified WinGet install syntax, hugo version, and hugo server --buildDrafts against current official Hugo CLI documentation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Hugo-maintained Windows installation, basic usage/drafts, and server command references."
+        }
+      },
+      "limitations": [
+        "AI-assisted translation review; no human or native-speaker certification.",
+        "Package availability and Windows UI labels can vary by system; official docs are linked.",
+        "The guide was checked against Hugo documentation on 2026-11-24; future Hugo releases may change commands or installation options."
+      ]
+    },
+    "post/【HUGO】ローカルで環境で表示プレビュー/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/【HUGO】ローカルで環境で表示プレビュー/index.md",
+      "sourceHash": "ddf93d75596baee5c92c1d48ea4011a19f398a2db3747d7636a5cfe173942260",
+      "translationHash": "b56ba3c616cb173a0999dd4291b9e088db6084d721054147bebe6d6aa518ac52",
+      "summary": "Compared the full localized setup guide with Japanese: install options, PATH directory semantics, draft flag, local server flow, and version-specific caveats.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full localized setup guide with Japanese: install options, PATH directory semantics, draft flag, local server flow, and version-specific caveats."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Hugo, WinGet, PATH, Windows architecture, drafts, project root, and local server terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified WinGet install syntax, hugo version, and hugo server --buildDrafts against current official Hugo CLI documentation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Hugo-maintained Windows installation, basic usage/drafts, and server command references."
+        }
+      },
+      "limitations": [
+        "AI-assisted translation review; no human or native-speaker certification.",
+        "Package availability and Windows UI labels can vary by system; official docs are linked.",
+        "The guide was checked against Hugo documentation on 2026-11-24; future Hugo releases may change commands or installation options."
+      ]
+    },
+    "post/【HUGO】ローカルで環境で表示プレビュー/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/【HUGO】ローカルで環境で表示プレビュー/index.md",
+      "sourceHash": "ddf93d75596baee5c92c1d48ea4011a19f398a2db3747d7636a5cfe173942260",
+      "translationHash": "d93c1991c72b3348dc59bf766b63dbf90444a5c891f90a657aa9e687397f3eb7",
+      "summary": "Compared the full localized setup guide with Japanese: install options, PATH directory semantics, draft flag, local server flow, and version-specific caveats.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full localized setup guide with Japanese: install options, PATH directory semantics, draft flag, local server flow, and version-specific caveats."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Hugo, WinGet, PATH, Windows architecture, drafts, project root, and local server terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified WinGet install syntax, hugo version, and hugo server --buildDrafts against current official Hugo CLI documentation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Hugo-maintained Windows installation, basic usage/drafts, and server command references."
+        }
+      },
+      "limitations": [
+        "AI-assisted translation review; no human or native-speaker certification.",
+        "Package availability and Windows UI labels can vary by system; official docs are linked.",
+        "The guide was checked against Hugo documentation on 2026-11-24; future Hugo releases may change commands or installation options."
+      ]
+    },
+    "post/【HUGO】ローカルで環境で表示プレビュー/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/【HUGO】ローカルで環境で表示プレビュー/index.md",
+      "sourceHash": "ddf93d75596baee5c92c1d48ea4011a19f398a2db3747d7636a5cfe173942260",
+      "translationHash": "09ce8527f1b654165cc20eeff2d5786a15970f139665131f14818cb4bbde2aa3",
+      "summary": "Compared the full localized setup guide with Japanese: install options, PATH directory semantics, draft flag, local server flow, and version-specific caveats.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full localized setup guide with Japanese: install options, PATH directory semantics, draft flag, local server flow, and version-specific caveats."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Hugo, WinGet, PATH, Windows architecture, drafts, project root, and local server terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified WinGet install syntax, hugo version, and hugo server --buildDrafts against current official Hugo CLI documentation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Hugo-maintained Windows installation, basic usage/drafts, and server command references."
+        }
+      },
+      "limitations": [
+        "AI-assisted translation review; no human or native-speaker certification.",
+        "Package availability and Windows UI labels can vary by system; official docs are linked.",
+        "The guide was checked against Hugo documentation on 2026-11-24; future Hugo releases may change commands or installation options."
+      ]
+    },
+    "post/【HUGO】ローカルで環境で表示プレビュー/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/【HUGO】ローカルで環境で表示プレビュー/index.md",
+      "sourceHash": "ddf93d75596baee5c92c1d48ea4011a19f398a2db3747d7636a5cfe173942260",
+      "translationHash": "100b913e73b29c4711fc90b2d14370e9c29c2213115c23d3496efa0df107c0c6",
+      "summary": "Compared the full localized setup guide with Japanese: install options, PATH directory semantics, draft flag, local server flow, and version-specific caveats.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full localized setup guide with Japanese: install options, PATH directory semantics, draft flag, local server flow, and version-specific caveats."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Hugo, WinGet, PATH, Windows architecture, drafts, project root, and local server terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified WinGet install syntax, hugo version, and hugo server --buildDrafts against current official Hugo CLI documentation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Hugo-maintained Windows installation, basic usage/drafts, and server command references."
+        }
+      },
+      "limitations": [
+        "AI-assisted translation review; no human or native-speaker certification.",
+        "Package availability and Windows UI labels can vary by system; official docs are linked.",
+        "The guide was checked against Hugo documentation on 2026-11-24; future Hugo releases may change commands or installation options."
+      ]
+    },
+    "post/【HUGO】ローカルで環境で表示プレビュー/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/【HUGO】ローカルで環境で表示プレビュー/index.md",
+      "sourceHash": "ddf93d75596baee5c92c1d48ea4011a19f398a2db3747d7636a5cfe173942260",
+      "translationHash": "243ca18f37b2735fb215eed1e9b61fa846c2ec5164b54d808bde7b401b31831f",
+      "summary": "Compared the full localized setup guide with Japanese: install options, PATH directory semantics, draft flag, local server flow, and version-specific caveats.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full localized setup guide with Japanese: install options, PATH directory semantics, draft flag, local server flow, and version-specific caveats."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Hugo, WinGet, PATH, Windows architecture, drafts, project root, and local server terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified WinGet install syntax, hugo version, and hugo server --buildDrafts against current official Hugo CLI documentation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Hugo-maintained Windows installation, basic usage/drafts, and server command references."
+        }
+      },
+      "limitations": [
+        "AI-assisted translation review; no human or native-speaker certification.",
+        "Package availability and Windows UI labels can vary by system; official docs are linked.",
+        "The guide was checked against Hugo documentation on 2026-11-24; future Hugo releases may change commands or installation options."
+      ]
+    },
+    "post/【HUGO】ローカルで環境で表示プレビュー/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/【HUGO】ローカルで環境で表示プレビュー/index.md",
+      "sourceHash": "ddf93d75596baee5c92c1d48ea4011a19f398a2db3747d7636a5cfe173942260",
+      "translationHash": "97d7f5f7447a872bc83740298607710a5475b0cf8bc076f9d961fab29c46d95f",
+      "summary": "Compared the full localized setup guide with Japanese: install options, PATH directory semantics, draft flag, local server flow, and version-specific caveats.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full localized setup guide with Japanese: install options, PATH directory semantics, draft flag, local server flow, and version-specific caveats."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Hugo, WinGet, PATH, Windows architecture, drafts, project root, and local server terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified WinGet install syntax, hugo version, and hugo server --buildDrafts against current official Hugo CLI documentation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Hugo-maintained Windows installation, basic usage/drafts, and server command references."
+        }
+      },
+      "limitations": [
+        "AI-assisted translation review; no human or native-speaker certification.",
+        "Package availability and Windows UI labels can vary by system; official docs are linked.",
+        "The guide was checked against Hugo documentation on 2026-11-24; future Hugo releases may change commands or installation options."
+      ]
+    },
+    "post/【HUGO】ローカルで環境で表示プレビュー/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/【HUGO】ローカルで環境で表示プレビュー/index.md",
+      "sourceHash": "ddf93d75596baee5c92c1d48ea4011a19f398a2db3747d7636a5cfe173942260",
+      "translationHash": "bd78e310dd94741686de8ef93e7860ea729c9044025b24b8772beb7ceba3824a",
+      "summary": "Compared the full localized setup guide with Japanese: install options, PATH directory semantics, draft flag, local server flow, and version-specific caveats.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full localized setup guide with Japanese: install options, PATH directory semantics, draft flag, local server flow, and version-specific caveats."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Hugo, WinGet, PATH, Windows architecture, drafts, project root, and local server terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified WinGet install syntax, hugo version, and hugo server --buildDrafts against current official Hugo CLI documentation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Hugo-maintained Windows installation, basic usage/drafts, and server command references."
+        }
+      },
+      "limitations": [
+        "AI-assisted translation review; no human or native-speaker certification.",
+        "Package availability and Windows UI labels can vary by system; official docs are linked.",
+        "The guide was checked against Hugo documentation on 2026-11-24; future Hugo releases may change commands or installation options."
+      ]
+    },
+    "post/【HUGO】ローカルで環境で表示プレビュー/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/【HUGO】ローカルで環境で表示プレビュー/index.md",
+      "sourceHash": "ddf93d75596baee5c92c1d48ea4011a19f398a2db3747d7636a5cfe173942260",
+      "translationHash": "618d0ecb0b66fe6c5f9caef02ff7639c774f93b5e212b16228d4839f4d6fd053",
+      "summary": "Compared the full localized setup guide with Japanese: install options, PATH directory semantics, draft flag, local server flow, and version-specific caveats.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full localized setup guide with Japanese: install options, PATH directory semantics, draft flag, local server flow, and version-specific caveats."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Hugo, WinGet, PATH, Windows architecture, drafts, project root, and local server terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified WinGet install syntax, hugo version, and hugo server --buildDrafts against current official Hugo CLI documentation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Hugo-maintained Windows installation, basic usage/drafts, and server command references."
+        }
+      },
+      "limitations": [
+        "AI-assisted translation review; no human or native-speaker certification.",
+        "Package availability and Windows UI labels can vary by system; official docs are linked.",
+        "The guide was checked against Hugo documentation on 2026-11-24; future Hugo releases may change commands or installation options."
+      ]
+    },
+    "post/【HUGO】ローカルで環境で表示プレビュー/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/【HUGO】ローカルで環境で表示プレビュー/index.md",
+      "sourceHash": "ddf93d75596baee5c92c1d48ea4011a19f398a2db3747d7636a5cfe173942260",
+      "translationHash": "ba97983118a10366e3d0a6bad2d65f2e5565f3fd2d170ca7bd58dcb20fa65167",
+      "summary": "Compared the full localized setup guide with Japanese: install options, PATH directory semantics, draft flag, local server flow, and version-specific caveats.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full localized setup guide with Japanese: install options, PATH directory semantics, draft flag, local server flow, and version-specific caveats."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Hugo, WinGet, PATH, Windows architecture, drafts, project root, and local server terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified WinGet install syntax, hugo version, and hugo server --buildDrafts against current official Hugo CLI documentation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Hugo-maintained Windows installation, basic usage/drafts, and server command references."
+        }
+      },
+      "limitations": [
+        "AI-assisted translation review; no human or native-speaker certification.",
+        "Package availability and Windows UI labels can vary by system; official docs are linked.",
+        "The guide was checked against Hugo documentation on 2026-11-24; future Hugo releases may change commands or installation options."
+      ]
+    },
+    "post/【HUGO】ローカルで環境で表示プレビュー/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/【HUGO】ローカルで環境で表示プレビュー/index.md",
+      "sourceHash": "ddf93d75596baee5c92c1d48ea4011a19f398a2db3747d7636a5cfe173942260",
+      "translationHash": "3640532d968338d0a1599af6b104a9b554851fe287b6d43ded03716d90258255",
+      "summary": "Compared the full localized setup guide with Japanese: install options, PATH directory semantics, draft flag, local server flow, and version-specific caveats.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full localized setup guide with Japanese: install options, PATH directory semantics, draft flag, local server flow, and version-specific caveats."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Hugo, WinGet, PATH, Windows architecture, drafts, project root, and local server terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified WinGet install syntax, hugo version, and hugo server --buildDrafts against current official Hugo CLI documentation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Hugo-maintained Windows installation, basic usage/drafts, and server command references."
+        }
+      },
+      "limitations": [
+        "AI-assisted translation review; no human or native-speaker certification.",
+        "Package availability and Windows UI labels can vary by system; official docs are linked.",
+        "The guide was checked against Hugo documentation on 2026-11-24; future Hugo releases may change commands or installation options."
+      ]
+    },
+    "post/【HUGO】ローカルで環境で表示プレビュー/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/【HUGO】ローカルで環境で表示プレビュー/index.md",
+      "sourceHash": "ddf93d75596baee5c92c1d48ea4011a19f398a2db3747d7636a5cfe173942260",
+      "translationHash": "8246e628f568572e3a47090b080934abe707b2a7de45e30c2fe57afe9a1e3178",
+      "summary": "Compared the full localized setup guide with Japanese: install options, PATH directory semantics, draft flag, local server flow, and version-specific caveats.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full localized setup guide with Japanese: install options, PATH directory semantics, draft flag, local server flow, and version-specific caveats."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Hugo, WinGet, PATH, Windows architecture, drafts, project root, and local server terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified WinGet install syntax, hugo version, and hugo server --buildDrafts against current official Hugo CLI documentation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Hugo-maintained Windows installation, basic usage/drafts, and server command references."
+        }
+      },
+      "limitations": [
+        "AI-assisted translation review; no human or native-speaker certification.",
+        "Package availability and Windows UI labels can vary by system; official docs are linked.",
+        "The guide was checked against Hugo documentation on 2026-11-24; future Hugo releases may change commands or installation options."
+      ]
+    }
+  }
+}

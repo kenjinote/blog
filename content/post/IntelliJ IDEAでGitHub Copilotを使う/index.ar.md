@@ -3,14 +3,12 @@ title: 'كيفية تثبيت وتفعيل GitHub Copilot في IntelliJ IDEA'
 slug: "IntelliJ IDEAでGitHub Copilotを使う"
 date: 2022-09-10T09:44:55+09:00
 lastmod: 2026-11-24T00:00:00+09:00
-lastmod: 2026-11-24T00:00:00+09:00
 tags: ["IntelliJ IDEA","GitHub Copilot"]
 draft: false
 image: "images/img.webp"
 categories: ["tools-development-environment"]
 description: 'تعرّف على طريقة تثبيت إضافة GitHub Copilot في IntelliJ IDEA، وتسجيل الدخول بحساب GitHub، واستخدام اقتراحات التعليمات البرمجية داخل المحرر. يشرح الدليل متطلبات الوصول وخطوات المصادقة الحالية مع روابط إلى الوثائق الرسمية.'
 ---
-
 # مقدمة
 
 تضيف إضافة GitHub Copilot اقتراحات التعليمات البرمجية داخل المحرر وميزة Copilot Chat إلى بيئات JetBrains. يشرح هذا الدليل التثبيت الأساسي وتسجيل الدخول في IntelliJ IDEA. قد تختلف أسماء القوائم والشاشات بحسب إصدار البيئة والإضافة.

@@ -7,7 +7,6 @@ draft: false
 description: "러일전쟁 중 남동생을 위해 요사노 아키코가 쓴 시의 전문과 1904년 발표 배경 및 주제를 소개합니다."
 image: eyecatch.jpg
 lastmod: "2026-11-24T00:00:00+09:00"
-lastmod: "2026-11-24T00:00:00+09:00"
 ---
 ![img.png](img.webp)
 

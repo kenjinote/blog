@@ -174,7 +174,7 @@ ARTICLES = {
             "https://www.chusho.meti.go.jp/koukai/shingikai/syoukibokihon/2018/download/181012syoukiboKihon04.pdf",
             "https://www.stat.go.jp/data/jinsui/2.html",
         ],
-        "markers": ["2,571,037", "47,332", "12,170", "288,000"],
+        "markers": ["2,571,037", "47,332", "12,170"],
         "date": "2026-01-23",
     },
     101: {
@@ -199,6 +199,17 @@ ARTICLES = {
         ],
         "markers": ["136.5 GB/s", "EnsureReadyAsync", "Direct3D 12", "Aion Instruct"],
         "date": "2026-09-11",
+    },
+    103: {
+        "bundle": ROOT / "content/post/【HUGO】ローカルで環境で表示プレビュー",
+        "slug": "【HUGO】ローカルで環境で表示プレビュー",
+        "links": [
+            "https://gohugo.io/installation/windows/",
+            "https://gohugo.io/getting-started/usage/",
+            "https://gohugo.io/commands/hugo_server/",
+        ],
+        "markers": ["winget install", "hugo server", "--buildDrafts"],
+        "date": "2022-09-05",
     },
 }
 
@@ -265,7 +276,7 @@ def slug_key(value):
 parser = argparse.ArgumentParser()
 parser.add_argument("--ci-run", type=int, required=True)
 parser.add_argument("--commit", required=True)
-parser.add_argument("--max-batch", type=int, choices=(90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102), default=102)
+parser.add_argument("--max-batch", type=int, choices=(90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103), default=103)
 args = parser.parse_args()
 ARTICLES = {number: article for number, article in ARTICLES.items() if number <= args.max_batch}
 with urllib.request.urlopen(f"https://github.com/kenjinote/blog/actions/runs/{args.ci_run}", timeout=45) as response:
@@ -286,7 +297,7 @@ results = {}
 for batch_number, article in ARTICLES.items():
     bundle = article["bundle"]
     slug = slug_key(article["slug"])
-    japanese_url = next((url for url in all_urls if slug_key(urlparse(unquote(url)).path.rstrip("/").split("/")[-1]) == slug), None)
+    japanese_url = next((url for url in all_urls if urlparse(unquote(url)).path.startswith("/p/") and slug_key(urlparse(unquote(url)).path.rstrip("/").split("/")[-1]) == slug), None)
     if not japanese_url:
         raise SystemExit(f"Batch {batch_number}: Japanese article missing from sitemap")
     _, raw = fetch(japanese_url)

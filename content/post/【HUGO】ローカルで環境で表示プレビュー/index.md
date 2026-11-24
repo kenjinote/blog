@@ -1,68 +1,41 @@
 ---
-title: '【Hugo入門】Windowsでのインストールからローカル環境でのプレビュー表示方法'
-date: "2026-09-24T19:44:38+09:00"
+title: "【Hugo入門】Windowsへのインストールとローカルプレビュー"
 slug: "【HUGO】ローカルで環境で表示プレビュー"
-date: 2022-09-05T12:28:01+09:00
 tags: ["HUGO"]
 draft: false
 image: "img.webp"
 categories: ["blogging"]
-description: '静的サイトジェネレーター「Hugo」をWindows環境へインストールする手順や環境変数Pathの通し方、ローカルサーバーを立ち上げてブログ記事をプレビュー確認するコマンドの使い方をわかりやすく解説。'
+description: "WindowsにHugoを入れる方法、PATHの設定、ドラフトを含めたローカルプレビューの確認手順を公式ドキュメントに基づいて説明します。"
+date: "2022-09-05T12:28:01+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
-# HUGOのインストール
+# 【Hugo入門】Windowsにインストールしてローカルでプレビューする
 
-## ダウンロード
-[HUGOのダウンロード](https://github.com/gohugoio/hugo/releases)
+> **更新日：2026年11月24日。** 旧版はHugo 0.102.3の画面出力と2022年当時の手順に依存していました。現在の公式Windowsインストール案内とCLIに合わせて書き直しています。HugoやWindowsの画面、パッケージは更新されるため、迷ったらリンク先の公式資料を優先してください。
 
-上記のサイトから、環境に合わせたWindowsのモジュールをダウンロードして展開する。
-私の場合は「hugo_0.102.3_Windows-64bit.zip」をダウンロードしました。
+## Hugoをインストールする
 
-## 展開
-ダウンロードしたzipファイルを展開して、その中にあるhugo.exeを例えばC:\bin等のフォルダを作ってそこにコピーします。
+Windows 10以降では、WinGetを使う方法が簡単です。新しいターミナルを開き、コマンドを実行します。WinGetを使わない場合は、公式リリースからWindowsとCPUアーキテクチャに合うアーカイブを選び、展開して `hugo.exe` を配置できます。PATHへ登録するのは実行ファイルそのものではなく、実行ファイルを置いたフォルダーです。
 
-## 環境変数に登録
-任意の場所からhugo.exeを実行するために環境変数に登録します。
-Windows11での操作になりますが、下記のような手順で登録できると思います。
+PATHを手動で設定するときは、スタートメニューで「環境変数を編集」と検索し、ユーザー環境変数の `Path` に、たとえば `C:/Hugo/bin` を追加します。設定後はターミナルを開き直します。
 
-1. Win+Pauseボタンを押してバージョン情報を開く
-2. システムの詳細設定をクリックする
-3. 環境変数をクリックする
-4. Pathを選択して編集をクリックする
-5. 新規をクリックして、新しい行に「C:\bin」と入力してOKでダイアログを閉じる
- 
-# ブログをプレビューする
-コマンドプロンプトでHUGOブログのフォルダに移動して、下記のコマンドを実行する。
+## Hugoをインストールする
 
-`hugo server -D`
-
-実行結果は下記。（-Dはドラフトの記事を表示するオプションです。）
-
-```
-C:\Users\win11\IdeaProjects\kenji.blog>hugo server -D
-Start building sites …
-hugo v0.102.3-b76146b129d7caa52417f8e914fc5b9271bf56fc windows/amd64 BuildDate=2022-09-01T10:16:19Z VendorInfo=gohugoio
-
-                   | JA
--------------------+-----
-Pages            | 39
-Paginator pages  |  0
-Non-page files   |  7
-Static files     |  0
-Processed images |  0
-Aliases          | 13
-Sitemaps         |  1
-Cleaned          |  0
-
-Built in 161 ms
-Watching for changes in C:\Users\win11\IdeaProjects\kenji.blog\{archetypes,content,themes}
-Watching for config changes in C:\Users\win11\IdeaProjects\kenji.blog\config.toml
-Environment: "development"
-Serving pages from memory
-Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender
-Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
-Press Ctrl+C to stop
+```powershell
+winget install -e --id Hugo.Hugo
+hugo version
 ```
 
-[アドレス](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)は実行時に出力されるので（上記の例では`http://localhost:1313/`）、ブラウザに[アドレス](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)をコピーする。
-プレビューはファイルが保存されるたびに自動更新される。
-プレビュー終えるにはコマンドプロンプトでCtrl+Cを入力する。
+```powershell
+hugo server --buildDrafts
+```
+
+## ローカルでプレビューする
+
+Hugoプロジェクトのルート（設定ファイルまたは設定ディレクトリがある場所）でサーバーを起動します。`--buildDrafts` はドラフトを含めて表示する指定です。ドラフトを含めた状態で公開ビルドしないよう注意してください。Hugoの出力に表示されたURLをブラウザーで開きます。既定では `http://localhost:1313/` ですが、ポートが使用中の場合などは出力を確認してください。終了時はターミナルで Ctrl+C を押します。
+
+## 公式資料
+
+- [Windowsへのインストール](https://gohugo.io/installation/windows/)
+- [基本的な使い方とドラフト](https://gohugo.io/getting-started/usage/)
+- [hugo serverコマンド](https://gohugo.io/commands/hugo_server/)

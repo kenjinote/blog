@@ -3,7 +3,7 @@
   "batch": 101,
   "article": "『君死にたまふことなかれ』",
   "reviewedAt": "2026-11-24",
-  "sourceHash": "f214f7fa94962cb7f44e17f9d396026569f9b7d53e4579424c7806d9999c99e5",
+  "sourceHash": "a98a03f3dac2ad949be1efd66ae2ce9c6695cf60d4322638b9e7cc3a4467923d",
   "sources": [
     "https://www.ndl.go.jp/portrait/datas/347",
     "https://www.aozora.gr.jp/cards/000885/files/3629_48834.html"
@@ -14,7 +14,8 @@
     "Added the missing commentary promised by every edition's title and updated descriptions to accurately state the content.",
     "Confirmed the poem's September 1904 publication context and subtitle through NDL materials; added Yosano's own later open letter as primary context.",
     "Removed the unrelated it-technology category.",
-    "Checked that all twelve translated editions contain the same five stanzas; identified them as AI-assisted literary renderings rather than authoritative published translations."
+    "Checked that all twelve translated editions contain the same five stanzas; identified them as AI-assisted literary renderings rather than authoritative published translations.",
+    "Removed duplicate lastmod front-matter keys from index.ar.md, index.de.md, index.en.md, index.es.md, index.fr.md, index.hi.md, index.id.md, index.ko.md, index.md, index.pt.md, index.ru.md, index.zh-cn.md, index.zh-tw.md; refreshed source/translation hashes to match these metadata-only revisions and set publication verification pending."
   ],
   "publicationPending": true,
   "reviews": {
@@ -23,8 +24,8 @@
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
       "source": "post/『君死にたまふことなかれ』/index.md",
-      "sourceHash": "f214f7fa94962cb7f44e17f9d396026569f9b7d53e4579424c7806d9999c99e5",
-      "translationHash": "873bcb4b9e1c96b6d64c3085fbd28e71e440533996990b0363738f44325f42f5",
+      "sourceHash": "a98a03f3dac2ad949be1efd66ae2ce9c6695cf60d4322638b9e7cc3a4467923d",
+      "translationHash": "9c3f9f3d0b90121ccef7eaa09c16162034e724cf8de96145dbe2a4b0cd7827ec",
       "summary": "قورنت المقاطع الخمسة بالأصل الياباني، مع التحقق من مناشدة الأخ وحزن الأسرة والتساؤلات حول الحرب والسلطة.",
       "checks": {
         "meaning": {
@@ -59,8 +60,8 @@
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
       "source": "post/『君死にたまふことなかれ』/index.md",
-      "sourceHash": "f214f7fa94962cb7f44e17f9d396026569f9b7d53e4579424c7806d9999c99e5",
-      "translationHash": "e023765e5a80233a0ce10fe8e92e4c2e3dbb0aec1904639183cab2974511294f",
+      "sourceHash": "a98a03f3dac2ad949be1efd66ae2ce9c6695cf60d4322638b9e7cc3a4467923d",
+      "translationHash": "547dd97145102c056053b0f638224dce985de361637779513568e84e0b8a5c3d",
       "summary": "Alle fünf Strophen mit dem japanischen Text verglichen: Anrede an den Bruder, familiäre Trauer sowie Fragen zu Krieg und Macht.",
       "checks": {
         "meaning": {
@@ -95,8 +96,8 @@
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
       "source": "post/『君死にたまふことなかれ』/index.md",
-      "sourceHash": "f214f7fa94962cb7f44e17f9d396026569f9b7d53e4579424c7806d9999c99e5",
-      "translationHash": "4950b6a7b9f7bd633e00e695690226ada9a344a225a1fe4e85c28f47dd63bb5c",
+      "sourceHash": "a98a03f3dac2ad949be1efd66ae2ce9c6695cf60d4322638b9e7cc3a4467923d",
+      "translationHash": "617bd38c4a192d7e2c35be296ee94ce265d6b0786405e7688398b1ed4960da68",
       "summary": "Compared all five stanzas with the Japanese text, checking the address to her brother, family grief, and questions about war and authority.",
       "checks": {
         "meaning": {
@@ -131,8 +132,8 @@
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
       "source": "post/『君死にたまふことなかれ』/index.md",
-      "sourceHash": "f214f7fa94962cb7f44e17f9d396026569f9b7d53e4579424c7806d9999c99e5",
-      "translationHash": "d5aaa0acdaef84b4adcf0d84c07d4d296b07438cf70a37bdea94b984cbab7d7f",
+      "sourceHash": "a98a03f3dac2ad949be1efd66ae2ce9c6695cf60d4322638b9e7cc3a4467923d",
+      "translationHash": "82e75359ece3a05ee2368511985f138e4a348e0fab3adf3f4ad5ddfb7e0ae332",
       "summary": "Comparé las cinco estrofas con el original japonés y verifiqué la súplica al hermano, el dolor familiar y las preguntas sobre la guerra y el poder.",
       "checks": {
         "meaning": {
@@ -167,8 +168,8 @@
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
       "source": "post/『君死にたまふことなかれ』/index.md",
-      "sourceHash": "f214f7fa94962cb7f44e17f9d396026569f9b7d53e4579424c7806d9999c99e5",
-      "translationHash": "8d656a9041e32fab699364701839b4f0c365dac46b49bce215a2cce7d68f01df",
+      "sourceHash": "a98a03f3dac2ad949be1efd66ae2ce9c6695cf60d4322638b9e7cc3a4467923d",
+      "translationHash": "c9503f30dd00633e531c3bdba395099c14a7e3a8aa014c5e707c8982ac5f585c",
       "summary": "Les cinq strophes ont été comparées au japonais : adresse au frère, douleur familiale et questionnement de la guerre et du pouvoir.",
       "checks": {
         "meaning": {
@@ -203,8 +204,8 @@
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
       "source": "post/『君死にたまふことなかれ』/index.md",
-      "sourceHash": "f214f7fa94962cb7f44e17f9d396026569f9b7d53e4579424c7806d9999c99e5",
-      "translationHash": "d600877c9f77512e5fdebd509257c3e194df0e3eb02b7276b4e5a108f84a5bf5",
+      "sourceHash": "a98a03f3dac2ad949be1efd66ae2ce9c6695cf60d4322638b9e7cc3a4467923d",
+      "translationHash": "2886a163a9d20daa9dd60cf70a4a64ef0259e0228d4f11ca32f032af118346bd",
       "summary": "जापानी मूल की पाँचों पद्य-इकाइयों से तुलना की; भाई को पुकार, पारिवारिक दुख और युद्ध तथा सत्ता पर प्रश्नों की जाँच की।",
       "checks": {
         "meaning": {
@@ -239,8 +240,8 @@
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
       "source": "post/『君死にたまふことなかれ』/index.md",
-      "sourceHash": "f214f7fa94962cb7f44e17f9d396026569f9b7d53e4579424c7806d9999c99e5",
-      "translationHash": "ae064f8fe0d7a9fc1b018d99542e82d0cb427f7433ae77b684b0ed0c33930614",
+      "sourceHash": "a98a03f3dac2ad949be1efd66ae2ce9c6695cf60d4322638b9e7cc3a4467923d",
+      "translationHash": "d22bf70bc6281ed37550283bb0f5b1edfd22382c3fd42f5b6817824c270bd29b",
       "summary": "Membandingkan kelima bait dengan teks Jepang, termasuk seruan kepada adik, duka keluarga, dan pertanyaan tentang perang serta kekuasaan.",
       "checks": {
         "meaning": {
@@ -275,8 +276,8 @@
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
       "source": "post/『君死にたまふことなかれ』/index.md",
-      "sourceHash": "f214f7fa94962cb7f44e17f9d396026569f9b7d53e4579424c7806d9999c99e5",
-      "translationHash": "403ff4061cb39cba987d32023e97cf90d22ddaf908a6aab2a5d888c22c1dc037",
+      "sourceHash": "a98a03f3dac2ad949be1efd66ae2ce9c6695cf60d4322638b9e7cc3a4467923d",
+      "translationHash": "8e25faa06877d4626e8145984c94b9952b64c0948878c4cf0a3bd410acfa39e4",
       "summary": "일본어 원문과 다섯 연을 대조해 동생을 향한 호소, 가족의 슬픔, 전쟁과 권력에 대한 질문을 확인했습니다.",
       "checks": {
         "meaning": {
@@ -311,8 +312,8 @@
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
       "source": "post/『君死にたまふことなかれ』/index.md",
-      "sourceHash": "f214f7fa94962cb7f44e17f9d396026569f9b7d53e4579424c7806d9999c99e5",
-      "translationHash": "10e4868b2d2114ba87288e0e6565213aaa28ff9821da95f234dca1c74fbb58ad",
+      "sourceHash": "a98a03f3dac2ad949be1efd66ae2ce9c6695cf60d4322638b9e7cc3a4467923d",
+      "translationHash": "f6ac6632b90f039adbea918092148accd2d33a2d682c175e1b58a29b12decebd",
       "summary": "Comparei as cinco estrofes com o japonês, verificando o apelo ao irmão, o sofrimento familiar e as questões sobre guerra e poder.",
       "checks": {
         "meaning": {
@@ -347,8 +348,8 @@
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
       "source": "post/『君死にたまふことなかれ』/index.md",
-      "sourceHash": "f214f7fa94962cb7f44e17f9d396026569f9b7d53e4579424c7806d9999c99e5",
-      "translationHash": "f53eaecf95e34f7d52ddde250b1aa627ea6886ea482c6918ba94b2cc2f3f75a9",
+      "sourceHash": "a98a03f3dac2ad949be1efd66ae2ce9c6695cf60d4322638b9e7cc3a4467923d",
+      "translationHash": "0601135d6a8c7d7f0cdba3dfe781c17dcd95b265a7c88a7eeb4d8485429c1a00",
       "summary": "Сверены все пять строф с японским оригиналом: обращение к брату, семейная скорбь и вопросы о войне и власти.",
       "checks": {
         "meaning": {
@@ -383,8 +384,8 @@
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
       "source": "post/『君死にたまふことなかれ』/index.md",
-      "sourceHash": "f214f7fa94962cb7f44e17f9d396026569f9b7d53e4579424c7806d9999c99e5",
-      "translationHash": "8c7a27ca7b2f6eb38bf45b01a28f3935054634af447a6fcfc76b736f4c166f00",
+      "sourceHash": "a98a03f3dac2ad949be1efd66ae2ce9c6695cf60d4322638b9e7cc3a4467923d",
+      "translationHash": "7e00029f04dde2aca7000ee577c0bddccfd26737712ff6f8f87d76972a6bea56",
       "summary": "对照日文原诗核查五节内容，确认对弟弟的呼唤、家庭悲痛以及对战争与权力的质疑均有保留。",
       "checks": {
         "meaning": {
@@ -419,8 +420,8 @@
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
       "source": "post/『君死にたまふことなかれ』/index.md",
-      "sourceHash": "f214f7fa94962cb7f44e17f9d396026569f9b7d53e4579424c7806d9999c99e5",
-      "translationHash": "8682e248a14f5ebef6bb963dabef34c1726d572a5f513a4731c3d0cdacf3d7cb",
+      "sourceHash": "a98a03f3dac2ad949be1efd66ae2ce9c6695cf60d4322638b9e7cc3a4467923d",
+      "translationHash": "ba561c932695371456ca8d85536ed70995741f978acad83b51e5347428a2e430",
       "summary": "對照日文原詩核查五節內容，確認對弟弟的呼喚、家庭悲痛以及對戰爭與權力的質疑均有保留。",
       "checks": {
         "meaning": {

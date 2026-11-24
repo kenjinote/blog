@@ -1,68 +1,41 @@
 ---
-title: '【Hugo परिचय】Windows पर इंस्टॉलेशन से लेकर स्थानीय वातावरण में प्रीव्यू प्रदर्शित करने तक का तरीका'
-date: "2026-09-24T19:44:38+09:00"
+title: "Windows पर Hugo इंस्टॉल करें और साइट का स्थानीय पूर्वावलोकन देखें"
 slug: "【HUGO】ローカルで環境で表示プレビュー"
-date: 2022-09-05T12:28:01+09:00
 tags: ["HUGO"]
 draft: false
 image: "img.webp"
 categories: ["blogging"]
-description: 'स्टेटिक साइट जनरेटर ''Hugo'' को Windows वातावरण में इंस्टॉल करने की प्रक्रिया, पर्यावरण चर पाथ सेट करने का तरीका, और ब्लॉग पोस्ट का प्रीव्यू देखने के लिए स्थानीय सर्वर शुरू करने के कमांड का उपयोग कैसे करें, इसे आसानी से समझाया गया है।'
+description: "Windows में Hugo इंस्टॉल करने, ज़रूरत पड़ने पर PATH सेट करने और ड्राफ़्ट सहित साइट का स्थानीय पूर्वावलोकन करने के वर्तमान निर्देश।"
+date: "2022-09-05T12:28:01+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
-# HUGO की स्थापना
+# Windows पर Hugo इंस्टॉल करें और साइट का स्थानीय पूर्वावलोकन देखें
 
-## डाउनलोड
-[HUGO डाउनलोड करें](https://github.com/gohugoio/hugo/releases)
+> **अपडेट: 24 नवंबर 2026।** पुराना लेख Hugo 0.102.3 के आउटपुट और 2022 के Windows चरणों पर निर्भर था। यह संस्करण Windows इंस्टॉलेशन और CLI के वर्तमान आधिकारिक निर्देशों के अनुसार है। Hugo, Windows संवाद और पैकेज बदल सकते हैं; स्क्रीन अलग दिखे तो लिंक किए गए आधिकारिक निर्देश देखें।
 
-उपरोक्त वेबसाइट से, अपने वातावरण के अनुकूल Windows मॉड्यूल डाउनलोड करें और उसे निकालें।
-मेरे मामले में, मैंने "hugo_0.102.3_Windows-64bit.zip" डाउनलोड किया।
+## Hugo इंस्टॉल करें
 
-## निकालना
-डाउनलोड की गई zip फ़ाइल को निकालें, और उसके अंदर स्थित hugo.exe को आपके द्वारा बनाए गए फ़ोल्डर में कॉपी करें, उदाहरण के लिए C:\bin।
+Windows 10 या बाद के संस्करण में WinGet आसान विकल्प है। इंस्टॉल करने के बाद नया टर्मिनल खोलें और नीचे दिया कमांड चलाएँ। वैकल्पिक रूप से आधिकारिक रिलीज़ से Windows और CPU आर्किटेक्चर के अनुरूप संग्रह डाउनलोड कर निकालें और `hugo.exe` को किसी फ़ोल्डर में रखें। PATH में executable फ़ाइल नहीं, उसे रखने वाला फ़ोल्डर जोड़ें।
 
-## पर्यावरण चर में पंजीकृत करें
-इसे पर्यावरण चर में पंजीकृत करें ताकि आप कहीं से भी hugo.exe को चला सकें।
-निम्नलिखित क्रियाएँ Windows 11 के लिए हैं, लेकिन आपको समान चरणों के साथ पंजीकरण करने में सक्षम होना चाहिए:
+PATH हाथ से बदलने के लिए Start मेनू में “Edit environment variables for your account” खोजें और उपयोगकर्ता `Path` में, उदाहरण के लिए, `C:/Hugo/bin` जोड़ें। फिर नया टर्मिनल खोलें।
 
-1. संस्करण जानकारी खोलने के लिए Win+Pause बटन दबाएँ
-2. उन्नत सिस्टम सेटिंग्स पर क्लिक करें
-3. पर्यावरण चर पर क्लिक करें
-4. Path चुनें और संपादित करें पर क्लिक करें
-5. नया पर क्लिक करें, नई लाइन में "C:\bin" दर्ज करें और डायलॉग बंद करने के लिए ठीक पर क्लिक करें
- 
-# ब्लॉग का पूर्वावलोकन करें
-कमांड प्रॉम्प्ट में, HUGO ब्लॉग फ़ोल्डर में जाएँ और नीचे दिए गए कमांड को चलाएँ।
+## Hugo इंस्टॉल करें
 
-`hugo server -D`
-
-निष्पादन परिणाम नीचे दिया गया है। (-D ड्राफ्ट लेखों को प्रदर्शित करने का विकल्प है।)
-
-```
-C:\Users\win11\IdeaProjects\kenji.blog>hugo server -D
-Start building sites …
-hugo v0.102.3-b76146b129d7caa52417f8e914fc5b9271bf56fc windows/amd64 BuildDate=2022-09-01T10:16:19Z VendorInfo=gohugoio
-
-                   | JA
--------------------+-----
-  Pages            | 39
-  Paginator pages  |  0
-  Non-page files   |  7
-  Static files     |  0
-  Processed images |  0
-  Aliases          | 13
-  Sitemaps         |  1
-  Cleaned          |  0
-
-Built in 161 ms
-Watching for changes in C:\Users\win11\IdeaProjects\kenji.blog\{archetypes,content,themes}
-Watching for config changes in C:\Users\win11\IdeaProjects\kenji.blog\config.toml
-Environment: "development"
-Serving pages from memory
-Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender
-Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
-Press Ctrl+C to stop
+```powershell
+winget install -e --id Hugo.Hugo
+hugo version
 ```
 
-चूंकि निष्पादन के दौरान पता प्रदर्शित होता है (उपरोक्त उदाहरण में `http://localhost:1313/`), उस पते को अपने ब्राउज़र में कॉपी करें।
-हर बार फ़ाइल सहेजने पर पूर्वावलोकन स्वचालित रूप से अपडेट हो जाता है।
-पूर्वावलोकन समाप्त करने के लिए, कमांड प्रॉम्प्ट में Ctrl+C दर्ज करें।
+```powershell
+hugo server --buildDrafts
+```
+
+## स्थानीय पूर्वावलोकन
+
+Hugo प्रोजेक्ट की root directory में सर्वर शुरू करें—यहीं configuration फ़ाइल या directory होती है। `--buildDrafts` पूर्वावलोकन में ड्राफ़्ट पेज शामिल करता है। ड्राफ़्ट सहित आउटपुट को production में प्रकाशित न करें। Hugo द्वारा दिखाया गया URL ब्राउज़र में खोलें। सामान्य पता `http://localhost:1313/` है; पोर्ट व्यस्त हो तो कमांड आउटपुट देखें। सर्वर रोकने के लिए टर्मिनल में Ctrl+C दबाएँ।
+
+## आधिकारिक संदर्भ
+
+- [Windows इंस्टॉलेशन](https://gohugo.io/installation/windows/)
+- [मूल उपयोग और ड्राफ़्ट](https://gohugo.io/getting-started/usage/)
+- [hugo server कमांड](https://gohugo.io/commands/hugo_server/)

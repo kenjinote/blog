@@ -8,9 +8,7 @@ image: "img.webp"
 categories: ["it-technology"]
 description: "An opinion essay on “Japanese First,” separating the author's views from official data on employment, public assistance, public safety, and traditional industries."
 lastmod: "2026-11-24T00:00:00+09:00"
-lastmod: "2026-11-24T00:00:00+09:00"
 ---
-
 # The Illusion and Reality of "Japanese First": The Defense Mechanism Called "Coexistence" Facing Japan in 2026
 
 This opinion essay was originally published on January 23, 2026. Its statistical sections were reviewed and updated on November 24, 2026.

@@ -3,14 +3,12 @@ title: 'IntelliJ IDEA에 GitHub Copilot을 도입 및 활성화하는 방법'
 slug: "IntelliJ IDEAでGitHub Copilotを使う"
 date: 2022-09-10T09:44:55+09:00
 lastmod: 2026-11-24T00:00:00+09:00
-lastmod: 2026-11-24T00:00:00+09:00
 tags: ["IntelliJ IDEA","GitHub Copilot"]
 draft: false
 image: "images/img.webp"
 categories: ["tools-development-environment"]
 description: 'IntelliJ IDEA에 GitHub Copilot 플러그인을 설치하고 GitHub에 로그인해 인라인 코드 제안을 사용하는 방법을 안내합니다. 필요한 이용 권한과 현재 인증 절차를 설명하고 공식 안내 링크를 제공합니다.'
 ---
-
 # 소개
 
 GitHub Copilot 플러그인을 설치하면 JetBrains IDE에서 인라인 코드 제안과 Copilot Chat을 사용할 수 있습니다. 이 문서에서는 IntelliJ IDEA의 기본 설치와 로그인 방법을 설명합니다. 메뉴 이름과 화면은 IDE 및 플러그인 버전에 따라 다를 수 있습니다.

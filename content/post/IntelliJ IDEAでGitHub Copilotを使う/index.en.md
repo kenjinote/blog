@@ -3,14 +3,12 @@ title: 'How to Introduce and Enable GitHub Copilot in IntelliJ IDEA'
 slug: "IntelliJ IDEAでGitHub Copilotを使う"
 date: 2022-09-10T09:44:55+09:00
 lastmod: 2026-11-24T00:00:00+09:00
-lastmod: 2026-11-24T00:00:00+09:00
 tags: ["IntelliJ IDEA", "GitHub Copilot"]
 draft: false
 image: "images/img.webp"
 categories: ["tools-development-environment"]
 description: 'Learn how to install the GitHub Copilot plugin in IntelliJ IDEA, sign in with GitHub, and use inline code suggestions. This guide covers access requirements and the current authentication flow, with links to official instructions.'
 ---
-
 # Introduction
 
 The GitHub Copilot plugin adds inline code suggestions and Copilot Chat to JetBrains IDEs. This guide covers the basic installation and sign-in flow in IntelliJ IDEA. Menu names and screens can vary by IDE and plugin version.

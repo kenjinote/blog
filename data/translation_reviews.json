@@ -9850,121 +9850,121 @@
       "source": "post/IntelliJ IDEAでGitHub Copilotを使う/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "c3c9a1174a0b174e77ebf08bd3fc32e2d5c33ca2bff1cb66cb0df745707904a2",
-      "translationHash": "3c17e445a1a705dccf0cf0c8399a58b257f9abf504b993f84e32b74d424b240e",
+      "sourceHash": "dc9ea57d231c27782044f8e3e1705f34d2caeaf1ed02e055370819513c8f69e0",
+      "translationHash": "09e50faef6cca46639697f1d5a1b048db9ce255eaf0468be71bcfdcd797794d3",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-087.json",
-      "evidenceHash": "c6fdd3e141f273add7fcb395eb70225fb0305decf7a8fbd41b637dcf0aae651f"
+      "evidenceHash": "ddab632ca4e886b0b9866d58434700aead793890d3e3b408a0e21dca168b74db"
     },
     "post/IntelliJ IDEAでGitHub Copilotを使う/index.de.md": {
       "source": "post/IntelliJ IDEAでGitHub Copilotを使う/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "c3c9a1174a0b174e77ebf08bd3fc32e2d5c33ca2bff1cb66cb0df745707904a2",
-      "translationHash": "65d867387eb188601603b6eeb7a3232d91b99202640ace7b3a2979047cb64f34",
+      "sourceHash": "dc9ea57d231c27782044f8e3e1705f34d2caeaf1ed02e055370819513c8f69e0",
+      "translationHash": "50451aec5a80ab0377e3995a255b9cbd58dfa95383aabc7d3ece955a7cc31347",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-087.json",
-      "evidenceHash": "cf0d9685dde37e0d3ea764c64e652f28a5b36061670eba0cddfc37dc4c2e504e"
+      "evidenceHash": "a1fe3763323ad1b125f30ebf058d4c93609749855c5ea3a5ad233b6b2c7f63a8"
     },
     "post/IntelliJ IDEAでGitHub Copilotを使う/index.en.md": {
       "source": "post/IntelliJ IDEAでGitHub Copilotを使う/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "c3c9a1174a0b174e77ebf08bd3fc32e2d5c33ca2bff1cb66cb0df745707904a2",
-      "translationHash": "903b6cf1c1a574c232c82accb184bb050449028339065d5270006439dbadf16f",
+      "sourceHash": "dc9ea57d231c27782044f8e3e1705f34d2caeaf1ed02e055370819513c8f69e0",
+      "translationHash": "dbd3b4d2112918706019f81873ef92a1ec8b49abef499120d17ca43a7087a1a9",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-087.json",
-      "evidenceHash": "7815510892c48ee9bf6581175db639daff330b3efcb2816a6c4b541a0a896d7d"
+      "evidenceHash": "3c6ba8dce962e70e04b7e365a2e969ee2ea4c75157b8c951b058a5c9894308e0"
     },
     "post/IntelliJ IDEAでGitHub Copilotを使う/index.es.md": {
       "source": "post/IntelliJ IDEAでGitHub Copilotを使う/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "c3c9a1174a0b174e77ebf08bd3fc32e2d5c33ca2bff1cb66cb0df745707904a2",
-      "translationHash": "964edf2e92a29d559fcaa482e670b97970d2238ad32f5b414b7e368eb073dfa7",
+      "sourceHash": "dc9ea57d231c27782044f8e3e1705f34d2caeaf1ed02e055370819513c8f69e0",
+      "translationHash": "238889b0b3b1409617037d747a317458a60d06f07a9a9fbecfc8dc9494480d8e",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-087.json",
-      "evidenceHash": "eac2981d49f0463de0df9959dda66dacdbf00578f40ac0c7a600b12f4cb530ab"
+      "evidenceHash": "abccfbf391a68eff64349b1a5b5c77f8b00e7010095617731ebbf285db635b48"
     },
     "post/IntelliJ IDEAでGitHub Copilotを使う/index.fr.md": {
       "source": "post/IntelliJ IDEAでGitHub Copilotを使う/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "c3c9a1174a0b174e77ebf08bd3fc32e2d5c33ca2bff1cb66cb0df745707904a2",
-      "translationHash": "c865cea6776396b3b533fb5d25fd2108cad6a98d87b8b3bd50ba72e427c9962a",
+      "sourceHash": "dc9ea57d231c27782044f8e3e1705f34d2caeaf1ed02e055370819513c8f69e0",
+      "translationHash": "54069f8ed7edea12c35f8f1d5bafcae28af137a9bb81b43fdb1fe2245d964396",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-087.json",
-      "evidenceHash": "b4812af9c9d24fadddcfe1d590c4e1c4d5b98f930b64177b3987ff4b955123be"
+      "evidenceHash": "dc21180cf40d30d32afc109a4b6d84ebb5db23f8a281927636fb642df5d2d804"
     },
     "post/IntelliJ IDEAでGitHub Copilotを使う/index.hi.md": {
       "source": "post/IntelliJ IDEAでGitHub Copilotを使う/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "c3c9a1174a0b174e77ebf08bd3fc32e2d5c33ca2bff1cb66cb0df745707904a2",
-      "translationHash": "6e40cbd31ccb83a701015a4245e1ac9610ebad980a1ec139e14e963837e26bc3",
+      "sourceHash": "dc9ea57d231c27782044f8e3e1705f34d2caeaf1ed02e055370819513c8f69e0",
+      "translationHash": "3b47ed2be4a913df49c91fbeba9976dfbdd6f137d0881faf43bc4dd76e9faeef",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-087.json",
-      "evidenceHash": "6893889bb3b7f8e16d195b1feee4a2133a5e46f32f8ece2fc1eb278bc1e8d39e"
+      "evidenceHash": "67597de9bcba7b935d2e89726b89261160d9bc63739dc069247268c6f4e26ad0"
     },
     "post/IntelliJ IDEAでGitHub Copilotを使う/index.id.md": {
       "source": "post/IntelliJ IDEAでGitHub Copilotを使う/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "c3c9a1174a0b174e77ebf08bd3fc32e2d5c33ca2bff1cb66cb0df745707904a2",
-      "translationHash": "99fefcb84e53c9ef7a84840aa472360bc372b3677c0e705604888b13631e642c",
+      "sourceHash": "dc9ea57d231c27782044f8e3e1705f34d2caeaf1ed02e055370819513c8f69e0",
+      "translationHash": "2721af50c808302068048a9181a0d6cdd4e01dc66378901488a06575cb5a73e4",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-087.json",
-      "evidenceHash": "27be9aaa645e34ebd3f7814d1eaa98e50faada3c06b5dbc17c8b3d7b1230d04c"
+      "evidenceHash": "d05bc642fc878bb52977c43e30cdd95d6ddada452a4ec4924b32f30451e082ec"
     },
     "post/IntelliJ IDEAでGitHub Copilotを使う/index.ko.md": {
       "source": "post/IntelliJ IDEAでGitHub Copilotを使う/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "c3c9a1174a0b174e77ebf08bd3fc32e2d5c33ca2bff1cb66cb0df745707904a2",
-      "translationHash": "c6a6bf796a8e826aa6cd3b7c0bd25e2bc0f0294f38902e0d2afbcc173a461dd8",
+      "sourceHash": "dc9ea57d231c27782044f8e3e1705f34d2caeaf1ed02e055370819513c8f69e0",
+      "translationHash": "a9f514d89ae8411bd751656cb911b71d6d053a856c63dd0a9efa0a242a9e2c02",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-087.json",
-      "evidenceHash": "2e504751851d0202f1af0f243b5a553509f089f55207643ecde23cd109e5d232"
+      "evidenceHash": "22583b69079ac577d0b3aea1195a1e45dbbba5daf61c01efcffa0f166dc475e4"
     },
     "post/IntelliJ IDEAでGitHub Copilotを使う/index.pt.md": {
       "source": "post/IntelliJ IDEAでGitHub Copilotを使う/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "c3c9a1174a0b174e77ebf08bd3fc32e2d5c33ca2bff1cb66cb0df745707904a2",
-      "translationHash": "a30ddb78398784bad3d316f9fbc99ce256108b499719a95132cd70984befadc0",
+      "sourceHash": "dc9ea57d231c27782044f8e3e1705f34d2caeaf1ed02e055370819513c8f69e0",
+      "translationHash": "9ba68b328b6df5bdfff25f997d05d8692de0043ee315d747a7e77a8853105eef",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-087.json",
-      "evidenceHash": "b989db0d090ca8c1306975a4b7331727f31bce7ae0898eaba21dc7e651b99db5"
+      "evidenceHash": "1ccfad7a656206c7a7a97375831d6ed1971766f1ed60c7c1c90a7544027e09fb"
     },
     "post/IntelliJ IDEAでGitHub Copilotを使う/index.ru.md": {
       "source": "post/IntelliJ IDEAでGitHub Copilotを使う/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "c3c9a1174a0b174e77ebf08bd3fc32e2d5c33ca2bff1cb66cb0df745707904a2",
-      "translationHash": "c599a3c846a68a89667b478a3a8c292b56bfa880d2b80068f7f30800dc1e332c",
+      "sourceHash": "dc9ea57d231c27782044f8e3e1705f34d2caeaf1ed02e055370819513c8f69e0",
+      "translationHash": "046f5e38ec7622541d5eaa1854b8028a389a0fd686deab3cbb8489a3f7e60a4d",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-087.json",
-      "evidenceHash": "9c34db2c5bb0f38cabd37d03d344b82ba807ea0d11701aa4150f669892773bca"
+      "evidenceHash": "c71b1612bec3058dc4db4991599c0e63a7b0ed88d8b1ec1808315c0b6640f17d"
     },
     "post/IntelliJ IDEAでGitHub Copilotを使う/index.zh-cn.md": {
       "source": "post/IntelliJ IDEAでGitHub Copilotを使う/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "c3c9a1174a0b174e77ebf08bd3fc32e2d5c33ca2bff1cb66cb0df745707904a2",
-      "translationHash": "17ab8fa27b8d01097a2f4afb65e2b36c83dc3eb7630b293ad5ce96e9e0512299",
+      "sourceHash": "dc9ea57d231c27782044f8e3e1705f34d2caeaf1ed02e055370819513c8f69e0",
+      "translationHash": "430da82dc41ecf408e0b99ea2c9fb5ebcefac9babe572376b416b39a5892f4ab",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-087.json",
-      "evidenceHash": "b52ca093fdd16d44e33bde009bfcebab725f87126905b8758736035a8bf79e70"
+      "evidenceHash": "35f4dfa7967f82098a684211ecc05edf236b7e17fca67c4dd4e6036300183414"
     },
     "post/IntelliJ IDEAでGitHub Copilotを使う/index.zh-tw.md": {
       "source": "post/IntelliJ IDEAでGitHub Copilotを使う/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "c3c9a1174a0b174e77ebf08bd3fc32e2d5c33ca2bff1cb66cb0df745707904a2",
-      "translationHash": "c7621c5acd7016f418488027e722926509d1367a9a9aebfe00dcf4a8bbd8b96c",
+      "sourceHash": "dc9ea57d231c27782044f8e3e1705f34d2caeaf1ed02e055370819513c8f69e0",
+      "translationHash": "1eca3c5f8a0cb5c7dc6ac077defa7691d612977b2d74fa1b6e5a20555afcd541",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-087.json",
-      "evidenceHash": "04e0a5be2137fef3ebf0562d951b302acf7d5cf22f990435c4f86a092813af69"
+      "evidenceHash": "0f3eed15da147cf62cd0e59692e5fecb2f5a02905f89ce53d1cc8ec3bcad6351"
     },
     "post/IntelliJ IDEAで日付を貼り付けるコマンドを追加する/index.ar.md": {
       "source": "post/IntelliJ IDEAで日付を貼り付けるコマンドを追加する/index.md",
@@ -10210,121 +10210,121 @@
       "source": "post/かっこいい Web ページテンプレート（html5up）/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "dce35fd9c62428f27fee2ed1de112a3714582400484489b58eb0c2f4ae8910db",
-      "translationHash": "04a0e8d1eca134f8697e72539e6b7cdabca556a9b3bc4ff450eb6f750f71e3f0",
+      "sourceHash": "977133d879af250a8b57eac1abd2bca1eb993bbaf1e700ef48c8ae4e31e4a244",
+      "translationHash": "205e660b26cbc7163b0b5bcf605a371aee792caaf19ae4aa7db3a99dbfe9d234",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-090.json",
-      "evidenceHash": "8ae00ac055aa019b1f9ea5c67da5aa72a05fb5e23241987c285e32ec24dfa0f8"
+      "evidenceHash": "9408fed2e8cfea3459c471e8efb604567bbc03fa629d31737b442bfc7264f432"
     },
     "post/かっこいい Web ページテンプレート（html5up）/index.de.md": {
       "source": "post/かっこいい Web ページテンプレート（html5up）/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "dce35fd9c62428f27fee2ed1de112a3714582400484489b58eb0c2f4ae8910db",
-      "translationHash": "f348f3d620412506b2dee6af9c83aab1f7ef504e3d9a199416b947a268cb3b82",
+      "sourceHash": "977133d879af250a8b57eac1abd2bca1eb993bbaf1e700ef48c8ae4e31e4a244",
+      "translationHash": "8f75c34f5809aae6e87dcc4266dfbe161858a45f693da9cf6ce299c55223bef8",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-090.json",
-      "evidenceHash": "d1a00591158b299cf50da47a144125ffbda61853c5043ffd0f30b6c3c1081078"
+      "evidenceHash": "3d82bfae30b73bab7b3a98b216cb5e9dad64ee1dcddc8814db741ffb98d0b616"
     },
     "post/かっこいい Web ページテンプレート（html5up）/index.en.md": {
       "source": "post/かっこいい Web ページテンプレート（html5up）/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "dce35fd9c62428f27fee2ed1de112a3714582400484489b58eb0c2f4ae8910db",
-      "translationHash": "e85ebf08806ffd8004141d6d2e6dfef31b4bc1de68aec3ff6c56fc7766fca35d",
+      "sourceHash": "977133d879af250a8b57eac1abd2bca1eb993bbaf1e700ef48c8ae4e31e4a244",
+      "translationHash": "086ab6a380daca9786d8f2353e8ec6d9fe8bb24294fe9ea57c76f85c76603c87",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-090.json",
-      "evidenceHash": "7e0f09695e9370d87d6d62e5973859b647d82a5bc73d52d8dd7f6dd115e004a6"
+      "evidenceHash": "7bce9f6e3fe19f72eb5286cf1f06e0224109b86a23fdc4f1ef759d6fa5ca253e"
     },
     "post/かっこいい Web ページテンプレート（html5up）/index.es.md": {
       "source": "post/かっこいい Web ページテンプレート（html5up）/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "dce35fd9c62428f27fee2ed1de112a3714582400484489b58eb0c2f4ae8910db",
-      "translationHash": "67333e9a5e232cd8e03c19f7adebdcbf99cea0f53a4cbe3ca7dee711b38dab3a",
+      "sourceHash": "977133d879af250a8b57eac1abd2bca1eb993bbaf1e700ef48c8ae4e31e4a244",
+      "translationHash": "5f130b368c386cbe5f0ca791bced35fb69e670a84d49f05b047af178db5508e9",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-090.json",
-      "evidenceHash": "542ea7ea41febbf73a10aea50428fe2bedd1fbbe18c5ef9abca53c51932781b7"
+      "evidenceHash": "7dced8075de483c46488a0ec32a387bb822a7deb1e318bc7e5fb56d7ed16187c"
     },
     "post/かっこいい Web ページテンプレート（html5up）/index.fr.md": {
       "source": "post/かっこいい Web ページテンプレート（html5up）/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "dce35fd9c62428f27fee2ed1de112a3714582400484489b58eb0c2f4ae8910db",
-      "translationHash": "39501b105923e859666672687f06b73efcef2d8d190183e0ff784f30d746637b",
+      "sourceHash": "977133d879af250a8b57eac1abd2bca1eb993bbaf1e700ef48c8ae4e31e4a244",
+      "translationHash": "d422f98d04387a07ba17bc4242b5f03fc0c0e4b52e587cc1d991b6e971bb2460",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-090.json",
-      "evidenceHash": "1782898911eae44bb48fb317eab9bb3060a115fdb0787c71623895adc76cf86a"
+      "evidenceHash": "b9a992f39d0827e707068f8c43372003c8553e9f53d4c80c8bd62f43e0d07b8e"
     },
     "post/かっこいい Web ページテンプレート（html5up）/index.hi.md": {
       "source": "post/かっこいい Web ページテンプレート（html5up）/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "dce35fd9c62428f27fee2ed1de112a3714582400484489b58eb0c2f4ae8910db",
-      "translationHash": "3e33ef9523b027811da1b18ff2249182dd9cbc6bc263e2054029b085359112fb",
+      "sourceHash": "977133d879af250a8b57eac1abd2bca1eb993bbaf1e700ef48c8ae4e31e4a244",
+      "translationHash": "4ade6ea84a73390f66276523e845eb94abf69a521d7e76b18c05d6bca5c32e4b",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-090.json",
-      "evidenceHash": "9bec69e34679fbeac9d1fd1d95837f7397242edaa2f0db001bf043b40e7b6ed2"
+      "evidenceHash": "e13dad616a5f75b36340df189a0ac12cc608d1391895766ca7ce752ffdc71761"
     },
     "post/かっこいい Web ページテンプレート（html5up）/index.id.md": {
       "source": "post/かっこいい Web ページテンプレート（html5up）/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "dce35fd9c62428f27fee2ed1de112a3714582400484489b58eb0c2f4ae8910db",
-      "translationHash": "9c23b027a29d7caa37ed39e5e20b4ceb9b93a9118a48fff697d01015f6dc8c9d",
+      "sourceHash": "977133d879af250a8b57eac1abd2bca1eb993bbaf1e700ef48c8ae4e31e4a244",
+      "translationHash": "ec5e30fcc11d5f706e7a22b455f6fb75a31cfe0dfed191abf378ced51140191e",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-090.json",
-      "evidenceHash": "8b092d854429696c403c89fb530ad2fd694cd8778139a3e2b2f95bdaa0e29097"
+      "evidenceHash": "01b77be281f87ec6ea774e73aefc4ce24cb5c8e427dc506804242d078488ad74"
     },
     "post/かっこいい Web ページテンプレート（html5up）/index.ko.md": {
       "source": "post/かっこいい Web ページテンプレート（html5up）/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "dce35fd9c62428f27fee2ed1de112a3714582400484489b58eb0c2f4ae8910db",
-      "translationHash": "f8436e04e7fe28d5f5bad64e87a88344d990508145823b61c1c0a8137baa7d3f",
+      "sourceHash": "977133d879af250a8b57eac1abd2bca1eb993bbaf1e700ef48c8ae4e31e4a244",
+      "translationHash": "535e85ae9c752c2d9b8b8e490e1ea8f390fb45834393e82b2bcce504e4544a8a",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-090.json",
-      "evidenceHash": "849f69534f4fc88ab2d47dda293c5c6d3d37f8134fc7de9d000691032ac0b245"
+      "evidenceHash": "5cae926a98506a0a81e4393073a0a86ab9e74c91366c1bfd3de6996d515a6c85"
     },
     "post/かっこいい Web ページテンプレート（html5up）/index.pt.md": {
       "source": "post/かっこいい Web ページテンプレート（html5up）/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "dce35fd9c62428f27fee2ed1de112a3714582400484489b58eb0c2f4ae8910db",
-      "translationHash": "4ce0d4e92f033137691c8784314890ab18c5d39bb467d8b7104a67004a46622a",
+      "sourceHash": "977133d879af250a8b57eac1abd2bca1eb993bbaf1e700ef48c8ae4e31e4a244",
+      "translationHash": "ab0e33a0caf3e182ca91e096eecb9b024745166499bb4587428900dbb0990d16",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-090.json",
-      "evidenceHash": "ca59592c0b7d009a07f5494f649d109ec4b9456301c3c8de6ffc41df6bcb9fec"
+      "evidenceHash": "2bc25d2feb590c376ba857635a976b9994f4e65a8a398654397f4b6d5154fee0"
     },
     "post/かっこいい Web ページテンプレート（html5up）/index.ru.md": {
       "source": "post/かっこいい Web ページテンプレート（html5up）/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "dce35fd9c62428f27fee2ed1de112a3714582400484489b58eb0c2f4ae8910db",
-      "translationHash": "d76d688c9ff2c1e68bfb50fb5d39fc991b630bd4a0054725f2071bbd61613f46",
+      "sourceHash": "977133d879af250a8b57eac1abd2bca1eb993bbaf1e700ef48c8ae4e31e4a244",
+      "translationHash": "369a4ac623d3ae64616e4a80a9a5964f6e5ac665dee7f556a1f868b7f19d336c",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-090.json",
-      "evidenceHash": "daa7fa030d0113589ab07517b3558a662001c3b0053ea700b4381f9a4a75bd99"
+      "evidenceHash": "127ddb66178db5a1beac3e0ec673f6e112929920a7d715e3f5b24b9053625c5a"
     },
     "post/かっこいい Web ページテンプレート（html5up）/index.zh-cn.md": {
       "source": "post/かっこいい Web ページテンプレート（html5up）/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "dce35fd9c62428f27fee2ed1de112a3714582400484489b58eb0c2f4ae8910db",
-      "translationHash": "577649c791e35253e4c9ef5469f79cebc81f5074fa3fd820f56f7ffe959bd2cf",
+      "sourceHash": "977133d879af250a8b57eac1abd2bca1eb993bbaf1e700ef48c8ae4e31e4a244",
+      "translationHash": "ef082ca577f02a0f2d460465098755b428ce5561bfa15fb6a913ada1946bd417",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-090.json",
-      "evidenceHash": "2958e8b832d19e6fe13165441c9a651d52cd8e8fca1947155cda5e8d18078532"
+      "evidenceHash": "1f39a95049bc006ad838b617f6958a118f67bf51e0caea85df54d55374dd255f"
     },
     "post/かっこいい Web ページテンプレート（html5up）/index.zh-tw.md": {
       "source": "post/かっこいい Web ページテンプレート（html5up）/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "dce35fd9c62428f27fee2ed1de112a3714582400484489b58eb0c2f4ae8910db",
-      "translationHash": "56f0609dd412fdaac4221dfe2259c0172163b0e345c57320d555cef1c9b2bb12",
+      "sourceHash": "977133d879af250a8b57eac1abd2bca1eb993bbaf1e700ef48c8ae4e31e4a244",
+      "translationHash": "6267458d7d061774acc06eaaf3383dfa046cec954c3e1c4e0ffb6d4cb20e8f11",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-090.json",
-      "evidenceHash": "2f85242dace78a304a5c32fca0f22d1c8937188c86e6cd9001c4e710df543aa0"
+      "evidenceHash": "53d530a788c7b3b57cafc8791b7af78c4d5743e5f86f40b3fe95816159e7e87f"
     },
     "post/LogicPad 開発秘話/index.ar.md": {
       "source": "post/LogicPad 開発秘話/index.md",
@@ -11290,361 +11290,361 @@
       "source": "post/Microsoft Wordのショートカット一覧/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "57074828402737990ec46a5b92bbe6312cea98dc1db90ea5e1e9ec06681222c1",
+      "sourceHash": "4a121bf04b0176ddbd710363b7682ab56452aca9a1ab2bdc149c054cd6fab4e0",
       "translationHash": "c033cba24aed6059e3b1ec5f634d73e4c1e7d2c338c9af5e473babc3e43c7661",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-099.json",
-      "evidenceHash": "58e0e491fe92ff07d74a5bce419815ee65651a7fef666466c01110d0c76d7423"
+      "evidenceHash": "fdf46c2034834556c349a2458bbeff9800686adb02c513bfe3f78c945e06dbb1"
     },
     "post/Microsoft Wordのショートカット一覧/index.de.md": {
       "source": "post/Microsoft Wordのショートカット一覧/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "57074828402737990ec46a5b92bbe6312cea98dc1db90ea5e1e9ec06681222c1",
+      "sourceHash": "4a121bf04b0176ddbd710363b7682ab56452aca9a1ab2bdc149c054cd6fab4e0",
       "translationHash": "1f604f6b11bbbc4a9ac525eec562a7bd91ed15674bf0c310915dfd93b6aa6efa",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-099.json",
-      "evidenceHash": "b52e14884366e99797cceec0737b3e454c3db24b7671b1135de2cbabe783d41a"
+      "evidenceHash": "d6fdfdf23e527c422016aebeb932a70c15165f9c85ab7bc78a23409af30f98c1"
     },
     "post/Microsoft Wordのショートカット一覧/index.en.md": {
       "source": "post/Microsoft Wordのショートカット一覧/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "57074828402737990ec46a5b92bbe6312cea98dc1db90ea5e1e9ec06681222c1",
+      "sourceHash": "4a121bf04b0176ddbd710363b7682ab56452aca9a1ab2bdc149c054cd6fab4e0",
       "translationHash": "add31418721d0427743b77caf2435e0c592f027478d60b116144a945487d9be2",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-099.json",
-      "evidenceHash": "28a2098b0ef269f6115a04769d53efb473b7c404392039f364341d4e1e62532c"
+      "evidenceHash": "0eded7d83c56c96ce032c88a610b36bce3b08646ff14f9aee9fa78c596380a1b"
     },
     "post/Microsoft Wordのショートカット一覧/index.es.md": {
       "source": "post/Microsoft Wordのショートカット一覧/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "57074828402737990ec46a5b92bbe6312cea98dc1db90ea5e1e9ec06681222c1",
+      "sourceHash": "4a121bf04b0176ddbd710363b7682ab56452aca9a1ab2bdc149c054cd6fab4e0",
       "translationHash": "eaefc8b6abab195525e4d12cf3e445dc16084f40bff14fa488f7946ec6b9aef9",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-099.json",
-      "evidenceHash": "feeec01f165d9935fa26b27a6353bbfa5c29db80fc3fe1035b3d539b5c81bfef"
+      "evidenceHash": "9ae51dc2f414154ae3f4baeae21bb182a641eb120e91a70ede6c6153c6bbe91c"
     },
     "post/Microsoft Wordのショートカット一覧/index.fr.md": {
       "source": "post/Microsoft Wordのショートカット一覧/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "57074828402737990ec46a5b92bbe6312cea98dc1db90ea5e1e9ec06681222c1",
+      "sourceHash": "4a121bf04b0176ddbd710363b7682ab56452aca9a1ab2bdc149c054cd6fab4e0",
       "translationHash": "0d0c37e07241658db2675f75d65f2ccdd2a312d63cd68590860885de76a60e20",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-099.json",
-      "evidenceHash": "7396f4c6de45972892647044583780decf5caeb82a1380f4d1ef92d2da725284"
+      "evidenceHash": "0ab76c49771d8df8a0c7c33eb216e266030f009a88b37f309f1c8e6d21c72f32"
     },
     "post/Microsoft Wordのショートカット一覧/index.hi.md": {
       "source": "post/Microsoft Wordのショートカット一覧/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "57074828402737990ec46a5b92bbe6312cea98dc1db90ea5e1e9ec06681222c1",
+      "sourceHash": "4a121bf04b0176ddbd710363b7682ab56452aca9a1ab2bdc149c054cd6fab4e0",
       "translationHash": "a33427ce19d1438d6a3ee804343d99ab5fcb3717c9e8b825c565052ac1951952",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-099.json",
-      "evidenceHash": "13f56902af0966aede1ceabee92a47007cc6d600f759c27483d3125c29acdc2e"
+      "evidenceHash": "12d5b95c6c5448f1f6a6b6897dda0674e7312e6e7cc3346bdab9045be012af8b"
     },
     "post/Microsoft Wordのショートカット一覧/index.id.md": {
       "source": "post/Microsoft Wordのショートカット一覧/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "57074828402737990ec46a5b92bbe6312cea98dc1db90ea5e1e9ec06681222c1",
+      "sourceHash": "4a121bf04b0176ddbd710363b7682ab56452aca9a1ab2bdc149c054cd6fab4e0",
       "translationHash": "543084b08ec2dc30e837899fe33cf7baaac7e861df3c8175dda3255a42dbc23c",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-099.json",
-      "evidenceHash": "1d9dc888fd26c350128bb08692486a2e515ffacfc11265e6d9841845c6fa3e16"
+      "evidenceHash": "f24da7e18d01aa5e4ad150151d84e500c2663d9d214a49579be16a50e2998049"
     },
     "post/Microsoft Wordのショートカット一覧/index.ko.md": {
       "source": "post/Microsoft Wordのショートカット一覧/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "57074828402737990ec46a5b92bbe6312cea98dc1db90ea5e1e9ec06681222c1",
+      "sourceHash": "4a121bf04b0176ddbd710363b7682ab56452aca9a1ab2bdc149c054cd6fab4e0",
       "translationHash": "f36ec4ed4122401a0c41618174d80d1c28870e3b21fd1e1f63924be5e11dde1d",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-099.json",
-      "evidenceHash": "e60c3b48ee6982cfbeba4a643ef8a2da9d1bf934665e3f9dec0a637861ef82d9"
+      "evidenceHash": "3fc33b76b7ca7272415da94158c3e28597319a5dec899371c69a8f9a7e921fdb"
     },
     "post/Microsoft Wordのショートカット一覧/index.pt.md": {
       "source": "post/Microsoft Wordのショートカット一覧/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "57074828402737990ec46a5b92bbe6312cea98dc1db90ea5e1e9ec06681222c1",
+      "sourceHash": "4a121bf04b0176ddbd710363b7682ab56452aca9a1ab2bdc149c054cd6fab4e0",
       "translationHash": "5b391c0e4196988a61cc1249bd990f171850fe19307dd3a11022d41d04fdf177",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-099.json",
-      "evidenceHash": "c89e915ec4305563a87faf83f5157982f990f8587e34590246b654b42b0eeeb5"
+      "evidenceHash": "8a2f8af8ffea7717aba085f40c05782d54830fc18bd2cd08557e4ca1a3758c6e"
     },
     "post/Microsoft Wordのショートカット一覧/index.ru.md": {
       "source": "post/Microsoft Wordのショートカット一覧/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "57074828402737990ec46a5b92bbe6312cea98dc1db90ea5e1e9ec06681222c1",
+      "sourceHash": "4a121bf04b0176ddbd710363b7682ab56452aca9a1ab2bdc149c054cd6fab4e0",
       "translationHash": "013bcc4dcfc57ac173116f0233a4e319005e026a02d190edbf2dab7a80e490b7",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-099.json",
-      "evidenceHash": "c4287160a814feddbd67e8640ce0461a38597f41ff179c723309f7ac7e4cd7fd"
+      "evidenceHash": "6be3766d31d810d4c437a4ad5d119cb3b30f7cdd495b09054cc71fb97f345102"
     },
     "post/Microsoft Wordのショートカット一覧/index.zh-cn.md": {
       "source": "post/Microsoft Wordのショートカット一覧/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "57074828402737990ec46a5b92bbe6312cea98dc1db90ea5e1e9ec06681222c1",
+      "sourceHash": "4a121bf04b0176ddbd710363b7682ab56452aca9a1ab2bdc149c054cd6fab4e0",
       "translationHash": "10c6340833b3783e77ae1ee6a5bda2520b1d6cb9abb7dcfd01cd2c8436b2e3a6",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-099.json",
-      "evidenceHash": "9da617ebf50132ef5a036b306ff0a04957a080ddc145e0dbfec3399922d37d47"
+      "evidenceHash": "14dfaa39c3a2cf8f61415861be1f3ff271e84d86235aaa631b37db72ec1c2194"
     },
     "post/Microsoft Wordのショートカット一覧/index.zh-tw.md": {
       "source": "post/Microsoft Wordのショートカット一覧/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "57074828402737990ec46a5b92bbe6312cea98dc1db90ea5e1e9ec06681222c1",
+      "sourceHash": "4a121bf04b0176ddbd710363b7682ab56452aca9a1ab2bdc149c054cd6fab4e0",
       "translationHash": "92f9a7d2a285d5cd5a565e71a214e2aeb9d50137928e172644743e2b55775fd8",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-099.json",
-      "evidenceHash": "58d7cba06aed177ee79bc2bb65dfb36d60016f3097062f4147b006dd0a5f85c7"
+      "evidenceHash": "38f541d9f311fd8feac1408bacddc897516a39ca4997332fc5a38cbc3e0b7e75"
     },
     "post/「日本人ファースト」について思うこと/index.ar.md": {
       "source": "post/「日本人ファースト」について思うこと/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "bd7cbae0df56d87b38f4216d5e82a62bce4a219688d8a0677391b3cfc8973d0c",
-      "translationHash": "3237c040517147a983ba7f5847514d835f0c29f7891d01d229221bc35257f415",
+      "sourceHash": "0af212e7ecfb3c33f3a4603583635de5b94c7dbaa0cbbcc7f7640a1d2ccbfb5a",
+      "translationHash": "8dfb0631f273ac37bdfe76b789362d0a55f64ff76afc3824aa80577e97b089c6",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-100.json",
-      "evidenceHash": "b0e33400e5a0f1c64144901acdb9f93e5febd04e19d599e56ab1d1f909e7e463"
+      "evidenceHash": "4b391b8f62491d74bbc1feef81f1b79c4e8016fb2034ec7fb143a0213c8f45b8"
     },
     "post/「日本人ファースト」について思うこと/index.de.md": {
       "source": "post/「日本人ファースト」について思うこと/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "bd7cbae0df56d87b38f4216d5e82a62bce4a219688d8a0677391b3cfc8973d0c",
-      "translationHash": "f23c1c6b5fe061c30f65c90e7d74e2064862575de860b6ec8a799aa0dc1cc86b",
+      "sourceHash": "0af212e7ecfb3c33f3a4603583635de5b94c7dbaa0cbbcc7f7640a1d2ccbfb5a",
+      "translationHash": "7c4c6523066d4200bbd39fd8e9705685b67cd10e0d678cd81183d2b9829b3d1c",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-100.json",
-      "evidenceHash": "bb42e45490cb8cd5ebc9464cc8173d907d22b9188a7a0a75dbb06ff4e022376d"
+      "evidenceHash": "fff8593781c36ddb8f84edf17e530ccff76c76619cea96c8731eeaf1af177a74"
     },
     "post/「日本人ファースト」について思うこと/index.en.md": {
       "source": "post/「日本人ファースト」について思うこと/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "bd7cbae0df56d87b38f4216d5e82a62bce4a219688d8a0677391b3cfc8973d0c",
-      "translationHash": "64f5287df096c712a7d21e2f5f6467faf39722ce4f5462c5c11a92c522d1cc31",
+      "sourceHash": "0af212e7ecfb3c33f3a4603583635de5b94c7dbaa0cbbcc7f7640a1d2ccbfb5a",
+      "translationHash": "bce1a5824debc6b43b9c403dec55717a273b622d0e6341ed22cdf358e9e17da4",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-100.json",
-      "evidenceHash": "7cce9783829da921d9f05274ce40535efa9509b7ffa782c88f519da50e823746"
+      "evidenceHash": "6738d2278044236c604fa4d31c8ea5a7bc80edad22649d4f96533b82d4cfed4b"
     },
     "post/「日本人ファースト」について思うこと/index.es.md": {
       "source": "post/「日本人ファースト」について思うこと/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "bd7cbae0df56d87b38f4216d5e82a62bce4a219688d8a0677391b3cfc8973d0c",
-      "translationHash": "3f4b1f4b78ff1991636b6e7787e4085ca91e5ac4481934fc79fd60b83f5b662e",
+      "sourceHash": "0af212e7ecfb3c33f3a4603583635de5b94c7dbaa0cbbcc7f7640a1d2ccbfb5a",
+      "translationHash": "1c4bea1dd9b46aac91874afd70be92606109fa8a5f0aaba12b6a819ccfb6a09a",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-100.json",
-      "evidenceHash": "13b030a50de71104659bfba44147a37275094c3145e17fff6d8b52f680ff9f78"
+      "evidenceHash": "388ef65048dd45d140e5541c39ae17fab0474cdf8388b64e50f6f6ae810f5fcf"
     },
     "post/「日本人ファースト」について思うこと/index.fr.md": {
       "source": "post/「日本人ファースト」について思うこと/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "bd7cbae0df56d87b38f4216d5e82a62bce4a219688d8a0677391b3cfc8973d0c",
-      "translationHash": "4f2f73017c4f012dd58b908d7be0e4206109f62a5b5feaef2a1df2be5829cbc5",
+      "sourceHash": "0af212e7ecfb3c33f3a4603583635de5b94c7dbaa0cbbcc7f7640a1d2ccbfb5a",
+      "translationHash": "1c7194db3e898e40f8d6497bf3d4eff552cd0618ef8e004955b482e185bb023c",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-100.json",
-      "evidenceHash": "4c30230da4a9f76fdb6161a9249be5b2d2f5d50cdada9a9dbec9c3b4c432e4f8"
+      "evidenceHash": "0ea422073a26a1462fd11f178d6d5306f25f0ab66b1497cd680af8efa0d65495"
     },
     "post/「日本人ファースト」について思うこと/index.hi.md": {
       "source": "post/「日本人ファースト」について思うこと/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "bd7cbae0df56d87b38f4216d5e82a62bce4a219688d8a0677391b3cfc8973d0c",
-      "translationHash": "cc7cc42aff112cefbba555adcf7345d3445471f6262944a29f781e41e1255669",
+      "sourceHash": "0af212e7ecfb3c33f3a4603583635de5b94c7dbaa0cbbcc7f7640a1d2ccbfb5a",
+      "translationHash": "796a465b22211ad0f20da59d66f4ed3ac8bf3237562bb0a5c95da329776091a1",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-100.json",
-      "evidenceHash": "fa5b0ba453a201c736d71970a24c6cfd11436cc2b3525913424c8fcf166fae3f"
+      "evidenceHash": "3a282777cdc2fcf9a71744cff9f81ef808a0014cdc18c435de94cd0d08a447da"
     },
     "post/「日本人ファースト」について思うこと/index.id.md": {
       "source": "post/「日本人ファースト」について思うこと/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "bd7cbae0df56d87b38f4216d5e82a62bce4a219688d8a0677391b3cfc8973d0c",
-      "translationHash": "608ae600f87ddd2c183e3e389d520e630d13192363c8196f12d7ce64b62d517d",
+      "sourceHash": "0af212e7ecfb3c33f3a4603583635de5b94c7dbaa0cbbcc7f7640a1d2ccbfb5a",
+      "translationHash": "0516e53f842f01f89218f48b039f8e5e282a463bcc7afc612bcd659ca9431066",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-100.json",
-      "evidenceHash": "b01588977982456f3ef975b66da888d014d33e48e9719651be28191bb9b60198"
+      "evidenceHash": "5fe8d720473d0c1379bf12cda3eafc1e8b92b7279c19d3ac3a0b344f46a46837"
     },
     "post/「日本人ファースト」について思うこと/index.ko.md": {
       "source": "post/「日本人ファースト」について思うこと/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "bd7cbae0df56d87b38f4216d5e82a62bce4a219688d8a0677391b3cfc8973d0c",
-      "translationHash": "af042d7a6c6be3b3a7635ea34a8bec39fc77d6296a6fe424fffa12237fb5cc68",
+      "sourceHash": "0af212e7ecfb3c33f3a4603583635de5b94c7dbaa0cbbcc7f7640a1d2ccbfb5a",
+      "translationHash": "d916a9afbfc8485e1d9d1a84b1b0cac3ec0bbb1434a658c0888d67b39b7b84df",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-100.json",
-      "evidenceHash": "ae351e9d0a829fddacdc3c336f4acffbb99918a5e72fffd2b1c97d76d8118d65"
+      "evidenceHash": "76771a46d9363c2d62a206dce50b56b5439013772bf4bdd082fe73572f842706"
     },
     "post/「日本人ファースト」について思うこと/index.pt.md": {
       "source": "post/「日本人ファースト」について思うこと/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "bd7cbae0df56d87b38f4216d5e82a62bce4a219688d8a0677391b3cfc8973d0c",
-      "translationHash": "1b8a904e40c3dc46868baa79acbe71a0878e559981bcba709df6f75db0bcc353",
+      "sourceHash": "0af212e7ecfb3c33f3a4603583635de5b94c7dbaa0cbbcc7f7640a1d2ccbfb5a",
+      "translationHash": "892f7402ee27b64030eeec6709bf96ef66ddf22ef7e85051b736f007b5b5585f",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-100.json",
-      "evidenceHash": "e75140642ca5d77a40f2013f035af9d54016d6da7f658de6fef73b6819b575ec"
+      "evidenceHash": "64d256640ff1d7fb4f12b257c9ce697f89a0f13bb1af54857308337c3d4315b9"
     },
     "post/「日本人ファースト」について思うこと/index.ru.md": {
       "source": "post/「日本人ファースト」について思うこと/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "bd7cbae0df56d87b38f4216d5e82a62bce4a219688d8a0677391b3cfc8973d0c",
-      "translationHash": "623057d2883c85a03949efcd7d55ebf3677c356c0967bd9441f2cedf01811ab8",
+      "sourceHash": "0af212e7ecfb3c33f3a4603583635de5b94c7dbaa0cbbcc7f7640a1d2ccbfb5a",
+      "translationHash": "da5141f06bd18d25fa1706c73ec36abd3dbec5e5b3ed3dd042929002719814cf",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-100.json",
-      "evidenceHash": "402e6a2e8a09e205aed6fb622b1ea13c336f77bddaca1bfd91928c895ab0c2fb"
+      "evidenceHash": "3c89c8e3b767f538bf3abd4619c8d27c716c606129e1efcd1f1c1955cbfebff9"
     },
     "post/「日本人ファースト」について思うこと/index.zh-cn.md": {
       "source": "post/「日本人ファースト」について思うこと/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "bd7cbae0df56d87b38f4216d5e82a62bce4a219688d8a0677391b3cfc8973d0c",
-      "translationHash": "b83336d4aca36715748c50713819d47b4760d1ac4f20500649e0a774a61ddc00",
+      "sourceHash": "0af212e7ecfb3c33f3a4603583635de5b94c7dbaa0cbbcc7f7640a1d2ccbfb5a",
+      "translationHash": "88bc6db47aefa37d5a0f13f7b393507da25b5cd3f41ec0f04f867eee97226786",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-100.json",
-      "evidenceHash": "36c7ef793e5fdb1a23e514e8d7430878485e6eb0786eb7f4e89ebb5fc264a77a"
+      "evidenceHash": "b5250c21dccf22f401ed093a30c780c888ade3fb338f4987d6def7769a10f8ae"
     },
     "post/「日本人ファースト」について思うこと/index.zh-tw.md": {
       "source": "post/「日本人ファースト」について思うこと/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "bd7cbae0df56d87b38f4216d5e82a62bce4a219688d8a0677391b3cfc8973d0c",
-      "translationHash": "ec6598583cbe0d17c6d40dfcbf3cf3ee44d3a68d148e6cd43c68e923c87bbe40",
+      "sourceHash": "0af212e7ecfb3c33f3a4603583635de5b94c7dbaa0cbbcc7f7640a1d2ccbfb5a",
+      "translationHash": "5125bf64f05f99d7338b02780cb66d5eb0908a6dd0153be9d5b4d1fccf077dd0",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-100.json",
-      "evidenceHash": "c4105fec0f13377410ad56c1ab3031072fc587d166ee50f36ed67e76b3074f1d"
+      "evidenceHash": "972f9f496447872cbf32c94eab1de6ddba5ddfd5b9e2d99256fb065f81efd4b6"
     },
     "post/『君死にたまふことなかれ』/index.ar.md": {
       "source": "post/『君死にたまふことなかれ』/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "f214f7fa94962cb7f44e17f9d396026569f9b7d53e4579424c7806d9999c99e5",
-      "translationHash": "873bcb4b9e1c96b6d64c3085fbd28e71e440533996990b0363738f44325f42f5",
+      "sourceHash": "a98a03f3dac2ad949be1efd66ae2ce9c6695cf60d4322638b9e7cc3a4467923d",
+      "translationHash": "9c3f9f3d0b90121ccef7eaa09c16162034e724cf8de96145dbe2a4b0cd7827ec",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-101.json",
-      "evidenceHash": "73854843ad155a11e629ac63380e82270f865676f131ac4a47376232ad0c9d76"
+      "evidenceHash": "ef98911fc372940b5fd17bad135430946e39b084d88276f52c0a0f961c2f8beb"
     },
     "post/『君死にたまふことなかれ』/index.de.md": {
       "source": "post/『君死にたまふことなかれ』/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "f214f7fa94962cb7f44e17f9d396026569f9b7d53e4579424c7806d9999c99e5",
-      "translationHash": "e023765e5a80233a0ce10fe8e92e4c2e3dbb0aec1904639183cab2974511294f",
+      "sourceHash": "a98a03f3dac2ad949be1efd66ae2ce9c6695cf60d4322638b9e7cc3a4467923d",
+      "translationHash": "547dd97145102c056053b0f638224dce985de361637779513568e84e0b8a5c3d",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-101.json",
-      "evidenceHash": "81705a956bd5263b0765e5e2d8902f25c087155ea9d4b923acb79d07f0b81a41"
+      "evidenceHash": "4e2256e1cb28b29cdb6bda337f5e8c9adc3b76c725b27b492242ddb5d018d30c"
     },
     "post/『君死にたまふことなかれ』/index.en.md": {
       "source": "post/『君死にたまふことなかれ』/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "f214f7fa94962cb7f44e17f9d396026569f9b7d53e4579424c7806d9999c99e5",
-      "translationHash": "4950b6a7b9f7bd633e00e695690226ada9a344a225a1fe4e85c28f47dd63bb5c",
+      "sourceHash": "a98a03f3dac2ad949be1efd66ae2ce9c6695cf60d4322638b9e7cc3a4467923d",
+      "translationHash": "617bd38c4a192d7e2c35be296ee94ce265d6b0786405e7688398b1ed4960da68",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-101.json",
-      "evidenceHash": "53f9edd5744316d0b9aacf0ee6f03ccff1e40679a198a98415028e91d285c506"
+      "evidenceHash": "22ac439252ffdc32493bc2cf666f0ea9e6e53fc2c7eba6d30ff59da2ba5a2415"
     },
     "post/『君死にたまふことなかれ』/index.es.md": {
       "source": "post/『君死にたまふことなかれ』/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "f214f7fa94962cb7f44e17f9d396026569f9b7d53e4579424c7806d9999c99e5",
-      "translationHash": "d5aaa0acdaef84b4adcf0d84c07d4d296b07438cf70a37bdea94b984cbab7d7f",
+      "sourceHash": "a98a03f3dac2ad949be1efd66ae2ce9c6695cf60d4322638b9e7cc3a4467923d",
+      "translationHash": "82e75359ece3a05ee2368511985f138e4a348e0fab3adf3f4ad5ddfb7e0ae332",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-101.json",
-      "evidenceHash": "23105ce951b984743ecc3026da9ef2970907ec71ca0b0b547607add89ed5ad36"
+      "evidenceHash": "6927d7ccc556c64f065822d9c207e51898d4e8f4412e0d41a02b9dafa1915bc6"
     },
     "post/『君死にたまふことなかれ』/index.fr.md": {
       "source": "post/『君死にたまふことなかれ』/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "f214f7fa94962cb7f44e17f9d396026569f9b7d53e4579424c7806d9999c99e5",
-      "translationHash": "8d656a9041e32fab699364701839b4f0c365dac46b49bce215a2cce7d68f01df",
+      "sourceHash": "a98a03f3dac2ad949be1efd66ae2ce9c6695cf60d4322638b9e7cc3a4467923d",
+      "translationHash": "c9503f30dd00633e531c3bdba395099c14a7e3a8aa014c5e707c8982ac5f585c",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-101.json",
-      "evidenceHash": "5cab52b54f3b240fb20cf42d784a2b803dd518c499e3b08fb8ac0032ec123144"
+      "evidenceHash": "c98c374d902fe8ae83ae8590617d26e97e8017fa95f73a304b9126a50e52e7fa"
     },
     "post/『君死にたまふことなかれ』/index.hi.md": {
       "source": "post/『君死にたまふことなかれ』/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "f214f7fa94962cb7f44e17f9d396026569f9b7d53e4579424c7806d9999c99e5",
-      "translationHash": "d600877c9f77512e5fdebd509257c3e194df0e3eb02b7276b4e5a108f84a5bf5",
+      "sourceHash": "a98a03f3dac2ad949be1efd66ae2ce9c6695cf60d4322638b9e7cc3a4467923d",
+      "translationHash": "2886a163a9d20daa9dd60cf70a4a64ef0259e0228d4f11ca32f032af118346bd",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-101.json",
-      "evidenceHash": "8e08d15ca9db2f761344134122be90af9475c0422e3940ebf8ed1f95bac502b9"
+      "evidenceHash": "51f83e74b1fc69489c9fc4f766f54875c921e3ed573974f265aebbb4bf54cb4e"
     },
     "post/『君死にたまふことなかれ』/index.id.md": {
       "source": "post/『君死にたまふことなかれ』/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "f214f7fa94962cb7f44e17f9d396026569f9b7d53e4579424c7806d9999c99e5",
-      "translationHash": "ae064f8fe0d7a9fc1b018d99542e82d0cb427f7433ae77b684b0ed0c33930614",
+      "sourceHash": "a98a03f3dac2ad949be1efd66ae2ce9c6695cf60d4322638b9e7cc3a4467923d",
+      "translationHash": "d22bf70bc6281ed37550283bb0f5b1edfd22382c3fd42f5b6817824c270bd29b",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-101.json",
-      "evidenceHash": "40044338094051877c262001d394651ccec809c42d0dea3256a7dc9664fed44e"
+      "evidenceHash": "df24dea1bbbb11187c4d0e5e647fe1e7b99d26ee467845aca3000ac23a9c8b76"
     },
     "post/『君死にたまふことなかれ』/index.ko.md": {
       "source": "post/『君死にたまふことなかれ』/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "f214f7fa94962cb7f44e17f9d396026569f9b7d53e4579424c7806d9999c99e5",
-      "translationHash": "403ff4061cb39cba987d32023e97cf90d22ddaf908a6aab2a5d888c22c1dc037",
+      "sourceHash": "a98a03f3dac2ad949be1efd66ae2ce9c6695cf60d4322638b9e7cc3a4467923d",
+      "translationHash": "8e25faa06877d4626e8145984c94b9952b64c0948878c4cf0a3bd410acfa39e4",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-101.json",
-      "evidenceHash": "12821be0128d78d815b8a4e142ee50a9931c30b0652fc63b701130e02c5c9377"
+      "evidenceHash": "3f5c46dde9e12cab8997e8ab33deea6bba3327bbc223ec083ada2930fb7f0d64"
     },
     "post/『君死にたまふことなかれ』/index.pt.md": {
       "source": "post/『君死にたまふことなかれ』/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "f214f7fa94962cb7f44e17f9d396026569f9b7d53e4579424c7806d9999c99e5",
-      "translationHash": "10e4868b2d2114ba87288e0e6565213aaa28ff9821da95f234dca1c74fbb58ad",
+      "sourceHash": "a98a03f3dac2ad949be1efd66ae2ce9c6695cf60d4322638b9e7cc3a4467923d",
+      "translationHash": "f6ac6632b90f039adbea918092148accd2d33a2d682c175e1b58a29b12decebd",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-101.json",
-      "evidenceHash": "a60dcbb83ca206eb7d82cb43bb8abc217171db0dbf886535664f7c10726e7f98"
+      "evidenceHash": "869bdc70c472843e3ccef4b57a6df8b70d74f5016da691dbdb3153651d51e344"
     },
     "post/『君死にたまふことなかれ』/index.ru.md": {
       "source": "post/『君死にたまふことなかれ』/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "f214f7fa94962cb7f44e17f9d396026569f9b7d53e4579424c7806d9999c99e5",
-      "translationHash": "f53eaecf95e34f7d52ddde250b1aa627ea6886ea482c6918ba94b2cc2f3f75a9",
+      "sourceHash": "a98a03f3dac2ad949be1efd66ae2ce9c6695cf60d4322638b9e7cc3a4467923d",
+      "translationHash": "0601135d6a8c7d7f0cdba3dfe781c17dcd95b265a7c88a7eeb4d8485429c1a00",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-101.json",
-      "evidenceHash": "ae02eaea97e646980aaf89b7dd2b173641695f18b8903bb3709e21f83da953fd"
+      "evidenceHash": "c19030bd1ad39c1516cb6bed3e5cee0dde85381287cab7affae189b34bfdb407"
     },
     "post/『君死にたまふことなかれ』/index.zh-cn.md": {
       "source": "post/『君死にたまふことなかれ』/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "f214f7fa94962cb7f44e17f9d396026569f9b7d53e4579424c7806d9999c99e5",
-      "translationHash": "8c7a27ca7b2f6eb38bf45b01a28f3935054634af447a6fcfc76b736f4c166f00",
+      "sourceHash": "a98a03f3dac2ad949be1efd66ae2ce9c6695cf60d4322638b9e7cc3a4467923d",
+      "translationHash": "7e00029f04dde2aca7000ee577c0bddccfd26737712ff6f8f87d76972a6bea56",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-101.json",
-      "evidenceHash": "ae1ea96b0d62bd9b46d347c91d5660f3360ce4d28eab0dae8f3579142f78c7f3"
+      "evidenceHash": "ba977419c4a3fb6f5a904a53187d117a2c42904a70021db238c234079d84ef1e"
     },
     "post/『君死にたまふことなかれ』/index.zh-tw.md": {
       "source": "post/『君死にたまふことなかれ』/index.md",
       "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "f214f7fa94962cb7f44e17f9d396026569f9b7d53e4579424c7806d9999c99e5",
-      "translationHash": "8682e248a14f5ebef6bb963dabef34c1726d572a5f513a4731c3d0cdacf3d7cb",
+      "sourceHash": "a98a03f3dac2ad949be1efd66ae2ce9c6695cf60d4322638b9e7cc3a4467923d",
+      "translationHash": "ba561c932695371456ca8d85536ed70995741f978acad83b51e5347428a2e430",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-101.json",
-      "evidenceHash": "3958f775428308e0881ba1dec858032b222c18db3660e0af9c0a06c378d283a3"
+      "evidenceHash": "4f68efe304c66b6fde57e35f636c12c3e8eec3d9dabd946a2e927a66f2e9cd94"
     },
     "post/Microsoft.Windows.AIの最新API活用事例とサンプルコード/index.ar.md": {
       "source": "post/Microsoft.Windows.AIの最新API活用事例とサンプルコード/index.md",
@@ -11765,6 +11765,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-102.json",
       "evidenceHash": "47b2895214aedc897c2ee23bc2a38e5c3ddf9af1d428fc87f4dbd378e5ea5b16"
+    },
+    "post/【HUGO】ローカルで環境で表示プレビュー/index.ar.md": {
+      "source": "post/【HUGO】ローカルで環境で表示プレビュー/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "ddf93d75596baee5c92c1d48ea4011a19f398a2db3747d7636a5cfe173942260",
+      "translationHash": "032897fdb781fa82bc78e467c6b89d22d1e7f5e11e376d75a9b48f777bdeb4ab",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-103.json",
+      "evidenceHash": "54c6956222fb434756e0bdf46f0f4697b7d8ff48d34e38eb320c03e096357997"
+    },
+    "post/【HUGO】ローカルで環境で表示プレビュー/index.de.md": {
+      "source": "post/【HUGO】ローカルで環境で表示プレビュー/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "ddf93d75596baee5c92c1d48ea4011a19f398a2db3747d7636a5cfe173942260",
+      "translationHash": "b56ba3c616cb173a0999dd4291b9e088db6084d721054147bebe6d6aa518ac52",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-103.json",
+      "evidenceHash": "ea7c460f1c1df4a2fcec6f7034ad19faf99e2f488b10329df553a33afe0504b0"
+    },
+    "post/【HUGO】ローカルで環境で表示プレビュー/index.en.md": {
+      "source": "post/【HUGO】ローカルで環境で表示プレビュー/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "ddf93d75596baee5c92c1d48ea4011a19f398a2db3747d7636a5cfe173942260",
+      "translationHash": "d93c1991c72b3348dc59bf766b63dbf90444a5c891f90a657aa9e687397f3eb7",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-103.json",
+      "evidenceHash": "60e6cfb7492a06db8c3741d4872ccc106de6f84bdca44a27892fa9c6a6dcc5f1"
+    },
+    "post/【HUGO】ローカルで環境で表示プレビュー/index.es.md": {
+      "source": "post/【HUGO】ローカルで環境で表示プレビュー/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "ddf93d75596baee5c92c1d48ea4011a19f398a2db3747d7636a5cfe173942260",
+      "translationHash": "09ce8527f1b654165cc20eeff2d5786a15970f139665131f14818cb4bbde2aa3",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-103.json",
+      "evidenceHash": "ffb8cb312e43f70ac4290d6ef4baa0a05d86f318004abd673949ab57215fa777"
+    },
+    "post/【HUGO】ローカルで環境で表示プレビュー/index.fr.md": {
+      "source": "post/【HUGO】ローカルで環境で表示プレビュー/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "ddf93d75596baee5c92c1d48ea4011a19f398a2db3747d7636a5cfe173942260",
+      "translationHash": "100b913e73b29c4711fc90b2d14370e9c29c2213115c23d3496efa0df107c0c6",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-103.json",
+      "evidenceHash": "f2dab5f96814a64b1254d93e938808b13b5bed4a2d37aebb55cf0ced7508d645"
+    },
+    "post/【HUGO】ローカルで環境で表示プレビュー/index.hi.md": {
+      "source": "post/【HUGO】ローカルで環境で表示プレビュー/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "ddf93d75596baee5c92c1d48ea4011a19f398a2db3747d7636a5cfe173942260",
+      "translationHash": "243ca18f37b2735fb215eed1e9b61fa846c2ec5164b54d808bde7b401b31831f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-103.json",
+      "evidenceHash": "42532215dafa9aaf4ddcbeb41b5130af516acbe977ed621e03cc3c825aa120b7"
+    },
+    "post/【HUGO】ローカルで環境で表示プレビュー/index.id.md": {
+      "source": "post/【HUGO】ローカルで環境で表示プレビュー/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "ddf93d75596baee5c92c1d48ea4011a19f398a2db3747d7636a5cfe173942260",
+      "translationHash": "97d7f5f7447a872bc83740298607710a5475b0cf8bc076f9d961fab29c46d95f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-103.json",
+      "evidenceHash": "f543a1529bf98da98ff527bca65d70c6d696ee1b3c15339006eef6fe9560e2b5"
+    },
+    "post/【HUGO】ローカルで環境で表示プレビュー/index.ko.md": {
+      "source": "post/【HUGO】ローカルで環境で表示プレビュー/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "ddf93d75596baee5c92c1d48ea4011a19f398a2db3747d7636a5cfe173942260",
+      "translationHash": "bd78e310dd94741686de8ef93e7860ea729c9044025b24b8772beb7ceba3824a",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-103.json",
+      "evidenceHash": "32b22819e6c6980dd76fb8dc35bdfbb1163e982dcd2ff13a47edc98732fc712a"
+    },
+    "post/【HUGO】ローカルで環境で表示プレビュー/index.pt.md": {
+      "source": "post/【HUGO】ローカルで環境で表示プレビュー/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "ddf93d75596baee5c92c1d48ea4011a19f398a2db3747d7636a5cfe173942260",
+      "translationHash": "618d0ecb0b66fe6c5f9caef02ff7639c774f93b5e212b16228d4839f4d6fd053",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-103.json",
+      "evidenceHash": "db8315cc232b187a74fd875014698e1f4dafe727d85d085d98391cdb6125368d"
+    },
+    "post/【HUGO】ローカルで環境で表示プレビュー/index.ru.md": {
+      "source": "post/【HUGO】ローカルで環境で表示プレビュー/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "ddf93d75596baee5c92c1d48ea4011a19f398a2db3747d7636a5cfe173942260",
+      "translationHash": "ba97983118a10366e3d0a6bad2d65f2e5565f3fd2d170ca7bd58dcb20fa65167",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-103.json",
+      "evidenceHash": "0a61a29d80649493c34b26955738de9bc1e2e43c844e6967f3b276e5da431e30"
+    },
+    "post/【HUGO】ローカルで環境で表示プレビュー/index.zh-cn.md": {
+      "source": "post/【HUGO】ローカルで環境で表示プレビュー/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "ddf93d75596baee5c92c1d48ea4011a19f398a2db3747d7636a5cfe173942260",
+      "translationHash": "3640532d968338d0a1599af6b104a9b554851fe287b6d43ded03716d90258255",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-103.json",
+      "evidenceHash": "4274d72c6caaf9d5dde96cfd76756bb38d6d42eafb7a5557d9c7d4df7ad5577d"
+    },
+    "post/【HUGO】ローカルで環境で表示プレビュー/index.zh-tw.md": {
+      "source": "post/【HUGO】ローカルで環境で表示プレビュー/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "ddf93d75596baee5c92c1d48ea4011a19f398a2db3747d7636a5cfe173942260",
+      "translationHash": "8246e628f568572e3a47090b080934abe707b2a7de45e30c2fe57afe9a1e3178",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-103.json",
+      "evidenceHash": "8b25260bfed07ed05a914f3afd2b69134f272e7b2648d1f3ea476879c75d20e2"
     }
   }
 }

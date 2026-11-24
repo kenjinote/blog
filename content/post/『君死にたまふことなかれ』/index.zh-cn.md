@@ -7,7 +7,6 @@ draft: false
 description: "与谢野晶子在日俄战争期间为弟弟所作诗歌的全文，并介绍其1904年发表背景与主题。"
 image: eyecatch.jpg
 lastmod: "2026-11-24T00:00:00+09:00"
-lastmod: "2026-11-24T00:00:00+09:00"
 ---
 ![img.png](img.webp)
 

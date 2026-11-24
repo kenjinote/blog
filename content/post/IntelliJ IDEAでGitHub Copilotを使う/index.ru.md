@@ -3,14 +3,12 @@ title: 'Как установить и активировать GitHub Copilot �
 slug: "IntelliJ IDEAでGitHub Copilotを使う"
 date: 2022-09-10T09:44:55+09:00
 lastmod: 2026-11-24T00:00:00+09:00
-lastmod: 2026-11-24T00:00:00+09:00
 tags: ["IntelliJ IDEA","GitHub Copilot"]
 draft: false
 image: "images/img.webp"
 categories: ["tools-development-environment"]
 description: 'Узнайте, как установить плагин GitHub Copilot в IntelliJ IDEA, войти через GitHub и использовать встроенные предложения кода. В руководстве описаны требования доступа и актуальный процесс авторизации, а также приведены ссылки на официальные инструкции.'
 ---
-
 # Введение
 
 Плагин GitHub Copilot добавляет в IDE JetBrains встроенные предложения кода и Copilot Chat. В этом руководстве описаны базовая установка и вход в IntelliJ IDEA. Названия пунктов меню и вид экранов могут отличаться в зависимости от версий IDE и плагина.

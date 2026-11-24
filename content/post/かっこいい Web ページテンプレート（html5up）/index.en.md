@@ -8,9 +8,7 @@ categories: ["blogging"]
 description: "Learn how to browse and customize HTML5 UP's responsive HTML and CSS templates, and how to credit the design under CC BY 3.0."
 lastmod: 2026-11-24T00:00:00+09:00
 date: 2023-04-17T00:26:55+09:00
-lastmod: 2026-11-24T00:00:00+09:00
 ---
-
 # Using HTML5 UP website templates
 
 Starting from a polished template can help you explore a site's layout and visual design sooner than building every page from scratch. HTML5 UP publishes responsive site templates built with HTML5 and CSS3. Its catalog and availability can change, so check the [official site](https://html5up.net/) for the current listings.

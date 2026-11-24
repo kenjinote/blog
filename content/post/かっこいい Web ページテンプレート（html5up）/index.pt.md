@@ -8,9 +8,7 @@ categories: ["blogging"]
 description: "Veja como encontrar e personalizar os modelos responsivos de HTML e CSS do HTML5 UP e como dar crédito ao design de acordo com a CC BY 3.0."
 lastmod: 2026-11-24T00:00:00+09:00
 date: 2023-04-17T00:26:55+09:00
-lastmod: 2026-11-24T00:00:00+09:00
 ---
-
 # Usar modelos de sites do HTML5 UP
 
 Começar com um modelo bem elaborado ajuda a experimentar o layout e o visual do site mais cedo do que criar cada página do zero. O HTML5 UP publica modelos responsivos feitos com HTML5 e CSS3. O catálogo e a disponibilidade podem mudar; consulte o [site oficial](https://html5up.net/) para ver a lista atual.

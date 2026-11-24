@@ -8,7 +8,6 @@ image: "img.webp"
 categories: ["tools-development-environment"]
 description: 'Microsoft Word（ワード）の作業効率を劇的に上げる便利なショートカットキーの一覧です。文字の装飾、コピー＆ペースト、検索・置換、保存など、普段の文章作成や編集でよく使う必須ショートカットを分かりやすく表でまとめて紹介します。'
 lastmod: "2026-11-24T00:00:00+09:00"
-lastmod: "2026-11-24T00:00:00+09:00"
 ---
 ## ショートカット一覧
 

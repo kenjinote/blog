@@ -7,7 +7,6 @@ draft: false
 description: "Der vollständige Text von Akiko Yosanos Gedicht für ihren Bruder im Russisch-Japanischen Krieg, mit Kontext zur Veröffentlichung 1904 und den Themen."
 image: eyecatch.jpg
 lastmod: "2026-11-24T00:00:00+09:00"
-lastmod: "2026-11-24T00:00:00+09:00"
 ---
 ![img.png](img.webp)
 

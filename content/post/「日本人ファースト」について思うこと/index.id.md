@@ -8,9 +8,7 @@ image: "img.webp"
 categories: ["it-technology"]
 description: "Artikel opini tentang “Jepang Pertama” yang membedakan pandangan penulis dari data resmi ketenagakerjaan, bantuan publik, keamanan, dan industri tradisional."
 lastmod: "2026-11-24T00:00:00+09:00"
-lastmod: "2026-11-24T00:00:00+09:00"
 ---
-
 # Mitos dan Realitas "Jepang Pertama": Pertahanan Jepang Atas Nama "Koeksistensi" di Tahun 2026
 
 Artikel opini ini pertama kali diterbitkan pada 23 Januari 2026. Bagian statistik ditinjau dan diperbarui pada 24 November 2026.

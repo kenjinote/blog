@@ -3,14 +3,12 @@ title: '在IntelliJ IDEA中導入並啟用GitHub Copilot的方法'
 slug: "IntelliJ IDEAでGitHub Copilotを使う"
 date: 2022-09-10T09:44:55+09:00
 lastmod: 2026-11-24T00:00:00+09:00
-lastmod: 2026-11-24T00:00:00+09:00
 tags: ["IntelliJ IDEA","GitHub Copilot"]
 draft: false
 image: "images/img.webp"
 categories: ["tools-development-environment"]
 description: '了解如何在 IntelliJ IDEA 中安裝 GitHub Copilot 外掛程式、登入 GitHub 並使用行內程式碼建議。本指南說明存取權限要求與目前的驗證流程，並提供官方說明連結。'
 ---
-
 # 簡介
 
 GitHub Copilot 外掛程式可為 JetBrains IDE 提供行內程式碼建議與 Copilot Chat。本指南介紹在 IntelliJ IDEA 中的基本安裝與登入步驟。選單名稱和畫面可能因 IDE 與外掛程式版本而異。

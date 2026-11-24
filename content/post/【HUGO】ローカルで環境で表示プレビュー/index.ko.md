@@ -1,78 +1,41 @@
 ---
-
-
-
-
-
-title: '[Hugo 입문] Windows에서의 설치부터 로컬 환경에서의 미리보기 표시 방법'
-date: "2026-09-24T19:44:38+09:00"
+title: "Windows에 Hugo 설치하고 로컬 미리보기 실행하기"
 slug: "【HUGO】ローカルで環境で表示プレビュー"
-date: 2022-09-05T12:28:01+09:00
 tags: ["HUGO"]
 draft: false
 image: "img.webp"
 categories: ["blogging"]
-description: '정적 사이트 생성기 ''Hugo''를 Windows 환경에 설치하는 절차나 환경 변수 Path 설정법, 로컬 서버를 띄워 블로그 기사를 미리보기로 확인하는 명령의 사용법을 알기 쉽게 해설합니다.'
+description: "Windows에 Hugo를 설치하고 필요하면 PATH를 설정한 뒤 최신 명령으로 초안이 포함된 사이트를 로컬 미리보기합니다."
+date: "2022-09-05T12:28:01+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
+# Windows에 Hugo 설치하고 로컬에서 사이트 미리보기
 
+> **업데이트: 2026년 11월 24일.** 이전 글은 Hugo 0.102.3 출력과 2022년 당시 Windows 절차에 의존했습니다. 이 글은 현재 공식 Windows 설치 및 CLI 문서에 맞춰 작성했습니다. Hugo, Windows 대화상자, 패키지는 바뀔 수 있으므로 화면이 다르면 링크된 공식 문서를 우선 확인하세요.
 
+## Hugo 설치
 
+Windows 10 이상에서는 WinGet을 이용하는 방법이 간단합니다. 설치 후 새 터미널을 열어 아래 명령을 실행하세요. 또는 공식 릴리스에서 Windows 버전과 CPU 아키텍처에 맞는 압축 파일을 내려받아 풀고 `hugo.exe`를 폴더에 둡니다. PATH에는 실행 파일 자체가 아니라 실행 파일이 들어 있는 폴더를 추가합니다.
 
+PATH를 직접 설정하려면 시작 메뉴에서 “Edit environment variables for your account”를 검색하고 사용자 `Path`에 예를 들어 `C:/Hugo/bin`을 추가합니다. 변경 후 새 터미널을 여세요.
 
-# HUGO 설치
+## Hugo 설치
 
-## 다운로드
-[HUGO 다운로드](https://github.com/gohugoio/hugo/releases)
-
-위 사이트에서 환경에 맞는 Windows 모듈을 다운로드하여 압축을 풉니다.
-제 경우에는 "hugo_0.102.3_Windows-64bit.zip"을 다운로드했습니다.
-
-## 압축 풀기
-다운로드한 zip 파일의 압축을 풀고 그 안의 hugo.exe를 예를 들어 C:\bin 등 폴더를 만들어 그곳에 복사합니다.
-
-## 환경 변수 등록
-아무 위치에서나 hugo.exe를 실행하기 위해 환경 변수에 등록합니다.
-Windows 11에서의 조작이지만 다음과 같은 절차로 등록할 수 있을 것입니다.
-
-1. Win+Pause 버튼을 눌러 버전 정보 열기
-2. 시스템 고급 설정 클릭
-3. 환경 변수 클릭
-4. Path를 선택하고 편집 클릭
-5. 새로 만들기를 클릭하고 새 줄에 "C:\bin"을 입력한 후 확인을 눌러 대화 상자 닫기
- 
-# 블로그 프리뷰하기
-명령 프롬프트에서 HUGO 블로그 폴더로 이동하여 아래 명령을 실행합니다.
-
-`hugo server -D`
-
-실행 결과는 아래와 같습니다. (-D는 임시 글을 표시하는 옵션입니다.)
-
-```
-C:\Users\win11\IdeaProjects\kenji.blog>hugo server -D
-Start building sites …
-hugo v0.102.3-b76146b129d7caa52417f8e914fc5b9271bf56fc windows/amd64 BuildDate=2022-09-01T10:16:19Z VendorInfo=gohugoio
-
-                   | JA
--------------------+-----
-Pages            | 39
-Paginator pages  |  0
-Non-page files   |  7
-Static files     |  0
-Processed images |  0
-Aliases          | 13
-Sitemaps         |  1
-Cleaned          |  0
-
-Built in 161 ms
-Watching for changes in C:\Users\win11\IdeaProjects\kenji.blog\{archetypes,content,themes}
-Watching for config changes in C:\Users\win11\IdeaProjects\kenji.blog\config.toml
-Environment: "development"
-Serving pages from memory
-Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender
-Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
-Press Ctrl+C to stop
+```powershell
+winget install -e --id Hugo.Hugo
+hugo version
 ```
 
-주소는 실행 시 출력되므로 (위 예에서는 `http://localhost:1313/`), 브라우저에 주소를 복사합니다.
-프리뷰는 파일이 저장될 때마다 자동 업데이트됩니다.
-프리뷰를 마치려면 명령 프롬프트에서 Ctrl+C를 입력합니다.
+```powershell
+hugo server --buildDrafts
+```
+
+## 로컬 미리보기
+
+Hugo 프로젝트 루트(설정 파일 또는 설정 디렉터리가 있는 위치)에서 서버를 실행합니다. `--buildDrafts`는 미리보기에 초안 페이지를 포함합니다. 초안을 포함한 결과물을 운영 사이트에 배포하지 마세요. Hugo가 출력한 URL을 브라우저에서 엽니다. 기본 주소는 `http://localhost:1313/`이지만 해당 포트를 이미 사용 중이면 출력된 주소를 확인하세요. 서버를 중지하려면 터미널에서 Ctrl+C를 누릅니다.
+
+## 공식 자료
+
+- [Windows 설치](https://gohugo.io/installation/windows/)
+- [기본 사용법과 초안](https://gohugo.io/getting-started/usage/)
+- [hugo server 명령](https://gohugo.io/commands/hugo_server/)
