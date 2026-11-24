@@ -1,0 +1,457 @@
+{
+  "version": 1,
+  "batch": 129,
+  "article": "ビジネス・自己啓発書4冊の個人的選書",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "6e7b68491fd7c8e17be873b090242a80bfe8158ed44fae9ae9bdd4bd10b48a81",
+  "sources": [
+    "https://amzn.to/3YTv0Dr",
+    "https://amzn.to/3n3SVCQ",
+    "https://amzn.to/3TtKUDf",
+    "https://amzn.to/3TqfjSO",
+    "https://affiliate.amazon.co.jp/help/operating/agreement"
+  ],
+  "scope": "Compared the complete Japanese list and all twelve translations; verified all four Amazon short-link destinations and localized book titles, image pairs, disclosure wording, dates, and metadata.",
+  "findings": [
+    "Removed duplicate future dates, retained publication date 2023-03-19, and set lastmod to the review date.",
+    "Changed universal “must-read/best books” claims to an explicitly personal selection.",
+    "Verified that all four short links resolve to Japanese-language product pages on Amazon.co.jp and relabeled them accordingly for international readers.",
+    "Added a nearby localized affiliate-income disclosure. The Japanese wording identifies kenji.blog as an Amazon Associate, in line with Amazon Japan’s current operating agreement.",
+    "Preserved the four titles, correct link-to-cover image pairings, and all twelve translations."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/おすすめのビジネス書/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/おすすめのビジネス書/index.md",
+      "sourceHash": "6e7b68491fd7c8e17be873b090242a80bfe8158ed44fae9ae9bdd4bd10b48a81",
+      "translationHash": "b6c173dcbb1c941de58d83fe4f7eb8fe7823720de039f732b416266ba8f16317",
+      "summary": "Reviewed all four translated book titles and Amazon destinations; made the recommendation explicitly personal and disclosed the Japanese-edition destination and affiliate relationship.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete list and all translations with Japanese; kept the four book identities and personal-selection framing without claiming they are essential for every business reader."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked translated titles for How to Win Friends and Influence People, The Courage to Be Disliked, LIFE SHIFT, and The 7 Habits of Highly Effective People against the linked Japanese editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The list contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Followed all four short links; each resolved to its intended Japanese-language book listing on Amazon.co.jp. Relabeled the links and added a nearby affiliate disclosure and Japanese-edition notice."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Book availability, editions, prices, and product pages can change; links were checked to resolve to the intended listings on review day.",
+        "The list is a subjective selection and does not assess each book’s contents or current suitability for every reader."
+      ]
+    },
+    "post/おすすめのビジネス書/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/おすすめのビジネス書/index.md",
+      "sourceHash": "6e7b68491fd7c8e17be873b090242a80bfe8158ed44fae9ae9bdd4bd10b48a81",
+      "translationHash": "1a70015313608176c1c5482f08061228736a3d3886e18efa31c523e0d6b6ba41",
+      "summary": "Reviewed all four translated book titles and Amazon destinations; made the recommendation explicitly personal and disclosed the Japanese-edition destination and affiliate relationship.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete list and all translations with Japanese; kept the four book identities and personal-selection framing without claiming they are essential for every business reader."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked translated titles for How to Win Friends and Influence People, The Courage to Be Disliked, LIFE SHIFT, and The 7 Habits of Highly Effective People against the linked Japanese editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The list contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Followed all four short links; each resolved to its intended Japanese-language book listing on Amazon.co.jp. Relabeled the links and added a nearby affiliate disclosure and Japanese-edition notice."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Book availability, editions, prices, and product pages can change; links were checked to resolve to the intended listings on review day.",
+        "The list is a subjective selection and does not assess each book’s contents or current suitability for every reader."
+      ]
+    },
+    "post/おすすめのビジネス書/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/おすすめのビジネス書/index.md",
+      "sourceHash": "6e7b68491fd7c8e17be873b090242a80bfe8158ed44fae9ae9bdd4bd10b48a81",
+      "translationHash": "7303cd0df190cdf211a7486d585025055ae015e6baf24a6067984ae7fafdd831",
+      "summary": "Reviewed all four translated book titles and Amazon destinations; made the recommendation explicitly personal and disclosed the Japanese-edition destination and affiliate relationship.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete list and all translations with Japanese; kept the four book identities and personal-selection framing without claiming they are essential for every business reader."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked translated titles for How to Win Friends and Influence People, The Courage to Be Disliked, LIFE SHIFT, and The 7 Habits of Highly Effective People against the linked Japanese editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The list contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Followed all four short links; each resolved to its intended Japanese-language book listing on Amazon.co.jp. Relabeled the links and added a nearby affiliate disclosure and Japanese-edition notice."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Book availability, editions, prices, and product pages can change; links were checked to resolve to the intended listings on review day.",
+        "The list is a subjective selection and does not assess each book’s contents or current suitability for every reader."
+      ]
+    },
+    "post/おすすめのビジネス書/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/おすすめのビジネス書/index.md",
+      "sourceHash": "6e7b68491fd7c8e17be873b090242a80bfe8158ed44fae9ae9bdd4bd10b48a81",
+      "translationHash": "44f5eb7119ce36db59873ecd1497758e06d02674de9a8372d1adeed941dd965e",
+      "summary": "Reviewed all four translated book titles and Amazon destinations; made the recommendation explicitly personal and disclosed the Japanese-edition destination and affiliate relationship.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete list and all translations with Japanese; kept the four book identities and personal-selection framing without claiming they are essential for every business reader."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked translated titles for How to Win Friends and Influence People, The Courage to Be Disliked, LIFE SHIFT, and The 7 Habits of Highly Effective People against the linked Japanese editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The list contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Followed all four short links; each resolved to its intended Japanese-language book listing on Amazon.co.jp. Relabeled the links and added a nearby affiliate disclosure and Japanese-edition notice."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Book availability, editions, prices, and product pages can change; links were checked to resolve to the intended listings on review day.",
+        "The list is a subjective selection and does not assess each book’s contents or current suitability for every reader."
+      ]
+    },
+    "post/おすすめのビジネス書/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/おすすめのビジネス書/index.md",
+      "sourceHash": "6e7b68491fd7c8e17be873b090242a80bfe8158ed44fae9ae9bdd4bd10b48a81",
+      "translationHash": "a3bf196f781fbd312a0b545f4b8282b365ed41b441d9f04fcc4ed9f50bf4ce30",
+      "summary": "Reviewed all four translated book titles and Amazon destinations; made the recommendation explicitly personal and disclosed the Japanese-edition destination and affiliate relationship.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete list and all translations with Japanese; kept the four book identities and personal-selection framing without claiming they are essential for every business reader."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked translated titles for How to Win Friends and Influence People, The Courage to Be Disliked, LIFE SHIFT, and The 7 Habits of Highly Effective People against the linked Japanese editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The list contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Followed all four short links; each resolved to its intended Japanese-language book listing on Amazon.co.jp. Relabeled the links and added a nearby affiliate disclosure and Japanese-edition notice."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Book availability, editions, prices, and product pages can change; links were checked to resolve to the intended listings on review day.",
+        "The list is a subjective selection and does not assess each book’s contents or current suitability for every reader."
+      ]
+    },
+    "post/おすすめのビジネス書/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/おすすめのビジネス書/index.md",
+      "sourceHash": "6e7b68491fd7c8e17be873b090242a80bfe8158ed44fae9ae9bdd4bd10b48a81",
+      "translationHash": "6266cf908904b70d6385a8eac8780df0c5781b191e39011deae96cd9663b260b",
+      "summary": "Reviewed all four translated book titles and Amazon destinations; made the recommendation explicitly personal and disclosed the Japanese-edition destination and affiliate relationship.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete list and all translations with Japanese; kept the four book identities and personal-selection framing without claiming they are essential for every business reader."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked translated titles for How to Win Friends and Influence People, The Courage to Be Disliked, LIFE SHIFT, and The 7 Habits of Highly Effective People against the linked Japanese editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The list contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Followed all four short links; each resolved to its intended Japanese-language book listing on Amazon.co.jp. Relabeled the links and added a nearby affiliate disclosure and Japanese-edition notice."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Book availability, editions, prices, and product pages can change; links were checked to resolve to the intended listings on review day.",
+        "The list is a subjective selection and does not assess each book’s contents or current suitability for every reader."
+      ]
+    },
+    "post/おすすめのビジネス書/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/おすすめのビジネス書/index.md",
+      "sourceHash": "6e7b68491fd7c8e17be873b090242a80bfe8158ed44fae9ae9bdd4bd10b48a81",
+      "translationHash": "fa572b41f1a47447814d60fb079ca90c235f191298a00ad4382ab8b680c9da67",
+      "summary": "Reviewed all four translated book titles and Amazon destinations; made the recommendation explicitly personal and disclosed the Japanese-edition destination and affiliate relationship.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete list and all translations with Japanese; kept the four book identities and personal-selection framing without claiming they are essential for every business reader."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked translated titles for How to Win Friends and Influence People, The Courage to Be Disliked, LIFE SHIFT, and The 7 Habits of Highly Effective People against the linked Japanese editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The list contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Followed all four short links; each resolved to its intended Japanese-language book listing on Amazon.co.jp. Relabeled the links and added a nearby affiliate disclosure and Japanese-edition notice."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Book availability, editions, prices, and product pages can change; links were checked to resolve to the intended listings on review day.",
+        "The list is a subjective selection and does not assess each book’s contents or current suitability for every reader."
+      ]
+    },
+    "post/おすすめのビジネス書/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/おすすめのビジネス書/index.md",
+      "sourceHash": "6e7b68491fd7c8e17be873b090242a80bfe8158ed44fae9ae9bdd4bd10b48a81",
+      "translationHash": "a1a9ee34a66ebee8f79ebef006dc5ae2d10dd8ffc78b4a583cd097aaeaef6a4e",
+      "summary": "Reviewed all four translated book titles and Amazon destinations; made the recommendation explicitly personal and disclosed the Japanese-edition destination and affiliate relationship.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete list and all translations with Japanese; kept the four book identities and personal-selection framing without claiming they are essential for every business reader."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked translated titles for How to Win Friends and Influence People, The Courage to Be Disliked, LIFE SHIFT, and The 7 Habits of Highly Effective People against the linked Japanese editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The list contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Followed all four short links; each resolved to its intended Japanese-language book listing on Amazon.co.jp. Relabeled the links and added a nearby affiliate disclosure and Japanese-edition notice."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Book availability, editions, prices, and product pages can change; links were checked to resolve to the intended listings on review day.",
+        "The list is a subjective selection and does not assess each book’s contents or current suitability for every reader."
+      ]
+    },
+    "post/おすすめのビジネス書/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/おすすめのビジネス書/index.md",
+      "sourceHash": "6e7b68491fd7c8e17be873b090242a80bfe8158ed44fae9ae9bdd4bd10b48a81",
+      "translationHash": "5378959b094eea2b676e661a10217759ea18f3a4448a4f12f6f95a82cde3358e",
+      "summary": "Reviewed all four translated book titles and Amazon destinations; made the recommendation explicitly personal and disclosed the Japanese-edition destination and affiliate relationship.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete list and all translations with Japanese; kept the four book identities and personal-selection framing without claiming they are essential for every business reader."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked translated titles for How to Win Friends and Influence People, The Courage to Be Disliked, LIFE SHIFT, and The 7 Habits of Highly Effective People against the linked Japanese editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The list contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Followed all four short links; each resolved to its intended Japanese-language book listing on Amazon.co.jp. Relabeled the links and added a nearby affiliate disclosure and Japanese-edition notice."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Book availability, editions, prices, and product pages can change; links were checked to resolve to the intended listings on review day.",
+        "The list is a subjective selection and does not assess each book’s contents or current suitability for every reader."
+      ]
+    },
+    "post/おすすめのビジネス書/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/おすすめのビジネス書/index.md",
+      "sourceHash": "6e7b68491fd7c8e17be873b090242a80bfe8158ed44fae9ae9bdd4bd10b48a81",
+      "translationHash": "093a8dbf456f0f6ab5e2f6e0ece072a6fde2dfb83064c7454a1f467968419737",
+      "summary": "Reviewed all four translated book titles and Amazon destinations; made the recommendation explicitly personal and disclosed the Japanese-edition destination and affiliate relationship.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete list and all translations with Japanese; kept the four book identities and personal-selection framing without claiming they are essential for every business reader."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked translated titles for How to Win Friends and Influence People, The Courage to Be Disliked, LIFE SHIFT, and The 7 Habits of Highly Effective People against the linked Japanese editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The list contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Followed all four short links; each resolved to its intended Japanese-language book listing on Amazon.co.jp. Relabeled the links and added a nearby affiliate disclosure and Japanese-edition notice."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Book availability, editions, prices, and product pages can change; links were checked to resolve to the intended listings on review day.",
+        "The list is a subjective selection and does not assess each book’s contents or current suitability for every reader."
+      ]
+    },
+    "post/おすすめのビジネス書/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/おすすめのビジネス書/index.md",
+      "sourceHash": "6e7b68491fd7c8e17be873b090242a80bfe8158ed44fae9ae9bdd4bd10b48a81",
+      "translationHash": "632344fc52370fee0c8967c45cae0dab4b7b55465680456277ec3f090535d719",
+      "summary": "Reviewed all four translated book titles and Amazon destinations; made the recommendation explicitly personal and disclosed the Japanese-edition destination and affiliate relationship.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete list and all translations with Japanese; kept the four book identities and personal-selection framing without claiming they are essential for every business reader."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked translated titles for How to Win Friends and Influence People, The Courage to Be Disliked, LIFE SHIFT, and The 7 Habits of Highly Effective People against the linked Japanese editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The list contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Followed all four short links; each resolved to its intended Japanese-language book listing on Amazon.co.jp. Relabeled the links and added a nearby affiliate disclosure and Japanese-edition notice."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Book availability, editions, prices, and product pages can change; links were checked to resolve to the intended listings on review day.",
+        "The list is a subjective selection and does not assess each book’s contents or current suitability for every reader."
+      ]
+    },
+    "post/おすすめのビジネス書/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/おすすめのビジネス書/index.md",
+      "sourceHash": "6e7b68491fd7c8e17be873b090242a80bfe8158ed44fae9ae9bdd4bd10b48a81",
+      "translationHash": "cabe458e6f4b9fda3e7c1633b7aef9f7667ef48cdf1628548ca9ff43d8940ded",
+      "summary": "Reviewed all four translated book titles and Amazon destinations; made the recommendation explicitly personal and disclosed the Japanese-edition destination and affiliate relationship.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete list and all translations with Japanese; kept the four book identities and personal-selection framing without claiming they are essential for every business reader."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked translated titles for How to Win Friends and Influence People, The Courage to Be Disliked, LIFE SHIFT, and The 7 Habits of Highly Effective People against the linked Japanese editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The list contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Followed all four short links; each resolved to its intended Japanese-language book listing on Amazon.co.jp. Relabeled the links and added a nearby affiliate disclosure and Japanese-edition notice."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Book availability, editions, prices, and product pages can change; links were checked to resolve to the intended listings on review day.",
+        "The list is a subjective selection and does not assess each book’s contents or current suitability for every reader."
+      ]
+    }
+  }
+}

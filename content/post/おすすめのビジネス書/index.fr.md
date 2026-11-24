@@ -1,35 +1,40 @@
 ---
-title: 'Ça change la vie ! Résumé des chefs-d''œuvre et livres d''affaires recommandés qu''il faut absolument lire'
-date: "2026-09-24T19:44:38+09:00"
+title: "Quatre livres de management et de développement personnel que j’ai choisis"
 slug: "RecommandationのLivre d'affaires"
 date: 2023-03-19T18:13:14+09:00
+lastmod: 2026-11-24T00:00:00+09:00
 tags: ["Livres d'Affaires", "Livres"]
 draft: false
 image: "img.webp"
 categories: ["lifestyle-miscellaneous"]
-description: 'Nous avons sélectionné et vous présentons des chefs-d''œuvre et des livres d''affaires recommandés utiles pour le développement personnel et l''amélioration des compétences, que tout professionnel devrait lire au moins une fois, comme ''Comment se faire des amis'', ''Le courage de ne pas être aimé'', ''LIFE SHIFT'', et ''Les 7 habitudes de ceux qui réalisent tout ce qu''ils entreprennent''.'
+description: "Quatre choix personnels sur le management et le développement personnel. Les liens mènent aux éditions japonaises sur Amazon.co.jp ; kenji.blog peut percevoir une commission sur les achats éligibles."
 ---
+
+
+Il s’agit de mes choix personnels, sans classement ni prétention qu’ils soient indispensables à tous.
+
+Les liens mènent aux éditions japonaises sur Amazon.co.jp. kenji.blog participe au programme d’affiliation Amazon et peut percevoir une commission sur les achats éligibles.
 
 ## Comment Se Faire des Amis
 
-[https://amzn.to/3YTv0Dr](https://amzn.to/3YTv0Dr)
+[Amazon.co.jp (édition japonaise)](https://amzn.to/3YTv0Dr)
 
 ![img_1.png](img_1.webp)
 
 ## Le Courage de Ne Pas Plaire
 
-[https://amzn.to/3n3SVCQ](https://amzn.to/3n3SVCQ)
+[Amazon.co.jp (édition japonaise)](https://amzn.to/3n3SVCQ)
 
 ![img_4.png](img_4.webp)
 
 ## LIFE SHIFT La Stratégie de Vie pour l'Ère des 100 Ans
 
-[https://amzn.to/3TtKUDf](https://amzn.to/3TtKUDf)
+[Amazon.co.jp (édition japonaise)](https://amzn.to/3TtKUDf)
 
 ![img_3.png](img_3.webp)
 
 ## Les 7 Habitudes de Ceux qui Réalisent Tout ce Qu'ils Entreprennent
 
-[https://amzn.to/3TqfjSO](https://amzn.to/3TqfjSO)
+[Amazon.co.jp (édition japonaise)](https://amzn.to/3TqfjSO)
 
 ![img_2.png](img_2.webp)

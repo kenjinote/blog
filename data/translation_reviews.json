@@ -14885,6 +14885,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-128.json",
       "evidenceHash": "85cccc88f4ff8278d5614d06d5d67d878d24b3cff9916f535405bbebda55bf3d"
+    },
+    "post/おすすめのビジネス書/index.en.md": {
+      "source": "post/おすすめのビジネス書/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6e7b68491fd7c8e17be873b090242a80bfe8158ed44fae9ae9bdd4bd10b48a81",
+      "translationHash": "b6c173dcbb1c941de58d83fe4f7eb8fe7823720de039f732b416266ba8f16317",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-129.json",
+      "evidenceHash": "16cbd5d147ee420d251c22912d7026ad7db86f8c1f8998d0d4b0dcbdf4294889"
+    },
+    "post/おすすめのビジネス書/index.zh-cn.md": {
+      "source": "post/おすすめのビジネス書/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6e7b68491fd7c8e17be873b090242a80bfe8158ed44fae9ae9bdd4bd10b48a81",
+      "translationHash": "1a70015313608176c1c5482f08061228736a3d3886e18efa31c523e0d6b6ba41",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-129.json",
+      "evidenceHash": "338eda0ef2df6842afe586244dfb6e0e079982e1a2794d393cc4d7316d357f76"
+    },
+    "post/おすすめのビジネス書/index.es.md": {
+      "source": "post/おすすめのビジネス書/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6e7b68491fd7c8e17be873b090242a80bfe8158ed44fae9ae9bdd4bd10b48a81",
+      "translationHash": "7303cd0df190cdf211a7486d585025055ae015e6baf24a6067984ae7fafdd831",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-129.json",
+      "evidenceHash": "34f7925b58089f0c112be2dbbafc78fdac740e79232113a7907fa2a4db04f338"
+    },
+    "post/おすすめのビジネス書/index.ko.md": {
+      "source": "post/おすすめのビジネス書/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6e7b68491fd7c8e17be873b090242a80bfe8158ed44fae9ae9bdd4bd10b48a81",
+      "translationHash": "44f5eb7119ce36db59873ecd1497758e06d02674de9a8372d1adeed941dd965e",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-129.json",
+      "evidenceHash": "a82236464360deb92c191b69cb24530688b749f2fc5bb57c5ee02a6f82de5117"
+    },
+    "post/おすすめのビジネス書/index.pt.md": {
+      "source": "post/おすすめのビジネス書/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6e7b68491fd7c8e17be873b090242a80bfe8158ed44fae9ae9bdd4bd10b48a81",
+      "translationHash": "a3bf196f781fbd312a0b545f4b8282b365ed41b441d9f04fcc4ed9f50bf4ce30",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-129.json",
+      "evidenceHash": "e2a0e38968524d260510ee43df7da6fd3f77c3ee692def591311795d01e61add"
+    },
+    "post/おすすめのビジネス書/index.zh-tw.md": {
+      "source": "post/おすすめのビジネス書/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6e7b68491fd7c8e17be873b090242a80bfe8158ed44fae9ae9bdd4bd10b48a81",
+      "translationHash": "6266cf908904b70d6385a8eac8780df0c5781b191e39011deae96cd9663b260b",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-129.json",
+      "evidenceHash": "b225740a89fabb6eab09f6518a8cc5b14807565459523fc74ac147bb36aac3ed"
+    },
+    "post/おすすめのビジネス書/index.hi.md": {
+      "source": "post/おすすめのビジネス書/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6e7b68491fd7c8e17be873b090242a80bfe8158ed44fae9ae9bdd4bd10b48a81",
+      "translationHash": "fa572b41f1a47447814d60fb079ca90c235f191298a00ad4382ab8b680c9da67",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-129.json",
+      "evidenceHash": "1aae7388bca712ba36881c91314ad890d691daa824fc52f96485f88bca8c4844"
+    },
+    "post/おすすめのビジネス書/index.fr.md": {
+      "source": "post/おすすめのビジネス書/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6e7b68491fd7c8e17be873b090242a80bfe8158ed44fae9ae9bdd4bd10b48a81",
+      "translationHash": "a1a9ee34a66ebee8f79ebef006dc5ae2d10dd8ffc78b4a583cd097aaeaef6a4e",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-129.json",
+      "evidenceHash": "51430df4291cb86c9e69eded8b64a5d430d960ffd542a1fe97a034c5c6a3fa58"
+    },
+    "post/おすすめのビジネス書/index.de.md": {
+      "source": "post/おすすめのビジネス書/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6e7b68491fd7c8e17be873b090242a80bfe8158ed44fae9ae9bdd4bd10b48a81",
+      "translationHash": "5378959b094eea2b676e661a10217759ea18f3a4448a4f12f6f95a82cde3358e",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-129.json",
+      "evidenceHash": "6a61953b619720cc26e2a7503f3323b4b118d740529055b626bf189408262c17"
+    },
+    "post/おすすめのビジネス書/index.ar.md": {
+      "source": "post/おすすめのビジネス書/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6e7b68491fd7c8e17be873b090242a80bfe8158ed44fae9ae9bdd4bd10b48a81",
+      "translationHash": "093a8dbf456f0f6ab5e2f6e0ece072a6fde2dfb83064c7454a1f467968419737",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-129.json",
+      "evidenceHash": "8ee73e34febd3e43d9cce48dfc6d015d8e914bfe51f554b246113c7e8ab16dfa"
+    },
+    "post/おすすめのビジネス書/index.ru.md": {
+      "source": "post/おすすめのビジネス書/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6e7b68491fd7c8e17be873b090242a80bfe8158ed44fae9ae9bdd4bd10b48a81",
+      "translationHash": "632344fc52370fee0c8967c45cae0dab4b7b55465680456277ec3f090535d719",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-129.json",
+      "evidenceHash": "d87bb3450200ad91242215f480b8f223c36a0d81fcf2b8c44409c9ba98d4d03c"
+    },
+    "post/おすすめのビジネス書/index.id.md": {
+      "source": "post/おすすめのビジネス書/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6e7b68491fd7c8e17be873b090242a80bfe8158ed44fae9ae9bdd4bd10b48a81",
+      "translationHash": "cabe458e6f4b9fda3e7c1633b7aef9f7667ef48cdf1628548ca9ff43d8940ded",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-129.json",
+      "evidenceHash": "ac6cfbed056878047581faeb2a1263f3a6f6d56c4795be50fff5779a3f1047c1"
     }
   }
 }

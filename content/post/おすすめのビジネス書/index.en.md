@@ -1,35 +1,40 @@
 ---
-title: 'Life-Changing! A Summary of Masterpieces and Recommended Business Books You Absolutely Must Read'
-date: "2026-09-24T19:44:38+09:00"
+title: "Four Books I Selected on Business and Personal Development"
 slug: "RecommendationのBusiness Book"
 date: 2023-03-19T18:13:14+09:00
+lastmod: 2026-11-24T00:00:00+09:00
 tags: ["Business Books", "Books"]
 draft: false
 image: "img.webp"
 categories: ["lifestyle-miscellaneous"]
-description: 'Carefully selects and introduces masterpieces and recommended business books useful for self-development and skill improvement that every business person should read at least once, such as ''How to Win Friends and Influence People'', ''The Courage to Be Disliked'', ''LIFE SHIFT'', and ''The 7 Habits of Highly Effective People''.'
+description: "Four personal selections on business and self-development. All product links lead to Japanese-language editions on Amazon.co.jp; kenji.blog may earn from qualifying purchases."
 ---
+
+
+These are my personal selections, not a ranking or a claim that every reader must read them.
+
+Product links go to Japanese-language editions on Amazon.co.jp. As an Amazon Associate I earn from qualifying purchases.
 
 ## How to Win Friends and Influence People
 
-[https://amzn.to/3YTv0Dr](https://amzn.to/3YTv0Dr)
+[Amazon.co.jp (Japanese edition)](https://amzn.to/3YTv0Dr)
 
 ![img_1.png](img_1.webp)
 
 ## The Courage to Be Disliked
 
-[https://amzn.to/3n3SVCQ](https://amzn.to/3n3SVCQ)
+[Amazon.co.jp (Japanese edition)](https://amzn.to/3n3SVCQ)
 
 ![img_4.png](img_4.webp)
 
 ## The 100-Year Life: Living and Working in an Age of Longevity
 
-[https://amzn.to/3TtKUDf](https://amzn.to/3TtKUDf)
+[Amazon.co.jp (Japanese edition)](https://amzn.to/3TtKUDf)
 
 ![img_3.png](img_3.webp)
 
 ## The 7 Habits of Highly Effective People
 
-[https://amzn.to/3TqfjSO](https://amzn.to/3TqfjSO)
+[Amazon.co.jp (Japanese edition)](https://amzn.to/3TqfjSO)
 
 ![img_2.png](img_2.webp)
