@@ -1,0 +1,438 @@
+{
+  "version": 1,
+  "batch": 188,
+  "article": "15 recommended books for beginning software engineers",
+  "reviewedAt": "2026-11-25",
+  "sourceHash": "d2473f632d97d8047ffbf1b69552d298735a23f6d949e762f2139783a391e251",
+  "sources": [],
+  "scope": "Read and compared the complete Japanese article and all twelve translations. Checked that all fifteen entries remain represented; repaired the missing/duplicated list number, restored the historical publication date and set review lastmod, checked the three localized internal article links, and checked image references and translated alt text.",
+  "findings": [
+    "Removed the duplicate future date (2026-09-24) from all 13 files; restored the repository's original publication date (2024-05-05) and recorded the review date as lastmod.",
+    "Fixed the broken nested Docker Markdown URL and checked the Docker, Kubernetes, and object-oriented programming links point to the corresponding language editions.",
+    "Corrected the list numbering from 1–5, 7, 7 to 1–15.",
+    "Changed misleading .png alt labels to localized book-cover descriptions and retained the actual .webp image files."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/エンジニア初学者におすすめの書籍/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/エンジニア初学者におすすめの書籍/index.md",
+      "sourceHash": "d2473f632d97d8047ffbf1b69552d298735a23f6d949e762f2139783a391e251",
+      "translationHash": "06bfff2543650193d7ccea2613df66dd6139aed4b3777608aa6c7bf53a72e68a",
+      "summary": "Compared the complete translation with the Japanese source; corrected duplicated dates, numbering, image alternatives, and language-specific internal links while preserving the fifteen-book selection.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations; retained the same fifteen book recommendations, restored continuous numbering, and aligned all three related-article links with the corresponding language."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked all fifteen book titles across editions, including The Art of Readable Code, The Pragmatic Programmer, CODE COMPLETE, Clean Code, Clean Architecture, Docker, Kubernetes, and object-oriented programming."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Repaired and checked the Docker, Kubernetes, and object-oriented programming links in every language; confirmed every referenced local image exists."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The article expresses a personal recommendation list. This review checked consistency and links, but did not independently assess the suitability of every book for every reader or verify current editions, availability, or prices."
+      ]
+    },
+    "post/エンジニア初学者におすすめの書籍/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/エンジニア初学者におすすめの書籍/index.md",
+      "sourceHash": "d2473f632d97d8047ffbf1b69552d298735a23f6d949e762f2139783a391e251",
+      "translationHash": "f3a46ee60182bbf34aa6d55cce5e678709f3b6324c2170c76c50eeea91904851",
+      "summary": "Compared the complete translation with the Japanese source; corrected duplicated dates, numbering, image alternatives, and language-specific internal links while preserving the fifteen-book selection.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations; retained the same fifteen book recommendations, restored continuous numbering, and aligned all three related-article links with the corresponding language."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked all fifteen book titles across editions, including The Art of Readable Code, The Pragmatic Programmer, CODE COMPLETE, Clean Code, Clean Architecture, Docker, Kubernetes, and object-oriented programming."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Repaired and checked the Docker, Kubernetes, and object-oriented programming links in every language; confirmed every referenced local image exists."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The article expresses a personal recommendation list. This review checked consistency and links, but did not independently assess the suitability of every book for every reader or verify current editions, availability, or prices."
+      ]
+    },
+    "post/エンジニア初学者におすすめの書籍/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/エンジニア初学者におすすめの書籍/index.md",
+      "sourceHash": "d2473f632d97d8047ffbf1b69552d298735a23f6d949e762f2139783a391e251",
+      "translationHash": "65ac20c1fafa333970e300d53fea6ff4f89bf114afbe8e18f4a899a5b2d3f838",
+      "summary": "Compared the complete translation with the Japanese source; corrected duplicated dates, numbering, image alternatives, and language-specific internal links while preserving the fifteen-book selection.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations; retained the same fifteen book recommendations, restored continuous numbering, and aligned all three related-article links with the corresponding language."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked all fifteen book titles across editions, including The Art of Readable Code, The Pragmatic Programmer, CODE COMPLETE, Clean Code, Clean Architecture, Docker, Kubernetes, and object-oriented programming."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Repaired and checked the Docker, Kubernetes, and object-oriented programming links in every language; confirmed every referenced local image exists."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The article expresses a personal recommendation list. This review checked consistency and links, but did not independently assess the suitability of every book for every reader or verify current editions, availability, or prices."
+      ]
+    },
+    "post/エンジニア初学者におすすめの書籍/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/エンジニア初学者におすすめの書籍/index.md",
+      "sourceHash": "d2473f632d97d8047ffbf1b69552d298735a23f6d949e762f2139783a391e251",
+      "translationHash": "5ff925360180eba098ee937977a68ac98dff34f3de0635968bf8834ed2cccea3",
+      "summary": "Compared the complete translation with the Japanese source; corrected duplicated dates, numbering, image alternatives, and language-specific internal links while preserving the fifteen-book selection.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations; retained the same fifteen book recommendations, restored continuous numbering, and aligned all three related-article links with the corresponding language."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked all fifteen book titles across editions, including The Art of Readable Code, The Pragmatic Programmer, CODE COMPLETE, Clean Code, Clean Architecture, Docker, Kubernetes, and object-oriented programming."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Repaired and checked the Docker, Kubernetes, and object-oriented programming links in every language; confirmed every referenced local image exists."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The article expresses a personal recommendation list. This review checked consistency and links, but did not independently assess the suitability of every book for every reader or verify current editions, availability, or prices."
+      ]
+    },
+    "post/エンジニア初学者におすすめの書籍/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/エンジニア初学者におすすめの書籍/index.md",
+      "sourceHash": "d2473f632d97d8047ffbf1b69552d298735a23f6d949e762f2139783a391e251",
+      "translationHash": "1ba5f6809d552d3a4b2b1646a7a7197c1ec2f38107e8e874ae860f6479b6a1e9",
+      "summary": "Compared the complete translation with the Japanese source; corrected duplicated dates, numbering, image alternatives, and language-specific internal links while preserving the fifteen-book selection.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations; retained the same fifteen book recommendations, restored continuous numbering, and aligned all three related-article links with the corresponding language."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked all fifteen book titles across editions, including The Art of Readable Code, The Pragmatic Programmer, CODE COMPLETE, Clean Code, Clean Architecture, Docker, Kubernetes, and object-oriented programming."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Repaired and checked the Docker, Kubernetes, and object-oriented programming links in every language; confirmed every referenced local image exists."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The article expresses a personal recommendation list. This review checked consistency and links, but did not independently assess the suitability of every book for every reader or verify current editions, availability, or prices."
+      ]
+    },
+    "post/エンジニア初学者におすすめの書籍/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/エンジニア初学者におすすめの書籍/index.md",
+      "sourceHash": "d2473f632d97d8047ffbf1b69552d298735a23f6d949e762f2139783a391e251",
+      "translationHash": "6ee9c72570714b5a4cb28b5a0a17780a9bdc939eebaeeb8c980a22986e108aa7",
+      "summary": "Compared the complete translation with the Japanese source; corrected duplicated dates, numbering, image alternatives, and language-specific internal links while preserving the fifteen-book selection.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations; retained the same fifteen book recommendations, restored continuous numbering, and aligned all three related-article links with the corresponding language."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked all fifteen book titles across editions, including The Art of Readable Code, The Pragmatic Programmer, CODE COMPLETE, Clean Code, Clean Architecture, Docker, Kubernetes, and object-oriented programming."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Repaired and checked the Docker, Kubernetes, and object-oriented programming links in every language; confirmed every referenced local image exists."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The article expresses a personal recommendation list. This review checked consistency and links, but did not independently assess the suitability of every book for every reader or verify current editions, availability, or prices."
+      ]
+    },
+    "post/エンジニア初学者におすすめの書籍/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/エンジニア初学者におすすめの書籍/index.md",
+      "sourceHash": "d2473f632d97d8047ffbf1b69552d298735a23f6d949e762f2139783a391e251",
+      "translationHash": "f65841be65fb9fd4091d7abb8627dbee891230ec8862df0ab6ea78206d477154",
+      "summary": "Compared the complete translation with the Japanese source; corrected duplicated dates, numbering, image alternatives, and language-specific internal links while preserving the fifteen-book selection.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations; retained the same fifteen book recommendations, restored continuous numbering, and aligned all three related-article links with the corresponding language."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked all fifteen book titles across editions, including The Art of Readable Code, The Pragmatic Programmer, CODE COMPLETE, Clean Code, Clean Architecture, Docker, Kubernetes, and object-oriented programming."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Repaired and checked the Docker, Kubernetes, and object-oriented programming links in every language; confirmed every referenced local image exists."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The article expresses a personal recommendation list. This review checked consistency and links, but did not independently assess the suitability of every book for every reader or verify current editions, availability, or prices."
+      ]
+    },
+    "post/エンジニア初学者におすすめの書籍/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/エンジニア初学者におすすめの書籍/index.md",
+      "sourceHash": "d2473f632d97d8047ffbf1b69552d298735a23f6d949e762f2139783a391e251",
+      "translationHash": "e29b5482dba276da1dffe2f98b546dd36f411415104589607a708ea97561526a",
+      "summary": "Compared the complete translation with the Japanese source; corrected duplicated dates, numbering, image alternatives, and language-specific internal links while preserving the fifteen-book selection.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations; retained the same fifteen book recommendations, restored continuous numbering, and aligned all three related-article links with the corresponding language."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked all fifteen book titles across editions, including The Art of Readable Code, The Pragmatic Programmer, CODE COMPLETE, Clean Code, Clean Architecture, Docker, Kubernetes, and object-oriented programming."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Repaired and checked the Docker, Kubernetes, and object-oriented programming links in every language; confirmed every referenced local image exists."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The article expresses a personal recommendation list. This review checked consistency and links, but did not independently assess the suitability of every book for every reader or verify current editions, availability, or prices."
+      ]
+    },
+    "post/エンジニア初学者におすすめの書籍/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/エンジニア初学者におすすめの書籍/index.md",
+      "sourceHash": "d2473f632d97d8047ffbf1b69552d298735a23f6d949e762f2139783a391e251",
+      "translationHash": "fe14bf69ac863923df25b6223a8dbe239dad11fb73d8509345a1ecfc1ada30b5",
+      "summary": "Compared the complete translation with the Japanese source; corrected duplicated dates, numbering, image alternatives, and language-specific internal links while preserving the fifteen-book selection.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations; retained the same fifteen book recommendations, restored continuous numbering, and aligned all three related-article links with the corresponding language."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked all fifteen book titles across editions, including The Art of Readable Code, The Pragmatic Programmer, CODE COMPLETE, Clean Code, Clean Architecture, Docker, Kubernetes, and object-oriented programming."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Repaired and checked the Docker, Kubernetes, and object-oriented programming links in every language; confirmed every referenced local image exists."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The article expresses a personal recommendation list. This review checked consistency and links, but did not independently assess the suitability of every book for every reader or verify current editions, availability, or prices."
+      ]
+    },
+    "post/エンジニア初学者におすすめの書籍/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/エンジニア初学者におすすめの書籍/index.md",
+      "sourceHash": "d2473f632d97d8047ffbf1b69552d298735a23f6d949e762f2139783a391e251",
+      "translationHash": "16967acc1bcba62ada210731cc8f37c46a54231eba88ad50b2e086c8ee951930",
+      "summary": "Compared the complete translation with the Japanese source; corrected duplicated dates, numbering, image alternatives, and language-specific internal links while preserving the fifteen-book selection.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations; retained the same fifteen book recommendations, restored continuous numbering, and aligned all three related-article links with the corresponding language."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked all fifteen book titles across editions, including The Art of Readable Code, The Pragmatic Programmer, CODE COMPLETE, Clean Code, Clean Architecture, Docker, Kubernetes, and object-oriented programming."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Repaired and checked the Docker, Kubernetes, and object-oriented programming links in every language; confirmed every referenced local image exists."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The article expresses a personal recommendation list. This review checked consistency and links, but did not independently assess the suitability of every book for every reader or verify current editions, availability, or prices."
+      ]
+    },
+    "post/エンジニア初学者におすすめの書籍/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/エンジニア初学者におすすめの書籍/index.md",
+      "sourceHash": "d2473f632d97d8047ffbf1b69552d298735a23f6d949e762f2139783a391e251",
+      "translationHash": "44a389eed1442ddf7fb21eba74777052c25486294b2151dc67b9fb75b9e055c2",
+      "summary": "Compared the complete translation with the Japanese source; corrected duplicated dates, numbering, image alternatives, and language-specific internal links while preserving the fifteen-book selection.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations; retained the same fifteen book recommendations, restored continuous numbering, and aligned all three related-article links with the corresponding language."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked all fifteen book titles across editions, including The Art of Readable Code, The Pragmatic Programmer, CODE COMPLETE, Clean Code, Clean Architecture, Docker, Kubernetes, and object-oriented programming."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Repaired and checked the Docker, Kubernetes, and object-oriented programming links in every language; confirmed every referenced local image exists."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The article expresses a personal recommendation list. This review checked consistency and links, but did not independently assess the suitability of every book for every reader or verify current editions, availability, or prices."
+      ]
+    },
+    "post/エンジニア初学者におすすめの書籍/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/エンジニア初学者におすすめの書籍/index.md",
+      "sourceHash": "d2473f632d97d8047ffbf1b69552d298735a23f6d949e762f2139783a391e251",
+      "translationHash": "cbea653446d0c42cea8aa6622003e67048857d5068093fb60291657fa084e074",
+      "summary": "Compared the complete translation with the Japanese source; corrected duplicated dates, numbering, image alternatives, and language-specific internal links while preserving the fifteen-book selection.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations; retained the same fifteen book recommendations, restored continuous numbering, and aligned all three related-article links with the corresponding language."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked all fifteen book titles across editions, including The Art of Readable Code, The Pragmatic Programmer, CODE COMPLETE, Clean Code, Clean Architecture, Docker, Kubernetes, and object-oriented programming."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Repaired and checked the Docker, Kubernetes, and object-oriented programming links in every language; confirmed every referenced local image exists."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The article expresses a personal recommendation list. This review checked consistency and links, but did not independently assess the suitability of every book for every reader or verify current editions, availability, or prices."
+      ]
+    }
+  }
+}

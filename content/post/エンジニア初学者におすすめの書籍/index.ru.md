@@ -1,43 +1,42 @@
 ---
 title: '15 рекомендуемых книг для начинающих инженеров! От основ программирования до проектирования'
-date: "2026-09-24T19:44:38+09:00"
 slug: "ИнженерНачинающийにРекомендацииのКниги"
 date: 2024-05-05T16:03:33+09:00
+lastmod: "2026-11-25T00:00:00+09:00"
 tags: ["инженер", "начинающий", "книги"]
 draft: false
 image: "img.webp"
 categories: ["lifestyle-miscellaneous"]
 description: 'Обязательно к прочтению инженерам, которые хотят перейти от новичков к среднему уровню! Мы тщательно отобрали 15 рекомендуемых книг для начинающих, где можно изучить основы разработки программного обеспечения и методы проектирования, такие как «Совершенный код» и «Программист-прагматик».'
 ---
-
 1. Читаемый код (The Art of Readable Code)
-![img_15.png](img_15.webp)
+![Обложка книги: Читаемый код (The Art of Readable Code)](img_15.webp)
 2. Принципы программирования (Principles of Programming)
-![img_14.png](img_14.webp)
+![Обложка книги: Принципы программирования (Principles of Programming)](img_14.webp)
 3. Программист-прагматик (The Pragmatic Programmer)
-![img_13.png](img_13.webp)
+![Обложка книги: Программист-прагматик (The Pragmatic Programmer)](img_13.webp)
 4. Технологии, поддерживающие Web
-![img_12.png](img_12.webp)
+![Обложка книги: Технологии, поддерживающие Web](img_12.webp)
 5. Как создавать безопасные веб-приложения
-![img_11.png](img_11.webp)
-7. Как работают сети
-![img_10.png](img_10.webp)
+![Обложка книги: Как создавать безопасные веб-приложения](img_11.webp)
+6. Как работают сети
+![Обложка книги: Как работают сети](img_10.webp)
 7. Исчерпывающее руководство по SQL от экспертов
-![img_9.png](img_9.webp)
-8. Практическое руководство по [Docker](https://kenji.blog/ru/p/docker-container-namespace-[cgroups](https://kenji.blog/ru/p/docker-container-namespace-cgroups-layers/)-layers/)
-![img_8.png](img_8.webp)
+![Обложка книги: Исчерпывающее руководство по SQL от экспертов](img_9.webp)
+8. Практическое руководство по [Docker](https://kenji.blog/ru/p/docker-container-namespace-cgroups-layers/)
+![Обложка книги: Практическое руководство по Docker](img_8.webp)
 9. Полное руководство по [Kubernetes](https://kenji.blog/ru/p/kubernetes-k8s-architecture-pod-service-ingress/)
-![img_7.png](img_7.webp)
+![Обложка книги: Полное руководство по Kubernetes](img_7.webp)
 10. CODE COMPLETE Второе издание
-![img_5.png](img_5.webp)
-![img_6.png](img_6.webp)
+![Обложка: CODE COMPLETE, 2-е издание, том 1](img_5.webp)
+![Обложка: CODE COMPLETE, 2-е издание, том 2](img_6.webp)
 11. Clean Code: Мастерство Agile-разработчика
-![img_4.png](img_4.webp)
+![Обложка книги: Clean Code: Мастерство Agile-разработчика](img_4.webp)
 12. Clean Architecture: Структура и дизайн ПО
-![img_3.png](img_3.webp)
+![Обложка книги: Clean Architecture: Структура и дизайн ПО](img_3.webp)
 13. Технологии, которые нужно знать, прежде чем стать программистом игр
-![img_2.png](img_2.webp)
+![Обложка книги: Технологии, которые нужно знать, прежде чем стать программистом игр](img_2.webp)
 14. Being Geek
-![img_1.png](img_1.webp)
-15. Почему мы создаем с использованием ООП
-![img_16.png](img_16.webp)
+![Обложка книги: Being Geek](img_1.webp)
+15. Почему мы создаем с использованием [ООП](https://kenji.blog/ru/p/oop-vs-fp-vs-dop/)
+![Обложка книги: Почему мы создаем с использованием ООП](img_16.webp)

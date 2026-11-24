@@ -14,6 +14,28 @@ DOCS = ROOT / "docs/translation-review"
 LANGS = ("ja", "en", "zh-cn", "es", "ko", "pt", "zh-tw", "hi", "fr", "de", "ar", "ru", "id")
 NS = {"s": "http://www.sitemaps.org/schemas/sitemap/0.9"}
 ARTICLES = {
+    188: {
+        "bundle": ROOT / "content/post/エンジニア初学者におすすめの書籍",
+        "slug": "エンジニア初学者におすすめの書籍",
+        "linksByLanguage": {
+            "ja": ["https://kenji.blog/p/docker-container-namespace-cgroups-layers/", "https://kenji.blog/p/kubernetes-k8s-architecture-pod-service-ingress/", "https://kenji.blog/p/oop-vs-fp-vs-dop/"],
+            "en": ["https://kenji.blog/en/p/docker-container-namespace-cgroups-layers/", "https://kenji.blog/en/p/kubernetes-k8s-architecture-pod-service-ingress/", "https://kenji.blog/en/p/oop-vs-fp-vs-dop/"],
+            "zh-cn": ["https://kenji.blog/zh-cn/p/docker-container-namespace-cgroups-layers/", "https://kenji.blog/zh-cn/p/kubernetes-k8s-architecture-pod-service-ingress/", "https://kenji.blog/zh-cn/p/oop-vs-fp-vs-dop/"],
+            "es": ["https://kenji.blog/es/p/docker-container-namespace-cgroups-layers/", "https://kenji.blog/es/p/kubernetes-k8s-architecture-pod-service-ingress/", "https://kenji.blog/es/p/oop-vs-fp-vs-dop/"],
+            "fr": ["https://kenji.blog/fr/p/docker-container-namespace-cgroups-layers/", "https://kenji.blog/fr/p/kubernetes-k8s-architecture-pod-service-ingress/", "https://kenji.blog/fr/p/oop-vs-fp-vs-dop/"],
+            "de": ["https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/", "https://kenji.blog/de/p/kubernetes-k8s-architecture-pod-service-ingress/", "https://kenji.blog/de/p/oop-vs-fp-vs-dop/"],
+            "pt": ["https://kenji.blog/pt/p/docker-container-namespace-cgroups-layers/", "https://kenji.blog/pt/p/kubernetes-k8s-architecture-pod-service-ingress/", "https://kenji.blog/pt/p/oop-vs-fp-vs-dop/"],
+            "id": ["https://kenji.blog/id/p/docker-container-namespace-cgroups-layers/", "https://kenji.blog/id/p/kubernetes-k8s-architecture-pod-service-ingress/", "https://kenji.blog/id/p/oop-vs-fp-vs-dop/"],
+            "ko": ["https://kenji.blog/ko/p/docker-container-namespace-cgroups-layers/", "https://kenji.blog/ko/p/kubernetes-k8s-architecture-pod-service-ingress/", "https://kenji.blog/ko/p/oop-vs-fp-vs-dop/"],
+            "zh-tw": ["https://kenji.blog/zh-tw/p/docker-container-namespace-cgroups-layers/", "https://kenji.blog/zh-tw/p/kubernetes-k8s-architecture-pod-service-ingress/", "https://kenji.blog/zh-tw/p/oop-vs-fp-vs-dop/"],
+            "hi": ["/hi/p/docker-container-namespace-cgroups-layers/", "/hi/p/kubernetes-k8s-architecture-pod-service-ingress/", "/hi/p/object-oriented-programming-oop-solid-principles/"],
+            "ru": ["https://kenji.blog/ru/p/docker-container-namespace-cgroups-layers/", "https://kenji.blog/ru/p/kubernetes-k8s-architecture-pod-service-ingress/", "https://kenji.blog/ru/p/oop-vs-fp-vs-dop/"],
+            "ar": ["https://kenji.blog/ar/p/docker-container-namespace-cgroups-layers/", "https://kenji.blog/ar/p/kubernetes-k8s-architecture-pod-service-ingress/", "https://kenji.blog/ar/p/oop-vs-fp-vs-dop/"],
+        },
+        "markers": ["Being Geek"],
+        "date": "2024-05-05",
+        "lastmod": "2026-11-25",
+    },
     187: {
         "bundle": ROOT / "content/post/ショート動画リンク",
         "slug": "ショート動画リンク",
@@ -1091,7 +1113,7 @@ def slug_key(value):
 parser = argparse.ArgumentParser()
 parser.add_argument("--ci-run", type=int, required=True)
 parser.add_argument("--commit", required=True)
-parser.add_argument("--max-batch", type=int, choices=(90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187), default=187)
+parser.add_argument("--max-batch", type=int, choices=(90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188), default=188)
 args = parser.parse_args()
 ARTICLES = {number: article for number, article in ARTICLES.items() if number <= args.max_batch}
 with urllib.request.urlopen(f"https://github.com/kenjinote/blog/actions/runs/{args.ci_run}", timeout=45) as response:

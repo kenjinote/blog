@@ -1,43 +1,42 @@
 ---
 title: '15 Must-Read Books Recommended for Beginner Engineers! From Programming Basics to Design'
-date: "2026-09-24T19:44:38+09:00"
 slug: "EngineerBeginnerにRecommendationのBook"
 date: 2024-05-05T16:03:33+09:00
+lastmod: "2026-11-25T00:00:00+09:00"
 tags: ["Engineer", "Beginner", "Books"]
 draft: false
 image: "img.webp"
 categories: ["lifestyle-miscellaneous"]
 description: 'A must-see for engineers looking to step up from programming beginners to intermediate! Carefully selects and introduces 15 must-read books recommended for beginners to learn the basic knowledge and design methods of software development, such as ''The Art of Readable Code'' and ''The Pragmatic Programmer''.'
 ---
-
 1. The Art of Readable Code
-![img_15.png](img_15.webp)
+![Book cover: The Art of Readable Code](img_15.webp)
 2. Principle of Programming
-![img_14.png](img_14.webp)
+![Book cover: Principle of Programming](img_14.webp)
 3. The Pragmatic Programmer
-![img_13.png](img_13.webp)
+![Book cover: The Pragmatic Programmer](img_13.webp)
 4. Technologies Supporting the Web
-![img_12.png](img_12.webp)
+![Book cover: Technologies Supporting the Web](img_12.webp)
 5. How to Build Secure Web Applications
-![img_11.png](img_11.webp)
-7. How Networks Work
-![img_10.png](img_10.webp)
+![Book cover: How to Build Secure Web Applications](img_11.webp)
+6. How Networks Work
+![Book cover: How Networks Work](img_10.webp)
 7. Thorough SQL Guide Learned from Masters
-![img_9.png](img_9.webp)
-8. [Docker](https://kenji.blog/en/p/docker-container-namespace-[cgroups](https://kenji.blog/en/p/docker-container-namespace-cgroups-layers/)-layers/) Practical Guide
-![img_8.png](img_8.webp)
+![Book cover: Thorough SQL Guide Learned from Masters](img_9.webp)
+8. [Docker](https://kenji.blog/en/p/docker-container-namespace-cgroups-layers/) Practical Guide
+![Book cover: Docker Practical Guide](img_8.webp)
 9. [Kubernetes](https://kenji.blog/en/p/kubernetes-k8s-architecture-pod-service-ingress/) Complete Guide
-![img_7.png](img_7.webp)
+![Book cover: Kubernetes Complete Guide](img_7.webp)
 10. Code Complete 2nd Edition
-![img_5.png](img_5.webp)
-![img_6.png](img_6.webp)
+![Book cover: CODE COMPLETE 2nd edition, volume 1](img_5.webp)
+![Book cover: CODE COMPLETE 2nd edition, volume 2](img_6.webp)
 11. Clean Code: A Handbook of Agile Software Craftsmanship
-![img_4.png](img_4.webp)
+![Book cover: Clean Code: A Handbook of Agile Software Craftsmanship](img_4.webp)
 12. Clean Architecture: A Craftsman's Guide to Software Structure and Design
-![img_3.png](img_3.webp)
+![Book cover: Clean Architecture: A Craftsman's Guide to Software Structure and Design](img_3.webp)
 13. Technologies to Learn Before Becoming a Game Programmer
-![img_2.png](img_2.webp)
+![Book cover: Technologies to Learn Before Becoming a Game Programmer](img_2.webp)
 14. Being Geek
-![img_1.png](img_1.webp)
+![Book cover: Being Geek](img_1.webp)
 15. Why [Object-Oriented](https://kenji.blog/en/p/oop-vs-fp-vs-dop/) Programming?
-![img_16.png](img_16.webp)
+![Book cover: Why Object-Oriented Programming?](img_16.webp)

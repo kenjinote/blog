@@ -21845,6 +21845,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-187.json",
       "evidenceHash": "e71c88b8be24782f5831c801997e7d8a76631f1ad72c30de8f0cbb37845a5e7f"
+    },
+    "post/エンジニア初学者におすすめの書籍/index.en.md": {
+      "source": "post/エンジニア初学者におすすめの書籍/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "d2473f632d97d8047ffbf1b69552d298735a23f6d949e762f2139783a391e251",
+      "translationHash": "06bfff2543650193d7ccea2613df66dd6139aed4b3777608aa6c7bf53a72e68a",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-188.json",
+      "evidenceHash": "1a92b0fbe9f725b309ba6441538ca4fd8a6692a2a154e876a480420252e3532d"
+    },
+    "post/エンジニア初学者におすすめの書籍/index.zh-cn.md": {
+      "source": "post/エンジニア初学者におすすめの書籍/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "d2473f632d97d8047ffbf1b69552d298735a23f6d949e762f2139783a391e251",
+      "translationHash": "f3a46ee60182bbf34aa6d55cce5e678709f3b6324c2170c76c50eeea91904851",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-188.json",
+      "evidenceHash": "386c1a535e2cd30ada07136ede30be723d65a7eb2e63094a3eda4a62d53f3c88"
+    },
+    "post/エンジニア初学者におすすめの書籍/index.es.md": {
+      "source": "post/エンジニア初学者におすすめの書籍/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "d2473f632d97d8047ffbf1b69552d298735a23f6d949e762f2139783a391e251",
+      "translationHash": "65ac20c1fafa333970e300d53fea6ff4f89bf114afbe8e18f4a899a5b2d3f838",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-188.json",
+      "evidenceHash": "9c24fda8a7f8cb9ef032f54c23e550cd6d3adb9a7daf6c10931d1ab0235953b2"
+    },
+    "post/エンジニア初学者におすすめの書籍/index.fr.md": {
+      "source": "post/エンジニア初学者におすすめの書籍/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "d2473f632d97d8047ffbf1b69552d298735a23f6d949e762f2139783a391e251",
+      "translationHash": "5ff925360180eba098ee937977a68ac98dff34f3de0635968bf8834ed2cccea3",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-188.json",
+      "evidenceHash": "37fd6cd1e7b7c80221f6d8a5c13cfc2e926714d59dee59ad2dab909e1103e513"
+    },
+    "post/エンジニア初学者におすすめの書籍/index.de.md": {
+      "source": "post/エンジニア初学者におすすめの書籍/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "d2473f632d97d8047ffbf1b69552d298735a23f6d949e762f2139783a391e251",
+      "translationHash": "1ba5f6809d552d3a4b2b1646a7a7197c1ec2f38107e8e874ae860f6479b6a1e9",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-188.json",
+      "evidenceHash": "4f5bedc9777e01cf063c16dd965b762da66d1f13104e0a49149d25affd9bf194"
+    },
+    "post/エンジニア初学者におすすめの書籍/index.pt.md": {
+      "source": "post/エンジニア初学者におすすめの書籍/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "d2473f632d97d8047ffbf1b69552d298735a23f6d949e762f2139783a391e251",
+      "translationHash": "6ee9c72570714b5a4cb28b5a0a17780a9bdc939eebaeeb8c980a22986e108aa7",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-188.json",
+      "evidenceHash": "43a49dcc4353fd4936c3fa59e693ee81541733f23892211303314f516408764b"
+    },
+    "post/エンジニア初学者におすすめの書籍/index.id.md": {
+      "source": "post/エンジニア初学者におすすめの書籍/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "d2473f632d97d8047ffbf1b69552d298735a23f6d949e762f2139783a391e251",
+      "translationHash": "f65841be65fb9fd4091d7abb8627dbee891230ec8862df0ab6ea78206d477154",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-188.json",
+      "evidenceHash": "bf790d82593a4878fe5f545cbdeb443fe172fa4ffabbd94e86c9222c3fddefa3"
+    },
+    "post/エンジニア初学者におすすめの書籍/index.ko.md": {
+      "source": "post/エンジニア初学者におすすめの書籍/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "d2473f632d97d8047ffbf1b69552d298735a23f6d949e762f2139783a391e251",
+      "translationHash": "e29b5482dba276da1dffe2f98b546dd36f411415104589607a708ea97561526a",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-188.json",
+      "evidenceHash": "a434d445b30a728f637b6466a5068c1a72fdede0cf8de562a73119f00106a0bd"
+    },
+    "post/エンジニア初学者におすすめの書籍/index.zh-tw.md": {
+      "source": "post/エンジニア初学者におすすめの書籍/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "d2473f632d97d8047ffbf1b69552d298735a23f6d949e762f2139783a391e251",
+      "translationHash": "fe14bf69ac863923df25b6223a8dbe239dad11fb73d8509345a1ecfc1ada30b5",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-188.json",
+      "evidenceHash": "1ded55db4b1b4ff650fb05b373e62774256d29beec4209a2b68dda287d1158ba"
+    },
+    "post/エンジニア初学者におすすめの書籍/index.hi.md": {
+      "source": "post/エンジニア初学者におすすめの書籍/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "d2473f632d97d8047ffbf1b69552d298735a23f6d949e762f2139783a391e251",
+      "translationHash": "16967acc1bcba62ada210731cc8f37c46a54231eba88ad50b2e086c8ee951930",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-188.json",
+      "evidenceHash": "a46f56cbeec5647bf8a71615d2dbd9846f0ae80347ce99db890be06241599fe4"
+    },
+    "post/エンジニア初学者におすすめの書籍/index.ru.md": {
+      "source": "post/エンジニア初学者におすすめの書籍/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "d2473f632d97d8047ffbf1b69552d298735a23f6d949e762f2139783a391e251",
+      "translationHash": "44a389eed1442ddf7fb21eba74777052c25486294b2151dc67b9fb75b9e055c2",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-188.json",
+      "evidenceHash": "68b7ab1755b7932e9df378f5b7414fad115997e5219243d99daa654054626477"
+    },
+    "post/エンジニア初学者におすすめの書籍/index.ar.md": {
+      "source": "post/エンジニア初学者におすすめの書籍/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "d2473f632d97d8047ffbf1b69552d298735a23f6d949e762f2139783a391e251",
+      "translationHash": "cbea653446d0c42cea8aa6622003e67048857d5068093fb60291657fa084e074",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-188.json",
+      "evidenceHash": "3550943cb68533d54e76e6cf5067612a181b65745901057c25bb1f64a6c3645e"
     }
   }
 }
