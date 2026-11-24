@@ -1,0 +1,458 @@
+{
+  "version": 1,
+  "batch": 190,
+  "article": "PC peripherals used or considered by the author",
+  "reviewedAt": "2026-11-25",
+  "sourceHash": "b3601b7cffb2ca582ba39f4577a87c9d6ad2ef9442892e7131408095de93d9cd",
+  "sources": [
+    "https://www.realforce.co.jp/en/products/",
+    "https://www.logitech.com/en-us/shop/p/mx-keys-s?crid=27",
+    "https://www.logitech.com/en-us/shop/p/mx-ergo-s-wireless-trackball-mouse.910-007249",
+    "https://www.elecom.co.jp/products/M-DPT1MRXBK.html",
+    "https://www.eizo.com/products/flexscan/flexscan_ev.html/",
+    "https://www.dell.com/en-us/shop/monitors/ar/all-monitor/appref%3D4k-uhd-3840-x-2160-screen-resolution"
+  ],
+  "scope": "Read and compared the complete Japanese article and all twelve translations; checked current official product pages for REALFORCE, Logitech MX Keys S, Logitech MX Ergo S, ELECOM DEFT PRO, Dell 4K monitors and EIZO FlexScan. Checked dates, terminology, image alt text, personal claims, and the destinations printed in the Markdown.",
+  "findings": [
+    "Removed the duplicate future date (2026-09-24), restored the original publication date (2023-02-28), and recorded the review date as lastmod in all 13 editions.",
+    "Dated the article’s personal ownership and preference claims; separated the author’s old MX Ergo from Logitech’s currently listed MX Ergo S, which the author has not tested.",
+    "Qualified the claim that trackballs reduce fatigue as a personal preference; specified ELECOM DEFT PRO as index-finger-operated with an approximately 44 mm ball per manufacturer specifications.",
+    "Removed the stale 10,000-yen price claim, added current manufacturer product listings for readers, and explained that model, layout, price, stock and regional availability should be checked before purchase.",
+    "Corrected the keyboard switch/monitor selection caveat and the trackball image alt text."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/おすすめのPC周辺機器/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/おすすめのPC周辺機器/index.md",
+      "sourceHash": "b3601b7cffb2ca582ba39f4577a87c9d6ad2ef9442892e7131408095de93d9cd",
+      "translationHash": "9fd24ea20b087b62cc2c8798e51d17b33931efbb1357b1327981b8dddb7c2fcd",
+      "summary": "Compared the complete translation with the Japanese source and current official manufacturer pages; corrected stale dates, current-model wording, an overbroad comfort claim, the ELECOM DEFT PRO finger operation detail, and model-selection caveats.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full Japanese article and all twelve translations; dated the personal usage claims, distinguished the older MX Ergo from the currently listed MX Ergo S, qualified comfort statements, and clarified product-selection limits."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked REALFORCE capacitive non-contact keys, Logitech MX Keys S and MX Ergo S names, and the ELECOM DEFT PRO model and index-finger operation/44 mm ball specification across editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked official manufacturer pages for REALFORCE, MX Keys S, MX Ergo S, ELECOM DEFT PRO, Dell 4K monitors and EIZO FlexScan. The original Amazon short-link destinations could not be confirmed."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Personal ownership and usage statements were preserved as claims from the original February 2023 article; they were not independently verified.",
+        "The destinations and current stock of the old Amazon short links could not be checked, and the article does not identify the exact Dell/EIZO monitor models. Prices and availability vary by region and date."
+      ]
+    },
+    "post/おすすめのPC周辺機器/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/おすすめのPC周辺機器/index.md",
+      "sourceHash": "b3601b7cffb2ca582ba39f4577a87c9d6ad2ef9442892e7131408095de93d9cd",
+      "translationHash": "28c8c245641a2398c022dabd3d09c88631a9a00a7c7bf3ceacc50003d654a5c9",
+      "summary": "Compared the complete translation with the Japanese source and current official manufacturer pages; corrected stale dates, current-model wording, an overbroad comfort claim, the ELECOM DEFT PRO finger operation detail, and model-selection caveats.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full Japanese article and all twelve translations; dated the personal usage claims, distinguished the older MX Ergo from the currently listed MX Ergo S, qualified comfort statements, and clarified product-selection limits."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked REALFORCE capacitive non-contact keys, Logitech MX Keys S and MX Ergo S names, and the ELECOM DEFT PRO model and index-finger operation/44 mm ball specification across editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked official manufacturer pages for REALFORCE, MX Keys S, MX Ergo S, ELECOM DEFT PRO, Dell 4K monitors and EIZO FlexScan. The original Amazon short-link destinations could not be confirmed."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Personal ownership and usage statements were preserved as claims from the original February 2023 article; they were not independently verified.",
+        "The destinations and current stock of the old Amazon short links could not be checked, and the article does not identify the exact Dell/EIZO monitor models. Prices and availability vary by region and date."
+      ]
+    },
+    "post/おすすめのPC周辺機器/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/おすすめのPC周辺機器/index.md",
+      "sourceHash": "b3601b7cffb2ca582ba39f4577a87c9d6ad2ef9442892e7131408095de93d9cd",
+      "translationHash": "47b84d81581f85a28fbc78356492c868f326385bbc68fe409dab0c30166d934e",
+      "summary": "Compared the complete translation with the Japanese source and current official manufacturer pages; corrected stale dates, current-model wording, an overbroad comfort claim, the ELECOM DEFT PRO finger operation detail, and model-selection caveats.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full Japanese article and all twelve translations; dated the personal usage claims, distinguished the older MX Ergo from the currently listed MX Ergo S, qualified comfort statements, and clarified product-selection limits."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked REALFORCE capacitive non-contact keys, Logitech MX Keys S and MX Ergo S names, and the ELECOM DEFT PRO model and index-finger operation/44 mm ball specification across editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked official manufacturer pages for REALFORCE, MX Keys S, MX Ergo S, ELECOM DEFT PRO, Dell 4K monitors and EIZO FlexScan. The original Amazon short-link destinations could not be confirmed."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Personal ownership and usage statements were preserved as claims from the original February 2023 article; they were not independently verified.",
+        "The destinations and current stock of the old Amazon short links could not be checked, and the article does not identify the exact Dell/EIZO monitor models. Prices and availability vary by region and date."
+      ]
+    },
+    "post/おすすめのPC周辺機器/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/おすすめのPC周辺機器/index.md",
+      "sourceHash": "b3601b7cffb2ca582ba39f4577a87c9d6ad2ef9442892e7131408095de93d9cd",
+      "translationHash": "136485a7971ac014e3da608553d31bf9930283a63b303b952d6bd7aebe450588",
+      "summary": "Compared the complete translation with the Japanese source and current official manufacturer pages; corrected stale dates, current-model wording, an overbroad comfort claim, the ELECOM DEFT PRO finger operation detail, and model-selection caveats.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full Japanese article and all twelve translations; dated the personal usage claims, distinguished the older MX Ergo from the currently listed MX Ergo S, qualified comfort statements, and clarified product-selection limits."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked REALFORCE capacitive non-contact keys, Logitech MX Keys S and MX Ergo S names, and the ELECOM DEFT PRO model and index-finger operation/44 mm ball specification across editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked official manufacturer pages for REALFORCE, MX Keys S, MX Ergo S, ELECOM DEFT PRO, Dell 4K monitors and EIZO FlexScan. The original Amazon short-link destinations could not be confirmed."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Personal ownership and usage statements were preserved as claims from the original February 2023 article; they were not independently verified.",
+        "The destinations and current stock of the old Amazon short links could not be checked, and the article does not identify the exact Dell/EIZO monitor models. Prices and availability vary by region and date."
+      ]
+    },
+    "post/おすすめのPC周辺機器/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/おすすめのPC周辺機器/index.md",
+      "sourceHash": "b3601b7cffb2ca582ba39f4577a87c9d6ad2ef9442892e7131408095de93d9cd",
+      "translationHash": "506d61b7325541221cbbbba53d332216cb76189ff9b9f64148585593edff8793",
+      "summary": "Compared the complete translation with the Japanese source and current official manufacturer pages; corrected stale dates, current-model wording, an overbroad comfort claim, the ELECOM DEFT PRO finger operation detail, and model-selection caveats.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full Japanese article and all twelve translations; dated the personal usage claims, distinguished the older MX Ergo from the currently listed MX Ergo S, qualified comfort statements, and clarified product-selection limits."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked REALFORCE capacitive non-contact keys, Logitech MX Keys S and MX Ergo S names, and the ELECOM DEFT PRO model and index-finger operation/44 mm ball specification across editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked official manufacturer pages for REALFORCE, MX Keys S, MX Ergo S, ELECOM DEFT PRO, Dell 4K monitors and EIZO FlexScan. The original Amazon short-link destinations could not be confirmed."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Personal ownership and usage statements were preserved as claims from the original February 2023 article; they were not independently verified.",
+        "The destinations and current stock of the old Amazon short links could not be checked, and the article does not identify the exact Dell/EIZO monitor models. Prices and availability vary by region and date."
+      ]
+    },
+    "post/おすすめのPC周辺機器/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/おすすめのPC周辺機器/index.md",
+      "sourceHash": "b3601b7cffb2ca582ba39f4577a87c9d6ad2ef9442892e7131408095de93d9cd",
+      "translationHash": "a6e85234a2ee4bba0d9a77b5c22f906aa854bb6a2e6d79df2e35334de6048179",
+      "summary": "Compared the complete translation with the Japanese source and current official manufacturer pages; corrected stale dates, current-model wording, an overbroad comfort claim, the ELECOM DEFT PRO finger operation detail, and model-selection caveats.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full Japanese article and all twelve translations; dated the personal usage claims, distinguished the older MX Ergo from the currently listed MX Ergo S, qualified comfort statements, and clarified product-selection limits."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked REALFORCE capacitive non-contact keys, Logitech MX Keys S and MX Ergo S names, and the ELECOM DEFT PRO model and index-finger operation/44 mm ball specification across editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked official manufacturer pages for REALFORCE, MX Keys S, MX Ergo S, ELECOM DEFT PRO, Dell 4K monitors and EIZO FlexScan. The original Amazon short-link destinations could not be confirmed."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Personal ownership and usage statements were preserved as claims from the original February 2023 article; they were not independently verified.",
+        "The destinations and current stock of the old Amazon short links could not be checked, and the article does not identify the exact Dell/EIZO monitor models. Prices and availability vary by region and date."
+      ]
+    },
+    "post/おすすめのPC周辺機器/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/おすすめのPC周辺機器/index.md",
+      "sourceHash": "b3601b7cffb2ca582ba39f4577a87c9d6ad2ef9442892e7131408095de93d9cd",
+      "translationHash": "146e3ea3566c0d04955d2ff2fee21a8bb69e3a8af84921c0e8c6d4df2bb98505",
+      "summary": "Compared the complete translation with the Japanese source and current official manufacturer pages; corrected stale dates, current-model wording, an overbroad comfort claim, the ELECOM DEFT PRO finger operation detail, and model-selection caveats.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full Japanese article and all twelve translations; dated the personal usage claims, distinguished the older MX Ergo from the currently listed MX Ergo S, qualified comfort statements, and clarified product-selection limits."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked REALFORCE capacitive non-contact keys, Logitech MX Keys S and MX Ergo S names, and the ELECOM DEFT PRO model and index-finger operation/44 mm ball specification across editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked official manufacturer pages for REALFORCE, MX Keys S, MX Ergo S, ELECOM DEFT PRO, Dell 4K monitors and EIZO FlexScan. The original Amazon short-link destinations could not be confirmed."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Personal ownership and usage statements were preserved as claims from the original February 2023 article; they were not independently verified.",
+        "The destinations and current stock of the old Amazon short links could not be checked, and the article does not identify the exact Dell/EIZO monitor models. Prices and availability vary by region and date."
+      ]
+    },
+    "post/おすすめのPC周辺機器/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/おすすめのPC周辺機器/index.md",
+      "sourceHash": "b3601b7cffb2ca582ba39f4577a87c9d6ad2ef9442892e7131408095de93d9cd",
+      "translationHash": "cd597e40a6c324cc7e57130fa465ed58cb6a6fe11856f9e0b991f772795080d9",
+      "summary": "Compared the complete translation with the Japanese source and current official manufacturer pages; corrected stale dates, current-model wording, an overbroad comfort claim, the ELECOM DEFT PRO finger operation detail, and model-selection caveats.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full Japanese article and all twelve translations; dated the personal usage claims, distinguished the older MX Ergo from the currently listed MX Ergo S, qualified comfort statements, and clarified product-selection limits."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked REALFORCE capacitive non-contact keys, Logitech MX Keys S and MX Ergo S names, and the ELECOM DEFT PRO model and index-finger operation/44 mm ball specification across editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked official manufacturer pages for REALFORCE, MX Keys S, MX Ergo S, ELECOM DEFT PRO, Dell 4K monitors and EIZO FlexScan. The original Amazon short-link destinations could not be confirmed."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Personal ownership and usage statements were preserved as claims from the original February 2023 article; they were not independently verified.",
+        "The destinations and current stock of the old Amazon short links could not be checked, and the article does not identify the exact Dell/EIZO monitor models. Prices and availability vary by region and date."
+      ]
+    },
+    "post/おすすめのPC周辺機器/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/おすすめのPC周辺機器/index.md",
+      "sourceHash": "b3601b7cffb2ca582ba39f4577a87c9d6ad2ef9442892e7131408095de93d9cd",
+      "translationHash": "e9e31382cee6e0033919dd8196bb8e5316bb9bd70c3a0a40a3d345e805442c9d",
+      "summary": "Compared the complete translation with the Japanese source and current official manufacturer pages; corrected stale dates, current-model wording, an overbroad comfort claim, the ELECOM DEFT PRO finger operation detail, and model-selection caveats.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full Japanese article and all twelve translations; dated the personal usage claims, distinguished the older MX Ergo from the currently listed MX Ergo S, qualified comfort statements, and clarified product-selection limits."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked REALFORCE capacitive non-contact keys, Logitech MX Keys S and MX Ergo S names, and the ELECOM DEFT PRO model and index-finger operation/44 mm ball specification across editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked official manufacturer pages for REALFORCE, MX Keys S, MX Ergo S, ELECOM DEFT PRO, Dell 4K monitors and EIZO FlexScan. The original Amazon short-link destinations could not be confirmed."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Personal ownership and usage statements were preserved as claims from the original February 2023 article; they were not independently verified.",
+        "The destinations and current stock of the old Amazon short links could not be checked, and the article does not identify the exact Dell/EIZO monitor models. Prices and availability vary by region and date."
+      ]
+    },
+    "post/おすすめのPC周辺機器/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/おすすめのPC周辺機器/index.md",
+      "sourceHash": "b3601b7cffb2ca582ba39f4577a87c9d6ad2ef9442892e7131408095de93d9cd",
+      "translationHash": "963ff0174e19644ecef7951e5872ef639ef769c2d488b6e5ae386d018567c06b",
+      "summary": "Compared the complete translation with the Japanese source and current official manufacturer pages; corrected stale dates, current-model wording, an overbroad comfort claim, the ELECOM DEFT PRO finger operation detail, and model-selection caveats.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full Japanese article and all twelve translations; dated the personal usage claims, distinguished the older MX Ergo from the currently listed MX Ergo S, qualified comfort statements, and clarified product-selection limits."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked REALFORCE capacitive non-contact keys, Logitech MX Keys S and MX Ergo S names, and the ELECOM DEFT PRO model and index-finger operation/44 mm ball specification across editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked official manufacturer pages for REALFORCE, MX Keys S, MX Ergo S, ELECOM DEFT PRO, Dell 4K monitors and EIZO FlexScan. The original Amazon short-link destinations could not be confirmed."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Personal ownership and usage statements were preserved as claims from the original February 2023 article; they were not independently verified.",
+        "The destinations and current stock of the old Amazon short links could not be checked, and the article does not identify the exact Dell/EIZO monitor models. Prices and availability vary by region and date."
+      ]
+    },
+    "post/おすすめのPC周辺機器/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/おすすめのPC周辺機器/index.md",
+      "sourceHash": "b3601b7cffb2ca582ba39f4577a87c9d6ad2ef9442892e7131408095de93d9cd",
+      "translationHash": "24e553670710cd161a865528a4b4f46a3433cf70e1140ed1a82644d8e8aabd37",
+      "summary": "Compared the complete translation with the Japanese source and current official manufacturer pages; corrected stale dates, current-model wording, an overbroad comfort claim, the ELECOM DEFT PRO finger operation detail, and model-selection caveats.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full Japanese article and all twelve translations; dated the personal usage claims, distinguished the older MX Ergo from the currently listed MX Ergo S, qualified comfort statements, and clarified product-selection limits."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked REALFORCE capacitive non-contact keys, Logitech MX Keys S and MX Ergo S names, and the ELECOM DEFT PRO model and index-finger operation/44 mm ball specification across editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked official manufacturer pages for REALFORCE, MX Keys S, MX Ergo S, ELECOM DEFT PRO, Dell 4K monitors and EIZO FlexScan. The original Amazon short-link destinations could not be confirmed."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Personal ownership and usage statements were preserved as claims from the original February 2023 article; they were not independently verified.",
+        "The destinations and current stock of the old Amazon short links could not be checked, and the article does not identify the exact Dell/EIZO monitor models. Prices and availability vary by region and date."
+      ]
+    },
+    "post/おすすめのPC周辺機器/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/おすすめのPC周辺機器/index.md",
+      "sourceHash": "b3601b7cffb2ca582ba39f4577a87c9d6ad2ef9442892e7131408095de93d9cd",
+      "translationHash": "b3e1fd517f15609a196cfb5d5e352f01c0077ebbea2b117719ca1be9aebb96fd",
+      "summary": "Compared the complete translation with the Japanese source and current official manufacturer pages; corrected stale dates, current-model wording, an overbroad comfort claim, the ELECOM DEFT PRO finger operation detail, and model-selection caveats.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full Japanese article and all twelve translations; dated the personal usage claims, distinguished the older MX Ergo from the currently listed MX Ergo S, qualified comfort statements, and clarified product-selection limits."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked REALFORCE capacitive non-contact keys, Logitech MX Keys S and MX Ergo S names, and the ELECOM DEFT PRO model and index-finger operation/44 mm ball specification across editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked official manufacturer pages for REALFORCE, MX Keys S, MX Ergo S, ELECOM DEFT PRO, Dell 4K monitors and EIZO FlexScan. The original Amazon short-link destinations could not be confirmed."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Personal ownership and usage statements were preserved as claims from the original February 2023 article; they were not independently verified.",
+        "The destinations and current stock of the old Amazon short links could not be checked, and the article does not identify the exact Dell/EIZO monitor models. Prices and availability vary by region and date."
+      ]
+    }
+  }
+}

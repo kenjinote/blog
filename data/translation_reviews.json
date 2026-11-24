@@ -22085,6 +22085,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-189.json",
       "evidenceHash": "b4822b1b96d50fe3ffdc2b20bd453b79992a192665abd6b2ddadaa7d0c6dffcf"
+    },
+    "post/おすすめのPC周辺機器/index.en.md": {
+      "source": "post/おすすめのPC周辺機器/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b3601b7cffb2ca582ba39f4577a87c9d6ad2ef9442892e7131408095de93d9cd",
+      "translationHash": "9fd24ea20b087b62cc2c8798e51d17b33931efbb1357b1327981b8dddb7c2fcd",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-190.json",
+      "evidenceHash": "0f5841dbc963e05a187942e859bab3359c5a9accecc23231362cfd3af95118a4"
+    },
+    "post/おすすめのPC周辺機器/index.zh-cn.md": {
+      "source": "post/おすすめのPC周辺機器/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b3601b7cffb2ca582ba39f4577a87c9d6ad2ef9442892e7131408095de93d9cd",
+      "translationHash": "28c8c245641a2398c022dabd3d09c88631a9a00a7c7bf3ceacc50003d654a5c9",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-190.json",
+      "evidenceHash": "ce5dd5ae1b7e5a1e922a90c43f01495692e21c4dd267a7263279ede95eefc068"
+    },
+    "post/おすすめのPC周辺機器/index.es.md": {
+      "source": "post/おすすめのPC周辺機器/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b3601b7cffb2ca582ba39f4577a87c9d6ad2ef9442892e7131408095de93d9cd",
+      "translationHash": "47b84d81581f85a28fbc78356492c868f326385bbc68fe409dab0c30166d934e",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-190.json",
+      "evidenceHash": "5682bffc9687d121cca4c80cd5a080bfe91add621f7b36a63b4d35d4bfda7c86"
+    },
+    "post/おすすめのPC周辺機器/index.fr.md": {
+      "source": "post/おすすめのPC周辺機器/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b3601b7cffb2ca582ba39f4577a87c9d6ad2ef9442892e7131408095de93d9cd",
+      "translationHash": "136485a7971ac014e3da608553d31bf9930283a63b303b952d6bd7aebe450588",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-190.json",
+      "evidenceHash": "3fa13e157f84b545ee44abe8f36d720dfb8adae18c08af0c86ea0c3d8f29999f"
+    },
+    "post/おすすめのPC周辺機器/index.de.md": {
+      "source": "post/おすすめのPC周辺機器/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b3601b7cffb2ca582ba39f4577a87c9d6ad2ef9442892e7131408095de93d9cd",
+      "translationHash": "506d61b7325541221cbbbba53d332216cb76189ff9b9f64148585593edff8793",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-190.json",
+      "evidenceHash": "bec52b8e733d22fb66e4c20d0dcfbf05c0c782f4b9e576badfda1e231240492f"
+    },
+    "post/おすすめのPC周辺機器/index.pt.md": {
+      "source": "post/おすすめのPC周辺機器/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b3601b7cffb2ca582ba39f4577a87c9d6ad2ef9442892e7131408095de93d9cd",
+      "translationHash": "a6e85234a2ee4bba0d9a77b5c22f906aa854bb6a2e6d79df2e35334de6048179",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-190.json",
+      "evidenceHash": "72660746f211417e27adfb8014ff745243cb76f996dbfed465b63a50d8d2a467"
+    },
+    "post/おすすめのPC周辺機器/index.id.md": {
+      "source": "post/おすすめのPC周辺機器/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b3601b7cffb2ca582ba39f4577a87c9d6ad2ef9442892e7131408095de93d9cd",
+      "translationHash": "146e3ea3566c0d04955d2ff2fee21a8bb69e3a8af84921c0e8c6d4df2bb98505",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-190.json",
+      "evidenceHash": "4fabe93786daeb947ee78c307187c6ec420f9de9855cf903eec52e9e1b9b1592"
+    },
+    "post/おすすめのPC周辺機器/index.ko.md": {
+      "source": "post/おすすめのPC周辺機器/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b3601b7cffb2ca582ba39f4577a87c9d6ad2ef9442892e7131408095de93d9cd",
+      "translationHash": "cd597e40a6c324cc7e57130fa465ed58cb6a6fe11856f9e0b991f772795080d9",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-190.json",
+      "evidenceHash": "1862493cf59f28329be18101772c10d951c91caede70203c4f1b250e6e396e5b"
+    },
+    "post/おすすめのPC周辺機器/index.zh-tw.md": {
+      "source": "post/おすすめのPC周辺機器/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b3601b7cffb2ca582ba39f4577a87c9d6ad2ef9442892e7131408095de93d9cd",
+      "translationHash": "e9e31382cee6e0033919dd8196bb8e5316bb9bd70c3a0a40a3d345e805442c9d",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-190.json",
+      "evidenceHash": "2f2ebcd47c4aea4f6cff7a53b11e88417e9684d50298f46b4fc9feb0631c3a6e"
+    },
+    "post/おすすめのPC周辺機器/index.hi.md": {
+      "source": "post/おすすめのPC周辺機器/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b3601b7cffb2ca582ba39f4577a87c9d6ad2ef9442892e7131408095de93d9cd",
+      "translationHash": "963ff0174e19644ecef7951e5872ef639ef769c2d488b6e5ae386d018567c06b",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-190.json",
+      "evidenceHash": "d85bedd1bbd18f8b1db38020a044ca4d5f9ad15cbb920b0906656929cba251f7"
+    },
+    "post/おすすめのPC周辺機器/index.ru.md": {
+      "source": "post/おすすめのPC周辺機器/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b3601b7cffb2ca582ba39f4577a87c9d6ad2ef9442892e7131408095de93d9cd",
+      "translationHash": "24e553670710cd161a865528a4b4f46a3433cf70e1140ed1a82644d8e8aabd37",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-190.json",
+      "evidenceHash": "cd6738563fd878fe27e5f7c63cf1ac06638f07fed4b9de82f6b89f3eb6fa558b"
+    },
+    "post/おすすめのPC周辺機器/index.ar.md": {
+      "source": "post/おすすめのPC周辺機器/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b3601b7cffb2ca582ba39f4577a87c9d6ad2ef9442892e7131408095de93d9cd",
+      "translationHash": "b3e1fd517f15609a196cfb5d5e352f01c0077ebbea2b117719ca1be9aebb96fd",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-190.json",
+      "evidenceHash": "c3c58ae3ac2e5819bfb5f7e2841ec294bda79982b8c3993c19ade7e15216d68a"
     }
   }
 }
