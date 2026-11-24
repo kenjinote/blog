@@ -1,13 +1,13 @@
 ---
 title: 'Den Schreibtisch des Kindes für die Arbeit ausleihen? Die reale Arbeitsumgebung von Telearbeit/Remote-Arbeit während der Kindererziehung'
-date: "2026-09-24T19:44:38+09:00"
 slug: "今日の作業環境"
 date: 2022-09-04T14:29:09+09:00
+lastmod: 2026-11-24T00:00:00+09:00
 tags: ["Verschiedenes", "Kinder"]
 draft: false
 image: "images/today_workplase.webp"
 categories: ["it-technology"]
-description: 'Wir stellen die heutige Arbeitsumgebung vor, die in der begrenzten Zeit während der Kinderbetreuung genutzt wird. Die kostbare Zeit, in der sich das Kind zum Mittagsschlaf hinlegt, kann man sich konzentrieren. Wir beschreiben den realen Alltag der Remote-Arbeit, z. B. die Nutzung des Schreibtischs des Kindes oder den cleveren Einsatz eines iPads mit einem Konvertierungsadapter.'
+description: "Kurzer Eintrag aus dem Jahr 2022: Während mein Kind schlief, arbeitete ich und dachte, dass ich mit einem Lightning-auf-HDMI-Adapter für mein iPad einen anderen Schreibtisch nutzen könnte."
 ---
 
 # Kinderschreibtisch

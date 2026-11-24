@@ -1,0 +1,450 @@
+{
+  "version": 1,
+  "batch": 122,
+  "article": "育児中の作業環境（2022年の短い日記）",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "78562712dc4acb37d2e8a9acfa5387d5b11c0678c8e5e3ce74d4c051603be6a2",
+  "sources": [],
+  "scope": "Read the full Japanese note and all twelve translations, including translated titles/descriptions, the complete anecdote, image reference, dates, and technical terms.",
+  "findings": [
+    "Removed an anomalous duplicate future date from all language versions, retained publication date 2022-09-04, and set lastmod to the review date.",
+    "Narrowed descriptions that had promoted this two-sentence personal note into a broader account of remote-work methods or adapter techniques.",
+    "Kept the Lightning-to-HDMI adapter as a conditional personal wish; no compatibility claim is made because the iPad model is not specified.",
+    "The existing translations accurately retain the nap, focus time, park plan, and conditional wish; no body-text correction was needed."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/今日の作業環境/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/今日の作業環境/index.md",
+      "sourceHash": "78562712dc4acb37d2e8a9acfa5387d5b11c0678c8e5e3ce74d4c051603be6a2",
+      "translationHash": "3e80498216020988e67a8e4ccb16ca5057a317cb0de349b2013a713491b436f1",
+      "summary": "Reviewed the complete short personal note against Japanese; narrowed the descriptions to the actual anecdote and retained the conditional adapter wording.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete short first-person note and image context with the Japanese source; kept the child’s nap, work time, park plan, and the conditional wish to use another desk."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the personal, non-technical use of remote work, child’s desk, iPad, and Lightning-to-HDMI adapter across all translations."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The note contains no mathematical formulas, calculations, or numerical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The note contains no code or command examples."
+        },
+        "links": {
+          "status": "not_applicable",
+          "note": "The article contains no external hyperlinks requiring validation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The note describes the author’s personal situation in September 2022 and should not be read as a current account.",
+        "Adapter compatibility depends on the iPad model and adapter; no device model is identified in the source."
+      ]
+    },
+    "post/今日の作業環境/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/今日の作業環境/index.md",
+      "sourceHash": "78562712dc4acb37d2e8a9acfa5387d5b11c0678c8e5e3ce74d4c051603be6a2",
+      "translationHash": "54c0d0e6466a5b1398d904437f0b5535f3a09ca8f06455859b43fa1916944aa7",
+      "summary": "Reviewed the complete short personal note against Japanese; narrowed the descriptions to the actual anecdote and retained the conditional adapter wording.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete short first-person note and image context with the Japanese source; kept the child’s nap, work time, park plan, and the conditional wish to use another desk."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the personal, non-technical use of remote work, child’s desk, iPad, and Lightning-to-HDMI adapter across all translations."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The note contains no mathematical formulas, calculations, or numerical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The note contains no code or command examples."
+        },
+        "links": {
+          "status": "not_applicable",
+          "note": "The article contains no external hyperlinks requiring validation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The note describes the author’s personal situation in September 2022 and should not be read as a current account.",
+        "Adapter compatibility depends on the iPad model and adapter; no device model is identified in the source."
+      ]
+    },
+    "post/今日の作業環境/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/今日の作業環境/index.md",
+      "sourceHash": "78562712dc4acb37d2e8a9acfa5387d5b11c0678c8e5e3ce74d4c051603be6a2",
+      "translationHash": "9ff5a82b351478ed049660051d51bf3a4631b5ba6321de4f756aaa30f59add5a",
+      "summary": "Reviewed the complete short personal note against Japanese; narrowed the descriptions to the actual anecdote and retained the conditional adapter wording.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete short first-person note and image context with the Japanese source; kept the child’s nap, work time, park plan, and the conditional wish to use another desk."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the personal, non-technical use of remote work, child’s desk, iPad, and Lightning-to-HDMI adapter across all translations."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The note contains no mathematical formulas, calculations, or numerical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The note contains no code or command examples."
+        },
+        "links": {
+          "status": "not_applicable",
+          "note": "The article contains no external hyperlinks requiring validation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The note describes the author’s personal situation in September 2022 and should not be read as a current account.",
+        "Adapter compatibility depends on the iPad model and adapter; no device model is identified in the source."
+      ]
+    },
+    "post/今日の作業環境/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/今日の作業環境/index.md",
+      "sourceHash": "78562712dc4acb37d2e8a9acfa5387d5b11c0678c8e5e3ce74d4c051603be6a2",
+      "translationHash": "f9716e06832baecf6609d3ecd731777e194cc74cf619b9db86e946ce62c081a7",
+      "summary": "Reviewed the complete short personal note against Japanese; narrowed the descriptions to the actual anecdote and retained the conditional adapter wording.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete short first-person note and image context with the Japanese source; kept the child’s nap, work time, park plan, and the conditional wish to use another desk."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the personal, non-technical use of remote work, child’s desk, iPad, and Lightning-to-HDMI adapter across all translations."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The note contains no mathematical formulas, calculations, or numerical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The note contains no code or command examples."
+        },
+        "links": {
+          "status": "not_applicable",
+          "note": "The article contains no external hyperlinks requiring validation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The note describes the author’s personal situation in September 2022 and should not be read as a current account.",
+        "Adapter compatibility depends on the iPad model and adapter; no device model is identified in the source."
+      ]
+    },
+    "post/今日の作業環境/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/今日の作業環境/index.md",
+      "sourceHash": "78562712dc4acb37d2e8a9acfa5387d5b11c0678c8e5e3ce74d4c051603be6a2",
+      "translationHash": "a4461a287203087d8c09b6eaf0055de33eb1857b0b05bfbe19bd73d3f2638d9f",
+      "summary": "Reviewed the complete short personal note against Japanese; narrowed the descriptions to the actual anecdote and retained the conditional adapter wording.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete short first-person note and image context with the Japanese source; kept the child’s nap, work time, park plan, and the conditional wish to use another desk."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the personal, non-technical use of remote work, child’s desk, iPad, and Lightning-to-HDMI adapter across all translations."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The note contains no mathematical formulas, calculations, or numerical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The note contains no code or command examples."
+        },
+        "links": {
+          "status": "not_applicable",
+          "note": "The article contains no external hyperlinks requiring validation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The note describes the author’s personal situation in September 2022 and should not be read as a current account.",
+        "Adapter compatibility depends on the iPad model and adapter; no device model is identified in the source."
+      ]
+    },
+    "post/今日の作業環境/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/今日の作業環境/index.md",
+      "sourceHash": "78562712dc4acb37d2e8a9acfa5387d5b11c0678c8e5e3ce74d4c051603be6a2",
+      "translationHash": "60d114b15aeeb8860faff766ec34ff38a216e6ab372aa3c0ea5e826641837e8a",
+      "summary": "Reviewed the complete short personal note against Japanese; narrowed the descriptions to the actual anecdote and retained the conditional adapter wording.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete short first-person note and image context with the Japanese source; kept the child’s nap, work time, park plan, and the conditional wish to use another desk."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the personal, non-technical use of remote work, child’s desk, iPad, and Lightning-to-HDMI adapter across all translations."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The note contains no mathematical formulas, calculations, or numerical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The note contains no code or command examples."
+        },
+        "links": {
+          "status": "not_applicable",
+          "note": "The article contains no external hyperlinks requiring validation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The note describes the author’s personal situation in September 2022 and should not be read as a current account.",
+        "Adapter compatibility depends on the iPad model and adapter; no device model is identified in the source."
+      ]
+    },
+    "post/今日の作業環境/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/今日の作業環境/index.md",
+      "sourceHash": "78562712dc4acb37d2e8a9acfa5387d5b11c0678c8e5e3ce74d4c051603be6a2",
+      "translationHash": "ac1f004b57cc12a6ce7643a5e44421d24932db01e411bf6ddfc45871006470ee",
+      "summary": "Reviewed the complete short personal note against Japanese; narrowed the descriptions to the actual anecdote and retained the conditional adapter wording.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete short first-person note and image context with the Japanese source; kept the child’s nap, work time, park plan, and the conditional wish to use another desk."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the personal, non-technical use of remote work, child’s desk, iPad, and Lightning-to-HDMI adapter across all translations."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The note contains no mathematical formulas, calculations, or numerical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The note contains no code or command examples."
+        },
+        "links": {
+          "status": "not_applicable",
+          "note": "The article contains no external hyperlinks requiring validation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The note describes the author’s personal situation in September 2022 and should not be read as a current account.",
+        "Adapter compatibility depends on the iPad model and adapter; no device model is identified in the source."
+      ]
+    },
+    "post/今日の作業環境/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/今日の作業環境/index.md",
+      "sourceHash": "78562712dc4acb37d2e8a9acfa5387d5b11c0678c8e5e3ce74d4c051603be6a2",
+      "translationHash": "eea6aa734e02eb728e5d314cda437660b7533ee9e7b1651f920d2f21a0277a49",
+      "summary": "Reviewed the complete short personal note against Japanese; narrowed the descriptions to the actual anecdote and retained the conditional adapter wording.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete short first-person note and image context with the Japanese source; kept the child’s nap, work time, park plan, and the conditional wish to use another desk."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the personal, non-technical use of remote work, child’s desk, iPad, and Lightning-to-HDMI adapter across all translations."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The note contains no mathematical formulas, calculations, or numerical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The note contains no code or command examples."
+        },
+        "links": {
+          "status": "not_applicable",
+          "note": "The article contains no external hyperlinks requiring validation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The note describes the author’s personal situation in September 2022 and should not be read as a current account.",
+        "Adapter compatibility depends on the iPad model and adapter; no device model is identified in the source."
+      ]
+    },
+    "post/今日の作業環境/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/今日の作業環境/index.md",
+      "sourceHash": "78562712dc4acb37d2e8a9acfa5387d5b11c0678c8e5e3ce74d4c051603be6a2",
+      "translationHash": "d1bea5589e77c647e4c34ef76ceb03f65a0e31ed6732cae0fbe7536d14c9e44f",
+      "summary": "Reviewed the complete short personal note against Japanese; narrowed the descriptions to the actual anecdote and retained the conditional adapter wording.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete short first-person note and image context with the Japanese source; kept the child’s nap, work time, park plan, and the conditional wish to use another desk."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the personal, non-technical use of remote work, child’s desk, iPad, and Lightning-to-HDMI adapter across all translations."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The note contains no mathematical formulas, calculations, or numerical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The note contains no code or command examples."
+        },
+        "links": {
+          "status": "not_applicable",
+          "note": "The article contains no external hyperlinks requiring validation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The note describes the author’s personal situation in September 2022 and should not be read as a current account.",
+        "Adapter compatibility depends on the iPad model and adapter; no device model is identified in the source."
+      ]
+    },
+    "post/今日の作業環境/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/今日の作業環境/index.md",
+      "sourceHash": "78562712dc4acb37d2e8a9acfa5387d5b11c0678c8e5e3ce74d4c051603be6a2",
+      "translationHash": "84eb18896db80da3ed67553a9e479eea985f623f7562fbee31edc181a1bb824f",
+      "summary": "Reviewed the complete short personal note against Japanese; narrowed the descriptions to the actual anecdote and retained the conditional adapter wording.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete short first-person note and image context with the Japanese source; kept the child’s nap, work time, park plan, and the conditional wish to use another desk."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the personal, non-technical use of remote work, child’s desk, iPad, and Lightning-to-HDMI adapter across all translations."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The note contains no mathematical formulas, calculations, or numerical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The note contains no code or command examples."
+        },
+        "links": {
+          "status": "not_applicable",
+          "note": "The article contains no external hyperlinks requiring validation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The note describes the author’s personal situation in September 2022 and should not be read as a current account.",
+        "Adapter compatibility depends on the iPad model and adapter; no device model is identified in the source."
+      ]
+    },
+    "post/今日の作業環境/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/今日の作業環境/index.md",
+      "sourceHash": "78562712dc4acb37d2e8a9acfa5387d5b11c0678c8e5e3ce74d4c051603be6a2",
+      "translationHash": "316447057c7173d34e96f645d0df995537dd4a71c39b220d1302df4af39bd668",
+      "summary": "Reviewed the complete short personal note against Japanese; narrowed the descriptions to the actual anecdote and retained the conditional adapter wording.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete short first-person note and image context with the Japanese source; kept the child’s nap, work time, park plan, and the conditional wish to use another desk."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the personal, non-technical use of remote work, child’s desk, iPad, and Lightning-to-HDMI adapter across all translations."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The note contains no mathematical formulas, calculations, or numerical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The note contains no code or command examples."
+        },
+        "links": {
+          "status": "not_applicable",
+          "note": "The article contains no external hyperlinks requiring validation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The note describes the author’s personal situation in September 2022 and should not be read as a current account.",
+        "Adapter compatibility depends on the iPad model and adapter; no device model is identified in the source."
+      ]
+    },
+    "post/今日の作業環境/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/今日の作業環境/index.md",
+      "sourceHash": "78562712dc4acb37d2e8a9acfa5387d5b11c0678c8e5e3ce74d4c051603be6a2",
+      "translationHash": "05e4f5faaa04518e13c34d2e2453f6ffa1e780430d296d3ebba0493721c47364",
+      "summary": "Reviewed the complete short personal note against Japanese; narrowed the descriptions to the actual anecdote and retained the conditional adapter wording.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete short first-person note and image context with the Japanese source; kept the child’s nap, work time, park plan, and the conditional wish to use another desk."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the personal, non-technical use of remote work, child’s desk, iPad, and Lightning-to-HDMI adapter across all translations."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The note contains no mathematical formulas, calculations, or numerical claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The note contains no code or command examples."
+        },
+        "links": {
+          "status": "not_applicable",
+          "note": "The article contains no external hyperlinks requiring validation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The note describes the author’s personal situation in September 2022 and should not be read as a current account.",
+        "Adapter compatibility depends on the iPad model and adapter; no device model is identified in the source."
+      ]
+    }
+  }
+}

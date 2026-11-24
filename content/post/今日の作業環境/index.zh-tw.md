@@ -1,13 +1,13 @@
 ---
 title: '借用小孩的書桌工作？育兒中遠距工作的真實作業環境'
-date: "2026-09-24T19:44:38+09:00"
 slug: "今日の作業環境"
 date: 2022-09-04T14:29:09+09:00
+lastmod: 2026-11-24T00:00:00+09:00
 tags: ["雜記", "孩子"]
 draft: false
 image: "images/today_workplase.webp"
 categories: ["it-technology"]
-description: '介紹利用育兒期間有限的時間，在今天所布置的作業環境。小孩睡午覺的時間是能夠專注的寶貴時光。紀錄了善用小孩書桌、利用iPad與轉接器發揮創意等真實的遠距工作樣貌。'
+description: "這篇2022年的短記記錄了孩子午睡時我借桌子工作，以及當時希望有一個適用於 iPad 的 Lightning 轉 HDMI 轉接器、以便使用另一張桌子的想法。"
 ---
 
 # 孩子的書桌

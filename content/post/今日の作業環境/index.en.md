@@ -1,13 +1,13 @@
 ---
 title: 'Working at My Child''s Desk? The Reality of Remote Work While Raising Kids'
-date: "2026-09-24T19:44:38+09:00"
 slug: "今日の作業環境"
 date: 2022-09-04T14:29:09+09:00
+lastmod: 2026-11-24T00:00:00+09:00
 tags: ["Miscellaneous", "Children"]
 draft: false
 image: "images/today_workplase.webp"
 categories: ["it-technology"]
-description: 'Introducing today''s work environment using the limited time available while raising children. The time they take a nap is a precious period for concentration. I write about the reality of remote work, such as creatively utilizing my child''s desk and an iPad with an adapter.'
+description: "A short 2022 note about working while my child napped and wishing I had a Lightning-to-HDMI adapter for my iPad so I could use another desk."
 ---
 
 # Children's Desk

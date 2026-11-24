@@ -4,14 +4,14 @@
 
 
 title: '¿Trabajando en el escritorio de mis hijos? El entorno de trabajo remoto y teletrabajo real durante la crianza'
-date: "2026-09-24T19:44:38+09:00"
 slug: "今日の作業環境"
 date: 2022-09-04T14:29:09+09:00
+lastmod: 2026-11-24T00:00:00+09:00
 tags: ["miscelánea","niños"]
 draft: false
 image: "images/today_workplase.webp"
 categories: ["it-technology"]
-description: 'Te presento mi entorno de trabajo de hoy utilizando el tiempo limitado durante la crianza de mis hijos. El precioso momento de concentración mientras los niños toman la siesta. Escribo sobre el trabajo remoto en la vida real, utilizando el escritorio de los niños y resolviendo de manera ingeniosa con un iPad y un adaptador.'
+description: "Nota breve de 2022: trabajé mientras mi hijo dormía la siesta y pensé que, con un adaptador Lightning a HDMI para mi iPad, podría usar otra mesa."
 ---
 
 
