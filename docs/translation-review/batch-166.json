@@ -1,0 +1,455 @@
+{
+  "version": 1,
+  "batch": 166,
+  "article": "Select or Clear All Enabled Checkboxes on a Web Page",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "88c29b72864e25aab8c7a33f30a5b30b055aedf018c87a9a6ef2e9a0c246ea0d",
+  "sources": [
+    "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/click",
+    "https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/checked",
+    "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/change_event"
+  ],
+  "scope": "Compared the full Japanese source and twelve translations, selection behavior, disabled controls, click/change event semantics, bookmarklet creation instructions, safety note, metadata, and links.",
+  "findings": [
+    "Removed duplicate future date and retained the original 2022-10-05 date; set lastmod to 2026-11-24.",
+    "Fixed the original script so it activates checkboxes with click behavior instead of assigning `.checked` without notifying page handlers.",
+    "Added a matching clear-all script and bookmarklet; both skip disabled controls and affect only the current document.",
+    "Removed an unrelated internal link to a C-language article.",
+    "Added a caution about trusted pages and possible page reactions before submitting or saving changes."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/Webページ内のすべてのチェックボックスを全チェックする/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Webページ内のすべてのチェックボックスを全チェックする/index.md",
+      "sourceHash": "88c29b72864e25aab8c7a33f30a5b30b055aedf018c87a9a6ef2e9a0c246ea0d",
+      "translationHash": "5d9a2e3225fa38d03d8fa961e384a5c308b79b1daaedd4d3882a8d4add45da5c",
+      "summary": "Compared the complete translation with the Japanese instructions and corrected checkbox activation, clear-all behavior, disabled controls, bookmarklet steps, and safety notes.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all translations and corrected the behavior from direct state mutation to click activation; clarified document scope and disabled controls."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed checkbox, checked property, click activation, disabled state, DevTools, bookmarklet, and event terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked the JavaScript selector, state guards, click behavior, and bookmarklet syntax against current DOM documentation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Removed an unrelated C-language article link and added MDN references for click(), checked, and change events."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Page-specific event handlers may still prevent or alter changes; inspect the page after running the script.",
+        "Bookmarklet behavior and browser UI can vary. Run only on pages you trust."
+      ]
+    },
+    "post/Webページ内のすべてのチェックボックスを全チェックする/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Webページ内のすべてのチェックボックスを全チェックする/index.md",
+      "sourceHash": "88c29b72864e25aab8c7a33f30a5b30b055aedf018c87a9a6ef2e9a0c246ea0d",
+      "translationHash": "e1e6e7919c5941122ed61f6e83b1144b55f48e3742ee0bac652da4c230272eb9",
+      "summary": "Compared the complete translation with the Japanese instructions and corrected checkbox activation, clear-all behavior, disabled controls, bookmarklet steps, and safety notes.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all translations and corrected the behavior from direct state mutation to click activation; clarified document scope and disabled controls."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed checkbox, checked property, click activation, disabled state, DevTools, bookmarklet, and event terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked the JavaScript selector, state guards, click behavior, and bookmarklet syntax against current DOM documentation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Removed an unrelated C-language article link and added MDN references for click(), checked, and change events."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Page-specific event handlers may still prevent or alter changes; inspect the page after running the script.",
+        "Bookmarklet behavior and browser UI can vary. Run only on pages you trust."
+      ]
+    },
+    "post/Webページ内のすべてのチェックボックスを全チェックする/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Webページ内のすべてのチェックボックスを全チェックする/index.md",
+      "sourceHash": "88c29b72864e25aab8c7a33f30a5b30b055aedf018c87a9a6ef2e9a0c246ea0d",
+      "translationHash": "47d8090c4f88be04f8e4295983ffc3a7974ce3e68af450cb91d045d91f673470",
+      "summary": "Compared the complete translation with the Japanese instructions and corrected checkbox activation, clear-all behavior, disabled controls, bookmarklet steps, and safety notes.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all translations and corrected the behavior from direct state mutation to click activation; clarified document scope and disabled controls."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed checkbox, checked property, click activation, disabled state, DevTools, bookmarklet, and event terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked the JavaScript selector, state guards, click behavior, and bookmarklet syntax against current DOM documentation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Removed an unrelated C-language article link and added MDN references for click(), checked, and change events."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Page-specific event handlers may still prevent or alter changes; inspect the page after running the script.",
+        "Bookmarklet behavior and browser UI can vary. Run only on pages you trust."
+      ]
+    },
+    "post/Webページ内のすべてのチェックボックスを全チェックする/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Webページ内のすべてのチェックボックスを全チェックする/index.md",
+      "sourceHash": "88c29b72864e25aab8c7a33f30a5b30b055aedf018c87a9a6ef2e9a0c246ea0d",
+      "translationHash": "4b1b0dcc9b458c2163ce8d0db80d17a70089e98e39fdd59d473c0913d37b0419",
+      "summary": "Compared the complete translation with the Japanese instructions and corrected checkbox activation, clear-all behavior, disabled controls, bookmarklet steps, and safety notes.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all translations and corrected the behavior from direct state mutation to click activation; clarified document scope and disabled controls."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed checkbox, checked property, click activation, disabled state, DevTools, bookmarklet, and event terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked the JavaScript selector, state guards, click behavior, and bookmarklet syntax against current DOM documentation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Removed an unrelated C-language article link and added MDN references for click(), checked, and change events."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Page-specific event handlers may still prevent or alter changes; inspect the page after running the script.",
+        "Bookmarklet behavior and browser UI can vary. Run only on pages you trust."
+      ]
+    },
+    "post/Webページ内のすべてのチェックボックスを全チェックする/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Webページ内のすべてのチェックボックスを全チェックする/index.md",
+      "sourceHash": "88c29b72864e25aab8c7a33f30a5b30b055aedf018c87a9a6ef2e9a0c246ea0d",
+      "translationHash": "0c02791c382c94e572cc34808594103edf7d69fc4038d5f49e8966e476143138",
+      "summary": "Compared the complete translation with the Japanese instructions and corrected checkbox activation, clear-all behavior, disabled controls, bookmarklet steps, and safety notes.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all translations and corrected the behavior from direct state mutation to click activation; clarified document scope and disabled controls."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed checkbox, checked property, click activation, disabled state, DevTools, bookmarklet, and event terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked the JavaScript selector, state guards, click behavior, and bookmarklet syntax against current DOM documentation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Removed an unrelated C-language article link and added MDN references for click(), checked, and change events."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Page-specific event handlers may still prevent or alter changes; inspect the page after running the script.",
+        "Bookmarklet behavior and browser UI can vary. Run only on pages you trust."
+      ]
+    },
+    "post/Webページ内のすべてのチェックボックスを全チェックする/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Webページ内のすべてのチェックボックスを全チェックする/index.md",
+      "sourceHash": "88c29b72864e25aab8c7a33f30a5b30b055aedf018c87a9a6ef2e9a0c246ea0d",
+      "translationHash": "72ca7d119f8a0a8cc976674a362fbffeb05b17f99d17dcff5d9c7c0d192d9b3f",
+      "summary": "Compared the complete translation with the Japanese instructions and corrected checkbox activation, clear-all behavior, disabled controls, bookmarklet steps, and safety notes.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all translations and corrected the behavior from direct state mutation to click activation; clarified document scope and disabled controls."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed checkbox, checked property, click activation, disabled state, DevTools, bookmarklet, and event terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked the JavaScript selector, state guards, click behavior, and bookmarklet syntax against current DOM documentation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Removed an unrelated C-language article link and added MDN references for click(), checked, and change events."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Page-specific event handlers may still prevent or alter changes; inspect the page after running the script.",
+        "Bookmarklet behavior and browser UI can vary. Run only on pages you trust."
+      ]
+    },
+    "post/Webページ内のすべてのチェックボックスを全チェックする/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Webページ内のすべてのチェックボックスを全チェックする/index.md",
+      "sourceHash": "88c29b72864e25aab8c7a33f30a5b30b055aedf018c87a9a6ef2e9a0c246ea0d",
+      "translationHash": "382c000ff87a551221b343146898ccb8b252b953c2f7e1c41b07427ca96533f6",
+      "summary": "Compared the complete translation with the Japanese instructions and corrected checkbox activation, clear-all behavior, disabled controls, bookmarklet steps, and safety notes.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all translations and corrected the behavior from direct state mutation to click activation; clarified document scope and disabled controls."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed checkbox, checked property, click activation, disabled state, DevTools, bookmarklet, and event terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked the JavaScript selector, state guards, click behavior, and bookmarklet syntax against current DOM documentation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Removed an unrelated C-language article link and added MDN references for click(), checked, and change events."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Page-specific event handlers may still prevent or alter changes; inspect the page after running the script.",
+        "Bookmarklet behavior and browser UI can vary. Run only on pages you trust."
+      ]
+    },
+    "post/Webページ内のすべてのチェックボックスを全チェックする/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Webページ内のすべてのチェックボックスを全チェックする/index.md",
+      "sourceHash": "88c29b72864e25aab8c7a33f30a5b30b055aedf018c87a9a6ef2e9a0c246ea0d",
+      "translationHash": "d110de3409ee70de68c4868632aecd8ac36585f5619fd0e13d77d18489f60e37",
+      "summary": "Compared the complete translation with the Japanese instructions and corrected checkbox activation, clear-all behavior, disabled controls, bookmarklet steps, and safety notes.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all translations and corrected the behavior from direct state mutation to click activation; clarified document scope and disabled controls."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed checkbox, checked property, click activation, disabled state, DevTools, bookmarklet, and event terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked the JavaScript selector, state guards, click behavior, and bookmarklet syntax against current DOM documentation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Removed an unrelated C-language article link and added MDN references for click(), checked, and change events."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Page-specific event handlers may still prevent or alter changes; inspect the page after running the script.",
+        "Bookmarklet behavior and browser UI can vary. Run only on pages you trust."
+      ]
+    },
+    "post/Webページ内のすべてのチェックボックスを全チェックする/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Webページ内のすべてのチェックボックスを全チェックする/index.md",
+      "sourceHash": "88c29b72864e25aab8c7a33f30a5b30b055aedf018c87a9a6ef2e9a0c246ea0d",
+      "translationHash": "8b5bc66387060cb05f19e24a61c6b0d5be1892af8ac9b93ebe609617cf7a5e2e",
+      "summary": "Compared the complete translation with the Japanese instructions and corrected checkbox activation, clear-all behavior, disabled controls, bookmarklet steps, and safety notes.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all translations and corrected the behavior from direct state mutation to click activation; clarified document scope and disabled controls."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed checkbox, checked property, click activation, disabled state, DevTools, bookmarklet, and event terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked the JavaScript selector, state guards, click behavior, and bookmarklet syntax against current DOM documentation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Removed an unrelated C-language article link and added MDN references for click(), checked, and change events."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Page-specific event handlers may still prevent or alter changes; inspect the page after running the script.",
+        "Bookmarklet behavior and browser UI can vary. Run only on pages you trust."
+      ]
+    },
+    "post/Webページ内のすべてのチェックボックスを全チェックする/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Webページ内のすべてのチェックボックスを全チェックする/index.md",
+      "sourceHash": "88c29b72864e25aab8c7a33f30a5b30b055aedf018c87a9a6ef2e9a0c246ea0d",
+      "translationHash": "486faeb29d26f3ee1112a85883009aea709f4a1a51da41bd7bd49f8c08a5d6ec",
+      "summary": "Compared the complete translation with the Japanese instructions and corrected checkbox activation, clear-all behavior, disabled controls, bookmarklet steps, and safety notes.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all translations and corrected the behavior from direct state mutation to click activation; clarified document scope and disabled controls."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed checkbox, checked property, click activation, disabled state, DevTools, bookmarklet, and event terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked the JavaScript selector, state guards, click behavior, and bookmarklet syntax against current DOM documentation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Removed an unrelated C-language article link and added MDN references for click(), checked, and change events."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Page-specific event handlers may still prevent or alter changes; inspect the page after running the script.",
+        "Bookmarklet behavior and browser UI can vary. Run only on pages you trust."
+      ]
+    },
+    "post/Webページ内のすべてのチェックボックスを全チェックする/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Webページ内のすべてのチェックボックスを全チェックする/index.md",
+      "sourceHash": "88c29b72864e25aab8c7a33f30a5b30b055aedf018c87a9a6ef2e9a0c246ea0d",
+      "translationHash": "37aceb3ef69974c549361a028a0d9e0a7f2235ed022f8bceb94b040a2c6b593c",
+      "summary": "Compared the complete translation with the Japanese instructions and corrected checkbox activation, clear-all behavior, disabled controls, bookmarklet steps, and safety notes.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all translations and corrected the behavior from direct state mutation to click activation; clarified document scope and disabled controls."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed checkbox, checked property, click activation, disabled state, DevTools, bookmarklet, and event terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked the JavaScript selector, state guards, click behavior, and bookmarklet syntax against current DOM documentation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Removed an unrelated C-language article link and added MDN references for click(), checked, and change events."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Page-specific event handlers may still prevent or alter changes; inspect the page after running the script.",
+        "Bookmarklet behavior and browser UI can vary. Run only on pages you trust."
+      ]
+    },
+    "post/Webページ内のすべてのチェックボックスを全チェックする/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Webページ内のすべてのチェックボックスを全チェックする/index.md",
+      "sourceHash": "88c29b72864e25aab8c7a33f30a5b30b055aedf018c87a9a6ef2e9a0c246ea0d",
+      "translationHash": "0f9027f47aeb7336fd37408915a9bbf5dbf227c4cf1625922c9e8e5949221740",
+      "summary": "Compared the complete translation with the Japanese instructions and corrected checkbox activation, clear-all behavior, disabled controls, bookmarklet steps, and safety notes.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all translations and corrected the behavior from direct state mutation to click activation; clarified document scope and disabled controls."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed checkbox, checked property, click activation, disabled state, DevTools, bookmarklet, and event terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked the JavaScript selector, state guards, click behavior, and bookmarklet syntax against current DOM documentation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Removed an unrelated C-language article link and added MDN references for click(), checked, and change events."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Page-specific event handlers may still prevent or alter changes; inspect the page after running the script.",
+        "Bookmarklet behavior and browser UI can vary. Run only on pages you trust."
+      ]
+    }
+  }
+}

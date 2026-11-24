@@ -1,37 +1,64 @@
 ---
-
-
-
-title: '【JS】Cómo marcar todas las casillas de verificación en una página web a la vez (con Bookmarklet)'
-date: "2026-09-24T19:44:38+09:00"
+title: "Seleccionar o desmarcar todas las casillas de una página web"
 slug: "Webページ内のすべてのチェックボックスを全チェックする"
-date: 2022-10-05T20:07:06+09:00
-tags: ["javascript", "automatización"]
+tags: ["javascript", "checkbox", "bookmarklet"]
 draft: false
 image: "img.webp"
 categories: ["blogging"]
-description: 'Explicamos cómo marcar todas las casillas de verificación en una página web a la vez. Presentamos el código JavaScript para ejecutar en la consola de DevTools de Chrome y el procedimiento para crear un práctico bookmarklet que permite seleccionar o deseleccionar todo con un solo clic.'
+description: "Usa JavaScript o un marcador para seleccionar o desmarcar casillas habilitadas en la página actual. Revisa el comportamiento de la página antes de ejecutar el código."
+date: "2022-10-05T20:07:06+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
+# Seleccionar o desmarcar todas las casillas de una página web
 
+Este script hace clic en las casillas habilitadas de la página actual para cambiarlas todas a la vez.
 
+## Antes de ejecutarlo
 
+Ejecútalo solo en páginas de confianza. La página puede reaccionar a los clics cambiando ajustes o enviando solicitudes. Revisa el resultado antes de enviar o guardar nada.
 
-Para marcar todas las casillas de verificación en una página web, abra DevTools con F12, pegue el siguiente código en la consola y ejecútelo.
+## Ejecutarlo en DevTools
+
+Abre la página y ejecuta el código siguiente en la consola de DevTools. Si F12 no abre DevTools en tu navegador, usa el menú del navegador.
+
 ```js
-let boxes = document.querySelectorAll('input[type="checkbox"]');
-for (let i = 0; i < boxes.length; i++) {
-    if (!boxes[i].disabled) {
-        boxes[i].checked = true;
-    }
+const boxes = document.querySelectorAll('input[type="checkbox"]:not(:disabled)');
+for (const box of boxes) {
+  if (!box.checked) box.click();
 }
 ```
 
-O bien,
+Para desmarcar todas las casillas habilitadas, usa este código.
 
-Cree un nuevo marcador y pegue el siguiente código en la dirección al registrarse (generalmente donde ingresa https://...).
-Muestre la página web donde desea marcar las casillas de verificación y haga clic en el marcador que creó para marcar todas las casillas de verificación.
-```
-javascript:(function(){let boxes=document.querySelectorAll('input[type="checkbox"]');for(let i=0;i<boxes.length;i++){if(!boxes[i].disabled){boxes[i].checked=true;}}})();
+```js
+const boxes = document.querySelectorAll('input[type="checkbox"]:not(:disabled)');
+for (const box of boxes) {
+  if (box.checked) box.click();
+}
 ```
 
-Si desea desmarcar todas, cambie la parte de `boxes[i].checked = true;` del script anterior a `boxes[i].checked = false;`.
+## Crear un marcador
+
+Crea un marcador y pega el código de una línea en el campo URL mediante el editor de marcadores. No lo escribas en la barra de direcciones. Al seleccionar el marcador en la página, se marcarán las casillas habilitadas.
+
+**Select all:**
+
+```text
+javascript:(()=>{for(const box of document.querySelectorAll('input[type="checkbox"]:not(:disabled)'))if(!box.checked)box.click()})();
+```
+
+**Clear all:**
+
+```text
+javascript:(()=>{for(const box of document.querySelectorAll('input[type="checkbox"]:not(:disabled)'))if(box.checked)box.click()})();
+```
+
+Para desmarcarlas, usa el segundo ejemplo o el marcador para desmarcar todo. El script solo afecta al documento actual y omite las casillas deshabilitadas.
+
+Cambiar solo la propiedad `.checked` puede no notificar al código de la página mediante los eventos habituales de un clic. `.click()` activa el comportamiento del clic; aun así, el código propio de la página puede impedir algunos cambios.
+
+## Referencias
+
+- [MDN: HTMLElement.click()](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/click)
+- [MDN: HTMLInputElement.checked](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/checked)
+- [MDN: change event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/change_event)

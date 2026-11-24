@@ -1,31 +1,64 @@
 ---
-title: '【JS】طريقة تحديد جميع مربعات الاختيار في صفحة الويب دفعة واحدة (مع كود Bookmarklet)'
-date: "2026-09-24T19:44:38+09:00"
+title: "تحديد كل مربعات الاختيار في صفحة ويب أو إلغاء تحديدها"
 slug: "Webページ内のすべてのチェックボックスを全チェックする"
-date: 2022-10-05T20:07:06+09:00
-tags: ["javascript", "أتمتة"]
+tags: ["javascript", "checkbox", "bookmarklet"]
 draft: false
 image: "img.webp"
 categories: ["blogging"]
-description: 'نشرح كيفية تحديد جميع مربعات الاختيار في صفحة الويب دفعة واحدة. نقدم خطوات إنشاء كود جافا سكريبت لتشغيله في وحدة تحكم DevTools في Chrome، بالإضافة إلى Bookmarklet مفيد لتحديد أو إلغاء تحديد الكل بنقرة واحدة.'
+description: "استخدم JavaScript أو إشارة مرجعية لتنفيذ تحديد أو إلغاء تحديد مربعات الاختيار المفعّلة في الصفحة الحالية. تحقّق من سلوك الصفحة قبل تشغيل الرمز."
+date: "2022-10-05T20:07:06+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
+# تحديد كل مربعات الاختيار في صفحة ويب أو إلغاء تحديدها
 
-لتحديد جميع مربعات الاختيار في صفحة ويب، افتح أدوات المطور (DevTools) بالضغط على F12، ثم الصق الكود التالي في وحدة التحكم (Console) وقم بتشغيله.
+ينقر هذا البرنامج النصي على مربعات الاختيار المفعّلة في الصفحة الحالية لتغييرها دفعة واحدة.
+
+## تنبيه قبل التشغيل
+
+شغّله على الصفحات الموثوقة فقط. قد تستجيب الصفحة للنقر بتغيير الإعدادات أو إرسال طلبات. راجع الاختيارات قبل الإرسال أو الحفظ.
+
+## التشغيل في DevTools
+
+افتح الصفحة المطلوبة وشغّل الرمز أدناه في وحدة تحكم DevTools. إذا لم يفتح F12 أدوات DevTools، فاستخدم قائمة المتصفح.
+
 ```js
-let boxes = document.querySelectorAll('input[type="checkbox"]');
-for (let i = 0; i < boxes.length; i++) {
-    if (!boxes[i].disabled) {
-        boxes[i].checked = true;
-    }
+const boxes = document.querySelectorAll('input[type="checkbox"]:not(:disabled)');
+for (const box of boxes) {
+  if (!box.checked) box.click();
 }
 ```
 
-أو،
+لإلغاء تحديد جميع المربعات المفعّلة، استخدم هذا الرمز.
 
-أنشئ إشارة مرجعية جديدة، وفي عنوان التسجيل (الجزء الذي تكتب فيه عادةً https://...) الصق الكود التالي.
-افتح صفحة الويب التي تريد تحديد مربعات الاختيار فيها، وانقر على الإشارة المرجعية التي أنشأتها، وسيتم تحديد جميع مربعات الاختيار.
-```
-javascript:(function(){let boxes=document.querySelectorAll('input[type="checkbox"]');for(let i=0;i<boxes.length;i++){if(!boxes[i].disabled){boxes[i].checked=true;}}})();
+```js
+const boxes = document.querySelectorAll('input[type="checkbox"]:not(:disabled)');
+for (const box of boxes) {
+  if (box.checked) box.click();
+}
 ```
 
-إذا كنت تريد إلغاء تحديد الكل، فقم بتغيير جزء `boxes[i].checked = true;` في البرنامج النصي أعلاه إلى `boxes[i].checked = false;`.
+## إنشاء إشارة مرجعية
+
+أنشئ إشارة مرجعية والصق الرمز ذي السطر الواحد في حقل URL باستخدام محرر الإشارات المرجعية. لا تكتبه في شريط العناوين. اختر الإشارة المرجعية في الصفحة المطلوبة لتحديد المربعات المفعّلة.
+
+**Select all:**
+
+```text
+javascript:(()=>{for(const box of document.querySelectorAll('input[type="checkbox"]:not(:disabled)'))if(!box.checked)box.click()})();
+```
+
+**Clear all:**
+
+```text
+javascript:(()=>{for(const box of document.querySelectorAll('input[type="checkbox"]:not(:disabled)'))if(box.checked)box.click()})();
+```
+
+لإلغاء التحديد، استخدم المثال الثاني أو إشارة إلغاء تحديد الكل. يعمل البرنامج النصي في المستند الحالي فقط ويتجاوز مربعات الاختيار المعطّلة.
+
+قد لا يؤدي تغيير الخاصية `.checked` وحدها إلى إرسال الأحداث المعتادة عند النقر إلى رمز الصفحة. تستدعي `.click()` سلوك النقر، لكن معالجة الصفحة نفسها قد تمنع بعض التغييرات.
+
+## المراجع
+
+- [MDN: HTMLElement.click()](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/click)
+- [MDN: HTMLInputElement.checked](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/checked)
+- [MDN: change event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/change_event)

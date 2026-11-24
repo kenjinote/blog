@@ -1,31 +1,64 @@
 ---
-title: '[JS] How to Check All Checkboxes on a Web Page at Once (with Bookmarklet)'
-date: "2026-09-24T19:44:38+09:00"
+title: "Select or Clear All Checkboxes on a Web Page"
 slug: "Webページ内のすべてのチェックボックスを全チェックする"
-date: 2022-10-05T20:07:06+09:00
-tags: ["javascript", "automation"]
+tags: ["javascript", "checkbox", "bookmarklet"]
 draft: false
 image: "img.webp"
 categories: ["blogging"]
-description: 'Explains how to check all checkboxes on a web page at once. Introduces the JavaScript code to run in Chrome''s DevTools console and the steps to create a convenient bookmarklet that allows you to select or deselect all with a single click.'
+description: "Use JavaScript or bookmarklets to select or clear enabled checkboxes in the current page. Review the page behavior before running the code."
+date: "2022-10-05T20:07:06+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
+# Select or Clear All Checkboxes on a Web Page
 
-To check all checkboxes in a web page, open DevTools with F12, paste the following code into the console, and execute it.
+This script clicks enabled checkboxes in the current page so you can change them together instead of one at a time.
+
+## Before you run it
+
+Run this only on pages you trust. A page may react to checkbox clicks by changing settings or sending requests. Review the resulting selections before submitting or saving anything.
+
+## Run it in DevTools
+
+Open the target page and run the code below in the DevTools Console. If F12 does not open DevTools in your browser, use the browser menu.
+
 ```js
-let boxes = document.querySelectorAll('input[type="checkbox"]');
-for (let i = 0; i < boxes.length; i++) {
-    if (!boxes[i].disabled) {
-        boxes[i].checked = true;
-    }
+const boxes = document.querySelectorAll('input[type="checkbox"]:not(:disabled)');
+for (const box of boxes) {
+  if (!box.checked) box.click();
 }
 ```
 
-Alternatively,
+To clear all enabled checkboxes, use this code.
 
-Create a new bookmark, and in the address field when registering (where you usually enter https://...), paste the following code and save it.
-Display the web page where you want to check the boxes, and click the created bookmark to check all checkboxes.
-```
-javascript:(function(){let boxes=document.querySelectorAll('input[type="checkbox"]');for(let i=0;i<boxes.length;i++){if(!boxes[i].disabled){boxes[i].checked=true;}}})();
+```js
+const boxes = document.querySelectorAll('input[type="checkbox"]:not(:disabled)');
+for (const box of boxes) {
+  if (box.checked) box.click();
+}
 ```
 
-If you want to uncheck all, change the `boxes[i].checked = true;` part of the above script to `boxes[i].checked = false;`.
+## Create a bookmarklet
+
+Create a bookmark and paste the one-line code below into the bookmark URL field using the bookmark editor. Do not enter it in the address bar. Choose the bookmark while viewing the target page to select enabled checkboxes.
+
+**Select all:**
+
+```text
+javascript:(()=>{for(const box of document.querySelectorAll('input[type="checkbox"]:not(:disabled)'))if(!box.checked)box.click()})();
+```
+
+**Clear all:**
+
+```text
+javascript:(()=>{for(const box of document.querySelectorAll('input[type="checkbox"]:not(:disabled)'))if(box.checked)box.click()})();
+```
+
+To clear the selections, use the second code sample or the clear-all bookmarklet. The script affects only the current document and skips disabled checkboxes.
+
+Changing the `.checked` property alone may not notify page code through the events that normally accompany a click. `.click()` triggers click behavior. Page-specific handlers can still prevent some items from changing.
+
+## References
+
+- [MDN: HTMLElement.click()](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/click)
+- [MDN: HTMLInputElement.checked](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/checked)
+- [MDN: change event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/change_event)

@@ -19325,6 +19325,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-165.json",
       "evidenceHash": "dd42fc4c43ba992a02968491f6d4119c226025f8250c68201fd1cc92676fe99c"
+    },
+    "post/Webページ内のすべてのチェックボックスを全チェックする/index.en.md": {
+      "source": "post/Webページ内のすべてのチェックボックスを全チェックする/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "88c29b72864e25aab8c7a33f30a5b30b055aedf018c87a9a6ef2e9a0c246ea0d",
+      "translationHash": "5d9a2e3225fa38d03d8fa961e384a5c308b79b1daaedd4d3882a8d4add45da5c",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-166.json",
+      "evidenceHash": "2cccfe8f7315a9b66a084a72d56edd892ca73ff375b952d231b11fd02b3fc281"
+    },
+    "post/Webページ内のすべてのチェックボックスを全チェックする/index.zh-cn.md": {
+      "source": "post/Webページ内のすべてのチェックボックスを全チェックする/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "88c29b72864e25aab8c7a33f30a5b30b055aedf018c87a9a6ef2e9a0c246ea0d",
+      "translationHash": "e1e6e7919c5941122ed61f6e83b1144b55f48e3742ee0bac652da4c230272eb9",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-166.json",
+      "evidenceHash": "127fd90c896320141ed96508238aaff1eed0525a403f0893d1207b90687d0bc6"
+    },
+    "post/Webページ内のすべてのチェックボックスを全チェックする/index.es.md": {
+      "source": "post/Webページ内のすべてのチェックボックスを全チェックする/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "88c29b72864e25aab8c7a33f30a5b30b055aedf018c87a9a6ef2e9a0c246ea0d",
+      "translationHash": "47d8090c4f88be04f8e4295983ffc3a7974ce3e68af450cb91d045d91f673470",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-166.json",
+      "evidenceHash": "07f3e7e189a656bb2fdbe78d6b594b7e2652c212735770b81939b8a3dfd4167b"
+    },
+    "post/Webページ内のすべてのチェックボックスを全チェックする/index.ko.md": {
+      "source": "post/Webページ内のすべてのチェックボックスを全チェックする/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "88c29b72864e25aab8c7a33f30a5b30b055aedf018c87a9a6ef2e9a0c246ea0d",
+      "translationHash": "4b1b0dcc9b458c2163ce8d0db80d17a70089e98e39fdd59d473c0913d37b0419",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-166.json",
+      "evidenceHash": "bfb4c3b70dabf9aea2313ee6cd34b9a76d043ac57fc1d2a67c7e0346b7dbdae9"
+    },
+    "post/Webページ内のすべてのチェックボックスを全チェックする/index.pt.md": {
+      "source": "post/Webページ内のすべてのチェックボックスを全チェックする/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "88c29b72864e25aab8c7a33f30a5b30b055aedf018c87a9a6ef2e9a0c246ea0d",
+      "translationHash": "0c02791c382c94e572cc34808594103edf7d69fc4038d5f49e8966e476143138",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-166.json",
+      "evidenceHash": "3cf4616202a11c08a61073f7e9dd4d0101a136969fa74bfe7406dc1fa59d22ad"
+    },
+    "post/Webページ内のすべてのチェックボックスを全チェックする/index.zh-tw.md": {
+      "source": "post/Webページ内のすべてのチェックボックスを全チェックする/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "88c29b72864e25aab8c7a33f30a5b30b055aedf018c87a9a6ef2e9a0c246ea0d",
+      "translationHash": "72ca7d119f8a0a8cc976674a362fbffeb05b17f99d17dcff5d9c7c0d192d9b3f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-166.json",
+      "evidenceHash": "c4303d878b26f265bd9ae02cdffad4cd595b7cf3eb398dfc3f20e60aad2a2d82"
+    },
+    "post/Webページ内のすべてのチェックボックスを全チェックする/index.hi.md": {
+      "source": "post/Webページ内のすべてのチェックボックスを全チェックする/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "88c29b72864e25aab8c7a33f30a5b30b055aedf018c87a9a6ef2e9a0c246ea0d",
+      "translationHash": "382c000ff87a551221b343146898ccb8b252b953c2f7e1c41b07427ca96533f6",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-166.json",
+      "evidenceHash": "6b93fea33cd4ed44310c9a0c4ad77dfdd443bbd331b28efb5d0d35ad22bd15ee"
+    },
+    "post/Webページ内のすべてのチェックボックスを全チェックする/index.fr.md": {
+      "source": "post/Webページ内のすべてのチェックボックスを全チェックする/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "88c29b72864e25aab8c7a33f30a5b30b055aedf018c87a9a6ef2e9a0c246ea0d",
+      "translationHash": "d110de3409ee70de68c4868632aecd8ac36585f5619fd0e13d77d18489f60e37",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-166.json",
+      "evidenceHash": "42e24469a08a5c1fbc46aca34665c3558965a2a2833d786b60a4821a2f2710a3"
+    },
+    "post/Webページ内のすべてのチェックボックスを全チェックする/index.de.md": {
+      "source": "post/Webページ内のすべてのチェックボックスを全チェックする/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "88c29b72864e25aab8c7a33f30a5b30b055aedf018c87a9a6ef2e9a0c246ea0d",
+      "translationHash": "8b5bc66387060cb05f19e24a61c6b0d5be1892af8ac9b93ebe609617cf7a5e2e",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-166.json",
+      "evidenceHash": "19a9dd760c3a57f456575b59ce83d546bcd59aa1ef2370b3c581bc67498fb38f"
+    },
+    "post/Webページ内のすべてのチェックボックスを全チェックする/index.ar.md": {
+      "source": "post/Webページ内のすべてのチェックボックスを全チェックする/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "88c29b72864e25aab8c7a33f30a5b30b055aedf018c87a9a6ef2e9a0c246ea0d",
+      "translationHash": "486faeb29d26f3ee1112a85883009aea709f4a1a51da41bd7bd49f8c08a5d6ec",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-166.json",
+      "evidenceHash": "fce13d593a9dea2e7f9ac937723e046d4dcc49a8d6d25f37148c97114efed6c1"
+    },
+    "post/Webページ内のすべてのチェックボックスを全チェックする/index.ru.md": {
+      "source": "post/Webページ内のすべてのチェックボックスを全チェックする/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "88c29b72864e25aab8c7a33f30a5b30b055aedf018c87a9a6ef2e9a0c246ea0d",
+      "translationHash": "37aceb3ef69974c549361a028a0d9e0a7f2235ed022f8bceb94b040a2c6b593c",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-166.json",
+      "evidenceHash": "a5bc500f8bbd6074d0ac28706070bf8d88db6284107e6d8935cd163e0c379ee9"
+    },
+    "post/Webページ内のすべてのチェックボックスを全チェックする/index.id.md": {
+      "source": "post/Webページ内のすべてのチェックボックスを全チェックする/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "88c29b72864e25aab8c7a33f30a5b30b055aedf018c87a9a6ef2e9a0c246ea0d",
+      "translationHash": "0f9027f47aeb7336fd37408915a9bbf5dbf227c4cf1625922c9e8e5949221740",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-166.json",
+      "evidenceHash": "f646150aa35c67daefbd93d055d9f101c34364ebad0769d10864be17e15aef9e"
     }
   }
 }

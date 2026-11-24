@@ -1,31 +1,64 @@
 ---
-title: '[JS] Как массово отметить все чекбоксы на веб-странице (с букмарклетом)'
-date: "2026-09-24T19:44:38+09:00"
+title: "Как отметить или снять отметку во всех флажках на веб-странице"
 slug: "Webページ内のすべてのチェックボックスを全チェックする"
-date: 2022-10-05T20:07:06+09:00
-tags: ["javascript", "автоматизация"]
+tags: ["javascript", "checkbox", "bookmarklet"]
 draft: false
 image: "img.webp"
 categories: ["blogging"]
-description: 'Объясняем, как массово отметить все чекбоксы на веб-странице. Представлен JavaScript-код для выполнения в консоли DevTools Chrome и пошаговое руководство по созданию удобного букмарклета для выделения и снятия выделения со всех чекбоксов в один клик.'
+description: "Используйте JavaScript или букмарклет, чтобы отметить или снять отметку во включённых флажках текущей страницы. Перед запуском проверьте поведение страницы."
+date: "2022-10-05T20:07:06+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
+# Как отметить или снять отметку во всех флажках на веб-странице
 
-Чтобы отметить все флажки на веб-странице, откройте DevTools с помощью F12, вставьте следующий код в консоль и выполните его.
+Скрипт нажимает на доступные флажки в текущем документе, чтобы изменить их сразу, а не по одному.
+
+## Перед запуском
+
+Запускайте код только на доверенных страницах. Страница может реагировать на нажатия, менять настройки или отправлять запросы. Проверьте выбор перед отправкой или сохранением.
+
+## Запуск в DevTools
+
+Откройте нужную страницу и выполните код ниже в консоли DevTools. Если F12 не открывает DevTools, воспользуйтесь меню браузера.
+
 ```js
-let boxes = document.querySelectorAll('input[type="checkbox"]');
-for (let i = 0; i < boxes.length; i++) {
-    if (!boxes[i].disabled) {
-        boxes[i].checked = true;
-    }
+const boxes = document.querySelectorAll('input[type="checkbox"]:not(:disabled)');
+for (const box of boxes) {
+  if (!box.checked) box.click();
 }
 ```
 
-Или,
+Чтобы снять отметки во всех доступных флажках, используйте этот код.
 
-Создайте новую закладку и вставьте следующий код в адрес регистрации (обычно там, где вы вводите https://...).
-Откройте веб-страницу, на которой вы хотите отметить флажки, нажмите на созданную закладку, и все флажки будут отмечены.
-```
-javascript:(function(){let boxes=document.querySelectorAll('input[type="checkbox"]');for(let i=0;i<boxes.length;i++){if(!boxes[i].disabled){boxes[i].checked=true;}}})();
+```js
+const boxes = document.querySelectorAll('input[type="checkbox"]:not(:disabled)');
+for (const box of boxes) {
+  if (box.checked) box.click();
+}
 ```
 
-Если вы хотите снять все флажки, измените часть `boxes[i].checked = true;` в приведенном выше скрипте на `boxes[i].checked = false;`.
+## Создание букмарклета
+
+Создайте закладку и вставьте однострочный код в поле URL через редактор закладок. Не вводите его в адресную строку. Выберите закладку на нужной странице, чтобы отметить доступные флажки.
+
+**Select all:**
+
+```text
+javascript:(()=>{for(const box of document.querySelectorAll('input[type="checkbox"]:not(:disabled)'))if(!box.checked)box.click()})();
+```
+
+**Clear all:**
+
+```text
+javascript:(()=>{for(const box of document.querySelectorAll('input[type="checkbox"]:not(:disabled)'))if(box.checked)box.click()})();
+```
+
+Чтобы снять отметки, используйте второй пример или букмарклет для снятия всех отметок. Скрипт действует только в текущем документе и пропускает отключённые флажки.
+
+Одно лишь изменение свойства `.checked` может не передать коду страницы события, которые обычно возникают при нажатии. `.click()` запускает поведение щелчка, однако обработчик самой страницы всё равно может помешать некоторым изменениям.
+
+## Источники
+
+- [MDN: HTMLElement.click()](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/click)
+- [MDN: HTMLInputElement.checked](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/checked)
+- [MDN: change event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/change_event)

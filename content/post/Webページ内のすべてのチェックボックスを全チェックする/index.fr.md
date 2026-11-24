@@ -1,31 +1,64 @@
 ---
-title: '[JS] Comment cocher toutes les cases d''une page Web en une seule fois (avec bookmarklet)'
-date: "2026-09-24T19:44:38+09:00"
+title: "Cocher ou décocher toutes les cases d’une page Web"
 slug: "Webページ内のすべてのチェックボックスを全チェックする"
-date: 2022-10-05T20:07:06+09:00
-tags: ["javascript", "automatisation"]
+tags: ["javascript", "checkbox", "bookmarklet"]
 draft: false
 image: "img.webp"
 categories: ["blogging"]
-description: 'Nous expliquons comment cocher toutes les cases à cocher d''une page Web en une seule fois. Nous présentons le code JavaScript à exécuter dans la console DevTools de Chrome, ainsi que la procédure pour créer un bookmarklet pratique permettant de tout sélectionner ou désélectionner en un seul clic.'
+description: "Utilisez JavaScript ou un bookmarklet pour cocher ou décocher les cases activées de la page actuelle. Vérifiez le comportement de la page avant d’exécuter le code."
+date: "2022-10-05T20:07:06+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
+# Cocher ou décocher toutes les cases d’une page Web
 
-Pour cocher toutes les cases sur une page web, ouvrez les DevTools avec F12, collez le code suivant dans la console et exécutez-le.
+Ce script clique sur les cases activées de la page actuelle afin de les modifier en une seule fois.
+
+## Avant l’exécution
+
+N’exécutez ce code que sur des pages de confiance. La page peut réagir aux clics en modifiant des paramètres ou en envoyant des requêtes. Vérifiez le résultat avant d’envoyer ou d’enregistrer quoi que ce soit.
+
+## Exécuter dans DevTools
+
+Ouvrez la page cible et exécutez le code ci-dessous dans la Console de DevTools. Si F12 n’ouvre pas DevTools dans votre navigateur, utilisez le menu du navigateur.
+
 ```js
-let boxes = document.querySelectorAll('input[type="checkbox"]');
-for (let i = 0; i < boxes.length; i++) {
-    if (!boxes[i].disabled) {
-        boxes[i].checked = true;
-    }
+const boxes = document.querySelectorAll('input[type="checkbox"]:not(:disabled)');
+for (const box of boxes) {
+  if (!box.checked) box.click();
 }
 ```
 
-Ou,
+Pour décocher toutes les cases activées, utilisez ce code.
 
-Créez un nouveau favori et collez le code suivant dans l'adresse d'enregistrement (la partie où vous tapez généralement https://...).
-Affichez la page web que vous souhaitez cocher, puis cliquez sur le favori créé pour cocher toutes les cases.
-```
-javascript:(function(){let boxes=document.querySelectorAll('input[type="checkbox"]');for(let i=0;i<boxes.length;i++){if(!boxes[i].disabled){boxes[i].checked=true;}}})();
+```js
+const boxes = document.querySelectorAll('input[type="checkbox"]:not(:disabled)');
+for (const box of boxes) {
+  if (box.checked) box.click();
+}
 ```
 
-Pour tout décocher, remplacez la partie `boxes[i].checked = true;` du script ci-dessus par `boxes[i].checked = false;`.
+## Créer un bookmarklet
+
+Créez un favori et collez le code sur une seule ligne dans le champ URL à l’aide de l’éditeur de favoris. Ne le saisissez pas dans la barre d’adresse. Sélectionnez le favori sur la page cible pour cocher les cases activées.
+
+**Select all:**
+
+```text
+javascript:(()=>{for(const box of document.querySelectorAll('input[type="checkbox"]:not(:disabled)'))if(!box.checked)box.click()})();
+```
+
+**Clear all:**
+
+```text
+javascript:(()=>{for(const box of document.querySelectorAll('input[type="checkbox"]:not(:disabled)'))if(box.checked)box.click()})();
+```
+
+Pour tout décocher, utilisez le deuxième exemple ou le bookmarklet de désélection. Le script agit uniquement sur le document actuel et ignore les cases désactivées.
+
+Modifier uniquement la propriété `.checked` peut ne pas notifier le code de la page avec les événements normalement associés à un clic. `.click()` déclenche le comportement du clic ; la logique propre à la page peut toutefois empêcher certaines modifications.
+
+## Références
+
+- [MDN: HTMLElement.click()](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/click)
+- [MDN: HTMLInputElement.checked](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/checked)
+- [MDN: change event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/change_event)

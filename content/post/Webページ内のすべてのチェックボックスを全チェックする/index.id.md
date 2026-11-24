@@ -1,31 +1,64 @@
 ---
-title: '[JS] Cara Memeriksa Semua Kotak Centang di Halaman Web Sekaligus (Termasuk Bookmarklet)'
-date: "2026-09-24T19:44:38+09:00"
+title: "Pilih atau hapus pilihan semua kotak centang di halaman web"
 slug: "Webページ内のすべてのチェックボックスを全チェックする"
-date: 2022-10-05T20:07:06+09:00
-tags: ["javascript", "otomatisasi"]
+tags: ["javascript", "checkbox", "bookmarklet"]
 draft: false
 image: "img.webp"
 categories: ["blogging"]
-description: 'Menjelaskan cara memeriksa semua kotak centang di halaman web sekaligus. Memperkenalkan kode JavaScript untuk dijalankan di konsol DevTools Chrome, serta prosedur pembuatan bookmarklet praktis yang dapat memilih/membatalkan semua pilihan dengan satu klik.'
+description: "Gunakan JavaScript atau bookmarklet untuk memilih atau menghapus pilihan kotak centang aktif pada halaman saat ini. Periksa perilaku halaman sebelum menjalankan kode."
+date: "2022-10-05T20:07:06+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
+# Pilih atau hapus pilihan semua kotak centang di halaman web
 
-Untuk mencentang semua kotak centang di halaman web, buka DevTools dengan F12, tempelkan kode berikut ke dalam konsol, dan jalankan.
+Skrip ini mengeklik kotak centang aktif pada halaman saat ini agar dapat diubah sekaligus.
+
+## Sebelum menjalankan
+
+Jalankan hanya pada halaman tepercaya. Halaman dapat merespons klik dengan mengubah pengaturan atau mengirim permintaan. Periksa hasil pilihan sebelum mengirim atau menyimpan apa pun.
+
+## Jalankan di DevTools
+
+Buka halaman tujuan lalu jalankan kode berikut di Console DevTools. Jika F12 tidak membuka DevTools di browser Anda, gunakan menu browser.
+
 ```js
-let boxes = document.querySelectorAll('input[type="checkbox"]');
-for (let i = 0; i < boxes.length; i++) {
-    if (!boxes[i].disabled) {
-        boxes[i].checked = true;
-    }
+const boxes = document.querySelectorAll('input[type="checkbox"]:not(:disabled)');
+for (const box of boxes) {
+  if (!box.checked) box.click();
 }
 ```
 
-Atau,
+Untuk menghapus pilihan semua kotak centang aktif, gunakan kode ini.
 
-Buat bookmark baru, dan tempelkan kode berikut ke alamat saat mendaftar (biasanya di bagian Anda memasukkan https://...).
-Buka halaman web di mana Anda ingin mencentang kotak, klik bookmark yang telah dibuat, dan semua kotak centang akan dicentang.
-```
-javascript:(function(){let boxes=document.querySelectorAll('input[type="checkbox"]');for(let i=0;i<boxes.length;i++){if(!boxes[i].disabled){boxes[i].checked=true;}}})();
+```js
+const boxes = document.querySelectorAll('input[type="checkbox"]:not(:disabled)');
+for (const box of boxes) {
+  if (box.checked) box.click();
+}
 ```
 
-Jika Anda ingin menghapus semua centang, ubah bagian `boxes[i].checked = true;` pada skrip di atas menjadi `boxes[i].checked = false;`.
+## Buat bookmarklet
+
+Buat bookmark dan tempel kode satu baris di bawah ke kolom URL melalui editor bookmark. Jangan masukkan ke bilah alamat. Pilih bookmark saat berada di halaman tujuan untuk memilih kotak centang aktif.
+
+**Select all:**
+
+```text
+javascript:(()=>{for(const box of document.querySelectorAll('input[type="checkbox"]:not(:disabled)'))if(!box.checked)box.click()})();
+```
+
+**Clear all:**
+
+```text
+javascript:(()=>{for(const box of document.querySelectorAll('input[type="checkbox"]:not(:disabled)'))if(box.checked)box.click()})();
+```
+
+Untuk menghapus pilihan, gunakan contoh kedua atau bookmarklet hapus semua. Skrip hanya bekerja pada dokumen saat ini dan melewati kotak centang yang dinonaktifkan.
+
+Mengubah properti `.checked` saja mungkin tidak memberi tahu kode halaman melalui peristiwa yang biasanya terjadi saat klik. `.click()` memicu perilaku klik; kode khusus halaman tetap dapat mencegah beberapa perubahan.
+
+## Referensi
+
+- [MDN: HTMLElement.click()](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/click)
+- [MDN: HTMLInputElement.checked](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/checked)
+- [MDN: change event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/change_event)
