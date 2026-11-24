@@ -1,48 +1,80 @@
 ---
-title: 'Подборка рекомендуемых расширений для VSCode! Список плагинов для кардинального повышения эффективности разработки'
-date: "2026-09-24T19:44:38+09:00"
-slug: "Visual Studio CodeРекомендацииРасширение"
-date: 2024-05-29T17:20:19+09:00
-tags: ["Visual Studio Code", "VSCode", "расширения", "плагины"]
+title: "Рекомендуемые расширения Visual Studio Code: руководство по задачам"
+date: "2024-05-29T17:20:19+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
+slug: "Visual Studio Codeおすすめ拡張機能"
+tags: ["Visual Studio Code", "VSCode", "拡張機能", "エクステンション"]
 draft: false
 image: "img.webp"
 categories: ["tools-development-environment"]
-description: 'Список рекомендуемых расширений, которые сделают Visual Studio Code (VSCode) еще удобнее. Мы отобрали ключевые плагины, повышающие эффективность разработки, такие как управление контейнерами, управление кодом Git и автодополнение кода ИИ с помощью Copilot.'
+description: "Расширения VS Code для удаленной разработки, GitHub, веба и облака, баз данных, встроенных систем и языковых инструментов."
 ---
 
-# Список рекомендуемых расширений Visual Studio Code
+# Выбирайте расширения VS Code под задачу
 
-| Категория | Название | Разработчик | Описание |
-|----|----|-----|-----|
-| Управление вирт. машинами и контейнерами | Remote Devlopment | Microsoft  | Поддерживает удаленную разработку путем подключения к виртуальным контейнерам/WSL через SSH |
-| Управление вирт. машинами и контейнерами | [Docker](https://kenji.blog/ru/p/docker-container-namespace-[cgroups](https://kenji.blog/ru/p/docker-container-namespace-cgroups-layers/)-layers/) | Microsoft  | Поддерживает управление контейнерами Docker |
-| Управление кодом | GitHub Pull Requests | GitHub | Управляет Pull Requests из GitHub в VSCode |
-| Управление кодом | GitHub Copilot | GitHub | Поддерживает автодополнение кода с помощью ИИ |
-| Управление кодом | Git [Graph](https://kenji.blog/ru/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) | mhutchie | Графически отображает ветки и коммиты Git |
-| Управление кодом | Git History | Don Jayamanne | Отображает историю Git |
-| Веб-разработка и браузер | Debugger for Firefox | Firefox DevTools | Позволяет использовать отладчик Firefox в VSCode |
-| Веб-разработка и браузер | Microsoft Edge Tool For VScode | Microsoft | Позволяет использовать инструменты разработчика Edge в VSCode |
-| Веб-разработка и браузер | Vue Language Features(Volar) | Vue |  Поддерживает языковые функции Vue |
-| Веб-разработка и браузер | JavaScript (ES6) code snippets | charalampos karypidis | Предоставляет сниппеты для JavaScript |
-| Веб-разработка и браузер | Tailwind CSS IntelliSense | Tailwind Labs | Предоставляет сниппеты для Tailwind CSS |
-| Облачная разработка | AWS Toolkit | Amazon Web [Service](https://kenji.blog/ru/p/kubernetes-k8s-architecture-pod-service-ingress/)s | Поддерживает разработку для AWS |
-| Облачная разработка | Azure Tools | Microsoft | Поддерживает разработку для Azure |
-| Облачная разработка | Google Cloud Tools | Google Cloud | Поддерживает разработку для Google Cloud |
-| Базы данных | MySQL | Jun Han | Поддерживает разработку для MySQL |
-| Базы данных | SQL Server(mssql) | Microsoft | Поддерживает разработку для SQL Server |
-| Базы данных | PostgreSQL | Chris Kolkman | Поддерживает разработку для PostgreSQL |
-| Встраиваемые системы | PlatformIO | PlatformIO | Поддерживает разработку в PlatformIO |
-| Встраиваемые системы | Arduino | Microsoft | Поддерживает разработку для Arduino |
-| Встраиваемые системы | WorkBench | Particle | Среда разработки от Particle, поддерживающая разработку для IoT, включая прошивки, библиотеки и интеграцию с облаком |
-| C/C++ | C/C++ Extension Pack | Microsoft | Поддерживает разработку на C/C++ |
-| C/C++ | C/C++ Runner | franneck94 | Запускает код C/C++ (поддерживает компиляторы gcc, msvc, cuda nvccc) |
-| C/C++ | Cortex-Debug | marus25 | Поддерживает отладку микроконтроллеров Cortex-A/R/M |
-| Python | Python Extension Pack | Microsoft | Поддерживает разработку на Python |
-| Python | jupyter | Microsoft | Поддерживает разработку Jupyter Notebook |
-| Утилиты и расширения UI | Makrdown All in One | Yu Zhang | Поддерживает написание Markdown |
-| Утилиты и расширения UI | Hex Editor | Microsoft | Редактирует бинарные файлы |
-| Утилиты и расширения UI | vscode-pdf | tomoki1207 | Отображает PDF файлы |
-| Утилиты и расширения UI | Rainbow CSV | mechatroner | Отображает CSV файлы в цвете |
-| Утилиты и расширения UI | Draw.io Integration | Henning Dieterichs | Позволяет использовать Draw.io в VSCode |
-| Утилиты и расширения UI | Japanese Language Pack for Visual Studio Code | Microsoft | Языковой пакет |
-| Утилиты и расширения UI | Live Share | Microsoft | Поддерживает совместную работу в реальном времени |
+Устанавливайте только нужные расширения. В этом руководстве собраны характерные варианты по задачам. Названия и функции в Marketplace меняются; мы обновили устаревшие названия, повторяющиеся функции и вводящие в заблуждение описания из версии 2024 года и добавили ссылки на страницы Marketplace.
+
+В VS Code уже есть базовая интеграция с Git и отладка JavaScript/TypeScript. Сначала попробуйте встроенные функции, а расширения добавляйте при необходимости.
+
+## Удаленная разработка и контейнеры
+
+- [Remote Development](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack)
+- [Container Tools](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-containers)
+
+## GitHub и Git
+
+- [GitHub Pull Requests](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github)
+- [GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot)
+- [Git Graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph)
+
+## Веб-разработка
+
+- [Microsoft Edge Tools for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools)
+- [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+- [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
+
+## Облако
+
+- [AWS Toolkit](https://marketplace.visualstudio.com/items?itemName=AmazonWebServices.aws-toolkit-vscode)
+- [Google Cloud Code](https://marketplace.visualstudio.com/items?itemName=GoogleCloudTools.cloudcode)
+- [GitHub Copilot for Azure](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azure-github-copilot)
+
+## Базы данных и встроенная разработка
+
+- [SQLTools](https://marketplace.visualstudio.com/items?itemName=mtxr.sqltools)
+- [PlatformIO IDE](https://marketplace.visualstudio.com/items?itemName=platformio.platformio-ide)
+- [Arduino Community Edition](https://marketplace.visualstudio.com/items?itemName=vscode-arduino.vscode-arduino-community)
+- [Cortex-Debug](https://marketplace.visualstudio.com/items?itemName=marus25.cortex-debug)
+
+## Языки и инструменты сборки
+
+- [C/C++](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools)
+- [CMake Tools](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cmake-tools)
+- [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
+- [Jupyter](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter)
+
+## Редактирование и совместная работа
+
+- [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
+- [Hex Editor](https://marketplace.visualstudio.com/items?itemName=ms-vscode.hexeditor)
+- [Rainbow CSV](https://marketplace.visualstudio.com/items?itemName=mechatroner.rainbow-csv)
+- [Draw.io Integration](https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio)
+- [Japanese Language Pack](https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-ja)
+- [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)
+
+Arduino Community Edition — поддерживаемая сообществом ветка прежнего расширения Arduino, а не официальный продукт Microsoft.
+
+SQLTools — расширение сообщества для подключения к разным базам данных. Выберите драйвер и проверьте издателя и необходимые разрешения.
+
+GitHub Copilot for Azure добавляет навыки Azure для Copilot; это не универсальное расширение для управления Azure.
+
+## Перед установкой
+
+Расширения VS Code имеют те же права, что и сам VS Code. Они могут читать и записывать файлы, отправлять сетевые запросы и запускать внешние процессы. Перед установкой проверьте издателя, зависимости пакета расширений, историю обновлений, поддержку и условия конфиденциальности. Расширения с функциями ИИ могут передавать код или запросы внешним сервисам. Для конфиденциальных проектов ознакомьтесь с условиями использования данных и политикой организации.
+
+## Итоги
+
+Установка большего числа расширений сама по себе не повышает продуктивность. Проверяйте назначение, издателя, разрешения и поддержку и устанавливайте только нужное.
+
+- [VS Code extension runtime security](https://code.visualstudio.com/docs/configure/extensions/extension-runtime-security)
+- [VS Code extension Marketplace](https://code.visualstudio.com/docs/configure/extensions/extension-marketplace)

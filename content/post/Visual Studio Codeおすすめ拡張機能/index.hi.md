@@ -1,48 +1,80 @@
 ---
-title: 'VSCode अनुशंसित एक्सटेंशन की सूची! प्लगइन्स जो विकास दक्षता में नाटकीय रूप से सुधार करते हैं'
-date: "2026-09-24T19:44:38+09:00"
-slug: "Visual Studio Codeअनुशंसाएक्सटेंशन"
-date: 2024-05-29T17:20:19+09:00
-tags: ["Visual Studio Code", "VSCode", "एक्सटेंशन", "एक्सटेंशन्स"]
+title: "Visual Studio Code के सुझाए गए एक्सटेंशन: काम के अनुसार मार्गदर्शिका"
+date: "2024-05-29T17:20:19+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
+slug: "Visual Studio Codeおすすめ拡張機能"
+tags: ["Visual Studio Code", "VSCode", "拡張機能", "エクステンション"]
 draft: false
 image: "img.webp"
 categories: ["tools-development-environment"]
-description: 'Visual Studio Code (VSCode) को और अधिक सुविधाजनक बनाने वाले अनुशंसित एक्सटेंशन की एक सूची। हमने विकास दक्षता बढ़ाने के लिए आवश्यक प्लगइन्स का सावधानीपूर्वक चयन किया है, जैसे कंटेनर प्रबंधन, Git कोड प्रबंधन, और Copilot द्वारा AI कोड पूर्णता।'
+description: "रिमोट डेवलपमेंट, GitHub, वेब और क्लाउड, डेटा, एम्बेडेड सिस्टम तथा भाषा टूल के लिए VS Code एक्सटेंशन देखें।"
 ---
 
-# Visual Studio Code अनुशंसित एक्सटेंशन्स की सूची
+# काम के अनुसार VS Code एक्सटेंशन चुनें
 
-| श्रेणी | नाम | प्रदाता | विवरण |
-|----|----|-----|-----|
-| वर्चुअल और कंटेनर प्रबंधन | [Remote](/hi/p/git%E3%81%A7%E3%82%BF%E3%82%B0%E3%82%92%E6%B6%88%E3%81%99/) Devlopment | Microsoft | SSH कनेक्शन के माध्यम से वर्चुअल कंटेनर/WSL से जुड़कर रिमोट विकास का समर्थन करता है |
-| वर्चुअल और कंटेनर प्रबंधन | [Docker](https://kenji.blog/hi/p/docker-container-namespace-[cgroups](https://kenji.blog/hi/p/docker-container-namespace-cgroups-layers/)-layers/) | Microsoft | Docker कंटेनरों के प्रबंधन का समर्थन करता है |
-| कोड प्रबंधन | GitHub Pull Requests | GitHub | VSCode पर GitHub के पुल रिक्वेस्ट का प्रबंधन करता है |
-| कोड प्रबंधन | GitHub Copilot | GitHub | AI द्वारा कोड पूरा करने का समर्थन करता है |
-| कोड प्रबंधन | Git [Graph](https://kenji.blog/hi/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) | mhutchie | Git की ब्रांच और कमिट्स को ग्राफिकल तरीके से प्रदर्शित करता है |
-| कोड प्रबंधन | Git History | Don Jayamanne | Git का इतिहास प्रदर्शित करता है |
-| ब्राउज़र और वेब विकास | Debugger for Firefox | Firefox DevTools | VSCode पर Firefox के डीबगर का उपयोग करता है |
-| ब्राउज़र और वेब विकास | Microsoft Edge Tool For VScode | Microsoft | VSCode पर Edge के डेवलपर टूल का उपयोग करता है |
-| ब्राउज़र और वेब विकास | Vue Language Features(Volar) | Vue | Vue की भाषा सुविधाओं का समर्थन करता है |
-| ब्राउज़र और वेब विकास | JavaScript (ES6) code snippets | charalampos karypidis | JavaScript के स्निपेट प्रदान करता है |
-| ब्राउज़र और वेब विकास | Tailwind CSS IntelliSense | Tailwind Labs | Tailwind CSS के स्निपेट प्रदान करता है |
-| क्लाउड विकास | AWS Toolkit | Amazon Web [Service](https://kenji.blog/hi/p/kubernetes-k8s-architecture-pod-service-ingress/)s | AWS विकास का समर्थन करता है |
-| क्लाउड विकास | Azure Tools | Microsoft | Azure विकास का समर्थन करता है |
-| क्लाउड विकास | Google Cloud Tools | Google Cloud | Google Cloud विकास का समर्थन करता है |
-| डेटाबेस | MySQL | Jun Han | MySQL विकास का समर्थन करता है |
-| डेटाबेस | SQL Server(mssql) | Microsoft | SQL Server विकास का समर्थन करता है |
-| डेटाबेस | PostgreSQL | Chris Kolkman | PostgreSQL विकास का समर्थन करता है |
-| एंबेडेड सिस्टम | PlatformIO | PlatformIO | PlatformIO विकास का समर्थन करता है |
-| एंबेडेड सिस्टम | Arduino | Microsoft | Arduino विकास का समर्थन करता है |
-| एंबेडेड सिस्टम | WorkBench | Particle | Particle द्वारा प्रदान किए गए विकास वातावरण, फर्मवेयर, लाइब्रेरी, और क्लाउड एकीकरण से लेकर IoT के लिए विकास का समर्थन करता है |
-| C/C++ | C/C++ Extension Pack | Microsoft | C/C++ विकास का समर्थन करता है |
-| C/C++ | C/C++ Runner | franneck94 | C/C++ का कोड निष्पादित करता है (gcc, msvc, और cuda nvcc कंपाइलर के लिए समर्थन) |
-| C/C++ | Cortex-Debug | marus25 | Cortex-A/R/M माइक्रोकंट्रोलर्स की डीबगिंग का समर्थन करता है |
-| Python | Python Extension Pack | Microsoft | Python विकास का समर्थन करता है |
-| Python | jupyter | Microsoft | Jupyter Notebook विकास का समर्थन करता है |
-| उपयोगिता और UI एक्सटेंशन | Makrdown All in One | Yu Zhang | Markdown लेखन का समर्थन करता है |
-| उपयोगिता और UI एक्सटेंशन | Hex Editor | Microsoft | बाइनरी फ़ाइलों को संपादित करता है |
-| उपयोगिता और UI एक्सटेंशन | vscode-pdf | tomoki1207 | PDF फ़ाइलें प्रदर्शित करता है |
-| उपयोगिता और UI एक्सटेंशन | Rainbow CSV | mechatroner | CSV फ़ाइलों को रंगीन रूप में प्रदर्शित करता है |
-| उपयोगिता और UI एक्सटेंशन | Draw.io Integration | Henning Dieterichs | VSCode पर Draw.io का उपयोग करता है |
-| उपयोगिता और UI एक्सटेंशन | Japanese Language Pack for Visual Studio Code | Microsoft | जापानी भाषा पैक |
-| उपयोगिता और UI एक्सटेंशन | Live Share | Microsoft | रीयल-टाइम सहयोगात्मक कार्य का समर्थन करता है |
+केवल वही एक्सटेंशन इंस्टॉल करें जिनकी आपको ज़रूरत है। यह मार्गदर्शिका काम के अनुसार कुछ प्रमुख विकल्प देती है। Marketplace के नाम और सुविधाएँ बदलती रहती हैं; हमने 2024 संस्करण के पुराने नाम, दोहराई गई सुविधाएँ और भ्रामक विवरण ठीक करके हर आइटम का Marketplace लिंक जोड़ा है।
+
+VS Code में Git का बुनियादी एकीकरण और JavaScript/TypeScript डिबगिंग जैसी सुविधाएँ पहले से हैं। पहले अंतर्निहित सुविधाएँ आज़माएँ और ज़रूरत पड़ने पर ही एक्सटेंशन जोड़ें।
+
+## रिमोट डेवलपमेंट और कंटेनर
+
+- [Remote Development](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack)
+- [Container Tools](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-containers)
+
+## GitHub और Git
+
+- [GitHub Pull Requests](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github)
+- [GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot)
+- [Git Graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph)
+
+## वेब डेवलपमेंट
+
+- [Microsoft Edge Tools for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools)
+- [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+- [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
+
+## क्लाउड
+
+- [AWS Toolkit](https://marketplace.visualstudio.com/items?itemName=AmazonWebServices.aws-toolkit-vscode)
+- [Google Cloud Code](https://marketplace.visualstudio.com/items?itemName=GoogleCloudTools.cloudcode)
+- [GitHub Copilot for Azure](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azure-github-copilot)
+
+## डेटाबेस और एम्बेडेड डेवलपमेंट
+
+- [SQLTools](https://marketplace.visualstudio.com/items?itemName=mtxr.sqltools)
+- [PlatformIO IDE](https://marketplace.visualstudio.com/items?itemName=platformio.platformio-ide)
+- [Arduino Community Edition](https://marketplace.visualstudio.com/items?itemName=vscode-arduino.vscode-arduino-community)
+- [Cortex-Debug](https://marketplace.visualstudio.com/items?itemName=marus25.cortex-debug)
+
+## भाषाएँ और बिल्ड टूल
+
+- [C/C++](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools)
+- [CMake Tools](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cmake-tools)
+- [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
+- [Jupyter](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter)
+
+## संपादन और सहयोग
+
+- [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
+- [Hex Editor](https://marketplace.visualstudio.com/items?itemName=ms-vscode.hexeditor)
+- [Rainbow CSV](https://marketplace.visualstudio.com/items?itemName=mechatroner.rainbow-csv)
+- [Draw.io Integration](https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio)
+- [Japanese Language Pack](https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-ja)
+- [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)
+
+Arduino Community Edition पुराने Arduino एक्सटेंशन का समुदाय द्वारा अनुरक्षित fork है; यह Microsoft का आधिकारिक उत्पाद नहीं है।
+
+SQLTools एक समुदाय एक्सटेंशन है जो कई डेटाबेस से जुड़ता है। अपने डेटाबेस के लिए ड्राइवर चुनें और प्रकाशक तथा पहुँच अनुमतियाँ जाँचें।
+
+GitHub Copilot for Azure, Copilot में Azure कौशल जोड़ता है; यह सामान्य Azure प्रबंधन एक्सटेंशन नहीं है।
+
+## इंस्टॉल करने से पहले
+
+VS Code एक्सटेंशन के पास VS Code जैसी ही अनुमतियाँ होती हैं। वे फ़ाइलें पढ़ और लिख सकते हैं, नेटवर्क अनुरोध कर सकते हैं और बाहरी प्रक्रियाएँ शुरू कर सकते हैं। इंस्टॉल करने से पहले प्रकाशक, एक्सटेंशन पैक द्वारा जोड़ी गई निर्भरताएँ, अपडेट इतिहास, सहायता जानकारी और गोपनीयता शर्तें जाँचें। AI सुविधाओं वाले एक्सटेंशन कोड या prompt बाहरी सेवा को भेज सकते हैं। संवेदनशील काम के लिए सेवा की डेटा-उपयोग शर्तें और संगठन की नीति देखें।
+
+## सारांश
+
+अधिक एक्सटेंशन इंस्टॉल करने से उत्पादकता अपने आप नहीं बढ़ती। उद्देश्य, प्रकाशक, अनुमतियाँ और रखरखाव जाँचें और केवल वही इंस्टॉल करें जिनका आप उपयोग करते हैं।
+
+- [VS Code extension runtime security](https://code.visualstudio.com/docs/configure/extensions/extension-runtime-security)
+- [VS Code extension Marketplace](https://code.visualstudio.com/docs/configure/extensions/extension-marketplace)

@@ -14,6 +14,41 @@ DOCS = ROOT / "docs/translation-review"
 LANGS = ("ja", "en", "zh-cn", "es", "ko", "pt", "zh-tw", "hi", "fr", "de", "ar", "ru", "id")
 NS = {"s": "http://www.sitemaps.org/schemas/sitemap/0.9"}
 ARTICLES = {
+    181: {
+        "bundle": ROOT / "content/post/Visual Studio Codeおすすめ拡張機能",
+        "slug": "Visual Studio Codeおすすめ拡張機能",
+        "links": [
+            "https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack",
+            "https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-containers",
+            "https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github",
+            "https://marketplace.visualstudio.com/items?itemName=GitHub.copilot",
+            "https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph",
+            "https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools",
+            "https://marketplace.visualstudio.com/items?itemName=Vue.volar",
+            "https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss",
+            "https://marketplace.visualstudio.com/items?itemName=AmazonWebServices.aws-toolkit-vscode",
+            "https://marketplace.visualstudio.com/items?itemName=GoogleCloudTools.cloudcode",
+            "https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azure-github-copilot",
+            "https://marketplace.visualstudio.com/items?itemName=mtxr.sqltools",
+            "https://marketplace.visualstudio.com/items?itemName=platformio.platformio-ide",
+            "https://marketplace.visualstudio.com/items?itemName=vscode-arduino.vscode-arduino-community",
+            "https://marketplace.visualstudio.com/items?itemName=marus25.cortex-debug",
+            "https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools",
+            "https://marketplace.visualstudio.com/items?itemName=ms-vscode.cmake-tools",
+            "https://marketplace.visualstudio.com/items?itemName=ms-python.python",
+            "https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter",
+            "https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one",
+            "https://marketplace.visualstudio.com/items?itemName=ms-vscode.hexeditor",
+            "https://marketplace.visualstudio.com/items?itemName=mechatroner.rainbow-csv",
+            "https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio",
+            "https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-ja",
+            "https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare",
+            "https://code.visualstudio.com/docs/configure/extensions/extension-runtime-security",
+            "https://code.visualstudio.com/docs/configure/extensions/extension-marketplace",
+        ],
+        "markers": ["GitHub Copilot for Azure", "Arduino Community Edition", "SQLTools", "extension-runtime-security"],
+        "date": "2024-05-29",
+    },
     180: {
         "bundle": ROOT / "content/post/Visual Studio Code に Qt Extension Pack を入れてみた",
         "slug": "Visual Studio Code に Qt Extension Pack を入れてみた",
@@ -974,7 +1009,7 @@ def slug_key(value):
 parser = argparse.ArgumentParser()
 parser.add_argument("--ci-run", type=int, required=True)
 parser.add_argument("--commit", required=True)
-parser.add_argument("--max-batch", type=int, choices=(90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180), default=180)
+parser.add_argument("--max-batch", type=int, choices=(90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181), default=181)
 args = parser.parse_args()
 ARTICLES = {number: article for number, article in ARTICLES.items() if number <= args.max_batch}
 with urllib.request.urlopen(f"https://github.com/kenjinote/blog/actions/runs/{args.ci_run}", timeout=45) as response:

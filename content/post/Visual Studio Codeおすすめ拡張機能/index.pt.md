@@ -1,48 +1,80 @@
 ---
-title: 'Resumo de extensões recomendadas para o VSCode! Lista de plugins que aumentam muito a eficiência'
-date: "2026-09-24T19:44:38+09:00"
-slug: "Visual Studio CodeRecomendaçãoExtensão"
-date: 2024-05-29T17:20:19+09:00
-tags: ["Visual Studio Code", "VSCode", "Extensões", "Extensão"]
+title: "Extensões recomendadas para o Visual Studio Code: guia por tarefa"
+date: "2024-05-29T17:20:19+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
+slug: "Visual Studio Codeおすすめ拡張機能"
+tags: ["Visual Studio Code", "VSCode", "拡張機能", "エクステンション"]
 draft: false
 image: "img.webp"
 categories: ["tools-development-environment"]
-description: 'Apresentamos em formato de lista as extensões recomendadas para tornar o Visual Studio Code (VSCode) ainda mais conveniente. Selecionamos plugins essenciais para aumentar a eficiência de desenvolvimento, como o gerenciamento de containers e códigos com Git, além de autocompletar códigos com a IA Copilot.'
+description: "Conheça extensões do VS Code para trabalho remoto, GitHub, desenvolvimento web e em nuvem, dados, sistemas embarcados e linguagens."
 ---
 
-# Lista de Extensões Recomendadas para Visual Studio Code
+# Escolha extensões do VS Code por tarefa
 
-| Categoria | Nome | Fornecedor | Descrição |
-|----|----|-----|-----|
-| Gestão de Máquinas Virtuais e Contentores | Remote Devlopment | Microsoft | Suporta desenvolvimento remoto ao conectar a contentores virtuais/WSL via SSH |
-| Gestão de Máquinas Virtuais e Contentores | [Docker](https://kenji.blog/pt/p/docker-container-namespace-[cgroups](https://kenji.blog/pt/p/docker-container-namespace-cgroups-layers/)-layers/) | Microsoft | Suporta a gestão de contentores Docker |
-| Gestão de Código | GitHub Pull Requests | GitHub | Gere os Pull Requests do GitHub no VSCode |
-| Gestão de Código | GitHub Copilot | GitHub | Suporta a conclusão de código por IA |
-| Gestão de Código | Git [Graph](https://kenji.blog/pt/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) | mhutchie | Exibe graficamente os ramos e commits do Git |
-| Gestão de Código | Git History | Don Jayamanne | Exibe o histórico do Git |
-| Navegador e Desenvolvimento Web | Debugger for Firefox | Firefox DevTools | Utiliza o depurador do Firefox no VSCode |
-| Navegador e Desenvolvimento Web | Microsoft Edge Tool For VScode | Microsoft | Utiliza as ferramentas de desenvolvedor do Edge no VSCode |
-| Navegador e Desenvolvimento Web | Vue Language Features(Volar) | Vue | Suporta as funcionalidades de linguagem do Vue |
-| Navegador e Desenvolvimento Web | JavaScript (ES6) code snippets | charalampos karypidis | Fornece snippets de JavaScript |
-| Navegador e Desenvolvimento Web | Tailwind CSS IntelliSense | Tailwind Labs | Fornece snippets de Tailwind CSS |
-| Desenvolvimento na Cloud | AWS Toolkit | Amazon Web [Service](https://kenji.blog/pt/p/kubernetes-k8s-architecture-pod-service-ingress/)s | Suporta o desenvolvimento na AWS |
-| Desenvolvimento na Cloud | Azure Tools | Microsoft | Suporta o desenvolvimento no Azure |
-| Desenvolvimento na Cloud | Google Cloud Tools | Google Cloud | Suporta o desenvolvimento no Google Cloud |
-| Base de Dados | MySQL | Jun Han | Suporta o desenvolvimento em MySQL |
-| Base de Dados | SQL Server(mssql) | Microsoft | Suporta o desenvolvimento em SQL Server |
-| Base de Dados | PostgreSQL | Chris Kolkman | Suporta o desenvolvimento em PostgreSQL |
-| Sistemas Embutidos | PlatformIO | PlatformIO | Suporta o desenvolvimento no PlatformIO |
-| Sistemas Embutidos | Arduino | Microsoft | Suporta o desenvolvimento em Arduino |
-| Sistemas Embutidos | WorkBench | Particle | Suporta desenvolvimento para IoT, incluindo o ambiente de desenvolvimento fornecido pela Particle, firmware, bibliotecas e integração cloud |
-| C/C++ | C/C++ Extension Pack | Microsoft | Suporta o desenvolvimento em C/C++ |
-| C/C++ | C/C++ Runner | franneck94 | Executa código C/C++ (suporta compiladores gcc, msvc e cuda nvcc) |
-| C/C++ | Cortex-Debug | marus25 | Suporta a depuração de microcontroladores Cortex-A/R/M |
-| Python | Python Extension Pack | Microsoft | Suporta o desenvolvimento em Python |
-| Python | jupyter | Microsoft | Suporta o desenvolvimento em Jupyter Notebook |
-| Utilitários e Extensões de UI | Makrdown All in One | Yu Zhang | Suporta a escrita em Markdown |
-| Utilitários e Extensões de UI | Hex Editor | Microsoft | Edita ficheiros binários |
-| Utilitários e Extensões de UI | vscode-pdf | tomoki1207 | Exibe ficheiros PDF |
-| Utilitários e Extensões de UI | Rainbow CSV | mechatroner | Exibe ficheiros CSV de forma colorida |
-| Utilitários e Extensões de UI | Draw.io Integration | Henning Dieterichs | Utiliza o Draw.io no VSCode |
-| Utilitários e Extensões de UI | Japanese Language Pack for Visual Studio Code | Microsoft | Pacote de idioma Japonês |
-| Utilitários e Extensões de UI | Live Share | Microsoft | Suporta colaboração em tempo real |
+Instale apenas as extensões necessárias. Este guia reúne opções representativas por tarefa. Os nomes e recursos do Marketplace mudam; atualizamos nomes obsoletos, funções repetidas e descrições enganosas da versão de 2024, e adicionamos o link do Marketplace para cada item.
+
+O VS Code já inclui recursos como integração básica com Git e depuração de JavaScript/TypeScript. Experimente primeiro os recursos integrados e adicione extensões quando precisar de algo a mais.
+
+## Desenvolvimento remoto e contêineres
+
+- [Remote Development](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack)
+- [Container Tools](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-containers)
+
+## GitHub e Git
+
+- [GitHub Pull Requests](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github)
+- [GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot)
+- [Git Graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph)
+
+## Desenvolvimento web
+
+- [Microsoft Edge Tools for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools)
+- [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+- [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
+
+## Nuvem
+
+- [AWS Toolkit](https://marketplace.visualstudio.com/items?itemName=AmazonWebServices.aws-toolkit-vscode)
+- [Google Cloud Code](https://marketplace.visualstudio.com/items?itemName=GoogleCloudTools.cloudcode)
+- [GitHub Copilot for Azure](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azure-github-copilot)
+
+## Bancos de dados e sistemas embarcados
+
+- [SQLTools](https://marketplace.visualstudio.com/items?itemName=mtxr.sqltools)
+- [PlatformIO IDE](https://marketplace.visualstudio.com/items?itemName=platformio.platformio-ide)
+- [Arduino Community Edition](https://marketplace.visualstudio.com/items?itemName=vscode-arduino.vscode-arduino-community)
+- [Cortex-Debug](https://marketplace.visualstudio.com/items?itemName=marus25.cortex-debug)
+
+## Linguagens e ferramentas de build
+
+- [C/C++](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools)
+- [CMake Tools](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cmake-tools)
+- [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
+- [Jupyter](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter)
+
+## Edição e colaboração
+
+- [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
+- [Hex Editor](https://marketplace.visualstudio.com/items?itemName=ms-vscode.hexeditor)
+- [Rainbow CSV](https://marketplace.visualstudio.com/items?itemName=mechatroner.rainbow-csv)
+- [Draw.io Integration](https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio)
+- [Japanese Language Pack](https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-ja)
+- [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)
+
+Arduino Community Edition é um fork da antiga extensão Arduino mantido pela comunidade, não um produto oficial da Microsoft.
+
+SQLTools é uma extensão comunitária que se conecta a vários bancos de dados. Escolha um driver para seu banco e confira o publicador e as permissões necessárias.
+
+GitHub Copilot for Azure adiciona habilidades do Azure ao Copilot; não é uma extensão geral de gerenciamento do Azure.
+
+## Antes de instalar
+
+As extensões do VS Code têm as mesmas permissões que o próprio VS Code. Elas podem ler e gravar arquivos, fazer solicitações de rede e iniciar processos externos. Antes de instalar, verifique o publicador, as dependências incluídas por um pacote, o histórico de atualizações, as informações de suporte e os termos de privacidade. Extensões com recursos de IA podem enviar código ou prompts para serviços externos. Em trabalhos confidenciais, consulte os termos de uso de dados e a política da organização.
+
+## Resumo
+
+Instalar mais extensões não aumenta a produtividade automaticamente. Verifique finalidade, publicador, permissões e manutenção e instale somente as que você usa.
+
+- [VS Code extension runtime security](https://code.visualstudio.com/docs/configure/extensions/extension-runtime-security)
+- [VS Code extension Marketplace](https://code.visualstudio.com/docs/configure/extensions/extension-marketplace)

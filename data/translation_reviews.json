@@ -21005,6 +21005,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-180.json",
       "evidenceHash": "cd151bd132f3524d389306aeb1310014fc10d9f93662754e5e68bd43f0804486"
+    },
+    "post/Visual Studio Codeおすすめ拡張機能/index.en.md": {
+      "source": "post/Visual Studio Codeおすすめ拡張機能/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9aa9b4a3a4c311a2d9180458ebdaf9d38d3207393c071d554ddb364eca5e474b",
+      "translationHash": "6609bedfb087dd01f2c0426846c04633d6a280d055a7302e372fac552606272d",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-181.json",
+      "evidenceHash": "5cc35827b2e8b8efad45e94ebca49860588d8ce10769fbc8960a4371e7631281"
+    },
+    "post/Visual Studio Codeおすすめ拡張機能/index.zh-cn.md": {
+      "source": "post/Visual Studio Codeおすすめ拡張機能/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9aa9b4a3a4c311a2d9180458ebdaf9d38d3207393c071d554ddb364eca5e474b",
+      "translationHash": "2f38f1c783147aad65c53483e26707eb45803cb968e1d6c765c2a28289e048ad",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-181.json",
+      "evidenceHash": "431eb6c2590388043f6306906ce34f46d74f652c4a548bdec25e9830c1cd642e"
+    },
+    "post/Visual Studio Codeおすすめ拡張機能/index.es.md": {
+      "source": "post/Visual Studio Codeおすすめ拡張機能/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9aa9b4a3a4c311a2d9180458ebdaf9d38d3207393c071d554ddb364eca5e474b",
+      "translationHash": "128303d84246e0e1860a34b0d69e8e7b421b16d9385638340a485ee8463196ce",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-181.json",
+      "evidenceHash": "4c467d4ebd81cd22899d04a8059b7f1fa3f722284945804e311977dde7f974a3"
+    },
+    "post/Visual Studio Codeおすすめ拡張機能/index.ko.md": {
+      "source": "post/Visual Studio Codeおすすめ拡張機能/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9aa9b4a3a4c311a2d9180458ebdaf9d38d3207393c071d554ddb364eca5e474b",
+      "translationHash": "26dd9e0e4dabc872f7ec72f4eeb55f8e8439c0aa06c49ffa0d98e2418f8f6817",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-181.json",
+      "evidenceHash": "9c506a5f7f206c8470774b1a0b8e3d265d0ad62dc6dcfaede6ab7850e542724d"
+    },
+    "post/Visual Studio Codeおすすめ拡張機能/index.pt.md": {
+      "source": "post/Visual Studio Codeおすすめ拡張機能/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9aa9b4a3a4c311a2d9180458ebdaf9d38d3207393c071d554ddb364eca5e474b",
+      "translationHash": "8ab671865276d0e4c49e1a7e33527e3b764e2e3c8f96582b9dc09f77737a1a52",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-181.json",
+      "evidenceHash": "d52742454d52d18fc9038cbe701567e72aaca2d9955cc74233cf4131d3fd309d"
+    },
+    "post/Visual Studio Codeおすすめ拡張機能/index.zh-tw.md": {
+      "source": "post/Visual Studio Codeおすすめ拡張機能/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9aa9b4a3a4c311a2d9180458ebdaf9d38d3207393c071d554ddb364eca5e474b",
+      "translationHash": "7e2346ef7646bc09fc05c3e6cbbe9250b9f0b11ab543bb09087660fa982084b7",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-181.json",
+      "evidenceHash": "8fdf078200fce28f014a2bc27e01cd5fc60ee2b4e17c3c6b48958d6f24fcc8df"
+    },
+    "post/Visual Studio Codeおすすめ拡張機能/index.hi.md": {
+      "source": "post/Visual Studio Codeおすすめ拡張機能/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9aa9b4a3a4c311a2d9180458ebdaf9d38d3207393c071d554ddb364eca5e474b",
+      "translationHash": "266ef328c9ea01d2ef132709f14ba01a5be41fea63be3b6a23f577f01f5bc34e",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-181.json",
+      "evidenceHash": "9b2c59cd007faed9cf1baf8d6ccb8a2ff5e46fbb1fa9e0b265ed8d690d645e45"
+    },
+    "post/Visual Studio Codeおすすめ拡張機能/index.fr.md": {
+      "source": "post/Visual Studio Codeおすすめ拡張機能/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9aa9b4a3a4c311a2d9180458ebdaf9d38d3207393c071d554ddb364eca5e474b",
+      "translationHash": "27512bdc7ebcbf87a796a857552e2ab3e44b749f68624353cf719763dc4b317b",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-181.json",
+      "evidenceHash": "19557a902a1611b02faf670b487d8c0f36302b2284372245e94d341306c13f2a"
+    },
+    "post/Visual Studio Codeおすすめ拡張機能/index.de.md": {
+      "source": "post/Visual Studio Codeおすすめ拡張機能/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9aa9b4a3a4c311a2d9180458ebdaf9d38d3207393c071d554ddb364eca5e474b",
+      "translationHash": "5f409e032f7bbdc208f66294fba0bf0f209fb5957f8f19a4e82e4bcd9aa65aac",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-181.json",
+      "evidenceHash": "d71614ab2832e81be924433b0d44c64dcd265c29d6348283ea30ffbe314b572a"
+    },
+    "post/Visual Studio Codeおすすめ拡張機能/index.ar.md": {
+      "source": "post/Visual Studio Codeおすすめ拡張機能/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9aa9b4a3a4c311a2d9180458ebdaf9d38d3207393c071d554ddb364eca5e474b",
+      "translationHash": "ea953c7d551252db2a2b13c2277bb863cd0e9a619f397681065398184e6fd0c3",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-181.json",
+      "evidenceHash": "db7c3d476593b3a77f4b376e83817ed3d38490f68e1cdb583d949f62c54d8918"
+    },
+    "post/Visual Studio Codeおすすめ拡張機能/index.ru.md": {
+      "source": "post/Visual Studio Codeおすすめ拡張機能/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9aa9b4a3a4c311a2d9180458ebdaf9d38d3207393c071d554ddb364eca5e474b",
+      "translationHash": "f962c80a80beff497f50987864f86758b47b27048f71771dbac8796bf603807c",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-181.json",
+      "evidenceHash": "ea66f83eb1272da6867876f9c0d71d5909a5630ac178a42708decfd5e2e2077c"
+    },
+    "post/Visual Studio Codeおすすめ拡張機能/index.id.md": {
+      "source": "post/Visual Studio Codeおすすめ拡張機能/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9aa9b4a3a4c311a2d9180458ebdaf9d38d3207393c071d554ddb364eca5e474b",
+      "translationHash": "3442763f3f5429d68544b794ecef07f99a36a077389ff06068e60fe0b22f4090",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-181.json",
+      "evidenceHash": "8980c655a5622c723fe0ef07a4d1d222478668ed02541522da91175effb537b4"
     }
   }
 }
