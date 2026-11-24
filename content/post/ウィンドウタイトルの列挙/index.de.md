@@ -1,32 +1,24 @@
 ---
-title: 'So listen und rufen Sie die Titel der aktuell geöffneten Fenster mit PowerShell ab'
-date: "2026-09-24T19:44:38+09:00"
+title: "Hauptfenstertitel von Prozessen mit PowerShell anzeigen"
 slug: "Fensterタイトルの列挙"
 date: 2022-09-20T17:03:15+09:00
+lastmod: "2026-11-24T00:00:00+09:00"
 tags: ["PowerShell"]
 draft: false
 image: "img.webp"
 categories: ["programming"]
-description: 'Wir erklären, wie Sie mit PowerShell ganz einfach die Titel aller derzeit auf Ihrem PC geöffneten Fenster auflisten und abrufen können. Wir stellen es mit echten Befehlen und Ausgabebeispielen vor, damit es auch für Anfänger leicht verständlich ist.'
+description: "Erfahren Sie, wie Sie mit Get-Process und MainWindowTitle den Titel des Hauptfensters jedes Prozesses anzeigen und welche Grenzen sowie Datenschutzrisiken die Ausgabe hat."
 ---
-# Fenstertitel auflisten
-
-Hier erfahren Sie, wie Sie mit PowerShell die Titel der aktuell geöffneten Fenster auflisten können.
+Sie können die von PowerShells `Get-Process` zurückgegebenen Prozessobjekte filtern und nur Einträge mit einem nicht leeren `MainWindowTitle` (Titel des Hauptfensters) anzeigen:
 
 ```powershell
-Get-Process|where{$_.mainWindowTItle}|Select-Object MainWindowTitle
+Get-Process |
+  Where-Object { $_.MainWindowTitle } |
+  Select-Object ProcessName, Id, MainWindowTitle
 ```
 
-Ausgabebeispiel
+Der Befehl zeigt den **Titel des Hauptfensters jedes Prozesses** an. Er listet weder alle Fenster eines Prozesses noch alle Fenster auf dem Desktop auf. Prozesse ohne Hauptfenster oder mit leerem Titel fehlen im Ergebnis. Wenn Prozesse gestartet oder beendet werden, kann sich die Ausgabe ändern.
 
-```
-MainWindowTitle
----------------
-Windows PowerShell
-Internet Explorer
-Unbenannt - Paint
-Unbenannt - Editor
-Task-Manager
-Windows-Eingabeumgebung
-Dokument - WordPad
-```
+Fenstertitel können Namen geöffneter Dokumente oder andere persönliche Informationen enthalten. Prüfen Sie die Ausgabe, bevor Sie sie protokollieren oder weitergeben.
+
+Weitere Informationen: Microsoft-Dokumentation zu [Get-Process](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-process) und [.NET Process.MainWindowTitle](https://learn.microsoft.com/en-us/dotnet/api/system.diagnostics.process.mainwindowtitle).

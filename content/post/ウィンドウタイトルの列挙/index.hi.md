@@ -1,32 +1,24 @@
 ---
-title: 'PowerShell में वर्तमान में खुली विंडो के टाइटल को सूचीबद्ध करने और प्राप्त करने का तरीका'
-date: "2026-09-24T19:44:38+09:00"
+title: "PowerShell से प्रक्रियाओं की मुख्य विंडो के शीर्षक दिखाएँ"
 slug: "विंडोタイトルの列挙"
 date: 2022-09-20T17:03:15+09:00
+lastmod: "2026-11-24T00:00:00+09:00"
 tags: ["PowerShell"]
 draft: false
 image: "img.webp"
 categories: ["programming"]
-description: 'PowerShell का उपयोग करके पीसी पर वर्तमान में खुली सभी विंडो के टाइटल को आसानी से सूचीबद्ध करने और प्राप्त करने का तरीका समझाया गया है। वास्तविक कमांड और आउटपुट सैंपल के साथ शुरुआती लोगों के लिए आसानी से समझ में आने वाला परिचय दिया गया है।'
+description: "जानें कि Get-Process और MainWindowTitle से हर प्रक्रिया की मुख्य विंडो का शीर्षक कैसे दिखाएँ, परिणाम की सीमा क्या है और शीर्षक में संवेदनशील जानकारी क्यों हो सकती है।"
 ---
-# विंडो शीर्षक की गणना करना
-
-PowerShell का उपयोग करके वर्तमान में खुले विंडो के शीर्षकों की गणना करने का तरीका यहां दिया गया है।
+PowerShell के `Get-Process` से मिले प्रक्रिया ऑब्जेक्ट में से केवल वे दिखाएँ जिनका `MainWindowTitle` (मुख्य विंडो का शीर्षक) खाली नहीं है:
 
 ```powershell
-Get-Process|where{$_.mainWindowTItle}|Select-Object MainWindowTitle
+Get-Process |
+  Where-Object { $_.MainWindowTitle } |
+  Select-Object ProcessName, Id, MainWindowTitle
 ```
 
-आउटपुट का उदाहरण
+यह हर प्रक्रिया की **मुख्य विंडो का शीर्षक** दिखाता है। यह किसी प्रक्रिया की सभी विंडो या डेस्कटॉप की हर विंडो की सूची नहीं बनाता। जिन प्रक्रियाओं की मुख्य विंडो नहीं है या जिनका शीर्षक खाली है, वे परिणाम में नहीं आतीं। प्रक्रियाएँ शुरू या बंद होने पर परिणाम बदल सकता है।
 
-```
-MainWindowTitle
----------------
-Windows PowerShell
-Internet Explorer
-अनाम - पेंट
-अनाम - नोटपैड
-कार्य प्रबंधक
-विंडोज इनपुट एक्सपीरियंस
-दस्तावेज़ - वर्डपैड
-```
+विंडो शीर्षक में खुले दस्तावेज़ों के नाम या अन्य निजी जानकारी हो सकती है। परिणाम को लॉग में सहेजने या साझा करने से पहले उसकी जाँच करें।
+
+Microsoft दस्तावेज़ देखें: [Get-Process](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-process) और [.NET Process.MainWindowTitle](https://learn.microsoft.com/en-us/dotnet/api/system.diagnostics.process.mainwindowtitle)।

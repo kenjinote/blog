@@ -1,32 +1,24 @@
 ---
-title: '使用 PowerShell 列舉並取得目前開啟中視窗標題的方法'
-date: "2026-09-24T19:44:38+09:00"
+title: "使用 PowerShell 顯示處理程序的主視窗標題"
 slug: "視窗タイトルの列挙"
 date: 2022-09-20T17:03:15+09:00
+lastmod: "2026-11-24T00:00:00+09:00"
 tags: ["PowerShell"]
 draft: false
 image: "img.webp"
 categories: ["programming"]
-description: '解說如何使用 PowerShell 輕鬆列舉與取得電腦上目前開啟的所有視窗標題。搭配實際指令與輸出範例，為初學者淺顯易懂地介紹。'
+description: "說明如何使用 PowerShell 的 Get-Process 與 MainWindowTitle 顯示各處理程序主視窗的標題，並說明結果範圍及標題可能含有敏感資訊。"
 ---
-# 列舉視窗標題
-
-以下是如何使用 PowerShell 列舉目前開啟的視窗標題。
+可以篩選 PowerShell `Get-Process` 傳回的處理程序物件，只顯示 `MainWindowTitle`（主視窗標題）非空白的項目：
 
 ```powershell
-Get-Process|where{$_.mainWindowTItle}|Select-Object MainWindowTitle
+Get-Process |
+  Where-Object { $_.MainWindowTitle } |
+  Select-Object ProcessName, Id, MainWindowTitle
 ```
 
-輸出範例
+這個命令顯示的是**每個處理程序的主視窗標題**，不會列舉某個處理程序擁有的所有視窗，也不會列出桌面上的所有視窗。沒有主視窗或標題空白的處理程序不會出現在結果中；處理程序啟動或結束也會使結果改變。
 
-```
-MainWindowTitle
----------------
-Windows PowerShell
-Internet Explorer
-未命名 - 小畫家
-未命名 - 記事本
-工作管理員
-Windows 輸入體驗
-文件 - WordPad
-```
+視窗標題可能含有開啟中的文件名稱或其他個人資料。將結果寫入記錄或分享前，請先檢查內容。
+
+請參閱 Microsoft 文件：[Get-Process](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-process) 與 [.NET Process.MainWindowTitle](https://learn.microsoft.com/en-us/dotnet/api/system.diagnostics.process.mainwindowtitle)。

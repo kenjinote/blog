@@ -1,32 +1,24 @@
 ---
-title: 'PowerShellで現在開いているウィンドウタイトルを列挙・取得する方法'
-date: "2026-09-24T19:44:38+09:00"
+title: "PowerShellでプロセスのメインウィンドウタイトルを表示する"
 slug: "ウィンドウタイトルの列挙"
 date: 2022-09-20T17:03:15+09:00
+lastmod: "2026-11-24T00:00:00+09:00"
 tags: ["PowerShell"]
 draft: false
 image: "img.webp"
 categories: ["programming"]
-description: 'PowerShellを使用して、PC上で現在開いているすべてのウィンドウのタイトルを簡単に列挙・取得する方法を解説。実際のコマンドと出力サンプルを交えて、初心者にもわかりやすく紹介します。'
+description: "PowerShellのGet-ProcessとMainWindowTitleを使い、各プロセスのメインウィンドウのタイトルを表示する方法を説明します。全ウィンドウの列挙ではない点と、タイトルに個人情報が含まれる場合の注意も紹介します。"
 ---
-# ウィンドウタイトルの列挙
-
-PowerShellを使って現在開いているウィンドウのタイトルを列挙する方法です。
+PowerShell の `Get-Process` が返すプロセス情報から、`MainWindowTitle`（メインウィンドウのタイトル）が空でない項目を表示できます。
 
 ```powershell
-Get-Process|where{$_.mainWindowTItle}|Select-Object MainWindowTitle
+Get-Process |
+  Where-Object { $_.MainWindowTitle } |
+  Select-Object ProcessName, Id, MainWindowTitle
 ```
 
-出力サンプル
+これは**プロセスごとのメインウィンドウのタイトル**を表示する例です。1つのプロセスが持つすべてのウィンドウや、デスクトップ上のすべてのウィンドウを列挙するものではありません。メインウィンドウがないプロセスやタイトルが空のプロセスは結果に含まれず、プロセスの終了などで実行時の結果も変わります。
 
-```
-MainWindowTitle
----------------
-Windows PowerShell
-Internet Explorer
-タイトルなし - ペイント
-タイトルなし - メモ帳
-タスク マネージャー
-Windows 入力エクスペリエンス
-ドキュメント - ワードパッド
-```
+ウィンドウタイトルには、開いている文書名や個人情報が含まれることがあります。結果をログに保存したり、他人に共有したりする前に内容を確認してください。
+
+詳しくは [Get-Process](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-process) と [.NET の Process.MainWindowTitle](https://learn.microsoft.com/en-us/dotnet/api/system.diagnostics.process.mainwindowtitle) を参照してください。

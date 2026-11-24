@@ -1,32 +1,24 @@
 ---
-title: 'Comment énumérer et récupérer les titres des fenêtres actuellement ouvertes avec PowerShell'
-date: "2026-09-24T19:44:38+09:00"
+title: "Afficher les titres des fenêtres principales des processus avec PowerShell"
 slug: "Fenêtreタイトルの列挙"
 date: 2022-09-20T17:03:15+09:00
+lastmod: "2026-11-24T00:00:00+09:00"
 tags: ["PowerShell"]
 draft: false
 image: "img.webp"
 categories: ["programming"]
-description: 'Nous expliquons comment énumérer et récupérer facilement les titres de toutes les fenêtres actuellement ouvertes sur votre PC à l''aide de PowerShell. Nous présentons cela de manière claire pour les débutants, en incluant des commandes réelles et des exemples de sortie.'
+description: "Découvrez comment afficher avec Get-Process et MainWindowTitle le titre de la fenêtre principale de chaque processus, la portée du résultat et le risque d’informations sensibles."
 ---
-# Énumération des titres de fenêtres
-
-Voici comment énumérer les titres des fenêtres actuellement ouvertes à l'aide de PowerShell.
+Vous pouvez filtrer les objets renvoyés par `Get-Process` pour afficher ceux dont `MainWindowTitle` (le titre de la fenêtre principale) n'est pas vide :
 
 ```powershell
-Get-Process|where{$_.mainWindowTItle}|Select-Object MainWindowTitle
+Get-Process |
+  Where-Object { $_.MainWindowTitle } |
+  Select-Object ProcessName, Id, MainWindowTitle
 ```
 
-Exemple de sortie
+Cette commande affiche le **titre de la fenêtre principale de chaque processus**. Elle ne répertorie ni toutes les fenêtres d'un processus ni toutes les fenêtres du bureau. Les processus sans fenêtre principale ou dont le titre est vide sont omis. Le résultat peut aussi changer lorsque des processus démarrent ou se terminent.
 
-```
-MainWindowTitle
----------------
-Windows PowerShell
-Internet Explorer
-Sans titre - Paint
-Sans titre - Bloc-notes
-Gestionnaire des tâches
-Expérience de saisie Windows
-Document - WordPad
-```
+Les titres peuvent contenir le nom de documents ouverts ou d'autres données personnelles. Vérifiez le résultat avant de l'enregistrer dans un journal ou de le partager.
+
+Consultez la documentation Microsoft sur [Get-Process](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-process) et [.NET Process.MainWindowTitle](https://learn.microsoft.com/en-us/dotnet/api/system.diagnostics.process.mainwindowtitle).

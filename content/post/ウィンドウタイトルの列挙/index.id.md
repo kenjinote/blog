@@ -1,32 +1,24 @@
 ---
-title: 'Cara Mengambil dan Mendaftar Judul Jendela yang Sedang Terbuka dengan PowerShell'
-date: "2026-09-24T19:44:38+09:00"
+title: "Menampilkan Judul Jendela Utama Proses dengan PowerShell"
 slug: "Jendelaタイトルの列挙"
 date: 2022-09-20T17:03:15+09:00
+lastmod: "2026-11-24T00:00:00+09:00"
 tags: ["PowerShell"]
 draft: false
 image: "img.webp"
 categories: ["programming"]
-description: 'Menjelaskan cara mudah membuat daftar dan mendapatkan judul dari semua jendela yang saat ini terbuka di PC menggunakan PowerShell. Disajikan dengan mudah bagi pemula, dilengkapi perintah nyata dan contoh output.'
+description: "Pelajari cara menampilkan judul jendela utama setiap proses dengan Get-Process dan MainWindowTitle, cakupan hasilnya, serta risiko judul memuat informasi sensitif."
 ---
-# Mendaftar Judul Jendela
-
-Cara untuk mendaftar judul jendela yang sedang terbuka menggunakan PowerShell.
+Anda dapat menyaring objek proses yang dikembalikan oleh `Get-Process` untuk menampilkan entri dengan `MainWindowTitle` (judul jendela utama) yang tidak kosong:
 
 ```powershell
-Get-Process|where{$_.mainWindowTItle}|Select-Object MainWindowTitle
+Get-Process |
+  Where-Object { $_.MainWindowTitle } |
+  Select-Object ProcessName, Id, MainWindowTitle
 ```
 
-Contoh Output
+Perintah ini menampilkan **judul jendela utama untuk setiap proses**. Perintah ini tidak mencantumkan semua jendela yang dimiliki suatu proses maupun semua jendela di desktop. Proses tanpa jendela utama atau dengan judul kosong tidak disertakan. Hasil juga dapat berubah saat proses dimulai atau berhenti.
 
-```
-MainWindowTitle
----------------
-Windows PowerShell
-Internet Explorer
-Tanpa Judul - Paint
-Tanpa Judul - Notepad
-Task Manager
-Windows Input Experience
-Dokumen - WordPad
-```
+Judul jendela dapat memuat nama dokumen yang terbuka atau informasi pribadi lainnya. Periksa hasil sebelum menyimpannya ke log atau membagikannya.
+
+Lihat dokumentasi Microsoft: [Get-Process](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-process) dan [.NET Process.MainWindowTitle](https://learn.microsoft.com/en-us/dotnet/api/system.diagnostics.process.mainwindowtitle).
