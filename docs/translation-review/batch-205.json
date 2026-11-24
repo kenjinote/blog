@@ -20,7 +20,7 @@
     "Replaced the ambiguous SetSuspendState rundll32 command with shutdown /h for hibernation; corrected Alt+Space window moving and added data-loss cautions for forced termination.",
     "Removed unrelated internal cross-links that had appeared only in translations and updated every edition with current Microsoft references."
   ],
-  "publicationPending": true,
+  "publicationPending": false,
   "reviews": {
     "post/Windows のショートカット・小技集/index.en.md": {
       "source": "post/Windows のショートカット・小技集/index.md",
@@ -454,5 +454,11 @@
         "WordPad and standalone Internet Explorer instructions are limited to older Windows versions; Windows 11 version 24H2 and later no longer include WordPad."
       ]
     }
+  },
+  "publication": {
+    "record": "docs/translation-review/publication-batch-205.json",
+    "ciRun": 45459920625,
+    "sourceCommit": "56a3404dbd4c8dd215c4885e8021c00efa986e65",
+    "allPassed": true
   }
 }

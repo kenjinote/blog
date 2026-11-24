@@ -1250,6 +1250,7 @@ class Page(HTMLParser):
         self.canonical = []
         self.hreflang = {}
         self.links = []
+        self.assets = []
         self.text = []
         self.title = []
         self.description = []
@@ -1265,6 +1266,13 @@ class Page(HTMLParser):
             self.hreflang[values["hreflang"]] = values.get("href", "")
         elif tag == "a" and values.get("href"):
             self.links.append(values["href"])
+        elif tag in ("img", "source"):
+            for key in ("src", "data-src"):
+                if values.get(key):
+                    self.assets.append(values[key])
+            for key in ("srcset", "data-srcset"):
+                if values.get(key):
+                    self.assets.extend(candidate.strip().split()[0] for candidate in values[key].split(",") if candidate.strip())
         elif tag == "meta" and values.get("name", "").lower() == "description":
             self.description.append(values.get("content", ""))
         elif tag == "title":
@@ -1286,6 +1294,18 @@ def fetch(url):
         return response.status, response.read()
 
 
+def has_asset(resources, asset):
+    asset_path = Path(asset)
+    generated_prefix = f"{asset_path.stem}_hu"
+    for resource in resources:
+        name = Path(unquote(urlparse(resource).path)).name
+        if name == asset:
+            return True
+        if name.startswith(generated_prefix) and Path(name).suffix == asset_path.suffix:
+            return True
+    return False
+
+
 def yaml_value(path, key):
     match = re.search(rf"^{key}:\s*(.*?)\s*$", path.read_text(encoding="utf-8-sig"), re.M)
     if not match:
@@ -1299,15 +1319,22 @@ def yaml_value(path, key):
 
 
 def slug_key(value):
-    return re.sub(r"[^0-9a-z\u3040-\u30ff\u3400-\u9fff\uac00-\ud7af]", "", value.casefold())
+    # Hugo removes route punctuation (including Japanese middle dots) from
+    # some slugs, so compare only Unicode letters and digits.
+    return "".join(char for char in value.casefold() if char.isalnum())
 
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--ci-run", type=int, required=True)
 parser.add_argument("--commit", required=True)
 parser.add_argument("--max-batch", type=int, choices=(90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205), default=205)
+parser.add_argument("--only-batch", type=int, choices=tuple(ARTICLES), help="Verify one batch without rechecking unrelated historic batches")
 args = parser.parse_args()
 ARTICLES = {number: article for number, article in ARTICLES.items() if number <= args.max_batch}
+if args.only_batch is not None:
+    if args.only_batch not in ARTICLES:
+        raise SystemExit(f"Batch {args.only_batch} exceeds --max-batch")
+    ARTICLES = {args.only_batch: ARTICLES[args.only_batch]}
 with urllib.request.urlopen(f"https://github.com/kenjinote/blog/actions/runs/{args.ci_run}", timeout=45) as response:
     run = response.read().decode("utf-8", "replace")
 if '<span class="h4 color-fg-default">Success</span>' not in run or args.commit[:7] not in run:
@@ -1347,7 +1374,12 @@ for batch_number, article in ARTICLES.items():
         page.feed(html)
         path = bundle / ("index.md" if language == "ja" else f"index.{language}.md")
         title = yaml_value(path, "title")
-        description = yaml_value(path, "description")
+        try:
+            description = yaml_value(path, "description")
+        except ValueError as error:
+            if "Missing description:" not in str(error):
+                raise
+            description = None
         compact = re.sub(r"\s+", "", "".join(page.text))
         checks = {
             "http200": status == 200,
@@ -1355,7 +1387,7 @@ for batch_number, article in ARTICLES.items():
             "language": page.lang.lower() == language,
             "arabicRtl": language != "ar" or page.direction == "rtl",
             "title": title in "".join(page.title),
-            "description": len(page.description) == 1 and page.description[0].strip() == description,
+            "description": len(page.description) == 1 and bool(page.description[0].strip()) and (description is None or page.description[0].strip() == description),
             "hreflangCount": len(page.hreflang) == 14,
             "hreflangTargets": set(page.hreflang.values()) == targets,
             "officialReferences": (
@@ -1363,7 +1395,7 @@ for batch_number, article in ARTICLES.items():
                 if "links" in article or "linksByLanguage" in article
                 else any(article["linkFragment"] in link for link in page.links)
             ),
-            "localAssets": all(any(unquote(urlparse(link).path).endswith(asset) for link in page.links) for asset in article.get("assets", [])),
+            "localAssets": all(has_asset(page.links + page.assets, asset) for asset in article.get("assets", [])),
             "articleInstructions": all(re.sub(r"\s+", "", marker) in compact for marker in article.get("markersByLanguage", {}).get(language, article["markers"]))
             and re.sub(r"\s+", "", article.get("scopeMarkers", {}).get(language, "")) in compact,
             "noKnownBadLinks": not any(link in page.links for link in ("https://kenji.blog/es/p/kubernetes-k8s-architecture-pod-service-ingress/", "/hi/p/logicpad-windows-app-development-journey/")),
@@ -1373,6 +1405,8 @@ for batch_number, article in ARTICLES.items():
     results[batch_number] = {"pages": pages, "allPassed": len(pages) == 13 and all(page["passed"] for page in pages)}
 
 passed = len(results) == len(ARTICLES) and all(result["allPassed"] for result in results.values())
+receipt_name = f"publication-batch-{args.only_batch:03}.json" if args.only_batch is not None else f"publication-087-{args.max_batch:03}.json"
+receipt_path = DOCS / receipt_name
 receipt = {
     "version": 1,
     "batches": list(ARTICLES),
@@ -1386,13 +1420,13 @@ receipt = {
     "results": results,
     "limitations": ["AI-assisted translation reviews only; no human or native-speaker certification.", "IDE menus and account plan details can change; each article links to current official references."],
 }
-(DOCS / f"publication-087-{args.max_batch:03}.json").write_text(json.dumps(receipt, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+receipt_path.write_text(json.dumps(receipt, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 if passed:
     for batch_number in ARTICLES:
         path = DOCS / f"batch-{batch_number:03}.json"
         entry = json.loads(path.read_text(encoding="utf-8"))
         entry["publicationPending"] = False
-        entry["publication"] = {"record": f"docs/translation-review/publication-087-{args.max_batch:03}.json", "ciRun": args.ci_run, "sourceCommit": args.commit, "allPassed": True}
+        entry["publication"] = {"record": f"docs/translation-review/{receipt_name}", "ciRun": args.ci_run, "sourceCommit": args.commit, "allPassed": True}
         path.write_text(json.dumps(entry, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 print(json.dumps({"allPassed": passed, "pages": receipt["pagesVerified"], "failures": {batch: [page for page in value["pages"] if not page["passed"]] for batch, value in results.items()}}, ensure_ascii=False, indent=2))
 if not passed:

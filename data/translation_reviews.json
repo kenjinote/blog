@@ -23765,6 +23765,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-205.json",
       "evidenceHash": "763b878076d96b724fff59c24d0d7bd28cedbcabbf4bc36c8a6814017d38847f"
+    },
+    "post/adhesion-science-molecular-bonding-epoxy-structural-mechanics/index.de.md": {
+      "source": "post/adhesion-science-molecular-bonding-epoxy-structural-mechanics/index.ja.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "e5ce53c74d06f9a3a727b21d6ddbdf8b8eaf280c39d0c77ab2bbb20a7e61dd27",
+      "translationHash": "77af75b033c280ad74c42ca77cceddf2e3fa3df1a92d2edfbb107c17c61eaf03",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-206.json",
+      "evidenceHash": "c68b4120ca99d8cb0dbab53fc4305cb423f97b06bc824caaf85f0e5e9824b848"
+    },
+    "post/adhesion-science-molecular-bonding-epoxy-structural-mechanics/index.fr.md": {
+      "source": "post/adhesion-science-molecular-bonding-epoxy-structural-mechanics/index.ja.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "e5ce53c74d06f9a3a727b21d6ddbdf8b8eaf280c39d0c77ab2bbb20a7e61dd27",
+      "translationHash": "f14f2d4340c0801cea97e902d5fa9af020052edac9e5d62de7e79f999073689b",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-206.json",
+      "evidenceHash": "f8d89075b034f43c014fd2e0a17c3dd1a1fc4bb7db57a0b1af1f363b017a7f72"
+    },
+    "post/adhesion-science-molecular-bonding-epoxy-structural-mechanics/index.ar.md": {
+      "source": "post/adhesion-science-molecular-bonding-epoxy-structural-mechanics/index.ja.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "e5ce53c74d06f9a3a727b21d6ddbdf8b8eaf280c39d0c77ab2bbb20a7e61dd27",
+      "translationHash": "2362c5c53d37f9d5895e4ca2e5db7eef4865067b717327347107ed587442b40e",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-206.json",
+      "evidenceHash": "7162dee842cfae8f500f2e1a4184e575687eb715abda67bbb8d815b65d5ed68c"
+    },
+    "post/adhesion-science-molecular-bonding-epoxy-structural-mechanics/index.en.md": {
+      "source": "post/adhesion-science-molecular-bonding-epoxy-structural-mechanics/index.ja.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "e5ce53c74d06f9a3a727b21d6ddbdf8b8eaf280c39d0c77ab2bbb20a7e61dd27",
+      "translationHash": "619a5afffa1131d03419393f677e3882480f28f884d68ad180c167a980f40b96",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-206.json",
+      "evidenceHash": "7f72a2fd73f5a6086b2a040093a5b1bc9d159541a64b14fe32aea95844f55b8e"
+    },
+    "post/adhesion-science-molecular-bonding-epoxy-structural-mechanics/index.zh-cn.md": {
+      "source": "post/adhesion-science-molecular-bonding-epoxy-structural-mechanics/index.ja.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "e5ce53c74d06f9a3a727b21d6ddbdf8b8eaf280c39d0c77ab2bbb20a7e61dd27",
+      "translationHash": "33871fef8c0ae6d049e9d11063409067a46023387750ae283db96b8fa7f5540b",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-206.json",
+      "evidenceHash": "9a84db40c6c4b62b144eaa91f3386dd3e71fdbba45851c3c07ecb84cbb406123"
+    },
+    "post/adhesion-science-molecular-bonding-epoxy-structural-mechanics/index.es.md": {
+      "source": "post/adhesion-science-molecular-bonding-epoxy-structural-mechanics/index.ja.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "e5ce53c74d06f9a3a727b21d6ddbdf8b8eaf280c39d0c77ab2bbb20a7e61dd27",
+      "translationHash": "5af56a4ac5b7c0adaa78cd947c9e54fe83b6909bb4ad2db4a7182de4b0b3d7b7",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-206.json",
+      "evidenceHash": "7117a9d64e0ac3afc2e851ed4f104e704c085bc6f1147282f610aa13a5456a8f"
+    },
+    "post/adhesion-science-molecular-bonding-epoxy-structural-mechanics/index.hi.md": {
+      "source": "post/adhesion-science-molecular-bonding-epoxy-structural-mechanics/index.ja.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "e5ce53c74d06f9a3a727b21d6ddbdf8b8eaf280c39d0c77ab2bbb20a7e61dd27",
+      "translationHash": "a23d630930da35f152a9447accf8865f3b5b6807efe9cb30e239300b5117d3aa",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-206.json",
+      "evidenceHash": "629f55749b8a6037cd3fc30eecbd45d8a0a8c3a8dcdd97d324ebc958b26e704c"
+    },
+    "post/adhesion-science-molecular-bonding-epoxy-structural-mechanics/index.id.md": {
+      "source": "post/adhesion-science-molecular-bonding-epoxy-structural-mechanics/index.ja.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "e5ce53c74d06f9a3a727b21d6ddbdf8b8eaf280c39d0c77ab2bbb20a7e61dd27",
+      "translationHash": "f13590dd1dcb234e5cb1aaa186c959f5cf54bc310d32f278fac9899998549cf6",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-206.json",
+      "evidenceHash": "488dbac4285bfff2b7f7356f8d7a63b58eb80f03fdecb2762472f75616069043"
+    },
+    "post/adhesion-science-molecular-bonding-epoxy-structural-mechanics/index.ko.md": {
+      "source": "post/adhesion-science-molecular-bonding-epoxy-structural-mechanics/index.ja.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "e5ce53c74d06f9a3a727b21d6ddbdf8b8eaf280c39d0c77ab2bbb20a7e61dd27",
+      "translationHash": "936398ad5d0245952ac2ac7162e01bef0d02692df4b675329af291592aa65061",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-206.json",
+      "evidenceHash": "a00831ea07b7e62a9653ff0d773a403abc3e8ffeee878fd2aa6d677bd63ab008"
+    },
+    "post/adhesion-science-molecular-bonding-epoxy-structural-mechanics/index.zh-tw.md": {
+      "source": "post/adhesion-science-molecular-bonding-epoxy-structural-mechanics/index.ja.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "e5ce53c74d06f9a3a727b21d6ddbdf8b8eaf280c39d0c77ab2bbb20a7e61dd27",
+      "translationHash": "816e372c77ee00d9a8e3c1e525351d89a63b7bad214e6fca5207f2399a59be92",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-206.json",
+      "evidenceHash": "a25e61537b4ee3c3458828660ed862a37a32123af6a51053d4f2520ac6738ad3"
+    },
+    "post/adhesion-science-molecular-bonding-epoxy-structural-mechanics/index.pt.md": {
+      "source": "post/adhesion-science-molecular-bonding-epoxy-structural-mechanics/index.ja.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "e5ce53c74d06f9a3a727b21d6ddbdf8b8eaf280c39d0c77ab2bbb20a7e61dd27",
+      "translationHash": "572ab33c059eba0c8fe2a434ef4d06d38774f807082256ba8f75fb777c8cc4b9",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-206.json",
+      "evidenceHash": "ba1587c9f1abe1c959260c3334267b670a17bd5b272f120fc58fdde1b9d7e0d8"
+    },
+    "post/adhesion-science-molecular-bonding-epoxy-structural-mechanics/index.ru.md": {
+      "source": "post/adhesion-science-molecular-bonding-epoxy-structural-mechanics/index.ja.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "e5ce53c74d06f9a3a727b21d6ddbdf8b8eaf280c39d0c77ab2bbb20a7e61dd27",
+      "translationHash": "4744fc043ef630e6ffaa11a6713788a4bf021c39b2be20f471870e794684d6ad",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-206.json",
+      "evidenceHash": "045962d1357bee390472fc53053917b03fba347c8ab0c5a425b053b2980316f1"
     }
   }
 }

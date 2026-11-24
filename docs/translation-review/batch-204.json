@@ -16,7 +16,7 @@
     "Clarified that /xpr reports activation expiration and is primarily useful for KMS clients; Retail and MAK activations are generally perpetual.",
     "Added that slmgr does not validate whether a license was legitimately obtained and linked Microsoft Learn/Support guidance; removed the unrelated OAuth authentication cross-link."
   ],
-  "publicationPending": true,
+  "publicationPending": false,
   "reviews": {
     "post/Windows のライセンスの状態を確認するコマンド/index.en.md": {
       "reviewKind": "ai",
@@ -450,5 +450,11 @@
         "slmgr reports activation/license information but does not validate whether the license was legitimately obtained. Microsoft guidance checked on 2026-11-25."
       ]
     }
+  },
+  "publication": {
+    "record": "docs/translation-review/publication-batch-204.json",
+    "ciRun": 45459920625,
+    "sourceCommit": "56a3404dbd4c8dd215c4885e8021c00efa986e65",
+    "allPassed": true
   }
 }

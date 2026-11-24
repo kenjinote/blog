@@ -2,6 +2,7 @@
 title: "Why Adhesives Bond: The Molecular Physics and Interfacial Mechanics from Nanoscale Forces to Aerospace Flight"
 description: "From household superglue to carbon-fiber jointing in modern stealth fighters and commercial airliners: what happens at the invisible nanoscale boundary? A comprehensive exploration of Young-Dupré wetting thermodynamics, van der Waals forces versus covalent chemisorption, cyanoacrylate anionic polymerization, epoxy 3D cross-linking, the Dahlquist criterion for pressure-sensitive tapes, fracture peel mechanics, and aerospace composite structural bonding."
 date: 2026-10-13T22:58:00+09:00
+lastmod: 2026-11-25
 slug: "adhesion-science-molecular-bonding-epoxy-structural-mechanics"
 image: "eyecatch.jpg"
 categories:
@@ -21,7 +22,7 @@ draft: false
 
 A ceramic coffee mug shatters onto a hardwood floor, its handle snapping cleanly into two fragments. A single drop of clear, pungent liquid is applied along the hairline fracture; the pieces are pressed together for fifteen seconds, and the mug is restored, capable of bearing the full weight of boiling liquid without yielding. 
 
-At the other extreme of engineering scale, consider the Boeing 787 Dreamliner or the Airbus A350 XWB cruising at 900 kilometers per hour through the sub-zero stratosphere. The gargantuan composite wings carrying hundreds of tons of dynamic aerodynamic lift are not held together by thousands of heavy steel rivets and bolts. Instead, their load-bearing titanium spars and carbon-fiber reinforced polymer (CFRP) skins are integrally bonded by microscopic layers of aerospace-grade structural polymeric adhesives.
+At the other extreme of engineering scale, consider the Boeing 787 Dreamliner or the Airbus A350 XWB cruising at 900 kilometers per hour through the sub-zero stratosphere. The gargantuan composite wings carrying hundreds of tons of dynamic aerodynamic lift are not held together by thousands of heavy steel rivets and bolts. Their structures use a combination of manufacturing and joining methods, which can include adhesive bonding and mechanical fastening. Bonding does not replace fasteners in every joint; the choice depends on the structural design and its qualification requirements.
 
 Yet, viewed through the lens of fundamental physics, this ubiquity conceals a profound paradox:
 "Why should applying a thin film of viscous liquid between two solid blocks of metal or stone cause them to fuse with such violent tenacity that the mother material often ruptures before the joint itself fails?"
@@ -118,39 +119,18 @@ For an adhesive to spread spontaneously across a solid without requiring mechani
 
 $$S = \gamma_{\text{SV}} - (\gamma_{\text{SL}} + \gamma_{\text{LV}}) \ge 0$$
 
-Rearranging this reveals the golden axiom of adhesion engineering: 
-<strong>To achieve spontaneous, perfect wetting, the solid substrate must possess a surface free energy ($\gamma_{\text{SV}}$) substantially higher than the liquid adhesive's surface tension ($\gamma_{\text{LV}}$).</strong>
+This relation shows why comparing $\gamma_{\text{SV}}$ with $\gamma_{\text{LV}}$ alone is insufficient: the solid-liquid interfacial free energy $\gamma_{\text{SL}}$ also matters. Real surface condition and test conditions must be considered.
 
-```
-Surface Free Energies of Engineering Materials (mN/m or dyn/cm at 20°C):
-High-Energy Surfaces (Spontaneously wetted by all commercial adhesives):
-  - Ferrous Alloys, Titanium, Aluminum: 500 to 2,000+
-  - Silica, Soda-Lime Glass, Metal Oxides: 250 to 500
+### 2.2 Why PTFE and Polypropylene Can Be Difficult to Bond
+PTFE (Teflon) and polypropylene (PP) are difficult to wet with many general-purpose adhesives. Surface energy is only one factor: surface chemistry, contamination, roughness, adhesive formulation, and test conditions also affect results. Material names alone do not determine a fixed contact angle or bond strength.
 
-Medium-Energy Surfaces (Wetted by standard epoxies and polyurethanes):
-  - Nylon-6,6, PET, Polycarbonate: 40 to 46
-  - Epoxy Resin, Polyurethane Liquid: 35 to 45
+### 2.3 Surface Preparation for Difficult-to-Bond Materials
 
-Low-Energy Surfaces (Adhesives bead up; virtually impossible to bond without treatment):
-  - Polyethylene (PE): ~31
-  - Polypropylene (PP): ~29
-  - Silicone Rubber (PDMS): ~20
-  - Polytetrafluoroethylene (PTFE / Teflon): ~18
-```
+1. <strong>Plasma or corona treatment</strong> can introduce polar groups or remove surface contamination, improving wetting in some systems. The effect and its durability depend on the material, treatment, and storage conditions.
+2. <strong>Chemical etching</strong> can modify fluoropolymer surfaces such as PTFE. Chemistry, process conditions, and safety procedures must be qualified for the material and application.
+3. <strong>Primers</strong> compatible with both adherend and adhesive can help form an interface.
 
-### 2.2 Why Teflon and Polypropylene Defy Bonding
-The non-stick behavior of Polytetrafluoroethylene (Teflon) and Polypropylene (PP) is a direct consequence of surface thermodynamics.
-In PTFE, the carbon backbone is completely enveloped in a sheath of fluorine atoms. Because fluorine is the most electronegative element in the periodic table, it holds its electrons with fierce tenacity; its electron cloud exhibits exceptionally low polarizability.
-Consequently, PTFE possesses an extraordinarily low surface energy of just <strong>$18\text{ mN/m}$</strong>.
-
-Because standard liquid adhesives possess surface tensions between $35$ and $45\text{ mN/m}$, placing an adhesive on Teflon yields a strongly negative spreading coefficient ($S \ll 0$). The liquid adhesive minimizes its free energy by shrinking into a spherical bead with a contact angle $\theta > 110^\circ$, physically refusing to enter the surface valleys. Trapped air pockets remain, and true molecular contact is thwarted.
-
-### 2.3 Surface Activation Technologies
-To bond low-surface-energy polymers in automotive and aerospace production, engineers deploy energetic surface modification techniques to forcibly raise $\gamma_{\text{SV}}$:
-1. <strong>Atmospheric Plasma & Corona Discharge</strong>: High-energy ionized gas streams strike the polymer surface, cleaving non-polar $\text{C-H}$ and $\text{C-C}$ bonds. The resulting free radicals immediately react with atmospheric oxygen and moisture, grafting polar oxygen-bearing functional groups—such as <strong>hydroxyl ($\text{-OH}$), carbonyl ($\text{-C=O}$), and carboxyl ($\text{-COOH}$)</strong> moieties—onto the outer atomic layers. This abruptly elevates the surface energy from $30\text{ mN/m}$ to well over $60\text{ mN/m}$, allowing adhesives to wet out completely.
-2. <strong>Chemical Etching</strong>: For fluoropolymers, exposure to sodium naphthalene complexes strips fluorine atoms from the surface, leaving behind an unsaturated, reactive carbonaceous surface that bonds aggressively to epoxies.
-
----
+Improved wetting alone does not guarantee joint performance. Use appropriate process controls and application-relevant bond and durability tests.---
 
 ## 3. The Chemistry of Cohesion: Macromolecular Curing Kinetics
 
@@ -180,27 +160,25 @@ Inside its sealed plastic container, the monomer is stabilized by minute quantit
 
 This explains why superglue bonds human fingers with terrifying speed: skin moisture and alkaline cellular proteins act as ultra-potent polymerization catalysts.
 
-### 3.2 Epoxy Resins: The Three-Dimensional Network of Aerospace Strength
-Where maximum mechanical strength, high glass transition temperature ($T_g$), and zero creep under sustained load are mandatory, <strong>Epoxy Resins</strong> represent the gold standard of structural adhesives.
+### 3.2 Epoxy Resins: Cross-Linked Networks and Application-Dependent Performance
+Epoxy systems are widely used as structural adhesives, but their performance depends on formulation, cure, joint design, and service conditions. A high glass-transition temperature or low creep cannot be assumed for every epoxy.
 
 Typically formulated as a two-component reactive system, epoxies comprise:
-- <strong>Resin Prepolymer</strong>: Diglycidyl ether of bisphenol-A (DGEBA), characterized by strained three-membered <strong>oxirane (epoxy) rings</strong> at both chain termini.
-- <strong>Hardener (Curing Agent)</strong>: Multifunctional aliphatic or aromatic polyamines (such as diethylenetriamine, DETA, or 4,4'-diaminodiphenylsulfone, DDS).
+- <strong>Resin prepolymer</strong>: Often diglycidyl ether of bisphenol-A (DGEBA), with strained three-membered oxirane (epoxy) rings.
+- <strong>Hardener</strong>: A curing agent such as a multifunctional amine; the exact chemistry varies by product.
 
 ```
-Epoxy Ring Opening Reaction with Primary Amine:
+Epoxy ring opening reaction with a primary amine:
         O
        / \
     R-CH-CH2  +  R'-NH2  ──>  R-CH(OH)-CH2-NH-R'
 ```
 
-When mixed, the nucleophilic nitrogen of the amine attacks the electrophilic methylene carbon of the strained oxirane ring. The ring snaps open, forming a stable secondary amine and a pendant hydroxyl ($\text{-OH}$) group. Because primary amines possess two active hydrogen atoms and each amine molecule typically contains multiple amino groups, each hardener molecule reacts with four or more separate epoxy prepolymers.
+When mixed, amine groups can open oxirane rings, forming covalent bonds and hydroxyl groups. Multifunctional reactants can form a cross-linked thermoset network. The network's properties depend on the resin, hardener, stoichiometry, cure schedule, and additives.
 
-This generates a tightly knit, infinite <strong>3D Covalent Cross-Linked Macromolecular Network</strong>.
-The engineering consequences of this network topology are profound:
-- <strong>Negligible Curing Shrinkage</strong>: Unlike vinyl polymerization, which contracts heavily as double bonds collapse into single bonds, ring-opening polyaddition involves minimal volumetric shrinkage (typically $< 1 \sim 2\%$). Consequently, negligible residual internal shear stresses are frozen into the bondline.
-- <strong>Immense Creep Resistance</strong>: Once fully cured, the 3D covalent thermoset network cannot melt or undergo plastic flow below its thermal decomposition point, allowing it to sustain continuous aerospace loads across decades.
-- <strong>High Hydroxyl Adhesion</strong>: The opening of oxirane rings generates vast concentrations of polar secondary hydroxyl groups ($\text{-OH}$), which form dense hydrogen bonding networks with metal oxide layers.
+- <strong>Cure shrinkage and residual stress</strong>: Epoxy cure can produce chemical shrinkage, while thermal expansion mismatch and cooling can add residual stress. Their magnitude depends on the formulation, adherends, bondline geometry, and cure cycle; neither is universally negligible.
+- <strong>Creep and temperature resistance</strong>: Cross-linking prevents ordinary melt flow, but a cured joint can still deform or degrade under sustained load, elevated temperature, moisture, or chemical exposure. Qualification must use relevant conditions.
+- <strong>Interfacial interactions</strong>: Hydroxyl groups may contribute to polar interactions and hydrogen bonding at some interfaces; actual adhesion depends on surface chemistry and preparation.
 
 ### 3.3 Anaerobic Adhesives: Polymerization in the Absence of Air
 Widely deployed in mechanical engineering under brand names such as Loctite, anaerobic threadlockers remain stable liquids indefinitely when exposed to atmospheric oxygen inside permeable polyethylene bottles. Yet, when applied to a steel bolt and threaded tightly into an engine casing, the fluid cures into an indestructible solid polymer within minutes.
@@ -226,37 +204,32 @@ flowchart LR
     end
 ```
 
-### 4.1 The Dahlquist Criterion for Instantaneous Tack
-In the 1960s, 3M physicist Carl A. Dahlquist discovered the universal rheological law governing whether a material exhibits instantaneous pressure-sensitive "tack":
+### 4.1 The Dahlquist Criterion as a PSA Rule of Thumb
+The Dahlquist criterion is an empirical rule of thumb often used when discussing tack in pressure-sensitive adhesives (PSAs). A commonly cited guideline is a storage modulus $G'$ below $3 \times 10^5\text{ Pa}$ at room temperature and about 1 Hz. It is not a universal law that predicts performance across different formulations, temperatures, contact times, substrates, and peel rates:
 
-$$G' (1\text{ Hz at } 25^\circ\text{C}) < 3 \times 10^5\text{ Pa} \quad (0.3\text{ MPa})$$
+$$G' (1\text{ Hz at } 25^\circ\text{C}) < 3 \times 10^5\text{ Pa}$$
 
-where $G'$ is the dynamic shear storage modulus.
-If a polymer possesses a modulus greater than this critical threshold ($G' > 0.3\text{ MPa}$), it is too rigid. Human fingertip pressure (typically $10 \sim 100\text{ kPa}$) is mechanically insufficient to deform the elastomer into the microscopic valleys of the paper or wall within a practical human timeframe (fractions of a second); true molecular contact fails to form.
-
-Conversely, if $G' < 3 \times 10^5\text{ Pa}$, the material's elastic resistance is low enough that light pressure forces the polymer to <strong>flow dynamically like a high-viscosity liquid into surface asperities</strong>, achieving instant, intimate van der Waals contact.
+Meeting this guideline can help a PSA conform to surface roughness and develop real contact over short times. By itself, however, it does not guarantee tack, peel force, shear holding power, or durability. PSA performance should be evaluated using its viscoelastic spectrum and application-relevant test conditions.
 
 ### 4.2 Why Tapes Peel Without Leaving Gunk
 How does a tape exhibit instant liquid-like tack, yet peel away cleanly without splitting into a sticky mess?
 The answer lies in <strong>frequency-dependent viscoelastic energy dissipation</strong>:
 - During <strong>application (slow, low strain rate $\sim 1\text{ Hz}$)</strong>, the polymer operates in its low-modulus rubbery plateau, behaving like a liquid to establish wetting.
-- During <strong>rapid peeling (high strain rate $\sim 10^2 - 10^4\text{ Hz}$)</strong>, polymer chains are stretched violently. The material shifts dynamically toward its glass transition regime; its effective modulus spikes by multiple orders of magnitude. The polymer stiffens into an elastic solid, maintaining internal cohesive integrity and peeling cleanly at the interface rather than rupturing cohesively.
+- During <strong>rapid peeling (high strain rate $\sim 10^2 - 10^4\text{ Hz}$)</strong>, polymer chains are stretched violently. Viscoelastic response and energy dissipation depend on peel rate, temperature, formulation, and substrate. Cohesive failure or residue can still occur under some conditions.
 
 ---
 
 ## 5. Continuum Fracture Mechanics of Adhesive Joints
 
-When an adhesive joint is subjected to catastrophic external mechanical loads, failure proceeds via one of two distinct modes:
+An adhesive joint can fail at the interface, within the adhesive, within an adherend, or through a combination of these paths. The observed failure path depends on the materials, geometry, loading, environment, and manufacturing process. It is useful evidence, but it does not by itself establish whether a joint passes its acceptance criteria.
 
 ```mermaid
 flowchart TD
-    subgraph JointFailureModes ["Fracture Modes in Bonded Assemblies"]
-        AdhesiveFailure["1. Adhesive / Interfacial Failure<br>Clean separation directly at the adhesive-substrate interface<br>➔ Indicates inadequate surface prep, contamination, or poor wetting"]
-        CohesiveFailure["2. Cohesive Failure<br>Fracture propagating entirely through the bulk adhesive or substrate<br>➔ Demonstrates that interfacial bond strength exceeds bulk material capacity"]
+    subgraph JointFailureModes ["Fracture Paths in Bonded Assemblies"]
+        AdhesiveFailure["Interfacial failure<br>Crack follows an adhesive-substrate interface"]
+        CohesiveFailure["Cohesive failure<br>Crack passes through adhesive or adherend"]
     end
 ```
-
-In structural engineering certification, <strong>pure cohesive failure of the adhesive or substrate is the mandatory design objective</strong>. If an adhesive joint fails along the interface (adhesive failure), it signifies an unoptimized, brittle process susceptible to environmental degradation.
 
 ### 5.1 Stress Concentrations in Lap Joints: The Volkersen Shear-Lag Model
 When two overlapping plates are joined in a standard single-lap shear configuration and pulled under axial tensile force $P$, intuition suggests that shear stress $\tau$ is distributed uniformly across the overlap area: $\tau_{\text{avg}} = P / (w \cdot L)$.
@@ -293,22 +266,23 @@ Nowhere has the science of adhesive bonding wrought a more profound industrial r
 flowchart LR
     subgraph AircraftJoiningEvolution ["Evolution of Airframe Joining Technology"]
         MetalEra["Traditional Airframes: Aluminum alloy skin + 1,000,000+ rivets<br>Drilled holes induce 3x stress concentrations, fatigue cracks, and parasitic weight"]
-        CompositeEra["Modern Airframes (B787 / A350): Carbon-Fiber Composites (CFRP) + Epoxy Film Bonding<br>Monolithic co-curing, complete stress homogenization, dramatic weight reduction"]
+        CompositeEra["Modern airframes use qualified bonding and mechanical fastening as designed<br>Process control, inspection, and damage tolerance are essential"]
         MetalEra --> CompositeEra
     end
 ```
 
-### 6.1 Transcending the Rivet: The Boeing 787 and Airbus A350
-For nearly a century, airframes were constructed by drilling millions of holes through aluminum sheets and hammering in metal rivets.
-However, drilling a circular hole into a structural plate induces a theoretical <strong>three-fold stress concentration ($\sigma_{\text{peak}} = 3\sigma_0$)</strong> around the hole perimeter according to Kirsch's classical elasticity solution. Under cyclic cabin pressurization cycles, these rivet holes inevitably nucleate metal fatigue micro-cracks, requiring continuous structural maintenance.
+### 6.1 Combining Bonding and Mechanical Fastening in Aircraft Structures
+Boeing states that composites make up about 50% of the 787's structural weight. This is a weight fraction; it does not mean that every structural joint is made only by adhesive bonding. Depending on the design, aircraft structures use co-curing, co-bonding, secondary bonding, and mechanical fastening.
 
-In fifth-generation stealth fighters (F-22, F-35) and commercial widebodies (Boeing 787, Airbus A350), carbon-fiber reinforced polymers (CFRP) constitute over 50% of the structural airframe.
-Drilling holes through carbon fiber cuts the continuous graphite filaments, destroying their unidirectional tensile reinforcement. Consequently, aerospace manufacturers deploy <strong>structural epoxy film adhesives</strong>:
-1. <strong>Continuous Stress Transfer</strong>: Instead of transferring multi-ton aerodynamic loads through discrete puncture points (rivets), adhesive bonds distribute stresses continuously across hundreds of square meters of aerodynamic surface area, completely eradicating point stress concentrations.
-2. <strong>Weight Elimination</strong>: Eliminating millions of metal fasteners and reinforcement doublers slashes structural weight by several metric tons, directly enabling double-digit percentage gains in commercial fuel efficiency.
-3. <strong>Galvanic Corrosion Isolation</strong>: Direct physical contact between conductive carbon fibers and metallic aluminum induces violent electrochemical galvanic corrosion. An intervening structural epoxy adhesive film functions as a 100% dielectric insulator, permanently sealing the structural interface against environmental degradation.
+Drilling and fastening CFRP are engineered and substantiated for the laminate, loads, and damage-tolerance requirements. Adhesive bonding is not a universal replacement for fasteners: it requires structural substantiation that covers surface preparation, process control, inspection, and damage tolerance.
+
+Bonded joints can transfer load across an interface and may reduce fasteners or reinforcements in some designs. However, shear and peel stresses can concentrate near bond edges. Weight and fuel-efficiency benefits depend on the structure and its certification requirements.
+
+Electrical isolation and moisture control matter where CFRP meets metal. An adhesive layer or surface treatment may contribute to protection, but it does not guarantee complete or permanent prevention of corrosion; the design and environment need to be evaluated.
 
 ---
+
+
 
 ## 7. Biomimetic Adhesion: Gecko Setae and Mussel DOPA Chemistry
 
@@ -331,10 +305,33 @@ The catechol ring of DOPA features two adjacent hydroxyl groups that displace wa
 
 ---
 
-## 8. Conclusion: The Masterwork of the Invisible Interface
+## 8. Structural Bond Quality: Nondestructive Inspection and Self-Healing Adhesives
+
+For structural bonds in aircraft and vehicles, both the bonding process and quality assurance matter. Once cured, internal defects such as voids and disbonds cannot be seen by visual inspection alone. Inspection methods and acceptance criteria must be selected for the joint geometry, materials, relevant defect types, and approved procedures.
+
+### 8.1 Nondestructive inspection
+
+1. <strong>Ultrasonic inspection</strong>:
+   Pulse-echo, through-transmission, and array-based imaging methods are available for different joint configurations. Use procedures whose capability has been demonstrated with reference standards representative of the structure. They can assess specified defects such as disbonds and voids. Detectable defect size depends on the materials, thickness, geometry, equipment, and procedure, so there is no single resolution that applies to every joint.
+2. <strong>Active infrared thermography</strong>:
+   A flash lamp or another heat source excites the surface, and an infrared camera records temperature changes to identify variations in heat flow that may indicate subsurface defects. The method has been experimentally evaluated on composite aircraft adhesive joints, but results depend on material, geometry, defect depth, heating conditions, and image processing. Applying it to an actual structure requires a procedure validated for that structure.
+
+### 8.2 Self-healing adhesives
+
+Research has demonstrated self-healing materials that disperse microscopic capsules containing a healing agent, along with a catalyst or other reactant, in an adhesive matrix. When a crack ruptures a capsule, the agent can flow into the crack and react in specific material systems. Healing efficiency and repeatability depend on the formulation and test conditions; published adhesive tests report partial recovery. This technology does not replace inspection, structural design margins, or maintenance.
+
+## 9. Conclusion: The Masterwork of the Invisible Interface
 
 From a solitary drop of cyanoacrylate repairing broken porcelain to structural epoxy films sustaining the immense aerodynamic forces of an intercontinental airliner, the science of adhesion represents one of humanity's most triumphant engineering achievements.
 
 An adhesive is not a passive gap filler. It is <strong>"a dynamic molecular bridge that banishes the microscopic void between two disparate materials, orchestrating trillions of atomic forces into a unified macroscopic whole."</strong>
 
 Inside the microscopic boundary layer separating two bonded surfaces—a zone often measuring mere fractions of a hair's width—lies the culmination of centuries of physical inquiry: the quantum fluctuations of electron clouds, the precise thermodynamics of surface free energy, the complex network kinetics of polymer cross-linking, and the continuum mechanics of fracture resistance. It is within this invisible nanoscale expanse that modern engineering quietly, yet resolutely, holds the physical world together.
+
+## References
+- [FAA AC 20-107B: Composite Aircraft Structure (including Change 1)](https://www.faa.gov/documentLibrary/media/Advisory_Circular/AC_20-107B_with_change_1.pdf)
+- [Boeing: 787 Dreamliner By Design](https://www.boeing.com/commercial/787/by-design)
+- [FAA AC 43-214A: Repairs and Alterations to Composite and Bonded Aircraft Structure](https://www.faa.gov/documentLibrary/media/Advisory_Circular/AC_43-214A.pdf)
+- [Pulse infrared thermography for composite aircraft adhesive joints](https://doi.org/10.3390/ma14030533)
+- [Ultrasonic analysis and lock-in thermography for composite adhesive joints](https://doi.org/10.1016/j.ndteint.2015.09.001)
+- [Fracture behavior of a self-healing, toughened epoxy adhesive](https://doi.org/10.1016/j.ijadhadh.2013.02.015)

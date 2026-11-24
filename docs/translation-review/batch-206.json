@@ -1,0 +1,470 @@
+{
+  "version": 1,
+  "batch": 206,
+  "article": "Why adhesives bond: molecular adhesion and structural joints; all 12 translated editions reviewed by AI",
+  "reviewedAt": "2026-11-25",
+  "sources": [
+    "https://www.faa.gov/documentLibrary/media/Advisory_Circular/AC_20-107B_with_change_1.pdf",
+    "https://www.boeing.com/commercial/787/by-design",
+    "https://www.faa.gov/documentLibrary/media/Advisory_Circular/AC_43-214A.pdf",
+    "https://doi.org/10.3390/ma14030533",
+    "https://doi.org/10.1016/j.ndteint.2015.09.001",
+    "https://doi.org/10.1016/j.ijadhadh.2013.02.015",
+    "https://doi.org/10.11618/adhesion.36.370"
+  ],
+  "scope": "All 12 current translations in this Japanese-source article bundle have AI review records tied to exact source and translation hashes. The concise editions disclose their content-parity limits; batch publication verification remains pending.",
+  "findings": [
+    "Corrected the claim that aircraft such as the 787 are joined exclusively by epoxy films; clarified composite weight fraction, mixed joining methods, process qualification, inspection, and damage tolerance.",
+    "Removed categorical claims about epoxy shrinkage, residual stress, creep, and chemical resistance.",
+    "Reframed the Dahlquist criterion as an empirical guideline and the fracture path as evidence rather than an automatic pass/fail verdict.",
+    "Rewrote surface-energy explanations to include the solid-liquid interfacial energy and avoid unsupported universal energy values/contact angles.",
+    "Restored the fracture mechanics, aircraft joining, biomimetic adhesion, and nondestructive inspection/self-healing sections in German.",
+    "Proofread the complete French edition, corrected overclaims, aligned the full section structure, and restored the fracture, aerospace, biomimetic, and inspection/self-healing topics; source-only inline formulas remain a documented follow-up.",
+    "Rewrote the Arabic edition, correcting aircraft-joining, wetting, epoxy, PSA, and biological-adhesion overclaims; added all source sections and references while documenting omitted equations, examples, and diagrams.",
+    "Rewrote the Arabic edition, correcting aircraft-joining, wetting, epoxy, PSA, and biological-adhesion overclaims; added all source sections and references while documenting omitted equations, examples, and diagrams.",
+    "Completed a full English-to-Japanese comparison and checked all article sections, included equations, diagrams, references, and technical claims; corrected the previously documented overclaims.",
+    "Rewrote the Simplified Chinese edition, correcting claims about 787 joining, wetting, epoxy, pressure-sensitive adhesives, and biomimetic adhesion; restored all source sections and references while disclosing omitted equations and figures.",
+    "Rewrote the Spanish edition, correcting claims about aircraft joining, wetting, epoxy, pressure-sensitive adhesives, and biomimetic adhesion; restored all source sections and references while disclosing omitted equations and figures.",
+    "Rewrote the Hindi edition, correcting claims about aircraft joining, wetting, epoxy, pressure-sensitive adhesives, and biological adhesion; restored all source sections and references while disclosing omitted equations and diagrams.",
+    "Rewrote the Indonesian edition, correcting claims about aircraft joining, wetting, epoxy, pressure-sensitive adhesives, and mussel-inspired adhesion; restored all source sections and references while disclosing omitted equations and diagrams.",
+    "Rewrote the Korean edition, correcting claims about aircraft joining, wetting, epoxy, pressure-sensitive adhesives, and biomimetic adhesion; restored all source sections and references while disclosing omitted equations and diagrams.",
+    "Reworked the Traditional Chinese edition in Taiwan usage, corrected claims about aircraft joining, wetting, epoxy, pressure-sensitive adhesives, and biological adhesion; restored all source sections and references while disclosing omitted equations and diagrams.",
+    "Rewrote the Portuguese edition in European Portuguese, correcting claims about aircraft joining, wetting, epoxy, PSAs, and biomimetic adhesion; restored all source sections and references while documenting omitted equations and diagrams.",
+    "Rewrote the Russian edition, correcting aircraft-joining, wetting, epoxy, PSA, and silane claims; restored all source sections and references while documenting omitted equations and diagrams."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/adhesion-science-molecular-bonding-epoxy-structural-mechanics/index.de.md": {
+      "source": "post/adhesion-science-molecular-bonding-epoxy-structural-mechanics/index.ja.md",
+      "sourceHash": "e5ce53c74d06f9a3a727b21d6ddbdf8b8eaf280c39d0c77ab2bbb20a7e61dd27",
+      "translationHash": "77af75b033c280ad74c42ca77cceddf2e3fa3df1a92d2edfbb107c17c61eaf03",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "reviewKind": "ai",
+      "summary": "Read the complete German edition and compared its sections and key claims with the Japanese source. Corrected unsupported claims about epoxy properties, wetting, pressure-sensitive adhesives, failure interpretation, and aircraft bonding; restored the missing fracture, aerospace, biomimetic, and inspection sections.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read every German section and compared the article structure and main claims with the Japanese source. Corrected meaning-changing overclaims and restored source sections 5–8. The German edition remains more concise than the expanded source and English edition."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked German terms for adherend, wetting, interfacial energy, epoxy curing, pressure-sensitive adhesive, cohesive/interfacial failure, damage tolerance, nondestructive inspection, and self-healing."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked the displayed Young equation, spreading coefficient condition, Dahlquist guideline, and epoxy ring-opening example. The source contains additional inline numerical examples and expressions not present in this concise German edition; this is recorded as a remaining coverage gap."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the translated Mermaid and fenced explanatory diagrams with the source concepts, including adhesion mechanisms, wetting, curing, PSA behavior, fracture paths, aircraft joining, and NDI selection. No executable software code is present."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the German edition’s FAA composite-structure and repair references, Boeing 787 page, and cited NDI/self-healing studies. The local eyecatch asset path is present in the bundle."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native German reviewer has confirmed this edition.",
+        "The German edition is concise. Some inline mathematical expressions, quantitative examples, and mechanistic detail from the Japanese source are omitted; this record covers the complete current German text but does not certify one-to-one content parity.",
+        "Publication verification for this batch is pending. Other language editions in this article remain unreviewed."
+      ]
+    },
+    "post/adhesion-science-molecular-bonding-epoxy-structural-mechanics/index.fr.md": {
+      "source": "post/adhesion-science-molecular-bonding-epoxy-structural-mechanics/index.ja.md",
+      "sourceHash": "e5ce53c74d06f9a3a727b21d6ddbdf8b8eaf280c39d0c77ab2bbb20a7e61dd27",
+      "translationHash": "f14f2d4340c0801cea97e902d5fa9af020052edac9e5d62de7e79f999073689b",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "reviewKind": "ai",
+      "summary": "Read the complete French edition and compared its sections and key claims with the Japanese source. Corrected unsupported claims about aircraft bonding, surface wetting, epoxy cure, pressure-sensitive adhesives, and failure interpretation; restored the missing fracture, aerospace, biomimetic, and inspection sections.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read every French section and compared the complete edition with the Japanese source. Corrected meaning-changing overclaims and restored source sections 5–8; the version remains more concise than the expanded source."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked French terms for mouillage, énergie interfaciale, résine époxy, adhésif sensible à la pression, rupture interfaciale/cohésive, tolérance aux dommages, contrôle non destructif et auto-réparation."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked the included Young equation, spreading coefficient condition, Dahlquist guideline, siloxane notation, and epoxy ring-opening example. Some inline numerical examples and expressions in the source are omitted in this concise edition and are recorded as a remaining coverage gap."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the French Mermaid diagrams and fenced reaction example with source concepts for adhesion, wetting, curing, PSA behavior, fracture paths, aircraft joining, and inspection selection. No executable software code is present."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the FAA composite-structure and repair references, Boeing 787 page, and cited NDI/self-healing studies. The local eyecatch asset is present in the article bundle."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native French reviewer has confirmed this edition.",
+        "The French version is concise. Some inline mathematical expressions, quantitative examples, and mechanistic detail from the Japanese source are omitted; this review covers the complete current French text but does not certify one-to-one content parity.",
+        "Publication verification for this batch is pending. Other language editions in this article remain unreviewed."
+      ]
+    },
+    "post/adhesion-science-molecular-bonding-epoxy-structural-mechanics/index.ar.md": {
+      "source": "post/adhesion-science-molecular-bonding-epoxy-structural-mechanics/index.ja.md",
+      "sourceHash": "e5ce53c74d06f9a3a727b21d6ddbdf8b8eaf280c39d0c77ab2bbb20a7e61dd27",
+      "translationHash": "2362c5c53d37f9d5895e4ca2e5db7eef4865067b717327347107ed587442b40e",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "reviewKind": "ai",
+      "summary": "Read the complete Arabic edition and compared its meaning and coverage with the complete Japanese source and corrected English edition. Rewrote unsupported claims about aircraft bonding, surface-energy comparisons, epoxy shrinkage and performance, PSA behavior, and biological adhesion; expanded the article to cover all source sections and references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read all Arabic prose and compared claims and 9 main sections with Japanese and corrected English editions. Corrected categorical claims and added fracture mechanics, aircraft joining, biomimetic adhesion, inspection, and self-healing sections. This remains a concise adaptation, not a line-by-line equivalent."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Arabic usage for adhesion, wetting, interfacial energy, epoxy, pressure-sensitive adhesive, cohesive/interfacial fracture, damage tolerance, nondestructive inspection, and self-healing; retained standard abbreviations PTFE, DOPA, and NDI where useful."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked the Young relation and empirical Dahlquist guideline included in Arabic. The source Volkersen equation, epoxy reaction scheme, and numerical examples are omitted in this concise edition; no numerical equivalence is claimed for those omitted items."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared source Mermaid and fenced conceptual diagrams with the Arabic edition. Arabic keeps one high-level Mermaid diagram; detailed process, aircraft, fracture, and inspection diagrams/schematics are omitted. There is no executable software code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Compared the Arabic reference list and target URLs against Japanese/English article references; FAA, Boeing, and three cited study URLs are retained. Link markup and target identity were checked; external live reachability was not tested."
+        }
+      },
+      "limitations": [
+        "AI review by Codex; no human or native Arabic reviewer has confirmed language quality or technical terminology.",
+        "The Arabic edition is a concise adaptation. It omits source numerical examples, the Volkersen equation, epoxy reaction scheme, and most detailed diagrams; these omissions are not claimed as one-to-one parity.",
+        "External links were compared but not live-tested. Batch 206 publication verification is pending; eight other translation editions in this article bundle remain unreviewed."
+      ]
+    },
+    "post/adhesion-science-molecular-bonding-epoxy-structural-mechanics/index.en.md": {
+      "source": "post/adhesion-science-molecular-bonding-epoxy-structural-mechanics/index.ja.md",
+      "sourceHash": "e5ce53c74d06f9a3a727b21d6ddbdf8b8eaf280c39d0c77ab2bbb20a7e61dd27",
+      "translationHash": "619a5afffa1131d03419393f677e3882480f28f884d68ad180c167a980f40b96",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "reviewKind": "ai",
+      "summary": "Read the complete English edition and compared it with the complete Japanese source. Corrected technical overclaims about epoxy performance, wetting, PSA behavior, fracture interpretation, and aircraft joining; checked technical details, equations, figures, references, and article metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete English translation against the Japanese source, including all 9 main sections and 18 subsections. Corrected unsupported universal claims and confirmed the distinctions between co-curing, co-bonding, secondary bonding, and mechanical fastening."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked English use of adherend, wetting, solid-liquid interfacial energy, cure shrinkage, creep, PSA, cohesive/interfacial failure, damage tolerance, nondestructive inspection, and self-healing."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Compared the Young-Dupré relation, spreading coefficient, PSA Dahlquist guideline and test conditions, epoxy reaction scheme, Volkersen shear-lag equation and variables, and quantitative examples against source context. Corrected the Dahlquist statement to an empirical guideline and qualified application-dependent values."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared all 8 Mermaid or fenced conceptual diagrams/reaction schematics with the source discussion, including adhesion mechanisms, wetting, polymerization, PSA response, fracture, aircraft joining, biomimetic adhesion, and NDI. No executable software code is present."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the FAA AC 20-107B and AC 43-214A references, Boeing 787 page, and cited NDI/self-healing papers against the article claims and target URLs. External live reachability was not checked as part of this record."
+        }
+      },
+      "limitations": [
+        "AI review by Codex; no human technical editor or native English reviewer has confirmed this edition.",
+        "The English article is detailed, but this review is a translation and technical consistency check, not a certification of engineering design guidance. Readers must use qualified procedures and product-specific data for actual structures.",
+        "External live link reachability was not checked. Batch 206 publication verification is pending; eight other translation editions remain unreviewed."
+      ]
+    },
+    "post/adhesion-science-molecular-bonding-epoxy-structural-mechanics/index.zh-cn.md": {
+      "source": "post/adhesion-science-molecular-bonding-epoxy-structural-mechanics/index.ja.md",
+      "sourceHash": "e5ce53c74d06f9a3a727b21d6ddbdf8b8eaf280c39d0c77ab2bbb20a7e61dd27",
+      "translationHash": "33871fef8c0ae6d049e9d11063409067a46023387750ae283db96b8fa7f5540b",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "reviewKind": "ai",
+      "summary": "Read the complete Simplified Chinese edition against the complete Japanese source and corrected English edition. Rewrote unsupported claims about aircraft joining, surface energies, epoxy properties, PSA behavior, and biomimetic adhesion, and restored the missing fracture, inspection, self-healing, and reference sections.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full Chinese text with the Japanese and corrected English articles across 9 main sections and 18 subsections. Corrected claims that all 787 joints are adhesively bonded and that epoxy shrinkage, creep, or chemical resistance are universally negligible or high; added omitted source topics."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Chinese terms for adhesion, wetting, solid-liquid interfacial energy, epoxy cure, pressure-sensitive adhesive, cohesive/interfacial fracture, damage tolerance, nondestructive inspection, and self-healing."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked the included Young equation and empirical Dahlquist guideline and their stated conditions. The source spreading-coefficient discussion, Volkersen equation, epoxy reaction scheme, and quantitative examples are omitted in this concise edition."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared source Mermaid and fenced diagrams with the Chinese edition. One high-level Mermaid diagram is retained; detailed process, aircraft, fracture, inspection, and reaction diagrams are omitted. There is no executable software code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Compared the reference list and URLs with the Japanese and English editions; FAA AC 20-107B and AC 43-214A, Boeing 787, and three NDI/self-healing studies are retained. Link targets were not live-tested."
+        }
+      },
+      "limitations": [
+        "AI review by Codex; no human or native Simplified Chinese reviewer has confirmed language quality or technical terminology.",
+        "This Chinese edition is a concise adaptation, not a line-by-line equivalent. It omits several equations, reaction examples, quantitative examples, and detailed diagrams as listed in the review scope.",
+        "External link reachability was not live-tested. Batch 206 publication verification is pending; seven other translation editions in this bundle remain unreviewed."
+      ]
+    },
+    "post/adhesion-science-molecular-bonding-epoxy-structural-mechanics/index.es.md": {
+      "source": "post/adhesion-science-molecular-bonding-epoxy-structural-mechanics/index.ja.md",
+      "sourceHash": "e5ce53c74d06f9a3a727b21d6ddbdf8b8eaf280c39d0c77ab2bbb20a7e61dd27",
+      "translationHash": "5af56a4ac5b7c0adaa78cd947c9e54fe83b6909bb4ad2db4a7182de4b0b3d7b7",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "reviewKind": "ai",
+      "summary": "Read the complete Spanish edition against the complete Japanese source and corrected English edition. Corrected unsupported statements about aircraft joining, surface energies, epoxy properties, PSA behavior, and biomimetic adhesion, and added the omitted fracture, inspection, self-healing, and reference sections.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all Spanish prose with the Japanese and corrected English editions across 9 main sections and 18 subsections. Corrected the claim that 787/A350 joints universally replace mechanical fasteners with adhesive film and qualified epoxy and PSA performance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Spanish terminology for adhesión, humectación, energía interfacial sólido-líquido, curado epoxi, adhesivo sensible a la presión, fallo cohesivo/interfacial, tolerancia al daño, ensayo no destructivo y autorreparación."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked the Young equation and empirical Dahlquist guideline included in Spanish. The source spreading coefficient, Volkersen equation, epoxy reaction scheme, and quantitative examples are omitted in this concise edition."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared source Mermaid and fenced figures with the Spanish edition. One high-level Mermaid diagram is retained; detailed wetting, curing, PSA, fracture, aircraft, biomimetic, and inspection diagrams are omitted. There is no executable software code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Compared the Spanish reference list and URLs with the Japanese and English article references; FAA AC 20-107B and AC 43-214A, Boeing 787, and three NDI/self-healing studies are retained. Link targets were not live-tested."
+        }
+      },
+      "limitations": [
+        "AI review by Codex; no human or native Spanish reviewer has confirmed language quality or technical terminology.",
+        "This Spanish edition is a concise adaptation rather than a line-by-line equivalent. It omits the source spreading-coefficient discussion, Volkersen equation, epoxy reaction scheme, quantitative examples, and detailed diagrams.",
+        "External link reachability was not live-tested. Batch 206 publication verification is pending; six other translation editions in this bundle remain unreviewed."
+      ]
+    },
+    "post/adhesion-science-molecular-bonding-epoxy-structural-mechanics/index.hi.md": {
+      "source": "post/adhesion-science-molecular-bonding-epoxy-structural-mechanics/index.ja.md",
+      "sourceHash": "e5ce53c74d06f9a3a727b21d6ddbdf8b8eaf280c39d0c77ab2bbb20a7e61dd27",
+      "translationHash": "a23d630930da35f152a9447accf8865f3b5b6807efe9cb30e239300b5117d3aa",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "reviewKind": "ai",
+      "summary": "Read the complete Hindi edition against the complete Japanese source and corrected English edition. Corrected aircraft-joining, wetting, epoxy, pressure-sensitive adhesive, and biological-adhesion overclaims, and added the omitted source sections and references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full Hindi text across 9 main sections and 18 subsections with the Japanese and corrected English editions. Corrected claims that aircraft use adhesive alone and that epoxy shrinkage, creep, and chemical performance are universal; added fracture, inspection, and self-healing coverage."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Hindi terminology for adhesion, wetting, interfacial energy, epoxy curing, pressure-sensitive adhesive, cohesive/interfacial fracture, damage tolerance, nondestructive inspection, and self-healing. Some standard technical abbreviations are retained in Latin script."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked the Young equation and empirical Dahlquist guideline included in Hindi. The source spreading-coefficient discussion, Volkersen equation, epoxy reaction scheme, and quantitative examples are omitted from this concise edition."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared source Mermaid and fenced diagrams with the Hindi edition. One high-level Mermaid diagram is retained; detailed wetting, curing, PSA, fracture, aircraft, biomimetic, and inspection diagrams are omitted. There is no executable software code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Compared the reference URLs with the Japanese and English editions; FAA AC 20-107B and AC 43-214A, Boeing 787, and three NDI/self-healing studies are retained. Link targets were not live-tested."
+        }
+      },
+      "limitations": [
+        "AI review by Codex; no human or native Hindi reviewer has confirmed language quality or technical terminology.",
+        "The Hindi edition is a concise adaptation, not a line-by-line equivalent. It omits the source spreading coefficient, Volkersen equation, epoxy reaction scheme, numeric examples, and detailed diagrams.",
+        "External link reachability was not live-tested. Batch 206 publication verification is pending; five other translation editions in this bundle remain unreviewed."
+      ]
+    },
+    "post/adhesion-science-molecular-bonding-epoxy-structural-mechanics/index.id.md": {
+      "source": "post/adhesion-science-molecular-bonding-epoxy-structural-mechanics/index.ja.md",
+      "sourceHash": "e5ce53c74d06f9a3a727b21d6ddbdf8b8eaf280c39d0c77ab2bbb20a7e61dd27",
+      "translationHash": "f13590dd1dcb234e5cb1aaa186c959f5cf54bc310d32f278fac9899998549cf6",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "reviewKind": "ai",
+      "summary": "Read the complete Indonesian edition against the complete Japanese source and corrected English edition. Corrected overclaims about aircraft joining, wetting, epoxy performance, PSA behavior, and mussel-inspired adhesion, and restored the missing fracture, inspection, self-healing, and reference sections.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Indonesian text across 9 main sections and 18 subsections with Japanese and corrected English. Corrected the universal adhesive-only aircraft claim and unsupported statements about epoxy shrinkage and performance; restored source topics omitted from the earlier edition."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Indonesian terms for adhesi, pembasahan, energi antarmuka padat-cair, curing epoksi, perekat sensitif tekanan, kegagalan kohesif/interfasial, toleransi kerusakan, inspeksi nondestruktif, and perbaikan diri; retained standard joining-process terms where useful."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked the Young equation and empirical Dahlquist guideline included in Indonesian. The source spreading-coefficient discussion, Volkersen equation, epoxy reaction scheme, and quantitative examples are omitted in this concise edition."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared source Mermaid and fenced diagrams with the Indonesian article. One high-level Mermaid diagram is retained; detailed wetting, curing, PSA, fracture, aircraft, biomimetic, and inspection diagrams are omitted. There is no executable software code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Compared the Indonesian reference URLs with the Japanese and English editions; FAA AC 20-107B and AC 43-214A, Boeing 787, and three NDI/self-healing studies are retained. Link targets were not live-tested."
+        }
+      },
+      "limitations": [
+        "AI review by Codex; no human or native Indonesian reviewer has confirmed language quality or technical terminology.",
+        "The Indonesian edition is a concise adaptation rather than a line-by-line equivalent. It omits the source spreading coefficient, Volkersen equation, epoxy reaction scheme, quantitative examples, and detailed diagrams.",
+        "External link reachability was not live-tested. Batch 206 publication verification is pending; four other translation editions in this bundle remain unreviewed."
+      ]
+    },
+    "post/adhesion-science-molecular-bonding-epoxy-structural-mechanics/index.ko.md": {
+      "source": "post/adhesion-science-molecular-bonding-epoxy-structural-mechanics/index.ja.md",
+      "sourceHash": "e5ce53c74d06f9a3a727b21d6ddbdf8b8eaf280c39d0c77ab2bbb20a7e61dd27",
+      "translationHash": "936398ad5d0245952ac2ac7162e01bef0d02692df4b675329af291592aa65061",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "reviewKind": "ai",
+      "summary": "Read the complete Korean edition against the complete Japanese source and corrected English edition. Corrected overclaims about aircraft joining, surface energy, epoxy behavior, PSA peel, and silane bonding, and restored fracture, inspection, biomimetic, and reference sections.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full Korean article across 9 main sections and 18 subsections with Japanese and corrected English. Corrected claims that all aircraft joints use adhesive film, that epoxy shrinkage and residual stress are negligible, and that adhesive fracture paths are automatic acceptance tests."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Korean terms for 접착/피착재, 젖음, 고체-액체 계면에너지, 에폭시 경화, 점착제, 응집/계면 파괴, 손상 허용, 비파괴검사, and 자가치유."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked the Young equation and empirical Dahlquist guideline included in Korean. The source spreading-coefficient discussion, Volkersen equation, epoxy reaction scheme, and quantitative examples are omitted from this concise edition."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared source Mermaid and fenced diagrams with the Korean edition. One high-level Mermaid diagram is retained; detailed wetting, curing, PSA, fracture, aircraft, biomimetic, and inspection diagrams are omitted. No executable software code is present."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Compared the Korean reference list and targets with the Japanese and English editions; FAA AC 20-107B and AC 43-214A, Boeing 787, and three NDI/self-healing studies are retained. Link targets were not live-tested."
+        }
+      },
+      "limitations": [
+        "AI review by Codex; no human or native Korean reviewer has confirmed language quality or technical terminology.",
+        "The Korean edition is a concise adaptation rather than a line-by-line equivalent. It omits the source spreading coefficient, Volkersen equation, epoxy reaction scheme, quantitative examples, and detailed diagrams.",
+        "External link reachability was not live-tested. Batch 206 publication verification is pending; three other translation editions in this bundle remain unreviewed."
+      ]
+    },
+    "post/adhesion-science-molecular-bonding-epoxy-structural-mechanics/index.zh-tw.md": {
+      "source": "post/adhesion-science-molecular-bonding-epoxy-structural-mechanics/index.ja.md",
+      "sourceHash": "e5ce53c74d06f9a3a727b21d6ddbdf8b8eaf280c39d0c77ab2bbb20a7e61dd27",
+      "translationHash": "816e372c77ee00d9a8e3c1e525351d89a63b7bad214e6fca5207f2399a59be92",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "reviewKind": "ai",
+      "summary": "Read the complete Traditional Chinese edition against the Japanese source and corrected English edition. Reworked it into Traditional Chinese with Taiwan terminology, correcting aircraft-joining, wetting, epoxy, PSA, and biological-adhesion overclaims and restoring omitted sections and references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all Traditional Chinese sections with the Japanese and corrected English editions. Corrected claims that aircraft structure uses adhesive alone and that epoxy shrinkage, creep, or chemical durability is universally negligible; restored fracture, aircraft, biomimetic, NDI, and self-healing sections."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Traditional Chinese/Taiwan usage for 黏著、接著劑、潤濕、固-液介面能、環氧固化、感壓膠、內聚/介面破壞、損傷容限、非破壞檢測 and 自修復; corrected conversion artifacts such as 剪下 to 剪切."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked the Young equation and empirical Dahlquist guideline included in Traditional Chinese. The source spreading-coefficient discussion, Volkersen equation, epoxy reaction scheme, and quantitative examples are omitted from this concise edition."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared source Mermaid and fenced diagrams with the Traditional Chinese edition. One high-level Mermaid diagram is retained; detailed wetting, curing, PSA, fracture, aircraft, biomimetic, and inspection diagrams are omitted. There is no executable software code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Compared the reference list and URLs against Japanese and English editions; FAA AC 20-107B and AC 43-214A, Boeing 787, and three NDI/self-healing studies are retained. Link targets were not live-tested."
+        }
+      },
+      "limitations": [
+        "AI review by Codex; no human or native Traditional Chinese/Taiwan reviewer has confirmed language quality or regional terminology.",
+        "This edition is a concise adaptation and does not preserve every source derivation, numerical example, reaction scheme, or detailed diagram.",
+        "External link reachability was not live-tested. Batch 206 publication verification is pending; two other translation editions in this bundle remain unreviewed."
+      ]
+    },
+    "post/adhesion-science-molecular-bonding-epoxy-structural-mechanics/index.pt.md": {
+      "source": "post/adhesion-science-molecular-bonding-epoxy-structural-mechanics/index.ja.md",
+      "sourceHash": "e5ce53c74d06f9a3a727b21d6ddbdf8b8eaf280c39d0c77ab2bbb20a7e61dd27",
+      "translationHash": "572ab33c059eba0c8fe2a434ef4d06d38774f807082256ba8f75fb777c8cc4b9",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "reviewKind": "ai",
+      "summary": "Read the complete Portuguese edition against the Japanese source and corrected English edition. Corrected aircraft-joining, wetting, epoxy, PSA, and biomimetic-adhesion overclaims, and restored the omitted source sections, citations, and references using European Portuguese conventions.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full Portuguese text across 9 main sections and 18 subsections with Japanese and corrected English. Corrected the universal adhesive-only aircraft claim, unqualified epoxi performance claims, and automatic pass/fail implications of fracture paths."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked European Portuguese usage for adesão, molhabilidade, energia interfacial sólido-líquido, cura epóxi, adesivo sensível à pressão, falha coesiva/interfacial, tolerância ao dano, ensaios não destrutivos, and autorregeneração."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked the Young equation and empirical Dahlquist guideline included in Portuguese. The source spreading coefficient, Volkersen equation, epoxy reaction scheme, and quantitative examples are omitted in this concise edition."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the source Mermaid and fenced diagrams with the Portuguese version. One overview Mermaid diagram is retained; detailed wetting, cure, PSA, fracture, aircraft, biomimetic, and inspection diagrams are omitted. No executable software code is present."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Compared reference URLs against the Japanese and English editions; FAA AC 20-107B and AC 43-214A, Boeing 787, and three NDI/self-healing studies are retained. Link targets were not live-tested."
+        }
+      },
+      "limitations": [
+        "AI review by Codex; no human or native European Portuguese reviewer has confirmed language quality or regional terminology.",
+        "The Portuguese edition is a concise adaptation, not a line-by-line equivalent. It omits the source spreading-coefficient discussion, Volkersen equation, epoxy reaction scheme, numerical examples, and detailed diagrams.",
+        "External link reachability was not live-tested. Batch 206 publication verification is pending; the Russian translation is the only other edition in this bundle still unreviewed."
+      ]
+    },
+    "post/adhesion-science-molecular-bonding-epoxy-structural-mechanics/index.ru.md": {
+      "source": "post/adhesion-science-molecular-bonding-epoxy-structural-mechanics/index.ja.md",
+      "sourceHash": "e5ce53c74d06f9a3a727b21d6ddbdf8b8eaf280c39d0c77ab2bbb20a7e61dd27",
+      "translationHash": "4744fc043ef630e6ffaa11a6713788a4bf021c39b2be20f471870e794684d6ad",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "reviewKind": "ai",
+      "summary": "Read the complete Russian edition against the Japanese source and corrected English edition. Corrected unsupported claims about aircraft joints, wetting, epoxy performance, PSA behavior, and aerospace silanes, and restored the missing fracture, inspection, biomimetic, and reference sections.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full Russian edition across 9 main sections and 18 subsections with Japanese and corrected English. Corrected the universal adhesive-only aircraft claim, unqualified claims about negligible epoxy shrinkage, and the assertion that all joints use epoxy film."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Russian terms for адгезия, смачивание, межфазная энергия твёрдое тело–жидкость, отверждение эпоксидных смол, чувствительные к давлению клеи, когезионное/межфазное разрушение, живучесть конструкции, неразрушающий контроль, and самовосстановление."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked the Young equation and empirical Dahlquist guideline included in Russian. The source spreading-coefficient discussion, Volkersen equation, epoxy reaction scheme, and quantitative examples are omitted from this concise edition."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared source Mermaid and fenced diagrams with the Russian edition. One high-level Mermaid diagram is retained; detailed wetting, curing, PSA, fracture, aircraft, biomimetic, and inspection diagrams are omitted. No executable software code is present."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Compared reference URLs with the Japanese and English editions; FAA AC 20-107B and AC 43-214A, Boeing 787, and three NDI/self-healing studies are retained. Link targets were not live-tested."
+        }
+      },
+      "limitations": [
+        "AI review by Codex; no human or native Russian reviewer has confirmed language quality or technical terminology.",
+        "The Russian edition is a concise adaptation, not a line-by-line equivalent. It omits the source spreading coefficient, Volkersen equation, epoxy reaction scheme, numerical examples, and detailed diagrams.",
+        "External link reachability was not live-tested. The other eleven translated editions in this bundle now have AI review records, but publication verification for batch 206 remains pending."
+      ]
+    }
+  }
+}

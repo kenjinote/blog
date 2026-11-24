@@ -1,0 +1,297 @@
+{
+  "version": 1,
+  "batches": [
+    205
+  ],
+  "verifiedAt": "2026-11-25T04:18:29+09:00",
+  "ciRun": 45459920625,
+  "ciUrl": "https://github.com/kenjinote/blog/actions/runs/45459920625",
+  "sourceCommit": "56a3404dbd4c8dd215c4885e8021c00efa986e65",
+  "deployment": "success",
+  "pagesVerified": 13,
+  "allPassed": true,
+  "results": {
+    "205": {
+      "pages": [
+        {
+          "language": "ja",
+          "url": "https://kenji.blog/p/windows-%E3%81%AE%E3%82%B7%E3%83%A7%E3%83%BC%E3%83%88%E3%82%AB%E3%83%83%E3%83%88%E5%B0%8F%E6%8A%80%E9%9B%86/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "localAssets": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "en",
+          "url": "https://kenji.blog/en/p/windows-%E3%81%AEshortcuttrick%E9%9B%86/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "localAssets": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "zh-cn",
+          "url": "https://kenji.blog/zh-cn/p/windows-%E3%81%AE%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F%E5%B0%8F%E6%8A%80%E5%B7%A7%E9%9B%86/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "localAssets": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "es",
+          "url": "https://kenji.blog/es/p/windows-%E3%81%AEatajotruco%E9%9B%86/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "localAssets": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "ko",
+          "url": "https://kenji.blog/ko/p/windows-%E3%81%AE%EB%B0%94%EB%A1%9C-%EA%B0%80%EA%B8%B0%ED%8C%81%E9%9B%86/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "localAssets": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "pt",
+          "url": "https://kenji.blog/pt/p/windows-%E3%81%AEatalhodica%E9%9B%86/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "localAssets": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "zh-tw",
+          "url": "https://kenji.blog/zh-tw/p/windows-%E3%81%AE%E6%8D%B7%E5%BE%91%E5%B0%8F%E6%8A%80%E5%B7%A7%E9%9B%86/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "localAssets": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "hi",
+          "url": "https://kenji.blog/hi/p/windows-%E3%81%AE%E0%A4%B6%E0%A5%89%E0%A4%B0%E0%A5%8D%E0%A4%9F%E0%A4%95%E0%A4%9F%E0%A4%AF%E0%A5%81%E0%A4%95%E0%A5%8D%E0%A4%A4%E0%A4%BF%E9%9B%86/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "localAssets": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "fr",
+          "url": "https://kenji.blog/fr/p/windows-%E3%81%AEraccourciastuce%E9%9B%86/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "localAssets": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "de",
+          "url": "https://kenji.blog/de/p/windows-%E3%81%AEverkn%C3%BCpfungtrick%E9%9B%86/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "localAssets": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "ar",
+          "url": "https://kenji.blog/ar/p/windows-%E3%81%AE%D8%A7%D8%AE%D8%AA%D8%B5%D8%A7%D8%B1%D8%AD%D9%8A%D9%84-%D8%B5%D8%BA%D9%8A%D8%B1%D8%A9%E9%9B%86/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "localAssets": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "ru",
+          "url": "https://kenji.blog/ru/p/windows-%E3%81%AE%D1%8F%D1%80%D0%BB%D1%8B%D0%BA%D1%82%D1%80%D1%8E%D0%BA%E9%9B%86/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "localAssets": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        },
+        {
+          "language": "id",
+          "url": "https://kenji.blog/id/p/windows-%E3%81%AEpintasantrik-kecil%E9%9B%86/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "arabicRtl": true,
+            "title": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangTargets": true,
+            "officialReferences": true,
+            "localAssets": true,
+            "articleInstructions": true,
+            "noKnownBadLinks": true,
+            "dates": true
+          },
+          "passed": true
+        }
+      ],
+      "allPassed": true
+    }
+  },
+  "limitations": [
+    "AI-assisted translation reviews only; no human or native-speaker certification.",
+    "IDE menus and account plan details can change; each article links to current official references."
+  ]
+}
