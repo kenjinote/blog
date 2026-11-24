@@ -11285,6 +11285,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-098.json",
       "evidenceHash": "158e7f63884748eb22d60d633137c082718583c7fcc6986a540d6d6b4fc8880e"
+    },
+    "post/Microsoft Wordのショートカット一覧/index.ar.md": {
+      "source": "post/Microsoft Wordのショートカット一覧/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "57074828402737990ec46a5b92bbe6312cea98dc1db90ea5e1e9ec06681222c1",
+      "translationHash": "c033cba24aed6059e3b1ec5f634d73e4c1e7d2c338c9af5e473babc3e43c7661",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-099.json",
+      "evidenceHash": "58e0e491fe92ff07d74a5bce419815ee65651a7fef666466c01110d0c76d7423"
+    },
+    "post/Microsoft Wordのショートカット一覧/index.de.md": {
+      "source": "post/Microsoft Wordのショートカット一覧/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "57074828402737990ec46a5b92bbe6312cea98dc1db90ea5e1e9ec06681222c1",
+      "translationHash": "1f604f6b11bbbc4a9ac525eec562a7bd91ed15674bf0c310915dfd93b6aa6efa",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-099.json",
+      "evidenceHash": "b52e14884366e99797cceec0737b3e454c3db24b7671b1135de2cbabe783d41a"
+    },
+    "post/Microsoft Wordのショートカット一覧/index.en.md": {
+      "source": "post/Microsoft Wordのショートカット一覧/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "57074828402737990ec46a5b92bbe6312cea98dc1db90ea5e1e9ec06681222c1",
+      "translationHash": "add31418721d0427743b77caf2435e0c592f027478d60b116144a945487d9be2",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-099.json",
+      "evidenceHash": "28a2098b0ef269f6115a04769d53efb473b7c404392039f364341d4e1e62532c"
+    },
+    "post/Microsoft Wordのショートカット一覧/index.es.md": {
+      "source": "post/Microsoft Wordのショートカット一覧/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "57074828402737990ec46a5b92bbe6312cea98dc1db90ea5e1e9ec06681222c1",
+      "translationHash": "eaefc8b6abab195525e4d12cf3e445dc16084f40bff14fa488f7946ec6b9aef9",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-099.json",
+      "evidenceHash": "feeec01f165d9935fa26b27a6353bbfa5c29db80fc3fe1035b3d539b5c81bfef"
+    },
+    "post/Microsoft Wordのショートカット一覧/index.fr.md": {
+      "source": "post/Microsoft Wordのショートカット一覧/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "57074828402737990ec46a5b92bbe6312cea98dc1db90ea5e1e9ec06681222c1",
+      "translationHash": "0d0c37e07241658db2675f75d65f2ccdd2a312d63cd68590860885de76a60e20",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-099.json",
+      "evidenceHash": "7396f4c6de45972892647044583780decf5caeb82a1380f4d1ef92d2da725284"
+    },
+    "post/Microsoft Wordのショートカット一覧/index.hi.md": {
+      "source": "post/Microsoft Wordのショートカット一覧/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "57074828402737990ec46a5b92bbe6312cea98dc1db90ea5e1e9ec06681222c1",
+      "translationHash": "a33427ce19d1438d6a3ee804343d99ab5fcb3717c9e8b825c565052ac1951952",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-099.json",
+      "evidenceHash": "13f56902af0966aede1ceabee92a47007cc6d600f759c27483d3125c29acdc2e"
+    },
+    "post/Microsoft Wordのショートカット一覧/index.id.md": {
+      "source": "post/Microsoft Wordのショートカット一覧/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "57074828402737990ec46a5b92bbe6312cea98dc1db90ea5e1e9ec06681222c1",
+      "translationHash": "543084b08ec2dc30e837899fe33cf7baaac7e861df3c8175dda3255a42dbc23c",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-099.json",
+      "evidenceHash": "1d9dc888fd26c350128bb08692486a2e515ffacfc11265e6d9841845c6fa3e16"
+    },
+    "post/Microsoft Wordのショートカット一覧/index.ko.md": {
+      "source": "post/Microsoft Wordのショートカット一覧/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "57074828402737990ec46a5b92bbe6312cea98dc1db90ea5e1e9ec06681222c1",
+      "translationHash": "f36ec4ed4122401a0c41618174d80d1c28870e3b21fd1e1f63924be5e11dde1d",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-099.json",
+      "evidenceHash": "e60c3b48ee6982cfbeba4a643ef8a2da9d1bf934665e3f9dec0a637861ef82d9"
+    },
+    "post/Microsoft Wordのショートカット一覧/index.pt.md": {
+      "source": "post/Microsoft Wordのショートカット一覧/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "57074828402737990ec46a5b92bbe6312cea98dc1db90ea5e1e9ec06681222c1",
+      "translationHash": "5b391c0e4196988a61cc1249bd990f171850fe19307dd3a11022d41d04fdf177",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-099.json",
+      "evidenceHash": "c89e915ec4305563a87faf83f5157982f990f8587e34590246b654b42b0eeeb5"
+    },
+    "post/Microsoft Wordのショートカット一覧/index.ru.md": {
+      "source": "post/Microsoft Wordのショートカット一覧/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "57074828402737990ec46a5b92bbe6312cea98dc1db90ea5e1e9ec06681222c1",
+      "translationHash": "013bcc4dcfc57ac173116f0233a4e319005e026a02d190edbf2dab7a80e490b7",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-099.json",
+      "evidenceHash": "c4287160a814feddbd67e8640ce0461a38597f41ff179c723309f7ac7e4cd7fd"
+    },
+    "post/Microsoft Wordのショートカット一覧/index.zh-cn.md": {
+      "source": "post/Microsoft Wordのショートカット一覧/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "57074828402737990ec46a5b92bbe6312cea98dc1db90ea5e1e9ec06681222c1",
+      "translationHash": "10c6340833b3783e77ae1ee6a5bda2520b1d6cb9abb7dcfd01cd2c8436b2e3a6",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-099.json",
+      "evidenceHash": "9da617ebf50132ef5a036b306ff0a04957a080ddc145e0dbfec3399922d37d47"
+    },
+    "post/Microsoft Wordのショートカット一覧/index.zh-tw.md": {
+      "source": "post/Microsoft Wordのショートカット一覧/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "57074828402737990ec46a5b92bbe6312cea98dc1db90ea5e1e9ec06681222c1",
+      "translationHash": "92f9a7d2a285d5cd5a565e71a214e2aeb9d50137928e172644743e2b55775fd8",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-099.json",
+      "evidenceHash": "58d7cba06aed177ee79bc2bb65dfb36d60016f3097062f4147b006dd0a5f85c7"
     }
   }
 }

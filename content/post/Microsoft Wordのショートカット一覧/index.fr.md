@@ -1,6 +1,5 @@
 ---
 title: '[Amélioration de l''efficacité] Liste des raccourcis clavier utiles pour Microsoft Word'
-date: "2026-09-24T19:44:38+09:00"
 slug: "Microsoft WordのRaccourci一覧"
 date: 2024-04-07T14:18:51+09:00
 tags: ["Microsoft Word", "Raccourcis"]
@@ -8,8 +7,11 @@ draft: false
 image: "img.webp"
 categories: ["tools-development-environment"]
 description: 'Une liste de raccourcis clavier pratiques qui augmentent considérablement l''efficacité du travail dans Microsoft Word. Présente de manière simple sous forme de tableau les raccourcis essentiels couramment utilisés dans la création et l''édition de documents habituels, comme le formatage du texte, le copier-coller, la recherche/le remplacement et la sauvegarde.'
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
 ## Liste des raccourcis
+
+Cette liste concerne Word pour Windows avec une disposition de clavier américaine. Les raccourcis peuvent différer sur macOS et avec d'autres dispositions. Consultez la liste officielle de Microsoft pour les informations à jour.
 
 | Raccourci clavier | Description |
 |------------------|-----|

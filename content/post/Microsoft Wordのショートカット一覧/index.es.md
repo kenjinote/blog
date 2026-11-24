@@ -1,13 +1,5 @@
 ---
-
-
-
-
-
-
-
 title: '【Mejora de eficiencia】Lista de atajos de teclado útiles para Microsoft Word'
-date: "2026-09-24T19:44:38+09:00"
 slug: "Microsoft WordのAtajo一覧"
 date: 2024-04-07T14:18:51+09:00
 tags: ["Microsoft Word", "Atajos de teclado"]
@@ -15,6 +7,7 @@ draft: false
 image: "img.webp"
 categories: ["tools-development-environment"]
 description: 'Una lista de atajos de teclado útiles para mejorar drásticamente la eficiencia en Microsoft Word. Presentamos de manera clara en una tabla los atajos esenciales utilizados frecuentemente en la redacción y edición diaria, como formato de texto, copiar y pegar, buscar y reemplazar, y guardar.'
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
 
 
@@ -24,6 +17,8 @@ description: 'Una lista de atajos de teclado útiles para mejorar drásticamente
 
 
 ## Lista de atajos de teclado
+
+Esta lista corresponde a Word para Windows con una distribución de teclado de EE. UU. Los atajos pueden variar en macOS y con otras distribuciones. Consulta la lista oficial de Microsoft para ver la información actualizada.
 
 | Atajo de teclado        | Descripción |
 |------------------|-----|

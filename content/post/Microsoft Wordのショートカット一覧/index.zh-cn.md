@@ -1,6 +1,5 @@
 ---
 title: '【提升效率】Microsoft Word常用快捷键大全'
-date: "2026-09-24T19:44:38+09:00"
 slug: "Microsoft Wordの快捷方式一覧"
 date: 2024-04-07T14:18:51+09:00
 tags: ["Microsoft Word", "快捷键"]
@@ -8,8 +7,11 @@ draft: false
 image: "img.webp"
 categories: ["tools-development-environment"]
 description: '大幅提升Microsoft Word工作效率的实用快捷键大全。以表格形式直观整理了平时在文档创建与编辑中最常用的必备快捷键，包括文字排版、复制粘贴、查找替换以及保存等。'
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
 ## 快捷键一览
+
+本列表适用于采用美国键盘布局的 Windows 版 Word。macOS 版和其他键盘布局的快捷键可能不同。最新信息请参阅 Microsoft 官方列表。
 
 | 快捷键             | 说明 |
 |------------------|-----|

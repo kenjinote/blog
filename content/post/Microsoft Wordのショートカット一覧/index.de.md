@@ -1,6 +1,5 @@
 ---
 title: '【Arbeitseffizienz steigern】Liste nützlicher Tastenkombinationen für Microsoft Word'
-date: "2026-09-24T19:44:38+09:00"
 slug: "Microsoft WordのVerknüpfung一覧"
 date: 2024-04-07T14:18:51+09:00
 tags: ["Microsoft Word", "Tastenkombinationen"]
@@ -8,8 +7,11 @@ draft: false
 image: "img.webp"
 categories: ["tools-development-environment"]
 description: 'Eine Liste nützlicher Tastenkombinationen, die die Arbeitseffizienz in Microsoft Word drastisch erhöhen. Unverzichtbare Tastenkombinationen, die häufig bei der täglichen Dokumentenerstellung und -bearbeitung verwendet werden, wie Textformatierung, Kopieren und Einfügen, Suchen und Ersetzen sowie Speichern, werden übersichtlich in einer Tabelle vorgestellt.'
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
 ## Tastenkombinationen
+
+Diese Liste gilt für Word unter Windows mit US-Tastaturbelegung. Unter macOS und bei anderen Tastaturbelegungen können die Tastenkombinationen abweichen. Aktuelle Angaben finden Sie in Microsofts offizieller Liste.
 
 | Tastenkombination | Beschreibung |
 |------------------|-----|

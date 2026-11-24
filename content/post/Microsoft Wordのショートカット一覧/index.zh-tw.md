@@ -1,6 +1,5 @@
 ---
 title: '【提升工作效率】Microsoft Word 實用快速鍵一覽'
-date: "2026-09-24T19:44:38+09:00"
 slug: "Microsoft Wordの捷徑一覧"
 date: 2024-04-07T14:18:51+09:00
 tags: ["Microsoft Word", "快捷鍵"]
@@ -8,8 +7,11 @@ draft: false
 image: "img.webp"
 categories: ["tools-development-environment"]
 description: '可大幅提升 Microsoft Word 工作效率的實用快速鍵一覽。透過清楚的表格整理並介紹文字裝飾、複製貼上、搜尋取代、儲存等日常文章撰寫與編輯時常用的必備快速鍵。'
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
 ## 快捷鍵列表
+
+本列表適用於採用美國鍵盤配置的 Windows 版 Word。macOS 版及其他鍵盤配置的快速鍵可能不同。最新資訊請參閱 Microsoft 官方清單。
 
 | 快捷鍵              | 說明 |
 |------------------|-----|

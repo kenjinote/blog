@@ -1,13 +1,5 @@
 ---
-
-
-
-
-
-
-
 title: '[작업 효율 향상] Microsoft Word의 유용한 단축키 목록'
-date: "2026-09-24T19:44:38+09:00"
 slug: "Microsoft Wordの바로 가기一覧"
 date: 2024-04-07T14:18:51+09:00
 tags: ["Microsoft Word", "단축키"]
@@ -15,6 +7,7 @@ draft: false
 image: "img.webp"
 categories: ["tools-development-environment"]
 description: 'Microsoft Word(워드)의 작업 효율을 극적으로 높여주는 유용한 단축키 목록입니다. 글자 꾸미기, 복사 및 붙여넣기, 찾기 및 바꾸기, 저장 등 평소 문서 작성이나 편집 시 자주 사용하는 필수 단축키를 알기 쉬운 표로 정리하여 소개합니다.'
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
 
 
@@ -24,6 +17,8 @@ description: 'Microsoft Word(워드)의 작업 효율을 극적으로 높여주�
 
 
 ## 단축키 목록
+
+이 목록은 미국 키보드 배열을 사용하는 Windows용 Word 기준입니다. macOS 및 다른 키보드 배열에서는 바로 가기가 다를 수 있습니다. 최신 정보는 Microsoft 공식 목록을 확인하세요.
 
 | 단축키 | 설명 |
 |------------------|-----|

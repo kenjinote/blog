@@ -1,6 +1,5 @@
 ---
 title: '[Peningkatan Efisiensi Kerja] Daftar Pintasan Keyboard Microsoft Word yang Berguna'
-date: "2026-09-24T19:44:38+09:00"
 slug: "Microsoft WordのPintasan一覧"
 date: 2024-04-07T14:18:51+09:00
 tags: ["Microsoft Word", "Pintasan"]
@@ -8,8 +7,11 @@ draft: false
 image: "img.webp"
 categories: ["tools-development-environment"]
 description: 'Daftar pintasan keyboard berguna yang secara dramatis meningkatkan efisiensi kerja di Microsoft Word. Kami menyajikan pintasan penting yang sering digunakan dalam penulisan dan pengeditan teks sehari-hari, seperti dekorasi teks, salin & tempel, cari & ganti, dan simpan, diringkas dalam tabel yang mudah dipahami.'
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
 ## Daftar Pintasan
+
+Daftar ini berlaku untuk Word di Windows dengan tata letak papan ketik AS. Pintasan dapat berbeda di macOS dan pada tata letak lain. Lihat daftar resmi Microsoft untuk informasi terbaru.
 
 | Tombol Pintasan  | Deskripsi |
 |------------------|-----|

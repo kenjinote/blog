@@ -1,6 +1,5 @@
 ---
 title: '[Boost Work Efficiency] List of Useful Shortcut Keys in Microsoft Word'
-date: "2026-09-24T19:44:38+09:00"
 slug: "Microsoft WordのShortcut一覧"
 date: 2024-04-07T14:18:51+09:00
 tags: ["Microsoft Word", "Shortcuts"]
@@ -8,8 +7,11 @@ draft: false
 image: "img.webp"
 categories: ["tools-development-environment"]
 description: 'A list of useful shortcut keys that dramatically increase work efficiency in Microsoft Word. Introduces essential shortcuts frequently used in everyday document creation and editing, such as text formatting, copy & paste, search & replace, and save, clearly summarized in a table.'
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
 ## Shortcuts List
+
+This list covers Word for Windows with a U.S. keyboard layout. Shortcuts may differ on macOS and with other layouts. See Microsoft's official list for current details.
 
 | Shortcut Key        | Description |
 |------------------|-----|
