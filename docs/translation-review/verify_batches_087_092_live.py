@@ -96,6 +96,28 @@ ARTICLES = {
         "markers": ["SparseArray", "Infinity", "FindShortestTour", "137"],
         "date": "2022-10-12",
     },
+    95: {
+        "bundle": ROOT / "content/post/Mathematica入門",
+        "slug": "Mathematica入門",
+        "links": [
+            "https://reference.wolfram.com/language/ref/Solve.html",
+            "https://reference.wolfram.com/language/ref/Reduce.html",
+            "https://reference.wolfram.com/language/ref/D.html",
+            "https://reference.wolfram.com/language/ref/Integrate.html",
+            "https://reference.wolfram.com/language/ref/Limit.html",
+            "https://reference.wolfram.com/language/ref/Sum.html",
+            "https://reference.wolfram.com/language/ref/Inverse.html",
+            "https://reference.wolfram.com/language/ref/Eigensystem.html",
+            "https://reference.wolfram.com/language/ref/Projection.html",
+            "https://reference.wolfram.com/language/ref/RotationMatrix.html",
+            "https://reference.wolfram.com/language/ref/ReflectionTransform.html",
+            "https://reference.wolfram.com/language/ref/RandomReal.html",
+            "https://reference.wolfram.com/language/ref/RandomInteger.html",
+            "https://reference.wolfram.com/language/ref/RandomVariate.html",
+        ],
+        "markers": ["Sqrt[33]", "Projection", "ReflectionTransform", "RandomInteger[]"],
+        "date": "2024-07-25",
+    },
 }
 
 
@@ -161,7 +183,7 @@ def slug_key(value):
 parser = argparse.ArgumentParser()
 parser.add_argument("--ci-run", type=int, required=True)
 parser.add_argument("--commit", required=True)
-parser.add_argument("--max-batch", type=int, choices=(90, 91, 92, 93, 94), default=94)
+parser.add_argument("--max-batch", type=int, choices=(90, 91, 92, 93, 94, 95), default=95)
 args = parser.parse_args()
 ARTICLES = {number: article for number, article in ARTICLES.items() if number <= args.max_batch}
 with urllib.request.urlopen(f"https://github.com/kenjinote/blog/actions/runs/{args.ci_run}", timeout=45) as response:
