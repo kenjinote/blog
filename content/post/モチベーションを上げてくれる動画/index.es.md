@@ -3,35 +3,40 @@
 
 
 
-title: '【Yusuke Narita / Hayao Miyazaki】Videos y formas de pensar recomendados que aumentarán tu motivación'
-date: "2026-09-24T19:44:38+09:00"
+title: "Publicaciones y videos que vuelvo a ver cuando necesito ánimo"
 slug: "Motivaciónを上げてくれるVideo"
 date: 2022-09-08T02:22:52+09:00
+lastmod: 2026-11-24T00:00:00+09:00
 tags: ["Motivación", "Video"]
 draft: false
 image: "images/img.webp"
 categories: ["it-technology"]
-description: 'Te presentamos videos recomendados para levantar la motivación cuando sientas que tus esfuerzos no son reconocidos o cuando estés preocupado. Están llenos de frases inspiradoras que influirán positivamente en tus acciones y en tu vida, como los pensamientos del Sr. Yusuke Narita sobre los diversos valores y la forma de pensar del director Hayao Miyazaki.'
+description: "Selección personal de publicaciones y videos que vuelvo a ver para animarme, incluido un fragmento de Yusuke Narita sobre los valores. La experiencia es subjetiva."
 ---
 
 
 
 
 
-## Está bien si el esfuerzo no es reconocido
+
+## Palabras que vuelvo a leer cuando me atasco
 
 {{<twitter user="eleven_s_s" id="1567256455836737544">}}
+[Publicación en X](https://x.com/eleven_s_s/status/1567256455836737544)
 
 ## Los valores son mucho más diversos
 
 Yusuke Narita "De las desgracias que sufren los humanos"
 
 {{<youtube 5WTldFIQ7E4>}}
+[Ver en YouTube](https://www.youtube.com/watch?v=5WTldFIQ7E4)
 
-## Las acciones que realizas se reflejan directamente
+## So Takei: una mentalidad para mejorar la vida
 
 {{<youtube 8ewxptSV66M>}}
+[Ver en YouTube](https://www.youtube.com/watch?v=8ewxptSV66M)
 
-## El pensamiento de Hayao Miyazaki
+## Hayao Miyazaki sobre el propósito de vivir
 
 {{<youtube 9-2YFldnWzg>}}
+[Ver en YouTube](https://www.youtube.com/watch?v=9-2YFldnWzg)

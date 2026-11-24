@@ -1,0 +1,468 @@
+{
+  "version": 1,
+  "batch": 130,
+  "article": "気分転換に見返す投稿・動画",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "9518028566562b680565b590e067faaa2f5a588bd99ef9a64d312fac9b757803",
+  "sources": [
+    "https://x.com/eleven_s_s/status/1567256455836737544",
+    "https://www.youtube.com/watch?v=5WTldFIQ7E4",
+    "https://www.youtube.com/watch?v=8ewxptSV66M",
+    "https://www.youtube.com/watch?v=9-2YFldnWzg"
+  ],
+  "scope": "Compared all article sections in Japanese and twelve translations; checked the X post text and three current YouTube video titles/authors, section headings, dates, and links.",
+  "findings": [
+    "Removed duplicate future dates, retained original publication date 2022-09-08, and set lastmod to review date.",
+    "Reframed the page as a personal selection instead of claiming it reliably improves motivation or has universally beneficial effects.",
+    "Aligned the second video heading with the current title, So Takei: A mindset for turning life around; retained translated headings for Narita’s values clip and Miyazaki’s purpose-of-life clip.",
+    "Added direct links to the original X post and each YouTube video beside the embeds in every locale.",
+    "The X embed metadata returned its caption; direct page access was blocked with HTTP 403 in this environment. YouTube oEmbed returned metadata for all three videos."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/モチベーションを上げてくれる動画/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/モチベーションを上げてくれる動画/index.md",
+      "sourceHash": "9518028566562b680565b590e067faaa2f5a588bd99ef9a64d312fac9b757803",
+      "translationHash": "b194fc8095557fc18746d6478b04a16d34f0a7d7bb6f40b61cc9b9d5d890ea66",
+      "summary": "Reviewed the translated video list against the Japanese source and current X/YouTube metadata, aligned headings, and made the motivational framing explicitly personal.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full list with Japanese and checked the X post/video metadata; aligned section headings with the post caption and current YouTube titles rather than claiming the content improves every viewer’s motivation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the names Yusuke Narita, So Takei, and Hayao Miyazaki and the translated headings against current post/video metadata."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The post and video list contain no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added direct links to the X post and all three YouTube videos; YouTube oEmbed returned video titles/authors and X oEmbed returned the embedded post text."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The complete videos were not transcribed or assessed; metadata and titles were checked only.",
+        "X returned embedded metadata, but direct page access returned HTTP 403 in this review environment. Platform availability can vary.",
+        "The page offers a subjective personal selection and does not guarantee a motivational effect."
+      ]
+    },
+    "post/モチベーションを上げてくれる動画/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/モチベーションを上げてくれる動画/index.md",
+      "sourceHash": "9518028566562b680565b590e067faaa2f5a588bd99ef9a64d312fac9b757803",
+      "translationHash": "5923f4c805f0e691b1caa715e86a4d7aeb023ab818e57175bbe0c61d6cf847ca",
+      "summary": "Reviewed the translated video list against the Japanese source and current X/YouTube metadata, aligned headings, and made the motivational framing explicitly personal.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full list with Japanese and checked the X post/video metadata; aligned section headings with the post caption and current YouTube titles rather than claiming the content improves every viewer’s motivation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the names Yusuke Narita, So Takei, and Hayao Miyazaki and the translated headings against current post/video metadata."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The post and video list contain no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added direct links to the X post and all three YouTube videos; YouTube oEmbed returned video titles/authors and X oEmbed returned the embedded post text."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The complete videos were not transcribed or assessed; metadata and titles were checked only.",
+        "X returned embedded metadata, but direct page access returned HTTP 403 in this review environment. Platform availability can vary.",
+        "The page offers a subjective personal selection and does not guarantee a motivational effect."
+      ]
+    },
+    "post/モチベーションを上げてくれる動画/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/モチベーションを上げてくれる動画/index.md",
+      "sourceHash": "9518028566562b680565b590e067faaa2f5a588bd99ef9a64d312fac9b757803",
+      "translationHash": "08d293b5e63aa45266ace4601af7d52aa49f5a22fc1de0e834da228d304c4361",
+      "summary": "Reviewed the translated video list against the Japanese source and current X/YouTube metadata, aligned headings, and made the motivational framing explicitly personal.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full list with Japanese and checked the X post/video metadata; aligned section headings with the post caption and current YouTube titles rather than claiming the content improves every viewer’s motivation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the names Yusuke Narita, So Takei, and Hayao Miyazaki and the translated headings against current post/video metadata."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The post and video list contain no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added direct links to the X post and all three YouTube videos; YouTube oEmbed returned video titles/authors and X oEmbed returned the embedded post text."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The complete videos were not transcribed or assessed; metadata and titles were checked only.",
+        "X returned embedded metadata, but direct page access returned HTTP 403 in this review environment. Platform availability can vary.",
+        "The page offers a subjective personal selection and does not guarantee a motivational effect."
+      ]
+    },
+    "post/モチベーションを上げてくれる動画/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/モチベーションを上げてくれる動画/index.md",
+      "sourceHash": "9518028566562b680565b590e067faaa2f5a588bd99ef9a64d312fac9b757803",
+      "translationHash": "b915721e85a9e429d65ee022edb46e7365908ab502834449dd5e8b337ae18ac3",
+      "summary": "Reviewed the translated video list against the Japanese source and current X/YouTube metadata, aligned headings, and made the motivational framing explicitly personal.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full list with Japanese and checked the X post/video metadata; aligned section headings with the post caption and current YouTube titles rather than claiming the content improves every viewer’s motivation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the names Yusuke Narita, So Takei, and Hayao Miyazaki and the translated headings against current post/video metadata."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The post and video list contain no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added direct links to the X post and all three YouTube videos; YouTube oEmbed returned video titles/authors and X oEmbed returned the embedded post text."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The complete videos were not transcribed or assessed; metadata and titles were checked only.",
+        "X returned embedded metadata, but direct page access returned HTTP 403 in this review environment. Platform availability can vary.",
+        "The page offers a subjective personal selection and does not guarantee a motivational effect."
+      ]
+    },
+    "post/モチベーションを上げてくれる動画/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/モチベーションを上げてくれる動画/index.md",
+      "sourceHash": "9518028566562b680565b590e067faaa2f5a588bd99ef9a64d312fac9b757803",
+      "translationHash": "5b63c5853d00762aa53e23eac4fabca708e9371f4397b161e1678a038f3ca622",
+      "summary": "Reviewed the translated video list against the Japanese source and current X/YouTube metadata, aligned headings, and made the motivational framing explicitly personal.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full list with Japanese and checked the X post/video metadata; aligned section headings with the post caption and current YouTube titles rather than claiming the content improves every viewer’s motivation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the names Yusuke Narita, So Takei, and Hayao Miyazaki and the translated headings against current post/video metadata."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The post and video list contain no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added direct links to the X post and all three YouTube videos; YouTube oEmbed returned video titles/authors and X oEmbed returned the embedded post text."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The complete videos were not transcribed or assessed; metadata and titles were checked only.",
+        "X returned embedded metadata, but direct page access returned HTTP 403 in this review environment. Platform availability can vary.",
+        "The page offers a subjective personal selection and does not guarantee a motivational effect."
+      ]
+    },
+    "post/モチベーションを上げてくれる動画/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/モチベーションを上げてくれる動画/index.md",
+      "sourceHash": "9518028566562b680565b590e067faaa2f5a588bd99ef9a64d312fac9b757803",
+      "translationHash": "cc3d71168a6d9f073d7c4df7fd7da5ed193d54c03e204022fdbf038656cd9427",
+      "summary": "Reviewed the translated video list against the Japanese source and current X/YouTube metadata, aligned headings, and made the motivational framing explicitly personal.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full list with Japanese and checked the X post/video metadata; aligned section headings with the post caption and current YouTube titles rather than claiming the content improves every viewer’s motivation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the names Yusuke Narita, So Takei, and Hayao Miyazaki and the translated headings against current post/video metadata."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The post and video list contain no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added direct links to the X post and all three YouTube videos; YouTube oEmbed returned video titles/authors and X oEmbed returned the embedded post text."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The complete videos were not transcribed or assessed; metadata and titles were checked only.",
+        "X returned embedded metadata, but direct page access returned HTTP 403 in this review environment. Platform availability can vary.",
+        "The page offers a subjective personal selection and does not guarantee a motivational effect."
+      ]
+    },
+    "post/モチベーションを上げてくれる動画/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/モチベーションを上げてくれる動画/index.md",
+      "sourceHash": "9518028566562b680565b590e067faaa2f5a588bd99ef9a64d312fac9b757803",
+      "translationHash": "2c4b4b6da67dc8a0c89fb150247a7312a19e5d8e366fcd41bd385872aa3ea5e9",
+      "summary": "Reviewed the translated video list against the Japanese source and current X/YouTube metadata, aligned headings, and made the motivational framing explicitly personal.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full list with Japanese and checked the X post/video metadata; aligned section headings with the post caption and current YouTube titles rather than claiming the content improves every viewer’s motivation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the names Yusuke Narita, So Takei, and Hayao Miyazaki and the translated headings against current post/video metadata."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The post and video list contain no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added direct links to the X post and all three YouTube videos; YouTube oEmbed returned video titles/authors and X oEmbed returned the embedded post text."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The complete videos were not transcribed or assessed; metadata and titles were checked only.",
+        "X returned embedded metadata, but direct page access returned HTTP 403 in this review environment. Platform availability can vary.",
+        "The page offers a subjective personal selection and does not guarantee a motivational effect."
+      ]
+    },
+    "post/モチベーションを上げてくれる動画/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/モチベーションを上げてくれる動画/index.md",
+      "sourceHash": "9518028566562b680565b590e067faaa2f5a588bd99ef9a64d312fac9b757803",
+      "translationHash": "082eb174a9b1060b1f524841d3902cbaf47c9804e05f2466f8e249a2e3540de7",
+      "summary": "Reviewed the translated video list against the Japanese source and current X/YouTube metadata, aligned headings, and made the motivational framing explicitly personal.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full list with Japanese and checked the X post/video metadata; aligned section headings with the post caption and current YouTube titles rather than claiming the content improves every viewer’s motivation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the names Yusuke Narita, So Takei, and Hayao Miyazaki and the translated headings against current post/video metadata."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The post and video list contain no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added direct links to the X post and all three YouTube videos; YouTube oEmbed returned video titles/authors and X oEmbed returned the embedded post text."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The complete videos were not transcribed or assessed; metadata and titles were checked only.",
+        "X returned embedded metadata, but direct page access returned HTTP 403 in this review environment. Platform availability can vary.",
+        "The page offers a subjective personal selection and does not guarantee a motivational effect."
+      ]
+    },
+    "post/モチベーションを上げてくれる動画/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/モチベーションを上げてくれる動画/index.md",
+      "sourceHash": "9518028566562b680565b590e067faaa2f5a588bd99ef9a64d312fac9b757803",
+      "translationHash": "9687d6e724a8822da67e1b23fcd47662dd76f1ffd3fc2e9c5abf98e07c4206e0",
+      "summary": "Reviewed the translated video list against the Japanese source and current X/YouTube metadata, aligned headings, and made the motivational framing explicitly personal.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full list with Japanese and checked the X post/video metadata; aligned section headings with the post caption and current YouTube titles rather than claiming the content improves every viewer’s motivation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the names Yusuke Narita, So Takei, and Hayao Miyazaki and the translated headings against current post/video metadata."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The post and video list contain no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added direct links to the X post and all three YouTube videos; YouTube oEmbed returned video titles/authors and X oEmbed returned the embedded post text."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The complete videos were not transcribed or assessed; metadata and titles were checked only.",
+        "X returned embedded metadata, but direct page access returned HTTP 403 in this review environment. Platform availability can vary.",
+        "The page offers a subjective personal selection and does not guarantee a motivational effect."
+      ]
+    },
+    "post/モチベーションを上げてくれる動画/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/モチベーションを上げてくれる動画/index.md",
+      "sourceHash": "9518028566562b680565b590e067faaa2f5a588bd99ef9a64d312fac9b757803",
+      "translationHash": "b22690cf5787a8779fbd3072b75b9de19717b712a1918568b4895087ac00f8b0",
+      "summary": "Reviewed the translated video list against the Japanese source and current X/YouTube metadata, aligned headings, and made the motivational framing explicitly personal.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full list with Japanese and checked the X post/video metadata; aligned section headings with the post caption and current YouTube titles rather than claiming the content improves every viewer’s motivation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the names Yusuke Narita, So Takei, and Hayao Miyazaki and the translated headings against current post/video metadata."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The post and video list contain no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added direct links to the X post and all three YouTube videos; YouTube oEmbed returned video titles/authors and X oEmbed returned the embedded post text."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The complete videos were not transcribed or assessed; metadata and titles were checked only.",
+        "X returned embedded metadata, but direct page access returned HTTP 403 in this review environment. Platform availability can vary.",
+        "The page offers a subjective personal selection and does not guarantee a motivational effect."
+      ]
+    },
+    "post/モチベーションを上げてくれる動画/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/モチベーションを上げてくれる動画/index.md",
+      "sourceHash": "9518028566562b680565b590e067faaa2f5a588bd99ef9a64d312fac9b757803",
+      "translationHash": "a97ecf2795849ad36e70f305fba0f4936ebf5684f9e7132b44f893432f292b1e",
+      "summary": "Reviewed the translated video list against the Japanese source and current X/YouTube metadata, aligned headings, and made the motivational framing explicitly personal.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full list with Japanese and checked the X post/video metadata; aligned section headings with the post caption and current YouTube titles rather than claiming the content improves every viewer’s motivation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the names Yusuke Narita, So Takei, and Hayao Miyazaki and the translated headings against current post/video metadata."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The post and video list contain no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added direct links to the X post and all three YouTube videos; YouTube oEmbed returned video titles/authors and X oEmbed returned the embedded post text."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The complete videos were not transcribed or assessed; metadata and titles were checked only.",
+        "X returned embedded metadata, but direct page access returned HTTP 403 in this review environment. Platform availability can vary.",
+        "The page offers a subjective personal selection and does not guarantee a motivational effect."
+      ]
+    },
+    "post/モチベーションを上げてくれる動画/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/モチベーションを上げてくれる動画/index.md",
+      "sourceHash": "9518028566562b680565b590e067faaa2f5a588bd99ef9a64d312fac9b757803",
+      "translationHash": "e252e58fd7fa74d83bdb64adae5a7aeab7f93da5ad4af6fda57531e1386a503f",
+      "summary": "Reviewed the translated video list against the Japanese source and current X/YouTube metadata, aligned headings, and made the motivational framing explicitly personal.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full list with Japanese and checked the X post/video metadata; aligned section headings with the post caption and current YouTube titles rather than claiming the content improves every viewer’s motivation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the names Yusuke Narita, So Takei, and Hayao Miyazaki and the translated headings against current post/video metadata."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The post and video list contain no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added direct links to the X post and all three YouTube videos; YouTube oEmbed returned video titles/authors and X oEmbed returned the embedded post text."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The complete videos were not transcribed or assessed; metadata and titles were checked only.",
+        "X returned embedded metadata, but direct page access returned HTTP 403 in this review environment. Platform availability can vary.",
+        "The page offers a subjective personal selection and does not guarantee a motivational effect."
+      ]
+    }
+  }
+}

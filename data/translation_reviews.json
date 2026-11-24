@@ -15005,6 +15005,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-129.json",
       "evidenceHash": "ac6cfbed056878047581faeb2a1263f3a6f6d56c4795be50fff5779a3f1047c1"
+    },
+    "post/モチベーションを上げてくれる動画/index.en.md": {
+      "source": "post/モチベーションを上げてくれる動画/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9518028566562b680565b590e067faaa2f5a588bd99ef9a64d312fac9b757803",
+      "translationHash": "b194fc8095557fc18746d6478b04a16d34f0a7d7bb6f40b61cc9b9d5d890ea66",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-130.json",
+      "evidenceHash": "402ee425a348cd661de939aa1fa1ed769c2e7eace2bcca00846340fa6e857d21"
+    },
+    "post/モチベーションを上げてくれる動画/index.zh-cn.md": {
+      "source": "post/モチベーションを上げてくれる動画/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9518028566562b680565b590e067faaa2f5a588bd99ef9a64d312fac9b757803",
+      "translationHash": "5923f4c805f0e691b1caa715e86a4d7aeb023ab818e57175bbe0c61d6cf847ca",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-130.json",
+      "evidenceHash": "838d6ed656682207b015fcc7d03080c85b185eee541f4b6669e8f49560ee09bc"
+    },
+    "post/モチベーションを上げてくれる動画/index.es.md": {
+      "source": "post/モチベーションを上げてくれる動画/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9518028566562b680565b590e067faaa2f5a588bd99ef9a64d312fac9b757803",
+      "translationHash": "08d293b5e63aa45266ace4601af7d52aa49f5a22fc1de0e834da228d304c4361",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-130.json",
+      "evidenceHash": "90afd727706563833b5acc2f751df7bd5630a862ac5b7e354c149a320daa052c"
+    },
+    "post/モチベーションを上げてくれる動画/index.ko.md": {
+      "source": "post/モチベーションを上げてくれる動画/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9518028566562b680565b590e067faaa2f5a588bd99ef9a64d312fac9b757803",
+      "translationHash": "b915721e85a9e429d65ee022edb46e7365908ab502834449dd5e8b337ae18ac3",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-130.json",
+      "evidenceHash": "74476933200fca313fc22558a1ba2af4da1b7165ad81d27e9e5f4e4a07f2464d"
+    },
+    "post/モチベーションを上げてくれる動画/index.pt.md": {
+      "source": "post/モチベーションを上げてくれる動画/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9518028566562b680565b590e067faaa2f5a588bd99ef9a64d312fac9b757803",
+      "translationHash": "5b63c5853d00762aa53e23eac4fabca708e9371f4397b161e1678a038f3ca622",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-130.json",
+      "evidenceHash": "ad584ebf6f4f64d9efb1a49055f084439c49d9423666ab45554690f161aadc8b"
+    },
+    "post/モチベーションを上げてくれる動画/index.zh-tw.md": {
+      "source": "post/モチベーションを上げてくれる動画/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9518028566562b680565b590e067faaa2f5a588bd99ef9a64d312fac9b757803",
+      "translationHash": "cc3d71168a6d9f073d7c4df7fd7da5ed193d54c03e204022fdbf038656cd9427",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-130.json",
+      "evidenceHash": "5d24753752744f8a5cdf697d631cf54458c49da52045b74ed16638960e6d0b7c"
+    },
+    "post/モチベーションを上げてくれる動画/index.hi.md": {
+      "source": "post/モチベーションを上げてくれる動画/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9518028566562b680565b590e067faaa2f5a588bd99ef9a64d312fac9b757803",
+      "translationHash": "2c4b4b6da67dc8a0c89fb150247a7312a19e5d8e366fcd41bd385872aa3ea5e9",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-130.json",
+      "evidenceHash": "db60cd26e3f4a255ed6db878c9a155a9a6b17636e6da1eb99fe8662819253945"
+    },
+    "post/モチベーションを上げてくれる動画/index.fr.md": {
+      "source": "post/モチベーションを上げてくれる動画/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9518028566562b680565b590e067faaa2f5a588bd99ef9a64d312fac9b757803",
+      "translationHash": "082eb174a9b1060b1f524841d3902cbaf47c9804e05f2466f8e249a2e3540de7",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-130.json",
+      "evidenceHash": "9f0eb4767db4323e36f44a821e9fb74ffa3d627639ed7baedd279c00683b48f4"
+    },
+    "post/モチベーションを上げてくれる動画/index.de.md": {
+      "source": "post/モチベーションを上げてくれる動画/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9518028566562b680565b590e067faaa2f5a588bd99ef9a64d312fac9b757803",
+      "translationHash": "9687d6e724a8822da67e1b23fcd47662dd76f1ffd3fc2e9c5abf98e07c4206e0",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-130.json",
+      "evidenceHash": "71aaf67aed1c37c0d206a4d2c7d37326770a8415097834bf499e7c960ee5d19a"
+    },
+    "post/モチベーションを上げてくれる動画/index.ar.md": {
+      "source": "post/モチベーションを上げてくれる動画/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9518028566562b680565b590e067faaa2f5a588bd99ef9a64d312fac9b757803",
+      "translationHash": "b22690cf5787a8779fbd3072b75b9de19717b712a1918568b4895087ac00f8b0",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-130.json",
+      "evidenceHash": "607786852fbf95340a34b1904d5c4a2824b6ac8df1b8ff9d404f7c1e84bdc8ba"
+    },
+    "post/モチベーションを上げてくれる動画/index.ru.md": {
+      "source": "post/モチベーションを上げてくれる動画/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9518028566562b680565b590e067faaa2f5a588bd99ef9a64d312fac9b757803",
+      "translationHash": "a97ecf2795849ad36e70f305fba0f4936ebf5684f9e7132b44f893432f292b1e",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-130.json",
+      "evidenceHash": "5f1871f87f95ed176f97b1a34cc29e7c9e15027665c0d2de7a4c909924c12ad1"
+    },
+    "post/モチベーションを上げてくれる動画/index.id.md": {
+      "source": "post/モチベーションを上げてくれる動画/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9518028566562b680565b590e067faaa2f5a588bd99ef9a64d312fac9b757803",
+      "translationHash": "e252e58fd7fa74d83bdb64adae5a7aeab7f93da5ad4af6fda57531e1386a503f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-130.json",
+      "evidenceHash": "71dc82e27e40a7fcd9fc47adb6a390b6e2a3a3d54e93bd6a3db8ad91e3390384"
     }
   }
 }
