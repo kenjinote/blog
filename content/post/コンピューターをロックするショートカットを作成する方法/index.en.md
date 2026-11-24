@@ -1,13 +1,13 @@
 ---
 title: 'Lock Your Windows PC in 1 Second! How to Create and Use a Handy Shortcut'
-date: "2026-09-24T19:44:38+09:00"
 slug: "Lock ComputerするShortcutを作成する方法"
-date: 2024-04-01T01:37:49+09:00
 tags: ["Windows", "Lock Computer", "Shortcut"]
 draft: false
 image: "img.webp"
 categories: ["pc-gadgets"]
 description: 'Clearly explains how to create a shortcut to lock your Windows computer with a single click, complete with images. Also introduces the method of locking instantly using the Win+L keys, useful as a security measure when leaving your desk.'
+date: "2024-04-01T01:37:49+09:00"
+lastmod: "2026-11-25T00:00:00+09:00"
 ---
 
 Here is how to create a shortcut to lock your computer.
@@ -50,3 +50,12 @@ Double-clicking the created shortcut will lock your computer.
 You can also lock your computer by pressing the `Win key` + `L key`.
 
 *Note: No confirmation dialog will be displayed when locking the computer.
+
+Locking Windows keeps your apps open; you must sign in again to resume. The screenshots show the Japanese Windows interface, so labels and layout may differ by Windows version and display language.
+
+## References
+
+- [Microsoft Support: User account access in Windows (Lock)](https://support.microsoft.com/en-us/accounts-billing/security/user-account-access-in-windows)
+- [Microsoft Learn: LockWorkStation function](https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-lockworkstation)
+- [Microsoft Learn: Changing computer state with PowerShell](https://learn.microsoft.com/en-us/powershell/scripting/samples/changing-computer-state)
+- [Microsoft Learn: rundll32 command](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/rundll32)

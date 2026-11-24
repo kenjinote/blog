@@ -1,13 +1,13 @@
 ---
 title: 'Sperren Sie Ihren Windows-PC in 1 Sekunde! So erstellen und verwenden Sie praktische Verknüpfungen'
-date: "2026-09-24T19:44:38+09:00"
 slug: "Computer sperrenするVerknüpfungを作成する方法"
-date: 2024-04-01T01:37:49+09:00
 tags: ["Windows", "Computer sperren", "Verknüpfung"]
 draft: false
 image: "img.webp"
 categories: ["pc-gadgets"]
 description: 'Wir erklären mit Bildern verständlich, wie Sie eine Verknüpfung erstellen, mit der Sie Ihren Windows-Computer mit einem Klick sperren können. Wir stellen auch eine Methode vor, um ihn mit der Tastenkombination Win+L sofort zu sperren, was als Sicherheitsmaßnahme praktisch ist, wenn Sie sich von Ihrem Schreibtisch entfernen.'
+date: "2024-04-01T01:37:49+09:00"
+lastmod: "2026-11-25T00:00:00+09:00"
 ---
 
 Hier erfahren Sie, wie Sie eine Verknüpfung zum Sperren Ihres Computers erstellen.
@@ -50,3 +50,12 @@ Durch Doppelklicken auf die erstellte Verknüpfung wird der Computer gesperrt.
 Sie können auch die `Windows-Taste` + `L` drücken, um den Computer auf die gleiche Weise zu sperren.
 
 ※ Hinweis: Beim Sperren des Computers wird kein Bestätigungsdialogfeld angezeigt.
+
+Beim Sperren von Windows bleiben die Apps geöffnet; zum Fortsetzen müssen Sie sich erneut anmelden. Die Abbildungen zeigen die japanische Windows-Oberfläche. Bezeichnungen und Anordnung können je nach Version und Anzeigesprache abweichen.
+
+## References
+
+- [Microsoft Support: Lock your Windows device](https://support.microsoft.com/en-us/accounts-billing/security/user-account-access-in-windows)
+- [Microsoft Learn: LockWorkStation function](https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-lockworkstation)
+- [Microsoft Learn: Changing computer state with PowerShell](https://learn.microsoft.com/en-us/powershell/scripting/samples/changing-computer-state)
+- [Microsoft Learn: rundll32 command](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/rundll32)

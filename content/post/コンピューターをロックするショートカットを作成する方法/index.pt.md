@@ -1,13 +1,13 @@
 ---
 title: 'Bloqueie o seu PC com Windows em 1 segundo! Como criar e usar atalhos úteis'
-date: "2026-09-24T19:44:38+09:00"
 slug: "Bloquear ComputadorするAtalhoを作成する方法"
-date: 2024-04-01T01:37:49+09:00
 tags: ["Windows", "Bloquear Computador", "Atalho"]
 draft: false
 image: "img.webp"
 categories: ["pc-gadgets"]
 description: 'Explicamos com imagens como criar atalhos que podem bloquear o seu PC Windows com apenas um clique. Também apresentamos o método de bloqueio instantâneo usando as teclas Win+L, o que é útil como medida de segurança ao se afastar da mesa.'
+date: "2024-04-01T01:37:49+09:00"
+lastmod: "2026-11-25T00:00:00+09:00"
 ---
 
 Aqui está como criar um atalho para bloquear o computador.
@@ -50,3 +50,12 @@ Clicar duas vezes no atalho criado bloqueará o computador.
 Você também pode pressionar `Tecla Win` + `L` para bloquear o computador da mesma forma.
 
 ※ Nota: Nenhuma caixa de diálogo de confirmação será exibida ao bloquear o computador.
+
+Ao bloquear o Windows, os aplicativos permanecem abertos; será necessário entrar novamente para continuar. As capturas mostram a interface japonesa do Windows, então os nomes e a disposição podem variar conforme a versão e o idioma.
+
+## References
+
+- [Microsoft Support: Lock your Windows device](https://support.microsoft.com/en-us/accounts-billing/security/user-account-access-in-windows)
+- [Microsoft Learn: LockWorkStation function](https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-lockworkstation)
+- [Microsoft Learn: Changing computer state with PowerShell](https://learn.microsoft.com/en-us/powershell/scripting/samples/changing-computer-state)
+- [Microsoft Learn: rundll32 command](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/rundll32)

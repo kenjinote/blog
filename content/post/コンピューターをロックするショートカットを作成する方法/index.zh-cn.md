@@ -1,13 +1,13 @@
 ---
 title: '1秒锁定Windows电脑！实用快捷方式的创建方法与使用指南'
-date: "2026-09-24T19:44:38+09:00"
 slug: "锁定计算机する快捷方式を作成する方法"
-date: 2024-04-01T01:37:49+09:00
 tags: ["Windows", "锁定计算机", "快捷方式"]
 draft: false
 image: "img.webp"
 categories: ["pc-gadgets"]
 description: '图文并茂地通俗讲解如何创建能一键锁定Windows电脑的快捷方式。同时介绍作为离开座位时的安全措施，使用Win+L键瞬间锁定电脑的实用方法。'
+date: "2024-04-01T01:37:49+09:00"
+lastmod: "2026-11-25T00:00:00+09:00"
 ---
 
 介绍一下如何创建锁定计算机的快捷方式。
@@ -50,3 +50,12 @@ description: '图文并茂地通俗讲解如何创建能一键锁定Windows电�
 按下 `Win键` + `L键` 也可以同样地锁定计算机。
 
 ※注意：不会显示锁定计算机的确认对话框。
+
+锁定 Windows 后，应用会保持打开；继续使用前需要重新登录。截图展示的是日文版 Windows，按钮名称和布局可能因版本及显示语言而异。
+
+## References
+
+- [Microsoft Support: Lock your Windows device](https://support.microsoft.com/en-us/accounts-billing/security/user-account-access-in-windows)
+- [Microsoft Learn: LockWorkStation function](https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-lockworkstation)
+- [Microsoft Learn: Changing computer state with PowerShell](https://learn.microsoft.com/en-us/powershell/scripting/samples/changing-computer-state)
+- [Microsoft Learn: rundll32 command](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/rundll32)

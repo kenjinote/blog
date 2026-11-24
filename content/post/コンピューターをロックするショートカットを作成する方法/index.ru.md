@@ -1,13 +1,13 @@
 ---
 title: 'Блокировка ПК с Windows за 1 секунду! Как создать и использовать удобный ярлык'
-date: "2026-09-24T19:44:38+09:00"
 slug: "Заблокировать компьютерするЯрлыкを作成する方法"
-date: 2024-04-01T01:37:49+09:00
 tags: ["Windows", "Блокировка компьютера", "Ярлык"]
 draft: false
 image: "img.webp"
 categories: ["pc-gadgets"]
 description: 'Понятное объяснение с изображениями того, как создать ярлык, позволяющий заблокировать компьютер с Windows одним щелчком мыши. Также представлен метод мгновенной блокировки с помощью сочетания клавиш Win+L, удобный в качестве меры безопасности при отлучении от рабочего места.'
+date: "2024-04-01T01:37:49+09:00"
+lastmod: "2026-11-25T00:00:00+09:00"
 ---
 
 Вот как создать ярлык для блокировки компьютера.
@@ -50,3 +50,12 @@ description: 'Понятное объяснение с изображениям�
 Вы также можете заблокировать компьютер, нажав `Клавиша Win` + `Клавиша L`.
 
 ※ Примечание: диалоговое окно подтверждения блокировки компьютера не отображается.
+
+При блокировке Windows приложения остаются открытыми; чтобы продолжить работу, потребуется снова войти в систему. На снимках показан интерфейс Windows на японском языке, поэтому названия и расположение элементов могут отличаться.
+
+## References
+
+- [Microsoft Support: Lock your Windows device](https://support.microsoft.com/en-us/accounts-billing/security/user-account-access-in-windows)
+- [Microsoft Learn: LockWorkStation function](https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-lockworkstation)
+- [Microsoft Learn: Changing computer state with PowerShell](https://learn.microsoft.com/en-us/powershell/scripting/samples/changing-computer-state)
+- [Microsoft Learn: rundll32 command](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/rundll32)

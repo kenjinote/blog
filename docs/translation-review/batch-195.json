@@ -1,0 +1,456 @@
+{
+  "version": 1,
+  "batch": 195,
+  "article": "Create a shortcut to lock a Windows computer",
+  "reviewedAt": "2026-11-25",
+  "sourceHash": "e72a6d2efd7cdc810f9eb789636454f7c3495d2dd33e21eb04ee02a5c3241119",
+  "sources": [
+    "https://support.microsoft.com/en-us/accounts-billing/security/user-account-access-in-windows",
+    "https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-lockworkstation",
+    "https://learn.microsoft.com/en-us/powershell/scripting/samples/changing-computer-state",
+    "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/rundll32"
+  ],
+  "scope": "Read the complete Japanese article and all twelve translations; checked shortcut/API behavior, Windows+L, session/security claims, images and alt/reference links, metadata, and the localized note on Japanese UI screenshots.",
+  "findings": [
+    "Removed the duplicate future date (2026-09-24), restored the original publication date (2024-04-01), and set lastmod to the review date in all 13 editions.",
+    "Removed unrelated links to an RDBMS transaction-lock article from the Windows device-lock instructions.",
+    "Confirmed the shortcut target with Microsoft Learn and clarified that the Win32 function acts on an interactive signed-in session; locking does not sign out or directly close applications.",
+    "Retained Windows+L as the built-in alternative and documented that unlocking requires sign-in.",
+    "Added localized caveats that screenshots show Japanese Windows UI and menu labels can vary by version and display language; added Microsoft Support and Learn references."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/コンピューターをロックするショートカットを作成する方法/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/コンピューターをロックするショートカットを作成する方法/index.md",
+      "sourceHash": "e72a6d2efd7cdc810f9eb789636454f7c3495d2dd33e21eb04ee02a5c3241119",
+      "translationHash": "0af72b46bad0ed60d1a7ceba33e778f55c67086131e8dd5f7821edbce9ac85bd",
+      "summary": "Compared the complete translation with the Japanese source and current Microsoft documentation; corrected stale dates and unrelated internal links, verified shortcut/API behavior, and clarified that locking preserves the session but requires sign-in to resume.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese source and all twelve translations; verified that Win+L and the desktop shortcut lock the workstation without signing out, and that unlocking requires sign-in. Clarified the Japanese-language screenshots."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked workstation lock, lock screen, shortcut target, Windows key+L, sign-in/unlock, interactive desktop, and rundll32 terminology across all editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified `rundll32.exe user32.dll,LockWorkStation` against Microsoft Learn PowerShell examples and checked that the LockWorkStation API is asynchronous and only works from an interactive desktop; reviewed the shortcut steps and Win+L key sequence."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Microsoft Support lock instructions and Microsoft Learn documentation for LockWorkStation, PowerShell computer-state commands, and rundll32; removed the unrelated RDBMS lock links."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "LockWorkStation is asynchronous and requires an interactive, signed-in user session; managed-device policies may affect sign-in and lock behavior.",
+        "Screenshots show Japanese Windows UI; labels can differ by version and display language."
+      ]
+    },
+    "post/コンピューターをロックするショートカットを作成する方法/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/コンピューターをロックするショートカットを作成する方法/index.md",
+      "sourceHash": "e72a6d2efd7cdc810f9eb789636454f7c3495d2dd33e21eb04ee02a5c3241119",
+      "translationHash": "6c4e2fd4b6fa4db331ada563e0564000384b1a4a815a973ea7f30f1da2146871",
+      "summary": "Compared the complete translation with the Japanese source and current Microsoft documentation; corrected stale dates and unrelated internal links, verified shortcut/API behavior, and clarified that locking preserves the session but requires sign-in to resume.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese source and all twelve translations; verified that Win+L and the desktop shortcut lock the workstation without signing out, and that unlocking requires sign-in. Clarified the Japanese-language screenshots."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked workstation lock, lock screen, shortcut target, Windows key+L, sign-in/unlock, interactive desktop, and rundll32 terminology across all editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified `rundll32.exe user32.dll,LockWorkStation` against Microsoft Learn PowerShell examples and checked that the LockWorkStation API is asynchronous and only works from an interactive desktop; reviewed the shortcut steps and Win+L key sequence."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Microsoft Support lock instructions and Microsoft Learn documentation for LockWorkStation, PowerShell computer-state commands, and rundll32; removed the unrelated RDBMS lock links."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "LockWorkStation is asynchronous and requires an interactive, signed-in user session; managed-device policies may affect sign-in and lock behavior.",
+        "Screenshots show Japanese Windows UI; labels can differ by version and display language."
+      ]
+    },
+    "post/コンピューターをロックするショートカットを作成する方法/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/コンピューターをロックするショートカットを作成する方法/index.md",
+      "sourceHash": "e72a6d2efd7cdc810f9eb789636454f7c3495d2dd33e21eb04ee02a5c3241119",
+      "translationHash": "f4b904c1a1884353f57c722f36a44d19ed1ca8a1a53771993b56c306b6eb45f0",
+      "summary": "Compared the complete translation with the Japanese source and current Microsoft documentation; corrected stale dates and unrelated internal links, verified shortcut/API behavior, and clarified that locking preserves the session but requires sign-in to resume.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese source and all twelve translations; verified that Win+L and the desktop shortcut lock the workstation without signing out, and that unlocking requires sign-in. Clarified the Japanese-language screenshots."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked workstation lock, lock screen, shortcut target, Windows key+L, sign-in/unlock, interactive desktop, and rundll32 terminology across all editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified `rundll32.exe user32.dll,LockWorkStation` against Microsoft Learn PowerShell examples and checked that the LockWorkStation API is asynchronous and only works from an interactive desktop; reviewed the shortcut steps and Win+L key sequence."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Microsoft Support lock instructions and Microsoft Learn documentation for LockWorkStation, PowerShell computer-state commands, and rundll32; removed the unrelated RDBMS lock links."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "LockWorkStation is asynchronous and requires an interactive, signed-in user session; managed-device policies may affect sign-in and lock behavior.",
+        "Screenshots show Japanese Windows UI; labels can differ by version and display language."
+      ]
+    },
+    "post/コンピューターをロックするショートカットを作成する方法/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/コンピューターをロックするショートカットを作成する方法/index.md",
+      "sourceHash": "e72a6d2efd7cdc810f9eb789636454f7c3495d2dd33e21eb04ee02a5c3241119",
+      "translationHash": "65829520801a7733f5bf000e8220e30db2aa39657ac00a523dc6007775c3e576",
+      "summary": "Compared the complete translation with the Japanese source and current Microsoft documentation; corrected stale dates and unrelated internal links, verified shortcut/API behavior, and clarified that locking preserves the session but requires sign-in to resume.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese source and all twelve translations; verified that Win+L and the desktop shortcut lock the workstation without signing out, and that unlocking requires sign-in. Clarified the Japanese-language screenshots."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked workstation lock, lock screen, shortcut target, Windows key+L, sign-in/unlock, interactive desktop, and rundll32 terminology across all editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified `rundll32.exe user32.dll,LockWorkStation` against Microsoft Learn PowerShell examples and checked that the LockWorkStation API is asynchronous and only works from an interactive desktop; reviewed the shortcut steps and Win+L key sequence."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Microsoft Support lock instructions and Microsoft Learn documentation for LockWorkStation, PowerShell computer-state commands, and rundll32; removed the unrelated RDBMS lock links."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "LockWorkStation is asynchronous and requires an interactive, signed-in user session; managed-device policies may affect sign-in and lock behavior.",
+        "Screenshots show Japanese Windows UI; labels can differ by version and display language."
+      ]
+    },
+    "post/コンピューターをロックするショートカットを作成する方法/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/コンピューターをロックするショートカットを作成する方法/index.md",
+      "sourceHash": "e72a6d2efd7cdc810f9eb789636454f7c3495d2dd33e21eb04ee02a5c3241119",
+      "translationHash": "b45e1ea82939402f69f5402a2d2d6464751258a724727299d1ba8c0c2db703fb",
+      "summary": "Compared the complete translation with the Japanese source and current Microsoft documentation; corrected stale dates and unrelated internal links, verified shortcut/API behavior, and clarified that locking preserves the session but requires sign-in to resume.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese source and all twelve translations; verified that Win+L and the desktop shortcut lock the workstation without signing out, and that unlocking requires sign-in. Clarified the Japanese-language screenshots."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked workstation lock, lock screen, shortcut target, Windows key+L, sign-in/unlock, interactive desktop, and rundll32 terminology across all editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified `rundll32.exe user32.dll,LockWorkStation` against Microsoft Learn PowerShell examples and checked that the LockWorkStation API is asynchronous and only works from an interactive desktop; reviewed the shortcut steps and Win+L key sequence."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Microsoft Support lock instructions and Microsoft Learn documentation for LockWorkStation, PowerShell computer-state commands, and rundll32; removed the unrelated RDBMS lock links."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "LockWorkStation is asynchronous and requires an interactive, signed-in user session; managed-device policies may affect sign-in and lock behavior.",
+        "Screenshots show Japanese Windows UI; labels can differ by version and display language."
+      ]
+    },
+    "post/コンピューターをロックするショートカットを作成する方法/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/コンピューターをロックするショートカットを作成する方法/index.md",
+      "sourceHash": "e72a6d2efd7cdc810f9eb789636454f7c3495d2dd33e21eb04ee02a5c3241119",
+      "translationHash": "8723a6e7307e217c3dda03cfceda646ee326993d99f32c8cbb74e3be03bd0b6b",
+      "summary": "Compared the complete translation with the Japanese source and current Microsoft documentation; corrected stale dates and unrelated internal links, verified shortcut/API behavior, and clarified that locking preserves the session but requires sign-in to resume.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese source and all twelve translations; verified that Win+L and the desktop shortcut lock the workstation without signing out, and that unlocking requires sign-in. Clarified the Japanese-language screenshots."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked workstation lock, lock screen, shortcut target, Windows key+L, sign-in/unlock, interactive desktop, and rundll32 terminology across all editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified `rundll32.exe user32.dll,LockWorkStation` against Microsoft Learn PowerShell examples and checked that the LockWorkStation API is asynchronous and only works from an interactive desktop; reviewed the shortcut steps and Win+L key sequence."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Microsoft Support lock instructions and Microsoft Learn documentation for LockWorkStation, PowerShell computer-state commands, and rundll32; removed the unrelated RDBMS lock links."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "LockWorkStation is asynchronous and requires an interactive, signed-in user session; managed-device policies may affect sign-in and lock behavior.",
+        "Screenshots show Japanese Windows UI; labels can differ by version and display language."
+      ]
+    },
+    "post/コンピューターをロックするショートカットを作成する方法/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/コンピューターをロックするショートカットを作成する方法/index.md",
+      "sourceHash": "e72a6d2efd7cdc810f9eb789636454f7c3495d2dd33e21eb04ee02a5c3241119",
+      "translationHash": "765424e492ce616f8187cbbb34a313a13d0c1d0b43697c07b66f9425f5835f18",
+      "summary": "Compared the complete translation with the Japanese source and current Microsoft documentation; corrected stale dates and unrelated internal links, verified shortcut/API behavior, and clarified that locking preserves the session but requires sign-in to resume.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese source and all twelve translations; verified that Win+L and the desktop shortcut lock the workstation without signing out, and that unlocking requires sign-in. Clarified the Japanese-language screenshots."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked workstation lock, lock screen, shortcut target, Windows key+L, sign-in/unlock, interactive desktop, and rundll32 terminology across all editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified `rundll32.exe user32.dll,LockWorkStation` against Microsoft Learn PowerShell examples and checked that the LockWorkStation API is asynchronous and only works from an interactive desktop; reviewed the shortcut steps and Win+L key sequence."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Microsoft Support lock instructions and Microsoft Learn documentation for LockWorkStation, PowerShell computer-state commands, and rundll32; removed the unrelated RDBMS lock links."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "LockWorkStation is asynchronous and requires an interactive, signed-in user session; managed-device policies may affect sign-in and lock behavior.",
+        "Screenshots show Japanese Windows UI; labels can differ by version and display language."
+      ]
+    },
+    "post/コンピューターをロックするショートカットを作成する方法/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/コンピューターをロックするショートカットを作成する方法/index.md",
+      "sourceHash": "e72a6d2efd7cdc810f9eb789636454f7c3495d2dd33e21eb04ee02a5c3241119",
+      "translationHash": "cf34b2f8303c803ab1a7a07023a4d26b6861a3804f553fe05ea470d37415606e",
+      "summary": "Compared the complete translation with the Japanese source and current Microsoft documentation; corrected stale dates and unrelated internal links, verified shortcut/API behavior, and clarified that locking preserves the session but requires sign-in to resume.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese source and all twelve translations; verified that Win+L and the desktop shortcut lock the workstation without signing out, and that unlocking requires sign-in. Clarified the Japanese-language screenshots."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked workstation lock, lock screen, shortcut target, Windows key+L, sign-in/unlock, interactive desktop, and rundll32 terminology across all editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified `rundll32.exe user32.dll,LockWorkStation` against Microsoft Learn PowerShell examples and checked that the LockWorkStation API is asynchronous and only works from an interactive desktop; reviewed the shortcut steps and Win+L key sequence."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Microsoft Support lock instructions and Microsoft Learn documentation for LockWorkStation, PowerShell computer-state commands, and rundll32; removed the unrelated RDBMS lock links."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "LockWorkStation is asynchronous and requires an interactive, signed-in user session; managed-device policies may affect sign-in and lock behavior.",
+        "Screenshots show Japanese Windows UI; labels can differ by version and display language."
+      ]
+    },
+    "post/コンピューターをロックするショートカットを作成する方法/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/コンピューターをロックするショートカットを作成する方法/index.md",
+      "sourceHash": "e72a6d2efd7cdc810f9eb789636454f7c3495d2dd33e21eb04ee02a5c3241119",
+      "translationHash": "205346314671c7ad0bce0807fc0d228b55e14d11dedeafb67faa640eeaef1a7c",
+      "summary": "Compared the complete translation with the Japanese source and current Microsoft documentation; corrected stale dates and unrelated internal links, verified shortcut/API behavior, and clarified that locking preserves the session but requires sign-in to resume.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese source and all twelve translations; verified that Win+L and the desktop shortcut lock the workstation without signing out, and that unlocking requires sign-in. Clarified the Japanese-language screenshots."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked workstation lock, lock screen, shortcut target, Windows key+L, sign-in/unlock, interactive desktop, and rundll32 terminology across all editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified `rundll32.exe user32.dll,LockWorkStation` against Microsoft Learn PowerShell examples and checked that the LockWorkStation API is asynchronous and only works from an interactive desktop; reviewed the shortcut steps and Win+L key sequence."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Microsoft Support lock instructions and Microsoft Learn documentation for LockWorkStation, PowerShell computer-state commands, and rundll32; removed the unrelated RDBMS lock links."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "LockWorkStation is asynchronous and requires an interactive, signed-in user session; managed-device policies may affect sign-in and lock behavior.",
+        "Screenshots show Japanese Windows UI; labels can differ by version and display language."
+      ]
+    },
+    "post/コンピューターをロックするショートカットを作成する方法/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/コンピューターをロックするショートカットを作成する方法/index.md",
+      "sourceHash": "e72a6d2efd7cdc810f9eb789636454f7c3495d2dd33e21eb04ee02a5c3241119",
+      "translationHash": "8c0a9fc2be018f94833d0da889c56c7a5daef121882cd9a9f8d154f665634c83",
+      "summary": "Compared the complete translation with the Japanese source and current Microsoft documentation; corrected stale dates and unrelated internal links, verified shortcut/API behavior, and clarified that locking preserves the session but requires sign-in to resume.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese source and all twelve translations; verified that Win+L and the desktop shortcut lock the workstation without signing out, and that unlocking requires sign-in. Clarified the Japanese-language screenshots."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked workstation lock, lock screen, shortcut target, Windows key+L, sign-in/unlock, interactive desktop, and rundll32 terminology across all editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified `rundll32.exe user32.dll,LockWorkStation` against Microsoft Learn PowerShell examples and checked that the LockWorkStation API is asynchronous and only works from an interactive desktop; reviewed the shortcut steps and Win+L key sequence."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Microsoft Support lock instructions and Microsoft Learn documentation for LockWorkStation, PowerShell computer-state commands, and rundll32; removed the unrelated RDBMS lock links."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "LockWorkStation is asynchronous and requires an interactive, signed-in user session; managed-device policies may affect sign-in and lock behavior.",
+        "Screenshots show Japanese Windows UI; labels can differ by version and display language."
+      ]
+    },
+    "post/コンピューターをロックするショートカットを作成する方法/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/コンピューターをロックするショートカットを作成する方法/index.md",
+      "sourceHash": "e72a6d2efd7cdc810f9eb789636454f7c3495d2dd33e21eb04ee02a5c3241119",
+      "translationHash": "8cba21c295439ae7fa864892bbdd0775127fb0beaf0a33cd08a4f5da95d44a49",
+      "summary": "Compared the complete translation with the Japanese source and current Microsoft documentation; corrected stale dates and unrelated internal links, verified shortcut/API behavior, and clarified that locking preserves the session but requires sign-in to resume.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese source and all twelve translations; verified that Win+L and the desktop shortcut lock the workstation without signing out, and that unlocking requires sign-in. Clarified the Japanese-language screenshots."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked workstation lock, lock screen, shortcut target, Windows key+L, sign-in/unlock, interactive desktop, and rundll32 terminology across all editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified `rundll32.exe user32.dll,LockWorkStation` against Microsoft Learn PowerShell examples and checked that the LockWorkStation API is asynchronous and only works from an interactive desktop; reviewed the shortcut steps and Win+L key sequence."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Microsoft Support lock instructions and Microsoft Learn documentation for LockWorkStation, PowerShell computer-state commands, and rundll32; removed the unrelated RDBMS lock links."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "LockWorkStation is asynchronous and requires an interactive, signed-in user session; managed-device policies may affect sign-in and lock behavior.",
+        "Screenshots show Japanese Windows UI; labels can differ by version and display language."
+      ]
+    },
+    "post/コンピューターをロックするショートカットを作成する方法/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/コンピューターをロックするショートカットを作成する方法/index.md",
+      "sourceHash": "e72a6d2efd7cdc810f9eb789636454f7c3495d2dd33e21eb04ee02a5c3241119",
+      "translationHash": "c6e25f49468216aa906a337295f74a80f63efb58a176ba27dccbdc3909d2945f",
+      "summary": "Compared the complete translation with the Japanese source and current Microsoft documentation; corrected stale dates and unrelated internal links, verified shortcut/API behavior, and clarified that locking preserves the session but requires sign-in to resume.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese source and all twelve translations; verified that Win+L and the desktop shortcut lock the workstation without signing out, and that unlocking requires sign-in. Clarified the Japanese-language screenshots."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked workstation lock, lock screen, shortcut target, Windows key+L, sign-in/unlock, interactive desktop, and rundll32 terminology across all editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified `rundll32.exe user32.dll,LockWorkStation` against Microsoft Learn PowerShell examples and checked that the LockWorkStation API is asynchronous and only works from an interactive desktop; reviewed the shortcut steps and Win+L key sequence."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Microsoft Support lock instructions and Microsoft Learn documentation for LockWorkStation, PowerShell computer-state commands, and rundll32; removed the unrelated RDBMS lock links."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "LockWorkStation is asynchronous and requires an interactive, signed-in user session; managed-device policies may affect sign-in and lock behavior.",
+        "Screenshots show Japanese Windows UI; labels can differ by version and display language."
+      ]
+    }
+  }
+}

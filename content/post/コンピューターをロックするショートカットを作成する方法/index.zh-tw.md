@@ -1,13 +1,13 @@
 ---
 title: '1秒鎖定 Windows 電腦！實用捷徑的建立方法與用法'
-date: "2026-09-24T19:44:38+09:00"
 slug: "鎖定電腦する捷徑を作成する方法"
-date: 2024-04-01T01:37:49+09:00
 tags: ["Windows", "鎖定電腦", "捷徑"]
 draft: false
 image: "img.webp"
 categories: ["pc-gadgets"]
 description: '附圖淺顯易懂地解說能一鍵鎖定 Windows 電腦的捷徑建立方法。同時介紹使用 Win+L 鍵一瞬間鎖定，作為離開座位時的安全對策的實用方法。'
+date: "2024-04-01T01:37:49+09:00"
+lastmod: "2026-11-25T00:00:00+09:00"
 ---
 
 以下介紹如何建立一個用來鎖定電腦的捷徑。
@@ -50,3 +50,12 @@ description: '附圖淺顯易懂地解說能一鍵鎖定 Windows 電腦的捷徑
 您也可以按下 `Win鍵` + `L鍵` 來鎖定電腦。
 
 ※注意：鎖定電腦時不會顯示確認對話方塊。
+
+鎖定 Windows 後，應用程式會保持開啟；繼續使用前必須重新登入。截圖展示日文版 Windows，按鈕名稱與版面可能因版本和顯示語言而異。
+
+## References
+
+- [Microsoft Support: Lock your Windows device](https://support.microsoft.com/en-us/accounts-billing/security/user-account-access-in-windows)
+- [Microsoft Learn: LockWorkStation function](https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-lockworkstation)
+- [Microsoft Learn: Changing computer state with PowerShell](https://learn.microsoft.com/en-us/powershell/scripting/samples/changing-computer-state)
+- [Microsoft Learn: rundll32 command](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/rundll32)

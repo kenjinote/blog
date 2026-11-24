@@ -22565,6 +22565,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-193.json",
       "evidenceHash": "7dd98204a911f6488717961726b96bed106b4390b4ff862e6d664f2f022c81aa"
+    },
+    "post/コンピューターをロックするショートカットを作成する方法/index.en.md": {
+      "source": "post/コンピューターをロックするショートカットを作成する方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "e72a6d2efd7cdc810f9eb789636454f7c3495d2dd33e21eb04ee02a5c3241119",
+      "translationHash": "0af72b46bad0ed60d1a7ceba33e778f55c67086131e8dd5f7821edbce9ac85bd",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-195.json",
+      "evidenceHash": "7a0fb093b7009d6a10ab940f3c62f4ed408d42a2850871f2fb1c8cdbfe95b772"
+    },
+    "post/コンピューターをロックするショートカットを作成する方法/index.zh-cn.md": {
+      "source": "post/コンピューターをロックするショートカットを作成する方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "e72a6d2efd7cdc810f9eb789636454f7c3495d2dd33e21eb04ee02a5c3241119",
+      "translationHash": "6c4e2fd4b6fa4db331ada563e0564000384b1a4a815a973ea7f30f1da2146871",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-195.json",
+      "evidenceHash": "c1e04ca900a96e9553c5f3b203caa89d462f3cfbc3e9a61620a016628f8f9fcf"
+    },
+    "post/コンピューターをロックするショートカットを作成する方法/index.es.md": {
+      "source": "post/コンピューターをロックするショートカットを作成する方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "e72a6d2efd7cdc810f9eb789636454f7c3495d2dd33e21eb04ee02a5c3241119",
+      "translationHash": "f4b904c1a1884353f57c722f36a44d19ed1ca8a1a53771993b56c306b6eb45f0",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-195.json",
+      "evidenceHash": "985dcaf6ed6829e6ace07ece6cbc63d1a67285ae8025615467bcfe0d2ac1a9ae"
+    },
+    "post/コンピューターをロックするショートカットを作成する方法/index.ko.md": {
+      "source": "post/コンピューターをロックするショートカットを作成する方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "e72a6d2efd7cdc810f9eb789636454f7c3495d2dd33e21eb04ee02a5c3241119",
+      "translationHash": "65829520801a7733f5bf000e8220e30db2aa39657ac00a523dc6007775c3e576",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-195.json",
+      "evidenceHash": "7a6e6e81b0f4029026a2f2a17e5f67acfb3887195786fec58d77856c67ae3344"
+    },
+    "post/コンピューターをロックするショートカットを作成する方法/index.pt.md": {
+      "source": "post/コンピューターをロックするショートカットを作成する方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "e72a6d2efd7cdc810f9eb789636454f7c3495d2dd33e21eb04ee02a5c3241119",
+      "translationHash": "b45e1ea82939402f69f5402a2d2d6464751258a724727299d1ba8c0c2db703fb",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-195.json",
+      "evidenceHash": "17266394da03582e8eb41321a8efe9ce43d5d9c0a99c8f2d9302c1e58b96d0cd"
+    },
+    "post/コンピューターをロックするショートカットを作成する方法/index.zh-tw.md": {
+      "source": "post/コンピューターをロックするショートカットを作成する方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "e72a6d2efd7cdc810f9eb789636454f7c3495d2dd33e21eb04ee02a5c3241119",
+      "translationHash": "8723a6e7307e217c3dda03cfceda646ee326993d99f32c8cbb74e3be03bd0b6b",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-195.json",
+      "evidenceHash": "4d3f5a161e1e7f9caaba31629568982b53e776ae5b983c133dcd20c17235d6b7"
+    },
+    "post/コンピューターをロックするショートカットを作成する方法/index.hi.md": {
+      "source": "post/コンピューターをロックするショートカットを作成する方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "e72a6d2efd7cdc810f9eb789636454f7c3495d2dd33e21eb04ee02a5c3241119",
+      "translationHash": "765424e492ce616f8187cbbb34a313a13d0c1d0b43697c07b66f9425f5835f18",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-195.json",
+      "evidenceHash": "ea1bdfaa894f8fd1ee4c524dbac41842acc453db3fa9b5b4fcd0141cfb3be67c"
+    },
+    "post/コンピューターをロックするショートカットを作成する方法/index.fr.md": {
+      "source": "post/コンピューターをロックするショートカットを作成する方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "e72a6d2efd7cdc810f9eb789636454f7c3495d2dd33e21eb04ee02a5c3241119",
+      "translationHash": "cf34b2f8303c803ab1a7a07023a4d26b6861a3804f553fe05ea470d37415606e",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-195.json",
+      "evidenceHash": "01c563dd9bc4de58afcbd200795d6066b98ba8d735e741367da2ba085358d928"
+    },
+    "post/コンピューターをロックするショートカットを作成する方法/index.de.md": {
+      "source": "post/コンピューターをロックするショートカットを作成する方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "e72a6d2efd7cdc810f9eb789636454f7c3495d2dd33e21eb04ee02a5c3241119",
+      "translationHash": "205346314671c7ad0bce0807fc0d228b55e14d11dedeafb67faa640eeaef1a7c",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-195.json",
+      "evidenceHash": "85347fec4cf7263569df99061cb35d017785d077959f3b75d13b685e32842b89"
+    },
+    "post/コンピューターをロックするショートカットを作成する方法/index.ar.md": {
+      "source": "post/コンピューターをロックするショートカットを作成する方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "e72a6d2efd7cdc810f9eb789636454f7c3495d2dd33e21eb04ee02a5c3241119",
+      "translationHash": "8c0a9fc2be018f94833d0da889c56c7a5daef121882cd9a9f8d154f665634c83",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-195.json",
+      "evidenceHash": "6d0c04a524561cef0bbf8cc2ffb0bc378eb291a972514fe6198079d31f7af64c"
+    },
+    "post/コンピューターをロックするショートカットを作成する方法/index.ru.md": {
+      "source": "post/コンピューターをロックするショートカットを作成する方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "e72a6d2efd7cdc810f9eb789636454f7c3495d2dd33e21eb04ee02a5c3241119",
+      "translationHash": "8cba21c295439ae7fa864892bbdd0775127fb0beaf0a33cd08a4f5da95d44a49",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-195.json",
+      "evidenceHash": "4d71d71930bde403b0957d110b4f99859dd94bede7bf0cd3be5b4360a8a09730"
+    },
+    "post/コンピューターをロックするショートカットを作成する方法/index.id.md": {
+      "source": "post/コンピューターをロックするショートカットを作成する方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "e72a6d2efd7cdc810f9eb789636454f7c3495d2dd33e21eb04ee02a5c3241119",
+      "translationHash": "c6e25f49468216aa906a337295f74a80f63efb58a176ba27dccbdc3909d2945f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-195.json",
+      "evidenceHash": "448a0ea3567ded7122220afde70513a29778b6d6a293142f1c06c000f1031ee3"
     }
   }
 }

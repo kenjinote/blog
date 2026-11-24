@@ -7,14 +7,14 @@
 
 
 title: 'Windows PC를 1초 만에 잠금! 편리한 바로가기 생성 방법과 사용법'
-date: "2026-09-24T19:44:38+09:00"
 slug: "컴퓨터 잠금する바로 가기を作成する方法"
-date: 2024-04-01T01:37:49+09:00
 tags: ["Windows", "컴퓨터 잠금", "바로 가기"]
 draft: false
 image: "img.webp"
 categories: ["pc-gadgets"]
 description: 'Windows PC를 원클릭으로 잠글 수 있는 바로가기 생성 방법을 사진과 함께 알기 쉽게 해설합니다. 자리 비울 때의 보안 대책으로 편리한 Win+L 키를 사용하여 순식간에 잠그는 방법도 소개합니다.'
+date: "2024-04-01T01:37:49+09:00"
+lastmod: "2026-11-25T00:00:00+09:00"
 ---
 
 
@@ -64,3 +64,12 @@ description: 'Windows PC를 원클릭으로 잠글 수 있는 바로가기 생�
 `Win키` + `L키`를 눌러도 똑같이 컴퓨터를 잠글 수 있습니다.
 
 ※주의: 컴퓨터 잠금 확인 대화 상자는 표시되지 않습니다.
+
+Windows를 잠가도 앱은 열린 채로 유지되며, 다시 사용하려면 로그인해야 합니다. 스크린샷은 일본어 Windows 화면이므로 버전과 표시 언어에 따라 이름과 배치가 다를 수 있습니다.
+
+## References
+
+- [Microsoft Support: Lock your Windows device](https://support.microsoft.com/en-us/accounts-billing/security/user-account-access-in-windows)
+- [Microsoft Learn: LockWorkStation function](https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-lockworkstation)
+- [Microsoft Learn: Changing computer state with PowerShell](https://learn.microsoft.com/en-us/powershell/scripting/samples/changing-computer-state)
+- [Microsoft Learn: rundll32 command](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/rundll32)

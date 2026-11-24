@@ -1,13 +1,13 @@
 ---
 title: 'Windows पीसी को 1 सेकंड में लॉक करें! एक सुविधाजनक शॉर्टकट बनाने और उपयोग करने का तरीका'
-date: "2026-09-24T19:44:38+09:00"
 slug: "कंप्यूटर लॉक करेंするशॉर्टकटを作成する方法"
-date: 2024-04-01T01:37:49+09:00
 tags: ["Windows", "कंप्यूटर लॉक करें", "शॉर्टकट"]
 draft: false
 image: "img.webp"
 categories: ["pc-gadgets"]
 description: 'एक क्लिक से Windows कंप्यूटर को लॉक करने के लिए एक शॉर्टकट बनाने का तरीका चित्रों के साथ आसानी से समझाया गया है। दूर रहने पर सुरक्षा उपाय के रूप में Win+L कुंजी का उपयोग करके तुरंत लॉक करने का सुविधाजनक तरीका भी प्रस्तुत किया गया है।'
+date: "2024-04-01T01:37:49+09:00"
+lastmod: "2026-11-25T00:00:00+09:00"
 ---
 
 यहां बताया गया है कि कंप्यूटर को लॉक करने के लिए शॉर्टकट कैसे बनाएं।
@@ -50,3 +50,12 @@ description: 'एक क्लिक से Windows कंप्यूटर क
 आप उसी तरह कंप्यूटर को लॉक करने के लिए `Win कुंजी` + `L कुंजी` भी दबा सकते हैं।
 
 ※ ध्यान दें: कंप्यूटर को लॉक करने पर कोई पुष्टिकरण संवाद प्रदर्शित नहीं होगा।
+
+Windows लॉक करने पर ऐप खुले रहते हैं; काम फिर शुरू करने के लिए दोबारा साइन इन करना होगा। स्क्रीनशॉट जापानी Windows इंटरफ़ेस दिखाते हैं, इसलिए संस्करण और भाषा के अनुसार नाम व लेआउट अलग हो सकते हैं।
+
+## References
+
+- [Microsoft Support: Lock your Windows device](https://support.microsoft.com/en-us/accounts-billing/security/user-account-access-in-windows)
+- [Microsoft Learn: LockWorkStation function](https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-lockworkstation)
+- [Microsoft Learn: Changing computer state with PowerShell](https://learn.microsoft.com/en-us/powershell/scripting/samples/changing-computer-state)
+- [Microsoft Learn: rundll32 command](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/rundll32)

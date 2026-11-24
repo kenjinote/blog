@@ -1,13 +1,13 @@
 ---
 title: 'قفل جهاز الكمبيوتر الذي يعمل بنظام Windows في ثانية واحدة! طريقة إنشاء واستخدام اختصار مفيد'
-date: "2026-09-24T19:44:38+09:00"
 slug: "قفل الكمبيوترするاختصارを作成する方法"
-date: 2024-04-01T01:37:49+09:00
 tags: ["Windows", "قفل الكمبيوتر", "اختصار"]
 draft: false
 image: "img.webp"
 categories: ["pc-gadgets"]
 description: 'نشرح بوضوح بالصور كيفية إنشاء اختصار لقفل جهاز كمبيوتر يعمل بنظام Windows بنقرة واحدة. كما نقدم طريقة القفل الفوري باستخدام مفاتيح Win+L، والتي تُعد مفيدة كتدبير أمني عند ترك المقعد.'
+date: "2024-04-01T01:37:49+09:00"
+lastmod: "2026-11-25T00:00:00+09:00"
 ---
 
 إليك كيفية إنشاء اختصار لقفل الكمبيوتر.
@@ -50,3 +50,12 @@ description: 'نشرح بوضوح بالصور كيفية إنشاء اختصا�
 يمكنك أيضًا قفل الكمبيوتر بالضغط على `مفتاح Win` + `مفتاح L`.
 
 ※ ملاحظة: لن يتم عرض مربع حوار تأكيد قفل الكمبيوتر.
+
+عند قفل Windows تظل التطبيقات مفتوحة، ويلزم تسجيل الدخول مجددًا للمتابعة. تعرض لقطات الشاشة واجهة Windows اليابانية، لذلك قد تختلف التسميات والتخطيط باختلاف الإصدار ولغة العرض.
+
+## References
+
+- [Microsoft Support: Lock your Windows device](https://support.microsoft.com/en-us/accounts-billing/security/user-account-access-in-windows)
+- [Microsoft Learn: LockWorkStation function](https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-lockworkstation)
+- [Microsoft Learn: Changing computer state with PowerShell](https://learn.microsoft.com/en-us/powershell/scripting/samples/changing-computer-state)
+- [Microsoft Learn: rundll32 command](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/rundll32)

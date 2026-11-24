@@ -1,13 +1,13 @@
 ---
 title: 'Kunci PC Windows dalam 1 Detik! Cara Membuat dan Menggunakan Pintasan yang Praktis'
-date: "2026-09-24T19:44:38+09:00"
 slug: "Kunci KomputerするPintasanを作成する方法"
-date: 2024-04-01T01:37:49+09:00
 tags: ["Windows", "Kunci Komputer", "Pintasan"]
 draft: false
 image: "img.webp"
 categories: ["pc-gadgets"]
 description: 'Menjelaskan dengan mudah beserta gambar, cara membuat pintasan yang mampu mengunci PC Windows dengan satu klik. Juga memperkenalkan cara instan mengunci sistem dengan tombol Win+L, yang sangat bermanfaat sebagai langkah pengamanan saat Anda meninggalkan meja.'
+date: "2024-04-01T01:37:49+09:00"
+lastmod: "2026-11-25T00:00:00+09:00"
 ---
 
 Berikut adalah cara membuat pintasan untuk mengunci komputer.
@@ -50,3 +50,12 @@ Mengklik ganda pintasan yang dibuat akan mengunci komputer.
 Anda juga dapat mengunci komputer dengan menekan `Tombol Win` + `Tombol L`.
 
 ※ Catatan: Dialog konfirmasi penguncian komputer tidak akan ditampilkan.
+
+Saat Windows dikunci, aplikasi tetap terbuka; Anda harus masuk kembali untuk melanjutkan. Tangkapan layar menampilkan antarmuka Windows berbahasa Jepang, sehingga label dan tata letak dapat berbeda menurut versi dan bahasa tampilan.
+
+## References
+
+- [Microsoft Support: Lock your Windows device](https://support.microsoft.com/en-us/accounts-billing/security/user-account-access-in-windows)
+- [Microsoft Learn: LockWorkStation function](https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-lockworkstation)
+- [Microsoft Learn: Changing computer state with PowerShell](https://learn.microsoft.com/en-us/powershell/scripting/samples/changing-computer-state)
+- [Microsoft Learn: rundll32 command](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/rundll32)

@@ -14,6 +14,19 @@ DOCS = ROOT / "docs/translation-review"
 LANGS = ("ja", "en", "zh-cn", "es", "ko", "pt", "zh-tw", "hi", "fr", "de", "ar", "ru", "id")
 NS = {"s": "http://www.sitemaps.org/schemas/sitemap/0.9"}
 ARTICLES = {
+    195: {
+        "bundle": ROOT / "content/post/\u30b3\u30f3\u30d4\u30e5\u30fc\u30bf\u30fc\u3092\u30ed\u30c3\u30af\u3059\u308b\u30b7\u30e7\u30fc\u30c8\u30ab\u30c3\u30c8\u3092\u4f5c\u6210\u3059\u308b\u65b9\u6cd5",
+        "slug": "\u30b3\u30f3\u30d4\u30e5\u30fc\u30bf\u30fc\u3092\u30ed\u30c3\u30af\u3059\u308b\u30b7\u30e7\u30fc\u30c8\u30ab\u30c3\u30c8\u3092\u4f5c\u6210\u3059\u308b\u65b9\u6cd5",
+        "links": [
+            "https://support.microsoft.com/en-us/accounts-billing/security/user-account-access-in-windows",
+            "https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-lockworkstation",
+            "https://learn.microsoft.com/en-us/powershell/scripting/samples/changing-computer-state",
+            "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/rundll32",
+        ],
+        "markers": ["rundll32.exe user32.dll,LockWorkStation", "LockWorkStation"],
+        "date": "2024-04-01",
+        "lastmod": "2026-11-25",
+    },
     194: {
         "bundle": ROOT / "content/post/git\u3067\u30bf\u30b0\u3092\u6d88\u3059",
         "slug": "git\u3067\u30bf\u30b0\u3092\u6d88\u3059",
@@ -1193,7 +1206,7 @@ def slug_key(value):
 parser = argparse.ArgumentParser()
 parser.add_argument("--ci-run", type=int, required=True)
 parser.add_argument("--commit", required=True)
-parser.add_argument("--max-batch", type=int, choices=(90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 194), default=194)
+parser.add_argument("--max-batch", type=int, choices=(90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 195), default=195)
 args = parser.parse_args()
 ARTICLES = {number: article for number, article in ARTICLES.items() if number <= args.max_batch}
 with urllib.request.urlopen(f"https://github.com/kenjinote/blog/actions/runs/{args.ci_run}", timeout=45) as response:
