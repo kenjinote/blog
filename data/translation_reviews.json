@@ -16565,6 +16565,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-142.json",
       "evidenceHash": "7991238ffbfb68e8440121fda0b3a4aaa420ad4bdd47a784e6a4d4fe61fd5f1e"
+    },
+    "post/マルチモニタで毎回起動時にDPIの設定がリセットされてしまうときの対処法/index.en.md": {
+      "source": "post/マルチモニタで毎回起動時にDPIの設定がリセットされてしまうときの対処法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "7c2747629129d31800a41530e787354517f52e18591dce55c1e3c0894512cf86",
+      "translationHash": "35ec4d484570579332e025f7c4ec27e0d0226f117c2d9c03f842afc743212423",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-143.json",
+      "evidenceHash": "74a3532bcfe73ecc1d9a26c534e6a5e6ca19e1c71deb3eac8f9a9836b6209f20"
+    },
+    "post/マルチモニタで毎回起動時にDPIの設定がリセットされてしまうときの対処法/index.zh-cn.md": {
+      "source": "post/マルチモニタで毎回起動時にDPIの設定がリセットされてしまうときの対処法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "7c2747629129d31800a41530e787354517f52e18591dce55c1e3c0894512cf86",
+      "translationHash": "b0448b4d9a373b1dffefbfcc7bbbeb9f9cab3189bab9936f7c5490b216f14e17",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-143.json",
+      "evidenceHash": "e509c5340ad237aa9e95bb7b9cf2a9f19648d81e90b864c0aa25ec97f9d8d6c3"
+    },
+    "post/マルチモニタで毎回起動時にDPIの設定がリセットされてしまうときの対処法/index.es.md": {
+      "source": "post/マルチモニタで毎回起動時にDPIの設定がリセットされてしまうときの対処法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "7c2747629129d31800a41530e787354517f52e18591dce55c1e3c0894512cf86",
+      "translationHash": "90053fe1cfaff51ecb655ae629f9d021dbf7730cc8d2688e396a2f1f716074c1",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-143.json",
+      "evidenceHash": "9299115c617ac47d8318d83b00c56baf0ad22defaaa800c540d5a14714099c5e"
+    },
+    "post/マルチモニタで毎回起動時にDPIの設定がリセットされてしまうときの対処法/index.ko.md": {
+      "source": "post/マルチモニタで毎回起動時にDPIの設定がリセットされてしまうときの対処法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "7c2747629129d31800a41530e787354517f52e18591dce55c1e3c0894512cf86",
+      "translationHash": "03055a34bef19f5008bf2fc4819e4f2f4153186b6708c9ed68cbcd76384a6552",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-143.json",
+      "evidenceHash": "808fb871c532b1e04b2417a7e501ae7ff2acadb0eb4ce4cbd1df9dd6b9c30472"
+    },
+    "post/マルチモニタで毎回起動時にDPIの設定がリセットされてしまうときの対処法/index.pt.md": {
+      "source": "post/マルチモニタで毎回起動時にDPIの設定がリセットされてしまうときの対処法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "7c2747629129d31800a41530e787354517f52e18591dce55c1e3c0894512cf86",
+      "translationHash": "d922d6d5eff51bc4787d4335ee76d58efa8633666d9181f77941236f8a39e083",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-143.json",
+      "evidenceHash": "d4e76d43f349cfd91dd37e6b65686c80e75a74dd14d224af6f56b177cd36df68"
+    },
+    "post/マルチモニタで毎回起動時にDPIの設定がリセットされてしまうときの対処法/index.zh-tw.md": {
+      "source": "post/マルチモニタで毎回起動時にDPIの設定がリセットされてしまうときの対処法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "7c2747629129d31800a41530e787354517f52e18591dce55c1e3c0894512cf86",
+      "translationHash": "9bd1b6c8a321678daa4ad690a992847d138811c9bbaa51cc659147e87d9e8d0c",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-143.json",
+      "evidenceHash": "e6a59deb86d991e836e8de813aee858deb60f635b54287760e9403e3fd3577a2"
+    },
+    "post/マルチモニタで毎回起動時にDPIの設定がリセットされてしまうときの対処法/index.hi.md": {
+      "source": "post/マルチモニタで毎回起動時にDPIの設定がリセットされてしまうときの対処法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "7c2747629129d31800a41530e787354517f52e18591dce55c1e3c0894512cf86",
+      "translationHash": "a3cf7f9e1cc9736bfbba90802b3981322bc297b07145a6de2cfcd027251cde65",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-143.json",
+      "evidenceHash": "2cac68a1e676c0ef2cdbeea19ce977e6d818bf5a8b5fe62a7d22d465cd891b6f"
+    },
+    "post/マルチモニタで毎回起動時にDPIの設定がリセットされてしまうときの対処法/index.fr.md": {
+      "source": "post/マルチモニタで毎回起動時にDPIの設定がリセットされてしまうときの対処法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "7c2747629129d31800a41530e787354517f52e18591dce55c1e3c0894512cf86",
+      "translationHash": "b3aebfec32e730950b3ff625b50a8a53e2c263579ea17ee2374cfd7b9b5614f6",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-143.json",
+      "evidenceHash": "147f4c9dd41ace9ed876070ade61f598c172b9b5f753e959a27bf4f6ad1e8887"
+    },
+    "post/マルチモニタで毎回起動時にDPIの設定がリセットされてしまうときの対処法/index.de.md": {
+      "source": "post/マルチモニタで毎回起動時にDPIの設定がリセットされてしまうときの対処法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "7c2747629129d31800a41530e787354517f52e18591dce55c1e3c0894512cf86",
+      "translationHash": "60fa71a5e423b78e3b42a8b5fc3217d8891f06d530ac252b4ff4593451e9648f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-143.json",
+      "evidenceHash": "e2a6d46163badf1eaf26f59523b264ec0f5a6207928a4f2f770d074f0c6b92ff"
+    },
+    "post/マルチモニタで毎回起動時にDPIの設定がリセットされてしまうときの対処法/index.ar.md": {
+      "source": "post/マルチモニタで毎回起動時にDPIの設定がリセットされてしまうときの対処法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "7c2747629129d31800a41530e787354517f52e18591dce55c1e3c0894512cf86",
+      "translationHash": "b3d6e46c002cc8add90d6574c95befa291f2d3e268c7500c7894affcf357022c",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-143.json",
+      "evidenceHash": "6f7231a745d792fec45facb3865737b48c2990c919ab24642d0471a09a2b1a42"
+    },
+    "post/マルチモニタで毎回起動時にDPIの設定がリセットされてしまうときの対処法/index.ru.md": {
+      "source": "post/マルチモニタで毎回起動時にDPIの設定がリセットされてしまうときの対処法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "7c2747629129d31800a41530e787354517f52e18591dce55c1e3c0894512cf86",
+      "translationHash": "833d72c585f6130978ae80e9084bb0e528c33d9e70c522c8494ba89bdbf68c9a",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-143.json",
+      "evidenceHash": "c746d5603e7a1e621c96bbb5bb5793381ffab9992b9b7fb3b5179eb51e6ccef4"
+    },
+    "post/マルチモニタで毎回起動時にDPIの設定がリセットされてしまうときの対処法/index.id.md": {
+      "source": "post/マルチモニタで毎回起動時にDPIの設定がリセットされてしまうときの対処法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "7c2747629129d31800a41530e787354517f52e18591dce55c1e3c0894512cf86",
+      "translationHash": "a5ceca0b734098e17d57e87604f807ce8dd1c45e2ed0679cbb807a4e91ccd32f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-143.json",
+      "evidenceHash": "3f74f125e09d0b1e91c31e1a276e65f31b005ba7614a61ca09b75a6a896bf825"
     }
   }
 }

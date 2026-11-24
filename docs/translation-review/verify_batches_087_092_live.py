@@ -360,6 +360,14 @@ ARTICLES = {
         "scopeMarkers": {"ja":"行き詰まった時に見返したい言葉","en":"Words to revisit when I feel stuck","zh-cn":"感到受挫时可以重看的话","es":"Palabras que vuelvo a leer cuando me atasco","ko":"막막할 때 다시 보는 말","pt":"Palavras que revejo quando me sinto travado","zh-tw":"感到受挫時可以重看的話","hi":"जब मन अटक जाए तो फिर से पढ़ने योग्य शब्द","fr":"Des mots à relire quand je me sens bloqué","de":"Worte, die ich bei Stillstand erneut lese","ar":"كلمات أعود إليها عندما أشعر بالتعثر","ru":"Слова, к которым я возвращаюсь в трудный момент","id":"Kata-kata yang saya baca kembali saat merasa buntu"},
         "date": "2022-09-08",
     },
+    143: {
+        "bundle": ROOT / "content/post/マルチモニタで毎回起動時にDPIの設定がリセットされてしまうときの対処法",
+        "slug": "マルチモニタで毎回起動時にDPIの設定がリセットされてしまうときの対処法",
+        "links": ["https://support.microsoft.com/en-us/windows/experience/power-battery/shut-down-sleep-or-hibernate-your-pc", "https://learn.microsoft.com/en-us/windows/win32/power/system-power-states", "https://learn.microsoft.com/en-us/windows-hardware/drivers/kernel/distinguishing-fast-startup-from-wake-from-hibernation"],
+        "markers": ["Fast Startup"],
+        "scopeMarkers": {"ja":"Shut down, sleep, or hibernate your PC", "en":"Shut down, sleep, or hibernate your PC", "zh-cn":"Shut down, sleep, or hibernate your PC", "es":"Shut down, sleep, or hibernate your PC", "ko":"Shut down, sleep, or hibernate your PC", "pt":"Shut down, sleep, or hibernate your PC", "zh-tw":"Shut down, sleep, or hibernate your PC", "hi":"Shut down, sleep, or hibernate your PC", "fr":"Shut down, sleep, or hibernate your PC", "de":"Shut down, sleep, or hibernate your PC", "ar":"Shut down, sleep, or hibernate your PC", "ru":"Shut down, sleep, or hibernate your PC", "id":"Shut down, sleep, or hibernate your PC"},
+        "date": "2024-04-29",
+    },
     142: {
         "bundle": ROOT / "content/post/SalesforceのSOQLを利用して日別のレコード作成数を取得する方法",
         "slug": "SalesforceのSOQLを利用して日別のレコード作成数を取得する方法",
@@ -676,7 +684,7 @@ def slug_key(value):
 parser = argparse.ArgumentParser()
 parser.add_argument("--ci-run", type=int, required=True)
 parser.add_argument("--commit", required=True)
-parser.add_argument("--max-batch", type=int, choices=(90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142), default=142)
+parser.add_argument("--max-batch", type=int, choices=(90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143), default=143)
 args = parser.parse_args()
 ARTICLES = {number: article for number, article in ARTICLES.items() if number <= args.max_batch}
 with urllib.request.urlopen(f"https://github.com/kenjinote/blog/actions/runs/{args.ci_run}", timeout=45) as response:

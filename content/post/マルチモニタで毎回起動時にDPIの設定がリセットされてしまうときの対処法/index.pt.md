@@ -1,23 +1,30 @@
 ---
-title: '[Windows 11] Como resolver o problema em que as configurações de DPI são redefinidas na inicialização em ambientes com vários monitores'
-date: "2026-09-24T19:44:38+09:00"
+title: "Windows 11: verificar a Inicialização Rápida quando a escala muda"
+
 slug: "Múltiplos Monitoresで毎回起動時にDPIの設定がリセットされてしまうときの対処法"
 date: 2024-04-29T19:42:20+09:00
+lastmod: "2026-11-24T00:00:00+09:00"
+
 tags: ["Vários monitores", "DPI", "Painel de controle"]
 draft: false
 image: "img.webp"
 categories: ["it-technology"]
-description: 'Explicaremos como resolver o problema em que as configurações de DPI (escala) da tela são redefinidas sozinhas ao iniciar o PC em um ambiente de múltiplos monitores no Windows 11. Resumimos as etapas para desativar a inicialização rápida a partir do Painel de Controle.'
+description: "Etapa de diagnóstico cautelosa no Windows 11: desative temporariamente a Inicialização Rápida, teste desligar e ligar e restaure a opção se não ajudar."
 ---
+A Inicialização Rápida salva a sessão do kernel e o estado dos drivers em um arquivo de hibernação durante o desligamento para acelerar a próxima inicialização. Desativá-la pode deixar a inicialização mais lenta. A documentação da Microsoft não a identifica como causa da redefinição de escala em vários monitores; use estas etapas como teste temporário, não como solução comprovada.
 
-※ Este é o procedimento de configuração para o Windows 11.
+## Alterar a configuração temporariamente
 
-1. Abra o Painel de Controle
-2. Selecione Opções de Energia
-3. Clique em "Escolher a função dos botões de energia"
-4. Clique em "Alterar configurações não disponíveis no momento"
-5. Desmarque "Ligar inicialização rápida (recomendado)"
-6. Clique em "Salvar alterações"
+1. Abra o Painel de Controle e selecione **Opções de Energia**.
+2. Abra **Escolher a função dos botões de energia**.
+3. Clique em **Alterar configurações não disponíveis no momento** (pode exigir acesso de administrador).
+4. Desmarque **Ligar inicialização rápida (recomendado)** e clique em **Salvar alterações**.
+5. Escolha **Desligar**, ligue o PC novamente e verifique se a escala foi mantida. Faça o teste desligando e ligando; **Reiniciar** não usa a Inicialização Rápida.
 
-### Referência
-[\[Windows 10\] Como desativar a inicialização rápida.](https://www.fmworld.net/cs/azbyclub/qanavi/jsp/qacontents.jsp?PID=6010-9312)
+Se não ajudar, volte à mesma tela e reative a opção. Os nomes dos menus podem variar conforme o idioma do Windows e as atualizações.
+
+## Referências da Microsoft
+
+- [Shut down, sleep, or hibernate your PC — Microsoft Support](https://support.microsoft.com/en-us/windows/experience/power-battery/shut-down-sleep-or-hibernate-your-pc)
+- [System power states — Microsoft Learn](https://learn.microsoft.com/en-us/windows/win32/power/system-power-states)
+- [Distinguishing Fast Startup from Wake-from-Hibernation — Microsoft Learn](https://learn.microsoft.com/en-us/windows-hardware/drivers/kernel/distinguishing-fast-startup-from-wake-from-hibernation)

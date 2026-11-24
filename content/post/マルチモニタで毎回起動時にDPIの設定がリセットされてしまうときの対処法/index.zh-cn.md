@@ -1,23 +1,30 @@
 ---
-title: '【Windows 11】多显示器环境下开机DPI设置被重置问题的解决方法'
-date: "2026-09-24T19:44:38+09:00"
+title: "Windows 11：启动后显示缩放变化时的检查方法"
+
 slug: "多显示器で毎回起動時にDPIの設定がリセットされてしまうときの対処法"
 date: 2024-04-29T19:42:20+09:00
+lastmod: "2026-11-24T00:00:00+09:00"
+
 tags: ["多显示器", "DPI", "控制面板"]
 draft: false
 image: "img.webp"
 categories: ["it-technology"]
-description: '解说在Windows 11的多显示器环境下，电脑开机时屏幕的DPI（缩放）设置被自动重置现象的解决方法。总结了从控制面板禁用快速启动的步骤。'
+description: "Windows 11 多显示器缩放变化时，可暂时关闭快速启动进行排查；本文说明如何测试、恢复设置，并指出这不一定是根因。"
 ---
+快速启动会在关机时将内核会话和设备驱动程序状态保存到休眠文件，以加快下次启动。关闭它可能会使启动变慢。Microsoft 文档并未确认它会导致多显示器缩放重置；请将以下步骤视为临时排查方法，而非已证实的修复方案。
 
-※以下为Windows 11中的设置步骤。
+## 临时更改设置
 
-1. 打开控制面板
-2. 选择电源选项
-3. 点击“选择电源按钮的功能”
-4. 点击“更改当前不可用的设置”
-5. 取消勾选“启用快速启动（推荐）”
-6. 点击“保存修改”
+1. 打开控制面板并选择“电源选项”。
+2. 打开“选择电源按钮的功能”。
+3. 点击“更改当前不可用的设置”（可能需要管理员权限）。
+4. 取消勾选“启用快速启动（推荐）”，然后点击“保存修改”。
+5. 选择“关机”，再按电源键开机，检查缩放设置是否保留。测试时应关机后再开机；“重启”不会使用快速启动。
 
-### 参考
-[\[Windows 10\] 请问如何禁用快速启动？](https://www.fmworld.net/cs/azbyclub/qanavi/jsp/qacontents.jsp?PID=6010-9312)
+如果问题没有改善，请回到同一页面重新启用快速启动。菜单名称可能因 Windows 语言和更新而异。
+
+## Microsoft 参考资料
+
+- [Shut down, sleep, or hibernate your PC — Microsoft Support](https://support.microsoft.com/en-us/windows/experience/power-battery/shut-down-sleep-or-hibernate-your-pc)
+- [System power states — Microsoft Learn](https://learn.microsoft.com/en-us/windows/win32/power/system-power-states)
+- [Distinguishing Fast Startup from Wake-from-Hibernation — Microsoft Learn](https://learn.microsoft.com/en-us/windows-hardware/drivers/kernel/distinguishing-fast-startup-from-wake-from-hibernation)

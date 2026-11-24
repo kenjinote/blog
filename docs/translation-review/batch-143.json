@@ -1,0 +1,455 @@
+{
+  "version": 1,
+  "batch": 143,
+  "article": "Windows 11で起動時にDPI設定が変わる場合の確認事項",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "7c2747629129d31800a41530e787354517f52e18591dce55c1e3c0894512cf86",
+  "sources": [
+    "https://support.microsoft.com/en-us/windows/experience/power-battery/shut-down-sleep-or-hibernate-your-pc",
+    "https://learn.microsoft.com/en-us/windows/win32/power/system-power-states",
+    "https://learn.microsoft.com/en-us/windows-hardware/drivers/kernel/distinguishing-fast-startup-from-wake-from-hibernation"
+  ],
+  "scope": "Compared the complete Japanese article and all twelve translations, including the claimed cause, UI steps, shutdown/restart distinction, reversibility, warning, metadata, and official references.",
+  "findings": [
+    "Removed the duplicate future date and retained 2024-04-29 as publication date; set lastmod to 2026-11-24.",
+    "Changed the headline and wording from a definite fix to a possible troubleshooting check; Microsoft documentation does not establish Fast Startup as the cause of multi-monitor scaling resets.",
+    "Explained that Fast Startup saves kernel and driver state during shutdown and disabling it may lengthen startup.",
+    "Added a shutdown-and-power-on test; Restart does not use Fast Startup.",
+    "Added steps to re-enable Fast Startup if the test does not help and replaced the Windows 10 manufacturer reference with current Microsoft sources."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/マルチモニタで毎回起動時にDPIの設定がリセットされてしまうときの対処法/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/マルチモニタで毎回起動時にDPIの設定がリセットされてしまうときの対処法/index.md",
+      "sourceHash": "7c2747629129d31800a41530e787354517f52e18591dce55c1e3c0894512cf86",
+      "translationHash": "35ec4d484570579332e025f7c4ec27e0d0226f117c2d9c03f842afc743212423",
+      "summary": "Compared the full Japanese guide and twelve translations with current Microsoft Support and Learn documentation; reframed disabling Fast Startup as a reversible troubleshooting test because Microsoft does not establish it as the cause of scaling resets.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the symptom claim and procedure; explicitly stated that Microsoft documentation does not confirm Fast Startup as the cause, and described disabling it only as a reversible diagnostic test."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Windows 11, multi-monitor display scaling, Fast Startup, hibernation file, shutdown versus restart, Control Panel, Power Options, and localized settings labels in all language versions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The Windows troubleshooting guide contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The procedure uses Windows Control Panel settings and contains no executable code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the Windows 10 vendor help reference with Microsoft Support instructions for power settings and Microsoft Learn descriptions of power states and Fast Startup."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The DPI reset symptom was not reproduced on physical Windows 11 multi-monitor hardware; disabling Fast Startup is not a confirmed fix.",
+        "Menu names can vary by Windows display language and updates; disabling Fast Startup can lengthen startup time."
+      ]
+    },
+    "post/マルチモニタで毎回起動時にDPIの設定がリセットされてしまうときの対処法/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/マルチモニタで毎回起動時にDPIの設定がリセットされてしまうときの対処法/index.md",
+      "sourceHash": "7c2747629129d31800a41530e787354517f52e18591dce55c1e3c0894512cf86",
+      "translationHash": "b0448b4d9a373b1dffefbfcc7bbbeb9f9cab3189bab9936f7c5490b216f14e17",
+      "summary": "Compared the full Japanese guide and twelve translations with current Microsoft Support and Learn documentation; reframed disabling Fast Startup as a reversible troubleshooting test because Microsoft does not establish it as the cause of scaling resets.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the symptom claim and procedure; explicitly stated that Microsoft documentation does not confirm Fast Startup as the cause, and described disabling it only as a reversible diagnostic test."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Windows 11, multi-monitor display scaling, Fast Startup, hibernation file, shutdown versus restart, Control Panel, Power Options, and localized settings labels in all language versions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The Windows troubleshooting guide contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The procedure uses Windows Control Panel settings and contains no executable code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the Windows 10 vendor help reference with Microsoft Support instructions for power settings and Microsoft Learn descriptions of power states and Fast Startup."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The DPI reset symptom was not reproduced on physical Windows 11 multi-monitor hardware; disabling Fast Startup is not a confirmed fix.",
+        "Menu names can vary by Windows display language and updates; disabling Fast Startup can lengthen startup time."
+      ]
+    },
+    "post/マルチモニタで毎回起動時にDPIの設定がリセットされてしまうときの対処法/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/マルチモニタで毎回起動時にDPIの設定がリセットされてしまうときの対処法/index.md",
+      "sourceHash": "7c2747629129d31800a41530e787354517f52e18591dce55c1e3c0894512cf86",
+      "translationHash": "90053fe1cfaff51ecb655ae629f9d021dbf7730cc8d2688e396a2f1f716074c1",
+      "summary": "Compared the full Japanese guide and twelve translations with current Microsoft Support and Learn documentation; reframed disabling Fast Startup as a reversible troubleshooting test because Microsoft does not establish it as the cause of scaling resets.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the symptom claim and procedure; explicitly stated that Microsoft documentation does not confirm Fast Startup as the cause, and described disabling it only as a reversible diagnostic test."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Windows 11, multi-monitor display scaling, Fast Startup, hibernation file, shutdown versus restart, Control Panel, Power Options, and localized settings labels in all language versions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The Windows troubleshooting guide contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The procedure uses Windows Control Panel settings and contains no executable code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the Windows 10 vendor help reference with Microsoft Support instructions for power settings and Microsoft Learn descriptions of power states and Fast Startup."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The DPI reset symptom was not reproduced on physical Windows 11 multi-monitor hardware; disabling Fast Startup is not a confirmed fix.",
+        "Menu names can vary by Windows display language and updates; disabling Fast Startup can lengthen startup time."
+      ]
+    },
+    "post/マルチモニタで毎回起動時にDPIの設定がリセットされてしまうときの対処法/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/マルチモニタで毎回起動時にDPIの設定がリセットされてしまうときの対処法/index.md",
+      "sourceHash": "7c2747629129d31800a41530e787354517f52e18591dce55c1e3c0894512cf86",
+      "translationHash": "03055a34bef19f5008bf2fc4819e4f2f4153186b6708c9ed68cbcd76384a6552",
+      "summary": "Compared the full Japanese guide and twelve translations with current Microsoft Support and Learn documentation; reframed disabling Fast Startup as a reversible troubleshooting test because Microsoft does not establish it as the cause of scaling resets.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the symptom claim and procedure; explicitly stated that Microsoft documentation does not confirm Fast Startup as the cause, and described disabling it only as a reversible diagnostic test."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Windows 11, multi-monitor display scaling, Fast Startup, hibernation file, shutdown versus restart, Control Panel, Power Options, and localized settings labels in all language versions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The Windows troubleshooting guide contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The procedure uses Windows Control Panel settings and contains no executable code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the Windows 10 vendor help reference with Microsoft Support instructions for power settings and Microsoft Learn descriptions of power states and Fast Startup."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The DPI reset symptom was not reproduced on physical Windows 11 multi-monitor hardware; disabling Fast Startup is not a confirmed fix.",
+        "Menu names can vary by Windows display language and updates; disabling Fast Startup can lengthen startup time."
+      ]
+    },
+    "post/マルチモニタで毎回起動時にDPIの設定がリセットされてしまうときの対処法/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/マルチモニタで毎回起動時にDPIの設定がリセットされてしまうときの対処法/index.md",
+      "sourceHash": "7c2747629129d31800a41530e787354517f52e18591dce55c1e3c0894512cf86",
+      "translationHash": "d922d6d5eff51bc4787d4335ee76d58efa8633666d9181f77941236f8a39e083",
+      "summary": "Compared the full Japanese guide and twelve translations with current Microsoft Support and Learn documentation; reframed disabling Fast Startup as a reversible troubleshooting test because Microsoft does not establish it as the cause of scaling resets.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the symptom claim and procedure; explicitly stated that Microsoft documentation does not confirm Fast Startup as the cause, and described disabling it only as a reversible diagnostic test."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Windows 11, multi-monitor display scaling, Fast Startup, hibernation file, shutdown versus restart, Control Panel, Power Options, and localized settings labels in all language versions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The Windows troubleshooting guide contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The procedure uses Windows Control Panel settings and contains no executable code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the Windows 10 vendor help reference with Microsoft Support instructions for power settings and Microsoft Learn descriptions of power states and Fast Startup."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The DPI reset symptom was not reproduced on physical Windows 11 multi-monitor hardware; disabling Fast Startup is not a confirmed fix.",
+        "Menu names can vary by Windows display language and updates; disabling Fast Startup can lengthen startup time."
+      ]
+    },
+    "post/マルチモニタで毎回起動時にDPIの設定がリセットされてしまうときの対処法/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/マルチモニタで毎回起動時にDPIの設定がリセットされてしまうときの対処法/index.md",
+      "sourceHash": "7c2747629129d31800a41530e787354517f52e18591dce55c1e3c0894512cf86",
+      "translationHash": "9bd1b6c8a321678daa4ad690a992847d138811c9bbaa51cc659147e87d9e8d0c",
+      "summary": "Compared the full Japanese guide and twelve translations with current Microsoft Support and Learn documentation; reframed disabling Fast Startup as a reversible troubleshooting test because Microsoft does not establish it as the cause of scaling resets.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the symptom claim and procedure; explicitly stated that Microsoft documentation does not confirm Fast Startup as the cause, and described disabling it only as a reversible diagnostic test."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Windows 11, multi-monitor display scaling, Fast Startup, hibernation file, shutdown versus restart, Control Panel, Power Options, and localized settings labels in all language versions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The Windows troubleshooting guide contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The procedure uses Windows Control Panel settings and contains no executable code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the Windows 10 vendor help reference with Microsoft Support instructions for power settings and Microsoft Learn descriptions of power states and Fast Startup."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The DPI reset symptom was not reproduced on physical Windows 11 multi-monitor hardware; disabling Fast Startup is not a confirmed fix.",
+        "Menu names can vary by Windows display language and updates; disabling Fast Startup can lengthen startup time."
+      ]
+    },
+    "post/マルチモニタで毎回起動時にDPIの設定がリセットされてしまうときの対処法/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/マルチモニタで毎回起動時にDPIの設定がリセットされてしまうときの対処法/index.md",
+      "sourceHash": "7c2747629129d31800a41530e787354517f52e18591dce55c1e3c0894512cf86",
+      "translationHash": "a3cf7f9e1cc9736bfbba90802b3981322bc297b07145a6de2cfcd027251cde65",
+      "summary": "Compared the full Japanese guide and twelve translations with current Microsoft Support and Learn documentation; reframed disabling Fast Startup as a reversible troubleshooting test because Microsoft does not establish it as the cause of scaling resets.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the symptom claim and procedure; explicitly stated that Microsoft documentation does not confirm Fast Startup as the cause, and described disabling it only as a reversible diagnostic test."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Windows 11, multi-monitor display scaling, Fast Startup, hibernation file, shutdown versus restart, Control Panel, Power Options, and localized settings labels in all language versions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The Windows troubleshooting guide contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The procedure uses Windows Control Panel settings and contains no executable code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the Windows 10 vendor help reference with Microsoft Support instructions for power settings and Microsoft Learn descriptions of power states and Fast Startup."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The DPI reset symptom was not reproduced on physical Windows 11 multi-monitor hardware; disabling Fast Startup is not a confirmed fix.",
+        "Menu names can vary by Windows display language and updates; disabling Fast Startup can lengthen startup time."
+      ]
+    },
+    "post/マルチモニタで毎回起動時にDPIの設定がリセットされてしまうときの対処法/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/マルチモニタで毎回起動時にDPIの設定がリセットされてしまうときの対処法/index.md",
+      "sourceHash": "7c2747629129d31800a41530e787354517f52e18591dce55c1e3c0894512cf86",
+      "translationHash": "b3aebfec32e730950b3ff625b50a8a53e2c263579ea17ee2374cfd7b9b5614f6",
+      "summary": "Compared the full Japanese guide and twelve translations with current Microsoft Support and Learn documentation; reframed disabling Fast Startup as a reversible troubleshooting test because Microsoft does not establish it as the cause of scaling resets.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the symptom claim and procedure; explicitly stated that Microsoft documentation does not confirm Fast Startup as the cause, and described disabling it only as a reversible diagnostic test."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Windows 11, multi-monitor display scaling, Fast Startup, hibernation file, shutdown versus restart, Control Panel, Power Options, and localized settings labels in all language versions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The Windows troubleshooting guide contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The procedure uses Windows Control Panel settings and contains no executable code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the Windows 10 vendor help reference with Microsoft Support instructions for power settings and Microsoft Learn descriptions of power states and Fast Startup."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The DPI reset symptom was not reproduced on physical Windows 11 multi-monitor hardware; disabling Fast Startup is not a confirmed fix.",
+        "Menu names can vary by Windows display language and updates; disabling Fast Startup can lengthen startup time."
+      ]
+    },
+    "post/マルチモニタで毎回起動時にDPIの設定がリセットされてしまうときの対処法/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/マルチモニタで毎回起動時にDPIの設定がリセットされてしまうときの対処法/index.md",
+      "sourceHash": "7c2747629129d31800a41530e787354517f52e18591dce55c1e3c0894512cf86",
+      "translationHash": "60fa71a5e423b78e3b42a8b5fc3217d8891f06d530ac252b4ff4593451e9648f",
+      "summary": "Compared the full Japanese guide and twelve translations with current Microsoft Support and Learn documentation; reframed disabling Fast Startup as a reversible troubleshooting test because Microsoft does not establish it as the cause of scaling resets.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the symptom claim and procedure; explicitly stated that Microsoft documentation does not confirm Fast Startup as the cause, and described disabling it only as a reversible diagnostic test."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Windows 11, multi-monitor display scaling, Fast Startup, hibernation file, shutdown versus restart, Control Panel, Power Options, and localized settings labels in all language versions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The Windows troubleshooting guide contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The procedure uses Windows Control Panel settings and contains no executable code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the Windows 10 vendor help reference with Microsoft Support instructions for power settings and Microsoft Learn descriptions of power states and Fast Startup."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The DPI reset symptom was not reproduced on physical Windows 11 multi-monitor hardware; disabling Fast Startup is not a confirmed fix.",
+        "Menu names can vary by Windows display language and updates; disabling Fast Startup can lengthen startup time."
+      ]
+    },
+    "post/マルチモニタで毎回起動時にDPIの設定がリセットされてしまうときの対処法/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/マルチモニタで毎回起動時にDPIの設定がリセットされてしまうときの対処法/index.md",
+      "sourceHash": "7c2747629129d31800a41530e787354517f52e18591dce55c1e3c0894512cf86",
+      "translationHash": "b3d6e46c002cc8add90d6574c95befa291f2d3e268c7500c7894affcf357022c",
+      "summary": "Compared the full Japanese guide and twelve translations with current Microsoft Support and Learn documentation; reframed disabling Fast Startup as a reversible troubleshooting test because Microsoft does not establish it as the cause of scaling resets.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the symptom claim and procedure; explicitly stated that Microsoft documentation does not confirm Fast Startup as the cause, and described disabling it only as a reversible diagnostic test."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Windows 11, multi-monitor display scaling, Fast Startup, hibernation file, shutdown versus restart, Control Panel, Power Options, and localized settings labels in all language versions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The Windows troubleshooting guide contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The procedure uses Windows Control Panel settings and contains no executable code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the Windows 10 vendor help reference with Microsoft Support instructions for power settings and Microsoft Learn descriptions of power states and Fast Startup."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The DPI reset symptom was not reproduced on physical Windows 11 multi-monitor hardware; disabling Fast Startup is not a confirmed fix.",
+        "Menu names can vary by Windows display language and updates; disabling Fast Startup can lengthen startup time."
+      ]
+    },
+    "post/マルチモニタで毎回起動時にDPIの設定がリセットされてしまうときの対処法/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/マルチモニタで毎回起動時にDPIの設定がリセットされてしまうときの対処法/index.md",
+      "sourceHash": "7c2747629129d31800a41530e787354517f52e18591dce55c1e3c0894512cf86",
+      "translationHash": "833d72c585f6130978ae80e9084bb0e528c33d9e70c522c8494ba89bdbf68c9a",
+      "summary": "Compared the full Japanese guide and twelve translations with current Microsoft Support and Learn documentation; reframed disabling Fast Startup as a reversible troubleshooting test because Microsoft does not establish it as the cause of scaling resets.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the symptom claim and procedure; explicitly stated that Microsoft documentation does not confirm Fast Startup as the cause, and described disabling it only as a reversible diagnostic test."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Windows 11, multi-monitor display scaling, Fast Startup, hibernation file, shutdown versus restart, Control Panel, Power Options, and localized settings labels in all language versions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The Windows troubleshooting guide contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The procedure uses Windows Control Panel settings and contains no executable code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the Windows 10 vendor help reference with Microsoft Support instructions for power settings and Microsoft Learn descriptions of power states and Fast Startup."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The DPI reset symptom was not reproduced on physical Windows 11 multi-monitor hardware; disabling Fast Startup is not a confirmed fix.",
+        "Menu names can vary by Windows display language and updates; disabling Fast Startup can lengthen startup time."
+      ]
+    },
+    "post/マルチモニタで毎回起動時にDPIの設定がリセットされてしまうときの対処法/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/マルチモニタで毎回起動時にDPIの設定がリセットされてしまうときの対処法/index.md",
+      "sourceHash": "7c2747629129d31800a41530e787354517f52e18591dce55c1e3c0894512cf86",
+      "translationHash": "a5ceca0b734098e17d57e87604f807ce8dd1c45e2ed0679cbb807a4e91ccd32f",
+      "summary": "Compared the full Japanese guide and twelve translations with current Microsoft Support and Learn documentation; reframed disabling Fast Startup as a reversible troubleshooting test because Microsoft does not establish it as the cause of scaling resets.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the symptom claim and procedure; explicitly stated that Microsoft documentation does not confirm Fast Startup as the cause, and described disabling it only as a reversible diagnostic test."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Windows 11, multi-monitor display scaling, Fast Startup, hibernation file, shutdown versus restart, Control Panel, Power Options, and localized settings labels in all language versions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The Windows troubleshooting guide contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The procedure uses Windows Control Panel settings and contains no executable code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the Windows 10 vendor help reference with Microsoft Support instructions for power settings and Microsoft Learn descriptions of power states and Fast Startup."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The DPI reset symptom was not reproduced on physical Windows 11 multi-monitor hardware; disabling Fast Startup is not a confirmed fix.",
+        "Menu names can vary by Windows display language and updates; disabling Fast Startup can lengthen startup time."
+      ]
+    }
+  }
+}
