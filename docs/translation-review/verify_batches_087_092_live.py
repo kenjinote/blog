@@ -352,6 +352,13 @@ ARTICLES = {
         "markers": ["urlopen(request,timeout=15)", "response.headers.get_content_type()", "2*1024*1024", "webbrowser.open(temp_path.as_uri(),new=2)", "temp_path.unlink()", "PNG signature"],
         "date": "2025-02-24",
     },
+    118: {
+        "bundle": ROOT / "content/post/fontplus.jp",
+        "slug": "fontplus.jp",
+        "links": ["https://fontplus.jp/service/pricing", "https://fontplus.jp/"],
+        "markers": ["FONTPLUS"],
+        "date": "2023-02-07",
+    },
     117: {
         "bundle": ROOT / "content/post/Qiskit入門",
         "slug": "qiskit-quantum-programming-intro",
@@ -455,7 +462,7 @@ def slug_key(value):
 parser = argparse.ArgumentParser()
 parser.add_argument("--ci-run", type=int, required=True)
 parser.add_argument("--commit", required=True)
-parser.add_argument("--max-batch", type=int, choices=(90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117), default=117)
+parser.add_argument("--max-batch", type=int, choices=(90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118), default=118)
 args = parser.parse_args()
 ARTICLES = {number: article for number, article in ARTICLES.items() if number <= args.max_batch}
 with urllib.request.urlopen(f"https://github.com/kenjinote/blog/actions/runs/{args.ci_run}", timeout=45) as response:

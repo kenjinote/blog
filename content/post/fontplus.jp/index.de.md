@@ -1,17 +1,22 @@
 ---
-title: 'Funktionen und Preise des Web-Font-Dienstes „FONTPLUS“'
-date: "2026-09-24T19:44:38+09:00"
+title: "FONTPLUS: Funktionen und Preise des Seitenaufruf-Kontingents"
 slug: "fontplus.jp"
-date: 2023-02-07T20:59:01+09:00
 tags: ["font","fontplus"]
 draft: false
 image: "img.webp"
 categories: ["it-technology"]
-description: 'Wir stellen den Service „FONTPLUS (fontplus.jp)“ vor, mit dem Sie hochwertige, kostenpflichtige Web-Fonts integrieren können. Der attraktive Punkt ist, dass alle Schriftarten für 1.100 Yen pro Monat verfügbar sind und auch die Nutzung auf mehreren Websites unterstützt wird.'
+description: "Aktuelle Smart-License-Preise, Seitenaufruf-Limits und Domain-Bedingungen laut offizieller FONTPLUS-Seite."
+date: 2023-02-07T20:59:01+09:00
+lastmod: 2026-11-24
 ---
+# FONTPLUS
 
-# Dienst zur Nutzung kostenpflichtiger Web-Schriftarten fontplus.jp
+FONTPLUS liefert Webfonts aus. Smart License bindet sie mit einem Dienstskript und CSS in eine Website ein.
 
-[https://fontplus.jp/](https://fontplus.jp/)
+Laut offizieller Seite beginnt Smart License bei 1.100 JPY pro Monat: 100.000 PV für einen Monat kosten inklusive Steuer 1.100 JPY; 1,2 Millionen PV für ein Jahr kosten 13.200 JPY. Der Test umfasst ausgewählte Fonts, bis zu 5.000 PV und sechs Monate.
 
-Für 1.100 Yen pro Monat können alle Schriftarten verwendet werden, und die Nutzung auf mehreren Websites wird unterstützt.
+Für Domains und Fonts ist kein Limit angegeben, das PV-Ticket ist jedoch begrenzt. Üblicherweise zählt ein Seitenaufruf als ein PV; Neuladen zählt ebenfalls. Mehrere Dienstskripte können separat zählen.
+
+Preise und Bedingungen können sich ändern. Prüfen Sie vor dem Abschluss aktuelle Preise, PV-Zählung, abgedeckte Websites und Bedingungen. Für große Websites ist ein individuelles Angebot möglich.
+
+[Official pricing page](https://fontplus.jp/service/pricing)

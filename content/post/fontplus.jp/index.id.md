@@ -1,17 +1,22 @@
 ---
-title: 'Fitur dan Harga Layanan Font Web ''FONTPLUS'''
-date: "2026-09-24T19:44:38+09:00"
+title: "Fitur dan Harga FONTPLUS: Pahami Tiket PV"
 slug: "fontplus.jp"
-date: 2023-02-07T20:59:01+09:00
 tags: ["font","fontplus"]
 draft: false
 image: "img.webp"
 categories: ["it-technology"]
-description: 'Memperkenalkan ''FONTPLUS (fontplus.jp)'', layanan untuk mengimplementasikan font Web berbayar berkualitas tinggi. Daya tariknya adalah seluruh font dapat digunakan dengan biaya 1.100 yen per bulan, dan juga mendukung penggunaan di banyak situs.'
+description: "Harga Smart License, batas tampilan halaman, dan ketentuan domain saat ini berdasarkan halaman resmi FONTPLUS."
+date: 2023-02-07T20:59:01+09:00
+lastmod: 2026-11-24
 ---
+# FONTPLUS
 
-# Layanan fontplus.jp untuk menggunakan font web berbayar
+FONTPLUS adalah layanan distribusi font web. Smart License menerapkan font dengan skrip layanan dan CSS di situs.
 
-[https://fontplus.jp/](https://fontplus.jp/)
+Halaman resmi menyebut Smart License mulai 1.100 JPY per bulan: tiket 100.000 PV selama satu bulan berharga 1.100 JPY termasuk pajak; 1,2 juta PV setahun berharga 13.200 JPY. Uji coba mencakup font tertentu, maksimal 5.000 PV, dan berlaku enam bulan.
 
-Dengan 1.100 yen per bulan, Anda dapat menggunakan semua font, dan mendukung penggunaan di berbagai situs web.
+Tidak ada batas tercantum untuk domain atau jumlah font, tetapi tiket PV memiliki batas. Umumnya satu pemuatan halaman menghabiskan satu PV; pemuatan ulang juga dihitung. Beberapa tag skrip pada satu halaman dapat dihitung terpisah.
+
+Harga dan ketentuan dapat berubah. Sebelum berlangganan, periksa harga, cara hitung PV, situs yang tercakup, dan ketentuan resmi. Situs besar dapat meminta penawaran khusus.
+
+[Official pricing page](https://fontplus.jp/service/pricing)

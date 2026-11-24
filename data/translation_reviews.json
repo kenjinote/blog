@@ -13565,6 +13565,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-117.json",
       "evidenceHash": "5f5ff7679e7b87c3092d593d50edc2ced4abf7646b8aa470cd894922094ab75f"
+    },
+    "post/fontplus.jp/index.en.md": {
+      "source": "post/fontplus.jp/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "f3f6ac36c74e03ade9ca643c0cdba2e28789b241e02a6f2449dc09e66670889b",
+      "translationHash": "afc9c57d2383534f7c323dc4ed9eb52692efffd8200130c107354d709a443ca3",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-118.json",
+      "evidenceHash": "b306fc30bdbc9cfde682a7fc371bab72625291ceb86b64a67113248170b5d363"
+    },
+    "post/fontplus.jp/index.zh-cn.md": {
+      "source": "post/fontplus.jp/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "f3f6ac36c74e03ade9ca643c0cdba2e28789b241e02a6f2449dc09e66670889b",
+      "translationHash": "25b51a0c6bab4bbf1a316acf3882aa246c8cc68de3bda6d978c906c8289e0102",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-118.json",
+      "evidenceHash": "9d9f13229f00c0d1b68c6b4429cfc37fcc8162cfc67df8d246dfa43cf7600b08"
+    },
+    "post/fontplus.jp/index.es.md": {
+      "source": "post/fontplus.jp/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "f3f6ac36c74e03ade9ca643c0cdba2e28789b241e02a6f2449dc09e66670889b",
+      "translationHash": "fbb15558bdb2205ea4fda12181e41fab94e34b5a6986575ae5ea292986348ba5",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-118.json",
+      "evidenceHash": "29cdd9b22555bab2fb780a5c637e49958d971023ba14fa27746aeba043ad2266"
+    },
+    "post/fontplus.jp/index.ko.md": {
+      "source": "post/fontplus.jp/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "f3f6ac36c74e03ade9ca643c0cdba2e28789b241e02a6f2449dc09e66670889b",
+      "translationHash": "4abb9906f692f3bfdf4eb1d8e1b02be4c6caec2e51a3ac28dab15b0c755c7a40",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-118.json",
+      "evidenceHash": "cc07c5dd64a7151c36ffc6c5de9803281ef1ba5ab8af0efefe8f68ac050ccaf1"
+    },
+    "post/fontplus.jp/index.pt.md": {
+      "source": "post/fontplus.jp/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "f3f6ac36c74e03ade9ca643c0cdba2e28789b241e02a6f2449dc09e66670889b",
+      "translationHash": "9dd6a34d885f24e5a857057aeb3e21bd4091030048119f51cc88609a59ccd032",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-118.json",
+      "evidenceHash": "f2ae8b9e71365003d079fa857650257622247fdd90da413727633dea29e1903d"
+    },
+    "post/fontplus.jp/index.zh-tw.md": {
+      "source": "post/fontplus.jp/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "f3f6ac36c74e03ade9ca643c0cdba2e28789b241e02a6f2449dc09e66670889b",
+      "translationHash": "eaa35b7b55fa5cafd56c7733e912a09fe195676b9a81cc8f316fd156849cf56d",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-118.json",
+      "evidenceHash": "b59bbd6f3c5c0e3af0d581113b0cdb5aac9e029c1fb1f9d5a953e3abb75391b0"
+    },
+    "post/fontplus.jp/index.hi.md": {
+      "source": "post/fontplus.jp/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "f3f6ac36c74e03ade9ca643c0cdba2e28789b241e02a6f2449dc09e66670889b",
+      "translationHash": "21f9ad7f1c6c0836826f062f6208f193cf350ccad12a003cb07a8830cb7207f1",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-118.json",
+      "evidenceHash": "f0b4c1b9cfa204bae03c9c8f0acb23e93b2cacfeb1d2651f04d8951d6ade8659"
+    },
+    "post/fontplus.jp/index.fr.md": {
+      "source": "post/fontplus.jp/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "f3f6ac36c74e03ade9ca643c0cdba2e28789b241e02a6f2449dc09e66670889b",
+      "translationHash": "2a51d2885ec646600fe1466b2072758ec96a1372cfbbef0e2fbbf46751968323",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-118.json",
+      "evidenceHash": "063beebc533bb1b47c5e8fef1b2d6107045f0dceab4a0d96f64492369032c68d"
+    },
+    "post/fontplus.jp/index.de.md": {
+      "source": "post/fontplus.jp/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "f3f6ac36c74e03ade9ca643c0cdba2e28789b241e02a6f2449dc09e66670889b",
+      "translationHash": "2345c965882ccbb002db3914d5d60ab45c815f82fe67e391d20c6c84c3aae75d",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-118.json",
+      "evidenceHash": "1604b5e24ab92bb4ac16996ac4ec37c201e07561e633707b65262319407cc49b"
+    },
+    "post/fontplus.jp/index.ar.md": {
+      "source": "post/fontplus.jp/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "f3f6ac36c74e03ade9ca643c0cdba2e28789b241e02a6f2449dc09e66670889b",
+      "translationHash": "0b60dfed0e3cb207f1e9c1ef49fdedcc3d17e88abef4f42bffeba154ce4656b0",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-118.json",
+      "evidenceHash": "5197f380c58ff3cce5e9f659444b627a1c5991a16af4b7bbc2b38b42a3673ef9"
+    },
+    "post/fontplus.jp/index.ru.md": {
+      "source": "post/fontplus.jp/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "f3f6ac36c74e03ade9ca643c0cdba2e28789b241e02a6f2449dc09e66670889b",
+      "translationHash": "c247345be9438ab6b07a06d0f0e95b74faac4a339c294c6e4d4ea91a16ec8bc0",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-118.json",
+      "evidenceHash": "d556b34897b9dcb656bb90ba2aa9cda7d1a7eb5291624973e8b7c3a17914f02a"
+    },
+    "post/fontplus.jp/index.id.md": {
+      "source": "post/fontplus.jp/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "f3f6ac36c74e03ade9ca643c0cdba2e28789b241e02a6f2449dc09e66670889b",
+      "translationHash": "d154b1b2261c9309c94da16805f0013f25bfc9da1d90c7786200bd8cd3b5e7ee",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-118.json",
+      "evidenceHash": "d69ccbba955ee1759cdf8d5409f45ce226c8435407207def0bc1edf5e7c2e2a2"
     }
   }
 }

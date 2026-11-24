@@ -1,0 +1,441 @@
+{
+  "version": 1,
+  "batch": 118,
+  "article": "FONTPLUS",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "f3f6ac36c74e03ade9ca643c0cdba2e28789b241e02a6f2449dc09e66670889b",
+  "sources": [
+    "https://fontplus.jp/service/pricing",
+    "https://fontplus.jp/"
+  ],
+  "scope": "Reviewed the Japanese article and all twelve translations for service description, prices, PV ticket limits and counting, domain/font limits, dates, and links against the current official site.",
+  "findings": [
+    "Removed duplicate future dates, preserved the original publication date, and set lastmod to the review date.",
+    "Corrected the obsolete flat-price claim: Smart License is usage-ticket based, starting at JPY 1,100 for 100,000 PV/one month; 1.2 million PV/year is JPY 13,200 including tax.",
+    "Clarified trial limits, unlimited domains/font count as listed, reload/script-tag PV counting, and custom-plan quotes.",
+    "Added the official pricing page to all locales."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/fontplus.jp/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/fontplus.jp/index.md",
+      "sourceHash": "f3f6ac36c74e03ade9ca643c0cdba2e28789b241e02a6f2449dc09e66670889b",
+      "translationHash": "afc9c57d2383534f7c323dc4ed9eb52692efffd8200130c107354d709a443ca3",
+      "summary": "Updated to reflect current official FONTPLUS Smart License PV-ticket pricing and limits.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Corrected the service overview and distinguished Smart License, limited trial, and custom-plan pricing."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked web fonts, Smart License, page-view (PV) tickets, domains, trial, and custom-plan terms."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article reports official ticket amounts and PV limits; it contains no formulas or derived calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no program code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified the official FONTPLUS pricing page and its PV ticket/counting details."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Prices and service terms can change; the current official pricing page is authoritative."
+      ]
+    },
+    "post/fontplus.jp/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/fontplus.jp/index.md",
+      "sourceHash": "f3f6ac36c74e03ade9ca643c0cdba2e28789b241e02a6f2449dc09e66670889b",
+      "translationHash": "25b51a0c6bab4bbf1a316acf3882aa246c8cc68de3bda6d978c906c8289e0102",
+      "summary": "Updated to reflect current official FONTPLUS Smart License PV-ticket pricing and limits.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Corrected the service overview and distinguished Smart License, limited trial, and custom-plan pricing."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked web fonts, Smart License, page-view (PV) tickets, domains, trial, and custom-plan terms."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article reports official ticket amounts and PV limits; it contains no formulas or derived calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no program code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified the official FONTPLUS pricing page and its PV ticket/counting details."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Prices and service terms can change; the current official pricing page is authoritative."
+      ]
+    },
+    "post/fontplus.jp/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/fontplus.jp/index.md",
+      "sourceHash": "f3f6ac36c74e03ade9ca643c0cdba2e28789b241e02a6f2449dc09e66670889b",
+      "translationHash": "fbb15558bdb2205ea4fda12181e41fab94e34b5a6986575ae5ea292986348ba5",
+      "summary": "Updated to reflect current official FONTPLUS Smart License PV-ticket pricing and limits.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Corrected the service overview and distinguished Smart License, limited trial, and custom-plan pricing."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked web fonts, Smart License, page-view (PV) tickets, domains, trial, and custom-plan terms."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article reports official ticket amounts and PV limits; it contains no formulas or derived calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no program code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified the official FONTPLUS pricing page and its PV ticket/counting details."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Prices and service terms can change; the current official pricing page is authoritative."
+      ]
+    },
+    "post/fontplus.jp/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/fontplus.jp/index.md",
+      "sourceHash": "f3f6ac36c74e03ade9ca643c0cdba2e28789b241e02a6f2449dc09e66670889b",
+      "translationHash": "4abb9906f692f3bfdf4eb1d8e1b02be4c6caec2e51a3ac28dab15b0c755c7a40",
+      "summary": "Updated to reflect current official FONTPLUS Smart License PV-ticket pricing and limits.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Corrected the service overview and distinguished Smart License, limited trial, and custom-plan pricing."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked web fonts, Smart License, page-view (PV) tickets, domains, trial, and custom-plan terms."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article reports official ticket amounts and PV limits; it contains no formulas or derived calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no program code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified the official FONTPLUS pricing page and its PV ticket/counting details."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Prices and service terms can change; the current official pricing page is authoritative."
+      ]
+    },
+    "post/fontplus.jp/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/fontplus.jp/index.md",
+      "sourceHash": "f3f6ac36c74e03ade9ca643c0cdba2e28789b241e02a6f2449dc09e66670889b",
+      "translationHash": "9dd6a34d885f24e5a857057aeb3e21bd4091030048119f51cc88609a59ccd032",
+      "summary": "Updated to reflect current official FONTPLUS Smart License PV-ticket pricing and limits.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Corrected the service overview and distinguished Smart License, limited trial, and custom-plan pricing."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked web fonts, Smart License, page-view (PV) tickets, domains, trial, and custom-plan terms."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article reports official ticket amounts and PV limits; it contains no formulas or derived calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no program code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified the official FONTPLUS pricing page and its PV ticket/counting details."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Prices and service terms can change; the current official pricing page is authoritative."
+      ]
+    },
+    "post/fontplus.jp/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/fontplus.jp/index.md",
+      "sourceHash": "f3f6ac36c74e03ade9ca643c0cdba2e28789b241e02a6f2449dc09e66670889b",
+      "translationHash": "eaa35b7b55fa5cafd56c7733e912a09fe195676b9a81cc8f316fd156849cf56d",
+      "summary": "Updated to reflect current official FONTPLUS Smart License PV-ticket pricing and limits.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Corrected the service overview and distinguished Smart License, limited trial, and custom-plan pricing."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked web fonts, Smart License, page-view (PV) tickets, domains, trial, and custom-plan terms."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article reports official ticket amounts and PV limits; it contains no formulas or derived calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no program code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified the official FONTPLUS pricing page and its PV ticket/counting details."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Prices and service terms can change; the current official pricing page is authoritative."
+      ]
+    },
+    "post/fontplus.jp/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/fontplus.jp/index.md",
+      "sourceHash": "f3f6ac36c74e03ade9ca643c0cdba2e28789b241e02a6f2449dc09e66670889b",
+      "translationHash": "21f9ad7f1c6c0836826f062f6208f193cf350ccad12a003cb07a8830cb7207f1",
+      "summary": "Updated to reflect current official FONTPLUS Smart License PV-ticket pricing and limits.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Corrected the service overview and distinguished Smart License, limited trial, and custom-plan pricing."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked web fonts, Smart License, page-view (PV) tickets, domains, trial, and custom-plan terms."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article reports official ticket amounts and PV limits; it contains no formulas or derived calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no program code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified the official FONTPLUS pricing page and its PV ticket/counting details."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Prices and service terms can change; the current official pricing page is authoritative."
+      ]
+    },
+    "post/fontplus.jp/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/fontplus.jp/index.md",
+      "sourceHash": "f3f6ac36c74e03ade9ca643c0cdba2e28789b241e02a6f2449dc09e66670889b",
+      "translationHash": "2a51d2885ec646600fe1466b2072758ec96a1372cfbbef0e2fbbf46751968323",
+      "summary": "Updated to reflect current official FONTPLUS Smart License PV-ticket pricing and limits.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Corrected the service overview and distinguished Smart License, limited trial, and custom-plan pricing."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked web fonts, Smart License, page-view (PV) tickets, domains, trial, and custom-plan terms."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article reports official ticket amounts and PV limits; it contains no formulas or derived calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no program code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified the official FONTPLUS pricing page and its PV ticket/counting details."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Prices and service terms can change; the current official pricing page is authoritative."
+      ]
+    },
+    "post/fontplus.jp/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/fontplus.jp/index.md",
+      "sourceHash": "f3f6ac36c74e03ade9ca643c0cdba2e28789b241e02a6f2449dc09e66670889b",
+      "translationHash": "2345c965882ccbb002db3914d5d60ab45c815f82fe67e391d20c6c84c3aae75d",
+      "summary": "Updated to reflect current official FONTPLUS Smart License PV-ticket pricing and limits.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Corrected the service overview and distinguished Smart License, limited trial, and custom-plan pricing."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked web fonts, Smart License, page-view (PV) tickets, domains, trial, and custom-plan terms."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article reports official ticket amounts and PV limits; it contains no formulas or derived calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no program code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified the official FONTPLUS pricing page and its PV ticket/counting details."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Prices and service terms can change; the current official pricing page is authoritative."
+      ]
+    },
+    "post/fontplus.jp/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/fontplus.jp/index.md",
+      "sourceHash": "f3f6ac36c74e03ade9ca643c0cdba2e28789b241e02a6f2449dc09e66670889b",
+      "translationHash": "0b60dfed0e3cb207f1e9c1ef49fdedcc3d17e88abef4f42bffeba154ce4656b0",
+      "summary": "Updated to reflect current official FONTPLUS Smart License PV-ticket pricing and limits.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Corrected the service overview and distinguished Smart License, limited trial, and custom-plan pricing."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked web fonts, Smart License, page-view (PV) tickets, domains, trial, and custom-plan terms."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article reports official ticket amounts and PV limits; it contains no formulas or derived calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no program code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified the official FONTPLUS pricing page and its PV ticket/counting details."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Prices and service terms can change; the current official pricing page is authoritative."
+      ]
+    },
+    "post/fontplus.jp/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/fontplus.jp/index.md",
+      "sourceHash": "f3f6ac36c74e03ade9ca643c0cdba2e28789b241e02a6f2449dc09e66670889b",
+      "translationHash": "c247345be9438ab6b07a06d0f0e95b74faac4a339c294c6e4d4ea91a16ec8bc0",
+      "summary": "Updated to reflect current official FONTPLUS Smart License PV-ticket pricing and limits.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Corrected the service overview and distinguished Smart License, limited trial, and custom-plan pricing."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked web fonts, Smart License, page-view (PV) tickets, domains, trial, and custom-plan terms."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article reports official ticket amounts and PV limits; it contains no formulas or derived calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no program code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified the official FONTPLUS pricing page and its PV ticket/counting details."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Prices and service terms can change; the current official pricing page is authoritative."
+      ]
+    },
+    "post/fontplus.jp/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/fontplus.jp/index.md",
+      "sourceHash": "f3f6ac36c74e03ade9ca643c0cdba2e28789b241e02a6f2449dc09e66670889b",
+      "translationHash": "d154b1b2261c9309c94da16805f0013f25bfc9da1d90c7786200bd8cd3b5e7ee",
+      "summary": "Updated to reflect current official FONTPLUS Smart License PV-ticket pricing and limits.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Corrected the service overview and distinguished Smart License, limited trial, and custom-plan pricing."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked web fonts, Smart License, page-view (PV) tickets, domains, trial, and custom-plan terms."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article reports official ticket amounts and PV limits; it contains no formulas or derived calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no program code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified the official FONTPLUS pricing page and its PV ticket/counting details."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Prices and service terms can change; the current official pricing page is authoritative."
+      ]
+    }
+  }
+}
