@@ -1,43 +1,15 @@
 Windows Registry Editor Version 5.00
 
-[HKEY_CLASSES_ROOT\Directory\background\shell\èGä€grep]
+[HKEY_CURRENT_USER\Software\Classes\Directory\background\shell\èGä€grep]
 @="èGä€grep(&G)"
 "Icon"="\"C:\\Program Files (x86)\\Hidemaru\\Hidemaru.exe\""
 
-[HKEY_CLASSES_ROOT\Directory\background\shell\èGä€grep\command]
-@="\"C:\\Program Files (x86)\\Hidemaru\\Hidemaru.exe\" /d\"%v\" /g"
+[HKEY_CURRENT_USER\Software\Classes\Directory\background\shell\èGä€grep\command]
+@="\"C:\\Program Files (x86)\\Hidemaru\\Hidemaru.exe\" /d\"%V\" /g"
 
-[HKEY_CLASSES_ROOT\Directory\shell\èGä€grep]
+[HKEY_CURRENT_USER\Software\Classes\Directory\shell\èGä€grep]
 @="èGä€grep(&G)"
 "Icon"="\"C:\\Program Files (x86)\\Hidemaru\\Hidemaru.exe\""
 
-[HKEY_CLASSES_ROOT\Directory\shell\èGä€grep\command]
+[HKEY_CURRENT_USER\Software\Classes\Directory\shell\èGä€grep\command]
 @="\"C:\\Program Files (x86)\\Hidemaru\\Hidemaru.exe\" /d\"%1\" /g"
-
-[HKEY_CLASSES_ROOT\*\shell\èGä€]
-@="èGä€Ç≈äJÇ≠(&H)"
-"Icon"="\"C:\\Program Files (x86)\\Hidemaru\\Hidemaru.exe\""
-
-[HKEY_CLASSES_ROOT\*\shell\èGä€\command]
-@="\"C:\\Program Files (x86)\\Hidemaru\\Hidemaru.exe\" \"%1\""
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\background\shell\èGä€grep]
-@="èGä€grep(&G)"
-"Icon"="\"C:\\Program Files (x86)\\Hidemaru\\Hidemaru.exe\""
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\background\shell\èGä€grep\command]
-@="\"C:\\Program Files (x86)\\Hidemaru\\Hidemaru.exe\" /d\"%v\" /g"
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\shell\èGä€grep]
-@="èGä€grep(&G)"
-"Icon"="\"C:\\Program Files (x86)\\Hidemaru\\Hidemaru.exe\""
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\shell\èGä€grep\command]
-@="\"C:\\Program Files (x86)\\Hidemaru\\Hidemaru.exe\" /d\"%1\" /g"
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\*\shell\èGä€]
-@="èGä€Ç≈äJÇ≠(&H)"
-"Icon"="\"C:\\Program Files (x86)\\Hidemaru\\Hidemaru.exe\""
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\*\shell\èGä€\command]
-@="\"C:\\Program Files (x86)\\Hidemaru\\Hidemaru.exe\" \"%1\""

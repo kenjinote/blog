@@ -360,6 +360,15 @@ ARTICLES = {
         "scopeMarkers": {"ja":"行き詰まった時に見返したい言葉","en":"Words to revisit when I feel stuck","zh-cn":"感到受挫时可以重看的话","es":"Palabras que vuelvo a leer cuando me atasco","ko":"막막할 때 다시 보는 말","pt":"Palavras que revejo quando me sinto travado","zh-tw":"感到受挫時可以重看的話","hi":"जब मन अटक जाए तो फिर से पढ़ने योग्य शब्द","fr":"Des mots à relire quand je me sens bloqué","de":"Worte, die ich bei Stillstand erneut lese","ar":"كلمات أعود إليها عندما أشعر بالتعثر","ru":"Слова, к которым я возвращаюсь в трудный момент","id":"Kata-kata yang saya baca kembali saat merasa buntu"},
         "date": "2022-09-08",
     },
+    147: {
+        "bundle": ROOT / "content/post/エクスプローラーの右クリックメニューに秀丸エディタgrepを追加する",
+        "slug": "エクスプローラーの右クリックメニューに秀丸エディタgrepを追加する",
+        "links": ["https://help.maruo.co.jp/hidemaru/html/230_Option.html", "https://support.microsoft.com/en-us/windows/experience/backup-recovery/how-to-back-up-and-restore-the-registry-in-windows", "https://support.microsoft.com/en-us/windows/experience/fileexplorer/file-explorer-in-windows", "https://support.microsoft.com/en-us/windows/deployment/updates-lifecycle/windows-10-support-has-ended-on-october-14-2025", "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/reg-import"],
+        "markers": ["Microsoft"],
+        "assets": ["秀丸レジストリ登録.reg", "秀丸レジストリ解除.reg"],
+        "scopeMarkers": {"en": "Show more options", "ja": "その他のオプションを表示", "zh-cn": "显示更多选项", "es": "Mostrar más opciones", "ko": "더 많은 옵션 표시", "pt": "Mostrar mais opções", "zh-tw": "顯示更多選項", "hi": "Show more options", "fr": "Afficher plus d’options", "de": "Weitere Optionen anzeigen", "ar": "إظهار المزيد من الخيارات", "ru": "Показать дополнительные параметры", "id": "Show more options"},
+        "date": "2024-04-03",
+    },
     146: {
         "bundle": ROOT / "content/post/ブログで使える写真素材サイト「Unsplash」について",
         "slug": "ブログで使える写真素材サイト「Unsplash」について",
@@ -708,7 +717,7 @@ def slug_key(value):
 parser = argparse.ArgumentParser()
 parser.add_argument("--ci-run", type=int, required=True)
 parser.add_argument("--commit", required=True)
-parser.add_argument("--max-batch", type=int, choices=(90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146), default=146)
+parser.add_argument("--max-batch", type=int, choices=(90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147), default=147)
 args = parser.parse_args()
 ARTICLES = {number: article for number, article in ARTICLES.items() if number <= args.max_batch}
 with urllib.request.urlopen(f"https://github.com/kenjinote/blog/actions/runs/{args.ci_run}", timeout=45) as response:
@@ -766,6 +775,7 @@ for batch_number, article in ARTICLES.items():
                 if "links" in article
                 else any(article["linkFragment"] in link for link in page.links)
             ),
+            "localAssets": all(any(unquote(urlparse(link).path).endswith(asset) for link in page.links) for asset in article.get("assets", [])),
             "articleInstructions": all(marker in compact for marker in article["markers"])
             and re.sub(r"\s+", "", article.get("scopeMarkers", {}).get(language, "")) in compact,
             "noKnownBadLinks": not any(link in page.links for link in ("https://kenji.blog/es/p/kubernetes-k8s-architecture-pod-service-ingress/", "/hi/p/logicpad-windows-app-development-journey/")),

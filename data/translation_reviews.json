@@ -17045,6 +17045,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-146.json",
       "evidenceHash": "c8eb878ae2c3812b1227b50e8aba3cf978483cb5b7640b26cecc7fa3108f6ba5"
+    },
+    "post/エクスプローラーの右クリックメニューに秀丸エディタgrepを追加する/index.en.md": {
+      "source": "post/エクスプローラーの右クリックメニューに秀丸エディタgrepを追加する/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b35f6ac928d6574980d31de727d8d2752967fec84f6925198b327e9dbee74403",
+      "translationHash": "4ad01f0b1b9d7a08bbcc14f063628a7c17599d763037a955b5a50ad751fd4014",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-147.json",
+      "evidenceHash": "e73c69c988608ca3f23f1eafae91e9fb54ea6ecded084e7ad2a394b692747c27"
+    },
+    "post/エクスプローラーの右クリックメニューに秀丸エディタgrepを追加する/index.zh-cn.md": {
+      "source": "post/エクスプローラーの右クリックメニューに秀丸エディタgrepを追加する/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b35f6ac928d6574980d31de727d8d2752967fec84f6925198b327e9dbee74403",
+      "translationHash": "48b42ee925113cb73c725970433ae57542ec8163a9b02546669e137bc8551719",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-147.json",
+      "evidenceHash": "c8418a0c69ddf16bbc95ea33f37926a78f8eab71a074af9038e13ba5c89d3eb5"
+    },
+    "post/エクスプローラーの右クリックメニューに秀丸エディタgrepを追加する/index.es.md": {
+      "source": "post/エクスプローラーの右クリックメニューに秀丸エディタgrepを追加する/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b35f6ac928d6574980d31de727d8d2752967fec84f6925198b327e9dbee74403",
+      "translationHash": "b81755a223b3d953d25d10d8e81f2407bf370282adbe4bc1f6c864cabadd62d5",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-147.json",
+      "evidenceHash": "2363f71b5ad6c15bdd19a2f9bf7e737ee03c30ec4f5339db8aca13aaa7db87c1"
+    },
+    "post/エクスプローラーの右クリックメニューに秀丸エディタgrepを追加する/index.ko.md": {
+      "source": "post/エクスプローラーの右クリックメニューに秀丸エディタgrepを追加する/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b35f6ac928d6574980d31de727d8d2752967fec84f6925198b327e9dbee74403",
+      "translationHash": "a95eff7a02799160b1893550628d35c606b894cc611209acbaf6498a7ecb7a4d",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-147.json",
+      "evidenceHash": "3c89cd659687153d8f1aae3a648c3c3a8968e074d7d4f523b3073d8e06ebf54b"
+    },
+    "post/エクスプローラーの右クリックメニューに秀丸エディタgrepを追加する/index.pt.md": {
+      "source": "post/エクスプローラーの右クリックメニューに秀丸エディタgrepを追加する/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b35f6ac928d6574980d31de727d8d2752967fec84f6925198b327e9dbee74403",
+      "translationHash": "947c4edd80d7d7b788f2c086d24d0068ac75fb742baf415379b2d8fc03ff445f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-147.json",
+      "evidenceHash": "d875b917c72e34b171720b18dae35972eaec6b3faa9f5b1799538ebfab16bf23"
+    },
+    "post/エクスプローラーの右クリックメニューに秀丸エディタgrepを追加する/index.zh-tw.md": {
+      "source": "post/エクスプローラーの右クリックメニューに秀丸エディタgrepを追加する/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b35f6ac928d6574980d31de727d8d2752967fec84f6925198b327e9dbee74403",
+      "translationHash": "3bc09f4de4ef0252d1f4bf539dff4597dc5a95c158fed2c4464a0ee3052ea394",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-147.json",
+      "evidenceHash": "bde272bbc0e9ffa8fc9076d549e4186c3539bd3961d1e02a83e622f06bd27cb7"
+    },
+    "post/エクスプローラーの右クリックメニューに秀丸エディタgrepを追加する/index.hi.md": {
+      "source": "post/エクスプローラーの右クリックメニューに秀丸エディタgrepを追加する/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b35f6ac928d6574980d31de727d8d2752967fec84f6925198b327e9dbee74403",
+      "translationHash": "e65ba4db49c6ea734d3191b9e3e1bde6cc5d342753f178046f31c5841e4c1b23",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-147.json",
+      "evidenceHash": "be11c156f3beb69461287ef600f026bdd6748fa5afd4e56d736d82925b4f306d"
+    },
+    "post/エクスプローラーの右クリックメニューに秀丸エディタgrepを追加する/index.fr.md": {
+      "source": "post/エクスプローラーの右クリックメニューに秀丸エディタgrepを追加する/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b35f6ac928d6574980d31de727d8d2752967fec84f6925198b327e9dbee74403",
+      "translationHash": "a07580db3b41035cf91f15b8aefe66f298d4fdcbc3eb6ee5b145d88938540ee8",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-147.json",
+      "evidenceHash": "41aee8cbbf8e1aabe90c82b5bd094310e57454920325e898d8c40434900caed2"
+    },
+    "post/エクスプローラーの右クリックメニューに秀丸エディタgrepを追加する/index.de.md": {
+      "source": "post/エクスプローラーの右クリックメニューに秀丸エディタgrepを追加する/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b35f6ac928d6574980d31de727d8d2752967fec84f6925198b327e9dbee74403",
+      "translationHash": "091682fe4dc94b6e106984b64ea50a2f31b5334ca1936e862ba01521bfd959d5",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-147.json",
+      "evidenceHash": "c922b6c9e09edf0f237494f2b2ff441d8e08d54b20c8b662d69c04e0c0072030"
+    },
+    "post/エクスプローラーの右クリックメニューに秀丸エディタgrepを追加する/index.ar.md": {
+      "source": "post/エクスプローラーの右クリックメニューに秀丸エディタgrepを追加する/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b35f6ac928d6574980d31de727d8d2752967fec84f6925198b327e9dbee74403",
+      "translationHash": "6e67240c9ed663a5730bc091089a6928f641f43d6091e70d3f81429b91fcd138",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-147.json",
+      "evidenceHash": "337f95b741d57e48e0b181b090319915743fe76ffa407e3c880458012e949efb"
+    },
+    "post/エクスプローラーの右クリックメニューに秀丸エディタgrepを追加する/index.ru.md": {
+      "source": "post/エクスプローラーの右クリックメニューに秀丸エディタgrepを追加する/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b35f6ac928d6574980d31de727d8d2752967fec84f6925198b327e9dbee74403",
+      "translationHash": "6bce4fc5d1f7fd023d73ec4c2b18d7951060e7eb9d249ee95e63906857f8abc9",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-147.json",
+      "evidenceHash": "48279b4cbc74b35ab3dd81b1f83525d43bf54d0452e86d57990ca64dbae425db"
+    },
+    "post/エクスプローラーの右クリックメニューに秀丸エディタgrepを追加する/index.id.md": {
+      "source": "post/エクスプローラーの右クリックメニューに秀丸エディタgrepを追加する/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b35f6ac928d6574980d31de727d8d2752967fec84f6925198b327e9dbee74403",
+      "translationHash": "1b92c3c53a634714d744904e6a8517edf6397e89e04946f69ada075522ce9f8d",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-147.json",
+      "evidenceHash": "c32d7a30a8e67ac6c9e651b4dd99fefd0d5ad44666675dd1de862440407e3886"
     }
   }
 }

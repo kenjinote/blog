@@ -1,0 +1,458 @@
+{
+  "version": 1,
+  "batch": 147,
+  "article": "秀丸grepをフォルダーの右クリックメニューに追加する（ユーザー単位）",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "b35f6ac928d6574980d31de727d8d2752967fec84f6925198b327e9dbee74403",
+  "sources": [
+    "https://help.maruo.co.jp/hidemaru/html/230_Option.html",
+    "https://support.microsoft.com/en-us/windows/experience/backup-recovery/how-to-back-up-and-restore-the-registry-in-windows",
+    "https://support.microsoft.com/en-us/windows/experience/fileexplorer/file-explorer-in-windows",
+    "https://support.microsoft.com/en-us/windows/deployment/updates-lifecycle/windows-10-support-has-ended-on-october-14-2025",
+    "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/reg-import"
+  ],
+  "scope": "Compared the complete Japanese source and all twelve translations, bundled CP932 registry files and command values, metadata, local asset links, and official documentation.",
+  "findings": [
+    "Removed duplicate future date; retained 2024-04-03 and recorded lastmod 2026-11-24.",
+    "Replaced duplicated machine-wide entries and wildcard all-files Open command with two current-user folder-only entries under HKCU\\Software\\Classes.",
+    "Added a paired removal file, executable-path review and backup guidance, and Windows 11 legacy-menu information.",
+    "Clarified Windows 10 support ended on 2025-10-14 and added official references.",
+    "Updated safety notes in all twelve translations.",
+    "Documented that the paired removal file deletes only the new per-user keys; users who imported the earlier machine-wide file must inspect and remove those old keys separately."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/エクスプローラーの右クリックメニューに秀丸エディタgrepを追加する/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/エクスプローラーの右クリックメニューに秀丸エディタgrepを追加する/index.md",
+      "sourceHash": "b35f6ac928d6574980d31de727d8d2752967fec84f6925198b327e9dbee74403",
+      "translationHash": "4ad01f0b1b9d7a08bbcc14f063628a7c17599d763037a955b5a50ad751fd4014",
+      "summary": "Compared the complete Japanese article and twelve translations with Hidemaru command-line documentation and Microsoft registry backup, Explorer context-menu, reg-import, and Windows 10 lifecycle guidance. Replaced broad machine-wide/all-files registry entries with reversible per-user folder-only entries and clarified path checks, backups, Windows 11 menu placement, and Windows 10 support status.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full setup instructions and aligned scope to current-user folder context menus, executable-path verification, backup, Windows 11 menu location, and removal steps."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked HKEY_CURRENT_USER, registry import/export, Hidemaru grep startup options, Explorer folder/background menu terms, and Windows 11 legacy-menu wording."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Audited bundled CP932 registry file; limited it to two current-user folder grep verbs, quoted executable and folder paths, removed machine-wide duplicates and wildcard all-file association, and added a paired removal file."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official Hidemaru startup options and Microsoft registry backup, Explorer context-menu, reg import, and Windows 10 end-of-support references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The registry file assumes C:\\Program Files (x86)\\Hidemaru\\Hidemaru.exe; readers must inspect and change the path if their installation differs.",
+        "The removal file deletes only the two new per-user entries and does not remove an older machine-wide registration. Readers who imported the previous file must inspect and remove its old keys separately. Registry and context-menu behavior can vary by Windows build or policy; export existing matching keys before import."
+      ]
+    },
+    "post/エクスプローラーの右クリックメニューに秀丸エディタgrepを追加する/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/エクスプローラーの右クリックメニューに秀丸エディタgrepを追加する/index.md",
+      "sourceHash": "b35f6ac928d6574980d31de727d8d2752967fec84f6925198b327e9dbee74403",
+      "translationHash": "48b42ee925113cb73c725970433ae57542ec8163a9b02546669e137bc8551719",
+      "summary": "Compared the complete Japanese article and twelve translations with Hidemaru command-line documentation and Microsoft registry backup, Explorer context-menu, reg-import, and Windows 10 lifecycle guidance. Replaced broad machine-wide/all-files registry entries with reversible per-user folder-only entries and clarified path checks, backups, Windows 11 menu placement, and Windows 10 support status.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full setup instructions and aligned scope to current-user folder context menus, executable-path verification, backup, Windows 11 menu location, and removal steps."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked HKEY_CURRENT_USER, registry import/export, Hidemaru grep startup options, Explorer folder/background menu terms, and Windows 11 legacy-menu wording."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Audited bundled CP932 registry file; limited it to two current-user folder grep verbs, quoted executable and folder paths, removed machine-wide duplicates and wildcard all-file association, and added a paired removal file."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official Hidemaru startup options and Microsoft registry backup, Explorer context-menu, reg import, and Windows 10 end-of-support references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The registry file assumes C:\\Program Files (x86)\\Hidemaru\\Hidemaru.exe; readers must inspect and change the path if their installation differs.",
+        "The removal file deletes only the two new per-user entries and does not remove an older machine-wide registration. Readers who imported the previous file must inspect and remove its old keys separately. Registry and context-menu behavior can vary by Windows build or policy; export existing matching keys before import."
+      ]
+    },
+    "post/エクスプローラーの右クリックメニューに秀丸エディタgrepを追加する/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/エクスプローラーの右クリックメニューに秀丸エディタgrepを追加する/index.md",
+      "sourceHash": "b35f6ac928d6574980d31de727d8d2752967fec84f6925198b327e9dbee74403",
+      "translationHash": "b81755a223b3d953d25d10d8e81f2407bf370282adbe4bc1f6c864cabadd62d5",
+      "summary": "Compared the complete Japanese article and twelve translations with Hidemaru command-line documentation and Microsoft registry backup, Explorer context-menu, reg-import, and Windows 10 lifecycle guidance. Replaced broad machine-wide/all-files registry entries with reversible per-user folder-only entries and clarified path checks, backups, Windows 11 menu placement, and Windows 10 support status.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full setup instructions and aligned scope to current-user folder context menus, executable-path verification, backup, Windows 11 menu location, and removal steps."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked HKEY_CURRENT_USER, registry import/export, Hidemaru grep startup options, Explorer folder/background menu terms, and Windows 11 legacy-menu wording."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Audited bundled CP932 registry file; limited it to two current-user folder grep verbs, quoted executable and folder paths, removed machine-wide duplicates and wildcard all-file association, and added a paired removal file."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official Hidemaru startup options and Microsoft registry backup, Explorer context-menu, reg import, and Windows 10 end-of-support references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The registry file assumes C:\\Program Files (x86)\\Hidemaru\\Hidemaru.exe; readers must inspect and change the path if their installation differs.",
+        "The removal file deletes only the two new per-user entries and does not remove an older machine-wide registration. Readers who imported the previous file must inspect and remove its old keys separately. Registry and context-menu behavior can vary by Windows build or policy; export existing matching keys before import."
+      ]
+    },
+    "post/エクスプローラーの右クリックメニューに秀丸エディタgrepを追加する/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/エクスプローラーの右クリックメニューに秀丸エディタgrepを追加する/index.md",
+      "sourceHash": "b35f6ac928d6574980d31de727d8d2752967fec84f6925198b327e9dbee74403",
+      "translationHash": "a95eff7a02799160b1893550628d35c606b894cc611209acbaf6498a7ecb7a4d",
+      "summary": "Compared the complete Japanese article and twelve translations with Hidemaru command-line documentation and Microsoft registry backup, Explorer context-menu, reg-import, and Windows 10 lifecycle guidance. Replaced broad machine-wide/all-files registry entries with reversible per-user folder-only entries and clarified path checks, backups, Windows 11 menu placement, and Windows 10 support status.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full setup instructions and aligned scope to current-user folder context menus, executable-path verification, backup, Windows 11 menu location, and removal steps."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked HKEY_CURRENT_USER, registry import/export, Hidemaru grep startup options, Explorer folder/background menu terms, and Windows 11 legacy-menu wording."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Audited bundled CP932 registry file; limited it to two current-user folder grep verbs, quoted executable and folder paths, removed machine-wide duplicates and wildcard all-file association, and added a paired removal file."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official Hidemaru startup options and Microsoft registry backup, Explorer context-menu, reg import, and Windows 10 end-of-support references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The registry file assumes C:\\Program Files (x86)\\Hidemaru\\Hidemaru.exe; readers must inspect and change the path if their installation differs.",
+        "The removal file deletes only the two new per-user entries and does not remove an older machine-wide registration. Readers who imported the previous file must inspect and remove its old keys separately. Registry and context-menu behavior can vary by Windows build or policy; export existing matching keys before import."
+      ]
+    },
+    "post/エクスプローラーの右クリックメニューに秀丸エディタgrepを追加する/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/エクスプローラーの右クリックメニューに秀丸エディタgrepを追加する/index.md",
+      "sourceHash": "b35f6ac928d6574980d31de727d8d2752967fec84f6925198b327e9dbee74403",
+      "translationHash": "947c4edd80d7d7b788f2c086d24d0068ac75fb742baf415379b2d8fc03ff445f",
+      "summary": "Compared the complete Japanese article and twelve translations with Hidemaru command-line documentation and Microsoft registry backup, Explorer context-menu, reg-import, and Windows 10 lifecycle guidance. Replaced broad machine-wide/all-files registry entries with reversible per-user folder-only entries and clarified path checks, backups, Windows 11 menu placement, and Windows 10 support status.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full setup instructions and aligned scope to current-user folder context menus, executable-path verification, backup, Windows 11 menu location, and removal steps."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked HKEY_CURRENT_USER, registry import/export, Hidemaru grep startup options, Explorer folder/background menu terms, and Windows 11 legacy-menu wording."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Audited bundled CP932 registry file; limited it to two current-user folder grep verbs, quoted executable and folder paths, removed machine-wide duplicates and wildcard all-file association, and added a paired removal file."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official Hidemaru startup options and Microsoft registry backup, Explorer context-menu, reg import, and Windows 10 end-of-support references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The registry file assumes C:\\Program Files (x86)\\Hidemaru\\Hidemaru.exe; readers must inspect and change the path if their installation differs.",
+        "The removal file deletes only the two new per-user entries and does not remove an older machine-wide registration. Readers who imported the previous file must inspect and remove its old keys separately. Registry and context-menu behavior can vary by Windows build or policy; export existing matching keys before import."
+      ]
+    },
+    "post/エクスプローラーの右クリックメニューに秀丸エディタgrepを追加する/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/エクスプローラーの右クリックメニューに秀丸エディタgrepを追加する/index.md",
+      "sourceHash": "b35f6ac928d6574980d31de727d8d2752967fec84f6925198b327e9dbee74403",
+      "translationHash": "3bc09f4de4ef0252d1f4bf539dff4597dc5a95c158fed2c4464a0ee3052ea394",
+      "summary": "Compared the complete Japanese article and twelve translations with Hidemaru command-line documentation and Microsoft registry backup, Explorer context-menu, reg-import, and Windows 10 lifecycle guidance. Replaced broad machine-wide/all-files registry entries with reversible per-user folder-only entries and clarified path checks, backups, Windows 11 menu placement, and Windows 10 support status.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full setup instructions and aligned scope to current-user folder context menus, executable-path verification, backup, Windows 11 menu location, and removal steps."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked HKEY_CURRENT_USER, registry import/export, Hidemaru grep startup options, Explorer folder/background menu terms, and Windows 11 legacy-menu wording."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Audited bundled CP932 registry file; limited it to two current-user folder grep verbs, quoted executable and folder paths, removed machine-wide duplicates and wildcard all-file association, and added a paired removal file."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official Hidemaru startup options and Microsoft registry backup, Explorer context-menu, reg import, and Windows 10 end-of-support references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The registry file assumes C:\\Program Files (x86)\\Hidemaru\\Hidemaru.exe; readers must inspect and change the path if their installation differs.",
+        "The removal file deletes only the two new per-user entries and does not remove an older machine-wide registration. Readers who imported the previous file must inspect and remove its old keys separately. Registry and context-menu behavior can vary by Windows build or policy; export existing matching keys before import."
+      ]
+    },
+    "post/エクスプローラーの右クリックメニューに秀丸エディタgrepを追加する/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/エクスプローラーの右クリックメニューに秀丸エディタgrepを追加する/index.md",
+      "sourceHash": "b35f6ac928d6574980d31de727d8d2752967fec84f6925198b327e9dbee74403",
+      "translationHash": "e65ba4db49c6ea734d3191b9e3e1bde6cc5d342753f178046f31c5841e4c1b23",
+      "summary": "Compared the complete Japanese article and twelve translations with Hidemaru command-line documentation and Microsoft registry backup, Explorer context-menu, reg-import, and Windows 10 lifecycle guidance. Replaced broad machine-wide/all-files registry entries with reversible per-user folder-only entries and clarified path checks, backups, Windows 11 menu placement, and Windows 10 support status.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full setup instructions and aligned scope to current-user folder context menus, executable-path verification, backup, Windows 11 menu location, and removal steps."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked HKEY_CURRENT_USER, registry import/export, Hidemaru grep startup options, Explorer folder/background menu terms, and Windows 11 legacy-menu wording."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Audited bundled CP932 registry file; limited it to two current-user folder grep verbs, quoted executable and folder paths, removed machine-wide duplicates and wildcard all-file association, and added a paired removal file."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official Hidemaru startup options and Microsoft registry backup, Explorer context-menu, reg import, and Windows 10 end-of-support references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The registry file assumes C:\\Program Files (x86)\\Hidemaru\\Hidemaru.exe; readers must inspect and change the path if their installation differs.",
+        "The removal file deletes only the two new per-user entries and does not remove an older machine-wide registration. Readers who imported the previous file must inspect and remove its old keys separately. Registry and context-menu behavior can vary by Windows build or policy; export existing matching keys before import."
+      ]
+    },
+    "post/エクスプローラーの右クリックメニューに秀丸エディタgrepを追加する/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/エクスプローラーの右クリックメニューに秀丸エディタgrepを追加する/index.md",
+      "sourceHash": "b35f6ac928d6574980d31de727d8d2752967fec84f6925198b327e9dbee74403",
+      "translationHash": "a07580db3b41035cf91f15b8aefe66f298d4fdcbc3eb6ee5b145d88938540ee8",
+      "summary": "Compared the complete Japanese article and twelve translations with Hidemaru command-line documentation and Microsoft registry backup, Explorer context-menu, reg-import, and Windows 10 lifecycle guidance. Replaced broad machine-wide/all-files registry entries with reversible per-user folder-only entries and clarified path checks, backups, Windows 11 menu placement, and Windows 10 support status.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full setup instructions and aligned scope to current-user folder context menus, executable-path verification, backup, Windows 11 menu location, and removal steps."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked HKEY_CURRENT_USER, registry import/export, Hidemaru grep startup options, Explorer folder/background menu terms, and Windows 11 legacy-menu wording."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Audited bundled CP932 registry file; limited it to two current-user folder grep verbs, quoted executable and folder paths, removed machine-wide duplicates and wildcard all-file association, and added a paired removal file."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official Hidemaru startup options and Microsoft registry backup, Explorer context-menu, reg import, and Windows 10 end-of-support references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The registry file assumes C:\\Program Files (x86)\\Hidemaru\\Hidemaru.exe; readers must inspect and change the path if their installation differs.",
+        "The removal file deletes only the two new per-user entries and does not remove an older machine-wide registration. Readers who imported the previous file must inspect and remove its old keys separately. Registry and context-menu behavior can vary by Windows build or policy; export existing matching keys before import."
+      ]
+    },
+    "post/エクスプローラーの右クリックメニューに秀丸エディタgrepを追加する/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/エクスプローラーの右クリックメニューに秀丸エディタgrepを追加する/index.md",
+      "sourceHash": "b35f6ac928d6574980d31de727d8d2752967fec84f6925198b327e9dbee74403",
+      "translationHash": "091682fe4dc94b6e106984b64ea50a2f31b5334ca1936e862ba01521bfd959d5",
+      "summary": "Compared the complete Japanese article and twelve translations with Hidemaru command-line documentation and Microsoft registry backup, Explorer context-menu, reg-import, and Windows 10 lifecycle guidance. Replaced broad machine-wide/all-files registry entries with reversible per-user folder-only entries and clarified path checks, backups, Windows 11 menu placement, and Windows 10 support status.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full setup instructions and aligned scope to current-user folder context menus, executable-path verification, backup, Windows 11 menu location, and removal steps."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked HKEY_CURRENT_USER, registry import/export, Hidemaru grep startup options, Explorer folder/background menu terms, and Windows 11 legacy-menu wording."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Audited bundled CP932 registry file; limited it to two current-user folder grep verbs, quoted executable and folder paths, removed machine-wide duplicates and wildcard all-file association, and added a paired removal file."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official Hidemaru startup options and Microsoft registry backup, Explorer context-menu, reg import, and Windows 10 end-of-support references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The registry file assumes C:\\Program Files (x86)\\Hidemaru\\Hidemaru.exe; readers must inspect and change the path if their installation differs.",
+        "The removal file deletes only the two new per-user entries and does not remove an older machine-wide registration. Readers who imported the previous file must inspect and remove its old keys separately. Registry and context-menu behavior can vary by Windows build or policy; export existing matching keys before import."
+      ]
+    },
+    "post/エクスプローラーの右クリックメニューに秀丸エディタgrepを追加する/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/エクスプローラーの右クリックメニューに秀丸エディタgrepを追加する/index.md",
+      "sourceHash": "b35f6ac928d6574980d31de727d8d2752967fec84f6925198b327e9dbee74403",
+      "translationHash": "6e67240c9ed663a5730bc091089a6928f641f43d6091e70d3f81429b91fcd138",
+      "summary": "Compared the complete Japanese article and twelve translations with Hidemaru command-line documentation and Microsoft registry backup, Explorer context-menu, reg-import, and Windows 10 lifecycle guidance. Replaced broad machine-wide/all-files registry entries with reversible per-user folder-only entries and clarified path checks, backups, Windows 11 menu placement, and Windows 10 support status.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full setup instructions and aligned scope to current-user folder context menus, executable-path verification, backup, Windows 11 menu location, and removal steps."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked HKEY_CURRENT_USER, registry import/export, Hidemaru grep startup options, Explorer folder/background menu terms, and Windows 11 legacy-menu wording."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Audited bundled CP932 registry file; limited it to two current-user folder grep verbs, quoted executable and folder paths, removed machine-wide duplicates and wildcard all-file association, and added a paired removal file."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official Hidemaru startup options and Microsoft registry backup, Explorer context-menu, reg import, and Windows 10 end-of-support references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The registry file assumes C:\\Program Files (x86)\\Hidemaru\\Hidemaru.exe; readers must inspect and change the path if their installation differs.",
+        "The removal file deletes only the two new per-user entries and does not remove an older machine-wide registration. Readers who imported the previous file must inspect and remove its old keys separately. Registry and context-menu behavior can vary by Windows build or policy; export existing matching keys before import."
+      ]
+    },
+    "post/エクスプローラーの右クリックメニューに秀丸エディタgrepを追加する/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/エクスプローラーの右クリックメニューに秀丸エディタgrepを追加する/index.md",
+      "sourceHash": "b35f6ac928d6574980d31de727d8d2752967fec84f6925198b327e9dbee74403",
+      "translationHash": "6bce4fc5d1f7fd023d73ec4c2b18d7951060e7eb9d249ee95e63906857f8abc9",
+      "summary": "Compared the complete Japanese article and twelve translations with Hidemaru command-line documentation and Microsoft registry backup, Explorer context-menu, reg-import, and Windows 10 lifecycle guidance. Replaced broad machine-wide/all-files registry entries with reversible per-user folder-only entries and clarified path checks, backups, Windows 11 menu placement, and Windows 10 support status.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full setup instructions and aligned scope to current-user folder context menus, executable-path verification, backup, Windows 11 menu location, and removal steps."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked HKEY_CURRENT_USER, registry import/export, Hidemaru grep startup options, Explorer folder/background menu terms, and Windows 11 legacy-menu wording."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Audited bundled CP932 registry file; limited it to two current-user folder grep verbs, quoted executable and folder paths, removed machine-wide duplicates and wildcard all-file association, and added a paired removal file."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official Hidemaru startup options and Microsoft registry backup, Explorer context-menu, reg import, and Windows 10 end-of-support references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The registry file assumes C:\\Program Files (x86)\\Hidemaru\\Hidemaru.exe; readers must inspect and change the path if their installation differs.",
+        "The removal file deletes only the two new per-user entries and does not remove an older machine-wide registration. Readers who imported the previous file must inspect and remove its old keys separately. Registry and context-menu behavior can vary by Windows build or policy; export existing matching keys before import."
+      ]
+    },
+    "post/エクスプローラーの右クリックメニューに秀丸エディタgrepを追加する/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/エクスプローラーの右クリックメニューに秀丸エディタgrepを追加する/index.md",
+      "sourceHash": "b35f6ac928d6574980d31de727d8d2752967fec84f6925198b327e9dbee74403",
+      "translationHash": "1b92c3c53a634714d744904e6a8517edf6397e89e04946f69ada075522ce9f8d",
+      "summary": "Compared the complete Japanese article and twelve translations with Hidemaru command-line documentation and Microsoft registry backup, Explorer context-menu, reg-import, and Windows 10 lifecycle guidance. Replaced broad machine-wide/all-files registry entries with reversible per-user folder-only entries and clarified path checks, backups, Windows 11 menu placement, and Windows 10 support status.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full setup instructions and aligned scope to current-user folder context menus, executable-path verification, backup, Windows 11 menu location, and removal steps."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked HKEY_CURRENT_USER, registry import/export, Hidemaru grep startup options, Explorer folder/background menu terms, and Windows 11 legacy-menu wording."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Audited bundled CP932 registry file; limited it to two current-user folder grep verbs, quoted executable and folder paths, removed machine-wide duplicates and wildcard all-file association, and added a paired removal file."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official Hidemaru startup options and Microsoft registry backup, Explorer context-menu, reg import, and Windows 10 end-of-support references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The registry file assumes C:\\Program Files (x86)\\Hidemaru\\Hidemaru.exe; readers must inspect and change the path if their installation differs.",
+        "The removal file deletes only the two new per-user entries and does not remove an older machine-wide registration. Readers who imported the previous file must inspect and remove its old keys separately. Registry and context-menu behavior can vary by Windows build or policy; export existing matching keys before import."
+      ]
+    }
+  }
+}
