@@ -1,6 +1,4 @@
----
-title: 'Mathematica Introduction: How to Use Basic Commands for Equations, Calculus, etc.'
-date: "2026-09-24T19:44:38+09:00"
+---le: 'Mathematica Introduction: How to Use Basic Commands for Equations, Calculus, etc.'
 slug: "Mathematica入門"
 date: 2024-07-25T01:36:19+09:00
 tags: ["Mathematica", "Math", "Algorithm"]
@@ -8,6 +6,8 @@ draft: false
 image: "img.webp"
 categories: ["math-cryptography-quantum"]
 description: 'Explains the basic usage and calculation commands of Mathematica for beginners. Summarizes specific examples of frequently used functions such as solving equations and simultaneous equations (Solve), inequalities (Reduce), differentiation (D), integration (Integrate), and matrix calculations.'
+lastmod: "2026-11-24T00:00:00+09:00"
+
 ---
 # Introduction to Mathematica
 
@@ -69,12 +69,14 @@ x^3/3
 
 ## Find a limit
 ```
-Limit[1/x, x -> 0]
+Limit[1/x, x -> 0, Direction -> "FromAbove"]
 ```
 Output
 ```
 Infinity
 ```
+
+The limit as x approaches 0 from the right is Infinity. The two-sided real limit does not exist. Use Direction to choose a one-sided approach.
 
 ## Find a series
 ```
@@ -105,7 +107,7 @@ Inverse[m]
 ```
 Output
 ```
-{{-2, 1}, {1.5, -0.5}}
+{{-2, 1}, {3/2, -1/2}}
 ```
 
 ## Find eigenvalues and eigenvectors
@@ -114,8 +116,10 @@ Eigensystem[m]
 ```
 Output
 ```
-{{5, 0}, {{1, 1}, {1, -1}}}
+{{(5 + Sqrt[33])/2, (5 - Sqrt[33])/2}, {{2, (3 + Sqrt[33])/2}, {2, (3 - Sqrt[33])/2}}}
 ```
+
+The eigenvalues of this matrix are (5 ± √33)/2. Eigenvectors may be returned in a different order or scaled; each value-vector pair satisfies m.v = λv.
 
 ## Find the inner product of vectors
 ```
@@ -147,7 +151,7 @@ Output
 ## Find the angle between vectors
 ```
 ArcCos[{1, 2} . {3, 4}/(Norm[{1, 2}] Norm[{3, 4}])]
-``` 
+```
 
 Output
 ```
@@ -156,12 +160,20 @@ ArcCos[11/(√5 √25)]
 
 ## Find the projection of a vector
 ```
-{1, 2} . {3, 4}/Norm[{3, 4}] {3, 4}/Norm[{3, 4}]
+Projection[{1, 2}, {3, 4}]
 ```
 Output
 ```
-{11/5, 22/5}
+{33/25, 44/25}
 ```
+
+Projecting {1,2} onto {3,4} uses the dot-product ratio 11/25, giving {33/25,44/25}.
+
+
+
+
+
+
 
 ## Find the rotation of a vector
 ```
@@ -193,17 +205,31 @@ Output
 
 ## Find the reflection of a vector
 ```
-ReflectionTransform[{1, 1}][{1, 1}]
+ReflectionTransform[{0, 1}][{1, 1}]
 ```
 Output
 ```
-{0, 0}
+{1, -1}
 ```
+
+ReflectionTransform takes the mirror's normal as its first argument. The normal {0,1} defines the x-axis, which maps {1,1} to {1,-1}.
+
+The random outputs below are illustrative and change on each evaluation. RandomInteger[] returns 0 or 1. SeedRandom can reproduce a sequence with the same generator and version.
+
+
+
+
+
+
+
+
 
 ## Generate random numbers
 ```
 RandomReal[]
 ```
+
+
 Output
 ```
 0.123456
@@ -215,7 +241,7 @@ RandomInteger[]
 ```
 Output
 ```
-123456
+0
 ```
 
 ## Generate random numbers (range specified)
@@ -251,7 +277,7 @@ RandomVariate[NormalDistribution[0, 1], 10]
 ```
 Output
 ```
-{0.123456, 0.234567, ..., 0.987654}
+{0.123456, 0.234567, 0.345678, 0.456789, 0.567890, 0.678901, 0.789012, 0.890123, 0.901234, 0.012345}
 ```
 
 ## Generate random numbers (distribution specified, number specified, seed specified)
@@ -261,7 +287,7 @@ RandomVariate[NormalDistribution[0, 1], 10]
 ```
 Output
 ```
-{0.123456, 0.234567, ..., 0.987654}
+(* Output intentionally omitted: exact sequence depends on the Wolfram Language version. *)
 ```
 
 ## Apply a function to array elements
@@ -324,3 +350,8 @@ Output
 ```
 {2, 4}
 ```
+
+
+## Official function documentation
+
+[Solve](https://reference.wolfram.com/language/ref/Solve.html) · [Reduce](https://reference.wolfram.com/language/ref/Reduce.html) · [D](https://reference.wolfram.com/language/ref/D.html) · [Integrate](https://reference.wolfram.com/language/ref/Integrate.html) · [Limit](https://reference.wolfram.com/language/ref/Limit.html) · [Sum](https://reference.wolfram.com/language/ref/Sum.html) · [Inverse](https://reference.wolfram.com/language/ref/Inverse.html) · [Eigensystem](https://reference.wolfram.com/language/ref/Eigensystem.html) · [Projection](https://reference.wolfram.com/language/ref/Projection.html) · [RotationMatrix](https://reference.wolfram.com/language/ref/RotationMatrix.html) · [ReflectionTransform](https://reference.wolfram.com/language/ref/ReflectionTransform.html) · [RandomReal](https://reference.wolfram.com/language/ref/RandomReal.html) · [RandomInteger](https://reference.wolfram.com/language/ref/RandomInteger.html) · [RandomVariate](https://reference.wolfram.com/language/ref/RandomVariate.html)

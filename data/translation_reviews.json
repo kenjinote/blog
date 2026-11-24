@@ -10805,6 +10805,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-094.json",
       "evidenceHash": "dba5e63660ee97202a0934a7f45845a82eaa928a804302a2e7ec003e16300c8d"
+    },
+    "post/Mathematica入門/index.ar.md": {
+      "source": "post/Mathematica入門/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "4bef0e58726b75dc877ebfd1e3363217e8b3f8101464251fe66cb099bb24907c",
+      "translationHash": "e11ddf97698c561cbb8d88fa05809461bc94d148fad3ba7a17a3c1d482483ae7",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-095.json",
+      "evidenceHash": "1ef9ced3df4d4bf27dd9c896bb4da29ceed0b8f55888d4eab411a908714ed1ad"
+    },
+    "post/Mathematica入門/index.de.md": {
+      "source": "post/Mathematica入門/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "4bef0e58726b75dc877ebfd1e3363217e8b3f8101464251fe66cb099bb24907c",
+      "translationHash": "c5259a0c14c8d313764f1f1fe7b4123af41ec18ffd358c558780c779f9975748",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-095.json",
+      "evidenceHash": "4bd2542c73a9f5f1e79ac784d3f7100635f45c944c3c2bd2358f0fd1a6a2e65a"
+    },
+    "post/Mathematica入門/index.en.md": {
+      "source": "post/Mathematica入門/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "4bef0e58726b75dc877ebfd1e3363217e8b3f8101464251fe66cb099bb24907c",
+      "translationHash": "4c460a4576ee03beaa63d4a174baa4c6bb18d3f9b3b92901498729516491e955",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-095.json",
+      "evidenceHash": "5ad608b8e2ac621e50e2285342f429c3a743ad753f1431a1ee1114b5007a6cc6"
+    },
+    "post/Mathematica入門/index.es.md": {
+      "source": "post/Mathematica入門/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "4bef0e58726b75dc877ebfd1e3363217e8b3f8101464251fe66cb099bb24907c",
+      "translationHash": "b9a1ff4312266bb50d18aee08d1ffec868140bd40110f0ed2e4ae232d5cc873a",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-095.json",
+      "evidenceHash": "04e86c633f9f80a54c6c3967582009a4d7a83a274a2a0adc9e125b19c9f092a0"
+    },
+    "post/Mathematica入門/index.fr.md": {
+      "source": "post/Mathematica入門/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "4bef0e58726b75dc877ebfd1e3363217e8b3f8101464251fe66cb099bb24907c",
+      "translationHash": "a96b925eb0feb49ab3ff1890f1305fe2f637bf92ed1225a921fc9d4871b2483e",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-095.json",
+      "evidenceHash": "b9cd9c8cd17c97c012010ccff6ebcfff2374fb8e7a19e35f16d7caa58810bd68"
+    },
+    "post/Mathematica入門/index.hi.md": {
+      "source": "post/Mathematica入門/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "4bef0e58726b75dc877ebfd1e3363217e8b3f8101464251fe66cb099bb24907c",
+      "translationHash": "dbbf17e36963b67d8a03dbbef7c8b71a1f7667a53a6329d0f779859125bfc9f8",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-095.json",
+      "evidenceHash": "3e347f6c0a9cc3f077b4d0444c0c7774549e8f854022777d3ac4df8cf6844d24"
+    },
+    "post/Mathematica入門/index.id.md": {
+      "source": "post/Mathematica入門/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "4bef0e58726b75dc877ebfd1e3363217e8b3f8101464251fe66cb099bb24907c",
+      "translationHash": "543745e91b90b80a87a0fd543284bd13070c1fb4a3e4c3e63a3515f524655441",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-095.json",
+      "evidenceHash": "3d4c89e95f98942b7430bfacbb38ed5f7311f23c122a7a90d411ce0069371518"
+    },
+    "post/Mathematica入門/index.ko.md": {
+      "source": "post/Mathematica入門/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "4bef0e58726b75dc877ebfd1e3363217e8b3f8101464251fe66cb099bb24907c",
+      "translationHash": "ccdcc1ea4d5fb8931d37f30c083a959d4f67750305846e83281bc6e680a1f484",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-095.json",
+      "evidenceHash": "40ed552e00a443e43125e75976eb50186ca72744210e4a2457a94662c7134bf3"
+    },
+    "post/Mathematica入門/index.pt.md": {
+      "source": "post/Mathematica入門/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "4bef0e58726b75dc877ebfd1e3363217e8b3f8101464251fe66cb099bb24907c",
+      "translationHash": "611d80bdb13d79c47ef4d070355a66e2773c4dc2d798a3c35470bde9328516c2",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-095.json",
+      "evidenceHash": "a2a335bc11b224f7597ea2262b003820a2368ec77c74eede892f8ce6d309ae76"
+    },
+    "post/Mathematica入門/index.ru.md": {
+      "source": "post/Mathematica入門/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "4bef0e58726b75dc877ebfd1e3363217e8b3f8101464251fe66cb099bb24907c",
+      "translationHash": "afc59e6ef510d6409d475c971f96f10d9874c22cb23ff44a71caa7565cd31c48",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-095.json",
+      "evidenceHash": "0d9ad49e8efb8747bd1a770963135b3ecab0e8bab0596d9260cadd9dfdd84924"
+    },
+    "post/Mathematica入門/index.zh-cn.md": {
+      "source": "post/Mathematica入門/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "4bef0e58726b75dc877ebfd1e3363217e8b3f8101464251fe66cb099bb24907c",
+      "translationHash": "761b425c4dd3874224f74c169edd03fde80e1fddf78cedfb0a085cd1132466e0",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-095.json",
+      "evidenceHash": "f9c1a70fde827425df82b0b833fb69dbb0b96ccf1fec77647ee44f384ba14224"
+    },
+    "post/Mathematica入門/index.zh-tw.md": {
+      "source": "post/Mathematica入門/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "4bef0e58726b75dc877ebfd1e3363217e8b3f8101464251fe66cb099bb24907c",
+      "translationHash": "082b207eacd298c1ccc61c0f7c54b3e15becafaa6c48f2687b764e2f91d34611",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-095.json",
+      "evidenceHash": "71894134d8578fbc164e8038fb238add4ac9498f3349ce41586a2957af01d97f"
     }
   }
 }

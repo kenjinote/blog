@@ -1,6 +1,4 @@
----
-title: 'Mathematica परिचय: समीकरण, डिफरेंशियल और इंटीग्रल कैलकुलस जैसी बुनियादी कमांड का उपयोग कैसे करें'
-date: "2026-09-24T19:44:38+09:00"
+---le: 'Mathematica परिचय: समीकरण, डिफरेंशियल और इंटीग्रल कैलकुलस जैसी बुनियादी कमांड का उपयोग कैसे करें'
 slug: "Mathematica入門"
 date: 2024-07-25T01:36:19+09:00
 tags: ["Mathematica", "गणित", "एल्गोरिथ्म"]
@@ -8,6 +6,8 @@ draft: false
 image: "img.webp"
 categories: ["math-cryptography-quantum"]
 description: 'शुरुआती लोगों के लिए Mathematica का उपयोग करने के बुनियादी तरीके और गणना कमांड समझाए गए हैं। समीकरणों और युगपत समीकरणों (Solve), असमानताओं (Reduce), डिफरेंशियल (D), इंटीग्रल (Integrate), और मैट्रिक्स गणना जैसे अक्सर उपयोग किए जाने वाले कार्यों के विशिष्ट उदाहरण संक्षेप में दिए गए हैं।'
+lastmod: "2026-11-24T00:00:00+09:00"
+
 ---
 # Mathematica का परिचय
 
@@ -69,12 +69,14 @@ x^3/3
 
 ## सीमा ज्ञात करना
 ```
-Limit[1/x, x -> 0]
+Limit[1/x, x -> 0, Direction -> "FromAbove"]
 ```
 आउटपुट
 ```
 Infinity
 ```
+
+x के 0 के दाईं ओर से पास आने पर सीमा Infinity है। दोनों ओर से वास्तविक सीमा मौजूद नहीं है। Direction से एकतरफा दिशा चुनी जा सकती है।
 
 ## श्रृंखला ज्ञात करना
 ```
@@ -105,7 +107,7 @@ Inverse[m]
 ```
 आउटपुट
 ```
-{{-2, 1}, {1.5, -0.5}}
+{{-2, 1}, {3/2, -1/2}}
 ```
 
 ## [आइगेनवैल्यू और आइगेनवेक्टर](https://kenji.blog/hi/p/eigenvalues-and-eigenvectors/) ज्ञात करना
@@ -114,8 +116,10 @@ Eigensystem[m]
 ```
 आउटपुट
 ```
-{{5, 0}, {{1, 1}, {1, -1}}}
+{{(5 + Sqrt[33])/2, (5 - Sqrt[33])/2}, {{2, (3 + Sqrt[33])/2}, {2, (3 - Sqrt[33])/2}}}
 ```
+
+इस मैट्रिक्स के eigenvalues (5 ± √33)/2 हैं। eigenvectors का क्रम या गुणक अलग हो सकता है; प्रत्येक युग्म m.v = λv को संतुष्ट करता है।
 
 ## सदिशों का बिंदु गुणनफल ज्ञात करना
 ```
@@ -147,7 +151,7 @@ Norm[{1, 2, 3}]
 ## सदिशों का कोण ज्ञात करना
 ```
 ArcCos[{1, 2} . {3, 4}/(Norm[{1, 2}] Norm[{3, 4}])]
-``` 
+```
 
 आउटपुट
 ```
@@ -156,12 +160,20 @@ ArcCos[11/(√5 √25)]
 
 ## सदिश का प्रक्षेपण ज्ञात करना
 ```
-{1, 2} . {3, 4}/Norm[{3, 4}] {3, 4}/Norm[{3, 4}]
+Projection[{1, 2}, {3, 4}]
 ```
 आउटपुट
 ```
-{11/5, 22/5}
+{33/25, 44/25}
 ```
+
+{1,2} को {3,4} पर प्रक्षेपित करने में डॉट-प्रोडक्ट अनुपात 11/25 होता है और परिणाम {33/25,44/25} है।
+
+
+
+
+
+
 
 ## सदिश का घूर्णन ज्ञात करना
 ```
@@ -193,17 +205,31 @@ ScalingTransform[{2, 3}][{1, 1}]
 
 ## सदिश का परावर्तन ज्ञात करना
 ```
-ReflectionTransform[{1, 1}][{1, 1}]
+ReflectionTransform[{0, 1}][{1, 1}]
 ```
 आउटपुट
 ```
-{0, 0}
+{1, -1}
 ```
+
+ReflectionTransform का पहला तर्क दर्पण का normal है। {0,1} normal x-अक्ष को दर्शाता है और {1,1} को {1,-1} में बदलता है।
+
+नीचे दिए गए यादृच्छिक परिणाम केवल उदाहरण हैं और हर मूल्यांकन पर बदलते हैं। RandomInteger[] 0 या 1 देता है। SeedRandom उसी जनरेटर और संस्करण में क्रम दोहराने में मदद करता है।
+
+
+
+
+
+
+
+
 
 ## यादृच्छिक संख्याएँ उत्पन्न करना
 ```
 RandomReal[]
 ```
+
+
 आउटपुट
 ```
 0.123456
@@ -215,7 +241,7 @@ RandomInteger[]
 ```
 आउटपुट
 ```
-123456
+0
 ```
 
 ## यादृच्छिक संख्याएँ उत्पन्न करना (सीमा निर्दिष्ट)
@@ -251,7 +277,7 @@ RandomVariate[NormalDistribution[0, 1], 10]
 ```
 आउटपुट
 ```
-{0.123456, 0.234567, ..., 0.987654}
+{0.123456, 0.234567, 0.345678, 0.456789, 0.567890, 0.678901, 0.789012, 0.890123, 0.901234, 0.012345}
 ```
 
 ## यादृच्छिक संख्याएँ उत्पन्न करना (वितरण, मात्रा, बीज निर्दिष्ट)
@@ -261,7 +287,7 @@ RandomVariate[NormalDistribution[0, 1], 10]
 ```
 आउटपुट
 ```
-{0.123456, 0.234567, ..., 0.987654}
+(* Output intentionally omitted: exact sequence depends on the Wolfram Language version. *)
 ```
 
 ## सरणी के तत्वों पर फ़ंक्शन लागू करना
@@ -324,3 +350,8 @@ Select[{1, 2, 3, 4, 5}, Mod[#,2]==0&]
 ```
 {2, 4}
 ```
+
+
+## फ़ंक्शन के आधिकारिक दस्तावेज़
+
+[Solve](https://reference.wolfram.com/language/ref/Solve.html) · [Reduce](https://reference.wolfram.com/language/ref/Reduce.html) · [D](https://reference.wolfram.com/language/ref/D.html) · [Integrate](https://reference.wolfram.com/language/ref/Integrate.html) · [Limit](https://reference.wolfram.com/language/ref/Limit.html) · [Sum](https://reference.wolfram.com/language/ref/Sum.html) · [Inverse](https://reference.wolfram.com/language/ref/Inverse.html) · [Eigensystem](https://reference.wolfram.com/language/ref/Eigensystem.html) · [Projection](https://reference.wolfram.com/language/ref/Projection.html) · [RotationMatrix](https://reference.wolfram.com/language/ref/RotationMatrix.html) · [ReflectionTransform](https://reference.wolfram.com/language/ref/ReflectionTransform.html) · [RandomReal](https://reference.wolfram.com/language/ref/RandomReal.html) · [RandomInteger](https://reference.wolfram.com/language/ref/RandomInteger.html) · [RandomVariate](https://reference.wolfram.com/language/ref/RandomVariate.html)

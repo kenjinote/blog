@@ -1,6 +1,4 @@
----
-title: 'Введение в Mathematica: Как использовать базовые команды для уравнений, дифференцирования и интегрирования'
-date: "2026-09-24T19:44:38+09:00"
+---le: 'Введение в Mathematica: Как использовать базовые команды для уравнений, дифференцирования и интегрирования'
 slug: "Mathematica入門"
 date: 2024-07-25T01:36:19+09:00
 tags: ["Mathematica", "Математика", "Алгоритмы"]
@@ -8,6 +6,8 @@ draft: false
 image: "img.webp"
 categories: ["math-cryptography-quantum"]
 description: 'Руководство для начинающих по основам использования Mathematica и командам вычислений. Собраны конкретные примеры часто используемых функций, таких как решение уравнений и систем уравнений (Solve), неравенств (Reduce), дифференцирование (D), интегрирование (Integrate) и матричные вычисления.'
+lastmod: "2026-11-24T00:00:00+09:00"
+
 ---
 # Введение в Mathematica
 
@@ -69,12 +69,14 @@ x^3/3
 
 ## Вычисление пределов
 ```
-Limit[1/x, x -> 0]
+Limit[1/x, x -> 0, Direction -> "FromAbove"]
 ```
 Вывод
 ```
 Infinity
 ```
+
+Предел при стремлении x к 0 справа равен Infinity. Двусторонний предел по вещественным числам не существует. Направление одностороннего предела задаёт Direction.
 
 ## Вычисление рядов
 ```
@@ -105,7 +107,7 @@ Inverse[m]
 ```
 Вывод
 ```
-{{-2, 1}, {1.5, -0.5}}
+{{-2, 1}, {3/2, -1/2}}
 ```
 
 ## Поиск собственных значений и векторов
@@ -114,8 +116,10 @@ Eigensystem[m]
 ```
 Вывод
 ```
-{{5, 0}, {{1, 1}, {1, -1}}}
+{{(5 + Sqrt[33])/2, (5 - Sqrt[33])/2}, {{2, (3 + Sqrt[33])/2}, {2, (3 - Sqrt[33])/2}}}
 ```
+
+Собственные значения этой матрицы равны (5 ± √33)/2. Порядок и масштаб собственных векторов могут различаться; каждая пара удовлетворяет m.v = λv.
 
 ## Скалярное произведение векторов
 ```
@@ -147,7 +151,7 @@ Norm[{1, 2, 3}]
 ## Вычисление угла между векторами
 ```
 ArcCos[{1, 2} . {3, 4}/(Norm[{1, 2}] Norm[{3, 4}])]
-``` 
+```
 
 Вывод
 ```
@@ -156,12 +160,20 @@ ArcCos[11/(√5 √25)]
 
 ## Проекция вектора
 ```
-{1, 2} . {3, 4}/Norm[{3, 4}] {3, 4}/Norm[{3, 4}]
+Projection[{1, 2}, {3, 4}]
 ```
 Вывод
 ```
-{11/5, 22/5}
+{33/25, 44/25}
 ```
+
+При ортогональной проекции {1,2} на {3,4} отношение скалярных произведений равно 11/25, результат — {33/25,44/25}.
+
+
+
+
+
+
 
 ## Вращение вектора
 ```
@@ -193,17 +205,31 @@ ScalingTransform[{2, 3}][{1, 1}]
 
 ## Отражение вектора
 ```
-ReflectionTransform[{1, 1}][{1, 1}]
+ReflectionTransform[{0, 1}][{1, 1}]
 ```
 Вывод
 ```
-{0, 0}
+{1, -1}
 ```
+
+Первый аргумент ReflectionTransform задаёт нормаль зеркала. Нормаль {0,1} соответствует оси x и переводит {1,1} в {1,-1}.
+
+Приведённые ниже случайные результаты иллюстративны и меняются при каждом вычислении. RandomInteger[] возвращает 0 или 1. SeedRandom воспроизводит последовательность с тем же генератором и версией.
+
+
+
+
+
+
+
+
 
 ## Генерация случайных чисел
 ```
 RandomReal[]
 ```
+
+
 Вывод
 ```
 0.123456
@@ -215,7 +241,7 @@ RandomInteger[]
 ```
 Вывод
 ```
-123456
+0
 ```
 
 ## Генерация случайных чисел (с указанием диапазона)
@@ -251,7 +277,7 @@ RandomVariate[NormalDistribution[0, 1], 10]
 ```
 Вывод
 ```
-{0.123456, 0.234567, ..., 0.987654}
+{0.123456, 0.234567, 0.345678, 0.456789, 0.567890, 0.678901, 0.789012, 0.890123, 0.901234, 0.012345}
 ```
 
 ## Генерация случайных чисел (распределение, количество, seed)
@@ -261,7 +287,7 @@ RandomVariate[NormalDistribution[0, 1], 10]
 ```
 Вывод
 ```
-{0.123456, 0.234567, ..., 0.987654}
+(* Output intentionally omitted: exact sequence depends on the Wolfram Language version. *)
 ```
 
 ## Применение функции к элементам массива
@@ -324,3 +350,8 @@ Select[{1, 2, 3, 4, 5}, Mod[#,2]==0&]
 ```
 {2, 4}
 ```
+
+
+## Официальная документация функций
+
+[Solve](https://reference.wolfram.com/language/ref/Solve.html) · [Reduce](https://reference.wolfram.com/language/ref/Reduce.html) · [D](https://reference.wolfram.com/language/ref/D.html) · [Integrate](https://reference.wolfram.com/language/ref/Integrate.html) · [Limit](https://reference.wolfram.com/language/ref/Limit.html) · [Sum](https://reference.wolfram.com/language/ref/Sum.html) · [Inverse](https://reference.wolfram.com/language/ref/Inverse.html) · [Eigensystem](https://reference.wolfram.com/language/ref/Eigensystem.html) · [Projection](https://reference.wolfram.com/language/ref/Projection.html) · [RotationMatrix](https://reference.wolfram.com/language/ref/RotationMatrix.html) · [ReflectionTransform](https://reference.wolfram.com/language/ref/ReflectionTransform.html) · [RandomReal](https://reference.wolfram.com/language/ref/RandomReal.html) · [RandomInteger](https://reference.wolfram.com/language/ref/RandomInteger.html) · [RandomVariate](https://reference.wolfram.com/language/ref/RandomVariate.html)

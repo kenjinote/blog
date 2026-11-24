@@ -1,6 +1,4 @@
----
-title: 'Mathematica 入門：方程式、微積分等基本指令的使用方法'
-date: "2026-09-24T19:44:38+09:00"
+---le: 'Mathematica 入門：方程式、微積分等基本指令的使用方法'
 slug: "Mathematica入門"
 date: 2024-07-25T01:36:19+09:00
 tags: ["Mathematica", "數學", "演算法"]
@@ -8,6 +6,8 @@ draft: false
 image: "img.webp"
 categories: ["math-cryptography-quantum"]
 description: '為初學者說明 Mathematica 的基本使用方法與計算指令。整理了方程式與聯立方程式的解法 (Solve)、不等式 (Reduce)、微分 (D)、積分 (Integrate) 及矩陣計算等常用函數的具體範例。'
+lastmod: "2026-11-24T00:00:00+09:00"
+
 ---
 # Mathematica 入門
 
@@ -69,12 +69,14 @@ x^3/3
 
 ## 求極限
 ```
-Limit[1/x, x -> 0]
+Limit[1/x, x -> 0, Direction -> "FromAbove"]
 ```
 輸出
 ```
 Infinity
 ```
+
+x 從右側趨近 0 時，極限為 Infinity。雙側實數極限不存在。可用 Direction 指定單側趨近方向。
 
 ## 求級數
 ```
@@ -105,7 +107,7 @@ Inverse[m]
 ```
 輸出
 ```
-{{-2, 1}, {1.5, -0.5}}
+{{-2, 1}, {3/2, -1/2}}
 ```
 
 ## 求[特徵值與特徵向量](https://kenji.blog/zh-tw/p/eigenvalues-and-eigenvectors/)
@@ -114,8 +116,10 @@ Eigensystem[m]
 ```
 輸出
 ```
-{{5, 0}, {{1, 1}, {1, -1}}}
+{{(5 + Sqrt[33])/2, (5 - Sqrt[33])/2}, {{2, (3 + Sqrt[33])/2}, {2, (3 - Sqrt[33])/2}}}
 ```
+
+此矩陣的特徵值為 (5±√33)/2。特徵向量的順序或倍數可能不同，但每組值與向量都滿足 m.v=λv。
 
 ## 求向量內積
 ```
@@ -147,7 +151,7 @@ Norm[{1, 2, 3}]
 ## 求向量的角度
 ```
 ArcCos[{1, 2} . {3, 4}/(Norm[{1, 2}] Norm[{3, 4}])]
-``` 
+```
 
 輸出
 ```
@@ -156,12 +160,20 @@ ArcCos[11/(√5 √25)]
 
 ## 求向量的投影
 ```
-{1, 2} . {3, 4}/Norm[{3, 4}] {3, 4}/Norm[{3, 4}]
+Projection[{1, 2}, {3, 4}]
 ```
 輸出
 ```
-{11/5, 22/5}
+{33/25, 44/25}
 ```
+
+將 {1,2} 正交投影到 {3,4} 時，係數為內積比 11/25，結果是 {33/25,44/25}。
+
+
+
+
+
+
 
 ## 求向量的旋轉
 ```
@@ -193,17 +205,31 @@ ScalingTransform[{2, 3}][{1, 1}]
 
 ## 求向量的反射
 ```
-ReflectionTransform[{1, 1}][{1, 1}]
+ReflectionTransform[{0, 1}][{1, 1}]
 ```
 輸出
 ```
-{0, 0}
+{1, -1}
 ```
+
+ReflectionTransform 的第一個引數是鏡面的法向量。法向量 {0,1} 代表 x 軸，因此 {1,1} 會映射為 {1,-1}。
+
+下方亂數輸出僅供示例，每次計算都會改變。RandomInteger[] 會回傳 0 或 1。SeedRandom 可在相同產生器與版本下重現亂數序列。
+
+
+
+
+
+
+
+
 
 ## 產生亂數
 ```
 RandomReal[]
 ```
+
+
 輸出
 ```
 0.123456
@@ -215,7 +241,7 @@ RandomInteger[]
 ```
 輸出
 ```
-123456
+0
 ```
 
 ## 產生亂數（指定範圍）
@@ -251,7 +277,7 @@ RandomVariate[NormalDistribution[0, 1], 10]
 ```
 輸出
 ```
-{0.123456, 0.234567, ..., 0.987654}
+{0.123456, 0.234567, 0.345678, 0.456789, 0.567890, 0.678901, 0.789012, 0.890123, 0.901234, 0.012345}
 ```
 
 ## 產生亂數（指定分佈、指定數量、指定種子）
@@ -261,7 +287,7 @@ RandomVariate[NormalDistribution[0, 1], 10]
 ```
 輸出
 ```
-{0.123456, 0.234567, ..., 0.987654}
+(* Output intentionally omitted: exact sequence depends on the Wolfram Language version. *)
 ```
 
 ## 將函數套用至陣列元素
@@ -324,3 +350,8 @@ Select[{1, 2, 3, 4, 5}, Mod[#,2]==0&]
 ```
 {2, 4}
 ```
+
+
+## 函數官方文件
+
+[Solve](https://reference.wolfram.com/language/ref/Solve.html) · [Reduce](https://reference.wolfram.com/language/ref/Reduce.html) · [D](https://reference.wolfram.com/language/ref/D.html) · [Integrate](https://reference.wolfram.com/language/ref/Integrate.html) · [Limit](https://reference.wolfram.com/language/ref/Limit.html) · [Sum](https://reference.wolfram.com/language/ref/Sum.html) · [Inverse](https://reference.wolfram.com/language/ref/Inverse.html) · [Eigensystem](https://reference.wolfram.com/language/ref/Eigensystem.html) · [Projection](https://reference.wolfram.com/language/ref/Projection.html) · [RotationMatrix](https://reference.wolfram.com/language/ref/RotationMatrix.html) · [ReflectionTransform](https://reference.wolfram.com/language/ref/ReflectionTransform.html) · [RandomReal](https://reference.wolfram.com/language/ref/RandomReal.html) · [RandomInteger](https://reference.wolfram.com/language/ref/RandomInteger.html) · [RandomVariate](https://reference.wolfram.com/language/ref/RandomVariate.html)
