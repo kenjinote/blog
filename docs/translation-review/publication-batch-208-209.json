@@ -1,0 +1,527 @@
+{
+  "version": 1,
+  "batches": [
+    208,
+    209
+  ],
+  "verifiedAt": "2026-11-25T07:29:22.2582867+09:00",
+  "ciRun": 45496973267,
+  "ciUrl": "https://github.com/kenjinote/blog/actions/runs/45496973267",
+  "sourceCommit": "c10f8dcf8d5e67d4f35bfada41abb4ab06af3dcc",
+  "deployment": "success",
+  "pagesVerified": 26,
+  "allPassed": true,
+  "ciGates": {
+    "translationReviewTests": true,
+    "multilingualTests": true,
+    "mathRenderingTests": true,
+    "translationReviewCheck": true,
+    "hugoBuild": true,
+    "searchIndex": true,
+    "httpsUrls": true
+  },
+  "results": {
+    "208": {
+      "pages": [
+        {
+          "language": "ja",
+          "url": "https://kenji.blog/p/affiliate-marketing-mechanism/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangUnique": true,
+            "hreflangTargets": true,
+            "arabicRtl": true,
+            "languageSelector": true,
+            "title": true,
+            "articleSections": true
+          },
+          "passed": true
+        },
+        {
+          "language": "ar",
+          "url": "https://kenji.blog/ar/p/affiliate-marketing-mechanism/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangUnique": true,
+            "hreflangTargets": true,
+            "arabicRtl": true,
+            "languageSelector": true,
+            "title": true,
+            "articleSections": true
+          },
+          "passed": true
+        },
+        {
+          "language": "de",
+          "url": "https://kenji.blog/de/p/affiliate-marketing-mechanism/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangUnique": true,
+            "hreflangTargets": true,
+            "arabicRtl": true,
+            "languageSelector": true,
+            "title": true,
+            "articleSections": true
+          },
+          "passed": true
+        },
+        {
+          "language": "en",
+          "url": "https://kenji.blog/en/p/affiliate-marketing-mechanism/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangUnique": true,
+            "hreflangTargets": true,
+            "arabicRtl": true,
+            "languageSelector": true,
+            "title": true,
+            "articleSections": true
+          },
+          "passed": true
+        },
+        {
+          "language": "es",
+          "url": "https://kenji.blog/es/p/affiliate-marketing-mechanism/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangUnique": true,
+            "hreflangTargets": true,
+            "arabicRtl": true,
+            "languageSelector": true,
+            "title": true,
+            "articleSections": true
+          },
+          "passed": true
+        },
+        {
+          "language": "fr",
+          "url": "https://kenji.blog/fr/p/affiliate-marketing-mechanism/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangUnique": true,
+            "hreflangTargets": true,
+            "arabicRtl": true,
+            "languageSelector": true,
+            "title": true,
+            "articleSections": true
+          },
+          "passed": true
+        },
+        {
+          "language": "hi",
+          "url": "https://kenji.blog/hi/p/affiliate-marketing-mechanism/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangUnique": true,
+            "hreflangTargets": true,
+            "arabicRtl": true,
+            "languageSelector": true,
+            "title": true,
+            "articleSections": true
+          },
+          "passed": true
+        },
+        {
+          "language": "id",
+          "url": "https://kenji.blog/id/p/affiliate-marketing-mechanism/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangUnique": true,
+            "hreflangTargets": true,
+            "arabicRtl": true,
+            "languageSelector": true,
+            "title": true,
+            "articleSections": true
+          },
+          "passed": true
+        },
+        {
+          "language": "ko",
+          "url": "https://kenji.blog/ko/p/affiliate-marketing-mechanism/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangUnique": true,
+            "hreflangTargets": true,
+            "arabicRtl": true,
+            "languageSelector": true,
+            "title": true,
+            "articleSections": true
+          },
+          "passed": true
+        },
+        {
+          "language": "pt",
+          "url": "https://kenji.blog/pt/p/affiliate-marketing-mechanism/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangUnique": true,
+            "hreflangTargets": true,
+            "arabicRtl": true,
+            "languageSelector": true,
+            "title": true,
+            "articleSections": true
+          },
+          "passed": true
+        },
+        {
+          "language": "ru",
+          "url": "https://kenji.blog/ru/p/affiliate-marketing-mechanism/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangUnique": true,
+            "hreflangTargets": true,
+            "arabicRtl": true,
+            "languageSelector": true,
+            "title": true,
+            "articleSections": true
+          },
+          "passed": true
+        },
+        {
+          "language": "zh-cn",
+          "url": "https://kenji.blog/zh-cn/p/affiliate-marketing-mechanism/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangUnique": true,
+            "hreflangTargets": true,
+            "arabicRtl": true,
+            "languageSelector": true,
+            "title": true,
+            "articleSections": true
+          },
+          "passed": true
+        },
+        {
+          "language": "zh-tw",
+          "url": "https://kenji.blog/zh-tw/p/affiliate-marketing-mechanism/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangUnique": true,
+            "hreflangTargets": true,
+            "arabicRtl": true,
+            "languageSelector": true,
+            "title": true,
+            "articleSections": true
+          },
+          "passed": true
+        }
+      ]
+    },
+    "209": {
+      "pages": [
+        {
+          "language": "ja",
+          "url": "https://kenji.blog/p/affine-and-projective-transformations/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangUnique": true,
+            "hreflangTargets": true,
+            "arabicRtl": true,
+            "languageSelector": true,
+            "title": true,
+            "articleSections": true
+          },
+          "passed": true
+        },
+        {
+          "language": "ar",
+          "url": "https://kenji.blog/ar/p/affine-and-projective-transformations/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangUnique": true,
+            "hreflangTargets": true,
+            "arabicRtl": true,
+            "languageSelector": true,
+            "title": true,
+            "articleSections": true
+          },
+          "passed": true
+        },
+        {
+          "language": "de",
+          "url": "https://kenji.blog/de/p/affine-and-projective-transformations/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangUnique": true,
+            "hreflangTargets": true,
+            "arabicRtl": true,
+            "languageSelector": true,
+            "title": true,
+            "articleSections": true
+          },
+          "passed": true
+        },
+        {
+          "language": "en",
+          "url": "https://kenji.blog/en/p/affine-and-projective-transformations/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangUnique": true,
+            "hreflangTargets": true,
+            "arabicRtl": true,
+            "languageSelector": true,
+            "title": true,
+            "articleSections": true
+          },
+          "passed": true
+        },
+        {
+          "language": "es",
+          "url": "https://kenji.blog/es/p/affine-and-projective-transformations/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangUnique": true,
+            "hreflangTargets": true,
+            "arabicRtl": true,
+            "languageSelector": true,
+            "title": true,
+            "articleSections": true
+          },
+          "passed": true
+        },
+        {
+          "language": "fr",
+          "url": "https://kenji.blog/fr/p/affine-and-projective-transformations/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangUnique": true,
+            "hreflangTargets": true,
+            "arabicRtl": true,
+            "languageSelector": true,
+            "title": true,
+            "articleSections": true
+          },
+          "passed": true
+        },
+        {
+          "language": "hi",
+          "url": "https://kenji.blog/hi/p/affine-and-projective-transformations/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangUnique": true,
+            "hreflangTargets": true,
+            "arabicRtl": true,
+            "languageSelector": true,
+            "title": true,
+            "articleSections": true
+          },
+          "passed": true
+        },
+        {
+          "language": "id",
+          "url": "https://kenji.blog/id/p/affine-and-projective-transformations/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangUnique": true,
+            "hreflangTargets": true,
+            "arabicRtl": true,
+            "languageSelector": true,
+            "title": true,
+            "articleSections": true
+          },
+          "passed": true
+        },
+        {
+          "language": "ko",
+          "url": "https://kenji.blog/ko/p/affine-and-projective-transformations/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangUnique": true,
+            "hreflangTargets": true,
+            "arabicRtl": true,
+            "languageSelector": true,
+            "title": true,
+            "articleSections": true
+          },
+          "passed": true
+        },
+        {
+          "language": "pt",
+          "url": "https://kenji.blog/pt/p/affine-and-projective-transformations/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangUnique": true,
+            "hreflangTargets": true,
+            "arabicRtl": true,
+            "languageSelector": true,
+            "title": true,
+            "articleSections": true
+          },
+          "passed": true
+        },
+        {
+          "language": "ru",
+          "url": "https://kenji.blog/ru/p/affine-and-projective-transformations/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangUnique": true,
+            "hreflangTargets": true,
+            "arabicRtl": true,
+            "languageSelector": true,
+            "title": true,
+            "articleSections": true
+          },
+          "passed": true
+        },
+        {
+          "language": "zh-cn",
+          "url": "https://kenji.blog/zh-cn/p/affine-and-projective-transformations/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangUnique": true,
+            "hreflangTargets": true,
+            "arabicRtl": true,
+            "languageSelector": true,
+            "title": true,
+            "articleSections": true
+          },
+          "passed": true
+        },
+        {
+          "language": "zh-tw",
+          "url": "https://kenji.blog/zh-tw/p/affine-and-projective-transformations/",
+          "status": 200,
+          "checks": {
+            "http200": true,
+            "canonical": true,
+            "language": true,
+            "description": true,
+            "hreflangCount": true,
+            "hreflangUnique": true,
+            "hreflangTargets": true,
+            "arabicRtl": true,
+            "languageSelector": true,
+            "title": true,
+            "articleSections": true
+          },
+          "passed": true
+        }
+      ]
+    }
+  }
+}

@@ -18,7 +18,7 @@
     "Corrected claims that fingerprinting is a reliable unique identifier, S2S prevents fraud or guarantees complete measurement, and clean rooms automatically guarantee privacy.",
     "Added primary technical references for WebKit tracking prevention, Google server-side tagging, and IETF redirect semantics."
   ],
-  "publicationPending": true,
+  "publicationPending": false,
   "reviews": {
     "post/affiliate-marketing-mechanism/index.en.md": {
       "source": "post/affiliate-marketing-mechanism/index.md",

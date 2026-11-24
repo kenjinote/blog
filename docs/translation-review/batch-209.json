@@ -10,7 +10,7 @@
     "Specified nonsingular projective matrices and homogeneous-coordinate scale equivalence; documented the W=0 limit.",
     "Separated planar perspective rectification from lens distortion, qualified panorama stitching by camera-center assumptions, and clarified the view-frustum-to-screen projection pipeline."
   ],
-  "publicationPending": true,
+  "publicationPending": false,
   "reviews": {
     "post/affine-and-projective-transformations/index.ar.md": {
       "source": "post/affine-and-projective-transformations/index.md",
