@@ -5,9 +5,9 @@
 
 
 title: '정적 사이트 생성기 Hugo로 블로그를 시작해 보았습니다! 일상과 기술 메모 기록'
-date: "2026-09-24T19:44:38+09:00"
 slug: "블로그、はじめてみました"
-date: 2022-09-02T07:23:00+09:00
+date: "2022-09-02T07:23:00+09:00"
+lastmod: "2026-11-25"
 tags: ["잡기"]
 draft: false
 image: "images/komeda.webp"
@@ -22,7 +22,7 @@ description: '정적 사이트 생성기 ''Hugo''를 사용하여 새롭게 개�
 
 ## 블로그, 시작해 보았습니다
 
-![](https://user-images.githubusercontent.com/2605401/187252583-63ef83f4-99c1-4eaf-a5b8-3b5ac1439860.gif)
+![불꽃놀이 애니메이션](https://user-images.githubusercontent.com/2605401/187252583-63ef83f4-99c1-4eaf-a5b8-3b5ac1439860.gif)
 불꽃놀이 같은 것, 코드는 [여기](https://github.com/kenjinote/Fireworks "코드로 이동")
 
 안녕하세요.

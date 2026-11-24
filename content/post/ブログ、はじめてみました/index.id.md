@@ -1,8 +1,8 @@
 ---
 title: 'Mulai Membuat Blog dengan Static Site Generator Hugo! Catatan Keseharian dan Memo Teknis'
-date: "2026-09-24T19:44:38+09:00"
 slug: "Blog、はじめてみました"
-date: 2022-09-02T07:23:00+09:00
+date: "2022-09-02T07:23:00+09:00"
+lastmod: "2026-11-25"
 tags: ["雑記"]
 draft: false
 image: "images/komeda.webp"
@@ -12,7 +12,7 @@ description: 'Saya baru saja membuka blog pribadi baru menggunakan static site g
 
 ## Saya mulai menulis blog
 
-![](https://user-images.githubusercontent.com/2605401/187252583-63ef83f4-99c1-4eaf-a5b8-3b5ac1439860.gif)
+![Animasi kembang api](https://user-images.githubusercontent.com/2605401/187252583-63ef83f4-99c1-4eaf-a5b8-3b5ac1439860.gif)
 Sesuatu seperti kembang api, kodenya ada [di sini](https://github.com/kenjinote/Fireworks "Pergi ke kode")
 
 Halo semuanya.

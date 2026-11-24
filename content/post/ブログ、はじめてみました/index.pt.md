@@ -1,8 +1,8 @@
 ---
 title: 'Comecei um blog com o gerador de sites estáticos Hugo! Registro do dia a dia e notas técnicas'
-date: "2026-09-24T19:44:38+09:00"
 slug: "Blog、はじめてみました"
-date: 2022-09-02T07:23:00+09:00
+date: "2022-09-02T07:23:00+09:00"
+lastmod: "2026-11-25"
 tags: ["Diversos"]
 draft: false
 image: "images/komeda.webp"
@@ -12,7 +12,7 @@ description: 'Abri um novo blog pessoal usando o gerador de sites estáticos ''H
 
 ## Comecei um blog
 
-![](https://user-images.githubusercontent.com/2605401/187252583-63ef83f4-99c1-4eaf-a5b8-3b5ac1439860.gif)
+![Animação de fogos de artifício](https://user-images.githubusercontent.com/2605401/187252583-63ef83f4-99c1-4eaf-a5b8-3b5ac1439860.gif)
 Algo como fogos de artifício, o código está [aqui](https://github.com/kenjinote/Fireworks "Ir para o código")
 
 Olá.

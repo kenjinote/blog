@@ -1,8 +1,8 @@
 ---
 title: '静的サイトジェネレーターHugoでブログを始めてみました！日常や技術メモの記録'
-date: "2026-09-24T19:44:38+09:00"
 slug: "ブログ、はじめてみました"
-date: 2022-09-02T07:23:00+09:00
+date: "2022-09-02T07:23:00+09:00"
+lastmod: "2026-11-25"
 tags: ["雑記"]
 draft: false
 image: "images/komeda.webp"
@@ -12,7 +12,7 @@ description: '静的サイトジェネレーター「Hugo」を使って、新�
 
 ## ブログ、はじめてみました
 
-![](https://user-images.githubusercontent.com/2605401/187252583-63ef83f4-99c1-4eaf-a5b8-3b5ac1439860.gif)
+![花火のようなアニメーション](https://user-images.githubusercontent.com/2605401/187252583-63ef83f4-99c1-4eaf-a5b8-3b5ac1439860.gif)
 花火的なもの、コードは[こちら](https://github.com/kenjinote/Fireworks "コードへ移動")
 
 どうもこんにちは。

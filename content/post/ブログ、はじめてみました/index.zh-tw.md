@@ -1,8 +1,8 @@
 ---
 title: '使用靜態網站產生器Hugo開始寫部落格了！記錄日常與技術筆記'
-date: "2026-09-24T19:44:38+09:00"
 slug: "部落格、はじめてみました"
-date: 2022-09-02T07:23:00+09:00
+date: "2022-09-02T07:23:00+09:00"
+lastmod: "2026-11-25"
 tags: ["雜記"]
 draft: false
 image: "images/komeda.webp"
@@ -12,7 +12,7 @@ description: '我使用靜態網站產生器「Hugo」新開設了個人部落�
 
 ## 我開始寫部落格了
 
-![](https://user-images.githubusercontent.com/2605401/187252583-63ef83f4-99c1-4eaf-a5b8-3b5ac1439860.gif)
+![煙火動畫](https://user-images.githubusercontent.com/2605401/187252583-63ef83f4-99c1-4eaf-a5b8-3b5ac1439860.gif)
 類似煙火的東西，程式碼在[這裡](https://github.com/kenjinote/Fireworks "前往程式碼")
 
 大家好。

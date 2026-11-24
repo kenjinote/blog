@@ -1,9 +1,9 @@
 ---
 title: 'بدأت مدونة باستخدام منشئ المواقع الثابتة Hugo! تسجيل الملاحظات اليومية والتقنية'
-date: "2026-09-24T19:44:38+09:00"
 slug: "مدونة、はじめてみました"
-date: 2022-09-02T07:23:00+09:00
-tags: ["雑記"]
+date: "2022-09-02T07:23:00+09:00"
+lastmod: "2026-11-25"
+tags: ["متنوعات"]
 draft: false
 image: "images/komeda.webp"
 categories: ["blogging"]
@@ -12,7 +12,7 @@ description: 'أنشأت مدونة شخصية جديدة باستخدام من�
 
 ## بدأت مدونة
 
-![](https://user-images.githubusercontent.com/2605401/187252583-63ef83f4-99c1-4eaf-a5b8-3b5ac1439860.gif)
+![رسوم متحركة للألعاب النارية](https://user-images.githubusercontent.com/2605401/187252583-63ef83f4-99c1-4eaf-a5b8-3b5ac1439860.gif)
 شيء يشبه الألعاب النارية، الكود [هنا](https://github.com/kenjinote/Fireworks "انتقل إلى الكود")
 
 أهلاً بالجميع.

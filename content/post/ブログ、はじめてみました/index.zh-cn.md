@@ -1,8 +1,8 @@
 ---
 title: '尝试用静态网站生成器Hugo搭建了博客！记录日常与技术笔记'
-date: "2026-09-24T19:44:38+09:00"
 slug: "博客、はじめてみました"
-date: 2022-09-02T07:23:00+09:00
+date: "2022-09-02T07:23:00+09:00"
+lastmod: "2026-11-25"
 tags: ["杂记"]
 draft: false
 image: "images/komeda.webp"
@@ -12,7 +12,7 @@ description: '我使用静态网站生成器“Hugo”新开设了个人博客�
 
 ## 我开始写博客了
 
-![](https://user-images.githubusercontent.com/2605401/187252583-63ef83f4-99c1-4eaf-a5b8-3b5ac1439860.gif)
+![烟花动画](https://user-images.githubusercontent.com/2605401/187252583-63ef83f4-99c1-4eaf-a5b8-3b5ac1439860.gif)
 类似烟花的东西，代码在[这里](https://github.com/kenjinote/Fireworks "前往代码")
 
 大家好。

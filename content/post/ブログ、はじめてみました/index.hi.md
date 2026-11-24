@@ -1,8 +1,8 @@
 ---
 title: 'मैंने स्टैटिक साइट जेनरेटर ह्यूगो के साथ एक ब्लॉग शुरू किया! दैनिक जीवन और तकनीकी मेमो रिकॉर्ड करना'
-date: "2026-09-24T19:44:38+09:00"
 slug: "ब्लॉग、はじめてみました"
-date: 2022-09-02T07:23:00+09:00
+date: "2022-09-02T07:23:00+09:00"
+lastmod: "2026-11-25"
 tags: ["विविध"]
 draft: false
 image: "images/komeda.webp"
@@ -12,7 +12,7 @@ description: 'मैंने स्टैटिक साइट जेनरे
 
 ## मैंने एक ब्लॉग शुरू किया है
 
-![](https://user-images.githubusercontent.com/2605401/187252583-63ef83f4-99c1-4eaf-a5b8-3b5ac1439860.gif)
+![आतिशबाज़ी का ऐनिमेशन](https://user-images.githubusercontent.com/2605401/187252583-63ef83f4-99c1-4eaf-a5b8-3b5ac1439860.gif)
 आतिशबाजी जैसी कोई चीज़, कोड [यहाँ](https://github.com/kenjinote/Fireworks "कोड पर जाएँ") है
 
 नमस्ते।

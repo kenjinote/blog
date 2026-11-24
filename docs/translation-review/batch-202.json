@@ -1,0 +1,454 @@
+{
+  "version": 1,
+  "batch": 202,
+  "article": "Started a blog with Hugo",
+  "reviewedAt": "2026-11-25",
+  "sourceHash": "8a17ce6d2084e470e0d78b8637839f5c95c347a29323d902d46310a7e21d5514",
+  "sources": [
+    "https://gohugo.io/about/introduction/",
+    "https://github.com/kenjinote/Fireworks",
+    "https://user-images.githubusercontent.com/2605401/187252583-63ef83f4-99c1-4eaf-a5b8-3b5ac1439860.gif"
+  ],
+  "scope": "Read the complete Japanese article and all twelve translations; compared each section, Hugo wording, the personal Komeda story, menu and approximate price, code link, animated image, alternative text, metadata, and local thumbnail. Checked the Hugo description and confirmed the external GIF and project URL resolve.",
+  "findings": [
+    "Removed the duplicate future publication date from all editions, preserved the original publication date (2022-09-02), and set lastmod to 2026-11-25.",
+    "Added localized alternative text for the fireworks animation in all editions.",
+    "Translated the remaining Japanese miscellaneous tags in the Arabic and Russian editions; confirmed the full article and the 2022 personal details are represented across translations.",
+    "Checked the Hugo description against the official Hugo introduction and confirmed the GitHub project and GIF are reachable."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/ブログ、はじめてみました/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/ブログ、はじめてみました/index.md",
+      "sourceHash": "8a17ce6d2084e470e0d78b8637839f5c95c347a29323d902d46310a7e21d5514",
+      "translationHash": "98beb55e38517db54d340cbd9a695290bc0238db5bc8c86f077a4c7f5be41877",
+      "summary": "Compared the complete localized post with the Japanese original; corrected duplicate/future publication metadata, added localized alternative text for the fireworks animation, and translated the remaining Japanese miscellaneous tags.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all paragraphs about starting the blog, Hugo, the Komeda breakfast, the approximate yen price, and closing remarks; all sections are present and meaning is retained."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Hugo, static site generator, Komeda Coffee, Mini Shiro-Noir, Cafe au Lait, A Morning Set, yen, and casual blog/memo terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "No runnable code is included; verified the Fireworks GitHub link and localized its link label."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified the GitHub Fireworks project and external GIF respond successfully; checked the local Komeda thumbnail image and added localized GIF alt text."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The Komeda menu details and approximate price are the author’s recollection from 2022, not current menu or price information.",
+        "The external GIF and GitHub project were reachable on 2026-11-25."
+      ]
+    },
+    "post/ブログ、はじめてみました/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/ブログ、はじめてみました/index.md",
+      "sourceHash": "8a17ce6d2084e470e0d78b8637839f5c95c347a29323d902d46310a7e21d5514",
+      "translationHash": "2645c4f398ce49654e08099abdb2246670bc1c42c4971dbe0512cc263b6ea605",
+      "summary": "Compared the complete localized post with the Japanese original; corrected duplicate/future publication metadata, added localized alternative text for the fireworks animation, and translated the remaining Japanese miscellaneous tags.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all paragraphs about starting the blog, Hugo, the Komeda breakfast, the approximate yen price, and closing remarks; all sections are present and meaning is retained."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Hugo, static site generator, Komeda Coffee, Mini Shiro-Noir, Cafe au Lait, A Morning Set, yen, and casual blog/memo terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "No runnable code is included; verified the Fireworks GitHub link and localized its link label."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified the GitHub Fireworks project and external GIF respond successfully; checked the local Komeda thumbnail image and added localized GIF alt text."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The Komeda menu details and approximate price are the author’s recollection from 2022, not current menu or price information.",
+        "The external GIF and GitHub project were reachable on 2026-11-25."
+      ]
+    },
+    "post/ブログ、はじめてみました/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/ブログ、はじめてみました/index.md",
+      "sourceHash": "8a17ce6d2084e470e0d78b8637839f5c95c347a29323d902d46310a7e21d5514",
+      "translationHash": "a491bc871427a1a45ccf2ea08700c74db18850bccedfba046c0be203703dc144",
+      "summary": "Compared the complete localized post with the Japanese original; corrected duplicate/future publication metadata, added localized alternative text for the fireworks animation, and translated the remaining Japanese miscellaneous tags.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all paragraphs about starting the blog, Hugo, the Komeda breakfast, the approximate yen price, and closing remarks; all sections are present and meaning is retained."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Hugo, static site generator, Komeda Coffee, Mini Shiro-Noir, Cafe au Lait, A Morning Set, yen, and casual blog/memo terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "No runnable code is included; verified the Fireworks GitHub link and localized its link label."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified the GitHub Fireworks project and external GIF respond successfully; checked the local Komeda thumbnail image and added localized GIF alt text."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The Komeda menu details and approximate price are the author’s recollection from 2022, not current menu or price information.",
+        "The external GIF and GitHub project were reachable on 2026-11-25."
+      ]
+    },
+    "post/ブログ、はじめてみました/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/ブログ、はじめてみました/index.md",
+      "sourceHash": "8a17ce6d2084e470e0d78b8637839f5c95c347a29323d902d46310a7e21d5514",
+      "translationHash": "f48dda34d75abfb47778ea3274f6cb2bda52621904ed14c4ab7a10bea555ea09",
+      "summary": "Compared the complete localized post with the Japanese original; corrected duplicate/future publication metadata, added localized alternative text for the fireworks animation, and translated the remaining Japanese miscellaneous tags.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all paragraphs about starting the blog, Hugo, the Komeda breakfast, the approximate yen price, and closing remarks; all sections are present and meaning is retained."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Hugo, static site generator, Komeda Coffee, Mini Shiro-Noir, Cafe au Lait, A Morning Set, yen, and casual blog/memo terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "No runnable code is included; verified the Fireworks GitHub link and localized its link label."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified the GitHub Fireworks project and external GIF respond successfully; checked the local Komeda thumbnail image and added localized GIF alt text."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The Komeda menu details and approximate price are the author’s recollection from 2022, not current menu or price information.",
+        "The external GIF and GitHub project were reachable on 2026-11-25."
+      ]
+    },
+    "post/ブログ、はじめてみました/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/ブログ、はじめてみました/index.md",
+      "sourceHash": "8a17ce6d2084e470e0d78b8637839f5c95c347a29323d902d46310a7e21d5514",
+      "translationHash": "8ca25b06cbdd15336215c4def27215b3e87b423feca3fb92eb0876a6ce3a784b",
+      "summary": "Compared the complete localized post with the Japanese original; corrected duplicate/future publication metadata, added localized alternative text for the fireworks animation, and translated the remaining Japanese miscellaneous tags.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all paragraphs about starting the blog, Hugo, the Komeda breakfast, the approximate yen price, and closing remarks; all sections are present and meaning is retained."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Hugo, static site generator, Komeda Coffee, Mini Shiro-Noir, Cafe au Lait, A Morning Set, yen, and casual blog/memo terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "No runnable code is included; verified the Fireworks GitHub link and localized its link label."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified the GitHub Fireworks project and external GIF respond successfully; checked the local Komeda thumbnail image and added localized GIF alt text."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The Komeda menu details and approximate price are the author’s recollection from 2022, not current menu or price information.",
+        "The external GIF and GitHub project were reachable on 2026-11-25."
+      ]
+    },
+    "post/ブログ、はじめてみました/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/ブログ、はじめてみました/index.md",
+      "sourceHash": "8a17ce6d2084e470e0d78b8637839f5c95c347a29323d902d46310a7e21d5514",
+      "translationHash": "ea84978dccb81a2a0166c311bf313607e7cb39f429841367c8ed08c03ff4aae9",
+      "summary": "Compared the complete localized post with the Japanese original; corrected duplicate/future publication metadata, added localized alternative text for the fireworks animation, and translated the remaining Japanese miscellaneous tags.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all paragraphs about starting the blog, Hugo, the Komeda breakfast, the approximate yen price, and closing remarks; all sections are present and meaning is retained."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Hugo, static site generator, Komeda Coffee, Mini Shiro-Noir, Cafe au Lait, A Morning Set, yen, and casual blog/memo terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "No runnable code is included; verified the Fireworks GitHub link and localized its link label."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified the GitHub Fireworks project and external GIF respond successfully; checked the local Komeda thumbnail image and added localized GIF alt text."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The Komeda menu details and approximate price are the author’s recollection from 2022, not current menu or price information.",
+        "The external GIF and GitHub project were reachable on 2026-11-25."
+      ]
+    },
+    "post/ブログ、はじめてみました/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/ブログ、はじめてみました/index.md",
+      "sourceHash": "8a17ce6d2084e470e0d78b8637839f5c95c347a29323d902d46310a7e21d5514",
+      "translationHash": "db048ce9f3c2fb2772df8b870cf252d5b291d02c1f5e54dbd2cb2261a10d6a02",
+      "summary": "Compared the complete localized post with the Japanese original; corrected duplicate/future publication metadata, added localized alternative text for the fireworks animation, and translated the remaining Japanese miscellaneous tags.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all paragraphs about starting the blog, Hugo, the Komeda breakfast, the approximate yen price, and closing remarks; all sections are present and meaning is retained."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Hugo, static site generator, Komeda Coffee, Mini Shiro-Noir, Cafe au Lait, A Morning Set, yen, and casual blog/memo terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "No runnable code is included; verified the Fireworks GitHub link and localized its link label."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified the GitHub Fireworks project and external GIF respond successfully; checked the local Komeda thumbnail image and added localized GIF alt text."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The Komeda menu details and approximate price are the author’s recollection from 2022, not current menu or price information.",
+        "The external GIF and GitHub project were reachable on 2026-11-25."
+      ]
+    },
+    "post/ブログ、はじめてみました/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/ブログ、はじめてみました/index.md",
+      "sourceHash": "8a17ce6d2084e470e0d78b8637839f5c95c347a29323d902d46310a7e21d5514",
+      "translationHash": "64f6e183203f0811a925571696820b836592d518d6b83fd32ca2b4ee78b907a5",
+      "summary": "Compared the complete localized post with the Japanese original; corrected duplicate/future publication metadata, added localized alternative text for the fireworks animation, and translated the remaining Japanese miscellaneous tags.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all paragraphs about starting the blog, Hugo, the Komeda breakfast, the approximate yen price, and closing remarks; all sections are present and meaning is retained."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Hugo, static site generator, Komeda Coffee, Mini Shiro-Noir, Cafe au Lait, A Morning Set, yen, and casual blog/memo terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "No runnable code is included; verified the Fireworks GitHub link and localized its link label."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified the GitHub Fireworks project and external GIF respond successfully; checked the local Komeda thumbnail image and added localized GIF alt text."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The Komeda menu details and approximate price are the author’s recollection from 2022, not current menu or price information.",
+        "The external GIF and GitHub project were reachable on 2026-11-25."
+      ]
+    },
+    "post/ブログ、はじめてみました/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/ブログ、はじめてみました/index.md",
+      "sourceHash": "8a17ce6d2084e470e0d78b8637839f5c95c347a29323d902d46310a7e21d5514",
+      "translationHash": "7bfa3e7cc3c00edfed357e8d43ac337ba887bbd2de15bfda2e16ab423e08002c",
+      "summary": "Compared the complete localized post with the Japanese original; corrected duplicate/future publication metadata, added localized alternative text for the fireworks animation, and translated the remaining Japanese miscellaneous tags.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all paragraphs about starting the blog, Hugo, the Komeda breakfast, the approximate yen price, and closing remarks; all sections are present and meaning is retained."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Hugo, static site generator, Komeda Coffee, Mini Shiro-Noir, Cafe au Lait, A Morning Set, yen, and casual blog/memo terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "No runnable code is included; verified the Fireworks GitHub link and localized its link label."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified the GitHub Fireworks project and external GIF respond successfully; checked the local Komeda thumbnail image and added localized GIF alt text."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The Komeda menu details and approximate price are the author’s recollection from 2022, not current menu or price information.",
+        "The external GIF and GitHub project were reachable on 2026-11-25."
+      ]
+    },
+    "post/ブログ、はじめてみました/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/ブログ、はじめてみました/index.md",
+      "sourceHash": "8a17ce6d2084e470e0d78b8637839f5c95c347a29323d902d46310a7e21d5514",
+      "translationHash": "61d7291121d26bd2341cd124413fc26b6be66e61e3ab2c8d38261aead46c0a8d",
+      "summary": "Compared the complete localized post with the Japanese original; corrected duplicate/future publication metadata, added localized alternative text for the fireworks animation, and translated the remaining Japanese miscellaneous tags.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all paragraphs about starting the blog, Hugo, the Komeda breakfast, the approximate yen price, and closing remarks; all sections are present and meaning is retained."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Hugo, static site generator, Komeda Coffee, Mini Shiro-Noir, Cafe au Lait, A Morning Set, yen, and casual blog/memo terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "No runnable code is included; verified the Fireworks GitHub link and localized its link label."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified the GitHub Fireworks project and external GIF respond successfully; checked the local Komeda thumbnail image and added localized GIF alt text."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The Komeda menu details and approximate price are the author’s recollection from 2022, not current menu or price information.",
+        "The external GIF and GitHub project were reachable on 2026-11-25."
+      ]
+    },
+    "post/ブログ、はじめてみました/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/ブログ、はじめてみました/index.md",
+      "sourceHash": "8a17ce6d2084e470e0d78b8637839f5c95c347a29323d902d46310a7e21d5514",
+      "translationHash": "80e5124dc9ce6062b35073c5d787c1a55d7f086a957b0e0a9b180a69214abf12",
+      "summary": "Compared the complete localized post with the Japanese original; corrected duplicate/future publication metadata, added localized alternative text for the fireworks animation, and translated the remaining Japanese miscellaneous tags.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all paragraphs about starting the blog, Hugo, the Komeda breakfast, the approximate yen price, and closing remarks; all sections are present and meaning is retained."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Hugo, static site generator, Komeda Coffee, Mini Shiro-Noir, Cafe au Lait, A Morning Set, yen, and casual blog/memo terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "No runnable code is included; verified the Fireworks GitHub link and localized its link label."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified the GitHub Fireworks project and external GIF respond successfully; checked the local Komeda thumbnail image and added localized GIF alt text."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The Komeda menu details and approximate price are the author’s recollection from 2022, not current menu or price information.",
+        "The external GIF and GitHub project were reachable on 2026-11-25."
+      ]
+    },
+    "post/ブログ、はじめてみました/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/ブログ、はじめてみました/index.md",
+      "sourceHash": "8a17ce6d2084e470e0d78b8637839f5c95c347a29323d902d46310a7e21d5514",
+      "translationHash": "c5efaeea5310b75bb59b673a75d2e69339a7db6927a1d317dfd8179e6b5831f9",
+      "summary": "Compared the complete localized post with the Japanese original; corrected duplicate/future publication metadata, added localized alternative text for the fireworks animation, and translated the remaining Japanese miscellaneous tags.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all paragraphs about starting the blog, Hugo, the Komeda breakfast, the approximate yen price, and closing remarks; all sections are present and meaning is retained."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Hugo, static site generator, Komeda Coffee, Mini Shiro-Noir, Cafe au Lait, A Morning Set, yen, and casual blog/memo terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "No runnable code is included; verified the Fireworks GitHub link and localized its link label."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified the GitHub Fireworks project and external GIF respond successfully; checked the local Komeda thumbnail image and added localized GIF alt text."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The Komeda menu details and approximate price are the author’s recollection from 2022, not current menu or price information.",
+        "The external GIF and GitHub project were reachable on 2026-11-25."
+      ]
+    }
+  }
+}

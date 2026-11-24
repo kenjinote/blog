@@ -1,8 +1,8 @@
 ---
 title: 'Started a Blog with Static Site Generator Hugo! Recording Daily Life and Tech Memos'
-date: "2026-09-24T19:44:38+09:00"
 slug: "Blog、はじめてみました"
-date: 2022-09-02T07:23:00+09:00
+date: "2022-09-02T07:23:00+09:00"
+lastmod: "2026-11-25"
 tags: ["Miscellaneous"]
 draft: false
 image: "images/komeda.webp"
@@ -12,7 +12,7 @@ description: 'I opened a new personal blog using the static site generator ''Hug
 
 ## I Started a Blog
 
-![](https://user-images.githubusercontent.com/2605401/187252583-63ef83f4-99c1-4eaf-a5b8-3b5ac1439860.gif)
+![Fireworks animation](https://user-images.githubusercontent.com/2605401/187252583-63ef83f4-99c1-4eaf-a5b8-3b5ac1439860.gif)
 Something like fireworks, code is [here](https://github.com/kenjinote/Fireworks "Go to code")
 
 Hello everyone.

@@ -1,9 +1,9 @@
 ---
 title: 'Я завел блог с помощью генератора статических сайтов Hugo! Заметки о повседневной жизни и технологиях'
-date: "2026-09-24T19:44:38+09:00"
 slug: "Блог、はじめてみました"
-date: 2022-09-02T07:23:00+09:00
-tags: ["雑記"]
+date: "2022-09-02T07:23:00+09:00"
+lastmod: "2026-11-25"
+tags: ["Разное"]
 draft: false
 image: "images/komeda.webp"
 categories: ["blogging"]
@@ -12,7 +12,7 @@ description: 'Я открыл новый личный блог, использу
 
 ## Я начал вести блог
 
-![](https://user-images.githubusercontent.com/2605401/187252583-63ef83f4-99c1-4eaf-a5b8-3b5ac1439860.gif)
+![Анимация фейерверка](https://user-images.githubusercontent.com/2605401/187252583-63ef83f4-99c1-4eaf-a5b8-3b5ac1439860.gif)
 Что-то вроде фейерверка, код [здесь](https://github.com/kenjinote/Fireworks "Перейти к коду")
 
 Всем привет.

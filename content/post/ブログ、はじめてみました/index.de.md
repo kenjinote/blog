@@ -1,8 +1,8 @@
 ---
 title: 'Ich habe einen Blog mit dem statischen Website-Generator Hugo gestartet! Aufzeichnung von Alltag und technischen Notizen'
-date: "2026-09-24T19:44:38+09:00"
 slug: "Blog、はじめてみました"
-date: 2022-09-02T07:23:00+09:00
+date: "2022-09-02T07:23:00+09:00"
+lastmod: "2026-11-25"
 tags: ["Verschiedenes"]
 draft: false
 image: "images/komeda.webp"
@@ -12,7 +12,7 @@ description: 'Ich habe einen neuen persönlichen Blog mit dem statischen Website
 
 ## Ich habe einen Blog gestartet
 
-![](https://user-images.githubusercontent.com/2605401/187252583-63ef83f4-99c1-4eaf-a5b8-3b5ac1439860.gif)
+![Feuerwerk-Animation](https://user-images.githubusercontent.com/2605401/187252583-63ef83f4-99c1-4eaf-a5b8-3b5ac1439860.gif)
 So etwas wie ein Feuerwerk, der Code ist [hier](https://github.com/kenjinote/Fireworks "Zum Code gehen")
 
 Hallo.

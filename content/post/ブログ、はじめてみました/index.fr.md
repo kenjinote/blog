@@ -1,8 +1,8 @@
 ---
 title: 'J''ai lancé un blog avec le générateur de site statique Hugo ! Notes quotidiennes et techniques'
-date: "2026-09-24T19:44:38+09:00"
 slug: "Blog、はじめてみました"
-date: 2022-09-02T07:23:00+09:00
+date: "2022-09-02T07:23:00+09:00"
+lastmod: "2026-11-25"
 tags: ["Divers"]
 draft: false
 image: "images/komeda.webp"
@@ -12,7 +12,7 @@ description: 'J''ai créé un nouveau blog personnel en utilisant le générateu
 
 ## J'ai commencé un blog
 
-![](https://user-images.githubusercontent.com/2605401/187252583-63ef83f4-99c1-4eaf-a5b8-3b5ac1439860.gif)
+![Animation de feux d’artifice](https://user-images.githubusercontent.com/2605401/187252583-63ef83f4-99c1-4eaf-a5b8-3b5ac1439860.gif)
 Quelque chose comme des feux d'artifice, le code est [ici](https://github.com/kenjinote/Fireworks "Aller au code")
 
 Bonjour.

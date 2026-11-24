@@ -23285,6 +23285,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-201.json",
       "evidenceHash": "516cc447fa19f4ec3215b8d993550ea7f718d69f5d975a4a5aeb70dcda032545"
+    },
+    "post/ブログ、はじめてみました/index.en.md": {
+      "source": "post/ブログ、はじめてみました/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "8a17ce6d2084e470e0d78b8637839f5c95c347a29323d902d46310a7e21d5514",
+      "translationHash": "98beb55e38517db54d340cbd9a695290bc0238db5bc8c86f077a4c7f5be41877",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-202.json",
+      "evidenceHash": "971c7d726ea3efa26bd2155d56eb8043b42bc9f1a9dcfcf323a0d400c2fc4256"
+    },
+    "post/ブログ、はじめてみました/index.zh-cn.md": {
+      "source": "post/ブログ、はじめてみました/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "8a17ce6d2084e470e0d78b8637839f5c95c347a29323d902d46310a7e21d5514",
+      "translationHash": "2645c4f398ce49654e08099abdb2246670bc1c42c4971dbe0512cc263b6ea605",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-202.json",
+      "evidenceHash": "1454ff8f2ab1e9873e6846cd15c1ef25914bc98e489262bff1f4d5560df2922d"
+    },
+    "post/ブログ、はじめてみました/index.es.md": {
+      "source": "post/ブログ、はじめてみました/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "8a17ce6d2084e470e0d78b8637839f5c95c347a29323d902d46310a7e21d5514",
+      "translationHash": "a491bc871427a1a45ccf2ea08700c74db18850bccedfba046c0be203703dc144",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-202.json",
+      "evidenceHash": "fa790a36ff5030643a7d3841a0b7d6d65b846e359310c4321de685c1b17c2639"
+    },
+    "post/ブログ、はじめてみました/index.ko.md": {
+      "source": "post/ブログ、はじめてみました/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "8a17ce6d2084e470e0d78b8637839f5c95c347a29323d902d46310a7e21d5514",
+      "translationHash": "f48dda34d75abfb47778ea3274f6cb2bda52621904ed14c4ab7a10bea555ea09",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-202.json",
+      "evidenceHash": "1b93ebc030c5d87f6ed5a85da265487485d69aaeda855f9bc8c1135df6a586db"
+    },
+    "post/ブログ、はじめてみました/index.pt.md": {
+      "source": "post/ブログ、はじめてみました/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "8a17ce6d2084e470e0d78b8637839f5c95c347a29323d902d46310a7e21d5514",
+      "translationHash": "8ca25b06cbdd15336215c4def27215b3e87b423feca3fb92eb0876a6ce3a784b",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-202.json",
+      "evidenceHash": "5410932087121d4c023c5a63cc6564697117d844d7a9a0b46301cac86b3fb80d"
+    },
+    "post/ブログ、はじめてみました/index.zh-tw.md": {
+      "source": "post/ブログ、はじめてみました/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "8a17ce6d2084e470e0d78b8637839f5c95c347a29323d902d46310a7e21d5514",
+      "translationHash": "ea84978dccb81a2a0166c311bf313607e7cb39f429841367c8ed08c03ff4aae9",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-202.json",
+      "evidenceHash": "016badde5896feefc9188425f8d15d98e3f230fbc91745c4c2a4540d14fb7175"
+    },
+    "post/ブログ、はじめてみました/index.hi.md": {
+      "source": "post/ブログ、はじめてみました/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "8a17ce6d2084e470e0d78b8637839f5c95c347a29323d902d46310a7e21d5514",
+      "translationHash": "db048ce9f3c2fb2772df8b870cf252d5b291d02c1f5e54dbd2cb2261a10d6a02",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-202.json",
+      "evidenceHash": "9164682bbd245c0c87184de36ec26c3342f69ae2213e04cc9c0196fb76a415ba"
+    },
+    "post/ブログ、はじめてみました/index.fr.md": {
+      "source": "post/ブログ、はじめてみました/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "8a17ce6d2084e470e0d78b8637839f5c95c347a29323d902d46310a7e21d5514",
+      "translationHash": "64f6e183203f0811a925571696820b836592d518d6b83fd32ca2b4ee78b907a5",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-202.json",
+      "evidenceHash": "074f9d249df4afd5b684234e2e15a490408cac403c8192200f94ef5d2b0f68a5"
+    },
+    "post/ブログ、はじめてみました/index.de.md": {
+      "source": "post/ブログ、はじめてみました/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "8a17ce6d2084e470e0d78b8637839f5c95c347a29323d902d46310a7e21d5514",
+      "translationHash": "7bfa3e7cc3c00edfed357e8d43ac337ba887bbd2de15bfda2e16ab423e08002c",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-202.json",
+      "evidenceHash": "743278cc22e135e3722c061ef95b348f8594ae913d3a4a117c66aa69b6bee4c3"
+    },
+    "post/ブログ、はじめてみました/index.ar.md": {
+      "source": "post/ブログ、はじめてみました/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "8a17ce6d2084e470e0d78b8637839f5c95c347a29323d902d46310a7e21d5514",
+      "translationHash": "61d7291121d26bd2341cd124413fc26b6be66e61e3ab2c8d38261aead46c0a8d",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-202.json",
+      "evidenceHash": "754763f0282899a31b5f24edaff5e199259d028b83fbb4efdf0ccb7a9f029625"
+    },
+    "post/ブログ、はじめてみました/index.ru.md": {
+      "source": "post/ブログ、はじめてみました/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "8a17ce6d2084e470e0d78b8637839f5c95c347a29323d902d46310a7e21d5514",
+      "translationHash": "80e5124dc9ce6062b35073c5d787c1a55d7f086a957b0e0a9b180a69214abf12",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-202.json",
+      "evidenceHash": "9436a9a1fe0ff121a8d0632a7513cbbedf3bfb14232b18da8843b4e3154d6e1d"
+    },
+    "post/ブログ、はじめてみました/index.id.md": {
+      "source": "post/ブログ、はじめてみました/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "8a17ce6d2084e470e0d78b8637839f5c95c347a29323d902d46310a7e21d5514",
+      "translationHash": "c5efaeea5310b75bb59b673a75d2e69339a7db6927a1d317dfd8179e6b5831f9",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-202.json",
+      "evidenceHash": "540b9460b9757133b7426017f7ca778f9516c3e6f1d1d3cb7565032c76b0ee18"
     }
   }
 }
