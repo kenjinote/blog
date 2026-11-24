@@ -14,6 +14,18 @@ DOCS = ROOT / "docs/translation-review"
 LANGS = ("ja", "en", "zh-cn", "es", "ko", "pt", "zh-tw", "hi", "fr", "de", "ar", "ru", "id")
 NS = {"s": "http://www.sitemaps.org/schemas/sitemap/0.9"}
 ARTICLES = {
+    186: {
+        "bundle": ROOT / "content/post/paint.netの魅力",
+        "slug": "paint.netの魅力",
+        "links": [
+            "https://paint.net/features.html",
+            "https://paint.net/download.html",
+            "https://paint.net/doc/latest/SystemRequirements.html",
+            "https://blogs.windows.com/windows-insider/2023/09/18/paint-app-update-adding-support-for-layers-and-transparency-begins-rolling-out-to-windows-insiders/",
+        ],
+        "markers": ["Paint.NET features", "Paint.NET download", "Paint.NET system requirements", "Microsoft Paint layers and transparency announcement"],
+        "date": "2022-09-14",
+    },
     185: {
         "bundle": ROOT / "content/post/macで日本語⇔英語入力切り替えのショートカットキーを変更する方法",
         "slug": "macで日本語⇔英語入力切り替えのショートカットキーを変更する方法",
@@ -1052,7 +1064,7 @@ def slug_key(value):
 parser = argparse.ArgumentParser()
 parser.add_argument("--ci-run", type=int, required=True)
 parser.add_argument("--commit", required=True)
-parser.add_argument("--max-batch", type=int, choices=(90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185), default=185)
+parser.add_argument("--max-batch", type=int, choices=(90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186), default=186)
 args = parser.parse_args()
 ARTICLES = {number: article for number, article in ARTICLES.items() if number <= args.max_batch}
 with urllib.request.urlopen(f"https://github.com/kenjinote/blog/actions/runs/{args.ci_run}", timeout=45) as response:

@@ -21605,6 +21605,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-185.json",
       "evidenceHash": "a4b7647fe8b60145fae9fb9a0f5dd85ab5a10ea06bbc32a6536391bbacbaeec8"
+    },
+    "post/paint.netの魅力/index.en.md": {
+      "source": "post/paint.netの魅力/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "34a40df23075682e63709644fd2ca5d78eae7b7de1183a578c08032a77342f3b",
+      "translationHash": "b4b1885f107a1b1f248d219526ab533f7c4b9b2fe5ffd873971e5d2c65eef1da",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-186.json",
+      "evidenceHash": "edaf28e73d53c5da5c853cb4d523684e398adf947b28f87fc81a524f5c9212e1"
+    },
+    "post/paint.netの魅力/index.zh-cn.md": {
+      "source": "post/paint.netの魅力/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "34a40df23075682e63709644fd2ca5d78eae7b7de1183a578c08032a77342f3b",
+      "translationHash": "5b4850c8fe7fd1594a14bf83f7501bb6b5b13f73a40f382e910fa5ba29e46dc3",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-186.json",
+      "evidenceHash": "769323affeb7d906296302ec0e799c2273721d7e0ebe14d1d9f07da593090601"
+    },
+    "post/paint.netの魅力/index.es.md": {
+      "source": "post/paint.netの魅力/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "34a40df23075682e63709644fd2ca5d78eae7b7de1183a578c08032a77342f3b",
+      "translationHash": "e5dcdfc4747f853bffc05091d1ef8caa7e7050772e5473286a56751e4a1e2ffc",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-186.json",
+      "evidenceHash": "9c1d598de7a4a468a652519771de35f2b77efaa76b3703e476a3ae9d4067773a"
+    },
+    "post/paint.netの魅力/index.ko.md": {
+      "source": "post/paint.netの魅力/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "34a40df23075682e63709644fd2ca5d78eae7b7de1183a578c08032a77342f3b",
+      "translationHash": "162bd67637704bbab05dfbe3ca0735c72118271821fde9c808d0440625ca168b",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-186.json",
+      "evidenceHash": "bc2d9e86c7b842c73df16e76657a6922a860d1205e3e5e2c3145e9e57fc7dbc5"
+    },
+    "post/paint.netの魅力/index.pt.md": {
+      "source": "post/paint.netの魅力/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "34a40df23075682e63709644fd2ca5d78eae7b7de1183a578c08032a77342f3b",
+      "translationHash": "83a4f6f138655c55c84b84f78565c2d42e5473681b0adf411237ca2a29b37009",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-186.json",
+      "evidenceHash": "16a2286cdf30401ef3de1f4941eb068d99937675f01de07ed5028919e2b72a3c"
+    },
+    "post/paint.netの魅力/index.zh-tw.md": {
+      "source": "post/paint.netの魅力/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "34a40df23075682e63709644fd2ca5d78eae7b7de1183a578c08032a77342f3b",
+      "translationHash": "0775b0cb749daf932f8c59d0d29c3c42aee32864a9977ee949de0349c226dae7",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-186.json",
+      "evidenceHash": "bf139534d8c922ed20265543389b40267cacbe474fb3045cc8643b22f35afd87"
+    },
+    "post/paint.netの魅力/index.hi.md": {
+      "source": "post/paint.netの魅力/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "34a40df23075682e63709644fd2ca5d78eae7b7de1183a578c08032a77342f3b",
+      "translationHash": "b6153bf93d76a628b01e691439576a99233c04a0514a12d10bdf3a4b08d6a966",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-186.json",
+      "evidenceHash": "0e339bb747db9f4266ed3b2781c516b43f920ba6901c1d80f2a94b8710459bf5"
+    },
+    "post/paint.netの魅力/index.fr.md": {
+      "source": "post/paint.netの魅力/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "34a40df23075682e63709644fd2ca5d78eae7b7de1183a578c08032a77342f3b",
+      "translationHash": "6b458e0ca845d034b7bc4276b00030d52378357ad3440892998a7aaa43a06967",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-186.json",
+      "evidenceHash": "67474dc42f8126536fc868264f2f74dbce164243486a3c144151dee5adf592be"
+    },
+    "post/paint.netの魅力/index.de.md": {
+      "source": "post/paint.netの魅力/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "34a40df23075682e63709644fd2ca5d78eae7b7de1183a578c08032a77342f3b",
+      "translationHash": "5b64d0e4fdb99ffe7766742d2fe66b018553c70dd7b2c976efa4908847b28d3a",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-186.json",
+      "evidenceHash": "2ecaf603465223573c3f4b439db038f255551b05dfa93daf356785f83bdb0bc8"
+    },
+    "post/paint.netの魅力/index.ar.md": {
+      "source": "post/paint.netの魅力/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "34a40df23075682e63709644fd2ca5d78eae7b7de1183a578c08032a77342f3b",
+      "translationHash": "22f1c10231c306735968c38c1196c30cea0d27a08b149cd5ca484c90ebfbf3b5",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-186.json",
+      "evidenceHash": "285341585630597f7640272b66ec61b83e3bc69f6e15e37a88da1ff36e141a8b"
+    },
+    "post/paint.netの魅力/index.ru.md": {
+      "source": "post/paint.netの魅力/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "34a40df23075682e63709644fd2ca5d78eae7b7de1183a578c08032a77342f3b",
+      "translationHash": "34d7643a619762422e0e58ea6499f36bb8942c5d25ea29b5c710c5eb27a1dcfe",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-186.json",
+      "evidenceHash": "b7626b7c038ed3e393199d426d69523674ef0e41bf202a19a6fb68a30bd5b055"
+    },
+    "post/paint.netの魅力/index.id.md": {
+      "source": "post/paint.netの魅力/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "34a40df23075682e63709644fd2ca5d78eae7b7de1183a578c08032a77342f3b",
+      "translationHash": "48a2561b914ff0fbb8e44d27d4b4e3b7f192f9d7ab23222838b82e1193185285",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-186.json",
+      "evidenceHash": "2d654253e5c989801f07aec8017bfcd420efe7283074a2ca5b6c7265691ece10"
     }
   }
 }

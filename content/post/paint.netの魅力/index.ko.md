@@ -1,47 +1,43 @@
 ---
-
-
-
-
-title: '무료이면서 고기능! 이미지 편집 소프트웨어 ''paint.net''의 특징과 매력'
-date: "2026-09-24T19:44:38+09:00"
+title: "Paint.NET의 기능과 활용, 다운로드 방법"
+date: "2022-09-14T19:33:31+09:00"
+lastmod: "2026-11-25T00:00:00+09:00"
 slug: "paint.netの魅力"
-date: 2022-09-14T19:33:31+09:00
-tags: ["paint.net"]
+tags: ["Paint.NET", "Windows", "이미지 편집"]
 draft: false
 image: "img.webp"
 categories: ["ai-technology"]
-description: '무료이면서 고기능인 이미지 편집 소프트웨어 paint.net의 매력을 소개합니다. 레이어, 투명도 조절, 다양한 효과 등 Windows 기본 그림판에는 없는 편리한 기능이 가득합니다. 가볍게 동작하고 직관적으로 조작할 수 있는 특징과 무료 버전의 설치 절차를 알기 쉽게 설명합니다.'
+description: "Windows 이미지 편집 프로그램 Paint.NET의 기능, 무료 버전과 Microsoft Store 버전의 차이, 최신 시스템 요구 사항을 소개하고 Microsoft Paint와의 비교를 업데이트합니다."
 ---
 
+# Paint.NET의 기능과 활용, 다운로드 방법
 
+Paint.NET은 Windows용 이미지 및 사진 편집 프로그램입니다. 개발 작업에서 사용해 온 기능과 현재 배포 방법을 정리합니다. 기능과 요구 사항은 바뀔 수 있으므로 설치 전에 공식 페이지를 확인하세요.
 
+## Paint.NET으로 할 수 있는 작업
 
-제가 개발 작업을 하면서 자주 사용하는 이미지 편집 프로그램 paint.net을 소개합니다.
+- 레이어를 사용해 이미지를 합성하고 편집
+- 마술봉으로 비슷한 색 영역을 선택하거나 더 정밀하게 선택
+- 밝기, 대비, 색조, 채도, 레벨, 곡선 조정
+- 흐림, 선명화, 적목 제거, 왜곡, 노이즈 등의 효과 적용
+- PNG, JPEG, WebP, AVIF, TIFF 등 일반적인 형식을 열고, 플러그인으로 형식과 효과 확장
+- 작업 기록 창에서 편집 취소 및 다시 실행
 
-![img_1.png](img_1.webp)
+## Microsoft Paint와의 차이
 
-# Windows 기본 그림판에서는 불가능한 유용한 점
-- 투명 및 투과율을 다룰 수 있다
-- 복잡한 형태의 범위 자동 선택이 가능하다
-- 레이어를 다룰 수 있다
-- 레벨 보정, 명도, 대비 등의 조정을 할 수 있다
-- 다양한 효과(흐림, 왜곡, 노이즈 등)를 적용할 수 있다
+Windows 11의 Microsoft Paint도 레이어와 투명 PNG를 지원합니다. Paint.NET을 고려할 만한 기능으로는 마술봉, 복제 도장, 곡선 조정, 색상 관리, 플러그인 확장 등이 있습니다. 기능은 버전에 따라 다를 수 있으므로 공식 기능 목록을 확인하세요.
 
-# 기타 특징
-- 무료로 사용할 수 있다
-- 동작이 비교적 가볍다
-- 직관적으로 사용할 수 있어 다루기 까다롭지 않다
-- 일본어(다국어 지원)
+## 다운로드와 업데이트
 
-고기능이면서도 사용하기 쉬운 프로그램입니다. 저 자신도 아직 모든 기능을 다루지는 못하고 있습니다.
+공식 다운로드 페이지에는 무료 클래식 버전과 유료 Microsoft Store 버전이 있습니다. 클래식 버전은 앱에서 업데이트하고, Store 버전은 Microsoft Store를 통해 백그라운드에서 업데이트됩니다. Store 가격은 지역에 따라 다를 수 있습니다. Price 항목에서 Free 또는 Paid를 확인하고 원하는 배포 방식을 선택하세요. 다운로드 화면은 바뀔 수 있으니 오래된 스크린샷 대신 현재 공식 페이지를 확인하세요.
 
-# 설치는 이곳에서
-[https://www.getpaint.net/download.html](https://www.getpaint.net/download.html)
+## 시스템 요구 사항 확인
 
-무료 버전을 선택할 경우에는 링크 대상의 아래 빨간 테두리 부분을 클릭해 주세요.
+현재 요구 사항에는 Windows 11, Windows 10 버전 21H2 이상 등이 포함됩니다. 64비트 CPU, Direct3D 11을 지원하는 GPU, 저장 장치 조건도 있으므로 설치 전에 공식 [시스템 요구 사항](https://paint.net/doc/latest/SystemRequirements.html)을 확인하세요. 성능은 PC와 이미지 크기, 편집 작업에 따라 달라집니다.
 
-![img_2.png](img_2.webp)
+## 공식 참고 자료
 
-Microsoft Store를 경유하여 설치하면 유료가 되는 대신 자동 업데이트가 가능해지는 것 같습니다.
-무료 버전에서도 최신 버전 업데이트 정보를 알려주므로 비교적 원활하게 업데이트할 수 있습니다.
+- [Paint.NET features](https://paint.net/features.html)
+- [Paint.NET download](https://paint.net/download.html)
+- [Paint.NET system requirements](https://paint.net/doc/latest/SystemRequirements.html)
+- [Microsoft Paint layers and transparency announcement](https://blogs.windows.com/windows-insider/2023/09/18/paint-app-update-adding-support-for-layers-and-transparency-begins-rolling-out-to-windows-insiders/)

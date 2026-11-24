@@ -1,39 +1,43 @@
 ---
-title: 'Gratis dan Berfitur Lengkap! Fitur dan Daya Tarik Perangkat Lunak Pengedit Gambar ''paint.net'''
-date: "2026-09-24T19:44:38+09:00"
+title: "Paint.NET: Fitur, Penggunaan, dan Opsi Unduhan"
+date: "2022-09-14T19:33:31+09:00"
+lastmod: "2026-11-25T00:00:00+09:00"
 slug: "paint.netの魅力"
-date: 2022-09-14T19:33:31+09:00
-tags: ["paint.net"]
+tags: ["Paint.NET", "Windows", "Pengeditan gambar"]
 draft: false
 image: "img.webp"
 categories: ["ai-technology"]
-description: 'Memperkenalkan daya tarik perangkat lunak pengedit gambar gratis dan berfitur lengkap paint.net. Penuh dengan fitur berguna yang tidak ada di Paint standar Windows, seperti lapisan, penyesuaian transparansi, dan berbagai efek. Kami menjelaskan dengan mudah fiturnya yang berjalan ringan dan dapat dioperasikan secara intuitif, serta prosedur instalasi versi gratisnya.'
+description: "Kenali alat pengeditan gambar Paint.NET untuk Windows, pilihan versi gratis dan berbayar, persyaratan sistem terbaru, serta perbandingan terkini dengan Microsoft Paint."
 ---
-Saya ingin memperkenalkan paint.net, perangkat lunak pengeditan gambar yang sering saya gunakan saat melakukan pekerjaan pengembangan.
 
-![img_1.png](img_1.webp)
+# Paint.NET: Fitur, Penggunaan, dan Opsi Unduhan
 
-# Fitur berguna yang tidak bisa dilakukan dengan [Paint](https://kenji.blog/id/p/browser-rendering-mechanism-dom-paint/) standar Windows
-- Dapat menangani transparansi/opasitas
-- Pemilihan otomatis area yang kompleks
-- Dapat menangani layer
-- Dapat menyesuaikan level, kecerahan, kontras, dll.
-- Berbagai efek (blur, distorsi, noise, dll.) bisa dilakukan
+Paint.NET adalah perangkat lunak pengedit gambar dan foto untuk Windows. Artikel ini merangkum fitur yang pernah saya gunakan dalam pekerjaan pengembangan serta cara mendapatkannya saat ini. Fitur dan persyaratan dapat berubah, jadi periksa halaman resmi sebelum memasang.
 
-# Fitur lainnya
-- Gratis untuk digunakan
-- Pengoperasiannya relatif ringan
-- Intuitif untuk digunakan dan tidak rumit
-- Mendukung berbagai bahasa
+## Yang dapat dilakukan dengan Paint.NET
 
-Perangkat lunak ini memiliki fungsionalitas tinggi namun mudah digunakan. Saya sendiri belum menguasai semua fiturnya.
+- Menyusun dan mengedit gambar dengan layer
+- Memilih area dengan warna serupa memakai Magic Wand atau membuat seleksi yang lebih presisi
+- Menyesuaikan kecerahan, kontras, hue, saturasi, level, dan kurva
+- Menerapkan efek seperti blur, penajaman, penghilang mata merah, distorsi, dan noise
+- Membuka format umum seperti PNG, JPEG, WebP, AVIF, dan TIFF; plugin dapat menambah format dan efek
+- Membatalkan dan mengulangi pengeditan melalui jendela riwayat
 
-# Instalasi di sini
-[https://www.getpaint.net/download.html](https://www.getpaint.net/download.html)
+## Perbedaan dari Microsoft Paint
 
-Jika Anda memilih versi gratis, silakan klik bagian berbingkai merah di tautan di bawah ini.
+Microsoft Paint di Windows 11 juga mendukung layer dan PNG transparan. Alasan mencoba Paint.NET antara lain alat seperti Magic Wand dan Clone Stamp, penyesuaian kurva, manajemen warna, dan ekstensi plugin. Fitur dapat berbeda menurut versi, jadi lihat daftar resminya.
 
-![img_2.png](img_2.webp)
+## Unduhan dan pembaruan
 
-Jika Anda menginstalnya melalui Microsoft Store, perangkat lunak ini berbayar sebagai gantinya Anda mendapatkan fitur pembaruan otomatis.
-Bahkan dengan versi gratis, pembaruan dapat dilakukan dengan cukup lancar karena memberi tahu Anda tentang informasi pembaruan terbaru.
+Halaman unduhan resmi menyediakan versi klasik gratis dan versi berbayar di Microsoft Store. Versi klasik diperbarui dari dalam aplikasi; versi Store diperbarui di latar belakang melalui Microsoft Store. Harga Store dapat berbeda menurut wilayah. Periksa kolom Price untuk pilihan Free atau Paid. Gunakan halaman resmi terkini, bukan tangkapan layar lama, untuk memilih unduhan.
+
+## Periksa persyaratan sistem
+
+Persyaratan saat ini mencakup Windows 11 dan Windows 10 versi 21H2 atau lebih baru, serta ketentuan untuk CPU 64-bit, GPU yang mendukung Direct3D 11, dan penyimpanan. Periksa [persyaratan sistem resmi](https://paint.net/doc/latest/SystemRequirements.html) sebelum memasang. Kinerja bergantung pada PC, ukuran gambar, dan proses pengeditan.
+
+## Referensi resmi
+
+- [Paint.NET features](https://paint.net/features.html)
+- [Paint.NET download](https://paint.net/download.html)
+- [Paint.NET system requirements](https://paint.net/doc/latest/SystemRequirements.html)
+- [Microsoft Paint layers and transparency announcement](https://blogs.windows.com/windows-insider/2023/09/18/paint-app-update-adding-support-for-layers-and-transparency-begins-rolling-out-to-windows-insiders/)

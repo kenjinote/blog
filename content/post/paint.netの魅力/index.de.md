@@ -1,39 +1,43 @@
 ---
-title: 'Kostenlos und hochfunktional! Eigenschaften und Reize der Bildbearbeitungssoftware „paint.net“'
-date: "2026-09-24T19:44:38+09:00"
+title: "Paint.NET: Funktionen, Einsatz und Download-Optionen"
+date: "2022-09-14T19:33:31+09:00"
+lastmod: "2026-11-25T00:00:00+09:00"
 slug: "paint.netの魅力"
-date: 2022-09-14T19:33:31+09:00
-tags: ["paint.net"]
+tags: ["Paint.NET", "Windows", "Bildbearbeitung"]
 draft: false
 image: "img.webp"
 categories: ["ai-technology"]
-description: 'Stellt die Reize der kostenlosen, hochfunktionalen Bildbearbeitungssoftware paint.net vor. Sie ist vollgepackt mit nützlichen Funktionen, die das Standard-Windows-Paint nicht bietet, wie Ebenen, Transparenzanpassung und vielfältige Effekte. Erklärt leicht verständlich die Merkmale der leichten und intuitiven Bedienung sowie die Installationsschritte für die kostenlose Version.'
+description: "Überblick über die Bildbearbeitungswerkzeuge von Paint.NET für Windows, die kostenlose und kostenpflichtige Version sowie aktuelle Systemanforderungen – mit einem aktuellen Vergleich zu Microsoft Paint."
 ---
-Ich werde die Bildbearbeitungssoftware paint.net vorstellen, die ich oft bei meiner Entwicklungsarbeit verwende.
 
-![img_1.png](img_1.webp)
+# Paint.NET: Funktionen, Einsatz und Download-Optionen
 
-# Nützliche Punkte, die mit dem Windows-Standard-[Paint](https://kenji.blog/de/p/browser-rendering-mechanism-dom-paint/) nicht möglich sind
-- Kann Transparenz und Deckkraft handhaben
-- Kann automatische Auswahlen für komplexe Bereichsformen durchführen
-- Kann mit Ebenen arbeiten
-- Kann Tonwertkorrektur, Helligkeit, Kontrast usw. anpassen
-- Kann verschiedene Effekte anwenden (Unschärfe, Verzerrung, Rauschen usw.)
+Paint.NET ist eine Bild- und Fotobearbeitungssoftware für Windows. Dieser Artikel fasst Funktionen zusammen, die ich bei Entwicklungsarbeiten genutzt habe, und beschreibt die aktuellen Bezugswege. Funktionen und Anforderungen ändern sich; prüfen Sie vor der Installation die offiziellen Seiten.
 
-# Weitere Merkmale
-- Kostenlose Nutzung
-- Betrieb ist relativ ressourcenschonend
-- Intuitiv zu bedienen und hat nicht viele Eigenheiten
-- Japanisch (mehrsprachige Unterstützung)
+## Was Paint.NET kann
 
-Es ist eine hochfunktionale, aber einfach zu bedienende Software. Ich selbst beherrsche noch nicht alle Funktionen.
+- Bilder mit Ebenen zusammensetzen und bearbeiten
+- Mit dem Zauberstab ähnlich gefärbte Bereiche oder präzisere Formen auswählen
+- Helligkeit, Kontrast, Farbton, Sättigung, Tonwerte und Kurven anpassen
+- Effekte wie Weichzeichnen, Schärfen, Rote-Augen-Korrektur, Verzerrung und Rauschen anwenden
+- Gängige Formate wie PNG, JPEG, WebP, AVIF und TIFF öffnen; Plugins ergänzen Formate und Effekte
+- Bearbeitungen im Verlaufsfenster rückgängig machen und wiederherstellen
 
-# Hier installieren
-[https://www.getpaint.net/download.html](https://www.getpaint.net/download.html)
+## Unterschiede zu Microsoft Paint
 
-Wenn Sie sich für die kostenlose Version entscheiden, klicken Sie bitte auf den unten rot umrandeten Teil des Links.
+Microsoft Paint unter Windows 11 unterstützt ebenfalls Ebenen und transparente PNGs. Gründe für Paint.NET sind unter anderem Werkzeuge wie Zauberstab und Kopierstempel, Kurvenkorrektur, Farbverwaltung und Plugin-Erweiterungen. Funktionen können je nach Version abweichen; maßgeblich ist die offizielle Funktionsliste.
 
-![img_2.png](img_2.webp)
+## Download und Updates
 
-Es scheint, dass die Installation über den Microsoft Store kostenpflichtig wird, aber dafür automatische Updates ermöglicht.
-Auch bei der kostenlosen Version werden Sie über die neuesten Updates informiert, sodass Sie problemlos aktualisieren können.
+Die offizielle Downloadseite bietet eine kostenlose klassische Version und eine kostenpflichtige Microsoft-Store-Version. Die klassische Version wird in der App aktualisiert; die Store-Version erhält Updates im Hintergrund über Microsoft Store. Der Store-Preis kann je nach Region variieren. Prüfen Sie in der Spalte Price die Angaben Free oder Paid. Verwenden Sie die aktuelle Seite statt veralteter Screenshots.
+
+## Systemanforderungen prüfen
+
+Die aktuellen Anforderungen nennen unter anderem Windows 11 und Windows 10 ab Version 21H2. Außerdem gelten Anforderungen für 64-Bit-CPU, Direct3D-11-GPU und Speicher. Prüfen Sie vor der Installation die offiziellen [Systemanforderungen](https://paint.net/doc/latest/SystemRequirements.html). Die Leistung hängt vom PC, der Bildgröße und den Bearbeitungsschritten ab.
+
+## Offizielle Quellen
+
+- [Paint.NET features](https://paint.net/features.html)
+- [Paint.NET download](https://paint.net/download.html)
+- [Paint.NET system requirements](https://paint.net/doc/latest/SystemRequirements.html)
+- [Microsoft Paint layers and transparency announcement](https://blogs.windows.com/windows-insider/2023/09/18/paint-app-update-adding-support-for-layers-and-transparency-begins-rolling-out-to-windows-insiders/)

@@ -1,0 +1,455 @@
+{
+  "version": 1,
+  "batch": 186,
+  "article": "Paint.NET features, uses, and download options",
+  "reviewedAt": "2026-11-25",
+  "sourceHash": "34a40df23075682e63709644fd2ca5d78eae7b7de1183a578c08032a77342f3b",
+  "sources": [
+    "https://paint.net/features.html",
+    "https://paint.net/download.html",
+    "https://paint.net/doc/latest/SystemRequirements.html",
+    "https://blogs.windows.com/windows-insider/2023/09/18/paint-app-update-adding-support-for-layers-and-transparency-begins-rolling-out-to-windows-insiders/"
+  ],
+  "scope": "Read and compared the complete Japanese article and all twelve translations; checked Paint.NET features and formats, the current Microsoft Paint layers/transparency comparison, free classic vs paid Store distribution and update behavior, live system requirements, installation-page imagery, metadata, and all official references.",
+  "findings": [
+    "Replaced the stale claim that Microsoft Paint lacks layers/transparency; Windows Paint now supports both, so the comparison highlights more specific Paint.NET tools.",
+    "Updated the free vs paid Microsoft Store information and removed the obsolete 2022 red-box download screenshot; directs readers to the current official download table.",
+    "Added current official Windows/CPU/GPU/storage requirements and qualified performance claims.",
+    "Removed the obsolete Paint.NET 4.3.12 screenshot and unrelated internal links; preserved the original publication date (2022-09-14) and set lastmod (2026-11-25)."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/paint.netの魅力/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/paint.netの魅力/index.md",
+      "sourceHash": "34a40df23075682e63709644fd2ca5d78eae7b7de1183a578c08032a77342f3b",
+      "translationHash": "b4b1885f107a1b1f248d219526ab533f7c4b9b2fe5ffd873971e5d2c65eef1da",
+      "summary": "Compared the full translation with the Japanese source and current Paint.NET and Microsoft product documentation; corrected Paint feature comparisons, download/update descriptions, system requirements, outdated screenshots, and metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations. Replaced outdated Paint comparisons and installation screenshots with current features, distribution choices, update behavior, and system requirements."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Paint.NET tools and names including layers, Magic Wand, Clone Stamp, color adjustments, plugins, and common file formats in every edition."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the official Paint.NET features, download, and system-requirements pages, and Microsoft’s Paint layers/transparency announcement."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Feature and system-requirement details were checked against official pages as of the review date; they may change with app updates.",
+        "The app was not installed or benchmarked; statements about ease of use and performance are presented as personal experience or qualified by device and workload."
+      ]
+    },
+    "post/paint.netの魅力/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/paint.netの魅力/index.md",
+      "sourceHash": "34a40df23075682e63709644fd2ca5d78eae7b7de1183a578c08032a77342f3b",
+      "translationHash": "5b4850c8fe7fd1594a14bf83f7501bb6b5b13f73a40f382e910fa5ba29e46dc3",
+      "summary": "Compared the full translation with the Japanese source and current Paint.NET and Microsoft product documentation; corrected Paint feature comparisons, download/update descriptions, system requirements, outdated screenshots, and metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations. Replaced outdated Paint comparisons and installation screenshots with current features, distribution choices, update behavior, and system requirements."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Paint.NET tools and names including layers, Magic Wand, Clone Stamp, color adjustments, plugins, and common file formats in every edition."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the official Paint.NET features, download, and system-requirements pages, and Microsoft’s Paint layers/transparency announcement."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Feature and system-requirement details were checked against official pages as of the review date; they may change with app updates.",
+        "The app was not installed or benchmarked; statements about ease of use and performance are presented as personal experience or qualified by device and workload."
+      ]
+    },
+    "post/paint.netの魅力/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/paint.netの魅力/index.md",
+      "sourceHash": "34a40df23075682e63709644fd2ca5d78eae7b7de1183a578c08032a77342f3b",
+      "translationHash": "e5dcdfc4747f853bffc05091d1ef8caa7e7050772e5473286a56751e4a1e2ffc",
+      "summary": "Compared the full translation with the Japanese source and current Paint.NET and Microsoft product documentation; corrected Paint feature comparisons, download/update descriptions, system requirements, outdated screenshots, and metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations. Replaced outdated Paint comparisons and installation screenshots with current features, distribution choices, update behavior, and system requirements."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Paint.NET tools and names including layers, Magic Wand, Clone Stamp, color adjustments, plugins, and common file formats in every edition."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the official Paint.NET features, download, and system-requirements pages, and Microsoft’s Paint layers/transparency announcement."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Feature and system-requirement details were checked against official pages as of the review date; they may change with app updates.",
+        "The app was not installed or benchmarked; statements about ease of use and performance are presented as personal experience or qualified by device and workload."
+      ]
+    },
+    "post/paint.netの魅力/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/paint.netの魅力/index.md",
+      "sourceHash": "34a40df23075682e63709644fd2ca5d78eae7b7de1183a578c08032a77342f3b",
+      "translationHash": "162bd67637704bbab05dfbe3ca0735c72118271821fde9c808d0440625ca168b",
+      "summary": "Compared the full translation with the Japanese source and current Paint.NET and Microsoft product documentation; corrected Paint feature comparisons, download/update descriptions, system requirements, outdated screenshots, and metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations. Replaced outdated Paint comparisons and installation screenshots with current features, distribution choices, update behavior, and system requirements."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Paint.NET tools and names including layers, Magic Wand, Clone Stamp, color adjustments, plugins, and common file formats in every edition."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the official Paint.NET features, download, and system-requirements pages, and Microsoft’s Paint layers/transparency announcement."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Feature and system-requirement details were checked against official pages as of the review date; they may change with app updates.",
+        "The app was not installed or benchmarked; statements about ease of use and performance are presented as personal experience or qualified by device and workload."
+      ]
+    },
+    "post/paint.netの魅力/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/paint.netの魅力/index.md",
+      "sourceHash": "34a40df23075682e63709644fd2ca5d78eae7b7de1183a578c08032a77342f3b",
+      "translationHash": "83a4f6f138655c55c84b84f78565c2d42e5473681b0adf411237ca2a29b37009",
+      "summary": "Compared the full translation with the Japanese source and current Paint.NET and Microsoft product documentation; corrected Paint feature comparisons, download/update descriptions, system requirements, outdated screenshots, and metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations. Replaced outdated Paint comparisons and installation screenshots with current features, distribution choices, update behavior, and system requirements."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Paint.NET tools and names including layers, Magic Wand, Clone Stamp, color adjustments, plugins, and common file formats in every edition."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the official Paint.NET features, download, and system-requirements pages, and Microsoft’s Paint layers/transparency announcement."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Feature and system-requirement details were checked against official pages as of the review date; they may change with app updates.",
+        "The app was not installed or benchmarked; statements about ease of use and performance are presented as personal experience or qualified by device and workload."
+      ]
+    },
+    "post/paint.netの魅力/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/paint.netの魅力/index.md",
+      "sourceHash": "34a40df23075682e63709644fd2ca5d78eae7b7de1183a578c08032a77342f3b",
+      "translationHash": "0775b0cb749daf932f8c59d0d29c3c42aee32864a9977ee949de0349c226dae7",
+      "summary": "Compared the full translation with the Japanese source and current Paint.NET and Microsoft product documentation; corrected Paint feature comparisons, download/update descriptions, system requirements, outdated screenshots, and metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations. Replaced outdated Paint comparisons and installation screenshots with current features, distribution choices, update behavior, and system requirements."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Paint.NET tools and names including layers, Magic Wand, Clone Stamp, color adjustments, plugins, and common file formats in every edition."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the official Paint.NET features, download, and system-requirements pages, and Microsoft’s Paint layers/transparency announcement."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Feature and system-requirement details were checked against official pages as of the review date; they may change with app updates.",
+        "The app was not installed or benchmarked; statements about ease of use and performance are presented as personal experience or qualified by device and workload."
+      ]
+    },
+    "post/paint.netの魅力/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/paint.netの魅力/index.md",
+      "sourceHash": "34a40df23075682e63709644fd2ca5d78eae7b7de1183a578c08032a77342f3b",
+      "translationHash": "b6153bf93d76a628b01e691439576a99233c04a0514a12d10bdf3a4b08d6a966",
+      "summary": "Compared the full translation with the Japanese source and current Paint.NET and Microsoft product documentation; corrected Paint feature comparisons, download/update descriptions, system requirements, outdated screenshots, and metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations. Replaced outdated Paint comparisons and installation screenshots with current features, distribution choices, update behavior, and system requirements."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Paint.NET tools and names including layers, Magic Wand, Clone Stamp, color adjustments, plugins, and common file formats in every edition."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the official Paint.NET features, download, and system-requirements pages, and Microsoft’s Paint layers/transparency announcement."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Feature and system-requirement details were checked against official pages as of the review date; they may change with app updates.",
+        "The app was not installed or benchmarked; statements about ease of use and performance are presented as personal experience or qualified by device and workload."
+      ]
+    },
+    "post/paint.netの魅力/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/paint.netの魅力/index.md",
+      "sourceHash": "34a40df23075682e63709644fd2ca5d78eae7b7de1183a578c08032a77342f3b",
+      "translationHash": "6b458e0ca845d034b7bc4276b00030d52378357ad3440892998a7aaa43a06967",
+      "summary": "Compared the full translation with the Japanese source and current Paint.NET and Microsoft product documentation; corrected Paint feature comparisons, download/update descriptions, system requirements, outdated screenshots, and metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations. Replaced outdated Paint comparisons and installation screenshots with current features, distribution choices, update behavior, and system requirements."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Paint.NET tools and names including layers, Magic Wand, Clone Stamp, color adjustments, plugins, and common file formats in every edition."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the official Paint.NET features, download, and system-requirements pages, and Microsoft’s Paint layers/transparency announcement."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Feature and system-requirement details were checked against official pages as of the review date; they may change with app updates.",
+        "The app was not installed or benchmarked; statements about ease of use and performance are presented as personal experience or qualified by device and workload."
+      ]
+    },
+    "post/paint.netの魅力/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/paint.netの魅力/index.md",
+      "sourceHash": "34a40df23075682e63709644fd2ca5d78eae7b7de1183a578c08032a77342f3b",
+      "translationHash": "5b64d0e4fdb99ffe7766742d2fe66b018553c70dd7b2c976efa4908847b28d3a",
+      "summary": "Compared the full translation with the Japanese source and current Paint.NET and Microsoft product documentation; corrected Paint feature comparisons, download/update descriptions, system requirements, outdated screenshots, and metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations. Replaced outdated Paint comparisons and installation screenshots with current features, distribution choices, update behavior, and system requirements."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Paint.NET tools and names including layers, Magic Wand, Clone Stamp, color adjustments, plugins, and common file formats in every edition."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the official Paint.NET features, download, and system-requirements pages, and Microsoft’s Paint layers/transparency announcement."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Feature and system-requirement details were checked against official pages as of the review date; they may change with app updates.",
+        "The app was not installed or benchmarked; statements about ease of use and performance are presented as personal experience or qualified by device and workload."
+      ]
+    },
+    "post/paint.netの魅力/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/paint.netの魅力/index.md",
+      "sourceHash": "34a40df23075682e63709644fd2ca5d78eae7b7de1183a578c08032a77342f3b",
+      "translationHash": "22f1c10231c306735968c38c1196c30cea0d27a08b149cd5ca484c90ebfbf3b5",
+      "summary": "Compared the full translation with the Japanese source and current Paint.NET and Microsoft product documentation; corrected Paint feature comparisons, download/update descriptions, system requirements, outdated screenshots, and metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations. Replaced outdated Paint comparisons and installation screenshots with current features, distribution choices, update behavior, and system requirements."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Paint.NET tools and names including layers, Magic Wand, Clone Stamp, color adjustments, plugins, and common file formats in every edition."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the official Paint.NET features, download, and system-requirements pages, and Microsoft’s Paint layers/transparency announcement."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Feature and system-requirement details were checked against official pages as of the review date; they may change with app updates.",
+        "The app was not installed or benchmarked; statements about ease of use and performance are presented as personal experience or qualified by device and workload."
+      ]
+    },
+    "post/paint.netの魅力/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/paint.netの魅力/index.md",
+      "sourceHash": "34a40df23075682e63709644fd2ca5d78eae7b7de1183a578c08032a77342f3b",
+      "translationHash": "34d7643a619762422e0e58ea6499f36bb8942c5d25ea29b5c710c5eb27a1dcfe",
+      "summary": "Compared the full translation with the Japanese source and current Paint.NET and Microsoft product documentation; corrected Paint feature comparisons, download/update descriptions, system requirements, outdated screenshots, and metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations. Replaced outdated Paint comparisons and installation screenshots with current features, distribution choices, update behavior, and system requirements."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Paint.NET tools and names including layers, Magic Wand, Clone Stamp, color adjustments, plugins, and common file formats in every edition."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the official Paint.NET features, download, and system-requirements pages, and Microsoft’s Paint layers/transparency announcement."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Feature and system-requirement details were checked against official pages as of the review date; they may change with app updates.",
+        "The app was not installed or benchmarked; statements about ease of use and performance are presented as personal experience or qualified by device and workload."
+      ]
+    },
+    "post/paint.netの魅力/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/paint.netの魅力/index.md",
+      "sourceHash": "34a40df23075682e63709644fd2ca5d78eae7b7de1183a578c08032a77342f3b",
+      "translationHash": "48a2561b914ff0fbb8e44d27d4b4e3b7f192f9d7ab23222838b82e1193185285",
+      "summary": "Compared the full translation with the Japanese source and current Paint.NET and Microsoft product documentation; corrected Paint feature comparisons, download/update descriptions, system requirements, outdated screenshots, and metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations. Replaced outdated Paint comparisons and installation screenshots with current features, distribution choices, update behavior, and system requirements."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Paint.NET tools and names including layers, Magic Wand, Clone Stamp, color adjustments, plugins, and common file formats in every edition."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the official Paint.NET features, download, and system-requirements pages, and Microsoft’s Paint layers/transparency announcement."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Feature and system-requirement details were checked against official pages as of the review date; they may change with app updates.",
+        "The app was not installed or benchmarked; statements about ease of use and performance are presented as personal experience or qualified by device and workload."
+      ]
+    }
+  }
+}

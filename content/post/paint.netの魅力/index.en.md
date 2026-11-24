@@ -1,39 +1,43 @@
 ---
-title: 'Free and Highly Functional! Features and Appeal of the Image Editing Software ''paint.net'''
-date: "2026-09-24T19:44:38+09:00"
+title: "Paint.NET: Features, Uses, and Download Options"
+date: "2022-09-14T19:33:31+09:00"
+lastmod: "2026-11-25T00:00:00+09:00"
 slug: "paint.netの魅力"
-date: 2022-09-14T19:33:31+09:00
-tags: ["paint.net"]
+tags: ["Paint.NET", "Windows", "Image editing"]
 draft: false
 image: "img.webp"
 categories: ["ai-technology"]
-description: 'Introduces the appeal of the free and highly functional image editing software paint.net. It is packed with useful features not found in the standard Windows Paint, such as layers, transparency adjustment, and various effects. Clearly explains its lightweight and intuitive operation features, as well as the installation steps for the free version.'
+description: "Explore Paint.NET’s Windows image-editing tools, the free and paid download options, and current system requirements, with an up-to-date comparison to Microsoft Paint."
 ---
-I would like to introduce paint.net, an image editing software that I often use during my development work.
 
-![img_1.png](img_1.webp)
+# Paint.NET: Features, Uses, and Download Options
 
-# Useful Features Not Found in Standard Windows [Paint](https://kenji.blog/en/p/browser-rendering-mechanism-dom-paint/)
-- Can handle transparency and opacity
-- Can automatically select complex areas
-- Can handle layers
-- Can adjust levels, brightness, contrast, etc.
-- Can apply various effects (blur, distort, noise, etc.)
+Paint.NET is an image and photo editor for Windows. This article summarizes the tools I have used for development work and the current ways to get the app. Features and requirements change, so check the official pages before installing.
 
-# Other Features
-- Free to use
-- Relatively lightweight and fast
-- Intuitive to use with few quirks
-- Supports multiple languages, including Japanese
+## What Paint.NET can do
 
-It is a highly functional yet easy-to-use software. I myself haven't mastered all of its features yet.
+- Compose and edit images with layers
+- Select regions by similar color with the Magic Wand, or make more precise selections
+- Adjust brightness, contrast, hue, saturation, levels, and curves
+- Apply effects such as blur, sharpening, red-eye removal, distortion, and noise
+- Open common formats such as PNG, JPEG, WebP, AVIF, and TIFF; plugins can add formats and effects
+- Undo and redo edits with the history window
 
-# Installation
-[https://www.getpaint.net/download.html](https://www.getpaint.net/download.html)
+## How it differs from Microsoft Paint
 
-If you wish to choose the free version, please click the red framed area at the link below.
+Microsoft Paint on Windows 11 also supports layers and transparent PNGs. Reasons to try Paint.NET include tools such as the Magic Wand and Clone Stamp, curve adjustments, color management, and plugin extensions. Available features can vary by version, so see the official feature list.
 
-![img_2.png](img_2.webp)
+## Download and updates
 
-Installing via the Microsoft Store is paid, but it seems to enable automatic updates.
-Even with the free version, you will be notified of the latest updates, so updating is relatively smooth.
+The official download page offers a free classic release and a paid Microsoft Store release. The classic release updates through the app; the Store release updates in the background through Microsoft Store. Store pricing may vary by region. Check the Price column for Free or Paid and choose the distribution that suits you. Use the current page rather than old screenshots to identify the download.
+
+## Check system requirements
+
+The current requirements list Windows 11 and Windows 10 version 21H2 or later, among other supported systems. There are also requirements for a 64-bit CPU, a Direct3D 11-capable GPU, and storage. See the official [system requirements](https://paint.net/doc/latest/SystemRequirements.html) before installing. Performance depends on the PC, image size, and editing workload.
+
+## Official references
+
+- [Paint.NET features](https://paint.net/features.html)
+- [Paint.NET download](https://paint.net/download.html)
+- [Paint.NET system requirements](https://paint.net/doc/latest/SystemRequirements.html)
+- [Microsoft Paint layers and transparency announcement](https://blogs.windows.com/windows-insider/2023/09/18/paint-app-update-adding-support-for-layers-and-transparency-begins-rolling-out-to-windows-insiders/)
