@@ -1,0 +1,457 @@
+{
+  "version": 1,
+  "batch": 183,
+  "article": "Films about mathematics, codebreaking, and physics",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "4b688cc1d3059679e8209875e88d167eabd3ba164d27bb8fb0d1a3df8fb61df8",
+  "sources": [
+    "https://www.universalpicturesathome.com/movies/a-beautiful-mind",
+    "https://filmsandfestivals.britishcouncil.org/projects/enigma",
+    "https://www.blackbearpictures.com/film-and-tv/the-imitation-game",
+    "https://www.paramount.com/movies/the-man-who-knew-infinity",
+    "https://www.focusfeatures.com/the_theory_of_everything",
+    "https://particlefever.com/"
+  ],
+  "scope": "Read and compared the complete Japanese article and all twelve translations; checked all six film descriptions against official distributor, film-database, or film-site descriptions; checked film count, genre, real-person/dramatization framing, metadata dates, image targets, official links, and localized Ramanujan internal links.",
+  "findings": [
+    "Replaced the inaccurate three-film introduction with a six-title scope and separated fictional/dramatized films from the Particle Fever documentary.",
+    "Corrected descriptions of Enigma (2001), The Imitation Game, The Man Who Knew Infinity, The Theory of Everything, and Particle Fever; added a note that historical dramas may fictionalize events.",
+    "Fixed duplicate and conflicting publication dates, preserving the original 2022-09-05 publication date and adding lastmod 2026-11-24.",
+    "Removed references to two nonexistent image files while retaining available images; repaired the locale-specific Ramanujan links and added official film information sources."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/数学者が登場する映画/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/数学者が登場する映画/index.md",
+      "sourceHash": "4b688cc1d3059679e8209875e88d167eabd3ba164d27bb8fb0d1a3df8fb61df8",
+      "translationHash": "34a3bf1bf278a500f7247235b979166b72fd4244517f509af22020501390e47e",
+      "summary": "Compared the complete translation with the Japanese source and official film descriptions. Corrected the article scope, film count, factual framing, genre distinctions, metadata, missing/incorrect imagery, and internal and external references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations. Corrected the stated count from three to six and distinguished the fictional Enigma thriller, dramatized biographies, and Particle Fever documentary."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized film titles and the distinction among mathematicians, a codebreaker, theoretical physics, and a documentary about experimental physics in all editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article makes no mathematical claims and contains no formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked all six links to official distributors, a film database, or the Particle Fever film site, plus each locale’s matching-language Ramanujan article link."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The review checked official film descriptions and the specific factual claims retained in the article; it did not watch each film or independently audit every historical detail.",
+        "Film availability and streaming options change; the article directs readers to check current viewing options."
+      ]
+    },
+    "post/数学者が登場する映画/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/数学者が登場する映画/index.md",
+      "sourceHash": "4b688cc1d3059679e8209875e88d167eabd3ba164d27bb8fb0d1a3df8fb61df8",
+      "translationHash": "0e30bf0f643b04ee77606f47efc96b87e520551209532b151a0085a910e28bef",
+      "summary": "Compared the complete translation with the Japanese source and official film descriptions. Corrected the article scope, film count, factual framing, genre distinctions, metadata, missing/incorrect imagery, and internal and external references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations. Corrected the stated count from three to six and distinguished the fictional Enigma thriller, dramatized biographies, and Particle Fever documentary."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized film titles and the distinction among mathematicians, a codebreaker, theoretical physics, and a documentary about experimental physics in all editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article makes no mathematical claims and contains no formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked all six links to official distributors, a film database, or the Particle Fever film site, plus each locale’s matching-language Ramanujan article link."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The review checked official film descriptions and the specific factual claims retained in the article; it did not watch each film or independently audit every historical detail.",
+        "Film availability and streaming options change; the article directs readers to check current viewing options."
+      ]
+    },
+    "post/数学者が登場する映画/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/数学者が登場する映画/index.md",
+      "sourceHash": "4b688cc1d3059679e8209875e88d167eabd3ba164d27bb8fb0d1a3df8fb61df8",
+      "translationHash": "5942645dc1774a02e5e13cce757c9fb17dcca8a0ffb117dff534ea0fb507be8c",
+      "summary": "Compared the complete translation with the Japanese source and official film descriptions. Corrected the article scope, film count, factual framing, genre distinctions, metadata, missing/incorrect imagery, and internal and external references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations. Corrected the stated count from three to six and distinguished the fictional Enigma thriller, dramatized biographies, and Particle Fever documentary."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized film titles and the distinction among mathematicians, a codebreaker, theoretical physics, and a documentary about experimental physics in all editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article makes no mathematical claims and contains no formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked all six links to official distributors, a film database, or the Particle Fever film site, plus each locale’s matching-language Ramanujan article link."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The review checked official film descriptions and the specific factual claims retained in the article; it did not watch each film or independently audit every historical detail.",
+        "Film availability and streaming options change; the article directs readers to check current viewing options."
+      ]
+    },
+    "post/数学者が登場する映画/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/数学者が登場する映画/index.md",
+      "sourceHash": "4b688cc1d3059679e8209875e88d167eabd3ba164d27bb8fb0d1a3df8fb61df8",
+      "translationHash": "2750b68c4e637d5f66a0e526a02aee02890208ac15c6672b9611b580f1156fa3",
+      "summary": "Compared the complete translation with the Japanese source and official film descriptions. Corrected the article scope, film count, factual framing, genre distinctions, metadata, missing/incorrect imagery, and internal and external references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations. Corrected the stated count from three to six and distinguished the fictional Enigma thriller, dramatized biographies, and Particle Fever documentary."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized film titles and the distinction among mathematicians, a codebreaker, theoretical physics, and a documentary about experimental physics in all editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article makes no mathematical claims and contains no formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked all six links to official distributors, a film database, or the Particle Fever film site, plus each locale’s matching-language Ramanujan article link."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The review checked official film descriptions and the specific factual claims retained in the article; it did not watch each film or independently audit every historical detail.",
+        "Film availability and streaming options change; the article directs readers to check current viewing options."
+      ]
+    },
+    "post/数学者が登場する映画/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/数学者が登場する映画/index.md",
+      "sourceHash": "4b688cc1d3059679e8209875e88d167eabd3ba164d27bb8fb0d1a3df8fb61df8",
+      "translationHash": "727230b1c5e5425a3316c1434649912bf7e7eccafb90d04594d33afd4e6af88f",
+      "summary": "Compared the complete translation with the Japanese source and official film descriptions. Corrected the article scope, film count, factual framing, genre distinctions, metadata, missing/incorrect imagery, and internal and external references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations. Corrected the stated count from three to six and distinguished the fictional Enigma thriller, dramatized biographies, and Particle Fever documentary."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized film titles and the distinction among mathematicians, a codebreaker, theoretical physics, and a documentary about experimental physics in all editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article makes no mathematical claims and contains no formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked all six links to official distributors, a film database, or the Particle Fever film site, plus each locale’s matching-language Ramanujan article link."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The review checked official film descriptions and the specific factual claims retained in the article; it did not watch each film or independently audit every historical detail.",
+        "Film availability and streaming options change; the article directs readers to check current viewing options."
+      ]
+    },
+    "post/数学者が登場する映画/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/数学者が登場する映画/index.md",
+      "sourceHash": "4b688cc1d3059679e8209875e88d167eabd3ba164d27bb8fb0d1a3df8fb61df8",
+      "translationHash": "161057989d376d15edff4a694a73ed3979d3dd27080f6f69dcada0d0851218cd",
+      "summary": "Compared the complete translation with the Japanese source and official film descriptions. Corrected the article scope, film count, factual framing, genre distinctions, metadata, missing/incorrect imagery, and internal and external references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations. Corrected the stated count from three to six and distinguished the fictional Enigma thriller, dramatized biographies, and Particle Fever documentary."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized film titles and the distinction among mathematicians, a codebreaker, theoretical physics, and a documentary about experimental physics in all editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article makes no mathematical claims and contains no formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked all six links to official distributors, a film database, or the Particle Fever film site, plus each locale’s matching-language Ramanujan article link."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The review checked official film descriptions and the specific factual claims retained in the article; it did not watch each film or independently audit every historical detail.",
+        "Film availability and streaming options change; the article directs readers to check current viewing options."
+      ]
+    },
+    "post/数学者が登場する映画/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/数学者が登場する映画/index.md",
+      "sourceHash": "4b688cc1d3059679e8209875e88d167eabd3ba164d27bb8fb0d1a3df8fb61df8",
+      "translationHash": "746807c3ce2971c2c3532cbfe7324562dbcfe44b9c2ade38361cd44d4ef6f89f",
+      "summary": "Compared the complete translation with the Japanese source and official film descriptions. Corrected the article scope, film count, factual framing, genre distinctions, metadata, missing/incorrect imagery, and internal and external references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations. Corrected the stated count from three to six and distinguished the fictional Enigma thriller, dramatized biographies, and Particle Fever documentary."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized film titles and the distinction among mathematicians, a codebreaker, theoretical physics, and a documentary about experimental physics in all editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article makes no mathematical claims and contains no formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked all six links to official distributors, a film database, or the Particle Fever film site, plus each locale’s matching-language Ramanujan article link."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The review checked official film descriptions and the specific factual claims retained in the article; it did not watch each film or independently audit every historical detail.",
+        "Film availability and streaming options change; the article directs readers to check current viewing options."
+      ]
+    },
+    "post/数学者が登場する映画/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/数学者が登場する映画/index.md",
+      "sourceHash": "4b688cc1d3059679e8209875e88d167eabd3ba164d27bb8fb0d1a3df8fb61df8",
+      "translationHash": "ee70acb78d29203d1c5ee87d043875ef4ffca5cfacd332b06bd36632c7024ac9",
+      "summary": "Compared the complete translation with the Japanese source and official film descriptions. Corrected the article scope, film count, factual framing, genre distinctions, metadata, missing/incorrect imagery, and internal and external references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations. Corrected the stated count from three to six and distinguished the fictional Enigma thriller, dramatized biographies, and Particle Fever documentary."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized film titles and the distinction among mathematicians, a codebreaker, theoretical physics, and a documentary about experimental physics in all editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article makes no mathematical claims and contains no formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked all six links to official distributors, a film database, or the Particle Fever film site, plus each locale’s matching-language Ramanujan article link."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The review checked official film descriptions and the specific factual claims retained in the article; it did not watch each film or independently audit every historical detail.",
+        "Film availability and streaming options change; the article directs readers to check current viewing options."
+      ]
+    },
+    "post/数学者が登場する映画/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/数学者が登場する映画/index.md",
+      "sourceHash": "4b688cc1d3059679e8209875e88d167eabd3ba164d27bb8fb0d1a3df8fb61df8",
+      "translationHash": "3d3bf4892d021ed9a0ba1e8583109af5aea0c9f2abffb99660d24b47521fa1be",
+      "summary": "Compared the complete translation with the Japanese source and official film descriptions. Corrected the article scope, film count, factual framing, genre distinctions, metadata, missing/incorrect imagery, and internal and external references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations. Corrected the stated count from three to six and distinguished the fictional Enigma thriller, dramatized biographies, and Particle Fever documentary."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized film titles and the distinction among mathematicians, a codebreaker, theoretical physics, and a documentary about experimental physics in all editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article makes no mathematical claims and contains no formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked all six links to official distributors, a film database, or the Particle Fever film site, plus each locale’s matching-language Ramanujan article link."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The review checked official film descriptions and the specific factual claims retained in the article; it did not watch each film or independently audit every historical detail.",
+        "Film availability and streaming options change; the article directs readers to check current viewing options."
+      ]
+    },
+    "post/数学者が登場する映画/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/数学者が登場する映画/index.md",
+      "sourceHash": "4b688cc1d3059679e8209875e88d167eabd3ba164d27bb8fb0d1a3df8fb61df8",
+      "translationHash": "a697dc6d7e436a7aa607964cf8a1b72ec75934439d51187c00bf2d2004433a02",
+      "summary": "Compared the complete translation with the Japanese source and official film descriptions. Corrected the article scope, film count, factual framing, genre distinctions, metadata, missing/incorrect imagery, and internal and external references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations. Corrected the stated count from three to six and distinguished the fictional Enigma thriller, dramatized biographies, and Particle Fever documentary."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized film titles and the distinction among mathematicians, a codebreaker, theoretical physics, and a documentary about experimental physics in all editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article makes no mathematical claims and contains no formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked all six links to official distributors, a film database, or the Particle Fever film site, plus each locale’s matching-language Ramanujan article link."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The review checked official film descriptions and the specific factual claims retained in the article; it did not watch each film or independently audit every historical detail.",
+        "Film availability and streaming options change; the article directs readers to check current viewing options."
+      ]
+    },
+    "post/数学者が登場する映画/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/数学者が登場する映画/index.md",
+      "sourceHash": "4b688cc1d3059679e8209875e88d167eabd3ba164d27bb8fb0d1a3df8fb61df8",
+      "translationHash": "249d0ff07145c4e5b5235c684d8ead7e22829d009d6ce0f96a2e2169cf887e34",
+      "summary": "Compared the complete translation with the Japanese source and official film descriptions. Corrected the article scope, film count, factual framing, genre distinctions, metadata, missing/incorrect imagery, and internal and external references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations. Corrected the stated count from three to six and distinguished the fictional Enigma thriller, dramatized biographies, and Particle Fever documentary."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized film titles and the distinction among mathematicians, a codebreaker, theoretical physics, and a documentary about experimental physics in all editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article makes no mathematical claims and contains no formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked all six links to official distributors, a film database, or the Particle Fever film site, plus each locale’s matching-language Ramanujan article link."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The review checked official film descriptions and the specific factual claims retained in the article; it did not watch each film or independently audit every historical detail.",
+        "Film availability and streaming options change; the article directs readers to check current viewing options."
+      ]
+    },
+    "post/数学者が登場する映画/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/数学者が登場する映画/index.md",
+      "sourceHash": "4b688cc1d3059679e8209875e88d167eabd3ba164d27bb8fb0d1a3df8fb61df8",
+      "translationHash": "83a35e0ac75d977590553ae6665646608308ccd643041103f03a7a8c7607f43a",
+      "summary": "Compared the complete translation with the Japanese source and official film descriptions. Corrected the article scope, film count, factual framing, genre distinctions, metadata, missing/incorrect imagery, and internal and external references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations. Corrected the stated count from three to six and distinguished the fictional Enigma thriller, dramatized biographies, and Particle Fever documentary."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized film titles and the distinction among mathematicians, a codebreaker, theoretical physics, and a documentary about experimental physics in all editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article makes no mathematical claims and contains no formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked all six links to official distributors, a film database, or the Particle Fever film site, plus each locale’s matching-language Ramanujan article link."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The review checked official film descriptions and the specific factual claims retained in the article; it did not watch each film or independently audit every historical detail.",
+        "Film availability and streaming options change; the article directs readers to check current viewing options."
+      ]
+    }
+  }
+}

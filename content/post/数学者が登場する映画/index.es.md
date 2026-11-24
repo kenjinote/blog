@@ -1,51 +1,67 @@
 ---
-
-
-
-
-title: '¡Protagonizadas por genios matemáticos! Obras maestras cinematográficas recomendadas e historias de criptografía'
-date: "2026-09-24T19:44:38+09:00"
-slug: "Matemáticoが登場するPelícula"
-date: 2022-09-05T10:41:00+09:00
-tags: ["Películas","Matemáticos"]
+title: "6 películas sobre matemáticas, criptografía y física"
+date: "2022-09-05T10:41:00+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
+slug: "数学者が登場する映画"
+tags: ["Cine", "Matemáticas", "Ciencia"]
 draft: false
 image: "images/img.webp"
 categories: ["math-cryptography-quantum"]
-description: 'Te presentamos películas clásicas recomendadas que cuentan con matemáticos geniales como protagonistas. Esta es una selección de obras maestras donde la belleza de las matemáticas se entrelaza con el drama humano, como "Una mente maravillosa", "The Imitation Game" sobre el descifrado de la máquina Enigma y la historia real de Ramanujan "El hombre que conocía el infinito".'
+description: "Seis películas y documentales sobre matemáticos, criptógrafos y físicos, con notas sobre las personas y los hechos reales que inspiran las historias."
 ---
 
+# 6 películas sobre matemáticas, criptografía y física
 
+Aquí tienes seis películas y documentales sobre matemáticos, criptógrafos y físicos. Las películas dramáticas basadas en personas o hechos reales pueden modificar escenas y fechas por motivos narrativos; disfrútalas como obras audiovisuales, no como fuentes históricas.
 
+## Dramas sobre matemáticos y criptógrafos
 
-Estas son mis películas recomendadas en las que el protagonista es un matemático.
+### Una mente maravillosa
 
-# Una mente maravillosa
-![](./images/beautiful_mind.webp)  
-Una película que describe la vida de un matemático genio estadounidense que existió realmente. El final tiene un desarrollo sorprendente.
-Russell Crowe, en el papel principal, hace un excelente trabajo.
+![](./images/beautiful_mind.webp)
 
-# Enigma
-![](./images/enigma.webp)  
-> Película estrenada en 2001 basada en la novela de Robert Harris "Enigma".
-> De Wikipedia
+Este drama biográfico protagonizado por Russell Crowe está inspirado en la vida del matemático John Nash. Incluye dramatizaciones y no es un relato literal de su vida.
 
-Una historia sobre el descifrado del código creado por Alemania llamado máquina Enigma.
+### Enigma
 
-# The Imitation Game (Descifrando Enigma)
-![](./images/imitation_game.webp) 
+![](./images/enigma.webp)
 
-Otra historia sobre el desciframiento de códigos que trata sobre Enigma. Me gusta la visión del mundo de esa época.
+Esta película de ficción de 2001 está basada en la novela de Robert Harris. Es un thriller ambientado en el descifrado de códigos en Bletchley Park durante la Segunda Guerra Mundial, no una biografía de Nash ni de Turing.
 
-# El hombre que conocía el infinito
-![img.png](img.webp)
+### The Imitation Game (Descifrando Enigma)
 
-Una obra que describe la interacción entre el matemático de la Universidad de Cambridge Hardy y el matemático indio Ramanujan. Puedes sentir la belleza de las matemáticas.
+![](./images/imitation_game.webp)
 
-# La teoría del todo
-![img_1.png](img_1.webp)
+Este drama retrata al matemático, lógico y criptógrafo Alan Turing y el trabajo de descifrado durante la guerra. Se basa en una persona real, pero incluye dramatización cinematográfica.
 
-Una película que retrata la vida del Dr. Hawking.
+### El hombre que conocía el infinito
 
-# Particle Fever (Locos por las partículas)
+![](./images/img.webp)
 
-![img_2.png](img_2.webp)
+La película cuenta la historia del matemático indio Srinivasa Ramanujan y del matemático de Cambridge G. H. Hardy. Consulta también nuestro [perfil de Ramanujan](/es/p/ramanujan/). Es un drama basado en hechos reales.
+
+## Científicos y trabajo de investigación
+
+### La teoría del todo
+
+Este drama biográfico sigue la relación entre el físico teórico Stephen Hawking y Jane Hawking. Está basado en las memorias de Jane.
+
+### Particle Fever (Locos por las partículas)
+
+Este documental sigue a físicos que trabajan con el Gran Colisionador de Hadrones (LHC), incluida la investigación sobre el bosón de Higgs. Ofrece una perspectiva distinta a las películas de ficción sobre matemáticos.
+
+## Fuentes sobre las películas
+
+- [Universal Pictures](https://www.universalpicturesathome.com/movies/a-beautiful-mind)
+
+- [British Council UK Films Database](https://filmsandfestivals.britishcouncil.org/projects/enigma)
+
+- [Black Bear Pictures](https://www.blackbearpictures.com/film-and-tv/the-imitation-game)
+
+- [Paramount Pictures](https://www.paramount.com/movies/the-man-who-knew-infinity)
+
+- [Focus Features](https://www.focusfeatures.com/the_theory_of_everything)
+
+- [Particle Fever official site](https://particlefever.com/)
+
+Si te interesa alguna, consulta primero su tráiler y las opciones disponibles para verla.

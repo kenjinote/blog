@@ -1,43 +1,67 @@
 ---
-title: 'Geniale Mathematiker in der Hauptrolle! Empfohlene Film-Meisterwerke und Geschichten über Entschlüsselung'
-date: "2026-09-24T19:44:38+09:00"
-slug: "Mathematikerが登場するFilm"
-date: 2022-09-05T10:41:00+09:00
-tags: ["Filme", "Mathematiker"]
+title: "6 Filme über Mathematik, Codeknacken und Physik"
+date: "2022-09-05T10:41:00+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
+slug: "数学者が登場する映画"
+tags: ["Filme", "Mathematik", "Wissenschaft"]
 draft: false
 image: "images/img.webp"
 categories: ["math-cryptography-quantum"]
-description: 'Wir stellen empfohlene Film-Meisterwerke vor, in denen geniale Mathematiker die Hauptrolle spielen. Es ist eine Auswahl an Meisterwerken, in denen sich die Schönheit der Mathematik und menschliches Drama überschneiden, wie „A Beautiful Mind“, „The Imitation Game“, das die Entschlüsselung des Enigma-Codes darstellt, und die wahre Geschichte von Ramanujan, „Die Poesie des Unendlichen“.'
+description: "Sechs Filme und Dokumentationen über Mathematiker, Codeknacker und Physiker, mit Hinweisen zu den realen Personen und Ereignissen hinter den Geschichten."
 ---
-Hier sind meine 3 besten Filmempfehlungen mit Mathematikern als Hauptfiguren.
 
-# A Beautiful Mind
-![](./images/beautiful_mind.webp)  
-Ein Film, der das Leben eines echten amerikanischen Mathematikgenies schildert. Das Ende hält eine überraschende Wendung bereit.
-Russell Crowe spielt die Hauptrolle hervorragend.
+# 6 Filme über Mathematik, Codeknacken und Physik
 
-# Enigma
-![](./images/enigma.webp)  
-> Ein Film aus dem Jahr 2001, basierend auf dem Roman "Enigma" von Robert Harris.
-> aus Wikipedia
+Hier sind sechs Filme und Dokumentationen über Mathematiker, Codeknacker und Physiker. Dramen nach wahren Personen oder Ereignissen verändern für die Handlung mitunter Szenen und Zeitabläufe. Sie sind als Filme gedacht, nicht als historische Quellen.
 
-Die Geschichte der Entschlüsselung der Enigma-Chiffriermaschine, die von Deutschland entwickelt wurde.
+## Dramen über Mathematiker und Codeknacker
 
-# The Imitation Game
-![](./images/imitation_game.webp) 
+### A Beautiful Mind
 
-Dies ist ebenfalls eine Entschlüsselungsgeschichte rund um die Enigma. Ich liebe die Atmosphäre der damaligen Zeit.
+![](./images/beautiful_mind.webp)
 
-# Die Poesie des Unendlichen
-![img.png](img.webp)
+Dieses biografische Drama mit Russell Crowe ist vom Leben des Mathematikers John Nash inspiriert. Es enthält dramaturgische Änderungen und schildert sein Leben nicht wortgetreu.
 
-Ein Werk, das die Interaktion zwischen dem Mathematiker Hardy von der Universität Cambridge und dem indischen Mathematiker Ramanujan darstellt. Man kann die Schönheit der Mathematik spüren.
+### Enigma
 
-# Die Entdeckung der Unendlichkeit
-![img_1.png](img_1.webp)
+![](./images/enigma.webp)
 
-Ein Film, der das Leben von Dr. Hawking schildert.
+Dieser fiktive Film aus dem Jahr 2001 basiert auf Robert Harris’ Roman. Der Thriller spielt vor dem Hintergrund der Codeknacker in Bletchley Park während des Zweiten Weltkriegs und ist keine Biografie über Nash oder Turing.
 
-# Particle Fever
+### The Imitation Game
 
-![img_2.png](img_2.webp)
+![](./images/imitation_game.webp)
+
+Das Drama zeigt den Mathematiker, Logiker und Codeknacker Alan Turing und die Codearbeit während des Krieges. Es beruht auf einer realen Person, enthält aber filmische Dramatisierungen.
+
+### Die Poesie des Unendlichen
+
+![](./images/img.webp)
+
+Der Film erzählt von dem indischen Mathematiker Srinivasa Ramanujan und dem Cambridge-Mathematiker G. H. Hardy. Lies auch unser [Porträt von Ramanujan](/de/p/ramanujan/). Es ist ein Drama nach wahren Begebenheiten.
+
+## Forschung und Wissenschaft im Alltag
+
+### Die Entdeckung der Unendlichkeit
+
+Dieses biografische Drama begleitet die Beziehung zwischen dem theoretischen Physiker Stephen Hawking und Jane Hawking. Es basiert auf Janes Memoiren.
+
+### Particle Fever
+
+Diese Dokumentation begleitet Physiker bei der Arbeit am Large Hadron Collider (LHC), einschließlich der Forschung zum Higgs-Boson. Sie unterscheidet sich von Spielfilmen über Mathematiker.
+
+## Quellen zu den Filmen
+
+- [Universal Pictures](https://www.universalpicturesathome.com/movies/a-beautiful-mind)
+
+- [British Council UK Films Database](https://filmsandfestivals.britishcouncil.org/projects/enigma)
+
+- [Black Bear Pictures](https://www.blackbearpictures.com/film-and-tv/the-imitation-game)
+
+- [Paramount Pictures](https://www.paramount.com/movies/the-man-who-knew-infinity)
+
+- [Focus Features](https://www.focusfeatures.com/the_theory_of_everything)
+
+- [Particle Fever official site](https://particlefever.com/)
+
+Wenn dich ein Film interessiert, sieh dir zuerst den Trailer und die aktuellen Möglichkeiten zum Ansehen an.

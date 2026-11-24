@@ -1,43 +1,67 @@
 ---
-title: 'Ahli Matematika Jenius Sebagai Protagonis! Film Masterpiece Rekomendasi dan Kisah Pemecahan Kode'
-date: "2026-09-24T19:44:38+09:00"
-slug: "Ahli Matematikaが登場するFilm"
-date: 2022-09-05T10:41:00+09:00
-tags: ["film", "matematikawan"]
+title: "6 Film tentang Matematika, Pemecahan Sandi, dan Fisika"
+date: "2022-09-05T10:41:00+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
+slug: "数学者が登場する映画"
+tags: ["Film", "Matematika", "Sains"]
 draft: false
 image: "images/img.webp"
 categories: ["math-cryptography-quantum"]
-description: 'Kami akan memperkenalkan rekomendasi film mahakarya di mana jenius matematika adalah tokoh utamanya. Pilihan mahakarya tentang perpotongan antara keindahan matematika dan drama manusia, seperti ''A Beautiful Mind'', ''The Imitation Game'' yang menggambarkan pemecahan Enigma, dan kisah nyata Ramanujan ''The Man Who Knew Infinity''.'
+description: "Enam film dan dokumenter tentang matematikawan, pemecah sandi, dan fisikawan, beserta catatan tentang kaitannya dengan tokoh dan peristiwa nyata."
 ---
-Berikut adalah 3 film rekomendasi saya yang menampilkan matematikawan sebagai karakter utama.
 
-# A Beautiful Mind
-![](./images/beautiful_mind.webp)  
-Karya yang menggambarkan separuh kehidupan seorang jenius matematika Amerika di dunia nyata. Perkembangan mengejutkan di akhir cerita.
-Pemeran utama Russell Crowe memainkan peran yang bagus.
+# 6 Film tentang Matematika, Pemecahan Sandi, dan Fisika
 
-# Enigma
-![](./images/enigma.webp)  
-> Film yang dirilis pada tahun 2001 berdasarkan novel Robert Harris "Enigma".
-> Dari Wikipedia
+Berikut enam film dan dokumenter tentang matematikawan, pemecah sandi, dan fisikawan. Drama yang terinspirasi dari tokoh atau peristiwa nyata dapat mengubah adegan dan urutan waktu demi cerita; nikmati sebagai karya film, bukan sebagai sumber sejarah.
 
-Kisah memecahkan kode mesin sandi buatan Jerman yang disebut Enigma.
+## Drama tentang matematikawan dan pemecah sandi
 
-# The Imitation Game
-![](./images/imitation_game.webp) 
+### A Beautiful Mind
 
-Ini juga merupakan kisah pemecahan kode yang berhubungan dengan Enigma. Saya suka pandangan dunia pada waktu itu.
+![](./images/beautiful_mind.webp)
 
-# The Man Who Knew Infinity
-![img.png](img.webp)
+Drama biografi yang dibintangi Russell Crowe ini terinspirasi dari kehidupan matematikawan John Nash. Film ini mengandung dramatisasi dan bukan catatan harfiah tentang kehidupannya.
 
-Karya yang menggambarkan interaksi antara matematikawan Universitas Cambridge Hardy dan matematikawan India Ramanujan. Anda bisa merasakan keindahan matematika.
+### Enigma
 
-# The Theory of Everything
-![img_1.png](img_1.webp)
+![](./images/enigma.webp)
 
-Karya yang menggambarkan separuh kehidupan Dr. Hawking.
+Film fiksi tahun 2001 ini diangkat dari novel Robert Harris. Ceritanya berupa thriller berlatar pemecahan sandi di Bletchley Park selama Perang Dunia II, bukan biografi Nash atau Turing.
 
-# Particle Fever
+### The Imitation Game
 
-![img_2.png](img_2.webp)
+![](./images/imitation_game.webp)
+
+Drama ini menggambarkan matematikawan, ahli logika, dan pemecah sandi Alan Turing serta pekerjaan pemecahan sandi pada masa perang. Cerita berangkat dari tokoh nyata, tetapi memiliki dramatisasi sinematik.
+
+### The Man Who Knew Infinity
+
+![](./images/img.webp)
+
+Film ini menceritakan matematikawan India Srinivasa Ramanujan dan matematikawan Cambridge G. H. Hardy. Baca juga [profil Ramanujan](/id/p/ramanujan/). Ini adalah drama berdasarkan peristiwa nyata.
+
+## Ilmuwan dan proses penelitian
+
+### The Theory of Everything
+
+Drama biografi ini mengikuti hubungan fisikawan teoretis Stephen Hawking dan Jane Hawking. Film ini berdasarkan memoar Jane.
+
+### Particle Fever
+
+Dokumenter ini mengikuti para fisikawan yang bekerja dengan Large Hadron Collider (LHC), termasuk penelitian tentang boson Higgs. Formatnya berbeda dari film cerita tentang matematikawan.
+
+## Sumber informasi film
+
+- [Universal Pictures](https://www.universalpicturesathome.com/movies/a-beautiful-mind)
+
+- [British Council UK Films Database](https://filmsandfestivals.britishcouncil.org/projects/enigma)
+
+- [Black Bear Pictures](https://www.blackbearpictures.com/film-and-tv/the-imitation-game)
+
+- [Paramount Pictures](https://www.paramount.com/movies/the-man-who-knew-infinity)
+
+- [Focus Features](https://www.focusfeatures.com/the_theory_of_everything)
+
+- [Particle Fever official site](https://particlefever.com/)
+
+Jika ada film yang menarik perhatian, lihat trailernya dan periksa pilihan untuk menontonnya saat ini.

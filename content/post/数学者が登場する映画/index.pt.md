@@ -1,43 +1,67 @@
 ---
-title: 'Um gênio da matemática é o protagonista! Filmes clássicos recomendados e histórias de decodificação'
-date: "2026-09-24T19:44:38+09:00"
-slug: "Matemáticoが登場するFilme"
-date: 2022-09-05T10:41:00+09:00
-tags: ["Filmes", "Matemáticos"]
+title: "6 filmes sobre matemática, criptografia e física"
+date: "2022-09-05T10:41:00+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
+slug: "数学者が登場する映画"
+tags: ["Filmes", "Matemática", "Ciência"]
 draft: false
 image: "images/img.webp"
 categories: ["math-cryptography-quantum"]
-description: 'Apresentaremos filmes clássicos recomendados em que um matemático genial é o protagonista. É uma seleção de obras-primas onde o drama humano se cruza com a beleza da matemática, como ''Uma Mente Brilhante'', ''O Jogo da Imitação'', que descreve a decifração do código Enigma, e ''O Homem Que Viu o Infinito'', a verdadeira história de Ramanujan.'
+description: "Seis filmes e documentários sobre matemáticos, criptógrafos e físicos, com notas sobre as pessoas e os acontecimentos reais que inspiram as histórias."
 ---
-Aqui estão as minhas 3 principais recomendações de filmes com matemáticos como protagonistas.
 
-# Uma Mente Brilhante
-![](./images/beautiful_mind.webp)  
-Um filme que retrata a vida de um gênio matemático americano da vida real. O final tem uma reviravolta surpreendente.
-Russell Crowe faz um excelente trabalho no papel principal.
+# 6 filmes sobre matemática, criptografia e física
 
-# Enigma
-![](./images/enigma.webp)  
-> Um filme de 2001 baseado no romance "Enigma" de Robert Harris.
-> da Wikipédia
+Aqui estão seis filmes e documentários sobre matemáticos, criptógrafos e físicos. Dramas baseados em pessoas ou acontecimentos reais podem alterar cenas e cronologias por motivos narrativos; aprecie-os como obras audiovisuais, não como fontes históricas.
 
-A história da decifração da máquina de criptografia Enigma criada pela Alemanha.
+## Dramas sobre matemáticos e criptógrafos
 
-# O Jogo da Imitação
-![](./images/imitation_game.webp) 
+### Uma Mente Brilhante
 
-Esta também é uma história de decifração de códigos lidando com a Enigma. Eu amo a atmosfera daquela época.
+![](./images/beautiful_mind.webp)
 
-# O Homem Que Viu o Infinito
-![img.png](img.webp)
+Este drama biográfico estrelado por Russell Crowe é inspirado na vida do matemático John Nash. Inclui dramatizações e não é um relato literal de sua vida.
 
-Uma obra que retrata a interação entre o matemático da Universidade de Cambridge, Hardy, e o matemático indiano Ramanujan. Você pode sentir a beleza da matemática.
+### Enigma
 
-# A Teoria de Tudo
-![img_1.png](img_1.webp)
+![](./images/enigma.webp)
 
-Um filme que retrata a vida do Dr. Hawking.
+Este filme de ficção de 2001 é baseado no romance de Robert Harris. É um suspense ambientado na decifração de códigos em Bletchley Park durante a Segunda Guerra Mundial, não uma biografia de Nash ou Turing.
 
-# Particle Fever
+### O Jogo da Imitação
 
-![img_2.png](img_2.webp)
+![](./images/imitation_game.webp)
+
+Este drama retrata o matemático, lógico e criptógrafo Alan Turing e o trabalho de decifração durante a guerra. Baseia-se em uma pessoa real, mas contém dramatizações.
+
+### O Homem Que Viu o Infinito
+
+![](./images/img.webp)
+
+O filme conta a história do matemático indiano Srinivasa Ramanujan e do matemático de Cambridge G. H. Hardy. Veja também nosso [perfil de Ramanujan](/pt/p/ramanujan/). É um drama baseado em fatos reais.
+
+## Cientistas e pesquisa em ação
+
+### A Teoria de Tudo
+
+Este drama biográfico acompanha a relação entre o físico teórico Stephen Hawking e Jane Hawking. É baseado nas memórias de Jane.
+
+### Particle Fever
+
+Este documentário acompanha físicos que trabalham no Grande Colisor de Hádrons (LHC), incluindo pesquisas sobre o bóson de Higgs. É diferente dos filmes narrativos sobre matemáticos.
+
+## Fontes sobre os filmes
+
+- [Universal Pictures](https://www.universalpicturesathome.com/movies/a-beautiful-mind)
+
+- [British Council UK Films Database](https://filmsandfestivals.britishcouncil.org/projects/enigma)
+
+- [Black Bear Pictures](https://www.blackbearpictures.com/film-and-tv/the-imitation-game)
+
+- [Paramount Pictures](https://www.paramount.com/movies/the-man-who-knew-infinity)
+
+- [Focus Features](https://www.focusfeatures.com/the_theory_of_everything)
+
+- [Particle Fever official site](https://particlefever.com/)
+
+Se algum despertar seu interesse, confira o trailer e as opções atuais para assisti-lo.

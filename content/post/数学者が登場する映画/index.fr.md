@@ -1,43 +1,67 @@
 ---
-title: 'Un génie des mathématiques comme héros ! Films recommandés et histoires de décryptage'
-date: "2026-09-24T19:44:38+09:00"
-slug: "Mathématicienが登場するFilm"
-date: 2022-09-05T10:41:00+09:00
-tags: ["Films", "Mathématiciens"]
+title: "6 films sur les mathématiques, le décryptage et la physique"
+date: "2022-09-05T10:41:00+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
+slug: "数学者が登場する映画"
+tags: ["Films", "Mathématiques", "Science"]
 draft: false
 image: "images/img.webp"
 categories: ["math-cryptography-quantum"]
-description: 'Nous présentons des chefs-d''œuvre cinématographiques recommandés avec un génie des mathématiques pour héros. Des films excellents où la beauté des mathématiques croise les drames humains, comme « Un homme d''exception », « Imitation Game » qui décrit le décryptage d''Enigma, ou l''histoire vraie de Ramanujan « L''Homme qui défiait l''infini ».'
+description: "Six films et documentaires consacrés aux mathématiciens, aux cryptanalystes et aux physiciens, avec des précisions sur les personnes et faits réels qui les inspirent."
 ---
-Voici mes 3 recommandations de films avec des mathématiciens comme protagonistes.
 
-# Un homme d'exception
-![](./images/beautiful_mind.webp)  
-Un film qui retrace la vie d'un véritable génie mathématique américain. La fin réserve une surprise étonnante.
-Russell Crowe offre une excellente performance dans le rôle principal.
+# 6 films sur les mathématiques, le décryptage et la physique
 
-# Enigma
-![](./images/enigma.webp)  
-> Un film sorti en 2001, adapté du roman "Enigma" de Robert Harris.
-> de Wikipédia
+Voici six films et documentaires consacrés aux mathématiciens, aux cryptanalystes et aux physiciens. Les œuvres dramatiques inspirées de personnes ou de faits réels peuvent modifier des scènes et la chronologie pour les besoins du récit ; regardez-les comme des œuvres de fiction, et non comme des sources historiques.
 
-L'histoire du décryptage de la machine de chiffrement Enigma, créée par l'Allemagne.
+## Fictions sur des mathématiciens et cryptanalystes
 
-# Imitation Game
-![](./images/imitation_game.webp) 
+### Un homme d’exception
 
-C'est aussi une histoire de décryptage impliquant Enigma. J'aime l'atmosphère de cette époque.
+![](./images/beautiful_mind.webp)
 
-# L'Homme qui défiait l'infini
-![img.png](img.webp)
+Ce drame biographique avec Russell Crowe s’inspire de la vie du mathématicien John Nash. Il comporte des éléments dramatisés et ne raconte pas littéralement toute sa vie.
 
-Une œuvre qui dépeint l'interaction entre Hardy, un mathématicien de l'université de Cambridge, et Ramanujan, un mathématicien indien. On peut y ressentir la beauté des mathématiques.
+### Enigma
 
-# Une merveilleuse histoire du temps
-![img_1.png](img_1.webp)
+![](./images/enigma.webp)
 
-Un film retraçant la vie du Dr Hawking.
+Ce film de fiction de 2001 est adapté du roman de Robert Harris. Ce thriller se déroule dans le contexte du décryptage à Bletchley Park pendant la Seconde Guerre mondiale ; ce n’est pas une biographie de Nash ou de Turing.
 
-# La Fièvre des particules
+### Imitation Game
 
-![img_2.png](img_2.webp)
+![](./images/imitation_game.webp)
+
+Ce drame met en scène le mathématicien, logicien et cryptanalyste Alan Turing ainsi que le décryptage en temps de guerre. Il s’inspire d’une personne réelle, mais comporte des dramatisations.
+
+### L’Homme qui défiait l’infini
+
+![](./images/img.webp)
+
+Le film raconte l’histoire du mathématicien indien Srinivasa Ramanujan et du mathématicien de Cambridge G. H. Hardy. Consultez aussi notre [présentation de Ramanujan](/fr/p/ramanujan/). C’est un drame inspiré de faits réels.
+
+## Scientifiques et recherche en action
+
+### Une merveilleuse histoire du temps
+
+Ce drame biographique suit la relation entre le physicien théoricien Stephen Hawking et Jane Hawking. Il est adapté des mémoires de Jane.
+
+### La Fièvre des particules
+
+Ce documentaire suit des physiciens travaillant sur le Grand collisionneur de hadrons (LHC), notamment leurs recherches sur le boson de Higgs. Il diffère des fictions centrées sur un mathématicien.
+
+## Sources sur les films
+
+- [Universal Pictures](https://www.universalpicturesathome.com/movies/a-beautiful-mind)
+
+- [British Council UK Films Database](https://filmsandfestivals.britishcouncil.org/projects/enigma)
+
+- [Black Bear Pictures](https://www.blackbearpictures.com/film-and-tv/the-imitation-game)
+
+- [Paramount Pictures](https://www.paramount.com/movies/the-man-who-knew-infinity)
+
+- [Focus Features](https://www.focusfeatures.com/the_theory_of_everything)
+
+- [Particle Fever official site](https://particlefever.com/)
+
+Si un film vous intéresse, consultez sa bande-annonce et les options disponibles pour le regarder.

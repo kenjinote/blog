@@ -21245,6 +21245,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-182.json",
       "evidenceHash": "e0f731d057a6321f76777802946644c9f6a38d145747cb50f652c29aecc1ff98"
+    },
+    "post/数学者が登場する映画/index.en.md": {
+      "source": "post/数学者が登場する映画/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "4b688cc1d3059679e8209875e88d167eabd3ba164d27bb8fb0d1a3df8fb61df8",
+      "translationHash": "34a3bf1bf278a500f7247235b979166b72fd4244517f509af22020501390e47e",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-183.json",
+      "evidenceHash": "fe0d92466704cf271a3c9765596fb3e9e74476496b18356e3ff24c35ba03c9e4"
+    },
+    "post/数学者が登場する映画/index.zh-cn.md": {
+      "source": "post/数学者が登場する映画/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "4b688cc1d3059679e8209875e88d167eabd3ba164d27bb8fb0d1a3df8fb61df8",
+      "translationHash": "0e30bf0f643b04ee77606f47efc96b87e520551209532b151a0085a910e28bef",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-183.json",
+      "evidenceHash": "4f4d3817c9dd41b6e669f3e92391fdbf0fabdd0703b683a2089154b25800759b"
+    },
+    "post/数学者が登場する映画/index.es.md": {
+      "source": "post/数学者が登場する映画/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "4b688cc1d3059679e8209875e88d167eabd3ba164d27bb8fb0d1a3df8fb61df8",
+      "translationHash": "5942645dc1774a02e5e13cce757c9fb17dcca8a0ffb117dff534ea0fb507be8c",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-183.json",
+      "evidenceHash": "03ee97747291b6e1eba441d553d45e82b55be4ef440be2075ad1b7b1d42566ca"
+    },
+    "post/数学者が登場する映画/index.ko.md": {
+      "source": "post/数学者が登場する映画/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "4b688cc1d3059679e8209875e88d167eabd3ba164d27bb8fb0d1a3df8fb61df8",
+      "translationHash": "2750b68c4e637d5f66a0e526a02aee02890208ac15c6672b9611b580f1156fa3",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-183.json",
+      "evidenceHash": "8c2509c244150c3cdbf427ef5e06493e5893c8fe9d31da6d9843e72ce4c7f2e3"
+    },
+    "post/数学者が登場する映画/index.pt.md": {
+      "source": "post/数学者が登場する映画/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "4b688cc1d3059679e8209875e88d167eabd3ba164d27bb8fb0d1a3df8fb61df8",
+      "translationHash": "727230b1c5e5425a3316c1434649912bf7e7eccafb90d04594d33afd4e6af88f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-183.json",
+      "evidenceHash": "f829657dbd5a89a363a51db8a94f983dde08de2e0fd25575586513939c174cf8"
+    },
+    "post/数学者が登場する映画/index.zh-tw.md": {
+      "source": "post/数学者が登場する映画/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "4b688cc1d3059679e8209875e88d167eabd3ba164d27bb8fb0d1a3df8fb61df8",
+      "translationHash": "161057989d376d15edff4a694a73ed3979d3dd27080f6f69dcada0d0851218cd",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-183.json",
+      "evidenceHash": "71444bad32df4e6cfcbb7e5387074545dfc61c1c11325692854fb62cda29c77b"
+    },
+    "post/数学者が登場する映画/index.hi.md": {
+      "source": "post/数学者が登場する映画/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "4b688cc1d3059679e8209875e88d167eabd3ba164d27bb8fb0d1a3df8fb61df8",
+      "translationHash": "746807c3ce2971c2c3532cbfe7324562dbcfe44b9c2ade38361cd44d4ef6f89f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-183.json",
+      "evidenceHash": "5272d006272c8b25f6b4b257df34bdd5062fb488f9e0d679bc3d9cc0fe95021d"
+    },
+    "post/数学者が登場する映画/index.fr.md": {
+      "source": "post/数学者が登場する映画/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "4b688cc1d3059679e8209875e88d167eabd3ba164d27bb8fb0d1a3df8fb61df8",
+      "translationHash": "ee70acb78d29203d1c5ee87d043875ef4ffca5cfacd332b06bd36632c7024ac9",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-183.json",
+      "evidenceHash": "acb47e805ef38119f60049e291d8e7a1eee4e673e110bbf5394f0daac0873eb6"
+    },
+    "post/数学者が登場する映画/index.de.md": {
+      "source": "post/数学者が登場する映画/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "4b688cc1d3059679e8209875e88d167eabd3ba164d27bb8fb0d1a3df8fb61df8",
+      "translationHash": "3d3bf4892d021ed9a0ba1e8583109af5aea0c9f2abffb99660d24b47521fa1be",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-183.json",
+      "evidenceHash": "19faac001dd7d1311d6222b4a5280113ddc80d1596abc6297d502d173b25130e"
+    },
+    "post/数学者が登場する映画/index.ar.md": {
+      "source": "post/数学者が登場する映画/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "4b688cc1d3059679e8209875e88d167eabd3ba164d27bb8fb0d1a3df8fb61df8",
+      "translationHash": "a697dc6d7e436a7aa607964cf8a1b72ec75934439d51187c00bf2d2004433a02",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-183.json",
+      "evidenceHash": "c0dd3d12e1aba6ed7310c30078bd165b398a1a67c62ee26e3d1d45070b83821c"
+    },
+    "post/数学者が登場する映画/index.ru.md": {
+      "source": "post/数学者が登場する映画/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "4b688cc1d3059679e8209875e88d167eabd3ba164d27bb8fb0d1a3df8fb61df8",
+      "translationHash": "249d0ff07145c4e5b5235c684d8ead7e22829d009d6ce0f96a2e2169cf887e34",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-183.json",
+      "evidenceHash": "897218137b5d6df578d0562ba3932575d71f475f35b4359de10eaf8fb46e189d"
+    },
+    "post/数学者が登場する映画/index.id.md": {
+      "source": "post/数学者が登場する映画/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "4b688cc1d3059679e8209875e88d167eabd3ba164d27bb8fb0d1a3df8fb61df8",
+      "translationHash": "83a35e0ac75d977590553ae6665646608308ccd643041103f03a7a8c7607f43a",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-183.json",
+      "evidenceHash": "0507ceff145a0cfb0211c61112dc90da5f5daffb388ad3d4bc37b0b05da95420"
     }
   }
 }
