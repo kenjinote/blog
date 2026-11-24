@@ -17645,6 +17645,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-151.json",
       "evidenceHash": "bc263945e1f45d2fe0d56ec8e98ea8c43910deea0bdae2f3631e0ee30e21b0c6"
+    },
+    "post/TeamViewerで簡単リモート接続/index.en.md": {
+      "source": "post/TeamViewerで簡単リモート接続/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "4ec8992c3183fce16b1ee18ccda68e424cea63dc16ede6a467a85e58e1538d30",
+      "translationHash": "89b52f71e51d779003a79267e007e05ed5c4c63d860985a7c3578e8d4e17bdf6",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-152.json",
+      "evidenceHash": "6a149762a34bd2989eadf02e6a14916c991500d5c237581c48bce31b7567e7f7"
+    },
+    "post/TeamViewerで簡単リモート接続/index.zh-cn.md": {
+      "source": "post/TeamViewerで簡単リモート接続/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "4ec8992c3183fce16b1ee18ccda68e424cea63dc16ede6a467a85e58e1538d30",
+      "translationHash": "86708afa5b19ca94a1a9c4ae8128768fd6e9540942197c9498ee7f7e71c1531e",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-152.json",
+      "evidenceHash": "8048587beb4a3b6264c13516a6d03e0ffaf65c85927d70c520e5417e1b2924b6"
+    },
+    "post/TeamViewerで簡単リモート接続/index.es.md": {
+      "source": "post/TeamViewerで簡単リモート接続/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "4ec8992c3183fce16b1ee18ccda68e424cea63dc16ede6a467a85e58e1538d30",
+      "translationHash": "ba2e9dc0c1bec8fbfd01e5faa1a66adfe950097334e8176f5dd13eae3ed702d7",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-152.json",
+      "evidenceHash": "b13664026a587e1dcea9396d00ff20df21cc97e8bb3a996c7a57a68422394ba1"
+    },
+    "post/TeamViewerで簡単リモート接続/index.ko.md": {
+      "source": "post/TeamViewerで簡単リモート接続/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "4ec8992c3183fce16b1ee18ccda68e424cea63dc16ede6a467a85e58e1538d30",
+      "translationHash": "aeffb2d787bbaa457bf8d8cf03bbde6d9df3cd592df1717f4f19fab924cefd9a",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-152.json",
+      "evidenceHash": "b1bed5cbaf02d600b7913f808745a6da2c367a7c590171954bec2e6339fbe117"
+    },
+    "post/TeamViewerで簡単リモート接続/index.pt.md": {
+      "source": "post/TeamViewerで簡単リモート接続/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "4ec8992c3183fce16b1ee18ccda68e424cea63dc16ede6a467a85e58e1538d30",
+      "translationHash": "6e6f39142fc4c80181af506829398128c982fbe543383b9a20095beeee5e4ceb",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-152.json",
+      "evidenceHash": "10890053bb48598a438e9a50bf3bf71c1d4e31570185f23b3eeaf0311da7313c"
+    },
+    "post/TeamViewerで簡単リモート接続/index.zh-tw.md": {
+      "source": "post/TeamViewerで簡単リモート接続/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "4ec8992c3183fce16b1ee18ccda68e424cea63dc16ede6a467a85e58e1538d30",
+      "translationHash": "d544f154e54b66066a79eff629c0477552ab94c507fe3f3afa707050a0e21820",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-152.json",
+      "evidenceHash": "4596f33317f671073af33a156627dea561a6b0d214e2d4f0627d08eeab6ecf48"
+    },
+    "post/TeamViewerで簡単リモート接続/index.hi.md": {
+      "source": "post/TeamViewerで簡単リモート接続/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "4ec8992c3183fce16b1ee18ccda68e424cea63dc16ede6a467a85e58e1538d30",
+      "translationHash": "d327834008c539eafbb15efc0bcb4709076ae57e93d4912bda98bc5dbeb02911",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-152.json",
+      "evidenceHash": "264d8fea71295121e555f61c96b59ad018b88616a1568ab4b15303915547662b"
+    },
+    "post/TeamViewerで簡単リモート接続/index.fr.md": {
+      "source": "post/TeamViewerで簡単リモート接続/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "4ec8992c3183fce16b1ee18ccda68e424cea63dc16ede6a467a85e58e1538d30",
+      "translationHash": "02c11a9be223ca14319154c2590f8e9625c0c5e640d665f9a224a86a4f0772cb",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-152.json",
+      "evidenceHash": "76f8062a49f506b47a53bb538c1d2da9c29923702a04491364698c126e5ec887"
+    },
+    "post/TeamViewerで簡単リモート接続/index.de.md": {
+      "source": "post/TeamViewerで簡単リモート接続/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "4ec8992c3183fce16b1ee18ccda68e424cea63dc16ede6a467a85e58e1538d30",
+      "translationHash": "3d9361f6666757a05afb8cef92c10310f04120862065c14c1544aff1cf7b0903",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-152.json",
+      "evidenceHash": "afbadde98a252f0de4c651fa6e0427c2715992c21de668154a4986ad211f58a3"
+    },
+    "post/TeamViewerで簡単リモート接続/index.ar.md": {
+      "source": "post/TeamViewerで簡単リモート接続/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "4ec8992c3183fce16b1ee18ccda68e424cea63dc16ede6a467a85e58e1538d30",
+      "translationHash": "c0e475df68293192c7ff392367d057d0dedfd4fd91f16cc05e3f4e999993328d",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-152.json",
+      "evidenceHash": "f9b784c7dfcfc918762891b2f267064f0f2485c2a697865aff671573513ddfd7"
+    },
+    "post/TeamViewerで簡単リモート接続/index.ru.md": {
+      "source": "post/TeamViewerで簡単リモート接続/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "4ec8992c3183fce16b1ee18ccda68e424cea63dc16ede6a467a85e58e1538d30",
+      "translationHash": "4ff71ae7b86c6f658fb6a61713eafbc58201e5b40f174545e7ba242403ad0838",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-152.json",
+      "evidenceHash": "24a893cdc3f339e7e76ad015f6e745e76b924028f53765fea38953239fcd6481"
+    },
+    "post/TeamViewerで簡単リモート接続/index.id.md": {
+      "source": "post/TeamViewerで簡単リモート接続/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "4ec8992c3183fce16b1ee18ccda68e424cea63dc16ede6a467a85e58e1538d30",
+      "translationHash": "ba67043719c0bd840caf67ebe2166479ea3c14d76fc3eb8bf597d55c3cca9849",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-152.json",
+      "evidenceHash": "28c5bfa5056541fb10c5d86fc2a06b25b18f0c9dec92a2b61c87fab25ec8789a"
     }
   }
 }

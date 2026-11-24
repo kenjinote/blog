@@ -1,28 +1,30 @@
 ---
 title: '[For Beginners] How to Easily Make a Remote Desktop Connection with TeamViewer'
-date: "2026-09-24T19:44:38+09:00"
-slug: "TeamViewerで簡単Remote Connection"
 date: 2023-01-13T01:45:00+09:00
+lastmod: "2026-11-24T00:00:00+09:00"
+slug: "TeamViewerで簡単Remote Connection"
 tags: ["TeamViewer", "Command", "Remote Connection"]
 draft: false
 image: "img.webp"
 categories: ["it-technology"]
 description: 'Explains how to easily make a remote desktop connection using TeamViewer. Also introduces handy tips to automate and streamline connections with shortcuts by specifying IDs and passwords from the command line.'
 ---
+## Command-line connection on Windows
 
-# Easy Remote Connection with TeamViewer
+TeamViewer’s official Windows command-line documentation says the full version can be started from Command Prompt, a script, or a shortcut.
 
-You can easily establish a remote desktop connection using TeamViewer.
+This example starts `TeamViewer.exe` from its installation folder. Put the partner ID in `<ID>` and the password in `<Password>`. If TeamViewer is installed elsewhere, replace the executable path.
 
-Start TeamViewer on both the remote and local computers, and enter the remote computer's ID and password on the local computer to connect remotely.
-
-To connect remotely via the command line, do the following:
-
+```cmd
+"%ProgramFiles%\TeamViewer\TeamViewer.exe" -i <ID> -p <Password>
 ```
-%ProgramFiles%\TeamViewer\TeamViewer.exe -i <ID> -P <Password>
-```
-Enter the remote computer's ID in `<ID>` and the remote computer's password in `<Password>`.
 
-Creating a shortcut file with the above command is convenient because it allows you to skip entering the ID and password.
+If you omit `-p`, TeamViewer uses Easy Access when available; otherwise it prompts for the password.
 
-Reference site: [Command line parameters](https://community.teamviewer.com/English/kb/articles/34447-command-line-parameters)
+A shortcut that includes a password stores that password in readable form. Do not share it or place it where other people can read it. For recurring unattended access, consider assigning the device to your account and using Easy Access, an allowlist, and multi-factor authentication instead of saving a password.
+
+## Official references
+
+- [TeamViewer command-line parameters](https://www.teamviewer.com/en-us/global/support/knowledge-base/teamviewer-remote/for-developers/command-line-parameters/)
+- [Best practices for secure unattended access](https://www.teamviewer.com/en-us/global/support/knowledge-base/teamviewer-classic/security/best-practices/best-practices-for-secure-unattended-access/)
+- [TeamViewer security statement](https://www.teamviewer.com/en-us/global/support/knowledge-base/teamviewer-remote/security/security-statement/)

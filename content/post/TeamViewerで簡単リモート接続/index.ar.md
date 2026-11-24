@@ -1,29 +1,30 @@
 ---
 title: '【للمبتدئين】كيفية الاتصال بسهولة بسطح المكتب البعيد باستخدام TeamViewer'
-date: "2026-09-24T19:44:38+09:00"
-slug: "TeamViewerで簡単اتصال عن بعد"
 date: 2023-01-13T01:45:00+09:00
+lastmod: "2026-11-24T00:00:00+09:00"
+slug: "TeamViewerで簡単اتصال عن بعد"
 tags: ["TeamViewer", "أوامر", "اتصال عن بعد"]
 draft: false
 image: "img.webp"
 categories: ["it-technology"]
 description: 'نشرح كيفية إجراء اتصال بسطح المكتب البعيد بسهولة باستخدام TeamViewer. نقدم أيضاً حيلة مفيدة لأتمتة وتخطي خطوات الاتصال عن طريق تحديد المعرف (ID) وكلمة المرور من سطر الأوامر (Command Line) باستخدام اختصار.'
 ---
+## الاتصال عبر سطر الأوامر في Windows
 
-# اتصال عن بعد سهل باستخدام TeamViewer
+وفقًا لوثائق TeamViewer الرسمية لسطر الأوامر في Windows، يمكن تشغيل الإصدار الكامل من خلال موجه الأوامر أو برنامج نصي أو اختصار.
 
-يجعل TeamViewer من السهل الاتصال بسطح المكتب عن بعد.
+يشغّل هذا المثال `TeamViewer.exe` من مجلد التثبيت. أدخل معرّف الشريك في `<ID>` وكلمة المرور في `<Password>`. إذا كان TeamViewer مثبتًا في مكان آخر، فاستبدل مسار الملف التنفيذي.
 
-قم بتشغيل TeamViewer على كل من الكمبيوتر المحلي والكمبيوتر البعيد،
-وأدخل المعرف (ID) وكلمة المرور (Password) الخاصة بالكمبيوتر البعيد على الكمبيوتر المحلي لإجراء الاتصال.
-
-للاتصال عن بعد باستخدام سطر الأوامر، استخدم ما يلي:
-
+```cmd
+"%ProgramFiles%\TeamViewer\TeamViewer.exe" -i <ID> -p <Password>
 ```
-%ProgramFiles%\TeamViewer\TeamViewer.exe -i <ID> -P <Password>
-```
-أدخل معرف الكمبيوتر البعيد في `<ID>`، وكلمة المرور الخاصة به في `<Password>`.
 
-من المفيد إنشاء ملف اختصار باستخدام الأمر أعلاه لتخطي إدخال المعرف وكلمة المرور في كل مرة.
+عند حذف `-p`، يستخدم TeamViewer ميزة Easy Access إذا كانت متاحة؛ وإلا فسيطلب كلمة المرور.
 
-الموقع المرجعي: [Command line parameters](https://community.teamviewer.com/English/kb/articles/34447-command-line-parameters)
+يحفظ الاختصار الذي يتضمن كلمة مرور هذه الكلمة بصيغة يمكن قراءتها. لا تشاركه ولا تضعه في مكان يستطيع الآخرون قراءته. للوصول المتكرر دون مراقبة، فكّر في ربط الجهاز بحسابك واستخدام Easy Access وقائمة السماح والمصادقة متعددة العوامل بدلًا من حفظ كلمة مرور.
+
+## مراجع رسمية
+
+- [TeamViewer command-line parameters](https://www.teamviewer.com/en-us/global/support/knowledge-base/teamviewer-remote/for-developers/command-line-parameters/)
+- [Best practices for secure unattended access](https://www.teamviewer.com/en-us/global/support/knowledge-base/teamviewer-classic/security/best-practices/best-practices-for-secure-unattended-access/)
+- [TeamViewer security statement](https://www.teamviewer.com/en-us/global/support/knowledge-base/teamviewer-remote/security/security-statement/)
