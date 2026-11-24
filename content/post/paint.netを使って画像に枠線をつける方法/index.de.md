@@ -1,14 +1,15 @@
 ---
 title: 'Einfache Methode und Schritte zum Hinzufügen von Rändern zu Bildern mit paint.net'
-date: "2026-09-24T19:44:38+09:00"
 slug: "paint.netを使ってBildにRahmenlinieをつける方法"
-date: 2023-04-11T14:31:59+09:00
 tags: ["paint.net", "Rahmen", "Bild"]
 draft: false
 image: "img_3.webp"
 categories: ["ai-technology"]
 description: 'Erklärt, wie man mit der Bildbearbeitungssoftware paint.net Rahmen zu Bildern hinzufügt. Stellt für Anfänger vor, wie man Farben mit der Sekundärfarbe festlegt und die Leinwandgröße ändert, um Rahmen zu erstellen. Eine praktische Technik, die nützlich ist, wenn man Bilder für Blogs oder Präsentationen dekorieren möchte.'
+date: "2023-04-11T14:31:59+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
+
 
 Hier wird gezeigt, wie man mit paint.net einen Rahmen zu einem Bild hinzufügt.
 
@@ -25,7 +26,8 @@ Um es auf Schwarz zu setzen, klicken Sie auf ![img_1.png](img_1.webp).
 
 #### 3. Wählen Sie Menü > Bild > Leinwandgröße ändern
 
-![img_2.png](img_2.webp)
+Seit paint.net 5.1.1 enthält der Dialog Leinwandgröße die Option Fill. Seit 5.1 sind neue Bereiche der Hintergrundebene transparent. Die Sekundärfarbe im Farbenfenster festzulegen reicht daher nicht. Wählen Sie in Fill ausdrücklich Secondary Color.
+
 
 Erhöhen Sie die Breite und Höhe um jeweils 2 Pixel. Eine Erhöhung um 2 Pixel ergibt einen Rahmen von 1 Pixel.
 Wenn Sie einen Rahmen von 5 Pixeln möchten, erhöhen Sie die Breite und Höhe um jeweils 10 Pixel.
@@ -35,3 +37,9 @@ Wählen Sie "Mitte" für den Anker und klicken Sie auf OK.
 #### 4. Ein Rahmen wird dem Bild hinzugefügt, speichern Sie das Bild.
 
 Das ist alles.
+
+## Referenzen
+
+- [paint.net documentation: Image menu and Canvas Size](https://paint.net/doc/latest/ImageMenu.html)
+- [paint.net documentation: Colors window](https://paint.net/doc/latest/ColorsWindow.html)
+- [paint.net roadmap and change log](https://paint.net/roadmap.html)

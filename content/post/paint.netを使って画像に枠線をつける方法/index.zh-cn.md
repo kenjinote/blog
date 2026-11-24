@@ -1,14 +1,15 @@
 ---
 title: '在paint.net中为图片添加边框的简单方法与步骤'
-date: "2026-09-24T19:44:38+09:00"
 slug: "paint.netを使って图像に边框线をつける方法"
-date: 2023-04-11T14:31:59+09:00
 tags: ["paint.net", "边框", "图片"]
 draft: false
 image: "img_3.webp"
 categories: ["ai-technology"]
 description: '讲解如何使用图片编辑软件paint.net为图片添加边框。面向初学者介绍利用次要颜色指定颜色及通过更改画布尺寸来制作边框的步骤。这是在编写博客或制作资料时非常实用的图片装饰技巧。'
+date: "2023-04-11T14:31:59+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
+
 
 介绍一下如何使用paint.net给图片添加边框。
 
@@ -25,7 +26,8 @@ description: '讲解如何使用图片编辑软件paint.net为图片添加边框
 
 #### 3. 选择菜单＞图像＞调整画布大小
 
-![img_2.png](img_2.webp)
+paint.net 5.1.1 及更高版本的画布大小对话框提供了 Fill（填充）选项。从 5.1 开始，背景图层新增区域默认为透明，因此仅在颜色窗口中设置次要颜色并不会自动绘制边框。请在 Fill 中明确选择 Secondary Color（次要颜色）。
+
 
 将宽度和高度各增加2像素。增加2像素的话，边框将为1像素。
 如果想让边框变为5像素，则将宽度和高度各增加10像素。
@@ -35,3 +37,9 @@ description: '讲解如何使用图片编辑软件paint.net为图片添加边框
 #### 4. 图片上就会添加边框，然后保存图片。
 
 以上。
+
+## 参考资料
+
+- [paint.net documentation: Image menu and Canvas Size](https://paint.net/doc/latest/ImageMenu.html)
+- [paint.net documentation: Colors window](https://paint.net/doc/latest/ColorsWindow.html)
+- [paint.net roadmap and change log](https://paint.net/roadmap.html)

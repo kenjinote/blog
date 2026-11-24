@@ -1,18 +1,15 @@
 ---
-
-
-
-
 title: 'paint.net에서 이미지에 테두리를 추가하는 간단한 방법 및 절차'
-date: "2026-09-24T19:44:38+09:00"
 slug: "paint.netを使って이미지に테두리をつける方法"
-date: 2023-04-11T14:31:59+09:00
 tags: ["paint.net", "테두리", "이미지"]
 draft: false
 image: "img_3.webp"
 categories: ["ai-technology"]
 description: '이미지 편집 소프트웨어 paint.net을 사용하여 이미지에 테두리를 추가하는 방법을 설명합니다. 보조 색상을 통한 색상 지정 및 캔버스 크기 변경을 활용한 테두리 생성 절차를 초보자용으로 소개합니다. 블로그나 자료 작성 시 이미지를 장식하고 싶을 때 바로 활용할 수 있는 편리한 기술입니다.'
+date: "2023-04-11T14:31:59+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
+
 
 
 
@@ -33,7 +30,8 @@ paint.net을 사용하여 이미지에 테두리를 넣는 방법을 소개합�
 
 #### 3. 메뉴＞이미지＞캔버스 크기 변경을 선택
 
-![img_2.png](img_2.webp)
+paint.net 5.1.1부터 캔버스 크기 대화상자에 Fill 옵션이 추가되었습니다. 5.1부터 배경 레이어의 새 영역은 투명하므로 색상 창에서 보조 색상을 설정하는 것만으로 테두리 색이 지정되지 않습니다. Fill에서 Secondary Color를 명시적으로 선택하세요.
+
 
 너비와 높이를 각각 2픽셀씩 늘립니다. 2픽셀을 늘리면 테두리가 1픽셀이 됩니다.
 테두리를 5픽셀로 설정하고 싶은 경우, 너비와 높이를 각각 10픽셀씩 늘립니다.
@@ -43,3 +41,9 @@ paint.net을 사용하여 이미지에 테두리를 넣는 방법을 소개합�
 #### 4. 이미지에 테두리가 추가되면, 이미지를 저장합니다.
 
 이상.
+
+## 참고 자료
+
+- [paint.net documentation: Image menu and Canvas Size](https://paint.net/doc/latest/ImageMenu.html)
+- [paint.net documentation: Colors window](https://paint.net/doc/latest/ColorsWindow.html)
+- [paint.net roadmap and change log](https://paint.net/roadmap.html)

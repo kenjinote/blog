@@ -1,0 +1,442 @@
+{
+  "version": 1,
+  "batch": 159,
+  "article": "Add a Border to an Image in paint.net",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "3bc3c3e5f65eed5cafa70a34ac526e7b80bf2fe3b89a755ad4fe34d3f199d64c",
+  "sources": [
+    "https://paint.net/doc/latest/ImageMenu.html",
+    "https://paint.net/doc/latest/ColorsWindow.html",
+    "https://paint.net/roadmap.html"
+  ],
+  "scope": "Compared the complete Japanese article and twelve translations, canvas-size operation, exact border arithmetic, paint.net 5.1/5.1.1 behavior change, screenshots, metadata, and official documentation.",
+  "findings": [
+    "Removed duplicate future dates, retained 2023-04-11, and set lastmod to 2026-11-24.",
+    "Corrected the assumption that secondary color automatically fills new canvas areas: paint.net 5.1 changed Background-layer expansion to transparent, and 5.1.1 added explicit Fill selection.",
+    "Added Fill > Secondary Color to all languages and removed the obsolete Canvas Size screenshot.",
+    "Confirmed centered border arithmetic: add twice the desired thickness to both width and height."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/paint.netを使って画像に枠線をつける方法/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/paint.netを使って画像に枠線をつける方法/index.md",
+      "sourceHash": "3bc3c3e5f65eed5cafa70a34ac526e7b80bf2fe3b89a755ad4fe34d3f199d64c",
+      "translationHash": "ca58957e21c3eef861bd6f68d4e82b176ee88fbd55c1f25a69443057fd0599d9",
+      "summary": "Compared the complete translation with the Japanese source and current paint.net documentation; added the explicit Fill > Secondary Color step and confirmed centered border math.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full instructions, centered canvas expansion, border-width arithmetic, fill color, and the version change that invalidates the old implicit-color assumption."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Verified Canvas Size, Anchor, Fill, Secondary Color, Background layer, and Colors window against current paint.net documentation."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Centered expansion by 2t pixels in both dimensions yields a t-pixel border on each side; 2 pixels gives 1 pixel and 10 gives 5."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Canvas Size and Colors documentation and the paint.net roadmap/change log; removed the obsolete Canvas Size screenshot lacking the Fill control and checked the remaining color images."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Menu labels may differ by UI language and version; Fill and Secondary Color identify the required controls."
+      ]
+    },
+    "post/paint.netを使って画像に枠線をつける方法/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/paint.netを使って画像に枠線をつける方法/index.md",
+      "sourceHash": "3bc3c3e5f65eed5cafa70a34ac526e7b80bf2fe3b89a755ad4fe34d3f199d64c",
+      "translationHash": "dbb0df3562e74ab4e4a78ddd458b0c48a966f8c9c934c095d30ea3698418f04f",
+      "summary": "Compared the complete translation with the Japanese source and current paint.net documentation; added the explicit Fill > Secondary Color step and confirmed centered border math.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full instructions, centered canvas expansion, border-width arithmetic, fill color, and the version change that invalidates the old implicit-color assumption."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Verified Canvas Size, Anchor, Fill, Secondary Color, Background layer, and Colors window against current paint.net documentation."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Centered expansion by 2t pixels in both dimensions yields a t-pixel border on each side; 2 pixels gives 1 pixel and 10 gives 5."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Canvas Size and Colors documentation and the paint.net roadmap/change log; removed the obsolete Canvas Size screenshot lacking the Fill control and checked the remaining color images."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Menu labels may differ by UI language and version; Fill and Secondary Color identify the required controls."
+      ]
+    },
+    "post/paint.netを使って画像に枠線をつける方法/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/paint.netを使って画像に枠線をつける方法/index.md",
+      "sourceHash": "3bc3c3e5f65eed5cafa70a34ac526e7b80bf2fe3b89a755ad4fe34d3f199d64c",
+      "translationHash": "dcf21e313d1f827017f5724585af524945d9128eaaf05136e228db2a879c941d",
+      "summary": "Compared the complete translation with the Japanese source and current paint.net documentation; added the explicit Fill > Secondary Color step and confirmed centered border math.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full instructions, centered canvas expansion, border-width arithmetic, fill color, and the version change that invalidates the old implicit-color assumption."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Verified Canvas Size, Anchor, Fill, Secondary Color, Background layer, and Colors window against current paint.net documentation."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Centered expansion by 2t pixels in both dimensions yields a t-pixel border on each side; 2 pixels gives 1 pixel and 10 gives 5."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Canvas Size and Colors documentation and the paint.net roadmap/change log; removed the obsolete Canvas Size screenshot lacking the Fill control and checked the remaining color images."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Menu labels may differ by UI language and version; Fill and Secondary Color identify the required controls."
+      ]
+    },
+    "post/paint.netを使って画像に枠線をつける方法/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/paint.netを使って画像に枠線をつける方法/index.md",
+      "sourceHash": "3bc3c3e5f65eed5cafa70a34ac526e7b80bf2fe3b89a755ad4fe34d3f199d64c",
+      "translationHash": "97c1142bb4fcc990ad914c31cc65834af7fce22e0f5f0ee67c7d71f1dd00406d",
+      "summary": "Compared the complete translation with the Japanese source and current paint.net documentation; added the explicit Fill > Secondary Color step and confirmed centered border math.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full instructions, centered canvas expansion, border-width arithmetic, fill color, and the version change that invalidates the old implicit-color assumption."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Verified Canvas Size, Anchor, Fill, Secondary Color, Background layer, and Colors window against current paint.net documentation."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Centered expansion by 2t pixels in both dimensions yields a t-pixel border on each side; 2 pixels gives 1 pixel and 10 gives 5."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Canvas Size and Colors documentation and the paint.net roadmap/change log; removed the obsolete Canvas Size screenshot lacking the Fill control and checked the remaining color images."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Menu labels may differ by UI language and version; Fill and Secondary Color identify the required controls."
+      ]
+    },
+    "post/paint.netを使って画像に枠線をつける方法/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/paint.netを使って画像に枠線をつける方法/index.md",
+      "sourceHash": "3bc3c3e5f65eed5cafa70a34ac526e7b80bf2fe3b89a755ad4fe34d3f199d64c",
+      "translationHash": "48aec133e157ee775c5d24850fb1c1316c5d0702505e0fb8a7bd100ad34251bb",
+      "summary": "Compared the complete translation with the Japanese source and current paint.net documentation; added the explicit Fill > Secondary Color step and confirmed centered border math.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full instructions, centered canvas expansion, border-width arithmetic, fill color, and the version change that invalidates the old implicit-color assumption."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Verified Canvas Size, Anchor, Fill, Secondary Color, Background layer, and Colors window against current paint.net documentation."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Centered expansion by 2t pixels in both dimensions yields a t-pixel border on each side; 2 pixels gives 1 pixel and 10 gives 5."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Canvas Size and Colors documentation and the paint.net roadmap/change log; removed the obsolete Canvas Size screenshot lacking the Fill control and checked the remaining color images."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Menu labels may differ by UI language and version; Fill and Secondary Color identify the required controls."
+      ]
+    },
+    "post/paint.netを使って画像に枠線をつける方法/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/paint.netを使って画像に枠線をつける方法/index.md",
+      "sourceHash": "3bc3c3e5f65eed5cafa70a34ac526e7b80bf2fe3b89a755ad4fe34d3f199d64c",
+      "translationHash": "05d2a6c9a1d414b35e427caab9895dfc2fc9197769737ebe58cf26f7536ef3e4",
+      "summary": "Compared the complete translation with the Japanese source and current paint.net documentation; added the explicit Fill > Secondary Color step and confirmed centered border math.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full instructions, centered canvas expansion, border-width arithmetic, fill color, and the version change that invalidates the old implicit-color assumption."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Verified Canvas Size, Anchor, Fill, Secondary Color, Background layer, and Colors window against current paint.net documentation."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Centered expansion by 2t pixels in both dimensions yields a t-pixel border on each side; 2 pixels gives 1 pixel and 10 gives 5."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Canvas Size and Colors documentation and the paint.net roadmap/change log; removed the obsolete Canvas Size screenshot lacking the Fill control and checked the remaining color images."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Menu labels may differ by UI language and version; Fill and Secondary Color identify the required controls."
+      ]
+    },
+    "post/paint.netを使って画像に枠線をつける方法/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/paint.netを使って画像に枠線をつける方法/index.md",
+      "sourceHash": "3bc3c3e5f65eed5cafa70a34ac526e7b80bf2fe3b89a755ad4fe34d3f199d64c",
+      "translationHash": "6e5b5576d422c626c1047b3e76a5ed72dd9c63820e65fd2b1a027cfd2c44ea21",
+      "summary": "Compared the complete translation with the Japanese source and current paint.net documentation; added the explicit Fill > Secondary Color step and confirmed centered border math.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full instructions, centered canvas expansion, border-width arithmetic, fill color, and the version change that invalidates the old implicit-color assumption."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Verified Canvas Size, Anchor, Fill, Secondary Color, Background layer, and Colors window against current paint.net documentation."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Centered expansion by 2t pixels in both dimensions yields a t-pixel border on each side; 2 pixels gives 1 pixel and 10 gives 5."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Canvas Size and Colors documentation and the paint.net roadmap/change log; removed the obsolete Canvas Size screenshot lacking the Fill control and checked the remaining color images."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Menu labels may differ by UI language and version; Fill and Secondary Color identify the required controls."
+      ]
+    },
+    "post/paint.netを使って画像に枠線をつける方法/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/paint.netを使って画像に枠線をつける方法/index.md",
+      "sourceHash": "3bc3c3e5f65eed5cafa70a34ac526e7b80bf2fe3b89a755ad4fe34d3f199d64c",
+      "translationHash": "cdb045a1d037cab41fac80a99047babe57b6c3e0557ab1d3237a7d8006af34a7",
+      "summary": "Compared the complete translation with the Japanese source and current paint.net documentation; added the explicit Fill > Secondary Color step and confirmed centered border math.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full instructions, centered canvas expansion, border-width arithmetic, fill color, and the version change that invalidates the old implicit-color assumption."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Verified Canvas Size, Anchor, Fill, Secondary Color, Background layer, and Colors window against current paint.net documentation."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Centered expansion by 2t pixels in both dimensions yields a t-pixel border on each side; 2 pixels gives 1 pixel and 10 gives 5."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Canvas Size and Colors documentation and the paint.net roadmap/change log; removed the obsolete Canvas Size screenshot lacking the Fill control and checked the remaining color images."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Menu labels may differ by UI language and version; Fill and Secondary Color identify the required controls."
+      ]
+    },
+    "post/paint.netを使って画像に枠線をつける方法/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/paint.netを使って画像に枠線をつける方法/index.md",
+      "sourceHash": "3bc3c3e5f65eed5cafa70a34ac526e7b80bf2fe3b89a755ad4fe34d3f199d64c",
+      "translationHash": "00ca9d9cc97b3c1379c1784e58629a0985253aaa4c66d16b07bb305513a228aa",
+      "summary": "Compared the complete translation with the Japanese source and current paint.net documentation; added the explicit Fill > Secondary Color step and confirmed centered border math.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full instructions, centered canvas expansion, border-width arithmetic, fill color, and the version change that invalidates the old implicit-color assumption."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Verified Canvas Size, Anchor, Fill, Secondary Color, Background layer, and Colors window against current paint.net documentation."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Centered expansion by 2t pixels in both dimensions yields a t-pixel border on each side; 2 pixels gives 1 pixel and 10 gives 5."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Canvas Size and Colors documentation and the paint.net roadmap/change log; removed the obsolete Canvas Size screenshot lacking the Fill control and checked the remaining color images."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Menu labels may differ by UI language and version; Fill and Secondary Color identify the required controls."
+      ]
+    },
+    "post/paint.netを使って画像に枠線をつける方法/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/paint.netを使って画像に枠線をつける方法/index.md",
+      "sourceHash": "3bc3c3e5f65eed5cafa70a34ac526e7b80bf2fe3b89a755ad4fe34d3f199d64c",
+      "translationHash": "2cf56124059663f72b8ea2b5cbd8882347d115d306b981cadbadd81019605677",
+      "summary": "Compared the complete translation with the Japanese source and current paint.net documentation; added the explicit Fill > Secondary Color step and confirmed centered border math.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full instructions, centered canvas expansion, border-width arithmetic, fill color, and the version change that invalidates the old implicit-color assumption."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Verified Canvas Size, Anchor, Fill, Secondary Color, Background layer, and Colors window against current paint.net documentation."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Centered expansion by 2t pixels in both dimensions yields a t-pixel border on each side; 2 pixels gives 1 pixel and 10 gives 5."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Canvas Size and Colors documentation and the paint.net roadmap/change log; removed the obsolete Canvas Size screenshot lacking the Fill control and checked the remaining color images."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Menu labels may differ by UI language and version; Fill and Secondary Color identify the required controls."
+      ]
+    },
+    "post/paint.netを使って画像に枠線をつける方法/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/paint.netを使って画像に枠線をつける方法/index.md",
+      "sourceHash": "3bc3c3e5f65eed5cafa70a34ac526e7b80bf2fe3b89a755ad4fe34d3f199d64c",
+      "translationHash": "18e07de6a29df3031767f8a6dfbf9613e6dbfce323a091a839b62050cec491eb",
+      "summary": "Compared the complete translation with the Japanese source and current paint.net documentation; added the explicit Fill > Secondary Color step and confirmed centered border math.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full instructions, centered canvas expansion, border-width arithmetic, fill color, and the version change that invalidates the old implicit-color assumption."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Verified Canvas Size, Anchor, Fill, Secondary Color, Background layer, and Colors window against current paint.net documentation."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Centered expansion by 2t pixels in both dimensions yields a t-pixel border on each side; 2 pixels gives 1 pixel and 10 gives 5."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Canvas Size and Colors documentation and the paint.net roadmap/change log; removed the obsolete Canvas Size screenshot lacking the Fill control and checked the remaining color images."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Menu labels may differ by UI language and version; Fill and Secondary Color identify the required controls."
+      ]
+    },
+    "post/paint.netを使って画像に枠線をつける方法/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/paint.netを使って画像に枠線をつける方法/index.md",
+      "sourceHash": "3bc3c3e5f65eed5cafa70a34ac526e7b80bf2fe3b89a755ad4fe34d3f199d64c",
+      "translationHash": "13a4236c7b7731c6bf07542f205b32fdc83b1d689ffd82c01bfd9fb9bb5f04eb",
+      "summary": "Compared the complete translation with the Japanese source and current paint.net documentation; added the explicit Fill > Secondary Color step and confirmed centered border math.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full instructions, centered canvas expansion, border-width arithmetic, fill color, and the version change that invalidates the old implicit-color assumption."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Verified Canvas Size, Anchor, Fill, Secondary Color, Background layer, and Colors window against current paint.net documentation."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Centered expansion by 2t pixels in both dimensions yields a t-pixel border on each side; 2 pixels gives 1 pixel and 10 gives 5."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Canvas Size and Colors documentation and the paint.net roadmap/change log; removed the obsolete Canvas Size screenshot lacking the Fill control and checked the remaining color images."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Menu labels may differ by UI language and version; Fill and Secondary Color identify the required controls."
+      ]
+    }
+  }
+}

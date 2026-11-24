@@ -18485,6 +18485,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-158.json",
       "evidenceHash": "fd99400a4dc97340b3f096e832e2bbc99bc8870b35cfc9db684eb1921a5eff9c"
+    },
+    "post/paint.netを使って画像に枠線をつける方法/index.en.md": {
+      "source": "post/paint.netを使って画像に枠線をつける方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "3bc3c3e5f65eed5cafa70a34ac526e7b80bf2fe3b89a755ad4fe34d3f199d64c",
+      "translationHash": "ca58957e21c3eef861bd6f68d4e82b176ee88fbd55c1f25a69443057fd0599d9",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-159.json",
+      "evidenceHash": "606d0847a4d8257f4e882016b6ff28fab6aad70823d8ec0c8fd47afb6e3d0d1a"
+    },
+    "post/paint.netを使って画像に枠線をつける方法/index.zh-cn.md": {
+      "source": "post/paint.netを使って画像に枠線をつける方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "3bc3c3e5f65eed5cafa70a34ac526e7b80bf2fe3b89a755ad4fe34d3f199d64c",
+      "translationHash": "dbb0df3562e74ab4e4a78ddd458b0c48a966f8c9c934c095d30ea3698418f04f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-159.json",
+      "evidenceHash": "ea563c6dbede09a9af86f8566511b44a99d002714e754e619d3b49bfd705f367"
+    },
+    "post/paint.netを使って画像に枠線をつける方法/index.es.md": {
+      "source": "post/paint.netを使って画像に枠線をつける方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "3bc3c3e5f65eed5cafa70a34ac526e7b80bf2fe3b89a755ad4fe34d3f199d64c",
+      "translationHash": "dcf21e313d1f827017f5724585af524945d9128eaaf05136e228db2a879c941d",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-159.json",
+      "evidenceHash": "828fc1dd01eac711bbd486288c9b2e5d20b5131f38e7d6c0abe3f89c8333d606"
+    },
+    "post/paint.netを使って画像に枠線をつける方法/index.ko.md": {
+      "source": "post/paint.netを使って画像に枠線をつける方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "3bc3c3e5f65eed5cafa70a34ac526e7b80bf2fe3b89a755ad4fe34d3f199d64c",
+      "translationHash": "97c1142bb4fcc990ad914c31cc65834af7fce22e0f5f0ee67c7d71f1dd00406d",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-159.json",
+      "evidenceHash": "e6e09e352940479d1b7dff4d9704ecd3cf3ea396e668104faafa966e27e950ac"
+    },
+    "post/paint.netを使って画像に枠線をつける方法/index.pt.md": {
+      "source": "post/paint.netを使って画像に枠線をつける方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "3bc3c3e5f65eed5cafa70a34ac526e7b80bf2fe3b89a755ad4fe34d3f199d64c",
+      "translationHash": "48aec133e157ee775c5d24850fb1c1316c5d0702505e0fb8a7bd100ad34251bb",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-159.json",
+      "evidenceHash": "bb090474bd78d626844a7b443925fdf4a28f2bca30a3bfc9f85063005f6e862f"
+    },
+    "post/paint.netを使って画像に枠線をつける方法/index.zh-tw.md": {
+      "source": "post/paint.netを使って画像に枠線をつける方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "3bc3c3e5f65eed5cafa70a34ac526e7b80bf2fe3b89a755ad4fe34d3f199d64c",
+      "translationHash": "05d2a6c9a1d414b35e427caab9895dfc2fc9197769737ebe58cf26f7536ef3e4",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-159.json",
+      "evidenceHash": "04b563416f41e615dccbb12fe683bc819fe119f92efa8aa86f23cac77ac18a2e"
+    },
+    "post/paint.netを使って画像に枠線をつける方法/index.hi.md": {
+      "source": "post/paint.netを使って画像に枠線をつける方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "3bc3c3e5f65eed5cafa70a34ac526e7b80bf2fe3b89a755ad4fe34d3f199d64c",
+      "translationHash": "6e5b5576d422c626c1047b3e76a5ed72dd9c63820e65fd2b1a027cfd2c44ea21",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-159.json",
+      "evidenceHash": "3ccb0f40426f30bcf48faf5120a042c11373c4283fe13f28a737d0fea9cfac13"
+    },
+    "post/paint.netを使って画像に枠線をつける方法/index.fr.md": {
+      "source": "post/paint.netを使って画像に枠線をつける方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "3bc3c3e5f65eed5cafa70a34ac526e7b80bf2fe3b89a755ad4fe34d3f199d64c",
+      "translationHash": "cdb045a1d037cab41fac80a99047babe57b6c3e0557ab1d3237a7d8006af34a7",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-159.json",
+      "evidenceHash": "92cf3d547a229e98bcb521adf5ae62e96d56dcd19b85ef51beeb5872cf7fca74"
+    },
+    "post/paint.netを使って画像に枠線をつける方法/index.de.md": {
+      "source": "post/paint.netを使って画像に枠線をつける方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "3bc3c3e5f65eed5cafa70a34ac526e7b80bf2fe3b89a755ad4fe34d3f199d64c",
+      "translationHash": "00ca9d9cc97b3c1379c1784e58629a0985253aaa4c66d16b07bb305513a228aa",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-159.json",
+      "evidenceHash": "ce2c1280f1deded14cb98bc8ab5257839e6888af3cd9c4030e0eef60f200bbd4"
+    },
+    "post/paint.netを使って画像に枠線をつける方法/index.ar.md": {
+      "source": "post/paint.netを使って画像に枠線をつける方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "3bc3c3e5f65eed5cafa70a34ac526e7b80bf2fe3b89a755ad4fe34d3f199d64c",
+      "translationHash": "2cf56124059663f72b8ea2b5cbd8882347d115d306b981cadbadd81019605677",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-159.json",
+      "evidenceHash": "fd2e88db4d24ccb02d57b37a694af82886e82448b33d3fae81a94e895b09c9d7"
+    },
+    "post/paint.netを使って画像に枠線をつける方法/index.ru.md": {
+      "source": "post/paint.netを使って画像に枠線をつける方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "3bc3c3e5f65eed5cafa70a34ac526e7b80bf2fe3b89a755ad4fe34d3f199d64c",
+      "translationHash": "18e07de6a29df3031767f8a6dfbf9613e6dbfce323a091a839b62050cec491eb",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-159.json",
+      "evidenceHash": "f1ab18f9e355d3b719922b726bbb7925d55e632be9e3a87fbd6674863e17cb42"
+    },
+    "post/paint.netを使って画像に枠線をつける方法/index.id.md": {
+      "source": "post/paint.netを使って画像に枠線をつける方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "3bc3c3e5f65eed5cafa70a34ac526e7b80bf2fe3b89a755ad4fe34d3f199d64c",
+      "translationHash": "13a4236c7b7731c6bf07542f205b32fdc83b1d689ffd82c01bfd9fb9bb5f04eb",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-159.json",
+      "evidenceHash": "e600c906c2ae77cc1cb738b9b9ecb769215cbecc016f4c25c511b9039ca82b1a"
     }
   }
 }
