@@ -2,7 +2,7 @@
 title: '在Git中刪除本機與遠端標籤(tag)的方法'
 slug: "gitでタグを消す"
 date: 2022-10-02T02:18:04+09:00
-lastmod: "2026-11-24T00:00:00+09:00"
+lastmod: "2026-11-25T00:00:00+09:00"
 tags: ["git"]
 draft: false
 image: "img.webp"
@@ -20,6 +20,8 @@ description: '簡單解說如何在Git中刪除不再需要的標籤（tag）。
 2. 使用 `git push origin --delete v0.1.0` 刪除遠端存在的標籤。（在 `v0.1.0` 的部分指定您要刪除的標籤）
 
 從遠端刪除標籤不會自動刪除協作者本機中的副本。此操作會影響遠端儲存庫的使用者，請先確認目標。
+
+刪除標籤會移除該參照，但不會直接刪除它指向的提交，也不會改寫其他分支的歷史。不過，之後便無法透過該標籤名稱存取該提交。`origin`只是遠端名稱範例，請依實際情況替換。
 
 ## 參考資料
 [git-tag](https://git-scm.com/docs/git-tag), [git-ls-remote](https://git-scm.com/docs/git-ls-remote), [git-push](https://git-scm.com/docs/git-push)

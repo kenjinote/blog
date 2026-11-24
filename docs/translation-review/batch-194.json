@@ -1,0 +1,455 @@
+{
+  "version": 1,
+  "batch": 194,
+  "article": "Delete local and remote Git tags",
+  "reviewedAt": "2026-11-25",
+  "sourceHash": "c43ab8b53e07848927fe64a9d657978647c3fefed0ab4afd7bd3406b88642df4",
+  "sources": [
+    "https://git-scm.com/docs/git-tag",
+    "https://git-scm.com/docs/git-ls-remote",
+    "https://git-scm.com/docs/git-push"
+  ],
+  "scope": "Read the complete Japanese article and all twelve translations; checked Git command syntax, local versus remote effects, terminology, references, metadata and translated caution text.",
+  "findings": [
+    "Updated lastmod to the review date across all 13 editions while preserving the original publication date (2022-10-02).",
+    "Confirmed local deletion with `git tag -d <tag>`, remote listing with `git ls-remote --tags --refs <remote>`, and remote deletion with `git push <remote> --delete <tag>`.",
+    "Clarified that `origin` is an example remote name and must be replaced when the configured remote has another name.",
+    "Added that deleting a tag removes the tag reference but does not directly delete the commit or rewrite other branches; collaborators retain their local tag references until they remove them.",
+    "Checked the official Git manuals for tag listing, local deletion, and remote deletion."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/gitでタグを消す/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/gitでタグを消す/index.md",
+      "sourceHash": "c43ab8b53e07848927fe64a9d657978647c3fefed0ab4afd7bd3406b88642df4",
+      "translationHash": "45e3a72c2dcfe391e83dbbb40bb5bae71ea2720db094e211a749640211c089af",
+      "summary": "Compared the complete translation with the Japanese source and Git manuals; checked local/remote commands, collaborator effects, and clarified that deleting a tag removes its reference rather than directly deleting a commit or rewriting other branch history.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations; verified the local/remote deletion distinction and the warning that deleting a remote tag does not automatically delete collaborators’ local tag references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Git tag/ref, local and remote repository, remote name, collaborator, commit, and branch-history terminology across all editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified `git tag -d`, `git ls-remote --tags --refs`, and `git push <remote> --delete <tag>` syntax against the current Git manuals; confirmed `origin` is an example remote name."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the official Git manuals for tag, ls-remote, and push behavior; all three cited URLs resolve to canonical documentation pages."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Deleting a remote tag affects everyone using that remote; collaborators may retain local references.",
+        "The exact effects of later garbage collection depend on reachability and repository maintenance."
+      ]
+    },
+    "post/gitでタグを消す/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/gitでタグを消す/index.md",
+      "sourceHash": "c43ab8b53e07848927fe64a9d657978647c3fefed0ab4afd7bd3406b88642df4",
+      "translationHash": "7a84ee80e1355afd4b62fafe8dfe415ba6ea77b6f578e539143c714b4ecc8a6a",
+      "summary": "Compared the complete translation with the Japanese source and Git manuals; checked local/remote commands, collaborator effects, and clarified that deleting a tag removes its reference rather than directly deleting a commit or rewriting other branch history.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations; verified the local/remote deletion distinction and the warning that deleting a remote tag does not automatically delete collaborators’ local tag references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Git tag/ref, local and remote repository, remote name, collaborator, commit, and branch-history terminology across all editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified `git tag -d`, `git ls-remote --tags --refs`, and `git push <remote> --delete <tag>` syntax against the current Git manuals; confirmed `origin` is an example remote name."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the official Git manuals for tag, ls-remote, and push behavior; all three cited URLs resolve to canonical documentation pages."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Deleting a remote tag affects everyone using that remote; collaborators may retain local references.",
+        "The exact effects of later garbage collection depend on reachability and repository maintenance."
+      ]
+    },
+    "post/gitでタグを消す/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/gitでタグを消す/index.md",
+      "sourceHash": "c43ab8b53e07848927fe64a9d657978647c3fefed0ab4afd7bd3406b88642df4",
+      "translationHash": "39ed843361b7d7cb9eb2f6be6f3a0a9b603ed947917f74c42a5001d62b3bf59f",
+      "summary": "Compared the complete translation with the Japanese source and Git manuals; checked local/remote commands, collaborator effects, and clarified that deleting a tag removes its reference rather than directly deleting a commit or rewriting other branch history.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations; verified the local/remote deletion distinction and the warning that deleting a remote tag does not automatically delete collaborators’ local tag references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Git tag/ref, local and remote repository, remote name, collaborator, commit, and branch-history terminology across all editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified `git tag -d`, `git ls-remote --tags --refs`, and `git push <remote> --delete <tag>` syntax against the current Git manuals; confirmed `origin` is an example remote name."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the official Git manuals for tag, ls-remote, and push behavior; all three cited URLs resolve to canonical documentation pages."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Deleting a remote tag affects everyone using that remote; collaborators may retain local references.",
+        "The exact effects of later garbage collection depend on reachability and repository maintenance."
+      ]
+    },
+    "post/gitでタグを消す/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/gitでタグを消す/index.md",
+      "sourceHash": "c43ab8b53e07848927fe64a9d657978647c3fefed0ab4afd7bd3406b88642df4",
+      "translationHash": "d61085780c76875a02073f0b0ee9f4acbdd6d0e499ddf0ceda569abe11107e2a",
+      "summary": "Compared the complete translation with the Japanese source and Git manuals; checked local/remote commands, collaborator effects, and clarified that deleting a tag removes its reference rather than directly deleting a commit or rewriting other branch history.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations; verified the local/remote deletion distinction and the warning that deleting a remote tag does not automatically delete collaborators’ local tag references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Git tag/ref, local and remote repository, remote name, collaborator, commit, and branch-history terminology across all editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified `git tag -d`, `git ls-remote --tags --refs`, and `git push <remote> --delete <tag>` syntax against the current Git manuals; confirmed `origin` is an example remote name."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the official Git manuals for tag, ls-remote, and push behavior; all three cited URLs resolve to canonical documentation pages."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Deleting a remote tag affects everyone using that remote; collaborators may retain local references.",
+        "The exact effects of later garbage collection depend on reachability and repository maintenance."
+      ]
+    },
+    "post/gitでタグを消す/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/gitでタグを消す/index.md",
+      "sourceHash": "c43ab8b53e07848927fe64a9d657978647c3fefed0ab4afd7bd3406b88642df4",
+      "translationHash": "80b7b943d50cb527cf09c39ca214c33a4d48c58482238b2739dfade84528d3df",
+      "summary": "Compared the complete translation with the Japanese source and Git manuals; checked local/remote commands, collaborator effects, and clarified that deleting a tag removes its reference rather than directly deleting a commit or rewriting other branch history.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations; verified the local/remote deletion distinction and the warning that deleting a remote tag does not automatically delete collaborators’ local tag references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Git tag/ref, local and remote repository, remote name, collaborator, commit, and branch-history terminology across all editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified `git tag -d`, `git ls-remote --tags --refs`, and `git push <remote> --delete <tag>` syntax against the current Git manuals; confirmed `origin` is an example remote name."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the official Git manuals for tag, ls-remote, and push behavior; all three cited URLs resolve to canonical documentation pages."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Deleting a remote tag affects everyone using that remote; collaborators may retain local references.",
+        "The exact effects of later garbage collection depend on reachability and repository maintenance."
+      ]
+    },
+    "post/gitでタグを消す/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/gitでタグを消す/index.md",
+      "sourceHash": "c43ab8b53e07848927fe64a9d657978647c3fefed0ab4afd7bd3406b88642df4",
+      "translationHash": "cfdd12523f47ababd1d3fd848f5cf78905d10ef0f8ee731a2c61e16136e9b924",
+      "summary": "Compared the complete translation with the Japanese source and Git manuals; checked local/remote commands, collaborator effects, and clarified that deleting a tag removes its reference rather than directly deleting a commit or rewriting other branch history.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations; verified the local/remote deletion distinction and the warning that deleting a remote tag does not automatically delete collaborators’ local tag references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Git tag/ref, local and remote repository, remote name, collaborator, commit, and branch-history terminology across all editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified `git tag -d`, `git ls-remote --tags --refs`, and `git push <remote> --delete <tag>` syntax against the current Git manuals; confirmed `origin` is an example remote name."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the official Git manuals for tag, ls-remote, and push behavior; all three cited URLs resolve to canonical documentation pages."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Deleting a remote tag affects everyone using that remote; collaborators may retain local references.",
+        "The exact effects of later garbage collection depend on reachability and repository maintenance."
+      ]
+    },
+    "post/gitでタグを消す/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/gitでタグを消す/index.md",
+      "sourceHash": "c43ab8b53e07848927fe64a9d657978647c3fefed0ab4afd7bd3406b88642df4",
+      "translationHash": "4cf97b41331aa25f6314b69dddd75e491816eea297b863b2d0e21990c144129b",
+      "summary": "Compared the complete translation with the Japanese source and Git manuals; checked local/remote commands, collaborator effects, and clarified that deleting a tag removes its reference rather than directly deleting a commit or rewriting other branch history.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations; verified the local/remote deletion distinction and the warning that deleting a remote tag does not automatically delete collaborators’ local tag references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Git tag/ref, local and remote repository, remote name, collaborator, commit, and branch-history terminology across all editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified `git tag -d`, `git ls-remote --tags --refs`, and `git push <remote> --delete <tag>` syntax against the current Git manuals; confirmed `origin` is an example remote name."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the official Git manuals for tag, ls-remote, and push behavior; all three cited URLs resolve to canonical documentation pages."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Deleting a remote tag affects everyone using that remote; collaborators may retain local references.",
+        "The exact effects of later garbage collection depend on reachability and repository maintenance."
+      ]
+    },
+    "post/gitでタグを消す/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/gitでタグを消す/index.md",
+      "sourceHash": "c43ab8b53e07848927fe64a9d657978647c3fefed0ab4afd7bd3406b88642df4",
+      "translationHash": "60827bad944ddbbd735913ae93228fad2042b7471ae5b012cf3632a08ed5eb19",
+      "summary": "Compared the complete translation with the Japanese source and Git manuals; checked local/remote commands, collaborator effects, and clarified that deleting a tag removes its reference rather than directly deleting a commit or rewriting other branch history.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations; verified the local/remote deletion distinction and the warning that deleting a remote tag does not automatically delete collaborators’ local tag references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Git tag/ref, local and remote repository, remote name, collaborator, commit, and branch-history terminology across all editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified `git tag -d`, `git ls-remote --tags --refs`, and `git push <remote> --delete <tag>` syntax against the current Git manuals; confirmed `origin` is an example remote name."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the official Git manuals for tag, ls-remote, and push behavior; all three cited URLs resolve to canonical documentation pages."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Deleting a remote tag affects everyone using that remote; collaborators may retain local references.",
+        "The exact effects of later garbage collection depend on reachability and repository maintenance."
+      ]
+    },
+    "post/gitでタグを消す/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/gitでタグを消す/index.md",
+      "sourceHash": "c43ab8b53e07848927fe64a9d657978647c3fefed0ab4afd7bd3406b88642df4",
+      "translationHash": "325d581bb67da092a0899b293d4e8482e94ab624cb57aa34f04977c622d770d7",
+      "summary": "Compared the complete translation with the Japanese source and Git manuals; checked local/remote commands, collaborator effects, and clarified that deleting a tag removes its reference rather than directly deleting a commit or rewriting other branch history.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations; verified the local/remote deletion distinction and the warning that deleting a remote tag does not automatically delete collaborators’ local tag references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Git tag/ref, local and remote repository, remote name, collaborator, commit, and branch-history terminology across all editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified `git tag -d`, `git ls-remote --tags --refs`, and `git push <remote> --delete <tag>` syntax against the current Git manuals; confirmed `origin` is an example remote name."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the official Git manuals for tag, ls-remote, and push behavior; all three cited URLs resolve to canonical documentation pages."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Deleting a remote tag affects everyone using that remote; collaborators may retain local references.",
+        "The exact effects of later garbage collection depend on reachability and repository maintenance."
+      ]
+    },
+    "post/gitでタグを消す/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/gitでタグを消す/index.md",
+      "sourceHash": "c43ab8b53e07848927fe64a9d657978647c3fefed0ab4afd7bd3406b88642df4",
+      "translationHash": "47af8673924b32d0336968e839bd2ea22be5755ca86fa0052468623c28bb16ce",
+      "summary": "Compared the complete translation with the Japanese source and Git manuals; checked local/remote commands, collaborator effects, and clarified that deleting a tag removes its reference rather than directly deleting a commit or rewriting other branch history.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations; verified the local/remote deletion distinction and the warning that deleting a remote tag does not automatically delete collaborators’ local tag references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Git tag/ref, local and remote repository, remote name, collaborator, commit, and branch-history terminology across all editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified `git tag -d`, `git ls-remote --tags --refs`, and `git push <remote> --delete <tag>` syntax against the current Git manuals; confirmed `origin` is an example remote name."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the official Git manuals for tag, ls-remote, and push behavior; all three cited URLs resolve to canonical documentation pages."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Deleting a remote tag affects everyone using that remote; collaborators may retain local references.",
+        "The exact effects of later garbage collection depend on reachability and repository maintenance."
+      ]
+    },
+    "post/gitでタグを消す/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/gitでタグを消す/index.md",
+      "sourceHash": "c43ab8b53e07848927fe64a9d657978647c3fefed0ab4afd7bd3406b88642df4",
+      "translationHash": "8cedd0ebf685d556bb0798012ce8978f051c03a67cf0c887c36ed5d91eaaa785",
+      "summary": "Compared the complete translation with the Japanese source and Git manuals; checked local/remote commands, collaborator effects, and clarified that deleting a tag removes its reference rather than directly deleting a commit or rewriting other branch history.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations; verified the local/remote deletion distinction and the warning that deleting a remote tag does not automatically delete collaborators’ local tag references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Git tag/ref, local and remote repository, remote name, collaborator, commit, and branch-history terminology across all editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified `git tag -d`, `git ls-remote --tags --refs`, and `git push <remote> --delete <tag>` syntax against the current Git manuals; confirmed `origin` is an example remote name."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the official Git manuals for tag, ls-remote, and push behavior; all three cited URLs resolve to canonical documentation pages."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Deleting a remote tag affects everyone using that remote; collaborators may retain local references.",
+        "The exact effects of later garbage collection depend on reachability and repository maintenance."
+      ]
+    },
+    "post/gitでタグを消す/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/gitでタグを消す/index.md",
+      "sourceHash": "c43ab8b53e07848927fe64a9d657978647c3fefed0ab4afd7bd3406b88642df4",
+      "translationHash": "e4697aa6ad62558a3e1e7fcd6496980565974dba0dc160112581e1f6993552ce",
+      "summary": "Compared the complete translation with the Japanese source and Git manuals; checked local/remote commands, collaborator effects, and clarified that deleting a tag removes its reference rather than directly deleting a commit or rewriting other branch history.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations; verified the local/remote deletion distinction and the warning that deleting a remote tag does not automatically delete collaborators’ local tag references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Git tag/ref, local and remote repository, remote name, collaborator, commit, and branch-history terminology across all editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified `git tag -d`, `git ls-remote --tags --refs`, and `git push <remote> --delete <tag>` syntax against the current Git manuals; confirmed `origin` is an example remote name."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the official Git manuals for tag, ls-remote, and push behavior; all three cited URLs resolve to canonical documentation pages."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Deleting a remote tag affects everyone using that remote; collaborators may retain local references.",
+        "The exact effects of later garbage collection depend on reachability and repository maintenance."
+      ]
+    }
+  }
+}

@@ -2,7 +2,7 @@
 title: 'Git에서 로컬 및 원격의 태그를 삭제하는 방법'
 slug: "gitでタグを消す"
 date: 2022-10-02T02:18:04+09:00
-lastmod: "2026-11-24T00:00:00+09:00"
+lastmod: "2026-11-25T00:00:00+09:00"
 tags: ["git"]
 draft: false
 image: "img.webp"
@@ -20,6 +20,8 @@ description: 'Git에서 불필요해진 태그(tag)를 삭제하는 방법을 �
 2. `git push origin --delete v0.1.0` 으로 원격에 존재하는 태그를 삭제한다. (`v0.1.0` 부분에는 삭제하고 싶은 태그를 지정한다)
 
 원격 태그를 삭제해도 공동 작업자의 로컬 복사본은 자동으로 삭제되지 않습니다. 원격 사용자에게 영향을 주므로 실행 전에 대상을 확인하세요.
+
+태그를 삭제하면 해당 참조가 제거됩니다. 태그가 가리키던 커밋을 직접 삭제하거나 다른 브랜치의 기록을 다시 쓰는 것은 아닙니다. 다만 그 태그 이름으로는 더 이상 커밋을 찾을 수 없습니다. `origin`은 원격 이름의 예이므로 환경에 맞게 바꾸세요.
 
 ## 참고 자료
 [git-tag](https://git-scm.com/docs/git-tag), [git-ls-remote](https://git-scm.com/docs/git-ls-remote), [git-push](https://git-scm.com/docs/git-push)

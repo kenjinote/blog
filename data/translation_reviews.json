@@ -15368,123 +15368,123 @@
     },
     "post/gitでタグを消す/index.en.md": {
       "source": "post/gitでタグを消す/index.md",
-      "reviewedAt": "2026-11-24",
+      "reviewedAt": "2026-11-25",
       "reviewer": "Codex (AI)",
-      "sourceHash": "3687d7222431eeacce721e669acc27cac80d89740dbbfa1fa9d5ed277b58b7cc",
-      "translationHash": "24b6fefb373597c5cbc8efe4ee5b612a4b58ec8b3ef74ce6099f224fac941b7c",
+      "sourceHash": "c43ab8b53e07848927fe64a9d657978647c3fefed0ab4afd7bd3406b88642df4",
+      "translationHash": "45e3a72c2dcfe391e83dbbb40bb5bae71ea2720db094e211a749640211c089af",
       "reviewKind": "ai",
-      "evidence": "docs/translation-review/batch-133.json",
-      "evidenceHash": "3da6c46bfdf3336e728f6742d9d9421413b739ca5c29ee2d2c02f454d80c9af3"
+      "evidence": "docs/translation-review/batch-194.json",
+      "evidenceHash": "cde0583326f4959a39a4740c5fb484e2e0565f6fed6ca5e849b4e430d35b678f"
     },
     "post/gitでタグを消す/index.zh-cn.md": {
       "source": "post/gitでタグを消す/index.md",
-      "reviewedAt": "2026-11-24",
+      "reviewedAt": "2026-11-25",
       "reviewer": "Codex (AI)",
-      "sourceHash": "3687d7222431eeacce721e669acc27cac80d89740dbbfa1fa9d5ed277b58b7cc",
-      "translationHash": "d053f5fb8b2decf4d29f2e7a37bb1025c95de5315a36177ff8ca0c8f178149c0",
+      "sourceHash": "c43ab8b53e07848927fe64a9d657978647c3fefed0ab4afd7bd3406b88642df4",
+      "translationHash": "7a84ee80e1355afd4b62fafe8dfe415ba6ea77b6f578e539143c714b4ecc8a6a",
       "reviewKind": "ai",
-      "evidence": "docs/translation-review/batch-133.json",
-      "evidenceHash": "1765450162037c067f25a3bf90861245cacfff3f77c504ac849efd7f250e0011"
+      "evidence": "docs/translation-review/batch-194.json",
+      "evidenceHash": "bced3d4699a2d6e1f07145e7dafd40e12299761bc13581cee08d3f39a7826c50"
     },
     "post/gitでタグを消す/index.es.md": {
       "source": "post/gitでタグを消す/index.md",
-      "reviewedAt": "2026-11-24",
+      "reviewedAt": "2026-11-25",
       "reviewer": "Codex (AI)",
-      "sourceHash": "3687d7222431eeacce721e669acc27cac80d89740dbbfa1fa9d5ed277b58b7cc",
-      "translationHash": "d1949e8f4469be5c50c41503e62a57beb2243f507d5a4e9059864ad65f99c67d",
+      "sourceHash": "c43ab8b53e07848927fe64a9d657978647c3fefed0ab4afd7bd3406b88642df4",
+      "translationHash": "39ed843361b7d7cb9eb2f6be6f3a0a9b603ed947917f74c42a5001d62b3bf59f",
       "reviewKind": "ai",
-      "evidence": "docs/translation-review/batch-133.json",
-      "evidenceHash": "17419ae6e4323ed570d905db79ff4102796fa6ef32a26a0f59940d9ea1fa2c93"
+      "evidence": "docs/translation-review/batch-194.json",
+      "evidenceHash": "c972ee5598876818a1892100e3aaab05763ec5e158761a485342ef16f198af9c"
     },
     "post/gitでタグを消す/index.ko.md": {
       "source": "post/gitでタグを消す/index.md",
-      "reviewedAt": "2026-11-24",
+      "reviewedAt": "2026-11-25",
       "reviewer": "Codex (AI)",
-      "sourceHash": "3687d7222431eeacce721e669acc27cac80d89740dbbfa1fa9d5ed277b58b7cc",
-      "translationHash": "ca3efdfa5b2484f6eab73d2ff0defc6a061fe7f94c2f14069ca4c0668e1ea237",
+      "sourceHash": "c43ab8b53e07848927fe64a9d657978647c3fefed0ab4afd7bd3406b88642df4",
+      "translationHash": "d61085780c76875a02073f0b0ee9f4acbdd6d0e499ddf0ceda569abe11107e2a",
       "reviewKind": "ai",
-      "evidence": "docs/translation-review/batch-133.json",
-      "evidenceHash": "68519d2f916ab7dd4c337f417d382e04cc07f5a402910fe03253d7a38af31ff2"
+      "evidence": "docs/translation-review/batch-194.json",
+      "evidenceHash": "1405129e9e9227f81d564d488dce5320057967f5b53a6b1b3ed522f491bb5d8b"
     },
     "post/gitでタグを消す/index.pt.md": {
       "source": "post/gitでタグを消す/index.md",
-      "reviewedAt": "2026-11-24",
+      "reviewedAt": "2026-11-25",
       "reviewer": "Codex (AI)",
-      "sourceHash": "3687d7222431eeacce721e669acc27cac80d89740dbbfa1fa9d5ed277b58b7cc",
-      "translationHash": "e09f261a3710f1a6318396b5fa9c225b088a4e1e7ffc0406c9c518903eb336ea",
+      "sourceHash": "c43ab8b53e07848927fe64a9d657978647c3fefed0ab4afd7bd3406b88642df4",
+      "translationHash": "80b7b943d50cb527cf09c39ca214c33a4d48c58482238b2739dfade84528d3df",
       "reviewKind": "ai",
-      "evidence": "docs/translation-review/batch-133.json",
-      "evidenceHash": "3763f9b68536840a637a9e33f37b92f720047b7998b50847939837e0391c12e1"
+      "evidence": "docs/translation-review/batch-194.json",
+      "evidenceHash": "67e36a8653c7f6fadf86f00a8ab18c080c1e625e32a729f27fb28444ddacb05d"
     },
     "post/gitでタグを消す/index.zh-tw.md": {
       "source": "post/gitでタグを消す/index.md",
-      "reviewedAt": "2026-11-24",
+      "reviewedAt": "2026-11-25",
       "reviewer": "Codex (AI)",
-      "sourceHash": "3687d7222431eeacce721e669acc27cac80d89740dbbfa1fa9d5ed277b58b7cc",
-      "translationHash": "a14c2f9417389379b1e06803504611567521e03237a6eb0a48bfd233445c03e6",
+      "sourceHash": "c43ab8b53e07848927fe64a9d657978647c3fefed0ab4afd7bd3406b88642df4",
+      "translationHash": "cfdd12523f47ababd1d3fd848f5cf78905d10ef0f8ee731a2c61e16136e9b924",
       "reviewKind": "ai",
-      "evidence": "docs/translation-review/batch-133.json",
-      "evidenceHash": "41b25d7a9f2ca4eaa87726010745c9c51c65042b1dac818bac841b3d2ced7d18"
+      "evidence": "docs/translation-review/batch-194.json",
+      "evidenceHash": "e1966363763b1a8f1f889ead9a06702db8067298136df6a15ec89ff13e20cd8f"
     },
     "post/gitでタグを消す/index.hi.md": {
       "source": "post/gitでタグを消す/index.md",
-      "reviewedAt": "2026-11-24",
+      "reviewedAt": "2026-11-25",
       "reviewer": "Codex (AI)",
-      "sourceHash": "3687d7222431eeacce721e669acc27cac80d89740dbbfa1fa9d5ed277b58b7cc",
-      "translationHash": "1900b03e3bed3747cc190bfbb0c392643c9c9af581c9c11d10643e9148536bfe",
+      "sourceHash": "c43ab8b53e07848927fe64a9d657978647c3fefed0ab4afd7bd3406b88642df4",
+      "translationHash": "4cf97b41331aa25f6314b69dddd75e491816eea297b863b2d0e21990c144129b",
       "reviewKind": "ai",
-      "evidence": "docs/translation-review/batch-133.json",
-      "evidenceHash": "cc42f2b8437121277d6531a5e0e60393efabfc3ee81af0ad968638ab4a186118"
+      "evidence": "docs/translation-review/batch-194.json",
+      "evidenceHash": "7ac0c059e900ad321063544c1615eccb7b1e00eaf28ba9806ca46f5878946471"
     },
     "post/gitでタグを消す/index.fr.md": {
       "source": "post/gitでタグを消す/index.md",
-      "reviewedAt": "2026-11-24",
+      "reviewedAt": "2026-11-25",
       "reviewer": "Codex (AI)",
-      "sourceHash": "3687d7222431eeacce721e669acc27cac80d89740dbbfa1fa9d5ed277b58b7cc",
-      "translationHash": "b1c751423465eb77c8ed3dc6f140a049ba105db399be25766d08891c60bc88f6",
+      "sourceHash": "c43ab8b53e07848927fe64a9d657978647c3fefed0ab4afd7bd3406b88642df4",
+      "translationHash": "60827bad944ddbbd735913ae93228fad2042b7471ae5b012cf3632a08ed5eb19",
       "reviewKind": "ai",
-      "evidence": "docs/translation-review/batch-133.json",
-      "evidenceHash": "43b95670b0d10b164b3a4d3c83e4e0acd113c68849a01b29685c1b56adea05e7"
+      "evidence": "docs/translation-review/batch-194.json",
+      "evidenceHash": "874a743ddabc77ac760466968cbadb83c790c6374515a5e3e8b939c2060e6b7d"
     },
     "post/gitでタグを消す/index.de.md": {
       "source": "post/gitでタグを消す/index.md",
-      "reviewedAt": "2026-11-24",
+      "reviewedAt": "2026-11-25",
       "reviewer": "Codex (AI)",
-      "sourceHash": "3687d7222431eeacce721e669acc27cac80d89740dbbfa1fa9d5ed277b58b7cc",
-      "translationHash": "5baabfdabfd40b51d23c943e177d26e7240695979ffc46af9650b8f509571590",
+      "sourceHash": "c43ab8b53e07848927fe64a9d657978647c3fefed0ab4afd7bd3406b88642df4",
+      "translationHash": "325d581bb67da092a0899b293d4e8482e94ab624cb57aa34f04977c622d770d7",
       "reviewKind": "ai",
-      "evidence": "docs/translation-review/batch-133.json",
-      "evidenceHash": "09e462652f90c1b762f729316044975dd609ed03107b188f0b529036d77ab9fa"
+      "evidence": "docs/translation-review/batch-194.json",
+      "evidenceHash": "4f6f5bfb12e3a1a19e9dd52030e53a25d000cffef5232eeaa140a8a4cd21e9a0"
     },
     "post/gitでタグを消す/index.ar.md": {
       "source": "post/gitでタグを消す/index.md",
-      "reviewedAt": "2026-11-24",
+      "reviewedAt": "2026-11-25",
       "reviewer": "Codex (AI)",
-      "sourceHash": "3687d7222431eeacce721e669acc27cac80d89740dbbfa1fa9d5ed277b58b7cc",
-      "translationHash": "91d40aed065b55ccbe49d665170fadafd26ab94ff4c3897f74068bb3952efbbe",
+      "sourceHash": "c43ab8b53e07848927fe64a9d657978647c3fefed0ab4afd7bd3406b88642df4",
+      "translationHash": "47af8673924b32d0336968e839bd2ea22be5755ca86fa0052468623c28bb16ce",
       "reviewKind": "ai",
-      "evidence": "docs/translation-review/batch-133.json",
-      "evidenceHash": "3bc807cb1f2abd1e973e0ef97a08f1d9415b0b5bb1cb125cf6925a3e1e3db68c"
+      "evidence": "docs/translation-review/batch-194.json",
+      "evidenceHash": "4037bbf16d614f678b44467e1f0a00cc4980243f45940667490f074528e6ae59"
     },
     "post/gitでタグを消す/index.ru.md": {
       "source": "post/gitでタグを消す/index.md",
-      "reviewedAt": "2026-11-24",
+      "reviewedAt": "2026-11-25",
       "reviewer": "Codex (AI)",
-      "sourceHash": "3687d7222431eeacce721e669acc27cac80d89740dbbfa1fa9d5ed277b58b7cc",
-      "translationHash": "8c76df4f33bbb54b036710d17d68fcf5a2613eb6993f064490011e9bfaae6a31",
+      "sourceHash": "c43ab8b53e07848927fe64a9d657978647c3fefed0ab4afd7bd3406b88642df4",
+      "translationHash": "8cedd0ebf685d556bb0798012ce8978f051c03a67cf0c887c36ed5d91eaaa785",
       "reviewKind": "ai",
-      "evidence": "docs/translation-review/batch-133.json",
-      "evidenceHash": "c94a305e317230ae4949490927f1824990764ebfe5457530fc9fa9d93e9332ca"
+      "evidence": "docs/translation-review/batch-194.json",
+      "evidenceHash": "0a8a84ee254501d67325d2bfbe8ed5957cf06e8a2d9070306fe6dc2ee737f47c"
     },
     "post/gitでタグを消す/index.id.md": {
       "source": "post/gitでタグを消す/index.md",
-      "reviewedAt": "2026-11-24",
+      "reviewedAt": "2026-11-25",
       "reviewer": "Codex (AI)",
-      "sourceHash": "3687d7222431eeacce721e669acc27cac80d89740dbbfa1fa9d5ed277b58b7cc",
-      "translationHash": "7385d105e1762df8ffd1c84e880e922b094d44d4fd60cd3c6443ff2878f67b0f",
+      "sourceHash": "c43ab8b53e07848927fe64a9d657978647c3fefed0ab4afd7bd3406b88642df4",
+      "translationHash": "e4697aa6ad62558a3e1e7fcd6496980565974dba0dc160112581e1f6993552ce",
       "reviewKind": "ai",
-      "evidence": "docs/translation-review/batch-133.json",
-      "evidenceHash": "d04cea20ef74406a848b4320166f8c9ad4bb5a22d7599f1b7aefa5ea3e88445f"
+      "evidence": "docs/translation-review/batch-194.json",
+      "evidenceHash": "d4680468df4a2baf17e17b602446cd8d13fd7b127ddfe8ac1ee207f3f9452c11"
     },
     "post/なぜ数学や計算機が好きなんだろう/index.en.md": {
       "source": "post/なぜ数学や計算機が好きなんだろう/index.md",

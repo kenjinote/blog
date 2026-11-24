@@ -2,7 +2,7 @@
 title: '在Git中删除本地和远程标签（Tag）的方法'
 slug: "gitでタグを消す"
 date: 2022-10-02T02:18:04+09:00
-lastmod: "2026-11-24T00:00:00+09:00"
+lastmod: "2026-11-25T00:00:00+09:00"
 tags: ["git"]
 draft: false
 image: "img.webp"
@@ -20,6 +20,8 @@ description: '简单讲解如何在Git中删除不需要的标签（tag）。涵
 2. 使用 `git push origin --delete v0.1.0` 删除远程存在的标签。（将 `v0.1.0` 替换为你想要删除的标签）
 
 从远程删除标签不会自动删除协作者本地的副本。此操作会影响远程仓库的使用者，请先确认目标。
+
+删除标签会移除该引用，但不会直接删除它指向的提交，也不会改写其他分支的历史。不过，此后无法再通过该标签名访问该提交。`origin`只是远程仓库名称示例，请按实际情况替换。
 
 ## 参考资料
 [git-tag](https://git-scm.com/docs/git-tag), [git-ls-remote](https://git-scm.com/docs/git-ls-remote), [git-push](https://git-scm.com/docs/git-push)

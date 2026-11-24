@@ -2,7 +2,7 @@
 title: 'Cara Menghapus Tag Lokal dan Remote di Git'
 slug: "gitでタグを消す"
 date: 2022-10-02T02:18:04+09:00
-lastmod: "2026-11-24T00:00:00+09:00"
+lastmod: "2026-11-25T00:00:00+09:00"
 tags: ["git"]
 draft: false
 image: "img.webp"
@@ -20,6 +20,8 @@ description: 'Menjelaskan dengan sederhana cara menghapus tag yang tidak diperlu
 2. Hapus tag yang ada di jarak jauh dengan `git push origin --delete v0.1.0`. (Ganti `v0.1.0` dengan tag yang ingin Anda hapus)
 
 Menghapus tag di remote tidak otomatis menghapus salinan lokal milik kolaborator. Pastikan targetnya karena tindakan ini berdampak pada semua pengguna remote.
+
+Menghapus tag menghapus referensinya; tindakan ini tidak langsung menghapus commit yang ditunjuk atau menulis ulang riwayat cabang lain. Namun, commit tersebut tidak lagi dapat dijangkau melalui nama tag itu. `origin` adalah contoh nama remote; ganti jika remote Anda memakai nama lain.
 
 ## Referensi
 [git-tag](https://git-scm.com/docs/git-tag), [git-ls-remote](https://git-scm.com/docs/git-ls-remote), [git-push](https://git-scm.com/docs/git-push)
