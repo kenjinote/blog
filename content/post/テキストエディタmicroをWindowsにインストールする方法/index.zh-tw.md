@@ -1,8 +1,8 @@
 ---
 title: 'Windows 也能用！輕量文字編輯器「micro」的安裝方法'
-date: "2026-09-24T19:44:38+09:00"
 slug: "文字編輯器microをWindowsに安裝する方法"
-date: 2024-03-31T21:50:39+09:00
+date: "2024-03-31T21:50:39+09:00"
+lastmod: "2026-11-25"
 tags: ["micro", "文字編輯器"]
 draft: false
 image: "img.webp"
@@ -11,21 +11,20 @@ description: '淺顯易懂地解說將能在命令提示字元中流暢運作的
 ---
 
 ## 下載 micro
-https://github.com/zyedidia/micro/releases
+https://github.com/micro-editor/micro/releases/latest
+在最新版本的 Assets 中，下載適用於 Windows x64 的壓縮檔（例如 `micro-<version>-win64.zip`），並解壓縮至任意資料夾。
 
-開啟上述連結，點擊 `Show all XX assets`（X 為數字），然後下載 `micro-X.X.XX-win64.zip`（X 為數字）。
-解壓縮 zip 檔案，並將所有檔案放置在您選擇的資料夾中。
+若使用 Windows ARM，請改選對應的 ARM64 壓縮檔。
 
 ## 設定環境變數
 為了從命令提示字元使用 `micro.exe`，您需要設定環境變數。
 
-1. 按下 `Win 鍵` + `R 鍵`，輸入 `sysdm.cpl` 並按下 `Enter 鍵`。
-2. 點擊 `系統內容` 中的 `進階系統設定`。
-3. 點擊 `環境變數`。
-4. 在 `系統變數` 中選擇 `Path`，然後點擊 `編輯`。
-5. 點擊 `新增`，並加入包含 `micro.exe` 的資料夾路徑。
-6. 點擊 `確定` 以關閉所有對話方塊。
-7. 重新啟動命令提示字元，輸入 `nano` 以確認是否可以執行。
+1. 按下 `Win` + `R`，輸入 `sysdm.cpl`，再按 `Enter`。
+2. 開啟「進階」索引標籤，點選「環境變數」。
+3. 在「使用者變數」中選取自己帳戶的 `Path`，再點選「編輯」。若清單中沒有 `Path`，請先新增。
+4. 點選「新增」，加入包含 `micro.exe` 的資料夾路徑。
+5. 點選「確定」關閉對話方塊。
+6. 重新開啟命令提示字元並執行 `micro`，確認程式可以啟動。
 
 ## micro 的使用方法
 
@@ -36,7 +35,7 @@ https://github.com/zyedidia/micro/releases
 
 | 快捷鍵 | 操作 | 
 |--------|-----| 
-| Ctrl+Q | 關閉檔案 | 
+| Ctrl+Q | 關閉目前檔案（若這是最後一個檔案，micro 會結束） |
 | Ctrl+S | 儲存檔案 | 
 | Ctrl+O | 開啟檔案 | 
 | Ctrl+A | 全選 | 
@@ -49,3 +48,4 @@ https://github.com/zyedidia/micro/releases
 
 ## 參考
 - [micro](https://micro-editor.github.io/)
+- [Default key bindings](https://github.com/micro-editor/micro/blob/master/runtime/help/defaultkeys.md)

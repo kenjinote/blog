@@ -1,0 +1,466 @@
+{
+  "version": 1,
+  "batch": 201,
+  "article": "Install the micro text editor on Windows",
+  "reviewedAt": "2026-11-25",
+  "sourceHash": "810266e97fac09cd06f56131ae42227f1b5dc18aa1abe3c2c503ec5095130148",
+  "sources": [
+    "https://github.com/micro-editor/micro/releases/latest",
+    "https://micro-editor.github.io/",
+    "https://github.com/micro-editor/micro/blob/master/runtime/help/defaultkeys.md"
+  ],
+  "scope": "Read the complete Japanese article and all twelve translations; compared download instructions, Windows environment-variable UI steps, command names, all shortcut keys, metadata, internal links, official references, and both images. Checked release assets and key behavior against official micro project documentation.",
+  "findings": [
+    "Removed the duplicate future publication dates in all editions, preserved the original publication date (2024-03-31), and set lastmod to 2026-11-25.",
+    "Updated the download link to the current micro-editor repository and clarified selection of Windows x64 versus ARM64 archives without hard-coding a release version.",
+    "Removed the incorrect System Properties click, changed PATH instructions to the current user variable to avoid unnecessary administrator rights, and corrected the verification command from nano to micro.",
+    "Corrected Ctrl+Q to explain that it closes the current file and exits micro if it was the last open file; added the official default-keybindings reference."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/テキストエディタmicroをWindowsにインストールする方法/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/テキストエディタmicroをWindowsにインストールする方法/index.md",
+      "sourceHash": "810266e97fac09cd06f56131ae42227f1b5dc18aa1abe3c2c503ec5095130148",
+      "translationHash": "b0ef09c4cdb587d581433101b4c4b55158e74c1b2f501bbf767cb24afb7a459c",
+      "summary": "Compared the complete translation with the Japanese source and official micro release/keybinding documentation; corrected the download path, user-scoped Windows PATH steps, launch command, Ctrl+Q behavior, and metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete download, setup, launch, shortcut, image, and reference sections with the Japanese source; fixed the nano/micro mismatch and clarified user-level PATH setup."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked micro, Windows x64 and ARM64, Command Prompt, user environment variables, PATH, executable folder, Assets, and shortcut labels."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked sysdm.cpl, the micro command, the archive naming example, and all listed key combinations against the official default key bindings."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Updated the releases link to the official micro-editor repository; checked official project and keybinding references, the included images, and retained localized internal PATH references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Windows dialog labels vary by Windows version and language; the steps use the per-user Path so administrator access is not required.",
+        "Windows ARM devices must select the matching ARM64 archive.",
+        "micro documentation and current release page were checked on 2026-11-25."
+      ]
+    },
+    "post/テキストエディタmicroをWindowsにインストールする方法/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/テキストエディタmicroをWindowsにインストールする方法/index.md",
+      "sourceHash": "810266e97fac09cd06f56131ae42227f1b5dc18aa1abe3c2c503ec5095130148",
+      "translationHash": "958adafc7c680a916b79d6d18b62b3c350f7369d81e1d9b0431d845046f6e678",
+      "summary": "Compared the complete translation with the Japanese source and official micro release/keybinding documentation; corrected the download path, user-scoped Windows PATH steps, launch command, Ctrl+Q behavior, and metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete download, setup, launch, shortcut, image, and reference sections with the Japanese source; fixed the nano/micro mismatch and clarified user-level PATH setup."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked micro, Windows x64 and ARM64, Command Prompt, user environment variables, PATH, executable folder, Assets, and shortcut labels."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked sysdm.cpl, the micro command, the archive naming example, and all listed key combinations against the official default key bindings."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Updated the releases link to the official micro-editor repository; checked official project and keybinding references, the included images, and retained localized internal PATH references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Windows dialog labels vary by Windows version and language; the steps use the per-user Path so administrator access is not required.",
+        "Windows ARM devices must select the matching ARM64 archive.",
+        "micro documentation and current release page were checked on 2026-11-25."
+      ]
+    },
+    "post/テキストエディタmicroをWindowsにインストールする方法/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/テキストエディタmicroをWindowsにインストールする方法/index.md",
+      "sourceHash": "810266e97fac09cd06f56131ae42227f1b5dc18aa1abe3c2c503ec5095130148",
+      "translationHash": "9a89de0fe275c0c3d560782950fe121f4d0802db40b32b49bd968f89b89d51ce",
+      "summary": "Compared the complete translation with the Japanese source and official micro release/keybinding documentation; corrected the download path, user-scoped Windows PATH steps, launch command, Ctrl+Q behavior, and metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete download, setup, launch, shortcut, image, and reference sections with the Japanese source; fixed the nano/micro mismatch and clarified user-level PATH setup."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked micro, Windows x64 and ARM64, Command Prompt, user environment variables, PATH, executable folder, Assets, and shortcut labels."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked sysdm.cpl, the micro command, the archive naming example, and all listed key combinations against the official default key bindings."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Updated the releases link to the official micro-editor repository; checked official project and keybinding references, the included images, and retained localized internal PATH references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Windows dialog labels vary by Windows version and language; the steps use the per-user Path so administrator access is not required.",
+        "Windows ARM devices must select the matching ARM64 archive.",
+        "micro documentation and current release page were checked on 2026-11-25."
+      ]
+    },
+    "post/テキストエディタmicroをWindowsにインストールする方法/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/テキストエディタmicroをWindowsにインストールする方法/index.md",
+      "sourceHash": "810266e97fac09cd06f56131ae42227f1b5dc18aa1abe3c2c503ec5095130148",
+      "translationHash": "e59fbe4a2ae290e62afc2d77e8c4693c6d55e14d386693f84285c8436c29dead",
+      "summary": "Compared the complete translation with the Japanese source and official micro release/keybinding documentation; corrected the download path, user-scoped Windows PATH steps, launch command, Ctrl+Q behavior, and metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete download, setup, launch, shortcut, image, and reference sections with the Japanese source; fixed the nano/micro mismatch and clarified user-level PATH setup."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked micro, Windows x64 and ARM64, Command Prompt, user environment variables, PATH, executable folder, Assets, and shortcut labels."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked sysdm.cpl, the micro command, the archive naming example, and all listed key combinations against the official default key bindings."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Updated the releases link to the official micro-editor repository; checked official project and keybinding references, the included images, and retained localized internal PATH references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Windows dialog labels vary by Windows version and language; the steps use the per-user Path so administrator access is not required.",
+        "Windows ARM devices must select the matching ARM64 archive.",
+        "micro documentation and current release page were checked on 2026-11-25."
+      ]
+    },
+    "post/テキストエディタmicroをWindowsにインストールする方法/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/テキストエディタmicroをWindowsにインストールする方法/index.md",
+      "sourceHash": "810266e97fac09cd06f56131ae42227f1b5dc18aa1abe3c2c503ec5095130148",
+      "translationHash": "565f6d94bda30369680bfe89e24e39a8632f7be86180727f613b42ca3bbec5df",
+      "summary": "Compared the complete translation with the Japanese source and official micro release/keybinding documentation; corrected the download path, user-scoped Windows PATH steps, launch command, Ctrl+Q behavior, and metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete download, setup, launch, shortcut, image, and reference sections with the Japanese source; fixed the nano/micro mismatch and clarified user-level PATH setup."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked micro, Windows x64 and ARM64, Command Prompt, user environment variables, PATH, executable folder, Assets, and shortcut labels."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked sysdm.cpl, the micro command, the archive naming example, and all listed key combinations against the official default key bindings."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Updated the releases link to the official micro-editor repository; checked official project and keybinding references, the included images, and retained localized internal PATH references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Windows dialog labels vary by Windows version and language; the steps use the per-user Path so administrator access is not required.",
+        "Windows ARM devices must select the matching ARM64 archive.",
+        "micro documentation and current release page were checked on 2026-11-25."
+      ]
+    },
+    "post/テキストエディタmicroをWindowsにインストールする方法/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/テキストエディタmicroをWindowsにインストールする方法/index.md",
+      "sourceHash": "810266e97fac09cd06f56131ae42227f1b5dc18aa1abe3c2c503ec5095130148",
+      "translationHash": "783bdbcc467e751f7c28043f40c00516cee55b5078a36027deb3134a9443b05e",
+      "summary": "Compared the complete translation with the Japanese source and official micro release/keybinding documentation; corrected the download path, user-scoped Windows PATH steps, launch command, Ctrl+Q behavior, and metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete download, setup, launch, shortcut, image, and reference sections with the Japanese source; fixed the nano/micro mismatch and clarified user-level PATH setup."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked micro, Windows x64 and ARM64, Command Prompt, user environment variables, PATH, executable folder, Assets, and shortcut labels."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked sysdm.cpl, the micro command, the archive naming example, and all listed key combinations against the official default key bindings."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Updated the releases link to the official micro-editor repository; checked official project and keybinding references, the included images, and retained localized internal PATH references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Windows dialog labels vary by Windows version and language; the steps use the per-user Path so administrator access is not required.",
+        "Windows ARM devices must select the matching ARM64 archive.",
+        "micro documentation and current release page were checked on 2026-11-25."
+      ]
+    },
+    "post/テキストエディタmicroをWindowsにインストールする方法/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/テキストエディタmicroをWindowsにインストールする方法/index.md",
+      "sourceHash": "810266e97fac09cd06f56131ae42227f1b5dc18aa1abe3c2c503ec5095130148",
+      "translationHash": "e0febb36c3e052d40064f20adc8e918778108a29cee521558c562e11b99a4ec5",
+      "summary": "Compared the complete translation with the Japanese source and official micro release/keybinding documentation; corrected the download path, user-scoped Windows PATH steps, launch command, Ctrl+Q behavior, and metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete download, setup, launch, shortcut, image, and reference sections with the Japanese source; fixed the nano/micro mismatch and clarified user-level PATH setup."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked micro, Windows x64 and ARM64, Command Prompt, user environment variables, PATH, executable folder, Assets, and shortcut labels."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked sysdm.cpl, the micro command, the archive naming example, and all listed key combinations against the official default key bindings."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Updated the releases link to the official micro-editor repository; checked official project and keybinding references, the included images, and retained localized internal PATH references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Windows dialog labels vary by Windows version and language; the steps use the per-user Path so administrator access is not required.",
+        "Windows ARM devices must select the matching ARM64 archive.",
+        "micro documentation and current release page were checked on 2026-11-25."
+      ]
+    },
+    "post/テキストエディタmicroをWindowsにインストールする方法/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/テキストエディタmicroをWindowsにインストールする方法/index.md",
+      "sourceHash": "810266e97fac09cd06f56131ae42227f1b5dc18aa1abe3c2c503ec5095130148",
+      "translationHash": "69a8ee0d121ff04fe83181fe8cb1842e7cba351bc4826e3f92ced0d979f5dbe9",
+      "summary": "Compared the complete translation with the Japanese source and official micro release/keybinding documentation; corrected the download path, user-scoped Windows PATH steps, launch command, Ctrl+Q behavior, and metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete download, setup, launch, shortcut, image, and reference sections with the Japanese source; fixed the nano/micro mismatch and clarified user-level PATH setup."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked micro, Windows x64 and ARM64, Command Prompt, user environment variables, PATH, executable folder, Assets, and shortcut labels."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked sysdm.cpl, the micro command, the archive naming example, and all listed key combinations against the official default key bindings."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Updated the releases link to the official micro-editor repository; checked official project and keybinding references, the included images, and retained localized internal PATH references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Windows dialog labels vary by Windows version and language; the steps use the per-user Path so administrator access is not required.",
+        "Windows ARM devices must select the matching ARM64 archive.",
+        "micro documentation and current release page were checked on 2026-11-25."
+      ]
+    },
+    "post/テキストエディタmicroをWindowsにインストールする方法/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/テキストエディタmicroをWindowsにインストールする方法/index.md",
+      "sourceHash": "810266e97fac09cd06f56131ae42227f1b5dc18aa1abe3c2c503ec5095130148",
+      "translationHash": "477bbc8c03c530eab097f1a80a135f01d16ba32451b220d72402329ab42cb61c",
+      "summary": "Compared the complete translation with the Japanese source and official micro release/keybinding documentation; corrected the download path, user-scoped Windows PATH steps, launch command, Ctrl+Q behavior, and metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete download, setup, launch, shortcut, image, and reference sections with the Japanese source; fixed the nano/micro mismatch and clarified user-level PATH setup."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked micro, Windows x64 and ARM64, Command Prompt, user environment variables, PATH, executable folder, Assets, and shortcut labels."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked sysdm.cpl, the micro command, the archive naming example, and all listed key combinations against the official default key bindings."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Updated the releases link to the official micro-editor repository; checked official project and keybinding references, the included images, and retained localized internal PATH references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Windows dialog labels vary by Windows version and language; the steps use the per-user Path so administrator access is not required.",
+        "Windows ARM devices must select the matching ARM64 archive.",
+        "micro documentation and current release page were checked on 2026-11-25."
+      ]
+    },
+    "post/テキストエディタmicroをWindowsにインストールする方法/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/テキストエディタmicroをWindowsにインストールする方法/index.md",
+      "sourceHash": "810266e97fac09cd06f56131ae42227f1b5dc18aa1abe3c2c503ec5095130148",
+      "translationHash": "a5bdd05bc5fd0d3422644b4d2c6e19b88d9f76b05149f2a78359ac3c320eee03",
+      "summary": "Compared the complete translation with the Japanese source and official micro release/keybinding documentation; corrected the download path, user-scoped Windows PATH steps, launch command, Ctrl+Q behavior, and metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete download, setup, launch, shortcut, image, and reference sections with the Japanese source; fixed the nano/micro mismatch and clarified user-level PATH setup."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked micro, Windows x64 and ARM64, Command Prompt, user environment variables, PATH, executable folder, Assets, and shortcut labels."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked sysdm.cpl, the micro command, the archive naming example, and all listed key combinations against the official default key bindings."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Updated the releases link to the official micro-editor repository; checked official project and keybinding references, the included images, and retained localized internal PATH references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Windows dialog labels vary by Windows version and language; the steps use the per-user Path so administrator access is not required.",
+        "Windows ARM devices must select the matching ARM64 archive.",
+        "micro documentation and current release page were checked on 2026-11-25."
+      ]
+    },
+    "post/テキストエディタmicroをWindowsにインストールする方法/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/テキストエディタmicroをWindowsにインストールする方法/index.md",
+      "sourceHash": "810266e97fac09cd06f56131ae42227f1b5dc18aa1abe3c2c503ec5095130148",
+      "translationHash": "b0f51084e0e225ac57bd6109cf365399c27c6183582bcc553948d3dbe57b9ca6",
+      "summary": "Compared the complete translation with the Japanese source and official micro release/keybinding documentation; corrected the download path, user-scoped Windows PATH steps, launch command, Ctrl+Q behavior, and metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete download, setup, launch, shortcut, image, and reference sections with the Japanese source; fixed the nano/micro mismatch and clarified user-level PATH setup."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked micro, Windows x64 and ARM64, Command Prompt, user environment variables, PATH, executable folder, Assets, and shortcut labels."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked sysdm.cpl, the micro command, the archive naming example, and all listed key combinations against the official default key bindings."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Updated the releases link to the official micro-editor repository; checked official project and keybinding references, the included images, and retained localized internal PATH references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Windows dialog labels vary by Windows version and language; the steps use the per-user Path so administrator access is not required.",
+        "Windows ARM devices must select the matching ARM64 archive.",
+        "micro documentation and current release page were checked on 2026-11-25."
+      ]
+    },
+    "post/テキストエディタmicroをWindowsにインストールする方法/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/テキストエディタmicroをWindowsにインストールする方法/index.md",
+      "sourceHash": "810266e97fac09cd06f56131ae42227f1b5dc18aa1abe3c2c503ec5095130148",
+      "translationHash": "a85b336d4941daeacf8aa6e755196915880e903772dd7fa990cca12c215ec281",
+      "summary": "Compared the complete translation with the Japanese source and official micro release/keybinding documentation; corrected the download path, user-scoped Windows PATH steps, launch command, Ctrl+Q behavior, and metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete download, setup, launch, shortcut, image, and reference sections with the Japanese source; fixed the nano/micro mismatch and clarified user-level PATH setup."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked micro, Windows x64 and ARM64, Command Prompt, user environment variables, PATH, executable folder, Assets, and shortcut labels."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked sysdm.cpl, the micro command, the archive naming example, and all listed key combinations against the official default key bindings."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Updated the releases link to the official micro-editor repository; checked official project and keybinding references, the included images, and retained localized internal PATH references."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Windows dialog labels vary by Windows version and language; the steps use the per-user Path so administrator access is not required.",
+        "Windows ARM devices must select the matching ARM64 archive.",
+        "micro documentation and current release page were checked on 2026-11-25."
+      ]
+    }
+  }
+}

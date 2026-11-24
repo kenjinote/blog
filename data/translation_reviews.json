@@ -23165,6 +23165,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-200.json",
       "evidenceHash": "765bccc5931afe65f45c7e483fd14dde830c4f0ec847e7c1b71043a37ce3140d"
+    },
+    "post/テキストエディタmicroをWindowsにインストールする方法/index.en.md": {
+      "source": "post/テキストエディタmicroをWindowsにインストールする方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "810266e97fac09cd06f56131ae42227f1b5dc18aa1abe3c2c503ec5095130148",
+      "translationHash": "b0ef09c4cdb587d581433101b4c4b55158e74c1b2f501bbf767cb24afb7a459c",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-201.json",
+      "evidenceHash": "e8e38586232db4651477708ef113e6d049337bb4db121c4be49013136990bfe8"
+    },
+    "post/テキストエディタmicroをWindowsにインストールする方法/index.zh-cn.md": {
+      "source": "post/テキストエディタmicroをWindowsにインストールする方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "810266e97fac09cd06f56131ae42227f1b5dc18aa1abe3c2c503ec5095130148",
+      "translationHash": "958adafc7c680a916b79d6d18b62b3c350f7369d81e1d9b0431d845046f6e678",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-201.json",
+      "evidenceHash": "27cf8640b2973164fa8471acfb1be059ad6b0853a5c61cc7234319bd5bac0f6c"
+    },
+    "post/テキストエディタmicroをWindowsにインストールする方法/index.es.md": {
+      "source": "post/テキストエディタmicroをWindowsにインストールする方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "810266e97fac09cd06f56131ae42227f1b5dc18aa1abe3c2c503ec5095130148",
+      "translationHash": "9a89de0fe275c0c3d560782950fe121f4d0802db40b32b49bd968f89b89d51ce",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-201.json",
+      "evidenceHash": "8d45b536a190f1db0f077c4273650debc9e8cbec056488c70364c7a502f5d1d4"
+    },
+    "post/テキストエディタmicroをWindowsにインストールする方法/index.ko.md": {
+      "source": "post/テキストエディタmicroをWindowsにインストールする方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "810266e97fac09cd06f56131ae42227f1b5dc18aa1abe3c2c503ec5095130148",
+      "translationHash": "e59fbe4a2ae290e62afc2d77e8c4693c6d55e14d386693f84285c8436c29dead",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-201.json",
+      "evidenceHash": "2a062a89e92be1abe2fba6a379c683bbaf48d1e796fe0a792db2fdbd911babda"
+    },
+    "post/テキストエディタmicroをWindowsにインストールする方法/index.pt.md": {
+      "source": "post/テキストエディタmicroをWindowsにインストールする方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "810266e97fac09cd06f56131ae42227f1b5dc18aa1abe3c2c503ec5095130148",
+      "translationHash": "565f6d94bda30369680bfe89e24e39a8632f7be86180727f613b42ca3bbec5df",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-201.json",
+      "evidenceHash": "842a978940b065ffb62a7713ed0553fcfb65f9199fab7645646facfd86164bdf"
+    },
+    "post/テキストエディタmicroをWindowsにインストールする方法/index.zh-tw.md": {
+      "source": "post/テキストエディタmicroをWindowsにインストールする方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "810266e97fac09cd06f56131ae42227f1b5dc18aa1abe3c2c503ec5095130148",
+      "translationHash": "783bdbcc467e751f7c28043f40c00516cee55b5078a36027deb3134a9443b05e",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-201.json",
+      "evidenceHash": "0d0658c3b0c53107ac6bd6edaf5acce26013e2cb085ea3e97c599a9e5f637d6e"
+    },
+    "post/テキストエディタmicroをWindowsにインストールする方法/index.hi.md": {
+      "source": "post/テキストエディタmicroをWindowsにインストールする方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "810266e97fac09cd06f56131ae42227f1b5dc18aa1abe3c2c503ec5095130148",
+      "translationHash": "e0febb36c3e052d40064f20adc8e918778108a29cee521558c562e11b99a4ec5",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-201.json",
+      "evidenceHash": "bb1e5b3701a4bca796e7b708bd22fb6c59dfcf44a058d9948890f648edc5cfd7"
+    },
+    "post/テキストエディタmicroをWindowsにインストールする方法/index.fr.md": {
+      "source": "post/テキストエディタmicroをWindowsにインストールする方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "810266e97fac09cd06f56131ae42227f1b5dc18aa1abe3c2c503ec5095130148",
+      "translationHash": "69a8ee0d121ff04fe83181fe8cb1842e7cba351bc4826e3f92ced0d979f5dbe9",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-201.json",
+      "evidenceHash": "ef384cf9b0c8b63c79cf938bbdede550c27e474e76c824dfda86648b053e4c18"
+    },
+    "post/テキストエディタmicroをWindowsにインストールする方法/index.de.md": {
+      "source": "post/テキストエディタmicroをWindowsにインストールする方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "810266e97fac09cd06f56131ae42227f1b5dc18aa1abe3c2c503ec5095130148",
+      "translationHash": "477bbc8c03c530eab097f1a80a135f01d16ba32451b220d72402329ab42cb61c",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-201.json",
+      "evidenceHash": "d2abf0d0b68ecfea0a894671c56d6685f47600db9bcf728eaca9c9a472901650"
+    },
+    "post/テキストエディタmicroをWindowsにインストールする方法/index.ar.md": {
+      "source": "post/テキストエディタmicroをWindowsにインストールする方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "810266e97fac09cd06f56131ae42227f1b5dc18aa1abe3c2c503ec5095130148",
+      "translationHash": "a5bdd05bc5fd0d3422644b4d2c6e19b88d9f76b05149f2a78359ac3c320eee03",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-201.json",
+      "evidenceHash": "a85d665ce85816f6f8c348049b0df199fb821515b033e26d759769a0e709fffd"
+    },
+    "post/テキストエディタmicroをWindowsにインストールする方法/index.ru.md": {
+      "source": "post/テキストエディタmicroをWindowsにインストールする方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "810266e97fac09cd06f56131ae42227f1b5dc18aa1abe3c2c503ec5095130148",
+      "translationHash": "b0f51084e0e225ac57bd6109cf365399c27c6183582bcc553948d3dbe57b9ca6",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-201.json",
+      "evidenceHash": "93fa472e0af3384aaab0eeee1b173541a7cc98b442826cc7cbaf969372c2654a"
+    },
+    "post/テキストエディタmicroをWindowsにインストールする方法/index.id.md": {
+      "source": "post/テキストエディタmicroをWindowsにインストールする方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "810266e97fac09cd06f56131ae42227f1b5dc18aa1abe3c2c503ec5095130148",
+      "translationHash": "a85b336d4941daeacf8aa6e755196915880e903772dd7fa990cca12c215ec281",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-201.json",
+      "evidenceHash": "516cc447fa19f4ec3215b8d993550ea7f718d69f5d975a4a5aeb70dcda032545"
     }
   }
 }

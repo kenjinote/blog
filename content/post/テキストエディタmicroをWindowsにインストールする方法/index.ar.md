@@ -1,8 +1,8 @@
 ---
 title: 'يمكن استخدامه على Windows! طريقة تثبيت محرر النصوص الخفيف "micro"'
-date: "2026-09-24T19:44:38+09:00"
 slug: "محرر نصوصmicroをWindowsにتثبيتする方法"
-date: 2024-03-31T21:50:39+09:00
+date: "2024-03-31T21:50:39+09:00"
+lastmod: "2026-11-25"
 tags: ["micro", "محرر نصوص"]
 draft: false
 image: "img.webp"
@@ -11,21 +11,20 @@ description: 'نشرح بوضوح خطوات تثبيت محرر النصوص ا
 ---
 
 ## تنزيل micro
-https://github.com/zyedidia/micro/releases
+https://github.com/micro-editor/micro/releases/latest
+من قسم Assets في أحدث إصدار، نزّل أرشيف Windows x64 (مثل `micro-<version>-win64.zip`) وفك ضغطه في مجلد تختاره.
 
-افتح الرابط أعلاه، وانقر على `Show all XX assets` (حيث XX هو رقم)، وقم بتنزيل `micro-X.X.XX-win64.zip` (حيث X هو رقم).
-قم بفك ضغط ملف zip وضع جميع الملفات في أي مجلد تريده.
+إذا كان جهازك يعمل بنظام Windows على ARM، فاختر أرشيف ARM64 المطابق بدلًا منه.
 
 ## تعيين متغيرات البيئة
 لاستخدام `micro.exe` من موجه الأوامر، ستحتاج إلى تعيين متغيرات البيئة.
 
-1. اضغط على مفتاح `Win` + `R` ، واكتب `sysdm.cpl` واضغط على `Enter`.
-2. انقر فوق `خصائص النظام` في `خصائص النظام`.
-3. انقر على `متغيرات البيئة`.
-4. حدد `Path` ضمن `متغيرات النظام` وانقر على `تحرير`.
-5. انقر على `جديد` وأضف [مسار](/ar/p/windows-%E3%81%A7%D9%85%D8%B3%D8%A7%D8%B1%E3%81%AE%E9%80%9A%E3%81%A3%E3%81%9F%D9%85%D9%84%D9%81-%D8%AA%D9%86%D9%81%D9%8A%D8%B0%D9%8A%E3%81%AE%E5%A0%B4%E6%89%80%E3%82%92%E8%A6%8B%E3%81%A4%E3%81%91%E3%82%8B%E6%96%B9%E6%B3%95/) المجلد الذي يحتوي على `micro.exe`.
-6. انقر على `موافق` لإغلاق جميع مربعات الحوار.
-7. أعد تشغيل موجه الأوامر وتحقق مما إذا كان يمكنك تشغيله عن طريق كتابة `nano`.
+1. اضغط `Win` + `R`، واكتب `sysdm.cpl`، ثم اضغط `Enter`.
+2. افتح علامة التبويب Advanced ثم انقر على Environment Variables.
+3. ضمن متغيرات المستخدم لحسابك، اختر `Path` وانقر على Edit. أنشئ `Path` إذا لم يكن موجودًا.
+4. انقر على New وأضف مسار المجلد الذي يحتوي على `micro.exe`.
+5. انقر على OK لإغلاق مربعات الحوار.
+6. أعد فتح موجه الأوامر وشغّل `micro` للتحقق من بدء تشغيله.
 
 ## كيفية استخدام micro
 
@@ -36,7 +35,7 @@ https://github.com/zyedidia/micro/releases
 
 | اختصار لوحة المفاتيح | العملية | 
 |--------|-----| 
-| Ctrl+Q | إغلاق الملف | 
+| Ctrl+Q | إغلاق الملف الحالي (ينتهي micro إذا كان هذا آخر ملف) |
 | Ctrl+S | حفظ الملف | 
 | Ctrl+O | فتح ملف | 
 | Ctrl+A | تحديد الكل | 
@@ -49,3 +48,4 @@ https://github.com/zyedidia/micro/releases
 
 ## مراجع
 - [micro](https://micro-editor.github.io/)
+- [Default key bindings](https://github.com/micro-editor/micro/blob/master/runtime/help/defaultkeys.md)

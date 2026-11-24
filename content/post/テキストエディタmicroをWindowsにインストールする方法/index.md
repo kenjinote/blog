@@ -1,8 +1,8 @@
 ---
 title: 'Windowsで使える！軽量テキストエディタ「micro」のインストール方法'
-date: "2026-09-24T19:44:38+09:00"
 slug: "テキストエディタmicroをWindowsにインストールする方法"
-date: 2024-03-31T21:50:39+09:00
+date: "2024-03-31T21:50:39+09:00"
+lastmod: "2026-11-25"
 tags: ["micro", "テキストエディタ"]
 draft: false
 image: "img.webp"
@@ -11,21 +11,20 @@ description: 'コマンドプロンプトで快適に動作するターミナル
 ---
 
 ## microをダウンロードする
-https://github.com/zyedidia/micro/releases
+https://github.com/micro-editor/micro/releases/latest
+最新リリースのAssetsからWindows x64用アーカイブ（例：`micro-<version>-win64.zip`）をダウンロードし、解凍して任意のフォルダーに配置する。
 
-上記のリンクを開き、`Show all XX assets`(X部分は数字)をクリックして`micro-X.X.XX-win64.zip`(X部分は数字)をダウンロードする。
-zipファイルを解凍して、ファイルを一式任意のフォルダーに配置する。
+Windows ARM64の場合は、ARM64用アーカイブを選択してください。
 
 ## 環境変数を設定する
 コマンドプロンプトから`micro.exe`を使うためには、環境変数を設定する必要がある。
 
-1. `Winキー` + `Rキー`を押して、`sysdm.cpl`と入力して`Enterキー`を押す。
-2. `システムのプロパティ`の`システムのプロパティ`をクリックする。
-3. `環境変数`をクリックする。
-4. `システム環境変数`の`Path`を選択して`編集`をクリックする。
-5. `新規`をクリックして、`micro.exe`が含まれるフォルダーのパスを追加する。
-6. `OK`をクリックして、すべてのダイアログを閉じる。
-7. コマンドプロンプトを再起動して、`nano`と入力して実行できるか確認する。
+1. `Win`キー + `R`キーを押し、`sysdm.cpl`と入力して`Enter`キーを押す。
+2. 「詳細設定」タブを開き、「環境変数」をクリックする。
+3. 「ユーザー環境変数」欄で自分のアカウントの`Path`を選択して「編集」をクリックする。`Path`がない場合は新規作成する。
+4. 「新規」をクリックし、`micro.exe`を含むフォルダーのパスを追加する。
+5. 「OK」をクリックしてダイアログを閉じる。
+6. コマンドプロンプトを開き直し、`micro`と入力して起動できることを確認する。
 
 ## microの使い方
 
@@ -36,7 +35,7 @@ zipファイルを解凍して、ファイルを一式任意のフォルダー�
 
 | ショートカットキー | 操作 | 
 |--------|-----| 
-| Ctrl+Q | ファイルを閉じる | 
+| Ctrl+Q | 現在のファイルを閉じる（最後のファイルの場合はmicroを終了） |
 | Ctrl+S | ファイルを保存 | 
 | Ctrl+O | ファイルを開く | 
 | Ctrl+A | 全選択 | 
@@ -49,3 +48,4 @@ zipファイルを解凍して、ファイルを一式任意のフォルダー�
 
 ## 参考
 - [micro](https://micro-editor.github.io/)
+- [Default key bindings](https://github.com/micro-editor/micro/blob/master/runtime/help/defaultkeys.md)

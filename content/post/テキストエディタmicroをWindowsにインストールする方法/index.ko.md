@@ -7,9 +7,9 @@
 
 
 title: 'Windows에서 쓸 수 있다! 경량 텍스트 에디터 ''micro'' 설치 방법'
-date: "2026-09-24T19:44:38+09:00"
 slug: "텍스트 에디터microをWindowsに설치する方法"
-date: 2024-03-31T21:50:39+09:00
+date: "2024-03-31T21:50:39+09:00"
+lastmod: "2026-11-25"
 tags: ["micro", "텍스트 에디터"]
 draft: false
 image: "img.webp"
@@ -25,21 +25,20 @@ description: '명령 프롬프트에서 쾌적하게 작동하는 터미널용 �
 
 
 ## micro 다운로드하기
-https://github.com/zyedidia/micro/releases
+https://github.com/micro-editor/micro/releases/latest
+최신 릴리스의 Assets에서 Windows x64용 압축 파일(예: `micro-<version>-win64.zip`)을 내려받아 원하는 폴더에 압축을 풉니다.
 
-위 링크를 열고 `Show all XX assets`(X 부분은 숫자)를 클릭하여 `micro-X.X.XX-win64.zip`(X 부분은 숫자)을 다운로드합니다.
-zip 파일의 압축을 풀고, 파일 일체를 임의의 폴더에 배치합니다.
+Windows ARM을 사용하는 경우에는 해당 ARM64 압축 파일을 선택하세요.
 
 ## 환경 변수 설정하기
 명령 프롬프트에서 `micro.exe`를 사용하려면 환경 변수를 설정해야 합니다.
 
-1. `Win키` + `R키`를 누르고, `sysdm.cpl`을 입력한 뒤 `Enter키`를 누릅니다.
-2. `시스템 속성`의 `시스템 속성`을 클릭합니다.
-3. `환경 변수`를 클릭합니다.
-4. `시스템 환경 변수`의 `Path`를 선택하고 `편집`을 클릭합니다.
-5. `새로 만들기`를 클릭하여, `micro.exe`가 포함된 폴더의 경로를 추가합니다.
-6. `확인`을 클릭하여 모든 대화 상자를 닫습니다.
-7. 명령 프롬프트를 다시 시작하고, `nano`라고 입력하여 실행할 수 있는지 확인합니다.
+1. `Win` + `R`을 누르고 `sysdm.cpl`을 입력한 다음 `Enter`를 누릅니다.
+2. 고급 탭을 열고 환경 변수를 클릭합니다.
+3. 사용자 변수에서 본인 계정의 `Path`를 선택하고 편집을 클릭합니다. 목록에 없으면 `Path`를 새로 만듭니다.
+4. 새로 만들기를 클릭하고 `micro.exe`가 들어 있는 폴더의 경로를 추가합니다.
+5. 확인을 클릭해 대화 상자를 닫습니다.
+6. 명령 프롬프트를 다시 열고 `micro`를 실행해 시작되는지 확인합니다.
 
 ## micro 사용 방법
 
@@ -50,7 +49,7 @@ zip 파일의 압축을 풀고, 파일 일체를 임의의 폴더에 배치합�
 
 | 단축키 | 조작 | 
 |--------|-----| 
-| Ctrl+Q | 파일 닫기 | 
+| Ctrl+Q | 현재 파일 닫기(마지막 파일이면 micro 종료) |
 | Ctrl+S | 파일 저장 | 
 | Ctrl+O | 파일 열기 | 
 | Ctrl+A | 전체 선택 | 
@@ -63,3 +62,4 @@ zip 파일의 압축을 풀고, 파일 일체를 임의의 폴더에 배치합�
 
 ## 참고
 - [micro](https://micro-editor.github.io/)
+- [Default key bindings](https://github.com/micro-editor/micro/blob/master/runtime/help/defaultkeys.md)

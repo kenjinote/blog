@@ -1,8 +1,8 @@
 ---
 title: 'Use it on Windows! How to Install the Lightweight Text Editor ''micro'''
-date: "2026-09-24T19:44:38+09:00"
 slug: "Text EditormicroをWindowsにInstallする方法"
-date: 2024-03-31T21:50:39+09:00
+date: "2024-03-31T21:50:39+09:00"
+lastmod: "2026-11-25"
 tags: ["micro", "text editor"]
 draft: false
 image: "img.webp"
@@ -11,21 +11,20 @@ description: 'Clearly explains the steps to install ''micro'', a terminal-based 
 ---
 
 ## Download micro
-https://github.com/zyedidia/micro/releases
+https://github.com/micro-editor/micro/releases/latest
+In the latest release, open Assets and download the Windows x64 archive (for example, `micro-<version>-win64.zip`). Extract it to a folder of your choice.
 
-Open the link above, click `Show all XX assets` (where X is a number), and download `micro-X.X.XX-win64.zip` (where X is a number).
-Unzip the zip file and place the files in a folder of your choice.
+For Windows on ARM, choose the matching ARM64 archive instead.
 
 ## Set Environment Variables
 To use `micro.exe` from the command prompt, you need to set the environment variables.
 
-1. Press `Win key` + `R key`, type `sysdm.cpl`, and press `Enter`.
-2. Click `System Properties` in `System Properties`.
-3. Click `Environment Variables`.
-4. Select `Path` under `System variables` and click `Edit`.
-5. Click `New` and add the path of the folder containing `micro.exe`.
-6. Click `OK` to close all dialogs.
-7. Restart the command prompt and type `nano` to check if it can be executed.
+1. Press `Win` + `R`, enter `sysdm.cpl`, and press `Enter`.
+2. Open the Advanced tab and click Environment Variables.
+3. Under User variables for your account, select `Path` and click Edit. Create `Path` if it is not listed.
+4. Click New and add the path to the folder containing `micro.exe`.
+5. Click OK to close the dialogs.
+6. Reopen Command Prompt and run `micro` to check that it starts.
 
 ## How to use micro
 
@@ -36,7 +35,7 @@ The main operations and shortcut keys are as follows.
 
 | Shortcut Key | Operation | 
 |--------|-----| 
-| Ctrl+Q | Close file | 
+| Ctrl+Q | Close the current file (quits micro if it is the last file) |
 | Ctrl+S | Save file | 
 | Ctrl+O | Open file | 
 | Ctrl+A | Select all | 
@@ -49,3 +48,4 @@ The main operations and shortcut keys are as follows.
 
 ## Reference
 - [micro](https://micro-editor.github.io/)
+- [Default key bindings](https://github.com/micro-editor/micro/blob/master/runtime/help/defaultkeys.md)

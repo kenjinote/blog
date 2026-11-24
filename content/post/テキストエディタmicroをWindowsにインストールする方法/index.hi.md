@@ -1,8 +1,8 @@
 ---
 title: 'Windows पर उपलब्ध! हल्के टेक्स्ट एडिटर ''micro'' की इंस्टॉलेशन प्रक्रिया'
-date: "2026-09-24T19:44:38+09:00"
 slug: "टेक्स्ट एडिटरmicroをWindowsにइंस्टॉलする方法"
-date: 2024-03-31T21:50:39+09:00
+date: "2024-03-31T21:50:39+09:00"
+lastmod: "2026-11-25"
 tags: ["micro", "टेक्स्ट एडिटर"]
 draft: false
 image: "img.webp"
@@ -11,21 +11,20 @@ description: 'कमांड प्रॉम्प्ट में सुचा
 ---
 
 ## micro डाउनलोड करें
-https://github.com/zyedidia/micro/releases
+https://github.com/micro-editor/micro/releases/latest
+नवीनतम रिलीज़ के Assets में से Windows x64 आर्काइव (उदाहरण: `micro-<version>-win64.zip`) डाउनलोड करें और उसे अपनी पसंद के फ़ोल्डर में निकालें।
 
-ऊपर दिए गए लिंक को खोलें, `Show all XX assets` (X की जगह संख्या है) पर क्लिक करें और `micro-X.X.XX-win64.zip` (X की जगह संख्या है) डाउनलोड करें।
-ज़िप फ़ाइल को अनज़िप करें और सभी फ़ाइलों को अपनी पसंद के किसी भी फ़ोल्डर में रखें।
+Windows ARM पर संबंधित ARM64 आर्काइव चुनें।
 
 ## पर्यावरण चर (Environment Variables) सेट करें
 कमांड प्रॉम्प्ट से `micro.exe` का उपयोग करने के लिए, आपको पर्यावरण चर सेट करने की आवश्यकता है।
 
-1. `Win की` + `R की` दबाएं, `sysdm.cpl` टाइप करें और `Enter की` दबाएं।
-2. `सिस्टम गुण` (System Properties) के `सिस्टम गुण` पर क्लिक करें।
-3. `पर्यावरण चर` ([Environment Variables](/hi/p/cli%E0%A4%9F%E0%A5%87%E0%A4%95%E0%A5%8D%E0%A4%B8%E0%A5%8D%E0%A4%9F-%E0%A4%8F%E0%A4%A1%E0%A4%BF%E0%A4%9F%E0%A4%B0nano%E3%82%92windows%E3%81%AB%E0%A4%87%E0%A4%82%E0%A4%B8%E0%A5%8D%E0%A4%9F%E0%A5%89%E0%A4%B2%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/)) पर क्लिक करें।
-4. `सिस्टम चर` (System variables) में `Path` चुनें और `संपादित करें` (Edit) पर क्लिक करें।
-5. `नया` (New) पर क्लिक करें और उस फ़ोल्डर का पथ जोड़ें जिसमें `micro.exe` है।
-6. सभी संवाद बॉक्स बंद करने के लिए `OK` पर क्लिक करें।
-7. कमांड प्रॉम्प्ट को पुनरारंभ करें और यह जांचने के लिए `nano` टाइप करें कि क्या इसे निष्पादित किया जा सकता है।
+1. `Win` + `R` दबाएँ, `sysdm.cpl` लिखें और `Enter` दबाएँ।
+2. Advanced टैब खोलें और Environment Variables पर क्लिक करें।
+3. अपने खाते के User variables में `Path` चुनें और Edit पर क्लिक करें। सूची में न हो तो `Path` बनाएँ।
+4. New पर क्लिक करके `micro.exe` वाले फ़ोल्डर का पथ जोड़ें।
+5. डायलॉग बंद करने के लिए OK पर क्लिक करें।
+6. Command Prompt फिर से खोलें और `micro` चलाकर देखें कि यह शुरू होता है।
 
 ## micro का उपयोग कैसे करें
 
@@ -36,7 +35,7 @@ https://github.com/zyedidia/micro/releases
 
 | शॉर्टकट कुंजी | संचालन | 
 |--------|-----| 
-| Ctrl+Q | फ़ाइल बंद करें | 
+| Ctrl+Q | मौजूदा फ़ाइल बंद करें (अंतिम फ़ाइल होने पर micro बंद हो जाता है) |
 | Ctrl+S | फ़ाइल सहेजें | 
 | Ctrl+O | फ़ाइल खोलें | 
 | Ctrl+A | सभी का चयन करें | 
@@ -49,3 +48,4 @@ https://github.com/zyedidia/micro/releases
 
 ## संदर्भ
 - [micro](https://micro-editor.github.io/)
+- [Default key bindings](https://github.com/micro-editor/micro/blob/master/runtime/help/defaultkeys.md)

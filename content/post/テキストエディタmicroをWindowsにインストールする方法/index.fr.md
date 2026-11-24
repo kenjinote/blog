@@ -1,8 +1,8 @@
 ---
 title: 'Utilisable sur Windows ! Comment installer l''éditeur de texte léger ''micro'''
-date: "2026-09-24T19:44:38+09:00"
 slug: "Éditeur de textemicroをWindowsにInstallationする方法"
-date: 2024-03-31T21:50:39+09:00
+date: "2024-03-31T21:50:39+09:00"
+lastmod: "2026-11-25"
 tags: ["micro", "éditeur de texte"]
 draft: false
 image: "img.webp"
@@ -11,21 +11,20 @@ description: 'Nous expliquons de manière simple la procédure pour installer l'
 ---
 
 ## Télécharger micro
-https://github.com/zyedidia/micro/releases
+https://github.com/micro-editor/micro/releases/latest
+Dans Assets de la dernière version, téléchargez l’archive Windows x64 (par exemple, `micro-<version>-win64.zip`) et extrayez-la dans le dossier de votre choix.
 
-Ouvrez le lien ci-dessus, cliquez sur `Show all XX assets` (où X est un nombre) et téléchargez `micro-X.X.XX-win64.zip` (où X est un nombre).
-Décompressez le fichier zip et placez tous les fichiers dans un dossier de votre choix.
+Pour Windows sur ARM, choisissez plutôt l’archive ARM64 correspondante.
 
 ## Configurer les variables d'environnement
 Pour utiliser `micro.exe` depuis l'Invite de commandes, vous devez configurer les variables d'environnement.
 
-1. Appuyez sur la `Touche Win` + `Touche R`, tapez `sysdm.cpl` et appuyez sur `Entrée`.
-2. Cliquez sur `Paramètres système avancés` dans les `Propriétés système`.
-3. Cliquez sur `Variables d'environnement`.
-4. Sélectionnez `Path` dans les `Variables système` et cliquez sur `Modifier`.
-5. Cliquez sur `Nouveau` et ajoutez le chemin du dossier contenant `micro.exe`.
-6. Cliquez sur `OK` pour fermer toutes les boîtes de dialogue.
-7. Redémarrez l'Invite de commandes et tapez `nano` pour vérifier si vous pouvez l'exécuter.
+1. Appuyez sur `Win` + `R`, saisissez `sysdm.cpl`, puis appuyez sur `Entrée`.
+2. Ouvrez l’onglet Paramètres système avancés et cliquez sur Variables d’environnement.
+3. Dans Variables utilisateur pour votre compte, sélectionnez `Path` et cliquez sur Modifier. Créez `Path` s’il n’existe pas.
+4. Cliquez sur Nouveau et ajoutez le chemin du dossier contenant `micro.exe`.
+5. Cliquez sur OK pour fermer les boîtes de dialogue.
+6. Rouvrez l’Invite de commandes et exécutez `micro` pour vérifier qu’il démarre.
 
 ## Comment utiliser micro
 
@@ -36,7 +35,7 @@ Les principales opérations et les raccourcis clavier sont les suivants :
 
 | Raccourci clavier | Opération | 
 |--------|-----| 
-| Ctrl+Q | Fermer le fichier | 
+| Ctrl+Q | Fermer le fichier actuel (micro se ferme s’il s’agit du dernier fichier) |
 | Ctrl+S | Enregistrer le fichier | 
 | Ctrl+O | Ouvrir un fichier | 
 | Ctrl+A | Tout sélectionner | 
@@ -49,3 +48,4 @@ Les principales opérations et les raccourcis clavier sont les suivants :
 
 ## Référence
 - [micro](https://micro-editor.github.io/)
+- [Default key bindings](https://github.com/micro-editor/micro/blob/master/runtime/help/defaultkeys.md)
