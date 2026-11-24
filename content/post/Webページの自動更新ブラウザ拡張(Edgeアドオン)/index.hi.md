@@ -1,21 +1,26 @@
 ---
 title: 'Edge में वेब पेजों को स्वचालित रूप से अपडेट करें! उपयोगी ब्राउज़र एक्सटेंशन ''टैब ऑटो रिफ्रेश'' का उपयोग कैसे करें'
-date: "2026-09-24T19:44:38+09:00"
 slug: "Webページのस्वत: अद्यतनब्राउज़र एक्सटेंशन(Edge ऐड-ऑन)"
-date: 2024-04-06T15:36:54+09:00
-tags: ["ब्राउज़र एक्सटेंशन", "Edge ऐड-ऑन", "ऑटो-रिफ्रेश"]
+tags: ["Edge", "ब्राउज़र एक्सटेंशन", "ऑटो-रिफ्रेश"]
 draft: false
 image: "img.webp"
 categories: ["blogging"]
-description: 'हम बताते हैं कि ब्राउज़र एक्सटेंशन ''टैब ऑटो रिफ्रेश'' का उपयोग कैसे करें जो Microsoft Edge में वेब पेजों को नियमित रूप से स्वचालित रूप से अपडेट कर सकता है। इंस्टॉलेशन विधि से लेकर अपडेट अंतराल सेटिंग और स्टॉप प्रक्रिया तक सब कुछ छवियों के साथ आसानी से प्रस्तुत किया गया है।'
+description: "Edge टैब ऑटो-रिफ्रेश एक्सटेंशन को इंस्टॉल और उपयोग करने का तरीका, साथ में वर्तमान इंटरफ़ेस, अनुमतियाँ और साइट पहुँच जाँचने की सलाह।"
+date: "2024-04-06T15:36:54+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
+
 यहां "Tab Auto Refresh" नामक एक Edge ब्राउज़र एक्सटेंशन प्रस्तुत है जो वेब पेजों को स्वचालित रूप से रिफ्रेश करता है।
+
+## इंस्टॉल करने से पहले
+
+इंटरफ़ेस और अनुमतियाँ बदल सकती हैं। स्क्रीनशॉट 2024 के हैं; मौजूदा स्टोर पेज और पुष्टि संदेश में प्रकाशक व माँगी गई अनुमतियाँ जाँचें। साइट पहुँच को आवश्यक साइटों या “On click” तक सीमित करें। फ़ॉर्म भेजते समय जैसी स्थिति में, जहाँ बार-बार लोड होने से समस्या हो सकती है, ऑटो-रिफ्रेश न चलाएँ।
 
 ## Tab Auto Refresh स्थापित करना
 
 [Tab Auto Refresh](https://microsoftedge.microsoft.com/addons/detail/%E3%82%BF%E3%83%96%E3%81%AE%E8%87%AA%E5%8B%95%E6%9B%B4%E6%96%B0/bicjibdndeejemialpbohjpiimehbapb)
 
-ऊपर दी गई साइट पर जाएं और `इंस्टॉल करें` पर क्लिक करें।
+स्टोर पेज पर `Get` (या आपकी स्टोर भाषा में समकक्ष बटन) चुनें। पुष्टि संदेश में अनुमतियाँ देखकर `Add extension` चुनें।
 
 ![img_2.png](img_2.webp)
 
@@ -38,3 +43,9 @@ description: 'हम बताते हैं कि ब्राउज़र �
 ऑटो-रिफ्रेश को रोकने के लिए, आइकन पर क्लिक करें और फिर `Stop reloading this tab` पर क्लिक करें।
 
 ![img_5.png](img_5.webp)
+
+## संदर्भ
+
+- [Tab Auto Refresh in Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/detail/%E3%82%BF%E3%83%96%E3%81%AE%E8%87%AA%E5%8B%95%E6%9B%B4%E6%96%B0/bicjibdndeejemialpbohjpiimehbapb)
+- [Microsoft Support: Edge extensions FAQ](https://support.microsoft.com/en-us/edge/microsoft-edge-extensions-frequently-asked-questions)
+- [Microsoft Support: Extension site access permissions](https://support.microsoft.com/en-us/edge/change-site-access-permissions-for-extensions-in-microsoft-edge)

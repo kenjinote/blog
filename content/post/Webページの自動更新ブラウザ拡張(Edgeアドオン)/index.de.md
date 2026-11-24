@@ -1,21 +1,26 @@
 ---
 title: 'Automatisches Aktualisieren von Webseiten in Edge! Verwendung der nützlichen Browser-Erweiterung „Tab Auto Refresh“'
-date: "2026-09-24T19:44:38+09:00"
 slug: "WebページのAutomatische AktualisierungBrowser-Erweiterung(Edge-Add-on)"
-date: 2024-04-06T15:36:54+09:00
-tags: ["Browsererweiterung", "Edge-Add-on", "Auto-Refresh"]
+tags: ["Edge", "Browsererweiterung", "automatische Aktualisierung"]
 draft: false
 image: "img.webp"
 categories: ["blogging"]
-description: 'Erklärt die Verwendung der Browser-Erweiterung „Tab Auto Refresh“, mit der Webseiten in Microsoft Edge regelmäßig automatisch aktualisiert werden können. Stellt mit Bildern und leicht verständlich alles von der Installationsmethode über die Einstellung des Aktualisierungsintervalls bis hin zu den Stoppschritten vor.'
+description: "Installation und Verwendung einer Edge-Erweiterung zur automatischen Tab-Aktualisierung, einschließlich Hinweisen zur aktuellen Oberfläche, zu Berechtigungen und Websitezugriff."
+date: "2024-04-06T15:36:54+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
+
 Hier stellen wir „Tab Auto Refresh“ vor, eine Edge-Browsererweiterung, die Webseiten automatisch aktualisiert.
+
+## Vor der Installation
+
+Oberfläche und Berechtigungen können sich ändern. Die Screenshots stammen aus dem Jahr 2024; prüfen Sie Herausgeber und angeforderte Berechtigungen in der aktuellen Store-Seite und Bestätigung. Beschränken Sie den Websitezugriff auf benötigte Seiten oder „Beim Klicken“. Verwenden Sie die automatische Aktualisierung nicht auf Seiten, auf denen wiederholte Ladevorgänge unerwünschte Folgen haben können, etwa beim Absenden eines Formulars.
 
 ## Installation von Tab Auto Refresh
 
 [Tab Auto Refresh](https://microsoftedge.microsoft.com/addons/detail/%E3%82%BF%E3%83%96%E3%81%AE%E8%87%AA%E5%8B%95%E6%9B%B4%E6%96%B0/bicjibdndeejemialpbohjpiimehbapb)
 
-Greifen Sie auf die obige Website zu und klicken Sie auf `Installieren`.
+Klicken Sie auf der Store-Seite auf `Get` (oder die entsprechende Schaltfläche in Ihrer Store-Sprache). Prüfen Sie die Berechtigungen, bevor Sie `Add extension` auswählen.
 
 ![img_2.png](img_2.webp)
 
@@ -38,3 +43,9 @@ Der grün umrandete Bereich ist das Intervall für die automatische Aktualisieru
 Um die automatische Aktualisierung zu beenden, klicken Sie auf das Symbol und dann auf `Stop reloading this tab`.
 
 ![img_5.png](img_5.webp)
+
+## Quellen
+
+- [Tab Auto Refresh in Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/detail/%E3%82%BF%E3%83%96%E3%81%AE%E8%87%AA%E5%8B%95%E6%9B%B4%E6%96%B0/bicjibdndeejemialpbohjpiimehbapb)
+- [Microsoft Support: Edge extensions FAQ](https://support.microsoft.com/en-us/edge/microsoft-edge-extensions-frequently-asked-questions)
+- [Microsoft Support: Extension site access permissions](https://support.microsoft.com/en-us/edge/change-site-access-permissions-for-extensions-in-microsoft-edge)

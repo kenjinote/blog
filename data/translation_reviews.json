@@ -18965,6 +18965,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-162.json",
       "evidenceHash": "a5e25ad4ba0ebdc813dd27c7237fb589e4b9e04bab0d644befd08472d9174f91"
+    },
+    "post/Webページの自動更新ブラウザ拡張(Edgeアドオン)/index.en.md": {
+      "source": "post/Webページの自動更新ブラウザ拡張(Edgeアドオン)/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "13b2efcfd32db829abc04bed9207279dca16b760c8a0b448e52985899cf140f7",
+      "translationHash": "90aaa72db6f15653fd6c5b1aea7353cc2190d552850dc485d3d366e8477aafef",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-163.json",
+      "evidenceHash": "cf7c7230121b471a8c002e5208abd6352abcb386a8fa40d63ce065d4ea92a0d8"
+    },
+    "post/Webページの自動更新ブラウザ拡張(Edgeアドオン)/index.zh-cn.md": {
+      "source": "post/Webページの自動更新ブラウザ拡張(Edgeアドオン)/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "13b2efcfd32db829abc04bed9207279dca16b760c8a0b448e52985899cf140f7",
+      "translationHash": "9e779340a9ca241320764f0b21576a6eaa8dec8f98da2282e42c1f7670ef4be9",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-163.json",
+      "evidenceHash": "7a99d52ab036b00b7be74b07c362ee09ba834ea231a20ecc3702e3c7d97446fb"
+    },
+    "post/Webページの自動更新ブラウザ拡張(Edgeアドオン)/index.es.md": {
+      "source": "post/Webページの自動更新ブラウザ拡張(Edgeアドオン)/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "13b2efcfd32db829abc04bed9207279dca16b760c8a0b448e52985899cf140f7",
+      "translationHash": "70531cd3a91235488ad0215e458af33e1cd818c90e62ceb3cdc9a606446296f1",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-163.json",
+      "evidenceHash": "21fd89ebc71b9c8262c634315c27673d9320b317a7b623de6f43a8327de9f50f"
+    },
+    "post/Webページの自動更新ブラウザ拡張(Edgeアドオン)/index.ko.md": {
+      "source": "post/Webページの自動更新ブラウザ拡張(Edgeアドオン)/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "13b2efcfd32db829abc04bed9207279dca16b760c8a0b448e52985899cf140f7",
+      "translationHash": "fee6f5aad245500e16b0531aa4362c2b638c6b0191164c7af21f46abbf30fd27",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-163.json",
+      "evidenceHash": "ed1c789aaff3696491c0da2fefde560d6f19432c5b1b7e428f9352865f1e3e02"
+    },
+    "post/Webページの自動更新ブラウザ拡張(Edgeアドオン)/index.pt.md": {
+      "source": "post/Webページの自動更新ブラウザ拡張(Edgeアドオン)/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "13b2efcfd32db829abc04bed9207279dca16b760c8a0b448e52985899cf140f7",
+      "translationHash": "8ebf53847b54b11f3e8d14db3d10e058fd7ff17bc9b77dd564f03d3384dedc8a",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-163.json",
+      "evidenceHash": "519e73903df3a835edc6efeb9fed4646fe1e9b7f9ec308a78795545faf93a6de"
+    },
+    "post/Webページの自動更新ブラウザ拡張(Edgeアドオン)/index.zh-tw.md": {
+      "source": "post/Webページの自動更新ブラウザ拡張(Edgeアドオン)/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "13b2efcfd32db829abc04bed9207279dca16b760c8a0b448e52985899cf140f7",
+      "translationHash": "6e682bac54bfa080949356b87682ae1b6a96ed44d95fbcf5bcab67c4252a3079",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-163.json",
+      "evidenceHash": "51a9349fc9a62cb9411aaa5b184adfe826c4037b2f1a84521422c1781f126aa0"
+    },
+    "post/Webページの自動更新ブラウザ拡張(Edgeアドオン)/index.hi.md": {
+      "source": "post/Webページの自動更新ブラウザ拡張(Edgeアドオン)/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "13b2efcfd32db829abc04bed9207279dca16b760c8a0b448e52985899cf140f7",
+      "translationHash": "bea5c23ab85123df8b54f8f024cedc6b37b51cc47300174072085111d1c507aa",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-163.json",
+      "evidenceHash": "b9fe2159cede05109c312fbd862476505f4c668d81796d0a91ad43ce25e01a82"
+    },
+    "post/Webページの自動更新ブラウザ拡張(Edgeアドオン)/index.fr.md": {
+      "source": "post/Webページの自動更新ブラウザ拡張(Edgeアドオン)/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "13b2efcfd32db829abc04bed9207279dca16b760c8a0b448e52985899cf140f7",
+      "translationHash": "7254d28596228c2bd16314b1ea7c055b96348c87758a32def91b1d3f63e137bf",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-163.json",
+      "evidenceHash": "7e2b857ac3a98475b1529f8a8cdfefc88f6094e32fbc7a6707a8b87c512fc179"
+    },
+    "post/Webページの自動更新ブラウザ拡張(Edgeアドオン)/index.de.md": {
+      "source": "post/Webページの自動更新ブラウザ拡張(Edgeアドオン)/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "13b2efcfd32db829abc04bed9207279dca16b760c8a0b448e52985899cf140f7",
+      "translationHash": "f1dad661d64512b81fea315219e9d3773adb7a9fd99667b4ec206bb03c34e7a5",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-163.json",
+      "evidenceHash": "f525e6e76e90e83d361e1557fc649107232866f929e5129a59ee5f0d3eac4ec9"
+    },
+    "post/Webページの自動更新ブラウザ拡張(Edgeアドオン)/index.ar.md": {
+      "source": "post/Webページの自動更新ブラウザ拡張(Edgeアドオン)/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "13b2efcfd32db829abc04bed9207279dca16b760c8a0b448e52985899cf140f7",
+      "translationHash": "a77549a9fc3c549b4e84b52f9afd12d3506f2f8a2ca91f8563a7b50987cfbea8",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-163.json",
+      "evidenceHash": "a5f1cebecf9b828e585b6df7b2b0610409fbccd1ae4094a4fcd5b69ccaedfca6"
+    },
+    "post/Webページの自動更新ブラウザ拡張(Edgeアドオン)/index.ru.md": {
+      "source": "post/Webページの自動更新ブラウザ拡張(Edgeアドオン)/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "13b2efcfd32db829abc04bed9207279dca16b760c8a0b448e52985899cf140f7",
+      "translationHash": "dd6fa701a61f194d37fef59f2840b527e0dd6021a5a591461f58e3efe3c05dbe",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-163.json",
+      "evidenceHash": "13c2cdc58b866233236b2826df472ab95e5d0d568ae95eea8b82fd7791e67f48"
+    },
+    "post/Webページの自動更新ブラウザ拡張(Edgeアドオン)/index.id.md": {
+      "source": "post/Webページの自動更新ブラウザ拡張(Edgeアドオン)/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "13b2efcfd32db829abc04bed9207279dca16b760c8a0b448e52985899cf140f7",
+      "translationHash": "90182350b543a3d37746c10f3518f1e9ef4113497bb1fa6dca45a1dd1e0541a6",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-163.json",
+      "evidenceHash": "8697d3759d0b21ea06efb8307ac7bc199acf3c2c8fd722e1bd91522a5fd3a62c"
     }
   }
 }
