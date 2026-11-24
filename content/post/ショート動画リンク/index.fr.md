@@ -1,17 +1,26 @@
 ---
-title: 'Compilation de vidéos courtes virales | L''histoire du ramasseur de balles de Tottenham qui sauve la mise, etc.'
-date: "2026-09-24T19:44:38+09:00"
-slug: "CourtVidéoリンク"
+title: 'Deux courtes vidéos : le ramasseur de balles de Tottenham et Starbucks'
 date: 2024-08-25T16:24:35+09:00
+lastmod: 2026-11-25T00:00:00+09:00
+slug: "CourtVidéoリンク"
 tags: ["Vidéo", "Court"]
 draft: false
 image: "img.webp"
 categories: ["it-technology"]
-description: 'Nous présentons une compilation de liens vers des vidéos courtes recommandées devenues virales sur les réseaux sociaux, comme l''épisode touchant du ramasseur de balles loué par Mourinho pour avoir sauvé l''équipe lors d''un match de Tottenham.'
+description: 'Voici deux courtes vidéos repérées sur les réseaux sociaux : la réaction rapide d’un ramasseur de balles de Tottenham et une vidéo liée à Starbucks.'
 ---
-1. Ramasseur de balles de football
+Cet article présente deux courtes vidéos repérées sur les réseaux sociaux. Leur lecture sur des services externes dépend des réglages de l’auteur, de la région et de la disponibilité de la vidéo.
 
-<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@gg211204/video/7398347526975294738" data-video-id="7398347526975294738" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@gg211204" href="https://www.tiktok.com/@gg211204?refer=embed">@gg211204</a> 『Le jour où le ramasseur de balles est devenu un héros』 Le ramasseur de balles qui a sauvé l'équipe ce jour-là a été invité plus tard au club et a dîné avec les joueurs. <a title="トッテナム" target="_blank" href="https://www.tiktok.com/tag/%E3%83%88%E3%83%83%E3%83%86%E3%83%8A%E3%83%A0?refer=embed">#トッテナム</a> <a title="スパーズ" target="_blank" href="https://www.tiktok.com/tag/%E3%82%B9%E3%83%91%E3%83%BC%E3%82%BA?refer=embed">#スパーズ</a> <a title="モウリーニョ" target="_blank" href="https://www.tiktok.com/tag/%E3%83%A2%E3%82%A6%E3%83%AA%E3%83%BC%E3%83%8B%E3%83%A7?refer=embed">#モウリーニョ</a> <a title="ボールボーイ" target="_blank" href="https://www.tiktok.com/tag/%E3%83%9C%E3%83%BC%E3%83%AB%E3%83%9C%E3%83%BC%E3%82%A4?refer=embed">#ボールボーイ</a> <a target="_blank" title="♬ original sound  - じょり" href="https://www.tiktok.com/music/original-sound-じょり-7398347563419601680?refer=embed">♬ original sound  - じょり</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+## Le ramasseur de balles de Tottenham
 
-2. Starbucks
+Lors du match Tottenham–Olympiacos, le ramasseur de balles Callum Hynes a rapidement rendu le ballon, contribuant à l’égalisation. Le compte rendu officiel du club indique que José Mourinho a salué sa vivacité et l’a remercié après le match. [Article officiel de Tottenham (en anglais)](https://www.tottenhamhotspur.com/news/997275/joses-five-point-preview-bournemouth).
+
+[**Voir sur TikTok**](https://www.tiktok.com/@gg211204/video/7398347526975294738)
+
+## Une vidéo sur Starbucks
+
+La vidéo ci-dessous se lit sur YouTube. Si le lecteur intégré ne fonctionne pas, ouvrez-la sur YouTube.
+
 {{<youtube P3pSGIWng-E>}}
+
+[**Voir sur YouTube**](https://www.youtube.com/watch?v=P3pSGIWng-E)

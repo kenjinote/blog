@@ -1,17 +1,26 @@
 ---
-title: 'Сборник популярных коротких видео | Спасение болбоя Тоттенхэмом и др.'
-date: "2026-09-24T19:44:38+09:00"
-slug: "КороткийВидеоリンク"
+title: 'Два коротких видео: болбой «Тоттенхэма» и Starbucks'
 date: 2024-08-25T16:24:35+09:00
+lastmod: 2026-11-25T00:00:00+09:00
+slug: "КороткийВидеоリンク"
 tags: ["Видео", "Короткие"]
 draft: false
 image: "img.webp"
 categories: ["it-technology"]
-description: 'Представляем сборник ссылок на рекомендуемые короткие видео, ставшие популярными в социальных сетях, включая трогательную историю о болбое, который спас команду в матче Тоттенхэма и удостоился похвалы Жозе Моуринью.'
+description: 'Два коротких видео из соцсетей: быстрая реакция болбоя «Тоттенхэма» и ролик о Starbucks.'
 ---
-1. Футбол - Болбой
+В этой статье собраны два коротких видео из соцсетей. Воспроизведение на внешних сервисах зависит от настроек автора, региона и доступности ролика на платформе.
 
-<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@gg211204/video/7398347526975294738" data-video-id="7398347526975294738" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@gg211204" href="https://www.tiktok.com/@gg211204?refer=embed">@gg211204</a> 『День, когда болбой стал героем』 Болбой, спасший команду в тот день, позже был приглашен в клуб и разделил трапезу с игроками. <a title="Тоттенхэм" target="_blank" href="https://www.tiktok.com/tag/%E3%83%88%E3%83%83%E3%83%86%E3%83%8A%E3%83%A0?refer=embed">#Тоттенхэм</a> <a title="Шпоры" target="_blank" href="https://www.tiktok.com/tag/%E3%82%B9%E3%83%91%E3%83%BC%E3%82%BA?refer=embed">#Шпоры</a> <a title="Моуринью" target="_blank" href="https://www.tiktok.com/tag/%E3%83%A2%E3%82%A6%E3%83%AA%E3%83%BC%E3%83%8B%E3%83%A7?refer=embed">#Моуринью</a> <a title="Болбой" target="_blank" href="https://www.tiktok.com/tag/%E3%83%9C%E3%83%BC%E3%83%AB%E3%83%9C%E3%83%BC%E3%82%A4?refer=embed">#Болбой</a> <a target="_blank" title="♬ original sound  - じょり" href="https://www.tiktok.com/music/original-sound-じょり-7398347563419601680?refer=embed">♬ original sound  - じょり</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+## Болбой «Тоттенхэма»
 
-2. Старбакс
+В матче «Тоттенхэм» — «Олимпиакос» болбой Каллум Хайнс быстро вернул мяч в игру, что помогло создать голевой момент для ответного гола. В официальном отчёте клуба говорится, что Жозе Моуринью похвалил его реакцию и поблагодарил после матча. [Официальный материал «Тоттенхэма» (англ.)](https://www.tottenhamhotspur.com/news/997275/joses-five-point-preview-bournemouth).
+
+[**Смотреть в TikTok**](https://www.tiktok.com/@gg211204/video/7398347526975294738)
+
+## Видео о Starbucks
+
+Видео ниже воспроизводится через YouTube. Если встроенный плеер не загрузится, откройте ролик на YouTube.
+
 {{<youtube P3pSGIWng-E>}}
+
+[**Смотреть на YouTube**](https://www.youtube.com/watch?v=P3pSGIWng-E)

@@ -1,17 +1,26 @@
 ---
-title: 'Kumpulan Video Pendek Viral | Aksi Penyelamatan Anak Gawang Tottenham, dll.'
-date: "2026-09-24T19:44:38+09:00"
-slug: "PendekVideoリンク"
+title: 'Dua video pendek: anak gawang Tottenham dan Starbucks'
 date: 2024-08-25T16:24:35+09:00
+lastmod: 2026-11-25T00:00:00+09:00
+slug: "PendekVideoリンク"
 tags: ["Video", "Pendek"]
 draft: false
 image: "img.webp"
 categories: ["it-technology"]
-description: 'Memperkenalkan kumpulan tautan video pendek yang direkomendasikan dan sempat viral di media sosial, termasuk kisah menyentuh dari seorang anak gawang yang menyelamatkan tim pada laga Tottenham dan mendapat pujian dari Mourinho.'
+description: 'Berikut dua video pendek dari media sosial: aksi cepat anak gawang Tottenham dan sebuah video tentang Starbucks.'
 ---
-1. Sepak bola - Anak Gawang
+Artikel ini membagikan dua video pendek dari media sosial. Pemutaran di layanan eksternal bergantung pada pengaturan pengunggah, wilayah, dan ketersediaan video di layanan tersebut.
 
-<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@gg211204/video/7398347526975294738" data-video-id="7398347526975294738" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@gg211204" href="https://www.tiktok.com/@gg211204?refer=embed">@gg211204</a> 『Hari dimana anak gawang menjadi pahlawan』 Anak gawang yang menyelamatkan tim pada hari itu kemudian diundang ke klub dan makan bersama para pemain. <a title="Tottenham" target="_blank" href="https://www.tiktok.com/tag/%E3%83%88%E3%83%83%E3%83%86%E3%83%8A%E3%83%A0?refer=embed">#Tottenham</a> <a title="Spurs" target="_blank" href="https://www.tiktok.com/tag/%E3%82%B9%E3%83%91%E3%83%BC%E3%82%BA?refer=embed">#Spurs</a> <a title="Mourinho" target="_blank" href="https://www.tiktok.com/tag/%E3%83%A2%E3%82%A6%E3%83%AA%E3%83%BC%E3%83%8B%E3%83%A7?refer=embed">#Mourinho</a> <a title="Anak Gawang" target="_blank" href="https://www.tiktok.com/tag/%E3%83%9C%E3%83%BC%E3%83%AB%E3%83%9C%E3%83%BC%E3%82%A4?refer=embed">#AnakGawang</a> <a target="_blank" title="♬ original sound  - じょり" href="https://www.tiktok.com/music/original-sound-じょり-7398347563419601680?refer=embed">♬ original sound  - じょり</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+## Anak gawang Tottenham
 
-2. Starbucks
+Dalam pertandingan Tottenham melawan Olympiacos, anak gawang Callum Hynes dengan cepat mengembalikan bola dan membantu terciptanya gol penyama kedudukan. Laporan resmi klub menyebut José Mourinho memuji ketanggapannya dan berterima kasih setelah pertandingan. [Laporan resmi Tottenham (bahasa Inggris)](https://www.tottenhamhotspur.com/news/997275/joses-five-point-preview-bournemouth).
+
+[**Tonton di TikTok**](https://www.tiktok.com/@gg211204/video/7398347526975294738)
+
+## Video tentang Starbucks
+
+Putar video di bawah melalui YouTube. Jika pemutar sematan tidak muncul, buka videonya di YouTube.
+
 {{<youtube P3pSGIWng-E>}}
+
+[**Tonton di YouTube**](https://www.youtube.com/watch?v=P3pSGIWng-E)

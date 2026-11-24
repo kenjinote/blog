@@ -1,17 +1,26 @@
 ---
-title: '熱門短影音總整理｜熱刺球僮的救援劇等'
-date: "2026-09-24T19:44:38+09:00"
-slug: "短影片リンク"
+title: '兩段短影片：熱刺球僮與星巴克'
 date: 2024-08-25T16:24:35+09:00
+lastmod: 2026-11-25T00:00:00+09:00
+slug: "短影片リンク"
 tags: ["影片", "短片"]
 draft: false
 image: "img.webp"
 categories: ["it-technology"]
-description: '整理介紹在社群媒體上引發話題的推薦短影音連結，例如在熱刺比賽中拯救球隊並獲得穆里尼奧讚賞的球僮感動事蹟等。'
+description: '分享兩段在社群媒體上看到的短影片：熱刺球僮的迅速反應，以及一段與星巴克相關的影片。'
 ---
-1. 足球 球僮
+本文分享兩段在社群媒體上看到的短影片。外部服務能否播放，取決於發布者設定、所在地區及服務是否仍提供該影片。
 
-<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@gg211204/video/7398347526975294738" data-video-id="7398347526975294738" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@gg211204" href="https://www.tiktok.com/@gg211204?refer=embed">@gg211204</a> 『球僮成為英雄的日子』 拯救了球隊的球僮後來被邀請到俱樂部與球員們共進晚餐。 <a title="トッテナム" target="_blank" href="https://www.tiktok.com/tag/%E3%83%88%E3%83%83%E3%83%86%E3%83%8A%E3%83%A0?refer=embed">#トッテナム</a> <a title="スパーズ" target="_blank" href="https://www.tiktok.com/tag/%E3%82%B9%E3%83%91%E3%83%BC%E3%82%BA?refer=embed">#スパーズ</a> <a title="モウリーニョ" target="_blank" href="https://www.tiktok.com/tag/%E3%83%A2%E3%82%A6%E3%83%AA%E3%83%BC%E3%83%8B%E3%83%A7?refer=embed">#モウリーニョ</a> <a title="ボールボーイ" target="_blank" href="https://www.tiktok.com/tag/%E3%83%9C%E3%83%BC%E3%83%AB%E3%83%9C%E3%83%BC%E3%82%A4?refer=embed">#ボールボーイ</a> <a target="_blank" title="♬ original sound  - じょり" href="https://www.tiktok.com/music/original-sound-じょり-7398347563419601680?refer=embed">♬ original sound  - じょり</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+## 熱刺球僮
 
-2. 星巴克
+熱刺對奧林匹亞科斯一役中，球僮卡倫·海恩斯迅速把球傳回場內，促成追平比分的機會。熱刺官方報導指出，主帥荷西·摩連奴稱讚他的敏捷反應，並在賽後向他致謝。 [熱刺官方報導（英文）](https://www.tottenhamhotspur.com/news/997275/joses-five-point-preview-bournemouth).
+
+[**在 TikTok 觀看**](https://www.tiktok.com/@gg211204/video/7398347526975294738)
+
+## 星巴克相關影片
+
+請在下方透過 YouTube 播放。如果嵌入播放器無法載入，請前往 YouTube 開啟。
+
 {{<youtube P3pSGIWng-E>}}
+
+[**在 YouTube 觀看**](https://www.youtube.com/watch?v=P3pSGIWng-E)

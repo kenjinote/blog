@@ -1,17 +1,26 @@
 ---
-title: '話題のショート動画まとめ｜トッテナムのボールボーイ救出劇など'
-date: "2026-09-24T19:44:38+09:00"
-slug: "ショート動画リンク"
+title: '話題のショート動画2本｜トッテナムのボールボーイとスターバックス'
 date: 2024-08-25T16:24:35+09:00
+lastmod: 2026-11-25T00:00:00+09:00
+slug: "ショート動画リンク"
 tags: ["動画", "ショート"]
 draft: false
 image: "img.webp"
 categories: ["it-technology"]
-description: 'トッテナムの試合でチームを救いモウリーニョに称賛されたボールボーイの感動エピソードなど、SNSで話題になったおすすめのショート動画リンクをまとめて紹介しています。'
+description: 'SNSで見つけたショート動画を2本紹介します。トッテナムのボールボーイのプレーと、スターバックスに関する動画へのリンクを掲載しています。'
 ---
-1. サッカー　ボールボーイ
+この記事では、SNSで見つけたショート動画を2本紹介します。外部サービスの動画は、投稿者の設定や地域、サービスの提供状況によって再生できない場合があります。
 
-<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@gg211204/video/7398347526975294738" data-video-id="7398347526975294738" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@gg211204" href="https://www.tiktok.com/@gg211204?refer=embed">@gg211204</a> 『ボールボーイがヒーローになった日』 この日チームを救ったボールボーイは後日クラブに招待され、選手達食事を共にした。 <a title="トッテナム" target="_blank" href="https://www.tiktok.com/tag/%E3%83%88%E3%83%83%E3%83%86%E3%83%8A%E3%83%A0?refer=embed">#トッテナム</a> <a title="スパーズ" target="_blank" href="https://www.tiktok.com/tag/%E3%82%B9%E3%83%91%E3%83%BC%E3%82%BA?refer=embed">#スパーズ</a> <a title="モウリーニョ" target="_blank" href="https://www.tiktok.com/tag/%E3%83%A2%E3%82%A6%E3%83%AA%E3%83%BC%E3%83%8B%E3%83%A7?refer=embed">#モウリーニョ</a> <a title="ボールボーイ" target="_blank" href="https://www.tiktok.com/tag/%E3%83%9C%E3%83%BC%E3%83%AB%E3%83%9C%E3%83%BC%E3%82%A4?refer=embed">#ボールボーイ</a> <a target="_blank" title="♬ original sound  - じょり" href="https://www.tiktok.com/music/original-sound-じょり-7398347563419601680?refer=embed">♬ original sound  - じょり</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+## トッテナムのボールボーイ
 
-2. スタバ
+トッテナム対オリンピアコス戦で、ボールボーイのカラム・ハインズが素早くボールを戻し、同点ゴールにつながりました。トッテナムの公式記事によると、ジョゼ・モウリーニョ監督は彼の判断を称賛し、試合後にも感謝を伝えています。 [トッテナム公式記事（英語）](https://www.tottenhamhotspur.com/news/997275/joses-five-point-preview-bournemouth).
+
+[**TikTokで動画を見る**](https://www.tiktok.com/@gg211204/video/7398347526975294738)
+
+## スターバックスの動画
+
+以下の動画はYouTubeで再生できます。埋め込みが表示されない場合はYouTubeで開いてください。
+
 {{<youtube P3pSGIWng-E>}}
+
+[**YouTubeで動画を見る**](https://www.youtube.com/watch?v=P3pSGIWng-E)

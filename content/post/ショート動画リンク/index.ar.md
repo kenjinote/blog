@@ -1,17 +1,26 @@
 ---
-title: 'ملخص لمقاطع الفيديو القصيرة الشائعة | قصة إنقاذ فتى الكرات في توتنهام وغيرها'
-date: "2026-09-24T19:44:38+09:00"
-slug: "قصيرفيديوリンク"
+title: 'مقطعان قصيران: جامع الكرات في توتنهام وستاربكس'
 date: 2024-08-25T16:24:35+09:00
+lastmod: 2026-11-25T00:00:00+09:00
+slug: "قصيرفيديوリンク"
 tags: ["فيديو", "قصير"]
 draft: false
 image: "img.webp"
 categories: ["it-technology"]
-description: 'نقدم مجموعة من الروابط لمقاطع الفيديو القصيرة الموصى بها والتي أصبحت شائعة على وسائل التواصل الاجتماعي، مثل القصة المؤثرة لفتى الكرات الذي أنقذ الفريق في مباراة لتوتنهام ونال إشادة مورينيو.'
+description: 'نعرض مقطعين قصيرين من وسائل التواصل: سرعة تصرف جامع الكرات في توتنهام، ومقطعًا مرتبطًا بستاربكس.'
 ---
-1. كرة القدم - فتى الكرات
+يعرض هذا المقال مقطعين قصيرين من وسائل التواصل الاجتماعي. يعتمد تشغيل المقاطع على الخدمات الخارجية على إعدادات الناشر والمنطقة ومدى توفر المقطع على الخدمة.
 
-<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@gg211204/video/7398347526975294738" data-video-id="7398347526975294738" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@gg211204" href="https://www.tiktok.com/@gg211204?refer=embed">@gg211204</a> 『اليوم الذي أصبح فيه فتى الكرات بطلاً』 فتى الكرات الذي أنقذ الفريق في ذلك اليوم دُعي لاحقًا إلى النادي وتناول وجبة مع اللاعبين. <a title="توتنهام" target="_blank" href="https://www.tiktok.com/tag/%E3%83%88%E3%83%83%E3%83%86%E3%83%8A%E3%83%A0?refer=embed">#توتنهام</a> <a title="سبيرز" target="_blank" href="https://www.tiktok.com/tag/%E3%82%B9%E3%83%91%E3%83%BC%E3%82%BA?refer=embed">#سبيرز</a> <a title="مورينيو" target="_blank" href="https://www.tiktok.com/tag/%E3%83%A2%E3%82%A6%E3%83%AA%E3%83%BC%E3%83%8B%E3%83%A7?refer=embed">#مورينيو</a> <a title="فتى الكرات" target="_blank" href="https://www.tiktok.com/tag/%E3%83%9C%E3%83%BC%E3%83%AB%E3%83%9C%E3%83%BC%E3%82%A4?refer=embed">#فتى_الكرات</a> <a target="_blank" title="♬ original sound  - じょり" href="https://www.tiktok.com/music/original-sound-じょり-7398347563419601680?refer=embed">♬ original sound  - じょり</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+## جامع الكرات في توتنهام
 
-2. ستاربكس
+في مباراة توتنهام وأولمبياكوس، أعاد جامع الكرات كالوم هاينز الكرة بسرعة، مما ساعد على صناعة هدف التعادل. وذكر تقرير النادي الرسمي أن جوزيه مورينيو أشاد بسرعة بديهته وشكره بعد المباراة. [تقرير توتنهام الرسمي (بالإنجليزية)](https://www.tottenhamhotspur.com/news/997275/joses-five-point-preview-bournemouth).
+
+[**شاهد على TikTok**](https://www.tiktok.com/@gg211204/video/7398347526975294738)
+
+## مقطع عن ستاربكس
+
+شغّل المقطع أدناه عبر YouTube. إذا لم يعمل المشغّل المضمّن، فافتحه على YouTube.
+
 {{<youtube P3pSGIWng-E>}}
+
+[**شاهد على YouTube**](https://www.youtube.com/watch?v=P3pSGIWng-E)

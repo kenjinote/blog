@@ -1,31 +1,26 @@
 ---
-
-
-
-
-
-
-
-title: 'Colección de videos cortos virales | El rescate del recogepelotas del Tottenham, etc.'
-date: "2026-09-24T19:44:38+09:00"
-slug: "CortoVideoリンク"
+title: 'Dos vídeos cortos: el recogepelotas del Tottenham y Starbucks'
 date: 2024-08-25T16:24:35+09:00
+lastmod: 2026-11-25T00:00:00+09:00
+slug: "CortoVideoリンク"
 tags: ["Videos", "Cortos"]
 draft: false
 image: "img.webp"
 categories: ["it-technology"]
-description: 'Presentamos una colección de enlaces a videos cortos recomendados que se han vuelto virales en las redes sociales, incluyendo el conmovedor episodio del recogepelotas que salvó a su equipo en un partido del Tottenham y fue elogiado por Mourinho.'
+description: 'Compartimos dos vídeos cortos vistos en redes sociales: la rápida reacción de un recogepelotas del Tottenham y un vídeo relacionado con Starbucks.'
 ---
+Esta publicación reúne dos vídeos cortos vistos en redes sociales. La reproducción en servicios externos depende de la configuración del autor, la región y de que el servicio siga ofreciendo el vídeo.
 
+## El recogepelotas del Tottenham
 
+Durante el partido entre el Tottenham y el Olympiacos, el recogepelotas Callum Hynes devolvió el balón rápidamente y ayudó a preparar el gol del empate. Según el club, José Mourinho elogió su rapidez de reacción y le dio las gracias después del partido. [Artículo oficial del Tottenham (en inglés)](https://www.tottenhamhotspur.com/news/997275/joses-five-point-preview-bournemouth).
 
+[**Ver en TikTok**](https://www.tiktok.com/@gg211204/video/7398347526975294738)
 
+## Un vídeo sobre Starbucks
 
+Reproduce el vídeo en YouTube abajo. Si no carga el reproductor integrado, ábrelo en YouTube.
 
-
-1. Recogepelotas de fútbol
-
-<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@gg211204/video/7398347526975294738" data-video-id="7398347526975294738" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@gg211204" href="https://www.tiktok.com/@gg211204?refer=embed">@gg211204</a> 『El día que un recogepelotas se convirtió en héroe』 El recogepelotas que salvó al equipo ese día fue invitado posteriormente al club y compartió una comida con los jugadores. <a title="Tottenham" target="_blank" href="https://www.tiktok.com/tag/%E3%83%88%E3%83%83%E3%83%86%E3%83%8A%E3%83%A0?refer=embed">#Tottenham</a> <a title="Spurs" target="_blank" href="https://www.tiktok.com/tag/%E3%82%B9%E3%83%91%E3%83%BC%E3%82%BA?refer=embed">#Spurs</a> <a title="Mourinho" target="_blank" href="https://www.tiktok.com/tag/%E3%83%A2%E3%82%A6%E3%83%AA%E3%83%BC%E3%83%8B%E3%83%A7?refer=embed">#Mourinho</a> <a title="Recogepelotas" target="_blank" href="https://www.tiktok.com/tag/%E3%83%9C%E3%83%BC%E3%83%AB%E3%83%9C%E3%83%BC%E3%82%A4?refer=embed">#Recogepelotas</a> <a target="_blank" title="♬ original sound  - じょり" href="https://www.tiktok.com/music/original-sound-じょり-7398347563419601680?refer=embed">♬ original sound  - じょり</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
-
-2. Starbucks
 {{<youtube P3pSGIWng-E>}}
+
+[**Ver en YouTube**](https://www.youtube.com/watch?v=P3pSGIWng-E)

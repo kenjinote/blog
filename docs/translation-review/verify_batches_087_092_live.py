@@ -14,6 +14,33 @@ DOCS = ROOT / "docs/translation-review"
 LANGS = ("ja", "en", "zh-cn", "es", "ko", "pt", "zh-tw", "hi", "fr", "de", "ar", "ru", "id")
 NS = {"s": "http://www.sitemaps.org/schemas/sitemap/0.9"}
 ARTICLES = {
+    187: {
+        "bundle": ROOT / "content/post/ショート動画リンク",
+        "slug": "ショート動画リンク",
+        "links": [
+            "https://www.tottenhamhotspur.com/news/997275/joses-five-point-preview-bournemouth",
+            "https://www.tiktok.com/@gg211204/video/7398347526975294738",
+            "https://www.youtube.com/watch?v=P3pSGIWng-E",
+        ],
+        "markers": [],
+        "markersByLanguage": {
+            "ja": ["トッテナムのボールボーイ", "カラム・ハインズ", "TikTokで動画を見る"],
+            "en": ["Tottenham's ball boy", "Callum Hynes", "Watch on TikTok"],
+            "zh-cn": ["热刺球童", "卡勒姆·海因斯", "在 TikTok 上观看"],
+            "es": ["El recogepelotas del Tottenham", "Callum Hynes", "Ver en TikTok"],
+            "fr": ["Le ramasseur de balles de Tottenham", "Callum Hynes", "Voir sur TikTok"],
+            "de": ["Tottenhams Balljunge", "Callum Hynes", "Auf TikTok ansehen"],
+            "pt": ["O gandula do Tottenham", "Callum Hynes", "Assistir no TikTok"],
+            "id": ["Anak gawang Tottenham", "Callum Hynes", "Tonton di TikTok"],
+            "ko": ["토트넘 볼보이", "캘럼 하인스", "TikTok에서 보기"],
+            "zh-tw": ["熱刺球僮", "卡倫·海恩斯", "在 TikTok 觀看"],
+            "hi": ["टोटेनहम का बॉल बॉय", "कैलम हाइन्स", "TikTok पर देखें"],
+            "ru": ["Болбой «Тоттенхэма»", "Каллум Хайнс", "Смотреть в TikTok"],
+            "ar": ["جامع الكرات في توتنهام", "كالوم هاينز", "شاهد على TikTok"],
+        },
+        "lastmod": "2026-11-25",
+        "date": "2024-08-25",
+    },
     186: {
         "bundle": ROOT / "content/post/paint.netの魅力",
         "slug": "paint.netの魅力",
@@ -1064,7 +1091,7 @@ def slug_key(value):
 parser = argparse.ArgumentParser()
 parser.add_argument("--ci-run", type=int, required=True)
 parser.add_argument("--commit", required=True)
-parser.add_argument("--max-batch", type=int, choices=(90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186), default=186)
+parser.add_argument("--max-batch", type=int, choices=(90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187), default=187)
 args = parser.parse_args()
 ARTICLES = {number: article for number, article in ARTICLES.items() if number <= args.max_batch}
 with urllib.request.urlopen(f"https://github.com/kenjinote/blog/actions/runs/{args.ci_run}", timeout=45) as response:
@@ -1123,10 +1150,10 @@ for batch_number, article in ARTICLES.items():
                 else any(article["linkFragment"] in link for link in page.links)
             ),
             "localAssets": all(any(unquote(urlparse(link).path).endswith(asset) for link in page.links) for asset in article.get("assets", [])),
-            "articleInstructions": all(marker in compact for marker in article["markers"])
+            "articleInstructions": all(re.sub(r"\s+", "", marker) in compact for marker in article.get("markersByLanguage", {}).get(language, article["markers"]))
             and re.sub(r"\s+", "", article.get("scopeMarkers", {}).get(language, "")) in compact,
             "noKnownBadLinks": not any(link in page.links for link in ("https://kenji.blog/es/p/kubernetes-k8s-architecture-pod-service-ingress/", "/hi/p/logicpad-windows-app-development-journey/")),
-            "dates": yaml_value(path, "date").startswith(article["date"]) and yaml_value(path, "lastmod").startswith("2026-11-24"),
+            "dates": yaml_value(path, "date").startswith(article["date"]) and yaml_value(path, "lastmod").startswith(article.get("lastmod", "2026-11-24")),
         }
         pages.append({"language": language, "url": url, "status": status, "checks": checks, "passed": all(checks.values())})
     results[batch_number] = {"pages": pages, "allPassed": len(pages) == 13 and all(page["passed"] for page in pages)}

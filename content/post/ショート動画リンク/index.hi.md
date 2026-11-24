@@ -1,17 +1,26 @@
 ---
-title: 'वायरल लघु वीडियो का सारांश | टोटेनहम के बॉल बॉय का बचाव आदि'
-date: "2026-09-24T19:44:38+09:00"
-slug: "शॉर्टवीडियोリンク"
+title: 'दो छोटे वीडियो: टोटेनहम का बॉल बॉय और स्टारबक्स'
 date: 2024-08-25T16:24:35+09:00
+lastmod: 2026-11-25T00:00:00+09:00
+slug: "शॉर्टवीडियोリンク"
 tags: ["वीडियो", "शॉर्ट"]
 draft: false
 image: "img.webp"
 categories: ["it-technology"]
-description: 'टोटेनहम के मैच में टीम को बचाने वाले और मोरिन्हो द्वारा सराहे गए बॉल बॉय की मार्मिक कहानी जैसे सोशल मीडिया पर वायरल हुए अनुशंसित लघु वीडियो के लिंक संकलित करके प्रस्तुत किए गए हैं।'
+description: 'सोशल मीडिया पर मिले दो छोटे वीडियो: टोटेनहम के बॉल बॉय की तेज़ सूझबूझ और स्टारबक्स से जुड़ा एक वीडियो।'
 ---
-1. फुटबॉल बॉल बॉय
+इस पोस्ट में सोशल मीडिया पर मिले दो छोटे वीडियो हैं। बाहरी सेवाओं पर वीडियो चलना अपलोड करने वाले की सेटिंग, क्षेत्र और सेवा में वीडियो की उपलब्धता पर निर्भर करता है।
 
-<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@gg211204/video/7398347526975294738" data-video-id="7398347526975294738" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@gg211204" href="https://www.tiktok.com/@gg211204?refer=embed">@gg211204</a> 『वह दिन जब बॉल बॉय हीरो बन गया』 इस दिन टीम को बचाने वाले बॉल बॉय को बाद में क्लब में आमंत्रित किया गया और खिलाड़ियों के साथ भोजन किया। <a title="トッテナム" target="_blank" href="https://www.tiktok.com/tag/%E3%83%88%E3%83%83%E3%83%86%E3%83%8A%E3%83%A0?refer=embed">#トッテナム</a> <a title="スパーズ" target="_blank" href="https://www.tiktok.com/tag/%E3%82%B9%E3%83%91%E3%83%BC%E3%82%BA?refer=embed">#スパーズ</a> <a title="モウリーニョ" target="_blank" href="https://www.tiktok.com/tag/%E3%83%A2%E3%82%A6%E3%83%AA%E3%83%BC%E3%83%8B%E3%83%A7?refer=embed">#モウリーニョ</a> <a title="ボールボーイ" target="_blank" href="https://www.tiktok.com/tag/%E3%83%9C%E3%83%BC%E3%83%AB%E3%83%9C%E3%83%BC%E3%82%A4?refer=embed">#ボールボーイ</a> <a target="_blank" title="♬ original sound  - じょり" href="https://www.tiktok.com/music/original-sound-じょり-7398347563419601680?refer=embed">♬ original sound  - じょり</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+## टोटेनहम का बॉल बॉय
 
-2. स्टारबक्स
+टोटेनहम और ओलंपियाकोस के मैच में बॉल बॉय कैलम हाइन्स ने गेंद जल्दी लौटाई, जिससे बराबरी का गोल बनाने में मदद मिली। क्लब की आधिकारिक रिपोर्ट के अनुसार, जोसे मोरिन्हो ने उनकी तेज़ सूझबूझ की प्रशंसा की और मैच के बाद धन्यवाद दिया। [टोटेनहम की आधिकारिक रिपोर्ट (अंग्रेज़ी)](https://www.tottenhamhotspur.com/news/997275/joses-five-point-preview-bournemouth).
+
+[**TikTok पर देखें**](https://www.tiktok.com/@gg211204/video/7398347526975294738)
+
+## स्टारबक्स से जुड़ा वीडियो
+
+नीचे दिया वीडियो YouTube पर चलाएँ। एम्बेडेड प्लेयर न खुले तो इसे YouTube पर देखें।
+
 {{<youtube P3pSGIWng-E>}}
+
+[**YouTube पर देखें**](https://www.youtube.com/watch?v=P3pSGIWng-E)

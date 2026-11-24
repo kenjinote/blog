@@ -1,17 +1,26 @@
 ---
-title: 'Zusammenfassung der angesagten Kurzvideos | Die Rettung des Tottenham-Balljungen und mehr'
-date: "2026-09-24T19:44:38+09:00"
-slug: "ShortVideoリンク"
+title: 'Zwei Kurzvideos: Tottenhams Balljunge und Starbucks'
 date: 2024-08-25T16:24:35+09:00
+lastmod: 2026-11-25T00:00:00+09:00
+slug: "ShortVideoリンク"
 tags: ["Video", "Kurz"]
 draft: false
 image: "img.webp"
 categories: ["it-technology"]
-description: 'Wir stellen eine Zusammenfassung empfohlener Kurzvideo-Links vor, die in den sozialen Medien ein heißes Thema geworden sind, wie z. B. die bewegende Episode des Balljungen, der die Mannschaft in einem Tottenham-Spiel rettete und von Mourinho gelobt wurde.'
+description: 'Hier sind zwei kurze Videos aus sozialen Netzwerken: der schnelle Einwurf eines Tottenham-Balljungen und ein Video rund um Starbucks.'
 ---
-1. Fußball Balljunge
+Dieser Beitrag zeigt zwei kurze Videos aus sozialen Netzwerken. Ob externe Videos abgespielt werden, hängt von den Einstellungen des Uploaders, der Region und der Verfügbarkeit beim jeweiligen Dienst ab.
 
-<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@gg211204/video/7398347526975294738" data-video-id="7398347526975294738" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@gg211204" href="https://www.tiktok.com/@gg211204?refer=embed">@gg211204</a> 『Der Tag, an dem der Balljunge zum Helden wurde』 Der Balljunge, der das Team an diesem Tag rettete, wurde später in den Verein eingeladen und aß mit den Spielern zu Abend. <a title="トッテナム" target="_blank" href="https://www.tiktok.com/tag/%E3%83%88%E3%83%83%E3%83%86%E3%83%8A%E3%83%A0?refer=embed">#トッテナム</a> <a title="スパーズ" target="_blank" href="https://www.tiktok.com/tag/%E3%82%B9%E3%83%91%E3%83%BC%E3%82%BA?refer=embed">#スパーズ</a> <a title="モウリーニョ" target="_blank" href="https://www.tiktok.com/tag/%E3%83%A2%E3%82%A6%E3%83%AA%E3%83%BC%E3%83%8B%E3%83%A7?refer=embed">#モウリーニョ</a> <a title="ボールボーイ" target="_blank" href="https://www.tiktok.com/tag/%E3%83%9C%E3%83%BC%E3%83%AB%E3%83%9C%E3%83%BC%E3%82%A4?refer=embed">#ボールボーイ</a> <a target="_blank" title="♬ original sound  - じょり" href="https://www.tiktok.com/music/original-sound-じょり-7398347563419601680?refer=embed">♬ original sound  - じょり</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+## Tottenhams Balljunge
 
-2. Starbucks
+Im Spiel Tottenham gegen Olympiacos brachte Balljunge Callum Hynes den Ball schnell zurück ins Spiel und leitete damit den Ausgleich mit ein. Laut dem offiziellen Bericht des Vereins lobte José Mourinho seine schnelle Reaktion und bedankte sich nach dem Spiel bei ihm. [Offizieller Bericht von Tottenham (Englisch)](https://www.tottenhamhotspur.com/news/997275/joses-five-point-preview-bournemouth).
+
+[**Auf TikTok ansehen**](https://www.tiktok.com/@gg211204/video/7398347526975294738)
+
+## Ein Starbucks-Video
+
+Das Video unten wird über YouTube abgespielt. Falls der eingebettete Player nicht lädt, öffnen Sie es auf YouTube.
+
 {{<youtube P3pSGIWng-E>}}
+
+[**Auf YouTube ansehen**](https://www.youtube.com/watch?v=P3pSGIWng-E)

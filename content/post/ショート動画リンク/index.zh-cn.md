@@ -1,17 +1,26 @@
 ---
-title: '热门短视频合集｜热刺球童救场等'
-date: "2026-09-24T19:44:38+09:00"
-slug: "短路视频リンク"
+title: '两段短视频：热刺球童与星巴克'
 date: 2024-08-25T16:24:35+09:00
+lastmod: 2026-11-25T00:00:00+09:00
+slug: "短路视频リンク"
 tags: ["视频", "短视频"]
 draft: false
 image: "img.webp"
 categories: ["it-technology"]
-description: '汇总介绍在社交网络上引发热议的推荐短视频链接，如热刺比赛中拯救球队并获穆里尼奥称赞的球童感人故事等。'
+description: '这里分享两段在社交媒体上看到的短视频：热刺球童的快速反应，以及一段与星巴克有关的视频。'
 ---
-1. 足球 球童
+本文分享两段在社交媒体上看到的短视频。外部平台的视频能否播放，取决于发布者设置、所在地区以及平台是否仍提供该视频。
 
-<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@gg211204/video/7398347526975294738" data-video-id="7398347526975294738" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@gg211204" href="https://www.tiktok.com/@gg211204?refer=embed">@gg211204</a> 『ボールボーイがヒーローになった日』 この日チームを救ったボールボーイは後日クラブに招待され、選手達食事を共にした。 <a title="トッテナム" target="_blank" href="https://www.tiktok.com/tag/%E3%83%88%E3%83%83%E3%83%86%E3%83%8A%E3%83%A0?refer=embed">#トッテナム</a> <a title="スパーズ" target="_blank" href="https://www.tiktok.com/tag/%E3%82%B9%E3%83%91%E3%83%BC%E3%82%BA?refer=embed">#スパーズ</a> <a title="モウリーニョ" target="_blank" href="https://www.tiktok.com/tag/%E3%83%A2%E3%82%A6%E3%83%AA%E3%83%BC%E3%83%8B%E3%83%A7?refer=embed">#モウリーニョ</a> <a title="ボールボーイ" target="_blank" href="https://www.tiktok.com/tag/%E3%83%9C%E3%83%BC%E3%83%AB%E3%83%9C%E3%83%BC%E3%82%A4?refer=embed">#ボールボーイ</a> <a target="_blank" title="♬ original sound  - じょり" href="https://www.tiktok.com/music/original-sound-じょり-7398347563419601680?refer=embed">♬ original sound  - じょり</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+## 热刺球童
 
-2. 星巴克
+在热刺对阵奥林匹亚科斯的比赛中，球童卡勒姆·海因斯迅速把球递回场内，帮助球队创造扳平比分的机会。热刺官方报道说，主教练若泽·穆里尼奥称赞了他的快速反应，并在赛后向他致谢。 [热刺官方报道（英文）](https://www.tottenhamhotspur.com/news/997275/joses-five-point-preview-bournemouth).
+
+[**在 TikTok 上观看**](https://www.tiktok.com/@gg211204/video/7398347526975294738)
+
+## 星巴克相关视频
+
+请在下方通过 YouTube 播放。如果嵌入播放器无法加载，请前往 YouTube 打开。
+
 {{<youtube P3pSGIWng-E>}}
+
+[**在 YouTube 上观看**](https://www.youtube.com/watch?v=P3pSGIWng-E)

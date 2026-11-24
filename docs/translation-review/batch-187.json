@@ -1,0 +1,454 @@
+{
+  "version": 1,
+  "batch": 187,
+  "article": "Two short videos: Tottenham's ball boy and Starbucks",
+  "reviewedAt": "2026-11-25",
+  "sourceHash": "b3025247e0eb0ff529af8991b12587e700962a18278e3fbe10ad13a9894390d5",
+  "sources": [
+    "https://www.tottenhamhotspur.com/news/997275/joses-five-point-preview-bournemouth",
+    "https://www.tiktok.com/@gg211204/video/7398347526975294738",
+    "https://www.youtube.com/watch?v=P3pSGIWng-E"
+  ],
+  "scope": "Read and compared the complete Japanese article and all twelve translations. Checked the historical date against Git history; translated the article prose, titles and descriptions; checked the Tottenham ball-boy account against the club's official report; checked that the original TikTok and YouTube destinations are present; inspected dates, embeds, metadata, and translation consistency.",
+  "findings": [
+    "Removed the duplicate future date (2026-09-24) from all 13 files and restored the original publication date, 2024-08-25, confirmed in repository history; recorded the review date as lastmod.",
+    "Translated the Japanese TikTok embed caption and tags out of translated pages by replacing the embed with a direct link to the original post.",
+    "Replaced unsupported phrasing that the ball boy 'saved the team' with the club's account: Callum Hynes quickly returned the ball, helping set up the equalizer against Olympiacos; José Mourinho praised his quick thinking and thanked him.",
+    "Added context about third-party playback availability and links to the original TikTok/YouTube destinations and the official Tottenham report."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/ショート動画リンク/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/ショート動画リンク/index.md",
+      "sourceHash": "b3025247e0eb0ff529af8991b12587e700962a18278e3fbe10ad13a9894390d5",
+      "translationHash": "1111a856749b87989c568d5c54aa15a0a0abde28569a9122f1272680dd6f1913",
+      "summary": "Compared the complete translation with the Japanese article and Tottenham Hotspur's official account; corrected dates, translated all text, and aligned the video descriptions and links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations. Removed the duplicated/future date, restored the original 2024-08-25 publication date, translated all article text, and documented the two videos and playback limits."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked football terminology (ball boy/gandula/recogepelotas), the proper names Tottenham, Olympiacos, Callum Hynes and José Mourinho, and localized headings in all editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Tottenham's official report for the ball boy account; retained the original TikTok and YouTube destinations. The source posts themselves may be unavailable or region-restricted."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The original TikTok post and YouTube video were retained, but their current playback, regional availability, and embedded display can change; the YouTube title/content could not be independently confirmed from the available official page metadata.",
+        "Tottenham's official report corroborates the historical ball-boy account, but does not verify the present-day availability or every claim in the third-party TikTok post."
+      ]
+    },
+    "post/ショート動画リンク/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/ショート動画リンク/index.md",
+      "sourceHash": "b3025247e0eb0ff529af8991b12587e700962a18278e3fbe10ad13a9894390d5",
+      "translationHash": "baca24cf48ff8777370a1179e7b45c47f3967148cbf4087fe8e51af00fd76aa9",
+      "summary": "Compared the complete translation with the Japanese article and Tottenham Hotspur's official account; corrected dates, translated all text, and aligned the video descriptions and links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations. Removed the duplicated/future date, restored the original 2024-08-25 publication date, translated all article text, and documented the two videos and playback limits."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked football terminology (ball boy/gandula/recogepelotas), the proper names Tottenham, Olympiacos, Callum Hynes and José Mourinho, and localized headings in all editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Tottenham's official report for the ball boy account; retained the original TikTok and YouTube destinations. The source posts themselves may be unavailable or region-restricted."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The original TikTok post and YouTube video were retained, but their current playback, regional availability, and embedded display can change; the YouTube title/content could not be independently confirmed from the available official page metadata.",
+        "Tottenham's official report corroborates the historical ball-boy account, but does not verify the present-day availability or every claim in the third-party TikTok post."
+      ]
+    },
+    "post/ショート動画リンク/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/ショート動画リンク/index.md",
+      "sourceHash": "b3025247e0eb0ff529af8991b12587e700962a18278e3fbe10ad13a9894390d5",
+      "translationHash": "771b08d9860980383dea03d49a350a53391eaaa0086615c82c4589fe80fbdae3",
+      "summary": "Compared the complete translation with the Japanese article and Tottenham Hotspur's official account; corrected dates, translated all text, and aligned the video descriptions and links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations. Removed the duplicated/future date, restored the original 2024-08-25 publication date, translated all article text, and documented the two videos and playback limits."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked football terminology (ball boy/gandula/recogepelotas), the proper names Tottenham, Olympiacos, Callum Hynes and José Mourinho, and localized headings in all editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Tottenham's official report for the ball boy account; retained the original TikTok and YouTube destinations. The source posts themselves may be unavailable or region-restricted."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The original TikTok post and YouTube video were retained, but their current playback, regional availability, and embedded display can change; the YouTube title/content could not be independently confirmed from the available official page metadata.",
+        "Tottenham's official report corroborates the historical ball-boy account, but does not verify the present-day availability or every claim in the third-party TikTok post."
+      ]
+    },
+    "post/ショート動画リンク/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/ショート動画リンク/index.md",
+      "sourceHash": "b3025247e0eb0ff529af8991b12587e700962a18278e3fbe10ad13a9894390d5",
+      "translationHash": "aaf12e356efd8235f94322c636469f408543510bd888febb19d3ecc463f41909",
+      "summary": "Compared the complete translation with the Japanese article and Tottenham Hotspur's official account; corrected dates, translated all text, and aligned the video descriptions and links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations. Removed the duplicated/future date, restored the original 2024-08-25 publication date, translated all article text, and documented the two videos and playback limits."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked football terminology (ball boy/gandula/recogepelotas), the proper names Tottenham, Olympiacos, Callum Hynes and José Mourinho, and localized headings in all editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Tottenham's official report for the ball boy account; retained the original TikTok and YouTube destinations. The source posts themselves may be unavailable or region-restricted."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The original TikTok post and YouTube video were retained, but their current playback, regional availability, and embedded display can change; the YouTube title/content could not be independently confirmed from the available official page metadata.",
+        "Tottenham's official report corroborates the historical ball-boy account, but does not verify the present-day availability or every claim in the third-party TikTok post."
+      ]
+    },
+    "post/ショート動画リンク/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/ショート動画リンク/index.md",
+      "sourceHash": "b3025247e0eb0ff529af8991b12587e700962a18278e3fbe10ad13a9894390d5",
+      "translationHash": "c360a41fc363ae831bccb09627e20155305786eb3d842b75b0d4cbd27faaba94",
+      "summary": "Compared the complete translation with the Japanese article and Tottenham Hotspur's official account; corrected dates, translated all text, and aligned the video descriptions and links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations. Removed the duplicated/future date, restored the original 2024-08-25 publication date, translated all article text, and documented the two videos and playback limits."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked football terminology (ball boy/gandula/recogepelotas), the proper names Tottenham, Olympiacos, Callum Hynes and José Mourinho, and localized headings in all editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Tottenham's official report for the ball boy account; retained the original TikTok and YouTube destinations. The source posts themselves may be unavailable or region-restricted."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The original TikTok post and YouTube video were retained, but their current playback, regional availability, and embedded display can change; the YouTube title/content could not be independently confirmed from the available official page metadata.",
+        "Tottenham's official report corroborates the historical ball-boy account, but does not verify the present-day availability or every claim in the third-party TikTok post."
+      ]
+    },
+    "post/ショート動画リンク/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/ショート動画リンク/index.md",
+      "sourceHash": "b3025247e0eb0ff529af8991b12587e700962a18278e3fbe10ad13a9894390d5",
+      "translationHash": "58dc9997f88de7bc96dffabb8c56d26938b098e0cd2acc324329b6742b516fe3",
+      "summary": "Compared the complete translation with the Japanese article and Tottenham Hotspur's official account; corrected dates, translated all text, and aligned the video descriptions and links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations. Removed the duplicated/future date, restored the original 2024-08-25 publication date, translated all article text, and documented the two videos and playback limits."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked football terminology (ball boy/gandula/recogepelotas), the proper names Tottenham, Olympiacos, Callum Hynes and José Mourinho, and localized headings in all editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Tottenham's official report for the ball boy account; retained the original TikTok and YouTube destinations. The source posts themselves may be unavailable or region-restricted."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The original TikTok post and YouTube video were retained, but their current playback, regional availability, and embedded display can change; the YouTube title/content could not be independently confirmed from the available official page metadata.",
+        "Tottenham's official report corroborates the historical ball-boy account, but does not verify the present-day availability or every claim in the third-party TikTok post."
+      ]
+    },
+    "post/ショート動画リンク/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/ショート動画リンク/index.md",
+      "sourceHash": "b3025247e0eb0ff529af8991b12587e700962a18278e3fbe10ad13a9894390d5",
+      "translationHash": "21cb77929bf107327b09de84a09e88cea3461bbe85df342c231841524ee0c985",
+      "summary": "Compared the complete translation with the Japanese article and Tottenham Hotspur's official account; corrected dates, translated all text, and aligned the video descriptions and links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations. Removed the duplicated/future date, restored the original 2024-08-25 publication date, translated all article text, and documented the two videos and playback limits."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked football terminology (ball boy/gandula/recogepelotas), the proper names Tottenham, Olympiacos, Callum Hynes and José Mourinho, and localized headings in all editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Tottenham's official report for the ball boy account; retained the original TikTok and YouTube destinations. The source posts themselves may be unavailable or region-restricted."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The original TikTok post and YouTube video were retained, but their current playback, regional availability, and embedded display can change; the YouTube title/content could not be independently confirmed from the available official page metadata.",
+        "Tottenham's official report corroborates the historical ball-boy account, but does not verify the present-day availability or every claim in the third-party TikTok post."
+      ]
+    },
+    "post/ショート動画リンク/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/ショート動画リンク/index.md",
+      "sourceHash": "b3025247e0eb0ff529af8991b12587e700962a18278e3fbe10ad13a9894390d5",
+      "translationHash": "f59dcd3351f874834c3913649f6bdaeb26b2708c63ebdf4b3820e9a12df9f95b",
+      "summary": "Compared the complete translation with the Japanese article and Tottenham Hotspur's official account; corrected dates, translated all text, and aligned the video descriptions and links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations. Removed the duplicated/future date, restored the original 2024-08-25 publication date, translated all article text, and documented the two videos and playback limits."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked football terminology (ball boy/gandula/recogepelotas), the proper names Tottenham, Olympiacos, Callum Hynes and José Mourinho, and localized headings in all editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Tottenham's official report for the ball boy account; retained the original TikTok and YouTube destinations. The source posts themselves may be unavailable or region-restricted."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The original TikTok post and YouTube video were retained, but their current playback, regional availability, and embedded display can change; the YouTube title/content could not be independently confirmed from the available official page metadata.",
+        "Tottenham's official report corroborates the historical ball-boy account, but does not verify the present-day availability or every claim in the third-party TikTok post."
+      ]
+    },
+    "post/ショート動画リンク/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/ショート動画リンク/index.md",
+      "sourceHash": "b3025247e0eb0ff529af8991b12587e700962a18278e3fbe10ad13a9894390d5",
+      "translationHash": "9ee449aa9396649c6f77a9e6a73b656dc4a8689eb02126c6392c89baf16efae3",
+      "summary": "Compared the complete translation with the Japanese article and Tottenham Hotspur's official account; corrected dates, translated all text, and aligned the video descriptions and links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations. Removed the duplicated/future date, restored the original 2024-08-25 publication date, translated all article text, and documented the two videos and playback limits."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked football terminology (ball boy/gandula/recogepelotas), the proper names Tottenham, Olympiacos, Callum Hynes and José Mourinho, and localized headings in all editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Tottenham's official report for the ball boy account; retained the original TikTok and YouTube destinations. The source posts themselves may be unavailable or region-restricted."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The original TikTok post and YouTube video were retained, but their current playback, regional availability, and embedded display can change; the YouTube title/content could not be independently confirmed from the available official page metadata.",
+        "Tottenham's official report corroborates the historical ball-boy account, but does not verify the present-day availability or every claim in the third-party TikTok post."
+      ]
+    },
+    "post/ショート動画リンク/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/ショート動画リンク/index.md",
+      "sourceHash": "b3025247e0eb0ff529af8991b12587e700962a18278e3fbe10ad13a9894390d5",
+      "translationHash": "f4edb1dca02a2b6070d9b87f45fc5033d74dd36b33e5d20e3f161a1b357b7142",
+      "summary": "Compared the complete translation with the Japanese article and Tottenham Hotspur's official account; corrected dates, translated all text, and aligned the video descriptions and links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations. Removed the duplicated/future date, restored the original 2024-08-25 publication date, translated all article text, and documented the two videos and playback limits."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked football terminology (ball boy/gandula/recogepelotas), the proper names Tottenham, Olympiacos, Callum Hynes and José Mourinho, and localized headings in all editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Tottenham's official report for the ball boy account; retained the original TikTok and YouTube destinations. The source posts themselves may be unavailable or region-restricted."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The original TikTok post and YouTube video were retained, but their current playback, regional availability, and embedded display can change; the YouTube title/content could not be independently confirmed from the available official page metadata.",
+        "Tottenham's official report corroborates the historical ball-boy account, but does not verify the present-day availability or every claim in the third-party TikTok post."
+      ]
+    },
+    "post/ショート動画リンク/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/ショート動画リンク/index.md",
+      "sourceHash": "b3025247e0eb0ff529af8991b12587e700962a18278e3fbe10ad13a9894390d5",
+      "translationHash": "06d6972129697a981c8f57dae8815dbb62d0b601dd9eda72e6f4566de088b883",
+      "summary": "Compared the complete translation with the Japanese article and Tottenham Hotspur's official account; corrected dates, translated all text, and aligned the video descriptions and links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations. Removed the duplicated/future date, restored the original 2024-08-25 publication date, translated all article text, and documented the two videos and playback limits."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked football terminology (ball boy/gandula/recogepelotas), the proper names Tottenham, Olympiacos, Callum Hynes and José Mourinho, and localized headings in all editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Tottenham's official report for the ball boy account; retained the original TikTok and YouTube destinations. The source posts themselves may be unavailable or region-restricted."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The original TikTok post and YouTube video were retained, but their current playback, regional availability, and embedded display can change; the YouTube title/content could not be independently confirmed from the available official page metadata.",
+        "Tottenham's official report corroborates the historical ball-boy account, but does not verify the present-day availability or every claim in the third-party TikTok post."
+      ]
+    },
+    "post/ショート動画リンク/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/ショート動画リンク/index.md",
+      "sourceHash": "b3025247e0eb0ff529af8991b12587e700962a18278e3fbe10ad13a9894390d5",
+      "translationHash": "6a2b8af8794e139cf986e1474765148bfd973e9c4f23fdac46e007c7782a4148",
+      "summary": "Compared the complete translation with the Japanese article and Tottenham Hotspur's official account; corrected dates, translated all text, and aligned the video descriptions and links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations. Removed the duplicated/future date, restored the original 2024-08-25 publication date, translated all article text, and documented the two videos and playback limits."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked football terminology (ball boy/gandula/recogepelotas), the proper names Tottenham, Olympiacos, Callum Hynes and José Mourinho, and localized headings in all editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Tottenham's official report for the ball boy account; retained the original TikTok and YouTube destinations. The source posts themselves may be unavailable or region-restricted."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The original TikTok post and YouTube video were retained, but their current playback, regional availability, and embedded display can change; the YouTube title/content could not be independently confirmed from the available official page metadata.",
+        "Tottenham's official report corroborates the historical ball-boy account, but does not verify the present-day availability or every claim in the third-party TikTok post."
+      ]
+    }
+  }
+}

@@ -1,17 +1,26 @@
 ---
-title: 'Um resumo de vídeos curtos populares | O drama de resgate do gandula do Tottenham, etc.'
-date: "2026-09-24T19:44:38+09:00"
-slug: "CurtoVídeoリンク"
+title: 'Dois vídeos curtos: o gandula do Tottenham e a Starbucks'
 date: 2024-08-25T16:24:35+09:00
+lastmod: 2026-11-25T00:00:00+09:00
+slug: "CurtoVídeoリンク"
 tags: ["Vídeo", "Curto"]
 draft: false
 image: "img.webp"
 categories: ["it-technology"]
-description: 'Apresentamos um resumo de links de vídeos curtos recomendados que viraram assunto nas redes sociais, como o emocionante episódio do gandula que salvou a equipe na partida do Tottenham e foi elogiado por Mourinho.'
+description: 'Confira dois vídeos curtos encontrados nas redes sociais: a agilidade de um gandula do Tottenham e um vídeo relacionado à Starbucks.'
 ---
-1. Futebol Gandula
+Este artigo reúne dois vídeos curtos encontrados nas redes sociais. A reprodução em serviços externos depende das configurações de quem publicou, da região e da disponibilidade do vídeo.
 
-<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@gg211204/video/7398347526975294738" data-video-id="7398347526975294738" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@gg211204" href="https://www.tiktok.com/@gg211204?refer=embed">@gg211204</a> 『O dia em que o gandula virou herói』 O gandula que salvou o time neste dia foi convidado para o clube depois e jantou com os jogadores. <a title="トッテナム" target="_blank" href="https://www.tiktok.com/tag/%E3%83%88%E3%83%83%E3%83%86%E3%83%8A%E3%83%A0?refer=embed">#トッテナム</a> <a title="スパーズ" target="_blank" href="https://www.tiktok.com/tag/%E3%82%B9%E3%83%91%E3%83%BC%E3%82%BA?refer=embed">#スパーズ</a> <a title="モウリーニョ" target="_blank" href="https://www.tiktok.com/tag/%E3%83%A2%E3%82%A6%E3%83%AA%E3%83%BC%E3%83%8B%E3%83%A7?refer=embed">#モウリーニョ</a> <a title="ボールボーイ" target="_blank" href="https://www.tiktok.com/tag/%E3%83%9C%E3%83%BC%E3%83%AB%E3%83%9C%E3%83%BC%E3%82%A4?refer=embed">#ボールボーイ</a> <a target="_blank" title="♬ original sound  - じょり" href="https://www.tiktok.com/music/original-sound-じょり-7398347563419601680?refer=embed">♬ original sound  - じょり</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+## O gandula do Tottenham
 
-2. Starbucks
+Na partida entre Tottenham e Olympiacos, o gandula Callum Hynes devolveu a bola rapidamente e ajudou a preparar o gol de empate. Segundo o relato oficial do clube, José Mourinho elogiou sua rapidez de raciocínio e agradeceu a ele após a partida. [Relato oficial do Tottenham (em inglês)](https://www.tottenhamhotspur.com/news/997275/joses-five-point-preview-bournemouth).
+
+[**Assistir no TikTok**](https://www.tiktok.com/@gg211204/video/7398347526975294738)
+
+## Um vídeo sobre a Starbucks
+
+Assista ao vídeo abaixo pelo YouTube. Se o player incorporado não carregar, abra o vídeo no YouTube.
+
 {{<youtube P3pSGIWng-E>}}
+
+[**Assistir no YouTube**](https://www.youtube.com/watch?v=P3pSGIWng-E)

@@ -1,17 +1,26 @@
 ---
-title: 'Trending Short Videos Compilation | The Tottenham Ball Boy Rescue and More'
-date: "2026-09-24T19:44:38+09:00"
-slug: "ShortVideoリンク"
+title: 'Two short videos: Tottenham''s ball boy and Starbucks'
 date: 2024-08-25T16:24:35+09:00
+lastmod: 2026-11-25T00:00:00+09:00
+slug: "ShortVideoリンク"
 tags: ["Video", "Shorts"]
 draft: false
 image: "img.webp"
 categories: ["it-technology"]
-description: 'Introduces a compiled list of recommended short video links that trended on social media, including the touching episode of the ball boy who saved the team during a Tottenham match and was praised by Mourinho.'
+description: 'Two short videos found on social media: a Tottenham ball boy''s quick thinking and a video related to Starbucks.'
 ---
-1. Soccer Ball Boy
+This post shares two short videos found on social media. Playback on external services can depend on the uploader's settings, your region, and whether the service still provides the video.
 
-<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@gg211204/video/7398347526975294738" data-video-id="7398347526975294738" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@gg211204" href="https://www.tiktok.com/@gg211204?refer=embed">@gg211204</a> 『ボールボーイがヒーローになった日』 この日チームを救ったボールボーイは後日クラブに招待され、選手達食事を共にした。 <a title="トッテナム" target="_blank" href="https://www.tiktok.com/tag/%E3%83%88%E3%83%83%E3%83%86%E3%83%8A%E3%83%A0?refer=embed">#トッテナム</a> <a title="スパーズ" target="_blank" href="https://www.tiktok.com/tag/%E3%82%B9%E3%83%91%E3%83%BC%E3%82%BA?refer=embed">#スパーズ</a> <a title="モウリーニョ" target="_blank" href="https://www.tiktok.com/tag/%E3%83%A2%E3%82%A6%E3%83%AA%E3%83%BC%E3%83%8B%E3%83%A7?refer=embed">#モウリーニョ</a> <a title="ボールボーイ" target="_blank" href="https://www.tiktok.com/tag/%E3%83%9C%E3%83%BC%E3%83%AB%E3%83%9C%E3%83%BC%E3%82%A4?refer=embed">#ボールボーイ</a> <a target="_blank" title="♬ original sound  - じょり" href="https://www.tiktok.com/music/original-sound-じょり-7398347563419601680?refer=embed">♬ original sound  - じょり</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+## Tottenham's ball boy
 
-2. Starbucks
+During Tottenham's match against Olympiacos, ball boy Callum Hynes quickly returned the ball, helping set up an equalizer. Tottenham's official report says head coach José Mourinho praised his quick thinking and thanked him after the match. [Tottenham's official report (English)](https://www.tottenhamhotspur.com/news/997275/joses-five-point-preview-bournemouth).
+
+[**Watch on TikTok**](https://www.tiktok.com/@gg211204/video/7398347526975294738)
+
+## A Starbucks video
+
+Play the video below on YouTube. If the embed does not load, open it on YouTube.
+
 {{<youtube P3pSGIWng-E>}}
+
+[**Watch on YouTube**](https://www.youtube.com/watch?v=P3pSGIWng-E)
