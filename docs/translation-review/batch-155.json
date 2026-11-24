@@ -1,0 +1,457 @@
+{
+  "version": 1,
+  "batch": 155,
+  "article": "Display Japanese text in egui using a bundled font",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "9c9a1f4c7a0bfb8f927488b030487ab354941cb2dc92acd08563eb2b4faa0dac",
+  "sources": [
+    "https://github.com/emilk/eframe_template",
+    "https://docs.rs/egui/latest/egui/text/struct.FontDefinitions.html",
+    "https://docs.rs/egui/latest/egui/struct.FontData.html",
+    "https://github.com/google/fonts/tree/main/ofl/notosansjp",
+    "https://github.com/google/fonts/blob/main/ofl/notosansjp/OFL.txt"
+  ],
+  "scope": "Compared the complete Japanese article and twelve translations, eframe template structure, egui font API, supported font format, Japanese font source/license, code paths, dates, and image reference.",
+  "findings": [
+    "Removed duplicate future date; retained 2023-04-01 and set lastmod to 2026-11-24.",
+    "Replaced Meiryo.ttc because egui documents .ttf and .otf font data, and updated font_data insertion to the current Arc<FontData> API.",
+    "Switched to Noto Sans JP variable TTF from Google Fonts and described where to place the file relative to src/app.rs.",
+    "Updated the initialization location to TemplateApp::new in the current eframe template and retained proportional-font priority.",
+    "Added the SIL Open Font License redistribution note and official API/font references."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/eguiで日本語を表示する方法/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/eguiで日本語を表示する方法/index.md",
+      "sourceHash": "9c9a1f4c7a0bfb8f927488b030487ab354941cb2dc92acd08563eb2b4faa0dac",
+      "translationHash": "b5482fd40e2d8d7da6cd263cca6d9760a8472957dd197028435ca4e8befec888",
+      "summary": "Compared the complete Japanese article and twelve translations with current egui, eframe-template, and Google Fonts documentation. Replaced the unsupported Windows TTC example and outdated FontData insertion with a current Arc-based registration example using Noto Sans JP TTF.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the goal (render Japanese glyphs), font registration, font-family priority, current eframe initialization hook, and cross-platform assumptions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Verified egui FontDefinitions, FontData, Arc, Proportional family, eframe CreationContext, Noto Sans JP, TTF, and SIL Open Font License."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Updated font_data insertion to Arc<FontData>, selected a supported .ttf file, kept the filename path relative to src/app.rs, and applied the font with cc.egui_ctx.set_fonts."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current eframe template, egui API, Google Fonts file metadata, and font license references; checked the existing image reference."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The example assumes the reader downloads the named Noto Sans JP TTF into assets/fonts/ and includes that file in the project; the font is not bundled with the article.",
+        "If redistributing the font, include and follow the SIL Open Font License."
+      ]
+    },
+    "post/eguiで日本語を表示する方法/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/eguiで日本語を表示する方法/index.md",
+      "sourceHash": "9c9a1f4c7a0bfb8f927488b030487ab354941cb2dc92acd08563eb2b4faa0dac",
+      "translationHash": "04059bfde4beba6d058d8a404ad817c281fa33b2c91b97cde58eeede0d9cacf7",
+      "summary": "Compared the complete Japanese article and twelve translations with current egui, eframe-template, and Google Fonts documentation. Replaced the unsupported Windows TTC example and outdated FontData insertion with a current Arc-based registration example using Noto Sans JP TTF.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the goal (render Japanese glyphs), font registration, font-family priority, current eframe initialization hook, and cross-platform assumptions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Verified egui FontDefinitions, FontData, Arc, Proportional family, eframe CreationContext, Noto Sans JP, TTF, and SIL Open Font License."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Updated font_data insertion to Arc<FontData>, selected a supported .ttf file, kept the filename path relative to src/app.rs, and applied the font with cc.egui_ctx.set_fonts."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current eframe template, egui API, Google Fonts file metadata, and font license references; checked the existing image reference."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The example assumes the reader downloads the named Noto Sans JP TTF into assets/fonts/ and includes that file in the project; the font is not bundled with the article.",
+        "If redistributing the font, include and follow the SIL Open Font License."
+      ]
+    },
+    "post/eguiで日本語を表示する方法/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/eguiで日本語を表示する方法/index.md",
+      "sourceHash": "9c9a1f4c7a0bfb8f927488b030487ab354941cb2dc92acd08563eb2b4faa0dac",
+      "translationHash": "c23adbdd9a8acf7c0e06bf85a3933f50795797bce981b461373452340d43b377",
+      "summary": "Compared the complete Japanese article and twelve translations with current egui, eframe-template, and Google Fonts documentation. Replaced the unsupported Windows TTC example and outdated FontData insertion with a current Arc-based registration example using Noto Sans JP TTF.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the goal (render Japanese glyphs), font registration, font-family priority, current eframe initialization hook, and cross-platform assumptions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Verified egui FontDefinitions, FontData, Arc, Proportional family, eframe CreationContext, Noto Sans JP, TTF, and SIL Open Font License."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Updated font_data insertion to Arc<FontData>, selected a supported .ttf file, kept the filename path relative to src/app.rs, and applied the font with cc.egui_ctx.set_fonts."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current eframe template, egui API, Google Fonts file metadata, and font license references; checked the existing image reference."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The example assumes the reader downloads the named Noto Sans JP TTF into assets/fonts/ and includes that file in the project; the font is not bundled with the article.",
+        "If redistributing the font, include and follow the SIL Open Font License."
+      ]
+    },
+    "post/eguiで日本語を表示する方法/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/eguiで日本語を表示する方法/index.md",
+      "sourceHash": "9c9a1f4c7a0bfb8f927488b030487ab354941cb2dc92acd08563eb2b4faa0dac",
+      "translationHash": "f70b0de9ac6d06f1b5d6514babb744f58135541765c1b585bafa39ff73201c9f",
+      "summary": "Compared the complete Japanese article and twelve translations with current egui, eframe-template, and Google Fonts documentation. Replaced the unsupported Windows TTC example and outdated FontData insertion with a current Arc-based registration example using Noto Sans JP TTF.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the goal (render Japanese glyphs), font registration, font-family priority, current eframe initialization hook, and cross-platform assumptions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Verified egui FontDefinitions, FontData, Arc, Proportional family, eframe CreationContext, Noto Sans JP, TTF, and SIL Open Font License."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Updated font_data insertion to Arc<FontData>, selected a supported .ttf file, kept the filename path relative to src/app.rs, and applied the font with cc.egui_ctx.set_fonts."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current eframe template, egui API, Google Fonts file metadata, and font license references; checked the existing image reference."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The example assumes the reader downloads the named Noto Sans JP TTF into assets/fonts/ and includes that file in the project; the font is not bundled with the article.",
+        "If redistributing the font, include and follow the SIL Open Font License."
+      ]
+    },
+    "post/eguiで日本語を表示する方法/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/eguiで日本語を表示する方法/index.md",
+      "sourceHash": "9c9a1f4c7a0bfb8f927488b030487ab354941cb2dc92acd08563eb2b4faa0dac",
+      "translationHash": "a36cbe7c923c4eeef38ccfea615d950875448caec96e77091e0652d88c5b759b",
+      "summary": "Compared the complete Japanese article and twelve translations with current egui, eframe-template, and Google Fonts documentation. Replaced the unsupported Windows TTC example and outdated FontData insertion with a current Arc-based registration example using Noto Sans JP TTF.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the goal (render Japanese glyphs), font registration, font-family priority, current eframe initialization hook, and cross-platform assumptions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Verified egui FontDefinitions, FontData, Arc, Proportional family, eframe CreationContext, Noto Sans JP, TTF, and SIL Open Font License."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Updated font_data insertion to Arc<FontData>, selected a supported .ttf file, kept the filename path relative to src/app.rs, and applied the font with cc.egui_ctx.set_fonts."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current eframe template, egui API, Google Fonts file metadata, and font license references; checked the existing image reference."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The example assumes the reader downloads the named Noto Sans JP TTF into assets/fonts/ and includes that file in the project; the font is not bundled with the article.",
+        "If redistributing the font, include and follow the SIL Open Font License."
+      ]
+    },
+    "post/eguiで日本語を表示する方法/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/eguiで日本語を表示する方法/index.md",
+      "sourceHash": "9c9a1f4c7a0bfb8f927488b030487ab354941cb2dc92acd08563eb2b4faa0dac",
+      "translationHash": "7d437013b027aef9de1820edea37744370cb936b4658a2599f48850a3b1a7eeb",
+      "summary": "Compared the complete Japanese article and twelve translations with current egui, eframe-template, and Google Fonts documentation. Replaced the unsupported Windows TTC example and outdated FontData insertion with a current Arc-based registration example using Noto Sans JP TTF.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the goal (render Japanese glyphs), font registration, font-family priority, current eframe initialization hook, and cross-platform assumptions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Verified egui FontDefinitions, FontData, Arc, Proportional family, eframe CreationContext, Noto Sans JP, TTF, and SIL Open Font License."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Updated font_data insertion to Arc<FontData>, selected a supported .ttf file, kept the filename path relative to src/app.rs, and applied the font with cc.egui_ctx.set_fonts."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current eframe template, egui API, Google Fonts file metadata, and font license references; checked the existing image reference."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The example assumes the reader downloads the named Noto Sans JP TTF into assets/fonts/ and includes that file in the project; the font is not bundled with the article.",
+        "If redistributing the font, include and follow the SIL Open Font License."
+      ]
+    },
+    "post/eguiで日本語を表示する方法/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/eguiで日本語を表示する方法/index.md",
+      "sourceHash": "9c9a1f4c7a0bfb8f927488b030487ab354941cb2dc92acd08563eb2b4faa0dac",
+      "translationHash": "028750d70c4d6dada896b07985234a673327028f73667f3f0250c9fabbce6265",
+      "summary": "Compared the complete Japanese article and twelve translations with current egui, eframe-template, and Google Fonts documentation. Replaced the unsupported Windows TTC example and outdated FontData insertion with a current Arc-based registration example using Noto Sans JP TTF.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the goal (render Japanese glyphs), font registration, font-family priority, current eframe initialization hook, and cross-platform assumptions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Verified egui FontDefinitions, FontData, Arc, Proportional family, eframe CreationContext, Noto Sans JP, TTF, and SIL Open Font License."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Updated font_data insertion to Arc<FontData>, selected a supported .ttf file, kept the filename path relative to src/app.rs, and applied the font with cc.egui_ctx.set_fonts."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current eframe template, egui API, Google Fonts file metadata, and font license references; checked the existing image reference."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The example assumes the reader downloads the named Noto Sans JP TTF into assets/fonts/ and includes that file in the project; the font is not bundled with the article.",
+        "If redistributing the font, include and follow the SIL Open Font License."
+      ]
+    },
+    "post/eguiで日本語を表示する方法/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/eguiで日本語を表示する方法/index.md",
+      "sourceHash": "9c9a1f4c7a0bfb8f927488b030487ab354941cb2dc92acd08563eb2b4faa0dac",
+      "translationHash": "e85873d6bb4cad36b6a920d3a4c7e1473d4148c943a75184867a365b7ed60f6a",
+      "summary": "Compared the complete Japanese article and twelve translations with current egui, eframe-template, and Google Fonts documentation. Replaced the unsupported Windows TTC example and outdated FontData insertion with a current Arc-based registration example using Noto Sans JP TTF.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the goal (render Japanese glyphs), font registration, font-family priority, current eframe initialization hook, and cross-platform assumptions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Verified egui FontDefinitions, FontData, Arc, Proportional family, eframe CreationContext, Noto Sans JP, TTF, and SIL Open Font License."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Updated font_data insertion to Arc<FontData>, selected a supported .ttf file, kept the filename path relative to src/app.rs, and applied the font with cc.egui_ctx.set_fonts."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current eframe template, egui API, Google Fonts file metadata, and font license references; checked the existing image reference."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The example assumes the reader downloads the named Noto Sans JP TTF into assets/fonts/ and includes that file in the project; the font is not bundled with the article.",
+        "If redistributing the font, include and follow the SIL Open Font License."
+      ]
+    },
+    "post/eguiで日本語を表示する方法/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/eguiで日本語を表示する方法/index.md",
+      "sourceHash": "9c9a1f4c7a0bfb8f927488b030487ab354941cb2dc92acd08563eb2b4faa0dac",
+      "translationHash": "9d06738b668614c0f4eb23cfde8a5dec3ed551a227ffa6fb31bef2b6b02ddebc",
+      "summary": "Compared the complete Japanese article and twelve translations with current egui, eframe-template, and Google Fonts documentation. Replaced the unsupported Windows TTC example and outdated FontData insertion with a current Arc-based registration example using Noto Sans JP TTF.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the goal (render Japanese glyphs), font registration, font-family priority, current eframe initialization hook, and cross-platform assumptions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Verified egui FontDefinitions, FontData, Arc, Proportional family, eframe CreationContext, Noto Sans JP, TTF, and SIL Open Font License."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Updated font_data insertion to Arc<FontData>, selected a supported .ttf file, kept the filename path relative to src/app.rs, and applied the font with cc.egui_ctx.set_fonts."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current eframe template, egui API, Google Fonts file metadata, and font license references; checked the existing image reference."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The example assumes the reader downloads the named Noto Sans JP TTF into assets/fonts/ and includes that file in the project; the font is not bundled with the article.",
+        "If redistributing the font, include and follow the SIL Open Font License."
+      ]
+    },
+    "post/eguiで日本語を表示する方法/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/eguiで日本語を表示する方法/index.md",
+      "sourceHash": "9c9a1f4c7a0bfb8f927488b030487ab354941cb2dc92acd08563eb2b4faa0dac",
+      "translationHash": "7720a8da6ca1753fdbe39773d1c6d8ef10aee8614685d5732e0f9c081a673c06",
+      "summary": "Compared the complete Japanese article and twelve translations with current egui, eframe-template, and Google Fonts documentation. Replaced the unsupported Windows TTC example and outdated FontData insertion with a current Arc-based registration example using Noto Sans JP TTF.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the goal (render Japanese glyphs), font registration, font-family priority, current eframe initialization hook, and cross-platform assumptions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Verified egui FontDefinitions, FontData, Arc, Proportional family, eframe CreationContext, Noto Sans JP, TTF, and SIL Open Font License."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Updated font_data insertion to Arc<FontData>, selected a supported .ttf file, kept the filename path relative to src/app.rs, and applied the font with cc.egui_ctx.set_fonts."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current eframe template, egui API, Google Fonts file metadata, and font license references; checked the existing image reference."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The example assumes the reader downloads the named Noto Sans JP TTF into assets/fonts/ and includes that file in the project; the font is not bundled with the article.",
+        "If redistributing the font, include and follow the SIL Open Font License."
+      ]
+    },
+    "post/eguiで日本語を表示する方法/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/eguiで日本語を表示する方法/index.md",
+      "sourceHash": "9c9a1f4c7a0bfb8f927488b030487ab354941cb2dc92acd08563eb2b4faa0dac",
+      "translationHash": "5fa3a66f02d91d8fb9341a95c2e5381d0c0d52354b50dd2ea791bed6ca2aa49a",
+      "summary": "Compared the complete Japanese article and twelve translations with current egui, eframe-template, and Google Fonts documentation. Replaced the unsupported Windows TTC example and outdated FontData insertion with a current Arc-based registration example using Noto Sans JP TTF.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the goal (render Japanese glyphs), font registration, font-family priority, current eframe initialization hook, and cross-platform assumptions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Verified egui FontDefinitions, FontData, Arc, Proportional family, eframe CreationContext, Noto Sans JP, TTF, and SIL Open Font License."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Updated font_data insertion to Arc<FontData>, selected a supported .ttf file, kept the filename path relative to src/app.rs, and applied the font with cc.egui_ctx.set_fonts."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current eframe template, egui API, Google Fonts file metadata, and font license references; checked the existing image reference."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The example assumes the reader downloads the named Noto Sans JP TTF into assets/fonts/ and includes that file in the project; the font is not bundled with the article.",
+        "If redistributing the font, include and follow the SIL Open Font License."
+      ]
+    },
+    "post/eguiで日本語を表示する方法/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/eguiで日本語を表示する方法/index.md",
+      "sourceHash": "9c9a1f4c7a0bfb8f927488b030487ab354941cb2dc92acd08563eb2b4faa0dac",
+      "translationHash": "c36e7a2341f65999415ae4eb3468c2d6e34e8384cb1c7c95959b030389481ade",
+      "summary": "Compared the complete Japanese article and twelve translations with current egui, eframe-template, and Google Fonts documentation. Replaced the unsupported Windows TTC example and outdated FontData insertion with a current Arc-based registration example using Noto Sans JP TTF.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the goal (render Japanese glyphs), font registration, font-family priority, current eframe initialization hook, and cross-platform assumptions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Verified egui FontDefinitions, FontData, Arc, Proportional family, eframe CreationContext, Noto Sans JP, TTF, and SIL Open Font License."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Updated font_data insertion to Arc<FontData>, selected a supported .ttf file, kept the filename path relative to src/app.rs, and applied the font with cc.egui_ctx.set_fonts."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current eframe template, egui API, Google Fonts file metadata, and font license references; checked the existing image reference."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The example assumes the reader downloads the named Noto Sans JP TTF into assets/fonts/ and includes that file in the project; the font is not bundled with the article.",
+        "If redistributing the font, include and follow the SIL Open Font License."
+      ]
+    }
+  }
+}

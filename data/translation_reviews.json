@@ -18005,6 +18005,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-154.json",
       "evidenceHash": "edbdfffaff58f3b772a8fd6b921d7f800d2af27b16bbb4ed6c9fd3e58a77e6fc"
+    },
+    "post/eguiで日本語を表示する方法/index.en.md": {
+      "source": "post/eguiで日本語を表示する方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9c9a1f4c7a0bfb8f927488b030487ab354941cb2dc92acd08563eb2b4faa0dac",
+      "translationHash": "b5482fd40e2d8d7da6cd263cca6d9760a8472957dd197028435ca4e8befec888",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-155.json",
+      "evidenceHash": "d7987b43c671747a9906d1dfea2f332123a7659c69e6566311f728585ff311f7"
+    },
+    "post/eguiで日本語を表示する方法/index.zh-cn.md": {
+      "source": "post/eguiで日本語を表示する方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9c9a1f4c7a0bfb8f927488b030487ab354941cb2dc92acd08563eb2b4faa0dac",
+      "translationHash": "04059bfde4beba6d058d8a404ad817c281fa33b2c91b97cde58eeede0d9cacf7",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-155.json",
+      "evidenceHash": "47d7d2cae68ecbccca261152fcba54b6743fc2c86fdd2d1575a97074f445825f"
+    },
+    "post/eguiで日本語を表示する方法/index.es.md": {
+      "source": "post/eguiで日本語を表示する方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9c9a1f4c7a0bfb8f927488b030487ab354941cb2dc92acd08563eb2b4faa0dac",
+      "translationHash": "c23adbdd9a8acf7c0e06bf85a3933f50795797bce981b461373452340d43b377",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-155.json",
+      "evidenceHash": "3b6a73603e1ec5dd0d32326ac3d312b0b514dfcfd1965a50e3ada3cdaa39d44b"
+    },
+    "post/eguiで日本語を表示する方法/index.ko.md": {
+      "source": "post/eguiで日本語を表示する方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9c9a1f4c7a0bfb8f927488b030487ab354941cb2dc92acd08563eb2b4faa0dac",
+      "translationHash": "f70b0de9ac6d06f1b5d6514babb744f58135541765c1b585bafa39ff73201c9f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-155.json",
+      "evidenceHash": "f4fb08b3fe64a83785e45a23a1d47e17490e3a53109c6eda4a661390983601d1"
+    },
+    "post/eguiで日本語を表示する方法/index.pt.md": {
+      "source": "post/eguiで日本語を表示する方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9c9a1f4c7a0bfb8f927488b030487ab354941cb2dc92acd08563eb2b4faa0dac",
+      "translationHash": "a36cbe7c923c4eeef38ccfea615d950875448caec96e77091e0652d88c5b759b",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-155.json",
+      "evidenceHash": "b9824eeedc189e84d298edaeae92d6a60da8e0e32a28150fec843db6d6f8f55e"
+    },
+    "post/eguiで日本語を表示する方法/index.zh-tw.md": {
+      "source": "post/eguiで日本語を表示する方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9c9a1f4c7a0bfb8f927488b030487ab354941cb2dc92acd08563eb2b4faa0dac",
+      "translationHash": "7d437013b027aef9de1820edea37744370cb936b4658a2599f48850a3b1a7eeb",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-155.json",
+      "evidenceHash": "e9d624d2ecbf40ea2c46608f668127bb2b3930620d1a1041c2d84b8d409b09a1"
+    },
+    "post/eguiで日本語を表示する方法/index.hi.md": {
+      "source": "post/eguiで日本語を表示する方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9c9a1f4c7a0bfb8f927488b030487ab354941cb2dc92acd08563eb2b4faa0dac",
+      "translationHash": "028750d70c4d6dada896b07985234a673327028f73667f3f0250c9fabbce6265",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-155.json",
+      "evidenceHash": "37ca9387c86db8cbd23c75fa21d4109a479552351c7a2746fe28d4b9144020ac"
+    },
+    "post/eguiで日本語を表示する方法/index.fr.md": {
+      "source": "post/eguiで日本語を表示する方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9c9a1f4c7a0bfb8f927488b030487ab354941cb2dc92acd08563eb2b4faa0dac",
+      "translationHash": "e85873d6bb4cad36b6a920d3a4c7e1473d4148c943a75184867a365b7ed60f6a",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-155.json",
+      "evidenceHash": "86867c2d854075cbebe0116ab22b96994098cc787e764fbbfabd93ca5b6e8bc3"
+    },
+    "post/eguiで日本語を表示する方法/index.de.md": {
+      "source": "post/eguiで日本語を表示する方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9c9a1f4c7a0bfb8f927488b030487ab354941cb2dc92acd08563eb2b4faa0dac",
+      "translationHash": "9d06738b668614c0f4eb23cfde8a5dec3ed551a227ffa6fb31bef2b6b02ddebc",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-155.json",
+      "evidenceHash": "f2118f58b78e2d770762714bc73f4ac72f682f9b1ffe5922cf544a2a59a528ca"
+    },
+    "post/eguiで日本語を表示する方法/index.ar.md": {
+      "source": "post/eguiで日本語を表示する方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9c9a1f4c7a0bfb8f927488b030487ab354941cb2dc92acd08563eb2b4faa0dac",
+      "translationHash": "7720a8da6ca1753fdbe39773d1c6d8ef10aee8614685d5732e0f9c081a673c06",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-155.json",
+      "evidenceHash": "e0b62a3af695e748b2a0e172bcf5e973a7e217fb56266ef0cc93fb56126b5c56"
+    },
+    "post/eguiで日本語を表示する方法/index.ru.md": {
+      "source": "post/eguiで日本語を表示する方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9c9a1f4c7a0bfb8f927488b030487ab354941cb2dc92acd08563eb2b4faa0dac",
+      "translationHash": "5fa3a66f02d91d8fb9341a95c2e5381d0c0d52354b50dd2ea791bed6ca2aa49a",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-155.json",
+      "evidenceHash": "f659bd9ee276ba2324d0fc49db38cca9dd2124086a9c356dad49f56212d85f3d"
+    },
+    "post/eguiで日本語を表示する方法/index.id.md": {
+      "source": "post/eguiで日本語を表示する方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9c9a1f4c7a0bfb8f927488b030487ab354941cb2dc92acd08563eb2b4faa0dac",
+      "translationHash": "c36e7a2341f65999415ae4eb3468c2d6e34e8384cb1c7c95959b030389481ade",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-155.json",
+      "evidenceHash": "657aad0b610f0ed6740e85984405880f2c25d9647d9dce587b9cdcedee0c3728"
     }
   }
 }

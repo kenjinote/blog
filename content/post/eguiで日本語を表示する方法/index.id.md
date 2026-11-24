@@ -1,46 +1,42 @@
 ---
-title: 'Cara Memuat dan Menampilkan Font Bahasa Jepang di Library GUI Rust ''egui'''
-date: "2026-09-24T19:44:38+09:00"
-slug: "eguiでBahasa Jepangを表示する方法"
+title: "Menampilkan teks Jepang di egui dengan font yang sesuai"
 date: 2023-04-01T03:17:52+09:00
+lastmod: "2026-11-24T00:00:00+09:00"
+slug: "eguiでBahasa Jepangを表示する方法"
 tags: ["rust", "egui", "pustaka-GUI", "jepang"]
 draft: false
 image: "img.webp"
 categories: ["it-technology"]
-description: 'Menjelaskan metode implementasi untuk menampilkan bahasa Jepang dengan benar di ''egui'', library GUI yang ringan untuk Rust. Memperkenalkan sampel kode konkret untuk memuat font Meiryo Windows dan menerapkannya pada aplikasi.'
+description: "Untuk menampilkan bahasa Jepang di pustaka GUI Rust egui, tambahkan font yang berisi glif bahasa Jepang ke `FontDefinitions`. Contoh ini menggunakan berkas `.ttf` variabel Noto Sans JP dari Google Fonts. Simpan berkas font di direktori proyek `assets/fonts/`."
 ---
+## Adding and applying a font
 
-## Mendapatkan Contoh egui
+Untuk menampilkan bahasa Jepang di pustaka GUI Rust egui, tambahkan font yang berisi glif bahasa Jepang ke `FontDefinitions`. Contoh ini menggunakan berkas `.ttf` variabel Noto Sans JP dari Google Fonts. Simpan berkas font di direktori proyek `assets/fonts/`.
 
-Anda dapat menjalankan contoh egui dengan perintah berikut.
-
-```
-git clone https://github.com/emilk/eframe_template/ egui_test
-cd egui_test
-cargo run
-```
-
-## Memuat Font yang Mendukung Bahasa Jepang
-
-Untuk menampilkan bahasa Jepang, Anda perlu memuat font yang mendukungnya.
-
-Di `src/app.rs`, tambahkan baris berikut di dalam metode `pub fn new`.
+Pada templat eframe saat ini, atur font di dalam `TemplateApp::new` pada `src/app.rs`. Tambahkan kode berikut di dalam metode tersebut. `Meiryo.ttc` pada Windows adalah TrueType Collection, bukan format `.ttf` atau `.otf` yang didokumentasikan untuk `FontData` egui; karena itu contoh ini tidak menggunakannya.
 
 ```rust
-// Memuat font yang mendukung bahasa Jepang
 let mut fonts = egui::FontDefinitions::default();
 fonts.font_data.insert(
-    "Meiryo".to_owned(),
-    egui::FontData::from_static(include_bytes!("C:/Windows/Fonts/Meiryo.ttc")),
+    "Noto Sans JP".to_owned(),
+    std::sync::Arc::new(egui::FontData::from_static(include_bytes!(
+        "../assets/fonts/NotoSansJP[wght].ttf"
+    ))),
 );
 fonts
     .families
     .entry(egui::FontFamily::Proportional)
     .or_default()
-    .insert(0, "Meiryo".to_owned());
+    .insert(0, "Noto Sans JP".to_owned());
 cc.egui_ctx.set_fonts(fonts);
 ```
 
-## Sekarang Anda Dapat Menampilkan Bahasa Jepang.
+Noto Sans JP didistribusikan berdasarkan SIL Open Font License. Jika mendistribusikan ulang font bersama aplikasi, sertakan berkas lisensi dan patuhi ketentuannya.
 
-![img.png](img.webp)
+## Referensi
+
+- [eframe template](https://github.com/emilk/eframe_template)
+- [egui FontDefinitions](https://docs.rs/egui/latest/egui/text/struct.FontDefinitions.html)
+- [egui FontData](https://docs.rs/egui/latest/egui/struct.FontData.html)
+- [Noto Sans JP font and license](https://github.com/google/fonts/tree/main/ofl/notosansjp)
+- [SIL Open Font License](https://github.com/google/fonts/blob/main/ofl/notosansjp/OFL.txt)
