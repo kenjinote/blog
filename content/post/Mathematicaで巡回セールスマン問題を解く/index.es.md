@@ -3,7 +3,6 @@
 
 
 title: 'Cómo resolver el problema del viajante de comercio (TSP) con Mathematica'
-date: "2026-09-24T19:44:38+09:00"
 slug: "MathematicaでProblema del viajanteを解く"
 date: 2022-10-12T19:05:58+09:00
 tags: ["Mathematica", "Problema del viajante", "Algoritmos", "Matemáticas"]
@@ -11,33 +10,57 @@ draft: false
 image: "img.webp"
 categories: ["math-cryptography-quantum"]
 description: 'Explicamos cómo resolver el problema del viajante de comercio (TSP) utilizando el sistema de álgebra computacional Mathematica. Presentamos los pasos para crear una matriz de distancias entre ciudades con la función SparseArray y encontrar la ruta más corta con FindShortestTour.'
+lastmod: "2026-11-24T00:00:00+09:00"
+mermaid: true
 ---
-
-
-
-# Resolver el problema del viajante con Mathematica
+# Cómo resolver el problema del viajante de comercio (TSP) con Mathematica
 
 ## Problema
-{{<twitter user="hayamizu_lab" id="1579806418982825984">}}
+
+Este ejemplo modela el problema del viajante con nueve ciudades como un grafo no dirigido cuyos pesos son las distancias. El diagrama muestra las aristas y distancias utilizadas.
+
+**Grafo de distancias:**
+
+```mermaid
+graph LR
+  1((1)) ---|10| 2((2))
+  1 ---|15| 5((5))
+  1 ---|12| 4((4))
+  1 ---|20| 3((3))
+  2 ---|10| 5
+  3 ---|10| 4
+  3 ---|30| 8((8))
+  3 ---|20| 7((7))
+  3 ---|25| 6((6))
+  4 ---|15| 5
+  4 ---|20| 8
+  5 ---|18| 9((9))
+  5 ---|15| 8
+  6 ---|5| 7
+  7 ---|35| 8
+  8 ---|12| 9
+```
 
 ## Solución
 
-```
+```wolfram
 d=SparseArray[{{1,2}->10,{2,1}->10,{1,5}->15,{5,1}->15,{1,4}->12,{4,1}->12,{1,3}->20,{3,1}->20,{2,5}->10,{5,2}->10,{3,4}->10,{4,3}->10,{3,8}->30,{8,3}->30,{3,7}->20,{7,3}->20,{3,6}->25,{6,3}->25,{4,5}->15,{5,4}->15,{4,8}->20,{8,4}->20,{5,9}->18,{9,5}->18,{5,8}->15,{8,5}->15,{6,7}->5,{7,6}->5,{7,8}->35,{8,7}->35,{8,9}->12,{9,8}->12},{9,9},Infinity];
 ```
 
-La función SparseArray crea una matriz. Cada elemento representa la distancia entre las ciudades de la fila y columna de ese elemento. Por ejemplo, el primer elemento `{1,2}->10` significa que la distancia entre 1 y 2 es 10. El penúltimo elemento `{9,9}` indica el tamaño de la matriz, y el último elemento `Infinity` significa que la longitud del camino entre ciudades no especificadas es infinita. Es decir, significa que no hay camino.
+El segundo argumento `{9,9}` de `SparseArray` especifica las dimensiones del arreglo (9 por 9). El tercer argumento, `Infinity`, es el valor predeterminado de las entradas no especificadas. Aquí significa que no se permite viajar directamente entre pares de ciudades que no aparecen en la lista. Cada arista figura en ambos sentidos, por lo que las distancias son simétricas.
 
-```
+```wolfram
 {len,tour}=FindShortestTour[{1,2,3,4,5,6,7,8,9},DistanceFunction->(d[[#1,#2]]&)]
 ```
 
-Con la función FindShortestTour, puedes resolver fácilmente el problema del viajante. `{1,2,3,4,5,6,7,8,9}` representa los números de las ciudades. `DistanceFunction->(d[[#1,#2]]&)` pasa la matriz d que representa la distancia entre las ciudades.
+`FindShortestTour` devuelve un circuito que visita las ciudades indicadas; el resultado contiene la distancia total y el orden de las ciudades. El total incluye la arista de regreso desde la última ciudad hasta la primera.
 
 ## Salida
 
-```
+```wolfram
 {137, {1, 2, 5, 9, 8, 7, 6, 3, 4}}
 ```
 
-La salida es la distancia más corta y el recorrido en ese momento. La distancia más corta es `137`, y el recorrido es `1→2→5→9→8→7→6→3→4→1`. Convertido al orden ABC, es `A, B, E, I, H, G, F, C, D`.
+Para esta tabla hay dos circuitos mínimos de longitud 137; el recorrido inverso de cualquiera tiene la misma longitud. El orden de la solución óptima que se muestra puede variar según la versión de Mathematica o el orden de búsqueda. Al aumentar el número de ciudades, la búsqueda se vuelve rápidamente más difícil; para problemas grandes conviene considerar un método de optimización adecuado.
+
+Documentación oficial: [FindShortestTour](https://reference.wolfram.com/language/ref/FindShortestTour.html) y [SparseArray](https://reference.wolfram.com/language/ref/SparseArray.html).

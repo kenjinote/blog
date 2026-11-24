@@ -1,0 +1,453 @@
+{
+  "version": 1,
+  "batch": 94,
+  "article": "Mathematicaで巡回セールスマン問題を解く",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "9f6bbd07ebb751045b2e189fa5e967718e4b7b64c2744a1a2fc0daa4dc9fa774",
+  "sources": [
+    "https://reference.wolfram.com/language/ref/FindShortestTour.html",
+    "https://reference.wolfram.com/language/ref/SparseArray.html"
+  ],
+  "scope": "Read the complete Japanese source and all twelve translations. Compared every edition's prose, graph edges, Wolfram Language code, result, metadata, and official documentation links. Recomputed the example's optimum by exhaustive enumeration of all 8! city orders.",
+  "findings": [
+    "Replaced the unavailable social embed with a self-contained weighted graph in all thirteen editions.",
+    "Corrected the explanation of SparseArray: {9,9} specifies dimensions and Infinity is the default for unspecified entries; documented symmetric edges and the closed return leg.",
+    "Clarified that the shortest tour has length 137 and that exactly two directed orders are optimal, including the reverse route.",
+    "Added official Wolfram documentation links, preserved the original 2022-10-12 publication date, removed the duplicate future date, and set lastmod to 2026-11-24."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/Mathematicaで巡回セールスマン問題を解く/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Mathematicaで巡回セールスマン問題を解く/index.md",
+      "sourceHash": "9f6bbd07ebb751045b2e189fa5e967718e4b7b64c2744a1a2fc0daa4dc9fa774",
+      "translationHash": "c5ebbe175be8ae4dd22b2f650174880ec4dff23c18226afef932fadbc22ea246",
+      "summary": "Compared the complete translation with the Japanese source; checked the graph, SparseArray dimensions/default value, closed-tour semantics, reported result, and documentation links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "The nine-city graph model, permitted edges, closed tour and return edge, total distance, and tied optimum are consistent across editions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Traveling salesperson problem, undirected weighted graph, dimensions, default value, closed tour, and optimization caveat were checked in each edition."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Re-enumerated all 8! city orders in Python from the symmetric edge table; minimum is 137 and exactly two directed orders attain it (the reverse pair)."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared all Wolfram Language snippets against the source and official function references. Code was not executed in Mathematica; optimality and output were independently checked by exhaustive enumeration."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Each edition links to Wolfram's official FindShortestTour and SparseArray documentation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The Wolfram Language code was not run in a Mathematica/Wolfram Engine session.",
+        "The exhaustive verification covers this nine-city example; the performance note is qualitative."
+      ]
+    },
+    "post/Mathematicaで巡回セールスマン問題を解く/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Mathematicaで巡回セールスマン問題を解く/index.md",
+      "sourceHash": "9f6bbd07ebb751045b2e189fa5e967718e4b7b64c2744a1a2fc0daa4dc9fa774",
+      "translationHash": "b9dc7a2339f990ff461907c26d04f26a66391caaad01cc26145908bb7eb536e8",
+      "summary": "Compared the complete translation with the Japanese source; checked the graph, SparseArray dimensions/default value, closed-tour semantics, reported result, and documentation links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "The nine-city graph model, permitted edges, closed tour and return edge, total distance, and tied optimum are consistent across editions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Traveling salesperson problem, undirected weighted graph, dimensions, default value, closed tour, and optimization caveat were checked in each edition."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Re-enumerated all 8! city orders in Python from the symmetric edge table; minimum is 137 and exactly two directed orders attain it (the reverse pair)."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared all Wolfram Language snippets against the source and official function references. Code was not executed in Mathematica; optimality and output were independently checked by exhaustive enumeration."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Each edition links to Wolfram's official FindShortestTour and SparseArray documentation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The Wolfram Language code was not run in a Mathematica/Wolfram Engine session.",
+        "The exhaustive verification covers this nine-city example; the performance note is qualitative."
+      ]
+    },
+    "post/Mathematicaで巡回セールスマン問題を解く/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Mathematicaで巡回セールスマン問題を解く/index.md",
+      "sourceHash": "9f6bbd07ebb751045b2e189fa5e967718e4b7b64c2744a1a2fc0daa4dc9fa774",
+      "translationHash": "5ffc8e61059eb193953794be1ac0531a211c574dd9715f2d0dbe8b1b5c6969f4",
+      "summary": "Compared the complete translation with the Japanese source; checked the graph, SparseArray dimensions/default value, closed-tour semantics, reported result, and documentation links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "The nine-city graph model, permitted edges, closed tour and return edge, total distance, and tied optimum are consistent across editions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Traveling salesperson problem, undirected weighted graph, dimensions, default value, closed tour, and optimization caveat were checked in each edition."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Re-enumerated all 8! city orders in Python from the symmetric edge table; minimum is 137 and exactly two directed orders attain it (the reverse pair)."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared all Wolfram Language snippets against the source and official function references. Code was not executed in Mathematica; optimality and output were independently checked by exhaustive enumeration."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Each edition links to Wolfram's official FindShortestTour and SparseArray documentation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The Wolfram Language code was not run in a Mathematica/Wolfram Engine session.",
+        "The exhaustive verification covers this nine-city example; the performance note is qualitative."
+      ]
+    },
+    "post/Mathematicaで巡回セールスマン問題を解く/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Mathematicaで巡回セールスマン問題を解く/index.md",
+      "sourceHash": "9f6bbd07ebb751045b2e189fa5e967718e4b7b64c2744a1a2fc0daa4dc9fa774",
+      "translationHash": "bef8e5b00ad1c7b17264031c62d545b19c94ce2a211d6653d04b024ca1b520e3",
+      "summary": "Compared the complete translation with the Japanese source; checked the graph, SparseArray dimensions/default value, closed-tour semantics, reported result, and documentation links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "The nine-city graph model, permitted edges, closed tour and return edge, total distance, and tied optimum are consistent across editions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Traveling salesperson problem, undirected weighted graph, dimensions, default value, closed tour, and optimization caveat were checked in each edition."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Re-enumerated all 8! city orders in Python from the symmetric edge table; minimum is 137 and exactly two directed orders attain it (the reverse pair)."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared all Wolfram Language snippets against the source and official function references. Code was not executed in Mathematica; optimality and output were independently checked by exhaustive enumeration."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Each edition links to Wolfram's official FindShortestTour and SparseArray documentation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The Wolfram Language code was not run in a Mathematica/Wolfram Engine session.",
+        "The exhaustive verification covers this nine-city example; the performance note is qualitative."
+      ]
+    },
+    "post/Mathematicaで巡回セールスマン問題を解く/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Mathematicaで巡回セールスマン問題を解く/index.md",
+      "sourceHash": "9f6bbd07ebb751045b2e189fa5e967718e4b7b64c2744a1a2fc0daa4dc9fa774",
+      "translationHash": "dd5874f445c768ae83dc7e66e0a44040b66a580a8e6b55bbd1519be80e9e6154",
+      "summary": "Compared the complete translation with the Japanese source; checked the graph, SparseArray dimensions/default value, closed-tour semantics, reported result, and documentation links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "The nine-city graph model, permitted edges, closed tour and return edge, total distance, and tied optimum are consistent across editions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Traveling salesperson problem, undirected weighted graph, dimensions, default value, closed tour, and optimization caveat were checked in each edition."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Re-enumerated all 8! city orders in Python from the symmetric edge table; minimum is 137 and exactly two directed orders attain it (the reverse pair)."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared all Wolfram Language snippets against the source and official function references. Code was not executed in Mathematica; optimality and output were independently checked by exhaustive enumeration."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Each edition links to Wolfram's official FindShortestTour and SparseArray documentation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The Wolfram Language code was not run in a Mathematica/Wolfram Engine session.",
+        "The exhaustive verification covers this nine-city example; the performance note is qualitative."
+      ]
+    },
+    "post/Mathematicaで巡回セールスマン問題を解く/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Mathematicaで巡回セールスマン問題を解く/index.md",
+      "sourceHash": "9f6bbd07ebb751045b2e189fa5e967718e4b7b64c2744a1a2fc0daa4dc9fa774",
+      "translationHash": "f90a1c623803f9a9c2bc41aeb5121c9959c4f806041fc1d8f0fcce2892dfbf66",
+      "summary": "Compared the complete translation with the Japanese source; checked the graph, SparseArray dimensions/default value, closed-tour semantics, reported result, and documentation links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "The nine-city graph model, permitted edges, closed tour and return edge, total distance, and tied optimum are consistent across editions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Traveling salesperson problem, undirected weighted graph, dimensions, default value, closed tour, and optimization caveat were checked in each edition."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Re-enumerated all 8! city orders in Python from the symmetric edge table; minimum is 137 and exactly two directed orders attain it (the reverse pair)."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared all Wolfram Language snippets against the source and official function references. Code was not executed in Mathematica; optimality and output were independently checked by exhaustive enumeration."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Each edition links to Wolfram's official FindShortestTour and SparseArray documentation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The Wolfram Language code was not run in a Mathematica/Wolfram Engine session.",
+        "The exhaustive verification covers this nine-city example; the performance note is qualitative."
+      ]
+    },
+    "post/Mathematicaで巡回セールスマン問題を解く/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Mathematicaで巡回セールスマン問題を解く/index.md",
+      "sourceHash": "9f6bbd07ebb751045b2e189fa5e967718e4b7b64c2744a1a2fc0daa4dc9fa774",
+      "translationHash": "1e6c6cbd91c039aa67f17358cd429fb2a45b2579d5c60ffec4eb841ccbbc05c7",
+      "summary": "Compared the complete translation with the Japanese source; checked the graph, SparseArray dimensions/default value, closed-tour semantics, reported result, and documentation links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "The nine-city graph model, permitted edges, closed tour and return edge, total distance, and tied optimum are consistent across editions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Traveling salesperson problem, undirected weighted graph, dimensions, default value, closed tour, and optimization caveat were checked in each edition."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Re-enumerated all 8! city orders in Python from the symmetric edge table; minimum is 137 and exactly two directed orders attain it (the reverse pair)."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared all Wolfram Language snippets against the source and official function references. Code was not executed in Mathematica; optimality and output were independently checked by exhaustive enumeration."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Each edition links to Wolfram's official FindShortestTour and SparseArray documentation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The Wolfram Language code was not run in a Mathematica/Wolfram Engine session.",
+        "The exhaustive verification covers this nine-city example; the performance note is qualitative."
+      ]
+    },
+    "post/Mathematicaで巡回セールスマン問題を解く/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Mathematicaで巡回セールスマン問題を解く/index.md",
+      "sourceHash": "9f6bbd07ebb751045b2e189fa5e967718e4b7b64c2744a1a2fc0daa4dc9fa774",
+      "translationHash": "996ea9ee268d61ca0ce0926fd880bb088361b2b8520d2ac9e5398748d511f483",
+      "summary": "Compared the complete translation with the Japanese source; checked the graph, SparseArray dimensions/default value, closed-tour semantics, reported result, and documentation links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "The nine-city graph model, permitted edges, closed tour and return edge, total distance, and tied optimum are consistent across editions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Traveling salesperson problem, undirected weighted graph, dimensions, default value, closed tour, and optimization caveat were checked in each edition."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Re-enumerated all 8! city orders in Python from the symmetric edge table; minimum is 137 and exactly two directed orders attain it (the reverse pair)."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared all Wolfram Language snippets against the source and official function references. Code was not executed in Mathematica; optimality and output were independently checked by exhaustive enumeration."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Each edition links to Wolfram's official FindShortestTour and SparseArray documentation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The Wolfram Language code was not run in a Mathematica/Wolfram Engine session.",
+        "The exhaustive verification covers this nine-city example; the performance note is qualitative."
+      ]
+    },
+    "post/Mathematicaで巡回セールスマン問題を解く/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Mathematicaで巡回セールスマン問題を解く/index.md",
+      "sourceHash": "9f6bbd07ebb751045b2e189fa5e967718e4b7b64c2744a1a2fc0daa4dc9fa774",
+      "translationHash": "6aad95ea3d7ebbec86d9e66817013f2cae88e08efb35b1d782089b1d5c88b06b",
+      "summary": "Compared the complete translation with the Japanese source; checked the graph, SparseArray dimensions/default value, closed-tour semantics, reported result, and documentation links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "The nine-city graph model, permitted edges, closed tour and return edge, total distance, and tied optimum are consistent across editions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Traveling salesperson problem, undirected weighted graph, dimensions, default value, closed tour, and optimization caveat were checked in each edition."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Re-enumerated all 8! city orders in Python from the symmetric edge table; minimum is 137 and exactly two directed orders attain it (the reverse pair)."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared all Wolfram Language snippets against the source and official function references. Code was not executed in Mathematica; optimality and output were independently checked by exhaustive enumeration."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Each edition links to Wolfram's official FindShortestTour and SparseArray documentation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The Wolfram Language code was not run in a Mathematica/Wolfram Engine session.",
+        "The exhaustive verification covers this nine-city example; the performance note is qualitative."
+      ]
+    },
+    "post/Mathematicaで巡回セールスマン問題を解く/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Mathematicaで巡回セールスマン問題を解く/index.md",
+      "sourceHash": "9f6bbd07ebb751045b2e189fa5e967718e4b7b64c2744a1a2fc0daa4dc9fa774",
+      "translationHash": "de5767601f465eb30b0a384d75170b44e83182ebfe5e08a0c00d794b565a69ff",
+      "summary": "Compared the complete translation with the Japanese source; checked the graph, SparseArray dimensions/default value, closed-tour semantics, reported result, and documentation links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "The nine-city graph model, permitted edges, closed tour and return edge, total distance, and tied optimum are consistent across editions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Traveling salesperson problem, undirected weighted graph, dimensions, default value, closed tour, and optimization caveat were checked in each edition."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Re-enumerated all 8! city orders in Python from the symmetric edge table; minimum is 137 and exactly two directed orders attain it (the reverse pair)."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared all Wolfram Language snippets against the source and official function references. Code was not executed in Mathematica; optimality and output were independently checked by exhaustive enumeration."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Each edition links to Wolfram's official FindShortestTour and SparseArray documentation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The Wolfram Language code was not run in a Mathematica/Wolfram Engine session.",
+        "The exhaustive verification covers this nine-city example; the performance note is qualitative."
+      ]
+    },
+    "post/Mathematicaで巡回セールスマン問題を解く/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Mathematicaで巡回セールスマン問題を解く/index.md",
+      "sourceHash": "9f6bbd07ebb751045b2e189fa5e967718e4b7b64c2744a1a2fc0daa4dc9fa774",
+      "translationHash": "c33307a5a8b8c570796ea19dfa46cfa1df7026cccf46c570972312c25faf7f3e",
+      "summary": "Compared the complete translation with the Japanese source; checked the graph, SparseArray dimensions/default value, closed-tour semantics, reported result, and documentation links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "The nine-city graph model, permitted edges, closed tour and return edge, total distance, and tied optimum are consistent across editions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Traveling salesperson problem, undirected weighted graph, dimensions, default value, closed tour, and optimization caveat were checked in each edition."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Re-enumerated all 8! city orders in Python from the symmetric edge table; minimum is 137 and exactly two directed orders attain it (the reverse pair)."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared all Wolfram Language snippets against the source and official function references. Code was not executed in Mathematica; optimality and output were independently checked by exhaustive enumeration."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Each edition links to Wolfram's official FindShortestTour and SparseArray documentation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The Wolfram Language code was not run in a Mathematica/Wolfram Engine session.",
+        "The exhaustive verification covers this nine-city example; the performance note is qualitative."
+      ]
+    },
+    "post/Mathematicaで巡回セールスマン問題を解く/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Mathematicaで巡回セールスマン問題を解く/index.md",
+      "sourceHash": "9f6bbd07ebb751045b2e189fa5e967718e4b7b64c2744a1a2fc0daa4dc9fa774",
+      "translationHash": "649affd494900463d4167f864b048c815971376e4bb8c33a08f98d4cef314a1d",
+      "summary": "Compared the complete translation with the Japanese source; checked the graph, SparseArray dimensions/default value, closed-tour semantics, reported result, and documentation links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "The nine-city graph model, permitted edges, closed tour and return edge, total distance, and tied optimum are consistent across editions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Traveling salesperson problem, undirected weighted graph, dimensions, default value, closed tour, and optimization caveat were checked in each edition."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Re-enumerated all 8! city orders in Python from the symmetric edge table; minimum is 137 and exactly two directed orders attain it (the reverse pair)."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared all Wolfram Language snippets against the source and official function references. Code was not executed in Mathematica; optimality and output were independently checked by exhaustive enumeration."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Each edition links to Wolfram's official FindShortestTour and SparseArray documentation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The Wolfram Language code was not run in a Mathematica/Wolfram Engine session.",
+        "The exhaustive verification covers this nine-city example; the performance note is qualitative."
+      ]
+    }
+  }
+}

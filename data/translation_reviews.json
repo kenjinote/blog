@@ -10685,6 +10685,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-093.json",
       "evidenceHash": "e35a1253ec0a3e49c6a504bc556164d4061d16b87b73d33984f03cca825eb707"
+    },
+    "post/Mathematicaで巡回セールスマン問題を解く/index.ar.md": {
+      "source": "post/Mathematicaで巡回セールスマン問題を解く/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9f6bbd07ebb751045b2e189fa5e967718e4b7b64c2744a1a2fc0daa4dc9fa774",
+      "translationHash": "c5ebbe175be8ae4dd22b2f650174880ec4dff23c18226afef932fadbc22ea246",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-094.json",
+      "evidenceHash": "b4f2b525ec2e12cc8429c4a54a8372413de08bdef0b862c953d76f75901e83c5"
+    },
+    "post/Mathematicaで巡回セールスマン問題を解く/index.de.md": {
+      "source": "post/Mathematicaで巡回セールスマン問題を解く/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9f6bbd07ebb751045b2e189fa5e967718e4b7b64c2744a1a2fc0daa4dc9fa774",
+      "translationHash": "b9dc7a2339f990ff461907c26d04f26a66391caaad01cc26145908bb7eb536e8",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-094.json",
+      "evidenceHash": "5f1cc68e4084e466b42ed7b248bb530fa6c6b077c798ada8cc1f20df16fa171b"
+    },
+    "post/Mathematicaで巡回セールスマン問題を解く/index.en.md": {
+      "source": "post/Mathematicaで巡回セールスマン問題を解く/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9f6bbd07ebb751045b2e189fa5e967718e4b7b64c2744a1a2fc0daa4dc9fa774",
+      "translationHash": "5ffc8e61059eb193953794be1ac0531a211c574dd9715f2d0dbe8b1b5c6969f4",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-094.json",
+      "evidenceHash": "9523c8c7729658674df56c88439752c85dfe5f2567213b09b3dd530ee73ac722"
+    },
+    "post/Mathematicaで巡回セールスマン問題を解く/index.es.md": {
+      "source": "post/Mathematicaで巡回セールスマン問題を解く/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9f6bbd07ebb751045b2e189fa5e967718e4b7b64c2744a1a2fc0daa4dc9fa774",
+      "translationHash": "bef8e5b00ad1c7b17264031c62d545b19c94ce2a211d6653d04b024ca1b520e3",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-094.json",
+      "evidenceHash": "f9bdb71d34eed39629a3ee94b3e984120197caa0f620edd0835fd68216a4cc5d"
+    },
+    "post/Mathematicaで巡回セールスマン問題を解く/index.fr.md": {
+      "source": "post/Mathematicaで巡回セールスマン問題を解く/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9f6bbd07ebb751045b2e189fa5e967718e4b7b64c2744a1a2fc0daa4dc9fa774",
+      "translationHash": "dd5874f445c768ae83dc7e66e0a44040b66a580a8e6b55bbd1519be80e9e6154",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-094.json",
+      "evidenceHash": "88273c378ed91dd9da7ab643b9b170c524f2b21121aa89ae0f49838152b43b2f"
+    },
+    "post/Mathematicaで巡回セールスマン問題を解く/index.hi.md": {
+      "source": "post/Mathematicaで巡回セールスマン問題を解く/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9f6bbd07ebb751045b2e189fa5e967718e4b7b64c2744a1a2fc0daa4dc9fa774",
+      "translationHash": "f90a1c623803f9a9c2bc41aeb5121c9959c4f806041fc1d8f0fcce2892dfbf66",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-094.json",
+      "evidenceHash": "dd089aea4c8ac250e5980eb650c3c099cf8e546a269074562590d4db5087400b"
+    },
+    "post/Mathematicaで巡回セールスマン問題を解く/index.id.md": {
+      "source": "post/Mathematicaで巡回セールスマン問題を解く/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9f6bbd07ebb751045b2e189fa5e967718e4b7b64c2744a1a2fc0daa4dc9fa774",
+      "translationHash": "1e6c6cbd91c039aa67f17358cd429fb2a45b2579d5c60ffec4eb841ccbbc05c7",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-094.json",
+      "evidenceHash": "a4ae08595874bbe2b383faedeae915b1d7fcea91627e21c6d12d2b1fcc166516"
+    },
+    "post/Mathematicaで巡回セールスマン問題を解く/index.ko.md": {
+      "source": "post/Mathematicaで巡回セールスマン問題を解く/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9f6bbd07ebb751045b2e189fa5e967718e4b7b64c2744a1a2fc0daa4dc9fa774",
+      "translationHash": "996ea9ee268d61ca0ce0926fd880bb088361b2b8520d2ac9e5398748d511f483",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-094.json",
+      "evidenceHash": "c6cc3d15804ff1b4cd8d00250576bf2035a12d4242788734b61c8a256d97ed48"
+    },
+    "post/Mathematicaで巡回セールスマン問題を解く/index.pt.md": {
+      "source": "post/Mathematicaで巡回セールスマン問題を解く/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9f6bbd07ebb751045b2e189fa5e967718e4b7b64c2744a1a2fc0daa4dc9fa774",
+      "translationHash": "6aad95ea3d7ebbec86d9e66817013f2cae88e08efb35b1d782089b1d5c88b06b",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-094.json",
+      "evidenceHash": "bb8013b90c7741a6d7bf8cce040dac455cc9619da4a87327c2d6a868b9728576"
+    },
+    "post/Mathematicaで巡回セールスマン問題を解く/index.ru.md": {
+      "source": "post/Mathematicaで巡回セールスマン問題を解く/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9f6bbd07ebb751045b2e189fa5e967718e4b7b64c2744a1a2fc0daa4dc9fa774",
+      "translationHash": "de5767601f465eb30b0a384d75170b44e83182ebfe5e08a0c00d794b565a69ff",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-094.json",
+      "evidenceHash": "2ccdae0099eaaeb31b890467b14dcd95b3a9c7f519d84e58d84f80665e0d9416"
+    },
+    "post/Mathematicaで巡回セールスマン問題を解く/index.zh-cn.md": {
+      "source": "post/Mathematicaで巡回セールスマン問題を解く/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9f6bbd07ebb751045b2e189fa5e967718e4b7b64c2744a1a2fc0daa4dc9fa774",
+      "translationHash": "c33307a5a8b8c570796ea19dfa46cfa1df7026cccf46c570972312c25faf7f3e",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-094.json",
+      "evidenceHash": "a9fe9beb4ba73cf42eef528c861bdaf1988a9b1d3622a4a0e0d2224a89b51f33"
+    },
+    "post/Mathematicaで巡回セールスマン問題を解く/index.zh-tw.md": {
+      "source": "post/Mathematicaで巡回セールスマン問題を解く/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9f6bbd07ebb751045b2e189fa5e967718e4b7b64c2744a1a2fc0daa4dc9fa774",
+      "translationHash": "649affd494900463d4167f864b048c815971376e4bb8c33a08f98d4cef314a1d",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-094.json",
+      "evidenceHash": "dba5e63660ee97202a0934a7f45845a82eaa928a804302a2e7ec003e16300c8d"
     }
   }
 }
