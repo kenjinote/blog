@@ -1,0 +1,457 @@
+{
+  "version": 1,
+  "batch": 117,
+  "article": "Qiskitを使った量子プログラミング超入門",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "36f734e3eda5564e2364ad4bbacdb60933aa98d0dcc1aa69bbc836d20ddd08eb",
+  "sources": [
+    "https://quantum.cloud.ibm.com/docs/en/guides/install-qiskit",
+    "https://quantum.cloud.ibm.com/docs/en/guides/local-simulators",
+    "https://quantum.cloud.ibm.com/docs/en/guides/qiskit-1.0-features",
+    "https://quantum.cloud.ibm.com/docs/en/api/qiskit/qiskit.circuit.QuantumCircuit",
+    "https://qiskit.github.io/qiskit-aer/stubs/qiskit_aer.AerSimulator.html"
+  ],
+  "scope": "Rewrote the Japanese article and twelve translations. Checked quantum-state mathematics, measurement, superposition versus readout, no-signalling in entanglement, current Qiskit packaging and AerSimulator code, ideal-simulation interpretation, query-complexity conditions, and official links.",
+  "findings": [
+    "Removed claims that n-qubit superposition itself gives general exponential parallel speedup; clarified that measurement does not expose all amplitudes.",
+    "Corrected entanglement explanation: Bell-state outcomes are correlated but cannot transmit information faster than light.",
+    "Qualified quantum-computing applications and Deutsch–Jozsa/Grover speedups by their problem and oracle assumptions.",
+    "Replaced outdated Qiskit/Aer references and code with Qiskit 1.x plus separately installed qiskit-aer and AerSimulator.",
+    "Distinguished ideal local simulation from noisy hardware results and documented sampling variation and bit-order caveat."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/Qiskit入門/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Qiskit入門/index.md",
+      "sourceHash": "36f734e3eda5564e2364ad4bbacdb60933aa98d0dcc1aa69bbc836d20ddd08eb",
+      "translationHash": "0b1f1a4eb734648b81967f8e9ffc2e03c7d69d9fc426f01f2dab980a025e6dbf",
+      "summary": "Rewrote and aligned this translation with the corrected Qiskit and quantum-computing explanations.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the explanation of state amplitudes, measurement, gates, Bell-state correlations, and algorithm assumptions with the reviewed source and IBM references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked qubit, computational basis, unitary gate, entanglement, Aer simulator, oracle, and query-complexity terms."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified amplitude normalization and outcome probabilities; the Bell-state circuit and ideal counts; and the conditional query-complexity statements for Deutsch–Jozsa and Grover."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Updated to the Qiskit 1.x separate qiskit-aer package and AerSimulator API. Code was statically reviewed; Qiskit and qiskit-aer are not installed in this workspace, so it was not executed here."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced archived qiskit.org links with current official IBM Quantum installation, local-simulator, migration, QuantumCircuit, and AerSimulator documentation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The sample targets current Qiskit 1.x APIs but was not executed because Qiskit packages are absent in this workspace.",
+        "Quantum algorithm speedups are stated only in the specified query/oracle model; no claim of general practical speedup is made."
+      ]
+    },
+    "post/Qiskit入門/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Qiskit入門/index.md",
+      "sourceHash": "36f734e3eda5564e2364ad4bbacdb60933aa98d0dcc1aa69bbc836d20ddd08eb",
+      "translationHash": "4538c9f0492245ec009f14322aea697eaafba3907a6f6043f7cf500eb4b4fcec",
+      "summary": "Rewrote and aligned this translation with the corrected Qiskit and quantum-computing explanations.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the explanation of state amplitudes, measurement, gates, Bell-state correlations, and algorithm assumptions with the reviewed source and IBM references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked qubit, computational basis, unitary gate, entanglement, Aer simulator, oracle, and query-complexity terms."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified amplitude normalization and outcome probabilities; the Bell-state circuit and ideal counts; and the conditional query-complexity statements for Deutsch–Jozsa and Grover."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Updated to the Qiskit 1.x separate qiskit-aer package and AerSimulator API. Code was statically reviewed; Qiskit and qiskit-aer are not installed in this workspace, so it was not executed here."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced archived qiskit.org links with current official IBM Quantum installation, local-simulator, migration, QuantumCircuit, and AerSimulator documentation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The sample targets current Qiskit 1.x APIs but was not executed because Qiskit packages are absent in this workspace.",
+        "Quantum algorithm speedups are stated only in the specified query/oracle model; no claim of general practical speedup is made."
+      ]
+    },
+    "post/Qiskit入門/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Qiskit入門/index.md",
+      "sourceHash": "36f734e3eda5564e2364ad4bbacdb60933aa98d0dcc1aa69bbc836d20ddd08eb",
+      "translationHash": "e6fa3f5b58fc1752a09b5f271cce45c6dd545a0bbbf732c717c1a36a2f675233",
+      "summary": "Rewrote and aligned this translation with the corrected Qiskit and quantum-computing explanations.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the explanation of state amplitudes, measurement, gates, Bell-state correlations, and algorithm assumptions with the reviewed source and IBM references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked qubit, computational basis, unitary gate, entanglement, Aer simulator, oracle, and query-complexity terms."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified amplitude normalization and outcome probabilities; the Bell-state circuit and ideal counts; and the conditional query-complexity statements for Deutsch–Jozsa and Grover."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Updated to the Qiskit 1.x separate qiskit-aer package and AerSimulator API. Code was statically reviewed; Qiskit and qiskit-aer are not installed in this workspace, so it was not executed here."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced archived qiskit.org links with current official IBM Quantum installation, local-simulator, migration, QuantumCircuit, and AerSimulator documentation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The sample targets current Qiskit 1.x APIs but was not executed because Qiskit packages are absent in this workspace.",
+        "Quantum algorithm speedups are stated only in the specified query/oracle model; no claim of general practical speedup is made."
+      ]
+    },
+    "post/Qiskit入門/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Qiskit入門/index.md",
+      "sourceHash": "36f734e3eda5564e2364ad4bbacdb60933aa98d0dcc1aa69bbc836d20ddd08eb",
+      "translationHash": "a2161b68a280ad4a1024871b6641d3ec99832f26044f8fbddfe0c249e0ae1321",
+      "summary": "Rewrote and aligned this translation with the corrected Qiskit and quantum-computing explanations.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the explanation of state amplitudes, measurement, gates, Bell-state correlations, and algorithm assumptions with the reviewed source and IBM references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked qubit, computational basis, unitary gate, entanglement, Aer simulator, oracle, and query-complexity terms."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified amplitude normalization and outcome probabilities; the Bell-state circuit and ideal counts; and the conditional query-complexity statements for Deutsch–Jozsa and Grover."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Updated to the Qiskit 1.x separate qiskit-aer package and AerSimulator API. Code was statically reviewed; Qiskit and qiskit-aer are not installed in this workspace, so it was not executed here."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced archived qiskit.org links with current official IBM Quantum installation, local-simulator, migration, QuantumCircuit, and AerSimulator documentation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The sample targets current Qiskit 1.x APIs but was not executed because Qiskit packages are absent in this workspace.",
+        "Quantum algorithm speedups are stated only in the specified query/oracle model; no claim of general practical speedup is made."
+      ]
+    },
+    "post/Qiskit入門/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Qiskit入門/index.md",
+      "sourceHash": "36f734e3eda5564e2364ad4bbacdb60933aa98d0dcc1aa69bbc836d20ddd08eb",
+      "translationHash": "4c1542bfae5ec28e878b475590d4785f6d1cf1d3b8fbc124c6de37ef0ebe9faa",
+      "summary": "Rewrote and aligned this translation with the corrected Qiskit and quantum-computing explanations.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the explanation of state amplitudes, measurement, gates, Bell-state correlations, and algorithm assumptions with the reviewed source and IBM references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked qubit, computational basis, unitary gate, entanglement, Aer simulator, oracle, and query-complexity terms."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified amplitude normalization and outcome probabilities; the Bell-state circuit and ideal counts; and the conditional query-complexity statements for Deutsch–Jozsa and Grover."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Updated to the Qiskit 1.x separate qiskit-aer package and AerSimulator API. Code was statically reviewed; Qiskit and qiskit-aer are not installed in this workspace, so it was not executed here."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced archived qiskit.org links with current official IBM Quantum installation, local-simulator, migration, QuantumCircuit, and AerSimulator documentation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The sample targets current Qiskit 1.x APIs but was not executed because Qiskit packages are absent in this workspace.",
+        "Quantum algorithm speedups are stated only in the specified query/oracle model; no claim of general practical speedup is made."
+      ]
+    },
+    "post/Qiskit入門/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Qiskit入門/index.md",
+      "sourceHash": "36f734e3eda5564e2364ad4bbacdb60933aa98d0dcc1aa69bbc836d20ddd08eb",
+      "translationHash": "d9877dd1258baeb2f86f072ca4a40a7f3155ac632a3d1bbcb14e492794cdbbe0",
+      "summary": "Rewrote and aligned this translation with the corrected Qiskit and quantum-computing explanations.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the explanation of state amplitudes, measurement, gates, Bell-state correlations, and algorithm assumptions with the reviewed source and IBM references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked qubit, computational basis, unitary gate, entanglement, Aer simulator, oracle, and query-complexity terms."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified amplitude normalization and outcome probabilities; the Bell-state circuit and ideal counts; and the conditional query-complexity statements for Deutsch–Jozsa and Grover."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Updated to the Qiskit 1.x separate qiskit-aer package and AerSimulator API. Code was statically reviewed; Qiskit and qiskit-aer are not installed in this workspace, so it was not executed here."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced archived qiskit.org links with current official IBM Quantum installation, local-simulator, migration, QuantumCircuit, and AerSimulator documentation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The sample targets current Qiskit 1.x APIs but was not executed because Qiskit packages are absent in this workspace.",
+        "Quantum algorithm speedups are stated only in the specified query/oracle model; no claim of general practical speedup is made."
+      ]
+    },
+    "post/Qiskit入門/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Qiskit入門/index.md",
+      "sourceHash": "36f734e3eda5564e2364ad4bbacdb60933aa98d0dcc1aa69bbc836d20ddd08eb",
+      "translationHash": "e169f0403d7aa7e1e32bf204aa8ac09f4b4f352328d7e7b7fff678ac43215d23",
+      "summary": "Rewrote and aligned this translation with the corrected Qiskit and quantum-computing explanations.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the explanation of state amplitudes, measurement, gates, Bell-state correlations, and algorithm assumptions with the reviewed source and IBM references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked qubit, computational basis, unitary gate, entanglement, Aer simulator, oracle, and query-complexity terms."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified amplitude normalization and outcome probabilities; the Bell-state circuit and ideal counts; and the conditional query-complexity statements for Deutsch–Jozsa and Grover."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Updated to the Qiskit 1.x separate qiskit-aer package and AerSimulator API. Code was statically reviewed; Qiskit and qiskit-aer are not installed in this workspace, so it was not executed here."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced archived qiskit.org links with current official IBM Quantum installation, local-simulator, migration, QuantumCircuit, and AerSimulator documentation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The sample targets current Qiskit 1.x APIs but was not executed because Qiskit packages are absent in this workspace.",
+        "Quantum algorithm speedups are stated only in the specified query/oracle model; no claim of general practical speedup is made."
+      ]
+    },
+    "post/Qiskit入門/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Qiskit入門/index.md",
+      "sourceHash": "36f734e3eda5564e2364ad4bbacdb60933aa98d0dcc1aa69bbc836d20ddd08eb",
+      "translationHash": "c86e322c84b9e11a6ba682c02ca446f043311a446606d0a92cf8310fc4f7e9e3",
+      "summary": "Rewrote and aligned this translation with the corrected Qiskit and quantum-computing explanations.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the explanation of state amplitudes, measurement, gates, Bell-state correlations, and algorithm assumptions with the reviewed source and IBM references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked qubit, computational basis, unitary gate, entanglement, Aer simulator, oracle, and query-complexity terms."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified amplitude normalization and outcome probabilities; the Bell-state circuit and ideal counts; and the conditional query-complexity statements for Deutsch–Jozsa and Grover."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Updated to the Qiskit 1.x separate qiskit-aer package and AerSimulator API. Code was statically reviewed; Qiskit and qiskit-aer are not installed in this workspace, so it was not executed here."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced archived qiskit.org links with current official IBM Quantum installation, local-simulator, migration, QuantumCircuit, and AerSimulator documentation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The sample targets current Qiskit 1.x APIs but was not executed because Qiskit packages are absent in this workspace.",
+        "Quantum algorithm speedups are stated only in the specified query/oracle model; no claim of general practical speedup is made."
+      ]
+    },
+    "post/Qiskit入門/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Qiskit入門/index.md",
+      "sourceHash": "36f734e3eda5564e2364ad4bbacdb60933aa98d0dcc1aa69bbc836d20ddd08eb",
+      "translationHash": "98e1285522bfd10e1a484659f0788ecf8520795a9e88393c03894ad8bb0206c1",
+      "summary": "Rewrote and aligned this translation with the corrected Qiskit and quantum-computing explanations.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the explanation of state amplitudes, measurement, gates, Bell-state correlations, and algorithm assumptions with the reviewed source and IBM references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked qubit, computational basis, unitary gate, entanglement, Aer simulator, oracle, and query-complexity terms."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified amplitude normalization and outcome probabilities; the Bell-state circuit and ideal counts; and the conditional query-complexity statements for Deutsch–Jozsa and Grover."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Updated to the Qiskit 1.x separate qiskit-aer package and AerSimulator API. Code was statically reviewed; Qiskit and qiskit-aer are not installed in this workspace, so it was not executed here."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced archived qiskit.org links with current official IBM Quantum installation, local-simulator, migration, QuantumCircuit, and AerSimulator documentation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The sample targets current Qiskit 1.x APIs but was not executed because Qiskit packages are absent in this workspace.",
+        "Quantum algorithm speedups are stated only in the specified query/oracle model; no claim of general practical speedup is made."
+      ]
+    },
+    "post/Qiskit入門/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Qiskit入門/index.md",
+      "sourceHash": "36f734e3eda5564e2364ad4bbacdb60933aa98d0dcc1aa69bbc836d20ddd08eb",
+      "translationHash": "84e218b70e60b5cc60cfbcddd062cbfe1c3dbe2ea73ae074735a4ee2d9d23fde",
+      "summary": "Rewrote and aligned this translation with the corrected Qiskit and quantum-computing explanations.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the explanation of state amplitudes, measurement, gates, Bell-state correlations, and algorithm assumptions with the reviewed source and IBM references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked qubit, computational basis, unitary gate, entanglement, Aer simulator, oracle, and query-complexity terms."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified amplitude normalization and outcome probabilities; the Bell-state circuit and ideal counts; and the conditional query-complexity statements for Deutsch–Jozsa and Grover."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Updated to the Qiskit 1.x separate qiskit-aer package and AerSimulator API. Code was statically reviewed; Qiskit and qiskit-aer are not installed in this workspace, so it was not executed here."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced archived qiskit.org links with current official IBM Quantum installation, local-simulator, migration, QuantumCircuit, and AerSimulator documentation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The sample targets current Qiskit 1.x APIs but was not executed because Qiskit packages are absent in this workspace.",
+        "Quantum algorithm speedups are stated only in the specified query/oracle model; no claim of general practical speedup is made."
+      ]
+    },
+    "post/Qiskit入門/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Qiskit入門/index.md",
+      "sourceHash": "36f734e3eda5564e2364ad4bbacdb60933aa98d0dcc1aa69bbc836d20ddd08eb",
+      "translationHash": "8dac731d4ec875bf390d651a0a0b38b00e9c62747f422113f6a65d4c9ba57e98",
+      "summary": "Rewrote and aligned this translation with the corrected Qiskit and quantum-computing explanations.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the explanation of state amplitudes, measurement, gates, Bell-state correlations, and algorithm assumptions with the reviewed source and IBM references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked qubit, computational basis, unitary gate, entanglement, Aer simulator, oracle, and query-complexity terms."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified amplitude normalization and outcome probabilities; the Bell-state circuit and ideal counts; and the conditional query-complexity statements for Deutsch–Jozsa and Grover."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Updated to the Qiskit 1.x separate qiskit-aer package and AerSimulator API. Code was statically reviewed; Qiskit and qiskit-aer are not installed in this workspace, so it was not executed here."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced archived qiskit.org links with current official IBM Quantum installation, local-simulator, migration, QuantumCircuit, and AerSimulator documentation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The sample targets current Qiskit 1.x APIs but was not executed because Qiskit packages are absent in this workspace.",
+        "Quantum algorithm speedups are stated only in the specified query/oracle model; no claim of general practical speedup is made."
+      ]
+    },
+    "post/Qiskit入門/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Qiskit入門/index.md",
+      "sourceHash": "36f734e3eda5564e2364ad4bbacdb60933aa98d0dcc1aa69bbc836d20ddd08eb",
+      "translationHash": "2c58a30c1303f685adf450a315b1086d9505eb02ee04a343ee3671e09606299a",
+      "summary": "Rewrote and aligned this translation with the corrected Qiskit and quantum-computing explanations.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the explanation of state amplitudes, measurement, gates, Bell-state correlations, and algorithm assumptions with the reviewed source and IBM references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked qubit, computational basis, unitary gate, entanglement, Aer simulator, oracle, and query-complexity terms."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified amplitude normalization and outcome probabilities; the Bell-state circuit and ideal counts; and the conditional query-complexity statements for Deutsch–Jozsa and Grover."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Updated to the Qiskit 1.x separate qiskit-aer package and AerSimulator API. Code was statically reviewed; Qiskit and qiskit-aer are not installed in this workspace, so it was not executed here."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced archived qiskit.org links with current official IBM Quantum installation, local-simulator, migration, QuantumCircuit, and AerSimulator documentation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The sample targets current Qiskit 1.x APIs but was not executed because Qiskit packages are absent in this workspace.",
+        "Quantum algorithm speedups are stated only in the specified query/oracle model; no claim of general practical speedup is made."
+      ]
+    }
+  }
+}

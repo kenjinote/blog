@@ -13445,6 +13445,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-116.json",
       "evidenceHash": "3e63ef756e9dccd8628b8b3b127da2c223033a207c294bb28b28e02cb9687e04"
+    },
+    "post/Qiskit入門/index.en.md": {
+      "source": "post/Qiskit入門/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "36f734e3eda5564e2364ad4bbacdb60933aa98d0dcc1aa69bbc836d20ddd08eb",
+      "translationHash": "0b1f1a4eb734648b81967f8e9ffc2e03c7d69d9fc426f01f2dab980a025e6dbf",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-117.json",
+      "evidenceHash": "dffbca07aad87e17d15df7810e8da5a6489ce23b60212ecc0d1942cdc5d44fba"
+    },
+    "post/Qiskit入門/index.zh-cn.md": {
+      "source": "post/Qiskit入門/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "36f734e3eda5564e2364ad4bbacdb60933aa98d0dcc1aa69bbc836d20ddd08eb",
+      "translationHash": "4538c9f0492245ec009f14322aea697eaafba3907a6f6043f7cf500eb4b4fcec",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-117.json",
+      "evidenceHash": "7ecd3aeea334867a5d2b307976d02ad3f298b89c0e5f7b1bca58910d244a1b29"
+    },
+    "post/Qiskit入門/index.es.md": {
+      "source": "post/Qiskit入門/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "36f734e3eda5564e2364ad4bbacdb60933aa98d0dcc1aa69bbc836d20ddd08eb",
+      "translationHash": "e6fa3f5b58fc1752a09b5f271cce45c6dd545a0bbbf732c717c1a36a2f675233",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-117.json",
+      "evidenceHash": "6f93f983825254139a7959a8b2f63d68fa5df918cae4896070ebf61db2c2f8d6"
+    },
+    "post/Qiskit入門/index.ko.md": {
+      "source": "post/Qiskit入門/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "36f734e3eda5564e2364ad4bbacdb60933aa98d0dcc1aa69bbc836d20ddd08eb",
+      "translationHash": "a2161b68a280ad4a1024871b6641d3ec99832f26044f8fbddfe0c249e0ae1321",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-117.json",
+      "evidenceHash": "8e17a5e2a01952a7d5f4884414f66ac91463f6fbd70de3d3ce87ec86b6fff25a"
+    },
+    "post/Qiskit入門/index.pt.md": {
+      "source": "post/Qiskit入門/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "36f734e3eda5564e2364ad4bbacdb60933aa98d0dcc1aa69bbc836d20ddd08eb",
+      "translationHash": "4c1542bfae5ec28e878b475590d4785f6d1cf1d3b8fbc124c6de37ef0ebe9faa",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-117.json",
+      "evidenceHash": "1c4237016134309f0135bb2daa6c44d5bf7ed9aa78329989a5e56cf257e6514f"
+    },
+    "post/Qiskit入門/index.zh-tw.md": {
+      "source": "post/Qiskit入門/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "36f734e3eda5564e2364ad4bbacdb60933aa98d0dcc1aa69bbc836d20ddd08eb",
+      "translationHash": "d9877dd1258baeb2f86f072ca4a40a7f3155ac632a3d1bbcb14e492794cdbbe0",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-117.json",
+      "evidenceHash": "094c17c639d775dd25709ee418a027e7648364f9299311817992e7918e3d9054"
+    },
+    "post/Qiskit入門/index.hi.md": {
+      "source": "post/Qiskit入門/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "36f734e3eda5564e2364ad4bbacdb60933aa98d0dcc1aa69bbc836d20ddd08eb",
+      "translationHash": "e169f0403d7aa7e1e32bf204aa8ac09f4b4f352328d7e7b7fff678ac43215d23",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-117.json",
+      "evidenceHash": "e14492c04729cd72b0109850385faa0c000b9b2dc5bbd0a8e8632d300d5ae553"
+    },
+    "post/Qiskit入門/index.fr.md": {
+      "source": "post/Qiskit入門/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "36f734e3eda5564e2364ad4bbacdb60933aa98d0dcc1aa69bbc836d20ddd08eb",
+      "translationHash": "c86e322c84b9e11a6ba682c02ca446f043311a446606d0a92cf8310fc4f7e9e3",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-117.json",
+      "evidenceHash": "1a3f7647df399516d6d6c220ad2a56fce284bfad6ac8f6bb598e545d63a961af"
+    },
+    "post/Qiskit入門/index.de.md": {
+      "source": "post/Qiskit入門/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "36f734e3eda5564e2364ad4bbacdb60933aa98d0dcc1aa69bbc836d20ddd08eb",
+      "translationHash": "98e1285522bfd10e1a484659f0788ecf8520795a9e88393c03894ad8bb0206c1",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-117.json",
+      "evidenceHash": "7153151f5a451341aa4648520fcedf270a38b9ba5c06da7c1735fed50b5d5822"
+    },
+    "post/Qiskit入門/index.ar.md": {
+      "source": "post/Qiskit入門/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "36f734e3eda5564e2364ad4bbacdb60933aa98d0dcc1aa69bbc836d20ddd08eb",
+      "translationHash": "84e218b70e60b5cc60cfbcddd062cbfe1c3dbe2ea73ae074735a4ee2d9d23fde",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-117.json",
+      "evidenceHash": "8a364ef024be35b81ed17b7ca5e9a43723c6bde4ef5ca43b46a88f9a5eb2f754"
+    },
+    "post/Qiskit入門/index.ru.md": {
+      "source": "post/Qiskit入門/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "36f734e3eda5564e2364ad4bbacdb60933aa98d0dcc1aa69bbc836d20ddd08eb",
+      "translationHash": "8dac731d4ec875bf390d651a0a0b38b00e9c62747f422113f6a65d4c9ba57e98",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-117.json",
+      "evidenceHash": "bdb0c199e50375166f48635b79b44385a97413662cdb899a247a92366e7e2c16"
+    },
+    "post/Qiskit入門/index.id.md": {
+      "source": "post/Qiskit入門/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "36f734e3eda5564e2364ad4bbacdb60933aa98d0dcc1aa69bbc836d20ddd08eb",
+      "translationHash": "2c58a30c1303f685adf450a315b1086d9505eb02ee04a343ee3671e09606299a",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-117.json",
+      "evidenceHash": "5f5ff7679e7b87c3092d593d50edc2ced4abf7646b8aa470cd894922094ab75f"
     }
   }
 }
