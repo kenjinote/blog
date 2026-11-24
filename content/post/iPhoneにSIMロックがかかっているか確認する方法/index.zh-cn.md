@@ -7,7 +7,7 @@ image: "img.webp"
 categories: ["pc-gadgets"]
 description: "在“设置”中查看运营商锁状态，并了解需要解锁时应联系谁。"
 date: 2024-09-12T00:32:11+09:00
-lastmod: 2026-11-24
+lastmod: "2026-11-25T00:00:00+09:00"
 ---
 # 如何查看iPhone是否有运营商锁
 

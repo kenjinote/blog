@@ -7,7 +7,7 @@ image: "img.webp"
 categories: ["pc-gadgets"]
 description: "Check the Carrier Lock status in Settings and learn whom to contact if you need an unlock."
 date: 2024-09-12T00:32:11+09:00
-lastmod: 2026-11-24
+lastmod: "2026-11-25T00:00:00+09:00"
 ---
 # How to Check Whether Your iPhone Is Carrier-Locked
 

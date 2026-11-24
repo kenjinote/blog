@@ -1,0 +1,454 @@
+{
+  "version": 1,
+  "batch": 196,
+  "article": "Check whether an iPhone is carrier-locked",
+  "reviewedAt": "2026-11-25",
+  "sourceHash": "5f4b9753eeb7d2ddc383d9d7b9b70d3aedc2d025ecc145a96d8d49a4aa389e08",
+  "sources": [
+    "https://support.apple.com/en-us/109316",
+    "https://support.apple.com/ja-jp/109316",
+    "https://support.apple.com/ja-jp/104999"
+  ],
+  "scope": "Read the complete Japanese article and all twelve translations; compared every factual instruction and caveat with Apple Support, checked regional Settings terminology, the SIM PIN distinction, metadata and all Apple links.",
+  "findings": [
+    "Updated lastmod to the review date in all 13 editions, preserving the original publication date (2024-09-12).",
+    "Confirmed the Settings > General > About path and the “No SIM restrictions” status using Apple Support; the article correctly says only the current carrier can unlock an iPhone.",
+    "Confirmed that carrier lock is distinct from a SIM PIN lock, and retained cautions about network compatibility, service eligibility and eSIM.",
+    "Checked localized wording and explained that iOS Settings labels vary by language and version."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/iPhoneにSIMロックがかかっているか確認する方法/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/iPhoneにSIMロックがかかっているか確認する方法/index.md",
+      "sourceHash": "5f4b9753eeb7d2ddc383d9d7b9b70d3aedc2d025ecc145a96d8d49a4aa389e08",
+      "translationHash": "f027b45f1be555a87e7ba6399180b511ee5e41980b06c01a7a6f199fc8c067e4",
+      "summary": "Compared the complete translation with the Japanese source and current Apple Support pages; verified the settings path and status label, carrier-only unlocking, regional terminology, eSIM/network caveats, and the distinction from a SIM PIN.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article with all twelve translations; confirmed the Settings > General > About path, the unlocked status label, and that the current carrier is the only party that can unlock an iPhone."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked carrier lock versus SIM PIN, regional Settings labels, wireless carrier/network provider wording, frequency bands, service eligibility, and eSIM across the editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code or command examples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Apple Support articles 109316 and 104999 in English and Japanese; verified that Apple gives the same settings path and status meaning and says only the carrier can unlock the device."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Settings labels can vary with iOS language/version; regional radio-band, service, eSIM, and carrier requirements vary.",
+        "Apple Support source pages were checked on 2026-11-25."
+      ]
+    },
+    "post/iPhoneにSIMロックがかかっているか確認する方法/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/iPhoneにSIMロックがかかっているか確認する方法/index.md",
+      "sourceHash": "5f4b9753eeb7d2ddc383d9d7b9b70d3aedc2d025ecc145a96d8d49a4aa389e08",
+      "translationHash": "54ab95cf8eef15ee9051e3eb78f64aa3f345ecce56a4d8650ccc28c6cc78f3f6",
+      "summary": "Compared the complete translation with the Japanese source and current Apple Support pages; verified the settings path and status label, carrier-only unlocking, regional terminology, eSIM/network caveats, and the distinction from a SIM PIN.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article with all twelve translations; confirmed the Settings > General > About path, the unlocked status label, and that the current carrier is the only party that can unlock an iPhone."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked carrier lock versus SIM PIN, regional Settings labels, wireless carrier/network provider wording, frequency bands, service eligibility, and eSIM across the editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code or command examples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Apple Support articles 109316 and 104999 in English and Japanese; verified that Apple gives the same settings path and status meaning and says only the carrier can unlock the device."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Settings labels can vary with iOS language/version; regional radio-band, service, eSIM, and carrier requirements vary.",
+        "Apple Support source pages were checked on 2026-11-25."
+      ]
+    },
+    "post/iPhoneにSIMロックがかかっているか確認する方法/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/iPhoneにSIMロックがかかっているか確認する方法/index.md",
+      "sourceHash": "5f4b9753eeb7d2ddc383d9d7b9b70d3aedc2d025ecc145a96d8d49a4aa389e08",
+      "translationHash": "b4cb8689dcc38510dc26ab953ac40b4fa9f2e3da293a3986e7900f0f55625342",
+      "summary": "Compared the complete translation with the Japanese source and current Apple Support pages; verified the settings path and status label, carrier-only unlocking, regional terminology, eSIM/network caveats, and the distinction from a SIM PIN.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article with all twelve translations; confirmed the Settings > General > About path, the unlocked status label, and that the current carrier is the only party that can unlock an iPhone."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked carrier lock versus SIM PIN, regional Settings labels, wireless carrier/network provider wording, frequency bands, service eligibility, and eSIM across the editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code or command examples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Apple Support articles 109316 and 104999 in English and Japanese; verified that Apple gives the same settings path and status meaning and says only the carrier can unlock the device."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Settings labels can vary with iOS language/version; regional radio-band, service, eSIM, and carrier requirements vary.",
+        "Apple Support source pages were checked on 2026-11-25."
+      ]
+    },
+    "post/iPhoneにSIMロックがかかっているか確認する方法/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/iPhoneにSIMロックがかかっているか確認する方法/index.md",
+      "sourceHash": "5f4b9753eeb7d2ddc383d9d7b9b70d3aedc2d025ecc145a96d8d49a4aa389e08",
+      "translationHash": "7b9bce0530d94861ec4215ce0faa460f0f9e253cbdeeb5047e8ddbee1b864db4",
+      "summary": "Compared the complete translation with the Japanese source and current Apple Support pages; verified the settings path and status label, carrier-only unlocking, regional terminology, eSIM/network caveats, and the distinction from a SIM PIN.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article with all twelve translations; confirmed the Settings > General > About path, the unlocked status label, and that the current carrier is the only party that can unlock an iPhone."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked carrier lock versus SIM PIN, regional Settings labels, wireless carrier/network provider wording, frequency bands, service eligibility, and eSIM across the editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code or command examples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Apple Support articles 109316 and 104999 in English and Japanese; verified that Apple gives the same settings path and status meaning and says only the carrier can unlock the device."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Settings labels can vary with iOS language/version; regional radio-band, service, eSIM, and carrier requirements vary.",
+        "Apple Support source pages were checked on 2026-11-25."
+      ]
+    },
+    "post/iPhoneにSIMロックがかかっているか確認する方法/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/iPhoneにSIMロックがかかっているか確認する方法/index.md",
+      "sourceHash": "5f4b9753eeb7d2ddc383d9d7b9b70d3aedc2d025ecc145a96d8d49a4aa389e08",
+      "translationHash": "9e2cd6bd384e3d287265286b2369fd454b5c5dfc81ee248e96272c62ed43f682",
+      "summary": "Compared the complete translation with the Japanese source and current Apple Support pages; verified the settings path and status label, carrier-only unlocking, regional terminology, eSIM/network caveats, and the distinction from a SIM PIN.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article with all twelve translations; confirmed the Settings > General > About path, the unlocked status label, and that the current carrier is the only party that can unlock an iPhone."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked carrier lock versus SIM PIN, regional Settings labels, wireless carrier/network provider wording, frequency bands, service eligibility, and eSIM across the editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code or command examples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Apple Support articles 109316 and 104999 in English and Japanese; verified that Apple gives the same settings path and status meaning and says only the carrier can unlock the device."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Settings labels can vary with iOS language/version; regional radio-band, service, eSIM, and carrier requirements vary.",
+        "Apple Support source pages were checked on 2026-11-25."
+      ]
+    },
+    "post/iPhoneにSIMロックがかかっているか確認する方法/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/iPhoneにSIMロックがかかっているか確認する方法/index.md",
+      "sourceHash": "5f4b9753eeb7d2ddc383d9d7b9b70d3aedc2d025ecc145a96d8d49a4aa389e08",
+      "translationHash": "0654e1a2fe0e06c1fb55080d83967ab259b6e788696fae702ed09430e1037c1e",
+      "summary": "Compared the complete translation with the Japanese source and current Apple Support pages; verified the settings path and status label, carrier-only unlocking, regional terminology, eSIM/network caveats, and the distinction from a SIM PIN.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article with all twelve translations; confirmed the Settings > General > About path, the unlocked status label, and that the current carrier is the only party that can unlock an iPhone."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked carrier lock versus SIM PIN, regional Settings labels, wireless carrier/network provider wording, frequency bands, service eligibility, and eSIM across the editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code or command examples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Apple Support articles 109316 and 104999 in English and Japanese; verified that Apple gives the same settings path and status meaning and says only the carrier can unlock the device."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Settings labels can vary with iOS language/version; regional radio-band, service, eSIM, and carrier requirements vary.",
+        "Apple Support source pages were checked on 2026-11-25."
+      ]
+    },
+    "post/iPhoneにSIMロックがかかっているか確認する方法/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/iPhoneにSIMロックがかかっているか確認する方法/index.md",
+      "sourceHash": "5f4b9753eeb7d2ddc383d9d7b9b70d3aedc2d025ecc145a96d8d49a4aa389e08",
+      "translationHash": "d1b5bbd029bfcbbebe20dda7e9e361ef8f792af604c3bbef6d1e5a2e1783177f",
+      "summary": "Compared the complete translation with the Japanese source and current Apple Support pages; verified the settings path and status label, carrier-only unlocking, regional terminology, eSIM/network caveats, and the distinction from a SIM PIN.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article with all twelve translations; confirmed the Settings > General > About path, the unlocked status label, and that the current carrier is the only party that can unlock an iPhone."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked carrier lock versus SIM PIN, regional Settings labels, wireless carrier/network provider wording, frequency bands, service eligibility, and eSIM across the editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code or command examples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Apple Support articles 109316 and 104999 in English and Japanese; verified that Apple gives the same settings path and status meaning and says only the carrier can unlock the device."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Settings labels can vary with iOS language/version; regional radio-band, service, eSIM, and carrier requirements vary.",
+        "Apple Support source pages were checked on 2026-11-25."
+      ]
+    },
+    "post/iPhoneにSIMロックがかかっているか確認する方法/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/iPhoneにSIMロックがかかっているか確認する方法/index.md",
+      "sourceHash": "5f4b9753eeb7d2ddc383d9d7b9b70d3aedc2d025ecc145a96d8d49a4aa389e08",
+      "translationHash": "7a03e944318d18b78a7d389b40c23b7d609716c0eb48bd3dfddf430f92c2d5a7",
+      "summary": "Compared the complete translation with the Japanese source and current Apple Support pages; verified the settings path and status label, carrier-only unlocking, regional terminology, eSIM/network caveats, and the distinction from a SIM PIN.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article with all twelve translations; confirmed the Settings > General > About path, the unlocked status label, and that the current carrier is the only party that can unlock an iPhone."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked carrier lock versus SIM PIN, regional Settings labels, wireless carrier/network provider wording, frequency bands, service eligibility, and eSIM across the editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code or command examples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Apple Support articles 109316 and 104999 in English and Japanese; verified that Apple gives the same settings path and status meaning and says only the carrier can unlock the device."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Settings labels can vary with iOS language/version; regional radio-band, service, eSIM, and carrier requirements vary.",
+        "Apple Support source pages were checked on 2026-11-25."
+      ]
+    },
+    "post/iPhoneにSIMロックがかかっているか確認する方法/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/iPhoneにSIMロックがかかっているか確認する方法/index.md",
+      "sourceHash": "5f4b9753eeb7d2ddc383d9d7b9b70d3aedc2d025ecc145a96d8d49a4aa389e08",
+      "translationHash": "37e3bd990902a2d66954925a9b2ec99fa12564ecd256fe3815dfc18eac0c270c",
+      "summary": "Compared the complete translation with the Japanese source and current Apple Support pages; verified the settings path and status label, carrier-only unlocking, regional terminology, eSIM/network caveats, and the distinction from a SIM PIN.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article with all twelve translations; confirmed the Settings > General > About path, the unlocked status label, and that the current carrier is the only party that can unlock an iPhone."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked carrier lock versus SIM PIN, regional Settings labels, wireless carrier/network provider wording, frequency bands, service eligibility, and eSIM across the editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code or command examples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Apple Support articles 109316 and 104999 in English and Japanese; verified that Apple gives the same settings path and status meaning and says only the carrier can unlock the device."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Settings labels can vary with iOS language/version; regional radio-band, service, eSIM, and carrier requirements vary.",
+        "Apple Support source pages were checked on 2026-11-25."
+      ]
+    },
+    "post/iPhoneにSIMロックがかかっているか確認する方法/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/iPhoneにSIMロックがかかっているか確認する方法/index.md",
+      "sourceHash": "5f4b9753eeb7d2ddc383d9d7b9b70d3aedc2d025ecc145a96d8d49a4aa389e08",
+      "translationHash": "39c914c5e94cec7ed6fca6cbf766a7115334f330d069552f56662c4f8df46417",
+      "summary": "Compared the complete translation with the Japanese source and current Apple Support pages; verified the settings path and status label, carrier-only unlocking, regional terminology, eSIM/network caveats, and the distinction from a SIM PIN.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article with all twelve translations; confirmed the Settings > General > About path, the unlocked status label, and that the current carrier is the only party that can unlock an iPhone."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked carrier lock versus SIM PIN, regional Settings labels, wireless carrier/network provider wording, frequency bands, service eligibility, and eSIM across the editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code or command examples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Apple Support articles 109316 and 104999 in English and Japanese; verified that Apple gives the same settings path and status meaning and says only the carrier can unlock the device."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Settings labels can vary with iOS language/version; regional radio-band, service, eSIM, and carrier requirements vary.",
+        "Apple Support source pages were checked on 2026-11-25."
+      ]
+    },
+    "post/iPhoneにSIMロックがかかっているか確認する方法/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/iPhoneにSIMロックがかかっているか確認する方法/index.md",
+      "sourceHash": "5f4b9753eeb7d2ddc383d9d7b9b70d3aedc2d025ecc145a96d8d49a4aa389e08",
+      "translationHash": "c35e7f7deaa49e5d6a827c4baccf29889868b4e50d716e41b19330948335df5e",
+      "summary": "Compared the complete translation with the Japanese source and current Apple Support pages; verified the settings path and status label, carrier-only unlocking, regional terminology, eSIM/network caveats, and the distinction from a SIM PIN.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article with all twelve translations; confirmed the Settings > General > About path, the unlocked status label, and that the current carrier is the only party that can unlock an iPhone."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked carrier lock versus SIM PIN, regional Settings labels, wireless carrier/network provider wording, frequency bands, service eligibility, and eSIM across the editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code or command examples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Apple Support articles 109316 and 104999 in English and Japanese; verified that Apple gives the same settings path and status meaning and says only the carrier can unlock the device."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Settings labels can vary with iOS language/version; regional radio-band, service, eSIM, and carrier requirements vary.",
+        "Apple Support source pages were checked on 2026-11-25."
+      ]
+    },
+    "post/iPhoneにSIMロックがかかっているか確認する方法/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/iPhoneにSIMロックがかかっているか確認する方法/index.md",
+      "sourceHash": "5f4b9753eeb7d2ddc383d9d7b9b70d3aedc2d025ecc145a96d8d49a4aa389e08",
+      "translationHash": "d22ee9305f7d141a2d033f098cbb02acd79b4ea3befca760604bcb4b45bea897",
+      "summary": "Compared the complete translation with the Japanese source and current Apple Support pages; verified the settings path and status label, carrier-only unlocking, regional terminology, eSIM/network caveats, and the distinction from a SIM PIN.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article with all twelve translations; confirmed the Settings > General > About path, the unlocked status label, and that the current carrier is the only party that can unlock an iPhone."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked carrier lock versus SIM PIN, regional Settings labels, wireless carrier/network provider wording, frequency bands, service eligibility, and eSIM across the editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code or command examples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Apple Support articles 109316 and 104999 in English and Japanese; verified that Apple gives the same settings path and status meaning and says only the carrier can unlock the device."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "Settings labels can vary with iOS language/version; regional radio-band, service, eSIM, and carrier requirements vary.",
+        "Apple Support source pages were checked on 2026-11-25."
+      ]
+    }
+  }
+}

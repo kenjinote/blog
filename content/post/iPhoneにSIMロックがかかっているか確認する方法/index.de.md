@@ -7,7 +7,7 @@ image: "img.webp"
 categories: ["pc-gadgets"]
 description: "Prüfen Sie den Sperrstatus in den Einstellungen und erfahren Sie, an wen Sie sich zum Entsperren wenden müssen."
 date: 2024-09-12T00:32:11+09:00
-lastmod: 2026-11-24
+lastmod: "2026-11-25T00:00:00+09:00"
 ---
 # Prüfen, ob Ihr iPhone durch einen Mobilfunkanbieter gesperrt ist
 

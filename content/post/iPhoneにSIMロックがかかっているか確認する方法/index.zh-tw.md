@@ -7,7 +7,7 @@ image: "img.webp"
 categories: ["pc-gadgets"]
 description: "在「設定」查看電信業者鎖定狀態，並了解需要解鎖時應聯絡誰。"
 date: 2024-09-12T00:32:11+09:00
-lastmod: 2026-11-24
+lastmod: "2026-11-25T00:00:00+09:00"
 ---
 # 如何查看 iPhone 是否有電信業者鎖定
 

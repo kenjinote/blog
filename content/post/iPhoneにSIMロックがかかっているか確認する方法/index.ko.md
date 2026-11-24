@@ -7,7 +7,7 @@ image: "img.webp"
 categories: ["pc-gadgets"]
 description: "설정에서 통신사 잠금 상태를 확인하고 잠금 해제를 요청할 곳을 알아봅니다."
 date: 2024-09-12T00:32:11+09:00
-lastmod: 2026-11-24
+lastmod: "2026-11-25T00:00:00+09:00"
 ---
 # iPhone의 통신사 잠금 상태 확인하기
 

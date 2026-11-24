@@ -7,7 +7,7 @@ image: "img.webp"
 categories: ["pc-gadgets"]
 description: "Consulta el estado de bloqueo en Ajustes y descubre a quién contactar para solicitar el desbloqueo."
 date: 2024-09-12T00:32:11+09:00
-lastmod: 2026-11-24
+lastmod: "2026-11-25T00:00:00+09:00"
 ---
 # Cómo comprobar si tu iPhone tiene bloqueo de operador
 

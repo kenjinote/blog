@@ -7,7 +7,7 @@ image: "img.webp"
 categories: ["pc-gadgets"]
 description: "設定アプリの「情報」でSIMロック状態を確認する方法と、解除を依頼する窓口を説明します。"
 date: 2024-09-12T00:32:11+09:00
-lastmod: 2026-11-24
+lastmod: "2026-11-25T00:00:00+09:00"
 ---
 # iPhoneのSIMロック状態を確認する方法
 
