@@ -1,24 +1,30 @@
 ---
-title: 'Salesforce: كيفية جلب عدد السجلات المنشأة يومياً باستخدام SOQL'
-date: "2026-09-24T19:44:38+09:00"
+title: "حساب سجلات Salesforce يوميًا باستخدام SOQL"
+
 slug: "SalesforceのSOQLを利用して日別のレコード作成数を取得する方法"
 date: 2023-04-09T02:50:30+09:00
+lastmod: "2026-11-24T00:00:00+09:00"
 tags: ["salesforce", "soql", "تاريخ", "تجميع"]
 draft: false
 image: "img.webp"
 categories: ["it-technology"]
-description: 'نشرح الطرق المحددة وصيغة الاستعلام لجمع وجلب عدد السجلات المنشأة يومياً للحسابات (Accounts) وغيرها باستخدام SOQL من Developer Console في Salesforce. ستتعرف على خطوات تحليل البيانات المفيدة باستخدام جملة GROUP BY.'
+description: "مثال SOQL يجمع CreatedDate حسب اليوم المحلي للمستخدم باستخدام DAY_ONLY وconvertTimezone، ويعرض الأيام العشرة الأعلى من حيث عدد السجلات."
 ---
+افتح `Query Editor` في Developer Console ونفّذ الاستعلام أدناه.
 
-# كيفية الحصول على عدد السجلات المنشأة يوميًا باستخدام SOQL في Salesforce
+`Account` مثال على كائن قياسي؛ استبدله باسم API للكائن المطلوب. تحسب `COUNT(Id)` السجلات في كل مجموعة. تُحوّل التواريخ إلى المنطقة الزمنية للمستخدم المنفذ، وتُعرض الأيام العشرة الأعلى نشاطًا، وليس بالضرورة الأحدث. أضف `WHERE CreatedDate` لتقييد الفترة. لا تظهر الأيام بلا سجلات.
 
-1. افتح وحدة تحكم المطور.
-2. افتح علامة التبويب `Query Editor`.
-3. الصق جملة SOQL التالية وقم بتشغيلها.
 ```sql
-select day_only(createdDate), count(createdDate) from account group by day_only(createdDate) order by count(createdDate) desc limit 10
+SELECT DAY_ONLY(convertTimezone(CreatedDate)), COUNT(Id)
+FROM Account
+GROUP BY DAY_ONLY(convertTimezone(CreatedDate))
+ORDER BY COUNT(Id) DESC
+LIMIT 10
 ```
-يرجى تغيير `account` إلى اسم الكائن الذي تريد الحصول عليه وتشغيله.
 
-# المراجع
-- [Is there a way to group by the date portion of a datetime field in SOQL?](https://stackoverflow.com/questions/9187737/is-there-a-way-to-group-by-the-date-portion-of-a-datetime-field-in-soql)
+## مراجع
+
+- [Date Functions in SOQL — Salesforce Developers](https://developer.salesforce.com/docs/platform/salesforce-soql-sosl/guide/sforce-api-calls-soql-select-date-functions.html)
+- [convertTimezone() — Salesforce Developers](https://developer.salesforce.com/docs/platform/salesforce-soql-sosl/guide/sforce-api-calls-soql-select-convert-time-zone.html)
+- [Aggregate Functions — Salesforce Developers](https://developer.salesforce.com/docs/platform/salesforce-soql-sosl/guide/sforce-api-calls-soql-select-agg_functions.html)
+- [Execute a SOQL Query — Salesforce Help](https://help.salesforce.com/s/articleView?id=code_dev_console_tab_query_editor_soql_sosl.htm&language=en_US&type=0)

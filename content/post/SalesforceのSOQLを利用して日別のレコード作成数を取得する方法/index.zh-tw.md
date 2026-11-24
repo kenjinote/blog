@@ -1,24 +1,30 @@
 ---
-title: 'Salesforce：使用 SOQL 取得每日記錄建立數量的方法'
-date: "2026-09-24T19:44:38+09:00"
+title: "使用 SOQL 按日彙整 Salesforce 記錄數量"
+
 slug: "SalesforceのSOQLを利用して日別のレコード作成数を取得する方法"
 date: 2023-04-09T02:50:30+09:00
+lastmod: "2026-11-24T00:00:00+09:00"
 tags: ["salesforce", "soql", "日期", "聚合"]
 draft: false
 image: "img.webp"
 categories: ["it-technology"]
-description: '說明如何從 Salesforce 的開發人員主控台使用 SOQL，彙整並取得客戶等每日記錄建立數量的具體方法與查詢語法。您將了解利用 GROUP BY 子句進行便利數據分析的步驟。'
+description: "使用 DAY_ONLY 與 convertTimezone，依目前使用者的本地日期彙整 CreatedDate，並傳回記錄數最多的十天。"
 ---
+開啟 Developer Console 的 `Query Editor` 並執行以下查詢。
 
-# 如何使用 Salesforce SOQL 獲取每天建立的記錄數
+`Account` 是標準物件範例；查詢其他物件時請換成其 API 名稱。`COUNT(Id)` 會計算各群組的記錄數。日期會轉換為執行使用者的時區，結果為建立數最多的十天，不一定是最近十天。加入 `WHERE CreatedDate` 條件可限制期間。沒有記錄的日期不會顯示。
 
-1. 開啟開發者控制台。
-2. 開啟 `Query Editor` 索引標籤。
-3. 貼上並執行以下 SOQL。
 ```sql
-select day_only(createdDate), count(createdDate) from account group by day_only(createdDate) order by count(createdDate) desc limit 10
+SELECT DAY_ONLY(convertTimezone(CreatedDate)), COUNT(Id)
+FROM Account
+GROUP BY DAY_ONLY(convertTimezone(CreatedDate))
+ORDER BY COUNT(Id) DESC
+LIMIT 10
 ```
-請將 `account` 更改為您想要獲取的任何物件名稱並執行。
 
-# 參考
-- [Is there a way to group by the date portion of a datetime field in SOQL?](https://stackoverflow.com/questions/9187737/is-there-a-way-to-group-by-the-date-portion-of-a-datetime-field-in-soql)
+## 參考資料
+
+- [Date Functions in SOQL — Salesforce Developers](https://developer.salesforce.com/docs/platform/salesforce-soql-sosl/guide/sforce-api-calls-soql-select-date-functions.html)
+- [convertTimezone() — Salesforce Developers](https://developer.salesforce.com/docs/platform/salesforce-soql-sosl/guide/sforce-api-calls-soql-select-convert-time-zone.html)
+- [Aggregate Functions — Salesforce Developers](https://developer.salesforce.com/docs/platform/salesforce-soql-sosl/guide/sforce-api-calls-soql-select-agg_functions.html)
+- [Execute a SOQL Query — Salesforce Help](https://help.salesforce.com/s/articleView?id=code_dev_console_tab_query_editor_soql_sosl.htm&language=en_US&type=0)

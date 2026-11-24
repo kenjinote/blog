@@ -1,0 +1,456 @@
+{
+  "version": 1,
+  "batch": 142,
+  "article": "SOQLで日別のSalesforceレコード数を集計する方法",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "82ffa72aea48c6a1b36990323d91503991081e1ee5798206167c238062f00695",
+  "sources": [
+    "https://developer.salesforce.com/docs/platform/salesforce-soql-sosl/guide/sforce-api-calls-soql-select-date-functions.html",
+    "https://developer.salesforce.com/docs/platform/salesforce-soql-sosl/guide/sforce-api-calls-soql-select-convert-time-zone.html",
+    "https://developer.salesforce.com/docs/platform/salesforce-soql-sosl/guide/sforce-api-calls-soql-select-agg_functions.html",
+    "https://help.salesforce.com/s/articleView?id=code_dev_console_tab_query_editor_soql_sosl.htm&language=en_US&type=0"
+  ],
+  "scope": "Compared the complete Japanese article and all twelve translations, including SOQL syntax, aggregate semantics, date/time-zone behavior, titles/descriptions, and official reference links.",
+  "findings": [
+    "Removed the duplicate future date and retained 2023-04-09 as publication date; set lastmod to 2026-11-24.",
+    "Changed grouping to DAY_ONLY(convertTimezone(CreatedDate)) so daily boundaries use the running user’s time zone.",
+    "Used COUNT(Id) and stated that the result is the ten date groups with the highest counts, not the most recent ten days.",
+    "Explained that empty dates do not appear and a WHERE CreatedDate filter can restrict the period.",
+    "Replaced the Stack Overflow reference with official Salesforce documentation."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/SalesforceのSOQLを利用して日別のレコード作成数を取得する方法/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/SalesforceのSOQLを利用して日別のレコード作成数を取得する方法/index.md",
+      "sourceHash": "82ffa72aea48c6a1b36990323d91503991081e1ee5798206167c238062f00695",
+      "translationHash": "c2ef325f79e0111328a30cfc04435015183e00d2e0327d0325a04ecdcfaa1c4f",
+      "summary": "Compared the complete Japanese article and twelve translations with current Salesforce SOQL documentation; corrected the query for user-time-zone day grouping and clarified that sorting returns the ten busiest days.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared what the query returns and clarified that LIMIT 10 with ORDER BY COUNT(Id) DESC yields the ten busiest date groups, not the ten most recent dates; empty dates do not appear."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked SOQL, Developer Console, API object name, CreatedDate, DAY_ONLY, convertTimezone, COUNT(Id), GROUP BY, ORDER BY, and running-user time zone in all language versions."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified the aggregate count and grouping expression, and confirmed DAY_ONLY is applied to a DateTime field; convertTimezone makes the date grouping use the running user’s time zone."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified that the SOQL groups by the same DAY_ONLY(convertTimezone(CreatedDate)) expression selected, counts Id, sorts by aggregate count descending, and limits results to ten groups."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the Stack Overflow-only reference with Salesforce Developers documentation for date functions, time-zone conversion, aggregate functions, and official Query Editor steps."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The query was not executed in a Salesforce org; object permissions, API version, and org-specific data were not tested.",
+        "The ten returned groups are the most numerous date groups across the queried records; use a WHERE filter or a different sort when a different date range/order is intended."
+      ]
+    },
+    "post/SalesforceのSOQLを利用して日別のレコード作成数を取得する方法/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/SalesforceのSOQLを利用して日別のレコード作成数を取得する方法/index.md",
+      "sourceHash": "82ffa72aea48c6a1b36990323d91503991081e1ee5798206167c238062f00695",
+      "translationHash": "f10619efcde3de37d3a1b34ab2dbd8716bc28449702103c447508de85b6811e8",
+      "summary": "Compared the complete Japanese article and twelve translations with current Salesforce SOQL documentation; corrected the query for user-time-zone day grouping and clarified that sorting returns the ten busiest days.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared what the query returns and clarified that LIMIT 10 with ORDER BY COUNT(Id) DESC yields the ten busiest date groups, not the ten most recent dates; empty dates do not appear."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked SOQL, Developer Console, API object name, CreatedDate, DAY_ONLY, convertTimezone, COUNT(Id), GROUP BY, ORDER BY, and running-user time zone in all language versions."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified the aggregate count and grouping expression, and confirmed DAY_ONLY is applied to a DateTime field; convertTimezone makes the date grouping use the running user’s time zone."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified that the SOQL groups by the same DAY_ONLY(convertTimezone(CreatedDate)) expression selected, counts Id, sorts by aggregate count descending, and limits results to ten groups."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the Stack Overflow-only reference with Salesforce Developers documentation for date functions, time-zone conversion, aggregate functions, and official Query Editor steps."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The query was not executed in a Salesforce org; object permissions, API version, and org-specific data were not tested.",
+        "The ten returned groups are the most numerous date groups across the queried records; use a WHERE filter or a different sort when a different date range/order is intended."
+      ]
+    },
+    "post/SalesforceのSOQLを利用して日別のレコード作成数を取得する方法/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/SalesforceのSOQLを利用して日別のレコード作成数を取得する方法/index.md",
+      "sourceHash": "82ffa72aea48c6a1b36990323d91503991081e1ee5798206167c238062f00695",
+      "translationHash": "84236758ce1c6fe9d84701c36a23c88b1d20de8809091ade46f171905e76ff2a",
+      "summary": "Compared the complete Japanese article and twelve translations with current Salesforce SOQL documentation; corrected the query for user-time-zone day grouping and clarified that sorting returns the ten busiest days.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared what the query returns and clarified that LIMIT 10 with ORDER BY COUNT(Id) DESC yields the ten busiest date groups, not the ten most recent dates; empty dates do not appear."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked SOQL, Developer Console, API object name, CreatedDate, DAY_ONLY, convertTimezone, COUNT(Id), GROUP BY, ORDER BY, and running-user time zone in all language versions."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified the aggregate count and grouping expression, and confirmed DAY_ONLY is applied to a DateTime field; convertTimezone makes the date grouping use the running user’s time zone."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified that the SOQL groups by the same DAY_ONLY(convertTimezone(CreatedDate)) expression selected, counts Id, sorts by aggregate count descending, and limits results to ten groups."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the Stack Overflow-only reference with Salesforce Developers documentation for date functions, time-zone conversion, aggregate functions, and official Query Editor steps."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The query was not executed in a Salesforce org; object permissions, API version, and org-specific data were not tested.",
+        "The ten returned groups are the most numerous date groups across the queried records; use a WHERE filter or a different sort when a different date range/order is intended."
+      ]
+    },
+    "post/SalesforceのSOQLを利用して日別のレコード作成数を取得する方法/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/SalesforceのSOQLを利用して日別のレコード作成数を取得する方法/index.md",
+      "sourceHash": "82ffa72aea48c6a1b36990323d91503991081e1ee5798206167c238062f00695",
+      "translationHash": "541703fe08e684fe1e8021227c0cc5a01e0e1f72800789c6c697387cbd9eaf97",
+      "summary": "Compared the complete Japanese article and twelve translations with current Salesforce SOQL documentation; corrected the query for user-time-zone day grouping and clarified that sorting returns the ten busiest days.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared what the query returns and clarified that LIMIT 10 with ORDER BY COUNT(Id) DESC yields the ten busiest date groups, not the ten most recent dates; empty dates do not appear."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked SOQL, Developer Console, API object name, CreatedDate, DAY_ONLY, convertTimezone, COUNT(Id), GROUP BY, ORDER BY, and running-user time zone in all language versions."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified the aggregate count and grouping expression, and confirmed DAY_ONLY is applied to a DateTime field; convertTimezone makes the date grouping use the running user’s time zone."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified that the SOQL groups by the same DAY_ONLY(convertTimezone(CreatedDate)) expression selected, counts Id, sorts by aggregate count descending, and limits results to ten groups."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the Stack Overflow-only reference with Salesforce Developers documentation for date functions, time-zone conversion, aggregate functions, and official Query Editor steps."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The query was not executed in a Salesforce org; object permissions, API version, and org-specific data were not tested.",
+        "The ten returned groups are the most numerous date groups across the queried records; use a WHERE filter or a different sort when a different date range/order is intended."
+      ]
+    },
+    "post/SalesforceのSOQLを利用して日別のレコード作成数を取得する方法/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/SalesforceのSOQLを利用して日別のレコード作成数を取得する方法/index.md",
+      "sourceHash": "82ffa72aea48c6a1b36990323d91503991081e1ee5798206167c238062f00695",
+      "translationHash": "bdd45195cb9e14df4271bd19e43df2fb502c830b0b9751752762dbda096ee582",
+      "summary": "Compared the complete Japanese article and twelve translations with current Salesforce SOQL documentation; corrected the query for user-time-zone day grouping and clarified that sorting returns the ten busiest days.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared what the query returns and clarified that LIMIT 10 with ORDER BY COUNT(Id) DESC yields the ten busiest date groups, not the ten most recent dates; empty dates do not appear."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked SOQL, Developer Console, API object name, CreatedDate, DAY_ONLY, convertTimezone, COUNT(Id), GROUP BY, ORDER BY, and running-user time zone in all language versions."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified the aggregate count and grouping expression, and confirmed DAY_ONLY is applied to a DateTime field; convertTimezone makes the date grouping use the running user’s time zone."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified that the SOQL groups by the same DAY_ONLY(convertTimezone(CreatedDate)) expression selected, counts Id, sorts by aggregate count descending, and limits results to ten groups."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the Stack Overflow-only reference with Salesforce Developers documentation for date functions, time-zone conversion, aggregate functions, and official Query Editor steps."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The query was not executed in a Salesforce org; object permissions, API version, and org-specific data were not tested.",
+        "The ten returned groups are the most numerous date groups across the queried records; use a WHERE filter or a different sort when a different date range/order is intended."
+      ]
+    },
+    "post/SalesforceのSOQLを利用して日別のレコード作成数を取得する方法/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/SalesforceのSOQLを利用して日別のレコード作成数を取得する方法/index.md",
+      "sourceHash": "82ffa72aea48c6a1b36990323d91503991081e1ee5798206167c238062f00695",
+      "translationHash": "e2589e1774cd73df4870576d748a93f4f997d6e64cc760b05bdccae543a821b8",
+      "summary": "Compared the complete Japanese article and twelve translations with current Salesforce SOQL documentation; corrected the query for user-time-zone day grouping and clarified that sorting returns the ten busiest days.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared what the query returns and clarified that LIMIT 10 with ORDER BY COUNT(Id) DESC yields the ten busiest date groups, not the ten most recent dates; empty dates do not appear."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked SOQL, Developer Console, API object name, CreatedDate, DAY_ONLY, convertTimezone, COUNT(Id), GROUP BY, ORDER BY, and running-user time zone in all language versions."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified the aggregate count and grouping expression, and confirmed DAY_ONLY is applied to a DateTime field; convertTimezone makes the date grouping use the running user’s time zone."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified that the SOQL groups by the same DAY_ONLY(convertTimezone(CreatedDate)) expression selected, counts Id, sorts by aggregate count descending, and limits results to ten groups."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the Stack Overflow-only reference with Salesforce Developers documentation for date functions, time-zone conversion, aggregate functions, and official Query Editor steps."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The query was not executed in a Salesforce org; object permissions, API version, and org-specific data were not tested.",
+        "The ten returned groups are the most numerous date groups across the queried records; use a WHERE filter or a different sort when a different date range/order is intended."
+      ]
+    },
+    "post/SalesforceのSOQLを利用して日別のレコード作成数を取得する方法/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/SalesforceのSOQLを利用して日別のレコード作成数を取得する方法/index.md",
+      "sourceHash": "82ffa72aea48c6a1b36990323d91503991081e1ee5798206167c238062f00695",
+      "translationHash": "4f48a187e1209375b24e7c782576a1b738ad5645169b4e79889f50a552b67390",
+      "summary": "Compared the complete Japanese article and twelve translations with current Salesforce SOQL documentation; corrected the query for user-time-zone day grouping and clarified that sorting returns the ten busiest days.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared what the query returns and clarified that LIMIT 10 with ORDER BY COUNT(Id) DESC yields the ten busiest date groups, not the ten most recent dates; empty dates do not appear."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked SOQL, Developer Console, API object name, CreatedDate, DAY_ONLY, convertTimezone, COUNT(Id), GROUP BY, ORDER BY, and running-user time zone in all language versions."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified the aggregate count and grouping expression, and confirmed DAY_ONLY is applied to a DateTime field; convertTimezone makes the date grouping use the running user’s time zone."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified that the SOQL groups by the same DAY_ONLY(convertTimezone(CreatedDate)) expression selected, counts Id, sorts by aggregate count descending, and limits results to ten groups."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the Stack Overflow-only reference with Salesforce Developers documentation for date functions, time-zone conversion, aggregate functions, and official Query Editor steps."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The query was not executed in a Salesforce org; object permissions, API version, and org-specific data were not tested.",
+        "The ten returned groups are the most numerous date groups across the queried records; use a WHERE filter or a different sort when a different date range/order is intended."
+      ]
+    },
+    "post/SalesforceのSOQLを利用して日別のレコード作成数を取得する方法/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/SalesforceのSOQLを利用して日別のレコード作成数を取得する方法/index.md",
+      "sourceHash": "82ffa72aea48c6a1b36990323d91503991081e1ee5798206167c238062f00695",
+      "translationHash": "2e3d6ab8cd849545dd6c1c3876d2ba515a4b50dada4310e83a5ef5000ede32d2",
+      "summary": "Compared the complete Japanese article and twelve translations with current Salesforce SOQL documentation; corrected the query for user-time-zone day grouping and clarified that sorting returns the ten busiest days.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared what the query returns and clarified that LIMIT 10 with ORDER BY COUNT(Id) DESC yields the ten busiest date groups, not the ten most recent dates; empty dates do not appear."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked SOQL, Developer Console, API object name, CreatedDate, DAY_ONLY, convertTimezone, COUNT(Id), GROUP BY, ORDER BY, and running-user time zone in all language versions."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified the aggregate count and grouping expression, and confirmed DAY_ONLY is applied to a DateTime field; convertTimezone makes the date grouping use the running user’s time zone."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified that the SOQL groups by the same DAY_ONLY(convertTimezone(CreatedDate)) expression selected, counts Id, sorts by aggregate count descending, and limits results to ten groups."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the Stack Overflow-only reference with Salesforce Developers documentation for date functions, time-zone conversion, aggregate functions, and official Query Editor steps."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The query was not executed in a Salesforce org; object permissions, API version, and org-specific data were not tested.",
+        "The ten returned groups are the most numerous date groups across the queried records; use a WHERE filter or a different sort when a different date range/order is intended."
+      ]
+    },
+    "post/SalesforceのSOQLを利用して日別のレコード作成数を取得する方法/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/SalesforceのSOQLを利用して日別のレコード作成数を取得する方法/index.md",
+      "sourceHash": "82ffa72aea48c6a1b36990323d91503991081e1ee5798206167c238062f00695",
+      "translationHash": "5484a6273215e707b8d8e3a527cb8c9e9bd080468bfc21e235b0e1749af51520",
+      "summary": "Compared the complete Japanese article and twelve translations with current Salesforce SOQL documentation; corrected the query for user-time-zone day grouping and clarified that sorting returns the ten busiest days.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared what the query returns and clarified that LIMIT 10 with ORDER BY COUNT(Id) DESC yields the ten busiest date groups, not the ten most recent dates; empty dates do not appear."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked SOQL, Developer Console, API object name, CreatedDate, DAY_ONLY, convertTimezone, COUNT(Id), GROUP BY, ORDER BY, and running-user time zone in all language versions."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified the aggregate count and grouping expression, and confirmed DAY_ONLY is applied to a DateTime field; convertTimezone makes the date grouping use the running user’s time zone."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified that the SOQL groups by the same DAY_ONLY(convertTimezone(CreatedDate)) expression selected, counts Id, sorts by aggregate count descending, and limits results to ten groups."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the Stack Overflow-only reference with Salesforce Developers documentation for date functions, time-zone conversion, aggregate functions, and official Query Editor steps."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The query was not executed in a Salesforce org; object permissions, API version, and org-specific data were not tested.",
+        "The ten returned groups are the most numerous date groups across the queried records; use a WHERE filter or a different sort when a different date range/order is intended."
+      ]
+    },
+    "post/SalesforceのSOQLを利用して日別のレコード作成数を取得する方法/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/SalesforceのSOQLを利用して日別のレコード作成数を取得する方法/index.md",
+      "sourceHash": "82ffa72aea48c6a1b36990323d91503991081e1ee5798206167c238062f00695",
+      "translationHash": "b4c7c67fd79a9f43310cd18b6ae18f3eef175fceb0d46b8d75d33e3a34359379",
+      "summary": "Compared the complete Japanese article and twelve translations with current Salesforce SOQL documentation; corrected the query for user-time-zone day grouping and clarified that sorting returns the ten busiest days.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared what the query returns and clarified that LIMIT 10 with ORDER BY COUNT(Id) DESC yields the ten busiest date groups, not the ten most recent dates; empty dates do not appear."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked SOQL, Developer Console, API object name, CreatedDate, DAY_ONLY, convertTimezone, COUNT(Id), GROUP BY, ORDER BY, and running-user time zone in all language versions."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified the aggregate count and grouping expression, and confirmed DAY_ONLY is applied to a DateTime field; convertTimezone makes the date grouping use the running user’s time zone."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified that the SOQL groups by the same DAY_ONLY(convertTimezone(CreatedDate)) expression selected, counts Id, sorts by aggregate count descending, and limits results to ten groups."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the Stack Overflow-only reference with Salesforce Developers documentation for date functions, time-zone conversion, aggregate functions, and official Query Editor steps."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The query was not executed in a Salesforce org; object permissions, API version, and org-specific data were not tested.",
+        "The ten returned groups are the most numerous date groups across the queried records; use a WHERE filter or a different sort when a different date range/order is intended."
+      ]
+    },
+    "post/SalesforceのSOQLを利用して日別のレコード作成数を取得する方法/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/SalesforceのSOQLを利用して日別のレコード作成数を取得する方法/index.md",
+      "sourceHash": "82ffa72aea48c6a1b36990323d91503991081e1ee5798206167c238062f00695",
+      "translationHash": "7a771e60481bdc45c3e6ab7743dec59c106947d9590bd5298b1d2fd82f64c78c",
+      "summary": "Compared the complete Japanese article and twelve translations with current Salesforce SOQL documentation; corrected the query for user-time-zone day grouping and clarified that sorting returns the ten busiest days.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared what the query returns and clarified that LIMIT 10 with ORDER BY COUNT(Id) DESC yields the ten busiest date groups, not the ten most recent dates; empty dates do not appear."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked SOQL, Developer Console, API object name, CreatedDate, DAY_ONLY, convertTimezone, COUNT(Id), GROUP BY, ORDER BY, and running-user time zone in all language versions."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified the aggregate count and grouping expression, and confirmed DAY_ONLY is applied to a DateTime field; convertTimezone makes the date grouping use the running user’s time zone."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified that the SOQL groups by the same DAY_ONLY(convertTimezone(CreatedDate)) expression selected, counts Id, sorts by aggregate count descending, and limits results to ten groups."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the Stack Overflow-only reference with Salesforce Developers documentation for date functions, time-zone conversion, aggregate functions, and official Query Editor steps."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The query was not executed in a Salesforce org; object permissions, API version, and org-specific data were not tested.",
+        "The ten returned groups are the most numerous date groups across the queried records; use a WHERE filter or a different sort when a different date range/order is intended."
+      ]
+    },
+    "post/SalesforceのSOQLを利用して日別のレコード作成数を取得する方法/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/SalesforceのSOQLを利用して日別のレコード作成数を取得する方法/index.md",
+      "sourceHash": "82ffa72aea48c6a1b36990323d91503991081e1ee5798206167c238062f00695",
+      "translationHash": "123f5da8e50e489b71be1b0a1b45b7c0495be8e2b8217570f5a89476c2e364d9",
+      "summary": "Compared the complete Japanese article and twelve translations with current Salesforce SOQL documentation; corrected the query for user-time-zone day grouping and clarified that sorting returns the ten busiest days.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared what the query returns and clarified that LIMIT 10 with ORDER BY COUNT(Id) DESC yields the ten busiest date groups, not the ten most recent dates; empty dates do not appear."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked SOQL, Developer Console, API object name, CreatedDate, DAY_ONLY, convertTimezone, COUNT(Id), GROUP BY, ORDER BY, and running-user time zone in all language versions."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified the aggregate count and grouping expression, and confirmed DAY_ONLY is applied to a DateTime field; convertTimezone makes the date grouping use the running user’s time zone."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified that the SOQL groups by the same DAY_ONLY(convertTimezone(CreatedDate)) expression selected, counts Id, sorts by aggregate count descending, and limits results to ten groups."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the Stack Overflow-only reference with Salesforce Developers documentation for date functions, time-zone conversion, aggregate functions, and official Query Editor steps."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The query was not executed in a Salesforce org; object permissions, API version, and org-specific data were not tested.",
+        "The ten returned groups are the most numerous date groups across the queried records; use a WHERE filter or a different sort when a different date range/order is intended."
+      ]
+    }
+  }
+}

@@ -1,24 +1,30 @@
 ---
-title: 'Salesforce: Cara Mendapatkan Jumlah Pembuatan Catatan Harian dengan SOQL'
-date: "2026-09-24T19:44:38+09:00"
+title: "Menghitung Jumlah Record Salesforce per Hari dengan SOQL"
+
 slug: "SalesforceのSOQLを利用して日別のレコード作成数を取得する方法"
 date: 2023-04-09T02:50:30+09:00
+lastmod: "2026-11-24T00:00:00+09:00"
 tags: ["salesforce", "soql", "tanggal", "agregasi"]
 draft: false
 image: "img.webp"
 categories: ["it-technology"]
-description: 'Menjelaskan metode spesifik dan sintaks kueri untuk mengumpulkan dan mendapatkan jumlah catatan harian yang dibuat, seperti akun, menggunakan SOQL dari Konsol Pengembang Salesforce. Anda akan memahami prosedur analisis data yang berguna yang memanfaatkan klausa GROUP BY.'
+description: "Contoh SOQL yang mengelompokkan CreatedDate menurut hari lokal pengguna dengan DAY_ONLY dan convertTimezone serta menampilkan sepuluh hari dengan jumlah record tertinggi."
 ---
+Buka `Query Editor` di Developer Console dan jalankan kueri berikut.
 
-# Cara Mendapatkan Jumlah Pembuatan Record per Hari Menggunakan SOQL di Salesforce
+`Account` adalah contoh objek standar; ganti dengan nama API objek yang diperlukan. `COUNT(Id)` menghitung record di setiap kelompok. Tanggal dikonversi ke zona waktu pengguna yang menjalankan kueri dan hasilnya menampilkan sepuluh hari tersibuk, belum tentu yang terbaru. Tambahkan `WHERE CreatedDate` untuk membatasi periode. Hari tanpa record tidak ditampilkan.
 
-1. Buka Developer Console.
-2. Buka tab `Query Editor`.
-3. Tempel dan jalankan SOQL berikut.
 ```sql
-select day_only(createdDate), count(createdDate) from account group by day_only(createdDate) order by count(createdDate) desc limit 10
+SELECT DAY_ONLY(convertTimezone(CreatedDate)), COUNT(Id)
+FROM Account
+GROUP BY DAY_ONLY(convertTimezone(CreatedDate))
+ORDER BY COUNT(Id) DESC
+LIMIT 10
 ```
-Harap ubah `account` menjadi nama objek apa pun yang ingin Anda dapatkan lalu jalankan.
 
-# Referensi
-- [Is there a way to group by the date portion of a datetime field in SOQL?](https://stackoverflow.com/questions/9187737/is-there-a-way-to-group-by-the-date-portion-of-a-datetime-field-in-soql)
+## Referensi
+
+- [Date Functions in SOQL — Salesforce Developers](https://developer.salesforce.com/docs/platform/salesforce-soql-sosl/guide/sforce-api-calls-soql-select-date-functions.html)
+- [convertTimezone() — Salesforce Developers](https://developer.salesforce.com/docs/platform/salesforce-soql-sosl/guide/sforce-api-calls-soql-select-convert-time-zone.html)
+- [Aggregate Functions — Salesforce Developers](https://developer.salesforce.com/docs/platform/salesforce-soql-sosl/guide/sforce-api-calls-soql-select-agg_functions.html)
+- [Execute a SOQL Query — Salesforce Help](https://help.salesforce.com/s/articleView?id=code_dev_console_tab_query_editor_soql_sosl.htm&language=en_US&type=0)

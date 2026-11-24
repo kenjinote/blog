@@ -1,24 +1,30 @@
 ---
-title: 'Salesforce：SOQLで日別のレコード作成数を取得する方法'
-date: "2026-09-24T19:44:38+09:00"
+title: "SOQLで日別のSalesforceレコード数を集計する方法"
+
 slug: "SalesforceのSOQLを利用して日別のレコード作成数を取得する方法"
 date: 2023-04-09T02:50:30+09:00
+lastmod: "2026-11-24T00:00:00+09:00"
 tags: ["salesforce", "soql", "日付", "集計"]
 draft: false
 image: "img.webp"
 categories: ["it-technology"]
-description: 'Salesforceの開発者コンソールからSOQLを使用して、アカウントなどの日別レコード作成数を集計して取得する具体的な方法とクエリ構文を解説します。GROUP BY句を利用した便利なデータ分析の手順が分かります。'
+description: "DAY_ONLYとconvertTimezoneでCreatedDateを日付別に集計し、作成数上位10日を取得するSOQL例です。タイムゾーンと並べ替えの意味も説明します。"
 ---
+開発者コンソールの `Query Editor` を開き、次のクエリを実行します。
 
-# SalesforceのSOQLを利用して日別のレコード作成数を取得する方法
+`Account` は標準オブジェクトの例です。独自オブジェクトではAPI名に置き換えてください。`COUNT(Id)` は各グループのレコード数を数えます。結果は実行ユーザーのタイムゾーンで日付に変換し、作成数の多い上位10日を返します。最近の10日ではありません。期間を絞る場合は `WHERE CreatedDate` 条件を追加してください。レコードのない日は表示されません。
 
-1. 開発者コンソールを開く
-2. `Query Editor`タブを開く
-3. 下記のSOQLを貼り付けて実行する。
 ```sql
-select day_only(createdDate), count(createdDate) from account group by day_only(createdDate) order by count(createdDate) desc limit 10
+SELECT DAY_ONLY(convertTimezone(CreatedDate)), COUNT(Id)
+FROM Account
+GROUP BY DAY_ONLY(convertTimezone(CreatedDate))
+ORDER BY COUNT(Id) DESC
+LIMIT 10
 ```
-`account`は取得したい任意のオブジェクト名に変えて実行してください。
 
-# 参考
-- [Is there a way to group by the date portion of a datetime field in SOQL?](https://stackoverflow.com/questions/9187737/is-there-a-way-to-group-by-the-date-portion-of-a-datetime-field-in-soql)
+## 参考資料
+
+- [Date Functions in SOQL — Salesforce Developers](https://developer.salesforce.com/docs/platform/salesforce-soql-sosl/guide/sforce-api-calls-soql-select-date-functions.html)
+- [convertTimezone() — Salesforce Developers](https://developer.salesforce.com/docs/platform/salesforce-soql-sosl/guide/sforce-api-calls-soql-select-convert-time-zone.html)
+- [Aggregate Functions — Salesforce Developers](https://developer.salesforce.com/docs/platform/salesforce-soql-sosl/guide/sforce-api-calls-soql-select-agg_functions.html)
+- [Execute a SOQL Query — Salesforce Help](https://help.salesforce.com/s/articleView?id=code_dev_console_tab_query_editor_soql_sosl.htm&language=en_US&type=0)

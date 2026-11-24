@@ -16445,6 +16445,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-141.json",
       "evidenceHash": "f27d063973de05a8a4fbf298a411884e2d05f6bf2ebdc1e1680420a59c27f883"
+    },
+    "post/SalesforceのSOQLを利用して日別のレコード作成数を取得する方法/index.en.md": {
+      "source": "post/SalesforceのSOQLを利用して日別のレコード作成数を取得する方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "82ffa72aea48c6a1b36990323d91503991081e1ee5798206167c238062f00695",
+      "translationHash": "c2ef325f79e0111328a30cfc04435015183e00d2e0327d0325a04ecdcfaa1c4f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-142.json",
+      "evidenceHash": "6ef7ab876fd58327773243afd19692709f8386e711d4056ca914cc15d89ce88f"
+    },
+    "post/SalesforceのSOQLを利用して日別のレコード作成数を取得する方法/index.zh-cn.md": {
+      "source": "post/SalesforceのSOQLを利用して日別のレコード作成数を取得する方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "82ffa72aea48c6a1b36990323d91503991081e1ee5798206167c238062f00695",
+      "translationHash": "f10619efcde3de37d3a1b34ab2dbd8716bc28449702103c447508de85b6811e8",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-142.json",
+      "evidenceHash": "4e71380d7076ab301d7ebbdd1fbccaae5e7228a3157be241bbf3adecb36671a1"
+    },
+    "post/SalesforceのSOQLを利用して日別のレコード作成数を取得する方法/index.es.md": {
+      "source": "post/SalesforceのSOQLを利用して日別のレコード作成数を取得する方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "82ffa72aea48c6a1b36990323d91503991081e1ee5798206167c238062f00695",
+      "translationHash": "84236758ce1c6fe9d84701c36a23c88b1d20de8809091ade46f171905e76ff2a",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-142.json",
+      "evidenceHash": "5601d94104924c1eae082e4363ff75501f803ad43bd7a7c0dc8e1e489875bf1f"
+    },
+    "post/SalesforceのSOQLを利用して日別のレコード作成数を取得する方法/index.ko.md": {
+      "source": "post/SalesforceのSOQLを利用して日別のレコード作成数を取得する方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "82ffa72aea48c6a1b36990323d91503991081e1ee5798206167c238062f00695",
+      "translationHash": "541703fe08e684fe1e8021227c0cc5a01e0e1f72800789c6c697387cbd9eaf97",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-142.json",
+      "evidenceHash": "78b36fe2477245d73b6aa7524d5b128e109ccd1fb751f96fd9ad012fd3f5cef6"
+    },
+    "post/SalesforceのSOQLを利用して日別のレコード作成数を取得する方法/index.pt.md": {
+      "source": "post/SalesforceのSOQLを利用して日別のレコード作成数を取得する方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "82ffa72aea48c6a1b36990323d91503991081e1ee5798206167c238062f00695",
+      "translationHash": "bdd45195cb9e14df4271bd19e43df2fb502c830b0b9751752762dbda096ee582",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-142.json",
+      "evidenceHash": "9877d7aa143716369c89b96f117f72821ab2fcd1e130965ac6479cb8e5cbd2a5"
+    },
+    "post/SalesforceのSOQLを利用して日別のレコード作成数を取得する方法/index.zh-tw.md": {
+      "source": "post/SalesforceのSOQLを利用して日別のレコード作成数を取得する方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "82ffa72aea48c6a1b36990323d91503991081e1ee5798206167c238062f00695",
+      "translationHash": "e2589e1774cd73df4870576d748a93f4f997d6e64cc760b05bdccae543a821b8",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-142.json",
+      "evidenceHash": "7e40dddba175c8c4bd8937a803a266b25c2192795ecc3582e221f7cec664921c"
+    },
+    "post/SalesforceのSOQLを利用して日別のレコード作成数を取得する方法/index.hi.md": {
+      "source": "post/SalesforceのSOQLを利用して日別のレコード作成数を取得する方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "82ffa72aea48c6a1b36990323d91503991081e1ee5798206167c238062f00695",
+      "translationHash": "4f48a187e1209375b24e7c782576a1b738ad5645169b4e79889f50a552b67390",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-142.json",
+      "evidenceHash": "c2a58e6338fbd4c2752d08c5536e083a54811593df080e31536a965565f10cc3"
+    },
+    "post/SalesforceのSOQLを利用して日別のレコード作成数を取得する方法/index.fr.md": {
+      "source": "post/SalesforceのSOQLを利用して日別のレコード作成数を取得する方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "82ffa72aea48c6a1b36990323d91503991081e1ee5798206167c238062f00695",
+      "translationHash": "2e3d6ab8cd849545dd6c1c3876d2ba515a4b50dada4310e83a5ef5000ede32d2",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-142.json",
+      "evidenceHash": "f0ebe6d03bfd84ad2c29e5d2bc48f69d318546420d57fdf567a88da9b331622f"
+    },
+    "post/SalesforceのSOQLを利用して日別のレコード作成数を取得する方法/index.de.md": {
+      "source": "post/SalesforceのSOQLを利用して日別のレコード作成数を取得する方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "82ffa72aea48c6a1b36990323d91503991081e1ee5798206167c238062f00695",
+      "translationHash": "5484a6273215e707b8d8e3a527cb8c9e9bd080468bfc21e235b0e1749af51520",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-142.json",
+      "evidenceHash": "b3aa202bcbe0ee9919b1042ee579fe641288c2dbc72ddb59fce24d5c920be79f"
+    },
+    "post/SalesforceのSOQLを利用して日別のレコード作成数を取得する方法/index.ar.md": {
+      "source": "post/SalesforceのSOQLを利用して日別のレコード作成数を取得する方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "82ffa72aea48c6a1b36990323d91503991081e1ee5798206167c238062f00695",
+      "translationHash": "b4c7c67fd79a9f43310cd18b6ae18f3eef175fceb0d46b8d75d33e3a34359379",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-142.json",
+      "evidenceHash": "38a3346cdfcc98b737cba1ce3cac2743e72d4390c41d577bd181d27374391943"
+    },
+    "post/SalesforceのSOQLを利用して日別のレコード作成数を取得する方法/index.ru.md": {
+      "source": "post/SalesforceのSOQLを利用して日別のレコード作成数を取得する方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "82ffa72aea48c6a1b36990323d91503991081e1ee5798206167c238062f00695",
+      "translationHash": "7a771e60481bdc45c3e6ab7743dec59c106947d9590bd5298b1d2fd82f64c78c",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-142.json",
+      "evidenceHash": "bdb224d4137aa8fcc230c107dff35c119dd918fd1600e247f11b238836ebca7b"
+    },
+    "post/SalesforceのSOQLを利用して日別のレコード作成数を取得する方法/index.id.md": {
+      "source": "post/SalesforceのSOQLを利用して日別のレコード作成数を取得する方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "82ffa72aea48c6a1b36990323d91503991081e1ee5798206167c238062f00695",
+      "translationHash": "123f5da8e50e489b71be1b0a1b45b7c0495be8e2b8217570f5a89476c2e364d9",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-142.json",
+      "evidenceHash": "7991238ffbfb68e8440121fda0b3a4aaa420ad4bdd47a784e6a4d4fe61fd5f1e"
     }
   }
 }
