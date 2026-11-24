@@ -1,0 +1,452 @@
+{
+  "version": 1,
+  "batch": 191,
+  "article": "Create a Windows shutdown shortcut",
+  "reviewedAt": "2026-11-25",
+  "sourceHash": "5b416fcb1d1a318ada335dc3fe65f15fc7802f570012121b44db71a91aed188f",
+  "sources": [
+    "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/shutdown/"
+  ],
+  "scope": "Read and compared the complete Japanese article and all twelve translations; checked command syntax and flags against the current Microsoft Learn reference; reviewed the safety warning, desktop steps, image references, and metadata.",
+  "findings": [
+    "Removed the duplicate future date, restored the original publication date (2023-04-11), and set lastmod to the review date in all editions.",
+    "Changed the shortcut command from `shutdown.exe -s -f -t 0` to `shutdown.exe /s /t 0`. Microsoft documents `/f` as forcing applications closed and warns this can lose unsaved data; the updated command omits `/f`.",
+    "Clarified that the shortcut starts shutdown immediately without an extra confirmation step; advises saving work and notes apps may report unsaved changes.",
+    "Removed outdated Japanese Windows screenshots that showed the unsafe forced-close command; replaced them with localized text instructions and the exact current command."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/Windows をシャットダウンするショートカットを作成する方法/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/Windows をシャットダウンするショートカットを作成する方法/index.md",
+      "sourceHash": "5b416fcb1d1a318ada335dc3fe65f15fc7802f570012121b44db71a91aed188f",
+      "translationHash": "3148633070e671f29e53f5f160dfb9c01be72075a117ff1c80667ce8b9e55e23",
+      "summary": "Compared the complete translation with the Japanese source and Microsoft documentation; removed the forced close switch, updated the shortcut command and steps, corrected the safety note, and removed localized screenshots that showed the old command.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations; updated the command to avoid forcing apps closed, explained the immediate action and save-work caution, and aligned the desktop shortcut steps."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Windows 10/11, shortcut target, optional icon change, and command switches `/s` and `/t 0` across all editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified the exact Windows command `shutdown.exe /s /t 0` and confirmed `/f` is omitted; Microsoft documents `/f` as forcing apps closed and risking unsaved data loss."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the official Microsoft Learn shutdown-command reference."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Shutdown behavior can depend on running applications and Windows policy; save work before using the immediate shutdown shortcut.",
+        "Microsoft Learn command reference is in English; menu labels may differ by Windows version and display language."
+      ]
+    },
+    "post/Windows をシャットダウンするショートカットを作成する方法/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/Windows をシャットダウンするショートカットを作成する方法/index.md",
+      "sourceHash": "5b416fcb1d1a318ada335dc3fe65f15fc7802f570012121b44db71a91aed188f",
+      "translationHash": "c897fc117719274534ce3e73070b20b4ec29105f2427025b9b04e11248a4df1e",
+      "summary": "Compared the complete translation with the Japanese source and Microsoft documentation; removed the forced close switch, updated the shortcut command and steps, corrected the safety note, and removed localized screenshots that showed the old command.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations; updated the command to avoid forcing apps closed, explained the immediate action and save-work caution, and aligned the desktop shortcut steps."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Windows 10/11, shortcut target, optional icon change, and command switches `/s` and `/t 0` across all editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified the exact Windows command `shutdown.exe /s /t 0` and confirmed `/f` is omitted; Microsoft documents `/f` as forcing apps closed and risking unsaved data loss."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the official Microsoft Learn shutdown-command reference."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Shutdown behavior can depend on running applications and Windows policy; save work before using the immediate shutdown shortcut.",
+        "Microsoft Learn command reference is in English; menu labels may differ by Windows version and display language."
+      ]
+    },
+    "post/Windows をシャットダウンするショートカットを作成する方法/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/Windows をシャットダウンするショートカットを作成する方法/index.md",
+      "sourceHash": "5b416fcb1d1a318ada335dc3fe65f15fc7802f570012121b44db71a91aed188f",
+      "translationHash": "1afea35927af5e7fa25dffbbce9a8b2143f4aedd878807e1a499eef52cd74d81",
+      "summary": "Compared the complete translation with the Japanese source and Microsoft documentation; removed the forced close switch, updated the shortcut command and steps, corrected the safety note, and removed localized screenshots that showed the old command.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations; updated the command to avoid forcing apps closed, explained the immediate action and save-work caution, and aligned the desktop shortcut steps."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Windows 10/11, shortcut target, optional icon change, and command switches `/s` and `/t 0` across all editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified the exact Windows command `shutdown.exe /s /t 0` and confirmed `/f` is omitted; Microsoft documents `/f` as forcing apps closed and risking unsaved data loss."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the official Microsoft Learn shutdown-command reference."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Shutdown behavior can depend on running applications and Windows policy; save work before using the immediate shutdown shortcut.",
+        "Microsoft Learn command reference is in English; menu labels may differ by Windows version and display language."
+      ]
+    },
+    "post/Windows をシャットダウンするショートカットを作成する方法/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/Windows をシャットダウンするショートカットを作成する方法/index.md",
+      "sourceHash": "5b416fcb1d1a318ada335dc3fe65f15fc7802f570012121b44db71a91aed188f",
+      "translationHash": "3bf596ab0bd55060bd49bd4fcc5d32b421218254abd128d59afdb82a2260e6b4",
+      "summary": "Compared the complete translation with the Japanese source and Microsoft documentation; removed the forced close switch, updated the shortcut command and steps, corrected the safety note, and removed localized screenshots that showed the old command.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations; updated the command to avoid forcing apps closed, explained the immediate action and save-work caution, and aligned the desktop shortcut steps."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Windows 10/11, shortcut target, optional icon change, and command switches `/s` and `/t 0` across all editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified the exact Windows command `shutdown.exe /s /t 0` and confirmed `/f` is omitted; Microsoft documents `/f` as forcing apps closed and risking unsaved data loss."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the official Microsoft Learn shutdown-command reference."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Shutdown behavior can depend on running applications and Windows policy; save work before using the immediate shutdown shortcut.",
+        "Microsoft Learn command reference is in English; menu labels may differ by Windows version and display language."
+      ]
+    },
+    "post/Windows をシャットダウンするショートカットを作成する方法/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/Windows をシャットダウンするショートカットを作成する方法/index.md",
+      "sourceHash": "5b416fcb1d1a318ada335dc3fe65f15fc7802f570012121b44db71a91aed188f",
+      "translationHash": "668147a4d18dedc412659e96d98f1b7a3bcc32d4ace24ad2fcca93ebee32eb68",
+      "summary": "Compared the complete translation with the Japanese source and Microsoft documentation; removed the forced close switch, updated the shortcut command and steps, corrected the safety note, and removed localized screenshots that showed the old command.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations; updated the command to avoid forcing apps closed, explained the immediate action and save-work caution, and aligned the desktop shortcut steps."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Windows 10/11, shortcut target, optional icon change, and command switches `/s` and `/t 0` across all editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified the exact Windows command `shutdown.exe /s /t 0` and confirmed `/f` is omitted; Microsoft documents `/f` as forcing apps closed and risking unsaved data loss."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the official Microsoft Learn shutdown-command reference."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Shutdown behavior can depend on running applications and Windows policy; save work before using the immediate shutdown shortcut.",
+        "Microsoft Learn command reference is in English; menu labels may differ by Windows version and display language."
+      ]
+    },
+    "post/Windows をシャットダウンするショートカットを作成する方法/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/Windows をシャットダウンするショートカットを作成する方法/index.md",
+      "sourceHash": "5b416fcb1d1a318ada335dc3fe65f15fc7802f570012121b44db71a91aed188f",
+      "translationHash": "f276ab9feb19b4d52457c525d244403fffe5bb2c6e68536c4e023f18a0c78dde",
+      "summary": "Compared the complete translation with the Japanese source and Microsoft documentation; removed the forced close switch, updated the shortcut command and steps, corrected the safety note, and removed localized screenshots that showed the old command.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations; updated the command to avoid forcing apps closed, explained the immediate action and save-work caution, and aligned the desktop shortcut steps."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Windows 10/11, shortcut target, optional icon change, and command switches `/s` and `/t 0` across all editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified the exact Windows command `shutdown.exe /s /t 0` and confirmed `/f` is omitted; Microsoft documents `/f` as forcing apps closed and risking unsaved data loss."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the official Microsoft Learn shutdown-command reference."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Shutdown behavior can depend on running applications and Windows policy; save work before using the immediate shutdown shortcut.",
+        "Microsoft Learn command reference is in English; menu labels may differ by Windows version and display language."
+      ]
+    },
+    "post/Windows をシャットダウンするショートカットを作成する方法/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/Windows をシャットダウンするショートカットを作成する方法/index.md",
+      "sourceHash": "5b416fcb1d1a318ada335dc3fe65f15fc7802f570012121b44db71a91aed188f",
+      "translationHash": "6cc6962f1e5ad7ef525f3a0eb97edcabd88a19e83d3e41d32bfff8adfe006486",
+      "summary": "Compared the complete translation with the Japanese source and Microsoft documentation; removed the forced close switch, updated the shortcut command and steps, corrected the safety note, and removed localized screenshots that showed the old command.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations; updated the command to avoid forcing apps closed, explained the immediate action and save-work caution, and aligned the desktop shortcut steps."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Windows 10/11, shortcut target, optional icon change, and command switches `/s` and `/t 0` across all editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified the exact Windows command `shutdown.exe /s /t 0` and confirmed `/f` is omitted; Microsoft documents `/f` as forcing apps closed and risking unsaved data loss."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the official Microsoft Learn shutdown-command reference."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Shutdown behavior can depend on running applications and Windows policy; save work before using the immediate shutdown shortcut.",
+        "Microsoft Learn command reference is in English; menu labels may differ by Windows version and display language."
+      ]
+    },
+    "post/Windows をシャットダウンするショートカットを作成する方法/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/Windows をシャットダウンするショートカットを作成する方法/index.md",
+      "sourceHash": "5b416fcb1d1a318ada335dc3fe65f15fc7802f570012121b44db71a91aed188f",
+      "translationHash": "3a8e9c212cb9759105fd7cce95150e864804092d4ed8607ad76a0fc9931acfbf",
+      "summary": "Compared the complete translation with the Japanese source and Microsoft documentation; removed the forced close switch, updated the shortcut command and steps, corrected the safety note, and removed localized screenshots that showed the old command.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations; updated the command to avoid forcing apps closed, explained the immediate action and save-work caution, and aligned the desktop shortcut steps."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Windows 10/11, shortcut target, optional icon change, and command switches `/s` and `/t 0` across all editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified the exact Windows command `shutdown.exe /s /t 0` and confirmed `/f` is omitted; Microsoft documents `/f` as forcing apps closed and risking unsaved data loss."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the official Microsoft Learn shutdown-command reference."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Shutdown behavior can depend on running applications and Windows policy; save work before using the immediate shutdown shortcut.",
+        "Microsoft Learn command reference is in English; menu labels may differ by Windows version and display language."
+      ]
+    },
+    "post/Windows をシャットダウンするショートカットを作成する方法/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/Windows をシャットダウンするショートカットを作成する方法/index.md",
+      "sourceHash": "5b416fcb1d1a318ada335dc3fe65f15fc7802f570012121b44db71a91aed188f",
+      "translationHash": "5dbdb0f3866560e28f262510325f0d02323bede2ac71aa5c9f33dd4483778709",
+      "summary": "Compared the complete translation with the Japanese source and Microsoft documentation; removed the forced close switch, updated the shortcut command and steps, corrected the safety note, and removed localized screenshots that showed the old command.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations; updated the command to avoid forcing apps closed, explained the immediate action and save-work caution, and aligned the desktop shortcut steps."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Windows 10/11, shortcut target, optional icon change, and command switches `/s` and `/t 0` across all editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified the exact Windows command `shutdown.exe /s /t 0` and confirmed `/f` is omitted; Microsoft documents `/f` as forcing apps closed and risking unsaved data loss."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the official Microsoft Learn shutdown-command reference."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Shutdown behavior can depend on running applications and Windows policy; save work before using the immediate shutdown shortcut.",
+        "Microsoft Learn command reference is in English; menu labels may differ by Windows version and display language."
+      ]
+    },
+    "post/Windows をシャットダウンするショートカットを作成する方法/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/Windows をシャットダウンするショートカットを作成する方法/index.md",
+      "sourceHash": "5b416fcb1d1a318ada335dc3fe65f15fc7802f570012121b44db71a91aed188f",
+      "translationHash": "e264529493433e0ff8a3b7f452400e361c486e54b4f023a22b3fef97ef3d47e1",
+      "summary": "Compared the complete translation with the Japanese source and Microsoft documentation; removed the forced close switch, updated the shortcut command and steps, corrected the safety note, and removed localized screenshots that showed the old command.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations; updated the command to avoid forcing apps closed, explained the immediate action and save-work caution, and aligned the desktop shortcut steps."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Windows 10/11, shortcut target, optional icon change, and command switches `/s` and `/t 0` across all editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified the exact Windows command `shutdown.exe /s /t 0` and confirmed `/f` is omitted; Microsoft documents `/f` as forcing apps closed and risking unsaved data loss."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the official Microsoft Learn shutdown-command reference."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Shutdown behavior can depend on running applications and Windows policy; save work before using the immediate shutdown shortcut.",
+        "Microsoft Learn command reference is in English; menu labels may differ by Windows version and display language."
+      ]
+    },
+    "post/Windows をシャットダウンするショートカットを作成する方法/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/Windows をシャットダウンするショートカットを作成する方法/index.md",
+      "sourceHash": "5b416fcb1d1a318ada335dc3fe65f15fc7802f570012121b44db71a91aed188f",
+      "translationHash": "2e5dde1ab95fa318c389c1014b0ddeb43669d40f012a5a59c39cb1ff071ac752",
+      "summary": "Compared the complete translation with the Japanese source and Microsoft documentation; removed the forced close switch, updated the shortcut command and steps, corrected the safety note, and removed localized screenshots that showed the old command.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations; updated the command to avoid forcing apps closed, explained the immediate action and save-work caution, and aligned the desktop shortcut steps."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Windows 10/11, shortcut target, optional icon change, and command switches `/s` and `/t 0` across all editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified the exact Windows command `shutdown.exe /s /t 0` and confirmed `/f` is omitted; Microsoft documents `/f` as forcing apps closed and risking unsaved data loss."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the official Microsoft Learn shutdown-command reference."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Shutdown behavior can depend on running applications and Windows policy; save work before using the immediate shutdown shortcut.",
+        "Microsoft Learn command reference is in English; menu labels may differ by Windows version and display language."
+      ]
+    },
+    "post/Windows をシャットダウンするショートカットを作成する方法/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "source": "post/Windows をシャットダウンするショートカットを作成する方法/index.md",
+      "sourceHash": "5b416fcb1d1a318ada335dc3fe65f15fc7802f570012121b44db71a91aed188f",
+      "translationHash": "c2141087807e53db807d46bd45a5a150425f79f0cda4e91b7520e2338479b089",
+      "summary": "Compared the complete translation with the Japanese source and Microsoft documentation; removed the forced close switch, updated the shortcut command and steps, corrected the safety note, and removed localized screenshots that showed the old command.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese article and all twelve translations; updated the command to avoid forcing apps closed, explained the immediate action and save-work caution, and aligned the desktop shortcut steps."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Windows 10/11, shortcut target, optional icon change, and command switches `/s` and `/t 0` across all editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified the exact Windows command `shutdown.exe /s /t 0` and confirmed `/f` is omitted; Microsoft documents `/f` as forcing apps closed and risking unsaved data loss."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the official Microsoft Learn shutdown-command reference."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Shutdown behavior can depend on running applications and Windows policy; save work before using the immediate shutdown shortcut.",
+        "Microsoft Learn command reference is in English; menu labels may differ by Windows version and display language."
+      ]
+    }
+  }
+}

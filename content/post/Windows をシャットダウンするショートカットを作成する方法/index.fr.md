@@ -1,51 +1,32 @@
 ---
-title: 'Éteindre le PC en un clic ! Comment créer un raccourci pour arrêter Windows'
-date: "2026-09-24T19:44:38+09:00"
+title: 'Créer un raccourci pour arrêter Windows'
 slug: "Windows をArrêtするRaccourciを作成する方法"
 date: 2023-04-11T17:03:32+09:00
+lastmod: "2026-11-25T00:00:00+09:00"
 tags: ["Windows", "Arrêter", "Raccourci"]
 draft: false
 image: "img.webp"
 categories: ["pc-gadgets"]
-description: 'Nous expliquons comment créer un raccourci pratique permettant d''arrêter Windows en un seul clic depuis le bureau. Nous détaillons avec des images la procédure de configuration utilisant la commande ''shutdown.exe'', ainsi que la façon de le remplacer par une icône explicite.'
+description: 'Créez sur le bureau un raccourci qui lance l’arrêt de Windows 10 ou Windows 11 d’un double-clic.'
 ---
+Ces étapes concernent Windows 10 et Windows 11. Les noms des menus peuvent varier légèrement selon la version et la langue d’affichage.
 
-Voici comment créer un raccourci pour arrêter Windows.
+## Créer le raccourci
 
-C'est pratique car vous pouvez éteindre l'ordinateur en double-cliquant simplement sur le raccourci créé, par exemple en le plaçant sur le bureau.
+#### 1. Cliquez avec le bouton droit sur une zone vide du bureau, puis choisissez `Nouveau` > `Raccourci`.
 
-## Comment créer
+#### 2. Saisissez cette commande comme emplacement de l’élément, puis cliquez sur `Suivant`.
 
-#### 1. Faites un clic droit sur le bureau et sélectionnez `Nouveau` > `Raccourci`
+```text
+shutdown.exe /s /t 0
+```
 
-![img_1.png](img_1.webp)
+#### 3. Nommez le raccourci, par exemple `Arrêter Windows`, puis cliquez sur `Terminer`.
 
-#### 2. L'écran de création de raccourci s'affiche, tapez `shutdown.exe -s -f -t 0` et cliquez sur `Suivant`
+## Modifier l’icône (facultatif)
 
-![img_2.png](img_2.webp)
+Cliquez avec le bouton droit sur le raccourci et choisissez `Propriétés` > `Changer d’icône`. Sélectionnez une icône dans `%SystemRoot%\System32\SHELL32.dll`, puis cliquez sur `OK`.
 
-#### 3. Entrez le nom du raccourci `Arrêter` et cliquez sur `Terminer`
+Enregistrez votre travail avant d’utiliser ce raccourci. Il lance l’arrêt de Windows sans étape de confirmation supplémentaire. `/s` demande l’arrêt et `/t 0` ne prévoit aucun délai. L’option `/f` est omise : les applications peuvent donc se fermer normalement et signaler les modifications non enregistrées.
 
-![img_3.png](img_3.webp)
-
-#### 4. Changez l'icône du raccourci créé
-
-![img_4.png](img_4.webp)
-
-Faites un clic droit sur le raccourci créé et sélectionnez `Propriétés`
-
-![img_5.png](img_5.webp)
-
-Cliquez sur `Changer d'icône`
-
-![img_6.png](img_6.webp)
-
-Sélectionnez l'icône carrée rouge et cliquez sur `OK`, puis cliquez à nouveau sur `OK` pour fermer les propriétés.
-
-C'est tout.
-
-![img.png](img.webp)
-
-Windows s'arrêtera lorsque vous double-cliquerez sur le raccourci créé.
-
-※ Remarque : Aucune boîte de dialogue de confirmation d'arrêt ne sera affichée.
+[**Microsoft Learn : commande shutdown (en anglais)**](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/shutdown/)

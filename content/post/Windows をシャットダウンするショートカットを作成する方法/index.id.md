@@ -1,51 +1,32 @@
 ---
-title: 'Matikan PC dengan Satu Klik! Cara Membuat Pintasan untuk Mematikan Windows'
-date: "2026-09-24T19:44:38+09:00"
+title: 'Cara membuat pintasan untuk mematikan Windows'
 slug: "Windows をMatikanするPintasanを作成する方法"
 date: 2023-04-11T17:03:32+09:00
+lastmod: "2026-11-25T00:00:00+09:00"
 tags: ["Windows", "Mematikan", "Pintasan"]
 draft: false
 image: "img.webp"
 categories: ["pc-gadgets"]
-description: 'Menjelaskan cara membuat pintasan praktis untuk mematikan Windows dengan satu klik dari desktop. Memperkenalkan langkah pengaturan menggunakan perintah ''shutdown.exe'', hingga cara mengubah ikon agar mudah dikenali, lengkap dengan gambar.'
+description: 'Buat pintasan desktop yang memulai proses mematikan Windows 10 atau Windows 11 dengan dua klik.'
 ---
+Langkah ini berlaku untuk Windows 10 dan Windows 11. Nama menu dapat sedikit berbeda menurut versi dan bahasa tampilan.
 
-Saya akan menunjukkan cara membuat pintasan untuk mematikan Windows.
+## Membuat pintasan
 
-Sangat praktis karena Anda bisa mematikan komputer dengan mengklik ganda pintasan yang dibuat, misalnya di desktop.
+#### 1. Klik kanan area kosong di desktop, lalu pilih `New` > `Shortcut`.
 
-## Cara Membuat
+#### 2. Masukkan perintah berikut sebagai lokasi item, lalu klik `Next`.
 
-#### 1. Klik kanan pada desktop, lalu pilih `Baru` > `Pintasan`
+```text
+shutdown.exe /s /t 0
+```
 
-![img_1.png](img_1.webp)
+#### 3. Beri nama pintasan, misalnya `Shut down`, lalu klik `Finish`.
 
-#### 2. Layar pembuatan pintasan akan muncul, masukkan `shutdown.exe -s -f -t 0` lalu klik `Berikutnya`
+## Mengubah ikon (opsional)
 
-![img_2.png](img_2.webp)
+Klik kanan pintasan, lalu pilih `Properties` > `Change Icon`. Pilih ikon dari `%SystemRoot%\System32\SHELL32.dll`, lalu klik `OK`.
 
-#### 3. Masukkan nama pintasan `Matikan` lalu klik `Selesai`
+Simpan pekerjaan sebelum menggunakan pintasan ini. Pintasan akan langsung memulai proses shutdown Windows tanpa langkah konfirmasi tambahan. `/s` meminta shutdown dan `/t 0` berarti tanpa jeda. Perintah ini tidak memakai `/f`, sehingga aplikasi dapat menutup secara normal dan memberi peringatan jika ada pekerjaan yang belum disimpan.
 
-![img_3.png](img_3.webp)
-
-#### 4. Ubah ikon pintasan yang dibuat
-
-![img_4.png](img_4.webp)
-
-Klik kanan pintasan yang dibuat, lalu pilih `Properti`
-
-![img_5.png](img_5.webp)
-
-Klik `Ubah Ikon`
-
-![img_6.png](img_6.webp)
-
-Pilih ikon kotak merah dan klik `OK`, lalu klik `OK` lagi untuk menutup jendela properti.
-
-Selesai.
-
-![img.png](img.webp)
-
-Jika Anda mengklik ganda pintasan yang dibuat, Windows akan dimatikan.
-
-Catatan: Dialog konfirmasi mematikan komputer tidak akan ditampilkan.
+[**Microsoft Learn: perintah shutdown (bahasa Inggris)**](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/shutdown/)

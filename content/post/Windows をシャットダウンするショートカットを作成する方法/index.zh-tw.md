@@ -1,51 +1,32 @@
 ---
-title: '一鍵關閉電腦電源！建立 Windows 關機捷徑的方法'
-date: "2026-09-24T19:44:38+09:00"
+title: '建立 Windows 關機捷徑'
 slug: "Windows を關機する捷徑を作成する方法"
 date: 2023-04-11T17:03:32+09:00
+lastmod: "2026-11-25T00:00:00+09:00"
 tags: ["Windows", "關機", "捷徑"]
 draft: false
 image: "img.webp"
 categories: ["pc-gadgets"]
-description: '解說如何建立在桌面上一鍵就能讓 Windows 關機的實用捷徑。附圖詳細介紹使用「shutdown.exe」指令的設定步驟，以及變更為易懂圖示的方法。'
+description: '在桌面建立捷徑，按兩下即可開始關閉 Windows 10 或 Windows 11。'
 ---
+以下步驟適用於 Windows 10 和 Windows 11。功能表名稱可能會因版本和顯示語言略有不同。
 
-在此介紹如何建立用來關閉 Windows 的捷徑。
+## 建立捷徑
 
-您可以將建立好的捷徑放在桌面等地方，只需連按兩下即可關機，非常方便。
+#### 1. 在桌面空白處按右鍵，選擇「新增」>「捷徑」。
 
-## 建立方法
+#### 2. 在項目位置輸入以下命令，然後按「下一步」。
 
-#### 1. 在桌面上按一下滑鼠右鍵，選擇 `新增` ＞ `捷徑`
+```text
+shutdown.exe /s /t 0
+```
 
-![img_1.png](img_1.webp)
+#### 3. 輸入捷徑名稱，例如「關機」，然後按「完成」。
 
-#### 2. 隨即會顯示建立捷徑的畫面，請輸入 `shutdown.exe -s -f -t 0` 並按一下 `下一步`
+## 變更圖示（選用）
 
-![img_2.png](img_2.webp)
+在捷徑上按右鍵，選擇「內容」>「變更圖示」。從 `%SystemRoot%\System32\SHELL32.dll` 選取圖示，再按「確定」。
 
-#### 3. 輸入捷徑的名稱 `關機`，然後按一下 `完成`
+使用前請先儲存工作。此捷徑不會額外顯示確認步驟，而是直接開始 Windows 關機流程。`/s` 表示關機，`/t 0` 表示不等待。命令未使用 `/f`，因此應用程式可正常處理結束程序，並可能提醒您儲存尚未完成的工作。
 
-![img_3.png](img_3.webp)
-
-#### 4. 變更建立好的捷徑圖示
-
-![img_4.png](img_4.webp)
-
-在建立好的捷徑上按一下滑鼠右鍵，選擇 `內容`
-
-![img_5.png](img_5.webp)
-
-按一下 `變更圖示`
-
-![img_6.png](img_6.webp)
-
-選擇紅色的方形圖示，按一下 `確定`，然後再次按一下 `確定` 以關閉內容視窗。
-
-以上。
-
-![img.png](img.webp)
-
-連按兩下建立好的捷徑，即可關閉 Windows。
-
-※注意：不會顯示關機的確認對話方塊。
+[**Microsoft Learn：shutdown 命令（英文）**](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/shutdown/)

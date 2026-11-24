@@ -22205,6 +22205,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-190.json",
       "evidenceHash": "c3c58ae3ac2e5819bfb5f7e2841ec294bda79982b8c3993c19ade7e15216d68a"
+    },
+    "post/Windows をシャットダウンするショートカットを作成する方法/index.en.md": {
+      "source": "post/Windows をシャットダウンするショートカットを作成する方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "5b416fcb1d1a318ada335dc3fe65f15fc7802f570012121b44db71a91aed188f",
+      "translationHash": "3148633070e671f29e53f5f160dfb9c01be72075a117ff1c80667ce8b9e55e23",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-191.json",
+      "evidenceHash": "98f15b8eca8464db8fb9493001e068fd50d12698260bfad06daba7c6ec4ed9e5"
+    },
+    "post/Windows をシャットダウンするショートカットを作成する方法/index.zh-cn.md": {
+      "source": "post/Windows をシャットダウンするショートカットを作成する方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "5b416fcb1d1a318ada335dc3fe65f15fc7802f570012121b44db71a91aed188f",
+      "translationHash": "c897fc117719274534ce3e73070b20b4ec29105f2427025b9b04e11248a4df1e",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-191.json",
+      "evidenceHash": "c95451d21ad4baea7d255007970bf642263c6b4f6f686c10cfc8044215b35b86"
+    },
+    "post/Windows をシャットダウンするショートカットを作成する方法/index.es.md": {
+      "source": "post/Windows をシャットダウンするショートカットを作成する方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "5b416fcb1d1a318ada335dc3fe65f15fc7802f570012121b44db71a91aed188f",
+      "translationHash": "1afea35927af5e7fa25dffbbce9a8b2143f4aedd878807e1a499eef52cd74d81",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-191.json",
+      "evidenceHash": "4e7abe365d3ddba37df9a3df51603311dcbf11c5288c93e45ba69e7f681046f1"
+    },
+    "post/Windows をシャットダウンするショートカットを作成する方法/index.fr.md": {
+      "source": "post/Windows をシャットダウンするショートカットを作成する方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "5b416fcb1d1a318ada335dc3fe65f15fc7802f570012121b44db71a91aed188f",
+      "translationHash": "3bf596ab0bd55060bd49bd4fcc5d32b421218254abd128d59afdb82a2260e6b4",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-191.json",
+      "evidenceHash": "fc37ebd1d85cd2747d6f1e4ba0c8a3e12734f06fbffb552f8c1d8519bc332dc0"
+    },
+    "post/Windows をシャットダウンするショートカットを作成する方法/index.de.md": {
+      "source": "post/Windows をシャットダウンするショートカットを作成する方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "5b416fcb1d1a318ada335dc3fe65f15fc7802f570012121b44db71a91aed188f",
+      "translationHash": "668147a4d18dedc412659e96d98f1b7a3bcc32d4ace24ad2fcca93ebee32eb68",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-191.json",
+      "evidenceHash": "980ecc6db8674c748d142383a8c039ea402388cb84e67d9e2e793d6e8f14dd25"
+    },
+    "post/Windows をシャットダウンするショートカットを作成する方法/index.pt.md": {
+      "source": "post/Windows をシャットダウンするショートカットを作成する方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "5b416fcb1d1a318ada335dc3fe65f15fc7802f570012121b44db71a91aed188f",
+      "translationHash": "f276ab9feb19b4d52457c525d244403fffe5bb2c6e68536c4e023f18a0c78dde",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-191.json",
+      "evidenceHash": "e5b5ad5e631afbecd32854bb3feb74e714eda3bc6a45570c131d5ff5df47a810"
+    },
+    "post/Windows をシャットダウンするショートカットを作成する方法/index.id.md": {
+      "source": "post/Windows をシャットダウンするショートカットを作成する方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "5b416fcb1d1a318ada335dc3fe65f15fc7802f570012121b44db71a91aed188f",
+      "translationHash": "6cc6962f1e5ad7ef525f3a0eb97edcabd88a19e83d3e41d32bfff8adfe006486",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-191.json",
+      "evidenceHash": "04a1fb3253fc8f531c50248a3e1d0ad0887157dbefb626313f7d324ffc3225d6"
+    },
+    "post/Windows をシャットダウンするショートカットを作成する方法/index.ko.md": {
+      "source": "post/Windows をシャットダウンするショートカットを作成する方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "5b416fcb1d1a318ada335dc3fe65f15fc7802f570012121b44db71a91aed188f",
+      "translationHash": "3a8e9c212cb9759105fd7cce95150e864804092d4ed8607ad76a0fc9931acfbf",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-191.json",
+      "evidenceHash": "f7eb3867b5ff1f1b07935631aacb42099cf50e58a0811c58da4954ae37b0023d"
+    },
+    "post/Windows をシャットダウンするショートカットを作成する方法/index.zh-tw.md": {
+      "source": "post/Windows をシャットダウンするショートカットを作成する方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "5b416fcb1d1a318ada335dc3fe65f15fc7802f570012121b44db71a91aed188f",
+      "translationHash": "5dbdb0f3866560e28f262510325f0d02323bede2ac71aa5c9f33dd4483778709",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-191.json",
+      "evidenceHash": "7a2049352c7bb0766f364ca1e762c6a947e4ef01faf4bb47c8d9c6a66d739133"
+    },
+    "post/Windows をシャットダウンするショートカットを作成する方法/index.hi.md": {
+      "source": "post/Windows をシャットダウンするショートカットを作成する方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "5b416fcb1d1a318ada335dc3fe65f15fc7802f570012121b44db71a91aed188f",
+      "translationHash": "e264529493433e0ff8a3b7f452400e361c486e54b4f023a22b3fef97ef3d47e1",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-191.json",
+      "evidenceHash": "fee3918c7738b3785cb5f2e5d5da331d4556ac005327ba030faf4306e4d41d8e"
+    },
+    "post/Windows をシャットダウンするショートカットを作成する方法/index.ru.md": {
+      "source": "post/Windows をシャットダウンするショートカットを作成する方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "5b416fcb1d1a318ada335dc3fe65f15fc7802f570012121b44db71a91aed188f",
+      "translationHash": "2e5dde1ab95fa318c389c1014b0ddeb43669d40f012a5a59c39cb1ff071ac752",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-191.json",
+      "evidenceHash": "a5af845aa3bab8a12badf579d0349d419d9f8dae751aa3ef7bc5b346adaa38cb"
+    },
+    "post/Windows をシャットダウンするショートカットを作成する方法/index.ar.md": {
+      "source": "post/Windows をシャットダウンするショートカットを作成する方法/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "5b416fcb1d1a318ada335dc3fe65f15fc7802f570012121b44db71a91aed188f",
+      "translationHash": "c2141087807e53db807d46bd45a5a150425f79f0cda4e91b7520e2338479b089",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-191.json",
+      "evidenceHash": "083b32e0c0eb8c703cdee1c4a3ec7036fbe7b50f607296eb309af0ef2c306911"
     }
   }
 }

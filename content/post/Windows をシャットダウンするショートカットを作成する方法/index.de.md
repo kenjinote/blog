@@ -1,51 +1,32 @@
 ---
-title: 'PC mit einem Klick ausschalten! So erstellen Sie eine Verknüpfung zum Herunterfahren von Windows'
-date: "2026-09-24T19:44:38+09:00"
+title: 'Eine Verknüpfung zum Herunterfahren von Windows erstellen'
 slug: "Windows をHerunterfahrenするVerknüpfungを作成する方法"
 date: 2023-04-11T17:03:32+09:00
+lastmod: "2026-11-25T00:00:00+09:00"
 tags: ["Windows", "Herunterfahren", "Verknüpfung"]
 draft: false
 image: "img.webp"
 categories: ["pc-gadgets"]
-description: 'Wir erklären, wie Sie eine praktische Verknüpfung erstellen, mit der Sie Windows mit einem Klick vom Desktop aus herunterfahren können. Wir erläutern das Einrichtungsverfahren mit dem Befehl „shutdown.exe“ und wie Sie das Symbol mit Bildern ausführlich in ein leicht verständliches Symbol ändern können.'
+description: 'Erstellen Sie eine Desktopverknüpfung, die das Herunterfahren von Windows 10 oder Windows 11 per Doppelklick startet.'
 ---
+Diese Schritte gelten für Windows 10 und Windows 11. Menünamen können je nach Version und Anzeigesprache leicht abweichen.
 
-Hier wird beschrieben, wie Sie eine Verknüpfung zum Herunterfahren von Windows erstellen.
+## Verknüpfung erstellen
 
-Es ist praktisch, da Sie den Computer durch einen Doppelklick auf die erstellte Verknüpfung, z. B. auf dem Desktop, herunterfahren können.
+#### 1. Klicken Sie mit der rechten Maustaste auf eine freie Stelle des Desktops und wählen Sie `Neu` > `Verknüpfung`.
 
-## Erstellungsmethode
+#### 2. Geben Sie diesen Befehl als Speicherort ein und klicken Sie auf `Weiter`.
 
-#### 1. Klicken Sie mit der rechten Maustaste auf den Desktop und wählen Sie `Neu` > `Verknüpfung`
+```text
+shutdown.exe /s /t 0
+```
 
-![img_1.png](img_1.webp)
+#### 3. Vergeben Sie einen Namen, zum Beispiel `Herunterfahren`, und klicken Sie auf `Fertig stellen`.
 
-#### 2. Der Bildschirm zur Erstellung von Verknüpfungen wird angezeigt. Geben Sie `shutdown.exe -s -f -t 0` ein und klicken Sie auf `Weiter`
+## Symbol ändern (optional)
 
-![img_2.png](img_2.webp)
+Klicken Sie mit der rechten Maustaste auf die Verknüpfung und wählen Sie `Eigenschaften` > `Anderes Symbol`. Wählen Sie ein Symbol aus `%SystemRoot%\System32\SHELL32.dll` und klicken Sie auf `OK`.
 
-#### 3. Geben Sie den Namen der Verknüpfung `Herunterfahren` ein und klicken Sie auf `Fertig stellen`
+Speichern Sie Ihre Arbeit, bevor Sie die Verknüpfung verwenden. Sie startet das Herunterfahren ohne zusätzlichen Bestätigungsschritt. `/s` fordert das Herunterfahren an, `/t 0` legt keine Wartezeit fest. `/f` wird weggelassen, damit Apps normal schließen und vor nicht gespeicherter Arbeit warnen können.
 
-![img_3.png](img_3.webp)
-
-#### 4. Ändern Sie das Symbol der erstellten Verknüpfung
-
-![img_4.png](img_4.webp)
-
-Klicken Sie mit der rechten Maustaste auf die erstellte Verknüpfung und wählen Sie `Eigenschaften`
-
-![img_5.png](img_5.webp)
-
-Klicken Sie auf `Anderes Symbol`
-
-![img_6.png](img_6.webp)
-
-Wählen Sie das rote quadratische Symbol und klicken Sie auf `OK`. Klicken Sie dann erneut auf `OK`, um die Eigenschaften zu schließen.
-
-Das war's.
-
-![img.png](img.webp)
-
-Windows wird heruntergefahren, wenn Sie auf die erstellte Verknüpfung doppelklicken.
-
-※ Hinweis: Es wird kein Bestätigungsdialog zum Herunterfahren angezeigt.
+[**Microsoft Learn: shutdown-Befehl (Englisch)**](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/shutdown/)

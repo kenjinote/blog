@@ -1,51 +1,32 @@
 ---
-title: 'One-Click PC Power Off! How to Create a Windows Shutdown Shortcut'
-date: "2026-09-24T19:44:38+09:00"
+title: 'How to create a Windows shutdown shortcut'
 slug: "Windows をShutdownするShortcutを作成する方法"
 date: 2023-04-11T17:03:32+09:00
+lastmod: "2026-11-25T00:00:00+09:00"
 tags: ["Windows", "Shutdown", "Shortcut"]
 draft: false
 image: "img.webp"
 categories: ["pc-gadgets"]
-description: 'Explains how to create a handy shortcut that lets you shut down Windows with a single click from the desktop. Details the setup process using the ''shutdown.exe'' command and how to change it to an easy-to-understand icon, complete with images.'
+description: 'Create a desktop shortcut that starts a Windows 10 or Windows 11 shutdown with one double-click.'
 ---
+These steps are for Windows 10 and Windows 11. Menu names may vary slightly by version and display language.
 
-Here is how to create a shortcut to shut down Windows.
+## Create the shortcut
 
-It is convenient because you can shut down by double-clicking the created shortcut placed on your desktop or elsewhere.
+#### 1. Right-click an empty area of the desktop and select `New` > `Shortcut`.
 
-## How to create
+#### 2. Enter this command as the item location, then select `Next`.
 
-#### 1. Right-click on the desktop, and select `New` > `Shortcut`
+```text
+shutdown.exe /s /t 0
+```
 
-![img_1.png](img_1.webp)
+#### 3. Name the shortcut, for example `Shut down`, and select `Finish`.
 
-#### 2. The shortcut creation screen will appear, enter `shutdown.exe -s -f -t 0` and click `Next`
+## Change its icon (optional)
 
-![img_2.png](img_2.webp)
+Right-click the shortcut and select `Properties` > `Change Icon`. Choose an icon from `%SystemRoot%\System32\SHELL32.dll`, then select `OK`.
 
-#### 3. Enter the shortcut name `Shutdown` and click `Finish`
+Save your work before using the shortcut. It starts the Windows shutdown process without an additional confirmation step. `/s` requests shutdown and `/t 0` sets no delay. The command omits `/f`, so apps can handle shutdown normally and may warn about unsaved work.
 
-![img_3.png](img_3.webp)
-
-#### 4. Change the icon of the created shortcut
-
-![img_4.png](img_4.webp)
-
-Right-click the created shortcut and select `Properties`
-
-![img_5.png](img_5.webp)
-
-Click `Change Icon...`
-
-![img_6.png](img_6.webp)
-
-Select the red square icon and click `OK`, then click `OK` again to close the properties window.
-
-That's it.
-
-![img.png](img.webp)
-
-Double-clicking the created shortcut will shut down Windows.
-
-*Note: No shutdown confirmation dialog will be displayed.
+[**Microsoft Learn: shutdown command**](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/shutdown/)

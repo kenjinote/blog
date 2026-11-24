@@ -1,51 +1,32 @@
 ---
-title: '一键关闭电脑电源！创建Windows关机快捷方式的方法'
-date: "2026-09-24T19:44:38+09:00"
+title: '创建 Windows 关机快捷方式'
 slug: "Windows を关机する快捷方式を作成する方法"
 date: 2023-04-11T17:03:32+09:00
+lastmod: "2026-11-25T00:00:00+09:00"
 tags: ["Windows", "关机", "快捷方式"]
 draft: false
 image: "img.webp"
 categories: ["pc-gadgets"]
-description: '讲解如何创建能从桌面一键关闭Windows的便捷快捷方式。图文并茂地详细介绍使用“shutdown.exe”命令的设置步骤以及更改为醒目图标的方法。'
+description: '介绍如何在 Windows 10 和 Windows 11 桌面创建快捷方式，以便双击后启动关机。'
 ---
+以下步骤适用于 Windows 10 和 Windows 11。菜单名称可能因系统版本和显示语言略有不同。
 
-本文介绍如何创建关闭 Windows 的快捷方式。
+## 创建快捷方式
 
-将创建的快捷方式放在桌面上，双击即可关机，非常方便。
+#### 1. 右键单击桌面空白处，选择“新建”>“快捷方式”。
 
-## 创建方法
+#### 2. 在项目位置中输入以下命令，然后单击“下一步”。
 
-#### 1. 在桌面上右击，选择`新建`＞`快捷方式`
+```text
+shutdown.exe /s /t 0
+```
 
-![img_1.png](img_1.webp)
+#### 3. 为快捷方式命名，例如“关机”，然后单击“完成”。
 
-#### 2. 弹出创建快捷方式的界面，输入 `shutdown.exe -s -f -t 0`，然后点击`下一步`
+## 更改图标（可选）
 
-![img_2.png](img_2.webp)
+右键单击快捷方式，选择“属性”>“更改图标”。从 `%SystemRoot%\System32\SHELL32.dll` 中选择一个图标，然后单击“确定”。
 
-#### 3. 输入快捷方式的名称 `关机`，然后点击`完成`
+使用前请保存工作。此快捷方式会直接启动 Windows 关机流程，不会额外显示确认步骤。`/s` 表示关机，`/t 0` 表示不等待。命令未使用 `/f`，因此应用可以正常处理退出，并可能提示保存未完成的工作。
 
-![img_3.png](img_3.webp)
-
-#### 4. 更改已创建快捷方式的图标
-
-![img_4.png](img_4.webp)
-
-右击创建的快捷方式，选择`属性`
-
-![img_5.png](img_5.webp)
-
-点击`更改图标`
-
-![img_6.png](img_6.webp)
-
-选择红色的方形图标，点击`确定`，再次点击`确定`关闭属性窗口。
-
-完成。
-
-![img.png](img.webp)
-
-双击创建的快捷方式，Windows 就会关机。
-
-※注意：关机前不会显示确认对话框。
+[**Microsoft Learn：shutdown 命令（英文）**](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/shutdown/)
